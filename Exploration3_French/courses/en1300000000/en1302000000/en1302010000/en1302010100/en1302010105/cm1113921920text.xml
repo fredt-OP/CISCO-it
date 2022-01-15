@@ -1,0 +1,296 @@
+<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>1</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>2</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>3</B>]]></text> 
+</component>
+
+<component id="ID_button_04">
+  <text><![CDATA[<B>4</B>]]></text> 
+</component>
+
+<component id="ID_button_05">
+  <text><![CDATA[<B>5</B>]]></text> 
+</component>
+
+<component id="ID_button_06">
+  <text><![CDATA[<B>6</B>]]></text> 
+</component>
+
+
+<component id="ID_step0">
+  <text><![CDATA[<B>Click through the steps for more info:<br>Step 1:</B> The switch receives a broadcast frame from PC 1 on Port 1.</B>]]></text> 
+</component>
+
+<component id="ID_step1">
+  <text><![CDATA[<B>Step 1:</B> The switch receives a broadcast frame from PC 1 on Port 1.]]></text> 
+</component>
+
+<component id="ID_step2">
+  <text><![CDATA[<B>Step 2:</B> The switch enters the source MAC address and the switch port that received the frame into the MAC table.]]></text> 
+</component>
+
+<component id="ID_step3">
+  <text><![CDATA[<B>Step 3:</B> Because the destination address is a broadcast, the switch floods the frame to all ports, except the port on which it received the frame.
+]]></text> 
+</component>
+
+<component id="ID_step4">
+  <text><![CDATA[<B>Step 4:</B> The destination device replies to the broadcast with a unicast frame addressed to PC 1.]]></text> 
+</component>
+
+<component id="ID_step5">
+  <text><![CDATA[<B>Step 5:</B> The switch enters the source MAC address of PC 2 and port number of the switch port that received the frame into the MAC table. The destination address of the frame and its associated port is found in the MAC table.]]></text> 
+</component>
+
+<component id="ID_step6">
+  <text><![CDATA[<B>Step 6:</B> The switch can now forward frames between source and destination devices without flooding, because it has entries in the MAC table that identify the associated ports.]]></text> 
+</component>
+
+
+<component id="ID_txt01">
+  <text><![CDATA[<B>PC1</B>]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<B>Frame</B>]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[<B>PC2</B>]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[<B>Port 1</B>]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[<B>Port 2</B>]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[<B>Port 3</B>]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Frame</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>MAC Addressing and Switch MAC Tables</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt01_02">
+  <text><![CDATA[<B>PC1</B>]]></text> 
+</component>
+
+<component id="ID_txt02_02">
+  <text><![CDATA[<B>Frame</B>]]></text> 
+</component>
+
+<component id="ID_txt03_02">
+  <text><![CDATA[<B>PC2</B>]]></text> 
+</component>
+
+<component id="ID_txt04_02">
+  <text><![CDATA[<B>MAC Table:<br>Port 1: MAC PC 1<br>Port 2: Empty<br>Port 3: Empty
+</B>]]></text> 
+</component>
+
+<component id="ID_txt05_02">
+  <text><![CDATA[<B>Port 1</B>]]></text> 
+</component>
+
+<component id="ID_txt06_02">
+  <text><![CDATA[<B>Port 2</B>]]></text> 
+</component>
+
+<component id="ID_txt07_02">
+  <text><![CDATA[<B>Port 3</B>]]></text> 
+</component>
+
+<component id="ID_txt08_02">
+<text><![CDATA[<b>MAC Table:<br/>Port 1: MAC PC 1<br/>Port 2: Empty<br/>Port 3: Empty</b>]]></text>
+</component>
+
+<component id="ID_txt09_02">
+<text><![CDATA[<b>Frame</b>]]></text>
+</component>
+
+<component id="ID_txt10_02">
+<text><![CDATA[<b>MAC Addressing and Switch MAC Tables</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt01_03">
+  <text><![CDATA[<B>PC1</B>]]></text> 
+</component>
+
+<component id="ID_txt02_03">
+  <text><![CDATA[<B>Frame</B>]]></text> 
+</component>
+
+<component id="ID_txt03_03">
+  <text><![CDATA[<B>PC2</B>]]></text> 
+</component>
+
+<component id="ID_txt04_03">
+  <text><![CDATA[<B>MAC Table:<br>Port 1: MAC PC 1<br>Port 2: Empty<br>Port 3: Empty
+</B>]]></text> 
+</component>
+
+<component id="ID_txt05_03b">
+  <text><![CDATA[<B>Frame</B>]]></text> 
+</component>
+
+<component id="ID_txt06_03">
+  <text><![CDATA[<B>Port 1</B>]]></text> 
+</component>
+
+<component id="ID_txt07_03">
+  <text><![CDATA[<B>Port 2</B>]]></text> 
+</component>
+
+<component id="ID_txt08_03">
+  <text><![CDATA[<B>Port 3</B>]]></text> 
+</component>
+
+<component id="ID_txt09_03">
+<text><![CDATA[<b>MAC Table:<br/>Port 1: MAC PC 1<br/>Port 2: Empty<br/>Port 3: Empty</b>]]></text>
+</component>
+
+<component id="ID_txt10_03">
+<text><![CDATA[<b>MAC Addressing and Switch MAC Tables</b>]]></text>
+</component>
+
+
+<component id="ID_txt01_04">
+  <text><![CDATA[<B>PC1</B>]]></text> 
+</component>
+
+<component id="ID_txt02_04">
+  <text><![CDATA[<B>Frame</B>]]></text> 
+</component>
+
+<component id="ID_txt03_04">
+  <text><![CDATA[<B>PC2</B>]]></text> 
+</component>
+
+<component id="ID_txt04_04">
+  <text><![CDATA[<B>Port 1</B>]]></text> 
+</component>
+
+<component id="ID_txt05_04">
+  <text><![CDATA[<B>Port 2</B>]]></text> 
+</component>
+
+<component id="ID_txt06_04">
+  <text><![CDATA[<B>Port 3</B>]]></text> 
+</component>
+
+<component id="ID_txt07_04">
+<text><![CDATA[<b>Frame</b>]]></text>
+</component>
+
+<component id="ID_txt08_04">
+<text><![CDATA[<b>Frame</b>]]></text>
+</component>
+
+<component id="ID_txt09_04">
+<text><![CDATA[<b>MAC Addressing and Switch MAC Tables</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt01_05">
+  <text><![CDATA[<B>PC1</B>]]></text> 
+</component>
+
+<component id="ID_txt02_05">
+  <text><![CDATA[<B>Frame</B>]]></text> 
+</component>
+
+<component id="ID_txt03_05">
+  <text><![CDATA[<B>PC2</B>]]></text> 
+</component>
+
+<component id="ID_txt04_05">
+  <text><![CDATA[<B>MAC Table:<br>Port 1: MAC PC 1<br>Port 2: Empty<br>Port 3: MAC PC 2</B>]]></text> 
+</component>
+
+<component id="ID_txt05_05">
+  <text><![CDATA[<B>Port 1</B>]]></text> 
+</component>
+
+<component id="ID_txt06_05">
+  <text><![CDATA[<B>Port 2</B>]]></text> 
+</component>
+
+<component id="ID_txt07_05">
+  <text><![CDATA[<B>Port 3</B>]]></text> 
+</component>
+
+<component id="ID_txt08_05">
+<text><![CDATA[<b>MAC Table:<br/>Port 1: MAC PC 1<br/>Port 2: Empty<br/>Port 3: MAC PC 2</b>]]></text>
+</component>
+
+<component id="ID_txt09_05">
+<text><![CDATA[<b>Frame</b>]]></text>
+</component>
+
+<component id="ID_txt10_05">
+<text><![CDATA[<b>MAC Addressing and Switch MAC Tables</b>]]></text>
+</component>
+
+
+<component id="ID_txt01_06">
+  <text><![CDATA[<B>PC1</B>]]></text> 
+</component>
+
+<component id="ID_txt02_06">
+  <text><![CDATA[<B>Frame</B>]]></text> 
+</component>
+
+<component id="ID_txt03_06">
+  <text><![CDATA[<B>PC2</B>]]></text> 
+</component>
+
+<component id="ID_txt04_06">
+  <text><![CDATA[<B>MAC Table:<br>Port 1: MAC PC 1<br>Port 2: Empty<br>Port 3: MAC PC 2</B>]]></text> 
+</component>
+
+<component id="ID_txt05_06">
+  <text><![CDATA[<B>Port 1</B>]]></text> 
+</component>
+
+<component id="ID_txt06_06">
+  <text><![CDATA[<B>Port 2</B>]]></text> 
+</component>
+
+<component id="ID_txt07_06">
+  <text><![CDATA[<B>Port 3</B>]]></text> 
+</component>
+
+<component id="ID_txt08_06">
+<text><![CDATA[<b>MAC Table:<br/>Port 1: MAC PC 1<br/>Port 2: Empty<br/>Port 3: MAC PC 2</b>]]></text>
+</component>
+
+<component id="ID_txt09_06">
+<text><![CDATA[<b>Frame</b>]]></text>
+</component>
+
+<component id="ID_txt10_06">
+<text><![CDATA[<b>MAC Addressing and Switch MAC Tables</b>]]></text>
+</component>
+
+</textcomponents>

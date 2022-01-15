@@ -1,0 +1,188 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Format de message OSPF</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Positionnez le curseur de la souris sur le texte souligné pour afficher plus d’informations.</b>]]></text>
+</component>
+
+<!-- top table -->
+<component id="ID_txt01">
+<text><![CDATA[<b>En-tête de trame de liaison de données</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>En-tête de paquet IP</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>En-tête de paquet OSPF</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Données spécifiques de type de paquet OSPF<br><font color = "#003399"><b>Paquet Hello</font></b>]]></text>
+</component>
+
+<!-- bits -->
+<component id="ID_txt05">
+<text><![CDATA[<b>0</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>7</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>8</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>15</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>16</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>23</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>24</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>31</b>]]></text>
+</component>
+
+<!-- bottom table -->
+<component id="ID_txt13">
+<text><![CDATA[Version]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b><u>Type=1</u></b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[Longueur du paquet]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b><u>ID du routeur</u></b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b><u>ID de la zone</u></b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[Somme de contrôle]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[AuType]]></text>
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[Authentification]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[Authentification]]></text>
+</component>
+
+<component id="ID_txt22">
+<text><![CDATA[<b><u>Masque de réseau</u></b>]]></text>
+</component>
+
+<component id="ID_txt23">
+<text><![CDATA[<b><u>Intervalle Hello</u></b>]]></text>
+</component>
+
+<component id="ID_txt24">
+<text><![CDATA[Option]]></text>
+</component>
+
+<component id="ID_txt25">
+<text><![CDATA[<b><u>Priorité du routeur</u></b>]]></text>
+</component>
+
+<component id="ID_txt26">
+<text><![CDATA[<b>Intervalle d’arrêt du routeur</b>]]></text>
+</component>
+
+<component id="ID_txt27">
+<text><![CDATA[<b><u>Routeur désigné (DR)</u></b>]]></text>
+</component>
+
+<component id="ID_txt28">
+<text><![CDATA[<b><u>Routeur désigné de secours (BDR)</u></b>]]></text>
+</component>
+
+<component id="ID_txt29">
+<text><![CDATA[<b><u>Liste des voisins</u></b>]]></text>
+</component>
+
+<!-- left side labels -->
+<component id="ID_txt30">
+<text><![CDATA[<b>Bit(s) :</b>]]></text>
+</component>
+
+<component id="ID_txt31">
+<text><![CDATA[<b>En-tête(s) de paquet OSPF</b>]]></text>
+</component>
+
+<component id="ID_txt32">
+<text><![CDATA[<b>Paquet(s) Hello OSPF</b>]]></text>
+</component>
+
+<!-- rollover popup text --> <!-- Type: -->
+<component id="ID_info01">
+<text><![CDATA[Type de paquet OSPF : Hello (1), DD (2), Requête LS (3), Mise à jour LS (4), LS ACK (5)]]></text>
+</component>
+
+<!-- Router ID: -->
+<component id="ID_info02">
+<text><![CDATA[ID du routeur source]]></text>
+</component>
+
+<!-- Area ID: -->
+<component id="ID_info03">
+<text><![CDATA[Zone d’origine du paquet]]></text>
+</component>
+
+<!-- Network Mask: -->
+<component id="ID_info04">
+<text><![CDATA[Masque de sous-réseau associé à l’interface émettrice]]></text>
+</component>
+
+<!-- Hello Interval: -->
+<component id="ID_info05">
+<text><![CDATA[Nombre de secondes entre les intervalles Hello du routeur émetteur]]></text>
+</component>
+
+<!-- Router Priority: -->
+<component id="ID_info06">
+<text><![CDATA[Utilisé dans la sélection DR/BDR (décrite plus loin dans ce document)]]></text>
+</component>
+
+<!-- Designated Router (DR): -->
+<component id="ID_info07">
+<text><![CDATA[ID du routeur du DR, le cas échéant]]></text>
+</component>
+
+<!-- Backup Designated Router (BDR): -->
+<component id="ID_info08">
+<text><![CDATA[ID du routeur du BDR, le cas échéant]]></text>
+</component>
+
+<!-- List of Neighbors: -->
+<component id="ID_info09">
+<text><![CDATA[Répertorie l’ID du routeur OSPF des routeurs voisins]]></text>
+</component>
+
+</textcomponents>

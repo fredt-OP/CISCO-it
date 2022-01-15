@@ -1,0 +1,203 @@
+﻿<textcomponents>
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Sorties du périphérique</b>]]></text>
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Sous-interfaces de routeur et routage entre VLAN</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur le bouton Lire pour faire avancer l’animation.</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>Configuration d’interface</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Table de routage</b>]]></text>
+</component>
+
+<component id="ID_text01">
+<text><![CDATA[<b>PC1 envoie une requête ARP pour l’adresse MAC de sa passerelle par défaut, qui constitue la sous-interface VLAN sur le routeur R1.<br/><br/>La requête ARP est envoyée pour l’adresse IP 172.17.10.1, qui correspond au sous-réseau auquel est connecté PC1.<br/><br/>La requête ARP est envoyée au commutateur S2 sur VLAN 10, et étiquetée et transférée par la liaison agrégée au commutateur S1.<br/><br/>Le commutateur S1 conserve l’étiquette VLAN sur la trame de diffusion tandis qu’il la transfère par l’autre liaison agrégée connectée au routeur R1.</b>]]></text>
+</component>
+
+<component id="ID_text02">
+<text><![CDATA[<b>Le routeur R1 examine l’étiquette VLAN sur la diffusion et reconnaît qu’elle a été envoyée sur VLAN 10.<br/><br/>Comme la sous-interface F0/0.10 a été configurée pour VLAN 10, et avec l’adresse IP spécifiée dans la requête ARP, le routeur répond à PC1 avec l’adresse MAC de l’interface physique.</b>]]></text>
+</component>
+
+<component id="ID_text03">
+<text><![CDATA[<b>PC1 utilise l’adresse MAC reçue du routeur R1 pour tramer le paquet de monodiffusion avant son envoi sur le réseau.<br/><br/>Le commutateur S2 marque la trame sur VLAN 10 tandis qu’elle traverse la liaison agrégée vers le commutateur S1.<br/><br/>Le commutateur S1 conserve l’étiquette VLAN en continuant à transférer la trame vers le routeur R1.</b>]]></text>
+</component>
+
+<component id="ID_text04">
+<text><![CDATA[<b>Le routeur R1 examine la trame et voit l’étiquette VLAN pour VLAN 10. Le routeur transmet la trame à la sous-interface F0/0.10.<br/><br/>Il examine ensuite la table de routage pour voir s’il existe une route définie à utiliser comme base pour le transfert du paquet vers sa destination.<br/><br/>La table de routage indique que le réseau de destination est directement connecté à la sous-interface F0/0.30.</b>]]></text>
+</component>
+
+<component id="ID_text05">
+<text><![CDATA[<b>Le routeur transmet ensuite le paquet à la sous-interface F0/0.30.</b>]]></text>
+</component>
+
+<component id="ID_text06">
+<text><![CDATA[<b>R1 envoie une nouvelle requête ARP pour l’adresse MAC de PC3.<br/><br/>La requête ARP est envoyée par l’interface physique du routeur étiquetée avec VLAN 30.<br/><br/>PC3 reçoit la requête ARP.</b>]]></text>
+</component>
+
+<component id="ID_text07">
+<text><![CDATA[<b>PC3 renvoie une réponse ARP avec son adresse MAC.</b>]]></text>
+</component>
+
+<component id="ID_text08">
+<text><![CDATA[<b>Le routeur R1 reçoit la réponse ARP et termine le tramage du paquet avant de l’envoyer sur le réseau.<br/><br/>Le commutateur S1 transfère la trame au commutateur S2, qui la livre ensuite finalement à PC3.</b>]]></text>
+</component>
+
+<component id="ID_text09">
+<text><![CDATA[<b>PC3 renvoie une trame de monodiffusion à PC1.<br/><br/>Cette fois, cependant, les diffusions ARP ne sont pas requises car les adresses MAC des périphériques adjacents sont déjà connues.</b>]]></text>
+</component>
+
+<component id="ID_text10">
+<text><![CDATA[<b>R1 utilise sa table de routage pour déterminer que l’adresse de réseau de destination du paquet de monodiffusion de PC3 est directement connectée à Fa0/0.10.</b>]]></text>
+</component>
+
+<component id="ID_text11">
+<text><![CDATA[<b>R1 transmet le paquet à la sous-interface Fa0/0.10.</b>]]></text>
+</component>
+
+<component id="ID_text12">
+<text><![CDATA[<b>Le paquet de monodiffusion est livré à PC1.</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b><u>Sous-interfaces</u><br/><br/>F0/0.10 : 172.17.10.1<br/>F0/0.30 : 172.17.30.1</b>]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_bubble03">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_bubble04">
+<text><![CDATA[<b><font size='12'><u>Table de routage</u><br/>172.17.30.0 is directly connected, FastEthernet0/0.30<br/>172.17.10.0 is directly connected, FastEthernet0/0.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble04b">
+<text><![CDATA[<b><font size='12'><u>Table de routage</u><br/>172.17.30.0 is directly connected, FastEthernet0/0.30<br/>172.17.10.0 is directly connected, FastEthernet0/0.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble05">
+<text><![CDATA[<b>Trame<br/>étiquetée VLAN</b>]]></text>
+</component>
+
+<component id="ID_frame01">
+<text><![CDATA[<b>Requête ARP</b>]]></text>
+</component>
+
+<component id="ID_frame02">
+<text><![CDATA[<b>Requête ARP VLAN 10</b>]]></text>
+</component>
+
+<component id="ID_frame03">
+<text><![CDATA[<b>Monodiffusion VLAN 30</b>]]></text>
+</component>
+
+<component id="ID_frame04">
+<text><![CDATA[<b>Trame de mono-<br>diffusion</b>]]></text>
+</component>
+
+<component id="ID_frame05">
+<text><![CDATA[<b>Trame de monodiffus-<br>ion VLAN 10</b>]]></text>
+</component>
+
+<component id="ID_frame06">
+<text><![CDATA[<b>Requête ARP VLAN 30</b>]]></text>
+</component>
+
+<component id="ID_frame07">
+<text><![CDATA[<b>Réponse ARP</b>]]></text>
+</component>
+
+<component id="ID_frame07b">
+<text><![CDATA[<b>Réponse ARP VLAN 10</b>]]></text>
+</component>
+
+<component id="ID_frame08">
+<text><![CDATA[<b>Réponse ARP VLAN 30</b>]]></text>
+</component>
+
+<component id="ID_frame09">
+<text><![CDATA[<b>Trame de monodiffus-<br>ion VLAN 30</b>]]></text>
+</component>
+
+<component id="ID_bubble06">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_bubble07">
+<text><![CDATA[<b><font size='12'><u>Ports du commutateur S1</u><br/>F0/1-F0/4 = Agrégation<br/>F0/5 = Agrégation<br/><br/><u>Ports du commutateur S2</u><br/>F0/11 = VLAN 10<br/>F0/18 = VLAN 20<br/>F0/6 = VLAN 30<br/>F0/1-F0/4 = Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_bubble08">
+<text><![CDATA[<b><font size='12'><u>Sous-interfaces R1</u><br/>F0/0.10 : 172.17.10.1<br/>F0/0.20 : 172.17.20.1<br/>F0/0.30 : 172.17.30.1</font></b>]]></text>
+</component>
+
+<component id="ID_bubble09">
+<text><![CDATA[<b><font size='12'>F0/0.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble10">
+<text><![CDATA[<b><font size='12'>F0/0.30</font></b>]]></text>
+</component>
+
+<component id="ID_bubble11">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Texte]]></text>
+</component>
+
+<component id="ID_s1">
+<text><![CDATA[<b>S1</b>]]></text>
+</component>
+<component id="ID_s2">
+<text><![CDATA[<b>S2</b>]]></text>
+</component>
+<component id="ID_s3">
+<text><![CDATA[<b>S3</b>]]></text>
+</component>
+
+	<component id="ID_cont">
+		<text><![CDATA[Cliquez sur Lire pour continuer.]]></text>
+	</component>
+
+</textcomponents>

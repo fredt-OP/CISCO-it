@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+        <exam id="12511" dateexported="03/07/2007">
+        <name></name>
+        <form id="18985" lang="en">
+            
+                
+                    
+       		<form-item order="N/A" usage="N/A">
+            <ai id="111407" type="mc-sa">
+            <question><![CDATA[Sélectionnez la route que prendra le paquet si le réseau de destination est 192.168.1.133]]></question>
+            <choices>
+                                    <choice correct="n">
+                                        <text><![CDATA[O   192.168.1.0  /24  (110/65)  via  192.168.2.2,   00:00:05,   Serial 0/0/0]]></text>
+                                    </choice>
+                                    <choice correct="n">
+                                        <text><![CDATA[R    192.168.1.0  /24  (120/1)   via  192.168.3.2,   00:00:05,   FastEthernet 0/0]]></text>
+                                    </choice>
+                                    <choice correct="y">
+                                        <text><![CDATA[D    192.168.1.0  /24  (90/21765)  via  192.168.4.2,   00:00:05,   Serial 0/0/1]]></text>
+                                    </choice>
+                                    </choices></ai></form-item>
+                                    
+                                        
+                                            
+                                                <form-item order="N/A" usage="N/A">
+                        <ai id="111408" li="3.4.3" type="mc-sa">
+                        <comment/>
+                        <intro/>
+                        <question><![CDATA[Sélectionnez la route que prendra le paquet si le réseau de destination est 192.168.1.228]]></question>
+                        <choices>
+                                    <choice correct="y">
+                                        <text><![CDATA[C     192.168.1.0  /24  is directly connected,   FastEthernet 0/0]]></text>
+                                    </choice>
+                                    <choice correct="n">
+                                        <text><![CDATA[O    192.168.1.0  /24  (110/65)  via  192.168.2.2,   00:00:05,   Serial 0/0/0]]></text>
+ 
+                                    </choice>
+                                    <choice correct="n">
+                                        <text><![CDATA[D    192.168.1.0  /24  (90/21765)  via  192.168.3.2,   00:00:05,   Serial 0/0/1]]></text>
+                                    </choice>
+                                    </choices></ai></form-item>
+                                    
+                                        
+                                            
+                        <form-item order="N/A" usage="N/A">
+                        <ai id="111409" li="3.4.3" type="mc-sa">
+                        <comment/>
+                        <intro/><question><![CDATA[Sélectionnez la route que prendra le paquet si le réseau de destination est 10.10.10.5]]></question><choices>
+                                    <choice correct="n">
+                                        <text><![CDATA[R     10.10.10.0  /16  (120/1)   via  192.168.2.2,  00:00:05,   Serial 0/0/0]]></text>
+                                    </choice>
+                                    <choice correct="n">
+                                        <text><![CDATA[D     10.10.10.0  /16  (90/21765)  via  192.168.3.2,   00:00:05,   Serial 0/0/1]]></text>
+                                    </choice>
+                                    <choice correct="y">
+                                        <text><![CDATA[S     10.10.10.0  /16 [1/0]   via  192.168.4.2]]></text>
+                                    </choice>
+                                    </choices></ai></form-item>
+                                    
+                                    
+                        <form-item order="N/A" usage="N/A">
+                        <ai id="111410" li="3.4.3" type="mc-sa">
+                        <comment/>
+                        <intro/><question><![CDATA[Sélectionnez la route que prendra le paquet si le réseau de destination est 172.16.0.48]]></question><choices>
+                                    <choice correct="n">
+                                        <text><![CDATA[O    172.16.0.0  /16  (110/65)  via  192.168.2.2,   00:00:05,   Serial 0/0/0]]></text>
+                                    </choice>
+                                    <choice correct="y">
+                                        <text><![CDATA[O    172.16.0.0  /24  (110/65)  via  192.168.3.2,   00:00:05,   FastEthernet 0/0]]></text>
+                                    </choice>
+                                    <choice correct="n">
+                                        <text><![CDATA[O    172.16.0.0  /20  (110/65)  via  192.168.4.2,   00:00:05,   Serial 0/0/1]]></text>
+                                    </choice>
+                                    </choices></ai></form-item>
+                                    
+                                    
+                        <form-item order="N/A" usage="N/A">
+                        <ai id="111411" li="3.4.3" type="mc-sa">
+                        <comment/>
+                        <intro/><question><![CDATA[Sélectionnez la route que prendra le paquet si le réseau de destination est 192.168.1.55]]></question><choices>
+                                    <choice correct="y">
+                                        <text><![CDATA[R     192.168.1.0  /26  (120/1)   via  192.168.2.2,   00:00:05,   Serial 0/0/0]]></text>
+                                    </choice>
+                                    <choice correct="n">
+                                        <text><![CDATA[R     192.168.1.0  /24  (120/1)   via  192.168.3.2,   00:00:05,   FastEthernet 0/0]]></text>
+                                    </choice>
+                                    <choice correct="n">
+                                        <text><![CDATA[R     192.168.1.0  /25  (120/1)   via  192.168.4.2,   00:00:05,   Serial 0/0/1]]></text>
+                                    </choice>
+                                    </choices></ai></form-item>
+                                    
+                                   
+                                    
+                                    </form></exam> 

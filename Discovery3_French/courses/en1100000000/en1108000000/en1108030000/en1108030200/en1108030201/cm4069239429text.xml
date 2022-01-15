@@ -1,0 +1,21 @@
+<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[<ul><li>Rejected packets cause an IP access list to send an ICMP host unreachable message to the sender and discards the packet.</li><li>Outbound filters do not affect traffic that originates from the local router.</li><li>An implicit <b>deny any is</b> at the end of all access lists (does not appear in the listing).</li><li>Create your ACLs in a text editor to make it easier to edit them. You can copy and paste the ACL statements into the router.<li></ul>]]></text> 
+ 
+ </component>
+ 
+<component id="ID_txt02">
+<text><![CDATA[More Information]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[More Information]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<font size="14"><p align='center'><b>ACL Processing and Creation Guidelines</b></p></font><br/><ul><li>Configure only one access list per protocol, per direction.</li><li>Apply standard access lists closest to the destination.</li><li>Apply extended access lists closest to the source.</li><li>Use the correct number range for the type of list.</li><li>Determine the inbound or outbound direction looking at the port from inside the router.</li><li>Process statements sequentially from the top of the list to the bottom.</li><li>Deny packet if no match is found.</li><li>Enter the Access list statements in order from specific to general.</li><li>Configure an ACL with a <b>permit</b> statement or all traffic will be denied.</li></ul>]]></text>
+</component>
+
+</textcomponents>

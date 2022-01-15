@@ -1,0 +1,117 @@
+﻿<textcomponents>
+
+
+<component id="ID_prompt">
+<text><![CDATA[<b>Cliquez sur chaque bouton de symptôme pour en savoir plus sur les causes possibles de ce symptôme.</b>]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[<b>Erreur de fonctionnement ou de connectivité sur la couche réseau ou au niveau supérieur</b>]]></text> 
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[<b>Performances réseau inférieures aux niveaux de référence</b>]]></text> 
+</component>
+
+<component id="ID_btn03">
+<text><![CDATA[<b>Nombre excessif de diffusions</b>]]></text> 
+</component>
+
+<component id="ID_btn04">
+<text><![CDATA[<b>Messages d’erreur de la console</b>]]></text> 
+</component>
+
+<component id="ID_btn05">
+<text><![CDATA[<b>Utilisation élevée de l’unité centrale (UC)</b>]]></text>
+</component>
+
+<component id="ID_btn06">
+<text><![CDATA[<b>Messages d’erreur de la console</b>]]></text>
+</component>
+
+<component id="ID_osi01">
+<text><![CDATA[<b>7 Application</b>]]></text> 
+</component>
+
+<component id="ID_osi02">
+<text><![CDATA[<b>6 Présentation</b>]]></text> 
+</component>
+
+<component id="ID_osi03">
+<text><![CDATA[<b>5 Session</b>]]></text> 
+</component>
+
+<component id="ID_osi04">
+<text><![CDATA[<b>4 Transport</b>]]></text> 
+</component>
+
+<component id="ID_osi05">
+<text><![CDATA[<b>3 Réseau</b>]]></text>
+</component>
+
+<component id="ID_osi06">
+<text><![CDATA[<b>2 Liaison de données</b>]]></text>
+</component>
+
+<component id="ID_osi07">
+<text><![CDATA[<b>1 Physique</b>]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Erreur de fonctionnement ou de connectivité sur la couche réseau ou au niveau supérieur</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<li>Des cartes réseau mal configurées ou des pilotes de carte réseau défectueux peuvent arrêter l’échange de trames dans une liaison.</li><li>Des erreurs d’encapsulation sur des liaisons série ou des liaisons de réseau étendu peuvent également provoquer une perte de connectivité dans les circuits opérationnels.</li>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Performances réseau inférieures aux niveaux de référence</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[<li>Les trames abandonnées parce qu’excédant la capacité de l’interface ou parce que présentant des erreurs CRC ou des erreurs de trame peuvent entraîner une diminution des performances réseau. Ces problèmes peuvent être identifiés via des statistiques sur le nombre d’erreurs et des messages d’erreur sur la console qui apparaissent sur le commutateur ou le routeur. </li><li>Des cartes réseaux défectueuses, des erreurs d’interface et des parasites électriques sont des problèmes matériels fréquents de couche 1, pouvant entraîner des erreurs de trame de couche 2 au sein du réseau.</li>]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Nombre excessif de diffusions</b>]]></text>
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<li>De grands segments de réseau de couche 2 peuvent contribuer à des diffusions excessives.</li><li>Les virus et les vers peuvent également entraîner un trafic excessif au sein du réseau.</li>]]></text>
+</component>
+
+<component id="ID_title04">
+<text><![CDATA[<b>Messages d’erreur de la console</b>]]></text>
+</component>
+
+
+<component id="ID_txt04">
+<text><![CDATA[<li>Des messages s’affichent généralement sur la console lorsque le périphérique détecte une erreur d’interprétation des trames entrantes, tels que des problèmes d’encapsulation ou de tramage.</li><li>Des messages s’affichent également lorsque des messages de test d’activité sont attendus mais n’arrivent pas. </li><li>Le message qui apparaît le plus souvent sur la console pour signaler un problème de couche 2 est le message de panne du protocole de ligne.</li>]]></text>
+</component>
+
+<component id="ID_title05">
+<text><![CDATA[<b>Utilisation élevée de l’unité centrale (UC)</b>]]></text>
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[<li>Une utilisation excessive de l’UC indique qu’un périphérique atteint ou dépasse ses limites.</li><li>La surcharge de l’UC peut provoquer la désactivation ou le dysfonctionnement d’un périphérique.</li>]]></text>
+</component>
+
+<component id="ID_title06">
+<text><![CDATA[<b>Messages d’erreur de la console</b>]]></text>
+</component>
+
+
+<component id="ID_txt06">
+<text><![CDATA[<li>Les messages d’erreur affichés sur la console d’un périphérique peuvent indiquer un problème de couche physique.</li><li>Des messages mentionnant la défaillance d’un périphérique ou d’un protocole indiquent des problèmes liés au câblage ou à l’interface.</li>]]></text>
+</component>
+
+
+
+</textcomponents>
+

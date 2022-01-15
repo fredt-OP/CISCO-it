@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13386" dateexported="05/01/2009">
+		<name>Module 6 Questionnaire</name>
+		<form id="22694" lang="fr"><form-item>
+			<ai id="138826" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="138826" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Une interface physique pour de nombreux VLAN</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Restriction de bande passante</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Connexion au port du commutateur en mode d’accès</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Complexité de la configuration des câbles</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Connexion au port du commutateur en mode d’agrégation</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Une interface physique par VLAN</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Physique</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Sous-interface</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser les propriétés associées aux interfaces de gauche vers le type d’interface approprié de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="174" /><display componentIdent="4" xpos="600" ypos="236" /><display componentIdent="5" xpos="600" ypos="273" /><display componentIdent="6" xpos="600" ypos="310" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216608" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="216608" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident><componentident>3</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident><componentident>2</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="216608" action="Set">1</setvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident><componentident>4</componentident><componentident>3</componentident></scoringzonecontains></conditionvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="138827" type="mc-sa"><question><![CDATA[Lisez l’exposé. PC1 souhaite envoyer des données à PC2, mais ne connaît pas l’adresse MAC de ce dernier. Lorsque PC1 envoie une requête ARP, quelle interface retourne une adresse MAC ? <br/><img src="i138827n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[PC1 et PC2 étant connectés au même commutateur, PC2 fournit son adresse MAC. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur fournit l’adresse MAC de l’interface fa0/1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les sous-interfaces du routeur possédant des adresses MAC uniques, la sous-interface fa0/0.10 fournit son adresse MAC. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur fournit l’adresse MAC de l’interface physique f0/0.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138867" type="mc-ma"><question><![CDATA[Lisez l’exposé. Quels sont les trois avantages de remplacer les liaisons de VLAN individuels entre le commutateur et le routeur par une agrégation et des sous-interfaces ? (Choisissez trois réponses.) <br/><img src="i138867n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Cela permet de libérer 2 ports de commutateur et de routeur.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Cela permet de réduire la complexité du câblage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cela permet d’augmenter la bande passante disponible pour le routage entre VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cela permet de réduire la complexité du dépannage des problèmes liés au routage entre VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Cela permet d’ajouter des VLAN sans nécessiter des câbles ou des ports de commutateur supplémentaires.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cela permet de réduire la complexité de la configuration du routage entre VLAN. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138824" type="mc-sa"><question><![CDATA[Quelle condition est requise pour activer la commutation de couche 3 ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Le routage IP doit être activé sur le commutateur de couche 3.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les commutateurs participants doivent présenter des numéros de VLAN uniques. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les sous-réseaux routés doivent se trouver sur le même VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les parties entre VLAN de la commutation de couche 3 doivent utiliser la méthode « router-on-a-stick ». ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138830" type="mc-sa"><question><![CDATA[Lors de l’implémentation d’une configuration « router-on-a-stick », quel élément est nécessaire pour établir la communication entre les VLAN ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Plusieurs ports de commutateur doivent se connecter à une interface de routeur unique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Adresse IP de VLAN native configurée sur l’interface physique du routeur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les ports agrégés doivent être configurés en mode d’accès. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Sous-interfaces de routeur.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138828" type="mc-ma"><question><![CDATA[Quelles sont les deux méthodologies utilisables pour réduire les risques d’interruption du routage entre VLAN en raison d’une liaison entre commutateurs défaillante ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Configuration et activation d’EtherChannel  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Désactivation de l’agrégation sur tous les ports du commutateur ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configuration et activation d’autres chemins entre les commutateurs  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Affectation de tous les ports du commutateur à différents VLAN ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configuration et activation du protocole DTP (Dynamic Tree Protocol) ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138868" type="mc-ma"><question><![CDATA[Lisez l’exposé. Parmi les affirmations suivantes relatives à cette configuration, lesquelles sont vraies ? (Choisissez trois réponses.) <br/><img src="i138868n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Cette configuration n’évoluera pas facilement.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Cette configuration limitera le nombre de VLAN en raison du nombre limité d’interfaces physiques pouvant être prises en charge par le routeur.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les connexions entre le commutateur et le routeur sont des liens agrégés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La totalité du trafic entre le routeur et le commutateur doit être désignée par son ID de VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Cette configuration n’est pas la plus économique.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur sert de passerelle aux hôtes. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138833" type="mc-sa"><question><![CDATA[En quoi le modèle « router-on-a-stick » d’un routage entre VLAN diffère-t-il du routage traditionnel ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le modèle « router-on-a-stick » utilise plusieurs interfaces physiques sur le routeur. Chacune est configurée avec une adresse de couche 3 différente. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le modèle « router-on-a-stick » utilise une interface physique unique sur le commutateur. Seule la commande <b>no shutdown</b> y est émise. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le modèle « router-on-a-stick » utilise des sous-interfaces sur le routeur. Seule la commande <b>no shutdown</b> est émise sur l’interface physique.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le modèle « router-on-a-stick » utilise des sous-interfaces sur le commutateur. Seule la commande <b>no shutdown</b> est émise sur l’interface physique. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138831" type="mc-sa"><question><![CDATA[Quelle commande l’administrateur réseau utilise-t-il pour déterminer si la communication entre VLAN est opérationnelle ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>show vlan</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>ping</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>ipconfig</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show interface</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138834" type="mc-sa"><question><![CDATA[Lisez l’exposé. Quelle affirmation relative au résultat affiché est vraie ? <br/><img src="i138834n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Chaque sous-interface retourne une adresse unique en réponse aux requêtes ARP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La configuration du routage entre VLAN n’est pas la solution la plus économique ou évolutive. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur est correctement configuré pour un routage entre VLAN « router-on-a-stick » entre les sous-réseaux 10.10.10.0/24 et 10.10.11.0/24.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’agrégation a été négociée de façon dynamique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adressage de couche 3 n’est pas correctement configuré. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138829" type="mc-ma"><question><![CDATA[Dans une configuration « router-on-a-stick », quels sont les deux éléments nécessaires pour prendre en charge la connectivité entre le routeur et le commutateur ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Tous les ports du commutateur doivent être configurés comme ports d’accès. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’interface physique routeur-commutateur doit être configurée avec une adresse IP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les sous-interfaces du routeur doivent être configurées avec des adresses uniques dans différents sous-réseaux.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le port du commutateur qui se connecte au routeur doit être configuré comme agrégation.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Chaque sous-interface doit être configurée avec la commande <b>no shutdown</b>. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138869" type="mc-ma"><question><![CDATA[Lisez l’exposé. Parmi les affirmations suivantes relatives à la configuration du schéma, lesquelles sont vraies ? (Choisissez trois réponses.) <br/><img src="i138869n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Les liaisons entre le routeur et le commutateur sont des liaisons en mode d’accès.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Chaque interface de routeur nécessite une adresse IP unique sur des sous-réseaux différents pour chaque VLAN.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Chaque interface de commutateur nécessite une adresse IP unique sur des sous-réseaux différents pour chaque VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Chaque interface de routeur nécessite une commande <b>no shutdown</b>.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un protocole de routage doit être configuré sur le routeur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur sera configuré avec la commande <b>interface fastethernet0/0.2</b>. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="138825" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="138825" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Routage traditionnel</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Routage Spanning Tree</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Méthode « router-on-a-stick »</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Routage 802.1Q</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Routage basé sur commutateur</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Type de routage entre VLAN</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Parmi les types de routage de gauche, faites glisser vers la droite les trois qui sont des types de routage entre VLAN valides. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="10" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="174" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216185" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="216185" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="216185" action="Set">1</setvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="138857" type="mc-sa"><question><![CDATA[Un technicien réseau configure un routeur pour prendre en charge le routage entre VLAN. Une fois le mode de configuration globale dans l’ILC défini sur R1 et l’interface Fast Ethernet F0/0/1 sélectionnée, l’administrateur réseau tente de saisir la commande <b>encapsulation dot1q 10</b>. Le routeur refuse la commande. Quelle est la cause de l’échec ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le port de routeur F0/0/1 n’est pas physiquement connecté au commutateur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le VLAN0001 a été renommé. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’interface F0/0/1 de R1 a été configurée pour un fonctionnement de sous-interface. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Cette commande ne peut être configurée que sur les sous-interfaces de routeur.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’interface F0/0/1 du commutateur est désactivée. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

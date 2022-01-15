@@ -1,0 +1,225 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Explain why static routing might be preferred over dynamic routing. ]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 3.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[Static routing is more secure, uses less router computational power, and is easier to understand. It is more secure because routers do not advertise routing information to other routers. It uses less router resources than dynamic routing, which requires the implementation of algorithms and the processing of update packets. It is often easier to understand than some of the more complex routing protocols.]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. What are four ways of classifying dynamic routing protocols? ]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from (3.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[Dynamic routing protocols can be classified as either interior or exterior, distance vector or link-state, classful or classless, and by speed of convergence.]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) What are the most common metrics used in IP dynamic routing protocols?  ]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from 3.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[Hop count, bandwidth, delay, and cost]]></text>
+</component>
+
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) What is administrative distance and why is it important?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from 3.4)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[Administrative distance is a measure of the trustworthiness of a route source. It is used when a router has learned routes to the same destination from two different route sources. It is important because not all route sources are equal. For example, you certainly would not want a router sending traffic to another router if the destination is a directly connected network! Administrative distance ensures that this does not happen because directly connected routes are trusted over all other route sources.]]></text>
+</component>
+
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) It can be said that every router must have at least one static route. Explain why this statement might be true.]]></text>
+</component>
+<component id="*ID_Q5_txt04">
+<text><![CDATA[(from 2.3)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[Every router that forwards user traffic to the Internet will have at least one static route. That static route would be a default route. Every household that has a router to connect to the Internet uses a static default route to send all traffic to the ISP. 
+]]></text>
+</component>
+
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) Students new to routing sometimes assume that bandwidth is a better metric than hop count. Why might this be a false assumption?]]></text>
+</component>
+<component id="*ID_Q6_txt04">
+<text><![CDATA[(from 2.3)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[Hop count may actually use the better path if the path chosen by a bandwidth metric is saturated with traffic. ]]></text>
+</component>
+
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>This concludes this chapter's Problems and Discussion questions.</b>]]></text>
+</component>
+
+
+
+
+<!-- Question 7 -->
+
+
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[(from 2.4)]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) Why must you remove a static route from the configuration before modifying it?]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[A static route cannot just be changed. The original route must also be removed from the configuration. Otherwise, both the original route and the new route will be stored in the configuration.<br/><b>This concludes the Chapter Problems & Discussion questions.</b>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) Explain the value of summary and default routes.]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(from 2.5)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[Summary and default routes decrease the size of routing tables. If a router has a large collection of static routes pointing out the same interface, sometimes these routes can be summarized into one routing table entry. Without default routing, every router would need a route to every location in the network.]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 9 -->
+
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[(from 2.6)]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9. List the commands used to test and troubleshoot a network implementation.]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[<b>This concludes the Chapter Problems and Discussion questions.</b>]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+
+

@@ -1,0 +1,178 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 5.5.1 : &lt;br&gt;examen de la passerelle d'un périphérique&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+
+
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt; &lt;h3&gt;Table d'adressage&lt;/h3&gt;&lt;center&gt; &lt;table border=&quot;1&quot; width=&quot;75%&quot; id=&quot;table1&quot;&gt; &lt;tr&gt; &lt;td bgcolor=&quot;#000000&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Périphérique&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td bgcolor=&quot;#000000&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Interférence&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td bgcolor=&quot;#000000&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Adresse IP&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td bgcolor=&quot;#000000&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Masque de sous-réseau&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td bgcolor=&quot;#000000&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Passerelle par défaut&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td rowspan=&quot;2&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;R1-ISP&lt;/b&gt;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;S0/0/0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;10.10.10.6&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.255.252&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;N/D&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;Fa0/0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;192.168.254.253&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;N/D&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td rowspan=&quot;2&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;R2-Central&lt;/b&gt;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;S0/0/0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;10.10.10.5&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.255.252&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;N/D&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;Fa0/0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;172.168.255.254&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;N/D&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;Serveur Eagle&lt;/b&gt;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;FastEthernet&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;192.168.254.254&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;192.168..254.253&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;Hôte 1A&lt;/b&gt;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;FastEthernet&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;172.16.1.1&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;span style=&quot;color: black&quot;&gt;172.16.255.254&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;Hôte 1B&lt;/b&gt;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;FastEthernet&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;172.16.1.2&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;span style=&quot;color: black&quot;&gt;172.16.255.254&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;Hôte 11A&lt;/b&gt;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;FastEthernet&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;172.16.11.1&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;span style=&quot;color: black&quot;&gt;172.16.255.254&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;Hôte 11B&lt;/b&gt;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;FastEthernet&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;172.16.1.2&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;span style=&quot;color: black&quot;&gt;172.16.255.254&lt;/span&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;S1-Central&lt;/b&gt;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;N/D&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;172.16.254.1&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;&lt;/center&gt; &lt;!--This is the beginning of the IP addressing table code&quot; --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Comprendre et expliquer l'objectif d'une adresse de passerelle, &lt;li&gt;Comprendre le mode de configuration des informations réseau sur un ordinateur Windows, &lt;li&gt;Dépanner un problème caché d'adresse de passerelle.&lt;/ul&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Une adresse IP se compose d'une partie réseau et d'une partie hôte. Un ordinateur qui communique avec un autre périphérique doit d'abord savoir comment l'atteindre. Pour les périphériques situés sur le même réseau local (LAN), la partie hôte de l'adresse IP sert d'identifiant. La partie réseau du périphérique de destination est la même que celle du périphérique hôte. &lt;/p&gt; &lt;p&gt;Au contraire, des périphériques sur des réseaux différents possèdent des numéros de réseau source et de destination différents. La partie réseau de l'adresse IP permet d'identifier quand un paquet doit être envoyé à une adresse de passerelle, qui est attribuée à un périphérique réseau qui transfère des paquets entre des réseaux distants. &lt;/p&gt; &lt;p&gt;Un routeur est affecté à l'adresse de passerelle pour tous les périphériques du LAN. Un des objectifs du routeur est de servir de point d'entrée pour les paquets arrivant sur le réseau et de point de sortie pour les paquets quittant le réseau. &lt;/p&gt; &lt;p&gt;Les adresses de passerelle sont très importantes pour les utilisateurs. Cisco estime que 80 % du trafic réseau est destiné aux périphériques d'autres réseaux, et seulement 20 % aux périphériques locaux. On parle de règle des 80/20. Par conséquent, si une passerelle ne peut pas être jointe par les périphériques LAN, les utilisateurs ne pourront pas effectuer leur travail. &lt;p&gt;
+
+&lt;!-- All activities end with the following footer --&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h2&gt;&lt;/h2&gt; &lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says &apos;At the completion of this task, when you check Results, your score should be xxx%&apos; where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT doable in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt;
+
+&lt;h3&gt;Tâche 1 : compréhension et explication de l'objectif d'une adresse de passerelle&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. &lt;b&gt;Ouvrez une fenêtre d'invite de commande sur un ordinateur hôte pod.&lt;/b&gt;&lt;/h4&gt; &lt;p&gt;Lancez la commande &lt;b&gt;ipconfig&lt;/b&gt;.&lt;/p&gt; &lt;p&gt;Quelle est l'adresse de passerelle par défaut ?&lt;/p&gt; &lt;h4&gt;Étape 2. &lt;b&gt;Utilisez la commande ping pour vérifier la connectivité avec l'adresse IP 127.0.0.1. &lt;/b&gt; &lt;/h4&gt; La commande ping a-t-elle abouti ?&lt;p&gt;&lt;b&gt;Étape 3.&lt;/b&gt; &lt;b&gt;Utilisez la commande ping pour différentes adresses IP du réseau 127.0.0.0, 127.10.1.1 et 127.255.255.255.&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Obtenez-vous des réponses positives ? Sinon, pourquoi ? &lt;/p&gt; &lt;h4&gt;À la fin de cette tâche, votre taux de progression doit atteindre 0 %. &lt;/h4&gt;
+
+&lt;!-- All activities end with the following footer --&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PAGE translate="true">
+&lt;h3&gt;Tâche 2 : compréhension du mode de configuration des informations réseau.&lt;/h3&gt; &lt;p&gt;Les problèmes de connectivité sont très souvent liés à des paramètres réseau incorrects. Lors du dépannage de ces problèmes, plusieurs outils sont disponibles pour déterminer rapidement la configuration réseau.&lt;br&gt; &lt;/p&gt; &lt;p&gt;&lt;b&gt;Étape 1.&lt;/b&gt; &lt;b&gt;Examinez les propriétés d'adresse IP réseau :&lt;/b&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Cliquez sur le &lt;b&gt;PC&lt;/b&gt; &amp;gt; onglet &lt;b&gt;Desktop&lt;/b&gt; &amp;gt; &lt;b&gt;IP Configuration &lt;/b&gt;.&lt;/li&gt;
+	
+&lt;/ul&gt; &lt;p&gt;&lt;b&gt;Étape 2. Pour examiner les propriétés à l'aide de la commande ipconfig : &lt;/b&gt; &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Cliquez sur le &lt;b&gt;PC &lt;/b&gt;&amp;gt; onglet &lt;b&gt; Desktop &lt;/b&gt;&amp;gt; &lt;b&gt;Command Prompt&lt;/b&gt;&lt;/li&gt; &lt;li&gt;Tapez ensuite &lt;b&gt;ipconfig&lt;/b&gt; ou &lt;b&gt;ipconfig /all&lt;/b&gt;.&lt;/li&gt; &lt;/ul&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de progression doit atteindre 0 %. &lt;/h4&gt;
+
+&lt;!-- All activities end with the following footer --&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">
+&lt;h3&gt;&lt;b&gt;Tâche 3 : dépannage d'un problème caché d'adresse de passerelle.&lt;/b&gt;&lt;/h3&gt; &lt;p&gt;Lors du dépannage de problèmes réseau, une compréhension approfondie du réseau peut souvent aider à identifier le problème réel.&amp;nbsp; &lt;/p&gt; &lt;p&gt;En tant qu'ingénieur Cisco de support technique en poste, vous devez aider le technicien du support technique. Ce dernier a en effet reçu un rapport d'incident d'un utilisateur de l'ordinateur hôte-1A, se plaignant que l'ordinateur hôte-11B, &lt;b&gt;hôte-11B.exemple.com&lt;/b&gt;, ne répond pas aux commandes ping. Le technicien a vérifié les câbles et les paramètres réseau sur les deux ordinateurs, sans rien trouver d'anormal. Vous vérifiez auprès de l'ingénieur réseau de l'entreprise, qui vous signale l'arrêt provisoire de R2-Central pour une mise à niveau matérielle. Comprenant maintenant la situation, vous demandez au technicien d'envoyer une commande ping à l'adresse IP pour hôte-11B, 172.16.11.2, à partir d'hôte-1A. Les commandes ping aboutissent. Vous demandez alors au technicien de lancer une commande ping pour l'adresse IP de la passerelle, 172.16.254.254, et la commande échoue. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Votre tâche consiste à trouver et résoudre le problème se produisant sur ce réseau.&lt;/b&gt;&lt;/p&gt; &lt;/p&gt; &lt;b&gt;INDICE : pour résoudre ce problème, vérifiez les interfaces de R2-Central.&lt;/B&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de progression doit atteindre 100%. &lt;/h4&gt;
+
+&lt;!-- All activities end with the following footer --&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true">. . .</TEXT>
+ <TEXT translate="true">. . .</TEXT>
+ <TEXT translate="true">. . .</TEXT>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">11A</ID>
+ <ID translate="true">11B</ID>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">11A</ID>
+ <ID translate="true">11B</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13445" dateexported="10/16/2008">
+		<name>Module 6 Questionnaire</name>
+		<form id="22071" lang="fr"><form-item order="fixed">
+			<ai id="128183" type="mc-ma"><question><![CDATA[Quelles sont les caractéristiques des routeurs intérieurs ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Utilisent des protocoles de routage BGP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Utilisent des protocoles de routage IGP.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Également appelés passerelles frontières. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Échangent des routes locales.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Assurent la transmission entre des systèmes autonomes. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="128222" type="mc-ma"><question><![CDATA[Quelles méthodes permettent d’autoriser l’ajout de réseaux distants dans une table de routage ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Saisie par un administrateur  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Acquisition via un protocole de routage  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Exportation depuis la table d’adresses MAC ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Importation depuis une mémoire Flash sur le routeur ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Acquisition via la traduction d’adresses ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Acquisition par diffusion de numéro de réseau par les cartes réseau ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="128223" type="mc-sa"><question><![CDATA[Où le routeur collecte-t-il des informations relatives au meilleur chemin pour envoyer un paquet destiné à un hôte situé sur un réseau distant ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Depuis le IOS stocké dans la mémoire flash ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Depuis la table de routage stockée dans la mémoire vive  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Depuis le fichier de configuration stocké dans la mémoire vive ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Depuis le paquet IP en cours de transmission ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="128224" type="mc-ma"><question><![CDATA[Parmi les énoncés suivants, lesquels sont exacts concernant le trafic de transit ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Tous les FAI doivent permettre le trafic de transit. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le trafic de transit peut surcharger un routeur Internet.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le trafic de transit est conçu pour un réseau contenu au sein du même système autonome. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les FAI ne peuvent pas autoriser le trafic de transit d’un système autonome à un autre. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le trafic de transit est acheminé via un système autonome pour atteindre un système autonome distant.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="128225" type="mc-sa"><question><![CDATA[Un routeur de client est configuré pour utiliser le protocole BGP afin d’échanger des routes avec un routeur voisin directement connecté. À quoi correspond le numéro de système autonome distant dans la commande <b>neighbor 209.165.201.1 remote-as 200</b> ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Numéro de système autonome du routeur local ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Numéro de système autonome du routeur directement connecté  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Nombre de sauts du système autonome distant ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Système autonome de transit à utiliser pour atteindre le voisin ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="128226" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="128226" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>AS</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>ASN</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>FAI</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>IGP</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>EGP</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Exemple : BGP</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Fournisseur d’accès Internet</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Exemple : RIP, EIGRP et OSPF</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Groupe d’administrateurs réseau gérés par une entité unique</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Numéro enregistré qui identifie un ensemble spécifique de réseaux</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Cliquez sur chaque terme de la partie gauche et faites-le glisser sur la définition correspondante dans la partie droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="203206" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="203206" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="203206" action="Set">1</setvar><scoringdescription>AS-groupe d’administrateurs réseau gérés par 1 entité ; ASN-numéro enregistré ; ISP-fournisseur d’accès Internet ; IGP-RIP, EIGRP et OSPF ; EGP-BGP</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="61154" type="mc-ma"><question><![CDATA[Un nouveau réseau doit être configuré sur un routeur. Quelles tâches doivent être exécutées pour configurer cette interface et mettre en œuvre le routage IP dynamique pour le nouveau réseau ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Sélectionner le protocole de routage à configurer.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Attribuer une adresse IP et un masque de sous-réseau à l'interface.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mettre à jour les informations de configuration <b>ip host</b> avec le nom de l'unité et la nouvelle adresse IP de l'interface. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configurer le protocole de routage avec la nouvelle adresse IP de l'interface.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configurer le protocole de routage avec la nouvelle adresse IP de l'interface et le masque de sous-réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configurer le protocole de routage utilisé sur tous les autres routeurs d'entreprise avec les informations relatives au nouveau réseau. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61172" type="mc-sa"><question><![CDATA[Quel est la fonction de la commande <b>network</b> dans le cadre de la configuration du protocole de routage RIP ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle définit RIP v2 comme protocole de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle active la technique VLSM. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle définit le chemin de destination le plus rapide. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elle définit les interfaces qui échangeront les mises à jour de routage RIP.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle active le protocole RIP pour toutes les routes existant au sein du réseau d'entreprise. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="128172" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="128172" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>debug ip rip</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show ip protocols</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show running-config</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show ip route</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show interfaces</b></mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Affiche des informations sur la configuration actuelle pour les protocoles de routage et interfaces configurés</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Vérifie que les interfaces sont actives et opérationnelles</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Affiche les réseaux annoncés dans les mises à jour, dès que celles-ci sont envoyées et reçues</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Vérifie que le protocole de routage s’exécute et annonce les réseaux appropriés</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Vérifie que les routes reçues sont installées dans la table de routage</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="760"><material><mattext>Pour garantir un routage approprié sur un réseau, l’administrateur réseau doit toujours vérifier la configuration du routeur pour s’assurer que des routes appropriées sont disponibles. Les commandes situées dans la partie gauche permettront à l’administrateur réseau d’afficher les informations requises pour configurer le routeur. Faites glisser chaque commande sur le résultat correspondant.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-85.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="109938" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="109938" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="109938" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="128173" type="mc-sa"><question><![CDATA[Un ingénieur réseau configure un nouveau routeur. Les interfaces ont été configurées avec des adresses IP mais aucun protocole de routage ou route statique n’a encore été configuré. Quelles routes sont présentes dans la table de routage ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Routes par défaut ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routes de diffusion ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Connexions directes  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Aucune route. La table de routage est vide. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="63888" type="mc-ma"><question><![CDATA[Parmi les opérations suivantes, lesquelles sont effectuées par des protocoles de routage ?  (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Apprendre les routes disponibles pour toutes les destinations  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fournir un système d'adressage pour l'identification des réseaux ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Informer les hôtes LAN sur les nouvelles adresses de passerelle par défaut ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Insérer la meilleure route dans la table de routage  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Supprimer des routes de la table de routage lorsqu'elles ne sont plus valides  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Transporter des données utilisateur vers le réseau de destination ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="128180" type="mc-sa"><question><![CDATA[Quels périphériques réseau sont utilisés sur Internet pour acheminer le trafic entre des systèmes autonomes ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Routeurs périphériques frontières  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routeurs intérieurs ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hôtes Internet ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Commutateurs du fournisseur d’accès ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="128181" type="mc-sa"><question><![CDATA[Parmi les protocoles ci-dessous, lequel est un exemple de protocole de routage utilisé pour l’échange d’informations entre des systèmes autonomes ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[OSPF (Open Shortest Path First) ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[BGP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[EIGRP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIP ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

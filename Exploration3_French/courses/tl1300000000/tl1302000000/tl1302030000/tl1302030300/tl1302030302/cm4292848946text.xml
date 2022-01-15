@@ -1,0 +1,49 @@
+<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Configuration de la mémoire tampon d’historique des commandes</b>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+		<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+		
+					
+	</tr>
+	<tr>
+		
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active l’historique du terminal. Vous pouvez exécuter cette commande en mode utilisateur ou en mode d’exécution privilégié. </td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>terminal history</b></font></td>
+			
+	</tr>
+	
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configure la taille de l’historique du terminal.<br/>L’historique du terminal peut conserver entre 0 et 256 lignes de commande.</td>
+		<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>terminal history size 50 </b></font></td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Rétablit la taille de l’historique du terminal d’après sa valeur par défaut, soit 10 lignes de commande.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>terminal no history size</b></font></td>
+			
+	</tr>
+	
+	<tr>
+		
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Désactive l’historique du terminal.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>terminal no history</b></font></td>
+			
+	</tr>
+		
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

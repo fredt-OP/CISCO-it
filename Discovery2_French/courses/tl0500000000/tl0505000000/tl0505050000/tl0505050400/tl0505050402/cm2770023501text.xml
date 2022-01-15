@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+<component id="ID_instructions">
+  <text><![CDATA[<b>Cliquez sur chaque bouton pour afficher les commandes de configuration pour la sécurité des ports.</b>]]></text> 
+  </component>
+<component id="ID_title1">
+  <text><![CDATA[<b>Configuration de la sécurité statique des ports</b>]]></text> 
+  </component>
+  <component id="ID_title2">
+    <text><![CDATA[<b>Configuration de la sécurité des ports sur un commutateur Cisco Catalyst</b>]]></text> 
+  </component>
+  <component id="ID_title3">
+    <text><![CDATA[<b>Script de configuration de la sécurité des ports</b>]]></text> 
+  </component>
+    <component id="ID_txt1">
+    <text><![CDATA[<b>Configurer la sécurité statique des ports</b>]]></text> 
+    </component>
+    <component id="ID_txt2">
+    <text><![CDATA[<b>Configurer la sécurité dynamique des ports</b>]]></text> 
+    </component>
+    <component id="ID_txt3">
+    <text><![CDATA[<b>Configurer la sécurité rémanente des ports</b>]]></text> 
+  </component>
+  <component id="tableHTML1">
+  	    <text><![CDATA[
+  	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  	    	
+  	    	<tr>
+  	  	  		
+  	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+  	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Passez en mode de configuration globale. </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1#</font><font face='_typewriter'><b>configure terminal</b></font></td>
+  			
+  	</tr>
+  	
+  	
+  	<tr>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Précisez le type et le numéro de l’interface physique à configurer.</font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config)#</font><font face='_typewriter'><b>interface fastEthernet 0/18</b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Définissez le mode d’interface sur : access.</font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>switchport mode access </b></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  		
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Activez la sécurité des ports sur l’interface.</font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>switchport port-security </b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Définir le nombre maximal d’adresses sécurisées sur 50</font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>switchport port-security maximum 50 </b></font></td>
+  			
+  	</tr>
+  	<tr>
+  			
+  			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Activer l’acquisition rémanente d’adresses MAC</font></td>
+  			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>switchport port-security mac-address sticky </b></font></td>
+  				
+  	</tr>
+  	<tr>
+  			
+  			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Repassez en mode d’exécution privilégié.</font></td>
+  			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>end</b></font></td>
+  				
+  	</tr>
+  	
+  </table>
+  ]]></text> 
+  </component>
+  
+<component id="tableHTML2">
+   <text><![CDATA[
+     	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+     	    	
+     	    	<tr>
+     	  	  		
+     	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+     	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Passez en mode de configuration globale. </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1#</font><font face='_typewriter'><b>configure terminal</b></font></td>
+  			
+  	</tr>
+  	
+  	
+  	<tr>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Précisez le type et le numéro de l’interface physique à configurer (par exemple, fastEthernet Fa0/18) et passez en mode de configuration d’interface.</font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config)#</font><font face='_typewriter'><b>interface fastEthernet 0/18</b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Définissez le mode d’interface sur : access. Vous ne pouvez pas configurer une interface en tant que port sécurisé selon le mode dynamique par défaut approprié. </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>switchport mode access </b></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  		
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Activez la sécurité des ports sur l’interface. </font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>switchport port-security</b> mac-address <i>[adresse-mac]</i></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Repassez en mode d’exécution privilégié.  </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>end</b></font></td>
+  			
+  	</tr>		
+  	
+  </table>
+  ]]></text> 
+  </component>
+  <component id="tableHTML">
+   	    <text><![CDATA[
+     	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+     	    	
+     	    	<tr>
+     	  	  		
+     	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+     	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Passez en mode de configuration globale. </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1#</font><font face='_typewriter'><b>configure terminal</b></font></td>
+  			
+  	</tr>
+  	
+  	
+  	<tr>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Précisez le type et le numéro de l’interface physique à configurer (par exemple, fastEthernet Fa0/18) et passez en mode de configuration d’interface.</font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config)#</font><font face='_typewriter'><b>interface fastEthernet 0/18</b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Définissez le mode d’interface sur : access. Vous ne pouvez pas configurer une interface en tant que port sécurisé selon le mode dynamique par défaut approprié. </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>switchport mode access </b></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  		
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Activez la sécurité des ports sur l’interface.</font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>switchport port-security </b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Repassez en mode d’exécution privilégié.  </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >S1(config-if)#</font><font face='_typewriter'><b>end</b></font></td>
+  			
+  	</tr>		
+  	
+  </table>
+  ]]></text> 
+  </component>
+  
+  <component id="TipText">
+	<text><![CDATA[Plus d’info]]></text>
+</component>
+<component id="tipTitle">
+	<text><![CDATA[Plus d’info]]></text>
+</component>
+<component id="tipBody">
+	<text><![CDATA[La sécurité des ports est comparable au filtrage des adresses MAC sur le périphérique Linksys. Seules les adresses MAC sécurisées, acquises dynamiquement ou configurées manuellement, sont autorisées à envoyer et recevoir des messages sur le réseau.]]></text>
+</component>
+  
+  </textcomponents>

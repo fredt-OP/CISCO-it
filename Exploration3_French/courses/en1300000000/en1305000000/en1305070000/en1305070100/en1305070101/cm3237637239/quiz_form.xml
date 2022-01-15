@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="07/02/2008">
+		<name>Module  Quiz</name>
+		<form id="21472" lang=""><form-item order="fixed">
+			<ai id="119548" type="mc-ma"><question><![CDATA[Which are two problems associated with redundant switched Ethernet topologies? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[broadcast storms  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[routing loops ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[multiple frame copies  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[load balancing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[incorrect frame addressing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[unicast frame flooding ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119549" type="mc-sa"><question><![CDATA[Refer to the exhibit. The network shown in the exhibit is not running spanning-tree algorithm. What would be the result if an ARP request were sent by the workstation? <br/><img src="16565.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The frame will loop between SW-1 and SW-2 until the TTL field drops to zero. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The frame will loop until the TTL field reaches the default maximum value. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The frame will be prevented from travelling the network by the router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The frame will loop between SW-1 and SW-2 repeatedly.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119550" type="mc-sa"><question><![CDATA[Refer to the exhibit. How will spanning tree prevent switching loops in the network shown in the exhibit if all switches have only the default VLAN configured? <br/><img src="16566.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Traffic will be load-balanced between all switches. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[A single switch will be elected as the root switch, and redundant paths to this switch will be blocked.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Two of the switches will be elected root bridges, thus blocking traffic between the other two switches. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Two of the switches will be elected designated switches, thus blocking traffic between the other two switches. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Either Switch-A or Switch-B will be elected as root switch and Switch-C or Switch-D will become the designated switch. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="51939" type="mc-sa"><question><![CDATA[What must a switch running spanning tree do when it is first turned on?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[adjust its bridge priority value ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[learn the BIDs of all other switches in the network  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[request the MAC address of all connected hosts ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[select the BPDU with the greatest MAC address ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[adjust its bridge priority value to network conditions ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140460" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117732" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>MSTP</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>PVST</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>PVST+</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>rapid PVST+</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>RSTP</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>supports the use of  ISL trunking and load balancing</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>incorporated into IEEE 802.1D-2004; supports BackboneFast, UplinkFast, and PortFast</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>supports BackboneFast, UplinkFast, and PortFast and is based on IEEE 802.1w</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>supports BPDU guard, root guard, and the use of IEEE 802.1Q trunking</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>reduces the number of spanning-tree instances required to support large numbers of VLANs</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the spanning-tree protocol variants on the left to the appropriate description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="217599" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="217599" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="217599" action="Set">1</setvar><scoringdescription>From top to bottom:PVST, RSTP, rapid PVST+, PVST+, MSTP.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119551" type="mc-ma"><question><![CDATA[Which three ports will discard data traffic during STP operation? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[blocking ports  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[disabled ports  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[designated ports ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[root ports ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[forwarding ports ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[listening ports  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="55682" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="55682" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>learning</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>disabled</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>forwarding</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>listening</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>blocking</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>does not receive BPDUs</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>receives BPDUs only</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>receives BPDUs, processes BPDUs, only</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>receives BPDUs, processes BPDUs, fills MAC address table, only</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>receives BPDUs, processes BPDUs, fills MAC table, sends data</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Match the Spanning Tree port states with their activities by dragging the options on the left to the correct targets on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-111.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="obs1" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>1 disabled, blocking, listening, learning, forwarding</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="118478" type="mc-ma"><question><![CDATA[Which three timers determine the Spanning Tree Protocol performance and state changes? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[blocking delay ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[hello time  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[port speed ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[forward delay  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[maximum age  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[backward delay ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119552" type="mc-sa"><question><![CDATA[Refer to the exhibit. What will be the result of the spanning tree root bridge selection process in the network shown in the exhibit if each switch contains only one VLAN? <br/><img src="16568.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Cat-A will be the root bridge. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cat-B will be the root bridge. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Cat-C will be the root bridge.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cat-A and Cat-B will be the root bridges. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cat-A and Cat-C will be the root bridges. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="118480" type="mc-sa"><question><![CDATA[The per-VLAN Spanning Tree Protocol plus (PVST+) provides support for which IEEE standard?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[802.1Q ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[802.1D  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[802.1w ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[802.1 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117790" type="mc-ma"><question><![CDATA[Which two characteristics are associated with Rapid Spanning Tree Protocol? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[supports  UplinkFast and BackboneFast ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[preferred protocol for preventing Layer 2 loops  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[forward delay and max-age timers are unneeded  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[lacks backward compatibility with IEEE 802.1D ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[compatible with rapid PVST+ ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117796" type="mc-sa"><question><![CDATA[What is a characteristic of an RSTP edge port?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[It remains in learning state until it receives a BPDU from the root bridge. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It goes directly from the listening state to the forwarding state. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Once enabled, it immediately transitions to the forwarding state.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It generates and propagates topology changes when it transitions to a disabled status. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117860" type="mc-ma"><question><![CDATA[When implementing RSTP for non-edge ports, which two categories of link types are available? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[shared  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[multipoint ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[redundant ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[point-to-point  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[dedicated ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117738" type="mc-sa"><question><![CDATA[What method does RSTP use to decrease the time it takes to designate a new root port when the existing root port fails?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[smaller values for forward-delay and max-age timers than STP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[pre-negotiated alternate ports for the root port  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[TCN BPDUs originating from the affected switch ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[an improved spanning-tree algorithm ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117779" type="mc-sa"><question><![CDATA[A switch currently has only one VLAN configured and is running a single instance of rapid spanning tree.  Which action will create a second rapid spanning tree instance?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[creating a second VLAN ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[entering the <b>spanning-tree mode rapid-pvst</b> command ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[assigning a port to a VLAN other than VLAN 1  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[connecting to another switch ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117843" type="mc-sa"><question><![CDATA[Refer to the exhibit. Spanning-tree port priorities are listed beneath each interface. S4 port Gi0/2 is currently in RSTP discarding state. What action would change the state to forwarding? <br/><img src="16219.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Changing the physical port connections so that Gi0/2 connects to S2, and Gi0/1 connects to S3. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Using the <b>spanning-tree vlan priority</b> command to increase the priority of Gi0/2 for all VLANs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Changing the port role for Gi0/1 to non-designated, using the <b>spanning-tree port priority</b> command.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Making S4 the root bridge by manually configuring the MAC address to a lower value than S1. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="118227" type="mc-ma"><question><![CDATA[Refer to the exhibit. Which two statements are true regarding the VLAN0001 spanning-tree environment that switch SW4 is participating in? (Choose two.) <br/><img src="16276.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Spanning tree for VLAN0001 is using the default hello time interval. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The root bridge was selected because of its lower MAC address. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The root port on SW4 is FastEthernet0/14.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SW4 is directly connected to port 16 on the root switch. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The root bridge does not have an aging time. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SW4 is using the timers advertised by the root switch.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="118232" type="mc-sa"><question><![CDATA[Refer to the exhibit. Why would interface fa0/4 have spanning-tree portfast disabled? <br/><img src="16279.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Interface fa0/4 is not active. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Interface fa0/4 could not transition into forwarding mode and was thus disabled. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Interface fa0/4 did not receive a BPDU allowing portfast to be enabled. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Interfaces fa0/1 - 3 are connected to end workstations, while interface fa0/4 is connected to another Layer 2 device.  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

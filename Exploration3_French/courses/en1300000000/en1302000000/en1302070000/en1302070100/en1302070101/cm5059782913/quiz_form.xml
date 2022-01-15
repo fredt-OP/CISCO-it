@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/13/2008">
+		<name>Module  Quiz</name>
+		<form id="22147" lang=""><form-item order="fixed">
+			<ai id="116459" type="mc-sa"><question><![CDATA[Refer to the exhibit. What does the error message signify? <br/><img src="15810.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[A parameter is missing. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The command was entered in the wrong CLI mode. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The data of one of the parameters is incorrect.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The command is ambiguous. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119295" type="mc-sa"><question><![CDATA[What is the effect of entering the <b>banner login #Authorized Personnel Only!#</b> command?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>#Authorized Personnel Only!#</b> appears after the user logs in. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>Authorized Personnel Only!</b> appears only when the user makes a Telnet connection. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>#Authorized Personnel Only!#</b> appears only when the user enters global configuration mode. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>Authorized Personnel Only!</b> appears before the username and password login prompts for any connection.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="116712" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116712" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport port-security violation protect</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport port-security violation restrict</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport port-security violation shutdown</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport port-security mac-address sticky</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport port-security maximum</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>frames with unknown source addresses are dropped and notification is sent</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>frames with unknown source addresses are dropped and no notification is sent</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>frames with unknown source addresses make the port errdisabled and notification is sent</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>defines the number of MAC addresses associated with a port</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>allows dynamically learned MAC addresses to be stored in the running configuration</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the command on the left to the appropriate description on the right. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="213539" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="213539" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="213539" action="Set">1</setvar><scoringdescription>switchport port-security violation protect	frames with unknown source addresses are dropped/no notification switchport port-security violation restrict	frames with unknown source addresses are dropped/notification is sent switchport port-security violation shutdown	frames with unknown source addresses cause the port to show errdisable/notification is sent switchport port-security mac-address sticky	converts dynamically learned MAC addresses to secure MAC addresses switchport port-security maximum		defines the number of MACC addresses associated with a port</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119430" type="mc-sa"><question><![CDATA[Refer to the exhibit. An Ethernet switch has developed the MAC address table shown in the exhibit. What action will the switch take when it receives the frame shown at the bottom of the exhibit? <br/><img src="16497.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[forward the frame out all interfaces ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[forward the frame out all interfaces except Interface3 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[discard the frame ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[forward the frame out Interface1  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[forward the frame out Interface2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[forward the frame out Interface3 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116506" type="mc-sa"><question><![CDATA[Refer to the exhibit. What can be determined from the command output? <br/><img src="15802.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[The system has 32 KB of NVRAM.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The switch has 24 physical ports. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The system was last restarted on May 18, 2005. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The Cisco IOS is a non-standard image. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116460" type="mc-sa"><question><![CDATA[What does pressing Ctrl-P on the command line do?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[begin context checking ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[access symbolic translation ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[access the command history buffer  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[initiate command prompting ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116705" type="mc-sa"><question><![CDATA[What advantage does SSH offer over Telnet when remotely connecting to a device?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[encryption  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[more connection lines ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[connection-oriented services ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[username and password authentication ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="149415" type="mc-sa"><question><![CDATA[Refer to the exhibit. How many collision and broadcast domains are presented in the network? <br/><img src="i149415n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[eight collision domains and two broadcast domains ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[eight collision domains and three broadcast domains ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[12 collision domains and five broadcast domains  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[13 collision domains and two broadcast domains ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="116710" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116710" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>MAC address flooding</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>DHCP starvation</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>CDP attacks	</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Telnet attack</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>broadcasting requests for IP addresses with spoofed MAC addresses</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>using proprietary Cisco protocols to gain information about a switch</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>the attacker fills the switch Content Addressable Memory (CAM) table with invalid MAC addresses</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>using brute force password attacks to gain access to a switch</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the term on the left to the appropriate description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="30" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/><display componentIdent="4" xpos="600" ypos="276"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="213537" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="213537" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="213537" action="Set">1</setvar><scoringdescription>MAC address flooding 	the attacker fills the switch’s Content Addressable Memory (CAM) table with invalid MAC addresses DHCP starvation	broadcasting requests for IP addresses with spoofed MAC addresses CDP attacks	using propriety Cisco protocols to gain information about a switch Telnet attack	using brute force password attacks to gain access to a switch </scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="116682" type="mc-ma"><question><![CDATA[Which three statements are true about the Carrier Sense Multiple Access with Collision Detection (CSMA/CD) technology? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[In an Ethernet LAN domain, each station continuously listens for traffic on the medium to determine when gaps between frame transmissions occur and then sends the frame.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[In an Ethernet LAN domain, stations may begin transmitting any time they detect that the network is quiet (there is no traffic).  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[In the CSMA/CD process, priorities are assigned to particular stations, and the  station with the highest priority transmits frames on the medium. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[If a collision occurs in an Ethernet LAN domain, transmitting stations stop transmitting and wait a random length of time before attempting to retransmit the frame.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[If a collision occurs in an Ethernet LAN domain, only the station with the highest priority continues to transmit and  the rest of the stations wait a random length of time before attempting to retransmit the frame. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[In an Ethernet LAN domain, all stations execute a backoff algorithm based on their assigned priorities before they transmit frames on the medium. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116686" type="mc-sa"><question><![CDATA[How does the Ethernet switch process the incoming  traffic using port-based memory buffering?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[The frames are stored in queues that are linked to specific incoming ports.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The frames are stored in queues that are linked to specific outgoing ports. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The frames are transmitted to the outgoing port immediately. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The frames are stored in queues that are linked to the common memory area. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116757" type="mc-ma"><question><![CDATA[What are two key features of an Ethernet switch with Layer 2 capabilities? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[full-duplex operation  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[broadcast and multicast traffic management ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[security through access lists ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Layer 3 routing functions ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[filtering based on MAC address  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[network address translation (NAT) ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119287" type="mc-sa"><question><![CDATA[The network administrator wants to configure an IP address on a Cisco switch. How does the network administrator assign the IP address?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[in privileged EXEC mode ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[on the switch interface Fast Ethernet 0/0 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[on the management VLAN  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[on the physical interface connected to the router or next-hop device ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="79705" type="mc-sa"><question><![CDATA[Why should a default gateway be assigned to a switch?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[so that there can be remote connectivity to the switch via such programs as Telnet and ping ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[so that frames can be sent through the switch to the router ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[so that frames generated from workstations and destined for remote networks can pass to a higher level ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[so that other networks can be accessed from the command prompt of the switch  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120659" type="mc-ma"><question><![CDATA[Which two tasks does Auto-Negotiation in an Ethernet network accomplish? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[sets the link speed  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[sets IP address  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[sets links duplex mode  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[sets MAC address assignments on switch port ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[sets the ring speed ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119291" type="mc-sa"><question><![CDATA[What is the effect of entering the SW1(config-if)# <b>duplex full</b> command on a Fast Ethernet switch port?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The connected device communicates in two directions, but only one direction at a time. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The switch port returns to its default configuration. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[If the connected device is also set for full duplex, it participates in collision-free communication.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The efficiency of this configuration is typically rated at 50 to 60 percent. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The connected device should be configured as half duplex. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="58510" type="mc-sa"><question><![CDATA[Which term describes the time delay between a frame being sent from a source device and received on a destination device?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[bandwidth ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[latency  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[attenuation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Time-To-Live ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Frame Check Sum ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="116524" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116524" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>copy startup-config running-config</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>copy running-config tftp</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>copy tftp startup-config</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>copy tftp running-config</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>copy startup-config tftp</b></mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>copy running-config startup-config</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Copy the current running configuration to a TFTP server</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Save the current running configuration as the startup configuration</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Restore a configuration from a TFTP server to the running configuration</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Restore the startup configuration to the running system</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the command on the left to the correct description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="213041" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="213041" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="213041" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="116696" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116696" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>enable</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>configure terminal</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>line vty 0 4</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>line con 0</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>password cisco</b></mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>username admin password cisco</b></mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>login</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>enter global configuration mode</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>enter configuration mode for the console line</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>set a password</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>permit login</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Drag the commands on the left to the associated description on the right to secure access to the console port on a switch. (Not all options are used.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="16" yspacing="45" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="213518" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="213518" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="213518" action="Set">1</setvar><scoringdescription>config t, line con 0, password cisco, login</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

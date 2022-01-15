@@ -1,0 +1,101 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[
+&lt;0-7&gt;			Logging severity level
+<br>alerts			Immediate action needed				(severity=1)
+<br>critical		Critical conditions					(severity=2)
+<br>debugging		Debugging messages                (severity=7)
+<br>emergencies    System is unusable                (severity=0)
+<br>errors         Error conditions                  (severity=3)
+<br>filtered       Enable filtered logging
+<br>guaranteed     Guarantee console messages
+<br>informational  Informational messages            (severity=6)
+<br>notifications  Normal but significant conditions (severity=5)
+<br>warnings       Warning conditions                (severity=4)
+<br>xml            Enable logging in XML
+<br>&lt;cr&gt;]]></text> 
+ 
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+  	<td colspan='2'><font color='#FFFFFF'><b>Logging Levels</b></font></td>
+	<td><font color='#FFFFFF'><b>Severity Level &lt;0-7&gt;</b></font></td>
+  </tr> 
+  <tr>
+    <td bgcolor='#DDDDDD'><b>alerts</b></td>
+    <td bgcolor='#DDDDDD'><b>Immediate action needed</b></td>
+    <td bgcolor='#DDDDDD'><b>(severity=1)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>critical</b></td>
+    <td bgcolor='#F2F2F2'><b>Critical conditions</b></td>
+    <td bgcolor='#F2F2F2'><b>(severity=2)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>debugging</b></td>
+    <td bgcolor='#DDDDDD'><b>Debugging messages</b></td>
+    <td bgcolor='#DDDDDD'><b>(severity=7)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>emergencies</b></td>
+    <td bgcolor='#F2F2F2'><b>System is unusable</b></td>
+    <td bgcolor='#F2F2F2'><b>(severity=0)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>errors</b></td>
+    <td bgcolor='#DDDDDD'><b>Error conditions</b></td>
+    <td bgcolor='#DDDDDD'><b>(severity=3)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>filtered</b></td>
+    <td bgcolor='#F2F2F2'><b>Enable filtered logging</b></td>
+    <td bgcolor='#F2F2F2'><b></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>guaranteed</b></td>
+    <td bgcolor='#DDDDDD'><b>Guarantee console messages</b></td>
+    <td bgcolor='#DDDDDD'><b></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>informational</b></td>
+    <td bgcolor='#F2F2F2'><b>Informational messages</b></td>
+    <td bgcolor='#F2F2F2'><b>(severity=6)</b></td>
+  </tr>
+    <tr>
+    <td bgcolor='#DDDDDD'><b>notifications</b></td>
+    <td bgcolor='#DDDDDD'><b>Normal but significant conditions</b></td>
+    <td bgcolor='#DDDDDD'><b>(severity=5)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>warnings</b></td>
+    <td bgcolor='#F2F2F2'><b>Warning conditions</b></td>
+    <td bgcolor='#F2F2F2'><b>(severity=4)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>xml</b></td>
+    <td bgcolor='#DDDDDD'><b>Enable logging in XML</b></td>
+    <td bgcolor='#DDDDDD'><b></b></td>
+  </tr>
+</table>]]></text> 
+ 
+</component>
+ 
+ <component id="ID_alert">
+<text><![CDATA[ALERT]]></text>
+</component>
+ 
+<component id="ID_txt02">
+<text><![CDATA[More Information]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Logging Levels]]></text>
+</component>
+
+
+
+</textcomponents>

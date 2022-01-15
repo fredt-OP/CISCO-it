@@ -1,0 +1,29 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Dépannage à l’aide du modèle OSI</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur chaque bouton pour afficher le résultat de la commande.</b>]]></text>
+</component>
+
+<component id="ID_button1">
+<text><![CDATA[<b><font face="_typewriter">ipconfig</font> et <font face="_typewriter">ping</font></b>]]></text>
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[<b><font face="_typewriter">traceroute</font> </b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<font face="_typewriter"><b>D:\Documents and Settings>ipconfig<br>Configuration IP de Windows 2000<br>Carte Ethernet Connexion au réseau local 2 :<br>          État du support.  .   .  .  .  .  .  .  .: Câble déconnecté<br>Carte Ethernet Connexion au réseau local :<br>          Suffixe DNS propre à la connexion.  .  . : cisco.com<br>          Addresse IP.  .  .  .  .  .  .  .  .  . .: 192.168.100.10<br>        Masque de sous-réseau.  .  .  .  .  .  .  .: 255.255.255.0<br>        Passerelle par défaut.  .  .  .  .  .  .  .: 192.168.100.1<br>D:\Documents and Settings>_ </b></font>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<font face="_typewriter"><br><b>D:\Documents and Settings>ping 192.168.100.1<br>Envoi d'une requête 'ping' sur 192.168.100.1 avec 32 octets de données :<br>Réponse de 192.168.100.1: octets=32 temps=4ms TTL=64<br>Réponse de 192.168.100.1: octets=32 temps=4ms TTL=64<br>Réponse de 192.168.100.1: octets=32 temps=4ms TTL=64<br>Réponse de 192.168.100.1: octets=32 temps=4ms TTL=64<br>Statistiques Ping pour 192.168.100.1:<br>      Paquets :  envoyés = 4,  reçus = 4,  perdus = 0  (perte 0%),<br>Durée approximative des boucles en millisecondes :<br>      Minimum = 2ms,   Maximum = 4ms,   Moyenne = 2ms<br>D:\Documents and Settings> </b></font>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<font face="_typewriter"><b>C:\Documents and Settings>tracert 209.165.200.230<br><br>Détermination de l'itinéraire vers 209.265.200.225<br><br>  1    &lt;1 ms    &lt;1 ms    &lt;1 ms  172.16.0.1<br>  2    21 ms    21 ms    21 ms  209.165.200.225<br>  3    51 ms    51 ms    51 ms  209.165.200.230<br><br>Itinéraire déterminé.<br><br>C:\Documents and Settings> </b></font>]]></text>
+</component>
+</textcomponents>

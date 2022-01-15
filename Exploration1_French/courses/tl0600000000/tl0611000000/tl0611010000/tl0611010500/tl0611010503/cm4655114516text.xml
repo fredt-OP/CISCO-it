@@ -1,0 +1,36 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Aide par vérification de la syntaxe d’une commande</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Message d’erreur </b></font></td>
+<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Signification</b></font></td>
+<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Exemples</b></font></td>
+<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Comment obtenir de l’aide</b></font></td>
+</tr>
+<tr>
+<td width='200' bgcolor='#DDDDDD' valign='top' type='dynamic'><font face="_typewriter">% Ambiguous command: 'command'</font></td>
+<td width='200' bgcolor='#DDDDDD' valign='top' type='dynamic'>Vous n’avez pas entré assez de caractères pour permettre à IOS de reconnaître la commande.</td>
+<td width='250' bgcolor='#DDDDDD' valign='top' type='dynamic'><font face="_typewriter">Switch#<b>c % Ambiguous command:'c'</b></font></td>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Entrez à nouveau la commande suivie d’un point d’interrogation (?) sans espace intermédiaire.<br/>Les mots clés que vous pouvez entrer avec la commande s’affichent.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign='top' type='dynamic'><font face="_typewriter">% Incomplete command.</font></td>
+<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Vous n’avez pas entré tous les mots clés ou arguments.</td>
+<td bgcolor='#F2F2F2' valign='top' type='dynamic'><font face="_typewriter">Switch#<b>clock set % Incomplete command.</b></font></td>
+<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Rentrez la commande suivie d’un point d’interrogation (?) avec un espace après le dernier mot. IOS affiche alors les mots clés ou les arguments obligatoires.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font face="_typewriter">% Invalid input detected at '^' marker</font></td>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'>La commande entrée est incorrecte. L’erreur a eu lieu à l’emplacement marqué par l’accent circonflexe (^).</td>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font face="_typewriter">Switch#<b>clock set 19:50:00 25 6</b><br/>       <b>                      ^</b><br/><b>% Invalid input detected at '^' marker.</b></font></td>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Rentrez la commande suivie d’un point d’interrogation (?) à l’emplacement indiqué par l’accent circonflexe (^). En outre, vous devrez peut-être supprimer les derniers mots clés ou arguments.</td>
+</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

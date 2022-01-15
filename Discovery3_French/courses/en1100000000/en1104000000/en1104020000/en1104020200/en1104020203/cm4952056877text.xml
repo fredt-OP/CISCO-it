@@ -1,0 +1,85 @@
+﻿<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<b><font size='+2'>Activity</font></b><br><br>Determine if the two hosts are on the same network.<br><br><b>Choose whether the hosts are on the same network or a different network.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+	<component id="txt_numrows">
+		<text><![CDATA[4]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[<b>Same Network</b>]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[<b>Different Network</b>]]></text>
+	</component>
+
+		
+    <component id="txt_q1">
+		<text><![CDATA[<b>Hosts    IP Address     Subnet Mask            /Slash Format</b><br/>Host 1   172.16.5.72     255.255.255.0         /24<br/>Host 2   172.16.5.79     255.255.255.0         /24]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[<b>Hosts    IP Address     Subnet Mask            /Slash Format</b><br/>Host 1   192.168.19.35  255.255.255.224    /27<br/>Host 2   192.168.19.48  255.255.255.224    /27]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[<b>Hosts    IP Address     Subnet Mask            /Slash Format</b><br/>Host 1   10.128.14.14    255.255.255.240    /28<br/>Host 2   10.128.14.19    255.255.255.240    /28]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[<b>Hosts    IP Address     Subnet Mask            /Slash Format</b><br/>Host 1   192.168.3.68    255.255.255.248    /29<br/>Host 2   192.168.3.74    255.255.255.248    /29]]></text>
+	</component>
+	<!--<component id="txt_q5">
+		<text><![CDATA[A home user purchases a Linksys WRT300N with integrated router, 4-port switch and wireless access point. One computer will connect to the switch and other users will access the Linksys via wireless.]]></text>
+	</component>-->
+  
+	
+    <component id="txt_a1">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[2]]></text>
+	</component>
+	<!-- <component id="txt_a5">
+		<text><![CDATA[2]]></text>
+	</component>-->
+
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully determined whether the two hosts are on the same network. Click Next to continue.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review the process of determining if hosts are on the same network and try again.]]></text>
+</component>
+
+
+</textcomponents>

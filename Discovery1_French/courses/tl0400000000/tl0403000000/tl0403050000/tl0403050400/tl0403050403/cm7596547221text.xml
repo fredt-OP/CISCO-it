@@ -1,0 +1,137 @@
+﻿<textcomponents>
+<component id="ID_activity">
+<text><![CDATA[<B>Exercice</B>]]></text> 
+ </component>
+<component id="button1">
+<text><![CDATA[<B>Vérifier</B>]]></text> 
+ </component>
+<component id="button2">
+<text><![CDATA[<B>Nouveau problème pratique</B>]]></text> 
+ </component>
+<component id="helpBtn_txt">
+<text><![CDATA[<B>Aide</B>]]></text> 
+ </component>
+
+<component id="ID_instructions">
+<text><![CDATA[Déterminez la façon dont le routeur transmet un paquet en fonction des adresses source et de destination et des informations de la table de routage.<br/><B>Répondez aux questions en fonction des informations contenues dans l’image.</B>]]></text> 
+ </component>
+<component id="question1_txt">
+<text><![CDATA[<B>Quelle est l’adresse de la passerelle par défaut utilisée pour transmettre ce paquet au routeur ?</B>]]></text> 
+ </component>
+<component id="question2_txt">
+<text><![CDATA[<B>Lorsque le routeur reçoit ce paquet, vers quelle interface le transmet-il ?</B>]]></text> 
+ </component>
+<component id="topology_hub1_txt">
+<text><![CDATA[<B>Concentrateur</B>]]></text> 
+ </component>
+<component id="topology_hub2_txt">
+<text><![CDATA[<B>Concentrateur</B>]]></text> 
+ </component>
+<component id="topology_hub3_txt">
+<text><![CDATA[<B>Concentrateur</B>]]></text> 
+ </component>
+<component id="q1option1_txt">
+<text><![CDATA[<B>192.168.3.1</B>]]></text> 
+ </component>
+<component id="q1option2_txt">
+<text><![CDATA[<B>172.16.1.1</B>]]></text> 
+ </component>
+<component id="q1option3_txt">
+<text><![CDATA[<B>10.5.5.1</B>]]></text> 
+ </component>
+<component id="q2option1_txt">
+<text><![CDATA[<B>Ethernet1/1</B>]]></text> 
+ </component>
+<component id="q2option2_txt">
+<text><![CDATA[<B>Ethernet1/2</B>]]></text> 
+ </component>
+<component id="q2option3_txt">
+<text><![CDATA[<B>Ethernet1/3</B>]]></text> 
+ </component>
+<component id="helpTitle">
+<text><![CDATA[<B>Aide</B>]]></text> 
+ </component>
+<component id="helpBody">
+<text><![CDATA[Cet exercice vous interroge sur vos connaissances relatives à la manière dont un routeur transmet un paquet.<br><br>Cliquez sur le bouton Vérifier pour vérifier votre réponse.<br>Cliquez sur le bouton Nouveau problème pratique pour commencer un nouvel exercice pratique généré par l’ordinateur.<br><br>Vous disposez de la topologie physique et de la table de routage du routeur. Vous disposez également d’un paquet qui affiche les adresses IP source et de destination.<br><br>Ces activités générées par l’ordinateur ont une paire source et de destination avec l’une des adresses indiquées dans la topologie. Les activités personnalisées peuvent faire appel à n’importe quelle adresse du paquet.<br><br>1. Votre objectif est de déterminer comment le routeur va traiter ce paquet selon la table de routage affichée.<br><br>2. Pour la première question, sélectionnez l’adresse de la passerelle par défaut correspondant à l’emplacement où le routeur va recevoir le paquet.<br><br>3. Pour la deuxième question, sélectionnez l’interface correspondante vers laquelle le routeur va envoyer le paquet.<br><br>4. Cliquez sur le bouton Vérifier pour voir si votre réponse est correcte.<br><br>Aide supplémentaire :<br>pour envoyer des paquets en dehors du réseau local, un hôte les envoie vers le routeur par l’intermédiaire de la passerelle par défaut.<br><br>La passerelle par défaut est l’interface du routeur qui participe en tant qu’hôte sur ce réseau local.<br><br>Un routeur crée une table des réseaux directement connectés ainsi que des réseaux de destination qu’il acquiert à partir des autres routeurs. Cette table de routage répertorie le réseau de destination et l’interface vers laquelle les paquets doivent être envoyés pour atteindre ce réseau. Les paquets peuvent devoir être envoyés vers un autre routeur avant d’être transférés vers la destination finale.<br><br>Un routeur a uniquement des rapports avec un réseau de destination. Il a pour fonction d’envoyer des paquets de l’interface la plus proche du réseau de destination afin de les transférer vers leur destination finale.<br>]]></text> 
+ </component>
+<component id="routeTable_txt">
+<text><![CDATA[<B>Table de routage</B>]]></text> 
+ </component>
+<component id="type_txt">
+<text><![CDATA[<B>Type</B>]]></text> 
+ </component>
+<component id="network_txt">
+<text><![CDATA[<B>Réseau</B>]]></text> 
+ </component>
+<component id="port_txt">
+<text><![CDATA[<B>Port</B>]]></text> 
+ </component>
+<component id="nextHopIP_txt">
+<text><![CDATA[<B>Prochaine adresse IP de saut</B>]]></text> 
+ </component>
+<component id="metric_txt">
+<text><![CDATA[<B>Mesure</B>]]></text> 
+ </component>
+<component id="r1Port">
+<text><![CDATA[<B>Ethernet1/1</B>]]></text> 
+ </component>
+<component id="r2Port">
+<text><![CDATA[<B>Ethernet1/2</B>]]></text> 
+ </component>
+<component id="r3Port">
+<text><![CDATA[<B>Ethernet1/3</B>]]></text> 
+ </component>
+<component id="r1Type_txt">
+<text><![CDATA[<B>C</B>]]></text> 
+ </component>
+<component id="r2Type_txt">
+<text><![CDATA[<B>C</B>]]></text> 
+ </component>
+<component id="r3Type_txt">
+<text><![CDATA[<B>C</B>]]></text> 
+ </component>
+<component id="frame_txt">
+<text><![CDATA[<B>Trame</B>]]></text> 
+ </component>
+<component id="startTag_txt">
+<text><![CDATA[<B>Balise de départ</B>]]></text> 
+ </component>
+<component id="dstIp_txt">
+<text><![CDATA[<B>Adresse IP de destination</B>]]></text> 
+ </component>
+
+<component id="sourceIp_txt">
+<text><![CDATA[<B>IP source</B>]]></text> 
+ </component>
+
+<component id="encapsulatedData_txt">
+<text><![CDATA[<B>Données encapsulées</B>]]></text> 
+ </component>
+
+<component id="invalidNetwork">
+<text><![CDATA[<b>Choisissez l’un des trois réseaux compris dans la table de routage.</b>]]></text> 
+ </component>
+<component id="invalidHost">
+<text><![CDATA[<b>Saisissez une plage d’hôtes comprise entre 2 et 254.</b>]]></text> 
+ </component>
+<component id="sameAddress">
+<text><![CDATA[<b>L’adresse de destination se trouve sur le même réseau que l’adresse source. Choisissez un autre réseau.</b>]]></text> 
+ </component>
+<component id="missingAddress">
+<text><![CDATA[<b>Saisissez une adresse source et une adresse de destination pour ce paquet.</b>]]></text> 
+ </component>
+
+<component id="incorrect1">
+<text><![CDATA[<b>Incorrect. À la question 1, l’adresse de la passerelle par défaut que vous avez indiquée en fonction de l’adresse source, est incorrecte. Réessayez.</b>]]></text> 
+ </component>
+
+<component id="incorrect2">
+<text><![CDATA[<b>Incorrect. À la question 2, votre réponse sur la façon dont le routeur va transférer le paquet en fonction de l’adresse de destination est incorrecte. Réessayez.</b>]]></text> 
+ </component>
+
+<component id="correct">
+<text><![CDATA[<b>Correct.</b>]]></text> 
+ </component>
+
+
+</textcomponents>

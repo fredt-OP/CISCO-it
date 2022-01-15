@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Dynamic DNS</b>]]></text>
+</component>
+
+<component id="ID_instruct">
+<text><![CDATA[<b>Click each scenario to see how dynamic update functions.</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>DHCP Updates Host Record:<br/>Some older operating systems do not support dynamic updating DNS. For these operating systems, you can configure some DHCP servers to dynamically update DNS on behalf of the client. The process of using DHCP to update DNS for the client is as follows:<br/>1. The client requests an address from a DHCP server.<br/>2. The DHCP server assigns an IP address to the client.<br/>3. The DHCP server registers a DNS host record with the configured DNS server on behalf of the client.</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Client Updates Host Record</b>]]></text>
+</component>
+
+<component id="ID_txt05a">
+<text><![CDATA[<b>Client Updates Host Record</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>DHCP Updates Host Record</b>]]></text>
+</component>
+
+<component id="ID_txt06a">
+<text><![CDATA[<b>DHCP Updates Host Record</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>DNS Server</b>]]></text>
+</component>
+
+<component id="ID_txt07a">
+<text><![CDATA[<b>DNS Server</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>DNS dynamic update of pointer (PTR) name</b>]]></text>
+</component>
+
+<component id="ID_txt09a">
+<text><![CDATA[<b>DNS dynamic update of H1 name</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>DHCP Server</b>]]></text>
+</component>
+
+<component id="ID_txt10a">
+<text><![CDATA[<b>DHCP Server</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>DNS dynamic update of H1 name</b>]]></text>
+</component>
+
+<component id="ID_txt11a">
+<text><![CDATA[<b>DNS dynamic update of pointer (PTR) name</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>IP lease acknowledgement</b>]]></text>
+</component>
+
+<component id="ID_txt12a">
+<text><![CDATA[<b>IP lease acknowledgement</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>DHCP Client</b>]]></text>
+</component>
+
+<component id="ID_txt13a">
+<text><![CDATA[<b>DHCP Client</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>IP lease request</b>]]></text>
+</component>
+
+<component id="ID_txt14a">
+<text><![CDATA[<b>IP lease request</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>1</b>]]></text>
+</component>
+
+<component id="ID_txt15a">
+<text><![CDATA[<b>1</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_txt16a">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>3</b>]]></text>
+</component>
+
+<component id="ID_txt17a">
+<text><![CDATA[<b>3</b>]]></text>
+</component>
+
+<component id="ID_txtH1">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+
+<component id="ID_txtH1b">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>4</b>]]></text>
+</component>
+
+<component id="ID_txt18a">
+<text><![CDATA[<b>4</b>]]></text>
+</component>
+
+<component id="tipTitle">		
+<text>Client Updates Host Record</text>	
+</component>
+
+<component id="tipBody">		
+	<text><![CDATA[DHCP clients capable of dynamically updating their own DNS host record do the following:<br/>1. The client requests an address from a DHCP server.<br/>2. The DHCP server assigns an IP address to the client.<br/>3. The client registers its DNS host record with the configured DNS server.<br />4. The DHCP server registers the pointer (PTR) name for the client.]]></text>	
+</component>
+
+<component id="tipTitle1">		
+	<text>DHCP Updates Host Record</text>	
+</component>
+
+<component id="tipBody1">		
+	<text><![CDATA[Some older operating systems do not support dynamic updating DNS. For these operating systems, you can configure some DHCP servers to dynamically update DNS on behalf of the client. The process of using DHCP to update DNS for the client is as follows:<br/>1. The client requests an address from a DHCP server.<br/>2. The DHCP server assigns an IP address to the client.<br/>3. The DHCP server registers a DNS host record with the configured DNS server on behalf of the client.<br />4. The DHCP server registers the pointer (PTR) name for the client.]]></text>	
+</component>
+
+
+
+</textcomponents>

@@ -1,0 +1,160 @@
+var currentAnswerPtr = 1;
+var showAns = false;
+var stepBeforeAnswer = 0;
+
+// Modified by Dean Wood 2/6/2003 - to include step 0 in help
+function showAnswer(stepNum)
+{
+    var indexvalue = 0;
+    if (showAns == true)
+    {  
+        answerInitialize(true);
+        goToNextStep(stepNum, stepNum);
+
+        indexvalue = stepnum;
+
+        if(stepNum > 0)
+            expandCommand(stepNum,indexvalue);
+    }
+}
+
+function expandCommand(stepNum,index)
+{
+    prompt = getPrompt(StepModeArray[stepNum]);
+    writeToRouter(prompt);
+    writeToRouter(AnswerArray[index][0].commandName);
+    for (i=1; i < 16; i++)
+	{
+	    ptr = AnswerArray[index][0];
+		if ( eval("ptr.param" + i).length > 0)
+		   writeToRouter(" " + eval("ptr.param" + i));
+	}
+    writeToRouter("\n");
+
+    if(AnswerArray[index+1][0].stepnum == AnswerArray[index][0].stepnum
+    && AnswerArray[index+1][0].matrixCheck == True
+    && AnswerArray[index][0].matrixCheck == True)
+    {
+		expandCommand(stepNum, index + 1); //recursion to show all answers (it works :P)
+										   //Tony's answer to solve missing show answer steps 2/07/03
+	}
+}
+
+function writeToRouter(Str)
+{
+    HyperTerminal.sRouterB.output.text += Str;
+}
+
+function answerInitialize(flag)
+{
+    if (flag)
+    {
+        HyperTerminal.sRouterB.output.text = "";
+        HyperTerminal.sRouterB._visible = true;
+        HyperTerminal.sRouterA._visible = false;
+        HyperTerminal.cursor._visible = false;
+    }
+    else
+    {
+        HyperTerminal.sRouterB.output.text = "";
+        HyperTerminal.sRouterB._visible = false;
+        HyperTerminal.sRouterA._visible = true;
+        HyperTerminal.cursor._visible = true;
+    }
+}
+
+function getPrompt(arg1)
+{
+var stepDevice = routerInfoArray[routerUsedForThisStep[stepnum]].deviceType;
+    //holds the string that is the new prompt
+    var p = "";
+    if (arg1 == "user") {
+
+        if (stepDevice != "Switch 4006 Sup 2")
+            p = ">";
+        else
+            p = "> ";
+
+    } else if (arg1 == "enable") {
+
+        if (stepDevice != "Switch 4006 Sup 2")
+            p = "#";
+        else
+            p = "> (enable) ";
+
+    } else if (arg1 == "global") {
+
+        p = "(config)#";
+
+    }
+
+    else if (arg1.substr(0, 3) == "int") {
+        p = "(config-if)#";
+    }
+
+    else if (arg1.substr(0, 3) == "sub") {
+        p = "(config-subif)#";
+    }
+
+    else if (arg1.substr(0, 4) == "line") {
+        p = "(config-line)#";
+    }
+
+    else if (arg1.substr(0, 6) == "router") {
+        p = "(config-router)#";
+    }
+
+    else if (arg1.indexOf("controller") == 0) {
+        p = "(config-controller)#";
+    }
+
+    else if (arg1.indexOf("extNacl") == 0) {
+        p = "(config-ext-nacl)#";
+    }
+
+    else if (arg1.indexOf("mapClass") == 0) {
+        p = "(config-map-class)#";
+    }
+
+    else if (arg1.indexOf("timeRange") == 0) {
+        p = "(config-time-range)#";
+    }
+
+    else if (arg1.indexOf("dhcp") == 0) {
+        p = "(dhcp-config)#";
+    }
+
+    else if (arg1.indexOf("routeMap") == 0) {
+        p = "(config-route-map)#";
+    }
+
+    else if (arg1.indexOf("classMap") == 0) {
+        p = "(config-cmap)#";
+    }
+
+    else if (arg1.indexOf("policyMap") == 0) {
+        p = "(config-pmap)#";
+    }
+
+    else if (arg1.indexOf("policyMapClass") == 0) {
+        p = "(config-pmap-c)#";
+    }
+
+    else if (arg1 == "vlanDB") {
+        p = "(vlan)#";
+    }
+    else if (arg1 == "ATMPVC") {
+    p = "(config-if-atm-vc)#";
+    }
+    else if (arg1 == "DOS")
+    {
+        p = " C:\\>";
+    }
+    else if (arg1 == "NameOnly")
+    {
+            p = "";
+    }
+trace("p = " + p);
+    //set the new prompt and mode on the router in question
+    return rRouterA.run.hostname + p;
+}

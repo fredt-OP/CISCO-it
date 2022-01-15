@@ -1,0 +1,157 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>STP Topology</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Click Play to see the animation<./b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b><font size="12">Trunk2</font></b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b><font size="12">Trunk3</font></b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b><font size="12">Trunk1</font></b>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[PC1 sends a broadcast to switch S2.]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Switch S2 forwards the broadcast out all switch ports, except the originating port and the port associated with Trunk2.]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[Switch S1 forwards the broadcast out all ports, except the originating port. Switch S3 receives the frame but does not continue to forward it back to switch S2 due to the blocked port.]]></text> 
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[PC1 sends a broadcast to switch S2.]]></text> 
+  </component>
+  <component id="ID_txt10">
+  <text><![CDATA[Switch S2 forwards the broadcast out all switch ports, except the originating port and the port associated with Trunk2.]]></text> 
+  </component>
+  <component id="ID_txt11">
+  <text><![CDATA[Switch S1 forwards the broadcast out all ports, except the originating port. Switch S3 receives the frame but does not continue to forward it back to switch S2 due to the blocked port.]]></text> 
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[PC1 sends a broadcast frame to switch S2. The trunk link between switch S2 and switch S1 has failed.]]></text> 
+  </component>
+  <component id="ID_txt13">
+  <text><![CDATA[Switch S3 unblocks the port for Trunk2 and switch S2 blocks the port for Trunk1. Switch S2 forwards the broadcast out all switch ports, except the originating port and the failed link for Trunk1.]]></text> 
+  </component>
+  <component id="ID_txt14">
+  <text><![CDATA[Switch S3 forwards the broadcast out all available switch ports, except the originating port.]]></text> 
+  </component>
+  <component id="ID_txt15">
+  <text><![CDATA[Switch S1 forwards the broadcast out all available switch ports, except the originating port and the port for Trunk1 since it is not available while the link is down.]]></text> 
+  </component>
+  <component id="ID_txt16">
+  <text><![CDATA[Normal STP Operation]]></text> 
+  </component>
+  <component id="ID_txt17">
+  <text><![CDATA[STP compensates for network failure]]></text> 
+  </component>
+  
+  
+  
+  
+  <component id="play"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+
+
+
+  <component id="play1"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause1">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind1">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward1">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute1">
+
+		<text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute1">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous1">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next1">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript1">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+
+
+
+
+
+
+
+</textcomponents>

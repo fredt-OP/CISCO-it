@@ -1,0 +1,1385 @@
+//Modified by Bargavi 
+//to be compatible with Flash MX
+// Modified by Dean Wood 05.10.01
+//  Changed hard-coded 7s to cursorXOffset
+
+
+// ***** process (int) *****
+// IN:  1 integer representing the keycode of a key pressed
+// DO:  process the key by calling other functions
+// NOTE:
+//      process is a global variable name.  it can be assigned with another function name.
+//      that means process is a pointer variable to other functions.
+//      ie, the following line, when the key capturing event calls process(keycode),
+//      it will call the router_startup_processStartUp() function.
+
+var process = router_startup_processStartUp;
+var processName = new String("router_startup_processStartUp");  // a global variable storing which function is currently pointed by process.
+
+var doneIsWaiting = false;
+
+// ***** commandline_changeProcess (str) *****
+//IN: p = string, name of a function (next process to run)
+//DO: assign this function to the process 'p'
+//OUT: <none>
+function commandline_changeProcess(p) {
+    processName = p;
+
+    //the current process is set to the 'p' process
+  //modified by Bargavi
+   with(eval("_root.r" + _root.active_router ))
+	 {
+	  processCurrent = p;
+	  }
+    process = eval(p);
+}
+
+
+
+
+// ***** commandline_processCommandLine(int) *****
+//IN: keycode = int, represents the keycode of a key pressed
+//
+//  NOTE: This is the most common process function because the user is at
+//  the command line most of the time.
+//DO: process a key entered at the command line
+function commandline_processCommandLine(keycode) {
+
+    //special keycodes temporarily defined
+    var KEY_CTRL = -10;
+    var KEY_TAB  = -11;
+
+
+    //this.controlCharPressed = 0;
+    //this.lineIndexCounter = 0;
+
+
+    // use this as a pointer to the visible router object
+    var rptr = eval("_root.r" + _root.VISIBLE_ROUTER);
+
+    // use this as a pointer to the active router object
+    var rptr2 = eval("_root.r" + _root.active_router);
+    
+    //resets the more function scroll; tells the more function to count
+    //the number of lines printed starting from the line when this
+    //function is called
+    rptr.scrollStartLine = rptr.lastDLine - 23;
+
+    //output_write("keycode="+keycode);
+    //output_write("!switch="+rptr.controlCharPressed);
+
+    if (rptr.controlCharPressed == 0) {
+
+        if (keycode == KEY_CTRL) {
+
+            //<Ctrl> key is pressed
+
+            //set the rptr.controlCharPressed switch so that the
+            //next key to be pressed, becomes part of a
+            //<Ctrl>-something sequence
+            rptr.controlCharPressed = 1;
+            return;
+
+        } else {
+
+            //the key pressed was anything but <Ctrl>, so
+            //interpret the keypress like normal
+
+
+            if (keycode == 8) {
+
+                //BACKSPACE detected:  delete 1 character if
+                //the input is longer than 0.
+
+
+                if (rptr.lineIndexCounter > 0) {
+                    //we only need to delete a character if there are
+                    //characters to delete.  if lineIndexCounter is <= 0,
+                    //then there are no characters on the command line
+                    //input!
+
+
+                    if (rptr.INPUT.length == rptr.lineIndexCounter) {
+                        //the cursor is at the end of the commandline
+                        //input.  no need to do anything special to
+                        //remove it
+
+                        //erase last character position and adjust rptr.lineIndexCounter
+                        rptr.INPUT = rptr.INPUT.substring(0,rptr.INPUT.length-1);
+
+                        //Move the rptr.lineIndexCounter one postion to the left to
+                        //account for removed character
+                        rptr.lineIndexCounter -=1;
+
+                        //actually erase one character from the line
+                        //buffer as well, and reprint the commandline
+                        output_erase(1);
+
+                    } else {
+                        //cursor is not at the end of the command line input,
+                        //we need to delete from some other part of it.
+
+                        //decrement the cursor pointer
+                        rptr.lineIndexCounter -=1;
+
+                        //remove the character denoted by 'rptr.lineIndexCounter'
+                        //from the command line input string
+                        rptr.INPUT = rptr.INPUT.substr(0,rptr.lineIndexCounter)+rptr.INPUT.substr(rptr.lineIndexCounter+1,rptr.INPUT.length+1-rptr.lineIndexCounter);
+
+                        //remove the correct character from the output buffer
+                        //and reprint the output buffer to the Hyperterminal window
+                        var grab = rptr.lineIndexCounter + rptr.PROMPT.length;
+                        rptr.line[rptr.lastLine] = rptr.line[rptr.lastLine].substr(0,grab) + rptr.line[rptr.lastLine].substr(grab+1,rptr.line[rptr.lastLine].length+1-grab);
+                        output_write();
+
+                        //move the cursor over one character to the left
+                        //to account for the deleted character
+                        rptr.cursorX = rptr2.PROMPT.length + rptr.lineIndexCounter;
+                        _root.HyperTerminal.cursor._x = rptr.cx + rptr.cursorXOffset * rptr.cursorX;
+                    }
+
+                } //end if(rptr.lineIndexCounter > 0)
+
+
+            } else if (keycode == 13) {
+
+                //ENTER detected--the command entry is finished.  now,
+                //the entire current command line string is to be parsed...
+                //...reset the cursor pointer, as well.
+
+                rptr.lineIndexCounter = 0;
+                commandline_parseCommandLine(1,1);
+            } else if (keycode == -1) {
+
+                //we are returning from a popup box display, so no
+                //newline needed when the next prompt is
+                //printed (0 is the flag value)
+                rptr.lineIndexCounter = 0;
+                rptr.HELPING = false;
+                commandline_parseCommandLine(0,1);
+
+            } else if (keycode == KEY_TAB) {
+
+                //<TAB> detected
+
+                //prevent the Flash projector
+                //from "stealing" the tab
+                Selection.setFocus(_root.Menu.tabAbsorb);
+
+                //try to match the current command line
+                //input to existing commands..
+                commands_tabCompleteCommand(eval(rptr2.MODE+"C"), rptr.INPUT);
+
+            } else {
+		//begin modification by Bargavi
+                //all other keys
+                //begin for the configuration mode of the routers -- suresh
+                //if the user is in the erase command then what ever character the user presses
+                //it is checked and action is performed
+                if ( eval("config" + _root.active_router) == "erase"){
+                    //eval("config" + _root.active_router) = "normal"; //resetting the mode back to normal
+                    setConfigVariable("normal");
+                    output_write("\n");
+                    rptr.lineIndexCounter = 0;
+                    //checking if the user presses y or Y
+                    if (keycode == 121 || keycode == 89)
+                        COMMAND[0] = "y";
+                    else
+                        COMMAND[0] = "n";
+                    processErase();
+                    rptr.INPUT = "";
+                    commandline_parseCommandLine(0,0);
+                    return;
+                }
+                //end for the configuration mode of the routers -- suresh
+                if (keycode == 63)
+                {
+                    if (!isComputer() && !isNameOnly())
+                    {
+                        //'?' detected
+
+                        //print the key that was pressed out to the console
+                        output_write(chr(keycode));
+
+                        //the user pressed "?", then turn on HELPING.
+                        rptr2.HELPING = true;
+                        commandline_parseCommandLine(1,1);
+                    }
+                    else if(isComputer())
+                    {
+                        // When the user is on a computer, please make them know there are no ? help
+                        errorNotice("On workstations, there are no '?' help commands. Supported commands: ping, tracert, telnet");
+                    }
+                    else if(isNameOnly())
+                    {
+                    }
+
+                } else if (rptr.INPUT.length == rptr.lineIndexCounter) {
+                    //the cursor is at the end of the commandline,
+                    //so just append this new incoming character to
+                    //the end of the commandline input
+
+                    //print the key that was pressed out to the console
+                    output_write(chr(keycode));
+
+                    //add the character pressed to the router's
+                    //input buffer
+                    rptr.INPUT += chr(keycode);
+
+                    //update the cursor pointer
+                    rptr.lineIndexCounter += 1;
+
+                } else {
+
+                    //the cursor is somewhere in the middle of the
+                    //current command line input (at location 'rptr.indexLineCounter').
+                    //this new key that was pressed must be inserted into the
+                    //commandline input at the specified location.
+
+
+                    //add the character to the middle of the
+                    //command line input buffer
+                    rptr.INPUT = rptr.INPUT.substr(0,rptr.lineIndexCounter) + chr(keycode) + rptr.INPUT.substr(rptr.lineIndexCounter,rptr.INPUT.length+1-rptr.lineIndexCounter);
+
+                    //add the character to the middle of the
+                    //output buffer
+                    var grab = rptr.lineIndexCounter + rptr.PROMPT.length;
+                    rptr.line[rptr.lastLine] = rptr.line[rptr.lastLine].substr(0,grab) + chr(keycode) + rptr.line[rptr.lastLine].substr(grab,rptr.line[rptr.lastLine].length+1-grab);
+
+                    //update the display with the new character
+                    //inserted somewhere in the middle...
+                    output_write();
+//trace("LINE INDEX COUNTER = " + rptr.lineIndexCounter);
+                    //reposition the cursor to accomodate for the added character
+                    rptr.cursorX = rptr.PROMPT.length + rptr.lineIndexCounter + 1;
+                    _root.HyperTerminal.cursor._x = rptr.cx + rptr.cursorXOffset * rptr.cursorX;
+
+                    //increment the cursor pointer
+                    rptr.lineIndexCounter +=1;
+
+                }  //end if (keycode == 63)
+
+            }  //end keycode if-else-if chain
+
+        }  //end if (keycode == 17) else..
+
+    } else { //if (rptr.controlCharPressed == 0)
+
+        //this part of the if-else block executes if the <Ctrl> key
+        //has been pressed--the next character matched will complete
+        //a control key sequence to be interpreted as a command
+        //
+        //currently supported control sequences:
+        //-----------------------------------------------------------
+        //<Ctrl-b> = move cursor one character to the left
+        //<Ctrl-f> = move cursor one character to the right
+        //<Ctrl-a> = move cursor to beginning of command line input
+        //<Ctrl-e> = move cursor to end of command line input
+        //<Ctrl-z> = shortcut for "end" (exits config modes)
+        //<Ctrl-p> = move to prev line in the command history
+        //<Ctrl-n> = move to next line in the command history
+        //<Ctrl-c> = [currently not implemented]
+
+
+        //reset the control character switch
+        rptr.controlCharPressed = 0;
+
+        //the following if-else-if.. block interprets the second half
+        //of the control key sequence:
+        //
+        if ((keycode == 98) || (keycode == 66)) {
+
+            //<Ctrl-b> or <Ctrl-B> detected
+
+            //move cursor one character left
+            commandline_arrowLeft();
+
+
+        } else if ((keycode == 102) || (keycode == 70)) {
+
+            //<Ctrl-f> or <Ctrl-F> detected
+
+            //move cursor one character right
+            commandline_arrowRight();
+
+
+        } else if ((keycode == 97) || (keycode == 65)) {
+
+            //<Ctrl-a> or <Ctrl-A> detected
+            //move to beginning of input line
+
+            //set cursor pointer to the beginning of the
+            //current command line input string
+            rptr.lineIndexCounter = 0;
+
+            //move the cursor to the beginning of the
+            //command line input string
+            rptr.cursorX = rptr.PROMPT.length;
+            _root.HyperTerminal.cursor._x = rptr.cx + rptr.cursorXOffset * rptr.cursorX;
+
+
+        } else if ((keycode == 101) || (keycode == 69)) {
+
+            //begin commented for template
+            /*
+            //<Ctrl-e> or <Ctrl-E> detected
+            //move to end of input line
+
+            //set cursor pointer to the length of the
+            //current command line input string (the end
+            //of the command line input string)
+            rptr.lineIndexCounter = rptr.INPUT.length;
+
+            //move the cursor to the end of the
+            //command line input string
+            rptr.cursorX = rptr.PROMPT.length + rptr.INPUT.length;
+            _root.HyperTerminal.cursor._x = rptr.cx + rptr.cursorXOffset * rptr.cursorX;
+            */
+            //end commented for template
+
+
+        } else if ((keycode == 122) || (keycode == 90)) {
+
+            //<Ctrl-z> or <Ctrl-Z> detected
+
+            //exits configuration mode, or any of
+            //the configuration submodes
+            //begin commented for template
+            /*if (!((rptr2.MODE == "user") || (rptr2.MODE == "enable"))) {
+
+                //this if-statement only executes if the user
+                //is in configuration mode, or in one of the
+                //configuration submodes (i.e. not in user or
+                //enable mode)
+
+                //substitute the "end" command into the input line
+                rptr.INPUT = "end";
+
+                //do commandline parse and execution--the 0 flag
+                //denotes that this "end" command wont be stored
+                //in the command history
+                commandline_parseCommandLine(1,0);
+            }
+            */
+            //end commented for template
+
+
+        } else if ((keycode == 112) || (keycode == 80)) {
+
+            //<Ctrl-p> or <Ctrl-P> detected
+
+            //move to previous line in command history (same
+            //routine as pressing up arrow
+            _root.history_historyBackward();
+
+
+        } else if ((keycode == 110) || (keycode == 78)) {
+
+            //<Ctrl-n> or <Ctrl-N> detected
+
+            //move to next line in command history (same
+            //routine as pressing down arrow)
+            _root.history_historyForward();
+
+
+        } else if ((keycode == 99) || (keycode == 67)) {
+
+            //<Ctrl-c> or <Ctrl-C> detected
+
+            //'break'--this will put user in common mode
+            //if issues right after reload command.
+
+            //not implemented yet..
+
+
+        } else {}
+
+
+    }  //if (rptr.controlCharPressed == 0)
+
+}
+
+
+
+//*** commandline_arrowLeft()
+//IN: <none>
+//DO: moves the cursor one character to the left
+//OUT: <none>
+//
+function commandline_arrowLeft() {
+
+    //move cursor one character left
+
+
+    var rptr = eval("_root.r" + _root.VISIBLE_ROUTER);
+
+    if (rptr.lineIndexCounter > 0) {
+
+        //if characters exist to back up to (>0),
+        //then back up the pointer one character.
+        rptr.lineIndexCounter -= 1;
+
+        //move the cursor one character
+        //backward on the screen
+        rptr.cursorX -= 1;
+        _root.HyperTerminal.cursor._x = rptr.cx + rptr.cursorXOffset * rptr.cursorX;
+
+    }
+}
+
+
+
+//*** commandline_arrowRight()
+//IN: <none>
+//DO: moves the cursor one character to the right
+//OUT: <none>
+//
+function commandline_arrowRight() {
+
+    //move cursor one character to the right
+    var rptr = eval("_root.r" + _root.VISIBLE_ROUTER);
+
+    if (rptr.lineIndexCounter < rptr.INPUT.length) {
+
+        //if the cursor isn't all the way to the
+        //end of the commandline text, then
+        //move it one position to the right
+        rptr.lineIndexCounter +=1;
+
+        //move the cursor one character
+        //forward on the screen
+        rptr.cursorX += 1;
+        _root.HyperTerminal.cursor._x = rptr.cx + rptr.cursorXOffset * rptr.cursorX;
+    }
+}
+
+
+// ***** commandline_parseCommandLine(int flag_prNewline, int flag_storeInHist)
+//IN: flag_prNewline = int, flag whether or not to print a newline
+//                 before the current command is parsed/interpreted
+//                 (1 prints the newline, 0 does not).
+//          2 = perfect config hack
+//    flag_storeInHist = int, flag that determines whether or not to
+//           add this command to the command history
+//           (1 adds to history, 0 does not).
+//    rptr.INPUT = the command line input string
+//DO: split up the command line input into an array with multiple elements.
+//    each element is a word separated by one or more spaces at the command line.
+//    The commands_useCommand function to interpret the input...
+//OUT: <none>
+function commandline_parseCommandLine(flag_prNewline, flag_storeInHist) {
+
+    // use this as a pointer to the visible router object
+    var rptr = eval("_root.r" + _root.VISIBLE_ROUTER);
+
+    // use this as a pointer to the active router object
+    var actrptr = eval("_root.r" + _root.active_router);
+
+    //separate the command line input (rptr.INPUT) into different words,
+    //using the space " " as a delimiter.  COMMAND is an array of strings,
+    //the individual words
+    COMMAND = rptr.INPUT.split(" ");
+    for (var i = 0; i < COMMAND.length; i++) {
+
+        //removes the empty "" elements from
+        //the COMMAND array
+        if (COMMAND[i] == "") {
+            COMMAND.splice(i,1);
+            i--;
+        }
+    }
+
+
+    if (flag_prNewline == 1) {
+        //if 'flag_prNewline' is 1, print a newline.
+        output_write("\n");
+    }
+
+    //if the input command is not empty or "?" is pressed
+    if ((COMMAND.length != 0) || (actrptr.HELPING == true)) {
+
+
+        //if "?" WASN'T pressed, store this input command
+        //line to the history buffer
+        if (actrptr.HELPING == false) {
+
+            //if 'flag_storeInHist' is 1,
+            //store this command in
+            //the history buffer
+            if (flag_storeInHist == 1) {
+                history_setHistory();
+            }
+
+        }
+        //begin for the configuration mode of the routers -- suresh
+        //checking if the user is in any of the commands like "config", "erase",
+        //"start", "run" or "telnet"
+        // reason is :- if the user types any of the above command then the corresponding
+        //question has to be asked. since for every key pressed it comes to this function
+        //we are checking for these commands when the user enters something after these commands
+        //were shown.
+        //we can acheive the same functionality by changing the process. But then we need to
+        //check for every key pressed in all of the process.
+
+        if ( eval("config" + _root.active_router) == "normal"){
+            //"use" this command (interpret the commandline input)
+            //trace((eval(actrptr.MODE+"C")).toString());
+            var returnvalue = commands_useCommand(eval(actrptr.MODE+"C"), 0);
+            //calling the processStep function of the lab-drill -- suresh
+            processStep(stepnum,returnvalue);
+        }
+        else if ( eval("config" + _root.active_router) == "config"){
+            //eval("config" + _root.active_router) = "normal";
+ 		                    setConfigVariable("normal");
+            processConfig(eval(actrptr.MODE+"C")["configure"]);
+        }
+        else if ( eval("config" + _root.active_router) == "erase"){
+//            eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+            processErase();
+        }
+        else if ( eval("config" + _root.active_router) == "start"){
+//            eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+            copyStartupToRun();
+        }
+        else if ( eval("config" + _root.active_router) == "run"){
+//            eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+            copyRunToStartup();
+        }
+        else if ( eval("config" + _root.active_router) == "telnethost"){
+//            eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+            doTelnet();
+        }
+        //end for the configuration mode of the routers -- suresh
+    }
+    else if ( eval("config" + _root.active_router) == "config") {
+        //begin for the configuration mode of the router -- suresh
+//        eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+        processConfig(eval(actrptr.MODE+"C")["configure"]);
+    }
+    else if ( eval("config" + _root.active_router) == "erase") {
+        //begin for the configuration mode of the router -- suresh
+//        eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+        processErase();
+    }
+    else if ( eval("config" + _root.active_router) == "start") {
+        //begin for the configuration mode of the router -- suresh
+//        eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+        copyStartupToRun();
+    }
+    else if ( eval("config" + _root.active_router) == "run") {
+        //begin for the configuration mode of the router -- suresh
+//        eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+        copyRunToStartup();
+    }
+    else if ( eval("config" + _root.active_router) == "telnethost"){
+//        eval("config" + _root.active_router) = "normal";
+                    setConfigVariable("normal");
+        doTelnet();
+    }
+    //end for the configuration mode of the router -- suresh
+
+
+
+    //if the process is "commandline_processCommandLine",
+    //then print the command line.
+    if (processName == "commandline_processCommandLine")
+        commandline_commandLine();
+}
+
+
+
+
+// ***** commandline_commandLine() *****
+//IN: rptr.PROMPT, the command line prompt
+//    rptr.INPUT, the command line input
+//DO: echo the command line prompt to the console
+//OUT: the command line prompt is printed to the screen
+function commandline_commandLine() {
+
+    // use this as a pointer to the active router object
+    var rptr = eval("_root.r" + _root.active_router);
+
+    var rptr2 = eval("_root.r" + _root.VISIBLE_ROUTER);
+
+    //print out the current prompt
+    output_write(rptr.PROMPT);
+
+
+    if (rptr.HELPING == true) {
+
+        //HELPING is on (==true), that means "?" has been pressed.  the
+        //command line will show the input of the last input before "?".
+        // else, clear the input
+        rptr.HELPING = false;
+        output_write(rptr2.INPUT);
+    } else {
+
+        //the command line prompt has been printed, and is ready for the
+        //next command from the user--clear the input buffer to prepare
+        //for the next command to be typed.
+        rptr2.INPUT = "";
+    }
+
+    //reset the COMMAND array, which will be used to hold the next
+    //command line input that is parsed
+    COMMAND = new Array();
+}
+
+
+
+
+// commandline_setMode(arg1, arg2)
+//IN: arg1 = string, the new mode to change the router to
+//    arg2 = string, router name in which to change the mode
+//DO: Changes the current mode to the new mode
+//OUT: the current mode is changed to 'newMode' on the 'rtrName' router,
+//     and the command prompt will change to the reflect the new mode
+function commandline_setMode(arg1, arg2) {
+
+    var rptr = eval("_root.r" + arg2); //pointer to router that will
+                       //get its mode changed
+
+// *********** for loading command arrays *******
+    //trace("stepnum " + _root.stepnum);
+
+
+     trace("arg is " + arg1);
+    var stepDevice = _root.routerInfoArray[_root.routerUsedForThisStep[_root.stepnum]].deviceType;
+    //trace("device for this step: " + stepDevice);
+trace("rootsarg is" + _root.loadedCommands.arg1);
+    if (eval("_root.loadedCommands." + arg1) != stepDevice)
+    {
+      with(eval("_root.loadedCommands.") ) 
+	{
+	arg1 = stepDevice; 
+
+	}
+
+     //   eval("_root." + arg1 + "C") = new Array(); 
+        emptyArray(arg1); //modified by Bargavi
+
+ 	
+
+      tellTarget("CommandLoad")
+        {
+            loadMovie(_level0.EngineDir + stepDevice + arg1 + ".swf", _root.CommandLoad);
+        }
+	
+    }
+
+
+
+
+
+    //holds the string that is the new prompt
+    var p = "";
+
+    if (arg1 == "user") {
+
+        if (deviceUsed != "Switch 4006 Sup 2")
+            p = ">";
+        else
+            p = "> ";
+
+    } else if (arg1 == "enable") {
+
+        if (deviceUsed != "Switch 4006 Sup 2")
+            p = "#";
+        else
+            p = "> (enable) ";
+
+    } else if (arg1 == "global") {
+
+        p = "(config)#";
+
+    }
+
+    else if (arg1.substr(0, 3) == "int") {
+        p = "(config-if)#";
+    }
+
+    else if (arg1.substr(0, 3) == "sub") {
+        p = "(config-subif)#";
+    }
+
+    else if (arg1.substr(0, 4) == "line") {
+        p = "(config-line)#";
+    }
+
+    else if (arg1.substr(0, 6) == "router") {
+        p = "(config-router)#";
+    }
+
+    else if (arg1.indexOf("controller") == 0) {
+        p = "(config-controller)#";
+    }
+
+    else if (arg1.indexOf("extNacl") == 0) {
+        p = "(config-ext-nacl)#";
+    }
+
+    else if (arg1.indexOf("mapClass") == 0) {
+        p = "(config-map-class)#";
+    }
+
+    else if (arg1.indexOf("timeRange") == 0) {
+        p = "(config-time-range)#";
+    }
+
+    else if (arg1.indexOf("dhcp") == 0) {
+        p = "(dhcp-config)#";
+    }
+
+    else if (arg1.indexOf("routeMap") == 0) {
+        p = "(config-route-map)#";
+    }
+
+    else if (arg1.indexOf("classMap") == 0) {
+        p = "(config-cmap)#";
+    }
+
+    else if (arg1.indexOf("policyMap") == 0) {
+        p = "(config-pmap)#";
+    }
+
+    else if (arg1.indexOf("policyMapClass") == 0) {
+        p = "(config-pmap-c)#";
+    }
+
+    else if (arg1 == "vlanDB") {
+        p = "(vlan)#";
+    }
+    else if (arg1 == "ATMPVC") {
+    p = "(config-if-atm-vc)#";
+    }
+    else if (arg1 == "DOS")
+    {
+        p = " C:\\>";
+    }
+    else if (arg1 == "NameOnly")
+    {
+            p = "";
+    }
+
+    //set the new prompt and mode on the router in question
+    rptr.PROMPT = rptr.run.hostname + p;
+    rptr.MODE = arg1;
+}
+
+
+
+
+// ***** commandline_matchKey(int, char) *****
+//IN: keycode = int, representing the keycode of the key pressed
+//    letter = char, 1 character
+//DO: determines if given 'keycode' represents the character 'letter'
+//OUT: true = if character represented by 'keycode' matches 'letter'
+//     false = no match
+function commandline_matchKey(keycode, letter) {
+
+    return (chr(keycode).toUpperCase() == letter.toUpperCase());
+}
+
+
+
+//begin for the configuration mode of the routers -- suresh
+
+// ***** processConfig(commandArray) *****
+//IN: commandArray = array, representing all the options under the configure mode
+//DO: determines if the parameter given for the configure mode is one of its valid option
+
+function processConfig(commandArray)
+{
+    var rptr = eval("_root.r" + _root.active_router);
+    var arrayptr = eval(rptr.MODE + "C")["configure"];
+
+    //if the user did not type any option then by default the terminal option is chosen
+    if (COMMAND.length == 0)
+        COMMAND[0] = "terminal";
+
+    for (var i=0; i<commandArray.length; i++) {
+        if (COMMAND[0].toLowerCase() == commandArray[i].substring(0,COMMAND[0].length).toLowerCase()) {
+
+            //if for the option there is a .enter function then execute it
+            if (typeof(arrayptr[commandArray[i]].enter) == "function") {
+                arrayptr[commandArray[i]].enter();
+            }
+            else {
+                rptr.PROMPT = rptr.run.hostname + "#";
+            }
+
+            return;
+        }
+    }
+    output_write("?Must be 'terminal', 'memory' or 'network'");
+    output_write("\n");
+    rptr.PROMPT = rptr.run.hostname + "#";
+
+}
+
+//end for the configuration mode of the routers -- suresh
+
+
+//begin for the configuration mode of the routers -- suresh
+
+// ***** processrase() *****
+//DO: Erases the startup configuration of the active router
+
+function processErase()
+{
+    //if the user did not type any option then by default the terminal option is chosen
+
+    if (COMMAND.length == 0)
+        COMMAND[0] = "y";
+
+    if (COMMAND[0].toLowerCase() == "y") {
+        with(eval("_root.r" + _root.active_router)) {eraseFlag = false;}
+        if(_root.active_router == "RouterA") {
+
+            //re-set the values
+            rptr = eval("_root.rRouterA.startup_file");
+            rptr.e0.exist = true;
+            rptr.e1.exist = true;
+            rptr.s0.exist = true;
+            rptr.hostname = "Router";
+            rptr.secret = "";
+            rptr.password = "";
+        } else if(_root.active_router == "RouterB"){
+
+            //re-set the values
+            rptr = eval("_root.rRouterB.startup_file");
+            rptr.e0.exist = true;
+            rptr.s0.exist = true;
+            rptr.s1.exist = true;
+            rptr.hostname = "Router";
+            rptr.secret = "";
+            rptr.password = "";
+
+        } else if(_root.active_router == "RouterC"){
+
+            //re-set the values
+            rptr = eval("_root.rRouterC.startup_file");
+            rptr.e0.exist = true;
+            rptr.s0.exist = true;
+            rptr.s1.exist = true;
+            rptr.hostname = "Router";
+            rptr.secret = "";
+            rptr.password = "";
+
+        } else if(_root.active_router == "RouterD"){
+
+            //re-set the values
+            rptr = eval("_root.rRouterD.startup_file");
+            rptr.e0.exist = true;
+            rptr.s1.exist = true;
+            rptr.hostname = "Router";
+            rptr.secret = "";
+            rptr.password = "";
+        } else if(_root.active_router == "RouterE"){
+
+            //re-set the values
+            rptr = eval("_root.rRouterE.startup_file");
+            rptr.e0.exist = true;
+            rptr.hostname = new String("Router");
+            rptr.secret = new String("");
+            rptr.password = new String("");
+        }
+        output_write("PAUSE\n");
+        output_write("[OK]\n");
+        output_write("Erase of nvram: complete");
+        output_write("\n");
+    }
+    var temprptr = eval("_root.r" + _root.active_router);
+    temprptr.PROMPT = temprptr.run.hostname + "#"; //re-set the prompt
+
+}
+
+//end for the configuration mode of the routers -- suresh
+
+//begin modified by suresh as in router 2500 OS 12.0
+// ***** copyRunToStartup() *****
+//DO: copies the running configuration to the startup configuration of the active router
+function copyRunToStartup()
+{
+    var rptr = eval("_root.r" + _root.active_router);
+    //if the user did not type any option then by default the startup-config option is chosen
+    if (COMMAND.length == 0)
+        COMMAND[0] = new String("startup-config");
+    if (COMMAND[0] == "startup-config") {
+
+        with(eval("_root.r" + _root.active_router))
+        {
+            output_write("Building configuration...\n", "PAUSE\n");
+                eraseFlag = true;
+            startup_file.line.con_login = run.line.con_login; // console login
+            startup_file.line.con_password = run.line.con_password; //console password
+            startup_file.line.aux_login = run.line.aux_login; // aux login
+            startup_file.line.aux_password = run.line.aux_password; //aux password
+            startup_file.line.vty_login = run.line.vty_login; //virtual terminal login
+            startup_file.line.vty_password = run.line.vty_password; //virtualterminal password
+
+            //global configuration
+
+            // RIP
+            startup_file.global.RIP = run.global.RIP;
+            startup_file.global.RIP_network = new Array();
+            for (var i=0; i<run.global.RIP_network.length; i++)
+                startup_file.global.RIP_network[i] = run.global.RIP_network[i];
+
+            // IGRP
+            startup_file.global.IGRP = run.global.IGRP;
+            startup_file.global.IGRP_network = new Array();
+            for (var i=0; i<run.global.IGRP_network.length; i++)
+            {
+                startup_file.global.IGRP_network[i] = new Array();
+                for (var j=0; j<run.global.IGRP_network[i].length; j++)
+                startup_file.global.IGRP_network[i][j] = run.global.IGRP_network[i][j];
+            }
+
+
+            //ip host table
+            startup_file.global.ipHostNameTable = new Array();
+            startup_file.global.ipHostAddressTable = new Array();
+            for (var i=0; i<run.global.ipHostNameTable.length; i++)
+                startup_file.global.ipHostNameTable[i] = run.global.ipHostNameTable[i];
+            for (var i=0; i<run.global.ipHostAddressTable.length; i++)
+            {
+                startup_file.global.ipHostAddressTable[i] = new Array();
+                for (var j=0; j<run.global.ipHostAddressTable[i].length; j++)
+                startup_file.global.ipHostAddressTable[i][j] = run.global.ipHostAddressTable[i][j];
+            }
+
+
+            //interface ethernet 0 configuration
+
+
+            startup_file.e0.exist = run.e0.exist; // determine if interface is there or not
+            startup_file.e0.description = run.e0.description; // interface description
+            startup_file.e0.ip = run.e0.ip; //ip address of interface
+            startup_file.e0.subnet = run.e0.subnet; // subnet mask
+            startup_file.e0.shutdown = run.e0.shutdown; // shutdown ?
+            startup_file.e0.clockrate = run.e0.clockrate; // used only  by serial 0
+
+            //interface ethernet 1 configuration
+
+
+            startup_file.e1.exist = run.e1.exist; // determine if interface is there or not
+            startup_file.e1.description = run.e1.description; // interface description
+            startup_file.e1.ip = run.e1.ip; //ip address of interface
+            startup_file.e1.subnet = run.e1.subnet; // subnet mask
+            startup_file.e1.shutdown = run.e1.shutdown; // shutdown ?
+            startup_file.e1.clockrate = run.e1.clockrate; // used only  by serial 0
+
+            //interface serial 0 configuration
+
+
+            startup_file.s0.exist = run.s0.exist; // determine if interface is there or not
+            startup_file.s0.description = run.s0.description; // interface description
+            startup_file.s0.ip = run.s0.ip; //ip address of interface
+            startup_file.s0.subnet = run.s0.subnet; // subnet mask
+            startup_file.s0.shutdown = run.s0.shutdown; // shutdown ?
+            startup_file.s0.clockrate = run.s0.clockrate; // used only  by serial 0
+
+            //interface serial 1 configuration
+
+
+            startup_file.s1.exist = run.s1.exist; // determine if interface is there or not
+            startup_file.s1.description = run.s1.description; // interface description
+            startup_file.s1.ip = run.s1.ip; //ip address of interface
+            startup_file.s1.subnet = run.s1.subnet; // subnet mask
+            startup_file.s1.shutdown = run.s1.shutdown; // shutdown ?
+            startup_file.s1.clockrate = run.s1.clockrate; // used only  by serial 0
+
+
+            startup_file.hostname = run.hostname; //Router hostname
+            startup_file.secret = run.secret; // secret password (enable secret)
+            startup_file.password = run.password;// enable password
+
+            startup_file.global.bannermotd = run.global.bannermotd;
+
+        }
+
+        output_write("[OK]\n");
+    }
+    else {
+        commandline_showErrorMsg("File Name has to be startup-config");
+    }
+    rptr.PROMPT = rptr.run.hostname + "#";
+
+}
+
+
+// ***** copyStartupToRun() *****
+//DO: copies the startup configuration to the running configuration of the active router
+function copyStartupToRun()
+{
+    var rptr = eval("_root.r" + _root.active_router);
+    //if the user did not type any option then by default the running-config option is chosen
+    if (COMMAND.length == 0)
+        COMMAND[0] = "running-config";
+    if (COMMAND[0] == "running-config") {
+
+        with(eval("_root.r" + _root.active_router))
+        {
+            run.line.con_login = startup_file.line.con_login; // console login
+            run.line.con_password = startup_file.line.con_password; //console password
+            run.line.aux_login = startup_file.line.aux_login; // aux login
+            run.line.aux_password = startup_file.line.aux_password; //aux password
+            run.line.vty_login = startup_file.line.vty_login; //virtual terminal login
+            run.line.vty_password = startup_file.line.vty_password; //virtualterminal password
+
+
+            //global configuration
+
+            // RIP
+            run.global.RIP = startup_file.global.RIP;
+            run.global.RIP_network = new Array();
+            for (var i=0; i<startup_file.global.RIP_network.length; i++)
+            run.global.RIP_network[i] = startup_file.global.RIP_network[i];
+
+            // IGRP
+            run.global.IGRP = startup_file.global.IGRP;
+            run.global.IGRP_network = new Array();
+            for (var i=0; i<startup_file.global.IGRP_network.length; i++)
+            {
+                run.global.IGRP_network[i] = new Array();
+                for (var j=0; j<startup_file.global.IGRP_network[i].length; j++)
+                    run.global.IGRP_network[i][j] = startup_file.global.IGRP_network[i][j];
+            }
+
+            //ip host table
+            run.global.ipHostNameTable = new Array();
+            run.global.ipHostAddressTable = new Array();
+            for (var i=0; i<startup_file.global.ipHostNameTable.length; i++)
+            run.global.ipHostNameTable[i] = startup_file.global.ipHostNameTable[i];
+            for (var i=0; i<startup_file.global.ipHostAddressTable.length; i++)
+            {
+                run.global.ipHostAddressTable[i] = new Array();
+                for (var j=0; j<startup_file.global.ipHostAddressTable[i].length; j++)
+                    run.global.ipHostAddressTable[i][j] = startup_file.global.ipHostAddressTable[i][j];
+            }
+
+
+            //interface ethernet 0 configuration
+
+
+            run.e0.exist = startup_file.e0.exist; // determine if interface is there or not
+            run.e0.description = startup_file.e0.description; // interface description
+            run.e0.ip = startup_file.e0.ip; //ip address of interface
+            run.e0.subnet = startup_file.e0.subnet; // subnet mask
+            run.e0.shutdown = startup_file.e0.shutdown; // shutdown ?
+            run.e0.clockrate = startup_file.e0.clockrate; // used only  by serial 0
+
+            //interface ethernet 1 configuration
+
+
+            run.e1.exist = startup_file.e1.exist; // determine if interface is there or not
+            run.e1.description = startup_file.e1.description; // interface description
+            run.e1.ip = startup_file.e1.ip; //ip address of interface
+            run.e1.subnet = startup_file.e1.subnet; // subnet mask
+            run.e1.shutdown = startup_file.e1.shutdown; // shutdown ?
+            run.e1.clockrate = startup_file.e1.clockrate; // used only  by serial 0
+
+            //interface serial 0 configuration
+
+
+            run.s0.exist = startup_file.s0.exist; // determine if interface is there or not
+            run.s0.description = startup_file.s0.description; // interface description
+            run.s0.ip = startup_file.s0.ip; //ip address of interface
+            run.s0.subnet = startup_file.s0.subnet; // subnet mask
+            run.s0.shutdown = startup_file.s0.shutdown; // shutdown ?
+            run.s0.clockrate = startup_file.s0.clockrate; // used only  by serial 0
+
+            //interface serial 1 configuration
+
+
+            run.s1.exist = startup_file.s1.exist; // determine if interface is there or not
+            run.s1.description = startup_file.s1.description; // interface description
+            run.s1.ip = startup_file.s1.ip; //ip address of interface
+            run.s1.subnet = startup_file.s1.subnet; // subnet mask
+            run.s1.shutdown = startup_file.s1.shutdown; // shutdown ?
+            run.s1.clockrate = startup_file.s1.clockrate; // used only  by serial 0
+
+
+            run.hostname = startup_file.hostname; //Router hostname
+            run.secret = startup_file.secret; // secret password (enable secret)
+            run.password = starupt_file.password; // enable password
+
+            run.global.bannermotd = startup_file.global.bannermotd;
+
+            output_write("979 bytes copied in 4.940 secs (244 bytes/sec)\n");
+        }
+
+        commandline_setMode("enable", _root.active_router);
+
+        // updating the routing table
+        routing_table_noRIPUpdate();
+        routing_table_updateLinkTable();
+    }
+    else {
+        commandline_showErrorMsg("File Name has to be running-config");
+    }
+
+    rptr.PROMPT = rptr.run.hostname + "#";
+
+}
+// ***** commandline_showErrorMsg(errMessage)*****
+//IN: errMessage = denotes the message that needs to be displayed in the error message dialog
+//DO: gets the error message and displays the message in the error message dialog.
+
+function commandline_showErrorMsg(errMessage)
+{
+    commandline_changeProcess(null);
+    _root.HyperTerminal.errorWindow.msg = errMessage;
+    _root.HyperTerminal.errorWindow._visible = true;
+
+    if (_root.VISIBLE_ROUTER != "RouterA") {
+        _root.Menu.disabledRouterA._visible = true;
+        _root.Menu.mRouterA._visible = false;
+    }
+    if (_root.VISIBLE_ROUTER != "RouterB") {
+        _root.Menu.disabledRouterB._visible = true;
+        _root.Menu.mRouterB._visible = false;
+    }
+    if (_root.VISIBLE_ROUTER != "RouterC") {
+        _root.Menu.disabledRouterC._visible = true;
+        _root.Menu.mRouterC._visible = false;
+    }
+    if (_root.VISIBLE_ROUTER != "RouterD") {
+        _root.Menu.disabledRouterD._visible = true;
+        _root.Menu.mRouterD._visible = false;
+    }
+    if (_root.VISIBLE_ROUTER != "RouterE") {
+        _root.Menu.disabledRouterE._visible = true;
+        _root.Menu.mRouterE._visible = false;
+    }
+    return;
+}
+//end modified by suresh as in router 2500 OS 12.0
+
+//begin suresh for telnet
+//if the user types telnet without giving the ip address then this function will be called
+// ***** doTelnet() *****
+//DO: get the ip address and call the checkhost function
+function doTelnet()
+{
+    var rptr = eval("_root.r" + _root.active_router);
+    if ( COMMAND.length == 1) {
+        TELNET_ADDRESS = COMMAND[0];
+        _root.telnet_checkHost(TELNET_ADDRESS);
+    }
+    else {
+        commands_invalidInput(this, COMMAND[0]);
+    }
+    commandline_setMode(rptr.MODE, _root.VISIBLE_ROUTER);
+
+}
+//end suresh for telnet
+
+
+//begin bargavi for flash MX
+
+
+function setConfigVariable(currentValue)
+{
+	var activeRtrName = _root.active_router;
+
+	if (activeRtrName == "RouterA")
+	{
+		configRouterA = currentValue;
+	}
+}
+
+function emptyArray(modeName)
+{
+	if (modeName == "ATMPVC")
+	{
+		ATMPVCC = new Array();
+	}
+	else if (modeName == "classMap")
+	{
+		classMapC = new Array();
+	}
+	else if (modeName == "controllerT1")
+	{
+		controllerT1C = new Array();
+	}
+	else if (modeName == "dhcp")
+	{
+		dhcpC = new Array();
+	}
+	else if (modeName == "enable")
+	{
+		enableC = new Array();
+	}
+	else if (modeName == "extNacl")
+	{
+		extNaclC = new Array();
+	}
+		else if (modeName == "global")
+	{
+		globalC = new Array();
+	}
+	else if (modeName == "intAsync")
+	{
+		intAsyncC = new Array();
+	}
+	else if (modeName == "intATM")
+	{
+		intATMC= new Array();
+	}
+	else if (modeName == "intBri")
+	{
+		intBriC = new Array();
+	}
+	else if (modeName == "intDialer")
+	{
+		intDialerC = new Array();
+	}
+	else if (modeName == "intE")
+	{
+		intEC = new Array();
+	}
+	else if (modeName == "intF")
+	{
+		intFC = new Array();
+	}
+	else if (modeName == "intG")
+	{
+		intGC = new Array();
+	}
+	else if (modeName == "intLoopBack")
+	{
+		intLoopBackC = new Array();
+	}
+	else if (modeName == "intVlan")
+	{
+		intVlanC= new Array();
+	}
+	else if (modeName == "intS")
+	{
+		intSC= new Array();
+	}
+	else if (modeName == "lineaux")
+	{
+		lineauxC = new Array();
+	}
+       	else if (modeName == "linecon")
+	{
+		lineconC = new Array();
+	}
+	else if (modeName == "linetty")
+	{
+		linettyC = new Array();
+	}
+	else if (modeName == "linevty")
+	{
+		linevtyC = new Array();
+	}
+	else if (modeName == "mapClass")
+	{
+		mapClassC = new Array();
+	}
+	else if (modeName == "policyMap")
+	{
+		policyMapC = new Array();
+	}
+	else if (modeName == "policyMapClass")
+	{
+		policyMapClassC = new Array();
+	}
+
+	else if (modeName == "routeMap")
+	{
+		routeMapC= new Array();
+	}
+	else if (modeName == "routerAF")
+	{
+		routerAFC = new Array();
+	}
+	else if (modeName == "routerBGP")
+	{
+		routerBGPC  = new Array();
+	}
+
+     	else if (modeName == "routerEIGRP")
+	{
+		routerEIGRPC = new Array();
+	}
+	else if (modeName == "routerIGRP")
+	{
+		routerIGRPC = new Array();
+	}
+	else if (modeName == "routerISIS")
+	{
+		routerISISC = new Array();
+	}
+    	 else if (modeName == "routerOSPF")
+	{
+		routerOSPFC = new Array();
+	}
+	else if (modeName == "routerRIP")
+	{
+		routerRIPC = new Array();
+	}
+	else if (modeName == "stdNacl")
+	{
+		stdNaclC= new Array();
+	}
+	else if (modeName == "subintATM")
+	{
+		subintATMC= new Array();
+	}
+	else if (modeName == "subintBri")
+	{
+		subintBriC= new Array();
+	}
+	else if (modeName == "subintDialer")
+	{
+		subintDialerC= new Array();
+	}
+	else if (modeName == "subintE")
+	{
+		subintEC= new Array();
+	}
+	else if (modeName == "subintF")
+	{
+		subintFC= new Array();
+	}
+	else if (modeName == "subintG")
+	{
+		subintGC= new Array();
+	}
+	else if (modeName == "subintS")
+	{
+		subintSC= new Array();
+	}
+	else if (modeName == "subintVlan")
+	{
+		subintVlanC= new Array();
+	}
+             else if (modeName == "timeRange")
+	{
+		timeRangeC= new Array();
+	}
+	else if (modeName == "user")
+	{
+		userC = new Array();
+	}
+	else if (modeName == "vlanDB")
+	{
+		vlanDBC = new Array();
+	}
+
+    }
+
+
+//end  Bargavi for Flash Mx

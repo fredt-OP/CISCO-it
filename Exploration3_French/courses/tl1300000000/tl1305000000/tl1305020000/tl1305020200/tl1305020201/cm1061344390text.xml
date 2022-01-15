@@ -1,0 +1,119 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Champs BPDU</b>]]></text>
+</component>
+<component id="ID_table">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	    	  <td width="80" valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'><b><font color="#FFFFFF">Numéro de champ</font></b></td>
+	  	  <td width="80" valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'><b><font color="#FFFFFF">Octets</font></b></td>
+	  	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b><font color="#FFFFFF">Champ</font></b></td>
+	  	  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td rowspan="4" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>1-4</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><div align="left">2</div></td>
+        <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><div align="left">ID de protocole</div></td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>1</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Version</td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>1</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Type de message</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>1</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Indicateurs</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td rowspan="4" valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>5-8</td>
+	  <td valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>8</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>ID de racine</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>4</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Coût du chemin</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>8</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>ID de pont</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>2</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>ID du port</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td rowspan="4" valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>9-12</td>
+	  <td valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>2</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Âge du message</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>2</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Âge maximal</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>2</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Hello time</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>2</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Délai de transmission</td>
+  </tr>
+</table>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<br><b>Placez le pointeur sur les différents champs BPDU.</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Champs BPDU]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Exemple de BPDU]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Le champ ID de protocole indique le type de protocole utilisé. Ce champ contient la valeur zéro.]]></text> 
+</component>
+<component id="ID_txt07">
+  <text><![CDATA[Le champ Version indique la version du protocole. Ce champ contient la valeur zéro.]]></text> 
+</component>
+<component id="ID_txt08">
+  <text><![CDATA[Le champ Type de message indique le type de message. Ce champ contient la valeur zéro.]]></text> 
+</component>
+<component id="ID_txt09">
+  <text><![CDATA[Le champ Indicateurs inclut l’une des valeurs suivantes :<br/>Topology change (TC) - 1 octet, qui signale une modification de la topologie dans l’éventualité où un chemin vers le pont racine a été coupé.<br/>Topology change acknowledgment (TCA) -1 octet, qui correspond à l’acquittement en réception d’un message de configuration avec l’octet TC défini.]]></text> 
+</component>
+<component id="ID_txt10">
+  <text><![CDATA[Le champ ID de racine indique le pont racine en répertoriant sa priorité (sur 2 octets), suivie de l’ID d’adresse MAC (sur 6 octets). À l’amorçage d’un commutateur, l’ID de racine est identique à l’ID de pont. Cependant, lorsque le processus de sélection intervient, l’ID de pont le plus faible remplace l’ID de racine local pour identifier le commutateur pont racine.]]></text> 
+</component>
+<component id="ID_txt11">
+  <text><![CDATA[Le champ Coût du chemin indique le coût du chemin du pont qui émet le message de configuration vers le pont racine. Ce champ est mis à jour par chaque commutateur situé sur le chemin menant au pont racine.]]></text> 
+</component>
+<component id="ID_txt12">
+  <text><![CDATA[Le champ ID de pont indique l’ID de priorité et d’adresse MAC du pont émetteur du message. Ces données permettent au pont racine d’identifier l’origine de la trame BPDU, ainsi que les différents chemins depuis le commutateur vers le pont racine. Lorsque le pont racine reçoit plusieurs trames BPDU d’un commutateur qui présentent des coûts de chemin différents, il sait qu’il existe deux chemins distincts et il utilise le chemin possédant le coût le plus faible.]]></text> 
+</component>
+<component id="ID_txt13">
+  <text><![CDATA[Le champ ID du port indique le numéro du port à partir duquel le message de configuration a été envoyé. Ce champ permet de détecter et de corriger les boucles créées par plusieurs ponts raccordés.]]></text> 
+</component>
+<component id="ID_txt14">
+  <text><![CDATA[Le champ Âge du message indique la durée écoulée depuis que le pont racine a envoyé le message de configuration sur lequel repose le message de configuration actuel.]]></text> 
+</component>
+<component id="ID_txt15">
+  <text><![CDATA[Le champ Âge maximal indique à quel moment le message de configuration actuel doit être supprimé. Une fois qu’un message a atteint l’« âge maximum », le commutateur fait expirer la configuration actuelle et entame un nouveau processus d’élection pour déterminer un nouveau pont racine puisqu’il suppose qu’il a été déconnecté du pont racine. La valeur par défaut est 20 secondes, mais les valeurs autorisées sont comprises entre 6 et 40 secondes.]]></text> 
+</component>
+<component id="ID_txt16">
+  <text><![CDATA[Le champ Hello time indique l’intervalle entre chaque envoi des messages de configuration par le pont racine. Cet intervalle détermine combien de temps le pont racine attend entre chaque envoi des BPDU de messages de configuration. La valeur par défaut est 2 secondes, mais les valeurs autorisées sont comprises entre 1 et 10 secondes.]]></text> 
+</component>
+<component id="ID_txt17">
+  <text><![CDATA[Le champ Délai de transmission indique combien de temps les ponts doivent rester dans l’état actuel avant de passer à un nouvel état suite à une modification de la topologie. Si un pont change d’état trop tôt, il est possible que certaines liaisons réseau ne soient pas prêtes pour leur changement d’état, ce qui peut conduire à la formation de boucles. La valeur par défaut est 15 secondes pour chaque état, mais les valeurs autorisées sont comprises entre 4 et 30 secondes.]]></text> 
+</component>
+
+<component id="ID_txt18">
+  <text><![CDATA[<b>     </b>]]></text> 
+</component>
+
+
+
+
+
+</textcomponents>

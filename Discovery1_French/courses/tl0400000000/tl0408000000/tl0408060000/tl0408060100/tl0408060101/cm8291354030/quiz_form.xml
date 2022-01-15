@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13247" dateexported="06/06/2007">
+		<name>Questionnaire du module 8</name>
+		<form id="18970" lang="en"><form-item>
+			<ai id="111287" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="111287" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>perte de données</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>usurpation d’identité</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>vol d’informations</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>manipulation de données</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>interruption de service</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>destruction de données sur un disque dur</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>modification de données pour un intérêt personnel</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>surcharge d’un serveur pour réduire ses performances</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>vol de données sur un disque dur pour obtenir un avantage concurrentiel</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>vol d’informations pour se faire passer pour quelqu’un d’autre et pour habituellement en tirer les honneurs</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser la menace sur le réseau à gauche sur la définition à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="193919" maxvalue ="1"><title>sans titre</title></decvar><interpretvar varname="193919" view="All">aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="193919" action="Set">1</setvar><scoringdescription>Ordre des réponses, de haut en bas : perte de données, manipulation de données, interruption de service, vol d’informations, usurpation d’identité</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="111293" type="mc-sa"><question><![CDATA[Comment un escroc (« phisher ») contacte-t-il sa victime ?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Par courriel]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Par téléphone]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Par téléphone via la voix sur IP]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Via une connaissance commune]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111163" type="mc-sa"><question><![CDATA[Un fichier est téléchargé sur Internet. Une fois que l’utilisateur a ouvert le fichier téléchargé, le disque dur de son ordinateur cesse de fonctionner et toutes les informations qui s’y trouvent sont perdues. De quel type d’attaque s’agit-il ?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Un ver informatique]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un virus]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un cheval de Troie]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un déni de service]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111166" type="mc-sa"><question><![CDATA[Un intrus essaye rapidement un grand nombre de possibilités en vue de deviner des mots de passe. Par conséquent, les autres utilisateurs du réseau sont verrouillés. De quel type d’attaque s’agit-il ?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Déni de service distribué]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Force brute]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ping fatal]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Inondation SYN]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111167" type="mc-sa"><question><![CDATA[Quel type de programme installe et recueille sur un ordinateur des informations personnelles, notamment des mots de passe et des informations sur les comptes, sans que l’utilisateur ne le sache ou ne l’autorise ?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Logiciels de publicité]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fenêtres publicitaires intempestives]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Logiciels espions]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fenêtres publicitaires]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111218" type="mc-sa"><question><![CDATA[Un administrateur réseau s’attaque au dépannage d’un ordinateur au fonctionnement étrange. Il met du temps à démarrer, les programmes ne se chargent pas et le clavier répond très lentement. Quelle est la meilleure initiative que pourrait prendre l’administrateur ?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Changer le clavier.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Connecter l’ordinateur à Internet pour rechercher des correctifs sur le site Web du système d’exploitation.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Connecter l’ordinateur à votre réseau pour voir s’il peut communiquer avec d’autres ordinateurs.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Redémarrer l’ordinateur et exécuter à partir d’un disque externe des programmes antivirus et anti-espions.]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="111395" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="111395" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>NAT</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>inspection des paquets avec état</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>filtrage simple des paquets</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>filtrage des sites Web</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>peut regarder à l’intérieur du paquet jusqu’à la couche 7</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>autorise ou refuse l’accès en fonction d’une URL</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>autorise ou refuse l’accès en fonction d’une adresse IP ou MAC</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>empêche les utilisateurs externes de connaître l’adresse IP utilisée dans le réseau</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser le terme à gauche sur la description la plus appropriée à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="194234" maxvalue ="1"><title>sans titre</title></decvar><interpretvar varname="194234" view="All">aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="194234" action="Set">1</setvar><scoringdescription>filtrage de sites Web - autorise ou refuse l’accès en fonction de l’application ; filtrage des paquets - accès autorisé ou refusé en fonction d’une adresse IP ou MAC ; inspection avec état - les paquets entrants doivent être des réponses légitimes à des requêtes provenant d’hôtes internes ; NAT - empêche les utilisateurs externes de connaître l’adresse IP utilisée dans le réseau</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="111396" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="111396" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>pare-feu personnel</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>pare-feu intégré</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>pare-feu basé sur serveur</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>pare-feu basé sur appareil</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>fonction d’un périphérique réseau tel qu’un routeur</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>une application conçue pour protéger un ordinateur personnel</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>un périphérique dont la seule fonction est d’être un pare-feu</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>une application conçue pour protéger le réseau d’entreprise</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser le terme à gauche sur la définition à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="194235" maxvalue ="1"><title>sans titre</title></decvar><interpretvar varname="194235" view="All">aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="194235" action="Set">1</setvar><scoringdescription>basé sur appareil - périphérique avec pour seule fonction le pare-feu ; basé sur serveur - conçu pour protéger le réseau d’entreprise ; pare-feu personnel - protège l’ordinateur personnel ; pare-feu intégré - fonction d’un routeur</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="111400" type="mc-ma"><question><![CDATA[Quelles sont les trois fonctions de sécurité que l’on trouve couramment sur un routeur ISR ? (Choisissez trois réponses.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Zone DMZ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[NAT]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SPI]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[HTTP]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[POP3]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pare-feu basé sur serveur]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111398" type="mc-ma"><question><![CDATA[Quels sont deux des objectifs d’une zone DMZ ? (Choisissez deux réponses.)]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Transformer des adresses privées internes en adresses publiques externes]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Créer un pare-feu basé sur logiciel sur un serveur qui effectue d’autres fonctions]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Empêcher ou refuser l’accès à un périphérique réseau en fonction du type de l’application utilisée]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Créer une zone de réseau qui permet à des utilisateurs externes d’accéder à des ressources internes, un serveur Web par exemple]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Établir une zone de réseau où les ressources réseau peuvent être partagées par des utilisateurs internes et externes]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Créer une zone de réseau sécurisée qui permet uniquement à des utilisateurs internes d’accéder à un serveur Web d’entreprise]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

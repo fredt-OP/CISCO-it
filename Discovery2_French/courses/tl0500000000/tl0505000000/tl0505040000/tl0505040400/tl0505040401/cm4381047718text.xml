@@ -1,0 +1,43 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+	<text><![CDATA[<b>Placez votre pointeur sur un routeur pour afficher la connexion WAN série configurée entre le routeur à services intégrés et le dispositif de service d’accès aux canaux/données (CSU/DSU) avec l’encapsulation PPP.</b>]]></text>
+	</component>
+<component id="ID_title">
+	<text><![CDATA[<b>Configuration de connexions WAN</b>]]></text>
+	</component>
+	
+	
+    <component id="ID_txt007">
+		<text><![CDATA[<b>« Où est 1 ? Où est 2 ?... »</b>]]></text>
+	
+	</component>
+	
+    <component id="ID_txt01">
+		<text><![CDATA[<b>CSU/DSU du client</b>]]></text>
+	</component>
+	
+    <component id="ID_txt02">
+		<text><![CDATA[<b>CSU/DSU du FAI</b>]]></text>
+	</component>
+	
+    <component id="ID_txt03">
+		<text><![CDATA[<b>Routeur à services intégrés Cisco du client</b>]]></text>
+	</component>
+	
+    <component id="ID_txt04">
+		<text><![CDATA[<b>Routeur à services intégrés Cisco du FAI</b>]]></text>
+	</component>
+
+    <component id="ID_txt05">
+		<text><![CDATA[<b>Nuage WAN</b>]]></text>
+	</component>
+	
+	    <component id="ID_txt06a">
+			<text><![CDATA[<font face='_typewriter'>Router><b>enable</b><br/>Router#<b>configure terminal </b><br/><b>Enter configuration commands, one per line. End with CNTL/Z,</b><br/>Router(config)#<b>interface serial 0/0/0</b><br/>Router(config-if)#<b>ip address 192.168.2.125 255.255.255.0</b><br/>Router(config-if)#<b>encapsulation ppp</b><br/>Router(config-if)#<b>no shutdown</b></font>]]></text>
+	</component>	
+	    	
+	    <component id="ID_txt07">
+			<text><![CDATA[<font face='_typewriter'>Router><b>enable</b><br/>Router#<b>configure terminal <br/>Enter configuration commands, one per line. End with CNTL/Z,</b><br/>Router(config)#<b>interface serial 0/0/0</b><br/>Router(config-if)#<b>ip address 192.168.2.123 255.255.255.0<br/></b>Router(config-if)#<b>encapsulation ppp<br/></b>Router(config-if)#<b>no shutdown</b></font>]]></text>
+	</component>	
+</textcomponents>

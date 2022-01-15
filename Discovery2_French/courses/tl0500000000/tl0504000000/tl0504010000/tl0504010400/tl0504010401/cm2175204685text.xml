@@ -1,0 +1,154 @@
+﻿<textcomponents>
+
+
+<component id="ID_but01">
+	<text><![CDATA[Masque de sous-réseau de longueur fixe]]></text>
+</component>
+
+<component id="ID_but02">
+	<text><![CDATA[VLSM]]></text>
+</component>
+  
+   
+    <component id="ID_txt03">
+		<text><![CDATA[<b>1 000 hôtes</b>]]></text>
+	</component>
+    <component id="ID_txt04">
+		<text><![CDATA[<b>8 000 hôtes</b>]]></text>
+	</component>
+    <component id="ID_txt05">
+		<text><![CDATA[<b>100 hôtes</b>]]></text>
+	</component>
+    <component id="ID_txt06">
+		<text><![CDATA[<b>400 hôtes</b>]]></text>
+	</component>
+    
+    
+
+	
+    <component id="ID_txt16">
+		<text><![CDATA[<b>Le découpage en sous-réseaux par classe implique que tous les sous-réseaux ont le même masque. Si trois bits de la partie hôte de l’adresse sont utilisés, huit sous-réseaux identiques de 8 190 hôtes sont créés.</b>]]></text>
+	</component>
+    <component id="ID_txt17">
+		<text><![CDATA[<b>Le sous-réseau 1 comprend 8 000 hôtes</b>]]></text>
+	</component>
+    <component id="ID_txt18">
+		<text><![CDATA[<b>Adresse IP du réseau<br>Masque de sous-réseau<br>Nombre total d’hôtes possibles<br>Adresses IP attribuées<br>Adresses IP non attribuées</b>]]></text>
+	</component>
+    <component id="ID_txt19">
+		<text><![CDATA[<b>172.16.0.0<br>255.255.224.0<br>8,190<br>8,000<br>190</b>]]></text>
+	</component>
+    
+	
+    <component id="ID_txt16a">
+		<text><![CDATA[<b>Le découpage en sous-réseaux par classe implique que tous les sous-réseaux ont le même masque. Si trois bits de la partie hôte de l’adresse sont utilisés, huit sous-réseaux identiques de 8 190 hôtes sont créés.</b>]]></text>
+	</component>
+    <component id="ID_txt17a">
+		<text><![CDATA[<b>Le sous-réseau 2 comprend 1 000 hôtes</b>]]></text>
+	</component>
+    <component id="ID_txt18a">
+		<text><![CDATA[<b>Adresse IP du réseau<br>Masque de sous-réseau<br>Nombre total d’hôtes possibles<br>Adresses IP attribuées<br>Adresses IP non attribuées</b>]]></text>
+	</component>
+    <component id="ID_txt19a">
+		<text><![CDATA[<b>172.16.32.0<br>255.255.224.0<br>8,190<br>1,000<br>7,190</b>]]></text>
+	</component>
+    
+	
+
+
+    <component id="ID_txt16b">
+		<text><![CDATA[<b>Le découpage en sous-réseaux par classe implique que tous les sous-réseaux ont le même masque. Si trois bits de la partie hôte de l’adresse sont utilisés, huit sous-réseaux identiques de 8 190 hôtes sont créés.</b>]]></text>
+	</component>
+    <component id="ID_txt17b">
+		<text><![CDATA[<b>Le sous-réseau 4 comprend 100 hôtes</b>]]></text>
+	</component>
+    <component id="ID_txt18b">
+		<text><![CDATA[<b>Adresse IP du réseau<br>Masque de sous-réseau<br>Nombre total d’hôtes possibles<br>Adresses IP attribuées<br>Adresses IP non attribuées</b>]]></text>
+	</component>
+    <component id="ID_txt19b">
+		<text><![CDATA[<b>172.16.96.0<br>255.255.224.0<br>8,190<br>100<br>8,090</b>]]></text>
+	</component>
+    
+	
+	
+
+   <component id="ID_txt16c">
+		<text><![CDATA[<b>Le découpage en sous-réseaux par classe implique que tous les sous-réseaux ont le même masque. Si trois bits de la partie hôte de l’adresse sont utilisés, huit sous-réseaux identiques de 8 190 hôtes sont créés.</b>]]></text>
+	</component>
+    <component id="ID_txt17c">
+		<text><![CDATA[<b>Le sous-réseau 3 comprend 400 hôtes</b>]]></text>
+	</component>
+    <component id="ID_txt18c">
+		<text><![CDATA[<b>Adresse IP du réseau<br>Masque de sous-réseau<br>Nombre total d’hôtes possibles<br>Adresses IP attribuées<br>Adresses IP non attribuées</b>]]></text>
+	</component>
+    <component id="ID_txt19c">
+		<text><![CDATA[<b>172.16.64.0<br>255.255.224.0<br>8,190<br>400<br>7,790</b>]]></text>
+	</component>
+    
+	
+   
+   
+   <component id="ID_txt16a1">   
+   		<text><![CDATA[<b>L’adressage sans classe permet la création de sous-réseaux de différentes tailles. Les sous-réseaux peuvent être créés en fonction du nombre d’adresses d’hôte requises.  Il est important que les plages d’adresses de sous-réseaux ne se chevauchent pas.</b>]]></text>
+   	</component>
+       <component id="ID_txt17a1">
+   		<text><![CDATA[<b>Le sous-réseau 1 dispose de 8 000 hôtes.<br>L’utilisation de trois bits de la partie hôte du réseau permet la création d’un sous-réseau unique composé de 8 190 adresses d’hôte.</b>]]></text>
+   	</component>
+       <component id="ID_txt18a1">
+   		<text><![CDATA[<b>Adresse IP du réseau<br>Masque de sous-réseau<br>Notation CIDR<br>Nombre total d’hôtes possibles<br>Adresses IP attribuées<br>Adresses IP non attribuées</b>]]></text>
+   	</component>
+       <component id="ID_txt19a1">
+   		<text><![CDATA[<b>172.16.0.0<br>255.255.224.0<br>172.16.0.0/19<br>8,190<br>8,000<br>190</b>]]></text>
+   	</component>
+       
+<component id="ID_txt16b1">   
+	   		<text><![CDATA[<b>L’adressage sans classe permet la création de sous-réseaux de différentes tailles. Les sous-réseaux peuvent être créés en fonction du nombre d’adresses d’hôte requises.  Il est important que les plages d’adresses de sous-réseaux ne se chevauchent pas.</b>]]></text>
+	   	</component>
+	       <component id="ID_txt17b1">
+	   		<text><![CDATA[<b>Le sous-réseau 2 dispose de 1 000 hôtes.<br>L’utilisation de six bits de la partie hôte du réseau permet la création d’un sous-réseau unique composé de 1 022 adresses d’hôte.</b>]]></text>
+	   	</component>
+	       <component id="ID_txt18b1">
+	   		<text><![CDATA[<b>Adresse IP du réseau<br>Masque de sous-réseau<br>Notation CIDR<br>Nombre total d’hôtes possibles<br>Adresses IP attribuées<br>Adresses IP non attribuées</b>]]></text>
+	   	</component>
+	       <component id="ID_txt19b1">
+	   		<text><![CDATA[<b>172.16.32.0<br>255.255.252.0<br>172.16.32.0/22<br>1,022<br>1,000<br>22</b>]]></text>
+	   	</component>
+	      
+	
+	
+	
+	   <component id="ID_txt16c1">   
+	   		<text><![CDATA[<b>L’adressage sans classe permet la création de sous-réseaux de différentes tailles. Les sous-réseaux peuvent être créés en fonction du nombre d’adresses d’hôte requises.  Il est important que les plages d’adresses de sous-réseaux ne se chevauchent pas.</b>]]></text>
+	   	</component>
+	       <component id="ID_txt17c1">
+	   		<text><![CDATA[<b>Le sous-réseau 4 dispose de 100 hôtes.<br>L’utilisation de neuf bits de la partie hôte du réseau permet la création d’un sous-réseau unique composé de 126 adresses d’hôte.</b>]]></text>
+	   	</component>
+	       <component id="ID_txt18c1">
+	   		<text><![CDATA[<b>Adresse IP du réseau<br>Masque de sous-réseau<br>Notation CIDR<br>Nombre total d’hôtes possibles<br>Adresses IP attribuées<br>Adresses IP non attribuées</b>]]></text>
+	   	</component>
+	       <component id="ID_txt19c1">
+	   		<text><![CDATA[<b>172.16.38.0<br>255.255.255.128<br>172.16.38.0/25<br>126<br>100<br>26</b>]]></text>
+	   	</component>
+	       
+   
+  	   <component id="ID_txt16d1">   
+  	   		<text><![CDATA[<b>L’adressage sans classe permet la création de sous-réseaux de différentes tailles. Les sous-réseaux peuvent être créés en fonction du nombre d’adresses d’hôte requises.  Il est important que les plages d’adresses de sous-réseaux ne se chevauchent pas.</b>]]></text>
+  	   	</component>
+  	       <component id="ID_txt17d1">
+  	   		<text><![CDATA[<b>Le sous-réseau 3 dispose de 400 hôtes.<br>L’utilisation de sept bits de la partie hôte du réseau permet la création d’un sous-réseau unique composé de 126 adresses d’hôte.</b>]]></text>
+  	   	</component>
+  	       <component id="ID_txt18d1">
+  	   		<text><![CDATA[<b>Adresse IP du réseau<br>Masque de sous-réseau<br>Notation CIDR<br>Nombre total d’hôtes possibles<br>Adresses IP attribuées<br>Adresses IP non attribuées</b>]]></text>
+  	   	</component>
+  	       <component id="ID_txt19d1">
+  	   		<text><![CDATA[<b>172.16.36.0<br>255.255.254.0<br>172.16.36.0/23<br>510<br>400<br>110</b>]]></text>
+  	   	</component>
+  	       
+
+
+
+
+    <component id="ID_inst">
+		<text><![CDATA[<b>Cliquez sur le bouton Masque de sous-réseau de longueur fixe ou VLSM, puis passez le pointeur de la souris sur les quatre nuages de sous-réseaux pour obtenir plus d’informations.</b>]]></text>
+	</component>
+</textcomponents>

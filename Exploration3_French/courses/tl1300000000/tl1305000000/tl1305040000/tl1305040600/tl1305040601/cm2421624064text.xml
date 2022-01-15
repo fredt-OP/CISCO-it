@@ -1,0 +1,113 @@
+﻿<textcomponents>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>États des ports RSTP</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>États des ports</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Descriptions</b>]]></text>
+</component>
+
+<component id="ID_button03">
+<text><![CDATA[<b>Ports STP et RSTP</b>]]></text>
+</component>
+
+<component id="ID_lazyText01">
+<text><![CDATA[<b>Mise à l’écart</b>]]></text>
+</component>
+
+<component id="ID_lazyText02">
+<text><![CDATA[<b>Apprentissage</b>]]></text>
+</component>
+
+<component id="ID_lazyText03">
+<text><![CDATA[<b>Acheminement</b>]]></text>
+</component>
+
+<component id="ID_lazyText04">
+<text><![CDATA[<b>Table MAC</b>]]></text>
+</component>
+
+<component id="dataframe1">
+<text><![CDATA[<b>Trame de données</b>]]></text>
+</component>
+
+<component id="dataframe2">
+<text><![CDATA[<b>Trame de données</b>]]></text>
+</component>
+
+<component id="dataframe3">
+<text><![CDATA[<b>Trame de données</b>]]></text>
+</component>
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>État du port</b></font></td>
+	  	  	<td valign='top' width='500' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>Action</b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Mise à l’écart</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Cet état est présent dans une topologie active stable et durant les modifications et la synchronisation de topologie. L’état de mise à l’écart empêche l’acheminement des trames de données en « interrompant » par conséquent la continuité d’une boucle de couche 2.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Apprentissage</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Cet état est présent dans une topologie active stable et durant les modifications et la synchronisation de topologie. L’état d’apprentissage accepte les trames de données afin d’enrichir la table d’adresses MAC pour contribuer à limiter la diffusion massive des trames de monodiffusion inconnues.</td>
+	</tr>
+	<tr>
+	<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Acheminement</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Cet état est présent uniquement dans les topologies actives stables. Les ports de commutateurs en état d’acheminement sont ceux qui déterminent la topologie. Suite à une modification de topologie ou lors d’une synchronisation, l’acheminement des trames de données intervient uniquement après un processus de proposition et d’accord.</td>
+	</tr>
+	
+</table>
+]]></text> 
+  </component>
+  
+  <component id="tableHTML2">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>État de port opérationnel</b></font></td>
+	  	  	<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>État de port STP</b></font></td>
+			<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>État de port RSTP</b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Activé</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Blocage</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Mise à l’écart</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Activé</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Écoute</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Mise à l’écart</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Activé</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Apprentissage</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Apprentissage</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Activé</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Acheminement</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Acheminement</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Désactivé</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Désactivé</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Mise à l’écart</td>
+	</tr>
+	
+</table>
+]]></text> 
+  </component>
+
+</textcomponents>

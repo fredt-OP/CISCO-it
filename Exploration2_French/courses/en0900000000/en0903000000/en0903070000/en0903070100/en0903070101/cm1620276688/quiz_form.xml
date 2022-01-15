@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13255" dateexported="06/04/2007">
+		<name>Module 3 Quiz</name>
+		<form id="19220" lang="en"><form-item order="fixed">
+			<ai id="110538" type="mc-ma"><question><![CDATA[What are two advantages of static routing over dynamic routing? (Choose two).]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[configuration is less error prone]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[more secure because routers do not advertise routes]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[growing the network usually does not present a problem]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[no computing overhead]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[administrator has less work maintaining the configuration]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="55583" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="55583" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>RIP</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>IGRP</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>OSPF</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>EIGRP</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>BGP</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>distance vector exterior routing protocol</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Cisco&apos;s advanced interior routing protocol</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>link-state interior routing protocol</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>distance vector interior routing protocol</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Cisco&apos;s distance vector interior routing protocol</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Match the routing protocol to its description.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/><display componentIdent="5" xpos="600" ypos="223"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="obs1" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>RIP - distance vector interior routing protocol, IGRP - Cisco&apos;s distance vector protocol, OSPF - link state, EIGRP -Cisco&apos;s advanced interior protocol, BGP - distance vector exterior protocol</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="110672" type="mc-sa"><question><![CDATA[Which statement best describes convergence on a network?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The amount of time required for routers to share administrative configuration changes, such a password changes, from one end of a network to the other end.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The time required for the routers in the network to update their routing tables after a topology change has occurred.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The time required for the routers in one autonomous system to learn routes to destinations in another autonomous sytem.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The time required for routers running disparate routing protocols to update their routing tables.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110703" type="mc-ma"><question><![CDATA[Which two parameters are used to calculate metrics? (Choose two.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[hop count]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[uptime]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[bandwidth]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[convergence time]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[administrative distance]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110628" type="mc-sa"><question><![CDATA[Which routing protocol has the most trustworthy administrative distance by default?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[EIGRP internal routes]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ISIS]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[OSPF]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPv1]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPv2]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110481" type="mc-sa"><question><![CDATA[How many equal cost paths can a dynamic routing protocol use for load balancing by default?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[2]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[3]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[4]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[6]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110514" type="mc-sa"><question><![CDATA[Which command will show the administrative distance of routes?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[R1# <b>show interfaces</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R1# <b>show ip route</b>]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1# <b>show ip interfaces</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1# <b>debug ip routing</b>]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110573" type="mc-sa"><question><![CDATA[When do directly connected networks appear in the routing table?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[when they are included in a static route]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[when they are used as an exit interface]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[as soon as they are addressed and operational at layer 2]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[as soon as they are addressed and operational at layer 3]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[always when a no shutdown command is issued]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110643" type="mc-sa"><question><![CDATA[Router1 is using the RIPv2 routing protocol and has multiple unequal paths to reach a destination network.  How will Router1 determine which path is the best path to the destination network?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[lowest metric]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[highest metric]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[lowest administrative distance]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[highest administrative distance]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[it will load balance between up to four paths]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="110642" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="110642" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>5</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>20</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>90</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>100</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>110</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>115</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>120</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>170</mattext></material></textcomponent></component><component ident="9" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>200</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>eBGP</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>EIGRP (Internal)</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>EIGRP (External)</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>ISIS</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>OSPF</mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>RIP</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the administrative distance in the left column to the corresponding routing protocol in the right column.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/><display componentIdent="8" xpos="200" ypos="355"/><display componentIdent="9" xpos="200" ypos="395"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/><display componentIdent="5" xpos="600" ypos="223"/><display componentIdent="6" xpos="600" ypos="260"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><scoringzone ident ="6"><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="191999" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="191999" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="6"><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="191999" action="Set">1</setvar><scoringdescription>From top to bottom - 20, 90, 170, 115, 110, 120.  Not used are - 5, 100, 200.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="110658" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="110658" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Does not support discontiguous networks</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Supported by EIGRP, OSPF, and BGP</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Sends subnet mask in its routing updates</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Supports discontiguous networks</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Supported by RIP version 1 and IGRP</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Does not send subnet mask in its routing updates</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Cisco proprietary</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Open standard </mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Classful Routing</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Classless Routing</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the characteristics on the left to the correct categories on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/><display componentIdent="8" xpos="200" ypos="355"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="4" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="Classful" maxvalue ="1"><title>Classful</title></decvar><interpretvar varname="Classful" view="All">Are all Classful characteristics in the correct column</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="Classful" action="Set">1</setvar><scoringdescription>Classful Does not support discontiguous networks Does not send subnet mask in its routing updates Supported by RIP version 1 and IGRP  Classless Supports discontiguous networks Sends subnet mask in its routing updates Supported by EIGRP, OSPF, and BGP</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

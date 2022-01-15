@@ -1,0 +1,224 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne seront pas enregistrées.</li><li>Cliquez sur <b> Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b> Questions suivante</b>  pour accéder à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Expliquez pourquoi le routage statique peut être préféré au routage dynamique. ]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(voir 3.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[Le routage statique est plus sécurisé, moins gourmand en puissance de traitement du routeur et plus facile à comprendre. Il est plus sécurisé car les routeurs n’annoncent pas les informations de routage aux autre routeurs. Il utilise moins de ressources que le routage dynamique, qui nécessite l’implémentation d’algorithmes et le traitement de paquets de mise à jour. Il est souvent plus facile à comprendre que les protocoles de routage plus complexes.]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. Quelles sont les quatre méthodes de classification des protocoles de routage dynamique ? ]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(voir 3.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[Les protocoles de routage dynamique peuvent être classifiés comme suit : intérieurs ou extérieurs, à vecteur de distance ou à état de liens, par classe ou sans classe et par vitesse de convergence.]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Quelles sont les métriques les plus communément utilisées dans les protocoles de routage dynamique d’IP ?  ]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(voir 3.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[Nombre de sauts, bande passante, temps d’attente et coût]]></text>
+</component>
+
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Qu’est ce que la distance administrative ? Pourquoi est-elle importante ?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(voir 3.4)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[La distance administrative est une mesure de la fiabilité de la source d’une route. Elle s’utilise lorsqu’un routeur a acquis des routes vers la même destination à partir de deux sources de route différentes. Elle est importante car toutes les sources de route ne sont pas égales. Par exemple, vous ne voudriez certainement pas qu’un routeur envoie du trafic à un autre routeur si la destination est un réseau connecté directement. La distance administrative permet d’éviter cela car les routes connectées directement sont préférées sur toutes les sources de route.]]></text>
+</component>
+
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Chaque routeur doit disposer au moins d’une route statique. Expliquez pourquoi cette affirmation peut être vraie.]]></text>
+</component>
+<component id="*ID_Q5_txt04">
+<text><![CDATA[(voir 2.3)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[Chaque routeur qui transfère le trafic utilisateur vers Internet possède au moins une route statique. Cette route statique est une route par défaut. Chaque ménage qui possède un routeur pour se connecter à Internet utilise une route statique par défaut pour envoyer tout le trafic vers le FAI. 
+]]></text>
+</component>
+
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) Les participants qui débutent dans le routage considèrent généralement que la bande passante est une meilleure métrique que le nombre de sauts. Expliquez pourquoi cette affirmation peut être fausse.]]></text>
+</component>
+<component id="*ID_Q6_txt04">
+<text><![CDATA[(voir 2.3)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[Le nombre de sauts peut utiliser un meilleur chemin si le chemin choisi par une métrique basée sur la bande passante est saturé par le trafic. ]]></text>
+</component>
+
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Ce chapitre est terminé.</b>]]></text>
+</component>
+
+
+
+
+<!-- Question 7 -->
+
+
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[(voir 2.4)]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) Pourquoi devez-vous supprimer une route statique de la configuration avant de la modifier ?]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[Une route statique ne peut pas être modifiée. La route d’origine doit également être supprimée de la configuration. Sinon, la route d’origine et la nouvelle route seront stockées dans la configuration.<br/><b>Ce chapitre est terminé.</b>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) Expliquez l’importance du récapitulatif de routage et des routes par défaut.]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(voir 2.5)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[Le récapitulatif de routage et les routes par défaut diminuent la taille des tables de routage. Si un routeur possède un ensemble important de routes statiques qui désignent la même interface, ces routes peuvent parfois être résumées dans une entrée de la table de routage. Sans routage par défaut, chaque routeur doit disposer d’une route vers chaque emplacement du réseau.]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 9 -->
+
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[(voir 2.6)]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9. Répertoriez les commandes utilisées pour tester et dépanner une implémentation de réseau.]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[<b>Ce chapitre est terminé.</b>]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+

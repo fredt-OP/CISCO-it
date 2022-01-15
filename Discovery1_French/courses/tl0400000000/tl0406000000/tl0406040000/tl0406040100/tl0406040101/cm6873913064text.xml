@@ -1,0 +1,416 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour obtenir des informations récapitulatives.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<p><b>Ce chapitre a traité de la relation client/serveur pour des services réseau courants tels que HTTP, FTP, DNS, DHCP et le courriel.</b></p><ul><li>Les serveurs sont des hôtes qui exécutent des logiciels pour leur permettre de fournir des services à d’autres hôtes via le réseau.</li><br/><li>Les protocoles d’application déterminent comment les serveurs et les clients interagissent et échangent des informations entre eux.</li><br/><li>Les protocoles de transport, tels que les protocoles TCP (Transport Control Protocol) et UDP (User Datagram Protocol), définissent les numéros de port afin de gérer les conversations individuelles entre les serveurs et les clients.  </li><br/><li>Le protocole IP spécifie l’adressage logique et la façon dont les données sont encapsulées dans des paquets.</li><br/><li>Les protocoles d’accès réseau, tels que Ethernet, décrivent deux fonctions principales : la gestion de liaison de données et les transmissions réseau physiques.</li></ul>]]></text>
+</component>
+
+
+<!-- slide 1 graphic text -->
+<component id="s1_ID_txt01">
+<text><![CDATA[<b>SÉCURITÉ</b>]]></text>
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[<b>SUPPORT</b>]]></text> 
+  </component>
+
+<component id="s1_ID_txt03"><text><![CDATA[<b>POLITIQUE</b>]]></text> 
+  </component>
+
+<component id="s1_ID_txt04"><text><![CDATA[<b>COÛT</b>]]></text> 
+  </component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[<b>DISPONIBILITÉ</b>]]></text> 
+  </component>
+  
+<component id="s1_ID_txt06">
+<text><![CDATA[<b>RESSOURCES</b>]]></text> 
+  </component>
+
+<component id="s1_ID_txt07"><text><![CDATA[<b>PLATE-FORME</b>]]></text> 
+  </component>
+  
+<component id="s1_ID_txt08">
+<text><![CDATA[<b>UTILISATION</b>]]></text> 
+  </component>
+  
+<component id="s1_ID_txt09">
+<text><![CDATA[<b>Sélection du système d’exploitation</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[<p><b>DNS (serveur de noms de domaine)</b></li><li>Service fournissant l’adresse IP de l’URL d’un site Web ou le nom de domaine afin qu’un hôte puisse s’y connecter.</li><br/><li>Les noms DNS sont enregistrés et organisés sur Internet dans des groupes de haut niveau, ou domaines, spécifiques.</li><br/><li>Les domaines de haut niveau les plus courants sur Internet sont .com, .edu et .net. </li></ul><br/><p><b>Serveur DHCP (Dynamic Host Configuration Protocol)</b><ul><li>Service attribuant aux clients diverses informations, notamment une adresse IP, un masque de sous-réseau et une passerelle par défaut.</li></ul><br/><p><b>Serveur FTP (File Transfer Protocol)</b><ul><li>Service permettant le téléchargement de fichiers entre un client et un serveur.</li></ul>]]></text>
+</component>
+
+	<component id="s2_ID_txt01">
+		<text><![CDATA[<b>Batterie de serveurs</b>]]></text>
+	</component>
+    <component id="s2_ID_txt02">
+		<text><![CDATA[<b>Serveur DNS</b>]]></text>
+	</component>
+    <component id="s2_ID_txt03">
+		<text><![CDATA[<b>Serveur Telnet</b>]]></text>
+	</component>
+    <component id="s2_ID_txt04">
+		<text><![CDATA[<b>Serveur de messagerie</b>]]></text>
+	</component>
+    <component id="s2_ID_txt05">
+		<text><![CDATA[<b>Serveur DHCP</b>]]></text>
+	</component>
+    <component id="s2_ID_txt06">
+		<text><![CDATA[<b>Serveur Web</b>]]></text>
+	</component>
+    <component id="s2_ID_txt07">
+		<text><![CDATA[<b>Serveur FTP</b>]]></text>
+	</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<p><b>Serveur de messagerie</b></li><br/><li>Service envoyant, recevant et stockant le courriel dans les boîtes aux lettres des utilisateurs qui se trouvent sur le serveur. </li><br/><li>Utilise le protocole SMTP (Simple Mail Transfer Protocol) pour envoyer le courriel ; les clients utilisent le protocole POP3 (Post Office Protocol) ou IMAP4 (Internet Mail Access Protocol) pour le récupérer.</li><br/><li>Les destinataires sont spécifiés sous le format utilisateur@xyz.com.</li><br/><b>Serveur Web</b></li><br/><li>Service permettant de transférer des informations entre les clients Web et les serveurs Web.</li><br/><li>L’accès à la plupart des pages Web se fait via HTTP (Hypertext Transfer Protocol), à partir de serveurs utilisant le port 80. </li><br/><li>HTTP n’est pas un service sécurisé. Les requêtes de HTTP sécurisé sont envoyées au port 443. Ces requêtes nécessitent l’utilisation de https://.</li><br/><b>TELNET</b></li><br/><li>Service permettant aux administrateurs de se connecter à un hôte depuis un site distant et de contrôler l’hôte comme s’ils étaient connectés localement.</li><br/><b>Messagerie instantanée</b></li><br/><li>Les logiciels clients de messagerie instantanée sont chargés sur les ordinateurs hôtes. Une fois que les clients de messagerie instantanée sont authentifiés auprès du serveur, ils peuvent envoyer des messages à d’autres clients en temps réel ou transférer de la vidéo, de la musique et des fichiers vocaux.</li><br/><b>Téléphonie IP</b></li><br/><li>Un client de téléphonie Internet utilise une technologie Peer to peer semblable à celle utilisée par la messagerie instantanée. </li><br/><li>La téléphonie IP se sert de la technologie de la voix sur IP qui utilise les paquets IP pour transporter une voix numérisée comme donnée.</li></ul><br/><br/>]]></text>
+</component>
+
+
+<component id="s3_ID_title01">
+<text><![CDATA[<b>Numéros de port</b>]]></text>
+</component>
+<component id="s3_ID_txt01">
+  <text><![CDATA[20]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt01a">
+  <text><![CDATA[Données FTP]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt01b">
+  <text><![CDATA[Protocole FTP (File Transfer Protocol) (pour le transfert de données)]]></text> 
+  </component>
+  
+<component id="s3_ID_txt02">
+  <text><![CDATA[21]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt02a">
+  <text><![CDATA[Contrôle FTP]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt02b">
+  <text><![CDATA[Protocole FTP (File Transfer Protocol) (pour établir la connexion)]]></text> 
+  </component>
+
+  <component id="s3_ID_txt03">
+  <text><![CDATA[23]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt03a">
+  <text><![CDATA[TELNET]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt03b">
+  <text><![CDATA[TELetype NETwork]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt04">
+  <text><![CDATA[25]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt04a">
+  <text><![CDATA[SMTP]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt04b">
+  <text><![CDATA[Protocole SMTP (Simple Mail Transfer Protocol)]]></text> 
+  </component>
+  
+ <component id="s3_ID_txt05">
+  <text><![CDATA[53]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt05a">
+  <text><![CDATA[DNS]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt05b">
+  <text><![CDATA[Domain Name Service (service de noms de domaines)]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt06">
+  <text><![CDATA[67]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt06a">
+  <text><![CDATA[Client DHCP v4]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt06b">
+  <text><![CDATA[Protocole DHCP (Dynamic Host Configuration Protocol) (client)]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt07">
+  <text><![CDATA[68]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt07a">
+  <text><![CDATA[Serveur DHCP v4]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt07b">
+  <text><![CDATA[Protocole DHCP (Dynamic Host Configuration Protocol) (serveur)]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt08">
+  <text><![CDATA[69]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt08a">
+  <text><![CDATA[TFTP]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt08b">
+  <text><![CDATA[Protocole TFTP (Trivial File Transfer Protocol)]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt09">
+  <text><![CDATA[80]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt09a">
+  <text><![CDATA[HTTP]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt09b">
+  <text><![CDATA[Protocole HTTP (Hypertext Transfer Protocol)]]></text> 
+  </component>
+  
+<component id="s3_ID_txt10">
+  <text><![CDATA[110]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt10a">
+  <text><![CDATA[POP3]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt10b">
+  <text><![CDATA[Protocole POP3 (Post Office Protocol version 3)]]></text> 
+  </component>
+  
+ <component id="s3_ID_txt11">
+  <text><![CDATA[137]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt11a">
+  <text><![CDATA[NBNS]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt11b">
+  <text><![CDATA[Microsoft NetBIOS Name Service (service de noms NetBIOS de Microsoft)]]></text> 
+  </component>
+  
+ <component id="s3_ID_txt12">
+  <text><![CDATA[143]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt12a">
+  <text><![CDATA[IMAP4]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt12b">
+  <text><![CDATA[Protocole IMAP4 (Internet Message Access Protocol version 4)]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt13">
+  <text><![CDATA[161]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt13a">
+  <text><![CDATA[SNMP]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt13b">
+  <text><![CDATA[Protocole SNMP (Simple Network Management Protocol)]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt14">
+  <text><![CDATA[443]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt14a">
+  <text><![CDATA[HTTPS]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt14b">
+  <text><![CDATA[Protocole HTTPS (Hypertext Transfer Protocol Secure)]]></text> 
+  </component>
+ 
+  <component id="s3_ID_header1">
+  <text><![CDATA[<b>Numéro de port de destination</b>]]></text> 
+  </component>
+  
+  <component id="s3_ID_header2">
+  <text><![CDATA[<b>Abréviation</b>]]></text> 
+  </component>
+  
+  <component id="s3_ID_header3">
+  <text><![CDATA[<b>Définition</b>]]></text> 
+  </component>
+
+
+
+
+<component id="ID_txt04">
+<text><![CDATA[<p><li>Une pile de protocoles organise les protocoles sous forme de hiérarchie par couches, chaque protocole de niveau supérieur dépendant des services des protocoles des niveaux inférieurs.</li><br/><li>L’utilisation d’une structure en couches présente divers avantages, notamment :</li><br/><li><TEXTFORMAT BLOCKINDENT='25'>elle aide et simplifie la conception de protocoles ;</textformat></li><br/><li><TEXTFORMAT BLOCKINDENT='25'>elle permet à des produits créés par différents fabricants d’être compatibles ;</textformat></li><br/><li><TEXTFORMAT BLOCKINDENT='25'>elle empêche que des modifications dans la technologie ou les fonctions dans l’une des couches n’affecte les autres couches en amont et en aval.</textformat></li><br/><li>Lors de l’envoi de messages, la pile de protocoles d’un hôte fonctionne de haut en bas. Chaque couche encapsule des informations et les transmet à la couche en dessous. Le processus est inversé pour l’hôte récepteur.</li><br/><li>Le modèle OSI (7 couches) et le modèle TCP/IP (4 couches) sont deux modèles de réseau hiérarchiques.</li><br/><li>Le modèle OSI comprend toutes les fonctions, ou tâches, associées à la communication interréseau, et pas uniquement celles associées aux protocoles TCP/IP.</li><br/><li>Le modèle OSI est considéré comme le modèle de référence principal pour la communication interordinateur.<br/><br/></li></ul>]]></text>
+</component>
+
+<!-- slide 4 graphic text -->
+
+<component id="S4a_ID_txt01">
+  <text><![CDATA[<b>Interaction de protocole</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt02">
+  <text><![CDATA[<b>Pile de protocoles</b>]]></text> 
+  </component>
+
+<component id="S4a_ID_txt03">
+  <text><![CDATA[<b>Serveur Web</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt04">
+  <text><![CDATA[<b>Protocole HTTP (Hypertext Transfer Protocol)</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt05">
+  <text><![CDATA[<b>Protocole TCP (Transmission Control Protocol)</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt06">
+  <text><![CDATA[<b>Protocole IP (Internet Protocol)</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt07">
+  <text><![CDATA[<b>Protocole Ethernet</b>]]></text> 
+  </component>
+
+<component id="s4_ID_pc1">
+<text><![CDATA[<b> Ordinateur</b>]]></text>
+</component>
+<component id="s4_ID_pc2">
+  <text><![CDATA[<b>Ordinateur</b>]]></text> 
+  </component>
+<component id="s4_ID_txt01">
+  <text><![CDATA[<b>Couche application</b>]]></text> 
+  </component>
+<component id="s4_ID_txt02">
+  <text><![CDATA[<b>Couche présentation</b>]]></text> 
+  </component>
+<component id="s4_ID_txt03">
+  <text><![CDATA[<b>Couche session</b>]]></text> 
+  </component>
+<component id="s4_ID_txt04">
+  <text><![CDATA[<b>Couche transport</b>]]></text> 
+  </component>
+<component id="s4_ID_txt05">
+  <text><![CDATA[<b>Couche réseau</b>]]></text> 
+  </component>
+<component id="s4_ID_txt06">
+  <text><![CDATA[<b>Couche liaison de données</b>]]></text> 
+  </component>
+<component id="s4_ID_txt07">
+  <text><![CDATA[<b>Couche physique</b>]]></text> 
+  </component>
+<component id="s4_ID_txt08">
+    <text><![CDATA[<b>Couche application</b>]]></text> 
+    </component>
+<component id="s4_ID_txt09">
+    <text><![CDATA[<b>Couche présentation</b>]]></text> 
+    </component>
+<component id="s4_ID_txt10">
+    <text><![CDATA[<b>Couche session</b>]]></text> 
+    </component>
+<component id="s4_ID_txt11">
+    <text><![CDATA[<b>Couche transport</b>]]></text> 
+    </component>
+<component id="s4_ID_txt12">
+    <text><![CDATA[<b>Couche réseau</b>]]></text> 
+    </component>
+<component id="s4_ID_txt13">
+    <text><![CDATA[<b>Couche liaison de données</b>]]></text> 
+    </component>
+<component id="s4_ID_txt14">
+    <text><![CDATA[<b>Couche physique</b>]]></text> 
+  </component>
+<component id="s6_ID_txt01">
+  <text><![CDATA[<b>Interaction de protocole</b>]]></text> 
+  </component>
+<component id="s6_ID_txt02">
+  <text><![CDATA[<b>Protocole HTTP (Hypertext Transfer Protocol)</b>]]></text> 
+  </component>
+<component id="s6_ID_txt03">
+  <text><![CDATA[<b>Protocole TCP (Transmission Control Protocol)</b>]]></text> 
+  </component>
+<component id="s6_ID_txt04">
+  <text><![CDATA[<b>Protocole IP (Internet Protocol)</b>]]></text> 
+  </component>
+<component id="s6_ID_txt05">
+  <text><![CDATA[<b>Protocole Ethernet</b>]]></text> 
+  </component>
+<component id="s6_ID_txt06">
+  <text><![CDATA[<b>Serveur Web</b>]]></text> 
+  </component>
+
+<component id="s6b_ID_pc1">
+<text><![CDATA[<b>Ordinateur</b>]]></text>
+</component>
+<component id="s6b_ID_pc2">
+  <text><![CDATA[<b>Ordinateur</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt01">
+  <text><![CDATA[<b>Couche application</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt02">
+  <text><![CDATA[<b>Couche présentation</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt03">
+  <text><![CDATA[<b>Couche session</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt04">
+  <text><![CDATA[<b>Couche transport</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt05">
+  <text><![CDATA[<b>Couche réseau</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt06">
+  <text><![CDATA[<b>Couche liaison de données</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt07">
+  <text><![CDATA[<b>Couche physique</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt08">
+    <text><![CDATA[<b>Couche application</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt09">
+    <text><![CDATA[<b>Couche présentation</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt10">
+    <text><![CDATA[<b>Couche session</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt11">
+    <text><![CDATA[<b>Couche transport</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt12">
+    <text><![CDATA[<b>Couche réseau</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt13">
+    <text><![CDATA[<b>Couche liaison de données</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt14">
+    <text><![CDATA[<b>Couche physique</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt15">
+      <text><![CDATA[<b>Modèle OSI (Open Systems Interconnect)</b>]]></text> 
+  </component>
+<component id="s6b_ID_webcam">
+  <text><![CDATA[<b>Webcam</b>]]></text> 
+  </component>
+
+</textcomponents>

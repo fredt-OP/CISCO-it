@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="10/19/2007">
+		<name>Module  Quiz</name>
+		<form id="19850" lang=""><form-item order="fixed">
+			<ai id="zzzz" type="mc-sa"><question><![CDATA[How is the TeamSwitch connected to the 1841 EdgeRouter?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/1 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/0 ]]></text>
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Fast Ethernet 0/0/1  ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/2 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/3 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Gigabit Ethernet 0/1 ]]></text>
+						</choice>
+
+
+</choices></ai></form-item>
+
+<form-item order="fixed">
+			<ai id="zzzz" type="mc-sa"><question><![CDATA[How is the VendorSwitch connected to the 1841 EdgeRouter?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/1 ]]></text>
+
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Fast Ethernet 0/0/0 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/1  ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/2 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/3 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Gigabit Ethernet 0/1 ]]></text>
+						</choice>						
+
+</choices></ai></form-item>
+
+<form-item order="fixed">
+	<ai id="zzz" type="mc-sa">
+		<question><![CDATA[What model type is the VendorSwitch?]]></question>
+		<choices>
+			<choice correct="y">
+				<text><![CDATA[2950 with 24 ports ]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[2960 with 16 ports ]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[2960 with 24 ports ]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[3550 with 24 ports ]]></text>
+			</choice>			
+</choices></ai></form-item>
+<form-item order="fixed">
+	<ai id="zzzz" type="mc-sa">
+		<question><![CDATA[What IOS version is the TeamSwitch currently running?]]></question>
+		<choices>
+			<choice correct="n">
+				<text><![CDATA[version 2 ]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[version 12.1 ]]></text>
+			</choice>	
+			<choice correct="y">
+				<text><![CDATA[version 12.2]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[version 25 ]]></text>
+			</choice>	
+<choice correct="n">
+				<text><![CDATA[version C2960-LANBASE-M]]></text>
+			</choice>	
+<choice correct="n">
+				<text><![CDATA[version WS-C2960-24TT-L]]></text>
+			</choice>			
+</choices></ai></form-item>
+<form-item order="fixed">
+	<ai id="zzzz" type="mc-sa">
+		<question><![CDATA[What duplex is running between the EdgeRouter and the TeamSwitch?]]></question>
+		<choices>
+			<choice correct="y">
+				<text><![CDATA[full]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[half]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[auto]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[administratively down]]></text>
+			</choice>		
+</choices></ai></form-item>
+<form-item order="fixed">
+	<ai id="zzzz" type="mc-sa">
+		<question><![CDATA[Based on the show cdp neighbors detail command, what can be said about the directly connected devices?]]></question>
+		<choices>
+			<choice correct="n">
+				<text><![CDATA[The EdgeRouter device has 3 directly connected devices.]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Telnet can not be used to modify the VendorSwitch device.]]></text>
+			</choice>	
+			<choice correct="y">
+				<text><![CDATA[The VendorSwitch device connects to the FastEthernet 0/0/3 port on the EdgeRouter device.]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[The TeamSwitch device and the VIPSwitch device are not on the same VLAN management network.]]></text>
+			</choice>		
+</choices></ai></form-item>
+<form-item order="fixed">
+	<ai id="zzzz" type="mc-sa">
+		<question><![CDATA[How many devices running CDP are directly connected to the Edge Router?]]></question>
+		<choices>
+			<choice correct="n">
+				<text><![CDATA[3]]></text>
+			</choice>	
+			<choice correct="y">
+				<text><![CDATA[4]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[5]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[6]]></text>
+			</choice>	
+<choice correct="n">
+				<text><![CDATA[7]]></text>
+			</choice>	
+<choice correct="n">
+				<text><![CDATA[8]]></text>
+			</choice>		
+</choices></ai></form-item>
+</form></exam> 

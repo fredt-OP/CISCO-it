@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13247" dateexported="06/06/2007">
+		<name>Module 8 Quiz</name>
+		<form id="18970" lang="en"><form-item>
+			<ai id="111287" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="111287" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>data loss</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>identity theft</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>information theft</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>data manipulation</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>disruption of service</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>destroying data on a hard drive</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>changing data for personal gain</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>overloading a server to reduce its performance</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>stealing data on a hard drive to gain a competitive advantage</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>stealing information to impersonate someone and usually to obtain credit</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the network threat on the left to the definition on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="193919" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="193919" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="193919" action="Set">1</setvar><scoringdescription>Order of answers, from top to bottom: data loss, data manipulation, disruption of service, information theft, identity theft</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="111293" type="mc-sa"><question><![CDATA[How does a phisher typically contact a victim?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[by email]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[by telephone]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[by Voice over IP phone]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[through a person they know in common]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111163" type="mc-sa"><question><![CDATA[A file is downloaded from the Internet.  After the user opens the downloaded file, the user's hard drive crashes and all information on the computer is lost.  What type of attack occurred?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[worm]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[virus]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Trojan horse]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Denial of Service]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111166" type="mc-sa"><question><![CDATA[In rapid succession, an intruder tries a large number of possibilities to guess passwords.  As a result, other users on the network are locked out.  What type of attack occurred?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[DDoS]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[brute force]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ping of death]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SYN flooding]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111167" type="mc-sa"><question><![CDATA[What type of program installs and gathers personal information, including password and account information, from a computer without permission or knowledge of the user?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[adware]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[popups]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[spyware]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[pop-unders]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111218" type="mc-sa"><question><![CDATA[A network administrator is troubleshooting a computer that is operating strangely.  It boots slowly, programs will not load, and the keyboard responds very slowly.  What is the best action for the administrator to take?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Attach a different keyboard.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Attach the PC to the Internet to check its operating system website for patches.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Add the PC to your network to see if it can communicate with other PCs.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Boot the PC and run anti-virus and anti-spyware applications from an external drive.]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="111395" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="111395" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>NAT</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>stateful packet inspection</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>simple packet filtering</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>website filtering</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>can look inside the packet up through layer 7</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>allows or denies access based on a URL</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>allows or denies access based on an IP or MAC address</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>keeps external users from knowing the IP address used inside the network</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the term on the left to the best description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="194234" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="194234" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="194234" action="Set">1</setvar><scoringdescription>web site filtering-allows or denies access based on application; packet filtering-access allowed or denied based on IP or MAC add.; Stateful inspection-incoming packets must be legitimate responses to requests from internal hosts; NAT-keeps external users from knowing the IP address used inside the network</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="111396" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="111396" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>personal firewall</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>integrated firewall</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>server-based firewall</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>appliance-based firewall</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>a feature of a network device such as a router</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>an application designed to protect a home PC</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>a device that has the sole function of being a firewall</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>an application designed to protect the enterprise network</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the term on the left to the definition on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="194235" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="194235" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="194235" action="Set">1</setvar><scoringdescription>appliance-based-device sole function is firewall; server-based is designed to protect enterprise network; personal firewall-protects home PC; integrated firewall-feature of a router</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="111400" type="mc-ma"><question><![CDATA[What are three security features commonly found on an ISR? (Choose three.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[DMZ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[NAT]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SPI]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[HTTP]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[POP3]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[server-based firewall]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111398" type="mc-ma"><question><![CDATA[What are two purposes of a DMZ? (Choose two.)]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[to translate internal private addresses into outside public addresses]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to create a software-based firewall on a server that performs other functions]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to prevent or deny access to a network device based on the type of application being used]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[to create a network area that allows internal resources, such as a web server, to be accessed by external users]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[to establish a network area where network resources can be shared by both internal and external users]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to create a safe network area that allows a corporate web server to be accessed by internal users only]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

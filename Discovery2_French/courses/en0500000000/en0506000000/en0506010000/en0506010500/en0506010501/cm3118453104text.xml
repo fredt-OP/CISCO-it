@@ -1,0 +1,387 @@
+<textcomponents>
+   
+   <component id="play">
+      <text>Play</text>
+   </component>
+   <component id="pause">
+      <text>Pause</text>
+   </component>
+   <component id="rewind">
+      <text>Rewind</text>
+   </component>
+   <component id="forward">
+      <text>Fast Forward</text>
+   </component>
+   <component id="mute">
+      <text>Mute</text>
+   </component>
+   <component id="unmute">
+      <text>UnMute</text>
+   </component>
+   <component id="previous">
+      <text>Restart</text>
+   </component>
+   <component id="next">
+      <text>End</text>
+   </component>
+   <component id="transcript">
+      <text>Transcript</text>
+   </component>
+   
+   
+ 	<component id="R1 Links">
+      	<text><![CDATA[<b>Introduction</b>]]></text>
+	</component>  
+	
+	 	<component id="R2 LSPs">
+      	<text><![CDATA[<b>Step 1</b>]]></text>
+	</component> 
+	
+	 	<component id="R3 LSPs">
+      	<text><![CDATA[<b>Step 2</b>]]></text>
+	</component> 
+	
+	 	<component id="R4 LSPs">
+      	<text><![CDATA[<b>Step 3</b>]]></text>
+	</component> 
+	
+	 	<component id="R5 LSPs">
+      	<text><![CDATA[<b>Step 4</b>]]></text>
+	</component> 
+	
+		 	<component id="R6 LSPs">
+      	<text><![CDATA[<b>Step 5</b>]]></text>
+	</component> 
+	
+	<component id="title_01">
+      	<text><![CDATA[<b>Determining the Network Configuration</b>]]></text>
+	</component>
+	
+		<component id="ID_01">
+      	<text><![CDATA[<b></b>]]></text>
+	</component>
+	
+			<component id="ID_02">
+      	<text><![CDATA[<b></b>]]></text>
+	</component>
+	
+				<component id="ID_04">
+      	<text><![CDATA[<b></b>]]></text>
+	</component>
+	
+				<component id="ID_03">
+      	<text><![CDATA[<b></b>]]></text>
+	</component>
+	
+					<component id="ID_05">
+      	<text><![CDATA[<b></b>]]></text>
+	</component>
+	
+						<component id="ID_06">
+      	<text><![CDATA[<b></b>]]></text>
+	</component>
+	
+		<component id="title_02">
+      	<text><![CDATA[<b>Configure the Serial Interface Address</b>]]></text>
+	</component>
+		<component id="title_03">
+      	<text><![CDATA[<b>Configure the Fast Ethernet Interface</b>]]></text>
+	</component>
+		<component id="title_04">
+      	<text><![CDATA[<b>Configure and Verify the IP Addresses</b>]]></text>
+	</component>
+		<component id="title_05">
+      	<text><![CDATA[<b>Configure and Verify the RIP</b>]]></text>
+	</component>
+		<component id="title_06">
+      	<text><![CDATA[<b>Complete the Configuration of All Routers</b>]]></text>
+	</component>
+		<component id="title_07">
+      	<text><![CDATA[<b>Determining the Network Configuration</b>]]></text>
+	</component>
+	
+	
+<component id="ID_txt01">
+      	<text><![CDATA[<b>10.0.0.0/8</b>]]></text>
+	</component>
+	
+<component id="ID_txt02">
+      	<text><![CDATA[<b>172.16.0.0/16</b>]]></text>
+	</component>
+	
+<component id="ID_txt03">
+      	<text><![CDATA[<b>192.168.4.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt04">
+      	<text><![CDATA[<b>192.168.0.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt05">
+      	<text><![CDATA[<b>192.168.1.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt06">
+      	<text><![CDATA[<b>192.168.2.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt07">
+      	<text><![CDATA[<b>R1</b>]]></text>
+	</component>
+	
+<component id="ID_txt08">
+      	<text><![CDATA[<b>R2</b>]]></text>
+	</component>
+	
+<component id="ID_txt09">
+      	<text><![CDATA[<b>R3</b>]]></text>
+	</component>
+	
+<component id="ID_txt10">
+      	<text><![CDATA[<b>R1 is directly connected to the 172.16.0.0/16, 192.168.1.0/24, and 192.168.0.0/24 networks. It does NOT have any information about networks 10.0.0.0 or 192.168.4.0. </b>]]></text>
+	</component>
+	
+<component id="ID_txt11">
+      	<text><![CDATA[<b>R2 is directly connected to 192.168.0.0/24, 192.168.2.0/24, and 192.168.4.0/24. It does NOT have any information about networks 10.0.0.0 or 172.16.0.0.</b>]]></text>
+	</component>
+	
+<component id="ID_txt12">
+      	<text><![CDATA[<b>R3 is directly connected to 10.0.0.0/8, 192.168.1.0/24, and 192.168.2.0/24. Traffic bound for 10.0.0.0 from 172.168.17.0 will have come through either 192.168.1.0/24, or 192.168.2.0/24.</b>]]></text>
+	</component>
+	
+<component id="ID_txt13">
+      	<text><![CDATA[<b>172.16.0.0/16</b>]]></text>
+	</component>
+	
+<component id="ID_txt14">
+      	<text><![CDATA[<b>Start the network configuration with R1</b>]]></text>
+	</component>
+	
+<component id="ID_txt15">
+      	<text><![CDATA[<font face="_typewriter">R1><b>enable</b><br>R1#<b>configure terminal</b></font>]]></text>
+	</component>
+	
+<component id="ID_txt16">
+      	<text><![CDATA[<b>192.168.0.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt17">
+      	<text><![CDATA[<b>To R2</b>]]></text>
+	</component>
+	
+<component id="ID_txt17a">
+      	<text><![CDATA[<b>To R2</b>]]></text>
+	</component>
+	
+<component id="ID_txt17b">
+      	<text><![CDATA[<b>To R2</b>]]></text>
+	</component>
+	
+<component id="ID_txt17c">
+      	<text><![CDATA[<b>To R2</b>]]></text>
+	</component>
+				
+<component id="ID_txt18">
+      	<text><![CDATA[<b>192.168.1.0/24</b>]]></text>
+	</component>
+
+
+<component id="ID_txt19b">
+      	<text><![CDATA[<b>To SP 1</b>]]></text>
+	</component>
+	
+<component id="ID_txt19">
+      	<text><![CDATA[<b>To SP 1</b>]]></text>
+	</component>
+	
+<component id="ID_txt20">
+      	<text><![CDATA[<font face="_typewriter">R1><b>enable</b><br>R1#<b>configure terminal</b><br>R1(config)#<b>interface</b><font color="#990000"><b> serial 0/0/0</b></font><br>R1(config-if)#<b>ip address</b><font color="#990000"><b> 192.168.1.2</b></font><b> 255.255.255.0</b></font>]]></text>
+	</component>
+	
+<component id="ID_txt21">
+      	<text><![CDATA[<b>The R1 router has three interfaces to configure. Serial 0/0/0 links to the R3 router, FastEthernet 0/0 links to R2, and FastEthernet 0/1 links to the 172.16.0.0/16 production network. Configure Serial 0/0/0 first.</b>]]></text>
+	</component>
+	
+<component id="ID_txt22">
+      	<text><![CDATA[<b>192.168.</b><font color="#990000"><b>1.0</b></font><b>/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt23a">
+      	<text><![CDATA[<b>Fa0/1</b>]]></text>
+	</component>
+		
+<component id="ID_txt23">
+      	<text><![CDATA[<b>Fa0/1</b>]]></text>
+	</component>
+	
+<component id="ID_txt24">
+      	<text><![CDATA[<b>Fa0/0</b>]]></text>
+	</component>
+	
+<component id="ID_txt25">
+      	<text><![CDATA[<b>Serial 0/0/0=192.168.</b><font color="#990000"><b>1.2</b></font>]]></text>
+	</component>
+	
+<component id="ID_txt26">
+      	<text><![CDATA[<b>For each of the three interfaces, assign a previously unused IP address from the network that the interface connects to. FastEthernet 0/0 points to R2 and is on the 192.168.0.0/24 network. Assign this interface the first useable IP address from that network.</b>]]></text>
+	</component>
+	
+<component id="ID_txt27">
+      	<text><![CDATA[<font face="_typewriter">R1><b>enable</b><br>R1#<b>configure terminal</b><br>R1(config)#<b>interface serial 0/0/0</b><br>R1(config-if)#<b>ip address 192.168.1.2 255.255.255.0</b><br>R1(config-if)#<b>interface</b><font color="#990000"><b> Fastethernet  0/0</b></font><br>R1(config-if)#<b>ip address<font color="#990000"> 192.168.0.1</b></font><b> 255.255.255.0</b></font>]]></text>
+	</component>
+	
+<component id="ID_txt28">
+      	<text><![CDATA[<b>192.168.1.2</b>]]></text>
+	</component>
+	
+<component id="ID_txt28a">
+      	<text><![CDATA[<b>192.168.1.2</b>]]></text>
+	</component>
+		
+<component id="ID_txt29">
+      	<text><![CDATA[<b>192.168.</b><font color="#990000"><b>0.0</b></font><b>/24</b>]]></text>
+      	</component>
+	
+<component id="ID_txt30">
+      	<text><![CDATA[<b>Fa 0/0 = 192.168.</b><font color="#990000"><b>0.1</b></font>]]></text>
+	</component>
+	
+<component id="ID_txt31">
+      	<text><![CDATA[<b>Configure the last interface on R1.</b>]]></text>
+	</component>
+	
+<component id="ID_txt32">
+      	<text><![CDATA[<font face="_typewriter">R1><b>enable</b><br>R1#<b>configure terminal</b><br>R1(config)#<b>interface serial 0/0/0</b><br>R1(config-if)#<b>ip address 192.168.1.2 255.255.255.0</b><br>R1(config-if)#<b>interface Fastethernet0/0</b><br>R1(config-if)#<b>ip address 192.168.0.1 255.255.255.0</b><br>R1(config-if)#<b>interface</b><font color="#990000"><b>Fastethernet 0/1</b></font><br>R1(config-if)#<b>ip address</b><font color="#990000"><b> 172.16.245.245</b></font><b> 255.255.0.0</b></font>]]></text>
+	</component>
+	
+<component id="ID_txt33">
+      	<text><![CDATA[<b>172.</b><font color="#990000"><b>16.0.0</b></font><b>/16</b>]]></text>
+	</component>
+	
+<component id="ID_txt34">
+      	<text><![CDATA[<b>Fa0/1 = 172.</b><fon? color="#990000"><b>16.245.254</b></font>]]></text>
+	</component>
+	
+<component id="ID_txt35">
+      	<text><![CDATA[<b>Once all the interfaces have IP addresses, configure RIP on the R1 router. First, exit interface configuration. Routing configurations are done in router configuration mode. At the config prompt type router rip to get into router configuration mode for RIP routing.</b>]]></text>
+	</component>
+	
+<component id="ID_txt36">
+      	<text><![CDATA[R1(config-if)#<b>exit</b><br>R1(config)#<b>router rip</b>]]></text>
+	</component>
+	
+<component id="ID_txt37">
+      	<text><![CDATA[<b>192.168.0.1</b>]]></text>
+	</component>
+	
+<component id="ID_txt38">
+      	<text><![CDATA[<b>172.16.245.245</b>]]></text>
+	</component>
+	
+<component id="ID_txt39">
+      	<text><![CDATA[<b>Specify RIP version 2 and tell the router which networks it can advertise. Use the network command for each directly connected network. R1 connects to three networks, so those networks are entered here.</b>]]></text>
+	</component>
+	
+<component id="ID_txt40">
+      	<text><![CDATA[<font face="_typewriter">R1(config)#<b>router rip</b><br>R1(config-router)#<b>version 2</b><br>R1(config-router)#<b>network 192.168.1.0</b><br>R1(config-router)#<b>network 192.168.0.0</b><br>R1(config-router)#<b>network 172.16.0.0</b><br>R1(config-if)#<b>exit</b></font>]]></text>
+	</component>
+	
+<component id="ID_txt41">
+      	<text><![CDATA[<b>192.168.1.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt42">
+      	<text><![CDATA[<b>192.168.0.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt43">
+      	<text><![CDATA[<b>172.16.0.0/16</b>]]></text>
+	</component>
+	
+<component id="ID_txt44">
+      	<text><![CDATA[<b>10.0.0.0/8</b>]]></text>
+	</component>
+	
+<component id="ID_txt47">
+      	<text><![CDATA[<b>172.16.0.0/16</b>]]></text>
+	</component>
+	
+<component id="ID_txt52">
+      	<text><![CDATA[<b>192.168.4.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt49">
+      	<text><![CDATA[<b>192.168.0.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt45">
+      	<text><![CDATA[<b>192.168.1.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt50">
+      	<text><![CDATA[<b>192.168.2.0/24</b>]]></text>
+	</component>
+	
+<component id="ID_txt46">
+      	<text><![CDATA[<b>R1</b>]]></text>
+	</component>
+	
+<component id="ID_txt51">
+      	<text><![CDATA[<b>R2</b>]]></text>
+	</component>
+	
+<component id="ID_txt48">
+      	<text><![CDATA[<b>R3</b>]]></text>
+	</component>
+	
+<component id="ID_txt53">
+      	<text><![CDATA[<b>The R2 RIP command sequence is:</b>]]></text>
+	</component>
+	
+<component id="ID_txt54">
+      	<text><![CDATA[<font face="_typewriter">R2(config)#<b>router rip</b><br>R2(config-router)#<b>network 192.168.2.0</b><br>R2(config-router)#<b>network 192.168.0.0</b><br>R2(config-router)#<b>network 172.17.0.0</b></font>]]></text>
+	</component>
+
+<component id="ID_txt55">
+      	<text><![CDATA[<b>The R3 RIP command sequence is:</b>]]></text>
+	</component>
+	
+<component id="ID_txt56">
+      	<text><![CDATA[<font face="_typewriter">R3(config)#<b>router rip</b><br>R3(config-router)#<b>network 192.168.2.0</b><br>R3(config-router)#<b>network 192.168.1.0</b><br>R3(config-router)#<b>network 10.0.0.0</b></font>]]></text>
+	</component>
+
+<component id="ID_router01">
+      	<text><![CDATA[<font face="_typewriter">R1&gt;<b>enable</b><br>R1#<b>configure terminal</b><br>R1(config)#<b>interface <font color="#FF0000">serial10/0/0</font></b><br>R1(config-if)#<b>ip address <font color="#FF0000">192.168.1.2</font> 255.255.255.0</b></font>]]></text>
+</component>
+
+<component id="ID_router02">
+      	<text><![CDATA[<font face="_typewriter">R1&gt;<b>enable</b><br>R1#<b>configure terminal</b><br>R1(config)#<b>interface serial0/0/0</b><br>R1(config-if)#<b>ip address 192.168.1.2 255.255.255.0</b><br>R1(config-if)#<b>interface <font color="#FF0000">fastethernet 0/0</font></b><br>R1(config-if)#<b>ip address <font color="#FF0000">192.168.0.1</font> 255.255.255.0</font>]]>
+            </text>
+</component>
+
+<component id="ID_router03">
+      	<text><![CDATA[<font face="_typewriter">R1&gt;<b>enable</b><br>R1#<b>configure terminal</b><br>R1(config)<b>#interface serial0/0/0</b><br>R1(config-if)#<b>ip address 192.168.1.2 255.255.255.0</b><br>R1(config-if)#<b>interface fastethernet 0/0</b><br>R1(config-if)#<b>ip address 192.168.0.1 255.255.255.0</b><br>R1(config-if)#<b>interface <font color="#FF0000">fastethernet 0/1</font></b><br>R1(config-if)#<b>ip address <font color="#FF0000">172.16.245.254</font> 255.255.0.0</font>]]>
+            </text>
+</component>
+
+<component id="ID_router04">
+      	<text><![CDATA[<font face="_typewriter">R1(config)#<b>router rip</b><br>R1(config-router)#<b>version 2</b><br>R1(config-router)#<b>network 192.168.1.0</b><br>R1(config-router)#<b>network 192.168.0.0</b><br>R1(config-router)#<b>network 172.16.0.0</b><br>R1(config-if)#<b>exit</b></font>]]>
+            </text>
+</component>
+
+<component id="ID_router05">
+      	<text><![CDATA[<font face="_typewriter">R3(config)#<b>router rip</b><br>R3(config-router)#<b>version 2</b><br>R3(config-router)#<b>network 192.168.2.0</b><br>R3(config-router)#<b>network 192.168.1.0</b><br>R3(config-router)#<b>network 10.0.0.0</b></font>]]>
+            </text>
+</component>
+
+<component id="ID_router06">
+      	<text><![CDATA[<font face="_typewriter">R2(config)#<b>router rip</b><br>R2(config-router)#<b>version 2</b><br>R2(config-router)#<b>network 192.168.2.0</b><br>R2(config-router)#<b>network 192.168.0.0</b><br>R2(config-router)#<b>network 192.168.4.0</b></font>]]>
+            </text>
+</component>
+	
+<component id="ID_inst">
+      	<text><![CDATA[<b>Click each step to see how to configure RIP on a router.</b>]]></text>
+	</component>
+</textcomponents>
+   
+

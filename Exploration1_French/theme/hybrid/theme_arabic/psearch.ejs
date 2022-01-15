@@ -1,0 +1,42 @@
+		<form name="seachform" id="searchform">
+		<table cellspacing="0" cellpadding="0" border="0" align="center">
+			<tr>
+				<td><input type="text" size="60" id="field" value="<%= searchstring %>"></td>
+				<td class="btnbg"><a href="javascript:searchContent();" class="buttonlink">Search</a></td>
+			</tr>
+		</table>
+		<hr/>
+		<div id="list" class="listdiv">
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<% if (foundArray.length <= 0) { %>
+				<tr><td class="chaptertitle">No Match Found</td></tr>
+			<% } else { %>
+				<% for (var m=0; m<main.course.chapters.length; m++){ %>
+					<% var ch = main.course.chapters[m]; %>
+					<% if (foundArray[ch.oid]) { %>
+						<tr><td class="chaptertitle"><%= ch.num %> <%= ch.title %></td></tr>
+						<% for (var n=0; n<ch.sections.length; n++){ %>
+							<% var se = ch.sections[n]; %>
+							<% if (foundArray[se.oid]) { %>
+								<tr><td class="sectiontitle"><%= ch.num %>.<%= se.num %> <%= se.title %></td></tr>
+								<% for (var o=0; o<se.topics.length; o++){ %>
+									<% var to = se.topics[o]; %>
+									<% if (foundArray[to.oid]) { %>
+										<tr><td class="topictitle"><%= ch.num %>.<%= se.num %>.<%= to.num %> <%= to.title %></td></tr>
+										<% for (var p=0; p<to.pages.length; p++){ %>
+											<% var pa = to.pages[p]; %>
+											<% if (foundArray[pa.oid]) { %>
+												<tr><td class="pagetitle"><a href="javascript:selectPage('<%= ch.num %>.<%= se.num %>.<%= to.num %>.<%= pa.num %>');" class="page"><%= main.theme.getThemeItem('indexpage') %> <%= pa.num %></a></td></tr>
+											<% } %>
+										<% } %>
+									<% } %>
+								<% } %>
+							<% } %>
+						<% } %>
+					<% } %>
+				<% } %>
+			<% } %>
+		</table> 
+		</div>
+		<hr/>
+		</form>

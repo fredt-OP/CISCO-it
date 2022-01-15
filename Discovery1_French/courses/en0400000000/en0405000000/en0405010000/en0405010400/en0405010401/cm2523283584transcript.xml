@@ -1,0 +1,5 @@
+<transcript lastedited="10.14.08 17:10:18">
+<title><content-text><![CDATA[5.1.4 How IP Addresses and Subnet Masks Interact]]></content-text></title>
+<brief><content-text><![CDATA[Diagram 1, Animation<br><br>The diagram demonstrates how a host's subnet mask is compared to its IP address to obtain a network address. When a dotted decimal address is displayed as a binary IP address, you can obtain the network address by comparing bit-for-bit with the subnet mask. <br><br>In this example, the address of H1 is 192.168.1.44 with a subnet mask of 255.255.255.0. By comparing the bits in each octet, we get 192 (192 and 255 = 192). 168 (168 and 255 = 168) . 1 (1 and 255 = 1) . 0 (44 and 0 = 0). The network address is 192.168.1.0. By the same process, H2, 192.168.1.66 is compared with 255.255.255.0 = 192.168.1.0. Therefore, the hosts are on the same network.<br><br>See the pegboard exercises for a full explanation.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

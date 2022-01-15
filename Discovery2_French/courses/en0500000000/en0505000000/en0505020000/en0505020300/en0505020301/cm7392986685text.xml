@@ -1,0 +1,60 @@
+﻿<textcomponents>
+
+<component id="ID_instruct">
+  <text><![CDATA[<b>Click each encapsulation type for more information.</b>]]></text> 
+  </component>
+  
+  <component id="ID_title">
+    <text><![CDATA[<b>Configuring a Serial WAN Connection</b>]]></text> 
+  </component>
+<component id="hosts">
+	<text>Frame Relay</text>
+</component> 
+
+<component id="HDLC">
+	<text>High-Level Data Link Control (HDLC)</text>
+</component> 
+
+<component id="Frame Relay">
+	<text>Frame Relay</text>
+</component> 
+
+<component id="PPP">
+	<text>Point-to-Point Protocol (PPP)</text>
+</component> 
+
+
+<component id="media">
+	<text>Media</text>
+</component> 
+<component id="networkDevices">
+	<text>Network Devices</text>
+</component> 
+<component id="peripherals">
+	<text>Peripherals</text>
+</component>   
+<component id="peripheralsTitle">
+	<text>High-Level Data Link Control (HDLC)</text>
+</component>
+<component id="peripheralsBody">
+	<text>A bit-oriented Data Link Layer protocol developed by the International Standards Organization (ISO).</text>
+</component>
+<component id="hostsTitle">
+	<text>Frame Relay</text>
+</component>
+<component id="hostsBody">
+	<text>A packet-switched Data Link Layer protocol that handles multiple virtual circuits, meaning that the circuit connections are temporarily built up and broken down based on need.  The DLCI is a required number, supplied by the service provider, to identify the virtual circuit.</text>
+</component>
+<component id="networkTitle">
+	<text>Point-to-Point Protocol (PPP)</text>
+</component>
+<component id="networkBody">
+	<text>Commonly used to establish a direct connection between two devices. It can connect computers using serial cable, phone line, trunk line, cellular telephone, specialized radio links, or fiber optic links. Most Internet service providers use PPP for customer dial-up access to the Internet.  There are features of PPP to allow authentication before a connection is made.  PPP usernames and passwords can be set up using SDM.</text>
+</component>
+<component id="mediaTitle">
+	<text>Media</text>
+</component>
+<component id="mediaBody">
+	<text>Media provides connections between hosts and network devices. Media can be wired, such as copper  and fiber optic or use wireless technologies.”  Also label wire between switches as “Fiber Optic cable” and the wires between all other devices and the hubs as “Copper cable” when this hot spot is clicked.</text>
+</component>
+</textcomponents>

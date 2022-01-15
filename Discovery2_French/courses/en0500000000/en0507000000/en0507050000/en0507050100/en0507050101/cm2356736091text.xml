@@ -1,0 +1,275 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>TCP is a connection-oriented protocol. TCP is used if data packets require guaranteed delivery and must be acknowledged.</li><br/><li>UDP is a connectionless protocol. UDP is used if data packets do not require guaranteed delivery.</li><br/><li>The TCP and UDP protocols use port numbers to map data packets to a specific application, or process that is running on a server.</li><br/><li>TCP and UDP ports enable network servers to quickly and reliably respond to many simultaneous requests for data that are initiated by and destined to separate applications.</li></ul>]]></text>
+</component>
+<component id="s1_ID_txt01">
+      <text><![CDATA[<b>UDP and TCP Ports</b>]]></text> 
+  </component>
+<component id="s1_ID_txt02">
+      <text><![CDATA[<b>Application</b>]]></text> 
+  </component>
+<component id="s1_ID_txt03">
+      <text><![CDATA[<b>HTTP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt04">
+      <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt05">
+      <text><![CDATA[<b>DNS</b>]]></text> 
+  </component>
+<component id="s1_ID_txt06">
+      <text><![CDATA[<b>HTTP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt07">
+      <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt08">
+      <text><![CDATA[<b>DNS</b>]]></text> 
+  </component>
+<component id="s1_ID_txt09">
+      <text><![CDATA[<b>Port:</b>]]></text> 
+  </component>
+<component id="s1_ID_txt10">
+      <text><![CDATA[<b>80</b>]]></text> 
+  </component>
+<component id="s1_ID_txt11">
+      <text><![CDATA[<b>25</b>]]></text> 
+  </component>
+<component id="s1_ID_txt12">
+      <text><![CDATA[<b>53</b>]]></text> 
+  </component>
+<component id="s1_ID_txt13">
+      <text><![CDATA[<b>80</b>]]></text> 
+  </component>
+<component id="s1_ID_txt14">
+      <text><![CDATA[<b>25</b>]]></text> 
+  </component>
+<component id="s1_ID_txt15">
+      <text><![CDATA[<b>53</b>]]></text> 
+  </component>
+<component id="s1_ID_txt16">
+      <text><![CDATA[<b>Transport</b>]]></text> 
+  </component>
+<component id="s1_ID_txt17">
+      <text><![CDATA[<b>TCP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt18">
+      <text><![CDATA[<b>UDP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt19">
+      <text><![CDATA[<b>TCP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt20">
+      <text><![CDATA[<b>UDP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt21">
+      <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+<component id="s1_ID_txt22">
+      <text><![CDATA[<b>IP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt23">
+      <text><![CDATA[<b>IP</b>]]></text> 
+  </component>
+<component id="s1_ID_txt24">
+      <text><![CDATA[<b>Network Access</b>]]></text> 
+  </component>
+<component id="s1_ID_txt25">
+      <text><![CDATA[<b>Network</b>]]></text> 
+  </component>
+<component id="s1_ID_txt26">
+      <text><![CDATA[<b>Client</b>]]></text> 
+  </component>
+<component id="s1_ID_txt27">
+      <text><![CDATA[<b>Server</b>]]></text> 
+  </component>
+
+
+<!--  Slide 2  -->  
+  
+  
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>The native TCP/IP naming system relies on a file called a HOSTS file and contains the name and IP address of known hosts.</li><br/><li>DNS is a hostname resolution system that solves the shortcomings of the HOSTS file for name resolution.</li><br/><li>The structure of DNS is hierarchical and DNS database files are distributed among root, top level domains, second level domains, and subdomains.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[<b>Managed by Registration Authority</b>]]></text>
+</component>
+<component id="s2_ID_txt02">
+<text><![CDATA[<b>com</b>]]></text>
+</component>
+<component id="s2_ID_txt03">
+<text><![CDATA[<b>gov</b>]]></text>
+</component>
+<component id="s2_ID_txt04">
+<text><![CDATA[<b>mil</b>]]></text>
+</component>
+<component id="s2_ID_txt05">
+<text><![CDATA[<b>int/net/org/edu</b>]]></text>
+</component>
+<component id="s2_ID_txt06">
+<text><![CDATA[<b>cisco</b>]]></text>
+</component>
+<component id="s2_ID_txt07">
+<text><![CDATA[<b>nasa</b>]]></text>
+</component>
+<component id="s2_ID_txt08">
+<text><![CDATA[<b>army</b>]]></text>
+</component>
+<component id="s2_ID_txt09">
+<text><![CDATA[<b>redcross</b>]]></text>
+</component>
+
+
+<!--  Slide 3  -->
+
+
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>Dynamic Updates enable DNS client computers to register and dynamically update their resource records with a DNS server whenever changes occur.</li><br/><li>DNS zones can be either Forward lookup, or Reverse lookup zones. They can also be either a primary or secondary zones.</li><br/><li>Many ISPs offer caching-only DNS servers.</li><br/><li>An organization may run its own DNS server that can either point to the caching-only server or directly to the root server for name resolution.</li></ul>]]></text>
+</component>
+
+<component id="s3_forward_lookup">
+<text><![CDATA[<b>Forward Lookup Zones</b>]]></text>
+</component>
+<component id="s3_reverse_lookup">
+<text><![CDATA[<b>Reverse Lookup Zones</b>]]></text>
+</component>
+<component id="s3_ID_title">
+<text><![CDATA[<b>DHCP Servers</b>]]></text>
+</component>
+<component id="s3_ID_txt01">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+<component id="s3_ID_txt02">
+  <text><![CDATA[<b>ISP 1</b>]]></text> 
+  </component>
+<component id="s3_ID_txt03">
+  <text><![CDATA[<b>ISP 2</b>]]></text> 
+  </component>
+<component id="s3_ID_txt04">
+  <text><![CDATA[<b>ISP 3</b>]]></text> 
+  </component>
+<component id="s3_ID_txt05">
+  <text><![CDATA[<b>ISP DHCP Server</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt06">
+    <text><![CDATA[<b>Router DHCP Server</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt07">
+      <text><![CDATA[<b>DHCP Client</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt08">
+        <text><![CDATA[<b>DHCP Clients</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt09">
+        <text><![CDATA[<b>DHCP Client</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt10">
+          <text><![CDATA[<b>ISR can be DHCP Clients and Server</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt11">
+            <text><![CDATA[<b>Local DHCP Server</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt12">
+              <text><![CDATA[<b>Corporate Network</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt13">
+                <text><![CDATA[<b>Home / Small Business Network</b>]]></text> 
+  </component>
+  <component id="s3_ID_txt14">
+                  <text><![CDATA[<b>Single Home PC</b>]]></text> 
+  </component>
+
+
+
+<!--  Slide 4  -->
+
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>The most common services that are used on the Internet include FTP, FTPS, SMTP, POP3, IMAP4, HTTP and HTTPS.</li><br/><li>HTTP and HTTPS are used for web server services; HTTPS is a secure version of HTTP which uses SSL.</li><br/><li>An ISP supports HTTPS by providing high-performance web servers to support HTTPS encryption and decryption demands.</li></ul>]]></text>
+</component>
+
+  <component id="s4_ID_txt01">
+                  <text><![CDATA[<b>Listens on Port 80</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt02">
+                  <text><![CDATA[<b>Client Request</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt03">
+                  <text><![CDATA[<b>TCP Connection</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt04">
+                  <text><![CDATA[<b>HTTP Client</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt05">
+                  <text><![CDATA[<b>Server Response</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt06">
+                  <text><![CDATA[<b>HTTP Server</b>]]></text> 
+  </component>
+
+
+<!--  Slide 5  -->
+
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>FTP is used for file transfer services. The ISP can support active and passive FTP connections. Active connections require the server to initiate the connection. Passive connections require the host to initiate the connection.</li><br/><li>Email uses three different protocols. SMTP is used to send email. POP3 and IMAP are both used to retrieve email. </li></ul>]]></text>
+</component>
+
+<component id="s5_ID_txt01">
+<text><![CDATA[<b>Sender</b>]]></text>
+</component>
+
+<component id="s5_ID_txt02">
+<text><![CDATA[<b>Recipient</b>]]></text>
+</component>
+
+<component id="s5_ID_txt03">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="s5_ID_txt04a">
+<text><![CDATA[<b>Mail Server</b>]]></text>
+</component>
+
+<component id="s5_ID_txt05a">
+<text><![CDATA[<b>Mail Server</b>]]></text>
+</component>
+
+<component id="s5_ID_txt06">
+<text><![CDATA[<b>SMTP</b>]]></text>
+</component>
+
+<component id="s5_ID_txt07">
+<text><![CDATA[<b>IMAP or POP3</b>]]></text>
+</component>
+
+<component id="s5_ID_txt08">
+<text><![CDATA[<b>SMTP</b>]]></text>
+</component>
+
+<component id="s5_ID_txt09">
+<text><![CDATA[<b>ISP A</b>]]></text>
+</component>
+
+<component id="s5_ID_txt10">
+<text><![CDATA[<b>ISP B</b>]]></text>
+</component>
+
+<component id="s5_ID_txt11a">
+<text><![CDATA[<b>Send to recipient@cisco.com</b>]]></text>
+</component>
+
+
+</textcomponents>

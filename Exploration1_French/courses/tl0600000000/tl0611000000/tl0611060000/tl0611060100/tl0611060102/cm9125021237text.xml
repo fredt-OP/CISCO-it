@@ -1,0 +1,215 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Effectuez cet exercice pour vérifier que vous avez compris les principaux points de ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire d’évaluation et vos réponses ne seront pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour afficher la bonne réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier si vous répondez correctement.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1. <textformat blockindent='16'>Nommez les services réseau fournis par Cisco IOS.</textformant>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[<ul><li>Fonctions de routage et de commutation de base</li><li>Accès fiable et sécurisé aux ressources en réseau</li><li>Évolutivité du réseau </li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. <textformat blockindent='16'>Décrivez trois méthodes pour accéder à un périphérique Cisco afin d’effectuer des opérations de gestion et de configuration dans l’environnement ILC.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<ul><li>Console</li><li>Telnet ou SSH</li><li>Port AUX</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3. <textformat blockindent='16'>Comparez la fonction et l’utilisation des fichiers de configuration en cours (running-config) et de configuration initiale (startup-config).</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[<ul><li>Le fichier de configuration en cours est utilisé pendant le fonctionnement normal du périphérique.</li><li>Le fichier de configuration initiale est stocké en mémoire NVRAM et il est chargé au démarrage ou au redémarrage pour fournir la configuration du périphérique.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4. <textformat blockindent='16'>Comparez les fonctions du mode d’exécution utilisateur et du mode d’exécution privilégié de Cisco IOS.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[<p><b>Mode d’exécution utilisateur</b></p><p>Le mode d’exécution utilisateur a des pouvoirs restreints mais permet d’effectuer certaines opérations de base. Le mode d’exécution utilisateur se trouve au sommet de la structure hiérarchique des modes IOS. Ce mode est le point d’entrée initial dans l’environnement ILC d’un routeur IOS.</p><br/><p>Le mode d’exécution utilisateur n’autorise qu’un nombre limité de commandes de surveillance de base. Il est d’ailleurs souvent qualifié de mode de « visualisation seule » pour cette raison. Le mode d’exécution utilisateur n’autorise aucune commande susceptible de modifier la configuration du périphérique.</p><br/><p>Le mode d’exécution utilisateur se reconnaît à l’invite qui se termine par le symbole >.</p><br/><p>Switch></p><br/><p><b>Mode d’exécution privilégié</b></p><p>Pour exécuter les commandes de configuration et de gestion, l’administrateur réseau doit utiliser le mode d’exécution privilégié ou un mode spécifique situé plus bas dans la hiérarchie. </p><br/><p>Le mode d’exécution privilégié se reconnaît à l’invite qui se termine par le symbole #.</p><br/><p>Switch#</p>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5. <textformat blockindent='16'>Expliquez la différence entre entrer « ? » (point d’interrogation) et «  ? » (espace suivi d’un point d’interrogation) directement après une commande partielle à l’invite appropriée. Exemple : « cl? » et « clock ? ».</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[<p>Lorsque vous tapez le point d’interrogation (?) sans espace, par exemple « cl? », IOS affiche toutes les commandes disponibles commençant par les caractères tapés (dans l’exemple, les caractères « cl »).</p><br/><p>Lorsque vous entrez le point d’interrogation (?) avec un espace, par exemple « clock ? », IOS affiche toutes les sous-commandes disponibles ensuite (ici, les sous-commandes de clock).</p>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6. <textformat blockindent='16'>Quel mode indique l’invite <b>Router#</b> ? Comment entrez-vous dans ce mode ?</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[L’invite affichée est celle du <b>mode d’exécution privilégié</b>. Pour l’établir, vous entrez la commande <b>enable</b> en mode d’exécution utilisateur.
+]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7. <textformat blockindent='16'>Quel est le but des commandes de configuration <b>service password-encryption </b>et <b>enable secret class</b>. En quoi diffèrent-elles ?</b></textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<p>La commande <b>service password-encryption</b> applique un chiffrement simple à tous les mots de passe non chiffrés. Ce chiffrement ne s’applique pas aux mots de passe transmis sur les supports. Le but de cette commande est d’empêcher les personnes non autorisées de lire les mots de passe dans le fichier de configuration.</p><br/><p>La commande <b>enable secret</b> protège le mode d’exécution privilégié en chiffrant le mot de passe.</p>]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8. <textformat blockindent='16'>Pourquoi devez-vous utiliser des caractères de délimitation lorsque vous configurez une bannière contenant un message du jour ?</textformat>]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[La commande <b>banner motd</b> requiert l’emploi de délimiteurs pour identifier le contenu du message de bannière.]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 9 -->
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9. <textformat blockindent='16'>Quelles informations doit contenir une bannière affichant un message du jour à l’ouverture de session sur un périphérique Cisco ?</textformat>]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[<p>La formulation utilisée dans une bannière dépend des lois en vigueur localement et des stratégies d’entreprise. Voici quelques exemples d’informations à inclure dans une bannière :</p><ul><li>« L’utilisation du périphérique est strictement réservée au personnel autorisé. »</li><li>« Vos interactions avec le périphérique peuvent faire l’objet d'une surveillance. » </li><li>« Toute utilisation non autorisée fera l’objet de poursuites judiciaires. »</li></ul]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 10 -->
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10. <textformat blockindent='24'>Décrivez trois méthodes pour enregistrer ou sauvegarder la configuration en cours d’un périphérique Cisco.</textformat>]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[<p>Les fichiers de configuration peuvent être stockés sur un serveur TFTP (Trivial File Transfer Protocol) ou sur un support conservé en lieu sûr, par exemple un CD-ROM, une clé USB ou une disquette. Vous devez également inclure un fichier de configuration dans la documentation du réseau.</p>]]></text>
+</component>
+<component id="ID_Q10_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 11 -->
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11. <textformat blockindent='24'>Quel est le but de la commande no shutdown lors de la configuration des interfaces d’un routeur ?</textformat>]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[<p>Par défaut, les interfaces sont désactivées. Pour activer une interface, entrez la commande no shutdown à partir du mode de configuration d’interface.</p>]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 12 -->
+<component id="ID_Q12_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q12_txt03">
+<text><![CDATA[12. <textformat blockindent='24'>Quelles informations devez-vous inclure dans une description d’interface sur un routeur Cisco ?</textformat>]]></text>
+</component>
+<component id="ID_Q12_txt04">
+<text><![CDATA[<p>De même que le nom d’hôte facilite l’identification du périphérique sur un réseau, une description d’interface indique le but de l’interface. Une description de la fonction d’une interface ou de l’endroit où elle est connectée doit donc faire partie de la configuration de toute interface. En particulier, cette description peut s’avérer utile pour le dépannage.</p>]]></text>
+</component>
+<component id="ID_Q12_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 13-->
+<component id="ID_Q13_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q13_txt03">
+<text><![CDATA[13. <textformat blockindent='24'>Quelles sont les étapes à respecter pour vérifier qu’un hôte peut se connecter à un réseau et accéder à ses ressources ?</textformat>]]></text>
+</component>
+<component id="ID_Q13_txt04">
+<text><![CDATA[<p>La procédure permettant de vérifier si un hôte peut accéder à un réseau consiste à tester successivement :</p><ul><li>la pile de protocoles ;</li><li>la carte réseau ;</li><li>un autre hôte local ; </li><li>la passerelle ;</li><li>l’accès à un hôte distant.</li></ul>]]></text>
+</component>
+<component id="ID_Q13_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 14 -->
+<component id="ID_Q14_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q14_txt03">
+<text><![CDATA[14. <textformat blockindent='24'>Quel est le but de la capture des résultats de tests du réseau à l’aide des commandes ping, traceroute (ou tracert) et arp ?</textformat>]]></text>
+</component>
+<component id="ID_Q14_txt04">
+<text><![CDATA[Ces informations servent à créer un enregistrement du trafic réseau à des fins de dépannage et d’analyse des performances du réseau.]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Vous avez passé en revue toutes les questions de la partie « Problèmes et discussion » du présent chapitre.</b>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,151 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) <textformat blockindent='17'>Describe the four DHCP discovery and offer messages in sequence of operation and function.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from  7.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>DHCPDISCOVER message:</b><ul><li>Broadcast forwarded by the host looking for a DHCP server.</li><li>Messages are forwarded to the DHCP BOOTP server, using UDP port 67.</li></ul><b>DHCPOFFER message:</b><ul><li>When the DHCPDISCOVER messages reaches the DHCP server, the server responds with a unicast DHCPOFFER message containing the MAC address o f the client, offered IP address and mask, default gateway, and the IP address of the server.</li><li>Messages are forwarded to the DHCP BOOTP client, using UDP port 68.</li></ul><b>DHCPREQUEST message:</b><ul><li>Used for two purposes: first, to initially negotiate an IP address lease, and the second is to renegotiate (or renew) the IP address halfway through its lease time.</li><li>The client broadcasts the DHCPREQUEST message to the DHCP server using UDP port 67.</li></ul><b>DHCPACK message:</b><ul><li>Nearly identical to the original DHCPOFFER but sent to the client to confirm that it now can use that address using UDP port 68.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[<font size='12pt'>2) <textformat blockindent='15'>Refer to the exhibit. Router R1 has been configured to provide DHCP services to the hosts on network 192.168.11.0 /24, excluding the first nine IP addresses from the pool. However, after releasing and renewing its IP address, host PC2 still cannot acquire an IP address automatically. Which changes in the configuration would help this problem?</textformat></font>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from  7.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>On router R1</b><ul><li>The pool is excluding the entire pool. The command should be ip dhcp excluded-address 192.168.11.1 192.168.11.9.</li><li>The network pool is allocating the wrong subnet. The command should be network 192.168.10.0 255.255.255.0.</li><li>The default router IP address is pointing to the switch. The command should be default-router 192.168.2.1.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[<font size='12pt'>3) <textformat blockindent='15'>Refer to the exhibit. The DHCP server located IP address 192.168.11.5 has been configured to provide IP addresses to the hosts on network 192.168.10.0 /24. However, the hosts receive an error stating that their DHCP server request has timed out and that the DHCP server is unreachable. Which configuration commands would correct this problem?</textformat></font>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from  7.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>On router R1</b><br />Configure the DHCP relay feature on interface Fast Ethernet 0/0 using the following commands:<br /><br /><font face='_typewriter'><b>interface FastEthernet 0/0<br /><textformat blockindent='10'>ip helper-address 192.168.11.5</textformat></b></font>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) <textformat blockindent='17'>Describe the differences between dynamic NAT, static NAT, and NAT overload.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from  7.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Dynamic NAT:</b><ul><li>Dynamic NAT uses a pool of public addresses and assigns them on a first-come, first-served basis. </li><li>When a host requests access to the Internet, dynamic NAT chooses an IP address from the public pool and temporarily binds it with the internal local address.</li></ul><b>Static NAT:</b><ul><li>Static NAT uses a one-to-one mapping of local and global addresses and these mappings remain constant. </li><li>Static NAT is particularly useful for web servers or in general hosts that must have a consistent address that is accessible from the Internet.</li></ul><b>NAT Overload:</b><ul><li>NAT overloading (sometimes called Port Address Translation or PAT) maps inside local IP addresses to a combination of a global IP address and unique port number. </li><li>When a response returns to the NAT router, the router examines the source port number and forwards the packet to the originating inside local address. </li><li>It also validates that the incoming packets were requested, thus adding a degree of security to the session. </li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) <textformat blockindent='17'>Refer to the exhibit. Router R2 has been configured to provide NAT services. On the basis of the information provided, comment on the NAT translations in the exhibit.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from  7.2)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Router R2 was configured to provide NAT overload translation to hosts on the 192.168.10.0 and 192.168.11.0 networks</b><ul><li>The host with the inside local IP address <b>192.168.10.10</b> was translated to the overloaded inside global IP address <b>209.165.200.225</b> using the unique port number <b>16642</b> when accessing the <b>web server</b> located at <b>209.165.200.254</b>.</li><li>The host with the inside local IP address <b>192.168.11.10</b> was translated to the overloaded inside global IP address <b>209.165.200.225</b> using the unique port number <b>62452</b> when accessing the <b>web server</b> located at <b>209.165.200.254</b>.</li></ul>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) <textformat blockindent='17'>Refer to the figure. Abbreviate the IPv6 address to its shortest allowable form.</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(from  7.3)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[The shortest form is <b>2031:0:130F::9C0:876A:130B</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) <textformat blockindent='17'>Refer to the exhibit. Describe the two main IPv4 to IPv6 transition options and complete the IPv6 transition sentence in the exhibit.</textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[(from  7.3)]]></text>
+</component>
+
+<component id="ID_Q7_exhibit">
+<text><![CDATA[&quot;_____________ where you can, _____________ where you must!&quot;]]></text>
+</component>
+
+<component id="ID_Q7_txt05">
+<text><![CDATA[&quot;<b><u>Dual-stack</u></b> where you can, <b><u>tunnel</u></b> where you must!&quot;<br /><br /><b>Dual-stack method:</b><ul><li>Is an integration method in which a node has implementation and connectivity to both an IPv4 and IPv6 network.</li><li>This is the recommended option and involves running IPv4 and IPv6 at the same time.</li><li>Router and switches are configured to support both protocols, with IPv6 being the preferred protocol.</li></ul><b>6to4Tunneling method:</b><ul><li>Is an integration method in which an IPv6 packet is encapsulated within the IPv4 protocol.</li><li>However, this method also requires dual-stack routers.</li><li>The dynamic 6to4 tunneling method automatically establishes the connection of IPv6 islands through an IPv4 network.</li></ul><b>Other tunneling methods:</b><ul><li>Other tunneling protocols include NAT-PT, ISATAP tunneling, and Teredo tunneling.</li><li>However, these tunneling protocols are complex and should be considered to be methods of last resort.</li></ul>]]></text>
+</component>
+
+<component id="ID_conclusion">
+<text><![CDATA[<b>This concludes this chapter's Check Your Understanding questions.</b>]]></text>
+</component>
+</textcomponents>

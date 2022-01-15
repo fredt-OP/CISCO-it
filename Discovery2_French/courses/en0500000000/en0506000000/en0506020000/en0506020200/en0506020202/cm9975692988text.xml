@@ -1,0 +1,129 @@
+﻿<textcomponents>
+   
+   <component id="play">
+      <text>Play</text>
+   </component>
+   <component id="pause">
+      <text>Pause</text>
+   </component>
+   <component id="rewind">
+      <text>Rewind</text>
+   </component>
+   <component id="forward">
+      <text>Fast Forward</text>
+   </component>
+   <component id="mute">
+      <text>Mute</text>
+   </component>
+   <component id="unmute">
+      <text>UnMute</text>
+   </component>
+   <component id="previous">
+      <text>Restart</text>
+   </component>
+   <component id="next">
+      <text>End</text>
+   </component>
+   <component id="transcript">
+      <text>Transcript</text>
+   </component>
+   
+   <component id="ID_title">
+        <text><![CDATA[<b>Internet Routing Architecture</b>]]></text> 
+  </component>
+  
+  <component id="ID_inst">
+          <text><![CDATA[<b>Roll over each step to view how packets are routed across the Internet.</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt01">
+          <text><![CDATA[<b>Source Host</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt02">
+          <text><![CDATA[<b>1</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt03">
+          <text><![CDATA[<b>AS 100</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt04">
+          <text><![CDATA[<b>2</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt05">
+          <text><![CDATA[<b>3</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt06">
+          <text><![CDATA[<b>4</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt07">
+          <text><![CDATA[<b>5</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt08">
+          <text><![CDATA[<b>6</b>]]></text> 
+  </component>
+  
+   <component id="ID_txt08a">
+           <text><![CDATA[<b>7</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt09">
+          <text><![CDATA[<b>Destination Host</b>]]></text> 
+    </component>
+    
+  <component id="ID_txt10">
+          <text><![CDATA[<b>172.23.16.8</b>]]></text>
+  </component>
+  
+   <component id="ID_txt11">
+          <text><![CDATA[<b>192.168.32.1</b>]]></text>
+  </component>
+  
+  <component id="ID_txt12">
+          <text><![CDATA[<b>AS 200</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt13">
+          <text><![CDATA[<b>AS 300</b>]]></text> 
+  </component>
+    
+  <component id="ID_txt14">
+       <text><![CDATA[<b>AS 400</b>]]></text> 
+  </component>
+       
+  <component id="ID_txt15">
+       <text><![CDATA[<b>The source host in AS 200 sends a packet destined for 192.168.32.1.</b>]]></text> 
+  </component>
+       
+  <component id="ID_txt16">
+        <text><![CDATA[<b>Since the packet's destination IP address is not a local network, the interior routers keep passing the packet to their default routes, until eventually it arrives at a border gateway at the edge of the AS 200. 
+</b>]]></text> 
+ </component>
+       
+ <component id="ID_txt17">
+        <text><![CDATA[<b>The border gateway maintains a reachability database for all the AS's with which it connects. This database tells the border gateway that the 192.168.32.0 network is located within AS 400. </b>]]></text> 
+ </component>
+ 
+ <component id="ID_txt18">
+         <text><![CDATA[<b>The border gateway directs the packet to its next hop on the path, which is the border gateway at AS 400. </b>]]></text> 
+ </component>
+        
+ <component id="ID_txt18a">
+        <text><![CDATA[<b>The packet arrives at the AS 400 border gateway, which recognizes the packet's destination IP as an internal network in AS 400. The border gateway then directs the packet to the next hop interior router listed in its routing table.</b>]]></text> 
+ </component>
+ 
+ <component id="ID_txt19">
+        <text><![CDATA[<b>From then on, the packet is treated just like any local packet and is directed through interior routing protocols through a series of next hops towards the destination network. 
+</b>]]></text> 
+    </component>
+    
+ <component id="ID_txt20">
+        <text><![CDATA[<b>The packet arrives at a router that is directly connected to network 192.168.32.0 and is successfully forwarded to the destination host 192.168.32.1.</b>]]></text> 
+ </component>
+
+ </textcomponents>

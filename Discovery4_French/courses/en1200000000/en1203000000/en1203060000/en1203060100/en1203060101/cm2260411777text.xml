@@ -1,0 +1,340 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><li>The network designer examines the existing network to determine if the design goals are realistic and feasible, and if the current network can meet the expectations for scalability, availability, security and manageability.</li><br/><li>One of the first tasks the designer does when characterizing the network is to ensure that the network documentation and topology diagrams are up-to-date.</li><br/><li>Tools such as Cisco Network Assistant can discover information about the devices currently installed in the network.</li><br/><li>Using show commands, the network designers and engineers gather information about the devices and the configurations of the network.</ul></b></font>]]></text>
+</component>
+
+<component id="s1_ID_txt50">
+<text><![CDATA[Logical Connections]]></text> 
+   </component>
+<component id="s1_ID_txt51">
+<text><![CDATA[Ticket Sales Office]]></text> 
+   </component>
+<component id="s1_ID_txt52">
+<text><![CDATA[ISP2<BR>192.168.4.1/24]]></text> 
+   </component>
+<component id="s1_ID_txt53">
+<text><![CDATA[ISP1<BR>192.168.2.254]]></text> 
+   </component>
+<component id="s1_ID_txt54">
+<text><![CDATA[Internet]]></text> 
+   </component>
+<component id="s1_ID_txt55">
+<text><![CDATA[VPN (over DSL)]]></text> 
+   </component>
+<component id="s1_ID_txt55B">
+<text><![CDATA[VPN (over DSL)]]></text> 
+   </component>
+<component id="s1_ID_txt56">
+<text><![CDATA[ISP3 192.168.5.1/24]]></text> 
+   </component>
+<component id="s1_ID_txt57">
+<text><![CDATA[Vendor (Souvenir Shop)]]></text> 
+   </component>
+<component id="s1_ID_txt58">
+<text><![CDATA[Edge Router 192.168.2.1]]></text> 
+   </component>
+<component id="s1_ID_txt59">
+<text><![CDATA[Stadium Management Switch 192.168.2.4]]></text> 
+   </component>
+<component id="s1_ID_txt60">
+<text><![CDATA[Accounting]]></text> 
+   </component>
+<component id="s1_ID_txt61">
+<text><![CDATA[E-Commerce]]></text> 
+   </component>
+<component id="s1_ID_txt62">
+<text><![CDATA[Web]]></text> 
+   </component>
+<component id="s1_ID_txt63">
+<text><![CDATA[DNS]]></text> 
+   </component>
+<component id="s1_ID_txt64">
+<text><![CDATA[Stadium Management Devices]]></text> 
+   </component>
+<component id="s1_ID_txt65">
+<text><![CDATA[Team Switch 192.168.2.2]]></text> 
+   </component>
+<component id="s1_ID_txt66">
+<text><![CDATA[Payroll]]></text> 
+   </component>
+<component id="s1_ID_txt67">
+<text><![CDATA[Accounting]]></text> 
+   </component>
+<component id="s1_ID_txt68">
+<text><![CDATA[Team Services Devices]]></text> 
+   </component>
+<component id="s1_ID_txt69">
+<text><![CDATA[Vendor Switch 192.168.2.5]]></text> 
+   </component>
+<component id="s1_ID_txt70">
+<text><![CDATA[Accounting]]></text> 
+   </component>
+<component id="s1_ID_txt71">
+<text><![CDATA[Vendor Services Devices]]></text> 
+   </component>
+<component id="s1_ID_txt72">
+<text><![CDATA[Luxury Suites Switch 192.168.2.3]]></text> 
+   </component>
+<component id="s1_ID_txt73">
+<text><![CDATA[Luxury Suites Services Devices]]></text> 
+   </component>
+<component id="s1_ID_txt74">
+<text><![CDATA[192.168.2.0/22]]></text> 
+   </component>
+<component id="s1_ID_txt123">
+<text><![CDATA[Management Station]]></text> 
+   </component>
+
+
+
+
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><li>By organizing the current network into a modular block diagram, the designer can get an accurate picture of where the design needs to be improved.</li><br/><li>The designer categorizes various elements of the network into either strengths or weaknesses of the current design and installation.</li><br/><li>The new design should address all of the identified weaknesses in the current network first, before adding additional features and technology.</ul></font>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+    
+<text><![CDATA[End Devices]]></text> 
+ 
+</component>
+
+<component id="s2_ID_txt02">
+    
+<text><![CDATA[Access Layer]]></text> 
+ 
+</component>
+
+<component id="s2_ID_txt03">
+    
+<text><![CDATA[Distribution Layer]]></text> 
+ 
+</component>
+
+<component id="s2_ID_txt04">
+    
+<text><![CDATA[Core Services and Management]]></text> 
+ 
+</component>
+<component id="s2_ID_txt05">
+    
+<text><![CDATA[Stadium Management LAN]]></text> 
+ 
+</component>
+<component id="s2_ID_txt06">
+    
+<text><![CDATA[Team Services LAN]]></text> 
+ 
+</component>
+
+<component id="s2_ID_txt07">
+    
+<text><![CDATA[Vendor Services LAN]]></text> 
+ 
+</component>
+<component id="s2_ID_txt08">
+    
+<text><![CDATA[Luxury Suite LAN]]></text> 
+ 
+</component>
+<component id="s2_ID_txt09">
+    
+<text><![CDATA[EdgeRouter]]></text> 
+ 
+</component>
+
+
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><li>Cisco.com can provide the network designer and engineers with valuable information, including documentation for existing installed devices, tools to assist in evaluating the network, downloads of new software and applications, as well as provide a forum for collaboration with other network professionals.</li><br/><li>The show version command output provides information to create an inventory sheet for each existing piece of installed equipment that includes the model and type of device, the installed memory, the number and types of interfaces and the installed Cisco IOS software version.</li><br/><li>Cisco IOS software names provide information about the feature set support by the IOS version.</li><br/><li>Feature Navigator, a Cisco.com tool, assists designers in choosing the appropriate IOS features to provide the necessary functionality in the network.</li><br/><li>Before upgrading to a new IOS version, it is important to verify that the device has sufficient memory to load the new software.  Testing the upgrade in a test environment is critical, because IOS versions have different default configuration options.</li><br/><br/><br/><br/></font>]]></text>
+</component>
+
+<component id="s3_ID_txt01">
+<text><![CDATA[<font size="16"><b>Advanced Enterprise Services</b></font><br>Full Cisco ISO Software]]></text>
+</component>
+
+<component id="s3_ID_txt02">
+<text><![CDATA[<font size="14"><b>Advanced IP Services</b></font><br><font size="10">IPv6, Advanced Security,</br> Service Provider Services.]]></text>
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[<font size="14"><b>Enterprise Services</b></font><br><font size="10">Enterprises Base, Full IBM support, Service Provider Services.</font>]]></text>
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[<font size="12"><b>Advanced Security</b></font><br><font size="10">Cisco IOS Firewall, IDS, IPsec, 3DES, VPN, SSH]]></text>
+</component>
+
+<component id="s3_ID_txt05">
+<text><![CDATA[<font size="12"><b>SP Services</b></font><br><font size="10">MPLS, SSH, ATM, VoATM]]></text>
+</component>
+
+<component id="s3_ID_txt06">
+<text><![CDATA[<font size="12"><b>Enterprise Base</b></font><br><font size="10">Multi-protocols, IBM Support]]></text>
+</component>
+
+<component id="s3_ID_txt07">
+<text><![CDATA[<font size="12"><b>IP Voice</b></font><br><font size="10">VoIP,VoFR and IP Telephony]]></text>
+</component>
+
+<component id="s3_ID_txt08">
+<text><![CDATA[<font size="12"><b>IP Base</b></font><br><font size="10">Entry level Cisco IOS<font size="09">Software image]]></text>
+</component>
+
+<component id="s3_ID_txt09">
+<text><![CDATA[Version Number (12.3-14T7)]]></text>
+</component>
+
+<component id="s3_ID_txt10">
+<text><![CDATA[File Format (RAM compressed)]]></text>
+</component>
+
+<component id="s3_ID_txt11">
+<text><![CDATA[Feature Set (IP Base Entry Level Cisco IOS)]]></text>
+</component>
+
+
+<component id="s3_ID_txt12">
+<text><![CDATA[Hardware Platform (2800 Series Integrated Services Router)]]></text>
+</component>
+
+<component id="s3_ID_txt13">
+<text><![CDATA[Feature Inheritance]]></text>
+</component>
+
+
+
+<component id="slide04">
+<text><![CDATA[<font size="14"><li>After upgrading the IOS on a device, it is necessary to observe the boot up process to ensure that software is loaded correctly and functioning properly.</li><br/><li>There are three stages to the device boot up process:</li><TEXTFORMAT BLOCKINDENT='60'><br>1.the POST testing and the initial bootstrap software load, 
+2. locating and loading the Cisco IOS software, and 
+3. locating and loading the configuration file.</textformat><br/><br/><li>When incorporating existing equipment into a new network design, the designer needs to be aware of the hardware options and upgrades that are available.  Cisco.com is a good resource to find this information.</li><br/><li>Before producing a wireless network design, it is usually necessary to do a wireless site survey.</li><br/><li>Wireless site surveys identify the coverage areas and any sources of interference that affect the wireless signal.</li><br/><li>Planning a site survey requires the designer and technicians to identify the coverage areas, determine preliminary Access Point locations and use a wireless utility to measure signal strength at various distances from the AP.</li><br/><li>At the completion of the Planning phase of the PPDIOO model, a detailed design requirements document is produced. The final network design is based on the requirements stated in this document.</li><br/><br/><br/><br/></font>]]></text>
+</component>
+
+<component id="s4_ID_txt01">
+<text><![CDATA[ROM]]></text>
+</component>
+
+<component id="s4_ID_txt02">
+<text><![CDATA[ROM]]></text>
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[POST]]></text>
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[Bootstrap]]></text>
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[Perform Post]]></text>
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[Load Bootstrap]]></text>
+</component>
+
+<component id="s4_ID_txt07">
+<text><![CDATA[Flash]]></text>
+</component>
+
+<component id="s4_ID_txt08">
+<text><![CDATA[TFTP Server]]></text>
+</component>
+
+<component id="s4_ID_txt09">
+<text><![CDATA[Cisco Internetwork Operating System]]></text>
+</component>
+
+
+<component id="s4_ID_txt10">
+<text><![CDATA[Locate and load Operating system]]></text>
+</component>
+
+
+<component id="s4_ID_txt11">
+<text><![CDATA[NVRAM]]></text>
+</component>
+
+
+<component id="s4_ID_txt12">
+<text><![CDATA[TFTP Server]]></text>
+</component>
+
+
+<component id="s4_ID_txt13">
+<text><![CDATA[Console]]></text>
+</component>
+
+
+<component id="s4_ID_txt14">
+<text><![CDATA[Configuration]]></text>
+</component>
+
+
+<component id="s4_ID_txt15">
+<text><![CDATA[Locate and load Configuration file or enter "setup" mode]]></text>
+</component>
+
+
+<component id="s4_ID_txt16">
+<text><![CDATA[1. Perform POST]]></text>
+</component>
+
+
+<component id="s4_ID_txt17">
+<text><![CDATA[2. Execute Bootstrap Loader]]></text>
+</component>
+
+
+<component id="s4_ID_txt18">
+<text><![CDATA[3. Locate the IOS]]></text>
+</component>
+
+
+<component id="s4_ID_txt19">
+<text><![CDATA[4. Load the IOS]]></text>
+</component>
+
+
+<component id="s4_ID_txt20">
+<text><![CDATA[5. Locate the Configuration file]]></text>
+</component>
+
+
+<component id="s4_ID_txt21">
+<text><![CDATA[6. Execute the Configuration file...]]></text>
+</component>
+
+
+<component id="s4_ID_txt22">
+<text><![CDATA[or 7. Enter Setup Mode]]></text>
+</component>
+
+<component id="s4_ID_txt23">
+<text><![CDATA[Click the buttons to view the three stages of the boot up process.]]></text>
+</component>
+
+<component id="s4_ID_txt24">
+<text><![CDATA[Step 1-2]]></text>
+</component>
+
+<component id="s4_ID_txt25">
+<text><![CDATA[Step 3-4]]></text>
+</component>
+
+<component id="s4_ID_txt26">
+<text><![CDATA[Step 5-7]]></text>
+</component>
+
+
+
+
+</textcomponents>

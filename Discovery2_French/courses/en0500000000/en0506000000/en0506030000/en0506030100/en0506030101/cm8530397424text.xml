@@ -1,0 +1,198 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Routing is used to forward messages to the correct destination.</li><br/><li>Routing can be dynamic or static.   </li><br/><li>Dynamic routing requires the use of routing protocols to exchange route information between routers. Examples of dynamic routing include: distance vector routing protocols, and link state routing protocols.</li></ul>]]></text>
+</component>
+
+<component id="s1_ID_txt01">
+      <text><![CDATA[<b>Network 10.30.1.0   1</b>]]></text> 
+  </component>
+<component id="s1_ID_txt02">
+      <text><![CDATA[<b>Use Exit R2</b>]]></text> 
+  </component>
+<component id="s1_ID_txt03">
+      <text><![CDATA[<b>Distance (Metric)</b>]]></text> 
+  </component>
+<component id="s1_ID_txt04">
+      <text><![CDATA[<b>Vector (Direction)</b>]]></text> 
+  </component>
+<component id="s1_ID_txt05">
+      <text><![CDATA[<b>Thanks! Now I know Network 10.30.1.0 is a distance of 1 hop away from me in the direction of R2!</b>]]></text> 
+  </component>
+<component id="s1_ID_txt06">
+      <text><![CDATA[<b>Here is a copy of my routing table for you.</b>]]></text> 
+  </component>
+<component id="s1_ID_txt07">
+      <text><![CDATA[<b>Distance Vector Algorithm</b>]]></text> 
+  </component>
+<component id="s1_ID_txt08">
+      <text><![CDATA[<b>Network 10.30.1.0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt09">
+      <text><![CDATA[<b>10.20.1.0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt10">
+      <text><![CDATA[<b>R1</b>]]></text> 
+  </component>
+<component id="s1_ID_txt11">
+      <text><![CDATA[<b>R2</b>]]></text> 
+  </component>
+<component id="s1_ID_txt12">
+      <text><![CDATA[<b>SO</b>]]></text> 
+  </component>
+<component id="s1_ID_txt13">
+      <text><![CDATA[<b>E0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt14">
+      <text><![CDATA[<b>Network</b>]]></text> 
+  </component>
+<component id="s1_ID_txt15">
+      <text><![CDATA[<b>Gateway</b>]]></text> 
+  </component>
+<component id="s1_ID_txt16">
+      <text><![CDATA[<b>Metric</b>]]></text> 
+  </component>
+<component id="s1_ID_txt17">
+      <text><![CDATA[<b>10.20.1.0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt18">
+      <text><![CDATA[<b>S0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt19">
+      <text><![CDATA[<b>0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt20">
+      <text><![CDATA[<b>10.30.1.0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt21">
+      <text><![CDATA[<b>E0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt22">
+      <text><![CDATA[<b>0</b>]]></text> 
+  </component>
+
+
+<!--  Slide 2  -->  
+  
+  
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>Distance vector routing protocols calculate the direction and distance to any network. Routing tables and updates are sent periodically to neighbours. </li><br/><li>Link state protocols update nodes with information on the state of the link. These routing protocols reduce routing loops and network traffic.</li><br/><li>Choose the routing protocol for an organization based on ease of management, ease of configuration, and efficiency.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[<b>R1</b>]]></text>
+</component>
+<component id="s2_ID_txt02">
+<text><![CDATA[<b>R2</b>]]></text>
+</component>
+<component id="s2_ID_txt03">
+<text><![CDATA[<b>R3</b>]]></text>
+</component>
+<component id="s2_ID_txt04">
+<text><![CDATA[<b>R4</b>]]></text>
+</component>
+<component id="s2_ID_txt05">
+<text><![CDATA[<b>int/net/org/edu</b>]]></text>
+</component>
+<component id="s2_ID_txt06">
+<text><![CDATA[<b>cisco</b>]]></text>
+</component>
+<component id="s2_ID_txt07">
+<text><![CDATA[<b>nasa</b>]]></text>
+</component>
+<component id="s2_ID_txt08">
+<text><![CDATA[<b>army</b>]]></text>
+</component>
+<component id="s2_ID_txt09">
+<text><![CDATA[<b>redcross</b>]]></text>
+</component>
+
+
+<!--  Slide 3  -->
+
+
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>The Internet is divided up into collections of networks called autonomous systems.</li><br/><li>Within an autonomous system, interior gateway routing protocols are used, such as RIP, EIGRP and OSPF.</li><br/><li>Between autonomous systems, exterior gateway routing functions are required. Exterior Gateway Protocols (EGPs) run on exterior routers, or border gateways, that are located at the border of an AS. The most common EGP is Border Gateway Protocol (BGP).</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_title">
+<text><![CDATA[<b>DHCP Servers</b>]]></text>
+</component>
+<component id="s3_ID_txt01">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<!--  Slide 4  -->
+
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>BGP functions like a distance-vector protocol. From this database, direction and distance to a destination network are determined.</li><br/><li>Exterior protocols enable traffic to be routed across the Internet to remote destinations.</li><br/><li>Exterior protocols provide the method by which ISPs can set and enforce policies and local preferences for traffic flow efficiency. </li></ul>]]></text>
+</component>
+
+  <component id="s4_ID_txt02">
+                  <text><![CDATA[<b>ISP(AS 100)</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt03">
+                  <text><![CDATA[<b>SP1</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt04">
+                 <text><![CDATA[<b>S0/0/0:10.10.10.10</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt05">
+                  <text><![CDATA[<b>C1</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt06">
+                  <text><![CDATA[<b>172.19.0.0</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt07">
+                  <text><![CDATA[<b>Business Customer</b>]]></text> 
+  </component>
+
+
+<!--  Slide 5  -->
+
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>FTP is used for file transfer services. The ISP can support active and passive FTP connections. Active connections require the server to initiate the connection. Passive connection require the host to initiate the connection</li><br/><li>Email utilizes three different protocols including SMTP, POP3, and IMAP. SMTP is used to send email. POP3 and IMAP are both used to retrieve email. </li></ul>]]></text>
+</component>
+
+  <component id="s5_ID_txt01">
+                  <text><![CDATA[<b>Send to recipient@cisco.com</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt02">
+                  <text><![CDATA[<b>ISP A Mail Server</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt03">
+                  <text><![CDATA[<b>ISP B Mail Server</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt04">
+                  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt05">
+                  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt06">
+                  <text><![CDATA[<b>IMAP or POP3</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt07">
+                  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt08">
+                  <text><![CDATA[<b>Sender</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt09">
+                  <text><![CDATA[<b>Recipient</b>]]></text> 
+  </component>
+
+
+</textcomponents>

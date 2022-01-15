@@ -1,0 +1,132 @@
+﻿<textcomponents>
+
+
+
+
+<component id="ID_txt01">
+  <text><![CDATA[<b>Password Security</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<b>Extraneous Services</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[<b>Patch Management</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[<b>Application Security</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[<b>User Rights</b>]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[<b>Security Scanning</b>]]></text> 
+</component>
+
+
+
+
+<component id="ID_instruct">
+  <text><![CDATA[<b>Click each security practice for more information. </b>]]></text> 
+</component>
+
+<component id="Button01">
+	<text><![CDATA[<B>Password Security</B>]]></text>
+</component> 
+
+<component id="Button02">
+	<text><![CDATA[<B>Extraneous Services</B>]]></text>
+</component> 
+
+<component id="Button03">
+	<text><![CDATA[<B>Patch Management</B>]]></text>
+</component> 
+
+<component id="Button04">
+	<text><![CDATA[<B>Application Security</B>]]></text>
+</component>
+
+<component id="Button05">
+	<text><![CDATA[<B>User Rights</B>]]></text>
+</component>
+
+<component id="Button06">
+	<text><![CDATA[<B>Security Scanning</B>]]></text>
+</component>
+
+
+
+
+<component id="pop01">
+	<text><![CDATA[Password Security]]></text>
+</component>
+
+<component id="Body_text01">
+	<text><![CDATA[Choose a complex password. A complex password consists of a mix of upper case characters, lower case characters, numbers, and symbols. A complex password should be at least eight characters in length and never be based on a dictionary word or personal information that someone may be able to guess.<BR><BR>It is also recommended that passwords be changed periodically. Software exists that can allow a hacker to crack passwords by trying every possible combination of letters, numbers, and symbols to figure out passwords.<BR><BR>By changing your password periodically, brute force password cracking is less of an issue because by the time the hacker cracks the password, the password should already be changed to something different.]]></text>
+</component>
+
+<component id="pop02">
+	<text><![CDATA[Extraneous Services]]></text>
+</component>
+
+<component id="Body_text02">
+	<text><![CDATA[One of the most common methods used to compromise a computer system is to exploit unconfigured or misconfigured services. The nature of a service is it listens for requests from external computer systems. If the service has a known exploitable flaw due to not being configured or being configured incorrectly, then a hacker or a worm can compromise that service and gain access to the computer system that the service is running on.<BR><BR>As a best practice, remove or disable all unnecessary services. For services that are necessary or cannot be uninstalled, make sure you follow the best practices in any configuration guides for that particular service.]]>
+</text>
+</component>
+
+<component id="pop03">
+	<text><![CDATA[Patch Management]]></text>
+</component>
+
+<component id="Body_text03">
+	<text><![CDATA[New security exploits are constantly being identified for operating systems almost every day. All it takes is a simple search online and you may be able to find sites that list various exploitable vulnerabilities for virtually every operating system that is available today.<BR><BR>Operating system developers release updates regularly – daily in some cases. It is important to regularly review and install security updates for your operating systems. Most intrusions by a hacker or infections from worms and viruses can be prevented by patching the operating system regularly.]]></text>
+</component>
+
+<component id="pop04">
+	<text><![CDATA[Application Security]]></text>
+</component>
+
+<component id="Body_text04">
+	<text><![CDATA[Unpatched and unnecessary applications installed on an operating system can increase the risk of being compromised. Just as the operating system needs to be patched regularly, so do the installed applications.<BR><BR>Internet based applications, such as Internet browsers and email applications, are the most important applications to constantly patch, since these applications are the most targeted type of application.]]>
+</text>
+</component>
+
+<component id="pop05">
+	<text><![CDATA[User Rights]]></text>
+</component>
+
+<component id="Body_text05">
+	<text><![CDATA[On a typical modern operating system there are multiple levels of access to the operating system. When a user account has administrative access to the operating system, malware can more easily infect the computer system. This is due to the unrestricted access to the file system and system services.<BR><BR>Normal user accounts do not have the ability to install new applications since the accounts do not have access to areas of the file system and system files that are necessary to install most applications. As a result, normal users are not as susceptible to malware infections that try to install or access certain areas of the file system.<BR><BR>As a best practice, users should only have the level of access required to perform their normal daily work. Administrative access should only be used on occasion to perform functions that are not permitted as a normal user.]]>
+</text>
+</component>
+
+<component id="pop06">
+	<text><![CDATA[Security Scanning]]></text>
+</component>
+
+<component id="Body_text06">
+	<text><![CDATA[There are many tools that can help you secure your operating system. Most security scanning tools review many system security weaknesses and report back on how to rectify the problems the software found.<BR><BR>Some of the more advanced scanning software packages go beyond the typical operating system security scans and look at the software and services that are running on a computer and suggest ways to protect the entire system from attack.]]>
+</text>
+</component>
+
+
+<component id="tipBody">	
+        <text><![CDATA[Microsoft has a freely downloadable tool called the <B>Microsoft Baseline Security Analyzer (MBSA)</B> that examines everything from user account security to installed Windows services and even checks to see the current patch level of your operating system.<BR><BR>Another popular utility created for scanning for vulnerabilities is the <B>Nessus Vulnerability Scanner</B>. This scanning tool is not specific to Windows so it scans for vulnerabilities on a variety of different platforms. Many other tools are available online. Usually, it is best to use more than one tool to examine the security of your system to get the best overall results. 
+]]></text>	
+</component>
+
+
+<component id="tipTitle">
+        <text><![CDATA[Tip]]></text>
+</component>
+
+	<component id="TipText">
+        <text><![CDATA[Tip]]></text>
+</component>
+
+
+</textcomponents>	

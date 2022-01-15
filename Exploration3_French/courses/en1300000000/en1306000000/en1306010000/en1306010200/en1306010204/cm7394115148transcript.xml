@@ -1,0 +1,5 @@
+<transcript lastedited="01.07.09 14:01:27">
+<title><content-text><![CDATA[6.1.2  - Interfaces and Subinterfaces]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the configuration of router R1 subinterfaces when using a single router interface with router-on-a-stick inter-V LAN routing. The output of the routing table after configuration is also provided.<br><br>Subinterface Configuration:<br>Some output omitted.<br>R1(config)#interface f0/0 dot 10<br>R1(config-sub i f)#encapsulation dot 1 q 10<br>R1(config-sub i f)#i p address 172.17.10.1 255.255.255.0<br>R1(config-sub i f)#interface f0/0 dot 30<br>R1(config-sub i f)#encapsulation dot 1 q 30<br>R1(config-sub i f)#i p address 172.17.30.1 255.255.255.0<br>R1(config-sub i f)#interface f0/0<br>R1(config-i f)#no shutdown<br><br>Routing Table Output:<br>Some output omitted.<br>C172.17.10.0 is directly connected, FastEthernet 0/0 dot 10<br>C172.17.30.0 is directly connected, FastEthernet 0/0 dot 30]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

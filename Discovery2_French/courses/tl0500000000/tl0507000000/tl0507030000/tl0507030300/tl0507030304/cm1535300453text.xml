@@ -1,0 +1,41 @@
+﻿<textcomponents>
+
+
+<component id="ID_instruct">
+  <text><![CDATA[<b>Cliquez sur chaque type de zone DNS pour afficher un exemple.</b>]]></text> 
+  </component>
+
+<component id="ID_reverse_lookup">
+  <text><![CDATA[<b>Zones de recherche inverse</b>]]></text> 
+  </component>
+  
+  <component id="ID_forward_lookup">
+  <text><![CDATA[<b>Zones de recherche directe</b>]]></text> 
+  </component>
+
+ <component id="tipTitle">
+ <text>Informations supplémentaires</text>
+ </component>
+ 
+ <component id="tipBody">
+<text><![CDATA[<b>Zones principales :</b><br><br>Une zone DNS principale est une zone que vous pouvez modifier, si nécessaire. Lorsqu’il est nécessaire d’ajouter une ressource ou de mettre à jour ou de supprimer un enregistrement, vous pouvez modifier une zone DNS principale. Il existe des zones de recherche directe ou inverse. Lorsqu’il existe une zone principale sur un serveur DNS, ce serveur en a l’autorité. En effet, il obtient la réponse aux requêtes DNS pour les enregistrements figurant dans cette zone. Il ne peut y avoir qu’une seule zone DNS principale pour un domaine déterminé.
+<b>Zones secondaires :</b><br><br>Une zone secondaire est une zone de sauvegarde en lecture seule gérée sur un serveur DNS distinct. La zone secondaire est la réplique de la zone principale. Elle reçoit des mises à jour du serveur principal via des transferts de zones. Cette zone secondaire est une copie en lecture seule de la zone. C’est pourquoi tous les enregistrements doivent être effectués dans la zone principale correspondante. Les zones secondaires peuvent également être utilisées pour effectuer des recherches directes ou inverses. Selon les critères de disponibilité relatifs à une zone DNS, il peut y avoir de nombreuses zones DNS secondaires réparties sur plusieurs serveurs DNS.]]></text>
+ </component>
+ 
+<component id="ID_txt01">
+  <text><![CDATA[<font size="-1"><b>C:\>ping netacad.net<br/><br/>Envoi d'une requête 'ping' sur netacad.net.escxi.loc [64.102.240.242] avec 32 octets de données :<br/><br/>Réponse de 64.102.240.242: octets=32 temps=26ms TL=128<br/>Réponse de 64.102.240.242: octets=32 temps=26ms TL=128<br/>Réponse de 64.102.240.242: octets=32 temps=26ms TL=128<br/>Réponse de 64.102.240.242: octets=32 temps=26ms TL=128<br/><br/>Statistiques Ping pour 64.102.240.242:<br/>Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%).<br/>Durée approximative des boucles en millisecondes :<br/>Minimum = 26ms, Maximum = 26ms, Moyenne = 26ms<br/><br/>C:\></b></font>]]></text>
+</component>
+  
+<component id="ID_txt02">
+  <text><![CDATA[<font size="-1"><b>C:\>ping -a 64.102.240.242<br/><br/>Envoi d'une requête 'ping' sur bsm-rtp-002-int.cisco.com [64.102.240.242] avec 32 octets de données :<br/><br/>Réponse de 64.102.240.242: octets=32 temps=26ms TL=128<br/>Réponse de 64.102.240.242: octets=32 temps=26ms TL=128<br/>Réponse de 64.102.240.242: octets=32 temps=26ms TL=128<br/>Réponse de 64.102.240.242: octets=32 temps=26ms TL=128<br/><br/>Statistiques Ping pour 64.102.240.242:<br/>Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%).<br/>Durée approximative des boucles en millisecondes :<br/>Minimum = 26ms, Maximum = 26ms, Moyenne = 26ms<br/><br/>C:\></b></font>]]></text>
+</component>
+ <component id="TipText">
+<text><![CDATA[Informations supplémentaires]]></text></component>
+
+
+
+
+
+
+
+</textcomponents>

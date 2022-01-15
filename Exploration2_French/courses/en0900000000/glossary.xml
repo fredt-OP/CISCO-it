@@ -1,0 +1,950 @@
+<glossary>
+<content-glossary id="cg9615848253" index="A">
+<term><content-text>active state</content-text></term>
+<definition><content-text><p>A state in which there is no Feasible Successor in the topology table and the local router goes into Active state and queries its neighbors for routing information.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3416376132" index="A">
+<term><content-text>AD</content-text></term>
+<definition><content-text><p>See administrative distance</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>administrative distance</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3325821460" index="A">
+<term><content-text>adjacency</content-text></term>
+<definition><content-text><p>A relationship formed between selected neighboring routers and end nodes for the purpose of exchanging routing information. Adjacency is based upon the use of a common media segment.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5039223251" index="A">
+<term><content-text>administrative distance</content-text></term>
+<definition><content-text><p>Rating of the trustworthiness of a routing information source. Administrative distance often is expressed as a numerical value between 0 and 255. The higher the value, the lower the trustworthiness rating. If a router has multiple routing protocols in it's routing table it will select the route with the lowest administrative distance. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3377826329" index="A">
+<term><content-text>Algorithm</content-text></term>
+<definition><content-text><p>Well-defined rule or process for arriving at a solution to a problem. In networking, algorithms are commonly used to determine the best route for traffic from a particular source to a particular destination</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4679715108" index="A">
+<term><content-text>ALLSPFRouters</content-text></term>
+<definition><content-text><p>A multicast group used in the OSPF routing protocol. The ALLSPFRouters address is 224.0.0.5.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4387624266" index="A">
+<term><content-text>ARP</content-text></term>
+<definition><content-text><p>Address Resolution Protocol. Internet protocol used to map an IP address to a MAC address. Defined in RFC 826</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6775430194" index="A">
+<term><content-text>asymmetric routing</content-text></term>
+<definition><content-text><p>Asymmetric routing is when a path from network 1 to network 2 is different from the path from network 2 to network 1. The paths to network 2 are different than the returning path from Network 2 to network 1.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7863235272" index="A">
+<term><content-text>Asynchronous Transfer Mode (ATM)</content-text></term>
+<definition><content-text><p>Asynchronous Transfer Mode. The international standard for cell relay in which multiple service types (such as voice, video, or data) are conveyed in fixed-length (53-byte) cells. Fixed-length cells allow cell processing to occur in hardware, thereby reducing transit delays. ATM is designed to take advantage of high-speed transmission media, such as E3, SONET, and T3.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3567348536" index="A">
+<term><content-text>automatic summarization</content-text></term>
+<definition><content-text><p>Consolidation of networks and advertised in classful network advertisements. In RIP this causes a single summary route to be advertised to other routers.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6494076566" index="A">
+<term><content-text>Autonomous System (AS)</content-text></term>
+<definition><content-text><p>A collection of networks under a common administration sharing a common routing strategy. Autonomous systems are subdivided by areas. An autonomous system must be assigned a unique 16-bit number by the IANA. Sometimes abbreviated as AS.</p></content-text></definition>
+<variations><content-text>AS,autonomous system</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8572378873" index="A">
+<term><content-text>Autonomous System Boundary Router (ASBR)</content-text></term>
+<definition><content-text><p>Autonomous system boundary router. An ASBR is located between an OSPF autonomous system and a non-OSPF network. ASBRs run both OSPF and another routing protocol, such as RIP. ASBRs must reside in a nonstub OSPF area.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4534692650" index="B">
+<term><content-text>Backup Designated Router (BDR)</content-text></term>
+<definition><content-text><p>A router that becomes the designated router if the current designated router fails. The BDR is the OSPF router with second highest priority at the time of the last DR election. <br/> <br/> </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2541561647" index="B">
+<term><content-text>Bellman-Ford (algorithm)</content-text></term>
+<definition><content-text><p>Class of routing algorithms that iterate on the number of hops in a route to find a shortest-path spanning tree. Distance vector routing algorithms call for each router to send its entire routing table in each update, but only to its neighbors. Distance vector routing algorithms can be prone to routing loops, but are computationally simpler than link state routing algorithms.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6489003437" index="B">
+<term><content-text>best path</content-text></term>
+<definition><content-text><p>The fastest path to a certain destination. The fastest path being based on the routing protocol's metric.</p></content-text></definition>
+<variations><content-text>Shortest Path</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8359071964" index="B">
+<term><content-text>Border Gateway Routing (BGP)</content-text></term>
+<definition><content-text><p>Border Gateway Protocol. Interdomain routing protocol that replaces EGP. BGP exchanges reachability information with other BGP systems. It is defined by RFC 1163.</p></content-text></definition>
+<variations><content-text>BGP</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8932544635" index="B">
+<term><content-text>boundary router</content-text></term>
+<definition><content-text><p>A router that sits on the edge two discontiguous classful networks. A boundary router can also be known as a router that sits on the edge of two different networks that have different routing protocols. Sometimes the word boundary router is loosely used when discussing OSPF and Autonomous System Boundary Routers.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4471473624" index="B">
+<term><content-text>bounded updates</content-text></term>
+<definition><content-text><p>Updates that are sent only to those routers that need the updated information instead of sending updates to all routers. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3853080056" index="C">
+<term><content-text>cable</content-text></term>
+<definition><content-text><p>Transmission medium of copper wire or optical fiber wrapped in a protective cover.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5511746298" index="C">
+<term><content-text>classful IP addressing</content-text></term>
+<definition><content-text><p>In the early days of IPv4, IP addresses are divided into 5 classes, namely, Class A, Class B, Class C, Class D, and Class E.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3951938013" index="C">
+<term><content-text>classful routing protocols</content-text></term>
+<definition><content-text><p>Routing protocols that use classful ip addressing. They do not use subnet mask information in their routing operation. They automatically assume classful masks.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9690551937" index="C">
+<term><content-text>Classless Inter-Domain Routing (CIDR)</content-text></term>
+<definition><content-text><p>Technique supported by BGP4 and based on route aggregation. CIDR allows routers to group routes together to reduce the quantity of routing information carried by the core routers. With CIDR, several IP networks appear to networks outside the group as a single, larger entity. With CIDR, IP addresses and their subnet masks are written as four octets, separated by periods, followed by a forward slash and a two-digit number that represents the subnet mask.</p></content-text></definition>
+<variations><content-text>CIDR</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8473764376" index="C">
+<term><content-text>console port</content-text></term>
+<definition><content-text><p>DTE through which commands are entered into a host.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4791660266" index="C">
+<term><content-text>contiguous</content-text></term>
+<definition><content-text><p>Consistent or adjacent. In terms of contiguous networks, the word contiguous means network blocks that are hierarchical in nature. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6883346210" index="C">
+<term><content-text>Contiguous Address Assignment</content-text></term>
+<definition><content-text><p>Addressing that is not fragmented and follows a hierarchical format allowing for network summarization.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4721536573" index="C">
+<term><content-text>converged</content-text></term>
+<definition><content-text><p>The past tense of converge. When intermediate devices all have the same consistent network topology in their routing tables. This means that they have converged.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8488982897" index="C">
+<term><content-text>convergence</content-text></term>
+<definition><content-text><p>Speed and ability of a group of internetworking devices running a specific routing protocol to agree on the topology of an internetwork after a change in that topology.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2024046045" index="C">
+<term><content-text>cost</content-text></term>
+<definition><content-text><p>An arbitrary value, typically based on hop count, media bandwidth, or other measures, that is assigned by a network administrator and used to compare various paths through an internetwork environment. Routing protocols use cost values to determine the most favorable path to a particular destination: the lower the cost, the better the path.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>metric</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9223787049" index="C">
+<term><content-text>count to infinity</content-text></term>
+<definition><content-text><p>Problem that can occur in routing algorithms that are slow to converge, in which routers continuously increment the hop count to particular networks. Typically, some arbitrary hop-count limit is imposed to prevent this problem.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9049355325" index="D">
+<term><content-text>Database Description (DBD)</content-text></term>
+<definition><content-text><p>A packet which contains an abbreviated list of the sending router's link-state database and is used by receiving routers to check against the local link-state database. Routers exchange DBDs during the Exchange phase of adjacency creation.</p></content-text></definition>
+<variations><content-text>DBD</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2992967514" index="D">
+<term><content-text>datagrams</content-text></term>
+<definition><content-text><p>Logical grouping of information sent as a network layer unit over a transmission medium without prior establishment of a virtual circuit. IP datagrams are the primary information units in the Internet. The terms cell, frame, message, packet, and segment also are used to describe logical information groupings at various layers of the OSI reference model and in various technology circles.</p></content-text></definition>
+<variations><content-text>datagram</content-text></variations>
+<seealso><content-text>packet</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1266966127" index="D">
+<term><content-text>data-link</content-text></term>
+<definition><content-text><p>Layer 2 of the OSI reference model. Provides reliable transit of data across a physical link. The data-link layer is concerned with physical addressing, network topology, line discipline, error notification, ordered delivery of frames, and flow control. The IEEE divided this layer into two sublayers: the MAC sublayer and the LLC sublayer. Sometimes simply called link layer. Roughly corresponds to the data-link control layer of the SNA model.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9839475267" index="D">
+<term><content-text>Designated Router (DR)</content-text></term>
+<definition><content-text><p>OSPF router that generates LSAs for a multiaccess network and has other special responsibilities in running OSPF. Each multiaccess OSPF network that has at least two attached routers has a designated router that is elected by the OSPF Hello protocol. The designated router enables a reduction in the number of adjacencies required on a multiaccess network, which in turn reduces the amount of routing protocol traffic and the size of the topological database.</p></content-text></definition>
+<variations><content-text>DR</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5832746935" index="D">
+<term><content-text>Diffusing Update Algorithm (DUAL)</content-text></term>
+<definition><content-text><p>Diffusing Update Algorithm. Convergence algorithm used in Enhanced IGRP that provides loop-free operation at every instant throughout a route computation. Allows routers involved in a topology change to synchronize at the same time, while not involving routers that are unaffected by the change.</p></content-text></definition>
+<variations><content-text>DUAL</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8784536802" index="D">
+<term><content-text>discontiguous</content-text></term>
+<definition><content-text><p>Components that are fragmented. For example a discontiguous network comprises of a major network that separates another major network. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7730322559" index="D">
+<term><content-text>discontiguous address assignment</content-text></term>
+<definition><content-text><p>A fragmented network assignment that does not follow a consistent pattern.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4461611920" index="D">
+<term><content-text>discontiguous network</content-text></term>
+<definition><content-text><p>Fragmented network addressing. Networks that do not have a hierarchical scheme. It is impossible to summarize discontiguous networks. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2616638345" index="D">
+<term><content-text>distance vector</content-text></term>
+<definition><content-text><p>see Bellman-Ford (Algorithm)</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>Bellman-Ford (algorithm)</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3893889738" index="D">
+<term><content-text>domain</content-text></term>
+<definition><content-text><p>A portion of the naming hierarchy tree that refers to general groupings of networks based on organization type or geography.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7298380285" index="D">
+<term><content-text>DROthers</content-text></term>
+<definition><content-text><p>DROthers are routers that are not DR or BDR. They are the other routers in the OSPF network. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5636558179" index="D">
+<term><content-text>DSL</content-text></term>
+<definition><content-text><p>Digital subscriber line. Public network technology that delivers high bandwidth over conventional copper wiring at limited distances. There are four types of DSL: ADSL, HDSL, SDSL, and VDSL. All are provisioned via modem pairs, with one modem located at a central office and the other at the customer site. Because most DSL technologies do not use the whole bandwidth of the twisted pair, there is room remaining for a voice channel.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8753322308" index="D">
+<term><content-text>dynamic routing</content-text></term>
+<definition><content-text><p>Routing that adjusts automatically to network topology or traffic changes. Also called adaptive routing.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2512579249" index="D">
+<term><content-text>dynamic routing protocols</content-text></term>
+<definition><content-text><p>Allow network devices to learn routes dynamically. RIP and EIGRP are examples of dynamic routing protocols.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8098921953" index="E">
+<term><content-text>Enhanced IGRP (EIGRP)</content-text></term>
+<definition><content-text><p>Enhanced Interior Gateway Routing Protocol. Advanced version of IGRP developed by Cisco. Provides superior convergence properties and operating efficiency, and combines the advantages of link state protocols with those of distance vector protocols.</p></content-text></definition>
+<variations><content-text>EIGRP</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3369030743" index="E">
+<term><content-text>equal cost load balancing</content-text></term>
+<definition><content-text><p>When a router utilizes multiple paths with the same administrative distance and cost to a destination.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1940253388" index="E">
+<term><content-text>equal cost metric</content-text></term>
+<definition><content-text><p>A metric that has the same value on multiple paths to the same destination. When multiple paths have equal cost metrics a router can execute equal cost load balancing among those paths.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1794827428" index="E">
+<term><content-text>Ethernet</content-text></term>
+<definition><content-text><p>Baseband LAN specification invented by Xerox Corporation and developed jointly by Xerox, Intel, and Digital Equipment Corporation. Ethernet networks use CSMA/CD and run over a variety of cable types at 10 Mbps. Ethernet is similar to the IEEE 802.3 series of standards.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2454214713" index="F">
+<term><content-text>Feasibility Condition (FC)</content-text></term>
+<definition><content-text><p>If the receiving router has a Feasible Distance to a particular network and it receives an update from a neighbor with a lower advertised distance (Reported Distance) to that network, then there is a Feasibility Condition. Used in EIGRP routing.</p></content-text></definition>
+<variations><content-text>FC</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3609572796" index="F">
+<term><content-text>Feasible Distance (FD)</content-text></term>
+<definition><content-text><p>The Feasible Distance is the metric of a network advertised by the connected neighbor plus the cost of reaching that neighbor. The path with the lowest metric is added to the routing table and is called FD or feasible distance. Used in EIGRP routing.</p></content-text></definition>
+<variations><content-text>FD</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9630550867" index="F">
+<term><content-text>Feasible Successor (FS)</content-text></term>
+<definition><content-text><p>A next hop router that leads to a certain destination network. The feasible successor can be thought of as a backup next hop if the primary next hop (successor) goes down. Used in EIGRP routing.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3121928983" index="F">
+<term><content-text>Fiber Distributed Data INterface (FDDI)</content-text></term>
+<definition><content-text><p>Fiber Distributed Data Interface. LAN standard, defined by ANSI X3T9.5, specifying a 100-Mbps token-passing network using fiber-optic cable, with transmission distances of up to 2 km. FDDI uses a dual-ring architecture to provide redundancy.</p></content-text></definition>
+<variations><content-text>FDDI</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4689628855" index="F">
+<term><content-text>flapping link</content-text></term>
+<definition><content-text><p>Routing problem where an advertised route between two nodes alternates (flaps) back and forth between two paths due to a network problem that causes intermittent interface failures.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2090906049" index="F">
+<term><content-text>flash</content-text></term>
+<definition><content-text><p>Technology developed by Intel and licensed to other semiconductor companies. Flash memory is nonvolatile storage that can be electrically erased and reprogrammed. Allows software images to be stored, booted, and rewritten as necessary.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4929417584" index="F">
+<term><content-text>Frame Relay</content-text></term>
+<definition><content-text><p>A packet switched data link layer protocol that handles multiple virtual circuits using between connected devices. Frame Relay is more efficient than X.25, the protocol for which it generally is considered a replacement.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9103484865" index="G">
+<term><content-text>gateways</content-text></term>
+<definition><content-text><p>A device on a network that serves as an access point to another network. A default gateway is used by a host when an IP packet's destination address belongs to someplace outside the local subnet. A router is a good example of a default gateway.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>Router</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8501917748" index="H">
+<term><content-text>high order bits</content-text></term>
+<definition><content-text><p>The 'high order bit' of a binary number is the one that carries the most weight, the one written farthest to the left. High order bits are the 1s in the network mask.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6535488659" index="H">
+<term><content-text>hold time</content-text></term>
+<definition><content-text><p>The maximum time a router waits to receive the next hello packet or routing update. Once the hold time counter expires that route will become unreachable.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3331630841" index="H">
+<term><content-text>hold-down timers</content-text></term>
+<definition><content-text><p>Timers that a route is placed in so that routers neither advertise the route nor accept advertisements about the route for a specific length of time (the holddown period). Holddown is used to flush bad information about a route from all routers in the network. A route typically is placed in holddown when a link in that route fails.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2311059411" index="H">
+<term><content-text>hosts</content-text></term>
+<definition><content-text><p>Computer system on a network. Similar to node, except that host usually implies a computer system, whereas node generally applies to any networked system, including access servers and routers.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3878387383" index="H">
+<term><content-text>hub-and-spoke</content-text></term>
+<definition><content-text><p>A wan topology whereupon various branch offices are connected via a centralized hub or headquarters. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6990448592" index="I">
+<term><content-text>ICMP</content-text></term>
+<definition><content-text><p>Internet Control Message Protocol. Network layer Internet protocol that reports errors and provides other information relevant to IP packet processing. Documented in RFC 792.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4423637020" index="I">
+<term><content-text>IGRP</content-text></term>
+<definition><content-text><p>Interior Gateway Routing Protocol. IGP developed by Cisco to address the issues associated with routing in large, heterogeneous networks.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6436131893" index="I">
+<term><content-text>Interior Gateway Protocols</content-text></term>
+<definition><content-text><p>Internet protocol used to exchange routing information within an autonomous system. Examples of common Internet IGPs include IGRP, OSPF, and RIP.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4278616182" index="I">
+<term><content-text>Intermediate-System-to-Intermediate-System (IS-IS)</content-text></term>
+<definition><content-text><p>Intermediate System-to-Intermediate System protocol (IS-IS) is based on a routing method known as DECnet Phase V routing, in which routers known as intermediate systems exchange data about routing using a single metric to determine the network topology. IS-IS was developed by the International Organization for Standardization (ISO) as part of their Open Systems Interconnection (OSI) model.</p></content-text></definition>
+<variations><content-text>IS-IS</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6625915036" index="I">
+<term><content-text>Internet Service Provider (ISP)</content-text></term>
+<definition><content-text><p>An ISP is a company that provides access to the Internet to individuals or companies.</p></content-text></definition>
+<variations><content-text>ISP</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9625811609" index="I">
+<term><content-text>IP</content-text></term>
+<definition><content-text><p>Internet Protocol. Network layer protocol in the TCP/IP stack offering a connectionless internetwork service. IP provides features for addressing, type-of-service specification, fragmentation and reassembly, and security. Defined in RFC 791.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8872612645" index="I">
+<term><content-text>IPv6</content-text></term>
+<definition><content-text><p>A network layer protocol for packet-switched internet works. The successor of IPv4 for general use on the Internet.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7950820394" index="I">
+<term><content-text>IPX</content-text></term>
+<definition><content-text><p>Internetwork Packet Exchange. NetWare network layer (Layer 3) protocol used for transferring data from servers to workstations. IPX is similar to IP and XNS.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5216639655" index="I">
+<term><content-text>ISDN</content-text></term>
+<definition><content-text><p>Integrated Services Digital Network. Communication protocol offered by telephone companies that permits telephone networks to carry data, voice, and other source traffic.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9608982985" index="L">
+<term><content-text>LED</content-text></term>
+<definition><content-text><p>Light emitting diode. Semiconductor device that emits light produced by converting electrical energy.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2235534953" index="L">
+<term><content-text>Level 1 Parent route</content-text></term>
+<definition><content-text><p>A first level route in the routing table that has subnets "catalogued" under it. A first level parent route does not contain any next-hop IP address or exit interface information. </p></content-text></definition>
+<variations><content-text>level 1 parent route</content-text></variations>
+<seealso><content-text>Level 1 route</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4754811668" index="L">
+<term><content-text>Level 1 route</content-text></term>
+<definition><content-text><p>A route with a subnet mask equal to or less than the classful mask of the network address.</p></content-text></definition>
+<variations><content-text>level 1 route</content-text></variations>
+<seealso><content-text>Level 1 Parent route</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3250817569" index="L">
+<term><content-text>Level 2 child route</content-text></term>
+<definition><content-text><p>The subnets that belong to the parent route. </p></content-text></definition>
+<variations><content-text>level 2 child route</content-text></variations>
+<seealso><content-text>Level 1 route,Level 1 Parent route</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4122837635" index="L">
+<term><content-text>Level 2 route</content-text></term>
+<definition><content-text><p>A subnet is the level 2 route of the parent route.</p></content-text></definition>
+<variations><content-text>level 2 routes,level 2 route</content-text></variations>
+<seealso><content-text>Level 1 route</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4835762248" index="L">
+<term><content-text>Link-state</content-text></term>
+<definition><content-text><p>Link-state refers to the status of a link including the interface IP address/subnet mask, type of network, cost of the link, and any neighbor routers on that link.</p></content-text></definition>
+<variations><content-text>link-state</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8742800150" index="L">
+<term><content-text>Link-State Acknowledgement (LSAck)</content-text></term>
+<definition><content-text><p>Link State Acknowledgment Packets are OSPF packet type 5. LSAcks acknowledge receipt of LSA (Links State Advertisement) packets.</p></content-text></definition>
+<variations><content-text>LSAck</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7038442778" index="L">
+<term><content-text>Link-State Advertisement (LSA)</content-text></term>
+<definition><content-text><p>Link-state advertisement. Broadcast packet used by link-state protocols that contains information about neighbors and path costs. LSAs are used by the receiving routers to maintain their routing tables.</p></content-text></definition>
+<variations><content-text>LSA</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6326428498" index="L">
+<term><content-text>link-state database</content-text></term>
+<definition><content-text><p>A table used in OSPF that is a representation of the topology of the autonomous system. It is the method by which routers see the state of the links in the autonomous system.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1882735968" index="L">
+<term><content-text>Link-State Packet (LSP)</content-text></term>
+<definition><content-text><p>Broadcast packet used by link-state protocols that contains information about neighbors and path costs. LSPs are used by the receiving routers to maintain their routing tables.</p></content-text></definition>
+<variations><content-text>LSP</content-text></variations>
+<seealso><content-text>LSA</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7438722925" index="L">
+<term><content-text>Link-State Request (LSR)</content-text></term>
+<definition><content-text><p>Link State Request packets are OSPF packet type 3. The Link State Request packet is used to request the pieces of the neighbor's database that are more up to date.</p></content-text></definition>
+<variations><content-text>LSR</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3766747133" index="L">
+<term><content-text>link-state router</content-text></term>
+<definition><content-text><p>A router that uses a link-state routing protocol.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3032423004" index="L">
+<term><content-text>link-state routing protocol</content-text></term>
+<definition><content-text><p>A routing protocol in which routers exchange information with one another about the reachability of other networks and the cost or metric to reach the other networks. Link state routers use Dijkstra's algorithm to calculate shortest paths to a destination, and normally update other routers with whom they are connected only when their own routing tables change.<br/> </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1133628043" index="L">
+<term><content-text>Link-State Update (LSU)</content-text></term>
+<definition><content-text><p>Link State Update packets are OSPF packet type 4. Link State Update packet carries a collection of link state advertisements one hop further from its origin.</p></content-text></definition>
+<variations><content-text>LSU</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9327612657" index="L">
+<term><content-text>load balancing</content-text></term>
+<definition><content-text><p>In routing, the capability of a router to distribute traffic over all its network ports that are the same distance from the destination address. Good load-balancing algorithms use both line speed and reliability information. Load balancing increases the use of network segments, thus increasing effective network bandwidth.</p></content-text></definition>
+<variations><content-text>load balances</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2442783702" index="L">
+<term><content-text>Local Area Networks (LANs)</content-text></term>
+<definition><content-text><p>The term Local Area Network (LAN) refers to a local network, or a group of interconnected local networks that are under the same administrative control. In the early days of networking, LANs were defined as small networks that existed in a single physical location. While LANs can be a single local network installed in a home or small office, the definition of LAN has evolved to include interconnected local networks consisting of many hundreds of hosts, installed in multiple buildings and locations.</p></content-text></definition>
+<variations><content-text>LAN</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6552304928" index="L">
+<term><content-text>loopback</content-text></term>
+<definition><content-text><p>127.0.0.1 is an IP address available on all devices to test to see if the NIC card on that device is functioning. If you send something to 127.0.0.1, it loops back on itself, thereby sending the data to the NIC on that device. If you get a positive response to a ping 127.0.0.1, you know your NIC card is up and running.</p></content-text></definition>
+<variations><content-text>Loopback</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8751073854" index="L">
+<term><content-text>loopback address</content-text></term>
+<definition><content-text><p>127.0.0.1 is an IP address available on all devices to test to see if the NIC card on that device is functioning. If you send something to 127.0.0.1, it loops back on itself, thereby sending the data to the NIC on that device. If you get a positive response to a ping 127.0.0.1, you know your NIC card is up and running.</p></content-text></definition>
+<variations><content-text>Loopback address</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9480679254" index="L">
+<term><content-text>loopback interface</content-text></term>
+<definition><content-text><p>A virtual interface used for management purposes. Unlike a proper loopback interface, this loopback device is not used to talk with itself.</p></content-text></definition>
+<variations><content-text>Loopback interface</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1421657329" index="L">
+<term><content-text>loop-free</content-text></term>
+<definition><content-text><p>Free of loops. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4560460940" index="M">
+<term><content-text>MAC address</content-text></term>
+<definition><content-text><p>Standardized data link layer address that is required for every port or device that connects to a LAN. Other devices in the network use these addresses to locate specific ports in the network and to create and update routing tables and data structures. MAC addresses are 6 bytes long and are controlled by the IEEE.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>physical address</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4379391683" index="M">
+<term><content-text>media</content-text></term>
+<definition><content-text><p>Plural of medium. The various physical environments through which transmission signals pass. Common network media include twisted-pair, coaxial and fiber-optic cable, and the atmosphere (through which microwave, laser, and infrared transmission occurs). Sometimes called physical media.</p></content-text></definition>
+<variations><content-text>Media</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5601796963" index="M">
+<term><content-text>metrics</content-text></term>
+<definition><content-text><p>Method by which a routing algorithm determines that one route is better than another. This information is stored in routing tables. Metrics include bandwidth, communication cost, delay, hop count, load, MTU, path cost, and reliability. Sometimes referred to simply as a metric.</p></content-text></definition>
+<variations><content-text>Metrics,metric,Metric</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1420035058" index="M">
+<term><content-text>multiaccess network</content-text></term>
+<definition><content-text><p>Network that allows multiple devices to connect and communicate simultaneously.</p></content-text></definition>
+<variations><content-text>Mutiaccess network</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3847540083" index="N">
+<term><content-text>Network Address Translator (NAT)</content-text></term>
+<definition><content-text><p>Mechanism for reducing the need for globally unique IP addresses. NAT allows an organization with addresses that are not globally unique to connect to the Internet by translating those addresses into globally routable address space.</p></content-text></definition>
+<variations><content-text>NAT</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5460413738" index="N">
+<term><content-text>neighbor</content-text></term>
+<definition><content-text><p>In OSPF, two routers that have interfaces to a common network. On multiaccess networks, neighbors are discovered dynamically by the OSPF Hello protocol.</p></content-text></definition>
+<variations><content-text>Neighbor</content-text></variations>
+<seealso><content-text>adjacency</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9580134935" index="N">
+<term><content-text>Network Interface Card (NIC)</content-text></term>
+<definition><content-text><p>A piece of computer hardware designed to allow computers to communicate over a computer network.</p></content-text></definition>
+<variations><content-text>NIC</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7813269836" index="N">
+<term><content-text>network prefix</content-text></term>
+<definition><content-text><p>Number of bits that are used to define the subnet mask. For example the subnet mask 255.255.0.0 is a /16 prefix.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1289899180" index="N">
+<term><content-text>next-hop</content-text></term>
+<definition><content-text><p>The next point of routing. When routers are not directly connected to the destination network, they will have a neighboring router that provides the next step in routing the data to its destination.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9847456962" index="N">
+<term><content-text>non-broadcast multiaccess (NBMA)</content-text></term>
+<definition><content-text><p>Term describing a multiaccess network that either does not support broadcasting (such as X.25) or in which broadcasting is not feasible (for example, an SMDS broadcast group or an extended Ethernet that is too large).</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7005529787" index="N">
+<term><content-text>Non-Volatile RAM (NVRAM)</content-text></term>
+<definition><content-text><p>Non Volatile Random Access Memory. Random access memory that, when the computer shuts down, the contents in NVRAM remain there.</p></content-text></definition>
+<variations><content-text>NVRAM</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7693750233" index="N">
+<term><content-text>null interface</content-text></term>
+<definition><content-text><p>The null interface provides an alternative method of filtering traffic. You can avoid the overhead involved with using access lists by directing undesired network traffic to the null interface. This interface is always up and can never forward or receive traffic. Think of it as a black hole.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2370190715" index="N">
+<term><content-text>Null0 summary routes</content-text></term>
+<definition><content-text><p>Another mechanism to prevent routing loops. EIGRP always creates a route to the Null0 interface when it summarizes a group of routes. This is because whenever a routing protocol summarizes, the router might receive traffic for any IP address within that summary. Since not all IP addresses are always in use, there is a risk of looping packets in case default routes are used on the router which receives the traffic for the summary route.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>null interface</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8055369278" index="O">
+<term><content-text>Open Shortest Path First (OSPF)</content-text></term>
+<definition><content-text><p>Open Shortest Path First. Link-state, hierarchical IGP routing algorithm proposed as a successor to RIP in the Internet community. OSPF features include least-cost routing, multipath routing, and load balancing. OSPF was derived from an early version of the IS-IS protocol.</p></content-text></definition>
+<variations><content-text>OSPF</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9072288158" index="O">
+<term><content-text>Operating System</content-text></term>
+<definition><content-text><p>A software that performs basic tasks such as controlling and allocating memory, prioritizing system requests, controlling input and output devices, facilitating networking, and managing file systems.</p></content-text></definition>
+<variations><content-text>OS</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9789079661" index="O">
+<term><content-text>OSPF area</content-text></term>
+<definition><content-text><p>A logical set of network segments (CLNS-, DECnet-, or OSPF-based) and their attached devices. Areas usually are connected to other areas via routers, making up a single autonomous system.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2207688691" index="P">
+<term><content-text>packet</content-text></term>
+<definition><content-text><p>Logical grouping of information that includes a header containing control information and (usually) user data. Packets most often are used to refer to network layer units of data. The terms datagram, frame, message, and segment also are used to describe logical information groupings at various layers of the OSI reference model and in various technology circles.</p></content-text></definition>
+<variations><content-text>packets,Packet</content-text></variations>
+<seealso><content-text>datagrams</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6424944186" index="P">
+<term><content-text>partial update packet</content-text></term>
+<definition><content-text><p>When a router detects a change in a metric it sends a partial update about that specific change to bounded routers instead of sending periodic updates. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6028464901" index="P">
+<term><content-text>passive state</content-text></term>
+<definition><content-text><p>A passive state is a state when the router has identified the successor(s) for a certain destination and it becomes stable. A term used in conjunction with EIGRP.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6390648569" index="P">
+<term><content-text>path vector protocol</content-text></term>
+<definition><content-text><p>A path vector protocol is a routing protocol that marks and shows the path that update information takes as it diffuses through the network. BGP is a user of the kind of protocol because it verifies what autonomous systems the update has passed through to verify loops.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8124883934" index="P">
+<term><content-text>poison reverse</content-text></term>
+<definition><content-text><p>Routing updates that explicitly indicate that a network or a subnet is unreachable, rather than implying that a network is unreachable by not including it in updates. Poison reverse updates are sent to defeat large routing loops.</p></content-text></definition>
+<variations><content-text>route poisoning</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1953373827" index="P">
+<term><content-text>Power-On Self Test (POST)</content-text></term>
+<definition><content-text><p>Set of hardware diagnostics that runs on a hardware device when that device is powered up.</p></content-text></definition>
+<variations><content-text>POST</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3376952186" index="P">
+<term><content-text>PPP</content-text></term>
+<definition><content-text><p>Point-to-Point Protocol. Successor to SLIP that provides router-to-router and host-to-network connections over synchronous and asynchronous circuits. Whereas SLIP was designed to work with IP, PPP was designed to work with several network layer protocols, such as IP, IPX, and ARA. PPP also has built-in security mechanisms, such as CHAP and PAP. PPP relies on two protocols: LCP and NCP.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4993475144" index="P">
+<term><content-text>prefix aggregation</content-text></term>
+<definition><content-text><p>Also known as network summarization. A number of IP addresses and IP prefixes can be summarized into a single IP prefix and be announced to other routers only the resulting less specific prefix (aggregated prefix) instead of the more specific IP addresses and prefixes that it covers.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>route summarization</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2133939773" index="P">
+<term><content-text>private addressing</content-text></term>
+<definition><content-text><p>An address that is used for internal networks. This address follows RFC 1918 addressing. Not routable on the internet.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2124003203" index="P">
+<term><content-text>privileged EXEC mode</content-text></term>
+<definition><content-text><p>Privileged Exec Mode is the administration mode for the router or switch. This mode by allows you to view router settings that are considered only accessible to the administrator. This mode also allows you to enter global configuration mode. To get into the privileged exec mode you must use the enable command.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>enable mode</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3598225736" index="P">
+<term><content-text>protocol-dependent module</content-text></term>
+<definition><content-text><p>A component that is dependent on a certain routed protocol. For example, protocol dependent modules in EIGRP allow it to work with various routed protocols. PDMs allow for EIGRP to keep a topology table for each routed protocol such as IP, IPX RIP, AppleTalk Routing Table Maintenance Protocol (RTMP), and IGRP.</p></content-text></definition>
+<variations><content-text>PDM</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8292361929" index="Q">
+<term><content-text>Quality of Service (QoS)</content-text></term>
+<definition><content-text><p>quality of service. Measure of performance for a transmission system that reflects its transmission quality and service availability.</p></content-text></definition>
+<variations><content-text>QoS</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6483133606" index="R">
+<term><content-text>Random Access Memory (RAM)</content-text></term>
+<definition><content-text><p>Volatile memory that can be read and written by a microprocessor.</p></content-text></definition>
+<variations><content-text>RAM</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8286776423" index="R">
+<term><content-text>Read-Only Memory (ROM)</content-text></term>
+<definition><content-text><p>Nonvolatile memory that can be read, but not written, by the microprocessor.</p></content-text></definition>
+<variations><content-text>ROM</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6329240526" index="R">
+<term><content-text>redistribution</content-text></term>
+<definition><content-text><p>Allowing routing information discovered through one routing protocol to be distributed in the update messages of another routing protocol. Sometimes called route redistribution.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2491080382" index="R">
+<term><content-text>redundant paths</content-text></term>
+<definition><content-text><p>Multiple paths to a destination that are usable upon failure of a primary path. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2185396118" index="R">
+<term><content-text>reference bandwidth</content-text></term>
+<definition><content-text><p>The bandwidth referenced by the SPF algorithm when calculating shortest path. In OSPF the reference bandwidth is 10 to the power of 8 divided by the actual interface bandwidth. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1726875050" index="R">
+<term><content-text>reported distance (RD)</content-text></term>
+<definition><content-text><p>Reported distance is the total metric along a path to a destination network as advertised by an upstream neighbor in EIGRP.</p></content-text></definition>
+<variations><content-text>Reported Distance (RD),RD</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5926288786" index="R">
+<term><content-text>Route poisoning</content-text></term>
+<definition><content-text><p>Routing updates that explicitly indicate that a network or subnet is unreachable, rather than implying that a network is unreachable by not including it in updates. Poison reverse updates are sent to defeat large routing loops. The Cisco IGRP implementation uses poison reverse updates.</p></content-text></definition>
+<variations><content-text>poison reverse</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3862210443" index="R">
+<term><content-text>route summarization</content-text></term>
+<definition><content-text><p>Consolidation of advertised addresses in OSPF and IS-IS. In OSPF, this causes a single summary route to be advertised to other areas by an area border router.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>route aggregation, prefic aggregation</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4650099337" index="R">
+<term><content-text>Router</content-text></term>
+<definition><content-text><p>Network layer device that uses one or more metrics to determine the optimal path along which network traffic should be forwarded. Routers forward packets from one network to another based on network layer information. Occasionally called a gateway (although this definition of gateway is becoming increasingly outdated).</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>gateway</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9697708987" index="R">
+<term><content-text>Routing Information Protocol (RIP)</content-text></term>
+<definition><content-text><p>Routing Information Protocol. IGP supplied with UNIX BSD systems. The most common IGP in the Internet. RIP uses hop count as a routing metric.</p></content-text></definition>
+<variations><content-text>RIP</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5779791933" index="R">
+<term><content-text>routing table</content-text></term>
+<definition><content-text><p>A table stored in the memory of a router or some other internetworking device that keeps track of routes to particular network destinations. A router uses this list of networks to determine where to send data.</p></content-text></definition>
+<variations><content-text>Routing table</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9025310553" index="R">
+<term><content-text>Routing Table Maintenance Protocol (RTMP)</content-text></term>
+<definition><content-text><p>Routing Table Maintenance Protocol. Apple Computer proprietary routing protocol. RTMP was derived from RIP.</p></content-text></definition>
+<variations><content-text>RTMP</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4562564002" index="S">
+<term><content-text>scale</content-text></term>
+<definition><content-text><p>To alter to a certain size according to need. For example a routing protocol is scalable when the router's routing table grows according to the addition of new networks. </p></content-text></definition>
+<variations><content-text>Scale</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6273327444" index="S">
+<term><content-text>serial</content-text></term>
+<definition><content-text><p>Method of data transmission in which the bits of a data character are transmitted sequentially over a single channel.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2894784407" index="S">
+<term><content-text>Setup mode</content-text></term>
+<definition><content-text><p>When a Cisco router boots up and does not find a configuration file in NVRAM it enters setup mode. Setup mode is a dialogue of questions that the administrator must answer in order to configure a basic configuration for router functionality. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5198283076" index="S">
+<term><content-text>shortest path first (SPF)</content-text></term>
+<definition><content-text><p>Routing algorithm that iterates on length of path to determine a shortest-path spanning tree. Commonly used in link-state routing algorithms. Sometimes called Dijkstra's algorithm.</p></content-text></definition>
+<variations><content-text>SPF</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2676207273" index="S">
+<term><content-text>Smart Serial</content-text></term>
+<definition><content-text><p>Cisco Smart Serial interfaces have 26-pin connectors and can automatically detect RS-232, RS-449, RS-530, X.21, orV.35 connectors.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1735291339" index="S">
+<term><content-text>SPF schedule delay</content-text></term>
+<definition><content-text><p>After inputting the command show ip ospf you will see the parameter SPF schedule delay X secs (The X meaning number of seconds). This is the delay time of SPF calculations. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3251675130" index="S">
+<term><content-text>split horizon</content-text></term>
+<definition><content-text><p>Routing technique in which information about routes is prevented from exiting the router interface through which that information was received. Split-horizon updates are useful in preventing routing loops.</p></content-text></definition>
+<variations><content-text>Split Horizon,Split horizon</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8507263429" index="S">
+<term><content-text>static routing</content-text></term>
+<definition><content-text><p>Routing that depends on manually entered routes in the routing table.</p></content-text></definition>
+<variations><content-text>Static routing</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8388310335" index="S">
+<term><content-text>successor</content-text></term>
+<definition><content-text><p>The path to a destination. The successor is chosen using DUAL from all of the known paths or feasible successors to the end destination. Used in EIGRP.</p></content-text></definition>
+<variations><content-text>Successor</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7394034673" index="S">
+<term><content-text>Summary Route</content-text></term>
+<definition><content-text><p>Route summarization reduces the number of routes that a router must maintain. It is a method of representing a series of network numbers in a single summary address.</p></content-text></definition>
+<variations><content-text>summary route</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3607780675" index="S">
+<term><content-text>supernet</content-text></term>
+<definition><content-text><p>Aggregation of IP network addresses advertised as a single classless network address. For example, given four Class C IP networks-192.0.8.0, 192.0.9.0, 192.0.10.0, and 192.0.11.0 - each having the intrinsic network mask of 255.255.255.0, one can advertise the address 192.0.8.0 with a subnet mask of 255.255.252.0.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>Summary route</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg5428356456" index="S">
+<term><content-text>Supernet route</content-text></term>
+<definition><content-text><p>A route that uses an arbitrary address mask, which is shorter than the default classful mask. Used to represent various subnets.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9816153432" index="S">
+<term><content-text>supernetting</content-text></term>
+<definition><content-text><p>Combining several IP network addresses into one IP address. Supernetting reduces the number of entries in a routing table and is done in CIDR addressing as well as internal networks.<br/> <br/> </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4751811026" index="T">
+<term><content-text>Telnet</content-text></term>
+<definition><content-text><p>Standard terminal emulation protocol in the TCP/IP protocol stack. Telnet is used for remote terminal connection, enabling users to log in to remote systems and use resources as if they were connected to a local system. Telnet is defined in RFC 854.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7371777223" index="T">
+<term><content-text>TFTP Server</content-text></term>
+<definition><content-text><p>a server that hosts the TFTP protocol that allows files to be transferred from one computer to another over a network, usually without the use of client authentication (for example, username and password).</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7272453178" index="T">
+<term><content-text>Token Ring</content-text></term>
+<definition><content-text><p>Token-passing LAN developed and supported by IBM. Token Ring runs at 4 or 16 Mbps over a ring topology. Similar to IEEE 802.5. </p></content-text></definition>
+<variations><content-text>token ring</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6545469832" index="T">
+<term><content-text>topology database</content-text></term>
+<definition><content-text><p>Also knows as the topology table, the topology database holds the information about the successor, feasible distance, and any feasible successors with their reported distances. Used in EIGRP routing.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4943667766" index="T">
+<term><content-text>topology table</content-text></term>
+<definition><content-text><p>Contains information regarding EIGRP routes received in updates and routes that are locally originated. EIGRP sends and receives routing updates from adjacent routers to which peering relationships (adjacencies) have been formed. The objects in this table are populated on a per-topology table entry (route) basis.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>topology database</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7301905064" index="T">
+<term><content-text>triggered update</content-text></term>
+<definition><content-text><p>A routing update that is triggered by an event in the network.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg3832693226" index="T">
+<term><content-text>TTL</content-text></term>
+<definition><content-text><p>Time To Live. Field in an IP header that indicates how long a packet is considered valid.</p></content-text></definition>
+<variations><content-text>(TTL),Time To Live,Time to live,time to live</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg8523161899" index="T">
+<term><content-text>Type/Length/Value (TLV)</content-text></term>
+<definition><content-text><p>The data portion of the EIGRP packet. All TLVs begin with 16 bit Type field and a 16 bit Length field. There exist different TLV values according to routed protocol. There is, however, a general TLV that describes generic EIGRP parameters such as Sequence (used by Cisco's Reliable Multicast) and EIGRP software version.</p></content-text></definition>
+<variations><content-text>TLV</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg1597835227" index="U">
+<term><content-text>Ultimate Route</content-text></term>
+<definition><content-text><p>Also known as a level 1 route, an ultimate route is a route in the routing table that includes a next hop address and an outgoing interface. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2256393806" index="U">
+<term><content-text>unequal cost load balancing</content-text></term>
+<definition><content-text><p>Load balancing that uses multiple paths to the same destination that have different costs or metrics. EIGRP uses unequal load balancing with the "variance" command.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg9491525380" index="U">
+<term><content-text>unified communications</content-text></term>
+<definition><content-text><p>A communications system for voice, video and data. The system integrates wired, wireless and mobile devices to create a secure solution for enterprise networks. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg6461978161" index="V">
+<term><content-text>Variable Length Subnet Masking (VLSM)</content-text></term>
+<definition><content-text><p>variable-length subnet mask. Capability to specify a different subnet mask for the same network number on different subnets. VLSM can help optimize available address space.</p></content-text></definition>
+<variations><content-text>VLSM</content-text></variations>
+<seealso><content-text>Classless addressing</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4993906116" index="V">
+<term><content-text>vector</content-text></term>
+<definition><content-text><p>A vector is a quantity characterized by a magnitude (for instance hops in a path) and a direction.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg2413697728" index="W">
+<term><content-text>Wide Area Networks (WANs)</content-text></term>
+<definition><content-text><p>Data communications network that serves users across a broad geographic area and often uses transmission devices provided by common carriers. Frame Relay, SMDS, and X.25 are examples ofWANs.</p></content-text></definition>
+<variations><content-text>WAN</content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+<content-glossary id="cg7157518994" index="W">
+<term><content-text>wildcard mask</content-text></term>
+<definition><content-text><p>A 32-bit quantity used in conjunction with an IP address to determine which bits in an IP address should be ignored when comparing that address with another IP address. A wildcard mask is specified when setting up access lists.</p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text>subnet mask</content-text></seealso>
+</content-glossary>
+<content-glossary id="cg4132971760" index="X">
+<term><content-text>XNS</content-text></term>
+<definition><content-text><p>Xerox Network Systems. A protocol stack developed by Xerox that contains network protocols that closely resemble IP and TCP. XNS was one of the first protocol stacks used in the first local area network implementations. </p></content-text></definition>
+<variations><content-text></content-text></variations>
+<seealso><content-text></content-text></seealso>
+</content-glossary>
+</glossary>

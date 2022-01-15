@@ -1,0 +1,288 @@
+﻿<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<b>Exercice 1</b>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<b>Exercice 2</b>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<b>Exercice 3</b>]]></text> 
+</component>
+
+<component id="ID_button_04">
+  <text><![CDATA[<b>Exercice 4</b>]]></text> 
+</component>
+
+<component id="ID_button_05">
+  <text><![CDATA[<b>Exercice 5</b>]]></text> 
+</component>
+<component id="activity">
+  <text><![CDATA[<b>Exercice</b>]]></text> 
+</component>
+
+
+<component id="ID_step0">
+  <text><![CDATA[<br/><b>Cliquez sur la colonne appropriée du tableau pour identifier les critères à utiliser pour filtrer des paquets lorsque vous utilisez des listes de contrôle d’accès étendues.</b>]]></text> 
+</component>
+
+
+<component id="ID_txt01_00">
+  <text><![CDATA[<font size="-2">Une liste de contrôle d’accès dynamique est une fonction IOS qui permet aux utilisateurs d’ouvrir une brèche temporaire dans une liste de contrôle d’accès existante.<br/><br/>L’utilisateur établit d’abord une connexion Telnet sur le routeur avant d’être authentifié.<br/><br/>En cas de réussite, la session Telnet est arrêtée et la brèche est créée.<br/><br/>Une fois la brèche ouverte, l’utilisateur peut accéder aux services qui sont normalement refusés.<br/><br/>Vous pouvez configurer des délais d’inactivité et des délais de déconnexion absolus sur le routeur.<br/><br/>Dans cet exemple, Hannah ouvre une brèche dans le pare-feu sur le routeur R2. Faites glisser et déposez les étapes pour les placer dans l’ordre correct.</font>]]></text> 
+</component>
+
+<component id="ID_txt02_00">
+  <text><![CDATA[<b>Placez ces étapes dans l’ordre correct.</b>]]></text> 
+</component>
+
+<component id="ID_txt03_00">
+  <text><![CDATA[<b>hannah est un utilisateur valide</b>]]></text> 
+</component>
+
+<component id="ID_txt04_00">
+  <text><![CDATA[<b>Une brèche est désormais ouverte dans le pare-feu.</b>]]></text> 
+</component>
+
+<component id="ID_txt05_00">
+  <text><![CDATA[<b>192.168.10.10 autorisé à toute adresse IP tant que le délai n’a pas expiré</b>]]></text> 
+</component>
+
+<component id="ID_txt06_00">
+  <text><![CDATA[<b>Session Telnet fermée</b>]]></text> 
+</component>
+
+<component id="ID_txt07_00">
+  <text><![CDATA[<b>Utilisateur = hannah, mot de passe = itsasecret</b>]]></text> 
+</component>
+
+<component id="ID_txt08_00">
+  <text><![CDATA[<b>Session Telnet établie depuis 192.168.10.10</b>]]></text> 
+</component>
+
+<component id="ID_txt09_00">
+  <text><![CDATA[<b>Nom d’utilisateur et mot de passe SVP</b>]]></text> 
+</component>
+
+<component id="ID_txt10_00">
+  <text><![CDATA[<b>Serveur<br/>TFTP</b>]]></text> 
+</component>
+
+
+
+<component id="ID_txt01_01">
+  <text><![CDATA[<font size="-2">Procédez aux étapes suivantes pour autoriser Hannah à accéder au serveur TFTP via une liste de contrôle d’accès dynamique.<br/><br/><b>Étape 1 :</b> configuration d’un mot de passe pour Hannah à utiliser lors des connexions Telnet au routeur R2<br/><br/><b>Étape 2 :</b> configuration d’une liste de contrôle d’accès dynamique nommée LETMEIN pour autoriser l’accès à l’adresse IP de Hannah<br/><br/><b>Étape 3 :</b> application de LETMEIN à l’interface S0/0/0<br/><br/><b>Étape 4 :</b> configuration des lignes Telnet pour la connexion et le délai d’attente autocommand.</font>]]></text> 
+</component>
+
+<component id="ID_txt02_01">
+  <text><![CDATA[<b>Serveur<br/>TFTP</b>]]></text> 
+</component>
+
+<component id="ID_txt03_01">
+  <text><![CDATA[<b>Faites glisser et déposez ces éléments de commande pour achever la configuration de la liste de contrôle d’accès dynamique ci-dessus.</b>]]></text> 
+</component>
+
+<component id="ID_txt04_01">
+  <text><![CDATA[<b>host 192.168.20.254</b>]]></text> 
+</component>
+
+<component id="ID_txt05_01">
+  <text><![CDATA[<b>interface s0/0/0</b>]]></text> 
+</component>
+
+<component id="ID_txt06_01">
+  <text><![CDATA[<b>host 192.168.10.10</b>]]></text> 
+</component>
+
+<component id="ID_txt07_01">
+  <text><![CDATA[<b>access-list 101 permit tcp </b>]]></text> 
+</component>
+
+<component id="ID_txt08_01">
+  <text><![CDATA[<b>line vty 0 5</b>]]></text> 
+</component>
+
+<component id="ID_txt09_01">
+  <text><![CDATA[<b>permit ip</b>]]></text> 
+</component>
+
+<component id="ID_txt10_01">
+  <text><![CDATA[<b>timeout 90</b>]]></text> 
+</component>
+
+<component id="ID_txt11_01">
+  <text><![CDATA[<b>access-list 101 dynamic LETMEIN</b>]]></text> 
+</component>
+
+<component id="ID_txt12_01">
+  <text><![CDATA[<b>ip access-group 101 in</b>]]></text> 
+</component>
+
+<component id="ID_txt13_01">
+  <text><![CDATA[<b>login local</b>]]></text> 
+</component>
+<component id="ID_txt14_01">
+  <text><![CDATA[<b>host 192.168.10.10</b>]]></text> 
+</component>
+
+<component id="ID_txt15_01">
+  <text><![CDATA[<b>autocommand access-enable host timeout 2</b>]]></text> 
+</component>
+
+
+<component id="ID_txt16_01">
+  <text><![CDATA[<b>eq telnet</b>]]></text> 
+</component>
+
+<component id="ID_txt17_01">
+  <text><![CDATA[<b>username hannah password itsasecret</b>]]></text> 
+</component>
+<component id="ID_txt18_01">
+  <text><![CDATA[<b>host 10.1.1.2</b>]]></text> 
+</component>
+
+
+<component id="ID_txt01_02">
+  <text><![CDATA[Les listes de contrôle d’accès réflexives génèrent une nouvelle entrée temporaire qui permet au trafic d’accéder au réseau à condition de faire partie d’une session initiée par une source interne.<br/><br/>Cette méthode est nettement plus difficile à mystifier car un nombre supérieur de critères de filtrage doit correspondre avant que le passage d’un paquet ne soit autorisé.<br/><br/>Les listes de contrôle d’accès réflexives peuvent filtrer le trafic IP que le trafic utilise le protocole TCP, UDP ou tout autre protocole Internet. Une vérification est opérée sur les adresses source et de destination, ainsi que sur les numéros de port.<br/><br/>Utilisez les options <b>reflect<b></b></b> et <b>evaluate</b> des listes de contrôle d’accès étendues nommées pour configurer une liste de contrôle d’accès réflexive.]]></text> 
+</component>
+
+<component id="ID_txt02_02">
+  <text><![CDATA[<b>Reflect</b>]]></text> 
+</component>
+
+<component id="ID_txt03_02">
+  <text><![CDATA[<b>Hôte<br/>externe</b>]]></text> 
+</component>
+
+<component id="ID_txt04_02">
+  <text><![CDATA[<b>Evaluate</b>]]></text> 
+</component>
+
+<component id="ID_txt05_02">
+  <text><![CDATA[<b>Faites glisser et déposez ces éléments de commande pour achever la configuration de la liste de contrôle d’accès réflexive ci-dessus.</b>]]></text> 
+</component>
+
+<component id="ID_txt06_02">
+  <text><![CDATA[<b>ip access-group FILTER_IN</b>]]></text> 
+</component>
+
+
+<component id="ID_txt07_02">
+  <text><![CDATA[<b>permit ip any any</b>]]></text> 
+</component>
+
+<component id="ID_txt08_02">
+  <text><![CDATA[<b>GOODGUYS</b>]]></text> 
+</component>
+
+<component id="ID_txt09_02">
+  <text><![CDATA[<b>evaluate</b>]]></text> 
+</component>
+
+<component id="ID_txt10_02">
+  <text><![CDATA[<b>reflect GOODGUYS</b>]]></text> 
+</component>
+
+<component id="ID_txt11_02">
+  <text><![CDATA[<b>ip access-group FILTER_OUT</b>]]></text> 
+</component>
+
+
+<component id="ID_txt01_03">
+  <text><![CDATA[Les fonctions des listes de contrôle d’accès basées sur le temps ressemblent à celles des listes de contrôle d’accès étendues. Ceci dit, il est important de noter qu’elles autorisent un contrôle d’accès basé sur le temps.<br/><br/>L’implémentation des listes de contrôle d’accès basées sur le temps nécessite la création d’une plage horaire qui définit certains moments de la journée et de la semaine.<br/><br/>Vous identifiez la plage horaire par un nom puis vous vous y reportez dans une liste de contrôle d’accès nommée.<br/><br/>Configurez le routeur R2 en vue de bloquer le trafic Web vers Internet pendant les heures ouvrables entre 7 h 00 et 18 h 00 du lundi au vendredi.]]></text> 
+</component>
+
+<component id="ID_txt02_03">
+  <text><![CDATA[<b>Le trafic sortant vers Internet est refusé pendant les heures ouvrables.</b>]]></text> 
+</component>
+
+<component id="ID_txt03_03">
+  <text><![CDATA[<b>Internet</b>]]></text> 
+</component>
+
+<component id="ID_txt04_03">
+  <text><![CDATA[<b>Faites glisser et déposez ces éléments de commande pour achever la configuration de la liste de contrôle d’accès basée sur le temps ci-dessus.</b>]]></text> 
+</component>
+
+<component id="ID_txt05_03">
+  <text><![CDATA[<b>periodic weekdays 7:00 to 18:00</b>]]></text> 
+</component>
+
+<component id="ID_txt06_03">
+  <text><![CDATA[<b>permit ip any any</b>]]></text> 
+</component>
+
+<component id="ID_txt07_03">
+  <text><![CDATA[<b>time-range NO_WEB</b>]]></text> 
+</component>
+
+<component id="ID_txt08_03">
+  <text><![CDATA[<b>ip access-group WEB_ACCESS out</b>]]></text> 
+</component>
+
+<component id="ID_txt09_03">
+  <text><![CDATA[<b>deny tcp any any eq 80</b>]]></text> 
+</component>
+
+<component id="ID_txt10_03">
+  <text><![CDATA[<b>ip access-list extended WEB_ACCESS</b>]]></text> 
+</component>
+
+<component id="ID_check1">
+  <text><![CDATA[<b>Vérifier</b>]]></text> 
+</component>
+<component id="ID_check">
+  <text><![CDATA[<b>Vérifier</b>]]></text> 
+</component>
+<component id="ID_check2">
+  <text><![CDATA[<b>Vérifier</b>]]></text> 
+</component>
+<component id="ID_check3">
+  <text><![CDATA[<b>Vérifier</b>]]></text> 
+</component>
+
+
+<component id="ID_resetBtn1">
+  <text><![CDATA[<b>Réinitialiser</b>]]></text> 
+</component>
+<component id="ID_resetBtn0">
+  <text><![CDATA[<b>Réinitialiser</b>]]></text> 
+</component>
+<component id="ID_resetBtn2">
+  <text><![CDATA[<b>Réinitialiser</b>]]></text> 
+</component>
+<component id="ID_resetBtn3">
+  <text><![CDATA[<b>Réinitialiser</b>]]></text> 
+</component>
+
+<component id="ID_correctTitle">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+<component id="ID_correct">
+  <text><![CDATA[Vous avez réussi cet exercice.]]></text>
+</component>
+
+<component id="ID_correctTitle1">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+<component id="ID_correct1">
+  <text><![CDATA[Vous avez réussi cet exercice.]]></text>
+</component>
+
+<component id="ID_correctTitle2">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+<component id="ID_correct2">
+  <text><![CDATA[Vous avez réussi cet exercice.]]></text>
+</component>
+
+<component id="ID_correctTitle3">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+<component id="ID_correct3">
+  <text><![CDATA[Vous avez réussi cet exercice.]]></text>
+</component>
+	
+</textcomponents>
+

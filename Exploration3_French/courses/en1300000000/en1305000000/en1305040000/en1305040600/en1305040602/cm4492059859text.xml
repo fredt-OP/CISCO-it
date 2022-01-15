@@ -1,0 +1,72 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>RSTP Port Roles</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[Root<br/>Port (F)]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Designated<br/>Port (F)]]></text> 
+  </component>
+  <component id="ID_txt03">
+  <text><![CDATA[Root Bridge]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[Designated<br/>Port (F)]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[Backup<br/>Port (DIS)]]></text> 
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[Designated<br/>Port (F)]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Alternate<br/>Port (DIS)]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[Root<br/>Port (F)]]></text> 
+  </component>
+  <component id="ID_txt13">
+  <text><![CDATA[Designated<br/>Port (F)]]></text> 
+  </component>
+ 
+ <component id="ID_box1_title">
+  <text><![CDATA[<b>Root Ports</b>]]></text> 
+  </component>
+  
+  <component id="ID_box1_body">
+  <text><![CDATA[This is the switch port on every non-root bridge that is the chosen path to the root bridge. There can only be one root port on every switch. The root port assumes the forwarding state in a stable active topology. In the figure the root port is port F0/2 on switch S2 and port F0/4 on switch S3.]]></text> 
+  </component>
+  
+  <component id="ID_box2_title">
+  <text><![CDATA[<b>Designated ports</b>]]></text> 
+  </component>
+  
+  <component id="ID_box2_body">
+  <text><![CDATA[Each segment will have at least one switch port that is the designated port for that segment. In the figure port F0/1 on switch S3 and port F0/2 on switch S1 are designated ports. In a stable, active topology, the switch with the designated port will receive frames on the segment that are destined for the root bridge. There can only be one designated port per segment. The designated port assumes the forwarding state. Therefore, F0/1 on switch S3 and F0/2 and F0/4 on switch S1 are in the forwarding state. All switches connected to a given segment listen to all BPDUs and determine the switch that will be the designated switch for a particular segment.]]></text> 
+  </component>
+  
+  <component id="ID_box3_title">
+  <text><![CDATA[<b>Alternate port</b>]]></text> 
+  </component>
+  
+  <component id="ID_box3_body">
+  <text><![CDATA[This is a switch port that offers an alternate path toward the root bridge, port F0/3 on switch S2 is in the alternate role. The alternate port assumes a discarding state in a stable, active topology. An alternate port will be present on non-designated switches and will make a transition to a designated port if the current designated path fails. ]]></text> 
+  </component>
+  
+  <component id="ID_box4_title">
+  <text><![CDATA[<b>Backup port</b>]]></text> 
+  </component>
+  
+  <component id="ID_box4_body">
+  <text><![CDATA[This is an additional switch port on the designated switch with a redundant link to the segment for which the switch is designated. A backup port has a higher port ID than the designated port on the designated switch. The backup port assumes the discarding state in a stable active topology. In the figure port F0/6 on switch S2 is in the backup role and has assumed the discard role.]]></text> 
+  </component>
+
+<component id="ID_inst">
+  <text><![CDATA[<b>Roll over the port role in the figure to read their descriptions.<b>]]></text> 
+  </component>
+
+
+
+</textcomponents>

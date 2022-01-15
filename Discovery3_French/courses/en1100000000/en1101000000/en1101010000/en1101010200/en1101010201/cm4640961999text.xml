@@ -1,0 +1,53 @@
+﻿<textcomponents>
+
+<component id="instructions">
+  <text><![CDATA[<b>Click each layer to view its functionality.</b>]]></text> 
+  </component>
+
+<component id="ID_txtEmail">
+  <text><![CDATA[<b>Email Server</b>]]></text> 
+  </component>
+<component id="ID_txtEmail2">
+  <text><![CDATA[<b>Email Server</b>]]></text> 
+  </component>
+<component id="ID_txtDNS">
+  <text><![CDATA[<b>DNS Server</b>]]></text> 
+  </component>
+<component id="ID_txtWeb">
+  <text><![CDATA[<b>Web Server</b>]]></text> 
+  </component>
+<component id="ID_txtV">
+  <text><![CDATA[<font color="ffffff"><b>V</b></font>]]></text> 
+  </component>
+
+<component id="txt1">
+  <text><![CDATA[<ul><li>Provides a connection point for end-user devices to the network</li><li>Allows multiple hosts to connect to other hosts through a network device such as a switch</li><li>Exists on the same logical network</li><li>Forwards traffic to other hosts on the same logical network</li><li>Passes traffic to the Distribution Layer for delivery if the message is destined for a host on another network</li></ul>]]></text> 
+  </component>
+<component id="titletxt1">
+  <text><![CDATA[<b>Access Layer</b>]]></text> 
+  </component>
+
+<component id="txt2">
+  <text><![CDATA[<ul><li>Provides a connection point for separate local networks</li><li>Controls the flow of information between local networks</li><li>Ensures that traffic between hosts on the same local network stays local</li><li>Passes on traffic that is destined for other networks</li><li>Filters incoming and outgoing traffic for security and traffic management purposes</li><li>Contains more powerful switches and routers than the Access Layer</li><li>Passes data to the Core Layer for delivery to a remote network if the local network is not directly connected</li></ul>]]></text> 
+  </component>
+<component id="titletxt2">
+  <text><![CDATA[<b>Distribution Layer </b>]]></text> 
+  </component>
+
+<component id="txt3">
+  <text><![CDATA[<ul><li>Provides a high-speed backbone layer with redundant (backup) connections</li><li>Transports large amounts of data between multiple end networks</li><li>Includes very powerful, high-speed switches and routers</li></ul>]]></text> 
+  </component>
+<component id="titletxt3">
+  <text><![CDATA[<b>Core Layer</b>]]></text> 
+  </component>
+
+<component id="ID_coreLayer">
+  <text><![CDATA[<b>Core Layer</b>]]></text> 
+  </component>
+<component id="ID_distributionLayer">
+  <text><![CDATA[<b>Distribution Layer</b>]]></text> 
+  </component>
+<component id="ID_accessLayer">
+  <text><![CDATA[<b>Access Layer</b>]]></text> 
+  </component>
+</textcomponents>

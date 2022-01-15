@@ -1,0 +1,220 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><li>Good networks do not happen by accident. They are the result of hard work by network designers and technicians, who identify network requirements and select the best solutions to meet the needs of a business.</li><br/><li>The four fundamental technical requirements of network design are: Scalability, Availability, Security and Manageability.</li><br/><li>The Cisco Enterprise Architectures can be used to further divide the three-layer hierarchical design into modular areas. The modules represent areas that have different physical or logical connectivity.</li><br/><li>Large network design projects are normally divided into three distinct steps:</li><br/><TEXTFORMAT BLOCKINDENT='60'>Step 1: Identify the network requirements.<br/><br/>Step 2: Characterize the existing network.<br/><br/>Step 3: Design the network topology and solutions.<br/></textformat></b></font>]]></text>
+</component>
+
+<component id="s1_ID_txt01">
+<text><![CDATA[Cisco Enterprise Architectures]]></text> 
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[Building Access]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Building Distribution]]></text> 
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Campus Core]]></text> 
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[Server Farm and Data Center]]></text> 
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[Network<br>Management]]></text> 
+</component> 
+
+<component id="s1_ID_txt07">
+<text><![CDATA[Enterprise Campus]]></text> 
+</component>
+
+<component id="s1_ID_txt08">
+<text><![CDATA[Enterprise Edge]]></text> 
+</component>
+
+<component id="s1_ID_txt09">
+<text><![CDATA[E-Commerce]]></text> 
+</component>
+
+<component id="s1_ID_txt10">
+<text><![CDATA[Internet Connectivity]]></text> 
+</component>
+
+<component id="s1_ID_txt11">
+<text><![CDATA[WAN and Metro Ethernet Site-to-Site VPN]]></text> 
+</component>
+
+<component id="s1_ID_txt12">
+<text><![CDATA[Remote Access and VPN]]></text> 
+</component>
+
+<component id="s1_ID_txt13">
+<text><![CDATA[WAN and Internet]]></text> 
+</component>
+
+<component id="s1_ID_txt14">
+<text><![CDATA[ISP A]]></text> 
+</component>
+
+<component id="s1_ID_txt15">
+<text><![CDATA[ISP B]]></text> 
+</component>
+
+<component id="s1_ID_txt16">
+<text><![CDATA[Frame Relay /ATM/Metro Ethernet/...]]></text> 
+</component>
+
+<component id="s1_ID_txt17">
+<text><![CDATA[PSTN]]></text> 
+</component>
+
+<component id="s1_ID_txt18">
+<text><![CDATA[Enterprise Branch]]></text> 
+</component>
+
+<component id="s1_ID_txt19">
+<text><![CDATA[Enterprise Data Center]]></text> 
+</component>
+
+<component id="s1_ID_txt20">
+<text><![CDATA[Enterprise Teleworker]]></text> 
+</component>
+
+<component id="s1_ID_txtTitle">
+<text><![CDATA[<b>Building Access </b>]]></text>
+</component>
+
+<component id="s1_ID_txtBody">
+<text><![CDATA[This Access Layer module contains Layer 2 or Layer 3 switches to provide the required port density. Implementation of VLANs and trunk links to Building Distribution layer occurs here. Redundancy to Building Distribution switches is important.]]></text>
+</component>
+
+<component id="s1_ID_txtTitle2">
+<text><![CDATA[<b>Building Distribution </b>]]></text>
+</component>
+
+<component id="s1_ID_txtBody2">
+<text><![CDATA[This Distribution Layer module aggregates building access using Layer 3 devices. Routing, access control, and QoS are performed at this layer. It is critical to provide redundancy in this area.]]></text>
+</component>
+
+<component id="s1_ID_txtTitle3">
+<text><![CDATA[<b>Campus Core </b>]]></text>
+</component>
+
+<component id="s1_ID_txtBody3">
+<text><![CDATA[This Core Layer module provides high-speed interconnectivity between Distribution Layer modules, data center server farms, and the Enterprise Edge. Redundancy, fast convergence, and fault tolerance are the focus of the design in this area.]]></text>
+</component>
+
+<component id="s1_ID_txtTitle4">
+<text><![CDATA[<b>Management</b>]]></text>
+</component>
+
+<component id="s1_ID_txtBody4">
+<text><![CDATA[This critical area monitors performance by monitoring device and network availability.]]></text>
+</component>
+
+<component id="s1_ID_txtTitle5">
+<text><![CDATA[<b>Server Farm </b>]]></text>
+</component>
+
+<component id="s1_ID_txtBody5">
+<text><![CDATA[This module provides high-speed connectivity and protection for servers. It is critical to provide security, redundancy, and fault tolerance in this area.]]></text>
+</component>
+
+<component id="s1_ID_txtTitle6">
+<text><![CDATA[<b>Enterprise Edge  </b>]]></text>
+</component>
+
+<component id="s1_ID_txtBody6">
+<text><![CDATA[This module extends the enterprise services to remote sites and enables the enterprise to use Internet and partner resources. It provides QoS, policy enforcement, service levels, and security.]]></text>
+</component>
+
+<component id="s1_ID_inst">
+<text><![CDATA[Roll over each of the highlighted areas to learn more.]]></text>
+</component>
+
+
+
+
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><li>Failure to correctly estimate the scope of a network upgrade project can greatly increase the cost and time required to implement the new design.</li><br/><li>Goals of the Core Layer Design include:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Provide 100% uptime</li><br/><li>Maximize throughput</li><br/><li>Facilitate network growth</li></textformat><br/><li>Redundancy at the Core Layer enables the network to keep functioning even when a device or link fails.</li><br/><li>Layer 3 Devices, including multi-layer switches, are usually deployed at the Core Layer of the Network.</li><br/><li>Most Core Layers in a network are wired in either a full mesh or partial mesh topology.</li><br/><li>Devices at the Core Layer usually contain redundant power supplies and hot-swappable components.</li><br/><li>Fast converging routing protocols, such as OSPF or EIGRP, are the appropriate choice for the Core Layer.</li><br/><br/><br/></font>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+<component id="s2_ID_txt02">
+  <text><![CDATA[Internet]]></text> 
+  </component>
+<component id="s2_ID_txt03">
+  <text><![CDATA[Core Layer]]></text> 
+  </component>
+
+
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><li>The Distribution Layer represents a routing boundary between the Access Layer and the Core Layer.</li><br/><li>The design goals for the Distribution Layer are:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Filtering and managing traffic flows</li><br/><li>Enforcing access control policies</li><br/><li>Summarizing routes before advertising them to the core</li><br/><li>Isolating the core from Access Layer failures or disruptions</li><br/><li>Routing between Access Layer VLANs</li></textformat><br/><li>In the hierarchical design model, it is easiest and usually least expensive to control the size of a failure domain in the Distribution Layer.</li><br/><li>Redundancy at the Distribution Layer ensures that failure domains remain small.</li><br/><li>Providing multiple connections to Layer 2 switches can cause unstable behavior in a network unless STP is enabled.</li><br/><li>To filter network traffic, the router examines each packet and then either forwards or discards it, based on the conditions specified in the ACL. The criteria for the decisions can be:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Source address</li><br/><li>Destination address</li><br/><li>Protocols</li><br/><li>Upper-layer port numbers</li><br/><li>Whether the packet is part of an established stream</li><br/><br/><br/></textformat></font>]]></text>
+</component>
+
+<component id="s3_ID_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="s3_ID_txt02">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[Core]]></text>
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[Distribution]]></text>
+</component>
+
+<component id="s3_ID_txt05">
+<text><![CDATA[Access]]></text>
+</component>
+
+
+<component id="slide04">
+<text><![CDATA[<font size="14"><li>In addition to providing basic connectivity at the Access Layer, the designer needs to consider:</li><TEXTFORMAT BLOCKINDENT='25'></li><br/><li>Naming structures</li><br/><li>VLAN architecture</li><br/><li>Traffic patterns</li><br/><li>Prioritization strategies</li></textformat><br/><li>Most recent Ethernet networks use a star topology, which is sometimes called a hub and spoke topology.</li><br/><li>Using VLANs and IP subnets is the most common method for segregating user groups and traffic within the Access Layer network.</li><br/><li>Networks also need mechanisms to control congestion when traffic increases and queues for delivery.</li><br/><li>Congestion is caused when the demand on the network resources exceeds the available capacity.</li><br/><li>Classifying data at or near the source enables the data to be assigned the appropriate priority as it moves through the entire network.</li><br/><li>On some network devices, like routers and switches, physical access can provide the opportunity to change passwords and obtain full access to devices.</li><br/><br/><br/></font>]]></text>
+</component>
+
+<component id="s4_ID_txt01">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="s4_ID_txt02">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[Core Layer]]></text>
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[Distribution Layer]]></text>
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[Access Layer]]></text>
+</component>
+
+    <component id="ID_s1_txt01">
+		<text><![CDATA[<b>Approaches to Troubleshooting</b>]]></text>
+	</component>
+	
+
+
+</textcomponents>

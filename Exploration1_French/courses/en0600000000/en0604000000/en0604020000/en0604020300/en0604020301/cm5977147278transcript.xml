@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 12:01:13">
+<title><content-text><![CDATA[4.2.3 - TCP Connection Establishment and Termination]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts TCP connection establishment (SYN ACK) and termination (FIN ACK) between two hosts, A and B.<br><br>Connection Establishment (SYN ACK) Steps:<br>Step 1. Host A sends a SYN request (SEQ=100, CTL=SYN) to host B. CTL = Which controls bits in the TCP header are set to 1.<br>Step 2. Host B sends an ACK response and SYN request (SEQ=300, ACK=101, CTL=SYN, ACK) to host A.<br>Step 3. Host A sends an ACK response (SEQ=101, ACK=301, CTL=ACK) to host B.<br><br>Connection Termination (FIN ACK) Steps:<br>Step 1. Host A sends a FIN to host B.<br>Step 2. Host B sends an ACK response to host A.<br>Step 3. Host B sends a FIN to host A.<br>Step 4. Host A sends an ACK response Host B, and the session is terminated.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

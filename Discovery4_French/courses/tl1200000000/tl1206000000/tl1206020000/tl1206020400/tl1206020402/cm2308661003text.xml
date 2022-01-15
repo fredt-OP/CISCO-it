@@ -1,0 +1,124 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Routes pouvant être résumées]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Cliquez sur les boutons pour afficher les étapes de résumé manuelles.]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Limite du résumé]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Les 22 premiers bits sont les mêmes.]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Certains bits sont différents.]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Résumé en une seule route]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[/22]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[172.16.0.0        255.255.252.0]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Étape 1. Conversion des réseaux pour résumer au format binaire.]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Étape 2. Recherche du masque de sous-réseau pour le résumé en commençant par le bit le plus à gauche. Comptage du nombre de bits correspondants.]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[Étape 3. Détermination de l’adresse réseau pour le résumé du routage.]]></text>
+</component>
+
+
+<component id="ID_but01">
+<text><![CDATA[Étape 1]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[Étape 2]]></text>
+</component>
+
+<component id="ID_but03">
+<text><![CDATA[Étape 3]]></text>
+</component>
+
+
+
+<component id="ID_table1">
+<text><![CDATA[
+<table>
+
+<tr>
+<td width='85%' bgcolor='#FFCC00'>172.16.1.0</td>
+<td bgcolor='#DDDDDD'>10101100.00010000.000000<font color='#333333'>01.00000000</font></td>     
+</tr>
+
+<tr>
+<td width='85%' bgcolor='#FFCC00'>172.16.2.0</td>
+<td bgcolor='#F2F2F2'>10101100.00010000.000000<font color='#333333'>10.00000000</font></td>     
+</tr>
+
+<tr>  
+<td width='85%' bgcolor='#FFCC00'>172.16.3.0</td>
+<td bgcolor='#DDDDDD'>10101100.00010000.000000<font color='#333333'>11.00000000</font></td>
+         
+</tr> 
+</table>
+]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[
+<table>
+
+<tr>
+<td width='85%' bgcolor='#FFCC00'>172.16.1.0</td>
+<td bgcolor='#DDDDDD'>10101100.00010000.000000<font color='#333333'>01.00000000</font></td>     
+</tr>
+
+<tr>
+<td width='85%' bgcolor='#FFCC00'>172.16.2.0</td>
+<td bgcolor='#F2F2F2'>10101100.00010000.000000<font color='#333333'>10.00000000</font></td>     
+</tr>
+
+<tr>  
+<td width='85%' bgcolor='#FFCC00'>172.16.3.0</td>
+<td bgcolor='#DDDDDD'>10101100.00010000.000000<font color='#333333'>11.00000000</font></td>
+         
+</tr> 
+</table>
+]]></text>
+</component>
+
+<component id="ID_table3">
+<text><![CDATA[
+<table>
+
+<tr>
+<td width='85%' bgcolor='#FFCC00'>172.16.0.0</td>
+<td bgcolor='#DDDDDD'>10101100.00010000.000000<font color='#333333'>00.00000000</font></td>     
+</tr>
+
+<tr>
+<td width='85%' bgcolor='#FFCC00'>255.255.252.0</td>
+<td bgcolor='#F2F2F2'>11111111.11111111.111111<font color='#333333'>00.00000000</font></td>     
+</tr>
+</table>
+]]></text>
+</component>
+</textcomponents>

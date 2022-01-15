@@ -1,0 +1,53 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<B>Configuration de sous-interfaces point à point</B>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<B>Fournisseur de services</B>]]></text> 
+</component>
+
+<component id="ID_btn1">
+<text><![CDATA[Sous-interface]]></text> 
+</component>
+
+<component id="ID_btn2">
+<text><![CDATA[DLCI]]></text> 
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td width='220' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color='#FFFFFF'>Paramètres de la commande interface serial</font></b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Description</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>subinterface-number</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Numéro de sous-interface compris entre 1 et 4294967293. Le numéro d’interface précédant le point (.) doit être le numéro de l’interface physique à laquelle appartient la sous-interface.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>multipoint</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Sélectionnez ce paramètre si tous les routeurs se trouvent dans le même sous-réseau.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>point-to-point</b></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Sélectionnez ce paramètre si vous souhaitez que chaque paire de routeurs point à point possède son propre sous-réseau. En règle générale, les liaisons point à point utilisent le masque de sous-réseau 255.255.255.252</td>
+</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td width='220' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color='#FFFFFF'>Paramètre de la commande frame-relay interface-dlci</font></b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Description</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>dlci-number</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définit l’identificateur DLCI en cours de connexion à la sous-interface. C’est la seule façon de relier un identificateur DLCI LMI à une sous-interface, car l’interface LMI ne connaît pas les sous-interfaces. Utilisez la commande frame-relay interface-dlci uniquement sur des sous-interfaces.</td>
+</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

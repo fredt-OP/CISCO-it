@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13404" dateexported="04/25/2008">
+		<name>Module 9 Questionnaire</name>
+		<form id="21035" lang="fr"><form-item order="fixed">
+			<ai id="134637" type="mc-ma"><question><![CDATA[Examinez la présentation. Toutes les adresse IP ont été configurées correctement et toutes les interfaces sont actives. D’après les informations que vous voyez, quelles sont les deux affirmations qui décrivent ce qui arrivera quand le réseau sera testé ? (Choisissez deux réponses.) <br/><img src="i134637n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[RTA et RTB peuvent envoyer un signal de contrôle (ping) aux interfaces série de chacun.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RTA et RTB n’apprennent aucune route l’un de l’autre par le processus RIP.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les cinq réseaux figureront dans la table de routage de RTB. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les cinq réseaux figureront dans la table de routage de RTA. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Trois des entrées de la table de routage de RTA et RTB seront trouvées via le processus RIP. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134640" type="mc-sa"><question><![CDATA[Quel utilitaire permet de détecter et surveiller les différents types de trafics sur un réseau, et de déclencher une alarme si la quantité de paquets d’un type donné devient excessive ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[ping ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SNMP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[tracert ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[analyse de paquets ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134644" type="mc-sa"><question><![CDATA[Examinez la présentation. L’administrateur réseau a configuré la liste de contrôle d’accès pour interdire à un serveur Web infecté d’accéder au réseau LAN. Toutefois, les utilisateurs peuvent toujours accéder à ce serveur. Quelle est la cause probable du problème ? <br/><img src="i134644n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La liste de contrôle d’accès devrait interdire spécifiquement TCP sur le port 80. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La liste de contrôle d’accès devrait être appliquée dans le sens des entrées sur l’interface et pas dans le sens des sorties.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La liste de contrôle d’accès devrait être une liste standard au lieu d’une liste étendue. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les adresses source et destination sont inversées dans la liste de contrôle d’accès. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134645" type="mc-sa"><question><![CDATA[Examinez la présentation. Un administrateur a installé de nouveaux réseaux VLAN sur Sw-2 et remarque que les nouvelles informations ne sont pas reconnues par Sw-3. D’après le résultat de la commande <b>show vtp status</b>, pour quelle raison ces informations ne sont pas partagées dans ce domaine VTP ? <br/><img src="i134645n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le domaine VTP n’est pas le même entre les commutateurs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Sw-3 est configuré pour le mode transparent.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VTP version 2 a été désactivé. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les pièges VTP ont été désactivés. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134646" type="mc-sa"><question><![CDATA[Examinez la présentation.  Deux routeurs adjacents n’arrivent pas à se connecter.  D’après le résultat de la commande <b>debug ppp negotiation</b>, quelle affirmation est vraie ? <br/><img src="i134646n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Un seul des deux côtés demande l’authentification. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Une chaîne de hachage incorrecte est reçue du routeur distant.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le site distant est configuré avec l’authentification PAP au lieu de l’authentification CHAP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les méthodes d’authentification sont incompatibles. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134647" type="mc-sa"><question><![CDATA[Examinez la présentation.  La société ACME installe des réseaux VLAN dans son infrastructure de réseaux pour mieux contrôler le trafic. L’administrateur réseau a exécuté la commande <b>show vlan</b> sur Comm2 pour vérifier la configuration du réseau VLAN. Quelle affirmation est vraie ? <br/><img src="i134647n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Tous les ports seront utilisés par VLAN1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le trafic de chaque VLAN ne sera pas visible depuis les autres VLAN.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’état « active » indique que 22 périphériques sont actuellement connectés à Comm2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VLAN1 étant le réseau VLAN de gestion, RTA peut se connecter à n’importe quel port de VLAN1 pour router des données entre les différents VLAN. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134648" type="mc-sa"><question><![CDATA[De quelle manière peut-on limiter la taille d’un domaine de panne ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Implémenter un protocole de routage sans classe. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Créer des chemins redondants si possible.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sauvegarder les fichiers de configuration. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[S’assurer que les périphériques sont remplaçables à chaud. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134673" type="mc-sa"><question><![CDATA[Examinez la présentation. Le serveur vient d’âtre ajouté au réseau et aucun des hôtes ne parvient à s’y connecter. Quel pourrait être le problème ? <br/><img src="i134673n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[L’adresse IP du serveur devrait être dynamique et non statique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse IP affectée au serveur est l’adresse réseau du sous-réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’adresse IP affectée au serveur est l’adresse de broadcast du sous-réseau.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le réseau n’est pas convenablement divisé en sous-réseaux. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134674" type="mc-ma"><question><![CDATA[Un technicien tente de résoudre un problème de connectivité de réseau. Il pense que la cause du problème peut être une liste de contrôle d’accès mal configurée. Quelles sont les commandes utilisables pour vérifier si l’ACL est correctement configurée ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>show protocols</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show running-config.</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip route.</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show access-lists</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip interface</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134686" type="mc-sa"><question><![CDATA[Examinez la présentation.  Pourquoi l’adresse 192.168.199.137 n’est-elle pas un DROTHER ? <br/><img src="i134686n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Elle est dans la zone OSPF via une interface de point à point.    ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La commande <b>network</b> est mal configurée sur le routeur local. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La commande <b>network</b> est mal configurée sur le routeur adjacent. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’authentification OSPF a été activée sur le routeur local mais pas sur le routeur adjacent. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

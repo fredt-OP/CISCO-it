@@ -1,0 +1,201 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<li>L’allocation des adresses IP doit être planifiée et documentée, afin de :<br/></li><TEXTFORMAT BLOCKINDENT='60'><li>éviter les doublons d’adresses ;</li><li>fournir et contrôler l’accès ;</li><li>veiller à la sécurité et aux performances ;</li><li>prendre en charge une conception modulaire ;</li><li>prendre en charge une solution extensible utilisant l’agrégation de routes.</li></textformat></li><br/><li>Un schéma d’adressage IP hiérarchique correctement conçu facilite également l’exécution du résumé de routage.</li><br/><li>Pour prendre en charge le résumé, la conception d’un réseau doit prévoir la présence de sous-réseaux contigus. Si un réseau est contigu, tous ses sous-réseaux sont adjacents les uns aux autres.</li><br/><li>Grâce à l’utilisation de la technique VLSM, tous les sous-réseaux d’un même réseau parent n’ont plus besoin d’avoir le même nombre d’adresses hôtes ni la même longueur de préfixe.</li></ul>]]></text>
+</component> 
+
+<component id="s1_ID_txt08">
+<text><![CDATA[Réseau 172.16.0.0]]></text>
+</component>
+
+<component id="s1_ID_txt09">
+<text><![CDATA[Réseau 172.16.4.0]]></text>
+</component>
+
+<component id="s1_ID_txt10">
+<text><![CDATA[Réseau 172.16.6.0]]></text>
+</component>
+
+<component id="s1_ID_txt11">
+<text><![CDATA[Réseau 172.16.5.0]]></text>
+</component>
+
+<component id="s1_ID_txt12">
+<text><![CDATA[Réseau 172.16.1.0]]></text>
+</component>
+
+<component id="s1_ID_txt13">
+<text><![CDATA[Réseau 172.16.2.0]]></text>
+</component>
+
+<component id="s1_ID_txt14">
+<text><![CDATA[Réseau 172.16.3.0]]></text>
+</component>
+
+
+<component id="slide02">
+<text><![CDATA[<li>Les protocoles de routage sans classe envoient la longueur du préfixe avec les informations concernant la route dans les mises à jour de routage. Ces protocoles permettent aux routeurs de déterminer la partie réseau de l’adresse sans utiliser les masques par défaut.</li><br/><li>Le routage interdomaine sans classe ignorant la limite des périphéries par classe, il permet un résumé avec des masquages de sous-réseau de longueur variable (VLSM) plus courts que le masque par classe par défaut.</li><br/><li>Une hiérarchie complexe de réseaux et de sous-réseaux de tailles variables peut être résumée en différents points, à l’aide d’une adresse avec préfixe.</li><br/><li>Pour concevoir un schéma d’adressage IP flexible et extensible, le concepteur respecte une procédure en cinq étapes :<br/></li><TEXTFORMAT BLOCKINDENT='60'><li>Étape 1 : planification de l’ensemble du schéma d’adressage avant l’attribution de toute adresse.</li><li>Étape 2 : prévision d’une croissance importante.</li><li>Étape 3 : élaboration des adresses de résumé, en commençant par le cœur du réseau, puis en continuant jusqu’à la périphérie.</li><li>Étape 4 : identification des ordinateurs et périphériques nécessitant des adresses attribuées de manière statique.</li><li>Étape 5 : détermination de l’emplacement et de l’implémentation de l’adressage dynamique.<br/><br/></li></textformat></ul>]]></text>
+</component> 
+
+<component id="bubble1">
+<text><![CDATA[Avant d’attribuer des adresses, je dois considérer le campus dans son intégralité et tous les sites distants.]]></text>
+</component>
+
+
+<component id="slide03">
+<text><![CDATA[<li>Le choix du protocole de routage doit prendre en charge la stratégie d’adressage et de résumé VLSM.</li><br/><li>Le protocole EIGRP permet un résumé sans classe avec des masques différents du masque par classe par défaut. Ce type de résumé permet de réduire le nombre d’entrées dans les mises à jour de routage et dans les tables de routage locales.</li><br/><li>Le concepteur respecte une procédure en plusieurs étapes pour attribuer les sous-réseaux, en allant du plus grand bloc vers le plus petit.</li><br/><li>Un bon système d’attribution de nom facilite la gestion du réseau et la navigation des utilisateurs.</li><br/><li>La spécification RFC 1878 stipule que l’exclusion de tous les sous-réseaux d’adresses composées uniquement de 0 ou de 1 est obsolète. Les logiciels modernes sont capables d’utiliser tous les réseaux définissables.</ul></font>]]></text>
+</component>
+
+<component id="s3_ID_txt01">    
+<text><![CDATA[J’ai trouvé un site facile à pénétrer !]]></text> 
+</component>
+
+
+<component id="s3_ID_txt02">     
+<text><![CDATA[CC2600MD-1R1]]></text> 
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[DC200MD-3R1]]></text> 
+</component>
+
+<component id="s3_ID_txt04">          
+<text><![CDATA[W150S-1]]></text>   
+</component>
+
+<component id="s3_ID_txt05">              
+<text><![CDATA[RM10-LJ1500C]]></text>   
+</component>
+
+<component id="s3_ID_txt06">              
+<text><![CDATA[DC200-INT-DS]]></text>   
+</component>
+
+<component id="s3_ID_txt07">              
+<text><![CDATA[DC200-T1_PS]]></text>   
+</component>
+
+<component id="s3_ID_txt08">              
+<text><![CDATA[DC200WFS-R4]]></text>   
+</component>
+
+<component id="s3_ID_txt09">              
+<text><![CDATA[Cisco2600- RouteurParefeu]]></text>   
+</component>
+
+<component id="s3_ID_txt10">              
+<text><![CDATA[Cisco2960_Commutateur]]></text>   
+</component>
+
+<component id="s3_ID_txt11">              
+<text><![CDATA[1500ImprimanteLaser]]></text>   
+</component>
+
+<component id="s3_ID_txt12">              
+<text><![CDATA[RedHatLinux- ServeurCarteCrédit]]></text>   
+</component>
+
+<component id="s3_ID_txt13">              
+<text><![CDATA[Win2003_ServeurPaie]]></text>   
+</component>
+
+<component id="s3_ID_txt14">              
+<text><![CDATA[BindDNS-Serveur]]></text>   
+</component>
+
+<component id="s3_ID_txt15">              
+<text><![CDATA[4507-R CommutateurMulticouche]]></text>   
+</component>
+
+<component id="s3_ID_txt16">              
+<text><![CDATA[Périphériques]]></text>   
+</component>
+
+<component id="s3_ID_txt17">              
+<text><![CDATA[Nom de périphérique interne :<br>W150S-1	Premier commutateur dans le local technique de la salle 150<br>DC200MD-3R1	Commutateur de distribution multicouche dans la salle 200 du centre de calcul sur la baie 1 <br>DC200WFS-R4	Serveur de fichiers Windows dans la baie 4, dans la salle 200 du centre de calcul<br><br>Noms de périphériques externes :<br>RM10-LJ1500C		Imprimante laser couleur dans la salle 10<br>DC200-T1-PS		Serveur de paie de l’équipe 1 dans la salle 200 du centre de calcul <br>DC200-INT-DS		Serveur DNS interne<br><br>Noms internes incorrects :<br>Cisco2600-RouteurParefeu<br>Routeur NAT principal<br><br>Noms externes incorrects :<br> Win2003-ServeurPaie<br>RedHatLinux-ServeurCarteCrédit <br>BindDNS-serveur]]></text>   
+</component>
+
+
+
+
+<component id="slide04">
+<text><![CDATA[<li>Du fait de son vaste espace d’adressage de 128 bits, IPv6 génère un stock d’adresses pratiquement illimité.</li><br/><li>Les adresses IPv6 sont exprimées sous forme de huit chiffres hexadécimaux de 16 bits, séparés par des deux-points.</li><br/><li>L’hôte IPv6 est l’équivalent d’une adresse d’hôte IPv4 enregistrée. Les adresses hôtes IPv6 enregistrées sont connues sous le nom d’« adresses de monodiffusion globales ».</li><br/><li>La transition d’IPv4 à IPv6 ne doit pas nécessairement se faire en une seule fois. Les trois méthodes de transition les plus utilisées sont :<br/></li><TEXTFORMAT BLOCKINDENT='60'><li>pile double ;</li><li>transmission tunnel ;</li><li>proxy et traduction.</li></textformat></ul>]]></text>
+</component> 
+
+<component id="s4_ID_txt02">
+<text><![CDATA[En-tête IPv6<br>Prochain en-tête<br>= TCP]]></text>
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[En-tête IPv6<br>Prochain en-tête<br>= Routage]]></text>
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[En-tête IPv6<br>Prochain en-tête<br>= Routage]]></text>
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[En-tête de routage<br>Prochain en-tête<br>= TCP]]></text>
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[En-tête de routage<br>Prochain en-tête<br>= Fragment]]></text>
+</component>
+
+<component id="s4_ID_txt07">
+<text><![CDATA[En-tête de fragment<br>Prochain en-tête<br>= TCP]]></text>
+</component>
+
+<component id="s4_ID_txt08">
+<text><![CDATA[En-tête + données TCP]]></text>
+</component>
+
+<component id="s4_ID_txt09">
+<text><![CDATA[En-tête + données TCP]]></text>
+</component>
+
+
+<component id="s4_ID_txt10">
+<text><![CDATA[Fragment d’en-tête + données TCP]]></text>
+</component>
+
+<component id="s4_ID_txt11">
+<text><![CDATA[En-tête de base IPv6 (40 octets)]]></text>
+</component>
+
+<component id="s4_ID_txt12">
+<text><![CDATA[N’importe quel nombre d’en-têtes d’extension]]></text>
+</component>
+
+<component id="s4_ID_txt13">
+<text><![CDATA[Données (p. ex. TCP ou UDP)]]></text>
+</component>
+
+<component id="s4_ID_txt14">
+<text><![CDATA[Paquet IPv6]]></text>
+</component>
+
+<component id="s4_ID_txt15">
+<text><![CDATA[En-tête suivant]]></text>
+</component>
+
+
+<component id="s4_ID_txt16">
+<text><![CDATA[Données d’en-tête d’extension]]></text>
+</component>
+
+<component id="s4_ID_txt17">
+<text><![CDATA[Données d’en-tête d’extension]]></text>
+</component>
+
+<component id="s4_Title">
+<text><![CDATA[Options d’en-tête IPv6]]></text>
+</component>
+
+
+
+</textcomponents>

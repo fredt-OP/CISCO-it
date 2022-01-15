@@ -1,0 +1,121 @@
+<textcomponents>
+<component id="ID_title1">
+<text><![CDATA[<b>Configuring Port Security </b>]]></text>
+</component>
+<component id="ID_title2">
+<text><![CDATA[<b>Configuring Port Security </b>]]></text>
+</component>
+<component id="ID_title3">
+<text><![CDATA[<b>Configuring Port Security</b>]]></text>
+</component>
+<component id="ID_para1">
+<text><![CDATA[<b>Security violations occur in these situations:</b>]]></text>
+</component>
+<component id="ID_para2">
+<text><![CDATA[ <ul><li>A station whose MAC address is not in the address table attempts to access the interface when the table is full.</li><li>An address is being used on two secure interfaces in the same VLAN.</li></ul><br/>Security violation modes include, protect, restrict and shutdown. ]]></text>
+</component>
+
+<component id="ID_para4">
+<text><![CDATA[<b></b>]]></text>
+</component>
+<component id="ID_txt1">
+<text><![CDATA[<b>Port Security</b>]]></text>
+</component>
+<component id="ID_txt2">
+<text><![CDATA[<b>Secure MAC Address Types</b>]]></text>
+</component>
+<component id="ID_txt3">
+<text><![CDATA[<b>Security Violation Modes</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Implement security on all switch ports to:</b><br/><ul><li>Specify a group of valid MAC addresses allowed on a port.</li><li>Allow only one MAC address to access the port.</li><li>Specify that the port automatically shuts down if unauthorized MAC addresses are detected.</li></ul>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Secure MAC addresses are the following types:</b><ul><li>Static secure MAC addresses.</li><li>Dynamic secure MAC addresses.</li><li>Sticky secure MAC addresses.</li></ul><br/><b>Sticky secure MAC addresses have these characteristics:</b><ul><li>Learned dynamically, converted to sticky secure MAC addresses stored in the running configuration.</li><li>Disabling sticky learning removes MAC addresses from the MAC table, but not from the running configuration.</li><li>Sticky secure MAC addresses are lost when the switch restarts.</li><li>Saving sticky secure MAC addresses in the startup configuration will preserve them for when the switch restarts.</li><li>Disabling sticky learning converts sticky MAC addresses to dynamic secure addresses and removes them from the running configuration.</li></ul>]]></text>
+</component>
+
+<component id="ID_caption02">
+<text><![CDATA[Security violations occur in these situations:]]></text>
+</component>
+<component id="ID_caption03">
+<text><![CDATA[ - A station whose MAC address is not in the address table attempts to access the interface when the table is full.<br/> - An address is being used on two secure interfaces in the same VLAN.
+]]></text>
+</component>
+<component id="ID_caption04">
+<text><![CDATA[Security violation modes include, protect, restrict and shutdown. ]]></text>
+</component>
+
+<component id="ID_SLD2_txt01">
+<text><![CDATA[<b>Secure MAC addresses are the following types:</b>]]></text>
+</component>
+<component id="ID_SLD2_txt02">
+<text><![CDATA[<li>Static secure MAC addresses</li><li>Dynamic secure MAC addresses</li><li>Sticky secure MAC addresses</li>]]></text>
+</component>
+<component id="ID_SLD2_txt03">
+<text><![CDATA[<b>Sticky secure MAC addresses have these characteristics:</b>]]></text>
+</component>
+<component id="ID_SLD2_txt04">
+<text><![CDATA[<li>Learned dynamically, converted to sticky secure MAC addresses stored in the running configuration.</li><li>Disabling sticky learning removes MAC addresses from the running-configuration, but not from the MAC table.</li><li>Sticky secure MAC addresses are lost when the switch restarts.<li><li>Saving sticky secure MAC addresses in the startup configuration file to so the switch will have them when it restarts.</li><li>Disabling sticky learning converts sticky MAC addresses to dynamic secure addresses and removes them from the running configuration.</li>]]></text>
+</component>
+
+<component id="tableHTML">
+  <text><![CDATA[
+ <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>	
+		  
+	
+	
+	
+	<tr>
+		<td width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Violation Mode</b></font></td>
+		<td width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Forwards Traffic</b></font></td>
+		<td  bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Sends SNMP Trap</b></font></td>
+		<td  width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Sends Syslog Message</b></font></td>
+		<td width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Displays Error Message</b></font></td>
+		<td width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Increases Violation Counter</b></font> </td>
+		<td width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Shuts Down Port</b></font> </td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protect</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Restrict</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Yes</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Yes</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Yes</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+			
+	</tr>	
+	<tr>
+		
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Shutdown</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Yes</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Yes</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Yes</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Yes</td>
+			
+	</tr>	
+	
+		
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

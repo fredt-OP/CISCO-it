@@ -1,0 +1,32 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+	<text><![CDATA[<b>Couche 2</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+  	<text><![CDATA[<b>Couche 1</b>]]></text> 
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'>Couche liaison de données</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li>Transmet les données au périphérique directement connecté suivant sur le chemin.</li><li>Ajoute l’adresse du matériel.</li><li>Encapsule les données dans une trame.</li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+  
+<component id="ID_table2">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'>Couche physique</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li>Convertit des données en octets pour leur transmission.</li><li>Génère les signaux et la temporisation.<br/></li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+</textcomponents>

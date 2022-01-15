@@ -1,0 +1,99 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Vulnerabilities</b>]]></text>
+</component>
+
+
+<component id="ID_button1">
+  <text><![CDATA[<b>Technology</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Configuration</b>]]></text> 
+</component>
+<component id="ID_button3">
+  <text><![CDATA[<b>Policy</b>]]></text> 
+</component>
+
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Network security weaknesses:</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>TCP/IP protocol weakness</b><ul><li>Hypertext Transfer Protocol (HTTP), File Transfer Protocol (FTP) and Internet Control Message Protocol (ICMP) are inherently insecure.</li><li>Simple Network Management Protocol (SNMP), Simple Mail Transfer Protocol (SMTP), and Syn Floods are related to the inherently insecure structure upon which TCP was designed.</li></ul><b>Operating system weakness</b><ul><li>Each operating system has security problems that must be addressed.<br/>UNIX, Linux, Mac OS, Mac OS X, Windows NT, 9x, 2K, XP, and Vista.<br/>They are documented in the Computer Emergency Response Team (CERT) archives at  http://www.cert.org.</li></ul><b>Network equipment weakness</b><ul><li>Various type of network equipment, such as routers, firewalls, and switches have security weaknesses that must be recognized and protected against. Their weaknesses include password protection, lack of authentication, routing protocols, and firewall holes.</li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+
+<component id="ID_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='200' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Configuration Weakness</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>How the weakness is exploited</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Unsecured user accounts</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>User account information may be transmitted insecurely across the network, exposing usernames and passwords to snoopers.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>System accounts with easily guessed passwords</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>This common problem is the result poorly selected and easily guessed user passwords.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Misconfigured Internet services</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>A common problem is to turn on JavaScript in Web browsers, enabling attacks by way of hostile JavaScript when accessing untrusted sites. IIS, FTP, and Terminal Services also pose problems.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Unsecured default settings within products</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Many products have default settings that enable security holes.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Misconfigured network equipment</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Misconfigurations of the equipment itself can cause significant security problems. For example, misconfigured access lists, routing protocols, or SNMP community strings can open up large security holes.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_table03">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='200' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Policy Weakness</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>How the weakness is exploited</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Lack of written security policy</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>An unwritten policy cannot be consistently applied or enforced.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Politics</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Political battles and turf wars can make it difficult to implement a consistent security policy.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Lack of continuity</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Poorly chosen, easily cracked, or default passwords can allow unathorized access to the network.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Logical access controls not applied</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Inadequate monitoring and auditing allow attacks and unauthorized use to continue, wasting company resources. This could result in legal action or termination against IT technicians, IT management or even company leadership that allows these unsafe conditions to persist.</td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Software and hardware installation and changes do not follow policy</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Unauthorized changes to the network topology or installation of unapproved applications create security holes.</td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Disaster recovery plan is nonexistent</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The lack of a disaster recovery plan allows chaos, panic, and confusion to occur when someone attacks the enterprise.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+
+</textcomponents>

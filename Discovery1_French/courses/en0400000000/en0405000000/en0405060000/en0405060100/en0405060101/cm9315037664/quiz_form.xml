@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13244" dateexported="06/06/2007">
+		<name>Module 5 Quiz</name>
+		<form id="18967" lang="en"><form-item order="fixed">
+			<ai id="110263" type="mc-ma"><question><![CDATA[A technician is setting up equipment.  Which three devices will need IP addresses? (Choose three.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[a printer with an Ethernet card]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[a web camera attached directly to a host]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[a server with two NICs]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[an IP phone]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[a standalone workstation]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[a PDA attached to a networked workstation]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110275" type="mc-ma"><question><![CDATA[Which three statements are true about binary octets? (Choose three.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[If a bit is a zero (0), its column value is not counted.]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The value of each bit in an octet is twice that of the bit to its right.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The rightmost bit in an octet has a value of 0 when it is turned on.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[A host looks at every bit of an IP address as it is received by the host NIC.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[If all of the bits in an octet are set to one (1), the value of the octet is 256.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[There are 32 value positions in an octet.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="110445" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="110445" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>first octet number of 0</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>first octet number of 126</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>first octet number of 130</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>first octet number of 200 </mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>first octet number of 224 </mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>first octet number of 240 </mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Class A</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Class B</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Class C</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Match the number of the first octet on the left to the address class on the right. Note that not all of the first octet numbers shown on the left will be used. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="11" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="191275" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="191275" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="191275" action="Set">1</setvar><scoringdescription>A-126, B-130, C-200</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="110448" type="mc-sa"><question><![CDATA[Which statement is true concerning private network addresses?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[They are always routed on the Internet.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[They can be used by only one company at a time.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[They enable internal web servers to be easily accessed by outside users.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[They are more secure as they are visible only to the local network.]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110449" type="mc-sa"><question><![CDATA[How many Class C networks are reserved for private address space?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[1]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[16]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[128]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[256]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110451" type="mc-sa"><question><![CDATA[What is the destination MAC address of a broadcast Ethernet frame?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[255.255.255.255]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[1.1.1.1]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[AA-AA-AA-AA-AA-AA]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[FF-FF-FF-FF-FF-FF]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="110419" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="110419" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>useful for printers and servers</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>provides more control of network resources</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>possiblity of input errors</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>useful for mobile users</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>limited in time period</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>addresses provided by a server</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>draws addresses automatically from a pool</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>addresses are not reassigned to another device</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Static IP Addressing</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Dynamic IP Addressing</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="7" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="8" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the statement on the left to the category on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="50" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/><display componentIdent="8" xpos="200" ypos="355"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="4" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="264.5" containsTargets="4" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="211"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/><display componentIdent="7" xpos="600" ypos="347"/><display componentIdent="8" xpos="600" ypos="384"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="2"><componentident>5</componentident><componentident>6</componentident><componentident>7</componentident><componentident>8</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="191181" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="191181" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="191181" action="Set">1</setvar><scoringdescription>Static IP addressing: useful for printers and servers, provides more control of network resources, higher probability of input errors, addresses are not assigned to other devices Dynamic IP addressing: useful for mobile users, limited in time period, addresses provided by a server, draws addresses automatically from a pool </scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="110421" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="110421" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>DHCP Request</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>DHCP Discover</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>DHCP Offer</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>DHCP Acknowledge</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Place these DHCP messages in the correct order for a host to obtain an IP address from a DHCP server.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="11" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="191185" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="191185" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="191185" action="Set">1</setvar><scoringdescription>Top to bottom:  DHCP Discover, DHCP Offer, DHCP Request, DHCP Acknowledge</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="110612" type="mc-sa"><question><![CDATA[An ISR has a public IP address issued by the ISP.  What is the purpose of the public IP address?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[allows internal hosts to communicate with each other on the local network]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[allows internal hosts to communicate with other hosts on the Internet]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[allows the ISR to communicate with the local hosts on the network]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[allows the ISR to communicate with the local servers on the network]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110617" type="mc-sa"><question><![CDATA[What function does NAT perform in an ISR?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[NAT takes a source IP address and translates it to a default gateway address.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT takes a local IP address and translates it to an internal source IP address.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT takes an internal global IP address and translates it to a local source IP address.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[NAT takes an internal source IP address and translates it to a global IP address.]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110613" type="mc-ma"><question><![CDATA[Refer to the graphic.  What two types of IP addresses should be used on the ISR at interfaces A and B?  (Choose two.)<Br><img src="14126.jpg">]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Interface A should use a private IP address.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Interface A should use a public IP address.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Interface A should use a source IP address.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Interface B should use a private IP address.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Interface B should use a public IP address.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Interface B should use a destination IP address.]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

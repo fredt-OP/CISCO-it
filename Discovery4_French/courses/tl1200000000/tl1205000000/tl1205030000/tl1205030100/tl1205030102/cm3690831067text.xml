@@ -1,0 +1,54 @@
+﻿<textcomponents>
+
+
+<component id="ID_table1">
+		<text><![CDATA[
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td width="80" bgcolor='#F2F2F2'><font color='#FFFFFF'>Options</font></td>
+      <td width="250" bgcolor='#F2F2F2'><font color='#FFFFFF'>Description</font></td>
+      <td width="90" bgcolor='#F2F2F2'><font color='#FFFFFF'>Avantages</font></td>
+      <td width="90" bgcolor='#F2F2F2'><font color='#FFFFFF'>Inconvénients</font></td>
+      <td width="70" bgcolor='#F2F2F2'><font color='#FFFFFF'>Plage de bandes passantes</font></td>
+      <td width="80" bgcolor='#F2F2F2'><font color='#FFFFFF'>Exemples de protocoles utilisés</font></td>
+    </tr>
+    <tr>
+      <td width="80" bgcolor='#DDDDDD'><font color='#003399'>Commutation de circuits</font></td>
+      <td width="250" bgcolor='#DDDDDD'>Une voie de communication dédiée est créée entre des points d’extrémité. Le meilleur exemple est la connexion commutée.</td>
+      <td width="90" bgcolor='#DDDDDD'>Moins coûteuse</td>
+      <td width="90" bgcolor='#DDDDDD'>Établissement de la communication</td>
+      <td width="70" bgcolor='#DDDDDD'>28 Kbits/s à 144 Kbits/s</td>
+      <td width="80" bgcolor='#DDDDDD'><font color='#003399'>PPP, RNIS</font></td>
+	</tr>
+    <tr>
+      <td width="80" bgcolor='#F2F2F2'><font color='#003399'>Commutation de paquets</font></td>
+      <td width="250" bgcolor='#F2F2F2'>Les périphériques transportent des paquets par le biais d’une seule liaison partagée point à point ou point à multipoint sur un interréseau porteur. Des paquets de longueur variable sont transmis sur des circuits virtuels permanents (PVC) ou commutés (SVC).</td>
+      <td width="90" bgcolor='#F2F2F2'>Bande passante flexible, moins coûteuse</td>
+      <td width="90" bgcolor='#F2F2F2'>Supports partagés sur la liaison</td>
+      <td width="70" bgcolor='#F2F2F2'>56 Kbits/s à 45 Mbits/s</td>
+      <td width="80" bgcolor='#F2F2F2'><font color='#003399'>Relais de trames</font></td>
+    </tr>
+      <tr>
+      <td width="80" bgcolor='#F2F2F2'><font color='#003399'>Ligne louée</font></td>
+      <td width="250" bgcolor='#F2F2F2'>Connexion point à point entre deux ordinateurs ou deux réseaux locaux.</td>
+      <td width="90" bgcolor='#F2F2F2'>Plus sûre</td>
+      <td width="90" bgcolor='#F2F2F2'>Coûteuse</td>
+      <td width="70" bgcolor='#F2F2F2'>56 Kbits/s à 45 Mbits/s</td>
+      <td width="80" bgcolor='#F2F2F2'><font color='#003399'>PPP, HDLC, SDLC</font></td>
+    </tr>
+    <tr>
+      <td width="80" bgcolor='#DDDDDD'><font color='#003399'>Relais de cellules</font></td>
+      <td width="250" bgcolor='#DDDDDD'>Similaire à la commutation de paquets, mais utilise des cellules de longueur fixe à la place de paquets de longueur variable. Les données sont divisées en cellules de longueur fixe, puis transportées sur des circuits virtuels.</td>
+      <td width="90" bgcolor='#DDDDDD'>Idéal pour utiliser simultanément la voix et les données</td>
+      <td width="90" bgcolor='#DDDDDD'>La surcharge peut être considérable</td>
+      <td width="70" bgcolor='#DDDDDD'>1,54 Mbits/s à 622 Mbits/s</td>
+      <td width="80" bgcolor='#DDDDDD'><font color='#003399'>ATM</font></td>
+    </tr>
+  
+  </table>
+
+
+]]></text>
+	</component>
+
+</textcomponents>

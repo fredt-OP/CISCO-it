@@ -1,0 +1,125 @@
+﻿<textcomponents>
+<component id="ID_instruct">
+<text><![CDATA[<b>Cliquez pour voir les caractéristiques des supports.</b>]]></text>
+</component>
+<component id="ID_button01">
+<text><![CDATA[Ethernet]]></text>
+</component>
+<component id="ID_button02">
+<text><![CDATA[Sans fil]]></text>
+</component>
+<component id="ID_title">
+<text><![CDATA[<b>Supports physiques : caractéristiques</b>]]></text> 
+</component>
+
+<!--slide 1-->
+<component id="ID_title01">
+<text><![CDATA[<b>Supports Ethernet</b>]]></text> 
+</component>  
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">&nbsp;</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">10BASE-T</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">100BASE-TX</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">100BASE-FX</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">1000BASE-CX</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">1000BASE-T</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">1000BASE-SX</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">1000BASE-LX</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">1000BASE-ZX</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">10GBASE-ZR</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Supports</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>EIA/TIA catégorie 3, 4, 5 UTP, quatre paires</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>EIA/TIA catégorie 5 UTP, deux paires</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Fibre multimode<br/>de 50/62.5 microns</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>STP</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>EIA/TIA catégorie 5 (ou supérieure) UTP, quatre paires</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Fibre multimode de 50/62.5 microns</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Fibre multimode de 50/62.5 microns ou monomode de 9 microns</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Fibre monomode de 9 microns</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Fibre monomode de 9 microns</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Longueur maximale des segments</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>100 m</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>100 m</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2 km</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>25 m</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>100 m</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Jusqu'à 550 m selon la fibre utilisée</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>550 m (MMF), 10 km (SMF)</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Environ 70 km</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Jusqu'à 80 km</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Topologie</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>En étoile</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Connecteur</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>ISO 8877 (RJ-45)</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>ISO 8877 (RJ-45)</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>ISO 8877 (RJ-45)</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<!--slide 2-->
+
+<component id="ID_title02">
+<text><![CDATA[<b>Supports sans fil</b>]]></text> 
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[<table header='none' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#333333' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Normes</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Bluetooth 802.15</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>802.11 (a, b, g, n), HiperLAN 2</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>802, 11, MMDS, LMDS</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>GSM, GPRS, CDMA, 2.5- 3G</td>
+	</tr>
+	<tr>
+		<td bgcolor='#333333' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Vitesse</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&lt;1 Mbits/s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1 - 54+ Mbits/s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>22 Mbits/s+</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>10 - 384 Kbits/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#333333' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Plage</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Courte</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Moyenne</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Moyenne - Longue</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Longue</td>
+	</tr>
+	<tr>
+		<td bgcolor='#333333' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Applications</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='120' type='dynamic'>Peer to peer entre périphériques</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Réseaux d'entreprise</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Accès fixe à la boucle locale</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Assistants numériques personnels, téléphones mobiles, accès cellulaire</td>
+	</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

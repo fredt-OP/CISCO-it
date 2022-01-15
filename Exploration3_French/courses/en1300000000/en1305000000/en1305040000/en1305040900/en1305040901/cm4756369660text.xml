@@ -1,0 +1,135 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>STP Failure Scenario</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click Play to see the animation.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>This network is fully converged.<br/><br/>Switch S3 has a better BPDU than switch S2 and as long as port F0/3 on switch S2 receives BPDU's from switch S3, port F0/3 on switch S2 will stay in blocking mode and discard all broadcasts received from switch S3.</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Root Bridge</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Designated Port = DP<br/>Non-designated Port = NDP<br/>Root Port = RP<br/>Forwarding = F<br/>Blocking = B</b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b>For some reason port F0/3 on switch S2 fails to receive BPDUs for the default max_age time of 20 seconds.<br/><br/>Most spanning tree algorithm failures occur due to excessive losses of BPDUs causing blocked ports to transition to forwarding mode.</b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b>Root Bridge</b>]]></text> 
+  </component>
+  <component id="ID_txt06">
+<text><![CDATA[<b>Designated Port = DP<br/>Non-designated Port = NDP<br/>Root Port = RP<br/>Forwarding = F<br/>Blocking = B</b>]]></text>
+</component>
+<component id="ID_txt07">
+  <text><![CDATA[<b>Port F0/3 on switch S2 transitions to the forwarding mode.</b>]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[<b>Root Bridge</b>]]></text> 
+  </component>
+  <component id="ID_txt09">
+<text><![CDATA[<b>Designated Port = DP<br/>Non-designated Port = NDP<br/>Root Port = RP<br/>Forwarding = F<br/>Blocking = B</b>]]></text>
+</component>
+<component id="ID_txt10">
+  <text><![CDATA[<b>Forwarding</b>]]></text> 
+  </component>
+  <component id="ID_txt11">
+  <text><![CDATA[<b>Spanning Tree Failure<br/><br/>The F0/3 port on switch S2 has gone from blocking to forwarding.<br/><br/>A broadcast storm is occurring.</b>]]></text> 
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[<b>Root Bridge</b>]]></text> 
+  </component>
+  <component id="ID_txt13">
+<text><![CDATA[<b>Designated Port = DP<br/>Non-designated Port = NDP<br/>Root Port = RP<br/>Forwarding = F<br/>Blocking = B</b>]]></text>
+</component>
+
+<component id="ID_bridge">
+<text><![CDATA[<b>Bridge ID</b>]]></text>
+</component>
+
+<component id="ID_root">
+<text><![CDATA[<b>Root ID</b>]]></text>
+</component>
+
+<component id="ID_bridge1">
+<text><![CDATA[<b>Bridge ID</b>]]></text>
+</component>
+
+<component id="ID_root1">
+<text><![CDATA[<b>Root ID</b>]]></text>
+</component>
+
+<component id="ID_bridge2">
+<text><![CDATA[<b>Bridge ID</b>]]></text>
+</component>
+
+<component id="ID_root2">
+<text><![CDATA[<b>Root ID</b>]]></text>
+</component>
+
+<component id="ID_BPDU">
+<text><![CDATA[<b>BPDU</b>]]></text>
+</component>
+
+<component id="ID_bframe">
+<text><![CDATA[<b>Broadcast Frame</b>]]></text>
+</component>
+
+  
+  
+  <component id="play"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+
+
+
+
+
+</textcomponents>

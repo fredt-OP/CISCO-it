@@ -1,0 +1,69 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Configuring Dynamic NAT</b>]]></text>
+</component>
+<component id="table">
+    <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td width='70' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Step</b></font></td>
+    <td width='370' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Action</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Notes</b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Define a pool of global addresses to be allocated as needed. <font face='_typewriter'>Router(config)#<B>ip nat pool name</B><I> start-ip end-ip</I> {<B>netmask</B><I> netmask</I>|<B>prefix-length</B><I> prefix-length</I>}</font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the global command <font face='_typewriter'><B>no ip nat pool </B><I>name</I></font> to remove the pool of global addresses.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Define a standard access list permitting those addresses that are to be translated. <font face='_typewriter'>Router(config)#<B>access-list</B> access-list-number <B>permit</B> source [source-wildcard]</font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the global command <font face='_typewriter'><B>no access-list </B><I>access-list-number</I></font> to remove the access list.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>3</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Establish dynamic source translation, specifying the access list defined in the prior step. <font face='_typewriter'>Router(config)#<B>ip nat inside source list</B><I> access-list-number</I><B> pool </B><I>name</I></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the global command <font face='_typewriter'><B>no ip nat inside source</B></font> to remove the dynamic source translation.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>4</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Specify the inside interface. <font face='_typewriter'>Router(config)#<B>interface </B><I>type number</I></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the <font face='_typewriter'><B>interface</B></font> command. The CLI prompt will change from <font face='_typewriter'>(config)#</font> to <font face='_typewriter'>(config-if)#</font>.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>5</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Mark the interface as connected to the inside. <font face='_typewriter'>Router(config-if)#<B>ip nat inside</B></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Specify the outside interface. <font face='_typewriter'>Router(config)#<B>interface </B><I>type number</I></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>7</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Mark the interface as connected to the outside. <font face='_typewriter'>Router(config-if)#<B>ip nat outside</B></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>8</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Exit interface configuration mode.<font face='_typewriter'>Router(config-if)# <B>exit</B></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+</table>]]></text>  
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Inside network</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+<component id="ID_button1">
+  <text><![CDATA[<b>Commands</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Example</b>]]></text> 
+</component>
+<component id="routerOutput">
+  <text><![CDATA[<b>Router Output</b>]]></text> 
+</component>
+</textcomponents>

@@ -1,0 +1,187 @@
+﻿ <TRANSLATION>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 11.5.1 : &lt;br&gt;configuration de base d'un périphérique Cisco&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Le texte placé entre ces deux jeux de symboles (&lt;!-- et -- &gt;) représente des commentaires pour l'auteur et ne s'affiche pas. Conservez tous les commentaires pour les développements futurs et à des fins de contrôle de qualité. L'utilisateur ne verra pas le code HTML dans Packet Tracer.
+
+Pour informations sur les principes fondamentaux de la mise en forme HTML, consultez la section du document Packet Tracer Standards consacrée au codage HTML ou le fichier « HTML_Coding_Standards.html ». ******************************************************************************** --&gt;
+
+&lt;!-- REMARQUE standard à l'intention de l'utilisateur pour toutes les variantes de travaux pratiques si la conception du cours le spécifie --&gt;
+
+
+&lt;!-- ================================================== Table d'adressage : le fichier « HTML_Coding_Standards.html » contient des instructions sur la façon d'ajuster cette table en fonction de l'exercice que vous créez. &lt;h3&gt;Table d'adressage :&lt;/h3&gt; &lt;!--Ceci est le début du code de la table d'adressage IP&quot; --&gt;
+
+&lt;table border=&quot;1&quot; width=&quot;85%&quot; id=&quot;table2&quot;&gt; &lt;tr&gt; &lt;td bgcolor=&quot;#000000&quot;&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td bgcolor=&quot;#000000&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Adresse IP :&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td colspan=&quot;3&quot; bgcolor=&quot;#000000&quot;&gt; &lt;p align=&quot;center&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Masque de sous-réseau&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;Numéro&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;Sous-réseau&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;Adresse du premier hôte&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;Adresse du dernier hôte&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;Diffusion&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;0&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;td&gt; &lt;p align=&quot;center&quot;&gt;&amp;nbsp;&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;
+	
+&lt;!--Ceci est la fin du code de la table d'adressage IP&quot; --&gt;
+
+
+&lt;!-- ================================================== Liste des objectifs non classés (puces) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Configuration des paramètres généraux d'un routeur Cisco &lt;li&gt;Configuration du contrôle de l'accès à un routeur Cisco par un mot de passe&lt;li&gt;Configuration des interfaces d'un routeur Cisco &lt;li&gt;Enregistrement du fichier de configuration d'un routeur &lt;li&gt;Configuration d'un commutateur Cisco &lt;/ul&gt;
+
+&lt;!-- ================================================== Introduction Fournissez les données de base, le scénario ou tout autre matériel d'orientation dans l'introduction. Consultez le fichier « HTML_Coding_Standards.html ». ================================================== --&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Dans ces travaux pratiques, vous allez configurer des paramètres communs sur un routeur Cisco et un commutateur Cisco.&lt;/p&gt; &lt;p&gt;Étant donnée une adresse IP de 198.133.219.0/24, avec 4 bits empruntés pour des sous-réseaux, ajoutez les informations suivantes dans le tableau ci-dessus, soit sur votre ordinateur portable, soit sur une feuille de papier. (Conseil : ajoutez d'abord le numéro de sous-réseau, puis l'adresse d'hôte. Les informations d'adresse seront faciles à calculer si le numéro de sous-réseau est ajouté en premier.) &lt;/p&gt; &lt;p&gt;Nombre maximal de sous-réseaux utilisables (n'oubliez pas le premier sous-réseau, numéroté 0) ? &lt;br&gt; Nombre d'hôtes utilisables par sous-réseau ? &lt;/p&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 1 : Configuration des paramètres généraux d'un routeur Cisco&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Connexion physique de périphériques.&lt;/h4&gt; &lt;p&gt;Connectez le câble de console (ou câble de renversement) au port console du routeur. Connectez le câble de croisement entre la carte réseau de l'ordinateur hôte et l'interface de routeur Fa0/0. Connectez un câble Ethernet direct entre l'interface de routeur Fa0/1 et l'une quelconque des interfaces du commutateur. &lt;/p&gt; &lt;p&gt;Vérifiez que l'ordinateur hôte, le commutateur et le routeur sont sous tension. &lt;/p&gt;
+
+&lt;h4&gt;Étape 2. Connexion de l'ordinateur hôte au routeur à l'aide de PT Terminal.&lt;/h4&gt; &lt;p&gt;Démarrez le programme PT Terminal en cliquant successivement sur Host1 | Onglet Desktop | Terminal&lt;/p&gt; &lt;p&gt;Conservez toutes les valeurs par défaut. &lt;/p&gt;
+
+&lt;h4&gt;Étape 3. Configuration du nom d'hôte.&lt;/h4&gt; &lt;p&gt;Quelles sont les deux commandes que vous pouvez utiliser pour quitter le mode d'exécution privilégié ? &lt;br&gt; Quelle commande de raccourci pouvez-vous utiliser pour entrer en mode d'exécution privilégié ? &lt;br&gt; Examinez les différents modes de configuration auxquels la commande configure? permet d'accéder. &lt;br&gt; Notez par écrit les modes de configuration et leur description.&amp;nbsp; Passez du mode d'exécution privilégié au mode de configuration globale :&amp;nbsp;&amp;nbsp; &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;router# configuration terminal &lt;br&gt; router(config)#&amp;nbsp;&amp;nbsp; &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Quelles sont les trois commandes que vous pouvez utiliser pour quitter le mode de configuration globale et retourner au mode d'exécution privilégié ?&amp;nbsp; &lt;br&gt; Quelle commande de raccourci pouvez-vous utiliser pour entrer en mode de configuration globale ?&amp;nbsp; &lt;br&gt; Affectez le nom d&apos;hôte Router1 au périphérique :&amp;nbsp;&amp;nbsp; &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot; face=&quot;Courier New&quot;&gt;router(config)# hostname Router1 &lt;br&gt; Router1(config)#&amp;nbsp;&amp;nbsp; &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Comment pouvez-vous supprimer le nom d&apos;hôte ? &lt;/p&gt; &lt;h4&gt;Étape 4. Configuration d'une bannière contenant un message du jour.&lt;/h4&gt; &lt;p&gt;Dans les réseaux de production, le contenu des bannières est susceptible d'avoir d'importantes implications au plan juridique pour l'organisation. Par exemple, un tribunal pourrait interpréter un aimable message de « bienvenue » comme une autorisation pour un attaquant de pirater le routeur. Une bannière doit contenir des informations sur les autorisations, les sanctions pénales encourues en cas d'accès non autorisé, l'enregistrement des connexions et la législation en vigueur. La stratégie de sécurité de l'entreprise doit définir des règles à respecter dans la formulation de tous les messages de bannière. Créez une bannière contenant un message du jour convenable. Indiquez que seuls les administrateurs système de la société ABC sont autorisés à accéder au périphérique, que tout accès non autorisé fera l'objet de poursuites et que toutes les informations de la connexion seront enregistrées dans un journal. &lt;/p&gt; &lt;p&gt;Examinez les différents modes de bannière que vous pouvez établir. Prenez note par écrit des modes de bannière et de leur description. &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot; face=&quot;Courier New&quot;&gt;Router1(config)# banner ? &lt;/font&gt;&lt;/b&gt; &lt;/p&gt; &lt;p&gt;Choisissez un caractère de délimitation qui ne sera pas utilisé dans le texte du message. Configurez la bannière contenant le message du jour. Le message du jour s'affiche sur toutes les connexions avant l'invite d'ouverture de session. Tapez le caractère de délimitation sur une ligne vide pour terminer l'entrée du message du jour : &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Router1(config)# banner motd % &lt;br&gt; Entrez le TEXTE du message. &lt;br&gt; Terminez par le caractère « % » *** Tout accès non autorisé fera l'objet de poursuites. *** %&lt;br&gt; Router1(config)# &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Quelle est la commande du mode de configuration globale permettant de supprimer la bannière contenant le message du jour ? &lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 24 %. &lt;/h4&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 2 : configuration du contrôle de l'accès à un routeur Cisco par un mot de passe&lt;/h3&gt; &lt;p&gt; Des mots de passe d'accès sont définis pour le mode d'exécution privilégié et les points d'entrée des utilisateurs comme la console, le port AUX et les lignes virtuelles. Le mot de passe du mode d'exécution privilégié est le plus important dans la mesure où il contrôle l'accès au mode de configuration. &lt;p&gt; &lt;h4&gt;Étape 1. Configuration du mot de passe du mode d'exécution privilégié. &lt;/h4&gt; &lt;p&gt;Cisco IOS offre deux commandes pour configurer l'accès au mode d'exécution privilégié. La première, enable password, emploie un chiffrement faible et ne doit jamais être utilisée si la seconde, enable secret, est disponible. La commande enable secret utilise un algorithme de hachage MD5 sécurisé pour le chiffrement. Selon Cisco : « À notre connaissance, il est impossible de récupérer un mot de passe enable secret à partir du contenu d'un fichier de configuration (sauf par d'évidentes attaques par dictionnaire). » La sécurité du mot de passe repose sur l'algorithme de mot de passe et sur le mot de passe. . Dans les environnements de production, vous devez toujours utiliser des mots de passe forts. Un mot de passe fort compte au moins neuf caractères et emploie des majuscules, des minuscules, des chiffres et des symboles. Dans l'environnement des travaux pratiques toutefois, nous utiliserons des mots de passe faibles. Définissez le mot de passe cisco pour le mode d'exécution privilégié. &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot; face=&quot;Courier New&quot;&gt;Router1(config)# enable secret cisco &lt;br&gt; Router1(config)# &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;h4&gt;Étape 2. Configuration du mot de passe de la console. &lt;/h4&gt; &lt;p&gt;Définissez le mot de passe class pour l'accès par la console. Le mot de passe de la console contrôle l'accès au routeur à l'aide de la console. &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot; face=&quot;Courier New&quot;&gt;Router1(config)# line console 0 &lt;br&gt; Router1(config-line)# password class &lt;br&gt; Router1(config-line)# login &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Quelle est la commande permettant de supprimer le mot de passe de la console ? &lt;p&gt; &lt;h4&gt;Étape 3. Configuration du mot de passe de ligne virtuelle. &lt;/h4&gt; &lt;p&gt;Définissez le mot de passe class pour l'accès par ligne virtuelle. Le mot de passe de ligne virtuelle contrôle l'accès Telnet au routeur. Dans les anciennes versions de Cisco IOS, il n'était possible de configurer que cinq lignes virtuelles, numérotées de 0 à 4. Dans les versions récentes de Cisco IOS, ce nombre a été augmenté. À moins qu'un mot de passe Telnet ne soit configuré pour une ligne virtuelle, l'accès par cette ligne virtuelle est bloqué. &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot; face=&quot;Courier New&quot;&gt;Router1(config-line)# line vty 0 4 &lt;br&gt; Router1(config-line)# password class &lt;br&gt; Router1(config-line)# login &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Entrez la commande exit. Quelle est l'invite affichée par le routeur ? Quel est le mode ? &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot; face=&quot;Courier New&quot;&gt;Router1(config-line)# exit &lt;/font&gt;&lt;/b&gt; &lt;/p&gt; &lt;p&gt;Donnez la commande end. Quelle est l'invite affichée par le routeur ? Quel est le mode ? &amp;nbsp;&lt;/p&gt; &lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 36 %. &lt;/h4&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;&lt;/p&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 3 : configuration des interfaces d'un routeur Cisco&lt;/h3&gt; &lt;h4&gt;Étape 1. Configuration de l'interface Fa0/0 du routeur. &lt;/h4&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Router1(config)# interface fa0/0 &lt;br&gt; Router1(config-if)# description Connexion à Host1 par câble de croisement &lt;br&gt; Router1(config-if)# ip address adresse_ip masque_réseau &lt;br&gt; Router1(config-if)# no shutdown &lt;br&gt; Router1(config-if)# end &lt;br&gt; Router1#
+
+&lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Vérifiez que l'interface devient active : *Mar 24 19:58:590,602: %LINEPROTO-5-UPDOWN: Le protocole de ligne sur l'interface FastEthernet0/0 passe de l'état down à l'état up &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;h4&gt;Étape 2. Configuration de l'interface Fa0/1 du routeur. &lt;/h4&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Router1(config)# interface fa0/1 &lt;br&gt; Router1(config-if)# description Connexion au commutateur par câble direct Router1(config-if)# ip address adresse_ip masque_réseau &lt;br&gt; Router1(config-if)# no shutdown&lt;br&gt; Router1(config-if)# end &lt;br&gt; Router1#
+
+&lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Vérifiez que l'interface devient active : *Mar 24 19:58:590,602: %LINEPROTO-5-UPDOWN: Le protocole de ligne sur l'interface FastEthernet0/1 passe de l'état down à l'état up &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;h4&gt;Étape 3. Configuration de l'ordinateur hôte. &lt;/h4&gt; &lt;p&gt;Configurez la connectivité de réseau local de l'ordinateur hôte. ///Rappelez-vous que pour accéder à la fenêtre de configuration du réseau local, vous devez cliquer&amp;nbsp; sur le PC, sélectionner l'onglet Desktop, puis cliquer sur IP configurations. Renseignez les champs suivants :
+
+&lt;/p&gt; &lt;p&gt;Adresse IP :  adresse du premier hôte &lt;br&gt; Masque de sous-réseau : masque de sous-réseau &lt;br&gt; Passerelle par défaut : adresse IP du routeur 
+
+&lt;p&gt; &lt;h4&gt;Étape 4. Vérification de la connectivité du réseau. &lt;/h4&gt; &lt;p&gt;Utilisez la commande ping pour vérifier la connectivité du réseau avec le routeur. En cas d'échec de la commande ping, dépannez la connexion : &lt;/p&gt; &lt;p&gt;Quelle commande Cisco IOS peut s'utiliser pour vérifier l'état d'une interface ? &lt;br&gt; Quelle commande Windows peut s'utiliser pour vérifier la configuration de l'ordinateur hôte ? &lt;br&gt; Quel est le câble de réseau local à utiliser entre Host1 et Router1 ? &lt;/p&gt;
+
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 78 %. &lt;/h4&gt;
+
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 4 : enregistrement du fichier de configuration du routeur&lt;/h3&gt; &lt;p&gt;Cisco IOS appelle configuration en cours (running-config) la configuration stockée en mémoire vive et configuration initiale (startup-config) la configuration stockée en mémoire NVRAM. Pour conserver une configuration malgré les redémarrages ou les mises hors tension, la configuration stockée en mémoire vive doit être copiée en mémoire vive non volatile (NVRAM). Cette opération n'est pas automatique : vous devez mettre à jour manuellement la mémoire NVRAM après toute modification de la configuration. &lt;p&gt; &lt;h4&gt;Étape 1. Comparaison des configurations en mémoire vive et en mémoire NVRAM d'un routeur. &lt;/h4&gt; &lt;p&gt;Utilisez la commande Cisco IOS show pour afficher les configurations en mémoire vive et en mémoire NVRAM. &lt;/p&gt; &lt;p&gt;Notez par écrit une commande de raccourci possible pour afficher le contenu de la mémoire NVRAM. Affichez le contenu de la mémoire NVRAM. S'il n'existe pas de configuration sauvegardée, la commande que vous entrez pour afficher le contenu de la mémoire NVRAM ne donne aucun résultat : &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot; face=&quot;Courier New&quot;&gt;Router1# show startup-config &lt;br&gt; startup-config is not present &lt;br&gt; Router1# Affichez maintenant le contenu de la mémoire vive. &lt;br&gt; Router1#show running-config&lt;/font&gt;&lt;/b&gt; &lt;/p&gt; &lt;p&gt;Utilisez les résultats de cette commande pour répondre aux questions suivantes : &lt;/p&gt; &lt;p&gt;Quelle est la taille du fichier de configuration ? &lt;br&gt; Quel est le mot de passe enable secret ? &lt;br&gt; Est-ce que votre bannière contenant le message du jour affiche les informations que vous avez entrées antérieurement ? &lt;br&gt; Est-ce que vos descriptions d'interface contiennent les informations que vous avez entrées antérieurement ? &lt;br&gt; Notez par écrit une commande de raccourci possible pour afficher le contenu de la mémoire vive. &lt;p&gt; &lt;h4&gt;Étape 2. Enregistrement de la configuration stockée en mémoire vive dans la mémoire NVRAM.&lt;/h4&gt; &lt;p&gt;&amp;nbsp;Pour que le routeur utilise une configuration lors de son prochain démarrage ou rechargement, vous devez enregistrer cette configuration manuellement dans la mémoire NVRAM. Enregistrez la configuration en cours dans la mémoire NVRAM. &lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font size=&quot;2&quot; face=&quot;Courier New&quot;&gt;Router1# copy running-config startup-config &lt;br&gt; Destination filename [startup-config]? &lt;Entrée&gt; Building configuration... [OK] &lt;br&gt; Router1# &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Notez par écrit une commande de raccourci possible pour copier la configuration en cours dans la mémoire NVRAM. Vérifiez le contenu de la mémoire NVRAM et assurez-vous qu'il s'agit bien de la même configuration que celle stockée en mémoire vive. &lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 78 %. &lt;/h4&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 5 : configuration d'un commutateur Cisco &lt;/h3&gt; &lt;p&gt;La configuration d'un commutateur Cisco IOS est (par bonheur) semblable à celle d'un routeur Cisco IOS. L'avantage des commandes IOS que vous apprenez à utiliser est qu'elles vous serviront avec de nombreux périphériques et de nombreuses versions de Cisco IOS. &lt;p&gt; &lt;h4&gt;Étape 1. Connexion de l'hôte au commutateur. &lt;/h4&gt; &lt;p&gt;Branchez le câble de console (ou câble de renversement) sur le port console du commutateur. Vérifiez que le commutateur est sous tension. Dans HyperTerminal, appuyez sur Entrée jusqu'à ce que le commutateur réponde. &lt;/p&gt; &lt;h4&gt;Étape 2. Configuration du nom d&apos;hôte. &lt;/h4&gt; &lt;p&gt;Selon le modèle de votre commutateur et votre version de IOS, votre configuration peut avoir un aspect légèrement différent. Toutefois, aucun mot de passe ne doit avoir été configuré. Si votre commutateur n'a pas la configuration par défaut, demandez au formateur de supprimer la configuration.
+
+À partir du mode d'exécution utilisateur, passez au mode de configuration globale :
+
+&lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Switch&gt; en &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Switch# config t &lt;br&gt; Switch(config)#
+
+&lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Configurez le nom d&apos;hôte de périphérique Switch1. &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Switch(config)# hostname Switch1 &lt;br&gt; Switch1(config)# &lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;h4&gt;Étape 3. Configuration de la bannière contenant le message du jour. &lt;/h4&gt; &lt;p&gt;Créez une bannière contenant un message du jour adéquat. Indiquez que seuls les administrateurs système de la société ABC sont autorisés à accéder au périphérique, que tout accès non autorisé fera l'objet de poursuites et que toutes les informations de la connexion seront enregistrées dans un journal.
+
+Configurez la bannière contenant le message du jour. Le message du jour s'affiche sur toutes les connexions avant l'invite d'ouverture de session. Tapez le caractère de délimitation sur une ligne vide pour terminer l'entrée du message du jour. En cas de doute, reportez-vous à l'étape correspondante de la configuration d'une bannière de routeur.
+
+&lt;/p&gt; &lt;p&gt;&lt;b&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Switch1(config)# banner motd % avertissement %&lt;/font&gt;&lt;/b&gt;&lt;/p&gt; &lt;h4&gt;Étape 4. Configuration du mot de passe du mode d'exécution privilégié. &lt;/h4&gt; &lt;p&gt;Configurez le mot de passe cisco pour le mode d'exécution privilégié.
+
+&lt;/p&gt; &lt;p&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;&lt;b&gt;Switch1(config)# enable secret cisco &lt;br&gt; Switch1(config)# &lt;/b&gt;&lt;/font&gt;&lt;/p&gt; &lt;h4&gt;Étape 5. Configuration du mot de passe de la console. &lt;/h4&gt; &lt;p&gt;Définissez le mot de passe class pour l'accès par la console.&lt;/p&gt; &lt;h3&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Switch1(config)# line console 0 &lt;br&gt; Switch1(config-line)# password class &lt;br&gt; Switch1(config-line)# login &lt;/font&gt;&lt;/h3&gt; &lt;h4&gt;Étape 6. Configuration du mot de passe de ligne virtuelle. &lt;/h4&gt; &lt;p&gt;Définissez le mot de passe class pour l'accès par ligne virtuelle. Sur un commutateur Cisco IOS, vous pouvez configurer 16 lignes virtuelles numérotées de 0 à 15. 
+
+&lt;/p&gt; &lt;h3&gt;&lt;font face=&quot;Courier New&quot; size=&quot;2&quot;&gt;Switch1(config-line)# line vty 0 15 &lt;br&gt; Switch1(config-line)# password class &lt;br&gt; Switch1(config-line)# login &lt;/font&gt;&lt;/h3&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 100 %. &lt;/h4&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host3</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true">Fa0/1</TEXT>
+ <TEXT translate="true">Fa0/1</TEXT>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <TEXT translate="true">Fa0/3</TEXT>
+ <TEXT translate="true">Fa0/2</TEXT>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <TEXT translate="true">Fa0/1</TEXT>
+ <TEXT translate="true">Fa0/1</TEXT>
+ <TEXT translate="true">Fa0/3</TEXT>
+ <TEXT translate="true">Fa0/2</TEXT>
+ <TEXT translate="true">Fa0/1</TEXT>
+ <TEXT translate="true">Fa0/2</TEXT>
+ <TEXT translate="true">Fa0/3</TEXT>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <TEXT translate="true">Fa0/1</TEXT>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Switch1</ID>
+ <ID translate="true">Host1</ID>
+ <ID translate="true">Host2</ID>
+ <ID translate="true">Host3</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Switch1</ID>
+ <ID translate="true">Host1</ID>
+ <ID translate="true">Host2</ID>
+ <ID translate="true">Host3</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

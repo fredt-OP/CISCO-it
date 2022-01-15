@@ -1,0 +1,108 @@
+<textcomponents>
+
+<component id="id_title">
+ <text><![CDATA[<font size='+2'><b>Activity</b></font><br/><br/>Indicate whether the characteristic describes a Standard, Extended or Named ACL.<br/><br/><b>Check Standard, Extended or Named for each of the 9 characteristics.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+ <text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+ <text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<component id="txt_numrows">
+ <text><![CDATA[9]]></text>
+</component>
+<component id="txt_numcols">
+ <text><![CDATA[3]]></text>
+</component>
+<component id="txt_col1">
+ <text><![CDATA[Standard]]></text>
+</component>
+<component id="txt_col2">
+ <text><![CDATA[Extended]]></text>
+</component>
+ <component id="txt_col3">
+ <text><![CDATA[Named]]></text>
+</component>
+
+ 
+<component id="txt_q1">
+ <text><![CDATA[1. <textformat blockindent='14'>Simplest type of ACL</textformat>]]></text>
+</component>
+<component id="txt_q2">
+ <text><![CDATA[2. <textformat blockindent='14'>Uses a special sub-configuration mode</textformat>]]></text>
+</component>
+<component id="txt_q3">
+ <text><![CDATA[3. <textformat blockindent='14'>Uses a numeric identifier and can filter on protocol and port numbers</textformat>]]></text>
+</component>
+<component id="txt_q4">
+ <text><![CDATA[4. <textformat blockindent='14'>Can create both standard and extended access lists</textformat>]]></text>
+</component>
+<component id="txt_q5">
+ <text><![CDATA[5. <textformat blockindent='14'>Identified by number range from 100-199</textformat>]]></text>
+</component>
+ <component id="txt_q6">
+ <text><![CDATA[6. <textformat blockindent='14'>Can only filter on source IP address or range </textformat>]]></text>
+</component>
+<component id="txt_q7">
+ <text><![CDATA[7. <textformat blockindent='14'>Uses a numeric identifier and can filter on source or destination IP address</textformat>]]></text>
+</component>
+<component id="txt_q8">
+ <text><![CDATA[8. <textformat blockindent='14'>Identified by number range from 1-99</textformat>]]></text>
+</component>
+<component id="txt_q9">
+ <text><![CDATA[9. <textformat blockindent='14'>Can be assigned a meaningful descriptive identifier</textformat>]]></text>
+</component>
+
+
+<component id="txt_a1">
+ <text><![CDATA[1]]></text>
+</component>
+<component id="txt_a2">
+ <text><![CDATA[3]]></text>
+</component>
+<component id="txt_a3">
+ <text><![CDATA[2]]></text>
+</component>
+<component id="txt_a4">
+ <text><![CDATA[3]]></text>
+</component>
+<component id="txt_a5">
+ <text><![CDATA[2]]></text>
+</component>
+<component id="txt_a6">
+ <text><![CDATA[1]]></text>
+</component>
+<component id="txt_a7">
+ <text><![CDATA[2]]></text>
+</component>
+<component id="txt_a8">
+ <text><![CDATA[1]]></text>
+</component>
+<component id="txt_a9">
+ <text><![CDATA[3]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You successfully identified characteristics of standard, extended and named ACLs. Click Next to continue.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review the information on ACL types and try again.]]></text></component>
+
+
+</textcomponents>

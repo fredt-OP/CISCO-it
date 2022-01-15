@@ -1,0 +1,44 @@
+﻿// eLabComposer version 1.0
+
+//Lab-Drill Information
+Language = "English";
+labDrill = "True";
+
+//Topics Covered
+chapterCovered = "Affichage des informations d’interface de routeur";
+
+//Prompt Information
+StepModeArray[0] = "";
+StepModeArray[1] = "enable";
+StepModeArray[2] = "enable";
+
+//Instruction Information
+instructionArray[0] = "Le routeur actuel utilise une configuration d’exécution nettoyée et inchangée. Affichez la configuration de base et les détails de l’interface pour connaître les paramètres par défaut du routeur.";
+instructionArray[1] = "Affichez la configuration d’exécution active pour voir les paramètres par défaut.\n\nQuel est le nom par défaut donné au routeur lors de votre première connexion ? \n\nPar défaut, le routage IP est-il activé ou désactivé ? \n\nPar défaut, le routage IPX est-il activé ou désactivé ? \n\nQuelle est la commande qui permet d’activer le routage IPX ?";
+instructionArray[2] = "Quel est le type d’encapsulation par défaut des interfaces série ?\n\nQuels sont les autres types d’encapsulation pris en charge par votre routeur ? \n\nQuel est l’état d’activation par défaut de chaque interface ?\n\nQuelle est la commande qui sert à activer et à désactiver une interface ?\n\nRecherchez et indiquez trois autres paramètres par défaut.";
+
+//Answer Information
+assignValueToAnswer(1,"1",False,"show","running-config");
+assignValueToAnswer(2,"2",False,"show","interfaces");
+
+//Error Information
+assignValueToError(1,"1","Utilisez la commande « show » pour afficher les informations relatives au routeur.","Utilisez le mot clé « running-config » pour désigner la configuration courante.");
+assignValueToError(2,"2","Utilisez la commande « show » pour afficher les informations relatives au routeur.","Utilisez le mot clé « interfaces » pour désigner les informations d’interface de toutes les interfaces disponibles.");
+
+//Result Information
+assignValueToResult(1,"1","!\n","version 12.0\n","service timestamps debug uptime\n","service timestamps log uptime\n","no service password-encryption\n","!\n","hostname Router\n","!\n","!\n","!\n","!\n","!\n","!\n","memory-size iomem 25\n","ip subnet-zero\n","!\n","!\n","!\n","process-max-time 200\n","!\n","interface Serial0\n"," no ip address\n"," no ip directed-broadcast\n"," shutdown\n","!\n","interface Serial1\n"," no ip address\n"," no ip directed-broadcast\n"," shutdown\n","!\n","interface FastEthernet0\n"," no ip address\n"," no ip directed-broadcast\n"," shutdown\n","!\n","ip classless\n","no ip http server\n","!\n","!\n","line con 0\n"," transport input none\n","line aux 0\n","line vty 0 4\n","!\n","no scheduler allocate\n","end\n","");
+assignValueToResult(2,"2","FastEthernet0 is administratively down, line protocol is down\n","  Hardware is PQUICC_FEC, address is 0002.1761.edf8 (bia 0002.1761.edf8)\n","  MTU 1500 bytes, BW 100000 Kbit, DLY 100 usec,\n","     reliability 252/255, txload 1/255, rxload 1/255\n","  Encapsulation ARPA, loopback not set\n","  Keepalive set (10 sec)\n","  Half-duplex, 100Mb/s, 100BaseTX/FX\n","  ARP type: ARPA, ARP Timeout 04:00:00\n","  Last input never, output 00:02:31, output hang never\n","  Last clearing of \"show interface\" counters never\n","  Queueing strategy: fifo\n","  Output queue 0/40, 0 drops; input queue 0/75, 0 drops\n","  5 minute input rate 0 bits/sec, 0 packets/sec\n","  5 minute output rate 0 bits/sec, 0 packets/sec\n","     0 packets input, 0 bytes\n","     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles\n","     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored\n","     0 watchdog, 0 multicast\n","     0 input packets with dribble condition detected\n","     20 packets output, 1653 bytes, 0 underruns\n","     20 output errors, 0 collisions, 0 interface resets\n","     0 babbles, 0 late collision, 0 deferred\n","     20 lost carrier, 0 no carrier\n","     0 output buffer failures, 0 output buffers swapped out\n","Serial0 is administratively down, line protocol is down\n","  Hardware is PowerQUICC Serial\n","  MTU 1500 bytes, BW 128 Kbit, DLY 20000 usec,\n","     reliability 255/255, txload 1/255, rxload 1/255\n","  Encapsulation HDLC, loopback not set\n","  Keepalive set (10 sec)\n","  Last input 00:00:41, output 00:00:36, output hang never\n","  Last clearing of \"show interface\" counters never\n","  Input queue: 0/75/0 (size/max/drops); Total output drops: 0\n","  Queueing strategy: weighted fair\n","  Output queue: 0/1000/64/0 (size/max total/threshold/drops)\n","     Conversations  0/1/32 (active/max active/max total)\n","     Reserved Conversations 0/0 (allocated/max allocated)\n","  5 minute input rate 0 bits/sec, 0 packets/sec\n","  5 minute output rate 0 bits/sec, 0 packets/sec\n","     30 packets input, 2392 bytes, 0 no buffer\n","     Received 30 broadcasts, 0 runts, 0 giants, 0 throttles\n","     1 input errors, 0 CRC, 1 frame, 0 overrun, 0 ignored, 0 abort\n","     68 packets output, 7273 bytes, 0 underruns\n","     0 output errors, 0 collisions, 1 interface resets\n","     0 output buffer failures, 0 output buffers swapped out\n","     0 carrier transitions\n","     DCD=up  DSR=up  DTR=down  RTS=down  CTS=up\n","\n","Serial1 is administratively down, line protocol is down\n","  Hardware is PowerQUICC Serial\n","  MTU 1500 bytes, BW 128 Kbit, DLY 20000 usec,\n","     reliability 255/255, txload 1/255, rxload 1/255\n","  Encapsulation HDLC, loopback not set\n","  Keepalive set (10 sec)\n","  Last input never, output never, output hang never\n","  Last clearing of \"show interface\" counters never\n","  Input queue: 0/75/0 (size/max/drops); Total output drops: 0\n","  Queueing strategy: weighted fair\n","  Output queue: 0/1000/64/0 (size/max total/threshold/drops)\n","     Conversations  0/4/32 (active/max active/max total)\n","     Reserved Conversations 0/0 (allocated/max allocated)\n","  5 minute input rate 0 bits/sec, 0 packets/sec\n","  5 minute output rate 0 bits/sec, 0 packets/sec\n","     0 packets input, 0 bytes, 0 no buffer\n","     Received 0 broadcasts, 0 runts, 0 giants, 0 throttles\n","     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort\n","     3 packets output, 72 bytes, 0 underruns\n","     0 output errors, 0 collisions, 2 interface resets\n","     0 output buffer failures, 0 output buffers swapped out\n","     6 carrier transitions\n","     DCD=down  DSR=down  DTR=up  RTS=up  CTS=down\n","");
+
+//Graphic Information
+hasDefaultGraphic = true;
+graphicArray[0] = "CCNA2_elab_3_1_4g";
+graphicArray[1] = "";
+graphicArray[2] = "";
+
+//Router for Step Information
+routerUsedForThisStep[0] = 0;
+routerUsedForThisStep[1] = 0;
+routerUsedForThisStep[2] = 0;
+
+//Router Information
+addToRouterSIMObject(0,"Thimphu","","","R1721");

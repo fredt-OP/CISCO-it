@@ -1,0 +1,145 @@
+<textcomponents>
+<component id="ID_caption01">
+  <text><![CDATA[<b>Roll over each field in the frame to see a brief description.</b>]]></text> 
+  </component>
+<component id="ID_txt01">
+  <text><![CDATA[<b>*The preamble and SFD fields are not included in the maximum / minimum Ethernet frame byte counts.</b>]]></text> 
+  </component>
+<component id="ID_tableTitle">
+  <text><![CDATA[<b>IEEE 802.3 Ethernet Frame Fields</b>]]></text> 
+  </component>
+<component id="ID_barTitle">
+  <text><![CDATA[<b>Structure of the Ethernet Frame</b>]]></text> 
+  </component>
+<component id="ID_preamble">
+  <text><![CDATA[<b>Preamble</b>]]></text> 
+  </component>
+<component id="ID_sfd">
+  <text><![CDATA[<b>SFD</b>]]></text> 
+  </component>
+<component id="ID_destinationMAC">
+  <text><![CDATA[<b>Destination MAC Address</b>]]></text> 
+  </component>
+<component id="ID_sourceMAC">
+  <text><![CDATA[<b>Source MAC Address</b>]]></text> 
+  </component>
+<component id="ID_lengthType">
+  <text><![CDATA[<b>Length / Type</b>]]></text> 
+  </component>
+<component id="ID_data">
+  <text><![CDATA[<b>Encapsulated Data</b>]]></text> 
+  </component>
+<component id="ID_fcs">
+  <text><![CDATA[<b>FCS</b>]]></text> 
+  </component>
+<component id="ID_7">
+  <text><![CDATA[7]]></text>  
+  </component>
+<component id="ID_1">
+  <text><![CDATA[1]]></text> 
+  </component>
+<component id="ID_6">
+  <text><![CDATA[6]]></text> 
+  </component>
+<component id="ID_6_2">
+  <text><![CDATA[6]]></text> 
+  </component>
+<component id="ID_2">
+  <text><![CDATA[2]]></text> 
+  </component>
+<component id="ID_4">
+  <text><![CDATA[4]]></text> 
+  </component>
+<component id="ID_46_to_1500">
+  <text><![CDATA[46 to 1500]]></text> 
+  </component>
+
+<component id="server_title1">
+  <text><![CDATA[Preamble]]></text> 
+  </component>
+<component id="server_text1">
+  <text><![CDATA[Defined pattern of alternating 1 and 0 bits used to synchronize timing.]]></text> 
+  </component>
+
+<component id="server_title2">
+  <text><![CDATA[Start of Frame Delimiter (SFD)]]></text> 
+  </component>
+<component id="server_text2">
+  <text><![CDATA[Marks the end of the timing information and start of the frame.]]></text> 
+  </component>
+
+<component id="server_title3">
+  <text><![CDATA[Destination MAC Address]]></text> 
+  </component>
+<component id="server_text3">
+  <text><![CDATA[The Destination MAC Address field contains the destination MAC address (receiver). The destination MAC address can be unicast (a specific host), multicast (a group of hosts), or broadcast (all hosts on the local network).]]></text> 
+  </component>
+
+<component id="server_title4">
+  <text><![CDATA[Source MAC Address]]></text> 
+  </component>
+<component id="server_text4">
+  <text><![CDATA[The Source MAC Address field contains the source MAC address (sender). This is the unicast address of the Ethernet node that transmitted the frame.]]></text> 
+  </component>
+
+<component id="server_title5">
+  <text><![CDATA[Length/Type]]></text> 
+  </component>
+<component id="server_text5">
+  <text><![CDATA[The Length/Type field supports two different uses. A type value indicates which protocol will receive the data. The length indicates the number of bytes of data that follows this field.]]></text> 
+  </component>
+
+<component id="server_title6">
+  <text><![CDATA[Encapsulated Data]]></text> 
+  </component>
+<component id="server_text6">
+  <text><![CDATA[The Data field contains the packet of information being sent. Ethernet requires each frame to be between 64 and 1518 bytes.]]></text> 
+  </component>
+
+<component id="server_title7">
+  <text><![CDATA[FCS]]></text> 
+  </component>
+<component id="server_text7">
+  <text><![CDATA[The FCS contains a 4-byte value that is created by the device that sends data and is recalculated by the destination device to check for damaged frames.]]></text> 
+  </component>
+
+
+<component id="ID_tableHTML">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='150' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Bytes</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Field Name</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>7</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Preamble</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Start Frame Delimiter</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Destination MAC Address</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Source MAC Address</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Length/Type Field</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>46 to 1500</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Encapsulated Data</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>4</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Frame Check Sequence (CRC Checksum)</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

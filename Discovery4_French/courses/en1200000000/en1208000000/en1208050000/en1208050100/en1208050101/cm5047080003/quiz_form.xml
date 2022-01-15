@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19855" lang=""><form-item>
+			<ai id="119569" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="119569" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Test software is cheaper than a test network.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Changing device types and topologies is easy.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Traffic can be observed and packets can be examined.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Faster to build large networks with software.</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>control </mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>flexibility </mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>scalability</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>low overall cost </mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the network simulation software description on the left to the benefit on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="222129" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="222129" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="222129" action="Set">1</setvar><scoringdescription>Answers, from top to bottom: Low cost, flexibility, control, scalability.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119570" type="mc-ma"><question><![CDATA[What three things can be done to simulate a DSL or cable WAN connection in a lab environment? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Use 100 Mbps serial links between the routers. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Use 10 Mbps Ethernet connections between the routers via a crossover cable.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Use 100 Mbps Ethernet links to connect the routers via a straight-through cable. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Use 10 Mbps Ethernet connections between the routers via a straight-through cable. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Change static route preference by increasing the <b>administrative distance</b> assigned to the route.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Use the <b>bandwidth</b> command on the Ethernet links to adjust the routing metric.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="52055" type="mc-sa"><question><![CDATA[A ping is sent to address 192.168.50.10 from the Peanut router.  Which DLCI will be used to send the ping? <br/><img src="1359.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[110  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[115 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[220 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[225 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119602" type="mc-sa"><question><![CDATA[Refer to the exhibit. Given the topology as shown, a network administrator configures a Frame Relay connection to allow each of the routers to communicate with each other. Upon completing the task, the administrator makes a routing change on R2 but notes that the update is only being reflected at R1. How should the network administrator resolve this problem? <br/><img src="16603.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Reconfigure the routing protocol on each of the routers. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configure sub-interfaces on R1 instead of using a single interface.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routing protocols cannot update across a Frame Relay connection. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Shut down and restart the S0/0 interface on R1 as this will trigger a routing update. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119604" type="mc-sa"><question><![CDATA[A network administrator has configured a Frame Relay connection between the corporate network and a local Internet service provider (ISP) to supply the network database servers with a dedicated circuit. During routine monitoring, the network adminstrator notices that during periods of high traffic, the servers need to retransmit the same data multiple times in order to complete file transfers.  A packet capture of the data headers indicates that the Discard Eligible (DE) bit is set to one. What must the administrator do to correct this problem?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Have the ISP increase the local access rate. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Replace the cables connecting the server to the CSU/DSU.   ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch to a different ISP which will provide better QoS. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Contact the ISP to have the Committed Interface Rate (CIR) increased.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119588" type="mc-sa"><question><![CDATA[What is the purpose of encrypting traffic on a secure VPN?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[to ensure that traffic is routed along the VPN ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[to ensure that data sent across the VPN between both authenticated endpoints is not viewable as clear text  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to ensure that traffic coming from unauthorized personel does not conflict with traffic from authorized personnel ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to ensure that all traffic coming from the Internet is not viewable in clear text ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="119572" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="119572" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>GRE</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>IPSec</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>L2F</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>PPTP</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>L2TP</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>A framework of open standards and functions at the Network Layer.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>A protocol developed by Microsoft used to create VPNs across TCP/IP networks.</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>An IETF standard protocol used to tunnel Layer 2 PPP packets through a public network using IP.</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Can encapsulate a wide variety of protocol packet types inside IP tunnels.</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>A protocol that supports the creation of secure virtual private dialup networks over the Internet by tunneling Layer 2 frames.</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the encapsulation protocol on the left with the correct description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="87.5"/><display componentIdent="2" xpos="200" ypos="167.5"/><display componentIdent="3" xpos="200" ypos="247.5"/><display componentIdent="4" xpos="200" ypos="327.5"/><display componentIdent="5" xpos="200" ypos="407.5"/></options><targets><display componentIdent="1" xpos="600" ypos="87.5"/><display componentIdent="2" xpos="600" ypos="154.5"/><display componentIdent="3" xpos="600" ypos="221.5"/><display componentIdent="4" xpos="600" ypos="288.5"/><display componentIdent="5" xpos="600" ypos="355.5"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="222137" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="222137" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="222137" action="Set">1</setvar><scoringdescription>GRE=can encapsulate a wide variety of protocol packet types inside IP tunnels; IPSec=is a framework of open standards...; L2F=supports secure virtual private dial-up networks over the Internet; L2TP=used to tunnel PPP through a public network using IP.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119587" type="mc-sa"><question><![CDATA[Where should the VPN server be located on the network to handle the encrypted data?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[after the traffic has entered the internal network ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[before the flow of traffic reaches the internal network  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[at the user endpoint ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[at the service provider edge as traffic arrives from the user endpoint ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121086" type="mc-ma"><question><![CDATA[When troubleshooting a Frame Relay connection, an administrator entered the <b>show interfaces s0/0</b> command and received the output shown in the exhibit. What are two probable reasons for this problem? (Choose two.) <br/><img src="i121086n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The cable between the CSU/DSU and the router is disconnected. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The serial 0/0 interface is shutdown. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The router is not configured for the same Frame Relay PVC as the switch.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The LMI type on the Frame Relay switch is NOT ANSI.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The address of the Frame Relay switch is not in the routing table. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119653" type="mc-sa"><question><![CDATA[What provides data confidentiality in a VPN?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[hashing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[tunneling ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[encryption  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[data headers ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[encapsulation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SHA or MD5 ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

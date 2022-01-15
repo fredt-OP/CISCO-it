@@ -1,0 +1,91 @@
+﻿<textcomponents>
+
+<component id="tipTitle">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+
+<component id="tipBody">
+<text><![CDATA[Dans une entrée de table de routage EIGRP, le mot « via » précède l’adresse du successeur. La distance de faisabilité est une mesure répertoriée après la distance administrative de 90. Dans l’entrée ci-dessous, le meilleur chemin pour atteindre le réseau 192.168.1.0/24 passe par l’interface 192.168.10.10 du successeur de tronçon suivant, avec la distance de faisabilité de 3014400 :<br/><br/><b> D 192.168.1.0/24 [90/3014400] via 192.168.10.10, 00:00:31, Serial0/0/1  </b>]]></text>
+</component>
+
+<component id="TipText">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[R1]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[R2]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[R3]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[R4]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Réseau Z]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[10]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[14]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[10]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[AD = 5]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[AD = 6]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[AD = 5]]></text> 
+</component>
+
+<component id="ID_txt12">
+	<text><![CDATA[<b>Distance de faisabilité (FD) :</b><br/>Distance (mesure) minimale sur un chemin d’un routeur à un réseau de destination.<br/><br/><b>Distance annoncée (AD ou RD) :</b><br/>Distance (mesure) vers une destination telle qu’annoncée par un voisin en amont. <i>Distance par rapport au routeur voisin</i>]]></text> 
+</component>
+
+<component id="ID_table3">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+	<td bgcolor='#F2F2F2'><font color='#FFFFFF'> </font></td>
+	<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Distance de faisabilité</font></td>
+	<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Distance annoncée</font></td>
+</tr>
+<tr>
+	<td width='350' bgcolor='#DDDDDD'>R2 est le successeur du réseau Z</td>
+	<td bgcolor='#DDDDDD'>FD = 15</td>
+	<td bgcolor='#DDDDDD'>AD = 5</td>
+</tr>
+<tr>
+	<td bgcolor='#F2F2F2'>R3 est le successeur potentiel du réseau Z</td>
+	<td bgcolor='#F2F2F2'>FD = 20</td>
+	<td bgcolor='#F2F2F2'>AD = 6</td>
+</tr>
+<tr>
+	<td bgcolor='#DDDDDD'>R4 est le successeur du réseau Z</td>
+	<td bgcolor='#DDDDDD'>FD = 15</td>
+	<td bgcolor='#DDDDDD'>AD = 5</td>
+</tr></table>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+

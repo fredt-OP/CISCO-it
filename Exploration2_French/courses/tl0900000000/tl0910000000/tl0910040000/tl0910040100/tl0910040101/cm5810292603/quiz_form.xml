@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13261" dateexported="01/26/2009">
+		<name>Module 10 Questionnaire</name>
+		<form id="22326" lang="fr"><form-item order="fixed">
+			<ai id="133341" type="mc-sa"><question><![CDATA[Quel est le protocole de routage considéré comme un protocole d’état des liaisons ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[RIPv1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPv2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[EIGRP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[IS-IS  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[BGP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67144" type="mc-ma"><question><![CDATA[Quels mécanismes les protocoles de routage à état de liens utilisent-ils pour créer et gérer des tables de routage? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les annonces réseau de service. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les paquets HELLO.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les annonces de routage à état de liens.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les broadcasts de table de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L'algorithme du plus court chemin d'abord.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole Spanning Tree. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="133339" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="133339" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Exigeant en matériel.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Utilise l’algorithme Bellman-Ford.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Dépend des routes voisines.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Convergence rapide.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Utilise des mises à jour planifiées.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Crée la topologie entière.</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Route par « rumeur ».</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Utilise l’algorithme Dijkstra.</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>État des liaisons.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Vecteur de distance.</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="7" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="8" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser les attributs situés à gauche vers le protocole correspondant à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="52" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /><display componentIdent="7" xpos="200" ypos="315" /><display componentIdent="8" xpos="200" ypos="355" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="4" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="264.5" containsTargets="4" startTarg="5" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="174" /><display componentIdent="4" xpos="600" ypos="211" /><display componentIdent="5" xpos="600" ypos="273" /><display componentIdent="6" xpos="600" ypos="310" /><display componentIdent="7" xpos="600" ypos="347" /><display componentIdent="8" xpos="600" ypos="384" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident="2"><componentident>5</componentident><componentident>6</componentident><componentident>7</componentident><componentident>8</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="obs1" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>4</componentident><componentident>6</componentident><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>3</componentident><componentident>5</componentident><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="133337" type="mc-sa"><question><![CDATA[Quel est l’avantage des protocoles d’état des liaisons par rapport à la plupart des protocoles à vecteur de distance ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Capacité de router des éléments IPX ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Vérification de route en continu avec les mises à jour régulières ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Convergence accélérée  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configuration matérielle requise moins importante ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133340" type="mc-sa"><question><![CDATA[Pourquoi les protocoles d’état des liaisons convergent-ils plus vite que la plupart des protocoles à vecteur de distance ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Les protocoles à vecteur de distance calculent leurs tables de routage avant d’envoyer les mises à jour de routage, contrairement aux protocoles d’état des liaisons.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les protocoles d’état des liaisons ont des exigences de calcul inférieures à celles des protocoles à vecteur de distance. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les protocoles d’état des liaisons envoient les mises à jour plus souvent que les protocoles à vecteur de distance. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les protocoles à vecteur de distance reçoivent plus de paquets par mise à jour que les protocoles d’état des liaisons. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133342" type="mc-sa"><question><![CDATA[Examinez la présentation. Si tous les routeurs utilisent un protocole de routage d’état des liaisons, à quels routeurs le routeur A envoie-t-il les paquets Hello ? <br/><img src="i133342n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[B, C  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[B, C, D ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Seulement le routeur désigné ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Seulement BR et BDR ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133344" type="mc-sa"><question><![CDATA[Quelles informations sont contenues dans les paquets LSP envoyés par les routeurs d’état des liaisons à leurs voisins ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Une copie de la table de routage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une copie de la base de données topologique ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’état des liaisons connectées directement  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La toute dernière version de l’arborescence SPF ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133338" type="mc-sa"><question><![CDATA[Quel est l’inconvénient des protocoles d’état des liaisons par rapport aux protocoles à vecteur de distance ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Convergence lente ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Topologie de réseau non hiérarchique ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mises à jour régulières ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Exigences de traitement supérieures  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133345" type="mc-sa"><question><![CDATA[Que se passe-t-il après que deux routeurs OSPF ont échangé des paquets Hello et formé une contiguïté ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Chacun diffuse l’intégralité de sa table de routage à l’autre. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ils commencent à s’envoyer des paquets d’état des liaisons.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ils négocient pour déterminer qui sera le routeur principal. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ils ajustent leurs minuteurs Hello afin de ne pas entrer en conflit. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="151511" type="mc-sa"><question><![CDATA[Comment un routeur acquiert-il les informations relatives à un réseau connecté directement ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Lorsque l’administrateur configure une route statique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Lorsque l’administrateur configure un protocole de routage dynamique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Quand l’administrateur attribue une adresse IP et un masque de sous-réseau à l’interface.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Lorsqu’une adresse de diffusion est détectée sur une interface spécifique. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

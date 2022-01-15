@@ -1,0 +1,101 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>The key components on a Cisco 1841 ISR are:</li><br/><TEXTFORMAT BLOCKINDENT='20'><li>HWIC slots</li><li>Compact flash module</li><li>USB port</li><li>Dual 10/100 fast Ethernet ports</li><li>Console and auxiliary ports</li><li>System Power LED</li><li>The router bootup process has three stages:</TEXTFORMAT><TEXTFORMAT BLOCKINDENT='40'><br/>1. Performing the POST<br/>2. Locating and Loading the IOS software<br/>3. Locating and executing the startup configuration file</li></TEXTFORMAT><TEXTFORMAT BLOCKINDENT='20'><li>Cisco IOS software image</li></TEXTFORMAT><br/><TEXTFORMAT BLOCKINDENT='0'><li>There are two possible methods to connect a PC to a network device for configuration and monitoring tasks, in-band and out-of-band management.</li></ul>]]></text>
+</component>
+
+<component id="s1_ID_txt01">
+      <text><![CDATA[<b>UDP and TCP Ports</b>]]></text> 
+  </component>
+
+
+<!--  Slide 2  -->  
+  
+  
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>Cisco Router and Security Device Manager (SDM) is a graphical user interface (GUI) tool that can be used to configure, monitor, and maintain Cisco devices. Cisco SDM is the recommended way to configure a new Cisco ISR.</li><br/><li>The Cisco IOS command line interface (CLI) is a text-based program that enables the entering and executing of Cisco IOS commands to configure, monitor, and maintain Cisco devices.The Cisco IOS CLI is used for the advanced configuration of Cisco devices and to configure older devices that do not support SDM.</li><br/><li>The configuration checklist job aid is an important tool to help ensure that the customer gets the configuration they want.</li></ul>]]></text>
+</component>
+
+
+<!--  Slide 3  -->
+
+
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>SDM Express is a tool bundled within the Cisco Router and Security Device Manager that makes it easy to create a basic router configuration.</li><br/><li>SDM is a more advanced GUI interface with more configuration options available. </li><br/><li>Both SDM and SDM Express use GUI-based configuration Wizards to simplify the configuration of the Cisco devices.</li><br/><li>Some of the features that can be configured include: basic configuration, LAN IP configurations, DHCP, WAN IP configurations and NAT.</li></ul>]]></text>
+</component>
+
+
+<!--  Slide 4  -->
+
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>The CLI does not provide step-by-step configuration assistance; therefore it requires more planning and expertise to complete.</li><br/><li>The privileged exec, global config and interface modes are all used when configuring a router using the Cisco IOS CLI.</li><br/><li>Context-sensitive help can provide suggestions for completing a command as well as determining additional command parameters.</li></ul>]]></text>
+</component>
+
+
+<!--  Slide 5  -->
+
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>The IOS <font face='_typewriter'><b>show</b></font> commands are a fundamental tool for verifying and troubleshooting router configurations.</li><br/><li>The startup configuration file is stored on the device in NVRAM and is loaded into working memory and begins device operation.</li><br/><li>The running configuration is the set of commands that is currently active in the device RAM. </li><br/><li>IOS CLI can be used to configure basic router setting including router name, password, and banners. It can also be used to configure serial and ethernet interfaces, DHCP and NAT.</li></ul>]]></text>
+</component>
+
+  <component id="s5_ID_txt01">
+                  <text><![CDATA[<b>Switch>enable
+Switch#configure terminal 
+Switch(config)#interface vlan 1
+Switch(config-if)#ip address 192.168.1.2 255.255.255.0
+Switch(config-if)#exit
+Switch(config)#ip default-gateway 192.168.1.1
+Switch(config)#end
+Switch#copy running-config startup-config</b>]]></text> 
+  </component>
+
+<!--  Slide 6  -->
+
+<component id="ID_txt06">
+<text><![CDATA[<ul><li>The key components of a Cisco Catalyst 2960 Series Switch are:</li><br/><TEXTFORMAT BLOCKINDENT='20'><li>24 10/100 Ethernet Ports</li><li>Port Status LEDs</li><li>Mode button</li><li>Console port</li><li>Dual Purpose 10/100/1000 or SFP port</li><li>Cisco IOS LAN-based Software Image</li></TEXTFORMAT><br/><li>The 2960 supports port autonegotiation of duplex and speed.</li></ul>]]></text>
+</component>
+
+<!--  Slide 7  -->
+
+<component id="ID_txt07">
+<text><![CDATA[<ul><li>When configured with an IP address, interface VLAN 1 allows you to remotely manage the switch using SSH or other TCP/IP applications such as network management software.</li><br/><li>A basic switch configuration includes switch name and encrypted passwords used to access the switch and the Cisco CLI configuration commands.</li><li>Port security limits the number of valid MAC addresses allowed per port and can be configured statically, dynamically, or dynamic sticky.</li></ul>]]></text>
+</component>
+
+<!--  Slide 8  -->
+
+<component id="ID_txt08">
+<text><![CDATA[<ul><li>Network devices installed at the customer location are called customer premise equipment (CPE).</li><br/><li>When customer equipment is installed on the customer premises, it is important to document the entire process including all aspects of how the equipment is configured, diagrams of how the equipment is installed, and checklists to validate the correct installation.</li><br/><li>When at a customer premises site, keep in mind workplace culture and workplace safety requirements.</li></ul>]]></text>
+</component>
+
+  <component id="s8_ID_txt01">
+                  <text><![CDATA[<b>Ladder</b>]]></text> 
+  </component>
+  <component id="s8_ID_txt02">
+                  <text><![CDATA[<b>High or Dangerous Locations</b>]]></text> 
+  </component>
+  <component id="s8_ID_txt03">
+                  <text><![CDATA[<b>Electrical Equipment</b>]]></text> 
+  </component>
+  <component id="s8_ID_txt04">
+                  <text><![CDATA[<b>Heavy Equipment</b>]]></text> 
+  </component>
+
+<!--  Slide 9  -->
+
+<component id="ID_txt09">
+<text><![CDATA[<ul><li>A WAN connection is a type of network connection that can send a network signal over long distances.</li><br/><li>There are three types of serial WAN connections: point-to-point, circuit switched and packet switched. Choosing the correct WAN involves planning and consideration.</li><br/><li>Cisco devices can be configured remotely across a WAN connection using Telnet or SSH. SSH is the preferred method.</li><br/><li>Some WAN connections support Ethernet interfaces. Other WAN connections support serial interfaces.</li></li></ul>]]></text>
+</component>
+
+</textcomponents>

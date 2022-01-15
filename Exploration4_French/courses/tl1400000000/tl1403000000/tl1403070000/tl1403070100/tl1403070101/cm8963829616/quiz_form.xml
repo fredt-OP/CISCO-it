@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13390" dateexported="06/23/2008">
+		<name>Module 3 Questionnaire</name>
+		<form id="21434" lang="fr"><form-item order="fixed">
+			<ai id="138473" type="mc-sa"><question><![CDATA[Quel élément est utilisé pour identifier le chemin vers le commutateur relais de trame suivant dans un réseau Frame Relay ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Débit de données garanti (CIR) ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[DLCI  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[FECN ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Bit BECN ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140128" type="mc-sa"><question><![CDATA[Pourquoi les chemins de relais de trames (Frame Relay) sont-ils qualifiés de virtuels ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il n’existe aucune circuit dédié à la destination et en provenance du fournisseur de relais de trames. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les circuits PVC de relais de trames sont créés et supprimés à la demande. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les connexions entre les points d’extrémité des PVC agissent comme des circuits commutés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il n’existe aucun circuit dédié à l'intérieur du nuage de fournisseur de relais de trames.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140129" type="mc-sa"><question><![CDATA[Quelle affirmation décrit précisément le problème de découpage d’horizon dans le cadre d'une topologie multipoint ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le découpage d’horizon doit être désactivé pour tous les protocoles non IP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le découpage d’horizon crée des boucles de routage IP dans les domaines multipoints. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le découpage d’horizon ne s’applique pas aux diffusions et ne protège donc pas les protocoles qui utilisent les mises à jour de diffusion. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le découpage d’horizon empêche tout point d'accepter une mise à jour valide et de la transmettre à l'ensemble des autres points.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140130" type="mc-ma"><question><![CDATA[Quelles sont les deux raisons pour lesquelles le relais de trames est plus rentable que les lignes louées ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Multiplexage temporel. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Nécessite moins d’équipement.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routage de paquets optimisé. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Partage la bande passante entre un grand nombre de clients.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Adressage IP dynamique. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="89530" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="89530" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le DLCI est configuré dans le commutateur Frame Relay, mais l’autre extrémité du PVC doit être inactive.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le DLCI n’existe pas sur le routeur.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le DLCI est configuré sur le commutateur et est utilisable.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le DLCI n’existe pas sur le commutateur Frame Relay pour ce routeur.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le DLCI est configuré sur l’autre extrémité du circuit virtuel privé (PVC) pour ce routeur.</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Actif</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Inactif</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Supprimé</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Associez le statut d’un DLCI, affiché par la commande <b>show frame-relay pvc</b>, avec sa signification.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/></options><targets><display componentIdent="1" xpos="600" ypos="87.5"/><display componentIdent="2" xpos="600" ypos="139.5"/><display componentIdent="3" xpos="600" ypos="191.5"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="122407" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="122407" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="122407" action="Set">1</setvar><scoringdescription>Actif : Le DLCI est configuré sur le commutateur et est utilisable. Inactif : Le DLCI est configuré dans le commutateur Frame Relay, mais l’autre extrémité du PVC doit être inactive. Supprimé : Le DLCI n’existe pas sur le commutateur Frame Relay pour ce routeur.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140131" type="mc-sa"><question><![CDATA[Quel avantage de fiabilité le relais de trames présente-t-il par rapport aux lignes louées ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les circuits à accès de relais de trames sont des circuits d'une catégorie plus élevée que les lignes louées. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les chemins pour les circuits virtuels à l’intérieur de la porteuse sont maillés.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[De bout en bout, un circuit virtuel unique utilise un chemin fixe avec contrôle des erreurs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le relais de trames a recours à des méthodes de détection des erreurs plus sophistiquées. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138470" type="mc-sa"><question><![CDATA[Reportez-vous au schéma. Que contient le champ d’adresse d’une trame qui est transmise au bureau DC à partir du bureau d’Orlando ? <br/><img src="i138470n1v2.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Adresse MAC du routeur Orlando ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Adresse MAC du routeur DC ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.1.25 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.1.26 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Identificateur DLCI 100  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Identificateur DLCI 200 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140132" type="mc-sa"><question><![CDATA[Dans quelle situation une topologie multipoint est-elle plus appropriée qu’une topologie point à point ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Lorsque VLSM ne peut pas être utilisé pour conserver les adresses  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Lors de l’utilisation de protocoles de routage autres que les protocoles de routage IP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Lors de l’utilisation d'une topologie à maillage de relais de trames pour enregistrer les circuits à accès ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Lors de l’utilisation d’un protocole de routage qui nécessite des mises à jour de diffusion ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140133" type="mc-sa"><question><![CDATA[Quel avantage présente la configuration de sous-interfaces dans un environnement de relais de trames ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Rend les identificateurs DLCI significatifs globalement. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Élimine tout recours au protocole de résolution d’adresse (ARP) inverse. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Diminue les problèmes de découpage d’horizon.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Améliore le contrôle de flux et l’utilisation de la bande passante. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="89462" type="mc-sa"><question><![CDATA[Quel protocole assure la correction des erreurs pour les données transmises sur un lien Frame Relay ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[FECN ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[FTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LMI ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[TCP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[UDP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140135" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140135" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>show interface</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>show frame-relay lmi</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>show frame-relay pvc</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>show frame-relay map</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>debug frame-relay lmi</b></mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Affiche l’état du circuit virtuel et les statistiques FECN/BECN.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Détermine si le routeur et le commutateur de relais de trames envoient et reçoivent correctement des paquets LMI. </mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Vérifie l’encapsulation, le type LMI, le DLCI LMI et l’état LMI.</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Vérifie les statistiques LMI.</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Vérifie l’adresse IP associée à un identificateur DLCI.</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque commande de gauche sur la description correspondante de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /><display componentIdent="5" xpos="200" ypos="395" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /><display componentIdent="5" xpos="600" ypos="343" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214529" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="214529" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="214529" action="Set">1</setvar><scoringdescription>show interface		Vérifie l’encapsulation, le type LMI, le DLCI LMI, l’état LMI. show frame-relay lmi	Vérifie les statistiques LMI. show frame-relay pvc	Vérifie l’affichage de l’état du circuit virtuel et les statistiques FECN/BECN. show frame-relay map	Vérifie l’adresse IP associée à un identificateur DLCI. debug frame-relay lmi	Détermine si le routeur et le commutateur de relais de trames envoient et reçoivent correctement des paquets LMI.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="70597" type="mc-sa"><question><![CDATA[Quel type de débit un fournisseur d'accès utilise-t-il pour garantir le transfert de données dans un réseau Frame Relay ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Débit en bauds ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Débit de synchronisation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Débit de transfert de données ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Débit de données garanti  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="70598" type="mc-sa"><question><![CDATA[Comment les numéros d'identificateur DLCI sont-ils attribués ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Par un serveur DLCI. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Arbitrairement par l'utilisateur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Par le fournisseur d'accès.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sur la base de l'adresse IP hôte. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="70600" type="mc-sa"><question><![CDATA[Un routeur peut atteindre plusieurs réseaux via une interface Frame Relay. Comment connaît-il l'identificateur DLCI à attribuer à l'adresse IP du réseau de destination ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Il consulte la carte Frame Relay.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il consulte la table de routage pour rechercher l'identificateur DLCI. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il utilise les tables de commutation Frame Relay pour mapper les identificateurs DLCI sur des adresses IP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il utilise le protocole RARP pour rechercher l'adresse IP de l'identificateur DLCI correspondant. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140134" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140134" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le débit de données garanti (CIR)</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Un bit DE</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Un bit FECN</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Un bit BECN</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Un bit qui marque la trame à abandonner en cas d’encombrement</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Un bit défini sur chaque trame qu’un commutateur reçoit sur une liaison encombrée</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Fréquence à laquelle le fournisseur de services accepte les bits sur le circuit virtuel</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Un bit défini sur chaque trame qu’un commutateur place sur une liaison encombrée </mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque terme de gauche sur la définition correspondante de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214523" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="214523" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="214523" action="Set">1</setvar><scoringdescription>Le débit de données garanti (CIR) 		Fréquence à laquelle le fournisseur de services accepte les bits sur le circuit virtuel Un bit DE		Un bit qui, une fois défini sur une trame, marque la trame à abandonner en cas d’encombrement.   Un bit FECN		Un bit défini sur chaque trame qu’un commutateur reçoit sur une liaison encombrée Un bit BECN		Un bit défini sur chaque trame qu’un commutateur place sur une liaison encombrée</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

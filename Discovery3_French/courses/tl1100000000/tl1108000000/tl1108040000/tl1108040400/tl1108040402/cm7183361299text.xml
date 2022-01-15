@@ -1,0 +1,124 @@
+﻿<textcomponents>
+	<component id="ID_activity">
+		<text><![CDATA[<B><font size='+2'>Exercice</font></B><br><br>Créez une liste de contrôle d’accès étendue en fonction des spécifications et de la topologie du réseau indiquées. Tous les éléments ne seront pas utilisés.<br><br><b>Classez les éléments de l’instruction de la liste de contrôle d’accès en les faisant glisser, en tenant compte des spécifications et de la topologie du réseau indiquées.</b>]]></text>
+	</component>
+	<component id="ID_activityInstructions">
+		<text><![CDATA[Créez l’instruction de liste de contrôle d’accès étendue numérotée qui accordera uniquement aux utilisateurs du réseau 10.1.1.0/24 un accès HTTP au serveur Web sur le réseau 192.168.1.0. La liste de contrôle d’accès est appliquée à l’interface S0/0/0 de R2 en sortie.]]></text>
+	</component>
+	<component id="ID_instructions">
+		<text><![CDATA[]]></text>
+	</component>
+	
+	<component id="ID_Text01">
+		<text><![CDATA[<br>Serveur Web<br>192.168.1.84]]></text>
+	</component>
+	<component id="ID_Text02">
+		<text><![CDATA[192.168.1.0/24]]></text>
+	</component>
+	<component id="ID_Text03">
+		<text><![CDATA[Fa0/0]]></text>
+	</component>
+	<component id="ID_Text04">
+		<text><![CDATA[R1]]></text>
+	</component>
+	<component id="ID_Text05">
+		<text><![CDATA[S0/0/0]]></text>
+	</component>
+	<component id="ID_Text06">
+		<text><![CDATA[S0/0/0]]></text>
+	</component>
+	<component id="ID_Text07">
+		<text><![CDATA[10.1.1.0/24]]></text>
+	</component>
+	<component id="ID_Text08">
+		<text><![CDATA[Fa0/0]]></text>
+	</component>
+	<component id="ID_Text09">
+		<text><![CDATA[R2]]></text>
+	</component>
+	<component id="ID_Text10">
+		<text><![CDATA[Fa0/1]]></text>
+	</component>
+	<component id="ID_Text11">
+		<text><![CDATA[10.1.2.0/24]]></text>
+	</component>
+	<component id="ID_Text12">
+		<text><![CDATA[SOR]]></text>
+	</component>	
+	
+	<component id="ID_check">
+		<text><![CDATA[<b>Vérifier</b>]]></text>
+	</component>
+	<component id="ID_reset">
+		<text><![CDATA[<b>Réinitialiser</b>]]></text>
+	</component>
+	
+	<component id="ID_circuit">
+		<text><![CDATA[99]]></text>
+	</component>
+	<component id="ID_block">
+		<text><![CDATA[ip]]></text>
+	</component>
+	<component id="ID_csu">
+		<text><![CDATA[any]]></text>
+	</component>
+	<component id="ID_dmzrouter">
+		<text><![CDATA[udp]]></text>
+	</component>
+	<component id="ID_dmzswitch">
+		<text><![CDATA[eq 80]]></text>
+	</component>
+	<component id="ID_extra">
+		<text><![CDATA[0.0.255.255]]></text>
+	</component>
+	<component id="ID_extra2">
+		<text><![CDATA[access-list]]></text>
+	</component>
+	<component id="ID_extra3">
+		<text><![CDATA[192.168.1.0]]></text>
+	</component>
+	<component id="ID_extra4">
+		<text><![CDATA[deny]]></text>
+	</component>
+	<component id="ID_extra5">
+		<text><![CDATA[tcp]]></text>
+	</component>
+	<component id="ID_extra6">
+		<text><![CDATA[0.0.0.255]]></text>
+	</component>
+	<component id="ID_extra7">
+		<text><![CDATA[eq 21]]></text>
+	</component>
+	<component id="ID_extra8">
+		<text><![CDATA[10.1.2.0]]></text>
+	</component>
+	<component id="ID_extra9">
+		<text><![CDATA[192.168.1.84]]></text>
+	</component>
+	<component id="ID_extra10">
+		<text><![CDATA[10.1.1.0]]></text>
+	</component>
+	<component id="ID_extra11">
+		<text><![CDATA[permit]]></text>
+	</component>
+	<component id="ID_extra12">
+		<text><![CDATA[Host]]></text>
+	</component>
+	<component id="ID_extra13">
+		<text><![CDATA[101]]></text>
+	</component>
+	
+	<component id="ID_incorrectTitle">
+		<text><![CDATA[<b>Incorrect</b>]]></text>
+	</component>
+	<component id="ID_incorrect">
+		<text><![CDATA[Séquence incorrecte. Revoyez l’ordre des éléments et réessayez.]]></text>
+	</component>
+	<component id="ID_correctTitle">
+		<text><![CDATA[<B>Correct</B>]]></text>
+	</component>
+	<component id="ID_correct">
+		<text><![CDATA[Vous avez placé les éléments dans le bon ordre. Cliquez sur Suivant pour continuer.]]></text>
+	</component>
+
+</textcomponents>

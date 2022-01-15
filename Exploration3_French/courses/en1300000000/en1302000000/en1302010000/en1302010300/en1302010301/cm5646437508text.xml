@@ -1,0 +1,43 @@
+﻿<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Controlling Network Latency</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Removing Network Bottlenecks</B>]]></text> 
+</component>
+
+
+
+
+
+<component id="ID_txt01_02">
+<text><![CDATA[<b>Server with one 1000 Mb/s NIC</b>]]></text>
+</component>
+<component id="ID_txt02_02">
+  <text><![CDATA[<b>Server with five 1000 Mb/s NICs</b>]]></text> 
+  </component>
+<component id="ID_txt03_02">
+  <text><![CDATA[<b>NIC Bandwidth of 167 Mb/s per computer</b>]]></text> 
+  </component>
+<component id="ID_txt04_02">
+  <text><![CDATA[<b>NIC Bandwidth of 833 Mb/s per computer </b>]]></text> 
+  </component>
+
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><B>Controlling Network Latency</B></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>- Consider the latency caused by each device on the network.</B><ul><li>A core level switch supporting 48 ports, running at 1000 Mb/s full duplex requires 96 Gb/s internal throughput if it is to maintain full wirespeed across all ports simultaneously.</li></ul><br><B>- Higher OSI layer devices can also increase latency on a network.</B><ul><li>A router must strip away the Layer 2 fields in a frame in order to interpret layer 3 addressing information. The extra processing time causes latency.</li><li>Balance the use of higher layer devices to reduce network latency with the need to prevent contention from broadcast traffic or the high collision rates.
+</li></ul></td>
+  </tr>
+</table>]]></text>
+</component>
+
+
+
+
+
+</textcomponents>

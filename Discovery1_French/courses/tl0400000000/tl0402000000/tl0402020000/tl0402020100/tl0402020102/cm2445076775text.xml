@@ -1,0 +1,104 @@
+﻿<textcomponents>
+
+<!-- -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Pendant cet exercice, vous devez déterminer la technique d’installation de système d’exploitation à utiliser pour un scénario donné.<br/><br/><b>En fonction du scénario, sélectionnez le type d’installation de système d’exploitation qui convient le mieux.</b>]]></text>
+</component>
+
+<!-- -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[5]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Mise à niveau</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Installation complète</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Amorçage double</b>]]></text>
+</component>
+
+<component id="txt_col4">
+	<text><![CDATA[<b>Virtualisation</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit--> <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Nephi a acheté un ordinateur à un de ses amis et veut s’assurer que tous les anciens fichiers et programmes d’application sont supprimés du système.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Caroline vient d’acheter la toute dernière version du système d’exploitation installé sur son ordinateur familial.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Nigel a décidé qu’il voulait essayer le système d’exploitation Linux. Pour l’instant, Windows XP est installé sur son ordinateur.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Ingrid a un ordinateur portable ancien qui exécute Linux. Elle aimerait pouvoir installer Windows XP sur son portable, mais a besoin de Linux pour faire son travail au quotidien.</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='13'>Preeti vient d’être embauchée par une société pour effectuer le contrôle qualité d’une application de base de données. Les versions Windows et Linux de l’application sont toutes les deux disponibles, et elle doit tester simultanément les deux versions. Pour faire ce travail, Preeti a acheté un système informatique haut de gamme.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0--> <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Vous avez correctement identifié toutes les méthodes d’installation requises. Cliquez sur Suivant pour continuer.  ]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect. Revoyez les caractéristiques de chacune des méthodes d’installation et réessayez.]]></text>
+</component>
+
+</textcomponents>

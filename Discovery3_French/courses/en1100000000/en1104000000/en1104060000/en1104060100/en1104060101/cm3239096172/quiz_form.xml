@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/18/2007">
+		<name>Module  Quiz</name>
+		<form id="19842" lang=""><form-item order="fixed">
+			<ai id="121121" type="mc-sa"><question><![CDATA[What is the best route summarization for the following list of networks?<br/><br/>209.48.200.0<br/>209.48.201.0<br/>209.48.202.0<br/>209.48.203.0  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[209.48.200.0/20 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[209.48.200.0/22  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[209.48.201.0/20 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[209.48.201.0/21 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="51660" type="mc-sa"><question><![CDATA[Given a host with the IP address 172.32.65.13 and a default subnet mask, to which network does the host belong?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[172.32.65.0 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.32.65.32 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[172.32.0.0  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.32.32.0 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="51721" type="mc-sa"><question><![CDATA[A Class C network address has been subnetted into eight subnetworks.  Using VLSM, the last subnet will be divided into eight smaller subnetworks.  What bit mask must be used to create eight smaller subnetworks, each having two usable host addresses?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[/26 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[/27 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[/28 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[/29 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[/30  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[/31 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="86649" type="mc-sa"><question><![CDATA[Which address is a valid subnet if a 26 bit mask is used for subnetting?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[172.16.43.16 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.128.32 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[172.16.243.64  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.157.96 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.47.224 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.192.252 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="90828" type="mc-sa"><question><![CDATA[Refer to the exhibit. A network technician is trying to determine the correct IP address configuration for Host A.  What is a valid configuration for Host A? <br/><img src="9273.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[IP address:  192.168.100.19; Subnet Mask:  255.255.255.248;  Default Gateway:  192.16.1.2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[IP address:  192.168.100.20;  Subnet Mask:  255.255.255.240;  Default Gateway:  192.168.100.17  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[IP address:  192.168.100.21;  Subnet Mask:  255.255.255.248;  Default Gateway:  192.168.100.18 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[IP address:  192.168.100.22;  Subnet Mask:  255.255.255.240;  Default Gateway:  10.1.1.5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[IP address:  192.168.100.30;  Subnet Mask:  255.255.255.240;  Default Gateway:  192.168.1.1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[IP address:  192.168.100.31;  Subnet Mask:  255.255.255.240;  Default Gateway:  192.168.100.18 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="49718" type="mc-sa"><question><![CDATA[What is true regarding the differences between NAT and PAT?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[PAT uses the word "overload" at the end of the access-list statement to share a single registered address. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Static NAT allows an unregistered address to map to multiple registered addresses. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Dynamic NAT allows hosts to receive the same global address each time external access is required. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[PAT uses unique source port numbers to distinguish between translations.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="85445" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="85445" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>provides one-to-one fixed mappings of local and global addresses</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>assigns the translated addresses of IP hosts from a pool of public addresses</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>can map multiple addresses to a single address of the external interface</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>assigns unique source port numbers of an inside global address on a session-by-session basis</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>allows external hosts to establish sessions with an internal host</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>defines translations on a host-to-host basis</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Dynamic NAT</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>NAT with Overload</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Static NAT</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Match each characteristic on the left to the corresponding NAT technique on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="15" yspacing="75" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="2" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="214.5" containsTargets="2" startTarg="3" labelStyle="1"/><display componentIdent="3" xpos="600" ypos="343.5" containsTargets="2" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="152"/><display componentIdent="3" xpos="600" ypos="229"/><display componentIdent="4" xpos="600" ypos="281"/><display componentIdent="5" xpos="600" ypos="358"/><display componentIdent="6" xpos="600" ypos="410"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident ="2"><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="3"><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="111913" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="111913" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="111913" action="Set">1</setvar><scoringdescription>1 – static 2 – dynamic 3 – overload 4 – overload 5 – static 6 – dynamic </scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119560" type="mc-sa"><question><![CDATA[Refer to the exhibit.  Which address is an inside global address? <br/><img src="16925.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[10.10.20.1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.10.20.5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.10.30.1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[209.13.24.3  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120813" type="mc-sa"><question><![CDATA[Refer to the exhibit.  The command <b>show ip nat translations</b> has been issued.  Which type of NAT translation is being performed? <br/><img src="16916.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[NAT static configuration ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT simple configuration ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[NAT overloading configuration  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT overlapping configuration ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121094" type="mc-sa"><question><![CDATA[What is the purpose of a subnet mask in a network?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[A subnet mask is necessary when a default gateway is not specified. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A subnet mask is required only when bits are borrowed on a network. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[A subnet mask is used to identify the network portion of IP address.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A subnet mask is used to separate the 48-bit address into the OUI and the vendor serial number.  ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121095" type="mc-sa"><question><![CDATA[How many addresses will be available for dynamic NAT translation when a router is configured with the following commands? <br/><br/> Router(config)#<b> ip nat pool TAME 10.186.2.24 10.186.2.30 netmask 255.255.255.224 </b><br/> Router(config)# <b>ip nat inside source list 9 pool TAME </b>  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[7  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[8 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[9 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10 ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

@@ -1,0 +1,92 @@
+﻿<textcomponents>
+
+<!-- instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Déterminez si l’ordinateur joue le rôle de serveur, de client ou les deux, pour chaque scénario donné.<br/><br/><b>Cliquez sur le rôle correspondant (client, serveur ou les deux).</b>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Client</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Serveur</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Les deux</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit--> <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Trishna se connecte à Internet et télécharge un fichier à partir d’un site à l’aide d’un protocole appelé protocole FTP. L’ordinateur de Trishna a-t-il le rôle du client, du serveur ou des deux ?</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Juan se connecte à un site Web de formation en ligne pour approfondir ses connaissances sur les réseaux. L’ordinateur de Juan a-t-il le rôle du client, du serveur ou des deux ?</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Noriko a un ordinateur dédié servant à partager ses fichiers. Carlos télécharge un dossier de l’ordinateur de Noriko. L’ordinateur de Noriko a-t-il le rôle du client, du serveur ou des deux ?</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Patti a un jeu vidéo chargé sur son ordinateur. Donald a le même jeu vidéo chargé sur son ordinateur. Ils jouent l’un contre l’autre sur le réseau. L’ordinateur de Donald a-t-il le rôle du client, du serveur ou des deux ?</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0--> <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Correct, vous avez bien identifié le rôle de tous les ordinateurs. Cliquez sur Suivant pour continuer.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Souvenez-vous, un serveur est un ordinateur doté d’un logiciel serveur et qui offre des services, tel le stockage de fichiers ou de courriels. Un client est un ordinateur doté d’un logiciel client qui utilise les services fournis par un serveur sur le réseau. Un périphérique qui offre des services et qui en utilise en même temps est à la fois un client et un serveur.]]></text>
+</component>
+
+</textcomponents>

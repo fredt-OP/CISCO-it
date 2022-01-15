@@ -1,0 +1,28 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>SNMP, NTP, and DNS Vulnerabilities</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width="150" bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Protocol</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Vulnerability</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>SNMP</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Versions 1 and 2 pass management information and community strings (passwords) in clear text</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>NTP</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>NTP leaves listening ports open and vulnerable</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DNS</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Can help attackers connect IP addresses to domain names</td>
+	</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

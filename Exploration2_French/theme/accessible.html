@@ -1,0 +1,109 @@
+<html>
+<head>
+<meta http-equiv=content-type content="text/html; charset=UTF-8">
+<script type="text/javascript" src="theme/hybrid/js/utils/launchpage.js"></script>
+<script type="text/javascript" src="theme/hybrid/js/utils/mootools-release-1.11.js"></script>
+<link rel="stylesheet" type="text/css" href="theme/hybrid/theme_onepage/css/reset-fonts.css">
+<link rel="stylesheet" type="text/css" href="theme/hybrid/theme_onepage/css/launchpage.css"/>
+		<script>
+cid = "0400000000";
+lang1 = "en";
+lang2 = "tl";
+ch = "intro";
+allowtranscript = true;
+isarabic = false;
+
+is508 = true;
+
+			if (isarabic) {
+				document.write('<link rel="stylesheet" type="text/css" href="theme/hybrid/theme_onepage/css/rtl_launchpage.css"/>');
+				dir = "direction=rtl&";
+			} else {
+				dir = "";
+			}
+			url = new String(window.location);
+			url = url.substring(0,url.indexOf("?direction"));
+			if (url.indexOf("accessible.html?") > -1) {
+				cid = url.substring(url.indexOf("cid=")+4,url.indexOf("&l1"));
+				lang1 = url.substring(url.indexOf("l1=")+3,url.indexOf("&l2"));
+				lang2 = url.substring(url.indexOf("l2=")+3,url.indexOf("&chapter"));
+			}
+			if (url.indexOf("accessible.html") > -1) {
+				url = url.substring(0,url.indexOf("accessible.html"));
+			} else if (url.indexOf("index.html") > -1) {
+				url = url.substring(0,url.indexOf("index.html"));
+			}
+			url = url+"accessible.html?cid="+cid+"&l1="+lang1+"&l2="+lang2+"&chapter="+ch;
+
+			function startCourse() {
+				//css = window.document.forms[0].style.value;
+				css = "blackonwhite";
+				var courselevel = $E('select[id=level]').value;
+				if ($E('select[id=media]')) {
+					var mediadisplay = $E('select[id=media]').value;
+				} else {
+					var mediadisplay = "visual";
+				}
+				var newurl = url.replace(/accessible\.html\?/, "theme/hybrid/theme_onepage/main.html?level="+courselevel+"&css="+css+".css&mediapres="+mediadisplay+"&"+dir);
+				window.location = newurl;
+			}
+
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			function initLaunchPage() {
+				loadLaunchpage("courses/"+lang1+""+cid+"/launch.text.xml");
+				setUserguide();
+			}
+
+			function setUserguide() {
+				var link = $E('a[id=userguide]');
+				link.href = "theme/"+lang1+"/accessible_uguide.html";
+			}
+
+		</script>
+	</head>
+	<!-- NOTE: All text is in external xml and is written in from launchpage.js -->
+	<body onLoad="initLaunchPage();">
+		<center>
+			<small><a href="#" target="_blank" name="userguide" id="userguide"></a></small>
+			<br>
+			<br>
+			<br>
+			<div id="titlediv" class="titlediv"></div><br>
+			<div id="subtitlediv" class="subtitlediv"></div><br>
+			<form name="level" id="level">
+				<h3><label for="level" id="level"></label></h3>
+				<select name="level" size="4" id="level">
+					<option name="chapter" value="chapter" selected>..........................................................</option> 
+					<option name="section" value="section"></option> 
+					<option name="topic" value="topic"></option> 
+					<option name="page" value="page"></option> 
+				</select>
+			</form>
+			<form name="media" id="media">
+				<br><br>
+				<h3><label for="media" id="media">foobar</label></h3>
+				<select name="media" size="3" id="media">
+					<option name="transfull" value="transbrief" selected>..........................................................</option> 
+					<option name="visual" value="visual"></option> 
+					<option name="choice" value="choice"></option> 
+				</select>
+			</form>
+			<form name="btn" id="btn">
+				<br><br>
+				<input type="button" name="startbtn" id="startbtn" value="" OnClick="startCourse();"/>
+			</form>
+			<br><br><br>
+			<div id="copyright" class="copyright"></div>
+		</center>
+	</body>
+</html>

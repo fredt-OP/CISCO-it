@@ -1,0 +1,68 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>BPDU Timers</b>]]></text>
+</component>
+
+<component id="btn1">
+  <text><![CDATA[BPDU timers]]></text> 
+</component>
+<component id="btn2">
+  <text><![CDATA[Roles and Timers]]></text> 
+</component>
+
+<component id="btn3">
+  <text><![CDATA[Configure Network Diameter]]></text> 
+</component>
+
+
+
+<!-- Slide 1 -->
+
+<component id="ID_txt02">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td colspan="2" valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>   </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td width="100" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b> Hello time</b></td>
+        <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>The hello time is the time between each BPDU frame that is sent on a port. <br />This is equal to 2 seconds by default, but can be tuned to be between 1 and 10 seconds. </td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td width="100" valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Forward delay</b></td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>The forward delay is the time spent in the listening and learning state. <br />This is by default equal to 15 seconds for each state, but can be tuned to be between 4 and 30 seconds. </td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td width="100" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Maximum age</b></td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>The max age timer controls the maximum length of time a switch port saves configuration BPDU information. <br />This is 20 seconds by default, but can be tuned to be between 6 and 40 seconds. </td>
+  </tr>
+</table>]]></text> 
+  </component>
+  
+  
+<!-- Slide 2 -->
+  
+<component id="ID_txt03">
+  <text><![CDATA[<b>Blocking</b><br/>(loss of BPDU detected)<br/>(max age = 20 sec)]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b>Listening</b><br/>(forward delay = 15 sec)]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b>Learning</b><br/>(forward delay = 15 sec)]]></text> 
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[<b>Forwarding</b>]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[<b>Blocking</b><br/>(moves to listening after it decides if it is a root port or a designated port)]]></text> 
+  </component>
+    <component id="ID_txt08">
+  <text><![CDATA[Link comes up]]></text> 
+  </component>
+  
+  
+  
+  
+  
+  
+</textcomponents>

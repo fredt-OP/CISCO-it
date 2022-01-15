@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<component id="Button1">
+<text><![CDATA[<b>Informations requises</b>]]></text>
+</component>
+<component id="Button2">
+<text><![CDATA[<b>Possibilité de résultats incorrects si je ne possède pas les connaissances requises</b>]]></text>
+</component>
+<component id="Button3">
+<text><![CDATA[<b>Symptômes possibles des problèmes</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Déplacez le pointeur de la souris sur chaque zone d’analyse à considérer lors de l’étude du protocole de routage RIP.</b>]]></text>
+</component>
+
+<component id="ID_header">
+<text><![CDATA[Tâche : configuration de RIPv2 pour acheminer le trafic réseau]]></text>
+</component>
+
+<component id="Title1">
+<text><![CDATA[<b>Informations requises :</b>]]></text>
+</component>
+<component id="Table1">
+<text><![CDATA[<font size="11">&#8226;  <textformat blockindent='11'>Étapes de la configuration du routage RIPv2<br/>1. <textformat blockindent='25'>Connexion au routeur</textformat><br/>2. <textformat blockindent='25'>Accès au mode d’exécution privilégié</textformat><br/>3. <textformat blockindent='25'>Accès au mode de configuration</textformat><br/>4. <textformat blockindent='25'>Activation du protocole RIP</textformat><br/>5. <textformat blockindent='25'>Activation de la version 2</textformat><br/>6. <textformat blockindent='25'>Configuration d’une instruction network pour chaque réseau connecté qui participe au protocole RIP</textformat></textformat><br/>&#8226;  <textformat blockindent='11'>Commandes Cisco IOS d’activation du routage RIPv2<br/>1. <textformat blockindent='25'>Config t</textformat><br/>2. <textformat blockindent='25'>Router rip</textformat><br/>3.<textformat blockindent='25'> Version 2</textformat><br/>4. <textformat blockindent='25'>Network [adresse]</textformat><br/>5. <textformat blockindent='25'>Copy running-config startup-config</textformat></textformat><br/>&#8226;  <textformat blockindent='11'>Adresses réseau de chaque réseau connecté</textformat><br/>&#8226;  <textformat blockindent='11'>Méthodes de vérification de la configuration et du fonctionnement de RIPv2<br/>1. <textformat blockindent='25'>Utilisation de la commande show running-configuration</textformat><br/>2. <textformat blockindent='25'>Utilisation de la commande show ip route</textformat><br/>3. <textformat blockindent='25'>Envoi d’une requête ping depuis un ordinateur hôte vers une adresse IP distante d’un autre réseau</textformat><br/>4. <textformat blockindent='25'>Envoi d’une requête trace route à une adresse IP distante</textformat><br/>5. <textformat blockindent='25'>Utilisation de la commande debug pour vérifier l’envoi et la réception des mises à jour de routage RIPv2</textformat></textformat></font>]]></text>
+</component>
+
+<component id="Title2">
+<text><![CDATA[<b>Résultats incorrects possibles :</b>]]></text>
+</component>
+<component id="Table2">
+<text><![CDATA[<font size="12"><textformat blockindent='-15'><ul><li>Je ne peux pas passer en mode configuration pour lancer le processus de configuration.</li><li>J’ai oublié de définir l’utilisation de la version 2 ou d’ajouter les instructions network.</li><li>Je n’ai pas configuré tous les réseaux.</li><li>J’ai renseigné une adresse IP incorrecte.</li><li>Je ne peux pas vérifier le fonctionnement de RIPv2.</li></ul></textformat></font>]]></text>
+</component>
+
+<component id="Title3">
+<text><![CDATA[<b>Symptômes possibles des problèmes :</b>]]></text>
+</component>
+<component id="Table3">
+<text><![CDATA[<font size="12"><textformat blockindent='-15'><ul><li>Impossible d’envoyer une requête ping des hôtes vers d’autres réseaux.</li><li>Impossible d’exécuter la commande traceroute sur le routeur.</li><li>Aucune route n’apparaît dans la table de routage du routeur.</li></ul></textformat></font>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<!-- instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Activity</b></font><br/><br/>Classify each scenario as either a WPAN, WLAN or WWAN.<br/><br/><b>Select the type of network implementation for each scenario.</b>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[6]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>WPAN</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>WLAN</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>WWAN</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Charlene uses the IrDA port to connect her PDA to her laptop to upload files.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Natasha calls her friend Carlos on her cell phone.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Trishna uses her laptop computer at a wireless HotSpot to check her email.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Burt uses a wireless Bluetooth headset to listen to music from his MP3 player.</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='13'>Jim connects to the wireless network at his school to do research on a new technology.</textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='13'>Ron uses his cell phone to view a web page on the Internet.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[You have answered all the questions correctly. Click Next to continue.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect, please review the questions and then try again.]]></text>
+</component>
+
+</textcomponents>

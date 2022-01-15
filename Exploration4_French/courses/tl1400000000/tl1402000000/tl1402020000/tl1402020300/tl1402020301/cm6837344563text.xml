@@ -1,0 +1,56 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Champs de trame PPP</b>]]></text>
+</component>
+
+<component id="ID2_txt01">
+<text><![CDATA[<b>Longueur de champ en octets</b>]]></text>
+</component>
+<component id="ID2_txt02">
+<text><![CDATA[<b>Variable</b>]]></text>
+</component>
+<component id="ID2_txt03">
+<text><![CDATA[<b>2 ou 4</b>]]></text>
+</component>
+<component id="ID2_txt04">
+<text><![CDATA[<font size="-1"><b>Indicateur</b></font>]]></text>
+</component>
+<component id="ID2_txt05">
+<text><![CDATA[<font size="-1"><b>Adresse</b></font>]]></text>
+</component>
+<component id="ID2_txt06">
+<text><![CDATA[<font size="-1"><b>Contrôle</b></font>]]></text>
+</component>
+<component id="ID2_txt07">
+<text><![CDATA[<font size="-1"><b>Protocole</b></font>]]></text>
+</component>
+<component id="ID2_txt08">
+<text><![CDATA[<font size="-1"><b>Données</b></font>]]></text>
+</component>
+<component id="ID2_txt09">
+<text><![CDATA[<font size="-1"><b>FCS</b></font>]]></text>
+</component>
+<component id="ID2_txt15">
+<text><![CDATA[<b>Indique le début ou la fin d’une trame et comprend la séquence binaire 01111110 identifiant une trame PPP. La valeur est définie sur 0x7E (séquence de bits 011111110) pour indiquer le début et la fin d’une trame PPP. Dans des trames PPP successives, seul un caractère d’indicateur est utilisé.</b>]]></text>
+</component>
+<component id="ID2_txt16">
+<text><![CDATA[<b>Comprend l’adresse de diffusion standard composée de la séquence binaire 11111111. Le protocole PPP n’attribue pas d’adresse de station individuelle.</b>]]></text>
+</component>
+<component id="ID2_txt17">
+<text><![CDATA[<b>Comprend un octet composé de la séquence binaire 00000011, qui appelle la transmission des données utilisateur d’une trame non séquencée. Cela fournit un service de liaison sans connexion qui ne requiert pas de liaison de données ou de station de liaison. Dans des environnements HDLC, le champ d’adresse est utilisé pour acheminer la trame vers le nœud de destination. Sur une liaison point à point, il n’est pas nécessaire de spécifier l’adresse du nœud de destination. Ainsi, pour le protocole PPP, le champ d’adresse est défini sur 0xFF, l’adresse de diffusion. Si les deux homologues PPP acceptent d’effectuer la compression des champs d’adresse et de contrôle lors de la négociation LCP, le champ d’adresse n’est pas inclus.</b>]]></text>
+</component>
+<component id="ID2_txt18">
+<text><![CDATA[<b>Comprend deux octets qui identifient le protocole encapsulé dans le champ de données de la trame. Le champ d’ID de protocole à 2 octets identifie le protocole des données utiles PPP. Si les deux homologues PPP acceptent d’effectuer la compression du champ de protocole lors de la négociation LCP, le champ d’ID de protocole comporte 1 octet pour les ID de protocole dans la plage 0x00-00 à 0x00-FF.</b>]]></text>
+</component>
+<component id="ID2_txt19">
+<text><![CDATA[<b>Comprend zéro ou plusieurs octets contenant le datagramme du protocole précisé dans le champ de protocole. Les deux octets du champ de séquence de contrôle de trame (FCS) suivis de l’indicateur de fermeture, indiquent la fin du champ de données. La longueur maximale par défaut du champ de données est de 1 500 octets.</b>]]></text>
+</component>
+<component id="ID2_txt20">
+<text><![CDATA[<b>Somme de contrôle à 16 octets utilisée pour contrôler les erreurs au niveau du bit dans la trame PPP. Si le calcul du récepteur de la séquence de contrôle de trame (FCS) ne correspond pas à la séquence de contrôle de trame de la trame PPP, cette dernière est ignorée en silence.  En vertu d’un accord préalable, les implémentations PPP adoptées peuvent utiliser une séquence de contrôle de trame de 32 bits (4 octets) pour une détection améliorée des erreurs.</b>]]></text>
+</component>
+<component id="ID_caption">
+<text><![CDATA[<b>Placez le pointeur sur chaque champ de paquet LCP pour voir les descriptions correspondantes.</b>]]></text>
+</component>
+
+</textcomponents>

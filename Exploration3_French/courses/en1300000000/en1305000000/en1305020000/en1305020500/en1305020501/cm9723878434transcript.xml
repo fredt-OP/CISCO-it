@@ -1,0 +1,5 @@
+<transcript lastedited="11.05.08 18:11:20">
+<title><content-text><![CDATA[5.2.5  - STP Port States and BPDU Timers]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts various switch port processes and how they are handled by the five STP port states.<br><br>Process: Receive and process BPDU's<br>Blocking = YES (But return to blocking if not the lowest cost path to the root bridge.)<br>Listening = YES<br>Learning = YES<br>Forwarding = YES<br>Disable = NO<br><br>Process: Forward data frames received on the interface<br>Blocking = NO<br>Listening = NO<br>Learning = NO<br>Forwarding = YES<br>Disable = NO<br><br>Process: Forward data frames switched from another interface<br>Blocking = NO<br>Listening = NO<br>Learning = NO<br>Forwarding = YES<br>Disable = NO<br><br>Process: Learn MAC addresses<br>Blocking = NO<br>Listening = NO<br>Learning = YES<br>Forwarding = YES<br>Disable = NO]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

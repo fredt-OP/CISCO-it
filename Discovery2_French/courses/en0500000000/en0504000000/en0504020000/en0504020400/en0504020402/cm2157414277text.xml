@@ -1,0 +1,144 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>1 public IP Address<br/>209.165.202.129</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Outside</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Gateway</b>]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[<b>Inside</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>40 Private network users</b>]]></text>
+</component>
+<component id="ID_txt08">
+<text><![CDATA[<b>ISP</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+	<text><![CDATA[<b>Request</b>]]></text>
+</component>
+<component id="ID_txt10">
+	<text><![CDATA[<b>Source</b>]]></text>
+</component>
+<component id="ID_txt11">
+	<text><![CDATA[<b>Destination</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+	<text><![CDATA[<b>Inside Local</b>]]></text>
+</component>
+<component id="ID_txt15">
+	<text><![CDATA[<b>Outside Local</b>]]></text>
+</component>
+<component id="ID_txt16">
+<text><![CDATA[<b>The TCP process in the user PC attaches a port number to its source IP address to be included in the outbound request. The destination is a web server, and the destination address has well-known port 80 attached.</b>]]></text>
+</component>
+<component id="ID_txt17">
+<text><![CDATA[<b>The gateway router receives the request and translates the source IP address to the one available public IP address. It then picks an available port number from the available ports (any port greater than 1024) and binds it to the public IP address before forwarding the packet.</b>]]></text>
+</component>
+<component id="ID_txt18">
+	<text><![CDATA[<b>Translated Request</b>]]></text>
+</component>
+<component id="ID_txt19">
+	<text><![CDATA[<b>Source</b>]]></text>
+</component>
+<component id="ID_txt20">
+	<text><![CDATA[<b>Destination</b>]]></text>
+</component>
+
+<component id="ID_txt23">
+	<text><![CDATA[<b>Inside Global</b>]]></text>
+</component>
+<component id="ID_txt24">
+	<text><![CDATA[<b>Outside Local</b>]]></text>
+</component>
+
+
+
+ <component id="ID_txt25">
+	<text><![CDATA[<b>Response</b>]]></text>
+ </component>
+   <component id="ID_txt26">
+	<text><![CDATA[<b>Source</b>]]></text>
+ </component>
+   <component id="ID_txt27">
+	<text><![CDATA[<b>Destination</b>]]></text>
+ </component>
+
+   <component id="ID_txt30">
+	<text><![CDATA[<b>Outside Global</b>]]></text>
+ </component>
+   <component id="ID_txt31">
+	<text><![CDATA[<b>Inside Global</b>]]></text>
+</component>
+     <component id="ID_txt32">
+	<text><![CDATA[<b>The server responds, sending it to the same IP address and port combination it received it from.</b>]]></text>
+</component> 
+
+
+    <component id="ID_txt33">
+	<text><![CDATA[<b>Translated Response</b>]]></text>
+    </component>
+      <component id="ID_txt34">
+	<text><![CDATA[<b>Source</b>]]></text>
+    </component>
+      <component id="ID_txt35">
+	<text><![CDATA[<b>Destination</b>]]></text>
+    </component>
+
+      <component id="ID_txt38">
+	<text><![CDATA[<b>Outside Local</b>]]></text>
+    </component>
+      <component id="ID_txt39">
+	<text><![CDATA[<b>Inside Local</b>]]></text>
+</component>
+	<component id="ID_txt40">
+	<text><![CDATA[<b>The gateway receives the response and recognizes the IP address and port combination and translates the combination to the correct IP address, 192.168.1.106, and binds the original port number to it so that the communications loop can be closed.</b>]]></text>
+</component> 
+      <component id="ID_title">
+	<text><![CDATA[<b>PAT in Action</b>]]></text>
+</component>
+      <component id="ID_inst">
+	<text><![CDATA[<b>Click Play to see PAT in action.</b>]]></text>
+</component>
+      <component id="ID_txtH1">
+	<text><![CDATA[<b>H1</b>]]></text>
+</component>
+      <component id="ID_txtH2">
+	<text><![CDATA[<b>H2</b>]]></text>
+</component>
+<component id="play">
+<text>Play</text>
+</component>
+<component id="pause">
+<text>Pause</text>
+</component>
+<component id="rewind">
+<text>Rewind</text>
+</component>
+<component id="forward">
+<text>Fast Forward</text>
+</component>
+<component id="mute">
+<text>Mute</text>
+</component>
+<component id="unmute">
+<text>UnMute</text>
+</component>
+<component id="previous">
+<text>Restart</text>
+</component>
+<component id="next">
+<text>End</text>
+</component>
+<component id="transcript">
+<text>Transcript</text>
+</component>
+</textcomponents>

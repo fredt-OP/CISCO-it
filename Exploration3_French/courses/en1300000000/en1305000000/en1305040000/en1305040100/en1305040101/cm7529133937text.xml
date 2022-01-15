@@ -1,0 +1,40 @@
+<textcomponents>
+
+  <component id="ID_title1">
+  <text><![CDATA[<b>Cisco and STP Variants</b>]]></text> 
+  </component>
+
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td colspan="2" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b> </b></font><font  color="#FFFFFF"><b> </b></font></td>
+  	  	</tr>
+	<tr>
+		<td width="120" rowspan="3" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Cisco Proprietary</b>  </td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>PVST<ul><li>Uses the Cisco proprietary ISL trunking protocol</li><li>Each VLAN has an instance of spanning tree</li><li>Ability to load balance traffic at layer-2</li><li>Includes extensions BackboneFast, UplinkFast, and PortFast</li></ul></td>
+	</tr>
+	
+	<tr>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>PVST+<ul><li>Supports ISL and IEEE 802.1Q trunking</li><li>Supports Cisco proprietary STP extensions</li><li>Adds BPDU guard and Root guard enhancements</li></ul></td>
+	</tr>
+	<tr>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>rapid-PVST+<ul><li>Based on IEEE802.1w standard</li><li>Has faster convergence than 802.1D</li></ul></td>
+	</tr>
+	
+	<tr>
+		<td rowspan="2" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>IEEE Standard</b> </td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>RSTP<ul><li>Introduced in 1982 provides faster convergence than 802.1D</li><li>Implements generic versions of the Cisco proprietary STP extensions</li><li>IEEE has incorporated RSTP into 802.1D, identifying the specification as IEEE 802.1D-2004</li></ul></td>
+	</tr>
+	<tr>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>MSTP<ul><li>Multiple VLANs can be mapped to the same spanning-tree instance</li><li>Inspired by the Cisco Multiple Instances Spanning Tree Protocol (MISTP)</li><li>IEEE 802.1Q-2003 now includes MSTP</li></ul></td>
+	</tr>
+</table>
+]]></text> 
+  </component>
+
+
+</textcomponents>

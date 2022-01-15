@@ -1,0 +1,143 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Native VLANs and 802.1Q Trunking</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click Play to see the animation.</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Tagged and Untagged Frames</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>Trunking Untagged Frames</b>]]></text>
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<b>Native VLAN Configuration Example</b>]]></text>
+</component>
+
+<component id="ID_button_04">
+<text><![CDATA[<b>Native VLAN Verification</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Tagged Frames on the Native VLAN</b><br/>      -  Dropped by the switch<br/>      -  Devices should not tag control traffic destined for the native VLAN<br/><b>UnTagged Frames on the Native VLAN</b><br/>      -  Have their PVID changed to value of the configured native VLAN<br/>      -  Remains untagged<br/>      -  Are forwarded on the configured native VLAN]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b><font size='12'>PVID =99<br/>VLAN =99</font></b>]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b><font size='12'>Management Pc0<br/>VLAN 99<br/>172.17.99.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble03">
+<text><![CDATA[<b><font size='12'>PVID =100<br/>VLAN =100</font></b>]]></text>
+</component>
+
+<component id="ID_bubble04">
+<text><![CDATA[<b><font size='12'>PVID =99<br/>VLAN =99</font></b>]]></text>
+</component>
+
+<component id="ID_bubble05">
+<text><![CDATA[<b><font size='12'>Management Pc8<br/>VLAN-aware<br/>VLAN 100<br/>172.17.100.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble06">
+<text><![CDATA[<b><font size='12'>802.1Q Trunks</font></b>]]></text>
+</component>
+
+<component id="ID_bubble07">
+<text><![CDATA[<b><font size='12'>Management Pc7<br/>VLAN 99<br/>172.17.99.11</font></b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>802.1q encapsulated Ethernet Frame</b>]]></text>
+</component>
+
+<component id="ID_text01">
+<text><![CDATA[<b>Ports F0/1 and F0/3 on switch S1, port F0/1 on Switch S2 and port F0/3 on Switch are trunk ports.<br/><br/>Native VLAN for port F0/1 and port F0/3 on switch S1 is VLAN 99. Native VLAN for Port F0/3 on switch S3 is VLAN 99.<br/><br/>Native VLAN for port F0/1 on switch S2 is VLAN 100</b>]]></text>
+</component>
+
+<component id="ID_text02">
+<text><![CDATA[<b>Untagged Frame</b>]]></text>
+</component>
+
+<component id="ID_text03">
+<text><![CDATA[<b>Untagged Frame</b>]]></text>
+</component>
+
+<component id="ID_text04">
+<text><![CDATA[<b>The two ellipses (...) in the screen output indicate that content has been removed for clarity.</b>]]></text>
+</component>
+
+
+
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td colspan="2" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font><font face="_typewriter">&nbsp;</font></td>
+  	  	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter global configuration mode on switch S1. </td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' width='300' type='dynamic'><font face="_typewriter">S1#<b>configure terminal</b></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter interface configuration mode. </td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='300' type='dynamic'><font face="_typewriter">S1(config)#<b>interface F0/1</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Define the F0/1 interface as an IEEE 802.1Q trunk.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' width='300' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport mode trunk</b></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configure the VLAN 99 to be the native VLAN. </td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='300' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport trunk native vlan 99</b></font></td>
+	</tr>
+	<tr>
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Return to privileged EXEC mode. </td>
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">S1(config-if)#<b>end</b></font></td>
+   </tr>
+</table>
+]]></text> 
+  </component>
+
+
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 18:09:14">
+<title><content-text><![CDATA[7.3.2 - Frame Relay Functionality]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the use of LMI. There are three routers, R1, R2, and R3, and three switches, S1, S2, and S3. R1 is connected to the CSU/DSU. All switches are inside a cloud. S1 is connected to the CSU/DSU, S2, and S3. S2 is connected to S1, S3, and R2. S3 is connected to S1, S2, and R3. R2 is connected to S2. R3 is connected to S3.<br><br>There is a double-sided arrow with an X through it from R1 to R2 symbolizing the connection from R1 to R2 (DLCI = 400) is down.<br>There is a double-sided arrow from R1 to R3 symbolizing the connection from R1 to R3 (DLCI = 500) is up.<br><br>A keep-alive is sent to R3, which says (LMI, 500 = Active, 400 = Inactive).<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

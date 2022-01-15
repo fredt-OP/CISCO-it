@@ -1,0 +1,32 @@
+﻿<textcomponents>
+
+<component id="ID_instruct">
+<text><![CDATA[<b>Cliquez sur les boutons Active et Passive pour obtenir plus d’informations.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Connexion active</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Connexion passive</b>]]></text>
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Active</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Passive</b>]]></text>
+</component>
+
+<component id="activeTitle"><text><![CDATA[Connexion active]]></text>	</component>
+<component id="activeBody"><text><![CDATA[Le serveur établit la connexion pour le transfert de données. Un utilisateur demande un transfert de données et le serveur PI demande au serveur DTP de se connecter au DTP côté client. Le client DTP attend la connexion du serveur DTP.]]></text>	</component>
+
+<component id="passiveTitle"><text><![CDATA[Connexion passive]]></text>	</component>
+<component id="passiveBody">		<text><![CDATA[Le client établit la connexion pour le transfert de données. Le client PI se connecte au serveur PI et demande au serveur DTP de rester passif. Le serveur PI envoie son adresse IP et un numéro de port dynamique que le client peut utiliser pour le transfert de données. Le serveur DTP attend ensuite la connexion du client DTP.]]></text>		</component>
+
+
+
+</textcomponents>

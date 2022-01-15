@@ -1,0 +1,258 @@
+//zmg, 03.01.01 
+//this file needs a better description!
+//
+//
+// Modified by Dean Wood 05.10.01
+//  Changed cursor initialization.
+//  Added cursorXOffset and cursorYOffset.
+
+
+
+// ROUTER CONFIGURATION FILES
+// FILE: actions_router_object.txt
+// description: objects for a Router
+
+// Router Object Hierarchy
+/*                     Router
+                      ___|____
+                     /        \
+                    /          \
+                   /            \
+                  /              \
+                 /                \
+                /                  \
+               /                    \
+              /                      \
+            run                        startup_file
+          ___|______                   _____|______
+         / | | |  | \                  / | | |  | \
+        /  | | |  |  \                /  | | |  |  \
+       /   | | |  |   \              /   | | |  |   \
+      /   /  |  \  \   \            /   /  |  \  \   \
+     /   /   |   \  \   \          /   /   |   \  \   \
+    /   /    |    \  \   \        /   /    |    \  \   \
+   /   /     |     \  \   \      /   /     |     \  \   \
+line  global e0   e1  s0  s1  line  global e0   e1  s0  s1
+
+*/
+
+// line configuration
+// IN : None
+// DO : Initialize logins and passwords for aux, con, and vty
+// OUT: None
+function router_line() {
+	this.aux_login = false; //auxiliary login
+	this.aux_password = ""; //auxiliary password
+	this.con_login = false; // console login
+	this.con_password = ""; //console password
+	this.vty_login = false; //virtual terminal login
+	this.vty_password = ""; //virtualterminal password
+}
+
+
+
+// global configuration
+// IN : None
+// DO : Initializes the RIP and IGRP networks and the ipHost
+// OUT: None
+function router_global() {
+	
+	// creating the RIP network
+	this.RIP = false;
+	this.RIP_network = new Array();
+	
+	// creating the IGRP network
+	this.IGRP = false;
+	this.IGRP_network = new Array();
+	this.IGRP_AS = "";
+
+	// creating the ip host table
+	
+	//The ip Host Table for the router, the 2-D array of IP addresses
+	this.ipHostAddressTable = new Array();
+	
+	//The ip Host Table for the router, the 1-D array of host names
+	this.ipHostNameTable = new Array();
+	
+	// temporary string, used to help fill elements for ipHostNameTable
+	this.ipHostNameTableTemp = "";
+	
+	// a true/false state variable
+	this.errorCondition = false;    
+	
+	// counter for # of hosts in ip host table
+	this.hostCounter = 0; 
+
+	// setting ip routing
+	this.ip_routing = true;
+
+	// initializing banner motd variables
+	this.bannermotd = "";
+	this.bannerdelimit = "";
+
+}
+
+
+
+
+// interface configuration
+// IN : None
+// DO : Initialize the interface
+// OUT: None
+function router_interface() {
+	this.exist = false; 	// determine if interface is there or not
+	this.description = ""; 	// interface description
+	this.mac = "";//utility_randomMAC(); -- commented by suresh as mac is burnt into the hardware and not a random number
+	this.ip = ""; 		//ip address of interface
+	this.subnet = ""; 	// subnet mask
+	this.networkBits = 0 	// number of network bits
+	this.subnetted = false; // has the interface been subnetted
+	this.netPart = "";   	// The network this interface belongs to
+	this.subnetPart = ""; 	// the subnetwork this interface belongs to
+	this.shutdown = true; 	// shutdown ? 
+	this.clockrate = ""; 	// used only  by serial 0
+	
+}
+
+
+
+
+// router_configFile()
+// IN : None
+// DO : Configure the router
+// OUT: None
+function router_configFile() {
+
+	this.hostname = "Router"; //Router hostname
+   	this.secret = ""; 	  // secret password (enable secret)
+// modified : Sitaram
+// for As per the suggestions made by Ray, along with secret password
+// storing the information of enable password
+// added for  storing the enable password
+	this.password = "";//password
+// end of modification : Sitaram
+
+	// Link all together for usage
+	this.line = new router_line();
+	this.global = new router_global();
+	
+	// initialize the interfaces
+	this.e0 = new router_interface();
+	this.e1 = new router_interface();
+	this.s0 = new router_interface();
+	this.s1 = new router_interface();
+}
+
+
+
+
+// Router object
+// Router()
+// IN : None
+// DO : Create a router object
+// OUT: None
+function Router() {
+
+	// make this router's current process the command line
+	this.processCurrent = "commandline_processCommandLine";
+	this.passcount = 0;
+
+	this.current_num = -1; 		// current interface number
+
+	this.router_startup = false;    // if false, start router
+
+	//Router related items
+	this.copied = false; //running copied to startup ? true or false
+	this.MODE = ""; // Router mode (user, enable, global, line, interface, router) 
+	this.stat = ""; // Router status (password, normal)
+
+	// Router's current window
+	//this.LineLength = 0;
+	//this.LineNumber = 0;
+	//this.Length = 0;
+	//this.PromptLength = 0;
+	//this.Prompt = "";
+	//this.CL = ""; 	// command line
+	//this.output = "";
+
+	// need cursor status here
+	//this.cx = -364.4; // initial place
+	//this.cy = -124.2; // initial place
+        this.cx = HyperTerminal.cursor._x; // initial place
+        this.cy = HyperTerminal.cursor._y; // initial place
+
+        // cursor offset
+        this.cursorXOffset = 6.6; // x position increment value
+        this.cursorYOffset = 13.6; // y position increment value
+
+	// cursor
+	this.cursorX = 0;  // x position of cursor from 0 to 79
+	this.cursorY = 23;  // y position of cursor from 0 to 23
+	
+	//added for commandline enhancements
+	this.controlCharPressed = 0;
+	this.lineIndexCounter = 0;
+
+	// creating buffer
+	this.bufferLength = 500;  		// length of buffer for hyperterminal
+	this.line = new Array(bufferLength);  	// an array containing all the text that showed up on screen up to bufferLength of lines
+	this.lastLine = 24;  			// the last line number of the buffer; NOT the same as line.length
+	this.indexLine = 0;  			// the starting line number that is currently on screen
+	this.lastDLine = 24;
+	this.stopLine = 0;
+
+	// at the start the MORE functions are off
+	this.oneMoreLine = false;
+	this.MORE = false;
+	this.scrollStartLine = 0;
+	this.WRITING = false;  // true if it is autoscroll printing
+	this.HELPING = false;  // true if user typed "?"
+	
+	// initial prompt
+	this.PROMPT = this.run.hostname + ">";
+
+	// string of input from the user
+	this.INPUT = "";  // input at the command line; the whole string including all spaces
+
+	// History Command Settings and initialization
+	this.historyBufferLength = 10;
+	this.userHistory = new Array();
+	this.configHistory = new Array();
+	this.userHistIndex;
+	this.configHistIndex;
+	this.histcurrent = histIndex+1;
+
+	this.run = new router_configFile();
+	this.startup_file = new router_configFile();
+	
+	// Telnet variables
+	this.isTelnetingOut = false;
+	this.oldMode = "";
+	this.telnetSessions = new Array("","","","","");
+	this.telnetPath = new Array();
+	this.wasntStartup = false;
+	// modified : Sitaram
+	// Before configuration show startup, shouldn't show any information 
+	// eraseFlag is used for validating whether user has configured the router.
+	this.eraseFlag = false;
+}
+
+
+
+// router_createRouter(r)
+// IN : The router's name
+// DO : Creates a router depending on name of 'r'
+// OUT: A route object with the name "rRoutername"
+function router_createRouter(r) {
+
+	// initialize the router
+	//eval("r" + r) = new Router();
+	this["r" + r] = new Router();
+
+	// line buffer init -
+        // initialize the first 24 lines to be blank
+	var rptr = eval("r" + r);
+	for (var ijk=0; ijk<24; ijk++) {
+		rptr.line[ijk] = "\n";
+	}
+}

@@ -1,0 +1,91 @@
+<textcomponents>
+
+<component id="tipTitle">
+<text><![CDATA[More Information]]></text>
+</component>
+
+<component id="tipBody">
+<text><![CDATA[In an EIGRP routing table entry, the word via precedes the address of the successor. The feasible distance is the metric listed after the administrative distance of 90. In the entry below, the best path to the 192.168.1.0/24 network is through the next-hop successor's interface 192.168.10.10, and that the feasible distance is 3014400:<br/><br/><b>D 192.168.1.0/24 [90/3014400] via 192.168.10.10, 00:00:31, Serial0/0/1  </b>]]></text>
+</component>
+
+<component id="TipText">
+<text><![CDATA[More Information]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[R1]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[R2]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[R3]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[R4]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Network Z]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[10]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[14]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[10]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[AD = 5]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[AD = 6]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[AD = 5]]></text> 
+</component>
+
+<component id="ID_txt12">
+	<text><![CDATA[<b>Feasible Distance (FD):</b><br/>The minimum distance (metric) along a path from the router to a destination network.<br/><br/><b>Advertised Distance (AD) or Reported Distance (RD):</b><br/>The distance (metric) towards a destination as advertised by an upstream neighbor. <i>The Neighbor Router's Distance</i>]]></text> 
+</component>
+
+<component id="ID_table3">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+	<td bgcolor='#F2F2F2'><font color='#FFFFFF'> </font></td>
+	<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Feasible Distance</font></td>
+	<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Advertised Distance</font></td>
+</tr>
+<tr>
+	<td width='350' bgcolor='#DDDDDD'>R2 is successor to Network Z</td>
+	<td bgcolor='#DDDDDD'>FD = 15</td>
+	<td bgcolor='#DDDDDD'>AD = 5</td>
+</tr>
+<tr>
+	<td bgcolor='#F2F2F2'>R3 is feasible successor to Network Z</td>
+	<td bgcolor='#F2F2F2'>FD = 20</td>
+	<td bgcolor='#F2F2F2'>AD = 6</td>
+</tr>
+<tr>
+	<td bgcolor='#DDDDDD'>R4 is successor to Network Z</td>
+	<td bgcolor='#DDDDDD'>FD = 15</td>
+	<td bgcolor='#DDDDDD'>AD = 5</td>
+</tr></table>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+

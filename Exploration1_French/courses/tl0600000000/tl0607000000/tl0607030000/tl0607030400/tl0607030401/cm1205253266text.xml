@@ -1,0 +1,37 @@
+﻿<textcomponents>
+
+<component id="webServerBody">
+		<text><![CDATA[Le champ <b>Séquence de contrôle de trame</b> est utilisé pour la vérification des erreurs. La source calcule un nombre en fonction des données de la trame et place ce nombre dans le champ de séquence de contrôle de trame. La destination recalcule alors les données pour voir si les séquences de contrôle de trame correspondent. Si elles ne correspondent pas, la destination supprime la trame.]]></text>
+</component>
+<component id="fileServerBody">
+		<text><![CDATA[Le champ <b>Stop Frame</b>, également nommé queue de bande de trame, est un champ facultatif utilisé lorsque la longueur de la trame n’est pas spécifiée dans le champ Type/Length. Il indique la fin de la trame lorsque la trame est transmise.]]></text>
+</component>
+    <component id="ID_txt01">
+		<text><![CDATA[<b>DÉBUT DE TRAME (START FRAME)</b>]]></text>
+	</component>
+    <component id="ID_txt02">
+		<text><![CDATA[<b>ADRESSE (ADDRESS)</b>]]></text>
+	</component>
+    <component id="ID_txt03">
+		<text><![CDATA[<b>TYPE/LONGUEUR (TYPE/LENGTH)</b>]]></text>
+	</component>
+    <component id="ID_txt04">
+		<text><![CDATA[<b>Données</b>]]></text>
+	</component>
+    <component id="ID_txt05">
+		<text><![CDATA[<b>Séquence de contrôle de trame</b>]]></text>
+	</component>
+    <component id="ID_txt06">
+		<text><![CDATA[<b>Stop Frame</b>]]></text>
+	</component>
+    <component id="ID_txt07">
+		<text><![CDATA[<b>Queue de bande</b>]]></text>
+	</component>
+    <component id="ID_title">
+		<text><![CDATA[<b>Rôle de la queue de bande</b>]]></text>
+	</component>
+    <component id="ID_inst">
+		<text><![CDATA[<b>Faites glisser votre curseur pour en savoir plus.</b>]]></text>
+	</component>
+	
+</textcomponents>

@@ -1,0 +1,154 @@
+﻿<textcomponents>
+<component id="ID_checkBtn">
+<text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+<component id="ID_newProblemBtn">
+<text><![CDATA[<b>New Practice Problem</b>]]></text> 
+</component>
+
+<component id="ID_helpBtn">
+<text><![CDATA[<b>Help</b>]]></text> 
+</component>
+
+<component id="ID_helpTitle">
+<text><![CDATA[<b>Help</b>]]></text> 
+</component>
+
+<component id="ID_helpContent">
+<text><![CDATA[This activity quizzes you on your knowledge of how a frame is forwarded on a switch.<br />Click the "Check" button to check your answer. Click the "New Practice Problem" button to start a new computer generated practice activity.<br /><br />You are given the physical topology and the MAC address table of the switch. You are also given a frame that consists of a source and destination MAC address. The computer generated activities will have a source and destination pair using one of the addresses shown on the topology. Custom activities can use any desired addresses on both the MAC table and the frame.<br /><br />1.<textformat blockindent="20"> Your goal is to determine how the switch will handle this frame given the MAC address table shown.</textformat><br />2. <textformat blockindent="20">For the first question, check the port numbers to indicate where (if any) the switch will forward this frame.</textformat><br />3. <textformat blockindent="20">For the second question, check the corresponding options to indicate how a switch will handle the frame.</textformat><br />4. <textformat blockindent="20">Click the "Check" button to see if your answer is correct.</textformat><br /><br /><b>Additional Help:</b><br />"FF" is a broadcast MAC address and is forwarded to all ports with the exception of the origin port. <br /><br />A frame is <b>flooded</b> to all ports (except the origin) only if the switch does not have the destination MAC within the MAC table. <br /><br />The switch will only add a new MAC address to the MAC table based on the source MAC address. If the source MAC address is already in the table, nothing is added or learned. If the source MAC address is not in the table, the address will be added.  <br /><br />A switch will drop a frame if the destination and source devices are both connected to the same port and the switch has the destination MAC address in the MAC table. In this activity, this occurs on the single port connected to the hub with 2 host devices.<br />]]></text> 
+</component>
+
+<component id="ID_activityTitle">
+<text><![CDATA[<b>Activity</b>]]></text> 
+</component>
+
+<component id="ID_scenario">
+<text><![CDATA[Determine how the switch forwards a frame based on the Source MAC and Destination MAC addresses and information in the switch MAC table.<br><br><b>Answer the questions below using the information provided.</b>]]></text> 
+</component>
+
+<!--Frame Table-->
+<component id="ID_preamble">
+<text><![CDATA[<b>Preamble</b>]]></text> 
+</component>
+
+<component id="ID_dstMac">
+<text><![CDATA[<b>Destination MAC</b>]]></text> 
+</component>
+
+<component id="ID_srcMac">
+<text><![CDATA[<b>Source MAC</b>]]></text> 
+</component>
+
+<component id="ID_length">
+<text><![CDATA[<b>Length Type</b>]]></text> 
+</component>
+
+<component id="ID_enData">
+<text><![CDATA[<b>Encapsulated Data</b>]]></text> 
+</component>
+
+<component id="ID_endOfFrame">
+<text><![CDATA[<b>End of frame</b>]]></text> 
+</component>
+
+<component id="ID_hub">
+<text><![CDATA[<b>Hub</b>]]></text> 
+</component>
+
+<!--MAC Table-->
+<component id="ID_macTable">
+<text><![CDATA[<b>MAC Table</b>]]></text> 
+</component>
+
+<!--Questions-->
+<component id="ID_question1">
+<text><![CDATA[<b>1. </b><textformat blockindent="14">Where will the switch forward the frame?</textformat>]]></text> 
+</component>
+
+<component id="ID_question2">
+<text><![CDATA[<b>2. </b><textformat blockindent="14">When the switch forwards the frame, which statement(s) are true?</textformat>]]></text> 
+</component>
+
+<component id="ID_Q2_choice1">
+<text><![CDATA[Switch adds the source MAC address to the MAC table.]]></text> 
+</component>
+
+<component id="ID_Q2_choice2">
+<text><![CDATA[Frame is a broadcast frame and will be forwarded to all ports.]]></text> 
+</component>
+
+<component id="ID_Q2_choice3">
+<text><![CDATA[Frame is a unicast frame and will be sent to specific port only.]]></text> 
+</component>
+
+<component id="ID_Q2_choice4">
+<text><![CDATA[Frame is a unicast frame and will be flooded to all ports.]]></text> 
+</component>
+
+<component id="ID_Q2_choice5">
+<text><![CDATA[Frame is a unicast frame but it will be dropped at the switch.]]></text> 
+</component>
+
+<!--Feedback text-->
+
+<component id="ID_correct1">
+<text><![CDATA[<b>Correct! You successfully answered all questions based on the information in the frame and MAC table.</b>]]></text> 
+</component>
+
+<component id="ID_sourceDestNotEntered">
+<text><![CDATA[<b>Please enter a source and destination address for the frame.<br> Destination addresses can be FF to indicate a broadcast frame.</b>]]></text> 
+</component>
+
+<component id="ID_frameBroadcastOnly">
+<text><![CDATA[<b>Incorrect. In question 2, your answer for how the switch will handle the frame based on destination address is not true. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_frameUnicastOnly">
+<text><![CDATA[<b>Incorrect. In question 2, your answer for how the switch will handle the frame based on destination address is not true. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_frameDropped">
+<text><![CDATA[<b>Incorrect. In question 2, your answer for how the switch will handle the frame based on destination address is not true. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_frameDroppedSwitch">
+<text><![CDATA[<b>Incorrect. In question 2, your answer for how the switch will handle the frame based on destination address is not true. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_sourceNotInTable">
+<text><![CDATA[<b>Incorrect. In question 2, your answer for how the switch will handle the source MAC address is not true. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_sourceInTable">
+<text><![CDATA[<b>Incorrect. In question 2, your answer for how the switch will handle the source MAC address is not true. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_frameNotForwardedBack">
+<text><![CDATA[<b>Incorrect. In question 1, the port(s) that you selected is(are) not correct. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_incorrectPortChecked">
+<text><![CDATA[<b>Incorrect. In question 1, the port(s) that you selected is(are) not correct. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_incorrectPortNotChecked">
+<text><![CDATA[<b>Incorrect. In question 1, the port(s) that you selected is(are) not correct. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_connectePortNotChecked">
+<text><![CDATA[<b>Incorrect. In question 1, the port(s) that you selected is(are) not correct. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_inactivePortsChecked">
+<text><![CDATA[<b>Incorrect. In question 1, the port(s) that you selected is(are) not correct. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_destPortNotChecked">
+<text><![CDATA[<b>Incorrect. In question 1, the port(s) that you selected is(are) not correct. Try again.</b>]]></text> 
+</component>
+
+<component id="ID_unicastFloodNotChecked">
+<text><![CDATA[<b>Incorrect. In question 2, your answer for how the switch will handle the frame based on destination address is not true. Try again.</b>]]></text> 
+</component>
+</textcomponents>

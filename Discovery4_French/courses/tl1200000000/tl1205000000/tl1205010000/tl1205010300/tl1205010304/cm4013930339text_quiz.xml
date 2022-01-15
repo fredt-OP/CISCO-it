@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="12511" dateexported="03/07/2007">
+		<name></name>
+		<form id="18985" lang="en"><form-item order="N/A" usage="N/A">
+			<ai id="111410" type="mc-sa">
+			<question><![CDATA[Tous les énoncés décrivent un avantage de la technologie PoE (Power over Ethernet), sauf un. Sélectionnez l’énoncé qui ne permet pas une grande disponibilité ou une bonne stratégie de conception.]]></question>
+			<choices>
+									<choice correct="y">
+										<text><![CDATA[Permet la redondance de points d’accès.]]></text><feedback><![CDATA[Vous avez correctement identifié comment différentes stratégies de disponibilité améliorent la fiabilité du réseau et limitent les effets des défaillances. Cliquez sur Suivant pour continuer.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Réduit la longueur du câblage électrique nécessaire pour les points d’accès.]]></text>
+<feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Permet d’alimenter des téléphones IP.]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Sert d’option de connectivité pour les caméras de surveillance sur le réseau.]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									</choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111411" li="3.4.3" type="mc-ma">
+						<comment/>
+						<intro/>
+						<question><![CDATA[Quels sont les deux avantages de l’installation de deux cartes réseau sur un serveur DHCP ? (Choisissez deux réponses.)]]></question>
+						<choices>
+									<choice correct="n">
+										<text><![CDATA[Redondance de la couche de distribution.]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[Équilibrage de charge pour l’activité DHCP.]]></text>
+ <feedback><![CDATA[Vous avez correctement identifié comment différentes stratégies de disponibilité améliorent la fiabilité du réseau et limitent les effets des défaillances. Cliquez sur Suivant pour continuer.]]></feedback>
+ 
+									</choice>
+									<choice correct="n">
+		<text><![CDATA[Assure la connectivité des téléphones IP.]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Offre la redondance en cas de défaillance de la carte réseau hôte.]]></text> <feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[Assure la connectivité avec les hôtes en cas de défaillance d’une seule carte réseau.]]></text> <feedback><![CDATA[Vous avez correctement identifié comment différentes stratégies de disponibilité améliorent la fiabilité du réseau et limitent les effets des défaillances. Cliquez sur Suivant pour continuer.]]></feedback>
+									</choice>
+									</choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111412" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[Quel est l’avantage d’avoir deux liaisons connectées par des commutateurs lorsque l’un des commutateurs est relié à un serveur ?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[Offre la redondance en cas de défaillance d’un seul commutateur.]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Assure la connectivité avec l’autre commutateur en cas de défaillance de la liaison avec le serveur.]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Fournit une alimentation vers le second commutateur lorsque le premier commutateur n’est plus alimenté.]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[Assure la connectivité en cas d’échec d’une des liaisons entre les commutateurs.]]></text><feedback><![CDATA[Vous avez correctement identifié comment différentes stratégies de disponibilité améliorent la fiabilité du réseau et limitent les effets des défaillances. Cliquez sur Suivant pour continuer.]]></feedback>
+									</choice>
+									</choices></ai></form-item>
+									<!--<form-item order="N/A" usage="N/A"> 						<ai id="111410" li="3.4.3" type="mc-sa"> 						<comment/> 						<intro/><question><![CDATA[If Host8 sends a message to Host1, and the destination MAC address is in the switch MAC table, which host devices will receive the message?]]></question><choices> 									<choice correct="n"> 										<text><![CDATA[only Host1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>  									</choice> 									<choice correct="y"> 										<text><![CDATA[all hosts connected to Hub1]]></text> 									</choice> 									<choice correct="n"> 										<text><![CDATA[all hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback> 									</choice> 									<choice correct="n"> 										<text><![CDATA[all hosts connected to Hub1 and hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback> 									</choice> 									<choice correct="n"> 										<text><![CDATA[all hosts on the network]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback> 									</choice></choices></ai></form-item>-->
+									</form></exam> 

@@ -1,0 +1,49 @@
+<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Configure the Command History buffer</b>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+		<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+		
+					
+	</tr>
+	<tr>
+		
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enable terminal history. This command can be run from either user or privileged EXEC mode. </td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>terminal history</b></font></td>
+			
+	</tr>
+	
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configures the terminal history size.<br/>The terminal history can maintain 0 to 256 command lines.</td>
+		<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>terminal history size 50 </b></font></td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Resets the terminal history size to the default value of 10 command lines.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>terminal no history size</b></font></td>
+			
+	</tr>
+	
+	<tr>
+		
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Disables terminal history.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>terminal no history</b></font></td>
+			
+	</tr>
+		
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

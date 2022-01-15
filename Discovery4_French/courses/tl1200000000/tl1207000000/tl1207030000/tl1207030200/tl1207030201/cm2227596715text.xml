@@ -1,0 +1,93 @@
+<textcomponents>
+
+<component id="ID_txt01">    
+<text><![CDATA[]]></text> 
+</component>
+
+<component id="ID_header01">    
+<text><![CDATA[<font color='#FFFFFF' size="11"><b>Objectif commercial</b></font>]]></text> 
+</component>
+
+<component id="ID_header02">    
+<text><![CDATA[<font color='#FFFFFF' size="11"><b>Critère global de réussite</b></font>]]></text> 
+</component>
+
+
+<component id="ID_table1">
+	<text><![CDATA[
+<table glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+  <td bgcolor='#F2F2F2'><font color='#000000' size="11"><b>Améliorer le service client avec un meilleur accès au site Web pour la consultation des horaires, l’achat et l’impression de tickets, ainsi que l’achat d’autres produits</b></font></td>
+  <td bgcolor='#F2F2F2'><font color='#000000' size="11"><b>Montrer que les services Web sont disponibles, à partir d’emplacements sur site et hors site, et qu’une défaillance d’équipement ou de liaison les perturbe peu ou pas</b></font></td>
+  </tr>
+
+<tr>
+<td bgcolor='#999999'><font size="11"><b>Spécifications techniques</b></font></td>
+<td bgcolor='#999999'><font size="11"><b>Critères de succès</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#CCCCCC'><font size="11"><b>Extensibilité</b></font></td>
+<td bgcolor='#CCCCCC'><font size="11"><b>  </b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><font size="11"><b>Configuration d’une structure d’adressage IP flexible</b></font></td>
+<td bgcolor='#F2F2F2'><font size="11"><b>L’ajout de sous-réseaux et d’adresses de serveur supplémentaires n’entraîne pas la reconfiguration du routage ou de l’adressage</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><font size="11"><b>Création d’une batterie de serveurs modulaire pouvant accepter des serveurs supplémentaires sans affecter la conception</b></font></td>
+<td bgcolor='#F2F2F2'><font size="11"><b>L’ajout d’un serveur supplémentaire n’exige pas de reconfiguration</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><font size="11"><b>Disponibilité</b></font></td>
+<td bgcolor='#CCCCCC'><font size="11"><b>  </b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><font size="11"><b>Utilisation de liaisons redondantes des serveurs aux commutateurs de couche d’accès</b></font></td>
+<td bgcolor='#F2F2F2'><font size="11"><b>La défaillance d’un seul commutateur de couche d’accès n’affecte pas la connectivité des serveurs</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><font size="11"><b>Création de connexions de commutateur de couche 2 redondantes à la couche d’accès et utilisation de RSTP afin de réduire la durée nécessaire aux liaisons commutées redondantes pour devenir actives après une défaillance</b></font></td>
+<td bgcolor='#F2F2F2'><font size="11"><b>RSTP converge rapidement en cas de défaillance de liaison ou de périphérique</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><font size="11"><b>Configuration d’un protocole de routage convergent rapide (EIGRP) sur la couche de distribution et sur la couche cœur de réseau.</b></font></td>
+<td bgcolor='#F2F2F2'><font size="11"><b>EIGRP converge rapidement, avec peu ou pas de perte de connectivité en cas de défaillance d’une liaison</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><font size="11"><b>Sécurité</b></font></td>
+<td bgcolor='#CCCCCC'><font size="11"><b>  </b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><font size="11"><b>Application de filtres pour autoriser le trafic uniquement vers les ports requis sur les serveurs</b></font></td>
+<td bgcolor='#F2F2F2'><font size="11"><b>Le trafic indésirable est bloqué avant d’atteindre les serveurs</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><font size="11"><b>Installation de pare-feu et de fonctions IDS sur la couche de distribution</b></font></td>
+<td bgcolor='#F2F2F2'><font size="11"><b>Les signatures d’attaque et les menaces connues sont bloquées et n’atteignent pas les serveurs</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><font size="11"><b>Facilité de gestion</b></font></td>
+<td bgcolor='#CCCCCC'><font size="11"><b>  </b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><font size="11"><b>Création d’un réseau local virtuel de gestion et accès aux périphériques du centre de calcul via SSH</b></font></td>
+<td bgcolor='#F2F2F2'><font size="11"><b>Une station de gestion peut démarrer une session SSH vers des périphériques au sein du centre de calcul.</b></font></td>
+</tr>
+
+</table>
+]]></text>
+</component>
+
+
+</textcomponents>

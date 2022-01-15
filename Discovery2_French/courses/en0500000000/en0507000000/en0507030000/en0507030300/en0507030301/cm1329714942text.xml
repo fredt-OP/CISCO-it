@@ -1,0 +1,117 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click each step of the DNS resolution process for more information.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Forward Lookup Query</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Name Server</b>]]></text>
+</component>
+
+<component id="ID_txt02a">
+<text><![CDATA[<b>Name Server</b>]]></text>
+</component>
+
+<component id="ID_txt02b">
+<text><![CDATA[<b>Name Server</b>]]></text>
+</component>
+
+<component id="ID_txt02c">
+<text><![CDATA[<b>Name Server</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Stanford</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>root</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>com</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>cisco</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Web Server</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+
+
+<component id="Button1">
+<text><![CDATA[<b>Step 1</b>]]></text>
+</component>
+
+<component id="Button2">
+<text><![CDATA[<b>Step 2</b>]]></text> 
+</component>
+
+<component id="Button3">
+<text><![CDATA[<b>Step 3</b>]]></text> 
+</component>
+
+<component id="Button4">
+<text><![CDATA[<b>Step 4</b>]]></text> 
+</component>
+
+<component id="Button5">
+<text><![CDATA[<b>Step 5</b>]]></text> 
+</component>
+
+<component id="myTable1">
+<text><![CDATA[Resolver sends a recursive DNS query to the local DNS server asking for the IP address of the web server. Cisco.com is the fully qualified domain name of the remote host. The local DNS server looks in its DNS zone database and its DNS cache to see if it has that name mapping recorded. It does not find it.]]></text> 
+</component>
+
+<component id="myTable1a">
+<text><![CDATA[Step1: Local Recursive Query]]></text> 
+</component>
+
+<component id="myTable2">
+<text><![CDATA[The local DNS server then sends an iterative DNS query to one of the preconfigured root servers asking for the DNS servers that maintain the .com top level domain. The root DNS server replies back with the list of .com top level domain DNS servers. The local DNS server then stores the location of the .com DNS servers in its DNS cache. ]]></text> 
+</component>
+
+<component id="myTable2a">
+<text><![CDATA[Step 2: Root Domain Iterative Query]]></text> 
+</component>
+
+<component id="myTable3">
+<text><![CDATA[The local DNS server then sends an iterative DNS query to one of the .com servers asking for the DNS servers that manage the cisco.com second level domains. The .com server replies back with the list of DNS servers that maintain the cisco.com second level domain. The local DNS server then stores the location of the cisco.com DNS servers in its DNS cache.]]></text> 
+</component>
+
+<component id="myTable3a">
+<text><![CDATA[Step 3: Top Level Domain Iterative Query]]></text> 
+</component>
+
+<component id="myTable4">
+<text><![CDATA[The local DNS server then sends an iterative DNS query to one of the cisco.com DNS servers asking for the IP address of webserver.cisco.com. The cisco.com DNS server replies back with the IP address mapping for webserver.cisco.com. The local DNS server then stores the resource record in its local DNS cache.]]></text> 
+</component>
+
+<component id="myTable4a">
+<text><![CDATA[Step4: Second Level Domain Iterative Query]]></text> 
+</component>
+
+<component id="myTable5">
+<text><![CDATA[The Local DNS server then sends the reply back to the client with the IP address of webserver.cisco.com. The client then uses the IP address to connect to the remote web server and requests the web page.]]></text> 
+</component>
+
+<component id="myTable5a">
+<text><![CDATA[Step 5: Local Response]]></text> 
+</component>
+
+
+
+
+</textcomponents>
+
+

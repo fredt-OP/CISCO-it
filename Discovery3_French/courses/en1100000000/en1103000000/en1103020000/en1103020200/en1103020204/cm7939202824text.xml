@@ -1,0 +1,96 @@
+﻿<textcomponents>
+
+<component id="id_title">
+<text><![CDATA[<font size="14"><b>Activity</b></font><br/><br/>Associate the process with the correct spanning tree state.<br/><br/><b>Check all options that apply to the Spanning Tree states.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+	<component id="txt_numrows">
+		<text><![CDATA[7]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[4]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[<b>Blocking</b>]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[<b>Listening</b>]]></text>
+	</component>
+    <component id="txt_col3">
+		<text><![CDATA[<b>Learning</b>]]></text>
+	</component>
+    <component id="txt_col4">
+		<text><![CDATA[<b>Forwarding</b>]]></text>
+	</component>
+		
+    <component id="txt_q1">
+		<text><![CDATA[Processes BPDUs]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[Learns MAC addresses]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[Discards frames]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[Forwards frames]]></text>
+	</component>
+    <component id="txt_q5">
+		<text><![CDATA[Does not forward frames]]></text>
+	</component>
+    <component id="txt_q6">
+		<text><![CDATA[Receives BPDUs]]></text>
+	</component>	
+    <component id="txt_q7">
+		<text><![CDATA[Does not learn MAC addresses]]></text>
+	</component>	
+	
+    <component id="txt_a1">
+		<text><![CDATA[1,2,3,4]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[3,4]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[4]]></text>
+	</component>
+    <component id="txt_a5">
+		<text><![CDATA[1,2,3]]></text>
+	</component>
+    <component id="txt_a6">
+		<text><![CDATA[1,2,3,4]]></text>
+	</component>
+    <component id="txt_a7">
+		<text><![CDATA[1,2]]></text>
+	</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully identified the Spanning Tree processes with the appropriate states. Click Next to continue.</p>]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review Spanning Tree states and try again.]]></text></component>
+
+
+</textcomponents>

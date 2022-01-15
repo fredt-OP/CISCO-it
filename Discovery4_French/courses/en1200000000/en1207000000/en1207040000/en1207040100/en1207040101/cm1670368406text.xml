@@ -1,0 +1,63 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><li>It is a recommended practice to test any new design before design approval and implementation. Testing provides a proof-of-concept for the design.</li><br/><li>There are two common methods to do proof-of-concept testing:  on a prototype network or installing a pilot on existing network.</li><br/><li>The decision to create a prototype or a pilot depends on the following factors:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>The type of testing required</li><li>The potential disruption from a pilot on the existing network</li></textformat><br/><li>Before beginning a proof-of-concept test, a detailed test plan should be created to outline the test strategy and the expected results.</ul></b></font>]]></text>
+</component>
+
+<component id="s1_ID_txt02">     
+<text><![CDATA[Pilot on Existing Network]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Isolate Prototype Network]]></text> 
+</component>
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><li>A proof-of-concept test demonstrates new or improved functionality of the network, as well as verifying the design works as expected.</li><br/><li>When it is not possible to duplicate the physical network environment in order to perform a proof-of-concept test, it may be necessary to use a simulation software program to test the design.</li><br/><li>Prototypes and simulations can be used to identify risks and weaknesses inherent in the network design.</li><br/><li>Some commonly identified risks and weaknesses include:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Single points of failure</li><li>Large failure domains</li><li>Possible bottlenecks</li><li>Limited scalability</li><li>Overly complex designs</li></textformat><br/><li>When creating a test plan, the first things the network designer needs to consider are:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>What types of tests to run</li><li>How much of the network must be built to perform the tests</li><li>How to determine the success or failure of the test<br/><br/><br/><br/></li></textformat></font>]]></text>
+</component>
+
+<component id="s2_ID_txt01">  
+<text><![CDATA[Single point of failure for attached devices]]></text> 
+</component>
+
+<component id="s2_ID_txt02">  
+<text><![CDATA[Guest isolation required to protect internal resources]]></text> 
+</component>
+
+<component id="s2_ID_txt03">  
+<text><![CDATA[Potential bottleneck]]></text> 
+</component>
+
+<component id="s2_ID_txt04">  
+<text><![CDATA[Single server failure can disrupt business application]]></text> 
+</component>
+
+<component id="s2_ID_txt05">  
+<text><![CDATA[Internet]]></text> 
+</component>
+
+<component id="s2_ID_txt06">  
+<text><![CDATA[Frame Relay]]></text> 
+</component>
+
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><li>RSTP provides rapid connectivity following the failure of a switch, a switch port, or a LAN. RSTP enables switch port configuration so that the ports can transition to forwarding directly when the switch reinitializes.</li><br/><li>RSTP defines the following port roles:</li><br/><TEXTFORMAT BLOCKINDENT='60'><li><b>Root</b>- A forwarding port elected for the spanning tree topology<br/><br/><b>Designated</b>- A forwarding port elected for every switched LAN segment</li><br/><br/><li><b>Alternate</b> - An alternate path to the root bridge that is different from the path that the root port takes</li><br/><br/><li><b>Backup</b>- A backup path that provides a redundant, but less desirable, connection to a segment to which another switch port already connects.(Backup ports can only exist where two ports are connected together in a loopback by a point-to-point link or bridge with two or more connections to a shared LAN segment.)</li><br/><br/><li><b>Disabled</b>- A port that has no role within the operation of spanning tree</li><br/><br/></textformat></ul></font>]]></text>
+</component>
+
+<component id="s3_ID_txt01">  
+<text><![CDATA[Implement RSTP here.]]></text> 
+</component>
+
+<component id="s3_ID_txt02">  
+<text><![CDATA[Implement RSTP here.]]></text> 
+</component>
+
+
+</textcomponents>

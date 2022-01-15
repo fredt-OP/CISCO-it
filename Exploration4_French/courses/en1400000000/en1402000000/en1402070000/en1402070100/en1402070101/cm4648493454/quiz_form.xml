@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/14/2007">
+		<name>Module  Quiz</name>
+		<form id="19776" lang=""><form-item>
+			<ai id="116715" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116715" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>test link quality (optional)</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>negotiate Layer 3 protocol options</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>send link-establishment frames to negotiate options like MTU size, compression, authentication</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>send configuration-acknowledgement frames</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>NCP reaches Open state</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Step 1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Step 2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Step 3</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Step 4</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Step 5</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Place the PPP establishment steps in the correct order by dragging each step to the appropriate sequence number on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-136.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="213542" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="213542" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="213542" action="Set">1</setvar><scoringdescription>send link-establishment frames to negotiate options like MTU size, compression, authentication send configuration-acknowledgement frames test link quality negotiate Layer 3 protocol options NCP reaches Open state</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="117330" type="mc-sa"><question><![CDATA[Which output from the <b>show interfaces s0/0/0</b> command indicates that the far end of a point-to-point link has a different encapsulation set than the local router?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[serial 0/0/0 is down, line protocol is down ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[serial 0/0/0 is up, line protocol is down  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[serial 0/0/0 is up, line protocol is up (looped) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[serial 0/0/0 is up, line protocol is down (disabled) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[serial 0/0/0 is administratively down, line protocol is down ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="36288" type="mc-sa"><question><![CDATA[What is the default encapsulation for serial interfaces on a Cisco router?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[HDLC  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[PPP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Frame Relay ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[X.25 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="36240" type="mc-sa"><question><![CDATA[What is the function of the protocol field in a PPP frame?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[It identifies the application layer protocol that will process the frame.  ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It identifies the transport layer protocol that will process the frame.  ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It identifies the data link layer protocol encapsulated in the data field of the frame. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[It identifies the network layer protocol encapsulated in the data field of the frame.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="116721" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116721" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>stacker/predictor</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>magic number</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>multilink</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>CHAP/PAP</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>call in</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>error control</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>authentication protocol</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>allows load balancing</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>compression protocol</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the term on the left to the associated description on the right. Not all options are used.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="11" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="213550" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="213550" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="213550" action="Set">1</setvar><scoringdescription>stacker and predictor	compression magic number		error control multilink	allows load balancing CHAP and PAP	authentication protocols</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119174" type="mc-ma"><question><![CDATA[Which three statements describe the function of time-division multiplexing. (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Multiple data streams share one common channel.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Bit interleaving controls the timing mechanism that places data on the channel. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Time slots are utilized on a first-come, first-served basis. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Statistical time-division multiplexing (STDM) was developed to overcome the inefficiency caused by time slots still being allocated, even when the channel has no data to transmit.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Sources of data alternate during transmission and are reconstructed at the receiving end.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Priority can be dedicated to one data source. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117325" type="mc-sa"><question><![CDATA[What describes the serial connection between two routers using the High-Level Data Link Control (HDLC) protocol?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[synchronous or asynchronous bit-oriented transmissions using a universal frame format ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[synchronous bit-oriented transmissions using a frame format that allows flow control and error detection  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[asynchronous bit-oriented transmissions using a frame format derived from the Synchronous Data Link Control (SDLC) protocol ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[asynchronous bit-oriented transmissions using a V.35 DTE/DCE interface ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="36242" type="mc-sa"><question><![CDATA[If an authentication protocol is configured for PPP operation, when is the client or user workstation authenticated?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[prior to link establishment ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[during the link establishment phase  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[before the network layer protocol configuration begins  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[after the network layer protocol configuration has ended  ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="36227" type="mc-sa"><question><![CDATA[Why are Network Control Protocols used in PPP?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[to establish and terminate data links  ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to provide authentication capabilities to PPP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to manage network congestion and to allow quality testing of the link  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[to allow multiple Layer 3 protocols to operate over the same physical link  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120664" type="mc-sa"><question><![CDATA[Which statement describes the PAP authentication protocol?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[It sends encrypted passwords by default. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[It uses a two-way handshake to establish identity.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It protects against repeated trial-and-error attacks. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It requires the same username to be configured on every router. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120665" type="mc-ma"><question><![CDATA[A technician testing functionality of a recently installed router is unable to ping the serial interface of a remote router. The technician executes the <b>show interface serial0/0</b> command on the local router and sees the following line in the router:<br /><br /><b>Serial0/0 is down, line protocol is down</b><br /><br />What are two possible causes for this command output?  (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>clockrate</b> command missing ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[carrier detect signal not sensed  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[keepalives not being sent ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[interface disabled due to high error rate ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[interface shutdown ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[cabling is faulty or incorrect  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="116723" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116723" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>username Router2 password cisco</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>username Router1 password cisco</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>interface serial 0/1/0</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>encapsulation ppp</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>encapsulation hdlc</b></mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>ppp authentication pap</b></mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>ppp authentication chap</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>configure the username and password</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>enter interface configuration mode</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>specify encapsulation type</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>configure authentication</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>The network administrator is configuring Router1 to connect to Router2 using a three-way handshake authentication. Drag the commands necessary to configure Router1 from the left to the appropriate description on the right. Not all options are used.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-108" targetYspacing="11" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="213552" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="213552" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="213552" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="120666" type="mc-sa"><question><![CDATA[What is required to successfully establish a connection between two routers using CHAP authentication?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The hostnames of both routers must be the same. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The usernames of both routers must be the same. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The enable secret passwords configured on both routers must be the same. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The password configured with the <b>username</b> of the router must be the same on both routers.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The <b>ppp chap sent-username</b> command must be configured the same on both routers. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="85487" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="85487" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>two-way handshake</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>three-way handshake</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>open to trial-and-error attacks</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>password sent in clear text</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>periodic verification</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>uses one-way hash function</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>PAP</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>CHAP</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Match each characteristic on the left with the appropriate authentication protocol on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="112246" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="112246" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="112246" action="Set">1</setvar><scoringdescription>pap - 2-way handshaking, open to trial error attacks, password in clear text; CHAP - 3-way handshaking, periodic verification, uses one way hash function</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="116654" type="dnd" src="ravennaDandDclip">
+			<![CDATA[<questtestinjterop><item ident="116654" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>negotiates link establishment parameters</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>negotiates Layer 3 protocol parameters</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>maintains/debugs link</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>can negotiate multiple Layer 3 protocols</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>terminates link</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>only negotiates IP and AppleTalk</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>uses MD5 encryption</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>LCP</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>NCP</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the description on the left to the appropriate protocol on the right. Not all options are used.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="45" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="2" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="112246" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="112246" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident><componentident>1</componentident><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="112246" action="Set">1</setvar><scoringdescription>LCPnegotiates link establishment parameters maintains/debugs link terminates link NCPnegotiates layer three protocol parameters can negotiate multiple layer three protocols</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

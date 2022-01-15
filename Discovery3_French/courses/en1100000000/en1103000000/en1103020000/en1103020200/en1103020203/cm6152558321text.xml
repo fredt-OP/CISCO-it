@@ -1,0 +1,87 @@
+<textcomponents>
+
+<component id="ID_txt03">
+<text><![CDATA[Click the steps to view the switch port transition through the states of STP.]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Off Disabled:<li>Port shut down or port failed.</li>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Blocking:<br><li>Steady Amber</li><li>Receive BPDUs.</li><li>Discard data frames </li><li>Does not learn addresses </li><li>Takes up to 20 seconds to change to listening state</li>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Listening:<br><li>Blinking Amber</li><li>Listens for BPDUs</li><li>Does not forward frames</li><li>Does not learn MAC addresses </li><li>Determines if switch has more than one trunking port that might create a loop.</li>	-If loop: returns to the blocking state.<br>	-If no loop: transitions to learning state<li>Takes 15 seconds to transition to learning, also called forward-delay</li>]]></text>
+</component>
+
+<component id="ID_txt06b">
+<text><![CDATA[Learning:<br><li>Blinking Amber</li><li>Processes BPDUs</li><li>Learns MAC addresses from traffic received </li><li>Does not forward frames</li><li>Takes 15 seconds to transition to forwarding</li>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Forwarding: <br><li>Blinking Green </li><li>Processes BPDUs</li><li>Learns MAC addresses</li><li>Forwards frames</li>]]></text>
+</component>
+
+<component id="button1">
+<text><![CDATA[Blocking]]></text>
+</component>
+
+<component id="button2">
+<text><![CDATA[Listening]]></text>
+</component>
+
+<component id="button3">
+<text><![CDATA[Learning]]></text>
+</component>
+
+<component id="button4">
+<text><![CDATA[Forwarding]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="forward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="mute">
+<text><![CDATA[Mute]]></text>
+</component>
+
+<component id="unmute">
+<text><![CDATA[UnMute]]></text>
+</component>
+
+<component id="previous">
+<text><![CDATA[Restart]]></text>
+</component>
+
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="start_animation">
+<text><![CDATA[This is the start of an animation]]></text>
+</component>
+
+<component id="bubble_example">
+<text><![CDATA[An example of a Bubble that expands downward]]></text>
+</component>
+
+</textcomponents>

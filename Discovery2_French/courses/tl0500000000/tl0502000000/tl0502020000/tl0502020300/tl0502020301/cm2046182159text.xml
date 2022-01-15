@@ -1,0 +1,45 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Dépannage à l’aide du modèle OSI</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Utilisation du modèle OSI comme cadre de résolution des problèmes réseau</b>]]></text>
+</component>
+<component id="myTable">
+<text><![CDATA[Votre navigateur peut-il ouvrir ce site Web ?]]></text>
+</component>
+<component id="myTableTitle">
+<text><![CDATA[<b>Couches 5 à 7 : Couches supérieures</b>]]></text> 
+</component>
+<component id="myTable2">
+<text><![CDATA[Un pare-feu est-il configuré sur votre PC ?]]></text> 
+</component>
+<component id="myTable2Title">
+<text><![CDATA[<b>Couche 4 : Transport</b>]]></text> 
+</component>
+<component id="myTable3">
+<text><![CDATA[Pouvez-vous envoyer une requête ping sur votre passerelle par défaut ?]]></text> 
+</component>
+<component id="myTable3Title">
+<text><![CDATA[<b>Couche 3 : Réseau</b>]]></text> 
+</component>
+<component id="myTable4">
+<text><![CDATA[Le voyant de liaison de votre carte réseau est-il allumé ?]]></text> 
+</component>
+<component id="myTable4Title">
+<text><![CDATA[<b>Couche 2 : Liaison de données</b>]]></text> 
+</component>
+<component id="myTable5">
+<text><![CDATA[Votre câble réseau est-il branché et protégé ?]]></text> 
+</component>
+<component id="myTable5Title">
+<text><![CDATA[<b>Couche 1 : Physique</b>]]></text> 
+</component>
+<component id="tipTitle"><text>Conseil</text>	
+</component>
+<component id="tipBody"><text><![CDATA[<b>Souvenez-vous des 3 approches de dépannage des problèmes réseau :<br/><br/>Approche ascendante :</b><br/>cette approche commence au niveau des composants physiques du réseau et s’élève à travers les couches successives du modèle OSI. Elle est efficace lorsqu’un problème physique est suspecté.<br/><br/><b>Approche descendante :</b><br/>lorsque vous suivez cette approche, vous commencez par l’application utilisateur, puis vous descendez à travers les couches successives du modèle OSI. L’approche descendante est généralement assez simple car elle n’affecte en principe qu’un seul, ou peu d’utilisateurs. Cela s’explique par le fait que les couches inférieures, ou l’infrastructure réseau, affectent généralement un plus grand nombre d’utilisateurs.<br/><br/><b>Approche diviser et conquérir :</b><br/>lorsque vous suivez cette approche, vous sélectionnez une couche et testez son état de fonctionnement. En fonction des résultats observés, vous avez le choix entre deux directions (vers le haut ou vers le bas) à partir de la couche de départ. Si une couche est en bon état de fonctionnement, vous inspectez la couche au-dessus. Si une couche n’est pas en bon état de fonctionnement, vous inspectez la couche au-dessous. La couche que vous sélectionnez en dernier en tant que première couche ciblée est celle qui est défaillante, et celle au-dessous est en bon état de fonctionnement.]]></text>
+</component>
+<component id="TipText"><text><![CDATA[Conseil]]></text>
+</component>
+</textcomponents>
+

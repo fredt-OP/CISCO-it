@@ -1,0 +1,239 @@
+//zmg, 03.01.01
+//this file needs a better description!
+//
+//
+
+
+
+
+// ***** history_setHistory() *****
+//IN: rptr.INPUT = the input from the command line
+//DO: store the current input from the command line in the history buffer,
+//    if the history buffer becomes full, the oldest command in the buffer is
+//    tossed, and all of the other commands are "slid back" to make room
+//    for the new one.
+//OUT: updated history buffer
+function history_setHistory() {
+
+    var r = eval("r" + active_router); //'r' is a "pointer" to the active router object
+    var vr = eval("r" + VISIBLE_ROUTER); //'r' is a "pointer" to the visible router object
+    var history; // a pointer to the history object
+
+    //this if-statement points the 'history' ptr to the correct
+    //history buffer to store the command history into
+    if ((r.MODE == "user") || (r.MODE == "enable")) {
+
+        //we are in either "user" or "enable" mode, so the 'history'
+        //ptr should point to the user mode's history buffer.
+//C        history = r.userHistory;
+        history = devCmdHist[routerUsedForThisStep[stepnum]].userHistory;
+    } else {
+
+        //we're in "config" mode, so the 'history' ptr should
+        //point to the config mode's history buffer.
+//C        history = r.configHistory;
+        history = devCmdHist[routerUsedForThisStep[stepnum]].configHistory;
+    }
+
+
+
+    //if the last entry in the history buffer is different than what
+    //was just entered on the command line, this if-statement will
+    //execute to save this command in the history buffer
+    if (history[history.length-1] != vr.INPUT) {
+
+        //store this most recent command from the command line in
+        //the last position of the history buffer (array)
+        history[history.length] = vr.INPUT;
+
+        //if the buffer is over the declared length, remove the
+        //oldest command in the buffer and "shift" every command
+        //up one slot in the history buffer.
+        if (history.length > devCmdHist[routerUsedForThisStep[stepnum]].historyBufferLength) {
+            history.shift();
+        }
+    }
+
+    //update the current length counter of the history buffer
+    //in the router object
+    if ((r.MODE == "user") || (r.MODE == "enable"))
+    {
+        //r.userHistIndex = history.length;
+         devCmdHist[routerUsedForThisStep[stepnum]].userHistIndex = history.length;
+    }
+    else
+    {
+        //r.configHistIndex = history.length;
+        devCmdHist[routerUsedForThisStep[stepnum]].configHistIndex = history.length;
+    }
+
+}
+
+
+
+
+
+// ***** history_historyBackward() *****
+//IN: <none>
+//DO: print the previous input command from the history buffer to the
+//    current command line--called when the user is scrolling "backward"
+//    through the history of commands.
+//OUT: console is updated to show the previous command in the history
+function history_historyBackward() {
+
+
+    // pointer to the active router object
+    var r = eval("r" + active_router);
+
+    // pointer to the visible router object
+    var vr = eval("r" + VISIBLE_ROUTER);
+
+    var history; //"pointer" to the history object
+    var histIndex; //tmp.var, index into the history object
+
+    //this if-statement points the 'history' ptr to the correct
+    //history buffer to read the command history from
+    if ((r.MODE == "user") || (r.MODE == "enable")) {
+
+        //we are in either "user" or "enable" mode, so the 'history'
+        //ptr should point to the user mode's history buffer.
+        history = devCmdHist[routerUsedForThisStep[stepnum]].userHistory;
+
+        //point 'histIndex' to the current element
+        //in the history buffer
+        histIndex = devCmdHist[routerUsedForThisStep[stepnum]].userHistIndex;
+
+    } else {
+
+        //we're in "config" mode, so the 'history' ptr should
+        //point to the config mode's history buffer.
+        history = devCmdHist[routerUsedForThisStep[stepnum]].configHistory;
+
+        //point 'histIndex' to the current element
+        //in the history buffer
+        histIndex = devCmdHist[routerUsedForThisStep[stepnum]].configHistIndex;
+    }
+
+
+
+    //this if-statement executes if there are commands left
+    //in the history buffer (before the current one) to display.
+    //if not, then this function simply returns.
+    if (histIndex > 0) {
+
+        //"back up" the current history buffer ptr to the previous command
+        histIndex--;
+
+        //"back up" the current history buffer index to the previous
+        //command in the appropriate router area as well.
+        if ((r.MODE == "user") || (r.MODE == "enable")) {
+            devCmdHist[routerUsedForThisStep[stepnum]].userHistIndex--;
+        } else {
+            devCmdHist[routerUsedForThisStep[stepnum]].configHistIndex--;
+        }
+
+        //replace the last line w/a prompt:  remove all characters
+        //displayed on the last line, except for the prompt, and leave
+        //the cursor right after the prompt
+        r.line[r.lastLine] = r.line[r.lastLine].substring(0,r.PROMPT.length);
+
+        //fill the current router's input buffer (rptr.INPUT) with
+        //the previous command from the history buffer...
+        vr.INPUT = history[histIndex];
+
+        //...and print it to the Hyperterminal console.
+        r.lineIndexCounter = r.INPUT.length;
+        output_write(vr.INPUT);
+
+    }
+}
+
+
+
+
+
+// ***** history_historyForward() *****
+//IN: <none>
+//DO: print the next input command from the history buffer to the
+//    current command line--called when the user is scrolling "forward"
+//    through the history of commands.
+//OUT: console is updated to show the next command in the history
+function history_historyForward() {
+
+
+    var r = eval("r" + active_router); //'rptr' is a "pointer" to the active router object
+    var vr = eval("r" + VISIBLE_ROUTER); //'rptr' is a "pointer" to the visible router object
+    var history; //"pointer" to the history object
+    var histIndex; //tmp.var, index into the history object
+
+    //this if-statement points the 'history' ptr to the correct
+    //history buffer to read the command history from
+    if ((r.MODE == "user") || (r.MODE == "enable")) {
+
+
+        //we are in either "user" or "enable" mode, so the 'history'
+        //ptr should point to the user mode's history buffer.
+        history = devCmdHist[routerUsedForThisStep[stepnum]].userHistory;
+
+        //point 'histIndex' to the current element
+        //in the history buffer
+        histIndex = devCmdHist[routerUsedForThisStep[stepnum]].userHistIndex;
+
+    } else {
+
+        //we're in "config" mode, so the 'history' ptr should
+        //point to the config mode's history buffer.
+        history = devCmdHist[routerUsedForThisStep[stepnum]].configHistory;
+
+        //point 'histIndex' to the current element
+        //in the history buffer
+        histIndex = devCmdHist[routerUsedForThisStep[stepnum]].configHistIndex;
+    }
+
+
+
+    //this if-statement executes if there are commands left
+    //in the history buffer (after the current one) to display.
+    //if not, then this function simply returns.
+    if (histIndex < history.length) {
+
+
+        //"advance" the current history buffer ptr to the previous command
+        histIndex++;
+
+        //"back up" the current history buffer index to the previous
+        //command in the appropriate router area as well.
+        if ((r.MODE == "user") || (r.MODE == "enable")) {
+            devCmdHist[routerUsedForThisStep[stepnum]].userHistIndex++;
+        } else {
+            devCmdHist[routerUsedForThisStep[stepnum]].configHistIndex++;
+        }
+
+        //replace the last line w/a prompt:  remove all characters
+        //displayed on the last line, except for the prompt, and leave
+        //the cursor right after the prompt
+        r.line[r.lastLine] = r.line[r.lastLine].substring(0,r.PROMPT.length);
+
+        if (histIndex != history.length) {
+
+            //there are more commands following this one in the
+            //history buffer, so fill the current router's input
+            //buffer (rptr.INPUT) with the next command from the
+            //history buffer...
+            vr.INPUT = history[histIndex];
+
+        } else {
+
+            //there are no more commands, print nothing to
+            //the command line
+            vr.INPUT = "";
+        }
+
+
+        //...print the router object command line input buffer
+        //(set by the if-statement above) to the Hyperterminal
+        //console...
+        r.lineIndexCounter = vr.INPUT.length;
+        output_write(vr.INPUT);
+    }
+}

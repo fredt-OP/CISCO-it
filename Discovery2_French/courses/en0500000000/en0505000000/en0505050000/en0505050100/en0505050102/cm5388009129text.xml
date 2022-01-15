@@ -1,0 +1,45 @@
+<textcomponents>
+	<component id="rearLabel">
+		<text><![CDATA[<font size="12">Rear</font>]]></text>
+	</component>
+    <component id="rearBody">
+	<text><![CDATA[<font size="12">All of the Ethernet ports are located on the front of the 2960. The back of the 2960 contains the power plug, the console port and the fan ventilation.<br><br><b>Click the components for more information.</b></font>]]></text></component>
+    <component id="frontLabel">
+		<text><![CDATA[<font size="12">Front</font>]]></text>
+	</component>
+	<component id="frontBody">
+		<!--<text><![CDATA[<font size="12"><b>10/100 and 10/100/1000 Ports</b> <ul><li>The 10/100 Ethernet ports can be set to support speeds of 10 or 100 Mbps.</li><li>The 10/100/1000 ports operate at 10, 100, or 1000 Mbps </li></ul><b>SFP port</b><ul><li>A Gigabit capable Ethernet SFP port</li><li>Can be used to support Fiber and Copper transceivers modules</li><li>The fiber transceivers support Fiber-optic cables. </li><li>The copper transceivers support Category 5 cables with RJ-45 connectors.</li><li>The ability to plug into the gigabit ethernet SFP ports allows the fiber and copper transceivers to be easily replaceable in the field should a connection go bad. </li></ul><b>SYST LED </b><ul><li>shows whether the system is receiving power and is functioning properly. </li><li>Green  the system is working normally</li><li>amber means the system is receiving power but is not working properly.</li></ul><b>RPS LED</b><br>The redundant power system (RPS) LED shows the RPS status. <ul><li>Green                  the RPS is connected and ready to provide back-up power, if required.</li><li>Blinking green     the RPS is connected but is unavailable because it is providing power to another device </li><li>Amber                 the RPS is in standby mode or in a fault condition.</li><li>Blinking amber    the internal power supply in a switch has failed, the RPS is providing power to the switch </li></ul><br><br><b>Mode Button  and Port Status LED</b><br>Port LEDs display information about the switch and about the individual ports.<br><br>Mode Button<ul><li>The mode button is used to select one of the port modes: status mode, duplex mode or speed mode. </li><li>To select or change a mode, press the Mode button until the desired mode is highlighted. The purpose of the LED is dependant upon the port mode setting.  </li></ul><br><br>Port status, or STAT, the default port mode.<br><ul><li>Off 	No link, or port was administratively shut down. </li><li>Green 	Link present. </li><li>Blinking green 	Activity. Port is transmitting or receiving data. </li><li>Alternating green-amber 	Link fault. Error frames can affect connectivity, and errors such as excessive collisions, CRC errors, and alignment and jabber errors are monitored for a link-fault indication. </li><li>Amber 	Port is blocked by Spanning Tree Protocol (STP) and is not forwarding data. </li><li>Blinking amber 	Port is blocked by STP and is transmitting or receiving packets. </li></ul><br><br>Duplex LED<br>Port duplex mode, or DUPLX, is either full duplex or half duplex. <ul><li>Off 	Port is operating in half duplex. </li><li>Green 	Port is operating in full duplex</li></ul><br>Speed LED<br>SPEED mode: The 10/100 ports, 10/100/1000 ports and SPF module ports operating speeds.<ul><li>For 10/100/1000 ports<br><textformat blockIndent ='25'>Off 	Port is operating at 10 Mbps<br>Green 	Port is operating at 100 Mbps.<br>Blinking green 	Port is operating at 1000 Mbps. </textformat></li><li>For SFP module ports <br><textformat blockIndent ='25'>Off Port is operating at 10 Mbps. <br>Green 	Port is operating at 100 Mbps. <br>Blinking green 	Port is operating at 1000 Mbps.</textformat> </li></ul><br><b>Console port</b><ul><li>Used to connect the switch to a PC by means of a RJ-45-to-DB-9 cable.</li><li>Used for out-of-band management tasks.</li></ul></font>]]></text>-->
+		<text><![CDATA[<font size="12">Cisco Catalyst 2960 Series Intelligent Ethernet Switches are suitable for small and  medium-sized networks. They provide 10/100 Fast Ethernet and 10/100/1000 Gigabit Ethernet LAN connectivity.<br><br><b>Click the components for more information.</b></font>]]></text>
+	</component>
+
+    <component id="hotspots">
+		<text><![CDATA[Hotspots]]></text>
+	</component>
+    <component id="fullscale">
+		<text><![CDATA[Full Screen]]></text>
+	</component>
+    <component id="title">
+		<text><![CDATA[<font size="14">2960 Series Switch</font>]]></text>
+	</component>
+    <component id="views">
+		<text><![CDATA[Views]]></text>
+	</component>
+    <component id="zoomin">
+		<text><![CDATA[Zoom In]]></text>
+	</component>
+    <component id="zoomout">
+		<text><![CDATA[Zoom Out]]></text>
+	</component>
+<component id="mcStatusPorts">
+		<text><![CDATA[<font size="12"><b>Status LEDs</b><br><br><b>SYST LED:</b><br/><br/><ul>Shows whether the system is receiving power and is working properly.<li>Green: The system is working properly.</li><li>Amber: The system is receiving power but is not working properly.</li></ul> <br><b>RPS LED:</b><br><br>The redundant power system (RPS) LED shows the RPS status. <ul><li>Green: The RPS is connected and ready to provide back-up power, if required.</li><li>Blinking green: The RPS is connected but is unavailable because it is providing power to another device. </li><li>Amber: The RPS is in standby mode or in a fault condition.</li><li>Blinking amber: The internal power supply in a switch has failed, the RPS is providing power to the switch. </li><ul><br><br><b>Mode Button and Port Status LED:</b><br><br>Port LEDs display information about the switch and about the individual ports.<br><br><b>Mode Button:</b><br><br>The mode button is used to select one of the port modes: status mode, duplex mode or speed mode. To select or change a mode, press the Mode button until the desired mode is highlighted. The purpose of the LED is dependant upon the port mode setting. <br><br><b>Port Status, or STAT, the Default Port Mode:</b><ul><li>Off: 	No link, or port was administratively shut down. </li><li>Green: Link present. </li><li>Blinking green: 	Port is transmitting or receiving data. </li><li>Alternating green-amber: Link fault. Error frames can affect connectivity, and errors such as excessive collisions, CRC errors, and alignment and jabber errors are monitored for a link-fault indication.</li><li>Amber: Port is blocked by Spanning Tree Protocol (STP) and is not forwarding data. </li><li>Blinking amber: Port is blocked by STP but continues to transmit and receive inter-switch information messages. </li></ul><br><br><b>Duplex LED:</b><br><br>Port duplex mode, or DUPLX, is either full duplex or half duplex. <ul><li>Off:	Port is operating in half duplex. </li><li>Green: Port is operating in full duplex.</li><ul> <br><br><b>Speed LED:</b><br><br>SPEED mode: The 10/100 ports, 10/100/1000 ports and SPF module ports operating speeds.<br><br>For 10/100 ports:<ul><li>Off:	Port is operating at 10 Mbps</li><li>Green: Port is operating at 100 Mbps.</li></ul>For 10/100/1000 ports:<ul><li>Off:	Port is operating at 10 Mbps</li><li>Green: Port is operating at 100 Mbps.</li><li>Blinking green: 	Port is operating at 1000 Mbps. </li></ul>For SFP module ports: <ul><li>Off:  Port is operating at 10 Mbps. </li><li>Green: Port is operating at 100 Mbps. </li><li>Blinking green:  Port is operating at 1000 Mbps. </li></ul></font>]]></text>
+	</component>
+<component id="mcPorts">
+		<text><![CDATA[<font size="12"><b>10/100 and 10/100/1000 Ports:</b><br><br>The 10/100 Ethernet ports can be set to support speeds of 10 or 100 Mbps.<br>The 10/100/1000 ports operate at 10, 100, or 1000 Mbps. </font>]]></text>
+	</component>
+<component id="mcSFPPorts">
+		<text><![CDATA[<font size="12"><b>SFP Ports:</b><br><br>A Gigabit capable Ethernet SFP port can be used to support Fiber and Copper transceivers modules. The fiber transceivers support Fiber-optic cables. The copper transceivers support Category 5 cables with RJ-45 connectors.<br><br>The ability to plug into the Gigabit Ethernet SFP ports allows the fiber and copper transceivers to be easily replaceable in the field should a connection go bad. </font>]]></text>
+	</component>
+<component id="mcConsolePort">
+		<text><![CDATA[<font size="12"><b>Console Port:</b><br><br>Used to connect the switch to a PC by means of a RJ-45-to-DB-9 cable.<br>Used for out-of-band management tasks.</font>]]></text>
+	</component>
+  </textcomponents>

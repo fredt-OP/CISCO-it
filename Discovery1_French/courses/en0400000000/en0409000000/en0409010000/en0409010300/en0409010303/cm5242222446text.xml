@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<!-- instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Activity</b></font><br/><br/>Identify the troubleshooting technique used in a given scenario.<br/><br/><b>Select the troubleshooting approach being described in the scenario.</b>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Divide and Conquer</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Bottom Up</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Substitution</b>]]></text>
+</component>
+
+<component id="txt_col4">
+	<text><![CDATA[<b>Trial and Error</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Braseen is troubleshooting a network connectivity problem. She starts her investigation at the physical medium by checking cable connections and slowly works her way up through the layered networking model to the application software running on the hosts.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Medhat is unable to connect to a site on the Internet. To begin  troubleshooting he first tests network connectivity.  If that fails he will work his way down the layers to the physical medium. If network connectivity tests succeed he will work his way up to troubleshooting the application software.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Patti is troubleshooting an issue on the network.  Based on her past experience with similar situations she assumes the problem is a bad IP configuration and starts troubleshooting with that.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Allan contacts the ISP complaining of issues connecting to the Internet.  He is unsure of the problem.  The ISP sends a new preconfigured modem to Allan in hopes that it solves the situation.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[4]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Correct, you successfully identified all troubleshooting techniques. Click Next to continue.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect, please try again.]]></text>
+</component>
+
+</textcomponents>

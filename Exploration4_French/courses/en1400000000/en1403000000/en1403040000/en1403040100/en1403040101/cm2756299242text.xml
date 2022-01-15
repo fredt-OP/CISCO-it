@@ -1,0 +1,53 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<B>Configuring Point-to-Point Subinterfaces</B>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<B>Service Provider</B>]]></text> 
+</component>
+
+<component id="ID_btn1">
+<text><![CDATA[Subinterface]]></text> 
+</component>
+
+<component id="ID_btn2">
+<text><![CDATA[DLCI]]></text> 
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td width='220' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color='#FFFFFF'>interface serial Command Parameters</font></b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Description</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>subinterface-number</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Subinterface number in the range 1 to 4294967293. The interface number that precedes the period (.) must match the physical interface number to which this subinterface belongs.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>multipoint</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Select this if all routers exist in the same subnet.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>point-to-point</b></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Select this in order for each pair of point-to-point routers to have its own subnet. Point-to-point links normally use a subnet mask of 255.255.255.252</td>
+</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td width='220' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color='#FFFFFF'>frame-relay interface-dlci Command Parameter</font></b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Description</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>dlci-number</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Defines the local DLCI number being linked to the subinterface. This is the only way to link an LMI-derived DLCI to a subinterface because LMI does not know about subinterfaces. Use the frame-relay interface-dlci command on subinterfaces only.</td>
+</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,96 @@
+﻿<textcomponents>
+<component id="ID_instructions">
+  <text><![CDATA[<b>Click Play to see a host forwarding packets.</b>]]></text> 
+  </component>
+<component id="ID_txt01">
+  <text><![CDATA[<b>H4</b>]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>H5</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>H6</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>net 192.168.1.0</b>]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[<b>switch 1</b>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[<b>router 1</b>]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[<b>H1</b>]]></text> 
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[<b>H2</b>]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[<b>H3</b>]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[<b>net 192.168.2.0</b>]]></text> 
+  </component>
+<component id="ID_txt11">
+  <text><![CDATA[<b>switch 2</b>]]></text> 
+  </component>
+<component id="ID_txt13">
+  <text><![CDATA[<b>switch 3</b>]]></text> 
+  </component>
+<component id="ID_txt14">
+  <text><![CDATA[<b>net 192.168.3.0</b>]]></text> 
+  </component>
+<component id="ID_txt15">
+  <text><![CDATA[<b>H7</b>]]></text> 
+  </component>
+<component id="ID_txt16">
+  <text><![CDATA[<b>H8</b>]]></text> 
+  </component>
+<component id="ID_txt17">
+  <text><![CDATA[<b>H9</b>]]></text> 
+  </component>
+
+<component id="ID_txtBody">
+  <text><![CDATA[I need to send a packet to IP address 192.168.1.3. That IP is in my local network.]]></text> 
+  </component>
+<component id="ID_txtBody2">
+  <text><![CDATA[The IP and MAC addresses are in my ARP table, I will forward it directly.]]></text> 
+  </component>
+<component id="ID_txtBody1_2">
+  <text><![CDATA[I need to send a packet to IP address 192.168.2.1. That IP is not in my local network.]]></text> 
+  </component>
+<component id="ID_txtBody2_2">
+  <text><![CDATA[This packet must be sent to my default gateway for forwarding. I have the default gateway IP and MAC address in my ARP table.]]></text> 
+  </component>
+<component id="ID_txtBody3_2">
+  <text><![CDATA[This host is on a network directly connected on one of my other interfaces. I will check my ARP table. There he is, now I can forward the packet.]]></text> 
+  </component>
+<component id="transcript">
+	<text><![CDATA[Transcript]]></text>
+</component>
+<component id="unmute">
+<text><![CDATA[Unmute]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+<component id="previous">
+<text><![CDATA[Restart]]></text>
+</component>
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="mute">
+<text><![CDATA[Mute]]></text>
+</component>
+<component id="forward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+</textcomponents>

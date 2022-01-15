@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13240" dateexported="03/17/2008">
+		<name>Module 8 Questionnaire</name>
+		<form id="20739" lang="fr"><form-item>
+			<ai id="67907" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="67907" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Orange</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Bleu</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Vert</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Marron</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>7 et 8</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>1 et 2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>3 et 6</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>4 et 5</mattext></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Associez les couleurs aux numéros représentant la configuration des broches pour les câbles de raccordement 568B.</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-150" targetYspacing="16" yspacing="45" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /><display componentIdent="4" xpos="600" ypos="186" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="obs1" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="67908" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="67908" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Broche 1</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Broche 2</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Broche 3</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Broche 4</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Broche 5</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Broche 6</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Broche 7</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Broche 8</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Broche 1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Broche 2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Broche 3</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Broche 4</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Broche 5</mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Broche 6</mattext></material></textcomponent></component><component ident="7" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Broche 7</mattext></material></textcomponent></component><component ident="8" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Broche 8</mattext></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Placez chacune des broches situées à gauche sur la broche correspondante à droite, afin de créer un connecteur RJ-45 approprié pour un câble console de routeur.</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-124" targetYspacing="13" yspacing="42" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /><display componentIdent="7" xpos="200" ypos="315" /><display componentIdent="8" xpos="200" ypos="355" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /><display componentIdent="4" xpos="600" ypos="186" /><display componentIdent="5" xpos="600" ypos="223" /><display componentIdent="6" xpos="600" ypos="260" /><display componentIdent="7" xpos="600" ypos="297" /><display componentIdent="8" xpos="600" ypos="334" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><scoringzone ident="6"><componentident>6</componentident></scoringzone><scoringzone ident="7"><componentident>7</componentident></scoringzone><scoringzone ident="8"><componentident>8</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="obs1" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>7</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="6"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="7"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="8"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>Inversez les numéros 8 sur 1, 7 sur 2, etc.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="86906" type="mc-sa"><question><![CDATA[Quel type de connexion est représenté sur le graphique ? <br/><img src="4656.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Une connexion console  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une connexion Ethernet ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une connexion RNIS ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une connexion de ligne louée ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130387" type="mc-sa"><question><![CDATA[À quoi sert le codage ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il identifie les bits SOF et EOF dans une trame. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il indique les connecteurs de couches physiques d’ordinateurs d’après le mode de connexion de ces derniers aux supports réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il contrôle le mode d’insertion des trames sur les supports au niveau de la couche liaison de données. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il fournit une représentation des bits de données en utilisant différentes tensions, motifs lumineux ou ondes électromagnétiques lors du placement des données sur les supports physiques.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130386" type="mc-sa"><question><![CDATA[Parmi les affirmations suivantes, laquelle définit le mieux la fonction de la couche physique ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle assure une transmission fiable des données à travers une liaison physique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle détermine la connectivité et la sélection du chemin entre deux systèmes distincts. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle établit l’adressage physique, la topologie du réseau et l’accès aux supports. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elle définit les spécifications en termes de fonctions pour la liaison entre des systèmes distincts et pour les signaux électriques, optiques et radio.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130382" type="mc-sa"><question><![CDATA[À travers quel procédé le câblage à paires torsadées non blindées permet-il d’éviter les interférences ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Grâce au renforcement de la protection du câblage ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Grâce à la torsion des paires de fil  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Grâce à la mise à la terre des extrémités ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Grâce à l’enveloppe du câblage ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130388" type="mc-sa"><question><![CDATA[Regardez le schéma. Le réseau représenté est constitué d’un câblage Cat 5e. La station de travail C n’arrive pas à communiquer avec le réseau. Quel problème de couche physique peut empêcher la station de travail C de se connecter au réseau ? <br/><img src="i130388n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle ne possède pas le bon système d’exploitation. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Son adresse IP est incorrecte. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le câble est trop long.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Son préfixe est incorrect. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le type de commutateur n’est pas le bon. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130389" type="mc-ma"><question><![CDATA[Quels sont les avantages du câble en fibre optique par rapport au câble en cuivre ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le câblage en cuivre revient plus cher. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La fibre optique empêche les interférences électromagnétiques.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La manipulation du câble optique doit se faire avec plus de soin. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il peut être employé sur des distances plus longues.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le transfert du courant électrique est plus efficace. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il dispose d’un potentiel de bande passante supérieur.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130390" type="mc-sa"><question><![CDATA[Quel type de câblage utiliseriez-vous pour relier directement deux ordinateurs ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Un câble droit ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un câble à paires inversées ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un câble croisé  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un câble console ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130391" type="mc-sa"><question><![CDATA[Regardez la figure. Quelle est la finalité de l’enveloppe du câblage en fibre optique ? <br/><img src="i130391n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La mise en terre du câblage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’élimination du bruit ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La prévention de la perte du signal lumineux  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La protection contre les perturbations électromagnétiques ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

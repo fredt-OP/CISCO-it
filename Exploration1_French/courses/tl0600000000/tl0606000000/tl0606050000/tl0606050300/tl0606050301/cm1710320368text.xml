@@ -1,0 +1,180 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Cliquez pour afficher les étapes.]]></text>
+</component>
+
+<component id="ID_title">
+<text><![CDATA[<b>Création de sous-réseaux dans un bloc de sous-réseaux</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>1</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<!--slide 1--> <!--router labels-->
+	<component id="ID_txt01_01">
+	<text><![CDATA[<b>Bâtiment A</b>]]></text>
+	</component>
+	
+	<component id="ID_txt02_01">
+	<text><![CDATA[<b>Bâtiment B</b>]]></text>
+	</component>
+	
+	<component id="ID_txt03_01">
+	<text><![CDATA[<b>Bâtiment C</b>]]></text>
+	</component>
+	
+	<component id="ID_txt04_01">
+	<text><![CDATA[<b>Bâtiment D</b>]]></text>
+	</component>
+	
+	<!--table01-->
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>N° de sous-réseau</b></font></td>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Adresse de sous-réseau</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Sous-réseau 0</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>192.168.20.0/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Sous-réseau 1</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>192.168.20.32/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Sous-réseau 2</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>192.168.20.64/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Sous-réseau 3</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>192.168.20.96/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Sous-réseau 4</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>192.168.20.128/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Sous-réseau 5</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>192.168.20.160/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Sous-réseau 6</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>192.168.20.192/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Sous-réseau 7</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>192.168.20.224/27</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!--slide 2--> <!--table02-->
+<component id="ID_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>N° de sous-réseau</b></font></td>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Adresse de sous-réseau</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Sous-réseau 0</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>192.168.20.0/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Sous-réseau 1</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>192.168.20.32/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Sous-réseau 2</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>192.168.20.64/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Sous-réseau 3</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>192.168.20.96/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Sous-réseau 4</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>192.168.20.128/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Sous-réseau 5</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>192.168.20.160/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>Sous-réseau 6</td>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>192.168.20.192/27</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Sous-réseau 7</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>192.168.20.224/27</td>
+	</tr>
+</table>]]></text>
+</component>
+
+	
+	<!--table03-->
+<component id="ID_table03">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>N° de sous-réseau</b></font></td>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Adresse de sous-réseau</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>Sous-réseau 0</td>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>192.168.20.192/30</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FAE1BC' valign='top' type='dynamic'>Sous-réseau 1</td>
+		<td bgcolor='#FAE1BC' valign='top' type='dynamic'>192.168.20.196/30</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>Sous-réseau 2</td>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>192.168.20.200/30</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FAE1BC' valign='top' type='dynamic'>Sous-réseau 3</td>
+		<td bgcolor='#FAE1BC' valign='top' type='dynamic'>192.168.20.204/30</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>Sous-réseau 4</td>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>192.168.20.208/30</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FAE1BC' valign='top' type='dynamic'>Sous-réseau 5</td>
+		<td bgcolor='#FAE1BC' valign='top' type='dynamic'>192.168.20.212/30</td>
+	</tr>
+	<tr>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>Sous-réseau 6</td>
+		<td bgcolor='#E0CBAA' valign='top' type='dynamic'>192.168.20.216/30</td>
+	</tr>
+	<tr>
+		<td bgcolor='#FAE1BC' valign='top' type='dynamic'>Sous-réseau 7</td>
+		<td bgcolor='#FAE1BC' valign='top' type='dynamic'>192.168.20.220/30</td>
+	</tr>
+</table>]]></text>
+</component>
+
+	<!--router labels-->
+	<component id="ID_txt01_02">
+	<text><![CDATA[<b>Bâtiment A</b>]]></text>
+	</component>
+	
+	<component id="ID_txt02_02">
+	<text><![CDATA[<b>Bâtiment B</b>]]></text>
+	</component>
+	
+	<component id="ID_txt03_02">
+	<text><![CDATA[<b>Bâtiment C</b>]]></text>
+	</component>
+	
+	<component id="ID_txt04_02">
+	<text><![CDATA[<b>Bâtiment D</b>]]></text>
+	</component>
+
+</textcomponents>

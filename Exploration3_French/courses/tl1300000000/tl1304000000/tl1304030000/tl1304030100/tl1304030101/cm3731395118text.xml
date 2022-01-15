@@ -1,0 +1,32 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+	<text></text>
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<b>Tableau</b>]]></text> 
+</component>
+  
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>	
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Directives de configuration de VTP</b></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Sur le serveur VTP :<ul><li>Confirmez les paramètres par défaut.</li><li>Configurez 2 commutateurs comme serveurs VTP.</li><li>Configurez le domaine VTP sur le premier commutateur du réseau.</li><li>Assurez-vous que tous les commutateurs se trouvent dans le même mode de version de protocole VTP.</li><li>Configurez les réseaux locaux virtuels et ports agrégés.</li></ul></td></tr>
+		
+		<tr><td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Sur le client VTP :<ul><li>Confirmez les paramètres par défaut.</li><li>Configurez le mode client VTP.</li><li>Configurez des agrégations.</li><li>Connectez-vous au serveur VTP.</li><li>Vérifiez l'état VTP.</li><li>Configurez des ports d’accès.</li></ul></td></tr></table>]]></text>
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<b>Serveur VTP</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Client VTP</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>Client VTP</b>]]></text> 
+  </component>
+
+
+</textcomponents>

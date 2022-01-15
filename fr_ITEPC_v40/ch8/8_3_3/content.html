@@ -1,0 +1,66 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr-fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Contenu</title>
+<base target="_self">
+<link href="../../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="window.focus();">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<!--  Start top title Lesson Bar -->
+	  <tr>
+	    <td width="18" class="toptitle01_white_bold" valign="top">
+	    <img border="0" src="../../images/content_lines.gif" width="16" height="25"> <img border="0" src="../../images/transdot.gif" width="2" height="1"></td>
+	    
+    <td width="18" class="toptitle01_white_bold">8.3</td>
+	    <td class="toptitle01_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+	    <td width="100%" class="toptitle01_white_bold">Description des principaux concepts et technologies de mise en r&eacute;seau</td>
+	    <td width="9" class="toptitle01_white_bold_margin">&nbsp;</td>
+	  </tr>
+	  <!--  End top title Lesson Bar --> <!--  Start top title Topic Bar -->
+	 <tr>
+	    <td width="18" height="25" class="toptitle02_white_bold">&nbsp;</td>
+	    
+    <td height="25"  class="toptitle02_white_bold">8.3.3</td> 
+	    <td class="toptitle02_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+	    <td width="100%" height="25" class="toptitle02_white_bold">D&eacute;finition du protocole DHCP</td>
+	    <td height="25" width="9" class="toptitle02_white_bold_margin">&nbsp;</td>
+	  </tr>
+	 <!--  End top title Topic Bar -->	
+</table>
+	
+	<!-- CONTENT -->
+	<table border="0" cellpadding="0" cellspacing="0" width="95%" >
+		<tr>
+			<td width="20"></td>
+			<td>
+        <table border="0" cellpadding="0" cellspacing="0"  width="95%">
+          
+        <tr> 
+          <td width="100%"> 
+            <p>Le protocole DHCP (Dynamic Host Configuration Protocol) est un utilitaire logiciel utilis&eacute; pour attribuer des adresses IP de mani&egrave;re dynamique aux p&eacute;riph&eacute;riques r&eacute;seau. Ce processus dynamique &eacute;vite d&rsquo;avoir &agrave; affecter manuellement les adresses IP.  Il est possible d&rsquo;installer un serveur DHCP, qui se chargera de configurer les h&ocirc;tes du r&eacute;seau en leur attribuant automatiquement une adresse IP. Lorsqu&rsquo;un ordinateur re&ccedil;oit une adresse IP automatiquement, toutes les autres options d&rsquo;adressage IP sont d&eacute;sactiv&eacute;es (cases gris&eacute;es dans la Figure&nbsp;1). Le serveur conserve une liste des adresses IP &agrave; attribuer et g&egrave;re le processus d&rsquo;adressage, de mani&egrave;re &agrave; ce que chaque syst&egrave;me du r&eacute;seau re&ccedil;oive une adresse IP unique. Les adresses sont attribu&eacute;es pour une p&eacute;riode pr&eacute;d&eacute;termin&eacute;e. Lorsque ce d&eacute;lai arrive &agrave; son terme, le serveur DHCP peut r&eacute;utiliser l&rsquo;adresse pour tout nouvel ordinateur ajout&eacute; au r&eacute;seau.</p>
+            
+            <p>Les informations suivantes sont associ&eacute;es aux h&ocirc;tes par le serveur DHCP avec l&rsquo;adresse IP&nbsp;: </p>
+            <ul>
+              <li>adresse IP&nbsp;; </li>
+              <li>masque de sous-r&eacute;seau&nbsp;; </li>
+              <li>passerelle par d&eacute;faut&nbsp;; </li>
+              <li>valeurs facultatives, telles que l&rsquo;adresse du serveur DNS (syst&egrave;me de noms de domaine). 
+              </li>
+            </ul>
+            <p>Le serveur DHCP re&ccedil;oit une requ&ecirc;te en provenance de l&rsquo;h&ocirc;te. Il s&eacute;lectionne l&rsquo;adresse IP requise dans une liste d&rsquo;adresses pr&eacute;d&eacute;finies, stock&eacute;e dans une base de donn&eacute;es. Une fois l&rsquo;adresse IP et les informations connexes s&eacute;lectionn&eacute;es, le serveur DHCP envoie ces valeurs &agrave; l&rsquo;h&ocirc;te ayant soumis la requ&ecirc;te. Si l&rsquo;h&ocirc;te accepte cette offre, le serveur DHCP lui &laquo;&nbsp;loue&nbsp;&raquo; l&rsquo;adresse IP pendant un laps de temps pr&eacute;d&eacute;fini. </p>
+            <p>L&rsquo;utilisation d&rsquo;un serveur DHCP simplifie l&rsquo;administration du r&eacute;seau, car le logiciel assure un suivi des adresses IP. La configuration TCP/IP automatique r&eacute;duit &eacute;galement les risques d&rsquo;adresses IP invalides ou dupliqu&eacute;es. Pour qu&rsquo;un ordinateur en r&eacute;seau puisse b&eacute;n&eacute;ficier des services du serveur DHCP, il doit d&rsquo;abord identifier ce serveur sur le r&eacute;seau local. Un ordinateur peut &ecirc;tre configur&eacute; de mani&egrave;re &agrave; accepter une adresse IP propos&eacute;e par un serveur DHCP&nbsp;; pour ce faire, il suffit de cliquer sur l&rsquo;option &laquo;&nbsp;Obtenir automatiquement une adresse IP&nbsp;&raquo;, dans la fen&ecirc;tre de configuration de la carte r&eacute;seau, comme illustr&eacute; dans la Figure&nbsp;2.</p>
+            <p>Si votre ordinateur n&rsquo;arrive pas &agrave; communiquer avec le serveur DHCP pour obtenir une adresse IP, le syst&egrave;me d&rsquo;exploitation Windows lui attribuera automatiquement une adresse IP priv&eacute;e. Si votre ordinateur re&ccedil;oit une adresse IP situ&eacute;e dans la plage 169.254.0.0 &agrave; 169.254.255.255, cela signifie qu&rsquo;il ne pourra communiquer qu&rsquo;avec des ordinateurs situ&eacute;s dans cette m&ecirc;me plage. Une adresse priv&eacute;e peut parfois &ecirc;tre utile, par exemple dans une salle de classe, lorsque vous souhaitez emp&ecirc;cher tout acc&egrave;s ext&eacute;rieur au r&eacute;seau. Cette fonction du syst&egrave;me d&rsquo;exploitation est appel&eacute;e APIPA (Automatic Private IP Addressing, adressage IP priv&eacute; automatique). La fonction APIPA demandera continuellement au serveur DHCP une adresse IP pour votre ordinateur.</p>
+          </td>
+          </tr>
+         </table>  
+       </td>
+     </tr>
+	</table>
+
+</body>
+
+</html>

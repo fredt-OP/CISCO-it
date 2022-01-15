@@ -1,0 +1,47 @@
+﻿<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Messages d’erreur de la console</b>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	
+	<tr>
+		<td width="170" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>Exemple de message d’erreur</b></font></td>
+		<td width="200" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>Signification</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Comment obtenir de l’aide</b></font></td>
+					
+	</tr>
+	<tr>
+		
+		<td width="170" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>cl</b><br/>% Ambiguous command:  "cl"</font></td>
+		<td width="200" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Vous n’avez pas entré suffisamment de caractères pour permettre à votre périphérique de reconnaître la commande.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entrez à nouveau la commande suivie d’un point d’interrogation (?) sans espace intermédiaire.<br/>Les mots clés que vous pouvez entrer avec la commande s’affichent.</td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td width="170" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>clock</b><br/>% Incomplete command.</font></td>
+		<td width="200" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Vous n’avez pas entré tous les mots clés ou les valeurs nécessaires pour cette commande.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entrez à nouveau la commande suivie d’un point d’interrogation (?) avec un espace intermédiaire.</td>
+				
+	</tr>
+	
+	<tr>
+		
+		<td width="170" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>clock set aa:12:23</b><br/>^<br/>% Invalid input detected at '^' marker.</font></td>
+		<td width="200" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Vous avez mal entré la commande. L’accent circonflexe (^) marque la position de l’erreur.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entrez un point d’interrogation (?) pour afficher toutes les commandes ou tous les paramètres disponibles.</td>
+			
+	</tr>
+	
+	
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

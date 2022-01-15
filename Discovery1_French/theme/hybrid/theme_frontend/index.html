@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<HTML>
+	<HEAD>
+		<title>CCNA Certification</title>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+          
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script language="javascript" src="../js/themeapi/globals.js"></script>
+		<script language="javascript" src="../js/themeapi/com-api.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-course.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-chapter.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-section.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-topic.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-page.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-media.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-theme.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-globaltools.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossary.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossaryterm.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossaryset.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-events.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-main.js"></script>
+		<script>
+			// start API events
+			eventobj.addEvent("comactive", "main.theme.getData();", "gettheme");
+			eventobj.addEvent("themeready", "main.globaltools.getData();", "getgt");
+			eventobj.addEvent("globaltoolsready", "main.glossary.getData();", "getglos");
+			eventobj.addEvent("glossaryready", "main.course.getData();", "getcourse");
+			eventobj.addEvent("courseready", "main.getCurrent();", "getcurrent");
+			eventobj.addEvent("pageready", "getContent();", "getcourse");
+			
+			// called on toggle event
+			eventobj.addEvent("toggle", "main.theme.getData();", "gettheme");
+
+			// end API events
+
+
+			function getContent() {
+				setFrameSize();
+				window.frames["header"].getContent(main);
+				window.frames["text_content"].getContent(main);
+				window.frames["footer"].getContent(main);
+			}
+
+			function setFrameSize() {
+				document.getElementById("contentframeset").cols = "*,33%";
+				if (main.page.type == "FullScreen") {
+					document.getElementById("contentframeset").cols = "*,1";
+				}
+			}
+
+
+		</script>
+          
+          <!-- theme specific js -->
+		<script language="javascript" src="js/navigation.js"></script>
+        
+	</HEAD>
+	
+     <frameset rows="91,*,84" name="mainframeset" id="mainframeset" frameborder="0">
+     	<frame src="header.html" frameborder="0" name="header" noresize scrolling="no" marginwidth="0" marginheight="0">
+          <frameset cols="*, 1" name="contentframeset" id="contentframeset" frameborder="0">
+	     	<frame name="mediaframe" id="mediaframe" src="../../cheetah.html" frameborder="0" noresize scrolling="no" marginwidth="0" marginheight="0">
+             	<frame src="text_content.html" frameborder="0" name="text_content" id="text_content" noresize scrolling="auto" marginwidth="0" marginheight="0">
+          </frameset>
+     	<frame src="footer.html" frameborder="0" name="footer" noresize scrolling="no" marginwidth="0" marginheight="0">
+     </frameset>
+     
+     <noframes></noframes>
+</HTML>

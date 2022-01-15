@@ -1,0 +1,56 @@
+<textcomponents>
+
+<component id="ID_txt01">    
+<text><![CDATA[RI]]></text>  
+ </component>
+ 
+ <component id="ID_txt02">    
+ <text><![CDATA[R2]]></text>  
+ </component>
+ 
+ <component id="ID_txt03">    
+ <text><![CDATA[R4]]></text>  
+ </component>
+ 
+ <component id="ID_txt04">    
+ <text><![CDATA[R3]]></text>  
+ </component>
+ 
+ <component id="ID_txt05">    
+ <text><![CDATA[192.168.2.0 /24]]></text>  
+ </component>
+ 
+ <component id="ID_txt06">    
+ <text><![CDATA[Fa0/0 IN]]></text>  
+ </component>
+ 
+ <component id="ID_txt07">    
+ <text><![CDATA[Fa0/0 OUT]]></text>  
+ </component>
+ 
+ <component id="ID_txt08">    
+ <text><![CDATA[192.168.1.0 /24]]></text>  
+ </component>
+ 
+ <component id="ID_txt09">    
+ <text><![CDATA[192.168.4.0 /24]]></text>  
+ </component>
+ 
+ <component id="ID_txt10">    
+ <text><![CDATA[192.168.3.0 /24]]></text>  
+ </component>
+ 
+ <component id="ID_txt11">    
+ <text><![CDATA[<b>Standard ACL:</b><li>Place closest to destination</li><li>Denies 192.168.1.0 traffic to 192.168.4.0</li><li>Wastes bandwidth</li>]]></text>  
+ </component>
+ 
+ <component id="ID_txt12">    
+  <text><![CDATA[<b>Extended ACL:</b><li>Place closest to source</li><li>Denies traffic from 192.168.1.0 network from reaching 192.168.4.0</li><li>Allows it to reach other networks and saves bandwidth</li>]]></text>  
+ </component>
+ 
+  <component id="ID_txt13">    
+  <text><![CDATA[<b>Requirements:</b><br>Compare the use of a standard ACL with an extended ACL to prevent network 192.168.1.0 traffic from entering the 192.168.4.0 network. Traffic should be allowed to reach all other networks.]]></text>  
+ </component>
+
+
+</textcomponents>

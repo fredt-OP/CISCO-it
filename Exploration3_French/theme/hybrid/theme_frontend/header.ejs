@@ -1,0 +1,79 @@
+			<% top.document.title=main.course.title; %>
+			
+			<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td background="images/header_logo_BG.gif" colspan="11" rowspan="4" width="*" height="91" align="right" valign="top">
+						<img src="images/header_logoCisco.gif" align="left">
+						<div class="titleCourse">
+							<%= main.course.title %><br><%= main.course.subtitle %>
+						</div></td>
+					<td background="images/header_filler01_BG.gif" colspan="5" rowspan="3" width="*" height="61">
+						<img src="images/header_filler01_border.gif"></td>
+					<td background="images/header_logo_BG.gif" colspan="13" width="*" height="35" align="right">
+						<TABLE class="titleA" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<% if (main.chapter.type != "CourseTour") {%>
+									<td>&nbsp;<%= main.chapter.getLI('rtl') %></td>
+								<% } else { %>
+									<td>&nbsp;</td>
+								<% } %>
+								<td>&nbsp;<%= main.chapter.title %></td>
+							</tr>
+						</TABLE></td>
+					<td width="1" height="35"><img src="images/spacer.gif"></td>
+				</tr>
+				<tr>
+					<td bgcolor="#8ba5cf" colspan="13" width="*" height="25" align="right">
+						<TABLE class="titleA" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<% if (main.chapter.type != "CourseTour") {%>
+									<td>&nbsp;<% if (main.course.lang == "en") { %> <%= main.section.getLI('ltr') %> <% } else { %> <%= main.section.getLI('rtl') %> <% } %></td>
+									<td>&nbsp;<%= main.section.title %></td>
+								<% } else { %>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								<% } %>
+							</tr>
+						</TABLE></td>
+					<td width="1" height="25"><img src="images/spacer.gif"></td>
+				</tr>
+				<tr>
+					<td background="images/header_currentSection_BG.gif" colspan="13" rowspan="2" width="*" height="31" align="right">						
+						<TABLE class="titlePageName" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<% if (main.chapter.type != "CourseTour") {%>
+									<td>&nbsp;<% if (main.course.lang == "en") { %> <%= main.topic.getLI('ltr') %> <% } else { %> <%= main.topic.getLI('rtl') %> <% } %></td>
+									<td>&nbsp;<%= main.topic.title %></td>
+								<% } else { %>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								<% } %>
+							</tr>
+						</TABLE></td>
+					<td width="1" height="1"><img src="images/spacer.gif"></td>
+				</tr>
+				<tr>
+					<td background="images/header_sectionBubbles_curve.gif" width="16">&nbsp;</td>
+					<td background="images/header_sectionBubbles.gif" class="bubbles" colspan="4" width="*" height="30" valign="bottom" align="left">
+					     <% var bubbleActive = main.chapter.num+'.'+main.section.num+'.'+main.topic.num+'.'+main.page.num; %>
+						<% if ( main.topic.pages.length > 1) { %>
+							<% for (var k=main.topic.pages.length; k>0; k--) { %>
+								<% var tempPage = main.chapter.num+'.'+main.section.num+'.'+main.topic.num+'.'+k; %>
+								<% if (tempPage == bubbleActive) { %>
+									<a href="javascript:parent.main.gotoPage('<%= tempPage %>')">
+										<img src="./images/button_bubble0<%= k %>_on.gif" name="bubble0<%= k %>" border="0"></a>
+								<% } else { %>
+									<a href="javascript:parent.main.gotoPage('<%= tempPage %>')" onmouseover='bubble0<%= k %>.src = "images/button_bubble0<%= k %>_down.gif";' onmouseout='bubble0<%= k %>.src="images/button_bubble0<%= k %>_up.gif"'>
+										<img src="./images/button_bubble0<%= k %>_up.gif" name="bubble0<%= k %>" border="0"></a>
+								<% } %>
+							<% } %>
+							<img src="images/header_sectionBubbles_seperator.gif" class="bubbles_seperator" border="0">
+						<% } %>
+					</td>
+					<td width="1" height="30"><img src="images/spacer.gif"></td>
+				</tr>
+				<tr height="1">
+					<td colpan="29"><img src="images/spacer.gif" width="21" height="1"></td>
+					<td></td>
+				</tr>
+			</TABLE>

@@ -1,0 +1,250 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) What are the key characteristics of RIPv1?]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 5.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<ul><li>RIP a distance vector routing protocol.</li><li>RIP uses hop count as its only metric for path selection.</li><li>Advertised routes with hop counts greater than 15 are unreachable.</li><li>Messages are broadcast every 30 seconds.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) HQ has connections to three branch routers (BR1, BR2, and BR3) and to the Internet through ISP. RIPv1 is configured between HQ and the branch routers.<br/>List the commands used to configure RIPv1 routing on the BR1 router.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<li>BR1(config)<b>#router rip</b><br><li>BR1(config-router)<b>#network 192.168.0.0</b><br><li>BR1(config-router)<b>#network 192.168.1.0</b>]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) List in order the three commands used to verify and troubleshoot a RIP configuration.]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from 5.2)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<font face='_typewriter'><b><li>show ip route<br><li>show ip protocols<br><li>debug ip rip</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) What is the purpose of the <font face='_typewriter'><b>passive-interface</b></font> command? What is the configuration for BR1, including router prompt, for this command?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from 5.3)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[The <font face='_typewriter'><b>passive-interface</b></font> command is used to stop RIP updates from being sent out an interface where RIP updates are not needed. For example, a LAN interface would only need to send out RIP updates if there is another RIP-enabled device on the LAN. ]]></text>
+</component>
+<component id="ID_Q4_txt05a">
+<text><![CDATA[BR1(config-router)<b>#passive-interface Fa0/0</b>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) In RIPv1, what is a boundary router?]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from 5.4)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[Any router with interfaces in more than one major classful network.]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q6_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) Why would you not want to configure a dynamic routing protocol to exchange updates with your ISP?]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(from 5.5)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[ISP routers have routes to all other destinations on the Internet. Because the ISP is the default router for all traffic for which you do not have routes, the best solution is to configure a default route pointing to the ISP. The alternative is to exchange routing updates, have your routers build huge routing tables, and end up sending externally bound traffic to the ISP anyway.]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+
+<!-- Question 7 -->
+
+
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) What is the full routing configuration for HQ including RIPv1, default routing and propagating the default route to the branch routers?]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<font face="_typewriter">HQ(config)<b>#router rip</b><br>HQ(config-router)<b>#network 192.168.0.0</b><br>HQ(config-router)<b>#default-information originate</b><br>HQ(config-router)<b>#exit</b><br>HQ(config)<b>#ip router 0.0.0.0 0.0.0.0 s0/0/0</b>]]></text>
+</component>
+
+
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) This network is not fully converged. Using only the output from <b><font face='_typewriter'>show ip route</font></b>, determine the problem and either suggest a solution or suggest the next step in determining the source of the problem.]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[Click to see topology and routing tables]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[The LAN for R3 is not being advertised in RIP updates. Since this LAN is also missing from the routing table for R3, then the interface is not active. Activating the interface would be the first step to solving the convergence problem. As long as R3 is configured to advertise 192.168.3.0 in RIP updates, then convergence should be achieved.<br/><br/><font face='_typewriter'>R3(config)#<b>interface fa0/0</b><br/>R3(config-if)#<b>ip address 192.168.3.65 255.255.255.192</b><br/>R3(config-if)#<b>no shutdown</b></font><br/><br/>If necessary, add 192.168.3.0 to RIP process.<br/><br/><font face='_typewriter'>R3(config)#<b>router rip</b><br/>R3(config-router)#<b>network 192.168.3.0</b></font>]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q8_txt09">
+<text><![CDATA[<b>Show Output</b>]]></text>
+</component>
+<component id="ID_Q8_txt10">
+<text><![CDATA[<b>Hide Output</b>]]></text>
+</component>
+
+<!-- Question 9 -->
+
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[9) Challenge: What static route command on ISP will summarize all the networks (and only those networks) accessible through HQ?]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[ISP(config)<b>#ip route 192.168.0.0 255.255.252.0 s0/0/0</b>]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>This concludes this chapter's Problems and Discussion questions.</b>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+
+

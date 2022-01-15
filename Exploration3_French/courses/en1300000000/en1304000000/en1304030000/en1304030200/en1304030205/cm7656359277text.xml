@@ -1,0 +1,162 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Incorrect Revision Number</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Incorrect Revision Number</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>Reset Revision Number</b>]]></text>
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<b>Verify Revision Number</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>VTP Server</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = 17<br/>VLANs: 10, 20</b>]]></text>
+</component>
+
+<component id="ID_txt05-2">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = <font color='#FF0000'>17</font><br/>VLANs: <font color='#FF0000'>10, 20</font></b>]]></text>
+</component>
+
+<component id="ID_txt05-3">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = <font color='#FF0000'>35</font><br/>VLANs: <font color='#FF0000'>30, 40</font></b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = 17<br/>VLANs: 10, 20</b>]]></text>
+</component>
+
+<component id="ID_txt06-2">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = <font color='#FF0000'>17</font><br/>VLANs: <font color='#FF0000'>10, 20</font></b>]]></text>
+</component>
+
+<component id="ID_txt06-3">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = <font color='#FF0000'>35</font><br/>VLANs: <font color='#FF0000'>30, 40</font></b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = 17<br/>VLANs: 10, 20</b>]]></text>
+</component>
+
+<component id="ID_txt07-2">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = <font color='#FF0000'>17</font><br/>VLANs: <font color='#FF0000'>10, 20</font></b>]]></text>
+</component>
+
+<component id="ID_txt07-3">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = <font color='#FF0000'>35</font><br/>VLANs: <font color='#FF0000'>30, 40</font></b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = <font color='#FF0000'>35</font><br/>VLANs: <font color='#FF0000'>30, 40</font></b>]]></text>
+</component>
+
+<component id="ID_txt08-2">
+<text><![CDATA[<b>VTP Domain = cisco1<br/>Revision number = 35<br/>VLANs: 30, 40</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Before adding a switch to a VTP enabled network, reset the revision number on a switch using these commands:</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS Command Syntax</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter global configuration mode</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>#<b>configure terminal</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configures the VTP domain name</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>(config)#<b>vtp domain</b> <i>domain-name</i></font></td>	
+	</tr>
+	</table>
+]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Here is an example showing how to reset the revision number on switch S4:</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<font face = "_typewriter">S4(config)#<b>vtp domain test</b><br />S4(config)#<b>vtp domain cisco1</font></b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>Top highlighted area shows the revision number reset to zero.<br />Bottom highlighted area shows that VLANs have been removed.</b>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward2">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute2">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute2"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+</textcomponents>

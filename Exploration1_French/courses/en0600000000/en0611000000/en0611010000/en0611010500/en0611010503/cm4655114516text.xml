@@ -1,0 +1,36 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Command Syntax Check Help</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Error Message </b></font></td>
+<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Meaning</b></font></td>
+<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Examples</b></font></td>
+<td valign='top' type='dynamic'><font color='#FFFFFF'><b>How to Get Help</b></font></td>
+</tr>
+<tr>
+<td width='200' bgcolor='#DDDDDD' valign='top' type='dynamic'><font face="_typewriter">% Ambiguous command: 'command'</font></td>
+<td width='200' bgcolor='#DDDDDD' valign='top' type='dynamic'>Not enough characters were entered for the IOS to recognize the command.</td>
+<td width='250' bgcolor='#DDDDDD' valign='top' type='dynamic'><font face="_typewriter">Switch#<b>c % Ambiguous command:'c'</b></font></td>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Reenter the command followed by a question mark (?) with no space between the command and the question mark.<br/>The possible keywords that you can enter with the command are displayed.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' valign='top' type='dynamic'><font face="_typewriter">% Incomplete command.</font></td>
+<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Not all of the required keywords or arguments were entered.</td>
+<td bgcolor='#F2F2F2' valign='top' type='dynamic'><font face="_typewriter">Switch#<b>clock set % Incomplete command.</b></font></td>
+<td bgcolor='#F2F2F2' valign='top' type='dynamic'>Reenter the command followed by a question mark (?) with a space after last word. The required keywords or arguments are displayed.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font face="_typewriter">% Invalid input detected at '^' marker</font></td>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'>The command was entered incorrectly. The error occurred where the caret mark (^) appears.</td>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font face="_typewriter">Switch#<b>clock set 19:50:00 25 6</b><br/>       <b>                      ^</b><br/><b>% Invalid input detected at '^' marker.</b></font></td>
+<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Reenter the command followed by a question mark (?) in a place pointed by '^' mark. It can be also needed to delete last keyword(s) or argument(s).</td>
+</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

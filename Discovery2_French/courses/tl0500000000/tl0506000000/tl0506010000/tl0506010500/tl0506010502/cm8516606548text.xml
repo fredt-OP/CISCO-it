@@ -1,0 +1,38 @@
+﻿<textcomponents>
+
+  
+<component id="ID_txt02">
+  <text><![CDATA[<b>R1</b>]]></text> 
+  </component>
+  
+  
+<component id="ID_txt05">
+  <text><![CDATA[<b><font face="_typewriter">R1#show ip route</font></b>]]></text> 
+  </component>
+  
+<component id="ID_txt06">
+  <text><![CDATA[<b><font face="_typewriter">R1#show ip protocols</font></b>]]></text> 
+  </component>
+  
+<component id="ID_txt07">
+  <text><![CDATA[<b><font face="_typewriter">R1#debug ip rip</font></b>]]></text> 
+  </component>
+
+<component id="ID_router01">
+  <text><![CDATA[<font size="-2" face="_typewriter"><b>R1#show ip route<br>Codes: C - connected, R - RIP<br><br>R 10.0.0.0/8 [120/1] via 192.168.1.1, 00:00:17, Serial0/0/0<br>C 172.16.0.0/16 is directly connected, FastEthernet0/1<br>R 172.17.0.0/16 [120/1] via 192.168.0.2, 00:00:20, FastEthernet0/0<br>C 192.168.0.0/24 is directly connected, FastEthernet0/0<br>C 192.168.1.0/24 is directly connected, Serial0/0/0<br>R 192.168.2.0/24 [120/1] via 192.168.0.2, 00:00:20, FastEthernet0/0<br> [120/1] via 192.168.1.1, 00:00:17, Serial0/0/0</font>]]></text> 
+  </component>
+
+<component id="ID_router02">
+  <text><![CDATA[<font size="-2" face="_typewriter"><b>R1#show ip protocols<br>Routing Protocol is "rip"<br>  Outgoing update filter list for all interfaces is not set<br>  Incoming update filter list for all interfaces is not set<br>  Sending updates every 30 seconds, next due in 23 seconds<br>  Invalid after 180 seconds, hold down 180, flushed after 240<br>  Redistributing: rip<br>  Default version control: send 2, receive version 2<br>     Interface          Send   Recv    Triggered RIP    Key-chain<br>     FastEthernet0/0    2      2  <br>     FastEthernet0/1    2      2  <br>     Serial0/0/0        2      2<br>  Automatic network summarization is in effect<br>  Maximum path: 4<br>  Routing for Networks:<br>    172.16.0.0<br>    192.168.0.0<br>    192.168.1.0<br>  Routing Information Sources:<br>    Gateway                 Distance             Last Update<br>  Distance: (default is 120)</font>]]></text> 
+  </component>
+
+<component id="ID_router03">
+  <text><![CDATA[<font size="-2" face="_typewriter"><b>R1#debug ip rip<br/>RIP protocol debugging is on<br/>R1#<br/>*Sep 12 21:08:51.959: RIP: build update entries<br/>*Sep 12 21:08:51.959:   192.168.1.0/24 via 0.0.0.0, metric 1, tag 0<br/>*Sep 12 21:09:16.399: RIP: received v2 update from 172.16.1.2 on Serial0/0/0<br/>*Sep 12 21:09:16.399:      192.168.2.0/24 via 0.0.0.0 in 1 hops<br/>*Sep 12 21:09:18.575: RIP: sending v2 update to 224.0.0.9 via Serial0/0/0 (172.20.1.1)</b></font>]]></text> 
+  </component>
+
+<component id="ID_inst">
+	<text><![CDATA[<b>Cliquez sur les commandes pour afficher les sorties.</b>]]></text>
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,190 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>VTP Frame Structure</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click Play to see the animation.</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Overview</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>VTP Frame Details</b>]]></text>
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<b>VTP Message Contents</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>VTP Header</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>VTP Message</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Ethernet Frame</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Len/<br/>EType</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Data</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>FCS</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>802.1q encapsulated Ethernet Frame</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>EType</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Tag</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>Len/<br/>EType</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Data</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>FCS</b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>PRI</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>VLAN ID</b>]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[<b>Recalculated FCS<br/>w/Tag</b>]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[<b>Server</b>]]></text>
+</component>
+
+<component id="ID_txt23">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+
+<component id="ID_txt24">
+<text><![CDATA[<b>DA</b>]]></text>
+</component>
+
+<component id="ID_txt25">
+<text><![CDATA[<b>SA</b>]]></text>
+</component>
+
+<component id="ID_txt26">
+<text><![CDATA[<b>802.1Q<br/>Tag</b>]]></text>
+</component>
+
+<component id="ID_txt27">
+<text><![CDATA[<b>Type or<br/>Length</b>]]></text>
+</component>
+
+<component id="ID_txt28">
+<text><![CDATA[<b>LLC</b>]]></text>
+</component>
+
+<component id="ID_txt29">
+<text><![CDATA[<b>SNAP</b>]]></text>
+</component>
+
+<component id="ID_txt30">
+<text><![CDATA[<b>VTP Header</b>]]></text>
+</component>
+
+<component id="ID_txt31">
+<text><![CDATA[<b>VTP Message Type</b>]]></text>
+</component>
+
+<component id="ID_txt32">
+<text><![CDATA[<b>FCS</b>]]></text>
+</component>
+
+<component id="ID_txt33">
+<text><![CDATA[<b>01-00-0C-CC-CC-CC<br/>MAC address</b>]]></text>
+</component>
+
+<component id="ID_txt34">
+<text><![CDATA[<b>DSAP = AA<br/>SSAP = AA </b>]]></text>
+</component>
+
+<component id="ID_txt35">
+<text><![CDATA[<b>Fields and Size Varies but always contains:<br/>Domain name<br/>Domain name length<br/>Version<br/>Message type<br/>Revision number</b>]]></text>
+</component>
+
+<component id="ID_txt36">
+<text><![CDATA[<b>OUI = Cisco (00000c)<br/>PID = 2003 for VTP</b>]]></text>
+</component>
+
+<component id="ID_txt37">
+<text><![CDATA[<b>Fields and Size varies based on VTP message type</b>]]></text>
+</component>
+
+<component id="ID_txt38">
+<text><![CDATA[<b>VTP advertisements send this global domain information:</b><br/><ul><li>VTP domain name</li><li>Updater identity and update timestamp</li><li>MD5 digest</li><li>Frame format</li></ul><br/><b>VTP advertisements send this VLAN information:</b><br/><ul><li>VLAN ID</li><li>VLAN name</li><li>VLAN type</li><li>VLAN state</li><li>Additional VLAN configuration information specific to the VLAN type</li></ul>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Differences Between Default and Actual Bandwidth</b>]]></text>
+</component>
+
+<!-- captions -->
+<component id="ID_caption01">
+<text><![CDATA[<b>Default Bandwidth = 1544 kbps<br>Actual Bandwidth = 64 kbps</b>]]></text>
+</component>
+<component id="ID_caption02">
+<text><![CDATA[<b>R1 assumes that cost to 192.168.10.8 is equal through R2 or R3.</b>]]></text>
+</component>
+<component id="ID_caption03">
+<text><![CDATA[<b>The OSPF cost value of 64 is not the same as 64 kbps.<br>The OSPF cost value of a 64 kbps link is 1562.</b>]]></text>
+</component>
+
+<!-- topology -->
+<component id="ID_txt01">
+<text><![CDATA[<b>64 kbps</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>128 kbps</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>256 kbps</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>R1</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>R2</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>R3</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[***output omitted***]]></text>
+</component>
+
+<!-- instructions -->
+<component id="ID_inst">
+<text><![CDATA[<b>Click to see command output.</b>]]></text>
+</component>
+
+<!-- bottom buttons -->
+<component id="show interface">
+<text><![CDATA[<b><font face="_typewriter">show interface</font></b>]]></text>
+</component>
+<component id="show ip route">
+<text><![CDATA[<b><font face="_typewriter">show ip route</font></b>]]></text>
+</component>
+<component id="show ip ospf interface">
+<text><![CDATA[<b><font face="_typewriter">show ip ospf interface</font></b>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,5 @@
+<transcript lastedited="08.12.08 07:08:56">
+<title><content-text><![CDATA[7.2.4 - PPP Authentication]]></content-text></title>
+<brief><content-text><![CDATA[The animation depicts the CHAP authentication process. Two routers, R1 and R2, are linked by a serial connection.<br><br>R1 sends a message to R2 and states, "Run PPP", indicating it wants to run PPP. <br><br>R2 says, "Use CHAP", and sends the message, "Here is my Challenge information. Send me your username and password."  <br><br>R1 calculates a special value using the secret password and the challenge value. The one way hash is 6G4 # 9P4. <br><br>Router R1 sends a message back to R2 with the username R1 and the password 6G4 # 9P4. <br><br>R2 calculates 6G4 # 9P4 using the same secret password. R2 states "Accept". <br><br>R1 randomly challenges the remote router to verify authentication. <br><br>R2 sends a message back to R1, "Here is a different Challenge value. Send me your username and password again to make sure its still you."<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

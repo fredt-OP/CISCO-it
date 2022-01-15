@@ -1,0 +1,102 @@
+<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<font size="+2"><b>Activity</b></font><br><br>Determine whether the IP packet is permitted or denied by analyzing the comparison address and wildcard mask.<br><br><b>Check Permit or Deny after comparing the IP address with the ACL statement.</b>]]></text>
+</component>
+
+<component id="id_descr">
+<text><![CDATA[]]></text>
+</component>
+
+<component id="id_text_title">
+<text><![CDATA[<b>ACL Statements                                              IP Packet Address</b>]]></text>
+</component>
+
+<component id="ID_check">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_reset">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+	<component id="txt_numrows">
+		<text><![CDATA[7]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[Permit]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[Deny]]></text>
+	</component>
+	
+    <component id="txt_q1">
+		<text><![CDATA[access-list 66 permit 192.168.122.128  0.0.0.63	         192.168.122.195]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[access-list 66 permit 192.168.223.64  0.0.0.31	         192.168.223.27]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[access-list 66 permit 192.168.223.32  0.0.0.31	         192.168.223.60]]></text>
+	</component>
+	<component id="txt_q4">
+		<text><![CDATA[access-list 66 permit 192.168.155.0  0.0.0.255	         192.168.155.245]]></text>
+	</component>
+	 <component id="txt_q5">
+		<text><![CDATA[access-list 66 permit 10.93.76.8  0.0.0.3	                   10.93.76.10]]></text>
+	</component>
+	<component id="txt_q6">
+		<text><![CDATA[access-list 66 permit 192.168.155.0  0.0.0.255	         192.168.156.245]]></text>
+	</component>
+	<component id="txt_q7">
+		<text><![CDATA[access-list 66 permit 172.16.0.0  0.0.255.255	         172.17.0.5]]></text>
+	</component>
+	
+  
+	
+    <component id="txt_a1">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+	<component id="txt_a4">
+		<text><![CDATA[1]]></text>
+	</component>
+	<component id="txt_a5">
+		<text><![CDATA[1]]></text>
+	</component>
+	<component id="txt_a6">
+		<text><![CDATA[2]]></text>
+	</component>
+	<component id="txt_a7">
+		<text><![CDATA[2]]></text>
+	</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully determined which packets have been permitted or denied. Click Next to continue.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review wildcard masks and try again.]]></text></component>
+
+
+</textcomponents>

@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+<component id="ID_but01">
+<text><![CDATA[<b>Position de l’ACL standard</b>]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[<b>Position de l’ACL étendue</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[192.168.2.0/24]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[192.168.1.0/24]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[192.168.3.0/24]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[192.168.4.0/24]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Fa0/0 ENT]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Fa0/0 SOR]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Mauvais emplacement :</b><br>Répond à certaines spécifications. Empêche le trafic du réseau 192.168.1.0 d’accéder aux réseaux 192.168.2.0 et 192.168.3.0.]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Bon emplacement :</b><br>Répond à toutes les spécifications.]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Bon emplacement :</b><br>L’ACL étendue est positionnée au plus près de la source, ce qui empêche le trafic du réseau 192.168.1.0 d’atteindre 192.168.4.0, mais l’autorise à atteindre les autres réseaux.]]></text>
+</component>
+
+
+<component id="ID_txt10">
+<text><![CDATA[Cliquez sur Position de l’ACL standard ou Position de l’ACL étendue pour voir une description et un exemple.]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Spécifications :</b> <br>Empêcher le trafic du réseau 192.168.1.0 d’accéder au réseau 192.168.4.0. Autoriser 192.168.1.0 à atteindre les autres réseaux.]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Spécifications :</b><br>Utiliser l’ACL étendue pour empêcher le trafic du réseau 192.168.1.0 d’accéder au réseau 192.168.4.0, mais l’autoriser à atteindre les autres réseaux.]]></text>
+</component>
+
+
+
+
+</textcomponents>

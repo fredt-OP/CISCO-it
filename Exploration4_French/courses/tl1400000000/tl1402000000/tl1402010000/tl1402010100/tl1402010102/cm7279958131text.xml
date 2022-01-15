@@ -1,0 +1,153 @@
+﻿<textcomponents>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Communication série</b>]]></text>
+</component>
+<component id="ID_Button02">
+<text><![CDATA[<b>RS-232</b>]]></text>
+</component>
+<component id="ID_Button03">
+<text><![CDATA[<b>RJ-45</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur chaque bouton pour afficher une communication série et les types de connecteur.</b>]]></text>
+</component>
+
+<!-- slide1 -->
+<component id="ID_title01">
+<text><![CDATA[<b>Processus de communication série</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Réseau étendu</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>011111100110... ...1110</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>011...</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Trame<br />envoyée</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Trame<br />reçue</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Données à encapsuler</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Données non encapsulées</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Support physique</b>]]></text>
+</component>
+
+<!-- slide2 -->
+<component id="ID_title02">
+<text><![CDATA[<b>Connecteur RS-232 à 9 broches</b>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<font size="-2"><b>Broche 1<br/>Détection du<br/>porteur de données (DCD)</font><br/>(non utilisée)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<font size="-2"><b>Broche 2<br/>Réception<br/>de données (RxD)</font></b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[<font size="-2"><b>Broche 3<br/>Transmission<br/>de données (TxD)</font></b>]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[<font size="-2"><b>Broche 4<br/>Terminal de données<br/>prêt (DTR)</font><br/>(non utilisée)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt05">
+<text><![CDATA[<font size="-2"><b>Broche 5<br/>Terre</font></b>]]></text>
+</component>
+
+<component id="ID_S2_txt06">
+<text><![CDATA[<font size="-2"><b>Broche 6<br/>Modem prêt <br/>(DSR) (non utilisée)</font></b>]]></text>
+</component>
+
+<component id="ID_S2_txt07">
+<text><![CDATA[<font size="-2"><b>Broche 7<br/>Demande pour<br/>émettre (RTS)</font></b>]]></text>
+</component>
+
+<component id="ID_S2_txt08">
+<text><![CDATA[<font size="-2"><b>Broche 8<br/>Prêt à émettre<br/>(CTS</font>)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt09">
+<text><![CDATA[<font size="-2"><b>Broche 9<br/>Indicateur de sonnerie</font><br/>(RI) (non utilisée)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt10">
+<text><![CDATA[<font size="-2"><b>Broche de connecteur série RS-232 de type D à 9 broches</font></b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3'>
+	<tr>
+		<td width='75' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Numéro de broche</font></td>
+		<td width='75' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Signal</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Description</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DCD</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Détection du porteur de données</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>RxD</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Réception de données</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>3</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>TxD</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Transmission de données</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>4</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DTR</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Terminal de données prêt</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>5</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>GND</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Terre de signalisation</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DSR</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Modem prêt</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>7</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>RTS</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Demande pour émettre</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>8</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>CTS</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Prêt à émettre</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>9</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>RI</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Indicateur d’appel</td>
+	</tr>
+</table>]]></text> 
+</component>
+</textcomponents>

@@ -1,0 +1,168 @@
+﻿<textcomponents>
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td colspan='4' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Table de routage R1</b></font></td>
+     
+    </tr>
+    
+    <tr>
+      <td bgcolor='#E9E9E9'>R</td>
+      <td bgcolor='#E9E9E9'>209.165.201.0/27</td>
+      <td bgcolor='#E9E9E9'>[120/2]</td>
+      <td bgcolor='#E9E9E9'>via 10.20.30.2</td>     
+    </tr>         
+        
+</table>]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td colspan='4' bgcolor='#DDDDDD'><font color='#FFFFFF'><b>Table de routage R1</b></font></td>
+    </tr>
+    
+    <tr>
+      <td bgcolor='#DDDDDD'> </td>
+      <td bgcolor='#F2F2F2'> </td>
+      <td bgcolor='#DDDDDD'> </td>
+      <td bgcolor='#F2F2F2'> </td>     
+    </tr>         
+        
+</table>]]></text>
+</component>
+
+
+<component id="ID_table3">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td colspan='4' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Table de routage R1</b></font></td>
+    </tr>
+    
+    <tr>
+      <td bgcolor='#DDDDDD'>S</td>
+      <td bgcolor='#F2F2F2'>209.165.201.0/27 </td>
+      <td bgcolor='#DDDDDD'>[150/1]</td>
+      <td bgcolor='#F2F2F2'>via 10.20.10.2</td>     
+    </tr>         
+        
+</table>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[.1]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[10.20.30.0/30]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[.2]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[R2]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[.1]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[10.20.20.0/30]]></text>
+</component>
+<component id="ID_txt071">
+<text><![CDATA[10.20.10.0/30]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[.2]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[R3]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[209.165.201.0/27]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[R4]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[.2]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[10.20.40.0/30]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[R1 - Route statique flottante de sauvegarde]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<font face='_typewriter'>ip route 209.165.201.0 255.255.255.224 10.20.10.2 150]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[Cliquez sur Lire pour afficher l’utilisation des routes statiques flottantes.]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[La route statique flottante se déplace dans la table de routage]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Lire]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rembobiner]]></text>
+</component>
+
+<component id="forward">
+<text><![CDATA[Avance rapide]]></text>
+</component>
+
+<component id="mute">
+<text><![CDATA[Muet]]></text>
+</component>
+
+<component id="unmute">
+<text><![CDATA[Désactiver Muet]]></text>
+</component>
+
+<component id="previous">
+<text><![CDATA[Redémarrer]]></text>
+</component>
+
+<component id="next">
+<text><![CDATA[Fin]]></text>
+</component>
+
+<component id="transcript">
+<text><![CDATA[Texte]]></text>
+</component>
+
+<component id="start_animation">
+<text><![CDATA[Il s’agit du début d’une animation]]></text>
+</component>
+
+<component id="bubble_example">
+<text><![CDATA[Exemple de bulle qui se développe vers le bas]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,107 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click Play to view how SNMP can be used.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Web Server with SNMP Agent </b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>ISP Management Network</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>SNMP Management Station</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Central MIB</b>]]></text>
+</component>
+
+<component id="ID_txt08a">
+<text><![CDATA[<b>get 192.168.1.10 2#B7!9</br></b>]]></text>
+</component>
+
+<component id="ID_txt08b">
+<text><![CDATA[<b>Variable = 10000</b>]]></text>
+</component>
+
+<component id="ID_bubble_01">
+<text><![CDATA[<b>My customer called and their web server is really slow!</b>]]></text>
+</component>
+
+<component id="ID_bubble_02">
+<text><![CDATA[<b>How many users are on their web server?</b>]]></text>
+</component>
+
+<component id="ID_bubble_03">
+<text><![CDATA[<b>Does my community string match 2#B7!9? Is 192.168.1.5 an IP address I know? Yes.</b>]]></text>
+</component>
+
+<component id="ID_bubble_04">
+<text><![CDATA[<b>10,000 users? No wonder this web server is slow.</b>]]></text>
+</component>
+
+<component id="ID_info_01">
+<text><![CDATA[<b>A user calls to report a problem.</b>]]></text>
+</component>
+
+<component id="ID_info_02">
+<text><![CDATA[<b>Management station sends a request to the Agent for connection statistics and includes the Community String.</b>]]></text>
+</component>
+
+<component id="ID_info_03">
+<text><![CDATA[<b>The agent verifies Community String and IP address.</b>]]></text>
+</component>
+
+<component id="ID_info_04">
+<text><![CDATA[<b>The agent sends all statistics for number of connections.</b>]]></text>
+</component>
+
+<component id="ID_info_05">
+<text><![CDATA[<b>The Management Station receives the information.</b>]]></text>
+</component>
+
+<!-- controller -->
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="forward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="mute">
+<text><![CDATA[Mute]]></text>
+</component>
+
+<component id="unmute">
+<text><![CDATA[UnMute]]></text>
+</component>
+
+<component id="previous">
+<text><![CDATA[Restart]]></text>
+</component>
+
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+</textcomponents>

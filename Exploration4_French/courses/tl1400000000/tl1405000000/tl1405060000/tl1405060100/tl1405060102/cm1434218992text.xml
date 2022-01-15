@@ -1,0 +1,105 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) <block indent="20">Décrivez la règle des trois P associée aux listes de contrôle d’accès.</block>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(voir 5.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Une liste de contrôle d’accès par protocole</b><ul><li>Pour contrôler le flux du trafic sur une interface, une liste de contrôle d’accès doit être définie pour chaque protocole activé sur l’interface.</li></ul><b>Une liste de contrôle d’accès par direction</b><ul><li>Les listes de contrôle d’accès contrôlent le trafic dans une seule direction à la fois sur une interface. Vous devez créer deux listes de contrôle d’accès ; la première pour contrôler le trafic entrant et la seconde pour contrôler le trafic sortant.</li></ul><b>Une liste de contrôle d’accès par interface</b><ul><li>Les listes de contrôle d’accès contrôlent le trafic pour une interface, telle que Fast Ethernet 0/0.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) <block indent="20">Donnez les deux règles de base associées au positionnement des listes de contrôle d’accès étendues et standard.</block>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(voir 5.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Listes de contrôle d’accès standard</b><ul><li>Étant donné que les listes de contrôle d’accès standard ne précisent pas les adresses de destination, placez-les le plus près possible de la destination.</li></ul><b>Listes de contrôle d’accès étendues</b><ul><li>Placez les listes de contrôle d’accès étendues le plus près possible de la source du trafic refusé. Ainsi, le trafic indésirable est filtré sans traverser l’infrastructure réseau.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) <block indent="20">Examinez l’illustration. La liste de contrôle d’accès 10 configurée sur le routeur R1 a été conçue pour bloquer l’accès de l’hôte 192.168.10.10 au réseau 192.168.11.0, mais l’accès à tous les autres hôtes sur le réseau 192.168.10.0 doit être autorisé. Cependant, la liste de contrôle d’accès ne remplit pas cette fonction. Quelles modifications sont requises pour corriger le problème ?</block>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(voir 5.2)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Sur le routeur R1</b><ul><li>L’adresse de l’hôte a mal été spécifiée. Elle devrait être <b>192.168.10.10</b>.</li><li>Étant donné l’instruction de refus implicite, le reste du sous-réseau n’a pas été autorisé. Le reste du sous-réseau devrait être autorisé à l’aide de la commande <b><font face="_typewriter">access-list 10 permit any</font></b>.</li><li>La liste de contrôle d’accès 10 aurait du être appliquée à une direction sortante sur l’interface Fa0/1.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) <block indent="20">Examinez l’illustration. SURFING ACL doit autoriser un accès Web et un accès Web sécurisé aux hôtes sur le réseau 192.168.10.0 uniquement. Tout accès doit être interdit aux hôtes sur 192.168.11.0. BROWSING ACL doit autoriser un accès de retour uniquement au trafic dont la source est le réseau 192.168.10.0. Cependant, la liste de contrôle d’accès ne remplit pas cette fonction. Quelles modifications sont requises pour corriger le problème ?</block>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(voir 5.3)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Sur le routeur R1</b><ul><li>La première instruction d’autorisation de SURFING ACL autorise l’accès Telnet (23). Elle doit autoriser l’accès Web (80).</li><li>BROWSING ACL exige le mot clé <b><font face="_typewriter">established</font></b> à la fin.</li><li>Les listes de contrôle d’accès ont été appliquées à la mauvaise interface. Elles devaient être appliquées à l’interface Serial 0/0/0.</li><li>Les directions de SURFING et BROWSING ACL doivent être inversées.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Décrivez trois types de listes de contrôle d’accès complexes et leurs fonctions.]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(voir 5.4)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Dynamiques (verrou) :</b><ul><li>les listes de contrôle d’accès dynamiques utilisent une liste de contrôle d’accès étendue pour empêcher les utilisateurs de traverser un routeur tant qu’ils n’utilisent pas Telnet ou SSH pour se connecter au routeur et tant qu’ils n’ont pas été authentifiés.</li><li>Après l’authentification, des entrées spécifiques de la liste de contrôle d’accès dynamique sont activées sur la liste de contrôle d’accès appliquée à l’interface.</li><li>Ces entrées restent actives un certain délai avant d’expirer.</li><li>Ainsi, un utilisateur peut être authentifié et accéder aux ressources qui sont normalement bloquées. Les listes de contrôle d’accès dynamiques peuvent être associées à d’autres types de listes, telles que les listes de contrôle d’accès étendues.</li></ul><b>Réflexives :</b><ul><li>les listes de contrôle d’accès réflexives créent automatiquement des entrées temporaires en fonction des informations sur la session de couche supérieure.</li><li>Ces entrées sont supprimées automatiquement à la clôture de la session.</li></ul><b>Basées sur le temps :</b><ul><li>les fonctions des listes de contrôle d’accès basées sur le temps ressemblent à celles des listes de contrôle d’accès étendues. Ceci dit, il est important de noter qu’elles autorisent un contrôle d’accès basé sur le temps.</li><li>Une plage horaire définit certains moments de la journée et de la semaine au cours desquels les listes de contrôle d’accès sont implémentées.</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Fin des questions portant sur les thèmes de ce chapitre.</b>]]></text>
+</component>
+
+</textcomponents>

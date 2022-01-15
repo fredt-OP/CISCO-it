@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="12511" dateexported="03/07/2007">
+		<name></name>
+		<form id="18985" lang="en"><form-item order="N/A" usage="N/A">
+			<ai id="111410"  type="mc-sa">
+			<question><![CDATA[Why would PC1 and the wireless IP Phone be on different subnets if they both connect wirelessly to the same AP?]]></question>
+			<choices>
+									<choice correct="n">
+										<text><![CDATA[so that their wireless signals do not interfere with one another]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[to provide a better solution for wireless roaming]]></text>
+<feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[to isolate data traffic and voice traffic on separate networks]]></text><feedback><![CDATA[You have correctly answered IP addressing questions for a wireless controller design.  Please press Next to continue.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[to eliminate the need for VLAN]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[to eliminate the need for encryption]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice></choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111411" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/>
+						<question><![CDATA[Why would PC1 and PC2 be on the same subnet?]]></question>
+						<choices>
+									<choice correct="n">
+										<text><![CDATA[to reduce the chance of collisions]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[because client devices receive their IP addresses from the controller not from the AP]]></text>
+ <feedback><![CDATA[You have correctly answered IP addressing questions for a wireless controller design.  Please press Next to continue.]]></feedback>
+ 
+									</choice>
+									<choice correct="n">
+		<text><![CDATA[because client devices receive their IP addresses from APs that can be configured to assign parts of the same subnet range to users]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[because one is a vendor located in the stadium and the other is a stadium employee]]></text> <feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+		<text><![CDATA[because a VLAN spans two different parts of the stadium]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									</choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111412" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[What IP address is appropriate for LWAPP-1?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[192.168.1.17/24 so it can be on the same VLAN as LWAPP-2 and receive broadcasts from LWAPP-2]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[192.168.4.11/24 so that it can receive broadcasts from WLC-1 for ease of centralized management]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[192.168.140.11/24 so that it can connect with PC1]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[192.168.2.11/24 if is appropriate based on the location in the network IP addressing scheme]]></text><feedback><![CDATA[You have correctly answered IP addressing questions for a wireless controller design.  Please press Next to continue.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[192.168.1.17/24 if is appropriate based on the location in the network IP addressing scheme]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									</choices></ai></form-item>
+									<!--<form-item order="N/A" usage="N/A">
+						<ai id="111410" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[If Host8 sends a message to Host1, and the destination MAC address is in the switch MAC table, which host devices will receive the message?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[only Host1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[all hosts connected to Hub1]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts connected to Hub1 and hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts on the network]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice></choices></ai></form-item>-->
+									</form></exam> 

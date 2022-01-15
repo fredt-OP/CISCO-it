@@ -1,0 +1,151 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 6.7.1 : &lt;br&gt;commandes ping et traceroute&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;!--This is the end of the IP addressing table code&quot; --&gt;
+
+
+&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;p&gt;Au terme de ce TP, vous saurez : &lt;/p&gt; &lt;blockquote&gt; &lt;p&gt;• Utiliser la commande ping pour vérifier une connexion réseau TCP/IP simple &lt;br&gt; • Utiliser la commande tracert / traceroute pour vérifier la connexion TCP/IP &lt;/p&gt; &lt;/blockquote&gt;&lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt; &lt;h3&gt;Introduction : &lt;/h3&gt;
+
+Cet exercice correspond aux travaux pratiques 6.7.1 consacrés à Packet Tracer : commandes ping et traceroute.&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt; &lt;br&gt;&lt;br&gt; &lt;h3&gt;Tâche 1 : utilisation de la commande ping pour vérifier une connexion réseau TCP/IP simple. &lt;/h3&gt; &lt;p&gt;&lt;b&gt;Étape 1 :  vérification de la couche réseau à l'aide de PC-1A&lt;/b&gt;&lt;br&gt;&lt;br&gt;Utilisez la commande &lt;b&gt;ipconfig&lt;/b&gt; dans l'invite de commande pour vérifier la connexion de la couche réseau TCP/IP sur l'ordinateur hôte local.  &lt;/p&gt; &lt;p&gt;&lt;b&gt;Étape 2 : exécution de la commande ping sur la passerelle&lt;/b&gt;&lt;br&gt;&lt;br&gt;Vérifiez la connexion de la couche réseau TCP/IP sur le réseau local (LAN). Entrez la commande &lt;b&gt;ping 172.16.255.254&lt;/b&gt; pour vérifier la connexion de la couche réseau TCP/IP sur la passerelle par défaut. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Étape 3 : exécution de la commande ping sur l'hôte distant&lt;/b&gt;&lt;br&gt;&lt;br&gt; Vérifiez la connexion de la couche réseau TCP/IP sur un réseau distant. Entrez la commande &lt;b&gt;ping 192.168.254.254&lt;/b&gt; pour vérifier la connexion de la couche réseau TCP/IP sur le périphérique d'un réseau distant. Dans ce cas, Eagle Server sera utilisé. &lt;/p&gt;&lt;br&gt; &lt;h3&gt;Tâche 2 : utilisation de la commande tracert pour vérifier la connexion TCP/IP. &lt;/h3&gt; &lt;p&gt;&lt;b&gt;Étape 1 : vérification des sauts&lt;/b&gt;&lt;br&gt;&lt;br&gt; Vérifiez la connexion de la couche réseau TCP/IP à l'aide de la commande &lt;b&gt;tracert&lt;/b&gt;. Ouvrez l'invite de commande et entrez la commande &lt;b&gt;tracert 192.168.254.254&lt;/b&gt;. &lt;/p&gt;&lt;br&gt;
+
+
+&lt;h3&gt;Tâche 3 : réflexion&lt;/h3&gt; &lt;p&gt;&lt;b&gt;Étape 1 : affichage des résultats&lt;/b&gt;&lt;br&gt;&lt;br&gt; Consultez les résultats de la commande traceroute et comparez-les à ce qu'affiche l'invite de commande. &lt;/p&gt;
+
+&lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true">. . .</TEXT>
+ <TEXT translate="true">. . .</TEXT>
+ <TEXT translate="true">. . .</TEXT>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">11A</ID>
+ <ID translate="true">11B</ID>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">11A</ID>
+ <ID translate="true">11B</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

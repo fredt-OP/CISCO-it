@@ -1,0 +1,108 @@
+﻿<textcomponents>
+
+<component id="id_title">
+ <text><![CDATA[<font size='+2'><b>Exercice</b></font><br/><br/>Indiquez si la caractéristique décrit une liste de contrôle d’accès standard, étendue ou nommée.<br/><br/><b>Cliquez dans la colonne Standard, Étendue ou Nommée pour chacune des 9 caractéristiques.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+ <text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+ <text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+
+<component id="txt_numrows">
+ <text><![CDATA[9]]></text>
+</component>
+<component id="txt_numcols">
+ <text><![CDATA[3]]></text>
+</component>
+<component id="txt_col1">
+ <text><![CDATA[Standard]]></text>
+</component>
+<component id="txt_col2">
+ <text><![CDATA[Étendue]]></text>
+</component>
+ <component id="txt_col3">
+ <text><![CDATA[Nommée]]></text>
+</component>
+
+ 
+<component id="txt_q1">
+ <text><![CDATA[1. <textformat blockindent='14'>Type de liste de contrôle d’accès le plus simple</textformat>]]></text>
+</component>
+<component id="txt_q2">
+ <text><![CDATA[2. <textformat blockindent='14'>Utilise un mode de sous-configuration spécial.</textformat>]]></text>
+</component>
+<component id="txt_q3">
+ <text><![CDATA[3. <textformat blockindent='14'>Utilise un identificateur numérique et peut filtrer sur le protocole et les numéros de port.</textformat>]]></text>
+</component>
+<component id="txt_q4">
+ <text><![CDATA[4. <textformat blockindent='14'>Peut créer des listes d’accès standard et étendues.</textformat>]]></text>
+</component>
+<component id="txt_q5">
+ <text><![CDATA[5. <textformat blockindent='14'>Identifiée par un numéro compris entre 100 et 199</textformat>]]></text>
+</component>
+ <component id="txt_q6">
+ <text><![CDATA[6. <textformat blockindent='14'>Ne peut filtrer que sur l’adresse IP source ou une plage.</textformat>]]></text>
+</component>
+<component id="txt_q7">
+ <text><![CDATA[7. <textformat blockindent='14'>Utilise un identificateur numérique et peut filtrer sur l’adresse IP source ou de destination.</textformat>]]></text>
+</component>
+<component id="txt_q8">
+ <text><![CDATA[8. <textformat blockindent='14'>Identifiée par un numéro compris entre 1 et 99</textformat>]]></text>
+</component>
+<component id="txt_q9">
+ <text><![CDATA[9. <textformat blockindent='14'>Peut se voir attribuer un identificateur évocateur et descriptif.</textformat>]]></text>
+</component>
+
+
+<component id="txt_a1">
+ <text><![CDATA[1]]></text>
+</component>
+<component id="txt_a2">
+ <text><![CDATA[3]]></text>
+</component>
+<component id="txt_a3">
+ <text><![CDATA[2]]></text>
+</component>
+<component id="txt_a4">
+ <text><![CDATA[3]]></text>
+</component>
+<component id="txt_a5">
+ <text><![CDATA[2]]></text>
+</component>
+<component id="txt_a6">
+ <text><![CDATA[1]]></text>
+</component>
+<component id="txt_a7">
+ <text><![CDATA[2]]></text>
+</component>
+<component id="txt_a8">
+ <text><![CDATA[1]]></text>
+</component>
+<component id="txt_a9">
+ <text><![CDATA[3]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Vous avez réussi à identifier les caractéristiques des listes de contrôle d’accès standard, étendues et nommées. Cliquez sur Suivant pour continuer.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Relisez les informations sur les types de liste de contrôle d’accès et réessayez.]]></text></component>
+
+
+</textcomponents>

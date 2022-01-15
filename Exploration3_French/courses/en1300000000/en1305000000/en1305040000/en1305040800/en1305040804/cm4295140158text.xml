@@ -1,0 +1,12 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Final Points</b>]]></text>
+</component>
+ 
+<component id="ID_txt01">
+<text><![CDATA[<b>Keep STP Even If It Is Unnecessary</b><ul><li>Do not disable STP.</li><li>STP is not very processor-intensive.</li><li>The few BPDUs sent on each link do not reduce bandwidth.</li><li>But a bridge network without STP can go down in a fraction of a second.</li></ul><br/><b>Keep Traffic off the Administrative VLAN.</b><ul><li>A high rate of broadcast or multicast traffic on the administrative VLAN adversely affects the CPU’s ability to process vital BPDUs.</li><li>Keep user traffic off the administrative VLAN.</li></ul><br/><b>Do Not Have a Single VLAN Span the Entire Network.</b><ul><li>VLAN 1 serves as an administrative VLAN, where all switches are accessible in the same IP subnet.</li><li>A bridging loop on VLAN 1 affects all trunks and can bring down the network.</li><li>Segment the bridging domains using high-speed Layer 3 switches.</li></ul>]]></text>
+</component>
+  
+
+</textcomponents>

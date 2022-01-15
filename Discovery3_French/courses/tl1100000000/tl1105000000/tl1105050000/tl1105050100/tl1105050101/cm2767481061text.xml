@@ -1,0 +1,132 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component>
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<br/><li>Les réseaux d’entreprise sont hiérarchiques pour faciliter la circulation des informations.</li><br/><li>Au nombre des différentes topologies de réseaux d’entreprise figurent notamment les topologies en étoile, en étoile étendue et à maillage.</li><br/><li>Les réseaux utilisent à la fois les routages statique et dynamique pour acheminer les informations.</li><br/><li>Configurées manuellement, les routes statiques permettent de renforcer la sécurité du réseau et de réduire la charge imposée aux routeurs.</li><br/><li>Les routes dynamiques sont apprises et échangées via des protocoles de routage ; elles permettent d’automatiser les tâches qu’implique la fourniture de la meilleure route vers une destination.</li><br/><li>Une route par défaut permet de transmettre des informations qui ne disposent d’aucune route dans la table de routage.</li></ul>]]></text>
+</component>
+
+
+
+
+<component id="s1_ID_txt01">
+<text><![CDATA[FAI]]></text> 
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[Route statique vers le FAI]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Route statique à partir du FAI]]></text> 
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Route statique<br>à partir du réseau d’extrémité]]></text> 
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[Route statique<br>vers le réseau d’extrémité]]></text>
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[Réseau d’extrémité]]></text>
+</component>
+
+
+<!--  Slide 2  -->  
+<component id="ID_txt02">
+<text><![CDATA[<br/><li>Les protocoles de routage dynamique sont soit à vecteur de distance, soit à état de liens.</li><br/><li>RIP est un protocole de routage à vecteur de distance.</li><br/><li>RIPv1 diffuse la table de routage entière aux routeurs connectés toutes les 30 secondes.</li><br/><li>RIPv2 procède à une multidiffusion de sa table de routage.</li><br/><li>Le protocole RIP est très facile à configurer et à gérer mais n’est pas très évolutif et est lent à converger.</li><br/><li>Les protocoles de routage à vecteur de distance ont tendance à favoriser la formation de boucles de routage.</ul>]]></text>
+</component>
+ 
+
+
+<component id="s2_ID_txt01">
+<text><![CDATA[Distance = Longueur]]></text> 
+</component>
+
+<component id="s2_ID_txt02">     
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="s2_ID_txt03">
+<text><![CDATA[S0/0/0]]></text> 
+</component>
+
+<component id="s2_ID_txt04">           
+<text><![CDATA[R2]]></text>   
+</component>
+
+<component id="s2_ID_txt05">              
+<text><![CDATA[172.16.13.0/24]]></text>   
+</component>
+
+<component id="s2_ID_txt06">              
+<text><![CDATA[Vecteur = Direction]]></text>   
+</component>
+
+<component id="s2_ID_txt07">              
+<text><![CDATA[Pour R1, 172.16.3.0/24 est éloigné d’un saut (distance).<br>Il peut être atteint via R2 (vecteur).]]></text>   
+</component>
+
+
+<!--  Slide 3  -->
+<component id="ID_txt03">
+<text><![CDATA[<br/><li>EIGRP est un protocole de routage à vecteur de distance propriétaire de Cisco qui comporte de nombreuses fonctionnalités avancées.</li><br/><li>Il est rapide à converger et utilise une mesure composite pour assurer une plus grande fiabilité des informations de routage.</li><br/><li>EIGRP procède uniquement à la multidiffusion de mises à jour limitées partielles, consommant ainsi moins de bande passante.</li><br/><li>Le protocole RIPv2 procède à la multidiffusion de sa table de routage vers 224.0.0.9 toutes les 30 secondes.</li><br/><li>Les boucles de routage sont évitées à l’aide de l’algorithme DUAL.</li><br/><li>Le protocole EIGRP utilise des types de paquets multiples pour tenir à jour les tables de voisinage, topologiques et de routage.</li><br/><li>Le protocole EIGRP tient à jour les informations relatives aux successeurs et aux successeurs potentiels, permettant ainsi une reprise rapide en cas de panne d’une route.</ul>]]></text>
+</component>
+
+
+<component id="s3_ID_txt01">
+<text><![CDATA[<b>EIGRP :</b><br/><li>Prend en charge VLSM et le routage sans classe.</li><li>Utilise une mesure composite.</li><li>Utilise l’algorithme DUAL pour éviter les boucles de routage.</li><li>Utilise des mises à jour limitées pour une convergence rapide.</li><li>Tient à jour plusieurs tables.</li><li>Forme des contiguïtés de voisinage.</li><li>Tient à jour des routes successeurs ou successeurs potentiels.</li><li>Prend en charge l’équilibrage de charge à coût égal et à coût inégal.</li><li>Utilise plusieurs types de paquets pour assurer la stabilité et une convergence rapide.</li><li>Prend en charge plusieurs protocoles de couche réseau.</li><li>Utilise le protocole RTP pour la prise en charge de la couche 4.</li>]]></text> 
+</component>
+
+
+<!--  Slide 4  -->
+<component id="ID_txt04">
+<text><![CDATA[<br/><li>Le protocole EIGRP utilise des systèmes autonomes qui sont des ID de processus.</li><br/><li>Le protocole EIGRP prend en charge à la fois l’équilibrage de charge à coût égal et à coût inégal.</li><br/><li>Le protocole EIGRP résume automatiquement les routes, mais cette fonctionnalité peut être désactivée et effectuée manuellement pour un meilleur contrôle du routage.</li><br/><li>Le protocole EIGRP est facile à configurer mais difficile à gérer et à optimiser.</li></ul>]]></text>
+</component>
+
+
+
+
+<component id="s4_ID_txt01">
+    
+<text><![CDATA[Zone démilitarisée]]></text> 
+ 
+ </component>
+
+
+<component id="s4_ID_txt02">
+    
+<text><![CDATA[Zone démilitarisée]]></text> 
+ 
+ </component>
+
+ 
+ 
+ <component id="s4_ID_txt03">
+     
+ <text><![CDATA[Réseau de<br>stockage SAN]]></text> 
+  
+ </component>
+ 
+ 
+ <component id="s4_ID_txt04">
+     
+ <text><![CDATA[Centre d’exploitation du réseau]]></text> 
+  
+ </component>
+ 
+ 
+ <component id="s4_ID_txt05">
+     
+ <text><![CDATA[À quels réglages puis-je procéder pour améliorer le fonctionnement du protocole EIGRP ?]]></text> 
+  
+ </component>
+
+
+</textcomponents>

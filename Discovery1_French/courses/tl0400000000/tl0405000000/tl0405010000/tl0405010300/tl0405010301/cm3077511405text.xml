@@ -1,0 +1,31 @@
+﻿<textcomponents>
+<!-- Tip popup -->
+<component id="tipTitle">		
+<text><![CDATA[<b>Réseaux logiques multiples sur un même réseau physique :</b>]]></text>	
+</component>
+
+<component id="tipBody">		
+<text><![CDATA[L'adressage IP rend possible l'existence de plusieurs réseaux logiques sur un même réseau physique, si la partie réseau de leur adresse hôte est différente. Exemple : trois hôtes sur un même réseau local physique disposent de la même partie réseau de leur adresse IP (192.168.50) et trois autres hôtes disposent d'une partie réseau différente (192.168.70). Les hôtes ayant le même numéro réseau dans leur adresse IP pourront communiquer entre eux mais ne pourront pas communiquer avec les autres hôtes sans passer par un routage. Dans ce cas, nous avons un réseau physique et deux réseaux IP logiques.]]></text>	
+</component>
+
+<component id="TipText"><text><![CDATA[Plus d'info]]></text>
+</component>
+
+<!-- graphic -->
+<component id="ID_txt01">
+<text><![CDATA[<b>Réseau</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Réseau</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Numéro de réseau</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Numéro d'hôte</b>]]></text> 
+</component>
+
+</textcomponents>

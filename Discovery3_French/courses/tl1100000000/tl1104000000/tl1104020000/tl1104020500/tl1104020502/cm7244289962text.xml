@@ -1,0 +1,413 @@
+﻿<textcomponents>
+
+<component id="ID_but01">
+<text><![CDATA[Étape 1]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[Étape 2]]></text>
+</component>
+
+<component id="ID_but03">
+<text><![CDATA[Étape 3]]></text>
+</component>
+
+<component id="ID_but04">
+<text><![CDATA[Étape 4]]></text>
+</component>
+
+<component id="ID_but05">
+<text><![CDATA[Étape 5]]></text>
+</component>
+
+
+<component id="ID_txt42">
+<text><![CDATA[Répertoriez les besoins réseau dans l’ordre décroissant de leur importance. ]]></text>
+</component>
+
+<component id="ID_txt43">
+<text><![CDATA[AtlantaHQ, le réseau local le plus important, nécessite 58 hôtes.<br/>Empruntez 2 bits pour utiliser /26.<br/>Ceci permet de créer les 4 sous-réseaux suivants : 192.168.15.0,192.168.15.64, 192.168.15.128, 192.168.15.192.<br/>Utilisez 192.168.15.0/26 pour AtlantaHQ.]]></text>
+</component>
+
+<component id="ID_txt44">
+<text><![CDATA[Le réseau local PerthHQ nécessite 28 adresses d’hôtes.<br/>Utilisez l’adresse suivante disponible 192.168.15.64 /26.<br/> Empruntez un bit supplémentaire pour créer un bloc d’adresses de /27.<br/>Ceci permet de créer les 2 sous-réseaux suivants : 192.168.15.64, 192.168.15.96.<br/>Utilisez 192.168.15.64/27 pour PerthHQ.]]></text>
+</component>
+
+<component id="ID_txt45">
+<text><![CDATA[Les réseaux locaux SydneyHQ et CorpusHQ nécessitent chacun 10 adresses d’hôtes.<br/>Utilisez l’adresse suivante disponible 192.168.15.96/27.<br/>Empruntez un autre bit pour étendre le masque à /28.<br/>Ceci permet de créer les 2 sous-réseaux suivants : 192.168.15.96, 192.168.15.112.<br/>Utilisez les deux sous-réseaux, un pour SydneyHQ et l’autre pour CorpusHQ.]]></text>
+</component>
+
+<component id="ID_txt46">
+<text><![CDATA[Trois liaisons de réseau étendu point à point nécessitent chacune deux adresses.<br/>Utilisez l’adresse suivante disponible 192.168.15.128/28.<br/>Empruntez 2 bits supplémentaires avec un masque /30.<br/>Ceci permet de créer les sous-réseaux suivants : 192.168.15.128, 192.168.15.132, 192.168.15.136.<br/>Utilisez les trois sous-réseaux, un pour chaque réseau étendu.]]></text>
+</component>
+
+<component id="ID_txt50">
+<text><![CDATA[Le réseau local PerthHQ nécessite 28 adresses d’hôtes.<br/>Utilisez l’adresse suivante disponible 192.168.15.64 /26.<br/>Empruntez un bit supplémentaire pour créer un bloc d’adresses de /27.<br/>Ceci permet de créer les 2 sous-réseaux suivants : 192.168.15.64, 192.168.15.96.<br/>Utilisez 192.168.15.64/27 pour PerthHQ.]]></text>
+</component>
+
+<component id="ID_txt51">
+<text><![CDATA[Cliquez sur les étapes pour voir comment le système d’adressage VLSM est calculé et appliqué.]]></text>
+</component>
+<component id="ID_table1">
+	<text><![CDATA[<table header='top' headerstyle='black' glow='true' bordercolor='#CCCCCC' borderwidth='1' shadow='false' glowcolor='#808080'  cellpadding='2'>
+		<tr>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Nom/adresses requises</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de sous-réseau</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Plage d’adresses</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de diffusion</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Réseau/préfixe</font></td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>   
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>          
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>            
+		</tr>
+	</table>]]></text>
+</component>
+<component id="ID_table2">
+	<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' glow='true' glowcolor='#808080'  cellpadding='2'>
+		<tr>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Nom/adresses requises</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de sous-réseau</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Plage d’adresses</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de diffusion</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Réseau/préfixe</font></td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>AtlantaHQ-58</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td> 
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>PerthHQ-28</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>SydneyHQ-10</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>      
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>CorpusHQ-10</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>WAN1-2</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>          
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>WAN2-2</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>WAN3-2</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>            
+		</tr>
+	</table>]]></text>
+</component>
+<component id="ID_table3">
+	<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' glow='true' glowcolor='#808080'  cellpadding='2'>
+		<tr>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Nom/adresses requises</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de sous-réseau</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Plage d’adresses</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de diffusion</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Réseau/préfixe</font></td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>AtlantaHQ-58</td>
+			<td bgcolor='#F2F2F2'>192.168.15.0 </td>
+			<td bgcolor='#F2F2F2'>.1 - .62 </td>
+			<td bgcolor='#F2F2F2'>.63 </td>
+			<td bgcolor='#F2F2F2'>192.168.15.0/26</td>
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>PerthHQ-28</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>SydneyHQ-10</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td> 
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>CorpusHQ-10</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>     
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>WAN1-2</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td> 
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>WAN2-2</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>         
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>WAN3-2</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td> 
+		</tr>
+	</table>]]></text>
+</component>
+<component id="ID_table4">
+	<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' glow='true' glowcolor='#808080'  cellpadding='2'>
+		<tr>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Nom/adresses requises</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de sous-réseau</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Plage d’adresses</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de diffusion</font></td>
+			<td bgcolor='#F2F2F2'><font color='#FFFFFF'>Réseau/préfixe</font></td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>AtlantaHQ-58</td>
+			<td bgcolor='#F2F2F2'>192.168.15.0 </td>
+			<td bgcolor='#F2F2F2'>.1 - .62 </td>
+			<td bgcolor='#F2F2F2'>.63 </td>
+			<td bgcolor='#F2F2F2'>192.168.15.0/26</td>
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>PerthHQ-28</td>
+			<td bgcolor='#DDDDDD'>192.168.15.64</td>
+			<td bgcolor='#DDDDDD'>.65 - .94 </td>
+			<td bgcolor='#DDDDDD'>.95 </td>
+			<td bgcolor='#DDDDDD'>192.168.15.64/27</td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>SydneyHQ-10</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>     
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>CorpusHQ-10</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>     
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>WAN1-2</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>        
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>WAN2-2</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>WAN3-2</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>             
+		</tr>
+	</table>]]></text>
+</component>
+<component id="ID_table5">
+	<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' glow='true' glowcolor='#808080'  cellpadding='2'>
+		<tr>
+		  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Nom/adresses requises</font></td>
+		  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de sous-réseau</font></td>
+		  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Plage d’adresses</font></td>
+		  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de diffusion</font></td>
+		  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Réseau/préfixe</font></td>
+		</tr>
+		<tr>
+		  <td bgcolor='#F2F2F2'>AtlantaHQ-58</td>
+		  <td bgcolor='#F2F2F2'>192.168.15.0 </td>
+		  <td bgcolor='#F2F2F2'>.1 - .62 </td>
+		  <td bgcolor='#F2F2F2'>.63 </td>
+		  <td bgcolor='#F2F2F2'>192.168.15.0/26</td>
+		</tr>
+		<tr>
+		  <td bgcolor='#DDDDDD'>PerthHQ-28</td>
+		  <td bgcolor='#DDDDDD'>192.168.15.64</td>
+		  <td bgcolor='#DDDDDD'>.65 - .94 </td>
+		  <td bgcolor='#DDDDDD'>.95 </td>
+		  <td bgcolor='#DDDDDD'>192.168.15.64/27</td>
+		</tr>
+		<tr>
+		  <td bgcolor='#F2F2F2'>SydneyHQ-10</td>
+		  <td bgcolor='#F2F2F2'>192.168.15.96</td>
+		  <td bgcolor='#F2F2F2'>.97 - .110</td>
+		  <td bgcolor='#F2F2F2'>.111 </td>
+		  <td bgcolor='#F2F2F2'>192.168.15.96/28 </td>
+		</tr>
+		<tr>
+		  <td bgcolor='#DDDDDD'>CorpusHQ-10</td>
+		  <td bgcolor='#DDDDDD'>192.168.15.112</td>
+		  <td bgcolor='#DDDDDD'>.113 - .126</td>
+		  <td bgcolor='#DDDDDD'>.127</td>
+		  <td bgcolor='#DDDDDD'>192.168.15.112/28</td>
+		</tr>
+	 	<tr>
+			<td bgcolor='#F2F2F2'>WAN1-2</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>        
+		</tr>
+		<tr>
+			<td bgcolor='#DDDDDD'>WAN2-2</td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>
+			<td bgcolor='#DDDDDD'>                 </td>         
+		</tr>
+		<tr>
+			<td bgcolor='#F2F2F2'>WAN3-2</td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>
+			<td bgcolor='#F2F2F2'>                 </td>             
+		</tr>
+	</table>]]></text>
+</component>
+
+<component id="ID_table6">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' glow='true' glowcolor='#808080'  cellpadding='2'>
+	<tr>
+	  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Nom/adresses requises</font></td>
+	  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de sous-réseau</font></td>
+	  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Plage d’adresses</font></td>
+	  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Adresse de diffusion</font></td>
+	  <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Réseau/préfixe</font></td>
+	</tr>
+	<tr>
+	  <td bgcolor='#F2F2F2'>AtlantaHQ-58</td>
+	  <td bgcolor='#F2F2F2'>192.168.15.0 </td>
+	  <td bgcolor='#F2F2F2'>.1 - .62 </td>
+	  <td bgcolor='#F2F2F2'>.63 </td>
+	  <td bgcolor='#F2F2F2'>192.168.15.0/26</td>
+	</tr>
+	<tr>
+	  <td bgcolor='#DDDDDD'>PerthHQ-28</td>
+	  <td bgcolor='#DDDDDD'>192.168.15.64</td>
+	  <td bgcolor='#DDDDDD'>.65 - .94 </td>
+	  <td bgcolor='#DDDDDD'>.95 </td>
+	  <td bgcolor='#DDDDDD'>192.168.15.64/27</td>
+	</tr>
+	<tr>
+	  <td bgcolor='#F2F2F2'>SydneyHQ-10</td>
+	  <td bgcolor='#F2F2F2'>192.168.15.96</td>
+	  <td bgcolor='#F2F2F2'>.97 - .110</td>
+	  <td bgcolor='#F2F2F2'>.111 </td>
+	  <td bgcolor='#F2F2F2'>192.168.15.96/28 </td>
+	</tr>
+	<tr>
+	  <td bgcolor='#DDDDDD'>CorpusHQ-10</td>
+	  <td bgcolor='#DDDDDD'>192.168.15.112</td>
+	  <td bgcolor='#DDDDDD'>.113 - .126</td>
+	  <td bgcolor='#DDDDDD'>.127</td>
+	  <td bgcolor='#DDDDDD'>192.168.15.112/28</td>
+	</tr>
+	<tr>
+	  <td bgcolor='#F2F2F2'>WAN1-2</td>
+	  <td bgcolor='#F2F2F2'>192.168.15.128</td>
+	  <td bgcolor='#F2F2F2'>.129 - .130</td>
+	  <td bgcolor='#F2F2F2'>.131</td>
+	  <td bgcolor='#F2F2F2'>192.168.15.128/30</td>
+	</tr>
+	<tr>
+	  <td bgcolor='#DDDDDD'>WAN2-2</td>
+	  <td bgcolor='#DDDDDD'>192.168.15.132</td>
+	  <td bgcolor='#DDDDDD'>.133 - .134</td>
+	  <td bgcolor='#DDDDDD'>.135 </td>
+	  <td bgcolor='#DDDDDD'>192.168.15.132/30</td>
+	</tr>
+	<tr>
+	  <td bgcolor='#F2F2F2'>WAN3-2</td>
+	  <td bgcolor='#F2F2F2'>192.168.15.136 </td>
+	  <td bgcolor='#F2F2F2'>.137 - .138</td>
+	  <td bgcolor='#F2F2F2'>.139</td>
+	  <td bgcolor='#F2F2F2'>192.168.15.136/30 </td>
+	</tr>
+	</table>]]></text>
+</component>
+
+</textcomponents>

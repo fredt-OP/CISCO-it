@@ -1,0 +1,56 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">    
+<text><![CDATA[R1]]></text>  
+ </component>
+ 
+ <component id="ID_txt02">    
+ <text><![CDATA[R2]]></text>  
+ </component>
+ 
+ <component id="ID_txt03">    
+ <text><![CDATA[R4]]></text>  
+ </component>
+ 
+ <component id="ID_txt04">    
+ <text><![CDATA[R3]]></text>  
+ </component>
+ 
+ <component id="ID_txt05">    
+ <text><![CDATA[192.168.2.0 /24]]></text>  
+ </component>
+ 
+ <component id="ID_txt06">    
+ <text><![CDATA[Fa0/0 ENT]]></text>  
+ </component>
+ 
+ <component id="ID_txt07">    
+ <text><![CDATA[Fa0/0 SOR]]></text>  
+ </component>
+ 
+ <component id="ID_txt08">    
+ <text><![CDATA[192.168.1.0 /24]]></text>  
+ </component>
+ 
+ <component id="ID_txt09">    
+ <text><![CDATA[192.168.4.0 /24]]></text>  
+ </component>
+ 
+ <component id="ID_txt10">    
+ <text><![CDATA[192.168.3.0 /24]]></text>  
+ </component>
+ 
+ <component id="ID_txt11">    
+ <text><![CDATA[<b>Liste de contrôle d’accès standard :</b><li>Près de la destination</li><li>Refuse le trafic 192.168.1.0 à 192.168.4.0</li><li>Gaspille de la bande passante</li>]]></text>  
+ </component>
+ 
+ <component id="ID_txt12">    
+  <text><![CDATA[<b>Liste de contrôle d’accès étendue :</b><li>Près de la source</li><li>Empêche le trafic du réseau 192.168.1.0 d’atteindre 192.168.4.0</li><li>Lui permet d’atteindre les autres réseaux et économise de la bande passante</li>]]></text>  
+ </component>
+ 
+  <component id="ID_txt13">    
+  <text><![CDATA[<b>Spécifications :</b><br>Utilisez une liste de contrôle d’accès standard pour empêcher le trafic du réseau 192.168.1.0 d’entrer dans le réseau 192.168.4.0. Le trafic doit être autorisé pour communiquer avec tous les autres réseaux.]]></text>  
+ </component>
+
+
+</textcomponents>

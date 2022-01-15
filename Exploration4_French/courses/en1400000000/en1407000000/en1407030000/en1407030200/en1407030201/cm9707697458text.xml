@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Click the buttons to see the slides.]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>IPv6 Address Representation</b>]]></text>
+</component>
+
+
+<component id="ID_button1">
+  <text><![CDATA[<b>IPv6 Formats</b>]]></text> 
+</component>
+
+<component id="ID_button2">
+  <text><![CDATA[<b>Representation</b>]]></text> 
+</component>
+
+<component id="ID_button3">
+  <text><![CDATA[<b>Examples</b>]]></text> 
+</component>
+
+
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>IPv6 Formats</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Format:</b><br/>- <font face="_typewriter"><b>x:x:x:x:x:x:x:x</b></font>, where x is a 16-bit hexadecimal field<br/><ul><li>Case-insensitive for hexadecimal A, B, C, D, E, and F</li></ul>- Leading zeros in a field are optional<br/>- Successive fields of zeros can be represented as <font face="_typewriter"><b>::</b></font> only once per address<br/><br/><b>Examples:</b><br/>- <font face="_typewriter"><b>2031:0000:130F:0000:0000:09C0:876A:130B</b></font><br/><ul><li>Can be represented as <font face="_typewriter"><b>2031:0:130f::9c0:876a:130b</b></font></li><li>Cannot be represented as <font face="_typewriter"><b>2031::130f::9c0:876a:130b</b></font></li></ul>- <font face="_typewriter"><b>FF01:0:0:0:0:0:0:1       FF01::1</b></font><br/>- <font face="_typewriter"><b>0:0:0:0:0:0:0:1          ::1</b></font><br/>- <font face="_typewriter"><b>0:0:0:0:0:0:0:0          ::</b></font>
+<br/><br/></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Representation</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>2031:0000:130F:0000:0000:09C0:876A:130B</b></font><ul><li>Can be represented as <font face="_typewriter"><b>2031:0:130f::9c0:876a:130b</b></font></li><li>But cannot be represented as  <font face="_typewriter"><b>2031::130f::9c0:876a:130b</b></font></li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_table03">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Examples</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li><font face="_typewriter"><b>FF01:0:0:0:0:0:0:1</b></font> becomes  <font face="_typewriter"><b>FF01::1</b></font></li><li><font face="_typewriter"><b>0:0:0:0:0:0:0:1</b></font> becomes  <font face="_typewriter"><b>::1</b></font></li><li><font face="_typewriter"><b>0:0:0:0:0:0:0:0</b></font> becomes <font face="_typewriter"><b>::</b></font></li><li><font face="_typewriter"><b>FF01:0000:0000:0000:0000:0000:0000:1</b></font> becomes <font face="_typewriter"><b>FF01:0:0:0:0:0:0:1</b></font> becomes <font face="_typewriter"><b>FF01::1</b></font></li><li><font face="_typewriter"><b>E3D7:0000:0000:0000:51F4:00C8:C0A8:6420</b></font> becomes <font face="_typewriter"><b>E3D7::51F4:C8:C0A8:6420</b></font></li><li><font face="_typewriter"><b>3FFE:0501:0008:0000:0260:97FF:FE40:EFAB</b></font> becomes <font face="_typewriter"><b>3FFE:501:8:0:260:97FF:FE40:EFAB</b></font> becomes <font face="_typewriter"><b>3FFE:501:8::260:97FF:FE40:EFAB</b></font></li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

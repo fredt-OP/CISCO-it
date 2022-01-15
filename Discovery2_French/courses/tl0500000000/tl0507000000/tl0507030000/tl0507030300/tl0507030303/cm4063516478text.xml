@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>DNS dynamique</b>]]></text>
+</component>
+
+<component id="ID_instruct">
+<text><![CDATA[<b>Cliquez sur chaque scénario pour connaître le fonctionnement d’une mise à jour dynamique.</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Le serveur DHCP actualise l’enregistrement hôte :<br/>Certains systèmes d’exploitation anciens ne sont pas compatibles avec la mise à jour dynamique. Sur ces systèmes d’exploitation, vous pouvez configurer certains serveurs DHCP pour mettre à jour dynamiquement les DNS pour le compte du client. Le processus est le suivant :<br/>1. Le client demande une adresse à un serveur DHCP.<br/>2. Le serveur DHCP attribue une adresse IP au client.<br/>3. Le serveur DHCP enregistre un hôte DNS avec un serveur DNS configuré pour le compte du client.</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Le client actualise l’enregistrement hôte.</b>]]></text>
+</component>
+
+<component id="ID_txt05a">
+<text><![CDATA[<b>Le client actualise l’enregistrement hôte.</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Le serveur DHCP actualise l’enregistrement hôte.</b>]]></text>
+</component>
+
+<component id="ID_txt06a">
+<text><![CDATA[<b>Le serveur DHCP actualise l’enregistrement hôte.</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Serveur DNS</b>]]></text>
+</component>
+
+<component id="ID_txt07a">
+<text><![CDATA[<b>Serveur DNS</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Mise à jour dynamique du DNS du nom de pointeur (PTR)</b>]]></text>
+</component>
+
+<component id="ID_txt09a">
+<text><![CDATA[<b>Mise à jour dynamique du DNS du nom H1</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Serveur DHCP</b>]]></text>
+</component>
+
+<component id="ID_txt10a">
+<text><![CDATA[<b>Serveur DHCP</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Mise à jour dynamique du DNS du nom H1</b>]]></text>
+</component>
+
+<component id="ID_txt11a">
+<text><![CDATA[<b>Mise à jour dynamique du DNS du nom de pointeur (PTR)</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Reçu du bail IP</b>]]></text>
+</component>
+
+<component id="ID_txt12a">
+<text><![CDATA[<b>Reçu du bail IP</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Client DHCP</b>]]></text>
+</component>
+
+<component id="ID_txt13a">
+<text><![CDATA[<b>Client DHCP</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>Requête de bail IP</b>]]></text>
+</component>
+
+<component id="ID_txt14a">
+<text><![CDATA[<b>Requête de bail IP</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>1</b>]]></text>
+</component>
+
+<component id="ID_txt15a">
+<text><![CDATA[<b>1</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_txt16a">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>3</b>]]></text>
+</component>
+
+<component id="ID_txt17a">
+<text><![CDATA[<b>3</b>]]></text>
+</component>
+
+<component id="ID_txtH1">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+
+<component id="ID_txtH1b">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>4</b>]]></text>
+</component>
+
+<component id="ID_txt18a">
+<text><![CDATA[<b>4</b>]]></text>
+</component>
+
+<component id="tipTitle">		
+<text>Le client actualise l’enregistrement hôte.</text>	
+</component>
+
+<component id="tipBody">		
+	<text><![CDATA[Les clients DHCP capables d’actualiser dynamiquement leur enregistrement d’hôte DNS effectuent les opérations suivantes :<br/>1. Le client demande une adresse à un serveur DHCP.<br/>2. Le serveur DHCP lui attribue une adresse IP.<br/>3. Le client enregistre le nom d’hôte DNS via le serveur DNS configuré.<br />4. Le serveur DHCP enregistre le nom de pointeur (PTR) pour le client.]]></text>	
+</component>
+
+<component id="tipTitle1">		
+	<text>Le serveur DHCP actualise l’enregistrement hôte.</text>	
+</component>
+
+<component id="tipBody1">		
+	<text><![CDATA[Certains systèmes d’exploitation antérieurs ne sont pas compatibles avec la mise à jour dynamique des DNS. Sur ces systèmes d’exploitation, vous pouvez configurer certains serveurs DHCP pour mettre à jour dynamiquement les DNS pour le compte du client. Le processus est le suivant :<br/>1. Le client demande une adresse à un serveur DHCP.<br/>2. Le serveur DHCP attribue une adresse IP au client.<br/>3. Le serveur DHCP enregistre un hôte DNS avec un serveur DNS configuré pour le compte du client.<br />4. Le serveur DHCP enregistre le nom de pointeur (PTR) pour le client.]]></text>	
+</component>
+
+
+
+</textcomponents>

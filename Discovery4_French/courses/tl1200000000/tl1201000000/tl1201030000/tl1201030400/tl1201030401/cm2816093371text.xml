@@ -1,0 +1,137 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<B>R1</B>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<B>R2</B>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<B>R3</B>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<B>S1</B>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<B>S2</B>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<B>S3</B>]]></text>
+</component>
+
+<component id="ID_H1">
+<text><![CDATA[<B>H1</B>]]></text>
+</component>
+
+<component id="ID_newAddress">
+<text><![CDATA[192.168.11.55]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[PC1]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[PC2]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[PC3]]></text>
+</component>
+
+
+<component id="ID_txt10">
+<text><![CDATA[192.168.10.0/25]]></text>
+</component>
+
+
+<component id="ID_txt11">
+<text><![CDATA[192.168.11.0/25]]></text>
+</component>
+
+
+<component id="ID_txt12">
+<text><![CDATA[192.168.30.0/25]]></text>
+</component>
+
+
+<component id="ID_txt13">
+<text><![CDATA[Ni Telnet ni FTP]]></text>
+</component>
+
+
+<component id="ID_txt14">
+<text><![CDATA[Cliquez sur les boutons pour afficher les modèles de trafic.]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[Si la liste de contrôle d’accès standard est utilisée ici, tous le trafic en provenance de 192.168.11.0/25 est bloqué.]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[Fa0/2]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[S0/0/1]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[<B>Plus d’info</B>]]></text>
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[Cette liste est un petit rappel des règles de conception et d’application des listes de contrôle d’accès (ACL) :<br><li>Une seule liste de contrôle d’accès est autorisée par protocole, par direction et par interface.</li><li>Les listes de contrôle d’accès standard doivent être appliquées au plus près de la destination.</li><li>Les listes de contrôle d’accès étendues doivent être appliquées au plus près de la source.</li><li>L’interface d’entrée ou de sortie doit être référencée en examinant le port depuis l’intérieur du routeur. </li><li>Les instructions sont traitées de manière séquentielle du début à la fin de la liste, jusqu’à ce qu’une correspondance soit trouvée. Si aucune correspondance n’est trouvée, le paquet est refusé et ignoré. </li><li>Toutes les listes de contrôle d’accès se terminent par une instruction « deny any » implicite. Cette instruction n’apparaît pas dans la liste de configuration.</li><li>L’administrateur du réseau doit configurer les entrées de la liste de contrôle d’accès dans un ordre qui permet de filtrer les paquets du plus spécifique au plus général. Les hôtes spécifiques doivent être rejetés en premier, tandis que les groupes ou les filtres généraux viennent en dernier.</li><li>La condition de correspondance est examinée en premier. L’« acceptation » ou le « refus » est examiné uniquement si la condition est vraie.</li><li>Ne travaillez jamais avec une liste de contrôle d’accès appliquée de manière active. </li><li>Utilisez un éditeur de texte pour créer des commentaires expliquant la logique. Ajoutez ensuite les instructions correspondantes.</li><li>Par défaut, l’ajout de nouvelles lignes se fait toujours à la fin de la liste de contrôle d’accès. La commande no access-list x supprime toute la liste.</li><li>Une liste de contrôle d’accès IP envoie un message ICMP d’hôte inaccessible à l’émetteur du paquet rejeté et élimine le paquet dans la corbeille prévue à cet effet.</li><li>Une liste de contrôle d’accès doit être supprimée avec soin. La suppression d’une liste d’accès interrompt immédiatement le filtrage.</li><li>Les filtres de sortie n’affectent pas le trafic généré par le routeur local.</li>]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[En l’absence de liste de contrôle d’accès, tous le trafic en provenance de 192.168.11.0/25 est autorisé.]]></text>
+</component>
+
+<component id="ID_txt22">
+<text><![CDATA[Tout le trafic en provenance de 192.168.11.0/25]]></text>
+</component>
+
+<component id="ID_txt23">
+<text><![CDATA[Si une liste de contrôle d’accès étendue est appliquée ici, le trafic Telnet et FTP en provenance de 192.168.11.55 est bloqué et tous les autres trafics sont autorisés.]]></text>
+</component>
+
+<component id="ID_txt24">
+<text><![CDATA[Tout le trafic en provenance de 192.168.11.0/25, tout le trafic excepté Telnet et FTP en provenance de H1 192.168.11.55]]></text>
+</component>
+
+<component id="ID_txt25">
+<text><![CDATA[FTP et Telnet en provenance de 192.168.11.55]]></text>
+</component>
+
+<component id="ID_txt26">
+<text><![CDATA[Autre trafic]]></text>
+</component>
+
+
+<component id="ID_txt27">
+<text><![CDATA[192.168.11.0/24]]></text>
+</component>
+
+<component id="ID_but01">
+<text><![CDATA[<b>Pas de liste de contrôle d’accès</b>]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[<b>Liste de contrôle d’accès standard</b>]]></text>
+</component>
+
+<component id="ID_but03">
+<text><![CDATA[<b>Liste de contrôle d’accès étendue</b>]]></text>
+</component>
+
+
+</textcomponents>

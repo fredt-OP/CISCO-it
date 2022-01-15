@@ -1,0 +1,79 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b> Redundancy in a Hierarchical Network</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Click Play to see the animation.</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b><font size="12">Trunk2</font></b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b><font size="12">Trunk3</font></b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b><font size="12">Trunk1</font></b>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[PC1 is communicating with PC4 over Trunk1.]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Trunk1 is broken between switch S2 and switch S1. Data frame is unable to reach switch S1 over Trunk1.]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[Switch S2 detects the broken connection to switch S1 and changes its forwarding path to go through switch S3.]]></text> 
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[Switch S2 detects the link to switch S1 has been restored. Switch S2 adjusts path to PC4 to go back through switch S1.]]></text> 
+  </component>
+  <component id="play"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+
+
+
+
+
+</textcomponents>

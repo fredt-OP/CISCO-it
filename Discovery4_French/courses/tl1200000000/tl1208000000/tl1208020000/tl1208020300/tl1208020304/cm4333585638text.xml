@@ -1,0 +1,121 @@
+﻿<textcomponents>
+	
+<component id="ID_txt01">
+<text><![CDATA[Stade<BR>Routeur d’équipement d’abonné et ETTD]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[S0/0]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[DLCI 10, 30]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[CSU/DSU]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Réseau FST]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[DLCI 20]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[CSU/DSU]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Billetterie<BR>Routeur d’équipement d’abonné et ETTD]]></text> 
+</component>
+
+
+<component id="ID_txt09">
+<text><![CDATA[ENCOMBREMENT]]></text>
+</component>
+
+
+
+<component id="ID_txt10">
+<text><![CDATA[Cliquez sur Lire pour voir le fonctionnement d’une notification d’encombrement dans un réseau de relais de trames.]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[Le commutateur de relais de trames DCE reçoit des trames du routeur d’équipement d’abonné du stade. Il détecte l’encombrement dans le réseau et marque les trames de manière appropriée.]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[Le commutateur DCE envoie des trames avec le bit FECN défini sur le périphérique de destination.]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[Le routeur ETTD reçoit la FECN. Le contrôle de flux peut être utilisé (ou invoqué) si le périphérique l’implémente.]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[Le routeur ETTD reçoit les trames marquées BECN. Le contrôle de flux peut être utilisé (ou invoqué) si le périphérique l’implémente.]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[Le commutateur DCE envoie une BECN au périphérique source.]]></text>
+</component>
+
+
+<component id="play"><text><![CDATA[Lire]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rembobiner]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Avance rapide]]></text>
+
+	</component>
+
+    <component id="mute">
+		<text><![CDATA[Muet]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[Désactiver Muet]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Redémarrer]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[Fin]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Texte]]></text>
+	</component>
+
+<component id="start_animation">
+		<text><![CDATA[Il s’agit du début d’une animation]]></text>
+	</component>
+
+<component id="bubble_example">
+		<text><![CDATA[Exemple de bulle qui se développe vers le bas]]></text>
+	</component>
+    
+
+</textcomponents>

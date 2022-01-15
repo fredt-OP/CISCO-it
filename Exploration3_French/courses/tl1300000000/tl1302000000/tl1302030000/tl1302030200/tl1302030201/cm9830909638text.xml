@@ -1,0 +1,52 @@
+﻿<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Aide contextuelle</b></font>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe des commandes sur un commutateur Cisco</b></font>
+</td>
+<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font>
+</td>
+</tr>
+	
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Exemple d’invite de commandes. Dans cet exemple, la fonction d’aide fournit une liste des commandes disponibles dans le mode actuel qui commencent par cl.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#cl?</b><br/><br/>clear  clock</font></td>
+</tr>
+	
+	
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Exemple de commande incomplète.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#clock</b> 
+% Incomplete command.</font></td>
+</tr>
+	
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Exemple de traduction symbolique.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#colck</b><br/><br/>% Unknown command or computer name, or unable to find computer address</font></td>
+</tr>
+	
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Exemple d’invite de commandes. Vous avez remarqué l’espace ? Dans cet exemple, la fonction d’aide fournit une liste des sous-commandes associées à la commande <b>clock</b>.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#clock ?</b><br/><br/>set  Set the time and date</font></td>
+</tr>	
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Dans cet exemple, la fonction d’aide fournit une liste des arguments de commande requis avec la commande <b>clock set</b>.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#clock set ?</b><br/><br/> hh:mm:ss  Current Time</font></td>
+</tr>
+
+	
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

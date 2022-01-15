@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Procédure pour affecter manuellement des informations IP </b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Switch><b>enable</b><br>Switch#<b>configure terminal</b><br>Switch(config)#<b>interface vlan 1</b><br>Switch(config-if)#<b>ip address 192.168.1.2 255.255.255.0</b><br>Switch(config-if)#<b>exit</b><br>Switch(config)#<b>ip default-gateway 192.168.1.1</b><br>Switch(config)#<b>end</b><br>Switch#<b>copy running-config startup-config</b>]]></text>
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,5 @@
+<transcript lastedited="09.26.08 13:09:09">
+<title><content-text><![CDATA[9.2.1 - Troubleshooting Basic Switching]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the speed and duplex settings of a switch.<br><br>Network Topology<br>A switch, S1, with the Fast Ethernet ports F A 0 /4, F A 0 /2, and F A 0 /6 in use. F A 0 /2 on S1 is directly connected to the F A 0 /2 of switch, S2. F A 0 /1 of S2 is directly connected to the F A 0 /0 of router, R1. The serial interface S0 /1 of R1 is connected by serial link to the WAN cloud. <br><br>Items of interest are highlighted in the following output of S1:<br> <br>S1 # show interface FA0/6<br>Fast Ethernet0/6 is up, line protocol is up (connected) <br>Hardware is Fast Ethernet, address is 000d.6563.bd06 (b I a 000d.6563.bd06) <br>{output omitted}<br>Full-duplex, 100Mb/s<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

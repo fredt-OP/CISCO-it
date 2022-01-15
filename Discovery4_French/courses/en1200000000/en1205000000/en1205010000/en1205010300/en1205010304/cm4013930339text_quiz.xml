@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="12511" dateexported="03/07/2007">
+		<name></name>
+		<form id="18985" lang="en"><form-item order="N/A" usage="N/A">
+			<ai id="111410"  type="mc-sa">
+			<question><![CDATA[All of the statements relate to an advantage of having Power over Ethernet (PoE) except one. Select the statement that does not provide a high availability or good design strategy.]]></question>
+			<choices>
+									<choice correct="y">
+										<text><![CDATA[provides access point redundancy]]></text><feedback><![CDATA[You have correctly identified how various availability strategies improve the reliability of the network and limit the effects of failures. Please press Next to continue.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[reduces amount of electrical wiring needed for access points]]></text>
+<feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[provides power to IP Phones]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[serves as a connectivity option for network-based surveillance cameras]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									</choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111411" li="3.4.3" type="mc-ma">
+						<comment/>
+						<intro/>
+						<question><![CDATA[What are two advantages of having dual NICs installed in a DHCP server? (Choose two.)]]></question>
+						<choices>
+									<choice correct="n">
+										<text><![CDATA[distribution layer redundancy]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[load balancing for DHCP activity]]></text>
+ <feedback><![CDATA[You have correctly identified how various availability strategies improve the reliability of the network and limit the effects of failures. Please press Next to continue.]]></feedback>
+ 
+									</choice>
+									<choice correct="n">
+		<text><![CDATA[provides connectivity for IP Phones]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[provides redundancy in case of host NIC failure]]></text> <feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[provides connectivity to hosts in case of a single network card failure]]></text> <feedback><![CDATA[You have correctly identified how various availability strategies improve the reliability of the network and limit the effects of failures. Please press Next to continue.]]></feedback>
+									</choice>
+									</choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111412" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[What is an advantage of having two links connected between switches when one of the switches has a server attached?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[provides redundancy in case a single switch fails]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[provides connectivity to the other switch when the link to the server fails]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[provides power to the other switch when the other switch has lost AC power]]></text><feedback><![CDATA[The answer you selected is not correct. Try again.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[provides connectivity when one of the links between the switches fails]]></text><feedback><![CDATA[You have correctly identified how various availability strategies improve the reliability of the network and limit the effects of failures. Please press Next to continue.]]></feedback>
+									</choice>
+									</choices></ai></form-item>
+									<!--<form-item order="N/A" usage="N/A">
+						<ai id="111410" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[If Host8 sends a message to Host1, and the destination MAC address is in the switch MAC table, which host devices will receive the message?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[only Host1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[all hosts connected to Hub1]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts connected to Hub1 and hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts on the network]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice></choices></ai></form-item>-->
+									</form></exam> 

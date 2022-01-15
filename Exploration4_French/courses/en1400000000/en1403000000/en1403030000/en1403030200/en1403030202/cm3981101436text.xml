@@ -1,0 +1,86 @@
+<textcomponents>
+
+<component id="ID_topology01">
+<text><![CDATA[<b>Frame Relay</b><br/>10.1.1.0/24]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Frame Relay Bursting</b>]]></text>
+</component>
+
+<component id="ID_button1">
+<text><![CDATA[<b>CBIR and BE</b>]]></text>
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[<b>Bursting</b>]]></text>
+</component>
+
+<!--slide 1-->
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='100' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>PVC DCLI</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>CIR (Normal)</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>CBIR (example)</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>BE</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DCLI 102</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>32 kb/s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>48 kb/s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>16 kb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DCLI 103</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>16 kb/s</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>0 kb/s</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>48 kb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'> </td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>All frames are forwarded</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Frames are forwarded but marked DE</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Frames will  most likely will be dropped</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!--slide 2-->
+<component id="ID_S2_txt01">
+<text><![CDATA[<b>64 kb/s</b>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>48 kb/s</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[<b>32 kb/s</b>]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[<b>0 kb/s</b>]]></text>
+</component>
+
+<component id="ID_S2_txt05">
+<text><![CDATA[<b>BE (16 kb/s)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt06">
+<text><![CDATA[<b>CBIR (16 kb/s)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt07">
+<text><![CDATA[<b>CIR (32 kb/s)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt08">
+<text><![CDATA[<b>Frames have DE bit set</b>]]></text>
+</component>
+
+<component id="ID_S2_txt09">
+<text><![CDATA[<b>Transmission</b>]]></text>
+</component>
+
+</textcomponents>

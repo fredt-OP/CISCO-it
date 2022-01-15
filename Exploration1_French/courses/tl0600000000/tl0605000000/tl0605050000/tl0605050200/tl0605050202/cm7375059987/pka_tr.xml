@@ -1,0 +1,167 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">11A</NAME>
+ <NAME translate="true">11B</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 5.5.2 : &lt;br&gt;examen d'une route&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt; &lt;h3&gt;Table d'adressage&lt;/h3&gt; &lt;p&gt;Cet exercice ne comporte pas de table d'adressage.&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Utiliser la commande route pour afficher une table de routage PT-PC &lt;li&gt;Utiliser l'invite de commande pour lancer la commande telnet et se connecter à un routeur Cisco &lt;li&gt;Examiner des routes de routeur à l'aide de commandes IOS Cisco de base &lt;/ul&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Pour que des paquets soient acheminés sur un réseau, un périphérique doit connaître la route vers le réseau de destination. Ce TP compare le mode d'utilisation des routes sur les ordinateurs Windows et dans le routeur Cisco. Certaines routes sont ajoutées automatiquement aux tables de routage, selon les informations de configuration de l'interface réseau. Le périphérique considère un réseau directement connecté quand il a une adresse IP et un masque de réseau configurés, et la route du réseau est automatiquement entrée dans la table de routage. Pour les réseaux non directement connectés, une adresse IP de passerelle par défaut est configurée pour envoyer le trafic vers un périphérique devant connaître le réseau. &lt;/p&gt;
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says &apos;At the completion of this task, when you check Results, your score should be xxx%&apos; where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT doable in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt;
+
+</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 1 : affichage de la table de routage&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Accédez à l'invite de commande.&lt;/h4&gt; &lt;p&gt;Cliquez sur un PC &amp;gt; onglet Desktop &amp;gt; Command Prompt&lt;/p&gt; &lt;h4&gt;&lt;b&gt;Étape 2.&lt;/b&gt; Tapez netstat -r pour afficher la table de routage courante.&lt;/h4&gt; &lt;p&gt;&lt;b&gt;REMARQUE : Packet Tracer 4.1 ne prend pas en charge les commandes ROUTE qui vous permettraient d'examiner les routes actives sur un PC. Contrairement à la commande netstat –r, la commande route peut être utilisée pour afficher, ajouter, supprimer ou modifier des entrées de table de routage.&lt;b&gt;&lt;/p&gt; &lt;h4&gt;À la fin de cette tâche, votre taux de progression doit atteindre 100 %. &lt;/h4&gt;
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 2 : utilisation de l'invite de commande pour lancer Telnet et se connecter à un routeur&lt;/h3&gt; &lt;h4&gt;Étape 1. Utilisez l'invite de commande comme client Telnet.&lt;/h4&gt; Ouvrez la fenêtre d'invite de commande en cliquant sur un &lt;b&gt;PC &amp;gt; onglet Desktop &lt;/b&gt;&lt;b&gt;&amp;gt; Command Prompt&lt;/b&gt;. Tapez ensuite la commande telnet suivie de l'adresse IP de la passerelle par défaut du routeur distant (&lt;b&gt;172.16.255.254&lt;/b&gt;)&lt;b&gt;.&lt;/b&gt; Le nom d'utilisateur requis est &lt;b&gt;ccna1&lt;/b&gt;, le mot de passe &lt;b&gt;cisco&lt;/b&gt;. &lt;p&gt;&lt;b&gt;REMARQUE : le mot de passe ne s'affiche PAS lors de la saisie.&lt;/b&gt;&lt;/p&gt; &lt;h4&gt;À la fin de cette tâche, votre taux de progression doit atteindre 100 %. &lt;/h4&gt;
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 3 : examen de routes de routeur à l'aide de commandes IOS Cisco de base&lt;/h3&gt; &lt;p&gt;&lt;b&gt;Étape 1. Explorez le mode privilégié.&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Une fois connecté au routeur distant, tapez &lt;b&gt;enable&lt;/b&gt; pour passer en mode &lt;b&gt;privilégié&lt;/b&gt;. Le mot de passe requis ici est &lt;b&gt;class. &lt;/b&gt; Là encore, le mot de passe ne s'affiche pas lors de la saisie. &lt;/p&gt; &lt;b&gt;Étape 2. Entrez la commande pour afficher la table de routage du routeur. &lt;/b&gt; &lt;p&gt;Utilisez la commande &lt;b&gt;show ip route&lt;/b&gt; pour afficher une table de routage bien plus détaillée que sur un ordinateur hôte. Ceci est logique, car l'objectif d'un routeur est d'acheminer le trafic entre les réseaux. &lt;b&gt;&lt;br&gt;&lt;br&gt;Comment les informations de masque IP apparaissent-elles dans une table de routage de routeur ?&lt;/b&gt;&lt;/p&gt;&lt;h4&gt; À la fin de cette tâche, votre taux de progression doit atteindre 100 %. &lt;/h4&gt;
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true">. . .</TEXT>
+ <TEXT translate="true">. . .</TEXT>
+ <TEXT translate="true">. . .</TEXT>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">11A</ID>
+ <ID translate="true">11B</ID>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">11A</ID>
+ <ID translate="true">11B</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

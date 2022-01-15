@@ -1,0 +1,11 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Advantages:<br><li>Uses bandwidth as a metric</li><li>Converges quickly using triggered updates</li><li>Limits routing loops through consistent view of network topology</li><li>Routing decisions based on latest information</li><li>Minimizes link-state database - fewer SPF calculations</li><li>Converges faster</li><li>Maps the topology of an area on each router</li><li>Supports CIDR and VLSM</li><li>Designed hierarchically using areas</li>]]></text> 
+</component>
+
+<component id="ID_txt02">     
+<text><![CDATA[Disadvantages:<br><li>Requires more memory and processor power</li><li>Requires more complex and expensive implementation</li><li>Requires an administrator who understands the protocol</li><li>Floods the network initially with LSAs noticeably degrading network performance</li>]]></text>    
+</component>
+
+</textcomponents>

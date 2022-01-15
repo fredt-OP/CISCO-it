@@ -1,0 +1,61 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Codes de champ d’options configurables</b>]]></text> 
+</component>
+
+
+<component id="tableHTML">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+  <tr>
+    <td  width='150' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Nom d’option</b></font></td>
+    <td width='100' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Type d’option</b></font></td>
+    <td width='120' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Longueur d’option</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Description</b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Maximum Receive Unit (MRU)</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>4</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>L’unité de réception maximale est la taille maximale d’une trame PPP et ne peut pas dépasser 65 535. La valeur par défaut est 1 500 et si aucun des homologues ne modifie la valeur par défaut, elle n’est pas négociée.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Asynchronous Control Character Map (ACCM)</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Il s’agit d’un topogramme binaire qui autorise les caractères d’échappement pour des liaisons asynchrones. Par défaut, les caractères d’échappement sont utilisés. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Authentication Protocol</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>3</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>5 ou 6</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Ce champ indique le protocole d’authentification, PAP ou CHAP. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Magic Number</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>5</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6 </td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Il s’agit d’un numéro aléatoire choisi pour distinguer un homologue et détecter des lignes de bouclage.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protocol Compression</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>7</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Indicateur spécifiant que l’ID de protocole PPP doit être compressé en un octet unique lorsque l’ID de protocole sur 2 octets se trouve dans la plage allant de 0x00-00 à 0x00-FF.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Address and Control Field Compression</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>8</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Indicateur spécifiant que le champ d’adresse PPP (toujours défini sur 0xFF) et le champ de contrôle PPP (toujours défini sur 0x03) doit être supprimé de l’en-tête PPP. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Callback</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>13 ou 0x0D</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>3</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Indicateur à 1 octet indiquant comment le rappel sera déterminé. </td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+</textcomponents>

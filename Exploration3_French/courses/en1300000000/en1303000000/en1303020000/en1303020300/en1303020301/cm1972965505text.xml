@@ -1,0 +1,78 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Port F0/3 is configured with <font face='_typewriter'><b>switchport mode dynamic auto</b></font>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Port F0/3 is configured with <font face='_typewriter'><b>switchport mode dynamic auto</b></font>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Port F0/1 is configured with <font face='_typewriter'><b>switchport mode trunk</b></font>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Port F0/1 is configured with <font face='_typewriter'><b>switchport mode trunk</b></font>]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[This link is a trunk.<br/><br/>Both ports configured with <font face='_typewriter'><b>switchport mode trunk</b></font> effectively forces both ports to stay in  trunk mode.]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[This link is not a trunk.<br/><br/>Both ports configured with <font face='_typewriter'><b>switchport mode dynamic auto</b></font> results in an inactive trunk link.]]></text> 
+  </component>
+<component id="btn1">
+<text><![CDATA[Initial Port Configuration]]></text>
+</component>
+<component id="btn2">
+<text><![CDATA[Which link will be configured as a trunk?]]></text>
+</component>
+<component id="btn3">
+<text><![CDATA[DTP Modes]]></text>
+</component>
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font  color="#FFFFFF">Dynamic Auto</font></b></td>
+	   	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Dynamic Desirable</font></b></td>
+	   	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Trunk</font></b></td>
+	   	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Access</font></b></td>
+    	</tr>
+	<tr>
+		<td bgcolor='#666666' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font  color="#FFFFFF">Dynamic Auto</font></b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Access</td>	
+	    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk</td>
+	    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk</td>
+	    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Access</td>
+	</tr>
+	<tr>
+		<td bgcolor='#333333' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Dynamic Desirable</font></b></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk</td>	
+	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk</td>
+	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk</td>
+	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Access</td>
+	</tr>
+	<tr>
+	  <td bgcolor='#666666' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Trunk</font></b></td>
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk</td>
+      <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk</td>
+      <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk</td>
+      <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Not Recommended</td>
+  </tr>
+	<tr>
+	  <td bgcolor='#333333' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Access</font></b></td>
+	  <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Access</td>
+      <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Access</td>
+      <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Not Recommended</td>
+      <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Access</td>
+  </tr>
+	<tr>
+	  <td colspan="5" valign='top' bgcolor='#FFFFFF' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Note: Table assumes DTP is enabled at both ends.</b><br /><font face="_typewriter"><b>* show dtp interface</b></font> - to determine current settings</td>
+  </tr>
+	</table>
+    ]]></text>
+</component>
+<component id="ID_title">
+<text><![CDATA[DTP Switchport Mode Interactions]]></text>
+</component>
+</textcomponents>
+
+
+

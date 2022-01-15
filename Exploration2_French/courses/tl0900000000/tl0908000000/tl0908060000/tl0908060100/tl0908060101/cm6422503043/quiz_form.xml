@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13259" dateexported="01/26/2009">
+		<name>Module 8 Questionnaire</name>
+		<form id="20921" lang="fr"><form-item order="fixed">
+			<ai id="133326" type="mc-ma"><question><![CDATA[Examinez la présentation. Quels sont les types de routes affichés dans cette table de routage ? (Choisissez trois réponses.) <br/><img src="i133326n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Les réseaux locaux par rapport à ce routeur  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La route par défaut pour ce routeur ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les routes statiques dans ce routeur  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les routes mobiles ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les routes apprises à partir d’autres protocoles de routage dynamique  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les routes apprises à partir d’un routeur autre que Cisco ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133327" type="mc-sa"><question><![CDATA[Quelle caractéristique peut servir à déterminer si une route est la meilleure ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La route affiche un masque de sous-réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La route est une route parent. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La route a été configurée par un administrateur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La route inclut une interface de sortie.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133328" type="mc-ma"><question><![CDATA[Examinez la présentation. Quelles sont les routes considérées comme routes parent ? (Choisissez deux réponses.) <br/><img src="i133328n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[172.16.0.0/24  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.4.0 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.1.0 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[10.0.0.0/16  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.1.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.100.0/24 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133322" type="mc-sa"><question><![CDATA[Le routeur R1 est configuré avec les commandes R1(config)#<b> ip classless</b> et R1(config)#<b> ip route 0.0.0.0 0.0.0.0 s0/0/0</b>. Que fait le routeur R1 avec un paquet qui correspond à une route parent mais pas aux routes enfant associées ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il transfère le paquet à l’aide de la correspondance de route parent la plus longue. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il transfère le paquet par le biais de la route par défaut.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il renvoie le paquet avec un message ICMP « Destination inaccessible » à l’adresse source. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il abandonne le paquet. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133329" type="mc-sa"><question><![CDATA[Quelle action permet le comportement de routage par classe sur un routeur ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Configuration du protocole RIPv1 ou IGRP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configuration d’un protocole de routage d’état des liaisons ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Utilisation de masques de réseau par classe uniquement sur tous les réseaux ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Exécution de la commande <b>no ip classless</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133323" type="mc-sa"><question><![CDATA[Dans le processus de recherche de route, de quoi est constituée la route préférée ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La meilleure route ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La plus longue correspondance des bits les plus à gauche  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La longueur de préfixe la plus courte ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La première route qui correspond à une interface de sortie ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133325" type="mc-sa"><question><![CDATA[Si un paquet correspond à une route parent de niveau 1 dans la table de routage, que se passe-t-il ensuite dans le processus de recherche ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le routeur supprime le paquet car le niveau 1 nécessite une interface de sortie. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur recherche la route enfant de niveau 2 avec une interface de sortie.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur envoie le paquet à toutes les interfaces à l’exception de celle qui l’a reçu. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur utilise le protocole ARP pour tous les réseaux connectés afin de rechercher l’interface qui contient la destination. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133320" type="mc-sa"><question><![CDATA[Quel est le rôle des commandes <b>ip classless</b> et <b>no ip classless</b> ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Elles déterminent le comportement de la recherche d’adresses du processus de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elles spécifient si le routeur accepte les masques de sous-réseau dans les mises à jour de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elles limitent l’utilisation des protocoles de routage par classe ou sans classe. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elles permettent au routeur d’accepter ou non le masquage VLSM pour les adresses d’interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133321" type="mc-sa"><question><![CDATA[Le routeur R1 est configuré avec les commandes R1(config)#<b> no ip classless</b> et R1(config)#<b> ip route 0.0.0.0 0.0.0.0 s0/0/0</b>. Que fait le routeur R1 avec un paquet qui correspond à une route parent mais pas aux routes enfant associées ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il transfère le paquet à l’aide de la correspondance de route parent la plus longue. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il transfère le paquet par le biais de la route par défaut. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il renvoie le paquet avec un message ICMP « Destination inaccessible » à l’adresse source. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il abandonne le paquet.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133324" type="mc-sa"><question><![CDATA[Examinez la présentation.  Le routeur C exécute la version 12.3 d’IOS.  Le routeur reçoit un paquet avec la destination 172.16.1.130. Quelle route le routeur C utilise-t-il pour transférer le paquet ? <br/><img src="i133324n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[172.16.1.0/25 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/16 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[172.16.0.0/13  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La route par défaut ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Aucune, il supprime le paquet. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

@@ -1,0 +1,234 @@
+<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click the buttons and then click Play to see the animations.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>LMI 1</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>LMI 2</b>]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_title01">
+<text><![CDATA[<b>Stages of Inverse ARP and LMI Operation </b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[DTE sends Status Enquiry Message (75) to DCE]]></text>
+</component>
+
+<component id="ID_S1_txt02">
+<text><![CDATA[<font color="#ff0000">DCE responds with Status Message (7D) - includes configured DLCIs</font>]]></text>
+</component>
+
+<component id="ID_S1_txt03">
+<text><![CDATA[DCE responds with Status Message (7D) - includes configured DLCIs]]></text>
+</component>
+
+<component id="ID_S1_txt04">
+<text><![CDATA[<font color="#ff0000">DTE learns what VCs it has</font>]]></text>
+</component>
+
+<component id="ID_S1_txt05">
+<text><![CDATA[<b>DCLI 101</b>]]></text>
+</component>
+
+<component id="ID_S1_txt06">
+<text><![CDATA[<b>DCLI 102</b>]]></text>
+</component>
+
+<component id="ID_S1_txt07">
+<text><![CDATA[<b>DCLI 103</b>]]></text>
+</component>
+
+<component id="ID_S1_txt08">
+<text><![CDATA[<b>DCLI 104</b>]]></text>
+</component>
+
+<component id="ID_S1_txt09">
+<text><![CDATA[<font color="#ffffff"><b>R1</b></font>]]></text>
+</component>
+
+<component id="ID_S1_txt10">
+<text><![CDATA[<b>7D</b>]]></text>
+</component>
+
+<component id="ID_S1_txt11">
+<text><![CDATA[<b>75</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">DLCI</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Status</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>101</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>102</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>103</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>104</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+
+<!-- slide 2 -->
+<component id="ID_title02">
+<text><![CDATA[<b>Using LMI and Inverse ARP to Map Addresses</b>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<font color="#ffffff"><b>R1</b></font>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>DCLI 101</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[<b>DCLI 102</b>]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[<b>DCLI 103</b>]]></text>
+</component>
+
+<component id="ID_S2_txt05">
+<text><![CDATA[<b>DCLI 104</b>]]></text>
+</component>
+
+<component id="ID_S2_txt06">
+<text><![CDATA[DTE sends inverse ARP on a VCMapping VC to Network Address]]></text>
+</component>
+
+<component id="ID_S2_txt07">
+<text><![CDATA[DTE sends inverse ARP on a VCMapping VC to Network Address<br/><font color="#FF0000">Remote DTE replies with Layer 3 address</font>]]></text>
+</component>
+
+<component id="ID_S2_txt08">
+<text><![CDATA[DTE sends inverse ARP on a VCMapping VC to Network Address<br/>Remote DTE replies with Layer 3 address]]></text>
+</component>
+
+<component id="ID_S2_txt09">
+<text><![CDATA[<font color="#FF0000">DTE maps Layer 2 - Layer 3</font>]]></text>
+</component>
+
+<component id="ID_S2_txt10">
+<text><![CDATA[DTE maps Layer 2 - Layer 3</font>]]></text>
+</component>
+
+<component id="ID_S2_txt10a">
+<text><![CDATA[<font color="#FF0000">The process is repeated for each VC and each Layer 3 protocol</font>]]></text>
+</component>
+
+<component id="ID_S2_txt11">
+<text><![CDATA[InARP]]></text>
+</component>
+
+<component id="ID_S2_txt12">
+<text><![CDATA[172.16.0.1]]></text>
+</component>
+
+<!-- table 2 is the same as table 1 -->
+<component id="ID_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">DLCI</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Status</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>101</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>102</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>103</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>104</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<!-- controller 1-->
+<!-- text is identical to controller 2-->
+<component id="play">
+<text>Play</text>
+</component>
+<component id="pause">
+<text>Pause</text>
+</component>
+<component id="rewind">
+<text>Rewind</text>
+</component>
+<component id="forward">
+<text>Fast Forward</text>
+</component>
+<component id="mute">
+<text>Mute</text>
+</component>
+<component id="unmute">
+<text>UnMute</text>
+</component>
+<component id="previous">
+<text>Restart</text>
+</component>
+<component id="next">
+<text>End</text>
+</component>
+<component id="transcript">
+<text>Transcript</text>
+</component>
+
+<!-- controller 2-->
+<!-- text is identical to controller 1-->
+<component id="play2">
+<text>Play</text>
+</component>
+<component id="pause2">
+<text>Pause</text>
+</component>
+<component id="rewind2">
+<text>Rewind</text>
+</component>
+<component id="forward2">
+<text>Fast Forward</text>
+</component>
+<component id="mute2">
+<text>Mute</text>
+</component>
+<component id="unmute2">
+<text>UnMute</text>
+</component>
+<component id="previous2">
+<text>Restart</text>
+</component>
+<component id="next2">
+<text>End</text>
+</component>
+<component id="transcript2">
+<text>Transcript</text>
+</component>
+</textcomponents>

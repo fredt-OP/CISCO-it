@@ -1,0 +1,123 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Configuring a Cisco Router as a DHCP Server</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click each DHCP configuration step for more information.</b>]]></text> 
+</component>
+
+<component id="ID_txt01a">
+<text><![CDATA[<b>Step 1: Create DHCP Address Pool</b><br>Navigate to the privileged EXEC mode, enter the password if prompted and then enter the global configuration mode. Now create a name for the DHCP server address pool. More than one address pool can exist on a router. The Cisco IOS CLI will enter the DHCP pool configuration mode. Use these commands:<br><br><font face="_typewriter">  Router> <b>enable</b><br>  Router# <b>configure terminal</b><br>  Router(config)# <b>ip dhcp pool LAN-address</b></font><br><br>This example created an address pool named "LAN-address".]]></text> 
+</component>
+
+<component id="ID_txt01d">
+<text><![CDATA[<font face="_typewriter">Router(config)# <b>ip dhcp pool LAN-address</b><br/>Router(dhcp-config)#</font>]]></text> 
+</component>
+
+
+<component id="ID_txt02a">
+<text><![CDATA[<b>Step 2: Specify the Network or Subnet</b><br>Specify the network or subnet network number and the subnet mask of the DHCP address pool. Use this command:<br><br><font face="_typewriter">  Router(dhcp-config)# <b>network 172.16.0.0 255.255.0.0</b></font><br><br>Depending on the version of IOS, the subnet mask may also be specified using the prefix convention /16.]]></text> 
+</component>
+
+
+<component id="ID_txt02d">
+<text><![CDATA[<font face="_typewriter">Router(dhcp-config)# <b>network 172.16.0.0 255.255.0.0</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt03a">
+<text><![CDATA[<b>Step 3: Exclude IP Addresses</b><br>Recall that the DHCP server assumes that all other IP addresses in a DHCP address pool subnet are available for assigning to DHCP clients. Exclude addresses from the pool so the DHCP server does not allocate those IP addresses. If a range of addresses is to be excluded, only the starting address and ending address need to be entered. Use this command:<br><br><font face="_typewriter"> Router(config)# <b>ip dhcp excluded-address 172.16.1.100 172.16.1.103</b></font><br><br>The example shown excludes the four addresses, 172.16.1.100, 172.16.1.101, 172.16.1.102, and 172.16.1.103 from being given out to hosts by DHCP. These addresses can be statically assigned by the administrator.]]></text> 
+</component> 
+
+<component id="ID_txt03d">
+<text><![CDATA[<font face="_typewriter">Router(config)# <b>ip dhcp excluded-address 172.16.1.100 172.16.1.103</b></font>]]></text>
+</component>
+
+
+<component id="ID_txt04a">
+<text><![CDATA[<b>Step 4: Specify the Domain Name</b><br>Now specify the domain name for the client. Use this command:<br><br><font face="_typewriter"> Router(dhcp-config)# <b>domain-name cisco.com</b></font><br><br>Clients in this example will receive the domain name cisco.com as part of their DHCP configuration. Domain name is an optional DHCP configuration parameter and is not necessary for DHCP to function. The network administrator can provide information as to whether or not a domain name is necessary.]]></text> 
+</component> 
+
+<component id="ID_txt04d">
+<text><![CDATA[<font face="_typewriter">Router(dhcp-config)# <b>domain-name cisco.com</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt05a">
+<text><![CDATA[<b>Step 5: DNS Server IP Address</b><br>Now specify the IP address of a DNS server that is available to a DHCP client. One IP address is required. Up to eight IP addresses can be configured on one line. If listing more than one DNS Server list the servers in order of importance. Use this command:<br><br><font face="_typewriter">  Router(dhcp-config)# <b>dns-server 172.16.1.103 172.16.2.103</b></font><br><br>In this example, there are two DNS servers that clients can use, a primary server and a secondary server. At least one DNS server must be configured for hosts to resolve host names and URLs in order to access services on the network.]]></text> 
+</component>
+
+<component id="ID_txt05d">
+<text><![CDATA[<font face="_typewriter">Router(dhcp-config)# <b>dns-server 172.16.1.103 172.16.2.103</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt06a">
+<text><![CDATA[<b>Step 6: Set the Default Gateway</b><br>Now specify the IP address of the default router for the DHCP clients on the network. Typically this will be the LAN IP of the router. This command will set the default gateway for the client devices on the network that will be using DHCP. After a DHCP client has booted, the client begins sending packets to its default router. The IP address must be on the same subnet as the client IP addresses given out by the router. One IP address is required. Use this command:<br><br><font face="_typewriter">  Router(dhcp-config)# <b>default-router 172.16.1.100</b></font><br><br>Clients in this example use the router interface 172.16.1.100 as their default gateway.]]></text> 
+</component> 
+
+<component id="ID_txt06d">
+<text><![CDATA[<font face="_typewriter">Router(dhcp-config)# <b>default-router 172.16.1.100</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt07a">
+<text><![CDATA[<b>Step 7: Set the Lease Duration</b><br>DHCP gives out IP address information each time a host powers on and connects to the network. The default time that a client IP address is reserved for a specific host is one day. If the host does not renew its address, then the reservation ends and the IP address is again available to be given out through DHCP. It is possible to change the lease timer to a longer period of time, if necessary. This is the last step in configuring a DHCP service on a router. Use the end command to finish the DHCP configuration and return to the Global configuration mode. Use these commands:</b><br><br><font face="_typewriter">Router (dhcp-config)# <b>lease {days [hours] [minutes]| infinite}</b><br>  Router (dhcp-config)# <b>end</br></b></font>]]></text> 
+</component> 
+
+
+<component id="ID_txt07c">
+<text><![CDATA[The example shown excludes the four addresses, 172.16.1.100.172.16.1.101, 172.16.1.102, and 172.16.1.103 from being distributed by DHCP. These addresses can be statically assigned by the administrator and will not be assigned by DHCP.]]></text> 
+</component>
+
+<component id="ID_txt07d">
+<text><![CDATA[<font face="_typewriter">Router (dhcp-config)# <b>lease {days [hours] [minutes]| infinite}</b><br/>Router (dhcp-config)# <b>end</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt08a">
+<text><![CDATA[<b>Step 8: Verify the Configuration</b><br>Verify the DHCP configuration by viewing the running-configuration. To do this use the command:<br><br><font face="_typewriter">Router#<b>  show running-config</b></font><br><br>Here is an example of the DHCP part of the configuration running on a DHCP enabled router:<br><br><font face="_typewriter"><b>  !<br>  ip dhcp pool LAN-addresses</br><br>  domain-name cisco.com</br><br>  network 172.16.0.0 255.255.0.0</br><br>  ip dhcp excluded-address 172.16.1.100 172.16.1.103</br><br>  dns-server 172.16.1.103 172.16.2.103</br><br>  default-router 172.16.1.100<br>  lease infinite<br>  !</br></b></font><br><br>When the configuration is correct, copy the running-configuration to the startup-configuration.]]></text> 
+</component> 
+
+<component id="ID_txt08f">
+<text><![CDATA[<font face="_typewriter">Router# <b>show running-config</b></font>]]></text> 
+</component> 
+
+
+
+
+
+<component id="Step_1">
+<text><![CDATA[<b>Step 1</b>]]></text> 
+</component>
+
+<component id="Step_2">
+<text><![CDATA[<b>Step 2</b>]]></text> 
+</component>
+
+<component id="Step_3">
+<text><![CDATA[<b>Step 3</b>]]></text> 
+</component>
+
+<component id="Step_4">
+<text><![CDATA[<b>Step 4</b>]]></text> 
+</component>  
+
+<component id="Step_5">
+<text><![CDATA[<b>Step 5</b>]]></text> 
+</component>
+
+<component id="Step_6">
+<text><![CDATA[<b>Step 6</b>]]></text> 
+</component> 
+
+<component id="Step_7">
+<text><![CDATA[<b>Step 7</b>]]></text> 
+</component>
+
+<component id="Step_8">
+<text><![CDATA[<b>Step 8</b>]]></text> 
+</component> 
+
+</textcomponents>

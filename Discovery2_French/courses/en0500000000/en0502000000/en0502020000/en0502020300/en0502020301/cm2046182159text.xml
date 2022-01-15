@@ -1,0 +1,45 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Troubleshooting using the OSI model</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Using the OSI Model as a framework for troubleshooting network problems</b>]]></text>
+</component>
+<component id="myTable">
+<text><![CDATA[Can your browser open this web site?]]></text>
+</component>
+<component id="myTableTitle">
+<text><![CDATA[<b>Layer 5-7: Upper Layers</b>]]></text> 
+</component>
+<component id="myTable2">
+<text><![CDATA[Do you have a firewall configured on your PC?]]></text> 
+</component>
+<component id="myTable2Title">
+<text><![CDATA[<b>Layer 4: Transport</b>]]></text> 
+</component>
+<component id="myTable3">
+<text><![CDATA[Can you ping your default gateway?]]></text> 
+</component>
+<component id="myTable3Title">
+<text><![CDATA[<b>Layer 3: Network</b>]]></text> 
+</component>
+<component id="myTable4">
+<text><![CDATA[Is the link light lit on your Network Interface Card?]]></text> 
+</component>
+<component id="myTable4Title">
+<text><![CDATA[<b>Layer 2: Data Link</b>]]></text> 
+</component>
+<component id="myTable5">
+<text><![CDATA[Is your network cable plugged in and secure?]]></text> 
+</component>
+<component id="myTable5Title">
+<text><![CDATA[<b>Layer 1: Physical</b>]]></text> 
+</component>
+<component id="tipTitle"><text>Tip</text>	
+</component>
+<component id="tipBody"><text><![CDATA[<b>Remember the following 3 different troubleshooting approaches:<br/><br/>Bottom-Up Approach:</b><br/>The bottom-up approach to troubleshooting a networking problem starts with the physical components of the network and works its way up the layers of the OSI model. Bottom-up troubleshooting is an effective and efficient approach for situations when the problem is suspected to be physical.<br/><br/><b>Top-Down Approach:</b><br/>When you apply a top-down approach to troubleshooting a networking problem, you start with the user application and work your way down the layers of the OSI model. The top-down approach is usually the simple route and typically only affects one or a few users. This is because lower layers, or network infrastructure usually affect more than one or a few users.<br/><br/><b>Divide-and-Conquer Approach:</b><br/>When you apply the divide-and-conquer approach, you select a layer and test its health; based on the observed results, you might go in either direction (up or down) from the starting layer. If a layer is in good working condition, you inspect the layer above it. If a layer is not in good working condition, you inspect the layer below it. The layer that you ultimately select as the first targeted layer is the one that is faulty, and the layer below it is in good working condition.]]></text>
+</component>
+<component id="TipText"><text><![CDATA[Tip]]></text>
+</component>
+</textcomponents>
+

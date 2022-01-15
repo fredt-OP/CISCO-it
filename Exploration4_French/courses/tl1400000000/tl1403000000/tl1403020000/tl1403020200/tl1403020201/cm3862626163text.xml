@@ -1,0 +1,65 @@
+﻿<textcomponents>
+
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Sortie<br/>du routeur]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[Mappages statiques]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[Paramètres]]></text>
+</component>
+
+<component id="ID_Button03">
+<text><![CDATA[Vérifier]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Configuration d’un mappage statique Frame Relay</b>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Paramètres de la commande</b>]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Vérification d’un mappage statique Frame Relay</b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[<b>Configuration pour R1</b>]]></text>
+</component>
+
+<component id="ID_topology01">
+<text><![CDATA[<b>Commutateur FR</b>]]></text>
+</component>
+<component id="ID_topology02">
+<text><![CDATA[<b>FAI</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width="150" bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Paramètres de la commande</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Description</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">protocol </font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définit le protocole, le pontage ou le contrôle de liaison logique pris en charge : appletalk, decnet, dlsw, ip, ipx, llc2, rsrb, vines et xns.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">protocol-address </font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définit l’adresse de couche réseau de l’interface du routeur de destination.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">dlci </font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définit l’identificateur DLCI local utilisé pour la connexion à l’adresse de protocole distante.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">broadcast </font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Facultatif) Permet la diffusion et la multidiffusion sur le circuit virtuel,  d’où la possibilité d’utiliser des protocoles de routage dynamique sur le circuit virtuel.</td></tr></table>]]></text>
+</component>
+
+</textcomponents>

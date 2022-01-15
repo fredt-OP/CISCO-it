@@ -1,0 +1,9 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Séquence d’amorçage d’un commutateur Cisco :<br/> -<TEXTFORMAT BLOCKINDENT='8'>Le commutateur exécute le logiciel du chargeur d’amorçage à partir de la mémoire vive non volatile.</textformat><br/> -<TEXTFORMAT BLOCKINDENT='8'>Le chargeur d’amorçage effectue les opérations suivantes :</textformat><br/>   • <TEXTFORMAT BLOCKINDENT='16'>Il procède à une initialisation de l’unité centrale à un faible niveau.</textformat><br/>   • <TEXTFORMAT BLOCKINDENT='16'>Il effectue un test automatique de mise sous tension (POST) pour le sous-système de l’unité centrale.</textformat><br/>   • <TEXTFORMAT BLOCKINDENT='16'>Il initialise le système de fichiers flash sur la carte système. </textformat><br/>   • <TEXTFORMAT BLOCKINDENT='16'>Il charge une image du logiciel de système d’exploitation par défaut dans la mémoire et amorce le commutateur.</textformat><br/> -<TEXTFORMAT BLOCKINDENT='8'>Le système d’exploitation est exécuté à l’aide du fichier config.text stocké dans la mémoire flash du commutateur.</textformat><br/><br/>Le chargeur d’amorçage facilite la récupération après une panne du système d’exploitation :<br/> -<TEXTFORMAT BLOCKINDENT='8'>Il fournit également un accès au commutateur si le système d’exploitation est défaillant. </textformat><br/> -<TEXTFORMAT BLOCKINDENT='8'>Il garantit l’accès aux fichiers stockés dans la mémoire flash avant le chargement du système d’exploitation. </textformat><br/> -<TEXTFORMAT BLOCKINDENT='8'>Faites appel à la ligne de commande du chargeur d’amorçage pour procéder à des opérations de récupération.</textformat>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Description de la séquence d’amorçage</b>]]></text>
+</component>
+</textcomponents>
+

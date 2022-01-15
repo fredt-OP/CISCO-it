@@ -1,0 +1,32 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[1)<TEXTFORMAT BLOCKINDENT='20'>  An attacker activates a DHCP server on a network segment.</textformat><br/>2)<TEXTFORMAT BLOCKINDENT='20'>  The client broadcasts a request for DHCP configuration information.</textformat><br/>3)<TEXTFORMAT BLOCKINDENT='20'>  The rogue DHCP server responds before the legitimate DHCP server can respond, assigning attacker-defined IP configuration information.</textformat><br/>4)<TEXTFORMAT BLOCKINDENT='20'>  Host packets are redirected to the attacker’s address as it emulates a default gateway for the erroneous DHCP address provided to the client.</textformat>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[-<TEXTFORMAT BLOCKINDENT='13'>  DHCP snooping allows the configuration of ports as trusted or untrusted.</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>•<TEXTFORMAT BLOCKINDENT='22'> Trusted ports can send DHCP requests and acknowledgements.</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>•<TEXTFORMAT BLOCKINDENT='22'> Untrusted ports can forward only DHCP requests.</textformat></textformat><br/>-<TEXTFORMAT BLOCKINDENT='13'>  DHCP Snooping enables the switch to build a DHCP binding table that maps a client MAC address, IP address, VLAN, and port ID. </textformat><br/>-<TEXTFORMAT BLOCKINDENT='13'>  Use the <b><font face='_typewriter'>ip dhcp snooping</font></b> command.</textformat>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Rogue DHCP Attacker</b>]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[<b>Legitimate DHCP Server</b>]]></text>
+</component>
+
+<component id="ID_untrust">
+<text><![CDATA[<b>Untrusted Port</b>]]></text>
+</component>
+<component id="ID_trust">
+<text><![CDATA[<b>Trusted Port</b>]]></text>
+</component>
+
+<component id="btn1">
+  <text><![CDATA[<b>Spoofing</b>]]></text> 
+  </component>
+ <component id="btn2">
+  <text><![CDATA[<b>DHCP Snooping</b>]]></text> 
+ </component>
+</textcomponents>
+

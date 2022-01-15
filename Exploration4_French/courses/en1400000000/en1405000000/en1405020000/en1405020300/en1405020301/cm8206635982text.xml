@@ -1,0 +1,176 @@
+﻿<textcomponents>
+
+<component id="ID_title00">
+  <text><![CDATA[<B>Wildcard Masking</B>]]></text> 
+</component>
+
+<component id="ID_title01">
+  <text><![CDATA[<B>Wildcard Mask Example</B>]]></text> 
+</component>
+
+<component id="ID_title02">
+  <text><![CDATA[<B>Wildcard Mask Application</B>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Wildcard Masking</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Wildcard Mask Example</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>Application</B>]]></text> 
+</component>
+
+
+<component id="ID_txt01_00">
+  <text><![CDATA[<B>Octet Bit Position and Address Value for Bit</B>]]></text> 
+</component>
+
+<component id="ID_txt02_00">
+  <text><![CDATA[<B>Examples</B>]]></text> 
+</component>
+
+<component id="ID_txt03_00">
+  <text><![CDATA[<B>Match All Address Bits (Match All)</B>]]></text> 
+</component>
+
+<component id="ID_txt04_00">
+  <text><![CDATA[<B>Ignore Last 6 Address Bits</B>]]></text> 
+</component>
+
+<component id="ID_txt05_00">
+  <text><![CDATA[<B>Ignore Last 4 Address Bits</B>]]></text> 
+</component>
+
+<component id="ID_txt06_00">
+  <text><![CDATA[<B>Ignore First 6 Address Bits</B>]]></text> 
+</component>
+
+<component id="ID_txt07_00">
+  <text><![CDATA[<B>Do Not Check Address (Ignore Bits in Octet)</B>]]></text> 
+</component>
+
+
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' bordercolor='#CCCCCC' borderwidth='1' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='200' bgcolor='#DDDDDD'><font color='#FFFFFF'><b> </b></font></td>
+<td width='150' bgcolor='#DDDDDD'><font color='#FFFFFF'><b>Decimal Address</b></font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'><b>Binary Address</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>IP address to be processed</td>
+<td bgcolor='#DDDDDD'>192.168.10.0</td>
+<td bgcolor='#DDDDDD'>11000000.10101000.00001010.00000000</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Wildcard mask</td>
+<td bgcolor='#F2F2F2'>0.0.255.255</td>
+<td bgcolor='#F2F2F2'>00000000.00000000.11111111.11111111</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>Resulting IP address</td>
+<td bgcolor='#DDDDDD'>192.168.0.0</td>
+<td bgcolor='#DDDDDD'>11000000.10101000.00000000.00000000</td>
+</tr>
+</table>]]></text>
+</component>
+
+
+
+<component id="ID_txt01_02">
+  <text><![CDATA[<B>Access-list 1 permit</B>]]></text> 
+</component>
+
+<component id="ID_txt02_02">
+  <text><![CDATA[<B>Incoming packet</B>]]></text> 
+</component>
+
+<component id="ID_txt03_02">
+  <text><![CDATA[<B>Compares to</B>]]></text> 
+</component>
+
+<component id="ID_txt04_02">
+  <text><![CDATA[<B>IP Address</B>]]></text> 
+</component>
+
+<component id="ID_txt05_02">
+  <text><![CDATA[<B>Wildcard Mask</B>]]></text> 
+</component>
+
+<component id="ID_txt06_02">
+  <text><![CDATA[<B>Match Value</B>]]></text> 
+</component>
+
+<component id="ID_txt07_02">
+  <text><![CDATA[<B>IP Address</B>]]></text> 
+</component>
+
+<component id="ID_txt08_02">
+  <text><![CDATA[<B>Wildcard Mask</B>]]></text> 
+</component>
+
+<component id="ID_txt09_02">
+  <text><![CDATA[<B>Match Value</B>]]></text> 
+</component>
+
+<component id="ID_txt10_02">
+  <text><![CDATA[<B>Match Value</B>]]></text> 
+</component>
+
+<component id="play"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute"><text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+<component id="caption">
+		<text><![CDATA[Click Play to see the animation.]]></text>
+	</component>
+<component id="ID_txt08_00">
+		<text><![CDATA[0 means to match the value of the corresponding address bit<BR/>1 means to ignore the value of the corresponding address bit]]></text>
+	</component>
+
+</textcomponents>
+

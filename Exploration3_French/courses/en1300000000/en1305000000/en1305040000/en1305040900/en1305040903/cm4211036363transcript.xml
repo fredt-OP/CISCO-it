@@ -1,0 +1,5 @@
+<transcript lastedited="11.05.08 19:11:05">
+<title><content-text><![CDATA[5.4.9  - Troubleshooting STP Operation]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a PortFast configuration error on a switch port that connects two switches.<br><br>Switch S1 is connected to switch S2 with a single link, initially using designated port F0/1, which is in the forwarding state. Then a second link is added to port F0/2 that is configured with PortFast, but should not be.<br><br>Step 1. The second link cable is connected from S2 to S1 PortFast F0/2.<br>Step 2. A transparent loop results, with port F0/1 and F0/2 forwarding.<br>Step 3. Port F0/2 receives a BPDU, and port F0/2 is in blocking mode.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

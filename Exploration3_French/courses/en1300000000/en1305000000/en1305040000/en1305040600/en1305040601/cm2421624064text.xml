@@ -1,0 +1,113 @@
+<textcomponents>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>RSTP Port States</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>Port States</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Descriptions</b>]]></text>
+</component>
+
+<component id="ID_button03">
+<text><![CDATA[<b>STP and RSTP Ports</b>]]></text>
+</component>
+
+<component id="ID_lazyText01">
+<text><![CDATA[<b>Discarding</b>]]></text>
+</component>
+
+<component id="ID_lazyText02">
+<text><![CDATA[<b>Learning</b>]]></text>
+</component>
+
+<component id="ID_lazyText03">
+<text><![CDATA[<b>Forwarding</b>]]></text>
+</component>
+
+<component id="ID_lazyText04">
+<text><![CDATA[<b>MAC Table</b>]]></text>
+</component>
+
+<component id="dataframe1">
+<text><![CDATA[<b>Data Frame</b>]]></text>
+</component>
+
+<component id="dataframe2">
+<text><![CDATA[<b>Data Frame</b>]]></text>
+</component>
+
+<component id="dataframe3">
+<text><![CDATA[<b>Data Frame</b>]]></text>
+</component>
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Port State</b></font></td>
+	  	  	<td valign='top' width='500' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>Action</b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Discarding</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>This state is seen in both a stable active topology and during topology synchronization and changes. The discarding state prevents the forwarding of data frames, thus "breaking" the continuity of a layer 2 loop.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Learning</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>This state is seen in both a stable active topology and during topology synchronization and changes. The learning state accepts data frames to populate the MAC table in an effort to limit flooding of unknown unicast frames.</td>
+	</tr>
+	<tr>
+	<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Forwarding</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>This state is seen only in stable active topologies. The forwarding switch ports determine the topology. Following a topology change, or during synchronization, the forwarding of data frames occurs only after a proposal and agreement process.</td>
+	</tr>
+	
+</table>
+]]></text> 
+  </component>
+  
+  <component id="tableHTML2">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Operational Port State</b></font></td>
+	  	  	<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>STP Port State</b></font></td>
+			<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>RSTP Port State</b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enabled</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Blocking</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Discarding</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enabled</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Listening</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Discarding</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enabled</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Learning</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Learning</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enabled</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Forwarding</td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Forwarding</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Disabled</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Disabled</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Discarding</td>
+	</tr>
+	
+</table>
+]]></text> 
+  </component>
+
+</textcomponents>

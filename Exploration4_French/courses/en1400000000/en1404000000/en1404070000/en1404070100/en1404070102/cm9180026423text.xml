@@ -1,0 +1,177 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) List the four types of reconnaissance attacks and provide an example of a tool that can be used for each type of attack.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 4.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Internet information queries</b><ul><li>nslookup or whois</li></ul><b>Ping sweeps</b><ul><li>fping or gping</li></ul><b>Port scans</b><ul><li>Nmap or Superscan</li></ul><b>Packet sniffers</b><ul><li>Wireshark</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) List the four types of access attacks.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from  4.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<ul><li>Password Attack</li><li>Trust Exploitation Attack</li><li>Port Redirection Attack</li><li>Man-in-the-Middle Attack</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) List three types of DoS attacks and three types of DDoS attacks.]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from  4.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>DoS Attacks</b><ul><li>Ping of death attack</li><li>SYN flood attack</li><li>Packet fragmentation and reassembly attack</li><li>e-mail bomb attack</li><li>CPU hogging attack</li><li>Malicious applet attack</li></ul><b>DDoS Attacks</b><ul><li>SMURF attack</li><li>Tribe Flood Network (TFN)</li><li>Stacheldraht</li><li>MyDoom</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) List and explain the anatomy of a worm attack and the four steps to mitigate the worm attack.]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from  4.1)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>The anatomy of a worm attack is as follows:</b><ul><li>The enabling vulnerability – A worm installs itself by exploiting known vulnerabilities in systems, such as naïve end users who open unverified executable attachments on e-mails.</li><li>Propagation mechanism – After gaining access to a host, a worm copies itself to that host, and then selects new targets.</li><li>Payload – After a host is infected with a worm, the attacker has access to the host, often as a privileged user. Attackers could use a local exploit to escalate their privilege level to administrator.</li></ul><b>The following are the recommended steps for worm attack mitigation:</b><ul><li>Step 1 Containment – Contain the spread of the worm into your network and within your network. Compartmentalize uninfected parts of your network.</li><li>Step 2 Inoculation – Start patching all systems and, if possible, scanning for vulnerable systems.</li><li>Step 3 Quarantine – Track down each infected machine inside your network. Disconnect, remove, or block infected machines from the network.</li><li>Step 4 Treatment – Clean and patch each infected system. Some worms may require complete core system reinstallations to clean the system.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Refer to the exhibit. To increase administrative access security, you have applied the following configuration. However, you are unable to establish an SSH connection to router R1. Assume that you were able to telnet to the router before, and that the hostname, ip domain name, and crypto key have been correctly configured.  Which changes would correct this problem?]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from  4.2)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>On router R1</b><ul><li>The transport input command should have been transport input ssh.</li><li>The login local command is missing from the line vty 0 4 configuration mode.</li><li>The SSH port number in the Tera Term window should be referencing TCP port 22.</li></ul>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) List the five vulnerable Cisco IOS network services and provide the best practices associated to them. For example, unused interfaces should be disabled.]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(from  4.3 )]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<ul><li>Small services such as echo, discard, and chargen should be disabled</li><li>BOOTP should be disabled</li><li>Finger should be disabled</li><li>Hypertext Transfer Protocol (HTTP) should be disabled and secure HTTPS configured (if required)</li><li>Simple Network Management Protocol (SNMP) v1 and v2 should be disabled and SNMPv3 configured</li><li>Cisco Discovery Protocol (CDP) should be disabled unless required</li><li>Remote configuration should be disabled</li><li>Source routing should be disabled</li><li>Classless routing should be disabled</li><li>no ip directed-broadcast should be configured to stop SMURF attacks</li><li>no ip proxy-arp should be configured to stop adhoc routing attacks</li></ul>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) List the five required steps to enable the lockdown feature of SDM.]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[(from  4.4)]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[1) Select <b>Configure</b>.<br />2) Select <b>Security Audit</b>.<br />3) Click <b>One-step lockdown</b>.<br />4) In the Cisco SDM Warning dialog box, select <b>Yes</b>.<br />5) Deliver commands to the router.]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q7_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) List the three steps required to update a router with a new Cisco IOS image file located on a TFTP server.]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(from  4.5)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[1) <block indent="20">Ping the TFTP server to make sure you have access to it.</block><br />2) <block indent="20">Use the show flash: command to verify that the router has enough room in flash to accommodate the size of the Cisco IOS image file.</block><br />3) <block indent="20">Copy the new Cisco IOS image from the TFTP server using the copy tftp flash: command in privileged EXEC mode.</block>]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>This concludes this chapter's Check Your Understanding questions.</b>]]></text>
+</component>
+
+</textcomponents>

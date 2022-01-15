@@ -1,0 +1,132 @@
+﻿<avalontask>
+	<r2data taskid="99999" type="simulation" language="EN" title="Sample Linksys Item"/>	<guitext><guielement name="txt_authorize" lang="EN"><![CDATA[Autoriser]]></guielement><guielement name="txt_password" lang="EN"><![CDATA[Mot de passe]]></guielement><guielement name="txt_username" lang="EN"><![CDATA[Nom d’utilisateur]]></guielement><guielement name="txt_cancel" lang="EN"><![CDATA[Annuler]]></guielement><guielement name="txt_ok" lang="EN"><![CDATA[OK]]></guielement></guitext>	<variables/>	
+	
+<textcomponents>	
+		<component type="text" id="txt_instructions"> 
+			<text variable="true" translate="true"><![CDATA[<font face='_sans' size='12'><b>Définir le canal sans fil</b><br><br>Au cours de cet exercice, vous allez configurer le canal sans fil.<br>Bouton Topologie : accès à la topologie du réseau.<br>Bouton Instructions : retour à la fenêtre d’instructions.<br>Bouton Navigateur (le cas échéant) : accès à la fenêtre du navigateur.<br><br>Étape 1 : utilisation de la fenêtre de navigateur pour accéder à l’interface graphique de Linksys<br><ul><li>Dans la fenêtre de topologie, cliquez sur l’hôte pour ouvrir la fenêtre de navigateur.</li><li>Tapez l’URL http://192.168.1.1.</li><li>Utilisez le mot de passe par défaut <font face="_typewriter"><dnt>admin</dnt></font></font> et laissez le nom d’utilisateur vierge.</li></ul><br>Étape 2 : définir le canal sans fil<ul><li>Ouvrez la page Basic Wireless Settings en cliquant sur l’onglet Wireless.</li><li>Définissez Radio Band sur l’option Standard.</li><li>Définissez Standard Channel sur 6.</li><li>Une fois que vous avez terminé, enregistrez les paramètres en cliquant sur le bouton Save Settings.</li><br>Cliquez sur le bouton Vérifier pour vérifier votre travail.</font>]]></text> 
+		</component> 
+
+		<component type="text" id="txt_obsdesc">
+			<text variable="true" translate="true"><![CDATA[<B>Définir le canal sans fil</B><BR>]]></text>
+		</component>
+
+		<component type="text" id="txt_obsgood">
+			<text variable="true" translate="true"><![CDATA[<font face='_sans' size='12'><textformat blockindent='15'>Vous avez réussi à changer le canal sans fil dans l’interface graphique utilisateur Linksys. Cliquez sur Suivant pour continuer.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_obsbad">
+			<text variable="true" translate="true"><![CDATA[<font face='_sans' size='12'><textformat blockindent='15'>Incorrect. Pour changer le canal sans fil, vous devez d’abord ouvrir la page Basic Wireless Settings en sélectionnant l’onglet Wireless. Ensuite, dans la zone déroulante Radio Band, sélectionnez l’option Standard. Enfin, dans la zone déroulante Standard Channel, sélectionnez <b>6</b>.</textformat></font><br>]]></text>
+		</component>
+
+
+		<component type="text" id="txt_404error">
+			<text variable="true" translate="true"><![CDATA[Erreur 404 : la page demandée est introuvable sur le serveur. Vérifiez l’URL à laquelle vous essayez d’accéder et réessayez.]]></text>
+		</component>
+
+		<component type="text" id="txt_networkerror">
+			<text variable="true" translate="true"><![CDATA[Une erreur s’est produite lors de la connexion à l’hôte spécifié. Vérifiez votre connexion réseau et réessayez.]]></text>
+		</component>
+
+
+		<component type="text" id="txt_check">
+			<text variable="true" translate="true"><![CDATA[Vérifier]]></text>
+		</component>
+
+		<component type="text" id="txt_close">
+			<text variable="true" translate="true"><![CDATA[Fermer]]></text>
+		</component>
+
+		<component type="text" id="txt_host"> 
+			<text variable="true" translate="true"><![CDATA[<p align='center'>Hôte</p>]]></text> 
+		</component> 
+
+		<component type="text" id="txt_wrt300n"> 
+			<text variable="true" translate="true"><![CDATA[WRT300N]]></text> 
+		</component> 
+	
+		<component type="text" id="txt_title_instructions"> 
+			<text variable="true" translate="true"><![CDATA[Instructions]]></text> 
+		</component> 
+
+		<component type="text" id="txt_topology"> 
+			<text variable="true" translate="true"><![CDATA[Topologie]]></text> 
+		</component> 
+
+		<component type="text" id="txt_browser"> 
+			<text variable="true" translate="true"><![CDATA[Navigateur]]></text> 
+		</component> 
+	</textcomponents>
+
+	<graphiccomponents>
+		<component type="graphic" id="gr_browser"> 
+			<icon x="0" y="0" width="50" height="42" id="icon_browser"> 
+				<action event="release" target="hw_host" activity="launchBrowser" window="win_browser"/> 
+			</icon>
+			<label src="txt_host" x="-45" y="25" width="90" height="35" background="false"/>
+		</component>
+
+		<component type="graphic" id="gr_linksys"> 
+			<icon x="0" y="50" width="30" height="78" id="icon_linksys"/> 
+			<label src="txt_wrt300n" x="-30" y="80" width="65" height="20" background="false"/>
+		</component>
+
+		<component type="graphic" id="gr_line"> 
+			<shape type="autoline" strokewidth="3" stroke="#FF0000" id="sh_dotline"/>  
+		</component>
+	</graphiccomponents>
+
+	<hwcomponents>
+		<component type="WRT300N" model="none" id="hw_linksys"> 
+			<port type="ethernet" number="0" name="WAN0" id="hw_linksys_wan0" fixed="true"/>
+			<port type="dumbether" number="1" name="LAN1" id="hw_linksys_lan1" fixed="true"/>
+			<port type="dumbether" number="2" name="LAN2" id="hw_linksys_lan2" fixed="true"/>
+			<port type="dumbether" number="3" name="LAN3" id="hw_linksys_lan3" fixed="true"/>
+			<port type="dumbether" number="4" name="LAN4" id="hw_linksys_lan4" fixed="true"/>
+			<config file="startup-config"> 
+				<![CDATA[192.168.1.1,255.255.255.0]]> 
+			</config> 
+		</component> 
+		<component type="host" model="none" id="hw_host"> 
+			<port type="ethernet" number="0" name="eth0" id="hw_host_eth0" fixed="true"/>
+			<config file="startup-config"> 
+				<![CDATA[
+! Configuration de l’hôte 1
+ifconfig eth0 ip 192.168.1.100 255.255.255.0
+ifconfig eth0 up
+ifconfig hostname Management
+end
+				]]> 
+			</config> 
+		</component> 
+
+		<component type="link" id="hw_link_host"> 
+			<endpoint id="hw_linksys_lan1"/> 
+			<endpoint id="hw_host_eth0"/> 
+		</component>
+	</hwcomponents>
+
+	<presentation delivery="cert">
+		<mainstage bgcolor="#FFFFFF" theme="ccna" historylog="all" tooltips="true" contextmenu="false"/>
+		<graphicmap> 
+			<map id="icon_browser" src="Computer" location="library"/>
+			<map id="icon_linksys" src="Linksys" location="library"/>
+		</graphicmap>
+
+		<window id="none" resize="none" titltetextid="txt_check" width="0" height="0" visible="true" depth="50" x="0" y="0" checkbutton="true"/>
+
+		<window id="win_instructions" resize="all" titletextid="txt_title_instructions" width="780" height="380" visible="true" depth="100" x="10" y="10"> 
+			<element id="ele_txt_instructions" src="txt_instructions" container="textClip" width="750" html="true" wordwrap="true"/> 
+		</window> 
+
+		<window id="win_topology" resize="all" titletextid="txt_topology" visible="false" width="790" height="400" depth="101" y="10" x="10">
+			<element id="ele_host" src="gr_browser" x="275" y="150" depth="100"/> 
+			<element id="ele_linksys" src="gr_linksys" x="475" y="100" depth="101"/> 
+			<element id="ele_line" src="gr_line" beginobject="ele_host.icon_browser" endobject="ele_linksys.icon_linksys" depth="10"/>
+		</window>
+		<window id="win_browser" resize="all" titletextid="txt_browser" visible="false" width="800" height="400" depth="202" y="10" x="0" scrolling="none"> 
+			<element id="ele_obj_browser" src="unused" container="WebBrowser"/> 
+		</window>   
+	</presentation>
+
+	<scoring/>
+</avalontask>

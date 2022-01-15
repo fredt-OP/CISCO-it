@@ -1,0 +1,66 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[<font size='14'><b>Internet<br />192.168.101.5<br /><font color='#FF0000'>Web Server</font></b></font>]]></text> 
+ </component>
+
+<component id="ID_table1">
+		<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Weakness</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Impact</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Possible Fix</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'><b>      </b></td>
+      <td bgcolor='#DDDDDD'><b>      </b></td>
+      <td bgcolor='#DDDDDD'><b>      </b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><b>Flat Network Design</b></td>
+      <td bgcolor='#F2F2F2'><b>No scalability - network cannot grow without impacting performance</b></td>
+      <td bgcolor='#F2F2F2'><b>Create routed hierarchy</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><b>Flat Network Design</b></td>
+      <td bgcolor='#F2F2F2'><b>No network segmentation - cannot filter or isolate traffic creating security risks</b></td>
+      <td bgcolor='#F2F2F2'><b>Create segmentation with VLANs Apply traffic filters</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>No Redundancy</b></td>
+          <td bgcolor='#F2F2F2'><b>Large failure domains - link and device failures affect large areas of the network</b></td>
+          <td bgcolor='#F2F2F2'><b><UL><LI>Create smaller failure domains</LI><LI>Use redundancy where possible</LI></UL></b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Distributed Servers</b></td>
+          <td bgcolor='#F2F2F2'><b>Servers at risk - no controlled environment, power backup or redundant connectivity</b></td>
+          <td bgcolor='#F2F2F2'><b>Move servers to data center server farm</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Distributed Servers</b></td>
+          <td bgcolor='#F2F2F2'><b>Servers not available - no high speed links to servers</b></td>
+          <td bgcolor='#F2F2F2'><b>Install gigabit links to servers, centrally locate</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Limited Fiber Availability</b></td>
+          <td bgcolor='#F2F2F2'><b>Limits the possible redundancy in the network</b></td>
+          <td bgcolor='#F2F2F2'><b>Stack switches and add high speed uplinks</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>No Stateful Firewall</b></td>
+          <td bgcolor='#F2F2F2'><b>Filtering only, does not prevent all unauthorized or unwanted traffic</b></td>
+          <td bgcolor='#F2F2F2'><b>Use IOS stateful firewall features</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Firewall Only at the Edge of Network</b></td>
+          <td bgcolor='#F2F2F2'><b>Internal devices vulnerable - no protection from internal attacks</b></td>
+          <td bgcolor='#F2F2F2'><b><LI>Create layered firewall and filtering mechanisms</LI><LI>Add IDS at data center</LI></b></td>
+    </tr>
+  </table>
+
+]]></text>
+	</component>
+
+</textcomponents>

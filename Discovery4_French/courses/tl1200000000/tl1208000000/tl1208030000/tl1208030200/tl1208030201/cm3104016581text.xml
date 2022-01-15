@@ -1,0 +1,92 @@
+﻿<textcomponents>
+
+
+<component id="ID_table1">
+		<text><![CDATA[
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td width="275%" bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Objectif commercial</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Critère global de réussite</b></font></td>
+
+    </tr>
+    
+    <tr>
+      <td bgcolor='#E9E9E9'>Améliorer l’expérience client en offrant des services supplémentaires aux clients et aux fournisseurs.</td>
+      <td bgcolor='#E9E9E9'>Le personnel de l’équipe sportive utilisant les clients de réseau privé virtuel peuvent se connecter correctement aux ressources de l’équipe situées sur le réseau du stade.</td>      
+    </tr>    
+  
+  </table>
+  ]]></text>
+  </component>
+  
+  <component id="ID_table2">
+  		<text><![CDATA[
+    <table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+      <tr>
+        <td width="275%" bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Spécifications techniques</b></font></td>
+        <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Critères de succès</b></font></td>
+  
+      </tr>
+      
+      <tr>
+        <td bgcolor='#D9E6FF'>Extensibilité</td>
+        <td bgcolor='#D9E6FF'></td>      
+      </tr> 
+      
+      <tr>
+        <td bgcolor='#E9E9E9'>Configurer la transmission tunnel partagé pour autoriser uniquement l’accès du trafic destiné aux ressources du stade via le réseau privé virtuel.</td>
+        <td bgcolor='#E9E9E9'>Les clients de réseau privé virtuel peuvent être ajoutés sans impact sur les performances du réseau local.</td>      
+      </tr>    
+      <tr>
+        <td bgcolor='#D9E6FF'>Disponibilité</td>
+        <td bgcolor='#D9E6FF'></td>      
+      </tr>
+      
+      <tr>
+        <td bgcolor='#E9E9E9'>Configurer les serveurs de réseau privé virtuel redondants pour fournir un basculement.</td>
+        <td bgcolor='#E9E9E9'>La connectivité n’est pas perdue en cas de défaillance d’un serveur de réseau privé virtuel.</td>      
+      </tr>
+         
+      <tr>
+        <td bgcolor='#D9E6FF'>Sécurité</td>
+        <td bgcolor='#D9E6FF'></td>      
+      </tr>
+      
+      <tr>
+        <td bgcolor='#E9E9E9'>Configurer des réseaux privés virtuels IPSec.</td>
+        <td bgcolor='#E9E9E9'>La configuration du client EasyVPN prend en charge un niveau élevé de sécurité.</td>      
+      </tr>  
+      
+      <tr>
+        <td bgcolor='#D9E6FF'>Facilité de gestion</td>
+        <td bgcolor='#D9E6FF'></td>      
+      </tr>
+      
+      <tr>
+        <td bgcolor='#E9E9E9'>Utilisez Cisco EasyVPN pour configurer les paramètres de réseau privé virtuel.</td>
+        <td bgcolor='#E9E9E9'>Il est facile de créer et de gérer les configurations.</td>      
+      </tr>  
+      
+        <tr>
+        <td bgcolor='#E9E9E9'>Utilisez SDM pour configurer et gérer un serveur de réseau privé virtuel.</td>
+        <td bgcolor='#E9E9E9'>Il est facile de créer et de gérer les configurations.</td>      
+      </tr>     
+      
+    </table>
+    ]]></text>
+    </component>
+    
+ <component id="tipBody">              
+ <text><![CDATA[Des mesures de sécurité supplémentaires doivent être en place. La transmission tunnel partagé est un risque en matière de sécurité et toutes les organisations ne l’autorisent pas.]]></text>  
+ </component>
+ 
+ <component id="ID_txt01">              
+ <text><![CDATA[Conseil]]></text>  
+ </component>
+    
+ <component id="ID_txt02">          
+ <text><![CDATA[Conseil]]></text>       
+ </component>  
+  
+
+</textcomponents>

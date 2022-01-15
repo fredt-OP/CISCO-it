@@ -1,0 +1,5 @@
+<transcript lastedited="01.26.09 10:01:29">
+<title><content-text><![CDATA[11.1.5 - Using C L I Help]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the use of context-sensitive help. An example of a sequence of commands using the C L I context-sensitive help is provided. The device command prompt in the examples is Cisco.<br><br>Cisco#cl?<br>Clear clock <br>Cisco#clock ?<br>set 	Set the time and date<br>Cisco#clock set<br>% Incomplete command.<br>Cisco#clock set ?<br>hh:mm:ss Current Time<br>Cisco#clock set 19:50:00<br>% Incomplete command.<br><br>Cisco#clock set 19:50:00 ?<br><1 to 31> Day of the month<br>MONTH Month of the year<br>Cisco#clock set 19:50:00 25 6<br>	Note: A caret is positioned under the number 6 from the previous command indicating an error.<br>Invalid input detected at ^ marker.<br>Cisco#clock set 19:50:00 25 June ?<br><1993-2035> Year<br>Cisco#clock set 19:50:00 25 June 2007]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

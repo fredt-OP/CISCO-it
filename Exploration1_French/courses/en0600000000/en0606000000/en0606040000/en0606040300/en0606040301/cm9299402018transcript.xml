@@ -1,0 +1,5 @@
+<transcript lastedited="01.09.09 09:01:47">
+<title><content-text><![CDATA[6.4.3 - The ANDing Process]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts an example of the ANDing process using host IP address 172.16.132.70/20 to determine the network on which the host resides.<br>Step 1: Convert the host IP address to binary.<br>Step 2: AND the most significant bit of the binary host address with the most significant bit of the binary subnet mask.<br>Step 3: Convert the /20 prefix to the binary subnet mask.<br>Step 4: AND the next significant bit of the host address with the next significant bit of the binary subnet mask.<br>Step 5: Continue to AND each bit of the host address with the corresponding 1 bit of the mask.<br>Step 6: AND each bit of the host address with the corresponding zero bit of the mask.<br>Step 7: Convert the binary network address to the decimal address.<br><br>For the above host IP address with a 20-bit prefix mask, the resulting network number is 172.16.128.0.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

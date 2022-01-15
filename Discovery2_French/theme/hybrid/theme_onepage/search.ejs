@@ -1,0 +1,45 @@
+<% if (window.opener.isarabic && main.course.lang == "tl") { var lidir = "rtl"; } else { var lidir = ""; } %>
+
+
+<form name="seachform" id="searchform" action="javascript:searchContent();">
+	<label for="field"><%= main.theme.getThemeItem('searchfield') %></label><br>
+	<input type="text" size="60" id="field" value="<%= searchstring %>"/> <input type="button" name="<%= main.theme.getThemeItem('searchtitle') %>" value="<%= main.theme.getThemeItem('searchtitle') %>" onClick="searchContent();"/> <input type="button" name="reset" value="<%= main.theme.getThemeItem('resetbtn') %>" onClick="resetSearch();" />
+
+<br/>
+<br/>
+	<% if (foundCount == 0 && searchstring != "") { %>
+		<label for="search_results"><%= main.theme.getThemeItem('searchresults') %></label>
+		<input type="text" id="search_results" value="<%= main.theme.getThemeItem('nomatch') %>" readonly/>
+	<% } else if (searchstring != "") { %>
+		<label for="search_results"><%= main.theme.getThemeItem('searchresults') %></label>
+		<select name="search_results" id="search_results"">
+		<% for (var m=0; m<main.course.chapters.length; m++){ %>
+			<% var ch = main.course.chapters[m]; %>
+			<% if (foundArray[ch.oid]) { %>
+				<% for (var n=0; n<ch.sections.length; n++){ %>
+					<% var se = ch.sections[n]; %>
+					<% if (foundArray[se.oid]) { %>
+						<% for (var o=0; o<se.topics.length; o++){ %>
+							<% var to = se.topics[o]; %>
+							<% if (foundArray[to.oid]) { %>
+								<% for (var p=0; p<to.pages.length; p++){ %>
+									<% var pa = to.pages[p]; %>
+									<% if (foundArray[pa.oid]) { %>
+<option name="<%= ch.num %>.<%= se.num %>.<%= to.num %>.<%= pa.num %>" value="<%= ch.num %>.<%= se.num %>.<%= to.num %>.<%= pa.num %>"/><%= to.getLI(lidir) %> <%= main.theme.getThemeItem('indexpage') %> <%= pa.num %>
+									<% } %>
+								<% } %>
+							<% } %>
+						<% } %>
+					<% } %>
+				<% } %>
+			<% } %>
+		<% } %>
+		</select>
+		<input type="button" name="select" value="<%= main.theme.getThemeItem('selectbtn') %>" onClick="selectPage();"/>
+	<% } %>
+<br><br>
+<input type="button" name="close" value="<%= main.theme.getThemeItem('closesearch') %>" onClick="closeSearch();"/>
+</form>
+
+<hr/>
+

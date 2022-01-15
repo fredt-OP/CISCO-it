@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="10/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19778" lang=""><form-item>
+			<ai id="117507" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117507" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>operating system weaknesses</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>unsecured user accounts</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>network equipment weaknesses</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>unsecured default settings</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>lack of consistency and continuity</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>TCP/IP and ICMP weaknesses</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>lack of disaster recovery plan </mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Technological Weakness</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Configuration Weakness</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Security Policy Weakness</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="7" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the term on the left to the associated description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="60" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="2" startTarg="4" labelStyle="1"/><display componentIdent="3" xpos="600" ypos="326.5" containsTargets="2" startTarg="6" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="335"/><display componentIdent="7" xpos="600" ypos="372"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident></scoringzone><scoringzone ident ="3"><componentident>6</componentident><componentident>7</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216791" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="216791" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="216791" action="Set">1</setvar><scoringdescription>Technological Weakness TCP/IP and ICMP protocol weaknesses operating system weaknesses network equipment weaknesses Configuration weakness unsecured user accounts unsecured default settings Security Policy weakness lack of consistency and continuity lack of disaster recover plan </scoringdescription></responcondition><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident><componentident>1</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident><componentident>7</componentident></scoringzonecontains></conditionvar><scoringdescription>Technological Weakness TCP/IP and ICMP protocol weaknesses operating system weaknesses network equipment weaknesses Configuration weakness unsecured user accounts unsecured default settings Security Policy weakness lack of consistency and continuity lack of disaster recover plan </scoringdescription></responcondition><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident><componentident>3</componentident><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>7</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><scoringdescription>Technological Weakness TCP/IP and ICMP protocol weaknesses operating system weaknesses network equipment weaknesses Configuration weakness unsecured user accounts unsecured default settings Security Policy weakness lack of consistency and continuity lack of disaster recover plan </scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="117478" type="mc-ma"><question><![CDATA[Which two pieces of information can be determined from opening the Cisco SDM homepage of a router? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[routing table ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[CDP neighbors ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[snapshot of the router configuration  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[interface status ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[features supported by the Cisco IOS software  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117540" type="mc-sa"><question><![CDATA[A technician has been asked to perform a Cisco SDM one-step lockdown test. Which location should be used to initiate the test?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[diagnostic mode on the Firewall page ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[configure mode on the Security Audit page  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[test mode on the Security Audit page ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[test mode on the Firewall page ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="117510" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117510" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Reconnaissance attack</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Password attack</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Port redirection</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Worm, virus, Trojan horse</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>DoS attack</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>dictionary cracking and brute force attack</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>using a compromised host to pass traffic through a firewall that would otherwise be dropped</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>using ping sweeps, port scans, and packet sniffers to gain information about a network</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>flooding a network device with traffic in an  attempt to render it unusable for legitimate traffic</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>malicious software designed to damage a system, replicate itself, or deny services or access to networks, systems, or services</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the term on the left to the associated description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/><display componentIdent="5" xpos="200" ypos="395"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/><display componentIdent="4" xpos="600" ypos="276"/><display componentIdent="5" xpos="600" ypos="343"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216795" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="216795" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="216795" action="Set">1</setvar><scoringdescription>Reconnaissance Attacks using ping sweeps, port scans and packet sniffers to gain information about a network Password attacks dictionary cracking and brute force attacks Port Redirection using a compromised host to pass traffic through a firewall that would otherwise be dropped Phishing a type of social engineering attack using email to attempt to trick others into providing sensitive information DoS attack flooding a network device with traffic to attempt to render unusable for legitimate traffic Worms, Viruses, Trojan Horses malicious software designed to damage a system, corrupt a system, replicate itself, or deny services or access to networks, systems, or services.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="117514" type="mc-sa"><question><![CDATA[What is a major advantage of HIPS over HIDS?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[HIPS does not require host-based client software. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[HIPS consumes fewer system resources. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[HIPS can prevent intrusions.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[HIPS prevents the need to update signature files as often. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117519" type="mc-sa"><question><![CDATA[What is the core or “hub” component of the Security Wheel?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[secure ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[monitor ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[improve ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[test ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[security policy  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117496" type="mc-sa"><question><![CDATA[As part of a network security plan, where does Cisco recommend that administrators send events captured by syslog?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[flash ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NVRAM ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[designated log hosts  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[designated TFTP clients ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[designated SNMP clients ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117504" type="mc-sa"><question><![CDATA[Which protocol should be used when strong privacy and session integrity are needed for remote router administration?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[HTTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SNMP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SSH  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Telnet ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[TFTP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="117524" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117524" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Account access request policy</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Remote access policy</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Risk assessment policy</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Audit policy</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Acceptable use policy</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Defines the standards for connecting to the internal network from outside the organization</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Specifies procedures to investigate incidents, ensure conformance to security policies, and monitor user and system activity</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Defines how network resources may and may not be employed</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Formalizes the process of how users request access to systems</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the policy on the left to its description on the right. Not all options are used.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="30" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/><display componentIdent="5" xpos="200" ypos="395"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/><display componentIdent="4" xpos="600" ypos="276"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216811" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="216811" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="216811" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="117458" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117458" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>use the <b>auto secure</b> command to configure router security</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>enable the HTTP and HTTPS servers on the router</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>create a user account defined with privilege level 15</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>create a user account defined with privilege level 0</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>create an ACL to allow HTTP traffic into the router and apply it to the vtys</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>configure SSH and Telnet for local login and privilege level 15</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>configure SSH and Telnet for local login and privilege level 0</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Steps required to configure SDM</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>3</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the three items required to configure SDM from the left to the steps on the right. Not all options are used.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="15" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/><display componentIdent="7" xpos="200" ypos="435"/></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="3" startTarg="1" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="152"/><display componentIdent="3" xpos="600" ypos="204"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216582" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="216582" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident><componentident>3</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="216582" action="Set">1</setvar><scoringdescription>*enable the HTTP and HTTPS servers on your router; *create a user account defined with privilege level 15; *configure SSH and Telnet for local login and privilege level 15</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="117490" type="mc-ma"><question><![CDATA[Which three services should be disabled on a router to prevent security vulnerabilities? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Network Time Protocol (NTP)  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Domain Name System (DNS)  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Secure Socket Layer (SSL) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cisco Express Forwarding (CEF)  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Simple Network Management Protocol (SNMP)  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Secure Shell (SSH) ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117454" type="mc-sa"><question><![CDATA[Which feature provides a straightforward “one-touch” device lockdown for configuring the security posture of routers?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[SSH ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SDM ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[AutoSecure  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SNMP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="117493" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117493" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>application layer protocol that provides a facility for retrieving and posting data for monitoring and management of devices in a network using TCP port 161</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>protocol designed to synchronize the time on a network of machines and runs over UDP using port 123</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>distributed database that maps hostnames to IP addresses using services on a designated server</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Network Time Protocol (NTP) </mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Domain Name System (DNS)</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Simple Network Management Protocol (SNMP)</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the description on the left to the correct network management service on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-116.5" targetYspacing="22" yspacing="80" targetH="57"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="175"/><display componentIdent="3" xpos="200" ypos="275"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="157"/><display componentIdent="3" xpos="600" ypos="239"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216710" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="216710" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="216710" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="117456" type="mc-sa"><question><![CDATA[Which feature is a web-based device-management tool for Cisco IOS software-based routers?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[SSH ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SDM  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[AutoSecure ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SNMP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117537" type="mc-ma"><question><![CDATA[Which three SDM wizards are available to configure a router? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[security audit  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[firewall  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[DHCP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[QoS  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[routing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[access list ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

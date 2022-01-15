@@ -1,0 +1,92 @@
+﻿<textcomponents>
+
+
+<component id="ID_table1">
+		<text><![CDATA[
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td width="275%" bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Business Goal</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Overall Success Criteria</b></font></td>
+
+    </tr>
+    
+    <tr>
+      <td bgcolor='#E9E9E9'>Improve the customer experience by offering additional services to customers and vendors.</td>
+      <td bgcolor='#E9E9E9'>Sports team personnel using VPN clients can successfully connect to team resources located on the stadium network.</td>      
+    </tr>    
+  
+  </table>
+  ]]></text>
+  </component>
+  
+  <component id="ID_table2">
+  		<text><![CDATA[
+    <table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+      <tr>
+        <td width="275%" bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Technical Requirements</b></font></td>
+        <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Success Criteria</b></font></td>
+  
+      </tr>
+      
+      <tr>
+        <td bgcolor='#D9E6FF'>Scalability</td>
+        <td bgcolor='#D9E6FF'></td>      
+      </tr> 
+      
+      <tr>
+        <td bgcolor='#E9E9E9'>Configure split tunneling to permit only the traffic destined for the stadium resources access via the VPN.</td>
+        <td bgcolor='#E9E9E9'>VPN clients can be added without impacting the performance of the LAN.</td>      
+      </tr>    
+      <tr>
+        <td bgcolor='#D9E6FF'>Availability</td>
+        <td bgcolor='#D9E6FF'></td>      
+      </tr>
+      
+      <tr>
+        <td bgcolor='#E9E9E9'>Configure redundant VPN servers to provide failover.</td>
+        <td bgcolor='#E9E9E9'>Connectivity is not lost if one VPN server goes down.</td>      
+      </tr>
+         
+      <tr>
+        <td bgcolor='#D9E6FF'>Security</td>
+        <td bgcolor='#D9E6FF'></td>      
+      </tr>
+      
+      <tr>
+        <td bgcolor='#E9E9E9'>Configure IPSec VPNs.</td>
+        <td bgcolor='#E9E9E9'>EasyVPN client configuration supports a high level of security.</td>      
+      </tr>  
+      
+      <tr>
+        <td bgcolor='#D9E6FF'>Manageability</td>
+        <td bgcolor='#D9E6FF'></td>      
+      </tr>
+      
+      <tr>
+        <td bgcolor='#E9E9E9'>Use Cisco EasyVPN to configure the VPN settings.</td>
+        <td bgcolor='#E9E9E9'>It is easy to perform and manage configurations.</td>      
+      </tr>  
+      
+        <tr>
+        <td bgcolor='#E9E9E9'>Use SDM to configure and manage VPN server.</td>
+        <td bgcolor='#E9E9E9'>It is easy to perform and manage configurations.</td>      
+      </tr>     
+      
+    </table>
+    ]]></text>
+    </component>
+    
+ <component id="tipBody">              
+ <text><![CDATA[Additional security measures need to be in place. Split tunneling is a security risk and many organizations do not allow it.]]></text>  
+ </component>
+ 
+ <component id="ID_txt01">              
+ <text><![CDATA[Tip]]></text>  
+ </component>
+    
+ <component id="ID_txt02">          
+ <text><![CDATA[Tip]]></text>       
+ </component>  
+  
+
+</textcomponents>

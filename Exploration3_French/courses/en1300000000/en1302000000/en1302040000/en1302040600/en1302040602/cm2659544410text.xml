@@ -1,0 +1,161 @@
+<textcomponents>
+<component id="ID_title1">
+  <text><![CDATA[<b>Port Security Defaults </b>]]></text> 
+  </component>
+  <component id="ID_title2">
+    <text><![CDATA[<b>Configuring Port Security on a Cisco Catalyst Switch</b>]]></text> 
+  </component>
+  <component id="ID_title3">
+    <text><![CDATA[<b>Port Security Configuration Script </b>]]></text> 
+  </component>
+    <component id="ID_txt1">
+    <text><![CDATA[<b>Default Configuration</b>]]></text> 
+    </component>
+    <component id="ID_txt2">
+    <text><![CDATA[<b>Configure Dynamic Port Security</b>]]></text> 
+    </component>
+    <component id="ID_txt3">
+    <text><![CDATA[<b>Configure Sticky Port Security</b>]]></text> 
+  </component>
+  <component id="tableHTML1">
+  	    <text><![CDATA[
+  	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  	    	
+  	    	<tr>
+  	  	  		
+  	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+  	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Enter global configuration mode.<br/>Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+  			
+  	</tr>
+  	
+  	
+  	<tr>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Specify the type and number of the physical interface to configure.<br/>Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>interface fastEthernet 0/18</b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Set the interface mode as access.<br/>Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>switchport mode access </b></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Enable port security on the interface.<br/>Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>switchport port-security </b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Set the maximum number of secure addresses to 50.<br/>Use this Cisco IOS command:</font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>switchport port-security maximum 50 </b></font></td>
+  			
+  	</tr>
+  	<tr>
+  			
+  			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Enable sticky learning.<br/>Use this Cisco IOS command:</font></td>
+  			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>switchport port-security mac-address sticky </b></font></td>
+  				
+  	</tr>
+  	<tr>
+  			
+  			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Return to privileged EXEC mode.<br/>Use this Cisco IOS command: </font></td>
+  			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>end</b></font></td>
+  				
+  	</tr>
+  	
+  </table>
+  ]]></text> 
+  </component>
+<component id="tableHTML2">
+    <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  	
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF">Feature</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF">Default Setting</font></td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Port security</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Disabled on a port.</font></td>
+			
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Maximum number of secure MAC addresses</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >1</font></td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Violation mode</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Shutdown. The port shuts down when the maximum number of secure MAC addresses is exceeded, and an SNMP trap notification is sent.</font></td>
+			
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Sticky address learning</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Disabled.</font></td>
+			
+	</tr>	
+		
+	
+</table>
+]]></text> 
+  </component>
+  <component id="tableHTML">
+   	    <text><![CDATA[
+     	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+     	    	
+     	    	<tr>
+     	  	  		
+     	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+     	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Enter global configuration mode. Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+  			
+  	</tr>
+  	
+  	
+  	<tr>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Specify the type and number of the physical interface to configure, for example fastEthernet F0/18, and enter interface configuration mode.  Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>interface fastEthernet 0/18</b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Set the interface mode as access. An interface in the dynamic desirable default mode cannot be configured as a secure port.  Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>switchport mode access </b></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  		
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Enable port security on the interface.  Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>switchport port-security </b></font></td>
+  			
+  	</tr>
+  	<tr>
+  		
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font >Return to privileged EXEC mode.  Use this Cisco IOS command: </font></td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>end</b></font></td>
+  			
+  	</tr>		
+  	
+  </table>
+  ]]></text> 
+  </component>
+  
+  </textcomponents>

@@ -1,0 +1,137 @@
+﻿<TRANSLATION>
+ <NAME translate="true">A</NAME>
+ <NAME translate="true">B</NAME>
+ <NAME translate="true">C</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">A</NAME>
+ <NAME translate="true">B</NAME>
+ <NAME translate="true">C</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">A</NAME>
+ <NAME translate="true">B</NAME>
+ <NAME translate="true">C</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">A</NAME>
+ <NAME translate="true">B</NAME>
+ <NAME translate="true">C</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">A</NAME>
+ <NAME translate="true">B</NAME>
+ <NAME translate="true">C</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">A</NAME>
+ <NAME translate="true">B</NAME>
+ <NAME translate="true">C</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 5.4.3 : &lt;br&gt;Observation de mises à jour de protocole de routage dynamique&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;!--This is the end of the IP addressing table code&quot; --&gt;
+
+
+&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Observer le comportement d'un protocole de routage dynamique, RIP v1 &lt;/ul&gt; &lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+Les routeurs peuvent découvrir des routes à partir d'autres routeurs en utilisant des protocoles de routage dynamique.  Dans ces protocoles, qui peuvent s'exécuter en fonction de compteurs ou d'événements déclenchants, voire les deux, les routeurs ont été configurés pour échanger des informations. RIP version 1 est un protocole de routage dynamique simple qui a été configuré sur les routeurs A, B et C. &lt;br&gt;&lt;br&gt;
+
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : exécution de la simulation&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Passez en mode de simulation.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur l'onglet &lt;b&gt;Simulation&lt;/b&gt; pour passer en mode de simulation. Utilisez également l'outil &lt;b&gt;Inspect&lt;/b&gt; (loupe), situé dans la barre d'outils latérale droite de Packet Tracer, pour afficher les tables de routage de chaque routeur. 
+
+&lt;h4&gt; &lt;b&gt;Étape 2. Parcourez la simulation.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; pour que les routeurs envoient des paquets de mise à jour. Le mode de configuration de ces routeurs comporte plusieurs fonctions particulières. Notez que le routeur A n'envoie pas de paquets de mise à jour, le routeur B envoie des mises à jour au routeur A et au routeur C, et le routeur C a été configuré pour ne pas envoyer de mises à jour de routage aux LAN auxquels il est connecté. Si vous rencontrez le message « No More Events », cliquez simplement sur le bouton &lt;b&gt;OK&lt;/b&gt; et continuez à cliquer sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt;.  Notez également que même si aucun trafic de données utilisateur (ni demandes de page Web, ni requêtes ping) n'est envoyé sur le réseau, ce dernier reste activé par des communications de sorte que les routeurs disposent d'une représentation actualisée du mode de transfert des paquets vers leur destination. &lt;br&gt;&lt;br&gt; &lt;h3&gt; &lt;b&gt;Tâche 2 : examen des paquets de mise à jour de routage&lt;/h3&gt; &lt;/b&gt;&lt;p&gt; &lt;h4&gt; &lt;b&gt;Étape 1. Effectuez des observations&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+Tandis que vous cliquez sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt;, vous pouvez observer des paquets de mise à jour de routage. En cliquant sur l'enveloppe du paquet ou sur le carré coloré dans la colonne &lt;b&gt;Info&lt;/b&gt; de la fenêtre &lt;b&gt;Event List&lt;/b&gt;, examinez ces paquets de mise à jour de routage en ouvrant la fenêtre d'information de l'unité de données de protocole.  Utilisez la vue de l'onglet &lt;b&gt;OSI Model&lt;/b&gt; et les vues des onglets &lt;b&gt;Inbound/Outbound PDU Details&lt;/b&gt; pour explorer les mises à jour de routage. Vous en apprendrez beaucoup plus sur les protocoles de routage et le mode de configuration des routeurs dans les cours ultérieurs. &lt;p&gt; Veillez à interroger votre formateur si vous avez des questions supplémentaires suite aux observations de la fenêtre d'information de l'unité de données de protocole.
+
+&lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,C</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,C</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,C</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">A</ID>
+ <ID translate="true">B</ID>
+ <ID translate="true">C</ID>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">A</ID>
+ <ID translate="true">B</ID>
+ <ID translate="true">C</ID>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

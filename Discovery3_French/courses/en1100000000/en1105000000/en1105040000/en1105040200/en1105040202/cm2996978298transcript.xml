@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 08:09:29">
+<title><content-text><![CDATA[5.4.2 - EIGRP Route Summarization]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts three routers, labeled R1, R2, and R3. R3 has both of its Serial Interfaces connected to R1 and R2. The network addresses for these links are as follows: <br>R3 to R1 = 192.168.0.0 /22<br>R3 to R2 = 192.168.0.0 /22<br><br>R3 has the following four FastEthernet ports connected to networks:<br>F A 0 /0: 192.168.3.0 /24<br>F A 0 /1: 192.168.2.0 /24<br>F A 0 /2: 192.168.1.0 /24<br>F A 0 /3: 192.168.0.0 /24<br><br>The output to the screen for route summarization by individual interfaces is as below:<br><br>R3 (config)# interface serial 0/0/0<br>R3 (config-if) # IP summary-address EIGRP 1 192.168.0.0 255.255.252.0<br>R3 (config-if) # interface serial 0/0/1<br>R3 (config-if) # IP summary-address EIGRP 192.168.0.0 255.255.252.0<br><br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

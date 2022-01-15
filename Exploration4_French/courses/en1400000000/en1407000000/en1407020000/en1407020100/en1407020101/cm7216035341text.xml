@@ -1,0 +1,70 @@
+<textcomponents>
+<component id="title">
+<text><![CDATA[<b>Public and Private Internet Addresses</b>]]></text>
+</component>
+
+<component id="map01">
+<text><![CDATA[<b>ARIN</b>]]></text>
+</component>
+
+<component id="map02">
+<text><![CDATA[<b>RIPE</b>]]></text>
+</component>
+
+<component id="map03">
+<text><![CDATA[<b>APNIC</b>]]></text>
+</component>
+
+<component id="map04">
+<text><![CDATA[<b>LACNIC</b>]]></text>
+</component>
+
+<component id="map05">
+<text><![CDATA[<b>AfricNIC</b>]]></text>
+</component>
+
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td colspan="2" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF">&nbsp;</font></td>
+    </tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Public Internet addresses are regulated by five Regional Internet Registries (RIRs):<ul><li>ARIN</li><li>RIPE</li><li>APNIC</li><li>LACNIC</li><li>AfriNIC</li></ul></td>
+	</tr>
+</table>
+]]></text> 
+</component>
+  
+<component id="tableHTML2">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td width='80' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Class</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>RFC 1918 Internal Address Range</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>CIDR Prefix</b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>A</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>10.0.0.0 - 10.255.255.255</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>10.0.0.0/8</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>B</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>172.16.0.0 - 172.31.255.255</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>172.16.0.0/12<font face='_typewriter'>&nbsp;</font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>C</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>192.168.0.0 - 192.168.255.255</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>192.168.0.0/16</td>
+  </tr>
+</table>]]></text> 
+</component>
+  
+<component id="caption">
+<text><![CDATA[<b>Private Internet addresses are defined in RFC 1918:</b>]]></text>
+</component>
+</textcomponents>
+
+
+	

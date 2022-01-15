@@ -1,0 +1,94 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">IP Phone0</NAME>
+ <NAME translate="true">Server0</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Hub0</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">IP Phone0</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server0</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Hub0</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 2.2.4 : &lt;br&gt;représentations du réseau&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+&lt;h3&gt;Tableau d'adressage :&lt;/h3&gt;
+
+&lt;p&gt;Ces travaux pratiques ne contiennent pas de tableau d'adressage.&lt;/p&gt; &lt;h3&gt;Objectifs pédagogiques :&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;exploration de l'interface de Packet Tracer ;&lt;/li&gt; &lt;li&gt;recherche des composants clés utilisés pour placer des symboles de périphériques sur le lieu de travail logique ; &lt;/li&gt; &lt;li&gt;examen des périphériques qui peuvent être placés sur le lieu de travail logique et de leurs symboles ; &lt;/li&gt; &lt;li&gt;placement et connexion de périphériques ; &lt;/li&gt; &lt;li&gt;ajout de symboles de périphériques au lieu de travail logique ; &lt;/li&gt; &lt;li&gt;connexion de périphériques sur le lieu de travail logique à l'aide de la connexion automatique.
+
+&lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+	&lt;/li&gt; &lt;/ul&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;Packet Tracer est un simulateur de réseau qui vous permet de créer une simulation de réseau, de configurer les périphériques dans le réseau, de tester le réseau et d'examiner le trafic du réseau. La première étape de création d'une simulation de réseau dans Packet Tracer consiste à placer les périphériques sur le lieu de travail logique et à les connecter entre eux. Packet Tracer utilise les mêmes symboles que ceux utilisés tout au long du cursus. Associez les icônes dans Packet Tracer aux symboles de la liste de symboles. &lt;/p&gt;
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says &apos;At the completion of this task, when you check Results, your score should be xxx%&apos; where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT doable in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt;
+
+&lt;h3&gt;Tâche 1 : exploration de l'interface de Packet Tracer &lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Lieu de travail logique&lt;/h4&gt; &lt;p&gt;Lorsque Packet Tracer démarre, il présente une vue logique du réseau en mode temps réel. La partie principale de l'interface de Packet Tracer est le &lt;b&gt;Lieu de travail logique&lt;/b&gt;. Il s'agit de la zone vierge étendue dans laquelle des périphériques peuvent être placés et connectés. &lt;/p&gt;
+
+&lt;h4&gt;Étape 2. Symboles de périphériques&lt;/h4&gt; &lt;p&gt;La partie inférieure gauche de l'interface de Packet Tracer, située sous la barre jaune, correspond à la partie de l'interface que vous utilisez pour sélectionner et placer des périphériques dans le lieu de travail logique. La première zone dans la partie inférieure gauche contient des symboles qui représentent des groupes de périphériques. Lorsque vous déplacez le pointeur de la souris sur ces symboles, le nom du groupe s'affiche dans la zone de texte située au centre. Lorsque vous cliquez sur l'un de ces symboles, les périphériques spécifiques au groupe apparaissent dans la zone de droite. Lorsque vous pointez sur les périphériques spécifiques, une description de périphérique s'affiche dans la zone de texte située sous ces périphériques. Cliquez sur chacun des groupes et étudiez les différents périphériques disponibles, ainsi que leurs symboles.&lt;/p&gt;
+
+&lt;h3&gt;Tâche 2 : ajout de périphériques au lieu de travail logique&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Sélection et placement de périphériques&lt;/h4&gt; &lt;p&gt;Pour ajouter un périphérique au lieu de travail logique, cliquez sur le symbole du périphérique spécifique, pointez sur l'emplacement où vous voulez placer le périphérique dans le lieu de travail logique (le pointeur se transforme en réticule), puis cliquez. Recherchez et placez les périphériques suivants sur une ligne horizontale au travers du lieu de travail logique, en les espaçant d'environ 2,5 cm, de gauche à droite : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;un serveur &lt;/li&gt; &lt;li&gt;un commutateur 2960 &lt;/li&gt; &lt;li&gt;un routeur 1841 &lt;/li&gt; &lt;li&gt;un concentrateur &lt;/li&gt; &lt;li&gt;un téléphone IP &lt;/li&gt; &lt;li&gt;un ordinateur personnel &lt;/li&gt; &lt;/ul&gt;
+
+&lt;h4&gt;Étape 2. Connecter des périphériques à l'aide de la connexion automatique&lt;/h4&gt; &lt;p&gt;Cliquez sur le symbole du groupe de connexions. Les symboles de connexion spécifiques représentent différents types de câbles qui peuvent être utilisés pour connecter des périphériques. Le premier type spécifique, la ligne en forme d'éclair doré, sélectionne automatiquement le type de connexion en fonction des interfaces disponibles sur les périphériques. Lorsque vous cliquez sur ce symbole, le pointeur ressemble à un connecteur de câble. Pour connecter deux périphériques, cliquez sur le symbole de connexion automatique, puis sur le premier périphérique et enfin sur le second périphérique. En commençant par le serveur, connectez chaque périphérique au périphérique qui se situe à sa droite à l'aide du symbole de connexion automatique. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Étape 3. Notation Packet Tracer&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Vous pouvez configurer les exercices de Packet Tracer afin de noter votre travail. Pour vérifier votre configuration, cliquez sur le bouton &lt;b&gt;Vérifier les résultats&lt;/b&gt; ci-dessous.&lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de réalisation devrait être de 100 %. &lt;/h4&gt;
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,IP Phone0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Hub0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">IP Phone0</ID>
+ <ID translate="true">Server0</ID>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">Hub0</ID>
+ <ID translate="true">Switch0</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

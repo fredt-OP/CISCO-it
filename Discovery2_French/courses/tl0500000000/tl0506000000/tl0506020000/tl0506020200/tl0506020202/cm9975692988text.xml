@@ -1,0 +1,129 @@
+﻿<textcomponents>
+   
+   <component id="play">
+      <text>Lire</text>
+   </component>
+   <component id="pause">
+      <text>Pause</text>
+   </component>
+   <component id="rewind">
+      <text>Rembobiner</text>
+   </component>
+   <component id="forward">
+      <text>Avance rapide</text>
+   </component>
+   <component id="mute">
+      <text>Muet</text>
+   </component>
+   <component id="unmute">
+      <text>Désactiver Muet</text>
+   </component>
+   <component id="previous">
+      <text>Redémarrer</text>
+   </component>
+   <component id="next">
+      <text>Fin</text>
+   </component>
+   <component id="transcript">
+      <text>Texte</text>
+   </component>
+   
+   <component id="ID_title">
+        <text><![CDATA[<b>Architecture de routage Internet</b>]]></text> 
+  </component>
+  
+  <component id="ID_inst">
+          <text><![CDATA[<b>Passez le pointeur de la souris sur chaque étape pour afficher le mode d’acheminement des paquets sur Internet.</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt01">
+          <text><![CDATA[<b>Hôte source</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt02">
+          <text><![CDATA[<b>1</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt03">
+          <text><![CDATA[<b>Système autonome 100</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt04">
+          <text><![CDATA[<b>2</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt05">
+          <text><![CDATA[<b>3</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt06">
+          <text><![CDATA[<b>4</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt07">
+          <text><![CDATA[<b>5</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt08">
+          <text><![CDATA[<b>6</b>]]></text> 
+  </component>
+  
+   <component id="ID_txt08a">
+           <text><![CDATA[<b>7</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt09">
+          <text><![CDATA[<b>Hôte de destination</b>]]></text> 
+    </component>
+    
+  <component id="ID_txt10">
+          <text><![CDATA[<b>172.23.16.8</b>]]></text>
+  </component>
+  
+   <component id="ID_txt11">
+          <text><![CDATA[<b>192.168.32.1</b>]]></text>
+  </component>
+  
+  <component id="ID_txt12">
+          <text><![CDATA[<b>Système autonome 200</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt13">
+          <text><![CDATA[<b>Système autonome 300</b>]]></text> 
+  </component>
+    
+  <component id="ID_txt14">
+       <text><![CDATA[<b>Système autonome 400</b>]]></text> 
+  </component>
+       
+  <component id="ID_txt15">
+       <text><![CDATA[<b>L’hôte source du système autonome 200 envoie un paquet vers 192.168.32.1.</b>]]></text> 
+  </component>
+       
+  <component id="ID_txt16">
+        <text><![CDATA[<b>L’adresse IP de destination du paquet n’étant pas un réseau local, les routeurs internes continuent d’utiliser leurs routes par défaut pour transmettre le paquet jusqu’à ce dernier atteigne une passerelle à proximité du système autonome 200. 
+</b>]]></text> 
+ </component>
+       
+ <component id="ID_txt17">
+        <text><![CDATA[<b>La passerelle externe garde une base de données d’accessibilité pour tous les systèmes autonomes auxquels elle se connecte. Cette base de données signale à la passerelle externe que le réseau 192.168.32.0 est installé dans le système autonome 400.</b>]]></text> 
+ </component>
+ 
+ <component id="ID_txt18">
+         <text><![CDATA[<b>La passerelle externe achemine le paquet vers le tronçon suivant sur la route d’accès, à savoir la passerelle externe sur le système autonome 400. </b>]]></text> 
+ </component>
+        
+ <component id="ID_txt18a">
+        <text><![CDATA[<b>Le paquet se présente à la passerelle externe du système autonome 400, qui reconnaît l’adresse IP de destination du paquet comme étant un réseau interne dans le système autonome 400. La passerelle externe dirige ensuite le paquet vers le tronçon suivant figurant dans sa table de routage.</b>]]></text> 
+ </component>
+ 
+ <component id="ID_txt19">
+        <text><![CDATA[<b>À partir de cet instant, le paquet est traité comme n’importe quel autre paquet local et dirigé de saut en saut par l’intermédiaire de protocoles de routage interne vers son réseau de destination. 
+</b>]]></text> 
+    </component>
+    
+ <component id="ID_txt20">
+        <text><![CDATA[<b>Le paquet arrive à un routeur directement connecté au réseau 192.168.32.0 et est transféré à l’hôte de destination 192.168.32.1.</b>]]></text> 
+ </component>
+
+ </textcomponents>

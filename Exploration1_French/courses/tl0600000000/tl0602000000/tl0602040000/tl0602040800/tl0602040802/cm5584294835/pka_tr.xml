@@ -1,0 +1,98 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Web Client</NAME>
+ <NAME translate="true">Web Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Web Client</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Web Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Web Client</NAME>
+ <NAME translate="true">Web Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Web Client</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Web Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Web Client</NAME>
+ <NAME translate="true">Web Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Web Client</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Web Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 2.4.8 : &lt;b&gt;utilisation du modèle OSI et des protocoles TCP/IP dans Packet Tracer&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt;
+	
+&lt;!--This is the end of the IP addressing table code&quot; --&gt;
+
+
+&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt;
+
+&lt;ul&gt; &lt;li&gt;étude de la manière dont Packet Tracer utilise le modèle OSI et les protocoles TCP/IP ; &lt;li&gt;étude du traitement et du contenu des paquets. &lt;/ul&gt;
+
+&lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;En mode simulation de Packet Tracer, des informations détaillées sur les paquets et leur traitement par des périphériques réseau peuvent être affichées. Les protocoles TCP/IP courants son modélisés dans Packet Tracer, y compris les protocoles DNS, HTTP, TFTP, DHCP, Telnet, TCP, UDP, ICMP et IP. La manière dont ces protocoles sont utilisés par des périphériques réseau pour créer et traiter des paquets est affichée dans Packet Tracer, à l'aide d'une représentation du modèle OSI. Le terme unité de données de protocole, ou PDU, correspond à une description générique des éléments identifiés comme des segments sur la couche transport, des paquets sur la couche réseau et des trames sur la couche liaison de données.&lt;/p&gt;
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt; &lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : exploration de l'interface de Packet Tracer &lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1.  Étude des fichiers d'aide et des didacticiels&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; À partir du menu déroulant, choisissez &lt;b&gt;Help-&gt;Contents&lt;/b&gt;. Une page Web s'ouvre. Dans la trame de gauche, choisissez &lt;b&gt;Operating Modes-&gt;Simulation Mode&lt;/b&gt;. Si vous n'êtes pas encore familier avec le mode simulation, consultez la documentation relative à ce mode.&lt;br&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Passage du mode temps réel au mode simulation&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; La partie inférieure droite de l'interface de Packet Tracer comprend le commutateur mode temps réel/mode simulation. Packet Tracer démarre toujours en mode temps réel, dans lequel les protocoles réseau fonctionnent avec des temporisations réalistes. Cependant, une fonctionnalité puissante de Packet Tracer permet à l'utilisateur d'« arrêter le temps » en basculant vers le mode simulation. En mode simulation, les paquets sont affichés en tant qu'enveloppes animées, le temps est basé sur les événements et l'utilisateur peut parcourir les événements réseau. Cliquez sur le mode &lt;b&gt;Simulation&lt;/b&gt;. &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;h3&gt;&lt;b&gt;Tâche 2 : examen du contenu et du traitement de paquet &lt;/h3&gt; &lt;/b&gt; &lt;h4&gt; &lt;b&gt;Étape 1.  Création d'un paquet et accès à la fenêtre PDU Information.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur l'ordinateur du client Web. Choisissez l'onglet&lt;b&gt;Desktop&lt;/b&gt; Ouvrez le &lt;b&gt;navigateur Web&lt;/b&gt;. Entrez l'adresse IP du serveur Web dans le navigateur, 192.168.1.254. Lorsque vous cliquez sur &lt;b&gt;Go&lt;/b&gt;, une demande est envoyée au serveur Web. Réduisez la fenêtre de configuration du client Web. Le temps étant basé sur des événements dans la simulation, vous devez utiliser le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; pour afficher des événements réseau.  Deux paquets apparaissent dans la liste d'événements et un œil apparaît à côté de l'un d'entre eux. Lorsqu'un œil apparaît à côté d'un paquet, cela signifie qu'il est affiché en tant qu'enveloppe sur la topologie logique. Recherchez le premier paquet dans &lt;b&gt;Event List&lt;/b&gt;, puis cliquez sur le carré coloré dans la colonne &lt;b&gt;Info&lt;/b&gt;.  &lt;br
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Analyse des algorithmes de périphérique dans l'affichage &lt;b&gt;OSI Model&lt;/b&gt; &lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Lorsque vous cliquez sur le carré Info d'un paquet dans la liste d'événements ou équivalent, vous cliquez sur une enveloppe de paquet affichée sur la topologie logique ; la fenêtre &lt;b&gt;PDU Information&lt;/b&gt; apparaît.   Le modèle OSI organise cette fenêtre.  Dans le cas du premier paquet affiché, notez que la demande HTTP (à la couche 7) est ensuite encapsulée successivement aux couches 4, 3, 2 et 1. Si vous cliquez sur ces couches, l'algorithme utilisé par le périphérique (dans ce cas, l'ordinateur) est affiché. Observez ce qui se produit à chaque couche ; il en sera question pendant la majeure partie du reste de ce cours. &lt;br
+
+&lt;h4&gt; &lt;b&gt;Étape 3.  Unités de données de protocole entrantes et sortantes &lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Lors de l'ouverture de la fenêtre PDU Information, l'affichage par défaut est &lt;b&gt;OSI Model&lt;/b&gt;.  Cliquez maintenant sur l'onglet &lt;b&gt;Outbound PDU Details&lt;/b&gt;. Faites défiler l'affichage jusqu'au bas de cette fenêtre. À cet emplacement, vous apercevez que le protocole HTTP (la demande de page Web qui a démarré cette série d'événements) est encapsulé sous forme de données dans un segment TCP, qui à son tour est encapsulé dans un paquet IP, lui-même encapsulé dans une trame Ethernet, elle-même transmise sous forme de bits sur le support.  Si un périphérique constitue le premier périphérique impliqué dans une série d'événements, les paquets qui se trouvent à ce périphérique ne disposent que d'un onglet &lt;b&gt;Outbound PDU Details&lt;/b&gt; ; si un périphérique est le dernier périphérique dans une série d'événements, les paquets qui se trouvent à ce périphérique ne disposent que d'un onglet &lt;b&gt;Inbound PDU Details&lt;/b&gt;. En général, vous apercevez les détails d'unités de données de protocole sortantes et entrantes, qui fournissent des informations sur la manière dont Packet Tracer modélise ce périphérique. &lt;br
+
+&lt;h4&gt; &lt;b&gt;Étape 4.  Traçage de paquet : animations de flux de paquets&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Lors de la première animation de paquets, vous capturez les paquets, comme dans un analyseur de protocole.  Ainsi, le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; signifie « Capturer » un ensemble d'événements à la fois. Parcourez la demande de page Web pas à pas.  Notez que vous affichez uniquement les paquets associés à HTTP, mais que d'autres protocoles, tels que TCP et ARP, possèdent également des paquets qui ne sont pas affichés. Lors de votre capture de paquets, vous pouvez ouvrir la fenêtre &lt;b&gt;PDU Information&lt;/b&gt; à n'importe quel moment.   Parcourez la totalité de l'animation, jusqu'à ce que le message « No More Events » apparaisse. Familiarisez-vous avec ce processus de traçage de paquet en exécutant à nouveau l'animation, en analysant les paquets, en prévoyant ce qui doit se passer ensuite et en analysant vos prévisions. &lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Web Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Web Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Web Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Web Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Web Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Web Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">Web Client</ID>
+ <ID translate="true">Web Server</ID>
+ <ID translate="true">Web Client</ID>
+ <ID translate="true">Web Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

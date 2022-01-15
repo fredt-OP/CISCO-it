@@ -1,0 +1,82 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Broadcast Storms</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Click Play to see the animation.</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b><font size="12">Trunk2</font></b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b><font size="12">Trunk3</font></b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b><font size="12">Trunk1</font></b>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[PC1 sends a broadcast onto the network. The broadcast gets caught in a Layer 2 loop.]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[PC4 sends a broadcast onto the network. The broadcast gets caught in a Layer 2 loop along with the broadcast frame from PC1.]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[PC3 sends a broadcast onto the network. The broadcast gets caught in a Layer 2 loop along with the broadcast frames from PC1 and PC4.]]></text> 
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[PC2 sends a broadcast onto the network The broadcast frame is not able to be processed due to the high volume of traffic already caught in the loop. The network is unable to process new traffic.]]></text> 
+  </component>
+  
+  
+  
+  <component id="play"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+
+
+
+
+
+</textcomponents>

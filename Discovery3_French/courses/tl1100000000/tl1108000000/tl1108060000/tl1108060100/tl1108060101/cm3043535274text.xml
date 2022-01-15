@@ -1,0 +1,136 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component> 
+
+<!--slide 1-->
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Le filtrage du trafic consiste à analyser le contenu d’un paquet afin de déterminer si ce paquet doit être autorisé ou bloqué.</li><br/><li>Les listes de contrôle d’accès permettent de gérer le trafic et assurent un accès sécurisé au réseau et à ses ressources.</li><br/><li>Il existe trois types de liste de contrôle d’accès : standard, étendue et nommée.</li><br/><li>Les listes de contrôle d’accès filtrent le trafic en fonction des adresses IP source et de destination, de l’application et du protocole.</li><br/><li>Appliquez une liste de contrôle d’accès à une interface de routeur pour examiner les paquets qui sont entrants ou sortants.</li></ul>]]></text>
+</component>
+
+<component id="s1_ID_txt01">
+<text><![CDATA[Adresse IP<br>192.168.1.5]]></text> 
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[Protocole<br>HTTP]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Réseau<br>172.16.0.0]]></text> 
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Accès<br>Telnet]]></text> 
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[<b>OK</b>]]></text> 
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[<b>OK</b>]]></text> 
+</component>
+
+<component id="s1_ID_txt07">
+<text><![CDATA[Réseau interne]]></text> 
+</component>
+
+<component id="s1_ID_txt08">
+<text><![CDATA[Adresse MAC<br>xx:xx:xx:xx:xx:xx]]></text> 
+</component>
+
+<!--slide 2-->
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>Un masque générique vous offre une certaine souplesse et permet de bloquer une plage d’adresses ou des réseaux entiers avec une seule instruction.</li><br/><li>Le masque générique compare l’adresse entrante à une adresse de comparaison afin de déterminer les bits qui correspondent.</li><br/><li>Pour déterminer le masque générique, soustrayez le masque de sous-réseau décimal pour une adresse ou une plage du masque 255.255.255.255.</li><br/><li>La liste de contrôle d’accès se termine par une instruction implicite <font face='_typewriter'><b>deny any</b></font>.</li><br/><li>Le mot clé <font face='_typewriter'><b>any</b></font> désigne tous les hôtes et le mot clé <font face='_typewriter'><b>host</b></font> une adresse IP précise.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[<b>Masques génériques qui autorisent un seul hôte :</b><br/><dnt><font face='_typewriter'>172.16.22.87 0.0.0.0<br/>host 172.22.8.17</font></dnt><br/><br/><b>Masque générique qui autorise une plage d’hôtes pour un réseau /24 :</b><br/><dnt><font face='_typewriter'>172.16.22.0 0.0.0.255</font></dnt><br/><br/><b>Masque générique qui autorise un réseau /16 complet :</b><br/><dnt><font face='_typewriter'>172.16.0.0 0.0.255.255</font></dnt><br/><br/><b>Masque générique qui autorise un réseau /8 complet :</b><br/><dnt><font face='_typewriter'>10.0.0.0 0.255.255.255</font></dnt>]]></text>
+</component>
+
+
+<!--slide 3-->
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>Les listes de contrôle d’accès standard filtrent sur l’adresse IP source et sont placées le plus près possible de la destination.</li><br/><li>Les listes de contrôle d’accès étendues peuvent filtrer sur les adresses source et de destination, ainsi que sur le protocole et le numéro de port. Elles doivent être placées le plus près possible de la source.</li><br/><li>Décidez du positionnement des listes de contrôle d’accès en fonction de leur type et des spécifications.</li><br/><li>Chaque interface prend en charge une seule liste de contrôle d’accès par direction et par protocole.</li><br/><li>Créez une liste de contrôle d’accès en utilisant un identificateur unique et appliquez-la en entrée ou en sortie sur une interface à l’aide de la commande <font face='_typewriter'><b>ip access-group</b></font>.</li><br/><li>Les commandes <font face='_typewriter'><b>show ip interface</b></font>, <font face='_typewriter'><b>show access-lists</b></font> et <font face='_typewriter'><b>show running-config</b></font> permettent à un administrateur réseau de voir toutes les listes de contrôle d’accès qui ont été configurées sur un routeur.</li><br/><li>Les listes de contrôle d’accès nommées offrent toutes les fonctions et tous les avantages des listes de contrôle d’accès standard et étendues.</li><br/><li>Les listes de contrôle d’accès limitent l’accès VTY afin d’améliorer la sécurité des réseaux. La commande <font face='_typewriter'><b>access-class</b></font> est utilisée pour appliquer une liste de contrôle d’accès VTY.</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[<font size='12'><p align="center"><b>Directives sur la création et le traitement des listes de contrôle d’accès</b></p></font><br/><font size='11'><ul><li>Configurez uniquement une liste de contrôle d’accès par protocole et par direction.</li><li>Appliquez les listes d’accès standard les plus proches de la destination.</li><li>Appliquez les listes d’accès étendues les plus proches de la source.</li><li>Utilisez la plage de numéros appropriée pour le type de liste.</li><li>Identifiez la direction en entrée et en sortie d’après le port depuis le routeur.</li><li>Traitez les instructions dans l’ordre en commençant par le début de la liste.</li><li>Refusez les paquets lorsqu’aucune correspondance n’est trouvée.</li><li>Indiquez les entrées dans la liste de la plus spécifique à la plus générale.</li><li>Configurez une liste de contrôle d’accès avec une instruction permit (autoriser) pour ne pas bloquer la totalité du trafic.</li></ul></font>]]></text>
+</component>
+
+<!--slide 4-->
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>Les listes de contrôle d’accès étendues filtrent sur les adresses IP source et de destination, le protocole et le numéro de port de l’application de destination dans une trame.</li><br/><li>Les listes de contrôle d’accès filtrent une plage de ports à l’aide des opérateurs <font face='_typewriter'><b>gt</b></font>, <font face='_typewriter'><b>lt</b></font> ou <font face='_typewriter'><b>range</b></font>.</li><br/><li>Utilisez le paramètre established pour filtrer le trafic qui est une réponse à une requête.</li><br/><li>L’ordre dans lequel les instructions sont écrites a une influence sur les performances du routeur.</li><br/><li>Il existe différentes façons de concevoir l’écriture des listes de contrôle d’accès : autoriser d’abord un trafic spécifique puis refuser le trafic général ou refuser d’abord un trafic spécifique puis autoriser le trafic général.</li><br/><li>Les administrateurs réseau tiennent compte de la traduction NAT lors de la création et de l’application des listes de contrôle d’accès.</li><br/><li>Appliquez directement les listes de contrôle d’accès aux interfaces logiques VLAN comme vous le feriez avec des interfaces physiques.</li></ul>]]></text>
+</component>
+
+<component id="s4_ID_dest01">
+	<text><![CDATA[Destination]]></text> 
+</component>
+
+<component id="s4_ID_dest02">
+	<text><![CDATA[Destination]]></text> 
+</component>
+
+<component id="s4_ID_source01">
+	<text><![CDATA[Source]]></text> 
+</component>
+
+<component id="s4_ID_source02">
+	<text><![CDATA[Source]]></text> 
+</component>
+
+<component id="ID_table1">
+	<text><![CDATA[<table bordercolor='#666666' borderwidth='1' cellpadding='2'>
+		<tr>
+			<td bgcolor='#E9E9E9'>00-07-E9-63-CE-53</td>
+			<td bgcolor='#E9E9E9'>00-07-E9-42-AC-28</td>
+			<td bgcolor='#99CCFF'>192.168.1.5</td>
+			<td bgcolor='#99CCFF'>192.168.1.7</td>
+			<td bgcolor='#8CB3D9'>41099</td>
+			<td bgcolor='#8CB3D9' glow='true' glowcolor='#FCA92E'> 80</td>
+			<td bgcolor='#FFFF99'>Données utilisateur</td>
+			<td bgcolor='#FFFFFF'>Queues de bande</td>
+		</tr>
+	</table>]]></text>
+</component>
+
+<component id="s4_ID_txt01">
+<text><![CDATA[access-list 101 permit tcp host<font color="#FF9900"> 192.168.1.5</font> host<font color="#FF9900"> 192.168.1.7 </font><font color="#FF9900">eq80</font>]]></text> 
+</component>
+ 
+<component id="s4_ID_txt02">
+<text><![CDATA[Adresses des en-têtes MAC]]></text> 
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[Adresses des en-têtes IP]]></text> 
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[Ports des en-têtes TCP]]></text> 
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[Données]]></text> 
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[FCS]]></text> 
+</component>
+
+<component id="s4_ID_txt07">
+<text><![CDATA[Trame Ethernet]]></text> 
+</component>
+
+<!--slide 5-->
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>Une instruction de liste de contrôle d’accès calcule le nombre de correspondances et les affiche à la fin de chaque instruction correspondante.</li><br/><li>La consignation donne des détails supplémentaires sur les paquets autorisés ou refusés. Pour activer la journalisation, ajoutez l’option log à la fin de chaque instruction de liste de contrôle d’accès.</li><br/><li>Ajoutez <font face='_typewriter'><b>deny ip any any log</b></font> pour surveiller le nombre de paquets dont la correspondance n’est pas trouvée par les instructions de liste de contrôle d’accès.</li><br/><li>La journalisation d’événements occasionne une charge supplémentaire sur le routeur.</li><br/><li>Le contenu de la journalisation peut être envoyé à un serveur syslog externe.</li><br/><li>Définissez toujours l’horodatage du service pour la journalisation et assurez-vous que la date et l’heure du routeur sont correctes de sorte que l’horodatage soit correct dans les fichiers de journalisation.</li></ul>]]></text>          
+</component>
+
+<component id="s5_ID_txt01">
+<text><![CDATA[Temps moyen de Greenwich (GMT)]]></text> 
+</component>
+
+</textcomponents>

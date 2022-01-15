@@ -1,0 +1,177 @@
+//zmg, 03.01.01 
+//this file needs a better description!
+
+//Modified by Bargavi 
+//to be compatible with flash MX
+
+// Modified by Dean Wood 05.10.01
+//   Changed hard-coded 7s to cursorXOffset.
+//   Changed active_router references to VISIBLE_ROUTER
+//     This allows scrolling during telnet sessions
+//   Added manual_scrolling_setSlider()
+//   Added manual_scrolling_setConent()
+
+// Modified by Dean Wood 05.29.01
+//    Added kludge to fix a bug in output_writeOut()
+
+
+// Manual Scrolling
+
+//manual_scrolling_scrollUp()
+//IN: <none>
+//DO: scrolls the current Hyperterminal screen "up" 1 line
+//OUT: the console's output has been scrolled up 1 line
+function manual_scrolling_scrollUp() {
+
+
+	var r = eval("r" + VISIBLE_ROUTER); //ptr to active router object
+	var optr = eval("HyperTerminal.s" + VISIBLE_ROUTER); //ptr to output (hyperterminal console)
+
+	//r.indexLine = the number of the first line that is showing on the screen.
+	//if it is less than 1 (all of the lines are showing on the screen), then
+	//we can return because there is no need to scroll up.
+	if (r.indexLine < 1) {
+		return;
+	}
+
+
+	//kluge to fix a bug in output_writeOut()
+	if(r.indexLine == r.stopLine)
+		r.indexLine--;
+
+	//decrement the indexLine counter (the lowest line number 
+	//currently visible on the screen)
+	r.indexLine--;
+
+	//hide the cursor in the console window, and clear the output.
+	HyperTerminal.cursor._visible = false;
+	optr.output.text = "";
+
+	//message = VISIBLE_ROUTER + " (Scroll Up):\n";
+	//message += "  indexLine = " + r.indexLine + "\n";
+	//message += "  lastDLine = " + r.lastDLine + "\n";
+	//message += "  lastLine = " + r.lastLine + "\n";
+
+	//output the 24 lines that now fit on the screen (given the updated
+	//indexLine) via optr, the pointer to the Hyperterminal console
+	for (var j = r.indexLine; j < (r.indexLine+24); j++) {
+		//message += "  line[" + j + "] = " + r.line[j];
+		optr.output.text += r.line[j];//Bargavi
+	}
+
+	manual_scrolling_setSlider();
+}
+
+
+
+// manual_scrolling_scrollDown()
+//IN: <none>
+//DO: scrolls the current Hyperterminal screen "down" 1 line
+//OUT: the console's output has been scrolled down 1 line
+function manual_scrolling_scrollDown() {
+
+
+	var rptr = eval("r" + VISIBLE_ROUTER); //ptr to active router object
+	var optr = eval("HyperTerminal.s" + VISIBLE_ROUTER); //ptr to output (Hyperterminal console)
+
+	//if we are at the last line of the display buffer (we can't scroll down
+	//anymore because we're already at the bottom of the output) then
+	//return.
+	if (rptr.indexLine > rptr.lastDLine-24) {
+		return;
+	}
+
+	//increment the indexLine counter (the lowest line number 
+	//currently visible on the screen), and (temporarily) clear 
+	//the Hyperterminal output
+	rptr.indexLine++;
+	optr.output.text = "";//Bargavi
+
+	//message = VISIBLE_ROUTER + " (Scroll Down):\n";
+	//message += "  indexLine = " + rptr.indexLine + "\n";
+	//message += "  lastDLine = " + rptr.lastDLine + "\n";
+	//message += "  lastLine = " + rptr.lastLine + "\n";
+
+	//output the 24 lines that now fit on the screen (given the updated
+	//indexLine) via optr, the pointer to the Hyperterminal console
+	for (var j = rptr.indexLine; j < (rptr.indexLine+24); j++) {
+		//message += "  line[" + j + "] = " + rptr.line[j];
+		optr.output.text += rptr.line[j];//Bargavi
+	}
+	
+	manual_scrolling_setSlider();
+	
+	if (rptr.indexLine == (rptr.lastDLine-23)) {
+	
+		//set the x-position of the cursor to the end of the
+		//last line of displayed output
+		rptr.cursorX = rptr.line[rptr.lastDLine].length;
+		
+		// (?)
+		HyperTerminal.cursor._x = rptr.cx + rptr.cursorXOffset * rptr.cursorX;
+		
+		//set the now correctly positioned Hyperterminal cursor to visible
+		HyperTerminal.cursor._visible = true;
+	}
+}
+
+
+// manual_scrolling_setSlider()
+//IN: <none>
+//DO: positions the scroll bar's slider.
+//OUT: the scroll bar's slider has been positioned.
+function manual_scrolling_setSlider() {
+
+	var rptr = eval("r" + VISIBLE_ROUTER); //ptr to active router object
+	var sptr = HyperTerminal.ScrollBar.Slider; //ptr to scroll bar slider
+
+
+	//kluge to fix a bug in output_writeOut()
+	if(rptr.indexLine == rptr.stopLine)
+		rptr.indexLine--;
+
+	var percentage = rptr.indexLine / (rptr.lastDLine - 23);
+	sptr._y = sptr.range * percentage + sptr.min;
+}
+
+
+// manual_scrolling_setContent()
+//IN: <none>
+//DO: positions the content based on the scroll bar's slider position.
+//OUT: the content has been positioned.
+function manual_scrolling_setContent() {
+
+	var rptr = eval("r" + VISIBLE_ROUTER); //ptr to active router object
+	var optr = eval("HyperTerminal.s" + VISIBLE_ROUTER); //ptr to output (Hyperterminal console)
+	var sptr = HyperTerminal.ScrollBar.Slider; //ptr to scroll bar slider
+
+	var percentage = (sptr._y - sptr.min) / sptr.range;
+	rptr.indexLine = Math.round((rptr.lastDLine - 23) * percentage);
+
+	//temporarily clear the Hyperterminal output
+	optr.output.text = "";//Bargavi
+
+	//output the 24 lines that now fit on the screen (given the updated
+	//indexLine) via optr, the pointer to the Hyperterminal console
+	for (var i = rptr.indexLine; i < (rptr.indexLine + 24); i++) {
+		optr.output.text += rptr.line[i];//Bargavi
+	}
+
+	if(rptr.indexLine == (rptr.lastDLine - 23)) {
+
+		//set the x-position of the cursor to the end of the
+		//last line of displayed output
+		rptr.cursorX = rptr.line[rptr.lastDLine].length;
+	
+		// (?)
+		HyperTerminal.cursor._x = rptr.cx + rptr.cursorXOffset * rptr.cursorX;
+		
+		//set the now correctly positioned Hyperterminal cursor to visible
+		HyperTerminal.cursor._visible = true;
+	}
+	else {
+
+		//hide the cursor in the console window.
+		HyperTerminal.cursor._visible = false;
+	}
+}

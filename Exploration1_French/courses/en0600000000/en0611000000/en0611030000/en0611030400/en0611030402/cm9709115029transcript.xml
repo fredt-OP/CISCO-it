@@ -1,0 +1,5 @@
+<transcript lastedited="01.26.09 10:01:59">
+<title><content-text><![CDATA[11.3.4 - Testing Gateway and Remote Connectivity]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts testing remote connectivity. An echo request or ping is sent from host 10.0.0.1 to remote host IP address 10.0.0.254, and an echo reply is returned indicating that the gateway is accessible.<br><br>Network topology: <br>Two hosts and a printer on LAN A, the 10.0.0.0/24 network, are connected to a switch that is connected to a router gateway on R1. Two hosts and a printer on LAN B, the 10.0.1.0/24 network, are connected to a switch that is connected to a router gateway on R2. Routers R1 FA0/0 and R2 FA0/1 are connected.<br><br>Each hop between the local and remote host is pinged. <br><br>Local host: 10.0.0.1<br>Router R1 FA0/0: 192.168.0.253<br>Router R2 FA0/1: 192.168.0.254<br>Router R2 FA0/0: 10.0.1.254<br>Remote host: 10.0.1.1]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

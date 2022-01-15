@@ -1,0 +1,34 @@
+<textcomponents>
+
+
+<component id="ID_instruct">
+  <text><![CDATA[<b>Click each type of DNS zone for an example.</b>]]></text> 
+  </component>
+
+<component id="ID_reverse_lookup">
+  <text><![CDATA[<b>Reverse Lookup Zones</b>]]></text> 
+  </component>
+  
+  <component id="ID_forward_lookup">
+  <text><![CDATA[<b>Forward Lookup Zones</b>]]></text> 
+  </component>
+
+ <component id="tipTitle">
+ <text>More Information</text>
+ </component>
+ 
+ <component id="tipBody">
+<text><![CDATA[<b>Primary Zones:</b><br><br>A primary DNS zone is a zone that can be modified as needed. When a new resource record needs to be added or an existing record needs to be updated or deleted, you would make the changes on a primary DNS zone. You can have primary forward and reverse lookup zones. When you have a primary zone on a DNS server, that server is said to be authoritative for that DNS zone, since it will have the answer for DNS queries for records within that zone. There can only be one primary DNS zone for any given DNS domain.
+<b>Secondary Zones:</b><br><br>A secondary zone is a read-only backup zone maintained on a separate DNS server than the primary zone. The secondary zone is a copy of the primary zone and receives updates to the zone information from the primary server through zone transfers. Since the secondary zone is a read-only copy of the zone, all updates to the records need to be done on the corresponding primary zone. You can also have secondary zones for both forward and reverse lookup zones. Depending on the availability requirements for a DNS zone, you may have many secondary DNS zones spread across many DNS servers.]]></text>
+ </component>
+ 
+ <component id="TipText">
+<text><![CDATA[More Information]]></text></component>
+
+
+
+
+
+
+
+</textcomponents>

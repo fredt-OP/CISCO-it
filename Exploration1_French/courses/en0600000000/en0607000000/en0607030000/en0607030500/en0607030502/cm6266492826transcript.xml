@@ -1,0 +1,5 @@
+<transcript lastedited="01.09.09 12:01:22">
+<title><content-text><![CDATA[7.3.5 - Data Link Layer Protocols - The Frame]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts an Ethernet frame, the most common Data Link Layer protocol for LAN's. An Ethernet frame's field names and sizes are shown in the following sequence, with information describing each. <br><br>Preamble: 8 bytes. Used for synchronization. Also contains a delimiter to mark the end of the timing information.<br>Destination Address: 6 bytes. 48-bit MAC address for the destination node.<br>Source Address: 6 bytes. 48-bit MAC address for the source node.<br>Type: 2 bytes. Indicates which upper layer protocol receives the data after the Ethernet process is complete.<br>Data (or payload): 46 to 1500 bytes. This is the PDU, typically an IPv4 packet, that is to be transported over the media.<br>Frame Check Sequence (FCS): 4 bytes. Used to check for damaged frames.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

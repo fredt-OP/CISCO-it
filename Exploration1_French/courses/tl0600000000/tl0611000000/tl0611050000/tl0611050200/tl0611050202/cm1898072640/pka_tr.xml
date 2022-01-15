@@ -1,0 +1,127 @@
+﻿<TRANSLATION>
+ <NAME translate="true">ROUTER1</NAME>
+ <NAME translate="true">TFTP SERVER</NAME>
+ <NAME translate="true">SWITCH</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">ROUTER1</NAME>
+ <NAME translate="true">TFTP SERVER</NAME>
+ <NAME translate="true">SWITCH</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">ROUTER1</NAME>
+ <NAME translate="true">TFTP SERVER</NAME>
+ <NAME translate="true">SWITCH</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">ROUTER1</NAME>
+ <NAME translate="true">TFTP SERVER</NAME>
+ <NAME translate="true">SWITCH</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">ROUTER1</NAME>
+ <NAME translate="true">TFTP SERVER</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">ROUTER1</NAME>
+ <NAME translate="true">TFTP SERVER</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 11.5.2 : &lt;br&gt;gestion des configurations de périphérique&lt;!-- ******************************************************************************** Le texte placé entre ces deux jeux de symboles (&lt;!-- et -- &gt;) représente des commentaires pour l'auteur et ne s'affiche pas. Conservez tous les commentaires pour les développements futurs et à des fins de contrôle de qualité. L'utilisateur ne verra pas le code HTML dans Packet Tracer.
+
+Pour informations sur les principes fondamentaux de la mise en forme HTML, consultez la section du document Packet Tracer Standards consacrée au codage HTML ou le fichier « HTML_Coding_Standards.html ». ******************************************************************************** --&gt;&lt;!-- REMARQUE standard à l'intention de l'utilisateur pour toutes les variantes de travaux pratiques si la conception du cours le spécifie --&gt;&lt;/h2&gt;
+
+&lt;p&gt; &lt;font color=&quot;red&quot;&gt;&lt;b&gt;REMARQUE À L'INTENTION DE L'UTILISATEUR :&lt;/b&gt;&lt;/font&gt; &lt;b&gt;cet exercice avec Packet Tracer est une variante des travaux pratiques 11.5.2&lt;/b&gt;, mais peut s'effectuer séparément. Les instructions dont vous avez besoin pour ces travaux pratiques sont fournies dans ces travaux pratiques. &lt;/p&gt;
+
+
+&lt;!-- ================================================== Table d'adressage : le fichier « HTML_Coding_Standards.html » contient des instructions sur la façon d'ajuster cette table en fonction de l'exercice que vous créez. &lt;h3&gt;Table d'adressage :&lt;/h3&gt; &lt;!--Ceci est le début du code de la table d'adressage IP&quot; --&gt;
+
+&lt;div align=&quot;center&quot;&gt; &lt;table border=&quot;1&quot;&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Périphérique&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Interface&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Adresse IP&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Masque de sous-réseau&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;font color=&quot;#FFFFFF&quot;&gt; &lt;b&gt;Mot de passe enable secret&lt;/b&gt;&lt;/font&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Mots de passe de ligne VTY/ Console&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; height=&quot;25&quot;&gt;&lt;b&gt;ROUTER1&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot; height=&quot;25&quot;&gt;&lt;b&gt;Fa0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; height=&quot;25&quot;&gt;192.168.1.1&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; height=&quot;25&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; height=&quot;25&quot;&gt;class&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; height=&quot;25&quot;&gt;cisco&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;&lt;/div&gt;
+	
+&lt;!--Ceci est la fin du code de la table d'adressage IP&quot; --&gt;
+
+
+&lt;!-- ================================================== Liste des objectifs non classés (puces) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Configuration de base d'un routeur &lt;li&gt;Copie de sauvegarde d'un fichier de configuration de routeur &lt;li&gt;Rechargement du fichier de configuration de sauvegarde à partir d'un serveur TFTP dans la mémoire vive d'un routeur &lt;li&gt;Enregistrement du nouveau fichier running-config dans la mémoire NVRAM &lt;/ul&gt;
+
+&lt;!-- ================================================== Introduction Fournissez les données de base, le scénario ou tout autre matériel d'orientation dans l'introduction. Consultez le fichier « HTML_Coding_Standards.html ». ================================================== --&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Dans ces travaux pratiques, vous allez configurer des paramètres communs sur un routeur Cisco, enregistrer la configuration sur un serveur TFTP et restaurer cette configuration à partir d&apos;un serveur TFTP. &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;html&gt;
+
+&lt;!-- ================================================== Tâches et étapes : pour le texte des sections intitulées Tâche ou Étape, le fichier « HTML_Coding_Standards.html » contient des instructions sur la façon de mettre en forme les paragraphes, les listes, les commandes et leurs résultats. Pour la première tâche ou le premier groupe de tâches et pour toute tâche suivante dans laquelle le % correct change, ajoutez une nouvelle page d'instructions à l'aide de la fonction d'ajout de page « + » de Packet Tracer. En créant la variante Packet Tracer à partir de travaux pratiques, veillez à conserver la numérotation des tâches. Vous pouvez toutefois omettre les résultats de commandes et les espaces blancs de l'exemplaire détaillé des travaux pratiques.  Il y a généralement 4 possibilités :  1) La tâche ou l'étape des travaux pratiques peut s'effectuer telle quelle dans Packet Tracer mais n'est pas notée (dans ce cas, fournissez en bas de cette page un message « À la fin de cette tâche, si vous consultez votre score avec Results, vous devez avoir atteint xxx % », dans lequel xxx ne change pas par rapport aux instructions de la page précédente).  2) Si la tâche ou l'étape des travaux pratiques est faisable et notée dans Packet Tracer, spécifiez le pourcentage que le participant doit obtenir à la fin.  3) Si la tâche ou l'étape n'est PAS faisable dans Packet Tracer, spécifiez « Cette tâche (ou étape) n'étant pas prise en charge par Packet Tracer, sautez-la. ». 4) Si la tâche ou l'étape des travaux pratiques peut s'effectuer dans Packet Tracer, mais de manière différente, spécifiez ce qu'il faut faire. Les instructions de la dernière page doivent être suivies de la mention « À la fin de cette tâche, si vous consultez votre score avec Results, vous devez avoir atteint 100 % ». ================================================== --&gt;
+
+&lt;h3&gt;Tâche 1 : configuration de ROUTER1&lt;/h3&gt; &lt;h4&gt;&lt;font size=&quot;3&quot;&gt;Étape 1. Configuration de base de ROUTER1.&lt;/font&gt;&lt;/h4&gt; &lt;p&gt;&lt;font size=&quot;3&quot;&gt;&lt;span style=&quot;font-weight: 400&quot;&gt; À l'aide du tableau figurant au début des travaux pratiques, configurez le nom d'hôte du routeur. Configurez l'interface FastEthernet et associez-lui une description. Protégez l'accès au port console par le mot de passe cisco. Configurez le routeur avec le mot de passe enable chiffré class. Restreignez l'accès distant au routeur à l'aide du mot de passe cisco. Configurez une bannière interdisant les accès non autorisés. Vérifiez la configuration en exécutant la commande show running-config sur le routeur. Si la commande ne présente pas les informations attendues, corrigez les erreurs de configuration et revérifiez votre travail. Enregistrez la configuration en mémoire NVRAM. &lt;/span&gt;&lt;/font&gt;&lt;/p&gt; &lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 62 %. 
+
+
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;/h4&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 2 : configuration du serveur TFTP  &lt;/h3&gt; &lt;p&gt;&lt;h4&gt;Étape 1. Configuration du serveur TFTP.&lt;/h4&gt; &lt;/p&gt; &lt;p&gt;À l'aide des informations suivantes, configurez une adresse de couche 3 et une passerelle par défaut sur le serveur TFTP : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;b&gt;Adresse IP : 192.168.1.2 &lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;Masque de sous-réseau : 255.255.255.0 &lt;/b&gt;&lt;/li&gt; &lt;li&gt;&lt;b&gt;Passerelle par défaut : 192.168.1.1 &lt;/b&gt;&lt;/li&gt; &lt;/ul&gt; &lt;h4&gt;Étape 2. Vérification de la connectivité.&lt;/h4&gt; &lt;p&gt;Envoyez une requête ping au serveur TFTP à partir de ROUTER1. Si la requête ping échoue, vérifiez les configurations du serveur TFTP et du routeur pour résoudre le problème. &lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 100 %. 
+
+
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;/h4&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 3 : sauvegarde de la configuration initiale sur le serveur TFTP &lt;/h3&gt; &lt;h4&gt;Étape 1. Copie de la configuration.&lt;/h4&gt; &lt;p&gt;Utilisez la commande &lt;b&gt;Copy Start TFTP&lt;/b&gt; sur ROUTER1. Entrez l'adresse IP du serveur TFTP comme adresse de l'hôte distant et acceptez toutes les options par défaut (en appuyant sur Entrée).&lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 100 %. 
+
+
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;/h4&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 4 : vérification de la sauvegarde de la configuration sur le serveur TFTP &lt;/h3&gt; &lt;h4&gt;Étape 1. Vérification du transfert TFTP.&lt;/h4&gt; &lt;p&gt;D'abord, cliquez sur le serveur TFTP. Puis cliquez sur l'onglet Config. Ensuite, cliquez sur l'onglet TFTP. Vérifiez que le fichier startup-config de ROUTER1 figure dans la liste (il doit se trouver en bas de la liste).&lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 100 %. 
+
+
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;/h4&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,ROUTER1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,TFTP SERVER</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,SWITCH</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,ROUTER1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,TFTP SERVER</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,SWITCH</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,ROUTER1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,TFTP SERVER</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true">ROUTER1</TEXT>
+ <TEXT translate="true">SWITCH</TEXT>
+ <TEXT translate="true">TFTP SERVER</TEXT>
+ <ID translate="true">ROUTER1</ID>
+ <ID translate="true">TFTP SERVER</ID>
+ <ID translate="true">Switch0</ID>
+ <ID translate="true">ROUTER1</ID>
+ <ID translate="true">TFTP SERVER</ID>
+ <ID translate="true">SWITCH</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

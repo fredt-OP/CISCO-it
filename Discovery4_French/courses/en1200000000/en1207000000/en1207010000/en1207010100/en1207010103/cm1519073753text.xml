@@ -1,0 +1,91 @@
+<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<b>Activity</b><br><br>Look at the network test items and decide if a prototype or a pilot is most appropriate.<br><br><b>Click the 'Prototype' or 'Pilot' column for each of the test items, then click Check.</b>]]></text>
+</component>
+
+<component id="id_descr">
+<text><![CDATA[Network Test]]></text>
+</component>
+
+<component id="id_inst">
+<text><![CDATA[]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+	<component id="txt_numrows">
+		<text><![CDATA[5]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[Prototype]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[Pilot]]></text>
+	</component>
+
+		
+    <component id="txt_q1">
+		<text><![CDATA[Test the implementation of a new link between a WAN site and the stadium.]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[Test the VLAN routing strategy at the Distribution Layer.]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[Compare how redundant switched links react to a failure with how redundant routed links react to the same failure.]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[Test the route summarization when using auto-summary instead of manual summary.]]></text>
+	</component>
+	 <component id="txt_q5">
+		<text><![CDATA[Test wireless Access Point placement.]]></text>
+	</component>
+  
+	
+    <component id="txt_a1">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[1]]></text>
+	</component>
+	<component id="txt_a5">
+		<text><![CDATA[2]]></text>
+	</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have correctly identified all the pilots and prototypes.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[You have not correctly identified all the pilots and prototypes. Look at the correct answers.]]></text></component>
+
+
+</textcomponents>

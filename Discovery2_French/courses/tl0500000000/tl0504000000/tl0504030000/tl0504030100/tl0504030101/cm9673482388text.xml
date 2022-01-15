@@ -1,0 +1,343 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component>
+
+
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Les interface des périphériques réseau connectés à Internet doivent avoir une adresse IP unique pour pouvoir envoyer et recevoir des messages sur des interréseaux.</li><br/><li>Les adresses IP sont organisées en classes de réseau (A, B, C, D et E), et peuvent être économisées grâce à la création d’espaces d’adressage IP privés.</li><br/><li>Un réseau peut être divisé en sous-réseaux.</li><br/><li>Le découpage d’un réseau par classe utilise l’extension du masque de sous-réseau. L’adressage IP sans classe, intégré au routage interdomaine sans classe (CIDR, Classless Inter-Domain Routing), applique une méthode souple de mise en sous-réseau basée sur des masques de sous-réseau de longueur variable (VLSM).</li></ul>]]></text>
+</component>
+
+
+<!--  Slide 2  -->  
+  
+  
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>Les masques de sous-réseau autorisent une division supplémentaire des réseaux en augmentant le nombre de bits utilisés.</li><br/><li>Un ID de sous-réseau est créé par la séparation de l’ID d’hôte en deux parties, un ID de sous-réseau et un nouvel ID d’hôte.</li><br/><li>Le nombre de bits dans l’ID de sous-réseau détermine le nombre de sous-réseaux possibles dans le réseau.</li><br/><li>La communication entre sous-réseaux nécessite un routage.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_header1">
+<text><![CDATA[<b>Classes d’adresses IP</b>]]></text>
+</component>
+
+<component id="test">
+<text><![CDATA[<b>Classes d’adresses IP</b>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+   	<text><![CDATA[<font color="#003399"><b>192.168.1.</b><b><font color="#000000"><b>0</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt02">
+   	<text><![CDATA[<font color="#000000"><b>11000000 10101000 00000001 </b><b><font color="#990000"><b>hhhhhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt03">
+   	<text><![CDATA[<b>Bits d’ID de<br/>sous-réseau</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt04">
+   	<text><![CDATA[<b>Bits d’ID<br/>d’hôte</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt05">
+   	<text><![CDATA[<b>Nombre<br/>de sous-réseaux</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt06">
+   	<text><![CDATA[<b>Nombre<br/>d’hôtes</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt07">
+   	<text><![CDATA[<b>Configuration<br/>binaire</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt08">
+   	<text><![CDATA[<b>0</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt09">
+   	<text><![CDATA[<b>8</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt10">
+   	<text><![CDATA[<b>1</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt11">
+   	<text><![CDATA[<b>254</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt12">
+   	<text><![CDATA[<font color="#990000"><b>hhhhhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt13">
+   	<text><![CDATA[<b>Bits d’ID de sous-réseau = 0, le réseau dispose d’un sous-réseau.</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt14">
+   	<text><![CDATA[<b>1</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt15">
+   	<text><![CDATA[<b>7</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt16">
+   	<text><![CDATA[<b>2</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt17">
+   	<text><![CDATA[<b>126</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt18">
+   	<text><![CDATA[<b>s</b><font color="#990000"><b>hhhhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt19">
+   	<text><![CDATA[<b>Dès qu’un des bits d’hôte est désigné comme bit de sous-réseau, le réseau dispose de deux sous-réseaux. Souvenez-vous qu’en mode binaire, un bit peut afficher l’état 1 ou 0. Le nombre de sous-réseaux est donc 2^s.</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt20">
+   	<text><![CDATA[<b>2</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt21">
+   	<text><![CDATA[<b>6</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt22">
+   	<text><![CDATA[<b>4</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt23">
+   	<text><![CDATA[<b>62</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt24">
+   	<text><![CDATA[<b>ss</b><font color="#990000"><b>hhhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt25">
+   	<text><![CDATA[<b>3</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt26">
+   	<text><![CDATA[<b>5</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt27">
+   	<text><![CDATA[<b>8</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt28">
+   	<text><![CDATA[<b>30</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt29">
+   	<text><![CDATA[<b>sss</b><font color="#990000"><b>hhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt30">
+   	<text><![CDATA[<b>4</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt31">
+   	<text><![CDATA[<b>4</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt32">
+   	<text><![CDATA[<b>16</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt33">
+   	<text><![CDATA[<b>14</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt34">
+   	<text><![CDATA[<b>ssss</b><font color="#990000"><b>hhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt35">
+   	<text><![CDATA[<b>Observez la relation inversée entre le nombre de sous-réseaux et le nombre d’hôtes.</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt36">
+   	<text><![CDATA[<b>5</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt37">
+   	<text><![CDATA[<b>3</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt38">
+   	<text><![CDATA[<b>32</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt39">
+   	<text><![CDATA[<b>6</b>]]></text>
+   	</component>
+   	
+   	
+<component id="s2_ID_txt40">
+   	<text><![CDATA[<b>sssss</b><font color="#990000"><b>hhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt41">
+   	<text><![CDATA[<b>Notre exemple de réseau dispose de moins de six hôtes. Si nous devions réellement découper ce réseau en sous-réseaux, serait-il préférable de le diviser en deux sous-réseaux ou en autant de sous-réseaux prenant en charge 6 hôtes ?</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt42">
+   	<text><![CDATA[<b>6</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt43">
+   	<text><![CDATA[<b>2</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt44">
+   	<text><![CDATA[<b>64</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt45">
+   	<text><![CDATA[<b>2</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt46">
+   	<text><![CDATA[<b>ssssss</b><font color="#990000"><b>hh</b></font>]]></text>
+   	</component>
+
+<!--  Slide 3  -->
+
+
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>La fonction NAT permet à un large groupe d’utilisateurs privés d’accéder à Internet en partageant un petit nombre d’adresses IP publiques, ce qui réduit l’utilisation d’adresses IP uniques.</li><br/><li>Les adresses internes sont des adresses IP pour les périphériques réseau privés. Les adresses externes sont des adresses IP pour les périphériques réseau publics. Les adresses locales sont des adresses IP dans des paquets appartenant au réseau privé. Les adresses globales sont des adresses IP qui transitent sur le réseau externe.</li><br/><li>Un paquet traduit se trouvant sur le réseau externe affiche une adresse IP globale interne libellée « source » et une adresse IP globale externe libellée « destination ».</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_txt01">
+   	<text><![CDATA[<b>Réseau local <br>interne</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt02">
+   	<text><![CDATA[<b>Réseaux <br>globaux externes</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt03">
+   	<text><![CDATA[<b>Pool d’adresses NAT</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt03_1">
+   	<text><![CDATA[<b>209.165.202.129</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt03_2">
+   	<text><![CDATA[<b>209.165.202.130</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt04">
+    	<text><![CDATA[<b>Serveur distant<br>209.165.200.226</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt05">
+    	<text><![CDATA[<b>FAI</b>]]></text>
+   	</component>
+
+  	  <component id="s3_ID_txt56">
+       	<text><![CDATA[<b>192.168.1.106</b>]]></text>
+   	</component>
+
+
+
+<!--  Slide 4  -->
+
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>La fonction NAT statique est utilisée pour les traductions permanentes individuelles d’une adresse IP locale interne en adresse IP globale interne.</li><br/><li>La fonction NAT dynamique affecte à un réseau ou sous-réseau particulier des adresses IP globales internes appartenant à un pool d’adresses IP disponible, au fur et à mesure qu’elles se présentent. </li><br/><li>La fonction PAT peut être utilisée pour ajouter un numéro de port à l’adresse IP pour des connexions particulières.</li><br/><li>Les périphériques réseau qui utilisent la fonction NAT traduisent les adresses sur chaque paquet. Cette procédure peut sensiblement augmenter le volume de traitement.</li><br/><li>IPv6 intègre un système d’adressage de 128 bits, tandis que IPv4 utilise un système de 32 bits.</li></ul>]]></text>
+</component>
+
+   
+   <component id="s4_ID_txt01a">
+      <text><![CDATA[<b>Serveur Web et de messagerie de la société</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt02a">
+      <text><![CDATA[<b>Routeur à services intégrés</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt03a">
+      <text><![CDATA[<b>FAI</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt04">
+      <text><![CDATA[<b>Sous-réseau sans fil</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt05">
+      <text><![CDATA[<b>Nouveau routeur à services intégrés</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt06">
+      <text><![CDATA[<b><font size="-2">Nouveau commutateur</font></b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt07">
+      <text><![CDATA[<b>Sous-réseau filaire</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt08">
+       <text><![CDATA[<b>Réseau local</b>]]></text>
+   </component>
+   <component id="s4_ID_txt09">
+         <text><![CDATA[<b>Internet public</b>]]></text>
+   </component>
+     <component id="s4_ID_txt10">
+           <text><![CDATA[<b>1 adresse IP publique</b>]]></text>
+   </component>
+     <component id="s4_ID_txt11">
+           <text><![CDATA[<b>40 utilisateurs privés</b>]]></text>
+   </component>
+
+
+<!--  Slide 5  -->
+
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>Le protocole FTP est utilisé pour les services de transfert de fichiers. Le fournisseur de services Internet prend en charge les connexions FTP actives et passives. Les connexions actives impliquent que le serveur démarre la connexion. Les connexions passives impliquent que l’hôte démarre la connexion.</li><br/><li>La messagerie utilise trois protocoles différents, à savoir SMTP, POP3 et IMAP. Le protocole SMTP permet d’envoyer des courriels. Les protocoles POP3 et IMAP permettent de récupérer des courriels. </li></ul>]]></text>
+</component>
+
+  <component id="s5_ID_txt01">
+                  <text><![CDATA[<b>Envoyé à destinataire@cisco.com</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt02">
+                  <text><![CDATA[<b>Serveur de messagerie du FAI A</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt03">
+                  <text><![CDATA[<b>Serveur de messagerie du FAI B</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt04">
+                  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt05">
+                  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt06">
+                  <text><![CDATA[<b>IMAP ou POP3</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt07">
+                  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt08">
+                  <text><![CDATA[<b>Expéditeur</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt09">
+                  <text><![CDATA[<b>Destinataire</b>]]></text> 
+  </component>
+
+
+</textcomponents>

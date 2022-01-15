@@ -1,0 +1,5 @@
+<transcript lastedited="10.13.08 18:10:04">
+<title><content-text><![CDATA[3.4.3 Function of Switches]]></content-text></title>
+<brief><content-text><![CDATA[Diagram 3, Interactive<br><br>The diagram depicts how a collision is treated using switches.<br>There are two connected switches, Switch 1 and Switch 2. Switch 1 is connected to a hub, which has eight attached PC's labeled H1 through H8.<br>Switch 2 has eight attached PC's, also labeled H1 through H8.<br><br>Scenarios<br>One.<br>Two hosts on the hub that are attached to Switch 1 send a packet at the same time, causing a collision.<br>The hub on Switch 1 broadcasts the garbled packet to all hosts, including Switch 1.<br>Switch 1 discards the packet and does not forward it to Switch 2.<br><br>Two.<br>A host on the Switch 1 hub sends a packet to a host on Switch 2.<br>The hub on Switch1 broadcasts the packet to all ports, except the source.<br>Switch 1 sends packet to Switch 2.<br>Switch 2 sends packet to the destination host on the hub.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

@@ -1,0 +1,82 @@
+﻿<textcomponents>
+  <component id="ID_txt01"><text><![CDATA[Adresse de sous-réseau : 192.168.77.32  255.255.255.224]]></text> 
+  </component>
+  
+  <component id="ID_txt02"><text><![CDATA[Adresse de comparaison/de base : 192.168.77.32  0.0.0.31]]></text> 
+  </component>
+  
+  <component id="ID_txt03"><text><![CDATA[Bits correspondants]]></text> 
+  </component>
+  
+  <component id="ID_txt04"><text><![CDATA[Bits non correspondants]]></text> 
+  </component>
+  
+  <component id="tipTitle">
+<text><![CDATA[Plus d’info ]]></text>
+</component>
+<component id="tipBody">
+<text><![CDATA[Un réseau qui est une classe A, B ou C complète dispose d’un masque de sous-réseau et d’un masque générique qui se divisent équitablement sur une limite d’octet. Les sous-réseaux qui ne se terminent pas par une limite d’octet produisent une valeur de masque générique différente. Une limite d’octet se situe entre le premier et le deuxième octet ou entre le deuxième et le troisième.<br><br>Exemple : un sous-réseau de classe A par défaut se trouve entre les bits 8 et 9. La fin a lieu à la fin d’un octet et au début du suivant ; on dit qu’il se trouve à la limite de l’octet suivant.]]></text>
+</component>
+
+<component id="TipText">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+   
+  <component id="ID_table1">
+  		<text><![CDATA[
+
+  <table>
+    <tr>
+      <td width="90" bgcolor='#DDDDDD'><font color='#000000'><b>Valeur du bit</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>128</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>64</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>32</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>16</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>8</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>4</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>2</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>1</b></font></td>
+      <td width="90" bgcolor='#DDDDDD'><font color='#000000'><b>Valeur décimale</b></font></td>
+    </tr>
+    <tr>
+            <td width="90" bgcolor='#F2F2F2'><font color='#000000'><b>Que des 1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="90" bgcolor='#F2F2F2'><font color='#000000'><b>255</b></font></td>
+    </tr>
+    <tr>
+      <td width="90" bgcolor='#DDDDDD'><font color='#000000'><b>Masque de sous-réseau</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="90" bgcolor='#DDDDDD'><font color='#000000'><b>224</b></font></td>
+    </tr>
+    <tr>
+      <td width="90" bgcolor='#F2F2F2'><font color='#000000'><b>Masque générique</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="90" bgcolor='#F2F2F2'><font color='#000000'><b>31</b></font></td>
+    </tr>
+</table>
+  ]]></text>
+	</component>
+  
+  
+</textcomponents>

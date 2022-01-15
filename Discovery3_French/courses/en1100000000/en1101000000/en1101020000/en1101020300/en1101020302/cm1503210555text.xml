@@ -1,0 +1,93 @@
+﻿<textcomponents>  
+<component id="ID_inst">
+  <text><![CDATA[<b>Click Play to advance the animation for each step in processing traffic using QoS.</b>]]></text> 
+</component>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Classification</b>]]></text> 
+</component>
+
+<component id="ID_body01">
+  <text><![CDATA[Data from different applications moving toward output router interface.<br/><br/>Press <b>Play</b> to continue the animation.]]></text> 
+</component>
+
+<component id="ID_title02">
+  <text><![CDATA[<b>Pre-Queuing</b>]]></text> 
+</component>
+
+<component id="ID_body02">
+  <text><![CDATA[Data classified based on application, such as voice traffic, video traffic, FTP traffic, and so on.<br/><br/>Red items represent unwanted traffic being filtered from the group.<br/><br/>Press <b>Play</b> to continue the animation.]]></text> 
+</component>
+
+<component id="ID_title03">
+  <text><![CDATA[<b>Queuing and Scheduling</b>]]></text> 
+</component>
+
+<component id="ID_body03">
+  <text><![CDATA[Traffic is placed into queues based on preconfigured priority.  Traffic in the higher priority queues (ex. P1, P2) is sent before lower priority traffic (ex. P5, P6).<br/><br/>Example: Voice traffic does not tolerate delays so it is placed into the highest priority queue and sent first.<br/><br/>Press <b>Play</b> to continue to the end of the animation.]]></text> 
+</component>
+
+<component id="ID_P1">
+  <text><![CDATA[<b>P1</b>]]></text> 
+</component>
+
+<component id="ID_P2">
+  <text><![CDATA[<b>P2</b>]]></text> 
+</component>
+
+<component id="ID_P3">
+  <text><![CDATA[<b>P3</b>]]></text> 
+</component>
+
+<component id="ID_P4">
+  <text><![CDATA[<b>P4</b>]]></text> 
+</component>
+
+<component id="ID_P5">
+  <text><![CDATA[<b>P5</b>]]></text> 
+</component>
+
+<component id="ID_P6">
+  <text><![CDATA[<b>P6</b>]]></text> 
+</component>
+
+<component id="ID_bridge01">
+  <text><![CDATA[<b>CLASSIFICATION</b>]]></text> 
+</component>
+
+<component id="ID_bridge02">
+  <text><![CDATA[<b>PRE-QUEUING</b>]]></text> 
+</component>
+
+<component id="ID_bridge03">
+  <text><![CDATA[<b>QUEUING AND SCHEDULING</b>]]></text> 
+</component>
+
+   <component id="play">
+      <text>Play</text>
+   </component>
+   <component id="pause">
+      <text>Pause</text>
+   </component>
+   <component id="rewind">
+      <text>Rewind</text>
+   </component>
+   <component id="forward">
+      <text>Fast Forward</text>
+   </component>
+   <component id="mute">
+      <text>Mute</text>
+   </component>
+   <component id="unmute">
+      <text>UnMute</text>
+   </component>
+   <component id="previous">
+      <text>Restart</text>
+   </component>
+   <component id="next">
+      <text>End</text>
+   </component>
+   <component id="transcript">
+      <text>Transcript</text>
+   </component>
+</textcomponents>

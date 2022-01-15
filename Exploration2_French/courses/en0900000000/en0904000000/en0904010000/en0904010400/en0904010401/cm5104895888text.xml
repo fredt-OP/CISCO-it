@@ -1,0 +1,28 @@
+﻿<textcomponents>
+  
+<component id="ID_title01">
+  <text><![CDATA[<b>Advantages & Disadvantages of Distance Vector Routing Protocols</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF"><b>Advantages:</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF"><b>Disadvantages:</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Simple implementation and maintenance.</b> The level of knowledge required to deploy and later maintain a network with distance vector protocol is not high.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Slow convergence.</b> The use of periodic updates can cause slower convergence. Even if some advanced techniques are used, like triggered updates which are discussed later, the overall convergence is still slower compared to link state routing protocols.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Low resource requirements.</b> Distance vector protocols typically do not need large amounts of memory to store the information. Nor do they require a powerful CPU. Depending of the network size and the IP addressing implemented they also typically do not require a high level of link bandwidth to send routing updates. However, this can become an issue if you deploy a distance vector protocol in a large network.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Limited scalability.</b> Slow convergence may limit the size of the network because larger networks require more time to propagate routing information.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Routing loops.</b> Routing loops can occur when inconsistent routing tables are not updated due to slow convergence in a changing network.</td>
+	</tr>
+</table>]]></text>
+</component>
+  
+</textcomponents>

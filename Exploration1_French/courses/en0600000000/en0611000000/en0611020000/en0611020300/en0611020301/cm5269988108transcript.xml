@@ -1,0 +1,5 @@
+<transcript lastedited="01.26.09 10:01:10">
+<title><content-text><![CDATA[11.2.3 - Managing Configuration Files]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts checking configuration files using the following command. This lists the complete configuration currently active in RAM.<br><br>Router#show running-configuration<br>Version 12.2<br><br>hostname Router<br><br>interface FastEthernet0/0<br><br>  no i p address<br>  duplex auto<br>  speed auto<br>  shutdown<br><br>interface Serial0/0<br>  no i p address<br>  shutdown<br><br>interface Serial0/1<br>  no i p address<br>  shutdown<br><br>The active configuration can be copied to NV RAM using the following command:<br>Router#copy running-configuration startup-configuration]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

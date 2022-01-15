@@ -1,0 +1,154 @@
+﻿<textcomponents>
+<component id="ID_checkBtn">
+<text><![CDATA[<b>Vérifier</b>]]></text> 
+</component>
+
+<component id="ID_newProblemBtn">
+<text><![CDATA[<b>Nouveau problème pratique</b>]]></text> 
+</component>
+
+<component id="ID_helpBtn">
+<text><![CDATA[<b>Aide</b>]]></text> 
+</component>
+
+<component id="ID_helpTitle">
+<text><![CDATA[<b>Aide</b>]]></text> 
+</component>
+
+<component id="ID_helpContent">
+<text><![CDATA[Cet exercice teste vos connaissances relatives au mode de transfert d’une trame sur un commutateur.<br />Cliquez sur le bouton « Vérifier » pour vérifier votre réponse. Cliquez sur le bouton <br />« Nouveau problème pratique » pour lancer un nouvel exercice pratique informatique.<br /><br />Le système vous fournit la topologie physique et la table d’adresses MAC du commutateur. Le système vous fournit également une trame avec une adresse MAC source et une adresse MAC de destination. Ces exercices informatisés comportent une paire source-destination qui utilise l’une des adresses illustrées dans la topologie. Les activités personnalisées peuvent faire appel aux adresses appropriées de la table MAC et de la trame.<br /><br />1.<textformat blockindent="20"> Votre objectif consiste à déterminer comment le commutateur traite cette trame étant donnée la table d’adresses MAC affichée.</textformat><br />2. <textformat blockindent="20">Pour la première question, vérifiez les numéros de port pour indiquer où (le cas échéant) le commutateur transmet cette trame.</textformat><br />3. <textformat blockindent="20">Pour la deuxième question, vérifiez les options correspondantes pour indiquer comment un commutateur gère la trame.</textformat><br />4. <textformat blockindent="20">Cliquez sur le bouton Vérifier pour voir si votre réponse est correcte.</textformat><br /><br /><b>Aide supplémentaire :</b><br />FF est une adresse MAC de diffusion transmise à tous les ports, à l’exception du port d’origine. <br /><br />Une trame <b>inonde</b> tous les ports (sauf l’origine) seulement si le commutateur ne dispose pas de l’adresse MAC de destination dans la table MAC. <br /><br />En effet, le commutateur ajoute uniquement une nouvelle adresse MAC dans la table MAC en fonction de l’adresse MAC source. Si l’adresse MAC source figure déjà dans la table, rien n’est ajouté ni enregistré. En revanche, si l’adresse MAC source ne figure pas dans la table, elle est ajoutée.  <br /><br />Un commutateur abandonne une trame si les périphériques source et de destination sont connectés au même port et si une adresse MAC de destination figure dans la table MAC. Dans cet exercice, il en est ainsi sur le seul port connecté au concentrateur avec deux périphériques hôtes.<br />]]></text> 
+</component>
+
+<component id="ID_activityTitle">
+<text><![CDATA[<b>Exercice</b>]]></text> 
+</component>
+
+<component id="ID_scenario">
+<text><![CDATA[Déterminez comment le commutateur transmet une trame en fonction des adresses MAC source et de destination et des informations dans la table MAC.<br/><br/><b>Répondez aux questions ci-dessous à l’aide des informations données.</b>]]></text> 
+</component>
+
+<!--Frame Table-->
+<component id="ID_preamble">
+<text><![CDATA[<b>Préambule</b>]]></text> 
+</component>
+
+<component id="ID_dstMac">
+<text><![CDATA[<b>MAC de destination</b>]]></text> 
+</component>
+
+<component id="ID_srcMac">
+<text><![CDATA[<b>MAC source</b>]]></text> 
+</component>
+
+<component id="ID_length">
+<text><![CDATA[<b>Longueur/Type</b>]]></text> 
+</component>
+
+<component id="ID_enData">
+<text><![CDATA[<b>Données encapsulées</b>]]></text> 
+</component>
+
+<component id="ID_endOfFrame">
+<text><![CDATA[<b>Fin de trame</b>]]></text> 
+</component>
+
+<component id="ID_hub">
+<text><![CDATA[<b>Concentrateur</b>]]></text> 
+</component>
+
+<!--MAC Table-->
+<component id="ID_macTable">
+<text><![CDATA[<b>Table MAC</b>]]></text> 
+</component>
+
+<!--Questions-->
+<component id="ID_question1">
+<text><![CDATA[<b>1. </b><textformat blockindent="14">Où le commutateur va-t-il transmettre la trame ?</textformat>]]></text> 
+</component>
+
+<component id="ID_question2">
+<text><![CDATA[<b>2. </b><textformat blockindent="14">Lorsque le commutateur transmet la trame, quels énoncés sont vrais ?</textformat>]]></text> 
+</component>
+
+<component id="ID_Q2_choice1">
+<text><![CDATA[Le commutateur ajoute l’adresse MAC source dans la table MAC.]]></text> 
+</component>
+
+<component id="ID_Q2_choice2">
+<text><![CDATA[La trame est une trame de diffusion ; elle est transférée à tous les ports.]]></text> 
+</component>
+
+<component id="ID_Q2_choice3">
+<text><![CDATA[La trame est une trame de monodiffusion ; elle est envoyée à un seul port désigné.]]></text> 
+</component>
+
+<component id="ID_Q2_choice4">
+<text><![CDATA[La trame est une trame de monodiffusion ; elle inonde tous les ports.]]></text> 
+</component>
+
+<component id="ID_Q2_choice5">
+<text><![CDATA[La trame est une trame de monodiffusion, mais elle est abandonnée au niveau du commutateur.]]></text> 
+</component>
+
+<!--Feedback text-->
+
+<component id="ID_correct1">
+<text><![CDATA[<b>Correct ! Vous avez bien répondu à toutes les questions en fonction des informations sur la trame et la table MAC.</b>]]></text> 
+</component>
+
+<component id="ID_sourceDestNotEntered">
+<text><![CDATA[<b>Saisissez une adresse source et de destination pour la trame.<br> Les adresses de destination peuvent être FF pour indiquer une trame de diffusion.</b>]]></text> 
+</component>
+
+<component id="ID_frameBroadcastOnly">
+<text><![CDATA[<b>Incorrect. Votre réponse à la question 2 (mode de gestion de la trame par le commutateur en fonction de l’adresse de destination) est incorrecte. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_frameUnicastOnly">
+<text><![CDATA[<b>Incorrect. Votre réponse à la question 2 (mode de gestion de la trame par le commutateur en fonction de l’adresse de destination) est incorrecte. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_frameDropped">
+<text><![CDATA[<b>Incorrect. Votre réponse à la question 2 (mode de gestion de la trame par le commutateur en fonction de l’adresse de destination) est incorrecte. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_frameDroppedSwitch">
+<text><![CDATA[<b>Incorrect. Votre réponse à la question 2 (mode de gestion de la trame par le commutateur en fonction de l’adresse de destination) est incorrecte. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_sourceNotInTable">
+<text><![CDATA[<b>Incorrect. Votre réponse à la question 2 (mode de gestion de l’adresse MAC source par le commutateur) est incorrecte. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_sourceInTable">
+<text><![CDATA[<b>Incorrect. Votre réponse à la question 2 (mode de gestion de l’adresse MAC source par le commutateur) est incorrecte. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_frameNotForwardedBack">
+<text><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_incorrectPortChecked">
+<text><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_incorrectPortNotChecked">
+<text><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_connectePortNotChecked">
+<text><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_inactivePortsChecked">
+<text><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_destPortNotChecked">
+<text><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></text> 
+</component>
+
+<component id="ID_unicastFloodNotChecked">
+<text><![CDATA[<b>Incorrect. Votre réponse à la question 2 (mode de gestion de la trame par le commutateur en fonction de l’adresse de destination) est incorrecte. Réessayez.</b>]]></text> 
+</component>
+</textcomponents>

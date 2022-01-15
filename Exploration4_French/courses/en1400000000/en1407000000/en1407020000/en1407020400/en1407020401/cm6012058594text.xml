@@ -1,0 +1,62 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Configuring Static NAT</b>]]></text>
+</component>
+<component id="table">
+    <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td width='80' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Step</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Action</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Notes</b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Establish static translation between an inside local address and an inside global address. <font face='_typewriter'>Router(config)#<B>ip nat inside source static </B><i>local-ip global-ip</i></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the global command <font face='_typewriter'><B>no ip nat inside source static</B></font> to remove the static source translation.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Specify the inside interface. <font face='_typewriter'>Router(config)#<B>interface </B><i>type number</i></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the <font face='_typewriter'><B>interface</B></font> command. The CLI prompt will change from <font face='_typewriter'>(config)#</font> to<font face='_typewriter'>(config-if)#.</font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>3</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Mark the interface as connected to the inside. <font face='_typewriter'>Router(config-if)#<B>ip nat inside</B></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>4</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Exit interface configuration mode.<BR/><font face='_typewriter'>Router(config-if)# <B>exit</B></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>5</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Specify the outside interface. <font face='_typewriter'>Router(config)#<B>interface </B><I>type number</I></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Mark the interface as connected to the outside. <font face='_typewriter'>Router(config-if)#<B>ip nat outside</B></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+</table>]]></text>  
+  </component>
+<component id="ID_txt01">
+  <text><![CDATA[<b>Server</b>]]></text> 
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Inside network</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>With this configuration,</b> 192.168.10.254 <b>will always translate to</b> 209.165.200.254]]></text> 
+  </component>
+<component id="ID_button1">
+  <text><![CDATA[<b>Commands</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Example</b>]]></text> 
+</component>
+</textcomponents>

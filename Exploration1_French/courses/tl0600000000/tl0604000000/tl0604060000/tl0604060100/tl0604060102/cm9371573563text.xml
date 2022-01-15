@@ -1,0 +1,321 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Effectuez cet exercice pour vérifier que vous avez compris les principaux points de ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va vous être présentée. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante de la série.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1. <textformat blockindent='14'>Où les processus de la couche transport s’exercent-ils ?</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[Les processus de la couche transport se produisent entre la couche application et la couche Internet du modèle TCP/IP, et entre la couche session et la couche réseau du modèle OSI.]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. <textformat blockindent='14'>De quoi est chargée la couche transport ?</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<p>La couche transport est chargée de :</p><ol><li>réaliser un suivi des conversations individuelles qui ont lieu entre les applications sur les hôtes source et de destination ;</li><li>segmenter les données et ajouter un en-tête pour identifier et gérer chaque segment ;</li><li>utiliser les informations de l’en-tête pour réassembler les segments en données d’application ;</li><li>transférer les données réassemblées à l’application appropriée.</li></ol>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3. <textformat blockindent='14'>Qu’apporte la segmentation aux communications ?</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[<p>La segmentation des données, conformément aux protocoles de la couche transport, permet d’envoyer aussi bien que de recevoir des données quand plusieurs applications s’exécutent simultanément sur un ordinateur.</p>]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4. <textformat blockindent='14'>Quelles sont les principales fonctions des protocoles de la couche transport ?</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[<p>Les principales fonctions de tous les protocoles de la couche transport incluent :</p><ul><li><b>Multiplexage des conversations</b>. Plusieurs applications ou services peuvent s’exécuter simultanément sur chaque hôte du réseau. Chaque application ou service se voit affecter une adresse connue faisant office de port afin que la couche transport puisse déterminer quelle application ou quel service est identifié(e).</li><li><b>Segmentation et réassemblage</b>. La plupart des réseaux limitent la quantité de données pouvant être incluses dans une même unité de données de protocole. La couche transport divise les données d’application en blocs de données de taille appropriée. Quand les données arrivent à destination, la couche transport les réassemble avant de les envoyer vers l’application ou le service de destination.</li><li><b>Contrôle des erreurs</b>. Des contrôles des erreurs simples peuvent être exécutés sur les données du segment pour déterminer si les données ont été modifiées lors de la transmission.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5. <textformat blockindent='14'>Dans un contexte réseau, qu’est-ce que la fiabilité ?</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[<p>Dans un contexte réseau, le terme <i>fiabilité</i> signifie s’assurer que chaque segment envoyé par la source parvient à destination.</p>]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6. <textformat blockindent='14'>Citez trois types d’applications qui utilisent le protocole TCP.</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[<p>Les applications qui utilisent le protocole TCP sont des applications de :</p><ul><li>Navigation sur le Web</li><li>Messagerie</li><li>Transfert de fichiers</li></ul>]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7. <textformat blockindent='14'>Citez trois types d’applications qui utilisent le protocole UDP.</textformat> ]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<p>Les applications qui utilisent le protocole UDP sont des applications de :</p><ul><li>Résolution de noms de domaines</li><li>Lecture vidéo en continu</li><li>Voix sur IP</li></ul>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8.<textformat blockindent='14'> Quels sont les différents types de numéros de port ?</textformat>]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[<p>Les différents types de ports sont :</p><ul><li><b>Les ports réservés (numéros 0 à 1023)</b>. Ces numéros sont réservés pour les services et applications. Ils sont généralement réservés à des applications de type HTTP (serveur Web), POP3/SMTP (serveur de messagerie) et Telnet. En définissant ces ports réservés pour des applications serveur, il est possible de programmer les applications clientes pour qu’elles demandent une connexion à un port précis et au service qui lui est associé.</li><li><b>Les ports inscrits (numéros 1024 à 49151)</b>. Ces numéros de ports sont affectés à des processus ou applications d’utilisateurs. Il s’agit principalement d’applications individuelles qu’un utilisateur a choisi d’installer plutôt que d’applications courantes et universelles qui se verraient attribuer un port réservé.</li><li><b>Les ports dynamiques ou privés (numéros 49152 à 65535)</b>. Également appelés ports éphémères, ces ports sont généralement affectés de façon dynamique à des applications clientes lorsqu’une connexion est initiée. Il est relativement rare pour un client de se connecter à un service par le biais d’un port dynamique ou privé (bien que certains programmes de partage de fichiers Peer to peer le fassent).</li></ul>]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 9 -->
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9. <textformat blockindent='14'>Que contient l’en-tête de chaque segment ou datagramme ?</textformat>]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[<p>Les numéros des ports source et de destination</p>]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 10 -->
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10. <textformat blockindent='14'>À quoi sert un numéro d’ordre ?</textformat>]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[<p>Un numéro d’ordre permet aux fonctions de la couche transport, au niveau de l’hôte de destination, de réassembler les segments dans l’ordre de leur envoi.</p>]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q10_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 11 -->
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11.<textformat blockindent='14'> Citez une façon d’améliorer la sécurité sur un serveur.</textformat>]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[Pour améliorer la sécurité d’un serveur, il est possible de limiter l’accès au serveur aux seuls ports associés aux services et applications qui devraient être accessibles aux demandeurs autorisés.]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 12 -->
+
+<component id="ID_Q12_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q12_txt03">
+<text><![CDATA[12. <textformat blockindent='14'>Décrivez la connexion TCP en trois étapes :</textformat>]]></text>
+</component>
+<component id="ID_Q12_txt04">
+<text><![CDATA[<p>La connexion en trois étapes :</p><ul><li>vérifie que le périphérique de destination est bien présent sur le réseau ;</li><li>s’assure que le périphérique de destination a un service actif et qu’il accepte les requêtes sur le numéro de port de destination que le client qui démarre la session a l’intention d’utiliser ;</li><li>informe le périphérique de destination que le client source a l’intention d’établir une session de communication sur ce numéro de port.</li></ul>]]></text>
+</component>
+<component id="ID_Q12_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q12_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 13-->
+
+<component id="ID_Q13_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q13_txt03">
+<text><![CDATA[13. <textformat blockindent='14'>À quoi servent les numéros d’ordre TCP ?</textformat>]]></text>
+</component>
+<component id="ID_Q13_txt04">
+<text><![CDATA[<p>Pour que le destinataire puisse comprendre le message d’origine, il faut que les données contenues dans ces segments soient réagencées dans leur ordre d’origine.</p>]]></text>
+</component>
+<component id="ID_Q13_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q13_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 14 -->
+
+<component id="ID_Q14_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q14_txt03">
+<text><![CDATA[14. <textformat blockindent='14'>Expliquez ce qu’est un accusé de réception prévisionnel.</textformat>]]></text>
+</component>
+<component id="ID_Q14_txt04">
+<text><![CDATA[<p>Le protocole TCP utilise le numéro d’accusé de réception des segments renvoyés à la source pour indiquer l’octet suivant de cette session que le récepteur s’attend à recevoir.</p>]]></text>
+</component>
+<component id="ID_Q14_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q14_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 15 -->
+
+<component id="ID_Q15_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q15_txt03">
+<text><![CDATA[15. <textformat blockindent='14'>Que fait le protocole TCP quand il n’a pas reçu un accusé de réception après un délai prédéterminé ?</textformat>]]></text>
+</component>
+<component id="ID_Q15_txt04">
+<text><![CDATA[<p>Quand le protocole TCP sur l’hôte source n’a pas reçu un accusé de réception après un délai prédéterminé, il revient au dernier numéro d’accusé de réception reçu et retransmet les données à partir de ce point.</p>]]></text>
+</component>
+<component id="ID_Q15_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q15_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 16 -->
+
+<component id="ID_Q16_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q16_txt03">
+<text><![CDATA[16. <textformat blockindent='14'>Le volume de données pouvant être transmis avant qu’il ne soit nécessaire de recevoir un accusé de réception TCP est appelé :</textformat>]]></text>
+</component>
+<component id="ID_Q16_txt04">
+<text><![CDATA[La taille de fenêtre]]></text>
+</component>
+<component id="ID_Q16_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q16_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 17 -->
+
+<component id="ID_Q17_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q17_txt03">
+<text><![CDATA[17. <textformat blockindent='14'>Citez les principaux protocoles de la couche application qui utilisent le protocole UDP.</textformat>]]></text>
+</component>
+<component id="ID_Q17_txt04">
+<text><![CDATA[<p>Les protocoles de la couche application qui utilisent le protocole UDP sont les protocoles :</p><ul><li>DNS (Domain Name System)</li><li>SNMP (Simple Network Management Protocol)</li><li>DHCP (Dynamic Host Configuration Protocol)</li><li>RIP (Routing Information Protocol)</li><li>TFTP (Trivial File Transfer Protocol)</li><li>Jeux en ligne</li></ul>]]></text>
+</component>
+<component id="ID_Q17_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Vous avez passé en revue toutes les questions de la partie « Problèmes et discussion » du présent chapitre.</b>]]></text>
+</component>
+
+</textcomponents>

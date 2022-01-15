@@ -1,0 +1,5 @@
+<transcript lastedited="10.08.08 10:10:21">
+<title><content-text><![CDATA[3.3.2 - Configuring a Virtual LAN]]></content-text></title>
+<brief><content-text><![CDATA[The animation depicts a man sitting at a workstation. The man says I am deleting V LAN 27. I am also disassociating port 8 from V LAN 28.<br><br>Switch(config) # interface F A 0 /8<br>Switch(config-if)# no switchport access V LAN 28<br>Switch(config-if)# exit<br>Switch(config)# no V LAN 27<br>Switch(config)# end<br>Switch # show V LAN<br><br>The output shows the V LAN, Name, Status, and Ports.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

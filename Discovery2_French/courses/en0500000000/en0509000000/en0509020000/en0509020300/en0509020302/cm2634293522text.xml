@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+<component id="head01">
+<text><![CDATA[<b>Media Problem</b>]]></text>
+</component>
+
+<component id="ID_s1_table">
+<text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#000000' borderwidth='2' shadow='true' shadowcolor='#CCCCCC' glow='false' glowcolor='#FFBA51' cellpadding='5'>
+  <tr>
+    <td colspan="2"><font color="#FFFFFF"><b>Excessive Noise Solution</b></font></td>
+  </tr>
+  <tr>
+    <td width="70">Step 1</td>
+    <td>Use the show interface command to determine the status of the Ethernet interfaces. The presence of many CRC errors but not many collisions is an indication of excessive noise. </td>
+  </tr>
+  <tr>
+    <td width="70">Step 2</td>
+    <td>Inspect the cables for damage or sources of interference.</td>
+  </tr>
+  <tr>
+    <td width="70">Step 3</td>
+    <td>Verify that the correct cable and termination standard is in use for the speed of the interface.</td>
+  </tr>
+  <tr>
+    <td width="70">Step 4</td>
+    <td>If using 1000BASE-TX, make sure that Category 5e or above cabling is being used.</td>
+  </tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_s2_table">
+  <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#000000' borderwidth='2' shadow='true' shadowcolor='#CCCCCC' glow='false' glowcolor='#FFBA51' cellpadding='5'>
+  <tr>
+    <td colspan="2"><font color="#FFFFFF"><b>Excessive Collisions Solution</b></font></td>
+  </tr>
+  <tr>
+    <td width="70">Step 1</td>
+    <td><p>Use the show interface command to check the rate of collisions. The total number of collisions with respect to the total number of output packets should be 1% or less.</p></td>
+  </tr>
+  <tr>
+    <td width="70">Step 2</td>
+    <td>Use a TDR to find any damaged cables.</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+  
+  
+<component id="ID_s3_table">
+  <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#000000' borderwidth='2' shadow='true' shadowcolor='#CCCCCC' glow='false' glowcolor='#FFBA51' cellpadding='5'>
+  <tr>
+    <td colspan="2"><font color="#FFFFFF"><b>Excessive Runt Frames</b></font></td>
+  </tr>
+  <tr>
+    <td width="70">Step 1</td>
+    <td><p>In a shared Ethernet environment, runt frames are almost always caused by collisions. If the collision rate is high, see the &quot;Excessive collisions&quot; problem.</p></td>
+  </tr>
+  <tr>
+    <td width="70">Step 2</td>
+    <td>If runt frames occur when collision rates are not high or in a switched Ethernet environment, they are the result of bad software on a NIC. </td>
+  </tr>
+  <tr>
+    <td width="70">Step 3</td>
+    <td>Use a protocol analyzer to try to determine the source address of the runt frames.</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+  
+<component id="ID_s4_table">
+  <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#000000' borderwidth='2' shadow='true' shadowcolor='#CCCCCC' glow='false' glowcolor='#FFBA51' cellpadding='5'>
+  <tr>
+    <td colspan="2"><font color="#FFFFFF"><b>Late Collisions</b></font></td>
+  </tr>
+  <tr>
+    <td width="70">Step 1</td>
+    <td><p>Use a protocol analyzer to check for late collisions. Late collisions should never occur in a properly designed Ethernet network. They usually occur when Ethernet cables are too long or when a duplex mismatch occurs.</p></td>
+  </tr>
+  <tr>
+    <td width="70">Step 2</td>
+    <td>Verify that the diameter of the network is within specification.</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+  
+<component id="ID_button1">
+  <text><![CDATA[<b>Excessive Noise</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Excessive Collisions</b>]]></text> 
+</component>
+<component id="ID_button3">
+  <text><![CDATA[<b>Excessive Runt Frames</b>]]></text> 
+</component>
+<component id="ID_button4">
+  <text><![CDATA[<b>Late Collisions</b>]]></text> 
+</component>
+</textcomponents>

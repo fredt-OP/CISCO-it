@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mainnode>
+	<guiText>
+		<checkBtn><![CDATA[<b>Vérifier</b>]]></checkBtn>
+		<newProblemBtn><![CDATA[<b>Nouveau problème pratique</b>]]></newProblemBtn>
+	</guiText>
+	
+	<errorMessages>
+		<sourceDestNotEntered><![CDATA[<b>Saisissez une adresse source et de destination pour la trame.<br> Les adresses de destination peuvent être FF pour indiquer une trame de diffusion.]]></sourceDestNotEntered>
+		<frameBroadcastOnly><![CDATA[<b>Incorrect. Votre réponse à la question 2 est incorrecte. Réessayez.</b>]]></frameBroadcastOnly>
+		<frameUnicastOnly><![CDATA[<b>Incorrect. Votre réponse à la question 2 est incorrecte. Réessayez.</b>]]></frameUnicastOnly>
+		<frameDropped><![CDATA[<b>Incorrect. Votre réponse à la question 2 est incorrecte. Réessayez.</b>]]></frameDropped>
+		<frameDroppedSwitch><![CDATA[<b>Incorrect. Votre réponse à la question 2 est incorrecte. Réessayez.</b>]]></frameDroppedSwitch>
+		<sourceNotInTable><![CDATA[<b>Incorrect. Votre réponse à la question 2 est incorrecte. Réessayez.</b>]]></sourceNotInTable>
+		<sourceInTable><![CDATA[<b>Incorrect. Votre réponse à la question 2 est incorrecte. Réessayez.</b>]]></sourceInTable>
+		<frameNotForwardedBack><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></frameNotForwardedBack>
+		<incorrectPortChecked><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></incorrectPortChecked>
+		<incorrectPortNotChecked><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></incorrectPortNotChecked>
+		<connectePortNotChecked><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></connectePortNotChecked>
+		<inactivePortsChecked><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></inactivePortsChecked>
+		<destPortNotChecked><![CDATA[<b>Incorrect. Dans la question 1, le ou les ports sélectionnés sont incorrects. Réessayez.</b>]]></destPortNotChecked>
+		<unicastFloodNotChecked><![CDATA[<b>Incorrect. Votre réponse à la question 2 est incorrecte. Réessayez.</b>]]></unicastFloodNotChecked>
+	</errorMessages>
+	<correctMessages>
+		<correct1><![CDATA[<b>Correct ! Vous avez bien répondu à toutes les questions en fonction des informations sur la trame et la table MAC.</b>]]></correct1>
+	</correctMessages>
+</mainnode>

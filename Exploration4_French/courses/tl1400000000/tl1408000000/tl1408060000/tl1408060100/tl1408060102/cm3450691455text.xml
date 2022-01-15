@@ -1,0 +1,145 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) <textformat blockindent='17'>Expliquez la fonction et le contenu de la documentation du réseau, notamment la documentation du routeur, du commutateur et de l’utilisateur final, ainsi que des diagrammes topologiques du réseau.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(Section 8.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Documentation du routeur :</b><ul><li>La documentation du routeur doit comprendre le nom des routeurs, la désignation du modèle, l’emplacement dans l’entreprise (bâtiment, étage, salle, bâti, panneau), les interfaces configurées, les adresses des couches liaison de données et réseau, les protocoles de routage configurés et toute information importante sur le périphérique.</li></ul><b>Documentation du commutateur :</b><ul><li>La documentation du commutateur doit comprendre le nom des commutateurs, la désignation du modèle, l’emplacement dans l’entreprise (bâtiment, étage, salle, bâti, panneau), l’adresse IP de gestion, les noms de port et l’état, la vitesse, l’aspect bidirectionnel, l’état STP, le paramètre PortFast, l’état d’agrégation, L2 ou L3 EtherChannel, les ID de réseau local virtuel et toute information importante sur le périphérique.</li></ul><b>Documentation de l’utilisateur final :</b><ul><li>La documentation de l’utilisateur final doit comprendre le nom des serveurs et leur fonction, la version du système d’exploitation, l’adresse IP, les passerelles, le serveur de noms de domaine (DNS), l’application réseau et toute information importante sur le périphérique.</li></ul><b>Diagramme logique de la topologie du réseau :</b><ul><li>Représentation graphique utilisant des symboles pour identifier chaque périphérique réseau et son interconnexion.</li><li>Détaille également l’architecture logique, y compris les numéros et les types d’interface, les adresses IP, les masques de sous-réseau, les protocoles de routage, les domaines des systèmes autonomes et toute information importante supplémentaire, telle que les numéros DLCI et le protocole de couche 2.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) <textformat blockindent='17'>Décrivez les étapes recommandées pour la planification de la première ligne de base du réseau.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(Section 8.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Étape 1 : choix des types de données à collecter</b><ul><li>Commencez par sélectionner quelques variables qui représentent les stratégies définies et affinez votre choix au fur et à mesure.</li><li>L’utilisation de l’interface et l’utilisation de l’UC sont généralement des bonnes mesures de départ.</li></ul><b>Étape 2 : identification des périphériques et des ports intéressants</b><ul><li>Vous devez identifier les périphériques et les ports qui peuvent être intéressants, tels que les ports des périphériques réseau qui se connectent à d’autres périphériques réseau, les serveurs, les utilisateurs principaux et tout élément considéré comme vital pour le fonctionnement.</li></ul><b>Étape 3 : durée de la ligne de base</b><ul><li>Cette période doit couvrir au moins sept jours pour relever des tendances quotidiennes ou hebdomadaires et doit durer entre deux et quatre semaines.</li><li>N’effectuez pas de mesure de ligne de base lorsque le modèle de trafic est unique. </li><li>Calculez la ligne de base régulièrement, par exemple via l’analyse annuelle de l’ensemble du réseau, ou déterminez la ligne de base de différentes sections du réseau les unes après les autres.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) <textformat blockindent='17'>Décrivez les trois étapes du processus général du dépannage.</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(Section 8.2)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Étape 1 : recueil des symptômes :</b><ul><li>Les symptômes peuvent avoir différents aspects, notamment des alertes d’un système d’administration de réseaux, des messages de la console et des plaintes des utilisateurs.</li><li>Recueillez et documentez les symptômes sur le réseau, les systèmes d’extrémité et les utilisateurs.</li><li>Déterminez également les composants du réseau qui ont été affectés et la manière dont la fonctionnalité du réseau a changé par rapport à la ligne de base.</li></ul><b>Étape 2 : isolation du problème :</b><ul><li>Le problème n’est pas réellement isolé tant qu’un seul problème, ou un ensemble de problèmes associés, n’est pas identifié.</li><li>Analysez les caractéristiques des problèmes au niveau des couches logiques du réseau afin de pouvoir sélectionner la cause la plus probable.</li><li>En fonction des caractéristiques identifiées, recueillez et documentez plus de symptômes.</li></ul><b>Étape 3 : correction du problème :</b><ul><li>Essayez de corriger le problème en mettant en œuvre, en testant et en documentant une solution.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) <textformat blockindent='17'>Décrivez les trois principales méthodes de dépannage.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(Section 8.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Méthode de dépannage ascendante :</b><ul><li>Commencez par les composants physiques du réseau et remontez une à une les couches du modèle OSI jusqu’à ce que vous identifiiez la cause du problème.</li><li>Cette approche est conseillée lorsque vous pensez que le problème est physique.</li></ul><b>Méthode de dépannage descendante :</b><ul><li>Analysez tout d’abord l’application de l’utilisateur final.</li><li>Continuez l’analyse en descendant une à une les couches du modèle OSI jusqu’à ce que vous identifiiez la cause du problème.</li></ul><b>Méthode de dépannage Diviser et conquérir :</b><ul><li>Sélectionnez une couche et testez dans les deux directions à partir de la couche de départ.</li><li>Si vous pouvez vérifier qu’une couche fonctionne correctement, on peut généralement supposer que les couches inférieures fonctionnent.</li><li>Si une couche ne fonctionne pas correctement, recueillez les symptômes du problème au niveau de cette couche et analysez les couches inférieures les unes après les autres.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) <textformat blockindent='17'>Décrivez les six étapes permettant de concevoir ou de modifier un réseau étendu.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(Section 8.3)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Étape 1 : localisation des réseaux locaux :</b><ul><li>Établissez les points d’extrémité source et de destination qui se connecteront via le réseau étendu.</li></ul><b>Étape 2 : analyse du trafic :</b><ul><li>Déterminez quel trafic de données doit être acheminé, son origine, sa destination, les besoins en bande passante, la latence et la tolérance de gigue.</li></ul><b>Étape 3 : planification de la topologie :</b><ul><li>Identifiez les différents points d’extrémité, les considérations géographiques et les besoins en termes de disponibilité.</li></ul><b>Étape 4 : estimation de la bande passante requise :</b><ul><li>En fonction des points d’extrémité et des liaisons choisis, vous pouvez estimer la bande passante requise.</li></ul><b>Étape 5 : choix de la technologie de réseau étendu :</b><ul><li>Une fois que la disponibilité de la bande passante est déterminée, vous devez sélectionner les technologies de liaison adéquates.</li></ul><b>Étape 6 : évaluation des coûts :</b><ul><li>Déterminez les coûts d’installation et d’exploitation du réseau étendu et comparez-les aux besoins de l’entreprise à l’origine de la mise en œuvre du réseau étendu.</li></ul>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) <textformat blockindent='17'>Citez trois choses à vérifier lorsque vous dépannez des problèmes de couche 1.</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(Section 8.4)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>Vérifiez que les câbles ou les connexions sont corrects :</b><ul><li>Utilisez un testeur de câble pour vérifier que le câble de l’interface source est correctement connecté et en bon état.</li><li>Si l’intégrité d’un câble est suspecte, remplacez le câble en question par un câble fonctionnel.</li></ul><b>Vérifiez que la norme de câblage en vigueur est respectée sur l’ensemble du réseau :</b><ul><li>Vérifiez que le câble utilisé pour la connexion est approprié.</li></ul><b>Vérifiez que le câblage des périphériques est correct :</b><ul><li>Vérifiez que tous les câbles sont bien branchés aux ports ou aux interfaces adéquats.</li></ul><b>Vérifiez que les configurations d’interfaces sont correctes :</b><ul><li>Vérifiez que tous les ports de commutateur sont définis dans le bon réseau local virtuel et que les paramètres de Spanning Tree, de vitesse et d’option bidirectionnelle sont correctement configurés.</li><li>Confirmez qu’aucune interface ou port actif n’est arrêté.</li></ul><b>Consultez les statistiques d’utilisation et les taux d’erreurs des données :</b><ul><li>Utilisez les commandes « show » de Cisco pour rechercher des statistiques telles que les collisions et les erreurs d’entrée et de sortie.</li><li>Les caractéristiques de ces statistiques dépendent des protocoles utilisés sur le réseau.</li></ul>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) <textformat blockindent='17'>Énoncez trois causes de problèmes de couche 2.</textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[(Section 8.4)]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Causes des problèmes de couche 2 :</b><ul><li>Erreurs de mappage d’adresses</li><li>Erreurs de trames</li><li>Échecs ou boucles STP</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<font size='14'><b>Fin des questions portant sur les thèmes de ce chapitre.</b></font>]]></text>
+</component>
+</textcomponents>

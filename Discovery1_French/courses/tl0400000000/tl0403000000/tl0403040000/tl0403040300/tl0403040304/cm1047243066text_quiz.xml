@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="12511" dateexported="03/07/2007">
+		<name></name>
+		<form id="18985" lang="en"><form-item order="N/A" usage="N/A">
+			<ai id="111407" type="mc-sa">
+			<question><![CDATA[Que se passe-t-il si l'hôte 9 et l'hôte 12 envoient un message à travers le commutateur 2 en même temps ?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[Les deux trames entrent en collision et le commutateur transmet un message confus à tous les hôtes du réseau.]]></text>
+<feedback><![CDATA[Un commutateur envoie directement des messages aux hôtes connectés à partir de l'adresse MAC. Le commutateur permet également à plusieurs conversations d'avoir lieu en même temps et de garder des chemins distincts, une collision ne se produira donc pas.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Les deux trames entrent en collision et le commutateur transmet un message confus aux hôtes source et de destination prévus uniquement.]]></text>
+<feedback><![CDATA[Un commutateur envoie directement des messages aux hôtes connectés à partir de l'adresse MAC. Le commutateur permet également à plusieurs conversations d'avoir lieu en même temps et de garder des chemins distincts, une collision ne se produira donc pas.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[Les deux trames sont transmises au périphérique de destination correct sans qu'une collision ait lieu.]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Deux hôtes ne peuvent pas envoyer des informations par l'intermédiaire du commutateur en même temps, car les hôtes doivent attendre une trame de requête de données issue du commutateur.]]></text><feedback><![CDATA[Un commutateur envoie directement des messages aux hôtes connectés à partir de l'adresse MAC. Le commutateur permet également à plusieurs conversations d'avoir lieu en même temps et de garder des chemins distincts, une collision ne se produira donc pas.]]></feedback>
+									</choice></choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111408" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[Si l'hôte 9 envoie un message à l'hôte 6 et que l'adresse MAC de destination se trouve dans la table MAC pour le commutateur 1 et le commutateur 2, quels périphériques hôtes reçoivent le message ?]]></question><choices>
+									<choice correct="y">
+										<text><![CDATA[Seulement l'hôte 6]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Tous les hôtes connectés au commutateur 1]]></text>
+ <feedback><![CDATA[Un commutateur décode une trame et lit l'adresse MAC de destination. Il transmet directement la trame au port associé à l'adresse MAC de destination.]]></feedback>
+ 
+									</choice>
+									<choice correct="n">
+		<text><![CDATA[Tous les hôtes connectés au concentrateur 1 et les hôtes connectés au commutateur 1]]></text><feedback><![CDATA[Un commutateur décode une trame et lit l'adresse MAC de destination. Il transmet directement la trame au port associé à l'adresse MAC de destination.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Tous les hôtes sur le réseau]]></text> <feedback><![CDATA[Un commutateur décode une trame et lit l'adresse MAC de destination. Il transmet directement la trame au port associé à l'adresse MAC de destination.]]></feedback>
+									</choice></choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111409" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[Sur ce réseau, combien existe-t-il de domaines de collision ?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[Il y a 1 domaine de collision.]]></text><feedback><![CDATA[Chaque port du commutateur constitue un domaine de collision distinct. Dans cette topologie, il y a un total de dix domaines de collision. Tous les hôtes reliés au concentrateur sont intégrés en tant que partie du domaine de collision créé par le port du commutateur relié au concentrateur. La connexion entre le commutateur 1 et le commutateur 2 est un deuxième domaine de collision. Les huit connexions hôte entre le commutateur 1 et le commutateur 2 constituent les huit domaines de collision restants.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Il y a 2 domaines de collision.]]></text><feedback><![CDATA[Chaque port du commutateur constitue un domaine de collision distinct. Dans cette topologie, il y a un total de dix domaines de collision. Tous les hôtes reliés au concentrateur sont intégrés en tant que partie du domaine de collision créé par le port du commutateur relié au concentrateur. La connexion entre le commutateur 1 et le commutateur 2 est un deuxième domaine de collision. Les huit connexions hôte entre le commutateur 1 et le commutateur 2 constituent les huit domaines de collision restants.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Il y a 3 domaines de collision.]]></text><feedback><![CDATA[Chaque port du commutateur constitue un domaine de collision distinct. Dans cette topologie, il y a un total de dix domaines de collision. Tous les hôtes reliés au concentrateur sont intégrés en tant que partie du domaine de collision créé par le port du commutateur relié au concentrateur. La connexion entre le commutateur 1 et le commutateur 2 est un deuxième domaine de collision. Les huit connexions hôte entre le commutateur 1 et le commutateur 2 constituent les huit domaines de collision restants.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[Il y a 10 domaines de collision.]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Il y a 12 domaines de collision.]]></text><feedback><![CDATA[Chaque port du commutateur constitue un domaine de collision distinct. Dans cette topologie, il y a un total de dix domaines de collision. Tous les hôtes reliés au concentrateur sont intégrés en tant que partie du domaine de collision créé par le port du commutateur relié au concentrateur. La connexion entre le commutateur 1 et le commutateur 2 est un deuxième domaine de collision. Les huit connexions hôte entre le commutateur 1 et le commutateur 2 constituent les huit domaines de collision restants.]]></feedback>
+									</choice></choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111410" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[Si l'hôte 8 envoie un message à l'hôte 1 et que l'adresse MAC de destination se trouve dans la table MAC du commutateur, quels périphériques hôtes reçoivent le message ?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[Seulement l'hôte1]]></text><feedback><![CDATA[Quand le commutateur reçoit une trame, il la décode et lit les adresses MAC source et de destination. Il transmet uniquement la trame au port associé à l'adresse MAC de destination. Dans ce cas, ce port est relié au concentrateur. Quand le concentrateur reçoit la trame, il ne la décode pas. Il répète la trame sur tous les ports à tous les périphériques directement connectés, dont le commutateur.]]></feedback>
+
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[Tous les hôtes connectés au concentrateur 1]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Tous les hôtes connectés au commutateur 1]]></text><feedback><![CDATA[Quand le commutateur reçoit une trame, il la décode et lit les adresses MAC source et de destination. Il transmet uniquement la trame au port associé à l'adresse MAC de destination. Dans ce cas, ce port est relié au concentrateur. Quand le concentrateur reçoit la trame, il ne la décode pas. Il répète la trame sur tous les ports à tous les périphériques directement connectés, dont le commutateur.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Tous les hôtes connectés au concentrateur 1 et les hôtes connectés au commutateur 1]]></text><feedback><![CDATA[Quand le commutateur reçoit une trame, il la décode et lit les adresses MAC source et de destination. Il transmet uniquement la trame au port associé à l'adresse MAC de destination. Dans ce cas, ce port est relié au concentrateur. Quand le concentrateur reçoit la trame, il ne la décode pas. Il répète la trame sur tous les ports à tous les périphériques directement connectés, dont le commutateur.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Tous les hôtes sur le réseau]]></text><feedback><![CDATA[Quand le commutateur reçoit une trame, il la décode et lit les adresses MAC source et de destination. Il transmet uniquement la trame au port associé à l'adresse MAC de destination. Dans ce cas, ce port est relié au concentrateur. Quand le concentrateur reçoit la trame, il ne la décode pas. Il répète la trame sur tous les ports à tous les périphériques directement connectés, dont le commutateur.]]></feedback>
+									</choice></choices></ai></form-item></form></exam> 

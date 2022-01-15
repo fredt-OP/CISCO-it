@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Arabic Theme Mockup</title>
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script language="javascript" src="../js/themeapi/globals.js"></script>
+		<script language="javascript" src="../js/themeapi/com-api.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-course.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-chapter.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-section.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-topic.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-page.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-media.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-theme.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-globaltools.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossary.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossaryterm.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossaryset.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-events.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-main.js"></script>
+		<script>
+			// start API events
+
+			// main event cascade for loading course
+			eventobj.addEvent("comactive", "main.theme.getData();", "gettheme");
+			eventobj.addEvent("themeready", "main.globaltools.getData();", "getgt");
+			eventobj.addEvent("globaltoolsready", "main.glossary.getData();", "getglos");
+			eventobj.addEvent("glossaryready", "main.course.getData();", "getcourse");
+			eventobj.addEvent("courseready", "main.getCurrent();", "getcurrent");
+			eventobj.addEvent("pageready", "getContent();", "getcourse");
+
+			// called on toggle event
+			eventobj.addEvent("toggle", "main.theme.getData();", "gettheme");
+
+			// end API events
+
+			function getContent() {
+				window.frames["headerframe"].getContent(main);
+				window.frames["textframe"].getContent(main);
+				window.frames["footerframe"].getContent(main);
+				if (main.page.type == "FullScreen") {
+					document.getElementById("contentframeset").cols = "*,0";
+				} else {
+					document.getElementById("contentframeset").cols = "*,33%";
+				}
+			}
+
+		</script>
+		<!-- theme specific js -->
+		<script language="javascript" src="./js/navigation.js"></script>
+	</head>
+
+	<frameset name="mainframeset" id="mainframeset" rows="91,*,89" border="0" frameborder="0" framespacing="0">
+		<frame name="headerframe" id="headerframe" src="header.html" scrolling="no" noresize>
+		<frameset name="contentframeset" id="contentframeset" cols="*,0"  border="0" frameborder="0" framespacing="0">
+			<frame name="mediaframe" id="mediaframe" src="../../cheetah.html" scrolling="no" noresize>
+			<frame name="textframe" id="textframe" src="text.html" scrolling="auto" noresize>
+		</frameset>
+		<frame name="footerframe" id="footerframe" src="footer.html" scrolling="no" noresize>
+	</frameset>
+</html>

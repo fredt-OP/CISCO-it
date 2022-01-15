@@ -1,0 +1,129 @@
+<textcomponents>
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Router<BR>Output</b>]]></text> 
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Example: Level 1 Parent Route and Level 2 Child Routes</b>]]></text>
+</component>
+
+<component id="ID_Title02">
+<text><![CDATA[<b>Example: Level 1 Parent Route and Level 2 Child Routes</b>]]></text>
+</component>
+
+<component id="btnOne">
+<text><![CDATA[<b>Network Route</b>]]></text> 
+</component>
+
+<component id="btnTwo">
+<text><![CDATA[<b>Default Route</b>]]></text> 
+</component>
+
+<component id="btnThree">
+<text><![CDATA[<b>Forward Packet</b>]]></text> 
+</component>
+
+<component id="btnFour">
+<text><![CDATA[<b>R3 Routing Table</b>]]></text> 
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click to see classless routing behavior.</b>]]></text> 
+</component>
+
+
+<!-- topology -->
+<component id="ID_topology01">
+<text><![CDATA[<b>Default<br>Route</b>]]></text> 
+</component>
+
+<component id="ID_topology02">
+<text><![CDATA[<b>Static<br>Route</b>]]></text> 
+</component>
+
+<!-- output1 -->
+<component id="ID_txt01">
+<text><![CDATA[<b>Destination of IP Packet</b>]]></text> 
+</component>    
+<component id="ID_txt01a">
+<text><![CDATA[<b>Destination of IP Packet</b>]]></text> 
+</component>  
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Level 1<br>Network Route</b>]]></text> 
+</component>
+<component id="ID_txt02a">
+<text><![CDATA[<b>Level 1<br>Network Route</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Level 1<br>Default Route</b>]]></text> 
+</component>
+<component id="ID_txt03a">
+<text><![CDATA[<b>Level 1<br>Default Route</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Only the first bit matches.</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Second bit does NOT match. Router skips this route and moves to the next route entry.</b>]]></text> 
+</component>
+
+<!-- output2 -->
+<component id="ID_txt06">
+<text><![CDATA[<b>A /0 mask means that no bits have to match to use the default route. R2 uses the default route and forwards the packet.</b>]]></text>
+</component>
+
+<!-- output3 -->
+<component id="ID_txt07">
+<text><![CDATA[<b>Match</b>]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>No Match</b>]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>No Match</b>]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>No Match</b>]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>No Match</b>]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Use Default</b>]]></text> 
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>The default route is used. R2 forwards packet to R3.</b>]]></text> 
+</component>
+
+<!-- output4 -->
+<component id="ID_txt14">
+<text><![CDATA[<b>Match!</b>]]></text> 
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>No Match</b>]]></text> 
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>Child Match!</b>]]></text> 
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>R3 uses the 172.16.0.0/16 child route and forwards the packet to R2.</b>]]></text> 
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[***output omitted***]]></text> 
+</component>
+
+</textcomponents>

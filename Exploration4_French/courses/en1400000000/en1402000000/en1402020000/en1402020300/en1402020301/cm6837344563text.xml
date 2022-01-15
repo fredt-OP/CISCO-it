@@ -1,0 +1,56 @@
+<textcomponents>
+
+<component id="ID_title01">
+<text><![CDATA[<b>PPP Frame Fields</b>]]></text>
+</component>
+
+<component id="ID2_txt01">
+<text><![CDATA[<b>Field length, in bytes</b>]]></text>
+</component>
+<component id="ID2_txt02">
+<text><![CDATA[<b>Variable</b>]]></text>
+</component>
+<component id="ID2_txt03">
+<text><![CDATA[<b>2 or 4</b>]]></text>
+</component>
+<component id="ID2_txt04">
+<text><![CDATA[<b>Flag</b>]]></text>
+</component>
+<component id="ID2_txt05">
+<text><![CDATA[<b>Address</b>]]></text>
+</component>
+<component id="ID2_txt06">
+<text><![CDATA[<b>Control</b>]]></text>
+</component>
+<component id="ID2_txt07">
+<text><![CDATA[<b>Protocol</b>]]></text>
+</component>
+<component id="ID2_txt08">
+<text><![CDATA[<b>Data</b>]]></text>
+</component>
+<component id="ID2_txt09">
+<text><![CDATA[<b>FCS</b>]]></text>
+</component>
+<component id="ID2_txt15">
+<text><![CDATA[<b>Indicates the beginning or end of a frame and consists of the binary sequence 01111110 to identify a PPP frame. The value is set to 0x7E (bit sequence 011111110) to signify the start and end of a PPP frame. In successive PPP frames, only a single Flag character is used.</b>]]></text>
+</component>
+<component id="ID2_txt16">
+<text><![CDATA[<b>Consists of the standard broadcast address, which is the binary sequence 11111111. PPP does not assign individual station addresses.</b>]]></text>
+</component>
+<component id="ID2_txt17">
+<text><![CDATA[<b>1 byte that consists of the binary sequence 00000011, which calls for transmission of user data in an unsequenced frame. This provides a connectionless link service that does not require you to establish data links or link stations. In HDLC environments, the Address field is used to address the frame to the destination node. On a point-to-point link, the destination node does not need to be addressed. Therefore, for PPP, the Address field is set to 0xFF, the broadcast address. If both PPP peers agree to perform address and control field compression during LCP negotiation, the Address field is not included.</b>]]></text>
+</component>
+<component id="ID2_txt18">
+<text><![CDATA[<b>2 bytes that identify the protocol encapsulated in the data field of the frame. The 2-byte Protocol ID field identifies the protocol of the PPP payload. If both PPP peers agree to perform protocol field compression during LCP negotiation, the Protocol ID field is one byte for Protocol IDs in the range 0x00-00 to 0x00-FF.</b>]]></text>
+</component>
+<component id="ID2_txt19">
+<text><![CDATA[<b>0 or more bytes that contain the datagram for the protocol specified in the protocol field. The 2 bytes of the frame check sequence (FCS) field, followed by the closing flag, marks the end of the data field. The default maximum length of the data field is 1500 bytes.</b>]]></text>
+</component>
+<component id="ID2_txt20">
+<text><![CDATA[<b>A 16-bit checksum that is used to check for bit level errors in the PPP frame. If the receiver's calculation of the FCS does not match the FCS in the PPP frame, the PPP frame is silently discarded.  By prior agreement, consenting PPP implementations can use a 32-bit (4-byte) FCS for improved error detection.</b>]]></text>
+</component>
+<component id="ID_caption">
+<text><![CDATA[<b>Roll over the LCP packet fields to see descriptions.</b>]]></text>
+</component>
+
+</textcomponents>

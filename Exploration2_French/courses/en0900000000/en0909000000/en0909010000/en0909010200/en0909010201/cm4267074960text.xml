@@ -1,0 +1,42 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Data Link Frame Header</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>IP Packet Header</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>EIGRP Packet Header</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Type/Length/Values Types</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Data Link Frame</b><br>MAC Destination Address = Multicast: 01-00-5E-00-00-0A<br>MAC Source Address = Address of sending interface]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>IP Packet</b><br/>IP Source Address = Address of sending interface<br>IP Destination Address = Multicast: 224.0.0.10<br>Protocol field = 88 for EIGRP]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>EIGRP Packet Header</b><br/>Opcode for EIGRP packet type<br>AS Number]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>TLV Types</b><br/><b>Some types include:</b><br>0x0001 EIGRP Parameters<br>0x0102 IP Internal Routes<br>0x0103 IP External Routes]]></text>
+</component>
+
+<component id="ID_title">
+<text><![CDATA[<b>Encapsulated EIGRP Message</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Roll over fields to see field content.</b>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,136 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Click through the buttons for summary information.</b>]]></text>
+</component> 
+
+<!--slide 1-->
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Traffic filtering is the process of analyzing the contents of a packet to determine if the packet should be allowed or blocked.</li><br/><li>ACLs enable management of traffic and secure access to and from a network and its resources.</li><br/><li>There are three types of ACLs: Standard, Extended, and Named ACL.</li><br/><li>ACLs filter traffic based on source and destination IP address, application, and protocol.</li><br/><li>Apply an ACL to a router interface to examine packets that are inbound or outbound.</li></ul>]]></text>
+</component>
+
+<component id="s1_ID_txt01">
+<text><![CDATA[IP Address<br>192.168.1.5]]></text> 
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[HTTP<br>Protocol]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Network<br>172.16.0.0]]></text> 
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Telnet<br>Access]]></text> 
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[<b>OK</b>]]></text> 
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[<b>OK</b>]]></text> 
+</component>
+
+<component id="s1_ID_txt07">
+<text><![CDATA[Internal Network]]></text> 
+</component>
+
+<component id="s1_ID_txt08">
+<text><![CDATA[MAC Address<br>xx:xx:xx:xx:xx:xx]]></text> 
+</component>
+
+<!--slide 2-->
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>Using a wildcard mask provides flexibility and can block a range of addresses or whole networks with one statement.</li><br/><li>The wildcard mask compares the incoming address to a comparison address to determine which bits match.</li><br/><li>To determine the wildcard mask, subtract the decimal subnet mask for an address or range from the all 255s mask (255.255.255.255).</li><br/><li>There is an implied<font face='_typewriter'><b> deny any </b></font>statement at the end of the ACL.</li><br/><li>The keyword<font face='_typewriter'><b> any </b></font>refers to all hosts and the keyword<font face='_typewriter'><b> host </b></font>refers to an individual IP address.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[<b>Wildcard masks that permit a single host:</b><br/><dnt><font face='_typewriter'>172.16.22.87 0.0.0.0<br/>host 172.22.8.17</font></dnt><br/><br/><b>Wildcard mask that permits a range of hosts for a /24 network:</b><br/><dnt><font face='_typewriter'>172.16.22.0 0.0.0.255</font></dnt><br/><br/><b>Wildcard mask that permits an entire /16 network:</b><br/><dnt><font face='_typewriter'>172.16.0.0 0.0.255.255</font></dnt><br/><br/><b>Wildcard mask that permits an entire /8 network:</b><br/><dnt><font face='_typewriter'>10.0.0.0 0.255.255.255</font></dnt>]]></text>
+</component>
+
+
+<!--slide 3-->
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>Standard ACLs filter on source IP address, and are placed as close to the destination as possible.</li><br/><li>Extended ACLs can filter on source and destination addresses, as well as on protocol and port number, and should be placed as close to the source as possible.</li><br/><li>Decide placement of ACLs based on type of ACL and requirements.</li><br/><li>Each interface supports one ACL per direction per protocol.</li><br/><li>Create an ACL using a unique identifier and apply either inbound or outbound on an interface using the<font face='_typewriter'><b> ip access-group </b></font>command.</li><br/><li>The<font face='_typewriter'><b> show ip interface</b></font>,<font face='_typewriter'><b> show access-lists </b></font>and<font face='_typewriter'><b> show running-config</b></font> commands allow a network administrator to view all ACLs that have been configured on a router.</li><br/><li>Named ACLs offer all the functionality and advantages of Standard and Extended ACLs.</li><br/><li>ACLs restrict VTY access to increase network security. The<font face='_typewriter'><b> access-class </b></font>command is used to apply a VTY ACL.</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[<font size='14'><p align="center"><b>ACL Processing and Creation Guidelines</b></p></font><br/><font size='12'><ul><li>Configure only one access list per protocol, per direction.</li><li>Apply standard access lists closest to the destination.</li><li>Apply extended access lists closest to the source.</li><li>Use the correct number range for the type of list.</li><li>Determine the inbound or outbound direction looking at the port from inside the router.</li><li>Process statements sequentially from the top of the list to the bottom</li><li>Deny packet if no match is found.</li><li>Enter the Access list statements in order from specific to general.</li><li>Configure an ACL with a permit statement or all traffic will be denied.</li></ul></font>]]></text>
+</component>
+
+<!--slide 4-->
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>Extended ACLs filter on source and destination IP addresses, protocol and the destination application port number in a frame.</li><br/><li>ACLs filter a range of ports using the<font face='_typewriter'><b> gt</b></font>,<font face='_typewriter'><b> lt </b></font>or<font face='_typewriter'><b> range </b></font>operators.</li><br/><li>Use the established parameter to filter traffic that is a response to a request.</li><br/><li>The order in which the statements are written has an impact on how well the router performs.</li><br/><li>There are different ways to approach writing ACLs: permit specific traffic first and then deny general traffic or deny specific traffic first and then permit general traffic.</li><br/><li>Network administrators account for NAT when creating and applying ACLs.</li><br/><li>Apply ACLs directly to VLAN logical interfaces just as with physical interfaces.</li></ul>]]></text>
+</component>
+
+<component id="s4_ID_dest01">
+	<text><![CDATA[Destination]]></text> 
+</component>
+
+<component id="s4_ID_dest02">
+	<text><![CDATA[Destination]]></text> 
+</component>
+
+<component id="s4_ID_source01">
+	<text><![CDATA[Source]]></text> 
+</component>
+
+<component id="s4_ID_source02">
+	<text><![CDATA[Source]]></text> 
+</component>
+
+<component id="ID_table1">
+	<text><![CDATA[<table bordercolor='#666666' borderwidth='1' cellpadding='2'>
+		<tr>
+			<td bgcolor='#E9E9E9'>00-07-E9-63-CE-53</td>
+			<td bgcolor='#E9E9E9'>00-07-E9-42-AC-28</td>
+			<td bgcolor='#99CCFF'>192.168.1.5</td>
+			<td bgcolor='#99CCFF'>192.168.1.7</td>
+			<td bgcolor='#8CB3D9'>41099</td>
+			<td bgcolor='#8CB3D9' glow='true' glowcolor='#FCA92E'> 80</td>
+			<td bgcolor='#FFFF99'>User Data</td>
+			<td bgcolor='#FFFFFF'>Trailers</td>
+		</tr>
+	</table>]]></text>
+</component>
+
+<component id="s4_ID_txt01">
+<text><![CDATA[access-list 101 permit tcp host<font color="#FF9900"> 192.168.1.5</font> host<font color="#FF9900"> 192.168.1.7 </font><font color="#FF9900">eq80</font>]]></text> 
+</component>
+ 
+<component id="s4_ID_txt02">
+<text><![CDATA[MAC Header Addresses]]></text> 
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[IP Header Addresses]]></text> 
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[TCP Header Ports]]></text> 
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[Data]]></text> 
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[FCS]]></text> 
+</component>
+
+<component id="s4_ID_txt07">
+<text><![CDATA[Ethernet Frame]]></text> 
+</component>
+
+<!--slide 5-->
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>An ACL statement captures the number of matches and displays them at the end of each statement matched.</li><br/><li>Logging gives additional details on packets permitted or denied. To activate logging add the log option to the end of each ACL statement.</li><br/><li>Add the<font face='_typewriter'><b> deny ip any any log </b></font>to monitor the number of packets that are not matched by previous ACL statements.</li><br/><li>The process of logging eventsplaces an additional load on the router.</li><br/><li>The log contents can be sent to an external syslog server.</li><br/><li>Always set the service timestamps for logging and be sure the router date and time are set correctly so that Log files display the proper time stamp.</li></ul>]]></text>          
+</component>
+
+<component id="s5_ID_txt01">
+<text><![CDATA[Greenwich Mean Time (GMT)]]></text> 
+</component>
+
+</textcomponents>

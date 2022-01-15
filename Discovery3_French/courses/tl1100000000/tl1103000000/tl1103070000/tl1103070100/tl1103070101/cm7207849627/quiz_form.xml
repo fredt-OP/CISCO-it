@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13398" dateexported="04/25/2008">
+		<name>Module 3 Questionnaire</name>
+		<form id="21029" lang="fr"><form-item order="fixed">
+			<ai id="61339" type="mc-ma"><question><![CDATA[Quels équipements est-il possible de connecter à une liaison agrégée de VLAN? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Un commutateur.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un concentrateur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un routeur.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un serveur doté d'une carte réseau spéciale.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une unité CSU/DSU. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un répéteur. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61398" type="mc-ma"><question><![CDATA[Que se passe-t-il lors d'une modification topologique sur un réseau utilisant le protocole STP ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Le trafic utilisateur est interrompu jusqu'à ce que le recalcul soit terminé.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur recalcule la topologie Spanning Tree après la convergence du réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L'état d'apprentissage est attribué à tous les ports jusqu'à ce qu'il se produise une convergence. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un délai de 50 secondes maximum est exigé pour la convergence de la nouvelle topologie Spanning Tree.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les données utilisateur sont acheminées tandis que les unités BPDU sont échangées afin de recalculer la topologie. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134660" type="mc-sa"><question><![CDATA[Examinez la présentation. Quel groupe de commandes devra être utilisé sur le routeur pour permettre la communication entre les deux hôtes connectés au commutateur ? <br/><img src="i134660n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[R_1(config)# <b>interface vlan 30</b><br />R_1(config-if)# <b>switchport mode trunk dot1q</b><br />R_1(config-if)# <b>interface vlan 40</b><br />R_1(config-if)# <b>switchport mode trunk dot1q </b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R_1(config)# <b>interface fastethernet 0/0</b><br />R_1(config-if)# <b>mode trunk dot1q 30 40</b><br />R_1(config-if)# <b>ip address 192.168.1.1 255.255.255.0</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R_1(config)# <b>interface vlan 30</b><br />R_1(config-if)# <b>ip address 192.168.30.1 255.255.255.0</b><br />R_1(config-if)# <b>no shutdown</b><br />R_1(config-if)# <b>interface vlan 40</b><br />R_1(config-if)# <b>ip address 192.168.40.1 255.255.255.0</b><br />R_1(config-if)# <b>no shutdown </b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R_1(config)# <b>interface fastethernet 0/0</b><br />R_1(config-if)# <b>no shutdown</b><br />R_1(config-if)# <b>interface fastethernet 0/0.3</b><br />R_1(config-if)# <b>encapsulation dot1q 30</b><br />R_1(config-if)# <b>ip address 192.168.30.1 255.255.255.0</b><br />R_1(config-if)# <b>interface fastethernet 0/0.4</b><br />R_1(config-if)# <b>encapsulation dot1q 40</b><br />R_1(config-if)# <b>ip address 192.168.40.1 255.255.255.0 </b><br />  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134639" type="mc-sa"><question><![CDATA[En quoi les commutateurs Couche 3 diffèrent-ils des routeurs traditionnels ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les commutateurs Couche 3 s’utilisent avec les réseaux LAN alors que les routeurs sont prévus pour les réseaux WAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les commutateurs Couche 3 utilisent des ASICS pour le routage alors que les routeurs utilisent un logiciel.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les commutateurs Couche 3 ne font pas de recherches de route alors que les routeurs en font. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les commutateurs Couche 3 envoient les paquets sur la base de l’adresse MAC uniquement alors que les routeurs utilisent l’adresse IP pour le faire. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="134641" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="134641" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>stockage et retransmission</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>mode Fragment-Free.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>multi-couche</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>mode Cut-through</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>mode Cut-through adaptatif.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Fast-Forward</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>recalcule la valeur CRC</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>se subdivise en deux autres méthodes</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>latence plus faible mais peut envoyer des fragments conflictuels</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>lit les 64 premiers octets de la trame avant l’envoi</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>compare le nombre d’erreurs détectées à une valeur limite</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser chaque méthode à gauche vers la description correcte à droite. (Les propositions ne doivent pas être toutes utilisées.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-127.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="218531" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="218531" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="218531" action="Set">1</setvar><scoringdescription>de haut en bas : stockage et retransmission, cut-through, fast-forward, fragment-free, cut-through adaptatif NON UTILISÉ - multi-couche</scoringdescription></responcondition></resprocessing><feedback><correct>Bon travail ! :)</correct><incorrect>désolé. lisez la suite ;)</incorrect></feedback></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="134651" type="mc-ma"><question><![CDATA[Quels sont les deux problèmes que causent les liens redondants dans un réseau commuté ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La corruption de la table de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les boucles de commutation.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les tempêtes de broadcasts.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les boucles de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La corruption de la base des informations. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134652" type="mc-ma"><question><![CDATA[Examinez la présentation. Les commutateurs du schéma sont interconnectés par des liens agrégés et configurés avec les modes VTP indiqués. Un nouveau VLAN est ajouté au commutateur1. Quelles sont les trois actions provoquées par cet ajout ? (Choisissez trois réponses.) <br/><img src="i134652n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur1 n’ajoute pas le VLAN dans sa base de données des VLAN et transmet la mise à jour au commutateur2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le commutateur3 transmet la mise à jour VTP au commutateur4.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur3 ajoute le VLAN dans sa base de données des VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le commutateur4 ajoute le VLAN dans sa base de données des VLAN.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur4 ne reçoit pas la mise à jour. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le commutateur2 ajoute le VLAN dans sa base de données et transmet la mise à jour au commutateur3.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134653" type="mc-ma"><question><![CDATA[Quels sont les deux critères qu’applique STP pour choisir le pont racine dans un réseau commuté contenant des redondances ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Quantité de RAM du commutateur ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Priorité du pont  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Vitesse de commutation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Nombre de ports de commutation ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Adresse MAC des commutateurs  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Emplacement du commutateur ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134654" type="mc-sa"><question><![CDATA[Suite à une rupture de liaison, sous quel délai le protocole RSTP autorise-t-il un port à passer en mode envoi ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[En moins d’une seconde  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[En deux secondes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Dans les 30 secondes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Dans les 50 secondes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Dans les 90 secondes ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134655" type="mc-ma"><question><![CDATA[Quels sont les deux avantages des LAN virtuels pour une entreprise ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Ils centralisent le personnel des services et les ressources réseau en une zone physique unique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ils offrent une grande souplesse d’organisation en regroupant les utilisateurs par fonction et non par lieu physique.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ils permettent d’opérer une séparation logique entre la voix et autres trafics critiques, d’une part, et le reste du trafic de données d’autre part.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ils réduisent le nombre de domaines de broadcast dans un réseau d’entreprise. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ils réduisent les coûts de gestion de réseau en remplaçant un grand nombre d’équipements de couche2 par quelques équipements de couche3. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ils éliminent le routage du trafic sur les grands réseaux. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134656" type="mc-sa"><question><![CDATA[Examinez la présentation. Access1 est un nouveau commutateur qui devra se connecter au réseau comme client VTP une fois configuré. D’après la sortie générée par le commutateur Dist-2 du serveur VTP, quelle série de commandes de configuration va permettre d’introduire le commutateur client dans le domaine VTP ? <br/><img src="i134656n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Access1(config)# <b>vtp mode client</b><br />Access1(config)# <b>vtp domain mycorp</b><br />Access1(config)# <b>vtp password ITrustYou</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Access1(config)# <b>vtp mode client</b><br />Access1(config)# <b>vtp domain MYCORP</b><br />Access1(config)# <b>vtp version 2</b><br />Access1(config)# <b>vtp password ITrustYou</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Access1(config)# <b>vtp mode client</b><br />Access1(config)# <b>vtp domain mycorp</b><br />Access1(config)# <b>vtp password ITrustYou</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Access1(config)# <b>vtp mode client</b><br />Access1(config)# <b>vtp domain Mycorp</b><br />Access1(config)# <b>vtp version 2</b><br />Access1(config)# <b>vtp password ITrustYou</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134668" type="mc-ma"><question><![CDATA[Que comprend un réseau commuté convergé doté de la fonction Spanning Tree ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Un pont racine par réseau.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les ports non désignés en mode de transmission. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un port racine par pont non racine.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Plusieurs ports désignés par segment. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un port désigné par réseau. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134669" type="mc-sa"><question><![CDATA[À quelle fréquence par défaut sont transmises les unités BPDU de la fonction Spanning Tree ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Toutes les secondes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Toutes les deux secondes.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Toutes les trois secondes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Toutes les quatre secondes. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134670" type="mc-sa"><question><![CDATA[Examinez la présentation. Un routeur est configuré de façon à se connecter à une liaison montante agrégée, comme l’illustre la présentation.  Le VLAN1 envoie un paquet qui est réceptionné par l’interface physique FastEthernet 0/1. L’adresse de destination du paquet est 192.168.1.85.  Comment le routeur traite-t-il ce paquet ? <br/><img src="i134670n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il ignore le paquet car la source et la destination se trouvent dans le même domaine de broadcast. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il transmet le paquet à l’interface FastEthernet 0/1.1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il transmet le paquet à l’interface FastEthernet 0/1.2.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il transmet le paquet à l’interface FastEthernet 0/1.3. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il abandonne le paquet car aucun réseau incluant l’adresse de destination n’est connecté au routeur. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

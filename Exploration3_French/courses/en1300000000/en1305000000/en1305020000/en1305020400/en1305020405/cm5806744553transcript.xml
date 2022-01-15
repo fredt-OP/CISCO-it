@@ -1,0 +1,5 @@
+<transcript lastedited="11.05.08 18:11:52">
+<title><content-text><![CDATA[5.2.4  - Port Roles]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts verifying port roles and port priority using the show spanning-tree command on switch S2.<br><br>S2#show spanning-tree<br><br>V LAN 0001<br>  Spanning tree enabled protocol i e e e<br>Root ID	Priority 	27577<br>Address	0019.aa9e.b000<br>This bridge is the root<br>Hello Time	2 sec Max Age 20 sec Forward Delay 15 sec<br><br>Bridge ID 	Priority	24577 (priority 24577 sys-id-ext 1)<br>Address	0019.aa9e.b000<br>Hello Time	2 sec Max Age 20 sec Forward Delay 15 sec<br>Aging Time 	300<br><br>Interface:	Role 	Sts	Cost	Prio. Nbr	Type<br>F0/1		Desg	FWD	19	128.1		P2p<br>F0/2		Desg	FWD	19	128.2		P2p<br><br>The highlighted portion of the output shows spanning-tree and interface information of F 0/1 Desg	FWD 19 128.1 P2p, and F 0/2 Desg FWD 19 128.2 P2p .<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

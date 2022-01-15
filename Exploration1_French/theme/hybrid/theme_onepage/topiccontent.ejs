@@ -1,0 +1,64 @@
+<% clearTranscripts() %>
+<% openDiv = null %>
+<% if (isarabic && main.course.lang == "tl") { window.document.body.style.direction = "rtl"; var lidir = "rtl"; } else { window.document.body.style.direction = "ltr"; var lidir = ""; } %>
+
+
+
+<h1><%= main.course.title %> - <%= main.course.subtitle %></h1>
+<% if (main.chapter.type != "CourseTour") { %>
+	<h2><%= main.chapter.num %> <%= main.chapter.title %></h2>
+	<h3><%= main.section.getLI(lidir) %> <%= main.section.title %></h3>
+	<b><i><%= main.topic.getLI(lidir) %> <%= main.topic.title %></i></b><br/><br/>
+<%}%>
+<% for (var l=0; l<main.topic.pages.length; l++) { %>
+	<b><%= main.theme.getThemeItem("indexpage") %> <%= main.topic.pages[l].num %>:</b><br/>
+	<% if (main.topic.pages[l].type != "FullScreen") { %>
+		<%= main.topic.pages[l].contenttext %>
+	<% } %>
+	<% var mediaref = main.topic.pages[l].media.file %>
+	<% var externalref = main.topic.pages[l].media.external %>
+	<% var mediatyperef = main.topic.pages[l].media.majortype %>
+	<% var oid = main.topic.pages[l].media.oid %>
+	<% var mediaplayer = "../../swf/mediaplayer.swf" %>
+	<% var mediawidth = 862 %>
+	<% var mediaheight = 395 %>
+	<% if (mediaref.indexOf('.flv') > -1) { %>
+		<% mediaplayer = "../../swf/flvplayer.swf" %>
+		<% mediawidth = 500 %>
+		<% mediaheight = 300 %>
+	<% } %>
+	<% if (mediaref.indexOf('.swf') > -1) { %>
+		<% texttranscript = mediaref.substring(0, mediaref.indexOf('.swf')) %>
+		<% texttranscript = texttranscript+"transcript.xml" %>
+	<% } else if (mediaref.substr(mediaref.length-1,mediaref.length) == "/") { %>
+		<% texttranscript = mediaref.substring(0, mediaref.length-1) %>
+		<% texttranscript = texttranscript+"transcript.xml" %>
+	<% } else if (mediaref.indexOf('.flv') > -1) { %>
+		<% texttranscript = mediaref.substring(0, mediaref.indexOf('.flv')) %>
+		<% texttranscript = texttranscript+"transcript.xml" %>
+	<% } %>
+	<% if (getMediaPresentation() == "choice") { %>
+	<a href="javascript:loadTranscript('<%=texttranscript%>','media<%=oid%>', 'brief');" alt="<%= main.theme.getThemeItem('viewtranscript') %>"><%= main.theme.getThemeItem('viewtranscript') %></a> | <a href="javascript:loadVisualMedia('<%=oid%>','<%=mediawidth%>','<%=mediaheight%>','<%=mediaplayer%>','<%=mediaref%>','<%=externalref%>','<%=mediatyperef%>');" alt="V<%= main.theme.getThemeItem('viewmedia') %>"><%= main.theme.getThemeItem('viewmedia') %></a>
+	<% } else if (getMediaPresentation() == "transbrief") { %>
+		<% addTranscript({url:texttranscript, target:"media"+oid, type:"brief"}) %>
+	<% } else if (getMediaPresentation() == "transfull") { %>
+		<% addTranscript({url:texttranscript, target:"media"+oid, type:"full"}) %>
+	<% } else if (getMediaPresentation() == "visual") { %>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="<%= mediawidth %>" height="<%= mediaheight %>" id="<%= oid %>" align="top">
+<param name="base" value="../../" />
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="movie" value="<%= mediaplayer %>?mediaref=<%= mediaref %>&externalref=<%= externalref %>&mediatyperef=<%= mediatyperef %>" />
+<param name="menu" value="false" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#FFFFFF" />
+<embed src="<%= mediaplayer %>?mediaref=<%= mediaref %>&externalref=<%= externalref %>&mediatyperef=<%= mediatyperef %>" menu="false" quality="high" bgcolor="#FFFFFF" width="<%= mediawidth %>" height="<%= mediaheight %>" name="<%= oid %>" align="top" base="../../" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+</object>
+	<% } %>
+	<br/><br/>
+	<div id="media<%=oid%>" name="media<%=oid%>">
+	</div>
+	<br/>
+	<br/>
+<% } %>
+<hr/>
+

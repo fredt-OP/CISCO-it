@@ -1,0 +1,60 @@
+﻿<textcomponents>
+
+<component id="ID_instruct">
+  <text><![CDATA[<b>Cliquez sur chaque type d’encapsulation pour obtenir plus d’informations.</b>]]></text> 
+  </component>
+  
+  <component id="ID_title">
+    <text><![CDATA[<b>Configuration d’une connexion WAN série</b>]]></text> 
+  </component>
+<component id="hosts">
+	<text>Frame Relay</text>
+</component> 
+
+<component id="HDLC">
+	<text>HDLC (High Level Data Link Control)</text>
+</component> 
+
+<component id="Frame Relay">
+	<text>Frame Relay</text>
+</component> 
+
+<component id="PPP">
+	<text>PPP (protocole point à point)</text>
+</component> 
+
+
+<component id="media">
+	<text>Supports</text>
+</component> 
+<component id="networkDevices">
+	<text>Périphériques réseau</text>
+</component> 
+<component id="peripherals">
+	<text>Périphériques</text>
+</component>   
+<component id="peripheralsTitle">
+	<text>HDLC (High Level Data Link Control)</text>
+</component>
+<component id="peripheralsBody">
+	<text>Protocole de couche de liaison de données basé sur les bits développé par l’ISO (Organisation internationale de normalisation).</text>
+</component>
+<component id="hostsTitle">
+	<text>Frame Relay</text>
+</component>
+<component id="hostsBody">
+	<text>Protocole de couche de liaison de données à commutation de paquets qui prend en charge plusieurs circuits virtuels. En d’autres termes, les connexions du circuit sont établies provisoirement, puis supprimées selon les besoins.  Le DLCI est un numéro obligatoire fourni par le prestataire de services pour identifier le circuit virtuel.</text>
+</component>
+<component id="networkTitle">
+	<text>PPP (protocole point à point)</text>
+</component>
+<component id="networkBody">
+	<text>Couramment utilisé pour établir une connexion directe entre deux périphériques. Il peut connecter des ordinateurs au moyen d’un câble série, d’une ligne téléphonique, d’une ligne agrégée, d’un téléphone portable, de liaisons radio spécialisées ou de liaisons à fibres optiques. La plupart des fournisseurs de services Internet utilisent le protocole PPP pour l’accès de leurs clients à Internet par ligne téléphonique.  Le protocole PPP offre des fonctionnalités permettant l’authentification avant l’établissement d’une connexion.  Il est possible d’utiliser SDM pour définir des noms d’utilisateur et des mots de passe PPP.</text>
+</component>
+<component id="mediaTitle">
+	<text>Supports</text>
+</component>
+<component id="mediaBody">
+	<text>Les supports fournissent des connexions entre les hôtes et les périphériques du réseau. Les supports peuvent être des fils, en cuivre ou en fibres optiques par exemple, ou peuvent utiliser des technologies sans fil.  Lorsque vous cliquez sur ce point d’accès, étiquetez le fil entre commutateurs comme un « câble à fibres optiques » et les fils entre tous les autres périphériques et les concentrateurs comme des « câbles en cuivre ».</text>
+</component>
+</textcomponents>

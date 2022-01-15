@@ -1,0 +1,396 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Processus des trames BPDU</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Étape :</b>]]></text>
+</component>
+
+<component id="btn1">
+<text><![CDATA[<b>1</b>]]></text>
+</component>
+<component id="btn2">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+<component id="btn3">
+<text><![CDATA[<b>3</b>]]></text>
+</component>
+<component id="btn4">
+<text><![CDATA[<b>4</b>]]></text>
+</component>
+<component id="btn5">
+<text><![CDATA[<b>5</b>]]></text>
+</component>
+<component id="btn6">
+<text><![CDATA[<b>6</b>]]></text>
+</component>
+<component id="btn7">
+<text><![CDATA[<b>7</b>]]></text>
+</component>
+<component id="btn8">
+<text><![CDATA[<b>8</b>]]></text>
+</component>
+<component id="btn9">
+<text><![CDATA[<b>9</b>]]></text>
+</component>
+
+
+
+<!--  Slide 1  -->
+
+
+<component id="ID_1_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_1_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_1_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_1_txt04">
+<text><![CDATA[Le commutateur S2 transmet les trames BPDU sur tous ses ports de commutateur. La trame BPDU contient l’ID de racine et l’ID de pont du commutateur S2, indiquant que le commutateur S2 est le pont racine.]]></text>
+</component>
+<component id="ID_1_txt05">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_1_txt06">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_1_txt07">
+<text><![CDATA[ID de racine = 24577.000A00333333<br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_1_txt08">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_1_txt09">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_1_txt10">
+<text><![CDATA[ID de racine = 32769.000A00222222<br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+
+
+
+
+<!--  Slide 2  -->
+
+<component id="ID_2_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_2_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_2_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_2_txt04">
+<text><![CDATA[Le commutateur S3 compare l’ID de racine reçu à son propre ID et il identifie le commutateur S2 comme étant celui possède l’ID le plus faible. <br/>Le commutateur S3 met à jour son ID de racine avec l’ID de racine du commutateur S2.<br/>Le commutateur S3 considère maintenant le commutateur S2 comme étant le pont racine.<br/>Le commutateur S3 met à jour le coût du chemin à 19 puisque la trame BPDU a été reçue sur un port Fast Ethernet.]]></text>
+</component>
+<component id="ID_2_txt05">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_2_txt06">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_2_txt07">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_2_txt08">
+<text><![CDATA[ID de racine = 24577.000A00333333<br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_2_txt09">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_2_txt10">
+<text><![CDATA[ID de racine = <font color="#0000FF">32769.000A00111111</font><br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_2_txt11">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = <font color="#0000FF">32769.000A00111111</font><br/>Coût du chemin = 19
+]]></text>
+</component>
+
+
+
+
+<!--  Slide 3  -->
+
+<component id="ID_3_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_3_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_3_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_3_txt04">
+<text><![CDATA[Lorsque S1 compare son ID de racine à celui figurant dans la trame BPDU reçue de S2, il identifie l’ID de racine local comme étant la valeur la plus faible est rejette la trame BPDU de S2. Le commutateur S1 continue de se considérer comme le pont racine.]]></text>
+</component>
+<component id="ID_3_txt05">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_3_txt06">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_3_txt07">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = <font color="#0000FF">32769.000A00111111</font><br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_3_txt08">
+<text><![CDATA[ID de racine = <font color="#0000FF">24577.000A00333333</font><br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_3_txt09">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_3_txt10">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_3_txt11">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+
+
+
+
+<!--  Slide 4  -->
+
+<component id="ID_4_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_4_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_4_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_4_txt04">
+<text><![CDATA[Le commutateur S3 transmet les trames BPDU sur tous ses ports de commutateur. La trame BPDU contient l’ID de racine du commutateur S2, indiquant que ce dernier constitue le pont racine.]]></text>
+</component>
+<component id="ID_4_txt05">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_4_txt06">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_4_txt07">
+<text><![CDATA[ID de racine = 24577.000A00333333<br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_4_txt08">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_4_txt09">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+
+
+
+
+
+
+<!--  Slide 5  -->
+
+<component id="ID_5_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_5_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_5_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_5_txt04">
+<text><![CDATA[Le commutateur S2 compare l’ID de racine de la trame BPDU reçue à son propre ID, et il identifie que cet ID correspond au sien. Le commutateur S2 continue de se considérer comme le pont racine du réseau. Le commutateur S2 ne met pas à jour le coût du chemin.]]></text>
+</component>
+<component id="ID_5_txt05">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_5_txt06">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = <font color="#0000FF">32769.000A00111111</font><br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_5_txt07">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = <font color="#0000FF">32769.000A00111111</font><br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_5_txt08">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_5_txt09">
+<text><![CDATA[ID de racine = 24577.000A00333333<br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_5_txt10">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_5_txt11">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+
+
+
+
+
+
+<!--  Slide 6  -->
+
+<component id="ID_6_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_6_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_6_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_6_txt04">
+<text><![CDATA[Le commutateur S1 compare l’ID de racine de la trame BPDU reçue à son propre ID, et il détermine que son ID est plus faible. Le commutateur S1 continue de se considérer comme le pont racine du réseau. Le commutateur S1 ne met pas à jour le coût du chemin.]]></text>
+</component>
+<component id="ID_6_txt05">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_6_txt06">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_6_txt07">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_6_txt08">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = <font color="#0000FF">32769.000A00111111</font><br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_6_txt09">
+<text><![CDATA[ID de racine = 24577.000A00333333<br/>ID de pont = <font color="#0000FF">24577.000A00333333</font><br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_6_txt10">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_6_txt11">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+
+
+
+
+
+
+
+
+<!--  Slide 7  -->
+
+<component id="ID_7_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_7_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_7_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_7_txt04">
+<text><![CDATA[Le commutateur S1 transmet les trames BPDU sur tous ses ports de commutateur. La trame BPDU contient l’ID de racine et l’ID de pont du commutateur S1, indiquant que le commutateur S1 est le pont racine.]]></text>
+</component>
+<component id="ID_7_txt05">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_7_txt06">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_7_txt07">
+<text><![CDATA[ID de racine = 24577.000A00333333<br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_7_txt08">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_7_txt09">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+
+
+
+
+
+
+
+
+
+<!--  Slide 8  -->
+
+<component id="ID_8_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_8_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_8_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_8_txt04">
+ <text><![CDATA[Le commutateur S3 compare l’ID de racine reçu à son propre ID de racine, et il identifie le commutateur S1 comme étant celui qui possède l’ID de racine le plus faible. Le commutateur S3 met à jour son ID de racine avec l’ID de racine du commutateur S1. Le commutateur S3 considère maintenant le commutateur S1 comme étant le pont racine. Le commutateur S3 met à jour le coût du chemin à 19 puisque la trame BPDU a été reçue sur un port Fast Ethernet.]]></text>
+</component>
+<component id="ID_8_txt05">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_8_txt06">
+<text><![CDATA[<b>BPDU</b><br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_8_txt07">
+<text><![CDATA[ID de racine = 32769.000A00111111<br/>ID de pont = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_8_txt08">
+<text><![CDATA[ID de racine = 24577.000A00333333<br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_8_txt09">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_8_txt10">
+<text><![CDATA[ID de racine = <font color="#0000FF">24577.000A00333333</font><br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_8_txt11">
+<text><![CDATA[<b>BPDU</b><br/>ID de racine = <font color="#0000FF">24577.000A00333333</font><br/>Coût du chemin = 19]]></text>
+</component>
+
+
+
+
+
+
+
+
+<!--  Slide 9  -->
+
+<component id="ID_9_txt01">
+<text><![CDATA[Agrégation3]]></text>
+</component>
+<component id="ID_9_txt02">
+<text><![CDATA[Agrégation2]]></text>
+</component>
+<component id="ID_9_txt03">
+<text><![CDATA[Agrégation1]]></text>
+</component>
+<component id="ID_9_txt04">
+<text><![CDATA[Le commutateur S2 compare l’ID de racine reçu à son propre ID de racine, et il identifie le commutateur S1 comme étant celui qui possède l’ID de racine le plus faible. Le commutateur S2 met à jour son ID de racine avec l’ID de racine du commutateur S1. Le commutateur S2 considère maintenant le commutateur S1 comme étant le pont racine. Le commutateur S2 met à jour le coût du chemin à 19 puisque la trame BPDU a été reçue sur un port Fast Ethernet.]]></text>
+</component>
+
+<component id="ID_9_txt06">
+<text><![CDATA[<b>BPDU</b><br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_9_txt07">
+<text><![CDATA[ID de racine = <font color="#0000FF">24577.00A00333333</font><br/>ID de pont = 32769.000A00111111<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_9_txt08">
+<text><![CDATA[ID de racine = <font color="#0000FF">24577.000A00333333</font><br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_9_txt09">
+<text><![CDATA[Pont racine]]></text>
+</component>
+<component id="ID_9_txt10">
+<text><![CDATA[ID de racine = 24577.000A00333333<br/>ID de pont = 32769.000A00222222<br/>Coût du chemin = 19]]></text>
+</component>
+<component id="ID_9_txt11">
+<text><![CDATA[<b>BPDU</b><br/>ID de pont = 24577.000A00333333<br/>Coût du chemin = 19]]></text>
+</component>
+
+
+
+
+
+
+
+
+</textcomponents>

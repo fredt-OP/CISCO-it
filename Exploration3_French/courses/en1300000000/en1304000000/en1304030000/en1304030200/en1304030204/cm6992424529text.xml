@@ -1,0 +1,129 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Switches Set to VTP Client Mode</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Switches Set to VTP Client Mode</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>Solution</b>]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_txt01-1">
+<text><![CDATA[<b>The network has been configured with these VLANs:<ul><li>10 - faculty/staff</li><li>20 - students</li><li>30 - guest</li><li>99 - management</li></ul></b>]]></text>
+</component>
+
+<component id="ID_txt01-2">
+<text><![CDATA[<b>The network manager mistakenly reconfigures switch S1</b>]]></text>
+</component>
+
+<component id="ID_txt01-3">
+<text><![CDATA[<b>The network manager mistakenly reconfigures switch S1:</b>]]></text>
+</component>
+
+<component id="ID_txt01-4">
+<text><![CDATA[<b>If the network manager then reboots, each switch network VLAN configuration is lost.</b>]]></text>
+</component>
+
+<!-- labels -->
+<component id="ID_txt01">
+<text><![CDATA[<b>VTP Server</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<!--bubbles-->
+<component id="ID_txt06">
+<text><![CDATA[<b><font size='12'>Configured VLANs:<br/>10 - faculty/staff<br/>20 - students<br/>30 - guest<br/>99 - management</font></b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b><font size='12'>Configured VLANs:<br/>10 - faculty/staff<br/>20 - students<br/>30 - guest<br/>99 - management</font></b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b><font size='12'>Configured VLANs:<br/>10 - faculty/staff<br/>20 - students<br/>30 - guest<br/>99 - management</font></b>]]></text>
+</component>
+
+<component id="ID_txt09-1">
+<text><![CDATA[<b><font size='12'>No VLANs configured</font></b>]]></text>
+</component>
+
+<component id="ID_txt09-2">
+<text><![CDATA[<b><font size='12'>No VLANs configured</font></b>]]></text>
+</component>
+
+<component id="ID_txt09-3">
+<text><![CDATA[<b><font size='12'>No VLANs configured</font></b>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_txt10">
+<text><![CDATA[<b>Reset two switches in the same VTP domain to be in VTP server mode using these commands:</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS Command Syntax</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter global configuration mode</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>#<b>configure terminal</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configures the VTP mode</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>(config)#<b>vtp mode server</b></font></td>	
+	</tr>
+	</table>
+]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Here is an example showing how to change the VTP mode for switch S3 to VTP server:</b>]]></text>
+</component>
+
+<!-- controller -->
+<component id="play">
+	<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+	<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+	<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+	<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+	<text><![CDATA[Mute]]></text></component>
+<component id="unmute">
+	<text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous">
+	<text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+	<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+	<text><![CDATA[Transcript]]></text>
+</component>
+
+
+</textcomponents>

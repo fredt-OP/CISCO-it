@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13256" dateexported="01/26/2009">
+		<name>Module 4 Questionnaire</name>
+		<form id="20918" lang="fr"><form-item order="fixed">
+			<ai id="133297" type="mc-ma"><question><![CDATA[Parmi les affirmations suivantes sur les protocoles de routage à vecteur de distance, quelles sont celles qui sont exactes ? (Choisissez quatre réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Les nombres de sauts peuvent être utilisés pour la sélection de chemin.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ils s’adaptent bien. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les mises à jour de routage sont diffusées à intervalles définis.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole EIGRP peut effectuer un équilibrage de charge à coût inégal.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole RIPv1 multidiffuse ses mises à jour de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole RIP envoie sa table de routage complète aux voisins connectés directement.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			
+			<ai id="151510" type="mc-ma"><question><![CDATA[Dans quels cas les protocoles de routage à vecteur de distance envoient-ils des mises à jour de table de routage ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Lorsque le minuteur de mise hors service expire. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Lorsqu’un changement survient dans la topologie du réseau.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Lorsque la valeur du minuteur de mise à jour expire.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Lors de la réception d’une mise à jour déclenchée d’un autre routeur.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Lors de la réception d’un paquet destiné à un réseau inconnu. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Lorsque aucune modification de table de routage n’intervient pendant 30 minutes. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133296" type="mc-ma"><question><![CDATA[Quelles sont les caractéristiques des mises à jour EIGRP ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elles incluent toutes les routes EIGRP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elles incluent la table de routage en entier. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elles sont indépendantes de l’architecture. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elles sont uniquement déclenchées pour les changements de topologie de route.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elles diffusent vers les voisins concernés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elles sont liées aux routeurs de tronçon suivant concernés.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133305" type="mc-sa"><question><![CDATA[Quelle fonctionnalité a été ajoutée au protocole RIP pour aider à corriger les erreurs de synchronisation ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Minuteur de mise hors service ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RIP_JITTER  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIP_DELAY ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Contrôle d’instabilité ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133304" type="mc-ma"><question><![CDATA[Parmi les minuteurs suivants, quels sont les deux qui sont utilisés pour le protocole RIP ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Invalid  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Refresh ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Flush  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Deadlink ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hello ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133303" type="mc-sa"><question><![CDATA[Quelle affirmation est vraie à propos des avantages d’un protocole à vecteur de distance ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les mises à jour périodiques accélèrent la convergence. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les temps de convergence rendent les boucles de routage impossibles. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La facilité d’implémentation simplifie la configuration.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il fonctionne bien dans des réseaux complexes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Son temps de convergence est plus rapide que les protocoles de routage d’état des liaisons. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133299" type="mc-sa"><question><![CDATA[Quel mécanisme peut être utilisé pour éviter une boucle de comptage à l’infini ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Découpage d’horizon ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Empoisonnement de routage ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Minuteurs de mise hors service  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mises à jour déclenchées ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Découpage d’horizon avec antipoison ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133300" type="mc-sa"><question><![CDATA[Examinez la présentation. Le réseau illustré exécute le protocole de routage RIP. Quel mécanisme empêche le routeur 4 de renvoyer des mises à jour pour le réseau 10.0.0.0 au routeur 5 ? <br/><img src="i133300n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Découpage d’horizon  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Antipoison ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Empoisonnement de routage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Minuteurs de mise hors service ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Nombre maximal de sauts ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133301" type="mc-sa"><question><![CDATA[Qu’est-ce qui permet aux protocoles à vecteur de distance d’éviter les boucles de routage en annonçant une mesure infinie ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Découpage d’horizon ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Empoisonnement de routage  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Minuteurs de mise hors service ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Nombre maximal de sauts ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Champ de durée de vie de l’en-tête IP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133302" type="mc-sa"><question><![CDATA[Quel champ de l’en-tête IP permet de s’assurer que les paquets n’effectuent pas une boucle sans fin sur un réseau ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[CRC ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Type de service ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Durée de vie  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Somme de contrôle ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="133298" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="133298" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Découpage d’horizon</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Empoisonnement de routage</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Minuteurs de mise hors service</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Mises à jour déclenchées</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Les routes apprises par le biais d’une interface ne sont pas annoncées sur cette même interface.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Les routes apprises par le biais d’une interface sont annoncées comme inaccessibles à cette même interface.</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Les changements de topologie sont immédiatement envoyés aux routeurs adjacents.</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Laisse du temps pour que les changements de topologie soient répercutés sur le réseau entier.</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser les mécanismes servant à empêcher une boucle situés dans la colonne de gauche vers la fonction correspondante située dans la colonne de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-117" targetYspacing="15" yspacing="65" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="192552" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="192552" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="192552" action="Set">1</setvar><scoringdescription>De haut en bas.  (1) Les routes apprises par le biais d’une interface ne sont pas annoncées sur cette même interface. (2) Les routes apprises par le biais d’une interface sont annoncées comme inaccessibles à cette même interface. (3) Les changements de topologie sont immédiatement envoyés aux routeurs adjacents. (4) Laisse du temps pour que les changements de topologie soient répercutés sur le réseau entier.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

@@ -1,0 +1,42 @@
+<textcomponents>
+
+<component id="ID_txt01">
+  <text><![CDATA[<b>192.168.14.0</b>]]></text> 
+  </component>
+  
+<component id="ID_txt02">
+  <text><![CDATA[<b>R1</b>]]></text> 
+  </component>
+  
+<component id="ID_txt03">
+  <text><![CDATA[<b>192.168.15.1</b>]]></text> 
+  </component>
+  
+<component id="ID_txt04">
+  <text><![CDATA[<b>S0/0/0<br/>192.168.15.2</b>]]></text> 
+  </component>
+  
+<component id="ID_txt05">
+  <text><![CDATA[<b>R2</b>]]></text> 
+  </component>
+  
+<component id="ID_txt06">
+  <text><![CDATA[<b>192.168.16.0</b>]]></text> 
+  </component>
+
+
+<component id="ID_title">
+	<text><![CDATA[<b>Configuring Static Routes' - GP</b>]]></text>
+</component>
+<component id="ID_inst">
+	<text><![CDATA[<b>Roll over the routers to see static route configurations.</b>]]></text>
+</component>
+
+<component id="ID_router01">
+	<text><![CDATA[<font face="courier new dynamic"><b>Router1(config)#ip route 192.168.16.0 255.255.255.0 192.168.15.1</b></font>]]></text>
+</component>
+<component id="ID_router02">
+	<text><![CDATA[<font face="courier new dynamic"><b>Router2(config)#ip route 192.168.14.0 255.255.255.0 192.168.15.2</b></font>]]></text>
+</component>
+
+</textcomponents>

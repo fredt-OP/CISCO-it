@@ -1,0 +1,41 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[H1]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[H2]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[Network Address:<br>192.168.13.16/28]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[H1 Address:<br>195.168.13.21<br>255.255.255.248]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[H2 Address:<br>195.168.13.25<br>255.255.255.248]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Network Address:<br>192.168.13.24/28]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[Roll over the hosts to determine if they are on the same subnet.]]></text>
+</component>
+
+<component id="ID_txtTitle">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+<component id="ID_txtBody">
+<text><![CDATA[H1 = 192.168.13.21/29<br>Subnet Mask: 255.255.255. 1  1  1  1  1  <font color='#ff9900'>0  0  0</font> (decimal 248)<br>IP Address:    192.168.13.    0  0  0  1  0  <font color='#ff9900'>1  0  1</font> (decimal 21)<br>--------------------------------------------------------------------<br>Subnetwork:   192.168.13.    0  0  0  1  0  <font color='#ff9900'>0  0  0</font> (decimal 16)<br><br><b>H1 is on subnetwork: 192.168.13.16</b>
+]]></text>
+</component>
+<component id="ID_txtTitle2">
+<text><![CDATA[<b>H2</b>]]></text>
+</component>
+<component id="ID_txtBody2">
+<text><![CDATA[H2 = 192.168.13.25/29<br>Subnet Mask: 255.255.255. 1  1  1  1  1  <font color='#ff9900'>0  0  0</font> (decimal 248)<br>IP Address:    192.168.13.    0  0  0  1  1  <font color='#ff9900'>0  0  1</font> (decimal 25)<br>--------------------------------------------------------------------<br>Subnetwork:   192.168.13.    0  0  0  1  1  <font color='#ff9900'>0  0  0</font> (decimal 24)<br><br><b>H2 is on subnetwork: 192.168.13.24<b/>]]></text>
+</component>
+
+</textcomponents>

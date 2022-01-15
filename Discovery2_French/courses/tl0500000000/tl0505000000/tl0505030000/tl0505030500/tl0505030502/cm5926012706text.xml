@@ -1,0 +1,33 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Configuration d’un routeur Cisco en tant que serveur DHCP</b>]]></text>
+</component>
+
+<component id="ID_txtMain">
+<text><![CDATA[<b>Configuration d’une interface</b>]]></text>
+</component>
+
+
+
+<component id="ID_field1">
+<text><![CDATA[<font face="_typewriter">Router(config)#<b>interface serial 0/0</b><br>Router(config-if)#<b>description connection to Router2</b><br>Router(config-if)#<b>ip address 192.168.1.125 255.255.255.0</b><br>Router(config-if)#<b>clock rate 64000</b><br>Router(config-if)#<b>no shutdown</b></font>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Sur les liaisons série directement interconnectées, comme par exemple dans un environnement de travaux pratiques, une extrémité doit être considérée comme un équipement DCE et fournir le signal de synchronisation. L’horloge est activée, et sa fréquence est spécifiée à l’aide de la commande clock rate. Les fréquences d’horloge (en bits par seconde) sont les suivantes : 1200, 2 400, 9 600, 19 200, 38 400, 56 000, 64 000, 72 000, 125 000, 148 000, 500 000, 800 000, 1 000 000, 1 300 000, 2 000 000 ou 4 000 000. Cependant, certaines de ces fréquences peuvent ne pas être disponibles sur certaines interfaces série. Ce paramètre dépend de la capacité de chaque interface. Les commandes utilisées pour définir une fréquence d’horloge et activer une interface série sont indiquées ci-dessus.]]></text>
+</component>
+
+<component id="tipTitle"><text><b>Plus d’info</b></text>	
+</component>
+<component id="tipBody"><text><b>Plus d’info</b></text>	
+</component>
+<component id="TipText"><text><![CDATA[Plus d’info]]></text>
+</component>
+  
+
+</textcomponents>

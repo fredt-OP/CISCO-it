@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 12:01:07">
+<title><content-text><![CDATA[4.2.4 - TCP Three-Way Handshake]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a Wireshark screenshot of an Ethernet frame showing the client response to the server (ACK) in a TCP three-way handshake. In the screenshot, various information lines are highlighted.<br><br>Frame 16: Source IP 10.1.1.1, Destination IP 192.168.254.254.<br>Frame 16 detail:<br>Transmission Control Protocol, Source Port: 1069 (1069), Destination Port: http (80) Seq: 1, Ack: 1, Len: 0.<br>Flags: 0x10 (ACK)<br>00010000=Acknowledgment: Set<br>[SEQ/ACK analysis]<br>[This is an ACK to the segment in frame: 15]<br><br>The TCP segment in this frame shows:<br>-	ACK flag set to indicate a valid acknowledgement number.<br>-	Acknowledgement number response to the initial sequence number as a relative value of 1.<br>-	Source port number 1069 to corresponds to the clients source port.<br>-	Source port number 80 (HTTP) indicates the web server service (httpd).<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

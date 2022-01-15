@@ -1,0 +1,195 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Cisco1</NAME>
+ <NAME translate="true">Cisco2</NAME>
+ <NAME translate="true">Cisco3</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">FR Switch</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Brand X</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Cisco1</NAME>
+ <NAME translate="true">Cisco2</NAME>
+ <NAME translate="true">Cisco3</NAME>
+ <NAME translate="true">FR Switch</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Brand X</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Cisco1</NAME>
+ <NAME translate="true">Cisco2</NAME>
+ <NAME translate="true">Cisco3</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">FR Switch</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Brand X</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Cisco1</NAME>
+ <NAME translate="true">Cisco2</NAME>
+ <NAME translate="true">Cisco3</NAME>
+ <NAME translate="true">FR Switch</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Brand X</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Cisco1</NAME>
+ <NAME translate="true">Cisco2</NAME>
+ <NAME translate="true">Cisco3</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">FR Switch</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Brand X</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Cisco1</NAME>
+ <NAME translate="true">Cisco2</NAME>
+ <NAME translate="true">Cisco3</NAME>
+ <NAME translate="true">FR Switch</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Brand X</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 7.5.1 : &lt;br&gt;examen des en-têtes de trame de couche 2&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;!--This is the end of the IP addressing table code&quot; --&gt;
+
+
+&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Examen du réseau &lt;li&gt;Exécution de la simulation &lt;/ul&gt; &lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt; &lt;h3&gt;Présentation : &lt;/h3&gt;
+
+Lorsqu'un paquet IP traverse un interréseau, il peut être encapsulé dans de nombreuses trames de couche 2 différentes. Packet Tracer prend en charge Ethernet, le protocole propriétaire de Cisco HDLC, le protocole PPP basé sur les normes IETF et le relais de trames au niveau de la couche 2. Lorsque le paquet est transmis de routeur à routeur, la trame de couche 2 est retirée et le paquet est encapsulé dans la trame de couche 2 pour l'interface sortante. Dans cet exercice, vous allez suivre un paquet IP à travers un interréseau et examiner les différentes encapsulations de couche 2. &lt;br&gt;&lt;br&gt;&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : examen du réseau&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1.  Examen des liaisons établies entre les routeurs &lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; PC1 se connecte à PC2 par l'intermédiaire de quatre routeurs. Les trois liaisons établies entre ces routeurs utilisent chacune une encapsulation de couche 2 différente. La liaison établie entre Cisco1 et Cisco2 utilise le protocole propriétaire de Cisco, HDLC. La liaison établie entre Cisco2 et Brand X utilise le protocole PPP basé sur les normes IETF car Brand X n'est pas un routeur Cisco. La liaison établie entre Brand X et Cisco3 utilise le relais de trames via un réseau de fournisseurs de services pour réduire le coût par rapport au coût lié à une liaison dédiée.
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Vérification de la connectivité en mode temps réel&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Envoyez une requête ping à l'adresse IP de PC2 via l'&lt;b&gt;invite de commandes&lt;/b&gt; de PC1. Utilisez la commande &lt;b&gt;ping 192.168.5.2&lt;/b&gt;. Si la requête ping dépasse le délai d'attente, réexécutez la commande jusqu'à ce qu'elle réussisse.  Il se peut que plusieurs tentatives soient nécessaires pour que le réseau converge.&lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Étape 2 : exécution de la simulation &lt;/h3&gt; &lt;/b&gt;&lt;br&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1.  Lancement de la simulation&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Passez en mode simulation. L'unité de données de protocole au niveau de PC1 est une requête d'écho ICMP destinée à PC2. Cliquez sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; deux fois pour que l'unité de données de protocole atteigne le routeur Cisco1.
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Examen de l'encapsulation de couche 2&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur l'unité de données de protocole au niveau du routeur Cisco1. La fenêtre &lt;b&gt;PDU Information&lt;/b&gt; s'affiche. Cliquez sur l'onglet &lt;b&gt;Inbound PDU Details&lt;/b&gt;. L'encapsulation de couche 2 entrante est Ethernet II lorsque la trame arrive du réseau local. Cliquez sur l'onglet &lt;b&gt;Outbound PDU Details&lt;/b&gt;. L'encapsulation de couche 2 sortante est HDLC lorsque la trame est sur le point d'être envoyée au routeur Cisco2.&lt;br&gt;&lt;br&gt; Cliquez de nouveau sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt;. Répétez le processus lorsque l'unité de données de protocole arrive à chaque routeur le long du chemin vers PC2. Un changement se produit au niveau de l'encapsulation de couche 2 à chaque saut. Par ailleurs, le paquet IP encapsulé ne change pas.
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,FR Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Brand X</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,FR Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Brand X</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cisco3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,FR Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Brand X</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true">Ethernet</TEXT>
+ <TEXT translate="true">Ethernet</TEXT>
+ <TEXT translate="true">192.168.1.2</TEXT>
+ <TEXT translate="true">192.168.3.0/24</TEXT>
+ <TEXT translate="true">192.168.4.0/24</TEXT>
+ <TEXT translate="true">Frame Relay</TEXT>
+ <TEXT translate="true">192.168.5.0/24</TEXT>
+ <TEXT translate="true">192.168.2.0/24</TEXT>
+ <TEXT translate="true">PPP</TEXT>
+ <TEXT translate="true">HDLC</TEXT>
+ <TEXT translate="true">192.168.5.2</TEXT>
+ <TEXT translate="true">192.168.1.0/24</TEXT>
+ <TEXT translate="true">192.168.1.2</TEXT>
+ <TEXT translate="true">192.168.5.0/24</TEXT>
+ <TEXT translate="true">192.168.4.0/24</TEXT>
+ <TEXT translate="true">Ethernet</TEXT>
+ <TEXT translate="true">192.168.1.0/24</TEXT>
+ <TEXT translate="true">Frame Relay</TEXT>
+ <TEXT translate="true">Ethernet</TEXT>
+ <TEXT translate="true">192.168.5.2</TEXT>
+ <TEXT translate="true">HDLC</TEXT>
+ <TEXT translate="true">PPP</TEXT>
+ <TEXT translate="true">192.168.2.0/24</TEXT>
+ <TEXT translate="true">192.168.3.0/24</TEXT>
+ <TEXT translate="true">Ethernet</TEXT>
+ <TEXT translate="true">192.168.1.2</TEXT>
+ <TEXT translate="true">192.168.3.0/24</TEXT>
+ <TEXT translate="true">HDLC</TEXT>
+ <TEXT translate="true">PPP</TEXT>
+ <TEXT translate="true">Frame Relay</TEXT>
+ <TEXT translate="true">Ethernet</TEXT>
+ <TEXT translate="true">192.168.5.0/24</TEXT>
+ <TEXT translate="true">192.168.1.0/24</TEXT>
+ <TEXT translate="true">192.168.4.0/24</TEXT>
+ <TEXT translate="true">192.168.5.2</TEXT>
+ <TEXT translate="true">192.168.2.0/24</TEXT>
+ <ID translate="true">Cisco1</ID>
+ <ID translate="true">Cisco2</ID>
+ <ID translate="true">Cisco3</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">FR Switch</ID>
+ <ID translate="true">Switch</ID>
+ <ID translate="true">Brand X</ID>
+ <ID translate="true">Cisco1</ID>
+ <ID translate="true">Cisco2</ID>
+ <ID translate="true">Cisco3</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">FR Switch</ID>
+ <ID translate="true">Switch</ID>
+ <ID translate="true">Brand X</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

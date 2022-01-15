@@ -1,0 +1,343 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component> 
+
+<component id="slide01">
+<text><![CDATA[<li>Tester les options de connectivité à distance peut s’avérer plus difficile que tester la conception de réseau local.</li><br/><li>Le concepteur peut utiliser trois méthodes différentes pour tester les conceptions de connectivité à distance :</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>le logiciel de simulation, comme Packet Tracer ;</li><li>le test du prototype grâce à des liaisons simulées ;</li><li>le test pilote dans l’environnement réel.</li></textformat><br/><li>Pour le concepteur, les programmes informatiques comme Packet Tracer constituent des outils permettant de tester des configurations avant de les implémenter sur les équipements réels. L’utilisation d’un logiciel de simulation présente les avantages suivants :</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>un coût global plus faible ;</li><li>la flexibilité ;</li><li>l’extensibilité ;</li><li>le contrôle.</li></textformat><br/><li>L’utilisation de simulations peut présenter des inconvénients : les simulations disposent de fonctionnalités limitées ou proposent des estimations de performances irréalistes.</li><br/><li>Grâce au câblage croisé et aux configurations spéciales de périphériques, les connexions WAN peuvent être simulées dans un environnement prototype.</li><br/><li>En cas d’utilisation du câblage croisé pour connecter deux interfaces série, il est nécessaire que l’un des périphériques se charge de la synchronisation du circuit. Sur un routeur Cisco, cette action est réalisée grâce à la commande clock rate.</li></ul>]]></text>
+</component> 
+
+
+
+<component id="slide02">
+<text><![CDATA[<li>Le relais de trames est un protocole de réseau étendu hautes performances, normalisé par l’Union Internationale des Télécommunications UIT-T.</li><br/><li>Chaque liaison de relais de trames comporte au moins trois composants :</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>le circuit point à point local qui connecte le routeur d’équipement d’abonné local au commutateur de relais de trames FST ;</li><li>le réseau à commutation de paquets FST ;</li><li>le circuit point à point à distance qui connecte le site à distance au réseau FST.</li></textformat><br/><li>Un seul circuit physique de boucle locale peut prendre en charge plusieurs circuits virtuels. Chaque point d’extrémité de circuit virtuel est identifié par un identificateur de connexion de liaisons de données (DLCI).</li><br/><li>Le débit de données garanti (CIR) indique le débit de données moyen maximum offert par le réseau dans des conditions normales.<br/><br/></li></ul>]]></text>
+</component>
+
+<component id="s1_ID_txt02">     
+<text><![CDATA[Stade<BR>Routeur d’équipement d’abonné et ETTD]]></text> 
+
+</component>
+<component id="vID_txt03">
+<text><![CDATA[s0/0]]></text> 
+</component>
+ 
+<component id="s1_ID_txt04">           
+<text><![CDATA[CSU/DSU]]></text>   
+</component>
+   
+<component id="s1_ID_txt05">              
+<text><![CDATA[T1]]></text>  
+</component>
+
+<component id="s1_ID_txt06">              
+<text><![CDATA[DLCI 10, 30]]></text>  
+</component>
+
+<component id="s1_ID_txt07">              
+<text><![CDATA[Commutateur à relais de trames DCE]]></text>  
+</component>
+
+<component id="s1_ID_txt08">              
+<text><![CDATA[Réseau FST]]></text>  
+</component>
+
+<component id="s1_ID_txt09">              
+<text><![CDATA[DLCI 40]]></text>  
+</component>
+
+<component id="s1_ID_txt10">              
+<text><![CDATA[T1]]></text>  
+</component>
+
+<component id="s1_ID_txt11">              
+<text><![CDATA[T1]]></text>  
+</component>
+
+<component id="s1_ID_txt12">              
+<text><![CDATA[DLCI20]]></text>  
+</component>
+
+<component id="s1_ID_txt13">              
+<text><![CDATA[Boutique de souvenirs<br>Routeur d’équipement d’abonné et ETTD]]></text>  
+</component>
+
+<component id="s1_ID_txt14">              
+<text><![CDATA[s0/0]]></text>  
+</component>
+
+<component id="s1_ID_txt15">              
+<text><![CDATA[CSU/DSU]]></text>  
+</component>
+
+<component id="s1_ID_txt16">              
+<text><![CDATA[s0/0]]></text>  
+</component>
+
+<component id="s1_ID_txt17">              
+<text><![CDATA[Billetterie Routeur d’équipement d’abonné et ETTD]]></text>  
+</component>
+
+<component id="s1_ID_txt18">              
+<text><![CDATA[Commutateur à relais de trames simulé]]></text>  
+</component>
+
+<component id="s1_ID_txt19">              
+<text><![CDATA[FR1]]></text>  
+</component>
+
+<component id="s1_ID_txt20">              
+<text><![CDATA[s1/0 DCE]]></text>  
+</component>
+
+<component id="s1_ID_txt21">              
+<text><![CDATA[s1/0 DCE]]></text>  
+</component>
+
+<component id="s1_ID_txt22">              
+<text><![CDATA[Équipement d’abonné1]]></text>  
+</component>
+
+<component id="s1_ID_txt23">              
+<text><![CDATA[Équipement d’abonné2]]></text>  
+</component>
+
+<component id="s1_ID_txt24">              
+<text><![CDATA[s1/0]]></text>  
+</component>
+
+<component id="s1_ID_txt25">              
+<text><![CDATA[s0/1]]></text>  
+</component>
+
+<component id="s1_ID_txt26">              
+<text><![CDATA[Fa/1]]></text>  
+</component>
+
+<component id="s1_ID_txt27">              
+<text><![CDATA[Fa/0]]></text>  
+</component>
+
+<component id="s1_ID_txt28">              
+<text><![CDATA[Fa/1]]></text>  
+</component>
+
+<component id="s1_ID_txt29">              
+<text><![CDATA[Fa/0]]></text>  
+</component>
+
+<component id="s1_ID_txt30">              
+<text><![CDATA[Stade principal]]></text>  
+</component>
+
+<component id="s1_ID_txt31">              
+<text><![CDATA[FAI1]]></text>  
+</component>
+
+<component id="s1_ID_txt32">              
+<text><![CDATA[Connexion de réseau privé virtuel de sauvegarde simulée]]></text>  
+</component>
+
+<component id="s1_ID_txt33">              
+<text><![CDATA[Site distant]]></text>  
+</component>
+
+<component id="s1_ID_txt34">              
+<text><![CDATA[Câble croisé V-35]]></text>  
+</component>
+
+<component id="s1_ID_txt35">              
+<text><![CDATA[Câble croisé V-35]]></text>  
+</component>
+
+<component id="s1_ID_txt36">              
+<text><![CDATA[Liaison de sauvegarde]]></text>  
+</component>
+
+<component id="s1_ID_txt37">              
+<text><![CDATA[Liaison de sauvegarde]]></text>  
+</component>
+
+<component id="s1_ID_txt38">              
+<text><![CDATA[Réseau de relais de trames réel]]></text>  
+</component>
+
+
+
+<component id="slide03">
+<text><![CDATA[<li>Pour faciliter la gestion des flux de trafic sur le réseau, le relais de trames implémente deux mécanismes :</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>la notification explicite d’encombrement au destinataire (FECN) ;</li><li>la notification explicite d’encombrement à la source (BECN).</li></textformat><br/><li>Le protocole de résolution d’adresse inverse (protocole ARP inverse) offre un mécanisme de création de cartes d’adressage dynamiques DLCI vers la couche 3.</li><br/><li>Le relais de trames est un protocole d’accès NBMA. Cela signifie que chaque circuit virtuel d’une interface est traité comme un réseau local distinct.</li><br/><li>Une méthode pour configurer l’utilisation d’une liaison de sauvegarde par les routeurs lorsque la liaison principale est indisponible consiste à créer des routes statiques flottantes. Une route statique flottante est une route statique dotée d’une distance administrative supérieure à la distance administrative des routes dynamiques correspondantes.</li></ul>]]></text>
+</component>
+
+
+<component id="s3_ID_txt01">
+<text><![CDATA[Stade<BR>Routeur d’équipement d’abonné et ETTD]]></text>
+</component>
+
+<component id="s3_ID_txt02">
+<text><![CDATA[S0/0]]></text>
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[DLCI 10, 30]]></text>
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[CSU-DSU]]></text>
+</component>
+
+<component id="s3_ID_txt05">
+<text><![CDATA[Réseau FST]]></text>
+</component>
+
+<component id="s3_ID_txt06">
+<text><![CDATA[DLCI 20]]></text>
+</component>
+
+<component id="s3_ID_txt07">
+<text><![CDATA[CSU-DSU]]></text>
+</component>
+
+<component id="s3_ID_txt08">
+<text><![CDATA[Billetterie<BR>Routeur d’équipement d’abonné et ETTD]]></text> 
+</component>
+
+
+<component id="s3_ID_txt09">
+<text><![CDATA[ENCOMBREMENT]]></text>
+</component>
+
+
+<component id="s3_ID_txt14">
+<text><![CDATA[Le routeur DCE reçoit les trames marquées BECN. Le contrôle de flux peut être utilisé (ou invoqué) si le périphérique l’implémente.]]></text>
+</component>
+
+<component id="s3_ID_txt15">
+<text><![CDATA[Le commutateur DCE envoie une BECN au périphérique source.]]></text>
+</component>
+
+
+
+
+<component id="slide04">
+<text><![CDATA[<li>Un réseau privé virtuel est une extension du réseau privé interne. Les réseaux privés virtuels transmettent les informations en toute sécurité sur des réseaux partagés ou publics, comme Internet.</li><br/><li>Les réseaux privés virtuels disposent de deux composants importants :</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>la transmission tunnel, pour créer le réseau virtuel ;</li><li>le chiffrement, pour la confidentialité et la sécurité.</li></textformat><br/><li>Les méthodes de transmission tunnel incluent :</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>l’encapsulation générique de routage ;</li><li>la sécurité IP (IPSec) ;</li><li>le protocole LF2 (Layer 2 Forwarding) ;</li><li>le protocole PPTP (Point-to-Point Tunneling Protocol) ;</li><li>le protocole L2TP (Layer 2 Tunneling Protocol).</li></textformat><br/><li>Les algorithmes de chiffrement incluent :</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>l’algorithme de norme de chiffrement des données (DES, Data Encryption Standard) ;</li><li>l’algorithme Triple DES (3DES) ;</li><li>l’Advanced Encryption Standard (AES) ;</li><li>Rivest, Shamir et Adleman (RSA).</li></textformat></ul>]]></text>
+</component>
+
+<component id="s4_ID_txt01">
+<text><![CDATA[Réseau virtuel]]></text>
+</component>
+
+<component id="s4_ID_txt02">
+<text><![CDATA[Transmission tunnel]]></text>
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[Réseau privé]]></text>
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[Chiffrement]]></text>
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[Chiffrer]]></text>
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[Message chiffré]]></text>
+</component>
+
+<component id="s4_ID_txt07">
+<text><![CDATA[Déchiffrer]]></text>
+</component>
+
+<component id="s4_ID_txt08">
+<text><![CDATA[Réseau privé virtuel = transmission tunnel + chiffrement]]></text>
+</component>
+
+<component id="s4_ID_txt09">
+<text><![CDATA[Cliquez sur les zones mises en évidence pour en savoir plus sur les options de transmission tunnel.]]></text>
+</component>
+
+<component id="s4_ID_txt10">
+<text><![CDATA[ ]]></text>
+</component>
+
+<component id="s4_ID_txt11">
+<text><![CDATA[ ]]></text>
+</component>
+
+
+<component id="slide05">
+<text><![CDATA[<li>Les algorithmes de chiffrement, comme DES et 3DES, nécessitent une clé secrète symétrique et partagée pour le chiffrement et le déchiffrement.</li><br/><li>Les clés peuvent être configurées grâce à l’utilisation d’une méthode d’échange de clés. L’accord de clé Diffie-Hellman (DH) est une méthode publique d’échange de clés.</li><br/><li>Pour prévenir l’interception et la modification de données du réseau privé virtuel, un algorithme d’intégrité des données peut être utilisé pour ajouter un hachage au message.</li><br/><li>IPSec est une infrastructure de normes ouvertes qui offre confidentialité, intégrité et authentification des données entre homologues participants. IPSec fournit ces services de sécurité à la couche 3.</li></ul>]]></text>
+</component>
+
+<component id="s5_ID_txt01">
+<text><![CDATA[Infrastructure IPSec]]></text>
+</component>
+
+<component id="s5_ID_txt02">
+<text><![CDATA[Protocole IPSec]]></text> 
+</component>
+
+<component id="s5_ID_txt03">
+<text><![CDATA[Chiffrement]]></text> 
+</component>
+
+<component id="s5_ID_txt04">
+<text><![CDATA[Authentification]]></text> 
+</component>
+
+<component id="s5_ID_txt05">
+<text><![CDATA[DH]]></text> 
+</component>
+
+<component id="s5_ID_txt06">
+<text><![CDATA[Choix]]></text>
+</component>
+
+<component id="s5_ID_txt07">
+<text><![CDATA[ESP]]></text> 
+</component>
+
+<component id="s5_ID_txt08">
+<text><![CDATA[ESP + AH]]></text> 
+</component>
+
+<component id="s5_ID_txt09">
+<text><![CDATA[AH]]></text> 
+</component>
+
+<component id="s5_ID_txt10">
+<text><![CDATA[DES]]></text>
+</component>
+
+<component id="s5_ID_txt11">
+<text><![CDATA[3DES]]></text>
+</component>
+
+<component id="s5_ID_txt12">
+<text><![CDATA[3AES]]></text> 
+</component>
+
+<component id="s5_ID_txt13">
+<text><![CDATA[MD5]]></text> 
+</component>
+
+<component id="s5_ID_txt14">
+<text><![CDATA[SHA]]></text> 
+</component>
+
+<component id="s5_ID_txt15">
+<text><![CDATA[DH1]]></text> 
+</component>
+
+<component id="s5_ID_txt16">
+<text><![CDATA[DH2]]></text> 
+</component>
+
+<component id="s5_ID_txt17">
+<text><![CDATA[DH5]]></text> 
+</component>
+
+
+</textcomponents>

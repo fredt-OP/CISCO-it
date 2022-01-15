@@ -1,0 +1,177 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[10.10.10.0/24]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[.1]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[S0/0/0]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[172.16.3.0/30]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[S0/0/0]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Fa0/0]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[.1]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[172.16.1.0/24]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[S0/0/1]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[192.168.10.4/30]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[S0/0/0]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[.1]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[192.168.1.0/24]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[Fa0/0]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[S0/0/1]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[192.168.10.8/30]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[S0/0/1]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[Fa0/0]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[.2]]></text>
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[.1]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[.5]]></text>
+</component>
+
+
+<component id="ID_txt22">
+<text><![CDATA[.6]]></text>
+</component>
+
+<component id="ID_txt23">
+<text><![CDATA[.10]]></text>
+</component>
+
+<component id="ID_txt24">
+<text><![CDATA[.9]]></text>
+</component>
+
+<component id="ID_txt25">
+<text><![CDATA[R2]]></text>
+</component>
+
+<component id="ID_txt26">
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="ID_txt27">
+<text><![CDATA[R3]]></text>
+</component>
+
+
+<component id="ID_txt28">
+<text><![CDATA[DCE]]></text>
+</component>
+
+
+<component id="ID_txt29">
+<text><![CDATA[DCE]]></text>
+</component>
+
+
+<component id="ID_txt30">
+<text><![CDATA[DCE]]></text>
+</component>
+
+
+<component id="ID_txt31">
+<text><![CDATA[64 Kbits/s]]></text>
+</component>
+
+
+<component id="ID_txt32">
+<text><![CDATA[1 024 Kbits/s]]></text>
+</component>
+
+
+<component id="ID_txt33">
+<text><![CDATA[1 544 Kbits/s]]></text>
+</component>
+
+
+
+<component id="ID_txtBody">
+<text><![CDATA[R1(config)#router ospf 1
+R1(config)#router eigrp 1
+R1(config-router)#network 172.16.0.0
+R1(config-router)#network 192.168.10.0
+R1(config-router)#exit]]></text>
+
+</component>
+
+
+<component id="ID_txtBody2">
+<text><![CDATA[R2(config)#router eigrp 1
+R2(config-router)#network 172.16.0.0
+R2(config-router)#network 10.0.0.0
+*Mar  1 07:54:42.475: %DUAL-5-NBRCHANGE: IP-EIGRP(0) 1: Neighbor 172.16.3.1 (Serial0/0) is up: new adjacencyR2(config-router)#network 192.168.10.8 0.0.0.3]]></text>
+</component>
+
+
+<component id="ID_txtBody3">
+<text><![CDATA[R3(config)#router eigrp 1
+R3(config-router)#network 192.168.10.0
+*Mar  1 00:18:11.004: %DUAL-5-NBRCHANGE: IP-EIGRP(0) 1: Neighbor 192.168.10.5 (Serial0/0) is up: new adjacency
+*Mar  1 00:18:11.008: %DUAL-5-NBRCHANGE: IP-EIGRP(0) 1: Neighbor 192.168.10.9 (Serial0/1) is up: new adjacency
+R3(config-router)#network 192.168.1.0]]></text>
+</component>
+
+
+
+
+
+<component id="ID_inst">
+<text><![CDATA[Cliquez sur R1, R2 et R3 pour afficher leur configuration EIGRP de base.]]></text>
+</component>
+
+</textcomponents>

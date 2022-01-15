@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 08:09:11">
+<title><content-text><![CDATA[5.1.4 - Configuring Static Routes]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a static route configuration. A host is connected to a switch, which is connected to router R1 on the 192.168.1.0 network. R1 is connected via its S0/0/0 port with the address 192.168.2.1 to the S0/0/1 port of R2 with the address 192.168.2.2. R2 is connected to a switch, which is also connected to a host on the 192.168.3.0 network. <br><br>Exit Interface<br>R1 (config) #IP route 192.168.3.0 255.255.255.0 S0/0/0<br><br>Next Hop Address<br>R1 (config) #IP route 192.168.3.0 255.255.255.0 192.168.2.2<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

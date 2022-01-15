@@ -1,0 +1,94 @@
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="./css/reset-fonts.css">
+		<link rel="stylesheet" type="text/css" href="./css/popup_index.css"/>
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script>
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			var content = new EJS({url: 'pindex.ejs'});
+
+			function getContent() {
+				var html = "";
+				data = {main:window.opener.main};
+				html = content.render(data);
+				writeToElement("contentdiv", html);
+			}
+
+			selchapter = window.opener.main.chapter;
+			filter = "outline";
+
+
+			function selectChapter(id) {
+				selchapter = window.opener.main.course.getChapterByID(id);
+				getContent();
+			}
+
+			function selectPage(li) {
+				window.opener.main.gotoPage(li);
+				window.close();
+			}
+
+			function setFilter(f) {
+				filter = f;
+				getContent();
+			}
+
+			function courseMenu() {
+				window.opener.close();
+				window.close();
+			}
+
+		</script>
+	</head>
+	<body class="popup"><div id="contentdiv">
+		<table cellspacing="0" cellpadding="0" border="0" align="left">
+			<tr>
+				<td class="btnbg"></td>
+				<td>&nbsp;&nbsp;&nbsp;</td>
+				<td class="btnbg"></td>
+				<td>&nbsp;&nbsp;&nbsp;</td>
+				<td class="btnbg"></td>
+			</tr>
+		</table>
+		<table cellspacing="0" cellpadding="2" border="0" width="40%" align="right">
+			<tr><td class="chaptertitle"><a href="javascript:courseMenu();" class="chapter"></a></td></tr>
+			<tr><td class="chaptertitle"><a href="javascript:selectChapter('id');" class="chapter"></a></td></tr>
+		</table>
+		<br><br>
+		<hr/>
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td width="60%">
+					<div id="list" class="listdiv">
+					<table cellspacing="0" cellpadding="0" border="0" width="100%">
+						<tr><td class="sectiontitle">1.2 Section Title</td></tr>
+						<tr><td class="topictitle">1.2.3 Topic Title</td></tr>
+						<tr><td class="pagetitle"><a href="javascript:selectPage('id');" class="page">1.2.3.4 Page Title</a></td></tr>
+					</table> 
+					</div>
+				</td>
+				<td valign="top">
+					<table cellspacing="0" cellpadding="2" border="0" width="45%" align="right">
+						<tr><td class="chaptertitle"><a href="javascript:selectChapter('id');" class="chapter">Chapter Title</a></td><td class="chaptertitle">0</td></tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<hr/>
+	</div>
+	<script>getContent();</script>
+</body>
+</html>
+
+

@@ -1,0 +1,165 @@
+﻿<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<b>Exercice</b><br><br>En fonction de la liste de contrôle d’accès, déterminez si les paquets sont autorisés ou refusés.<br><br><b>Cliquez dans la colonne Autorisé ou Refusé pour chaque paire d’adresses IP source et de destination du paquet en vous référant aux instructions de la liste de contrôle d’accès.</b>]]></text>
+</component>
+
+<component id="id_descr">
+<text><![CDATA[]]></text>
+</component>
+
+<component id="id_text_title1">
+<text><![CDATA[IP source]]></text>
+</component>
+<component id="id_text_title2">
+<text><![CDATA[IP de destination]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+
+
+
+	<component id="txt_numrows">
+		<text><![CDATA[6]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[Autorisé]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[Refusé]]></text>
+	</component>
+	
+<component id="ID_txt01">
+<text><![CDATA[192.168.1.66]]></text> 
+</component>
+<component id="ID_txt02">
+<text><![CDATA[192.168.1.0/24]]></text> 
+</component>
+<component id="ID_txt03">
+<text><![CDATA[LAN1]]></text> 
+</component>
+<component id="ID_txt04">
+<text><![CDATA[Fa0/0]]></text> 
+</component>
+<component id="ID_txt05">
+<text><![CDATA[Fa0/1]]></text> 
+</component>
+<component id="ID_txt06">
+<text><![CDATA[192.168.2.0/24]]></text> 
+</component>
+<component id="ID_txt07">
+<text><![CDATA[LAN2]]></text> 
+</component>
+<component id="ID_txt08">
+<text><![CDATA[S0/0/0]]></text> 
+</component>
+<component id="ID_txt09">
+<text><![CDATA[S0/0/0]]></text> 
+</component>
+<component id="ID_txt10">
+<text><![CDATA[172.16.1.0/30]]></text> 
+</component>
+<component id="ID_txt11">
+<text><![CDATA[Fa0/1]]></text> 
+</component>
+<component id="ID_txt12">
+<text><![CDATA[192.168.4.0/24]]></text> 
+</component>
+<component id="ID_txt13">
+<text><![CDATA[LAN4]]></text> 
+</component>
+<component id="ID_txt14">
+<text><![CDATA[Fa0/0]]></text> 
+</component> 
+<component id="ID_txt15">
+<text><![CDATA[192.169.4.12]]></text> 
+</component>
+<component id="ID_txt16">
+<text><![CDATA[LAN3]]></text> 
+</component>
+<component id="ID_txt17">
+<text><![CDATA[192.186.3.0/24]]></text> 
+</component>
+<component id="ID_txt18">
+<text><![CDATA[192.168.3.200]]></text> 
+</component>     
+<component id="ID_txt19">
+<text><![CDATA[R2]]></text> 
+</component>
+<component id="ID_txt20">
+<text><![CDATA[R1]]></text> 
+</component>
+<component id="ID_txt21">
+<text><![CDATA[Spécifique]]></text> 
+</component>
+<component id="ID_txt22">
+<text><![CDATA[ENT]]></text> 
+</component>
+		
+    <component id="txt_q1">
+		<text><![CDATA[192.168.1.66	                   192.168.3.51]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[192.168.1.66	                   192.168.3.75]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[192.168.1.88	                   192.168.2.51]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[192.168.1.88	                   192.168.3.75]]></text>
+	</component>
+	<component id="txt_q5">
+		<text><![CDATA[192.168.1.77	                   192.168.3.75]]></text>
+	</component>
+	 <component id="txt_q6">
+		<text><![CDATA[192.168.1.33	                   192.168.2.34]]></text>
+	</component>	
+  
+	
+    <component id="txt_a1">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[2]]></text>
+	</component>
+	<component id="txt_a5">
+		<text><![CDATA[1]]></text>
+	</component>
+	<component id="txt_a6">
+		<text><![CDATA[1]]></text>
+	</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Vous avez réussi à identifier les paquets qui seront autorisés et ceux qui seront refusés. Cliquez sur Suivant pour continuer.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Relisez les informations sur les listes de contrôle d’accès étendues et réessayez.]]></text></component>
+
+
+</textcomponents>

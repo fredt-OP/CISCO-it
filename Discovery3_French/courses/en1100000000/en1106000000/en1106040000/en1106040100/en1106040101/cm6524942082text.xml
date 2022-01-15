@@ -1,0 +1,114 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><li>OSPF is a classless interior link-state routing protocol used in enterprise networks.</li><br/><li>OSPF offers scalability, route summarization, and isolates routing issues.</li><br/><li>OSPF uses bandwidth to generate the cost metric.</li><br/><li>OSPF routers within an area advertise information about the status of links to their neighbors using LSAs.</li><br/><li>OSPF routers use their router ID to elect a DR and BDR on multi-access networks.</li><br/><li>An OSPF AS design starts with the backbone area or Area 0. Other areas created are all adjacent to Area 0.  </li><br/><li>An ABR connects an area to the backbone area.</li><br/><li>An ASBR connects the entire OSPF AS to another AS.</ul></font>]]></text>
+</component>
+
+
+<component id="s1_ID_txt01">    
+<text><![CDATA[EIGRP]]></text> 
+</component>
+
+
+<component id="s1_ID_txt02">     
+<text><![CDATA[Area 0]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Area 1]]></text> 
+</component>
+ 
+<component id="s1_ID_txt04">          
+<text><![CDATA[Area 51]]></text> 
+</component>
+   
+<component id="s1_ID_txt05">             
+<text><![CDATA[ASBR]]></text>  
+</component>
+
+<component id="s1_ID_txt06">             
+<text><![CDATA[ABR]]></text>  
+</component>
+
+<component id="s1_ID_txt07">             
+<text><![CDATA[ABR]]></text>  
+</component>
+
+
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><li>The <b>OSPF network</b> command uses a combination of network address and wildcard mask. It specifies the interface address or range of addresses enabled for OSPF.</li><br/><li>To ensure the security of OSPF updates, configure authentication between routers. The most secure method of authentication is MD5.</li><br/><li>A network administrator can dictate which routers become the DR and the BDR by setting the priority or router ID on the routers. </li><br/><li>The <b>bandwidth interface</b> command and the <b>ip ospf cost interface</b> command ensure that OSPF uses an actual cost to determine the best route.</li><br/><li>Several show commands verify OSPF operation including <b>show ip protocols, show ip ospf</b>, or <b>show ip ospf interface</b>, <b>show ip route</b> and <b>show ip ospf neighbor</b>.</li></ul></font>]]></text>
+</component>
+
+
+
+<component id="s2_ID_text01">
+		<text><![CDATA[R1]]></text>
+	</component>
+<component id="s2_ID_text02">
+		<text><![CDATA[R2]]></text>
+	</component>
+<component id="s2_ID_text03">
+		<text><![CDATA[R3]]></text>
+	</component>
+
+<component id="s2_ID_text04">
+		<text><![CDATA[OSPF packets<br/>encrypted]]></text>
+	</component>
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><li>An administrator configures a default route on an ASBR and then configures it to advertise the default route into the rest of the OSPF network.</li><br/><li>Inter-area route summarization is configured on ABRs and applies to routes from within the AS. Summary routes between autonomous systems are configured on the ASBR.</li><br/><li>OSPF requires more router memory and CPU resources which means more powerful and more expensive routers.</li><br/><li>Route redistribution allows routes from one routing protocol or static routes to be imported into another routing protocol.</li><br/><li>AD and longest prefix match determines the preferred route to a network.</li></ul></font>]]></text>
+</component>
+
+
+<component id="s3_ID_txt01">    
+<text><![CDATA[ISP]]></text>  
+</component>
+
+<component id="s3_ID_txt03">     
+<text><![CDATA[I have default route to the ISP. I'll Send it to the other routers in my AS.]]></text>
+</component>
+ 
+<component id="s3_ID_txt04">
+<text><![CDATA[ASBR]]></text> 
+</component> 
+
+<component id="s3_ID_txt05">           
+<text><![CDATA[Enterprise AS]]></text>  
+</component>  
+ 
+<component id="s3_ID_txt06">              
+<text><![CDATA[R2]]></text>  
+</component>
+
+<component id="s3_ID_txt07">              
+<text><![CDATA[R5]]></text>  
+</component>
+
+<component id="s3_ID_txt08">              
+<text><![CDATA[R3]]></text>  
+</component>
+
+<component id="s3_ID_txt09">              
+<text><![CDATA[R4]]></text>  
+</component>
+
+<component id="s3_ID_txt10">              
+<text><![CDATA[R6]]></text>  
+</component>
+
+<component id="s3_ID_txt11">              
+<text><![CDATA[R1]]></text>  
+</component>
+
+<component id="s3_ID_txt12">              
+<text><![CDATA[ISP]]></text>  
+</component>
+
+</textcomponents>

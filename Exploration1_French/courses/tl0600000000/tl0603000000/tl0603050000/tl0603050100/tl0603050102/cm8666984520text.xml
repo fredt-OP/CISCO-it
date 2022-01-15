@@ -1,0 +1,143 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Effectuez cet exercice pour vérifier que vous avez compris les principaux points de ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions vous sera présentée. Il ne s’agit pas d’un questionnaire et vos réponses ne seront pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour afficher la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante de la série.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1. <textformat blockindent='14'>Énumérez les sept étapes du processus consistant à convertir les communications de l’utilisateur en données.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[<ol><li>L’utilisateur entre les données via une interface matérielle.</li><li>Les composants logiciel et matériel convertissent les données dans un format numérique.</li><li>Les services d’application lancent le transfert des données.</li><li>Les couches OSI encapsulent les données dans la pile.</li><li>Les données encapsulées traversent le média pour arriver à destination.</li><li>Les couches OSI de destination décapsulent les données de la pile.</li><li>Les données sont prêtes à être traitées par le périphérique final.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. <textformat blockindent='14'>Décrivez les deux formes de logiciels de couche application et la fonction de chacune d’entre elles.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<p>Le logiciel de couche application se présente sous deux formes : applications et services.</p><br/><p>Les applications sont conçues pour interagir avec l’utilisateur. Pour l’utilisateur, il s’agit des logiciels. Si le périphérique est un ordinateur, l’application est généralement lancée par l’utilisateur. Bien qu’il puisse exister de nombreuses couches sous-jacentes en support aux applications, les logiciels de couche application fournissent une interface entre l’utilisateur et le matériel. L’application lance le processus de transfert des données lorsque l’utilisateur clique sur le bouton d’envoi ou effectue une opération similaire.</p><br/><p>Les services sont des programmes s’exécutant en tâche de fond et effectuant une tâche spécifique sur le réseau de données. Ils sont invoqués par un périphérique se connectant au réseau ou par une application. Par exemple, un service de réseau peut fournir des fonctions qui transmettent des données ou permettre la conversion des données sur un réseau. En général, les services ne sont pas directement accessibles ou visibles par l’utilisateur final. Ils assurent la connexion entre une application et un réseau.</p>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3. <textformat blockindent='14'>Quelle est la signification des termes « serveur » et « client » dans le contexte des réseaux de données ?</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[<p>Le périphérique source de la communication de données est désigné par le terme « serveur » et le périphérique de destination par le terme « client ». Les processus client et serveur constituent des services de couche application qui fournissent la base de la connectivité du réseau de données.</p><br/><p>Dans certains cas, les serveurs et les clients sont des périphériques qui remplissent spécifiquement et exclusivement ce rôle. Par exemple :</p><ul><li>un serveur de fichiers central peut contenir les fichiers de données commerciales d’une entreprise auxquels les employés accèdent via leur station de travail cliente uniquement.</li><li>Des exemples reposant sur Internet incluent les serveurs Web et de messagerie sur lesquels de nombreux utilisateurs accèdent à un service fourni de manière centrale.</li><li>Dans d’autres situations (par exemple, le partage de fichiers via un réseau domestique), des périphériques particuliers peuvent remplir à la fois le rôle de serveur et le rôle de client à différents moments.</li></ul><br/><p>Les serveurs sont à la fois un référentiel et une source d’informations (par exemple, fichiers texte, bases de données, images ou fichiers vidéo ou audio) ayant été précédemment enregistrées.</p><br/><p>Le rôle du serveur peut être de gérer les communications lorsqu’elles se produisent. Ces communications sont nommées communications « en temps réel ». Il peut s’agir, par exemple, d’un serveur d’inscription de participants sur lequel de nombreux utilisateurs peuvent accéder simultanément à la même base de données mais en nécessitant chacun les mêmes informations à jour, ou encore d’un serveur de communications configurant un appel téléphonique IP où les adresses réseau des périphériques doivent être associées au numéro de téléphone composé.</p><br/><p>Le processus serveur est parfois nommé « démon de serveur » et s’exécute généralement en tâche de fond plutôt que sous le contrôle direct de l’utilisateur final. Ces processus serveur mettent les données des communications à la disposition du réseau de données. Les processus serveur sont décrits comme étant « à l’écoute » d’une requête d’un client. Lorsqu’un serveur « entend » une requête d’un client, il échange avec ce client les messages appropriés, en fonction du protocole utilisé, puis envoie les données demandées.</p><br/><p>Les processus <b>client</b>, à l’autre extrémité du processus de communication via le réseau de données, permettent à l’utilisateur d’effectuer des requêtes pour obtenir des données d’un serveur. Le logiciel client utilise généralement un programme lancé par un utilisateur. Le client lance le flux de données de communication à partir du serveur en envoyant des demandes de données au serveur. Le serveur répond en envoyant un ou plusieurs flux de données au client. Outre le transfert de données lui-même, cet échange peut inclure l’authentification de l’utilisateur et l’identification du fichier de données à transférer.</p><br/><p>Bien que les données soient généralement considérées comme étant transmises du serveur vers le client, certaines données sont toujours transmises du client vers le serveur. Un transfert de données effectué d’un client <b>vers un serveur</b> est nommé téléchargement, de même que lorsque les données sont transmises <b>à partir d’un serveur</b>.</p><br/><p>Voici des exemples de services client/serveur courants :</p><ul><li>DNS (Domain Name Service) ;</li><li>FTP (File Transfer Service) ;</li><li>HTTP (Hypertext transport Protocol) ;</li><li>Telnet (TELetype NETwork Service).</li></ul><br/><p>C’est par l’intermédiaire des services clients de couche application que la plupart des utilisateurs utilisent le réseau de données, d’où l’importance de comprendre cet aspect des réseaux.</p>]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4. <textformat blockindent='14'>Comparez le transfert de données client/serveur au transfert de données Peer to peer via le réseau.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[<p>Dans le transfert de données <b>client/serveur</b>, le périphérique source de la communication de données est désigné par le terme « serveur » et le périphérique de destination par le terme <br/>« client ».</p><br/><p>Dans le transfert de données Peer to peer, les services client et serveur sont utilisés au sein de la même conversation. Les périphériques source et de destination de la communication peuvent lancer l’échange et sont tous les deux considérés comme étant égaux dans le processus de communication. Ces périphériques sont nommés pairs.</p><br/><p>Par opposition au modèle client/serveur, dans lequel un serveur est généralement un référentiel centralisé et répond aux requêtes d’un grand nombre de clients, les réseaux Peer to peer comportent des données distribuées. En outre, une fois la communication établie, les pairs communiquent directement : les données ne sont pas traitées au niveau de la couche application par un troisième périphérique sur le réseau.</p>]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5. <textformat blockindent='14'>Énumérez cinq fonctions générales spécifiées par les protocoles de couche application.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[<p>Les fonctions spécifiées par les protocoles de couche application incluent les suivantes :</p><ul><li>les processus pouvant se produire au niveau des deux extrémités de la communication : ceci comprend ce qui doit arriver aux données et la manière dont l’unité de données de protocole (PDU) doit être structurée. L’unité de données de protocole de couche application utilisée dans ce cours est nommée « données ».</li><li>Les types de messages : il peut s’agir de requêtes, d’accusés de réception, de messages de données, de messages d’état et de messages d’erreur.</li><li>La syntaxe du message : elle indique l’ordre d’apparition prévu des informations (champs) fournies par le message.</li><li>La signification des champs contenus dans les messages doit être constante pour que les services puissent correctement agir en fonction des informations.</li><li>Les dialogues des messages : ils déterminent quels messages obtiennent quelles réponses pour que les services corrects soient invoqués en vue du transfert de données.</li></ul>]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6. <textformat blockindent='14'>Indiquez le rôle spécifique des protocoles de couche application DNS, HTTP, SMB et SMTP/POP.</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[<p>Tous ces protocoles utilisent un processus client/serveur.</p><br/><p>Le protocole <b>DNS (Domain Name System)</b> fournit à l’utilisateur un service automatisé qui associe ou résout les noms de ressources et les domaines de messagerie en fonction de l’adresse réseau de périphérique numérique requise. Ce service est accessible à n’importe quel utilisateur connecté à Internet et exécutant une application de couche application telle qu’un navigateur Web ou un programme client de messagerie.</p><br/><p>Le protocole <b>HTTP (Hypertext Transfer Protocol)</b> fut développé à l’origine pour publier et extraire des pages HTML (Hypertext Markup Language) et est à présent utilisé pour les systèmes d’information hypermédia distribués et collaboratifs. Le protocole HTTP est utilisé par le Web pour transférer des données à partir de serveurs Web vers des clients Web.</p><br/><p>Le protocole <b>SMB (Server Message Block)</b> décrit la structure des ressources réseau partagées entre les ordinateurs, telles que les répertoires, les fichiers, les imprimantes et les ports série.</p><br/><p>Le protocole <b>SMTP (Simple Mail Transport Protocol)</b> transfère le courriel sortant du client de messagerie vers le serveur de messagerie et transporte le courriel entre les serveurs de messagerie, ce qui permet l’échange de courriel via Internet.</p><br/><p>Le protocole <b>POP</b>, ou <b>POP3 (Post Office Protocol, version 3)</b>, achemine le courriel du serveur de messagerie vers le client.</p>]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7. <textformat blockindent='14'>Comparez les messages que les protocoles de couche application tels que DNS, HTTP, SMB et SMTP/POP échangent entre les périphériques en vue du transfert de données.</textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<p>Le protocole <b>DNS</b> comprend les formats standard de demandes, de réponses et de données. Les communications via le protocole DNS s’effectuent dans un format unique nommé message. Ce format de message est utilisé pour tous les types de demandes client et de réponses serveur, pour les messages d’erreur et pour le transfert des informations d’enregistrement de ressources entre les serveurs.</p><br/><p>Le protocole <b>HTTP</b> est un protocole de requête/réponse :</p><ul><li>une application client de couche application (généralement, un navigateur Web) envoie un message de requête au serveur.</li><li>Le serveur répond par le message approprié.</li></ul><br/><p>Le protocole comprend également des messages pour télécharger des données vers le serveur (par exemple, lors du remplissage d’un formulaire en ligne).</p><br/><p>Les messages <b>SMB</b> utilisent un format commun pour :</p><ul><li>démarrer, authentifier et terminer des sessions ;</li><li>contrôler l’accès aux fichiers et aux imprimantes ;</li><li>permettre à une application d’envoyer ou de recevoir des messages vers ou depuis un autre périphérique.</li></ul><br/><p>Le protocole <b>SMTP</b> spécifie des commandes et des réponses liées au lancement des sessions, à la transaction de courriels, à la transmission de courriels, à la vérification des noms de boîte aux lettres, au développement des listes de diffusion et aux échanges de début et de fin.</p><br/><p>Le protocole <b>POP</b> est un protocole client/serveur standard dans lequel le serveur est à l’écoute des connexions client et le client lance la connexion au serveur. Le serveur peut alors transférer le courriel.</p><br/><p>Tous les protocoles ci-dessus utilisent des messages serveur/client requête/réponse. Les applications utilisant les protocoles HTTP (un navigateur Web), SMB (un gestionnaire de fichiers) et SMTP/POP (un client de messagerie) sont visibles pour l’utilisateur, mais celles utilisant le protocole DNS sont sous-jacentes et réellement transparentes pour l’utilisateur.</p>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Vous avez passé en revue toutes les questions de la partie « Problèmes et discussion » du présent chapitre.</b>]]></text>
+</component>
+</textcomponents>

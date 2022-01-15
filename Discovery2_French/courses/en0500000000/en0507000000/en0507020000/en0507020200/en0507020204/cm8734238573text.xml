@@ -1,0 +1,186 @@
+﻿<textcomponents>
+
+<component id="ID_Inst">
+<text><![CDATA[<b>Click Play to view the acknowledgement and re-transmission of TCP operation. </b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Source</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Destination</b>]]></text>
+</component>
+
+
+<!--Send 1 -->
+
+
+<component id="ID_bubble01">
+<text><![CDATA[Send Segment 1]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[...And Starts Timer 1]]></text>
+</component>
+
+<component id="ID_bubble03">
+<text><![CDATA[Timer 1 Runs...]]></text>
+</component>
+
+<component id="ID_bubble04">
+<text><![CDATA[Destination Receives Segment 1]]></text>
+</component>
+
+<component id="ID_bubble05">
+<text><![CDATA[Acknowledgement 1 and Request 2]]></text>
+</component>
+
+<component id="ID_bubble06">
+<text><![CDATA[Source Receives Acknowledgement]]></text>
+</component>
+
+
+<!--Send 2 Fail-->
+
+
+<component id="ID_bubble01fail">
+<text><![CDATA[Send Segment 2]]></text>
+</component>
+
+<component id="ID_bubble02fail">
+<text><![CDATA[...And Starts Timer 2]]></text>
+</component>
+
+<component id="ID_bubble03fail">
+<text><![CDATA[Timer 2 Expires]]></text>
+</component>
+
+<component id="ID_bubble04fail">
+<text><![CDATA[Destination Receives Segment 1]]></text>
+</component>
+
+<component id="ID_bubble05fail">
+<text><![CDATA[No Acknowledgement 2]]></text>
+</component>
+
+<component id="ID_bubble06fail">
+<text><![CDATA[Source Receives Acknowledgement]]></text>
+</component>
+
+<component id="ID_bubble07fail">
+<text><![CDATA[Segment 2 Not Received]]></text>
+</component>
+
+<component id="ID_bubble08fail">
+<text><![CDATA[No Acknowledgement 2]]></text>
+</component>
+
+<component id="ID_bubble09fail">
+<text><![CDATA[Timer 2 Expires]]></text>
+</component>
+
+
+<!--Send 2 -->
+
+
+<component id="ID_bubble01Send2">
+<text><![CDATA[Resend Segment 2]]></text>
+</component>
+
+<component id="ID_bubble02Send2">
+<text><![CDATA[...And Restarts Timer 2]]></text>
+</component>
+
+<component id="ID_bubble03Send2">
+<text><![CDATA[Timer 2 Runs...]]></text>
+</component>
+
+<component id="ID_bubble04Send2">
+<text><![CDATA[Destination Receives Segment 2]]></text>
+</component>
+
+<component id="ID_bubble05Send2">
+<text><![CDATA[Acknowledgement 2 and Request 3]]></text>
+</component>
+
+<component id="ID_bubble06Send2">
+<text><![CDATA[Source Receives Acknowledgement]]></text>
+</component>
+
+
+<!--Send 3 -->
+
+
+<component id="ID_bubble01Send3">
+<text><![CDATA[Send Segment 3]]></text>
+</component>
+
+<component id="ID_bubble02Send3">
+<text><![CDATA[...And Starts Timer 3]]></text>
+</component>
+
+<component id="ID_bubble03Send3">
+<text><![CDATA[Timer 3 Runs...]]></text>
+</component>
+
+<component id="ID_bubble04Send3">
+<text><![CDATA[Destination Receives Segment 3]]></text>
+</component>
+
+<component id="ID_bubble05Send3">
+<text><![CDATA[Acknowledgement 3 and Request 4]]></text>
+</component>
+
+<component id="ID_bubble06Send3">
+<text><![CDATA[Source Receives Acknowledgement]]></text>
+</component>
+
+<component id="ID_bubble10End">
+<text><![CDATA[<b>End Transmission</b>]]></text>
+</component>
+
+
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="forward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="mute">
+<text><![CDATA[Mute]]></text>
+</component>
+
+<component id="unmute">
+<text><![CDATA[UnMute]]></text>
+</component>
+
+<component id="previous">
+<text><![CDATA[Restart]]></text>
+</component>
+
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+
+</textcomponents>

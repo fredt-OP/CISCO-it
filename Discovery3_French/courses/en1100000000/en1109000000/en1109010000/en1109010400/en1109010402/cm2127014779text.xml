@@ -1,0 +1,106 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Application Layer]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Presentation Layer]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Session Layer]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Transport Layer]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Network Layer]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Data Link Layer]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Physical Layer]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[OSI Model]]></text>
+</component>
+
+<component id="ID_txtBody1">
+<text><![CDATA[<li>Associated with specific services such as FTP and DNS</li><li>If resources are unreachable or unusable, while the physical, data link, network, and transport layers are functional the problem is associated with this layer</li>]]></text>
+</component>
+
+<component id="ID_txtBody2">
+<text><![CDATA[<li>Responsible for data representation</li><li>Includes compression and encryption</li><li>If data is being reliably transmitted across the network but is unreadable on the receiving end, suspect the presentation layer</li><li>Verify that any encryption keys match and are properly configured</li>]]></text>
+</component>
+
+<component id="ID_txtBody3">
+<text><![CDATA[<li>Responsible for establishing, maintaining and terminating end to end communication sessions between applications</li><li>Related to synchronization and flow control</li><li>An application server failing during a communication session, could generate problems at the session layer</li>]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[<li>Uses port numbers to identify the type of traffic being carried in the conversation</li><li>Misconfigured ACLs are a common problem at this layer</li>]]></text>
+</component>
+
+<component id="ID_txtBody5">
+<text><![CDATA[<li>Involved with logical addressing and best path determination</li><li>Layer 3 addressing and routing problems are associated with this layer</li><li>The most common problems are improperly configured addresses and improper routing information</li><li>Misconfigured ACLs are an issue at the network layer</li>]]></text>
+</component>
+
+<component id="ID_txtBody6">
+<text><![CDATA[<li>Concerned mainly with the encapsulation of data</li><li>Mismatched encapsulation is one of the most common issues at this layer</li><li>Includes improper conversion of Layer 2 encapsulation as the frames move across the network</li><li>Improperly configured switch ports and Layer 2 addressing issues are also common</li><li>Misconfigured VLANs can generate problems at Layer 2</li>]]></text>
+</component>
+
+<component id="ID_txtBody7">
+<text><![CDATA[<li>Concerned with physical connectivity </li><li>Common issues include damaged or improper cabling, physical damage to ports and power issues</li><li>In wireless networks, antennas are physical layer devices as is the RF medium</li><li>Any loss in signal strength or interference is considered a layer 1 problem</li>]]></text>
+</component>
+
+
+
+
+<component id="ID_txt16">
+<text><![CDATA[Roll over each layer to view examples of common problems.]]></text>
+</component>
+
+<component id="ID_txtTitle1">
+<text><![CDATA[Application]]></text>
+</component>
+
+
+<component id="ID_txtTitle2">
+<text><![CDATA[Presentation]]></text>
+</component>
+
+
+<component id="ID_txtTitle3">
+<text><![CDATA[Session]]></text>
+</component>
+
+
+<component id="ID_txtTitle4">
+<text><![CDATA[Transport]]></text>
+</component>
+
+
+<component id="ID_txtTitle5">
+<text><![CDATA[Network]]></text>
+</component>
+
+
+<component id="ID_txtTitle6">
+<text><![CDATA[Data Link]]></text>
+</component>
+
+
+<component id="ID_txtTitle7">
+<text><![CDATA[Physical]]></text>
+</component>
+
+
+
+
+</textcomponents>

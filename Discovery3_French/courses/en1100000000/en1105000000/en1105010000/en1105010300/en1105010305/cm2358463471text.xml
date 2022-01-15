@@ -1,0 +1,53 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[<font size='14'><b>Internet<br />192.168.101.5<br /><font color='#FF0000'>Web Server</font></b></font>]]></text> 
+ </component>
+
+<component id="ID_table1">
+		<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b></b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Static Routing</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Dynamic Routing</b></font></td>
+    </tr>
+   
+    <tr>
+      <td bgcolor='#99CCFF'><b>Configuration Complexity</b></td>
+      <td bgcolor='#DDDDDD'><b>Increases with network size</b></td>
+      <td bgcolor='#DDDDDD'><b>Generally independent of the network size</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Topology changes </b></td>
+          <td bgcolor='#F2F2F2'><b>Administrator intervention required </b></td>
+          <td bgcolor='#F2F2F2'><b>Automatically adapts to topology changes</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Scaling </b></td>
+          <td bgcolor='#DDDDDD'><b>Suitable for simple topologies </b></td>
+          <td bgcolor='#DDDDDD'><b>Suitable for simple and complex topologies</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Security </b></td>
+          <td bgcolor='#F2F2F2'><b>More secure </b></td>
+          <td bgcolor='#F2F2F2'><b>Less secure </b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Resource usage </b></td>
+          <td bgcolor='#DDDDDD'><b>No extra resources needed </b></td>
+          <td bgcolor='#DDDDDD'><b>Uses CPU, memory, link bandwidth </b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Predictability</b></td>
+          <td bgcolor='#F2F2F2'><b>Route to destination is always the same</b></td>
+          <td bgcolor='#F2F2F2'><b>Route depends on the current topology</b></td>
+    </tr>
+   
+</table>
+
+]]></text>
+	</component>
+
+</textcomponents>

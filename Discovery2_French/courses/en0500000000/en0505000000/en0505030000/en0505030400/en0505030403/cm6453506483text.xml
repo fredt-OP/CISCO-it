@@ -1,0 +1,32 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Basic Configuration</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Console Password</b>]]></text>
+</component>
+
+<component id="ID_router01">
+<text><![CDATA[<font face="_typewriter">Router(config)#<b>line console 0</b><br>Router(config-line)#<b>password cisco</b><br>Router(config-line)#<b>login</b></font>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Virtual Terminal Password</b>]]></text>
+</component>
+
+<component id="ID_router02">
+<text><![CDATA[<font face="_typewriter">Router(config)#<b>line vty 0 4</b><br>Router(config-line)#<b>password cisco</b><br>Router(config-line)#<b>login</b></font>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Perform Password Encryption</b>]]></text>
+</component>
+
+<component id="ID_router03">
+<text><![CDATA[<font face="_typewriter">Router(config)#<b>service password-encryption</b></font>]]></text>
+</component>
+  
+
+</textcomponents>

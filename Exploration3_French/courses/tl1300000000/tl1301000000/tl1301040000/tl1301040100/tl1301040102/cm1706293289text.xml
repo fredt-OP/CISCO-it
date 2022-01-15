@@ -1,0 +1,182 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1)<textformat blockindent='15'> Énumérez et décrivez les trois couches du modèle de réseau hiérarchique.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(Voir 1.1)]]></text>
+</component>
+<component id="ID_Q1_txt05b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Couche d’accès</b> : la couche d’accès sert d’interface avec des périphériques, tels que des ordinateurs, des imprimantes et des téléphones sur IP, afin de fournir un accès au reste du réseau. La couche d’accès peut inclure des routeurs, des commutateurs, des ponts, des concentrateurs et des points d’accès sans fil. Le rôle principal de la couche d’accès est de fournir un moyen de connecter des périphériques au réseau, ainsi que de contrôler les périphériques qui sont autorisés à communiquer sur le réseau.</td>
+  </tr>
+  <tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Couche de distribution</b> : la couche de distribution regroupe les données reçues à partir des commutateurs de la couche d’accès, avant leur transmission vers la couche coeur de réseau, en vue du routage vers leur destination finale. La couche de distribution gère le flux du trafic réseau à l’aide de stratégies, et délimite les domaines de diffusion via des fonctions de routage entre des réseaux locaux virtuels (VLAN) définis au niveau de la couche d’accès. Les commutateurs de la couche de distribution sont généralement des périphériques très performants qui offrent une disponibilité et une redondance élevées afin de garantir la fiabilité.</td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Couche coeur de réseau</b> : la couche coeur de réseau de la conception hiérarchique constitue le réseau fédérateur à haut débit de l’interréseau. La couche coeur de réseau est essentielle à l’interconnectivité entre les périphériques de la couche de distribution. Par conséquent, il est important qu’elle bénéficie d’une disponibilité et d’une redondance élevées. La zone principale peut également se connecter à des ressources Internet. La couche coeur de réseau regroupe le trafic provenant de tous les périphériques de la couche de distribution. Elle doit donc être capable de transférer rapidement d’importantes quantités de données.</td>
+  </tr>
+</table>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+
+<text><![CDATA[2)<textformat blockindent='15'>Un protocole de routage sans classe inclut le masque de sous-réseau dans la mise à jour de routage.</textformat>]]></text>
+</component>
+
+<component id="ID_Q2_txt03">
+<text><![CDATA[2)<textformat blockindent='15'> Dans le blanc à côté de chaque terme de gauche, faites correspondre le terme de gauche avec une description sur la droite.</textformat>]]></text>
+</component>
+
+
+<component id="ID_Q2_txt04">
+<text><![CDATA[(Voir 1.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td width='220' valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+			<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___Commutateur de configuration fixe</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>A. <textformat blockindent='15'>Taux du nombre de ports par rapport au nombre de commutateurs.</textformat></td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>___Débit de transfert</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>B. <textformat blockindent='15'>Taux de la quantité de données par rapport au temps.</textformat></td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___Qualité de service</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>C. <textformat blockindent='15'>Interconnexion possible via un câble fond de panier spécial.</textformat></td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>___Power over Ethernet</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>D. <textformat blockindent='15'>Impossible d’ajouter les ports au périphérique.</textformat></td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___Commutateur modulaire </td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>E. <textformat blockindent='15'>Regroupement de liaisons distinctes pour améliorer le débit.</textformat></td>
+  </tr>
+  <tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>___Agrégation de liaisons   </td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>F. <textformat blockindent='15'>Permet l’installation de cartes d’interface ou de modules.</textformat></td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___Densité de ports</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>G. <textformat blockindent='15'>Capacité d’un périphérique à alimenter un autre périphérique à l’aide d’Ethernet.</textformat></td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>___Commutateur empilable</td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>H. <textformat blockindent='15'>Capacité de récupération de la connectivité après une panne de réseau.</textformat></td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___Redondance   </td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>I. <textformat blockindent='15'> Hiérarchisation du trafic réseau.</textformat></td>
+  </tr>
+</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___Qualité de service</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>C. <textformat blockindent='15'>Interconnexion possible via un câble fond de panier spécial.</textformat></td>
+  </tr>
+</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___Qualité de service</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>C. <textformat blockindent='15'>Interconnexion possible via un câble fond de panier spécial.</textformat></td></tr></table>]]></text>
+</component>
+
+<component id="ID_Q2_txt06b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td width='220' valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+			<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>D.__Commutateur de configuration fixe    </td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>A. <textformat blockindent='15'>Taux du nombre de ports par rapport au nombre de commutateurs.</textformat></td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>B.__Débit de transfert    </td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>B. <textformat blockindent='15'>Taux de la quantité de données par rapport au temps.</textformat></td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>I.__Qualité de service   </td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>C. <textformat blockindent='15'>Interconnexion possible via un câble fond de panier spécial.</textformat></td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>G.__Power over Ethernet    </td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>D. <textformat blockindent='15'>Impossible d’ajouter les ports au périphérique.</textformat></td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>F.__Commutateur modulaire    </td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>E. <textformat blockindent='15'>Regroupement de liaisons distinctes pour améliorer le débit.</textformat></td>
+  </tr>
+  <tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>E.__Agrégation de liaisons    </td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>F. <textformat blockindent='15'>Permet l’installation de cartes d’interface ou de modules. </textformat></td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>A.__Densité de ports   </td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>G. <textformat blockindent='15'>Capacité d’un périphérique à alimenter un autre périphérique à l’aide d’Ethernet.</textformat></td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>C.__Commutateur empilable    </td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>H. <textformat blockindent='15'>Capacité de récupération de la connectivité après une panne de réseau.</textformat></td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>H.__Redondance </td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>I. <textformat blockindent='15'> Hiérarchisation du trafic réseau.</textformat></td></tr></table>]]></text>
+</component>
+
+
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Fin des questions portant sur les thèmes de ce chapitre.</b>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+
+
+

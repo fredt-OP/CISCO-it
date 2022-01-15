@@ -1,0 +1,74 @@
+﻿<textcomponents>
+
+<component id="ID_title1">
+<text><![CDATA[<b>* Class A Address 127.0.0.0 is reserved for loopback testing.<br>** All zeros (0) and all ones (1) are invalid hosts addresses.</b>]]></text>
+</component>
+
+<component id="ID_header1">
+<text><![CDATA[<b>IP Address Classes</b>]]></text>
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[<table bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='55' bgcolor='#F2F2F2'>Address Class</td>
+<td width='62' bgcolor='#F2F2F2'>1st octet range (decimal)</td>
+<td width='90' bgcolor='#F2F2F2'>1st octet bits (<font color="#009900">green bits don't change</font>)</td>
+<td width='100' bgcolor='#F2F2F2'>Network (<font color="#0066CC">N</font>) and Host (<font color="#CC0000">H</font>) parts of address</td>
+<td width='110' bgcolor='#F2F2F2'>Default subnet mask (decimal and binary)</td>
+<td width='110' bgcolor='#F2F2F2'>Numbers of possible networks and hosts per network</td>
+<td bgcolor='#F2F2F2'>Notes and host address range**</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>A</td>
+<td bgcolor='#DDDDDD'>1 - 127*</td>
+<td bgcolor='#DDDDDD'><font color="#009900">0</font>0000000 - <br/><font color="#009900">0</font>1111111</td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">N</font><font color="#CC0000">.H.H.H</font></td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">255</font><font color="#CC0000">.0.0.0</font><br /><font color="#0066CC">11111111</font><font color="#CC0000">.00000000.00000000.00000000</font></td>
+<td bgcolor='#DDDDDD'>128 nets<br />(2^7)<br />16,777,214 hosts per net<br />(2^24-2)</td>
+<td bgcolor='#DDDDDD'>Commercial<br />1.0.0.1 - 126.255.255.254</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>B</td>
+<td bgcolor='#DDDDDD'>128 - 191</td>
+<td bgcolor='#DDDDDD'><font color="#009900">10</font>000000 - <br/><font color="#009900">10</font>111111</td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">N.N</font><font color="#CC0000">.H.H</font></td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">255.255</font><font color="#CC0000">.0.0</font><br /><font color="#0066CC">11111111.11111111</font><font color="#CC0000">.00000000.00000000</font></td>
+<td bgcolor='#DDDDDD'>16,384 nets<br />(2^14)<br />65,534 hosts per net<br />(2^16-2)</td>
+<td bgcolor='#DDDDDD'>Commercial<br />128.0.0.1 - 191.255.255.254</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>C</td>
+<td bgcolor='#DDDDDD'>192 - 223</td>
+<td bgcolor='#DDDDDD'><font color="#009900">110</font>00000 - <br/><font color="#009900">110</font>11111</td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">N.N.N</font>.<font color="#CC0000">H</font></td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">255.255.255</font><font color="#CC0000">.0</font><br /><font color="#0066CC">11111111.11111111.11111111</font><font color="#CC0000">.00000000</font></td>
+<td bgcolor='#DDDDDD'>2,097,152 nets<br />(2^21)<br />254 hosts per net<br />(2^8-2)</td>
+<td bgcolor='#DDDDDD'>Commercial<br />192.0.0.1 - 223.255.255.254</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>D</td>
+<td bgcolor='#DDDDDD'>224- 239</td>
+<td bgcolor='#DDDDDD'><font color="#009900">1110</font>0000 - <br/><font color="#009900">1110</font>1111</td>
+<td bgcolor='#DDDDDD'>Not for commerical use as a host</td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'>Multicast (reserved)<br />224.0.0.1 - 239.255.255.254</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>E</td>
+<td bgcolor='#DDDDDD'>240 - 255</td>
+<td bgcolor='#DDDDDD'><font color="#009900">1111</font>0000 - <br/><font color="#009900">1111</font>1111</td>
+<td bgcolor='#DDDDDD'>Not for commerical use as a host</td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'>Experimental (reserved)<br />240.0.0.1 - 255.255.255.255</td>
+</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+

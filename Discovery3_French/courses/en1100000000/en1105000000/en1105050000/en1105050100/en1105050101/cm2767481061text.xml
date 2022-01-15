@@ -1,0 +1,132 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Click through the buttons for summary information.</b>]]></text>
+</component>
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<br/><li>Enterprise networks are hierarchical in order to facilitate the flow of information.</li><br/><li>Different topologies exist in enterprise networks including star, extended star, and mesh.</li><br/><li>Networks use both static and dynamic routing to move information.</li><br/><li>Static routes are manually configured and enhance network security and reduce the burden on routers.</li><br/><li>Dynamic routes are learned and exchanged through routing protocols, and automate the tasks of providing the best route to a destination.</li><br/><li>A default route forwards information that has no route in the routing table.</li></ul>]]></text>
+</component>
+
+
+
+
+<component id="s1_ID_txt01">
+<text><![CDATA[ISP]]></text> 
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[Static route to ISP]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Static route from ISP]]></text> 
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Static route<br>from stub network]]></text> 
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[Static route<br>to stub network]]></text>
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[Stub network]]></text>
+</component>
+
+
+<!--  Slide 2  -->  
+<component id="ID_txt02">
+<text><![CDATA[<br/><li>Dynamic routing protocols are classified as either distance vector or link state.</li><br/><li>RIP is a distance vector routing protocol.</li><br/><li>RIPv1 broadcasts the entire routing table to connected routers every 30 seconds.</li><br/><li>RIPv2 multicasts its routing table.</li><br/><li>RIP is very easy to configure and manage but does not scale well and is slow to converge.</li><br/><li>Distance vector routing protocols are prone to the formation of routing loops.</ul>]]></text>
+</component>
+ 
+
+
+<component id="s2_ID_txt01">
+<text><![CDATA[Distance = How Far]]></text> 
+</component>
+
+<component id="s2_ID_txt02">     
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="s2_ID_txt03">
+<text><![CDATA[S0/0/0]]></text> 
+</component>
+
+<component id="s2_ID_txt04">           
+<text><![CDATA[R2]]></text>   
+</component>
+
+<component id="s2_ID_txt05">              
+<text><![CDATA[172.16.13.0/24]]></text>   
+</component>
+
+<component id="s2_ID_txt06">              
+<text><![CDATA[Vector = Direction]]></text>   
+</component>
+
+<component id="s2_ID_txt07">              
+<text><![CDATA[For R1, 172.16.3.0/24 is one hop away (distance)<br>It can be reached through R2 (vector)]]></text>   
+</component>
+
+
+<!--  Slide 3  -->
+<component id="ID_txt03">
+<text><![CDATA[<br/><li>EIGRP is a Cisco proprietary distance vector routing protocol with many advanced features.</li><br/><li>It is fast to converge and uses a composite metric for more reliable routing information.</li><br/><li>EIGRP multicasts only partial bounded updates using less bandwidth.</li><br/><li>RIPv2 multicasts its routing table to 224.0.0.9 every 30 seconds.</li><br/><li>Routing loops are prevented by using the DUAL algorithm.</li><br/><li>EIGRP uses multiple packet types to maintain the neighbor, topology and routing tables.</li><br/><li>EIGRP maintains information on both successors and feasible successors allowing it to rapidly recover if a route goes down.</ul>]]></text>
+</component>
+
+
+<component id="s3_ID_txt01">
+<text><![CDATA[<b>EIGRP:</b><br/><li>Supports VLSM and classless routing.</li><li>Supports VLSM and classless routing.</li><li>Uses a composite metric</li><li>Uses the DUAL algorithm to prevent routing loops</li><li>Uses the DUAL algorithm to prevent routing loops</li><li>Uses bounded updates for fast convergence</li><li>Maintains multiple tables</li><li>Forms neighbor adjacencies</li><li>Maintains successor and feasible successor routes</li><li>Accommodates equal and unequal cost load balancing</li><li>Uses multiple packet types for stability and fast convergence</li><li>Supports multiple network layer protocols</li><li>Uses RTP for Layer 4 support</li>]]></text> 
+</component>
+
+
+<!--  Slide 4  -->
+<component id="ID_txt04">
+<text><![CDATA[<br/><li>EIGRP uses autonomous systems which are process IDs.</li><br/><li>EIGRP supports both equal and unequal cost load balancing.</li><br/><li>EIGRP automatically summarizes routes; however this feature can be turned off and instead done manually for better control of routing.</li><br/><li>EIGRP is easy to configure but difficult to maintain and optimize.</li></ul>]]></text>
+</component>
+
+
+
+
+<component id="s4_ID_txt01">
+    
+<text><![CDATA[DMZ]]></text> 
+ 
+ </component>
+
+
+<component id="s4_ID_txt02">
+    
+<text><![CDATA[DMZ]]></text> 
+ 
+ </component>
+
+ 
+ 
+ <component id="s4_ID_txt03">
+     
+ <text><![CDATA[SAN]]></text> 
+  
+ </component>
+ 
+ 
+ <component id="s4_ID_txt04">
+     
+ <text><![CDATA[NOC]]></text> 
+  
+ </component>
+ 
+ 
+ <component id="s4_ID_txt05">
+     
+ <text><![CDATA[What can I adjust to make EIGRP run better?]]></text> 
+  
+ </component>
+
+
+</textcomponents>

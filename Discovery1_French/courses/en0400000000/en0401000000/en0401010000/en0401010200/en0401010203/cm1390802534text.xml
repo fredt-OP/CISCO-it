@@ -1,0 +1,105 @@
+﻿<textcomponents>
+
+<!-- -->
+<component id="id_instruct">
+<text><![CDATA[<font size="14"><b>Activity</b></font><br/><br/>Classify applications based on a given scenario.<br/><br/><b>Check the appropriate boxes to classify the application as Business/Industry or General, and Local or Networked. You must select two options for each application.</b>]]></text>
+</component>
+
+<!-- -->
+<component id="id_descr">
+<text><![CDATA[<font size="14"> </font>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+<text><![CDATA[6]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+<text><![CDATA[4]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+<text><![CDATA[<b>Business/ Industry Use</b>]]></text>
+</component>
+<component id="txt_col2">
+<text><![CDATA[<b>General Use</b>]]></text>
+</component>
+<component id="txt_col3">
+<text><![CDATA[<b>Local Application</b>]]></text>
+</component>
+<component id="txt_col4">
+<text><![CDATA[<b>Network Application</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+<text><![CDATA[1. <textformat blockindent='13'>A student chats with a friend on a computer in another room using Instant Message software.</textformat>]]></text>
+</component>
+<component id="txt_q2">
+<text><![CDATA[2. <textformat blockindent='13'>A family keeps track of household expense using a spreadsheet program stored on the computer hard drive.</textformat>]]></text>
+</component>
+<component id="txt_q3">
+<text><![CDATA[3. <textformat blockindent='13'>A construction company develops a program to estimate the cost of building a home. The program is loaded from a CD.</textformat>]]></text>
+</component>
+<component id="txt_q4">
+<text><![CDATA[4. <textformat blockindent='13'>A real-estate agent uses his computer to post information about a house listing that allows other real estate agents to access the information from their computers.</textformat>]]></text>
+</component>
+<component id="txt_q5">
+<text><![CDATA[5. <textformat blockindent='13'>A person sends an email to a friend in another country.</textformat>]]></text>
+</component>
+<component id="txt_q6">
+<text><![CDATA[6. <textformat blockindent='13'>A student types a homework assignment using a word processor loaded from their hard drive.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<component id="txt_a1">
+<text><![CDATA[2, 4]]></text>
+</component>
+<component id="txt_a2">
+<text><![CDATA[2, 3]]></text>
+</component>
+<component id="txt_a3">
+<text><![CDATA[1, 3]]></text>
+</component>
+<component id="txt_a4">
+<text><![CDATA[1, 4]]></text>
+</component>
+<component id="txt_a5">
+<text><![CDATA[2, 4]]></text>
+</component>
+<component id="txt_a6">
+<text><![CDATA[2, 3]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Correct, you have successfully identified all of the applications.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Incorrect, please try again. You must select two options for each application.]]></text></component>
+
+
+</textcomponents>

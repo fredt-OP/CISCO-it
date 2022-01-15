@@ -1,0 +1,118 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Cet exercice vous permet de vérifier votre compréhension des points principaux abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions sera présentée. Il ne s’agit pas d’un questionnaire. Vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Questions suivante</b> pour accéder à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre mentalement à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si votre réponse est correcte.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Expliquez brièvement le fonctionnement de base des protocoles RIP et IGRP.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(voir 4.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[Il s’agit de protocoles à vecteur de distance caractérisés par des mises à jour périodiques diffusées aux voisins connectés directement. La totalité de la table de routage est envoyée dans la mise à jour.]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[Il y a convergence lorsque tous les routeurs du réseau possèdent des informations cohérentes et correctes sur la façon d’accéder aux réseaux de destination. Un réseau n’est pas totalement fonctionnel tant qu’il n’a pas convergé. Les protocoles de routage nécessitent donc des temps de convergence courts.]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Expliquez la convergence et son importance.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(voir 4.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Pouvez-vous répondre mentalement à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si votre réponse est correcte.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Quels sont les quatre principaux minuteurs du protocole RIP ? Quelles sont leur fonction et leur durée ?]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(voir 4.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Minuteur de mise à jour</b> (30 secondes) : utilisé pour fixer l’heure à laquelle la prochaine mise à jour sera envoyée.<br/><br/><b>Minuteur de temporisation</b> (180 secondes) : utilisé pour marquer une route comme non valide (valeur 16 attribuée à la métrique) si aucune mise à jour n’a été reçue pour actualiser une route existante dans les 180 secondes.<br/><br/><b>Minuteur de mise hors service</b> (180 secondes) : durée pendant laquelle une route inaccessible est « mise hors service ».<br/><br/><b>Minuteur d’annulation</b> (240 secondes) : période après laquelle une route est supprimée de la table de routage.]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Pouvez-vous répondre mentalement à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si votre réponse est correcte.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Quelles sont les cinq techniques utilisées par les protocoles de routage à vecteur de distance pour éviter les boucles de routage ?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(voir 1.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<ul><li>Définition d’une valeur maximale pour éviter la métrique infinie</li><li>Minuteurs de mise hors service</li><li>Découpage d’horizon</li><li>Empoisonnement de routage ou empoisonnement inverse</li><li>Mises à jour déclenchées</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Ce chapitre est terminé.</b>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+

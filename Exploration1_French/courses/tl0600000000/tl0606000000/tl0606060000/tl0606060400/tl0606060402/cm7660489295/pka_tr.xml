@@ -1,0 +1,176 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 6.6.4 : &lt;br&gt;commande trace et durée de vie&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;!--This is the end of the IP addressing table code&quot; --&gt;
+
+
+&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Observation de l'exécution d'une commande trace &lt;li&gt;Observation de la décrémentation de la durée de vie d'un paquet dans une boucle de routage&lt;/ul&gt; &lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+La commande trace est disponible sous différentes formes très utiles comme outils de dépannage réseau. Pour émettre la commande depuis la ligne de commande Windows, utilisez la forme &lt;b&gt;tracert&lt;/b&gt; (adresse IP ou URL si le système de noms de domaine (DNS) est correctement configuré) ; pour émettre la commande depuis l'interface IOS, utilisez la forme &lt;b&gt;trace&lt;/b&gt; ou &lt;b&gt;traceroute&lt;/b&gt; (adresse IP ou URL si le système DNS est correctement configuré).&lt;br&gt;&lt;br&gt; Dans cet exercice, vous examinerez la commande trace et découvrirez qu'elle se compose de paquets de requêtes ping différents dont le champ Time to Live contient différents paramètres. Dans la deuxième partie de cet exercice, vous activerez une boucle de routage en activant une interface de routeur, en lançant un paquet dans la boucle et en observant la décrémentation de la valeur de durée de vie jusqu'à ce que le paquet soit déposé.&lt;br&gt;&lt;br&gt;
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : examen de l'opération d'une commande trace&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1 : activation du mode Simulation.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur l'onglet &lt;b&gt;Simulation&lt;/b&gt; pour passer en mode Simulation lorsque les voyants de liaison des commutateurs s'allument en vert (basculez entre le mode Realtime et le mode Simulation pour accélérer ce processus). Nous voulons capturer les événements ICMP uniquement. Sous &lt;b&gt;Event List Filters&lt;/b&gt;, cliquez sur &lt;b&gt;Edit Filters&lt;/b&gt;. Sélectionnez uniquement les événements ICMP. 
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : exécution de la commande trace.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Dans l'invite de commande de PC0, entrez la commande &lt;b&gt;tracert 192.168.1.2&lt;/b&gt; et appuyez sur la touche &lt;b&gt;Entrée&lt;/b&gt;. Réduisez la fenêtre Invite de commande, le premier paquet doit s'afficher. 
+
+&lt;h4&gt; &lt;b&gt;Étape 3 : examen du premier paquet.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Examinez le premier paquet qui s'affiche dans la liste &lt;b&gt;Event List&lt;/b&gt; en cliquant sur le carré de couleur &lt;b&gt;Info&lt;/b&gt; du paquet.
+
+&lt;h4&gt; &lt;b&gt;Étape 4 : progression dans la simulation et observation de la durée de vie des paquets sortants et des réponses&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Cliquez plusieurs fois sur le bouton &lt;b&gt;Capture / Forward&lt;/b&gt; jusqu'à ce que le processus tracert soit entièrement terminé. Dans la fenêtre &lt;b&gt;PDU Information&lt;/b&gt;, examinez le paquet à différents points de son trajet. Notez que la commande tracert comprend la commande ping, et plus précisément, des requêtes d'écho avec des paramètres de durée de vie croissants. Consultez régulièrement la fenêtre de commande PC0 pour voir la progression de la commande. Lorsque vous avez terminé, cliquez sur le bouton &lt;b&gt;Reset Simulation&lt;/b&gt;.&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 2 : observation de la décrémentation de la durée de vie d'un paquet dans une boucle de routage&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1 : activation de la boucle de routage&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Ouvrez Router0 et accédez à l'onglet &lt;b&gt;Config&lt;/b&gt;. Recherchez &lt;b&gt;INTERFACE Serial0/0/1&lt;/b&gt; (dont l'adresse IP est 192.168.9.2) et modifiez l'état du port sur On. Dans la mesure où des routes statiques ont été configurées sur chacun des routeurs, une boucle de routage délibérée des paquets vers des destinations inconnues est activée lorsque vous activez cette interface. Vous pouvez utiliser l'outil &lt;b&gt;Inspect Tool&lt;/b&gt; (la loupe située à droite dans l'interface) pour consulter les tables de routage de chacun des routeurs ; notez que la route statique par défaut de chaque routeur pointe seulement vers le routeur suivant. 
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : ajout d'une unité de données de protocole complexe à une destination inexistante &lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Utilisez le bouton &lt;b&gt;Add Complex PDU&lt;/b&gt; (l'enveloppe ouverte à l'extrême droite) pour ajouter une unité de données de protocole complexe depuis PC0. Comme adresse IP de destination, utilisez 172.16.1.1, qui est une adresse qui n'existe nulle part sur ce réseau. Comme numéro d'ordre, utilisez 1, et pour le temps 0. Cliquez sur le bouton &lt;b&gt;Create PDU&lt;/b&gt;. Les routes statiques par défaut configurées sur les routeurs continueront de transférer ce paquet jusqu'à ce que sa durée de vie expire. Examinez le premier paquet de la liste &lt;b&gt;Event List&lt;/b&gt; en cliquant sur le carré &lt;b&gt;Info&lt;/b&gt; de couleur du paquet.
+
+&lt;h4&gt; &lt;b&gt;Étape 3 : progression dans la simulation.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez plusieurs fois sur le bouton &lt;b&gt;Capture / Forward&lt;/b&gt; et observez comment ce paquet est transféré dans la boucle de routage. Examinez le paquet dans la fenêtre &lt;b&gt;PDU Information&lt;/b&gt; à différents points de son parcours et notez que les routeurs décrémentent la durée de vie. Continuez jusqu'à ce que le paquet soit déposé et qu'une notification soit renvoyée à PC0. Imaginez quelle serait la situation si les paquets IP n'avaient pas de champ de durée de vie.&lt;br&gt;&lt;br&gt;&lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Router2</ID>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">PC3</ID>
+ <ID translate="true">Switch0</ID>
+ <ID translate="true">Switch1</ID>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Router2</ID>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">PC3</ID>
+ <ID translate="true">Switch0</ID>
+ <ID translate="true">Switch1</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

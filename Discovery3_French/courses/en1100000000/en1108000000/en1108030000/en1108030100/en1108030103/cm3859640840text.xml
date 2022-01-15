@@ -1,0 +1,146 @@
+<textcomponents>
+	
+<component id="ID_txt01">		
+<text><![CDATA[R2]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[R3]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[192.168.2.0/24]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[192.168.4.0/24]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[192.168.1.0/24]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[192.168.3.0/24]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[S0/0/0]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Fa0/1]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Fa0/0]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[S0/0/1]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Requirements:</b><br>We need to prevent traffic from the 192.168.1.0 network from entering the 192.168.2.0 network but allow it to reach other networks.]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Standard ACL<br><font face="courier new dynamic">access-list 1 deny 192.168.1.0<br>access-list 1 permit any</b></font>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[Standard ACL]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[Extended ACL]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>Extended ACL<br><font face="courier new dynamic">access-list 101 deny ip 192.168.1.0  0.0.0.255  192.168.2.0  0.0.0.255<br>access-list 101 permit ip any any</b></font>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[1. What kind of ACL?]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[2. On which router?]]></text>
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[3. On which interface?]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[4. In which direction?]]></text>
+</component>
+
+<component id="ID_txt22">
+<text><![CDATA[Inbound]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[Click Play to view the process of determining the type and placement of an ACL.]]></text>
+</component>
+
+
+<component id="play"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute">
+		<text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+
+<component id="start_animation">
+		<text><![CDATA[This is the start of an animation]]></text>
+	</component>
+
+<component id="bubble_example">
+		<text><![CDATA[An example of a Bubble that expands downward]]></text>
+	</component>
+    
+
+</textcomponents>

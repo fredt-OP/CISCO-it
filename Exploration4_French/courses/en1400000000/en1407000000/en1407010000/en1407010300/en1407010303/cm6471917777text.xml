@@ -1,0 +1,64 @@
+<textcomponents>
+
+<component id="ID_button1">
+<text><![CDATA[<b>DHCP Discover</b>]]></text>
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[<b>DHCP Offer</b>]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_S1_title">
+<text><![CDATA[<b>DHCP Discover and Offer</b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[<b>Client A<br />IP: ??</b>]]></text>
+</component>
+
+<component id="ID_S1_txt02">
+<text><![CDATA[<b>Server<br />192.168.1.254/24</b>]]></text>
+</component>
+
+<component id="ID_S1_txt03">
+<text><![CDATA[Ethernet Frame]]></text>
+</component>
+
+<component id="ID_S1_txt05">
+<text><![CDATA[MAC: Media Access Control Address<br />CIADDR: Client IP Address<br />GIADDR: Gateway IP Address<br />CHADDR: Client Hardware Address]]></text>
+</component>
+
+<component id="ID_S1_txt06">
+<text><![CDATA[<font size='12'>The DHCP Client sends a directed IP broadcast, with a DHCP discover packet. In the simplest case, there is a DHCP server on the same segment, which will pick up this request. The server notes the GIADDR field is blank, so the client is on the same segment. The server also notes the hardware address of the client in the request packet.</font>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_S2_title">
+<text><![CDATA[<b>How Does DHCP Work?</b>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<b>Client A<br />IP: ??</b>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>Server<br />192.168.1.254/24</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[Ethernet Frame]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[DHCP Reply]]></text>
+</component>
+
+<component id="ID_S2_txt05">
+<text><![CDATA[MAC: Media Access Control Address<br />CIADDR: Client IP Address<br />GIADDR: Gateway IP Address<br />CHADDR: Client Hardware Address]]></text>
+</component>
+
+<component id="ID_S2_txt06">
+<text><![CDATA[<font size='12'>The DHCP server picks an IP address from the available pool for that segment, as well as the other segment and global parameters.  It puts them into the appropriate fields of the DHCP packet.  It then uses the hardware address of A (in CHADDR) to construct an appropriate frame to send back to the client.</font>]]></text>
+</component>
+</textcomponents>

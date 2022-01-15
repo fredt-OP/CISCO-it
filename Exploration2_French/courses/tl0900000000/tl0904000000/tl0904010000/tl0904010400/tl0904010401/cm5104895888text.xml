@@ -1,0 +1,28 @@
+﻿<textcomponents>
+  
+<component id="ID_title01">
+  <text><![CDATA[<b>Avantages et inconvénients des protocoles de routage à vecteur de distance</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF"><b>Avantages :</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF"><b>Inconvénients :</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Implémentation et maintenance simples.</b> Le niveau de connaissances requis pour déployer et effectuer la maintenance ultérieure d’un réseau avec un protocole à vecteur de distance n’est pas élevé.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Convergence lente.</b> L’utilisation de mises à jour périodiques peut ralentir la convergence. Même si des techniques avancées sont utilisées, telles que les mises à jour déclenchées qui seront abordées ultérieurement, la convergence globale est toujours plus lente que celle constatée avec les protocoles de routage à état de liens.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Faibles ressources requises.</b> Les protocoles à vecteur de distance n’ont généralement pas besoin de grandes quantités de mémoire pour stocker les informations. Ils ne nécessitent pas non plus une UC puissante. Selon la taille du réseau et l’adressage IP implémentés, ils ne nécessitent généralement pas une bande passante importante pour envoyer les mises à jour de routage. Cependant, cela peut devenir un problème si vous déployez un protocole à vecteur de distance dans un réseau important.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Évolutivité limitée.</b> La convergence lente peut limiter la taille du réseau car des réseaux plus importants nécessitent davantage de temps pour propager les informations de routage.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Boucles de routage.</b> Des boucles de routage peuvent survenir lorsque des tables de routage incohérentes ne sont pas mises à jour en raison d’une convergence lente dans un réseau changeant.</td>
+	</tr>
+</table>]]></text>
+</component>
+  
+</textcomponents>

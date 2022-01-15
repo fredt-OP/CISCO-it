@@ -1,0 +1,92 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour vérifier votre compréhension des principaux points de ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va vous être présentée. Il ne s’agit pas d’un questionnaire et vos réponses ne seront pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour afficher la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante de la série.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1. <textformat blockindent="20">Nommez deux moyens de codage de bits en tensions. En quoi diffèrent-ils ?</textformat]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[<p>Avec le codage <b>NRZ (non-retour à zéro)</b>, un 0 peut être représenté par un niveau de tension sur le support pendant la durée du bit, et un 1 par une autre tension.</p><br/><p>Le <b>codage Manchester</b> utilise des transitions, ou l’absence de transitions, pour indiquer un niveau logique. Ainsi, un 0 est indiqué par une transition de tension élevée à faible au milieu de la durée du bit. Pour un 1, il existe une transition de tension élevée à faible au milieu de la durée du bit.</p>]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. <textformat blockindent="20">Pourquoi les bits peuvent-ils être codés comme symboles avant transmission ?</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<p><block indent='20'>Une technique de codage consiste à utiliser des symboles. La couche physique peut utiliser un ensemble de symboles codés, appelés groupes de codes, pour représenter des données codées ou des informations de contrôle. Un groupe de codes est une séquence consécutive de bits de code interprétés et mappés comme configurations binaires de données. Par exemple, les bits de code 10101 peuvent représenter les bits de données 0011.</p><br/><p>Tandis que les groupes de codes introduisent une surcharge sous la forme de bits supplémentaires à transmettre, ils améliorent la robustesse d’une liaison de communication. Ceci est particulièrement vrai pour les transmissions de données à haut débit.</p><br/><p>La transmission de symboles permet d’améliorer les capacités de détection d’erreurs et la synchronisation entre les périphériques émetteur et récepteur. Ces considérations sont importantes pour la prise en charge de transmission à haut débit sur le support.</p><br/><p>Parmi ces avantages :</p><ul><li>Réduction des erreurs au niveau du bit</li><li>Limitation de l’énergie effective transmise dans le support</li><li>Meilleure distinction entre les bits de données et les bits de contrôle</li><li>Meilleure détection des erreurs de support</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3. <textformat blockindent="20">Quels sont les problèmes de sécurité à prendre en compte lors de l’utilisation de câblage en cuivre ?</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[<p>Risques électriques</p><br/><p>Les fils de cuivre peuvent conduire l’électricité de manière indésirable. Ceci peut soumettre le personnel et le matériel à une série de risques électriques. Un périphérique réseau défectueux peut conduire le courant dans le châssis d’autres périphériques du réseau. De plus, le câblage réseau peut présenter des niveaux de tension indésirables lorsqu’il sert à connecter des périphériques dont les sources d’alimentation ont des mises à la terre différentes. Le câblage en cuivre peut également conduire des tensions causées par la foudre vers des périphériques réseau. Les tensions et courants indésirables peuvent entraîner des dommages aux périphériques réseau et ordinateurs connectés, ou des blessures du personnel.</p><br/><p>Risques d’incendie</p><br/><p>L’isolation et les gaines du câble peuvent être inflammables ou dégager des émanations toxiques lorsqu’elles sont chauffées ou brûlées. Les organismes de construction peuvent également stipuler des normes de sécurité pour le câblage et les installations matérielles.</p>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4. <textformat blockindent="20">Dans quelles situations le câblage en fibre optique est-il préférable au câblage en cuivre ?</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[<p>Les fibres de verre utilisées dans les supports en fibre optique n’étant pas des conducteurs électriques, le support est à l’abri des interférences électromagnétiques et ne peut pas conduire de courant électrique indésirable suite à des problèmes de mise à la terre. Les fibres optiques étant fines et subissant une perte de signal relativement faible, elles peuvent fonctionner à des longueurs bien supérieures aux supports en cuivre, sans nécessiter de régénération des signaux.</p>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5. <textformat blockindent="20">Nommez plusieurs types de connecteurs cuivre et fibre optique.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[<p>Cuivre : RJ-45, RJ-11</p><br/><p>Fibre : ST (Straight-Tip), SC (Subscriber Connector), LC (Lucent Connector)</p>]]></text></component>
+<component id="ID_conclusion">
+<text><![CDATA[<b><font size="14">Vous avez passé en revue toutes les questions de la partie « Problèmes et discussion » du présent chapitre.</font></b>]]></text>
+</component>
+
+</textcomponents>

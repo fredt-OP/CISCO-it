@@ -1,0 +1,32 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[1)<TEXTFORMAT BLOCKINDENT='20'>  Un pirate active un serveur DHCP sur un segment de réseau.</textformat><br/>2)<TEXTFORMAT BLOCKINDENT='20'>  Le client diffuse une requête concernant les informations de configuration DHCP.</textformat><br/>3)<TEXTFORMAT BLOCKINDENT='20'>  Le serveur DHCP non autorisé répond avant le serveur DHCP légitime en procurant des paramètres IP définis par le pirate.</textformat><br/>4)<TEXTFORMAT BLOCKINDENT='20'>  Les paquets hôtes sont redirigés vers l’adresse du pirate tandis que celle-ci émule une passerelle par défaut pour l’adresse DHCP erronée fournie par le client.</textformat>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[-<TEXTFORMAT BLOCKINDENT='13'>  La surveillance DHCP permet de configurer des ports comme étant fiables ou non.</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>•<TEXTFORMAT BLOCKINDENT='22'> Les ports fiables peuvent transmettre des requêtes DHCP et des reçus.</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>•<TEXTFORMAT BLOCKINDENT='22'> Les ports non fiables transmettent uniquement des requêtes DHCP.</textformat></textformat><br/>-<TEXTFORMAT BLOCKINDENT='13'>  Grâce à la surveillance DHCP, un commutateur peut créer une table de liaison DHCP chargée de mapper une adresse MAC cliente, une adresse IP, un réseau local virtuel et un ID de port. </textformat><br/>-<TEXTFORMAT BLOCKINDENT='13'>  Utilisez la commande <b><font face='_typewriter'>ip dhcp snooping</font></b>.</textformat>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Pirate DHCP non approuvé</b>]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[<b>Serveur DHCP légitime</b>]]></text>
+</component>
+
+<component id="ID_untrust">
+<text><![CDATA[<b>Port non fiable</b>]]></text>
+</component>
+<component id="ID_trust">
+<text><![CDATA[<b>Port fiable</b>]]></text>
+</component>
+
+<component id="btn1">
+  <text><![CDATA[<b>Mystification</b>]]></text> 
+  </component>
+ <component id="btn2">
+  <text><![CDATA[<b>Surveillance DHCP</b>]]></text> 
+ </component>
+</textcomponents>
+

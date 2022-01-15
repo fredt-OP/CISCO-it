@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 09:09:52">
+<title><content-text><![CDATA[5.3.2 - Enhanced Interior Gateway Routing Protocol (EIGRP)]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts router, R1, connected to network 10.1.0.0 via port F A 0 /0. R1 is also connected via S0/0/0 to S0/0/0 port of R2 on network 10.2.0.0. R2 is connected via S0/0/1 to router the S0/0/1 port of R3 on network 10.3.0.0. R3 is connected via F A 0 /0 to network 10.4.0.0.<br><br>R1 Routing Table<br>C10.1.0.0 /24F A 0 /0<br>C10.2.0.0 /24 S0/0/0<br>D10.3.0.0 /24S0/0/0<br>D10.4.0.0 /24S0/0/0<br><br>R2 Routing Table<br>D10.1.0.0 /24S0/0/0<br>C10.2.0.0 /24S0/0/0<br>C10.3.0.0 /24S0/0/1<br>D10.4.0.0 /24S0/0/1<br><br>R3 Routing Table<br>D10.1.0.0 /24S0/0/1<br>D10.2.0.0 /24S0/0/1<br>C10.3.0.0 /24S0/0/1<br>C10.4.0.0 /24F A 0 /0<br><br>EIGRP sends a bounded update to alert neighbors that 10.1.0.0 is down. Hello packets continue to maintain neighbor relationships.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

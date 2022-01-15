@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13401" dateexported="04/25/2008">
+		<name>Module 6 Questionnaire</name>
+		<form id="21032" lang="fr"><form-item order="fixed">
+			<ai id="134667" type="mc-sa"><question><![CDATA[Quelle est la caractéristique des protocoles de routage à état de lien ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Découpage d’horizon ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Empoisonnement inverse ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Faible surcharge du processeur ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Calculs du plus court chemin d’abord  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134631" type="mc-sa"><question><![CDATA[Examinez la présentation. Si OSPF est configuré dans le réseau comme dans le tableau, quel chemin un paquet empruntera-t-il entre H1 et H2 ? <br/><img src="i134631n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[R1-R5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1 - R2 - R5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1 - R4 - R5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R1 - R3 - R4 - R5  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134636" type="mc-sa"><question><![CDATA[Examinez la présentation. Il a été indiqué au routeur trois routes distinctes vers le sous-réseau 192.168.1.0. Par quelle action le routeur va-t-il transmettre un paquet vers l’adresse 192.168.1.143 ? <br/><img src="i134636n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le paquet sera livré par le routeur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le paquet sera acheminé de façon équitablement partagée entre les trois routes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le paquet sera transmis au prochain saut d’adresse 192.168.4.2.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le paquet quittera le routeur via l’interface FastEthernet 0/0. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134632" type="mc-sa"><question><![CDATA[Examinez la présentation. Elle montre une partie du résultat de la commande <b>show running-config</b> exécutée sur RouterA. Toutes les interfaces de RouterA étant actives, l’administrateur réseau modifie la configuration du routeur en entrant la commande <b>no router-id 18.20.20.172</b>. Puis il enregistre la configuration et redémarre le routeur. Quel sera l’ID de routeur de RouterA une fois OSPF rétabli ? <br/><img src="i134632n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[10.190.102.1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.20.20.18 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.30.1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.70.18  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.90.1 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133262" type="mc-sa"><question><![CDATA[Examinez la présentation. Les routeurs A, B et C du schéma exécutent le protocole OSPF sur leurs interfaces Ethernet. Le routeur D vient d’être ajouté sur le réseau. Les routeurs sont configurés avec les interfaces de bouclage (Lo 0) indiquées dans la présentation. Que se passe-t-il si le routeur désigné/routeur désigné de sauvegarde OSPF après le routeur D est ajouté au réseau ? <br/><img src="i133262n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le routeur B prend le relais en tant que routeur désigné et le routeur D devient le routeur désigné de sauvegarde. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur D devient le routeur désigné de sauvegarde et le routeur A reste le routeur désigné. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur D devient le routeur désigné et le routeur A devient le routeur désigné de sauvegarde. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur C agit comme routeur désigné jusqu’à ce que le processus de sélection soit terminé. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur D devient le routeur désigné et le routeur B reste le routeur désigné de sauvegarde. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur désigné et le routeur désigné de sauvegarde ne sont pas modifiés jusqu’à ce que l’un ou l’autre soit inactif.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134671" type="mc-sa"><question><![CDATA[Examinez la présentation. Quelles commandes de réseau permettent de configurer le routeur A pour qu’il communique les routes OSPF ? <br/><img src="i134671n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>network 192.168.10.0 0.0.0.63 area 0</b><br /><b>network 192.168.10.128 0.0.0.63 area 0</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>network 192.168.10.64 0.0.0.63 area 0<br />network 192.168.10.192 0.0.0.3 area 0</b><br />  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>network 192.168.10.0 255.255.255.252 area 0</b><br /><b>network 192.168.10.128 255.255.255.252 area 0</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>network 192.168.10.64 255.255.255.252 area 0 <br />network 192.168.10.192 255.255.255.252 area 0</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134662" type="mc-ma"><question><![CDATA[Quelles sont les deux affirmations exactes parmi les suivantes concernant le calcul du coût d’une liaison dans OSPF ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Il peut être défini à l’aide de la commande <b>ip ospf cost</b>.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il est égal à 1544 par défaut pour toutes les interfaces OSPF. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les adresses de bouclage configurées sont mises en correspondance avec les coûts de liaison. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il peut se calculer avec la formule <i>largeur de bande de référence / largeur de bande</i>.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il est calculé proportionnellement au débit observé sur le routeur. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134672" type="mc-sa"><question><![CDATA[Examinez la présentation. Le protocole de routage OSPF est configuré pour les routeurs. Toutefois, le routeur A ne reçoit aucune route OSPF de la part des autres routeurs. D’après la représentation, quel est le problème dans la configuration du routeur A ? <br/><img src="i134672n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Aucune des interfaces n’est activée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’ID de processus d’OSPF est incorrect. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’une des instructions du réseau est erronée.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le résumé automatique doit être désactivé. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134630" type="mc-sa"><question><![CDATA[Examinez la présentation. Un administrateur réseau installe le protocole OSPF entre le siège d’une entreprise et ses succursales. Toutes les succursales sont reliées à Internet via le routeur du siège. Quels effets auront les commandes exécutées sur le routeur du siège ? <br/><img src="i134630n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les commandes n’auront d’effet que sur le routeur local. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une commande doit être appliquée à tous les routeurs pour que la route par défaut se propage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La route par défaut sera propagée à tous les routeurs installés dans une même zone OSPF.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La route par défaut ne sera communiquée qu’aux routeurs voisins de la zone OSPF. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134675" type="mc-ma"><question><![CDATA[Pouvez-vous donner deux raisons pour lesquelles un administrateur réseau déciderait d’activer l’authentification pour les échanges OSPF ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Pour empêcher toute falsification des informations de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pour réduire la charge due aux échanges d’informations OSPF. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Pour empêcher l’interception des informations de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pour crypter les tables de routage afin d’interdire toute consultation non autorisée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pour garantir que les informations de routage OSPF sont prioritaires sur les mises à jour RIP ou EIGRP. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

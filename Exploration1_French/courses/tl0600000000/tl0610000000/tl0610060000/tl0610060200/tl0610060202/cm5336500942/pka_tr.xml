@@ -1,0 +1,94 @@
+﻿<TRANSLATION>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 10.6.2 : &lt;br&gt;Établissement d'une session en mode console avec PT Terminal&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+&lt;p&gt; &lt;font color=&quot;red&quot;&gt;&lt;b&gt;NOTE À L'ATTENTION DE L'UTILISATEUR :&lt;/b&gt;&lt;/font&gt; &lt;b&gt;Imprimez les instructions avant de continuer.&lt;/b&gt; Cet exercice Packet Tracer accompagne les travaux pratiques ci-dessus. Les instructions pour réaliser ces travaux pratiques sont disponibles sur la page du cursus qui précède la page de lancement de cet exercice. Vous souhaitez peut-être télécharger et imprimer les instructions avant de continuer cet exercice. &lt;/p&gt;
+
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;h3&gt;Tableau d'adressage&lt;/h3&gt; &lt;p&gt;Ces travaux pratiques ne contiennent pas de tableau d'adressage.&lt;!--This is the end of the IP addressing table code&quot; --&gt;&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;connecter un routeur et un ordinateur à l'aide d'un câble de console ; &lt;li&gt;configurer HyperTerminal de manière à établir une session en mode console avec un routeur IOS Cisco. &lt;/ul&gt;
+
+&lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;PT Terminal est un programme d'émulation simple pour les communications série, qui peut être utilisé pour connecter le port de console sur les périphériques IOS Cisco. Sur un ordinateur, une interface série est connectée au périphérique Cisco par le biais d'un câble de console. L'utilisation de PT Terminal est le moyen le plus simple d'accéder à un routeur pour vérifier ou modifier sa configuration. &lt;br&gt;&lt;/p&gt;
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says &apos;At the completion of this task, when you check Results, your score should be xxx%&apos; where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT doable in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt;&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 1 : connexion d'un routeur et d'un ordinateur avec un câble de console &lt;/h3&gt; &lt;h4&gt;Étape 1. Configurez la connexion physique de base. &lt;/h4&gt; &lt;p&gt;Connectez le câble de console (renversement) au port de console sur le routeur. Connectez l'autre extrémité du câble à l'ordinateur hôte à l'aide d'un adaptateur DB-9/DB-25 au port COM 1.&lt;/p&gt; &lt;h4&gt;Étape 2. Mettez les périphériques sous tension. &lt;/h4&gt; &lt;p&gt;Si l'ordinateur et le routeur ne sont pas déjà sous tension, mettez-les sous tension. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Remarque : ce processus est le même pour un commutateur&lt;/b&gt;.&lt;/p&gt; &lt;h4&gt;À la fin de cette tâche, votre taux de réalisation doit être de 100 %. 
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt;&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 2 : Configuration de PT Terminal de manière à établir une session en mode console avec un routeur IOS Cisco &lt;/h3&gt; &lt;h4&gt;Étape 1 : Lancez l'application PT Terminal. &lt;/h4&gt; &lt;p&gt;Dans la barre des tâches Windows, lancez le programme PT Terminal en sélectionnant PC0&amp;gt;onglet Bureau&amp;gt; Terminal&lt;/p&gt; &lt;h4&gt;Étape 2 : Utilisez le tableau ci-dessous pour les paramètres d'une session en mode terminal.&lt;/h4&gt; &lt;div align=&quot;center&quot;&gt; &lt;table border=&quot;1&quot; width=&quot;25%&quot; id=&quot;table1&quot;&gt; &lt;tr&gt; &lt;td bgcolor=&quot;#000000&quot;&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;Paramètre&lt;/b&gt;&lt;/font&gt;&lt;/td&gt; &lt;td bgcolor=&quot;#000000&quot;&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;&lt;b&gt;Valeur&lt;/b&gt;&lt;/font&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Bits par seconde&lt;/td&gt; &lt;td&gt;9600&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Bits de données&lt;/td&gt; &lt;td&gt;8&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Parité&lt;/td&gt; &lt;td&gt;Aucune&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Bits d'arrêt&lt;/td&gt; &lt;td&gt;1&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Contrôle de flux&lt;/td&gt; &lt;td&gt;Aucun&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;/div&gt; &lt;p&gt;&lt;b&gt;Remarque : ce processus est le même pour un commutateur&lt;/b&gt;.&lt;/p&gt; &lt;h4&gt;À la fin de cette tâche, votre taux de réalisation doit être de 100 %. 
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt;&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

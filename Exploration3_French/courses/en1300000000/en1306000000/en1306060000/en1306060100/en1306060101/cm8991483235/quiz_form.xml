@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="05/01/2008">
+		<name>Module  Quiz</name>
+		<form id="20935" lang=""><form-item>
+			<ai id="117468" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117468" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>one physical interface for many VLANs</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>bandwidth contention</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access mode switch port connection</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>complex cable configuration</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>trunk mode switch port connection</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>one physical interface per VLAN</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Physical</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Subinterface</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the properties associated with interfaces on the left to the appropriate interface type on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216608" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="216608" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident><componentident>3</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident><componentident>2</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="216608" action="Set">1</setvar><scoringdescription>please enter the answer for QA here</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="117469" type="mc-sa"><question><![CDATA[Refer to the exhibit. PC1 wants to send data to PC2, but does not know the MAC address of PC2. When PC1 sends an ARP request, which interface returns a MAC address? <br/><img src="16329.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Because PC1 and PC2 are connected to the same switch, PC2 supplies its MAC address. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The switch provides the MAC address of the fa0/1 interface. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Because the subinterfaces on the router have unique MAC addresses, subinterface fa0/0.10 supplies its MAC address. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The router supplies the MAC address of physical interface f0/0.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119407" type="mc-ma"><question><![CDATA[Refer to the exhibit. What are three advantages of replacing the individual VLAN links between the switch and the router with a trunk line and subinterfaces? (Choose three.) <br/><img src="16488.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[It would free 2 switch and router ports.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[It would reduce the complexity of the cabling runs.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It would increase the amount of bandwidth available for inter-VLAN routing. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It would allow for less complex troubleshooting of inter-VLAN routing issues. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[It would allow adding more VLANs without requiring more cabling or switch ports.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It would allow for less complex configuration of inter-VLAN routing. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117381" type="mc-sa"><question><![CDATA[What condition is required to enable Layer 3 switching?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[The Layer 3 switch must have IP routing enabled.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All participating switches must have unique VLAN numbers. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All routed subnets must be on the same VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Inter-VLAN portions of Layer 3 switching must use router-on-a-stick. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117479" type="mc-sa"><question><![CDATA[When implementing router-on-a-stick, what is necessary for establishing communication between VLANs?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[multiple switch ports to connect to a single router interface ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[native VLAN IP address that is configured on the router physical interface ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[all trunk ports configured in access mode ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[router subinterfaces  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117472" type="mc-ma"><question><![CDATA[Which two methodologies could be employed to reduce the risk of a failed inter-switch link disrupting inter-VLAN routing? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[configure and enable EtherChannel  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[disable trunking on all switch ports ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[configure and enable alternate paths between switches  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[assign all switch ports to separate VLANs ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[configure and enable Dynamic Tree Protocol ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119408" type="mc-ma"><question><![CDATA[Refer to the exhibit. Which three statements are true regarding this configuration? (Choose three.) <br/><img src="16489.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[This configuration will not scale easily.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[This configuration will limit the number of VLANs due to limitations on the number of physical interfaces the router can support.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The connections between the switch and router are trunk links. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All traffic between the router and the switch must be tagged with its VLAN ID. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[This configuration is not the most cost effective.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The switch will serve as the gateway for the hosts. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117589" type="mc-sa"><question><![CDATA[How does the router-on-a-stick model for inter-VLAN routing differ from traditional routing?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The router-on-a-stick model uses multiple physical interfaces on the router, each configured with a different Layer 3 address. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router-on-a-stick model uses a single physical interface on the switch with only the <b>no shutdown</b> command issued. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The router-on-a-stick model uses subinterfaces on the router with only the <b>no shutdown</b> command issued on the physical interface.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router-on-a-stick model uses subinterfaces on the switch with only the <b>no shutdown</b> command issued on the physical interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117484" type="mc-sa"><question><![CDATA[Which command does the network administrator use to determine whether inter-VLAN communication is functioning?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>show vlan</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>ping</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>ipconfig</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show interface</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117597" type="mc-sa"><question><![CDATA[Refer to the exhibit. What statement is true regarding the output shown? <br/><img src="16186.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Each subinterface returns a unique address in response to ARP requests. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[This inter-VLAN routing configuration is not the most cost-effective or scalable. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The router is properly configured for router-on-a-stick inter-VLAN routing between the 10.10.10.0/24 and 10.10.11.0/24 subnetworks.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The trunk link was dynamically negotiated. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Layer 3 addressing is not properly configured. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117476" type="mc-ma"><question><![CDATA[In a router-on-a-stick configuration, which two items are required to support connectivity between the router and the switch? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[all ports on the switch must be configured as access ports ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[router-to-switch physical interface must be configured with an IP address ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[router subinterfaces must be configured with unique addresses in different subnets  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[switch port that connects to the router must be configured as a trunk  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[each subinterface must be configured with the <b>no shutdown</b> command ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119409" type="mc-ma"><question><![CDATA[Refer to the exhibit. Which three statements are true regarding the configuration shown in the exhibit? (Choose three.) <br/><img src="16490.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[The links between the router and switch are access mode links.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Each router interface requires a unique IP address on separate subnets for each VLAN.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Each switch interface requires a unique IP address on separate subnets for each VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Each router interface requires a <b>no shutdown</b> command.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A routing protocol must be configured on the router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router will be configured with the <b>interface fastethernet0/0.2</b> command. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="117394" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117394" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>traditional routing</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>spanning-tree routing</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>router-on-a-stick</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>802.1Q routing</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>switch-based routing</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Inter-VLAN Routing Type</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Of the routing types on the left, drag only the three that are valid inter-VLAN routing types to the right. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="11" yspacing="50" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216185" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="216185" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="216185" action="Set">1</setvar><scoringdescription>please enter the answer for QA here</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119040" type="mc-sa"><question><![CDATA[A network technician is configuring a router to support inter-VLAN routing. After entering the CLI global configuration mode on R1 and selecting Fast Ethernet interface F0/0/1, the network administrator attempts to enter the command <b>encapsulation dot1q 10</b>. The router refuses to accept this command.  What could account for this failure?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router port F0/0/1 is not physically connected to the switch. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VLAN0001 has been renamed. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1 interface F0/0/1 was configured for subinterface operation. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[This command can only be configured on router subinterfaces.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Interface F0/0/1 on the switch is shut down. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

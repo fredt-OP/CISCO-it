@@ -1,0 +1,116 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 10.2.3 : &lt;br&gt;connexion des périphériques avec différents types de supports &lt;/h2&gt;
+
+&lt;h3&gt;Tableau d'adressage&lt;/h3&gt; &lt;!--This is the beginning of the IP addressing table code&quot; --&gt;
+
+&lt;p&gt;Ces travaux pratiques ne contiennent pas de tableau d'adressage.&lt;!--This is the end of the IP addressing table code&quot; --&gt;&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;examiner la configuration sur les routeurs ; &lt;li&gt;afficher la configuration du routeur ; &lt;li&gt;noter les ports actifs ; &lt;li&gt;connecter les périphériques ; &lt;li&gt;utiliser le type de support approprié entre les périphériques ; &lt;li&gt;vérifier la connectivité. &lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;&lt;/li&gt; &lt;/ul&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;Lorsque vous effectuez un câblage dans un environnement de travaux pratiques avec un équipement réel et un support réel, il convient de choisir le type de support approprié et les ports adéquats pour connecter les périphériques. Très souvent, les différents types de câbles utilisent le même type de connecteur et il est facile de connecter le mauvais type de câble au mauvais port, ce qui peut endommager l'équipement. Dans Packet Tracer, vous pouvez choisir différents types de supports pour connecter des périphériques et, lorsque les connecteurs sont identiques, les brancher sur le mauvais port. Cet exercice représente une configuration classique à deux routeurs avec tous les périphériques configurés. Vous allez examiner les configurations sur les périphériques, choisir le type de support approprié, connecter les périphériques et vérifier la connectivité.
+
+&lt;/p&gt;
+
+&lt;h3&gt;Tâche 1 : examiner la configuration sur les routeurs &lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Affichez la configuration du routeur.&amp;nbsp; &lt;/h4&gt; &lt;p&gt;Cliquez sur les deux routeurs et examinez la configuration à l'aide de l'onglet &lt;b&gt;Config&lt;/b&gt;. &lt;/p&gt; &lt;h4&gt;Étape 2. Notez les ports actifs.&lt;/h4&gt; &lt;p&gt;Les routeurs possèdent de nombreuses interfaces et elles ne peuvent pas toutes être utilisées. Observez la configuration sur toutes les interfaces de routeur. Pour chaque routeur, notez les interfaces pour lesquelles le statut des ports est actif, les informations IP sont configurées et, pour les interfaces série, les interfaces pour lesquelles la fréquence d'horloge est définie. &lt;/p&gt; &lt;h3&gt;Tâche 2 : connectez les périphériques&lt;/h3&gt; &lt;h4&gt;Étape 1. Utilisez le type de support approprié entre les périphériques.&lt;/h4&gt; &lt;p&gt;Les commutateurs et les concentrateurs fournissent une fonction de croisement sur leurs ports afin de connecter un ordinateur ou un routeur à un commutateur à l'aide d'un câble direct en cuivre. Utilisez un câble direct en cuivre pour connecter l'interface FastEthernet0/0 du routeur 1 à l'interface FastEthernet0/1 du commutateur et pour connecter l'interface FastEthernet de l'ordinateur 1 à l'interface FastEthernet0/2 du commutateur. &lt;/p&gt; &lt;p&gt;Un ordinateur peut être connecté directement à un routeur à l'aide d'un câble de croisement en cuivre. Utilisez un câble de croisement en cuivre pour connecter l'interface FastEthernet0/0 du routeur 2 à l'interface FastEthernet de l'ordinateur 2. &lt;/p&gt; &lt;p&gt;Dans Packet Tracer, il est possible d'accéder à la configuration d'un routeur en cliquant dessus. Dans un environnement de travaux pratiques, l'accès initial pour la configuration d'un routeur s'effectue par le biais du port de console. Le port de console est un port RJ-45 qui est connecté à l'ordinateur à l'aide d'un câble de renversement avec une prise RJ-45 à une extrémité et un connecteur D à 9 broches à l'autre extrémité, qui est connecté à un port RS-232 série de l'ordinateur. Dans Packet Tracer, il est appelé câble de console. Connectez le port RS-232 de l'ordinateur 1 au port de console du routeur 1 et connectez le port RS-232 de l'ordinateur 2 au port de console du routeur 2 à l'aide d&apos;un câble de console. &lt;/p&gt; &lt;p&gt;Une ligne louée dédiée entre deux emplacements comporte un équipement terminal de traitement des données (ETTD), comme un routeur, connecté à un équipement de communication de données (DCE), comme une unité CSU/DSU ou un modem. L'équipement de communication de données (DCE) est connecté à la boucle locale d'un fournisseur de services. L'équipement de communication de données (DCE) fournit un signal d'horloge pour les communications série synchrones. Dans un environnement de travaux pratiques ou dans Packet Tracer, vous utilisez un câble de croisement série pour simuler cette connexion. Un routeur est configuré pour fournir le signal d'horloge sur son interface série et l'extrémité de l'équipement de communication de données (DCE) est connecté à cette interface. Vous allez connecter l'interface Serial0/0/0 du routeur 1, qui a été configuré de manière à fournir le signal d'horloge, à l'interface Serial0/0/0 du routeur 2. Sélectionnez le câble DCE série. Le premier périphérique sur lequel vous cliquez est connecté à l'extrémité DCE du câble. Connectez l'interface Serial0/0/0 du routeur 1 à l'interface Serial0/0/0 du routeur 2. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Étape 2. Vérifiez la connectivité&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Dans l'invite de commande du &lt;b&gt;Bureau&lt;/b&gt; de l'ordinateur 1, exécutez la commande&lt;b&gt; ping 192.168.3.2&lt;/b&gt;, l'adresse IP de l'ordinateur 2. Si la commande ping échoue, vérifiez vos connexions et corrigez les erreurs jusqu'à ce que la commande ping aboutisse. Vérifiez votre configuration en cliquant sur le bouton &lt;b&gt;Check Results&lt;/b&gt;. &lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de réalisation devrait être de 100 %&lt;/h4&gt;
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Router2</ID>
+ <ID translate="true">Switch0</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Router2</ID>
+ <ID translate="true">Switch0</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

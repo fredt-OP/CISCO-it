@@ -1,0 +1,345 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component> 
+
+<component id="slide01">
+<text><![CDATA[<li>Testing remote connectivity options may be more difficult than testing the LAN design.</li><br/><li>The designer can use three different methods to test remote connectivity designs:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Simulation software, such as Packet Tracer</li><li>Prototype testing using simulated links</li><li>Pilot testing in the actual environment</li></textformat><br/><li>Computer software programs, such as Packet Tracer, offer the designer a tool to test configurations before implementing them on actual equipment. Benefits of using simulation sofware include:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Lower overall cost</li><li>Flexibility</li><li>Scalability</li><li>Control</li></textformat><br/><li>Disadvantages of using simulations may be that the simulations have limited functionality or report unrealistic performance estimates.</li><br/><li>Using cross-over cabling and special device configurations, WAN connections can be simulated in a prototype environment.</li><br/><li>When using cross-over cabling to connect two serial interfaces, it is necessary for one device to provide the clocking for the circuit. On a Cisco router, this is accomplished using the clock rate command.</li></ul>]]></text>
+</component> 
+
+
+
+<component id="slide02">
+<text><![CDATA[<li>Frame Relay is a high-performance WAN protocol that was standardized by the International Telecommunication Union ITU-T.</li><br/><li>Every Frame Relay link has at least three components:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>The local point-to-point circuit that connects the local CPE router to the TSP Frame Relay switch</li><li>The TSP packet-switched network</li><li>The remote point-to-point circuit that connects the remote site into the TSP network</li></textformat><br/><li>More than one virtual circuit can be carried on a single physical local loop circuit. Each virtual circuit endpoint is identified by a data-link connection identifier (DLCI).</li><br/><li>The committed information rate (CIR) specifies the maximum average data rate that the network delivers under normal conditions.</li></ul>]]></text>
+</component>
+
+<component id="s1_ID_txt02">     
+<text><![CDATA[Stadium<BR>DTE CPE Router]]></text> 
+
+</component>
+<component id="vID_txt03">
+<text><![CDATA[s0/0]]></text> 
+</component>
+ 
+<component id="s1_ID_txt04">           
+<text><![CDATA[CSU/DSU]]></text>   
+</component>
+   
+<component id="s1_ID_txt05">              
+<text><![CDATA[T1]]></text>  
+</component>
+
+<component id="s1_ID_txt06">              
+<text><![CDATA[DLCI 10, 30]]></text>  
+</component>
+
+<component id="s1_ID_txt07">              
+<text><![CDATA[DCE Frame Relay Switch]]></text>  
+</component>
+
+<component id="s1_ID_txt08">              
+<text><![CDATA[TSP Network]]></text>  
+</component>
+
+<component id="s1_ID_txt09">              
+<text><![CDATA[DLCI 40]]></text>  
+</component>
+
+<component id="s1_ID_txt10">              
+<text><![CDATA[T1]]></text>  
+</component>
+
+<component id="s1_ID_txt11">              
+<text><![CDATA[T1]]></text>  
+</component>
+
+<component id="s1_ID_txt12">              
+<text><![CDATA[DLCI20]]></text>  
+</component>
+
+<component id="s1_ID_txt13">              
+<text><![CDATA[Souvenir Shop<br>DTE CPE Router]]></text>  
+</component>
+
+<component id="s1_ID_txt14">              
+<text><![CDATA[s0/0]]></text>  
+</component>
+
+<component id="s1_ID_txt15">              
+<text><![CDATA[CSU/DSU]]></text>  
+</component>
+
+<component id="s1_ID_txt16">              
+<text><![CDATA[s0/0]]></text>  
+</component>
+
+<component id="s1_ID_txt17">              
+<text><![CDATA[Ticket Sales Office DTE CPE Router]]></text>  
+</component>
+
+<component id="s1_ID_txt18">              
+<text><![CDATA[Simulated Frame Relay Switch]]></text>  
+</component>
+
+<component id="s1_ID_txt19">              
+<text><![CDATA[FR1]]></text>  
+</component>
+
+<component id="s1_ID_txt20">              
+<text><![CDATA[s1/0 DCE]]></text>  
+</component>
+
+<component id="s1_ID_txt21">              
+<text><![CDATA[s1/0 DCE]]></text>  
+</component>
+
+<component id="s1_ID_txt22">              
+<text><![CDATA[CPE1]]></text>  
+</component>
+
+<component id="s1_ID_txt23">              
+<text><![CDATA[CPE2]]></text>  
+</component>
+
+<component id="s1_ID_txt24">              
+<text><![CDATA[s1/0]]></text>  
+</component>
+
+<component id="s1_ID_txt25">              
+<text><![CDATA[s0/1]]></text>  
+</component>
+
+<component id="s1_ID_txt26">              
+<text><![CDATA[Fa/1]]></text>  
+</component>
+
+<component id="s1_ID_txt27">              
+<text><![CDATA[Fa/0]]></text>  
+</component>
+
+<component id="s1_ID_txt28">              
+<text><![CDATA[Fa/1]]></text>  
+</component>
+
+<component id="s1_ID_txt29">              
+<text><![CDATA[Fa/0]]></text>  
+</component>
+
+<component id="s1_ID_txt30">              
+<text><![CDATA[Main Stadium]]></text>  
+</component>
+
+<component id="s1_ID_txt31">              
+<text><![CDATA[ISP1]]></text>  
+</component>
+
+<component id="s1_ID_txt32">              
+<text><![CDATA[Simulated Backup VPN Connection]]></text>  
+</component>
+
+<component id="s1_ID_txt33">              
+<text><![CDATA[Remote Site]]></text>  
+</component>
+
+<component id="s1_ID_txt34">              
+<text><![CDATA[Cross-Over V-35]]></text>  
+</component>
+
+<component id="s1_ID_txt35">              
+<text><![CDATA[Cross-Over V-35]]></text>  
+</component>
+
+<component id="s1_ID_txt36">              
+<text><![CDATA[Backup Link]]></text>  
+</component>
+
+<component id="s1_ID_txt37">              
+<text><![CDATA[Backup Link]]></text>  
+</component>
+
+<component id="s1_ID_txt38">              
+<text><![CDATA[Actual Frame Relay Network]]></text>  
+</component>
+
+
+
+<component id="slide03">
+<text><![CDATA[<li>To help manage traffic flows in the network, Frame Relay implements two mechanisms:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Forward-explicit congestion notification (FECN)</li><li>Backward-explicit congestion notification (BECN)</li></textformat><br/><li>Inverse Address Resolution Protocol (Inverse ARP)provides a mechanism to create dynamic DLCI-to-Layer 3 address maps.</li><br/><li>Frame Relay is a nonbroadcast multi-access (NBMA) protocol. This means that each virtual circuit on an interface is treated as a separate local network.</li><br/><li>One way to configure routers to use a backup link when the primary link is unavailable is to create floating static routes. A floating static route is a static route that has an administrative distance greater than the administrative distance of the corresponding dynamic routes.</li></ul>]]></text>
+</component>
+
+
+<component id="s3_ID_txt01">
+<text><![CDATA[Stadium<BR>DTE CPE Router]]></text>
+</component>
+
+<component id="s3_ID_txt02">
+<text><![CDATA[S0/0]]></text>
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[DLCI 10, 30]]></text>
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[CSU-DSU]]></text>
+</component>
+
+<component id="s3_ID_txt05">
+<text><![CDATA[TSP Network]]></text>
+</component>
+
+<component id="s3_ID_txt06">
+<text><![CDATA[DLCI 20]]></text>
+</component>
+
+<component id="s3_ID_txt07">
+<text><![CDATA[CSU-DSU]]></text>
+</component>
+
+<component id="s3_ID_txt08">
+<text><![CDATA[Ticket Sales Office<BR>DTE CPE Router]]></text>
+</component>
+
+
+<component id="s3_ID_txt09">
+<text><![CDATA[CONGESTION]]></text>
+</component>
+
+
+<component id="s3_ID_txt14">
+<text><![CDATA[DCE Router recieves BECN marked frames. Flow control can be evoked if the device implements it.]]></text>
+</component>
+
+<component id="s3_ID_txt15">
+<text><![CDATA[DCE Switch sends out BECN to source device.]]></text>
+</component>
+
+
+
+
+<component id="slide04">
+<text><![CDATA[<li>A VPN is an extension of the internal private network. VPNs transmit information securely across shared or public networks, like the Internet.</li><br/><li>VPNs have two important components:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Tunneling to create the virtual network</li><li>Encryption to enable privacy and security</li></textformat><br/><li>Tunneling methods include:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Generic Routing Encapsulation</li><li>IP Security (IPSec)</li><li>Layer 2 Forwarding Protocol (L2F)</li><li>Point-to-Point Tunneling Protocol (PPTP)</li><li>Layer 2 Tunneling Protocol (L2TP)</li></textformat><br/><li>Encryption algorithms include:</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>Data Encryption Standard (DES) algorithm</li><li>Triple DES (3DES) algorithm</li><li>Advanced Encryption Standard (AES)</li><li>Rivest, Shamir, and Adleman (RSA)</li></textformat></ul>]]></text>
+</component>
+
+<component id="s4_ID_txt01">
+<text><![CDATA[Virtual Network]]></text>
+</component>
+
+<component id="s4_ID_txt02">
+<text><![CDATA[Tunneling]]></text>
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[Private Network]]></text>
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[Encryption]]></text>
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[Encrypt]]></text>
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[Encrypted Message]]></text>
+</component>
+
+<component id="s4_ID_txt07">
+<text><![CDATA[Decrypt]]></text>
+</component>
+
+<component id="s4_ID_txt08">
+<text><![CDATA[Virtual Private Network = Tunneling + Encryption]]></text>
+</component>
+
+<component id="s4_ID_txt09">
+<text><![CDATA[Click the highlighted areas to learn more about tunneling options.]]></text>
+</component>
+
+<component id="s4_ID_txt10">
+<text><![CDATA[ ]]></text>
+</component>
+
+<component id="s4_ID_txt11">
+<text><![CDATA[ ]]></text>
+</component>
+
+
+<component id="slide05">
+<text><![CDATA[<li>Encryption algorithms, such as DES and 3DES, require a symmetric, shared secret key to perform encryption and decryption.</li><br/><li>Keys can be configured through the use of a key exchange method. The Diffie-Hellman (DH) key agreement is a public key exchange method.</li><br/><li>To guard against the interception and modification of VPN data, a data integrity algorithm can be used to add a hash to the message.</li><br/><li>IPSec is a framework of open standards. It provides data confidentiality, data integrity, and data authentication between participating peers. IPSec provides these security services at Layer 3.</li></ul>]]></text>
+</component>
+
+<component id="s5_ID_txt01">
+<text><![CDATA[IPSec Framework]]></text>
+</component>
+
+<component id="s5_ID_txt02">
+<text><![CDATA[IPSec Protocol]]></text> 
+</component>
+
+<component id="s5_ID_txt03">
+<text><![CDATA[Encryption]]></text> 
+</component>
+
+<component id="s5_ID_txt04">
+<text><![CDATA[Authentication]]></text> 
+</component>
+
+<component id="s5_ID_txt05">
+<text><![CDATA[DH]]></text> 
+</component>
+
+<component id="s5_ID_txt06">
+<text><![CDATA[Choices]]></text>
+</component>
+
+<component id="s5_ID_txt07">
+<text><![CDATA[ESP]]></text> 
+</component>
+
+<component id="s5_ID_txt08">
+<text><![CDATA[ESP+AH]]></text> 
+</component>
+
+<component id="s5_ID_txt09">
+<text><![CDATA[AH]]></text> 
+</component>
+
+<component id="s5_ID_txt10">
+<text><![CDATA[DES]]></text>
+</component>
+
+<component id="s5_ID_txt11">
+<text><![CDATA[3 DES]]></text>
+</component>
+
+<component id="s5_ID_txt12">
+<text><![CDATA[3 AES]]></text> 
+</component>
+
+<component id="s5_ID_txt13">
+<text><![CDATA[MD5]]></text> 
+</component>
+
+<component id="s5_ID_txt14">
+<text><![CDATA[SHA]]></text> 
+</component>
+
+<component id="s5_ID_txt15">
+<text><![CDATA[DH1]]></text> 
+</component>
+
+<component id="s5_ID_txt16">
+<text><![CDATA[DH2]]></text> 
+</component>
+
+<component id="s5_ID_txt17">
+<text><![CDATA[DH5]]></text> 
+</component>
+
+
+</textcomponents>

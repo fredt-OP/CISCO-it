@@ -1,0 +1,41 @@
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="./css/reset-fonts.css">
+		<link rel="stylesheet" type="text/css" href="./css/headerstyle.css"/>
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script>
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			var content = new EJS({url: 'header.ejs'});
+
+			function getContent(main) {
+				var html = "";
+				data = {main:main};
+				html = content.render(data);
+				writeToElement("content", html);
+			}
+		</script>
+	</head>
+	<body class="header"><div id="content">
+		<table width="100%" cellspacing="0" cellpadding="0" border="0">
+			<tr>
+				<td width="15" class="headerlogo"><img src="./images/header_left.png" width="15" height="91"></td>
+				<td width="87" class="headerlogo"><img src="./images/logo.png" width="87" height="91"></td>
+				<td class="headerleft"><table align="right"><tr><td class="headerlefttext"></td></tr><td class="headerlefttext"></td></tr></table></td>
+				<td class="headermid"><img src="./images/header_sep.png" width="22" height="91"></td>
+				<td class="headerright"><table align="right"><tr><td class="headerrighttop"></td></tr><tr><td class="headerrighttop"></td></tr><tr><td class="headerrightbot"></td></tr></table></td>
+			</tr>
+		</table>
+	</div></body>
+</html>
+

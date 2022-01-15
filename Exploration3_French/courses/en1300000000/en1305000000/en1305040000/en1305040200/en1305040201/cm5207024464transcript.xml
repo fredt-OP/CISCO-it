@@ -1,0 +1,5 @@
+<transcript lastedited="11.05.08 18:11:41">
+<title><content-text><![CDATA[5.4.2  - PVST+]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts how Cisco PVST+ functions with multiple V LAN's.<br><br>Network Topology:<br>Three switches, S1, S2, and S3, are interconnected in a full mesh.<br>Switch S1 port F0/2 is connected to S2 port F0/2.<br>Switch S2 port F0/3 is connected to S3 port F0/1<br>Switch S3 port F0/4 is connected to S1 port F0/4.<br>All inter-switch links are 801 dot 1Q trunks.<br><br>Switch S1 is the root bridge for V LAN 10.<br>Switch S3 is the root bridge for V LAN 20.<br>Port F0/3 on switch S2 is the forwarding port for V LAN 20.<br>Port F0/2 on switch S2 is the forwarding port for V LAN 10.<br>Port F0/3 on switch S2 is the blocking port for V LAN 10<br>Port F0/2 on switch S2 is the blocking port for V LAN 20.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

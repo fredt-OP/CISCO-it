@@ -1,0 +1,93 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_label01">
+<text><![CDATA[<b>Étape 1 :</b>]]></text>
+</component>
+
+<component id="ID_label02">
+<text><![CDATA[<b>Étape 2 :</b>]]></text>
+</component>
+
+<component id="ID_label03">
+<text><![CDATA[<b>Étape 3 :</b>]]></text>
+</component>
+
+<component id="ID_label04">
+<text><![CDATA[<b>Étape 4 :</b>]]></text>
+</component>
+
+<component id="ID_label05">
+<text><![CDATA[<b>Étape 5 :</b>]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[<b>Envoi d’une requête ping à la passerelle par défaut</b>]]></text>
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[<b>Vérification de la connectivité de bout en bout</b>]]></text> 
+</component>
+
+<component id="ID_btn03">
+<text><![CDATA[<b>Vérification de la configuration du routage</b>]]></text> 
+</component>
+
+<component id="ID_btn04">
+<text><![CDATA[<b>Vérification du fonctionnement de la fonction NAT</b>]]></text> 
+</component>
+
+<component id="ID_btn05">
+<text><![CDATA[<b>Vérification des règles de filtrage du pare-feu</b>]]></text> 
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Étape 1 : envoi d’une requête ping à la passerelle par défaut de l’hôte</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[Si l’hôte et le serveur peuvent tous deux envoyer des requêtes ping à leur passerelle par défaut, cela signifie que les services des couches 1 et 2 fonctionnent correctement et qu’il existe une connectivité réseau locale de couche 3. Si la requête ping envoyée à l’adresse de la passerelle par défaut locale n’aboutit pas, le dépannage des couches 3, 2 et 1 est indispensable pour localiser la source du problème.]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Étape 2 : vérification de la connectivité de bout en bout</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[Envoyez une requête ping ou telnet depuis l’hôte vers un serveur distant ou un périphérique réseau.  Si la requête aboutit, cela signifie que la couche 3 fonctionne correctement. Si les couches 1, 2 et 3 fonctionnent correctement, le problème doit se situer au niveau d’une couche supérieure.
+Si la requête ping n’aboutit pas, il est indispensable de dépanner les configurations du routage, de la fonction NAT et du pare-feu pour assurer les livraisons de paquets.]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Étape 3 : vérification de la configuration du routage</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Vérifiez si la configuration du routage est correcte, et si les mises à jour des routes s’effectuent comme prévu. Si la table de routage ne contient pas les routes attendues, dépannez et corrigez la configuration du routage et répétez l’étape 2. Si la requête ping n’aboutit toujours pas, vérifiez la configuration NAT.]]></text>
+</component>
+
+<component id="ID_title04">
+<text><![CDATA[<b>Étape 4 : vérification du fonctionnement de la fonction NAT</b>]]></text>
+</component>
+
+
+<component id="ID_txt04">
+<text><![CDATA[En cas de problème d’accès aux services d’un réseau distant tel qu’Internet, il se peut que la fonction NAT ne fonctionne pas correctement.  Utilisez la commande show ip nat translations pour vérifier si les traductions sont effectuées. Effacez les traductions NAT à l’aide de la commande clear ip nat translation * et essayez à nouveau d’accéder aux ressources externes. Si le problème n’est toujours pas résolu, vérifiez la configuration des interfaces interne et externe. Une fois la configuration NAT vérifiée, répétez l’étape 2. Si la requête ping n’aboutit toujours pas, vérifiez les règles de filtrage du pare-feu.]]></text>
+</component>
+
+<component id="ID_title05">
+<text><![CDATA[<b>Étape 5 : vérification des règles de filtrage du pare-feu</b>]]></text>
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[Même si une connectivité IP existe entre une source et une destination, des problèmes peuvent toujours exister pour un protocole de couche supérieure spécifique, tel que FTP, HTTP ou Telnet. Ces protocoles utilisent le transport IP de base mais sont sujets à des problèmes de protocoles spécifiques relatifs aux filtres de paquets et aux pare-feu. Vérifiez si les ports requis sont autorisés sur tous les pare-feu.]]></text>
+</component>
+
+
+</textcomponents>

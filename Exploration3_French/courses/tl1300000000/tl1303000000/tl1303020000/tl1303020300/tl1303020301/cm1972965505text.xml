@@ -1,0 +1,78 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Le port F0/3 est configuré à l’aide de la commande <font face='_typewriter'><b>switchport mode dynamic auto</b></font>.]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Le port F0/3 est configuré à l’aide de la commande <font face='_typewriter'><b>switchport mode dynamic auto</b></font>.]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Le port F0/1 est configuré à l’aide de la commande <font face='_typewriter'><b>switchport mode trunk</b></font>.]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Le port F0/1 est configuré à l’aide de la commande <font face='_typewriter'><b>switchport mode trunk</b></font>.]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Cette liaison est une agrégation.<br/><br/>Lorsque les deux ports sont configurés à l’aide de la commande <font face='_typewriter'><b>switchport mode trunk</b></font>, ils sont obligés de rester en mode d’agrégation.]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Cette liaison n’est pas une agrégation.<br/><br/>Lorsque les deux ports sont configurés à l’aide de la commande <font face='_typewriter'><b>switchport mode dynamic auto</b></font>, la liaison agrégée est inactive.]]></text> 
+  </component>
+<component id="btn1">
+<text><![CDATA[Configuration de port initiale]]></text>
+</component>
+<component id="btn2">
+<text><![CDATA[Quelle liaison sera configurée en tant qu’agrégation ?]]></text>
+</component>
+<component id="btn3">
+<text><![CDATA[Modes DTP]]></text>
+</component>
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font  color="#FFFFFF">Dynamique automatique</font></b></td>
+	   	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Dynamic Desirable</font></b></td>
+	   	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Agrégation</font></b></td>
+	   	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Accès</font></b></td>
+    	</tr>
+	<tr>
+		<td bgcolor='#666666' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font  color="#FFFFFF">Dynamique automatique</font></b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Accès</td>	
+	    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Agrégation</td>
+	    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Agrégation</td>
+	    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Accès</td>
+	</tr>
+	<tr>
+		<td bgcolor='#333333' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Dynamic Desirable</font></b></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Agrégation</td>	
+	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Agrégation</td>
+	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Agrégation</td>
+	    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Accès</td>
+	</tr>
+	<tr>
+	  <td bgcolor='#666666' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Agrégation</font></b></td>
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Agrégation</td>
+      <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Agrégation</td>
+      <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Agrégation</td>
+      <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non recommandé</td>
+  </tr>
+	<tr>
+	  <td bgcolor='#333333' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b><font color="#FFFFFF">Accès</font></b></td>
+	  <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Accès</td>
+      <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Accès</td>
+      <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non recommandé</td>
+      <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Accès</td>
+  </tr>
+	<tr>
+	  <td colspan="5" valign='top' bgcolor='#FFFFFF' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Remarque : le tableau suppose que le protocole DTP est activé des deux côtés.</b><br />Commande <font face="_typewriter"><b>* show dtp interface</b></font> : pour déterminer les paramètres actuels.</td>
+  </tr>
+	</table>
+    ]]></text>
+</component>
+<component id="ID_title">
+<text><![CDATA[Interactions entre les modes de port de commutateur DTP]]></text>
+</component>
+</textcomponents>
+
+
+

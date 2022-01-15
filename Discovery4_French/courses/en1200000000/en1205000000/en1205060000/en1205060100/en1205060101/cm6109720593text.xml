@@ -1,0 +1,263 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component> 
+
+<component id="slide01">
+<text><![CDATA[<li>Determining how to design the network to meet the business goals is a multi-step process.</li><br/><li>For each business goal, the designer must determine what network changes are necessary to meet the goal. Each change has technical requirements that can be addressed by elements of the network design.</li><br/><li>Once the design elements are determined, the designer takes into account any constraints applied by the customer and makes compromises or trade-offs as necessary.</li><br/><li>All design decisions are evaluated on how well they meet the four primary technical requirements of scalability, availability, security and manageability.</li><br/><li>Converged networks, such as the network being designed for the stadium, carry a combination of data, voice, and video traffic. Each type of traffic has unique performance requirements that require QoS to be included in the design.</li><br/><li>Security is the one area of network design where trade-offs should not be made. Although it may be necessary to find lower cost or less streamlined ways to provide a secure network, it is never acceptable to disregard security in order to add other network capabilities.</li></ul>]]></text>
+</component> 
+
+<component id="s1_ID_txt01">
+<text><![CDATA[NETWORK PERFORMANCE]]></text> 
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[Critical Applications]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Transaction-Processing]]></text> 
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Transaction-Processing]]></text> 
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[Video]]></text> 
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[Video]]></text> 
+</component> 
+
+<component id="s1_ID_txt07">
+<text><![CDATA[VoIP]]></text> 
+</component> 
+
+<component id="s1_ID_txt08">
+<text><![CDATA[Voice]]></text> 
+</component> 
+
+<component id="s1_ID_txt09">
+<text><![CDATA["I need my applications to perform properly."<li>Data Transactions</li><li>Video</li><li>Voice</li>]]></text> 
+</component> 
+
+<component id="s1_ID_txt10">
+<text><![CDATA["I need to manage bandwidth to deliver application performance."<li>Delay</li><li>Jitter</li><li>Packet loss</li>]]></text> 
+</component> 
+
+<component id="s1_ID_txt11">
+<text><![CDATA[User Perspective]]></text> 
+</component>
+
+<component id="s1_ID_txt12">
+<text><![CDATA[Manager Perspective]]></text> 
+</component>
+
+<component id="s1_ID_txtTitle">
+<text><![CDATA[Transaction-Processing]]></text>
+</component>
+
+<component id="s1_ID_txtBody">
+<text><![CDATA[The stadium set a goal to provide a response time of under three seconds for the primary applications using its database servers.]]></text>
+</component>
+
+<component id="s1_ID_txtTitle1">
+<text><![CDATA[Video Distribution and Monitoring]]></text>
+</component>
+
+<component id="s1_ID_txtBody1">
+<text><![CDATA[The vision of the stadium management is to provide live, high-quality video throughout the stadium. Management also needs the surveillance camera video quality to be high.]]></text>
+</component>
+
+<component id="Is1_D_txtTitle2">
+<text><![CDATA[IP Telephone Voice Quality]]></text>
+</component>
+
+<component id="s1_ID_txtBody2">
+<text><![CDATA[User expectations for voice quality are high. They expect that there will be no difference between their current digital phone voice quality and the new IP telephone sets.]]></text>
+</component>
+
+<component id="s1_ID_inst">
+<text><![CDATA[Click each application to view information about performance requirements.]]></text>
+</component>
+
+
+
+<component id="slide02">
+<text><![CDATA[<li>When applying constraints to the network design, consideration is made to the prioritized business goals of the customer. When trade-offs are necessary, the features that support the higher priority goals should be included, while features that support lower priority goals may be postponed.</li><br/><li>Design elements required at the Access Layer include:  port density,VLAN strategies, physical security, power requirements, QoS classification and marking capabilities, and the support for redundant links to the Distribution Layer.</li><br/><li>Distribution Layer design elements include:  redundant components and links, high density routing, traffic filtering, QoS mechanisms, fast convergence and traffic aggregation.</li><br/><li>At the Core Layer, the elements of the design include: redundant components and links, high availability features, and fast converging protocols.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[Internet]]></text> 
+</component>
+<component id="s2_ID_txt02">
+<text><![CDATA[Core]]></text> 
+</component>
+<component id="s2_ID_txt03">
+<text><![CDATA[Distribution]]></text> 
+</component>
+<component id="s2_ID_txt04">
+<text><![CDATA[Access]]></text> 
+</component>
+
+
+<component id="slide03">
+<text><![CDATA[<li>Designing WAN connectivity requires evaluation of the telecommunications services available in the customer's geographic area.</li><br/><li>When determining the physical method for connecting the remote sites to the main stadium network, the network designer must also analyze how workers at the remote sites expect to use the network services. Traffic patterns to and from servers at the main location determine bandwidth requirements and security mechanisms.</li><br/><li>Because WAN connectivity may not be as reliable as LAN connectivity methods, it is important to consider implementing back-up or alternate access methods in a WAN design.</li><br/><li>VPNs can provide secure remote access through the Internet for remote workers and small remote office locations.  This type of VPN connection is also an effective backup connectivity option.</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_txt01">              
+<text><![CDATA[Internet]]></text>  
+</component>
+
+<component id="s3_ID_txt02">              
+<text><![CDATA[Frame Relay]]></text>  
+</component>
+
+<component id="s3_ID_txt03">              
+<text><![CDATA[ISP1]]></text>  
+</component>
+
+<component id="s3_ID_txt04">              
+<text><![CDATA[ISP2]]></text>  
+</component>
+
+<component id="s3_ID_txt05">              
+<text><![CDATA[Edge2]]></text>  
+</component>
+
+<component id="s3_ID_txt06">              
+<text><![CDATA[Core]]></text>  
+</component>
+
+<component id="s3_ID_txt07">              
+<text><![CDATA[VPN<br>over DSL]]></text>  
+</component>
+
+<component id="s3_ID_txt08">              
+<text><![CDATA[ISP3]]></text>  
+</component>
+
+<component id="s3_ID_txt09">              
+<text><![CDATA[Ticket Sales Office]]></text>  
+</component>
+
+<component id="s3_ID_txt10">              
+<text><![CDATA[Vendor<br>(Souvenir Shop)]]></text>  
+</component>
+
+<component id="s3_ID_txt11">              
+<text><![CDATA[FilmCompany]]></text>  
+</component>
+
+<component id="s3_ID_txt12">              
+<text><![CDATA[ISP4]]></text>  
+</component>
+
+<component id="s3_ID_txt13">              
+<text><![CDATA[Team A<br>Remote Office]]></text>  
+</component>
+
+<component id="s3_ID_txt14">              
+<text><![CDATA[BR2]]></text>  
+</component>
+
+<component id="s3_ID_txt15">              
+<text><![CDATA[BR3]]></text>  
+</component>
+
+<component id="s3_ID_txt16">              
+<text><![CDATA[BR4]]></text>  
+</component>
+
+<component id="s3_ID_txt17">              
+<text><![CDATA[BR5]]></text>  
+</component>
+
+<component id="s3_ID_txt18">              
+<text><![CDATA[Edge1]]></text>  
+</component>
+
+<component id="s3_ID_txt19">              
+<text><![CDATA[ISP5]]></text>  
+</component>
+
+<component id="slide04">
+<text><![CDATA[<li>Unified wireless network solutions that include wireless control system software offer advanced features, such as centralized management and multiple service levels for different user and client types.</li><br/><li>Using lightweight wireless Access Points and a wireless LAN controller in the network design provides centralized management, dynamic reconfiguration of APs, and Layer 3 roaming.</li><br/><li>Layer 3 roaming is supported by LWAPP-enabled Access Points and wireless controllers. Users on the wireless network are assigned IP addresses independent of the physical network where the Access Points are installed.</li></ul>]]></text>
+</component>
+
+<component id="s4_ID_txt01">
+<text><![CDATA[Unified Wireless Network Architecture]]></text> 
+</component>
+
+<component id="s4_ID_txt02">
+<text><![CDATA[Cisco Aironet Lightweight Access Point]]></text> 
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[Switch/Routed Network]]></text> 
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[Cisco Wireless LAN Controller]]></text> 
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[Cisco Wireless Control System]]></text> 
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[Enhanced Security]]></text> 
+</component> 
+
+<component id="s4_ID_txt07">
+<text><![CDATA[Voice Services]]></text> 
+</component> 
+
+<component id="s4_ID_txt08">
+<text><![CDATA[Location Services]]></text> 
+</component> 
+
+<component id="s4_ID_txt09">
+<text><![CDATA[Guest Access]]></text> 
+</component> 
+
+<component id="s4_ID_txt10">
+<text><![CDATA[Mobility Services]]></text> 
+</component> 
+
+<component id="s4_ID_txtTitle">
+<text><![CDATA[Lightweight Access Point ]]></text>
+</component>
+
+
+
+
+<component id="slide05">
+<text><![CDATA[<li>The network designer must identify which data and communications are at risk and what the potential sources of attacks are. Doing this helps the designer place security services at appropriate points throughout the network design to prevent likely attacks.</li><br/><li>There are three main categories of security services: infrastructure protection, secure connectivity, and threat detection. Threat detection includes defense and mitigation.</li><br/><li>Wherever possible, the design should use integrated services, such as IOS-based firewall features and intrusion detection system (IDS) modules to eliminate the need for additional security devices.</li><br/><li>When designing firewall rule sets and access control lists, the general policy is to deny all traffic that is either not specifically authorized or is not in response to a permitted inquiry.</li></ul>]]></text>
+</component>
+
+<component id="s5_ID_txt01">
+<text><![CDATA[Web Server]]></text>   
+</component>
+
+<component id="s5_ID_txt02">
+<text><![CDATA[Internet]]></text>   
+</component>
+ 
+<component id="s5_ID_txt03">
+<text><![CDATA[<b>Firewall Rule:</b><br>Deny all inbound traffic from the Internet to a Web Server except on the permitted ports.<br><br><b>Access Control List statements:</b><font face='_typewriter'><br>access-list 112 permit tcp any host 200.1.2.11 eq www <br>access-list 112 permit tcp any host 200.1.2.11 eq ftp<br>access-list 112 permit tcp any host 200.1.2.11 eq 7000<br>access-list 112 permit tcp any host 200.1.2.11 eq 1755<br>access-list 112 permit tcp any host 200.1.2.11 eq 1720<br>access-list 112 deny ip any host 200.1.2.11 log</font>]]></text>   
+</component>
+
+<component id="s5_ID_txt04">
+<text><![CDATA[Firewall]]></text>   
+</component>
+
+
+
+
+</textcomponents>

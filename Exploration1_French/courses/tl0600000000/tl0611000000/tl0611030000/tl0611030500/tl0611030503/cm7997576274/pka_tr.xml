@@ -1,0 +1,123 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 11.3.5.3 : &lt;br&gt;test de la connectivité des hôtes avec ping&lt;/h2&gt;
+
+&lt;h3&gt;Table d'adressage&lt;/h3&gt; &lt;h3&gt;
+
+&lt;!--Ceci est la fin du code de la table d'adressage IP&quot; --&gt;&lt;!-- ================================================== Liste des objectifs non classés (puces) ================================================== --&gt;&lt;/h3&gt;Ces travaux pratiques n'utilisent pas de table d'adressage.
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Résolution des problèmes liés à la connectivité réseau avec ping&lt;/li&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Cet exercice consiste à employer diverses commandes ping pour identifier les problèmes de connectivité réseau.&lt;/p&gt;
+
+&lt;h3&gt;Tâche 1 : résolution des problèmes liés à la connectivité réseau avec ping&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Création de la connectivité dans Packet Tracer.&lt;/h4&gt; &lt;p&gt;Allez et venez quatre fois entre les modes Realtime et Simulation pour vous assurer que tous les voyants de liaison passent au vert. Laissez Packet Tracer en mode Realtime.  &lt;/p&gt; &lt;h4&gt; Étape 2. Envoi d'une requête ping à l'adresse IP d'un hôte dans un réseau distant.&lt;/h4&gt; &lt;p&gt; Cliquez sur PC 1A. La fenêtre de configuration du PC s'ouvre. Cliquez sur le bouton &lt;b&gt;Command Prompt&lt;/b&gt; sous l'onglet &lt;b&gt;Desktop&lt;/b&gt;. Entrez la commande &lt;b&gt;ping 192.168.254.254&lt;/b&gt; afin de tester l'adresse IP de Eagle Server. L'échec de la commande ping montre qu'il y a un problème entre PC 1A et Eagle Server. &lt;/p&gt; &lt;h4&gt; &lt;b&gt;Étape 3. &lt;/b&gt;Localisation du problème par envoi de requêtes ping à des emplacements intermédiaires.&lt;/h4&gt; &lt;p&gt;Pour circonscrire le problème, vous allez maintenant tester des emplacements intermédiaires avec la commande ping.&lt;br&gt;Entrez la commande &lt;b&gt;ping 172.16.255.254&lt;/b&gt; pour tester l'adresse IP de l'interface locale sur le routeur R2-Central. Le succès de la commande ping indique que PC 1A peut atteindre le routeur local.&lt;br&gt;Entrez la commande &lt;b&gt;ping 10.10.10.5&lt;/b&gt; pour tester l'adresse IP de l'interface série sur le routeur R2-Central. Le succès de la commande ping indique que la liaison série au routeur R1-ISP fonctionne correctement.&lt;br&gt;Entrez la commande &lt;b&gt;ping 10.10.10.6&lt;/b&gt; pour tester l'adresse IP de l'interface série sur le routeur R1-ISP. Le succès de la commande ping indique que PC 1A peut atteindre le routeur R1-ISP.&lt;br&gt;Entrez la commande &lt;b&gt;ping 192.168.254.253&lt;/b&gt; pour tester l'adresse IP de l'interface FastEthernet sur le routeur R1-ISP. L'échec de la commande ping montre que le problème se situe sur le routeur R1-ISP. &lt;p&gt; &lt;h4&gt;Étape 4. Résolution du problème.&lt;/h4&gt;Cliquez sur le routeur R1-ISP. Ouvrez une session sur le routeur en utilisant l'onglet &lt;b&gt;CLI&lt;/b&gt;. Vérifiez l'état des interfaces en entrant la commande &lt;b&gt;show ip interface brief&lt;/b&gt;. Quelle est la cause du problème ? Résolvez le problème et vérifiez ensuite que PC 1A peut désormais atteindre Eagle Server en entrant à partir de PC 1A la commande &lt;b&gt;ping 192.168.254.254&lt;/b&gt; qui teste l'adresse IP de Eagle Server.
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 100 %. &lt;/h4&gt;
+
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

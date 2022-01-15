@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 09:09:02">
+<title><content-text><![CDATA[5.1.5 - Default Routes]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts H1 connected to switch S1, which is connected to F A 0 /0 of router, R1. This is the stub network with the network address 172.16.3.0 /24. R1, the stub router, is connected to S0/0/0 of router R2 on the network. The link from R1 to R2 is a default route; the link from R2 to R1 is a static route. <br><br>R1 (config) # IP route 0.0.0.0 0.0.0.0 s0/0/0<br>R1 (config) # end<br><br>R1 # show IP route<br>[output omitted]<br><br>Gateway of last resort is 0.0.0.0 to network 0.0.0.0<br><br>172.16.0.0 /24 is subnetted, 2 subnets <br>C172.16.2.0 is directly connected, Serial0/0/0<br>C172.16.3.0 is directly connected, FastEthernet0/0<br>S0.0.0.0 /0 is directly connected, Serial0/0/0<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

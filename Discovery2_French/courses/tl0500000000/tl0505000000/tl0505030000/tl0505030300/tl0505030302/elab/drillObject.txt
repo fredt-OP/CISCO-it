@@ -1,0 +1,1346 @@
+//modified by Bargavi
+//to be compatible with flashMX
+/***********************
+WARNING: this file has been extensively hacked to allow for certain features (matrix and alternate step) that
+were requested very late in the programming stage.
+It is very hard to understand these functions because we were trying to allow for backwards compatiblity.
+***********************/
+//var deviceUsed;
+var hasDefaultGraphic;  // boolean to check whether there is a backup graphics for all steps
+var Language;
+var labDrill=false;  // string, either "True" or "False", whether or not it is a lab drill or a syntax drill
+                     // variable is set in the data files of the labs
+var loadedCommands = new Object();  // keeps track of all command modes loaded into flash
+
+var matrix = null;  // global array to keep track of matrix check finished steps
+var AnswerArray = new Array();
+var errorArray = new Array();
+var stepModeArray = new Array();
+var parsestatus = 0; //global variable to check if the command is conflicting
+  // Here are the enum'ed variable for parsestatus
+   SUCCESSFULregcmd = 0;
+   UNSUCCESSFULregcmd = 1;
+   INCOMPLETEregcmd = 2;
+   UNSUPPORTEDregcmd = 3;
+   AMBIGUOUSregcmd = 4;
+   SUCCESSFULhelpcmd = 5;
+   UNSUCCESSFULhelpcmd = 6;
+   INCOMPLETEhelpcmd = 7;
+   UNSUPPORTEDhelpcmd = 8;
+   AMBIGUOUShelpcmd = 9;
+var instructionArray = new Array();
+var resultArray = new Array();
+var graphicArray = new Array();
+var chapterCovered = ""
+// Commented out by Dean Wood 2/4/2003
+// Changing the step image to be viewed as the topology.
+//var wantShowTopology = false;
+var routerInfoArray = new Array();
+var routerUsedForThisStep = new Array();
+
+// A data structure to store device Command history
+var devCmdHist = new Array();
+function deviceCommandHistoryClass()
+{
+    this.configHistory = new Array();
+    this.userHistory = new Array();
+
+    this.userHistIndex=0;
+    this.configHistIndex=0;
+    this.historyBufferLength=10;
+}
+
+
+var stepnum = 1;  // global variable, used very often, keeps track of the current step number
+var substepNumber; // keeps track of current substep number
+
+function resultObj()
+{
+   this.stepnum = "0";
+   this.result = new Array();
+
+}
+//router information object
+
+function routerInfoObj()
+{
+   this.routerNum = 0;
+   this.hostName = "";
+   this.enablePassword = "";
+   this.enableSecret = "";
+   this.deviceType = "";
+}
+
+function generalObj()
+{
+   this.stepnum = "0";
+   this.commandName = ""; // the first word of the command, ie. enable or interface
+   this.param1 = ""; // second word in the command, ie. ethernet, serial
+   this.param2 = ""; // third
+   this.param3 = "";
+   this.param4 = "";
+   this.param5 = "";
+   this.param6 = "";
+   this.param7 = "";
+   this.param8 = "";
+   this.param9 = "";
+   this.param10 = "";
+   this.param11 = "";
+   this.param12 = "";
+   this.param13 = "";
+   this.param14 = "";
+   this.param15 = "";
+
+}
+
+function addToRouterSIMObject(rNum, hName, ePwd,eSecret, deviceType)
+{
+   routerInfoArray[rNum] = new routerInfoObj();
+   routerInfoArray[rNum].routerNum = rNum;
+   routerInfoArray[rNum].hostName = hName;
+   routerInfoArray[rNum].enablePassword = ePwd;
+   routerInfoArray[rNum].enableSecret = eSecret;
+   routerInfoArray[rNum].deviceType = deviceType;
+
+   devCmdHist[rNum] = new deviceCommandHistoryClass();
+}
+
+
+function assignValueToAnswer(indexvalue,stepnum,substep,commandName,param1,param2,param3,param4,param5,param6,param7,param8,param9,param10,param11,param12,param13,param14,param15)
+{
+   // this was added for alternate steps.
+   // each alternate step is in an array of the AnswerArray ( 2 dimensional array)
+   if(AnswerArray[indexvalue] == null)
+       AnswerArray[indexvalue] = new Array();
+
+   var subIndex=AnswerArray[indexvalue].length;
+   AnswerArray[indexvalue][subIndex] = new generalObj();
+   AnswerArray[indexvalue][subIndex].stepnum = stepnum;
+   AnswerArray[indexvalue][subIndex].commandName = commandName;
+   AnswerArray[indexvalue][subIndex].matrixCheck = substep; // true if this step is a part of a matrix check (ie steps done out of order)
+                                // false otherwise
+   AnswerArray[indexvalue][subIndex].status = false;
+   AnswerArray[indexvalue][subIndex].param1 = param1;
+   AnswerArray[indexvalue][subIndex].param2 = param2;
+   AnswerArray[indexvalue][subIndex].param3 = param3;
+   AnswerArray[indexvalue][subIndex].param4 = param4;
+   AnswerArray[indexvalue][subIndex].param5 = param5;
+   AnswerArray[indexvalue][subIndex].param6 = param6;
+   AnswerArray[indexvalue][subIndex].param7 = param7;
+   AnswerArray[indexvalue][subIndex].param8 = param8;
+   AnswerArray[indexvalue][subIndex].param9 = param9;
+   AnswerArray[indexvalue][subIndex].param10 = param10;
+   AnswerArray[indexvalue][subIndex].param11 = param11;
+   AnswerArray[indexvalue][subIndex].param12 = param12;
+   AnswerArray[indexvalue][subIndex].param13 = param13;
+   AnswerArray[indexvalue][subIndex].param14 = param14;
+   AnswerArray[indexvalue][subIndex].param15 = param15;
+
+
+}
+
+
+
+function assignValueToError(indexvalue,stepnum,commandName,param1,param2,param3,param4,param5,param6,param7,param8,param9,param10,param11,param12,param13,param14,param15)
+{
+   // used for alternate steps
+   if(errorArray[indexvalue] == null)
+    errorArray[indexvalue] = new Array();
+   var subIndex=errorArray[indexvalue].length;
+   errorArray[indexvalue][subIndex] = new generalObj();
+   errorArray[indexvalue][subIndex].stepnum = stepnum;
+   errorArray[indexvalue][subIndex].commandName = commandName;
+   errorArray[indexvalue][subIndex].param1 = param1;
+   errorArray[indexvalue][subIndex].param2 = param2;
+   errorArray[indexvalue][subIndex].param3 = param3;
+   errorArray[indexvalue][subIndex].param4 = param4;
+   errorArray[indexvalue][subIndex].param5 = param5;
+   errorArray[indexvalue][subIndex].param6 = param6;
+   errorArray[indexvalue][subIndex].param7 = param7;
+   errorArray[indexvalue][subIndex].param8 = param8;
+   errorArray[indexvalue][subIndex].param9 = param9;
+   errorArray[indexvalue][subIndex].param10 = param10;
+   errorArray[indexvalue][subIndex].param11 = param11;
+   errorArray[indexvalue][subIndex].param12 = param12;
+   errorArray[indexvalue][subIndex].param13 = param13;
+   errorArray[indexvalue][subIndex].param14 = param14;
+   errorArray[indexvalue][subIndex].param15 = param15;
+
+}
+
+function assignValueToResult(indexvalue,stepnum,result)
+{
+   resultArray[indexvalue] = new resultObj();
+   resultArray[indexvalue].stepnum = stepnum;
+// resultArray[indexvalue].result = result;
+
+   for (var i=2; i<arguments.length; i++)
+      resultArray[indexvalue].result.push(arguments[i]);
+}
+
+
+// Parse status codes
+// SUCCESSFULregcmd = 0;
+// UNSUCCESSFULregcmd = 1;
+// INCOMPLETEregcmd = 2;
+// UNSUPPORTEDregcmd = 3;
+// AMBIGUOUSregcmd = 4;
+// SUCCESSFULhelpcmd = 5;
+// UNSUCCESSFULhelpcmd = 6;
+// INCOMPLETEhelpcmd = 7;
+// UNSUPPORTEDhelpcmd = 8;
+// AMBIGUOUShelpcmd = 9;
+function processStep(snum)
+{
+trace("parsestatus = " + parsestatus);
+   if (parsestatus == SUCCESSFULregcmd)
+   {
+      //errorNotice("Successful command");
+   }
+   else if (parsestatus == UNSUCCESSFULregcmd)
+   {
+      //errorNotice("Unsuccessful command");
+   }
+   else if (parsestatus == INCOMPLETEregcmd)
+   {
+      //errorNotice("Incomplete command");
+   }
+   else if (parsestatus == UNSUPPORTEDregcmd)
+   {
+      errorNotice("Unsupported command");
+      return;
+   }
+   else if (parsestatus == AMBIGUOUSregcmd)
+   {
+//      errorNotice("Ambiguous command");
+      return;
+   }
+   else if (parsestatus == SUCCESSFULhelpcmd)
+   {
+      //errorNotice("Successful help command");
+      return;
+   }
+   else if (parsestatus == UNSUCCESSFULhelpcmd)
+   {
+//      errorNotice("Unsuccessful help command");
+      return;
+   }
+   else if (parsestatus == INCOMPLETEhelpcmd)
+   {
+      //errorNotice("Incomplete help command");
+      return;
+   }
+   else if (parsestatus == UNSUPPORTEDhelpcmd)
+   {
+      errorNotice("Unsupported help command");
+      return;
+   }
+   else if (parsestatus == AMBIGUOUShelpcmd)
+   {
+      //errorNotice("Ambiguous help command");
+      return;
+   }
+   else
+   {
+      // We should never get to this else statement.
+      // If we did, we have made a new case for parsestatus
+      errorNotice("Fatal Error. Contact developer.");
+      return;
+   }
+   // Main case, should be here often, do this first for optimization purposes.
+
+   // As this is a rewrite, I have left out some support for expanding 'e0' and 's0'.
+   // The older algorithm had a flaw anyways and so it would have made incorrect commands
+   //  into correct ones. When it is needed, it will be re'implemented correctly -- Daniel
+   processSuccessfulStep(snum);
+}
+
+// This function is for parsing all correct commands/displaying error messages if its not correct.
+function processSuccessfulStep(snum)
+{
+   MaxParam = 15; // for now we leave it in this function as it is the only one that uses it.
+
+  shortCutTab = new Array("e0","e1","s0","s1","atm0","dialer0","bri0", "se0", "ser0", "seri0","seria0","serial0", "se1", "ser1", "seri1","seria1","serial1","se0/0", "ser0/0", "seri0/0","seria0/0","serial0/0", "se0/1", "ser0/1", "seri0/1", "seria0/1", "serial0/1","et0" , "eth0" , "ethe0" , "ether0" , "ethern0" , "etherne0" , "ethernet0", "et1" , "eth1" , "ethe1" , "ether1" , "ethern1" , "etherne1" , "ethernet1", "f0/0" , "fa0/0" , "fas0/0" , "fast0/0" , "faste0/0" ,"fastet0/0" , "fasteth0/0" , "fastethe0/0" , "fastether0/0" , "fastethern0/0" , "fastetherne0/0" , "fastethernet0/0" , "f0/1" , "fa0/1" , "fas0/1" , "fast0/1" , "faste0/1" ,"fastet0/1" , "fasteth0/1" , "fastethe0/1" , "fastether0/1" , "fastethern0/1" , "fastetherne0/1" , "fastethernet0/1");
+
+
+  shortCutExpand = new Array("ethernet 0", "ethernet 1","serial 0","serial 1", "atm 0", "dialer 0", "bri 0","serial 0","serial 0","serial 0","serial 0","serial 0","serial 1","serial 1","serial 1","serial 1","serial 1","serial 0/0","serial 0/0","serial 0/0","serial 0/0","serial 0/0","serial 0/1","serial 0/1","serial 0/1","serial 0/1","serial 0/1","ethernet 0" , "ethernet 0" , "ethernet 0" , "ethernet 0" , "ethernet 0" , "ethernet 0" , "ethernet 0", "ethernet 1" , "ethernet 1" , "ethernet 1" , "ethernet 1" , "ethernet 1" , "ethernet 1" , "ethernet 1", "fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/0" ,"fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/0" , "fastethernet 0/1" , "fastethernet 0/1" , "fastethernet 0/1" , "fastethernet 0/1" , "fastethernet 0/1" ,"fastethernet 0/1" , "fastethernet 0/1" , "fastethernet 0/1" , "fastethernet 0/1" , "fastethernet 0/1" , "fastethernet 0/1" , "fastethernet 0/1");
+
+
+
+  if (labDrill == "False")
+  {
+   for(var i = 0; i < completeKeywordneeded.length; i++)
+   {
+       completeKeywordneeded[i] =true;
+   }
+
+  }
+  else
+  {
+
+  // Expansion of e0, s0, atm0 etc...
+// loop through the whole command typed in,
+  for (i=0; i < COMMAND.length; i++)
+  {
+     // for each, check if its from the table, if it is, expand it.
+     for (j=0;j < shortCutTab.length; j++)
+     {
+
+        if (COMMAND[i].toLowerCase() == shortCutTab[j].toLowerCase())
+        {
+           // everything before, leave as is
+           newCmdAr = new Array();
+           newCmdAr = COMMAND.slice(0,i);
+
+           // add in what we need
+           newCmdAr = newCmdAr.concat(shortCutExpand[j].split(" "));
+
+           // fill in the rest
+           newCmdAr = newCmdAr.concat(COMMAND.slice(i+1,COMMAND.length));
+
+           // move the iterator up to skip the check
+           COMMAND = newCmdAr;
+           i=i+1;
+          break;
+        }
+      }
+    }
+  }
+
+   // bounds check on step number, 0 and above AnswerArray
+   if (snum <= 0 || snum > AnswerArray.length)
+   {
+      errorNotice("Fatal Error. Step number out of bounds.");
+      return;
+   }
+
+   var found = false;
+   var errorpos = 0;
+trace("completeKeywordneeded = " + completeKeywordneeded);
+   // now we index into the right Answer array.
+   // With the right Answer key, we check each parameter in the command line for matching criterion.\
+   var boolDrill = false;
+   matrixOffset=0;  // keeps track of which out-of-order step to use
+   alternateOffset=0; // use for alternate steps
+
+   // check if matrix check is on, if it is, check the answer with all relevent substeps
+   if(matrix != null)
+   {
+    if(labDrill == "False")
+    {
+       // find the correct indexvalue that matches this substep
+       for(matrixOffset = 0; (matrixOffset < matrix.length); matrixOffset++)
+       {
+          // go through all the alternate steps
+          for(var i = alternateOffset; (i< AnswerArray[stepnum + matrixOffset].length) && (AnswerArray[stepnum + matrixOffset][i].matrixCheck == true) && (AnswerArray[stepnum+matrixOffset][i].stepnum == AnswerArray[stepnum][i].stepnum); i++)
+          {
+
+            if(matrix[matrixOffset] == false)
+            {
+              alternateOffset = i;
+              boolDrill = (AnswerArray[stepnum+matrixOffset][i].commandName.toLowerCase() == COMMAND[0].toLowerCase());
+              if(boolDrill== true)
+              {
+                //matrix[matrixOffset] = true;
+                snum = stepnum + matrixOffset;
+                break;
+              }
+
+            }
+          }
+          if(boolDrill == true)
+            break;
+
+       }
+       // can't find a match, reset to a substep that has not been completed yet
+       if(boolDrill == false)
+       {
+         for(matrixOffset=0; matrixOffset<matrix.length; matrixOffset++)
+            if(matrix[matrixOffset] == false) break;
+         snum = stepnum + matrixOffset;
+       }
+
+    }
+    else
+    {
+       for(matrixOffset = 0; (matrixOffset < matrix.length); matrixOffset++)
+       {
+          for(var i =alternateOffset; (i<AnswerArray[stepnum+matrixOffset].length)&&(AnswerArray[stepnum + matrixOffset][i].matrixCheck == true)&&(AnswerArray[stepnum+matrixOffset][i].stepnum == AnswerArray[stepnum][i].stepnum);i++)
+          {
+
+            if(matrix[matrixOffset] == false)
+            {
+              alternateOffset = i;
+              boolDrill = (AnswerArray[stepnum+matrixOffset][i].commandName.substring(0,COMMAND[0].length).toLowerCase() == COMMAND[0].toLowerCase());
+              if(boolDrill == true)
+              {
+                //matrix[matrixOffset] = true;
+                snum = stepnum + matrixOffset;
+                break;
+              }
+            }
+          }
+          if(boolDrill == true)
+            break;
+       }
+       // can't find a match, reset to a substep that has not been completed yet
+       if(boolDrill == false)
+       {
+         for(matrixOffset=0; matrixOffset<matrix.length; matrixOffset++)
+            if(matrix[matrixOffset] == false) break;
+         snum = stepnum + matrixOffset;
+       }
+    }
+   }
+   else
+   {// no matrix check needed
+    if(labDrill == "False")
+    {
+        for(var i = 0; (i < AnswerArray[snum].length); i++)
+        {
+                boolDrill = (AnswerArray[snum][i].commandName.toLowerCase() == COMMAND[0].toLowerCase());
+                if(boolDrill == true)
+                {
+                    alternateOffset = i;
+                    break;
+                }
+        }
+    }
+    else
+    {
+        for(var i = 0; (i < AnswerArray[snum].length); i++)
+        {
+            if(completeKeywordneeded[0] == false)
+            {
+//msgNotice("Complete keyword not needed");
+                boolDrill = (AnswerArray[snum][i].commandName.substring(0,COMMAND[0].length).toLowerCase() == COMMAND[0].toLowerCase());
+                if(boolDrill == true)
+                {
+                    alternateOffset = i;
+                    break;
+                }
+            }
+            else
+            {
+//msgNotice("Complete keyword needed");
+                boolDrill = (AnswerArray[snum][i].commandName.toLowerCase() == COMMAND[0].toLowerCase());
+                if(boolDrill == true)
+                {
+                    alternateOffset = i;
+                    break;
+                }
+            }
+        }
+    }
+   }
+
+trace("boolDrill = " + boolDrill);
+//msgNotice(boolDrill);
+   if (boolDrill)
+   {
+       trace("After boolDrill is true");
+       // Any errors, mark the position and break out
+       // No errors, command is complete
+       found = true;
+
+       // loop through all the matrix steps
+
+       for(matrixOffset = 0; (matrixOffset == 0) || (matrixOffset < matrix.length); matrixOffset++)
+       {
+trace("Checking matrix " + matrixOffset);
+       // check the commandName first, if it's the same, look through the parameters
+       // if not the same, then check the next matrix step
+        if(matrix != null)
+            if(matrix[matrixOffset] == true)
+            {
+                found = false;
+                continue;
+            }
+
+       // for every alternate step, check all the parameters to see which is correct
+       for(var i =0; i < AnswerArray[stepnum+matrixOffset].length; i++)
+       {
+trace("Checking Alternate Step " + i);
+        //msgNotice(i);
+        var temp = AnswerArray[stepnum+matrixOffset][i];
+        strvalue=temp.commandName;
+
+        if (completeKeywordneeded[0] == true)
+        {
+           if (strvalue.toLowerCase() == COMMAND[0].toLowerCase())
+           {
+             found = true;
+           }
+           else
+           {
+             found = false;
+           }
+        }
+        else
+        {
+          if (strvalue.substring(0,COMMAND[0].length).toLowerCase() == COMMAND[0].toLowerCase())
+          {
+            found = true;
+          }
+          else
+          {
+            found = false;
+          }
+        }
+        if(found == false) continue;
+
+trace("About to check parameters");
+        for (var curParam = 1; (curParam <= MaxParam) && (curParam <= COMMAND.length); curParam++)
+        {
+trace("Checking parameter " + curParam);
+           strvalue = eval("temp.param" + curParam);
+trace("String value = " + strvalue);
+           //msgNotice(alternateOffset);
+           //blah = eval("AnswerArray[snum][alternateOffset].param" + curParam);
+           //msgNotice(blah);
+//trace("str = " + strvalue);
+           if (completeKeywordneeded[curParam] == true)
+           {
+              //msgNotice("COMPLETE KEYWORD NEEDED");
+//trace("MUST need whole command");
+             if (strvalue.toLowerCase() == COMMAND[curParam].toLowerCase())
+             {
+                 //msgNotice(AnswerArray[6][1].param2.toLowerCase() +" "+ COMMAND[curParam].toLowerCase())
+                 //msgNotice(AnswerArray[6][1].param2.toLowerCase())
+                 //msgNotice(curParam +"\n"+ String(COMMAND[curParam].toLowerCase()))
+               found = true;
+               continue;
+             }
+             else
+             {
+                 //msgNotice("curParam = " + curParam);
+//msgNotice("1");
+//                msgNotice("NOT FOUND:\n"+strvalue.toLowerCase() + " " + COMMAND[curParam].toLowerCase());
+                found = false;
+                errorpos = curParam;
+                break;
+             }
+           }
+           else
+           {
+              if (strvalue.substring(0,COMMAND[curParam].length).toLowerCase() == COMMAND[curParam].toLowerCase())
+              {
+                  found = true;
+                continue;
+              }
+              else
+              {
+//msgNotice("2");
+                found = false;
+                errorpos = curParam;
+                break;
+             }
+           }
+        }
+        if(found == true)
+        {
+            snum = stepnum + matrixOffset;
+            //msgNotice("found =true");
+            alternateOffset = i;
+            break;
+        }
+      }
+      if(found == true)
+      {
+          break;
+      }
+      }
+    }
+
+       // Now we see if the whole command was correct or not.
+       if (found == true)
+       {
+          // The answer is correct.
+          if(matrix != null)
+            matrix[matrixOffset] = true;
+          resultOutput = resultArray[snum].result;
+          showTheResult(resultOutput);
+
+//trace("correctCommand = " + correctCommand);
+          if (typeof(correctCommand) == "function")
+          {
+             correctCommand();
+          }
+          correctCommand = null;
+
+      // All non next to last step gets processed like this
+      if(matrix != null)
+      {
+        // process matrix checking procedure here
+        // check if all the matrix sub steps are done
+        var matrixDone = true;
+        for(var i = 0; i < matrix.length; i++)
+        {
+            if(matrix[i] == false)
+            {
+                matrixDone = false;
+                break;
+            }
+        }
+
+        // not finished all substeps
+        if(matrixDone == false)
+        {
+            goToNextStep(stepnum, stepnum-1);
+            commandline_setMode(stepModeArray[stepnum], active_router);
+
+        }
+        else
+        {
+            // finished all substeps
+            // go on to next step not within this matrix
+            oldstep = stepnum
+            for(stepnum++;(stepnum < stepModeArray.length)&&(AnswerArray[stepnum][0].matrixCheck == true) && (AnswerArray[stepnum][0].stepnum == AnswerArray[stepnum-1][0].stepnum); stepnum++);
+
+            if(stepnum < stepModeArray.length -1)
+            {
+                // still have more steps to go
+                matrix= null;
+                loadImage(stepnum,stepnum-1);
+                goToNextStep(stepnum, stepnum-1);
+                commandline_setMode(stepModeArray[stepnum], active_router);
+            }
+            else
+            {
+                // no more steps to go
+                showInstruction(oldstep);
+                doneIsWaiting = true;
+                matrix = null;
+            }
+
+        }
+      }
+      else
+          {
+          if (snum < stepModeArray.length - 1)
+          {
+             if ((AnswerArray[snum][alternateOffset].commandName.toLowerCase() == "enable") &&
+                 ((rRouterA.run.password.length > 0) || (rRouterA.run.secret.length > 0)) )
+             {
+                commandline_changeProcess("password_processPassword");
+                password_passwordLine();
+             }
+             else
+             {
+                // check if this mode is ever used again later, if not, unload, if yes, do nothing.
+                unloadCommands(stepnum);
+                if(matrix != null)
+                {
+                    while(AnswerArray[stepnum][alternateOffset].matrixCheck == true)
+                        stepnum++;
+                }
+                else stepnum++;
+                loadImage(stepnum,stepnum-1);
+                goToNextStep(stepnum, stepnum-1);
+                commandline_setMode(stepModeArray[snum+1], active_router);
+             }
+          }
+          else
+          {
+             doneIsWaiting = true;
+             matrix = null;
+
+             /*
+             if (processName == "output_processMore")
+               doneIsWaiting = true;
+             else
+             {
+                doneIsWaiting = false;
+                commandline_changeProcess("");
+
+                msgNotice("\nFélicitations !\nVous avez terminé ces travaux pratiques.\n")
+             }*/
+             break;
+          }
+          }
+       }
+       else
+       {
+          // not found
+          // no substep, no need to check anything.
+          var rptr = errorArray[snum][alternateOffset];
+//trace(rptr);
+          if (errorpos > 0)
+            errorstring = eval("rptr.param" + errorpos);
+          else
+          {
+            errorstring = rptr.commandName;
+//            msgNotice(String(alternateOffset)+" "+ errorArray[snum][0].commandName);
+          }
+
+          if (errorstring.length > 0)
+          {
+             errorNotice(errorstring);
+          }
+          else
+          {
+             errorNotice("Too many arguments");
+          }
+       }
+
+       //reset the keyword completion check
+       fillcompleteKeyword(true);
+}
+
+function checkDone()
+{
+//trace("processName =" +processName);
+//trace("doneIsWaiting = " +doneIsWaiting);
+//trace("countdown = " + countdown);
+//trace("startTime = " + startTime);
+//trace("curTime = " + curTime);
+   if ((processName != "output_processMore") && (doneIsWaiting))
+   {
+      if (countdown == null)
+      {
+         countdown = 2000;
+         startTime = getTimer();
+      }
+      else
+      {
+         curTime = getTimer();
+         if ((curTime-startTime) >= countdown)
+         {
+      // count down for a half a sec or so and print out info
+      active_router.hostname = "";
+      commandline_changeProcess("");
+      msgNotice("\nFélicitations !\nVous avez terminé cet exercice en ligne.\n");
+      doneIsWaiting = false;
+      disableAllButtons();
+         }
+      }
+   }
+}
+
+
+// this function checks if the mode the current step is ever used again in this lab, if not, unload it.
+function unloadCommands(step)
+{
+  var stepDevice = routerInfoArray[routerUsedForThisStep[stepnum]].deviceType;
+  CurrentMode = stepModeArray[step];
+  // step through all the steps
+  for(i=step+1; i < (stepModeArray.length); i++)
+  {
+     // if same as currentmode, do nothing
+     if(stepModeArray[i] == CurrentMode)
+     {
+
+       return;
+     }
+  }
+
+  // unload the commands because there are no later steps that use it.
+
+ // eval(CurrentMode +"C")  = new Array();
+    createArray(currentMode);//Bargavi 
+ with ( eval("loadedCommands.")) { CurrentMode = null; }
+
+}
+
+// Use this function to send out error Window messages w/ only one line of code.
+function errorNotice(str)
+{
+   HyperTerminal.errorWindow.msg = "<p align=\"center\">" + str + "</p>";
+   HyperTerminal.errorWindow._visible = true;
+}
+
+// Use this function to send out messages to the message window w/ only one line of code.
+function msgNotice(str)
+{
+  HyperTerminal.errorWindowTelnet.msg = "<p align=\"center\">" + str + "</p>";
+  HyperTerminal.errorWindowTelnet._visible = true;
+}
+
+function isSubStepCompleted(stepNumber)
+{
+   var completed = false;
+   var ctrCompleted = 0;
+   var ctrTotal = 0;
+   for (m = 0; m < AnswerArray.length; m++)
+   {
+      if (AnswerArray[m][0].stepnum == stepNumber)
+      {
+         ctrTotal++;
+
+         if (AnswerArray[m][0].status == true)
+            ctrCompleted++;
+      }
+   }
+   if (ctrTotal == ctrCompleted)
+      completed = true;
+
+
+   return completed;
+}
+
+
+function showTheResult(inputString)
+{
+   var outputString = "";
+   var i = 0;
+   var lastString = "";
+/*
+   while (i < inputString.length)
+   {
+      output_write(inputString.substr(i,1));
+      lastString = inputString.substr(i,1);
+      i = i + 1;
+
+   }
+*/
+   for (var i=0; i<inputString.length; i++)
+      output_write(inputString[i]);
+
+   if ( (lastString.length > 0) && (lastString != "\n"))
+   {
+      output_write("\n");
+   }
+
+/*
+   while (i < inputString.length)
+   {
+      if ( (inputString.substr(i,1) == "\\n") ){ //&&  (inputString.substr(i+1,1) == "n") ) {
+         output_write(outputString);
+         output_write("\n");
+         outputString = "";
+         i = i + 1;
+      }
+      else {
+         outputString += inputString.substr(i,1);
+      }
+
+      i = i + 1;
+   }
+   if (outputString.length > 0) {
+      output_write(outputString);
+      output_write("\n");
+   }
+*/
+
+
+}
+
+function showInstruction(num)
+{
+
+    // miwang
+    var stepStr = "";
+    if (num > 0)
+    {
+        // if matrixCheck is on for this step, make a new array to keep track of which
+        // sub step is done.
+        if( (AnswerArray[num][0].matrixCheck == true) && (matrix == null)  )
+        {
+            matrix = new Array();
+            for(var i = 0; (AnswerArray[num+i][0].matrixCheck == true) && (AnswerArray[num][0].stepnum == AnswerArray[num+i][0].stepnum); i++)
+                matrix[i] = false;
+        }
+        else if(AnswerArray[num][0].matrixCheck == false)
+            matrix = null;
+
+
+        var substepNumber;
+
+
+
+            for (substepNumber = 1; (AnswerArray[num-substepNumber][0].stepnum == AnswerArray[num][0].stepnum); substepNumber++);
+
+            if ((substepNumber == 1) && (AnswerArray[num][0].stepnum != AnswerArray[num+1][0].stepnum))
+                substepNumber = 0;
+            // increment the substep number with the amount of finished matrix sub steps.
+            if(matrix != null)
+            {
+                for(var i =0; i<matrix.length; i++)
+                    if(matrix[i] == true)
+                        substepNumber++;
+            }
+/*
+        if (AnswerArray[num].stepnum != AnswerArray[num-1].stepnum)
+        {
+            substepNumber = 1;
+            if (AnswerArray[num].stepnum != AnswerArray[num+1].stepnum)
+                substepNumber = 0;
+        }
+        else
+            substepNumber++;
+*/
+    // Modified by Dean Wood 2/6/2003 - replaced font tags with bold tags.
+            if (substepNumber > 0)
+                   stepStr = "<b><font size=\"+1\">Étape " + AnswerArray[num][0].stepnum + "." + substepNumber + "</font></b><br><br>";
+            else
+                   stepStr = "<b><font size=\"+1\">Étape " + AnswerArray[num][0].stepnum + "</font></b><br><br>";
+
+
+    }
+
+   // Modified by Dean Wood 2/6/2003 - removed bold tags.
+   // initialize the menu instructions
+   if(matrix != null)
+   {
+    menu.instr.htmlText = stepStr; //Bargavi for Mx
+    for(var i = 0; i<matrix.length; i++)
+    {
+        if(matrix[i] == true)
+            menu.instr.htmlText += "<font color=\"#808080\">" + instructionArray[num+i] + "</font><br><br>"; //Bargavi for Mx
+        else if(matrix[i] == false)
+            menu.instr.htmlText += instructionArray[num+i] + "<br><br>";	//Bargavi for Mx
+    }
+   }
+   else menu.instr.htmlText = stepStr + instructionArray[num];//Bargavi for Mx
+
+
+    menu.instr.scroll = 1;
+    menu.ScrollBar.Slider._y = menu.ScrollBar.Slider.min;
+
+   /*var i = 0;
+   while (outputString != "") {
+
+      if (outputString.length > 21) {
+         i = i + 21;
+         menu.instr.htmlText += "\n" + outputString.substr(0,21);
+         outputString = instructionArray[num].substring(i);
+      }
+      else {
+         menu.instr.htmlText += "\n" + outputString;
+         outputString = "";
+      }
+   }*/
+
+
+}
+
+
+function loadImage(num, prev)
+{
+    // Assume graphics are all 588 x 388
+    var graphicImage = "";
+    var prevImage = "";
+
+    graphicImage = getGraphicName(num) + ".swf";
+
+    if (prev != null)
+    {
+        prevImage = getGraphicName(prev) + ".swf";
+    }
+    stepImage._visible = true;
+
+//trace("hasDefaultGraphic = " + hasDefaultGraphic);
+    if (hasDefaultGraphic == true && graphicImage == ".swf")
+    {
+        // we have a default graphic so all blank steps should use the [0] graphic.
+        graphicImage = getGraphicName(0) + ".swf";
+    }
+    if (hasDefaultGraphic == true && prevImage == ".swf")
+    {
+        // we make sure we compare to a default page
+        prevImage = getGraphicName(0) + ".swf";
+    }
+
+      if (graphicImage != ".swf")
+    {
+        // If same image, don't reload
+
+        if (graphicImage != prevImage)
+        {
+	if (_level0.LabDataDir == "")
+                loadMovie((_level0.LabDataDir +graphicImage), _root.Topology.realImage);
+            else
+                loadMovie((_level0.LabDataDir + chapterCovered +"/"+graphicImage), _root.Topology.realImage);
+        }
+    }
+    else
+    {
+        stepImage._visible = false
+    }
+    // Shrinking the image to fit at the top
+    //moveImageDefault();
+    //blowImageDown();
+}
+
+/*
+function blowImageDown()
+{
+   stepImage._xscale = 45;
+   stepImage._yscale = 45;
+   HyperTerminal._visible = true;
+}
+
+function blowImageUp()
+{
+   stepImage._xscale = 100;
+   stepImage._yscale = 100;
+   HyperTerminal._visible = false;
+}
+
+function moveImageDefault()
+{
+   stepImage._x = 324;
+   stepImage._y = 7;
+}
+
+function moveImageHT()
+{
+   stepImage._x = 186;
+   stepImage._y = 183;
+}
+*/
+
+function getGraphicName(num)
+{
+   return graphicArray[num];
+}
+
+function goToNextStep(num,prevnum)
+{
+
+   stepnum = num;
+   showInstruction(stepnum);
+
+//Begin modification by Bargavi
+//to modify the topology button for different cases
+
+//general property
+//if the  topology button is disabled at any cause hide the topology window
+
+if (menu.toolbar.button_topology._visible==true)
+{
+	topology._visible=false ;
+	menu.toolbar.marker_topology._visible=false;
+}
+
+if (topo==true && graphicArray[stepnum]=="" &&  menu.toolbar.marker_help._visible==false )
+{
+	
+	menu.toolbar.marker_type._visible =true;
+}
+
+
+//case 1:   topology button enabled when any step has image otherwise disabled
+	if (graphicArray[stepnum] !="")
+  	{
+	menu.toolbar.button_topology._visible=true;
+	}
+	else
+	{
+	menu.toolbar.button_topology._visible=false;
+	menu.toolbar.marker_topology._visible=false;
+	menu.toolbar.button_topology_disabled.enabled=false;
+	}
+
+
+
+//case 2 :  only step 0 has image and the defualt is set to true
+
+if ( graphicArray[stepnum] ==""  && graphicArray[0]!="" ) 
+{ 
+        if (hasDefaultGraphic == true   )
+        {  	
+	if (menu.toolbar.marker_type._visible==false && menu.toolbar.marker_help._visible==false  )   //if not in type button previsiously selected
+	{
+
+menu.toolbar.button_topology._visible=true;
+	menu.toolbar.marker_topology._visible=true;
+	menu.toolbar.marker_type._visible=false;
+	topology._visible=true;}
+	else
+	{menu.toolbar.button_topology._visible=true;
+	}
+        }
+
+//case 3 :  only step 0 has image and the defualt is set to false
+
+    else
+       {     if (menu.toolbar.marker_help._visible==false)
+         {
+	menu.toolbar.button_topology._visible=false;
+	menu.toolbar.marker_topology._visible=false;
+	menu.toolbar.marker_type._visible=true;
+	topology._visible=false ;
+         } }
+}
+
+
+
+
+//case 4: step 0 has no image but others may have
+//&& menu.toolbar.marker_type._visible==false && menu.toolbar.marker_help._visible==false
+if ( graphicArray[0] =="" &&  graphicArray[stepnum] !="" )  
+{topo=true;
+	if( menu.toolbar.button_topology._visible==true && menu.toolbar.current == "topology"   )
+		{
+		topology._visible=true ;
+		menu.toolbar.marker_topology._visible=true;
+		menu.toolbar.marker_type._visible=false;
+		menu.toolbar.merker_help._visible=false;
+
+		}
+}
+
+//case 5:  step 0 has image and default and others too may have
+
+if ( graphicArray[0] !="" &&  graphicArray[stepnum] !="" )  
+{	
+		
+		if (menu.toolbar.current == "topology"  && menu.toolbar.button_topology._visible==true)
+		{
+		topology._visible=true ;
+		menu.toolbar.marker_topology._visible=true;
+		menu.toolbar.marker_type._visible=false;
+		menu.toolbar.marker_help._visible=false;
+		}
+}
+
+
+//End of Modification by Bargavi
+
+    // Added by Dean Wood 2/6/2003
+    adjustStepButtons(AnswerArray[num][0].stepnum);
+
+   // miwang
+   if(num == 0)
+     coverButton(0);
+   else
+     coverButton(AnswerArray[stepnum][0].stepnum);
+
+
+
+   clickedButton = stepnum;
+   //eval("blank.buttonlist.step" + stepnum).gotoAndStop(2);
+   changeRouterInformation(stepnum);
+}
+
+// Added by Dean Wood 2/6/2003
+function adjustStepButtons(n)
+{
+	// 2 is the vertical space between step buttons
+	// 12 is the height of the step button
+	// 14 is 12 + 2
+	// 15 is the last completely visible step number
+	// 16 is 12 + 2 + 2
+	// 235 is the height of the step button area less the height of the scroll buttons.
+	if(totalsteps < 18) return;
+	if(blank.buttonlist._y + (n * 14) + 16 > 235)
+		blank.buttonlist._y = (15 - n) * 14;
+	else if(blank.buttonlist._y + (n * 14) + 2 < 0)
+		blank.buttonlist._y = -(n * 14);
+}
+
+function isComputer()
+{
+
+    return (routerInfoArray[routerUsedForThisStep[stepnum]].deviceType == "Workstation");
+}
+
+function isNameOnly()
+{
+//  trace("StepModeArray[stepnum] = " + StepModeArray[stepnum])
+  return (StepModeArray[stepnum] == "NameOnly")
+}
+
+function changeRouterInformation(num)
+{
+   var rNum = 0;
+
+   rNum = routerUsedForThisStep[num];
+
+   //deebug1 = rNum + ";" + routerInfoArray[rNum].hostName + ";" ;
+
+   rRouterA.run.hostname = routerInfoArray[rNum].hostName;
+
+   //Enable Password
+   rRouterA.run.password = routerInfoArray[rNum].enablePassword;
+
+   //Enable Secret
+   rRouterA.run.secret =  routerInfoArray[rNum].enableSecret;
+
+}
+//Bargavi 
+function CreateArray(CurrentMode)
+{	
+	if (CurrentMode == "ATMPVC")
+	{
+		ATMPVCC = new Array();
+	}
+	else if (CurrentMode == "classMap")
+	{
+		classMapC = new Array();
+	}
+	else if (CurrentMode == "controllerT1")
+	{
+		controllerT1C = new Array();
+	}
+	else if (CurrentMode == "dhcp")
+	{
+		dhcpC = new Array();
+	}
+	else if (CurrentMode == "enable")
+	{
+		enableC = new Array();
+	}
+	else if (CurrentMode == "extNacl")
+	{
+		extNaclC = new Array();
+	}
+		else if (CurrentMode == "global")
+	{
+		globalC = new Array();
+	}
+	else if (CurrentMode == "intAsync")
+	{
+		intAsyncC = new Array();
+	}
+	else if (CurrentMode == "intATM")
+	{
+		intATMC= new Array();
+	}
+	else if (CurrentMode == "intBri")
+	{
+		intBriC = new Array();
+	}
+	else if (CurrentMode == "intDialer")
+	{
+		intDialerC = new Array();
+	}
+	else if (CurrentMode == "intE")
+	{
+		intEC = new Array();
+	}
+	else if (CurrentMode == "intF")
+	{
+		intFC = new Array();
+	}
+	else if (CurrentMode == "intG")
+	{
+		intGC = new Array();
+	}
+	else if (CurrentMode == "intLoopBack")
+	{
+		intLoopBackC = new Array();
+	}
+	else if (CurrentMode == "intVlan")
+	{
+		intVlanC= new Array();
+	}
+	else if (CurrentMode == "intS")
+	{
+		intSC= new Array();
+	}
+	else if (CurrentMode == "lineaux")
+	{
+		lineauxC = new Array();
+	}
+       	else if (CurrentMode == "linecon")
+	{
+		lineconC = new Array();
+	}
+	else if (CurrentMode == "linetty")
+	{
+		linettyC = new Array();
+	}
+	else if (CurrentMode == "linevty")
+	{
+		linevtyC = new Array();
+	}
+	else if (CurrentMode == "mapClass")
+	{
+		mapClassC = new Array();
+	}
+	else if (CurrentMode == "policyMap")
+	{
+		policyMapC = new Array();
+	}
+	else if (CurrentMode == "policyMapClass")
+	{
+		policyMapClassC = new Array();
+	}
+
+	else if (CurrentMode == "routeMap")
+	{
+		routeMapC= new Array();
+	}
+	else if (CurrentMode == "routerAF")
+	{
+		routerAFC = new Array();
+	}
+	else if (CurrentMode == "routerBGP")
+	{
+		routerBGPC  = new Array();
+	}
+
+     	else if (CurrentMode == "routerEIGRP")
+	{
+		routerEIGRPC = new Array();
+	}
+	else if (CurrentMode == "routerIGRP")
+	{
+		routerIGRPC = new Array();
+	}
+	else if (CurrentMode == "routerISIS")
+	{
+		routerISISC = new Array();
+	}
+    	 else if (CurrentMode == "routerOSPF")
+	{
+		routerOSPFC = new Array();
+	}
+	else if (CurrentMode == "routerRIP")
+	{
+		routerRIPC = new Array();
+	}
+	else if (CurrentMode == "stdNacl")
+	{
+		stdNaclC= new Array();
+	}
+	else if (CurrentMode == "subintATM")
+	{
+		subintATMC= new Array();
+	}
+	else if (CurrentMode == "subintBri")
+	{
+		subintBriC= new Array();
+	}
+	else if (CurrentMode == "subintDialer")
+	{
+		subintDialerC= new Array();
+	}
+	else if (CurrentMode == "subintE")
+	{
+		subintEC= new Array();
+	}
+	else if (CurrentMode == "subintF")
+	{
+		subintFC= new Array();
+	}
+	else if (CurrentMode == "subintG")
+	{
+		subintGC= new Array();
+	}
+	else if (CurrentMode == "subintS")
+	{
+		subintSC= new Array();
+	}
+	else if (CurrentMode == "subintVlan")
+	{
+		subintVlanC= new Array();
+	}
+             else if (CurrentMode == "timeRange")
+	{
+		timeRangeC= new Array();
+	}
+	else if (CurrentMode == "user")
+	{
+		userC = new Array();
+	}
+	else if (CurrentMode == "vlanDB")
+	{
+		vlanDBC = new Array();
+	}
+	
+    }
+
+//end Bargavi 

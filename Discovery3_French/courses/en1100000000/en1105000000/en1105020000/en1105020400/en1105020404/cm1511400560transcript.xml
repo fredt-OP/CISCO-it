@@ -1,0 +1,5 @@
+<transcript lastedited="08.11.08 19:08:55">
+<title><content-text><![CDATA[5.2.4 - Problems with RIP ]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts two routers labeled R1 and R2. They are linked by serial link with the network address 192.168.3.0. R1 has a network connected to its Fast Ethernet interface, network address 192.168.1.0. R2 has a network connected to its Fast Ethernet interface, network address 192.168.2.0.<br><br>Split Horizon<br>Update to networks 192.168.1.0 and 192.168.3.0 just received. Only send Update for 192.168.2.0<br><br>Hold-down Timer<br>Network 192.168.2.0 goes down. R2 starts a holddown timer. R1 sends an update to R2 showing network 192.168.2.0 as still reachable but at a higher metric than what R2 has. R2 will not update its routing table because the hold down timer has not expired.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

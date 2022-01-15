@@ -1,0 +1,59 @@
+<textcomponents>
+
+  <component id="ID_title1">
+  <text><![CDATA[<b>Default Switch Configuration</b>]]></text> 
+  </component>
+
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Feature</b></font></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Default Setting</b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enable state</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enabled on VLAN 1</td>
+	</tr>
+	<tr>
+			
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Spanning-tree mode</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>PVST+ (Rapid PVST+ and MSTP are disabled.)</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch priority</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>32768</td>
+	</tr>
+	<tr>
+			
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Spanning-tree port priority (configurable on a per-interface basis)</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>128</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Spanning-tree port cost (configurable on a per-interface basis)</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1000 Mb/s: 4, 100 Mb/s: 19, 10 Mb/s: 100</td>
+	</tr>
+	<tr>
+			
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Spanning-tree VLAN port priority (configurable on a per-VLAN basis)</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>128</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Spanning-tree VLAN port cost (configurable on a per-VLAN basis)</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1000 Mb/s: 4, 100 Mb/s: 19, 10 Mb/s: 100</td>
+	</tr>
+	<tr>
+			
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Spanning-tree timers</td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Hello time: 2 seconds<br/>Forward-delay time: 15 seconds<br/>Maximum-aging time: 20 seconds<br/>Transmit hold count: 6 BPDUs</td>
+	</tr>
+	
+</table>
+]]></text> 
+  </component>
+
+
+</textcomponents>

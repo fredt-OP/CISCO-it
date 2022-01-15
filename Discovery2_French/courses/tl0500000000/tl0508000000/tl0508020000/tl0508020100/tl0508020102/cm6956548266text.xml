@@ -1,0 +1,73 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Description de la finalité des listes de contrôle d’accès et du filtrage des ports</b>]]></text>
+</component>
+
+<!--slide 2-->
+<component id="ID_title2">
+<text><![CDATA[<b>Listes de contrôle d’accès sur un routeur </b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Réseau A</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Réseau C</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Réseau B</b>]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[<b>Blocage du trafic vers le réseau B</b>]]></text>
+</component>
+
+<!--slide 1-->
+<component id="ID_title1">
+<text><![CDATA[<b>Filtrage de ports </b>]]></text>
+</component>
+<component id="ID_txt01a">
+<text><![CDATA[<b>Serveur Web</b>]]></text>
+</component>
+<component id="ID_txt02a">
+<text><![CDATA[<b>PC du pirate </b>]]></text>
+</component>
+<component id="ID_txt03a">
+<text><![CDATA[<b>Port Telnet 23–bloqué</b>]]></text>
+</component>
+<component id="ID_txt04a">
+<text><![CDATA[<b>Port SSH 22–bloqué</b>]]></text>
+</component>
+<component id="ID_txtBlueArrow">
+<text><![CDATA[<b>Port Web 80–autorisé</b>]]></text>
+</component>
+
+<!--instructions-->
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur chaque méthode de sécurité pour en savoir plus sur le filtrage des ports et les listes de contrôle d’accès.</b>]]></text>
+</component>
+
+<!--Buttons-->
+<component id="Button1">
+<text><![CDATA[<b>Filtrage de ports</b>]]></text>
+</component>
+<component id="Button2">
+<text><![CDATA[<b>Listes de contrôle d’accès</b>]]></text>
+</component>
+
+<!--textboxes-->
+<component id="ID_Header1">
+<text><![CDATA[Filtrage de ports]]></text>
+</component>
+<component id="ID_Textbox1">
+<text><![CDATA[<b>Il est possible d’installer un filtre de port pour interdire l’accès à tous les ports, sauf le port Web 80. Si un utilisateur essaie de se connecter au serveur par l’intermédiaire d’un autre port (par exemple, Telnet sur TCP port 23), l’accès est refusé. Cela permet de protéger le serveur contre les intrusions.</b>]]></text>
+</component>
+
+<component id="ID_Header2">
+<text><![CDATA[Listes de contrôle d’accès]]></text>
+</component>
+<component id="ID_Textbox2">
+<text><![CDATA[<b>Au moyen d’une liste de contrôle d’accès, tous les ordinateurs sur le réseau A (réseau source) ne peuvent pas accéder aux ordinateurs présents sur le réseau B (réseau cible). Lorsque ces conditions sont réunies, le trafic est bloqué. En revanche, les ordinateurs sur le réseau A peuvent communiquer avec le serveur sur le réseau C.</b>]]></text>
+</component>
+
+</textcomponents>
+
+

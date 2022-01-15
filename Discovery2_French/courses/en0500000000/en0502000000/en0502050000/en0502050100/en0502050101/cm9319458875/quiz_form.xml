@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="04/01/2008">
+		<name>Module  Quiz</name>
+		<form id="20370" lang=""><form-item>
+			<ai id="113675" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="113675" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>packages data in segments for transmission</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>routes packets between networks</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>encapsulates data in packets for transmission</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>uses UDP for realtime data streaming</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>adds port numbers</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>adds IP addresses to data packets</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Transport Layer</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Network Layer</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Click and drag the network functions on the left to the correct layer that they belong to on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="53" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>5</componentident><componentident>6</componentident><componentident>7</componentident><componentident>8</componentident><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="201982" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="201982" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>5</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>6</componentident><componentident>3</componentident><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="201982" action="Set">1</setvar><scoringdescription>Transport: Packages, adds port, uses TCP, uses UDP. Network: Routes, encapsulates, adds IP addresses.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="113678" type="mc-ma"><question><![CDATA[Using a systematic troubleshooting approach, a help desk technician suspects a problem at layer 3 of the OSI model. Which two questions could be asked to isolate the problem to layer 3? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Is your PC configured for DHCP?  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Can you browse to www.cisco.com? ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Is your network cable plugged in? ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Can you ping your default gateway?  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Do you see a link light on your network card? ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="113680" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="113680" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Is your network cable securely connected?</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>What mail server is listed in the outgoing server setting?</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Is your Windows firewall blocking port 25?</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Do you see a link light on your network card?</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>What is the subnet mask on Local Area Connection 2?</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Question 1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Question 2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Question 3</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Question 4</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Question 5</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Click and drag the questions on the left to the correct order on the right if a help desk technician is using a bottom-up approach to troubleshooting.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="9" yspacing="80" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="1" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="153.5" containsTargets="1" startTarg="2" labelStyle="1"/><display componentIdent="3" xpos="600" ypos="215.5" containsTargets="1" startTarg="3" labelStyle="1"/><display componentIdent="4" xpos="600" ypos="277.5" containsTargets="1" startTarg="4" labelStyle="1"/><display componentIdent="5" xpos="600" ypos="339.5" containsTargets="1" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="162"/><display componentIdent="3" xpos="600" ypos="224"/><display componentIdent="4" xpos="600" ypos="286"/><display componentIdent="5" xpos="600" ypos="348"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="201987" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="201987" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="201987" action="Set">1</setvar><scoringdescription>Top to bottom: Is network cable connected; Do you see link light; What is subnet mask; Is Windows firewall blocking; What mail server</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="113683" type="mc-ma"><question><![CDATA[A customer call has been escalated to an on-site technician because the level 1 and 2 technicians could not determine the problem. Which three tasks would be performed by the on-site technician? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[open the trouble ticket and enter customer information ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[replace faulty cables or connections  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[check to see if the ISP email server is working ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[correct PC network settings and run any necessary utilities  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[swap out suspected faulty hardware with known good hardware  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[check the customer account payment status ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="113684" type="mc-ma"><question><![CDATA[Which two actions should be taken after a customer problem is resolved by the ISP help desk? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[delete the trouble ticket from the database ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[document the solution in the trouble ticket or work order  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[escalate the trouble ticket to Level 2 for future reference ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[file a work order for customer notification ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[copy the solution into a knowledge-base document for future reference  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="113740" type="mc-ma"><question><![CDATA[Which two scenarios are common causes of physical network connectivity problems? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[monitor unplugged ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ethernet cable plugged into wrong port  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[incorrect default gateway ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[unassigned IP address ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[faulty Ethernet cable  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="113674" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="113674" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>twisted-pair cable</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>IP Address</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>routing</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>switching</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>MAC Address</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>repeater</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Physical Layer</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Data Link Layer</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Network Layer</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Click and drag the network component or function on the left to its associated layer on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="60" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="2" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="190.5" containsTargets="2" startTarg="3" labelStyle="1"/><display componentIdent="3" xpos="600" ypos="289.5" containsTargets="2" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="199"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="298"/><display componentIdent="6" xpos="600" ypos="335"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident ="2"><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="3"><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="201981" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="201981" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="201981" action="Set">1</setvar><scoringdescription>Physical Layer:twisted pair, repeater. Data Link:NIC, network switching. Network:IP addressing, routing</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="113747" type="mc-ma"><question><![CDATA[What two tasks should an on-site technician perform before beginning any troubleshooting or repair at the customer site? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[review the trouble ticket with the customer to verify the information is correct  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[take damaged equipment to the ISP site for repair ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[document the troubleshooting tasks performed and the solution ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[provide identification, including name and place of employment  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[examine cabling to determine if it is faulty or connected into the wrong port ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="113648" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="113648" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Make notes regarding the resolution of a help desk case.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Answer a call in a friendly, professional manner.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Speak in a calm, reassuring manner.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Get all relevant information from the customer.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Use analytical tools to provide a problem resolution.</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>diagnosing a problem correctly</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>adapting to customer temperament</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>providing a courteous greeting</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>logging the call</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>listening to customer</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the technical skill on the left to the help desk activity on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="13" yspacing="52" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="201805" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="201805" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="201805" action="Set">1</setvar><scoringdescription>Make notes:logging the call;Answer a call:providing a courteous greeting; Speak in a calm:adapting; Get all relevant:listening; Use analytical:diagnosing</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="114400" type="mc-ma"><question><![CDATA[An ISP customer calls to report that the web server web-s1.cisco.com is not reachable through a web browser.  The technician uses command line utilities to verify the problem and to begin the troubleshooting process.  Based on the results shown in the graphic, what two things can be determined about the problem? (Choose two.) <br/><img src="15178.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[The web server at 192.168.0.10 is reachable from the source host.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[There is a problem with the web server software on web-s1.cisco.com. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A router is down between the source host and the server web-s1.cisco.com. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[DNS cannot resolve the IP address for the server web-s1.cisco.com.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The default gateway between the source host and the server at 192.168.0.10 is down. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="124866" type="mc-sa"><question><![CDATA[What does a successful ping response from the 127.0.0.1 loopback address on a host indicate?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The default gateway is configured correctly. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The TCP/IP stack loaded correctly.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The DNS server address is correctly configured. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The DHCP configuration loaded correctly. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="124862" type="mc-sa"><question><![CDATA[Which range of addresses is referred to as link-local addresses?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[127.0.0.0/16 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.1.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[169.254.0.0/16  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.0.0.0/16 ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

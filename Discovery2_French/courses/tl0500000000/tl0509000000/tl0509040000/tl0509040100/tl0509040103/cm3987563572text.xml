@@ -1,0 +1,37 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Affichage de la table de routage</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[<b>Route connectée directement</b>]]></text> 
+  </component>
+  
+<component id="ID_txt02">
+  <text><![CDATA[<b>Route mise à jour de façon dynamique</b>]]></text> 
+  </component>
+  
+<component id="ID_txt03">
+  <text><![CDATA[<b>Route statique</b>]]></text> 
+  </component>
+  
+<component id="ID_txt04">
+  <text><![CDATA[<b>Route par défaut</b>]]></text> 
+  </component>
+  
+<component id="tipTitle">		
+  	<text><![CDATA[Plus d’info]]></text>	
+	</component>
+    
+<component id="tipBody">		
+    <text><![CDATA[Les tables de routage ne contiennent pas d’informations de bout en bout sur la totalité du chemin séparant le réseau source du réseau de destination. Elles ne contiennent que des informations relatives au tronçon suivant de ce chemin. Le tronçon suivant est en principe une passerelle connectée directement sur le même sous-réseau.  En cas de route statique, le tronçon suivant peut être une adresse IP, à condition qu’elle puisse être résolue dans la table de routage ou accessible par ce routeur.   Le message est ensuite transmis à un routeur connecté directement à l’hôte de destination, puis envoyé. Les informations de routage échangées par tous les routeurs intermédiaires sur un chemin se présentent sous la forme d’adresses réseau, et non d’hôtes particuliers. C’est seulement au niveau du dernier routeur que l’adresse de destination de la table de routage pointe vers un ordinateur hôte, plutôt que vers un réseau.]]></text>		
+    </component>
+	
+<component id="TipText">
+		<text><![CDATA[Plus d’info]]></text>
+</component>
+
+</textcomponents>
+  
+
+  

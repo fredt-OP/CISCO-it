@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Quiz</title>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<style type="text/css">
+	/* hide from ie on mac \*/
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
+	#flashcontent {
+		height: 100%;
+	}
+	/* end hide */
+	body {
+		height: 100%;
+		padding: 0;
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	}
+</style>
+<script language="Javascript">
+minW = 745;
+minH = 380;
+resizeNeeded = false;
+function resizeWin(){
+	self.setTimeout("checkSize()",250);
+	}
+function checkSize(){
+	resizeNeeded = false;
+	var winW = getSize("w");
+	var winH = getSize("h");
+	if(minW>winW){winW=minW;resizeNeeded=true;}
+	if(minH>winH){winH=minH;resizeNeeded=true;}
+	if(resizeNeeded){
+		self.resizeTo(winW,winH);
+		var winW2 = winW - getSize("w");
+		var winH2 = winH - getSize("h");
+		self.resizeBy(winW2,winH2);
+	}
+}
+function getSize(dimension){
+	if (self.innerWidth){
+		//Firefox
+		minW = 745;
+		minH = 560;
+		width = self.innerWidth;
+		height = self.innerHeight;
+	}else if (document.body){
+		// IE
+		minW = 750;
+		minH = 380;
+		width = document.body.clientWidth;
+		height = document.body.clientHeight;
+	}
+	if(dimension == "w"){return parseInt(width);}
+		else{ return parseInt(height);
+	}
+}
+function delayedResize(){
+	// to get around an IE issue..
+	setTimeout(checkSize, 1000);
+}
+</script>
+</head>
+<body bgcolor="#ffffff" onResize="checkSize()" onLoad="delayedResize()">
+	<div id="flashcontent">
+		<strong>You need to upgrade your Flash Player in order to view the Quiz</strong>
+	</div>
+	<script type="text/javascript">
+		// <![CDATA[
+		var so = new SWFObject("quiz.swf", "quiz", "100%", "100%", "8", "#FFFFFF");
+		so.addParam("base", window.location.search.split("=")[1]);
+		so.write("flashcontent");
+		// ]]>
+	</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+﻿<textcomponents>
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Sortie du<BR>routeur</b>]]></text> 
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Exemple : routes parent de niveau 1 et enfant de niveau 2</b>]]></text>
+</component>
+
+<component id="ID_Title02">
+<text><![CDATA[<b>Exemple : routes parent de niveau 1 et enfant de niveau 2</b>]]></text>
+</component>
+
+<component id="btnOne">
+<text><![CDATA[<b>Route de réseau</b>]]></text> 
+</component>
+
+<component id="btnTwo">
+<text><![CDATA[<b>Route par défaut</b>]]></text> 
+</component>
+
+<component id="btnThree">
+<text><![CDATA[<b>Transférer le paquet</b>]]></text> 
+</component>
+
+<component id="btnFour">
+<text><![CDATA[<b>Table de routage R3</b>]]></text> 
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez pour afficher le comportement de routage sans classe.</b>]]></text> 
+</component>
+
+
+<!-- topology -->
+<component id="ID_topology01">
+<text><![CDATA[<b>Route<br>par défaut</b>]]></text> 
+</component>
+
+<component id="ID_topology02">
+<text><![CDATA[<b>Route<br>statique</b>]]></text> 
+</component>
+
+<!-- output1 -->
+<component id="ID_txt01">
+<text><![CDATA[<b>Destination du paquet IP</b>]]></text> 
+</component>    
+<component id="ID_txt01a">
+<text><![CDATA[<b>Destination du paquet IP</b>]]></text> 
+</component>  
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Route réseau<br>de niveau 1</b>]]></text> 
+</component>
+<component id="ID_txt02a">
+<text><![CDATA[<b>Route réseau<br>de niveau 1</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Route par défaut<br>de niveau 1</b>]]></text> 
+</component>
+<component id="ID_txt03a">
+<text><![CDATA[<b>Route par défaut<br>de niveau 1</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Seul le premier bit correspond.</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Le 2e bit NE correspond PAS. Le routeur ignore cette route et accède à l’entrée de route suivante.</b>]]></text> 
+</component>
+
+<!-- output2 -->
+<component id="ID_txt06">
+<text><![CDATA[<b>Le masque /0 signifie qu’aucune correspondance de bits n’est requise pour pouvoir utiliser la route par défaut. R2 utilise la route par défaut et transfère le paquet.</b>]]></text>
+</component>
+
+<!-- output3 -->
+<component id="ID_txt07">
+<text><![CDATA[<b>Correspondance</b>]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Pas de corresp.</b>]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Pas de corresp.</b>]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Pas de corresp.</b>]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Pas de corresp.</b>]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Valeur par défaut</b>]]></text> 
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>La route par défaut est utilisée. R2 transfère le paquet à R3.</b>]]></text> 
+</component>
+
+<!-- output4 -->
+<component id="ID_txt14">
+<text><![CDATA[<b>Correspondance !</b>]]></text> 
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Pas de corresp.</b>]]></text> 
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>Enfant correspondant !</b>]]></text> 
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>R3 utilise la route enfant 172.16.0.0/16 et transfère le paquet à R2.</b>]]></text> 
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[***résultat omis***]]></text> 
+</component>
+
+</textcomponents>

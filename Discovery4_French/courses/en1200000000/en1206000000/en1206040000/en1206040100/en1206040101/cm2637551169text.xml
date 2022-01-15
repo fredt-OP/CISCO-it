@@ -1,0 +1,203 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<li>The allocation of IP addresses must be planned and documented in order to:<br/></li><TEXTFORMAT BLOCKINDENT='60'><li>Prevent duplication of addresses</li><li>Provide and control access</li><li>Monitor security and performance</li><li>Support a modular design</li><li>Support a scalable solution that uses route aggregation</li></textformat></li><br/><li>A properly designed hierarchical IP addressing scheme also makes it easier to perform route summarization.</li><br/><li>To support summarization, a network must be designed to have contiguous subnets. If a network is contiguous, all the subnets of the network are adjacent to all other subnets of the same network.</li><br/><li>Using VLSM eliminates the requirement that all subnets of the same parent network have the same number of host addresses and the same prefix length.</li></ul>]]></text>
+</component> 
+
+<component id="s1_ID_txt08">
+<text><![CDATA[172.16.0.0 Network]]></text>
+</component>
+
+<component id="s1_ID_txt09">
+<text><![CDATA[172.16.4.0 Network]]></text>
+</component>
+
+<component id="s1_ID_txt10">
+<text><![CDATA[172.16.6.0 Network]]></text>
+</component>
+
+<component id="s1_ID_txt11">
+<text><![CDATA[172.16.5.0 Network]]></text>
+</component>
+
+<component id="s1_ID_txt12">
+<text><![CDATA[172.16.1.0 Network]]></text>
+</component>
+
+<component id="s1_ID_txt13">
+<text><![CDATA[172.16.2.0 Network]]></text>
+</component>
+
+<component id="s1_ID_txt14">
+<text><![CDATA[172.16.3.0 Network]]></text>
+</component>
+
+
+<component id="slide02">
+<text><![CDATA[<li>Classless routing protocols send the prefix length along with the route information in routing updates. These protocols enable routers to determine the network portion of the address without using the default masks.</li><br/><li>Because CIDR ignores the limitation of classful boundaries, it enables summarization with Variable Length Subnet Masks (VLSMs) that are shorter than the default classful mask.</li><br/><li>A complex hierarchy of variable-sized networks and subnetworks can be summarized at various points using a prefix address.</li><br/><li>To design a flexible, scalable IP addressing scheme, the designer follows a five-step process:<br/></li><TEXTFORMAT BLOCKINDENT='60'><li>Step 1: Plan the entire addressing scheme before assigning any addresses.</li><li>Step 2: Allow for significant growth.</li><li>Step 3: Begin with the core network summary addresses and work out to the edge.</li><li>Step 4: Identify which machines and device require statically assigned addresses.</li><li>Step 5: Determine where and how dynamic addressing is implemented.<br/><br/></li></textformat></ul>]]></text>
+</component> 
+
+<component id="bubble1">
+<text><![CDATA[I need to consider the entire campus and all of the remote sites before I begin assigning any addresses.]]></text>
+</component>
+
+
+<component id="slide03">
+<text><![CDATA[<li>The choice of routing protocol must support the VLSM addressing and summarization strategy.</li><br/><li>EIGRP enables classless summarization with masks that are different from the default classful mask. This type of summarization helps reduce the number of entries in routing updates and lowers the number of entries in local routing tables.</li><br/><li>The designer follows a step-by-step process to allocate the subnets, beginning with the largest block and working to the smallest.</li><br/><li>A good network naming scheme makes the network easier to manage and easier for users to navigate.</li><br/><li>The RFC 1878 states that the practice of excluding all-0s and all-1s subnets is obsolete. Modern software is capable of using all definable networks.</ul></font>]]></text>
+</component>
+
+<component id="s3_ID_txt01">    
+<text><![CDATA[I have found an easy site to enter!]]></text> 
+</component>
+
+
+<component id="s3_ID_txt02">     
+<text><![CDATA[CC2600MD-1R1]]></text> 
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[DC200MD-3R1]]></text> 
+</component>
+
+<component id="s3_ID_txt04">          
+<text><![CDATA[W150S-1]]></text>   
+</component>
+
+<component id="s3_ID_txt05">              
+<text><![CDATA[RM10-LJ1500C]]></text>   
+</component>
+
+<component id="s3_ID_txt06">              
+<text><![CDATA[DC200-INT-DS]]></text>   
+</component>
+
+<component id="s3_ID_txt07">              
+<text><![CDATA[DC200-T1_PS]]></text>   
+</component>
+
+<component id="s3_ID_txt08">              
+<text><![CDATA[DC200WFS-R4]]></text>   
+</component>
+
+<component id="s3_ID_txt09">              
+<text><![CDATA[Cisco2600- FirewallRouter]]></text>   
+</component>
+
+<component id="s3_ID_txt10">              
+<text><![CDATA[Cisco2960_Switch]]></text>   
+</component>
+
+<component id="s3_ID_txt11">              
+<text><![CDATA[1500LaserJetPrinter]]></text>   
+</component>
+
+<component id="s3_ID_txt12">              
+<text><![CDATA[RedHatLinux- CreditcardServer]]></text>   
+</component>
+
+<component id="s3_ID_txt13">              
+<text><![CDATA[Win2003_Payroll Server]]></text>   
+</component>
+
+<component id="s3_ID_txt14">              
+<text><![CDATA[BindDNS-Server]]></text>   
+</component>
+
+<component id="s3_ID_txt15">              
+<text><![CDATA[4507-R MultilayerSwitch]]></text>   
+</component>
+
+<component id="s3_ID_txt16">              
+<text><![CDATA[Devices]]></text>   
+</component>
+
+<component id="s3_ID_txt17">              
+<text><![CDATA[Internal device name:<br>W150S-1	The first switch in the wiring closet in room 150<br>DC200MD-3R1	A Multilayer Distribution Switch in the Data Center room 200 on rack 1 <br>DC200WFS-R4	A windows file server in rack 4 in the Data Center room 200<br><br>External device names -<br>RM10-LJ1500C		Color Laser Printer in Room 10<br>DC200-T1-PS		The Team1 Payroll Server in the Data Center room 200 <br>DC200-INT-DS		The Internal DNS server<br><br>Bad internal names -<br>Cisco2600-FirewallRouter<br>Main NAT Router<br><br>Bad external names -<br> Win2003-PayrollServer<br>RedHatLinux-CreditCardServer <br>BindDNS-server]]></text>   
+</component>
+
+
+
+
+<component id="slide04">
+<text><![CDATA[<li>Because of its generous 128-bit address space, IPv6 generates a virtually unlimited stock of addresses.</li><br/><li>IPv6 addresses are written as a series of eight 16-bit hexadecimal digits, separated by colons.</li><br/><li>The IPv6 host is the equivalent of a registered IPv4 host address. Registered IPv6 host addresses are referred to as global unicast addresses.</li><br/><li>The transition from IPv4 to IPv6 does not have to be done all at once. The three most common transition methods are:<br/></li><TEXTFORMAT BLOCKINDENT='60'><li>Dual stack</li><li>Tunneling</li><li>Proxying and translation</li></textformat></ul>]]></text>
+</component> 
+
+<component id="s4_ID_txt02">
+<text><![CDATA[IPv6 Header<br>Next Header<br>= TCP]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[IPv6 Header<br>Next Header<br>= Routing]]></text>
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[IPv6 Header<br>Next Header<br>= Routing]]></text>
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[Routing Header<br>Next Header<br>= TCP]]></text>
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[Routing Header<br>Next Header<br>= Fragment]]></text>
+</component>
+
+<component id="s4_ID_txt07">
+<text><![CDATA[Fragment Header<br>Next Header<br>= TCP]]></text>
+</component>
+
+<component id="s4_ID_txt08">
+<text><![CDATA[TCP Header + Data]]></text>
+</component>
+
+<component id="s4_ID_txt09">
+<text><![CDATA[TCP Header + Data]]></text>
+</component>
+
+
+<component id="s4_ID_txt10">
+<text><![CDATA[Fragment of TCP Header + Data]]></text>
+</component>
+
+<component id="s4_ID_txt11">
+<text><![CDATA[IPv6 Basic Header (40 Octets)]]></text>
+</component>
+
+<component id="s4_ID_txt12">
+<text><![CDATA[Any Number of Extension Headers]]></text>
+</component>
+
+<component id="s4_ID_txt13">
+<text><![CDATA[Data (e.g TCP or UDP)]]></text>
+</component>
+
+<component id="s4_ID_txt14">
+<text><![CDATA[IPv6 Packet]]></text>
+</component>
+
+<component id="s4_ID_txt15">
+<text><![CDATA[Next Header]]></text>
+</component>
+
+
+<component id="s4_ID_txt16">
+<text><![CDATA[Ext Header Data]]></text>
+</component>
+
+<component id="s4_ID_txt17">
+<text><![CDATA[Ext Header Data]]></text>
+</component>
+
+<component id="s4_Title">
+<text><![CDATA[IPv6 Header Options]]></text>
+</component>
+
+
+
+</textcomponents>

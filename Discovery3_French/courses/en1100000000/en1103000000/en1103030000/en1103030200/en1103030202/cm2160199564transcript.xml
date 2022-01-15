@@ -1,0 +1,5 @@
+<transcript lastedited="10.08.08 09:10:48">
+<title><content-text><![CDATA[3.3.2 - Configuring a Virtual LAN]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts of man sitting at a workstation configuring a V LAN. The following is the command output.<br><br>Switch(config)# configure terminal<br>Switch(config)# V LAN 27<br>Switch(config-V LAN)# name accounting<br>Switch(config-V LAN)# exit<br>Switch(config)# interface F A 0 /13<br>Switch(config-if)# switchport access V LAN 27<br>Switch(config-if)# exit<br>Switch(config)# V LAN 28<br>Switch(config-V LAN) # name engineering<br>Switch(config-V LAN) # exit<br>Switch(config)# interface F A 0 /6-12<br>Switch(config-if)# switchport access V LAN 28<br>Switch(config-if)# end<br>Switch # show V LAN<br><br>The command shows the setup of the V LAN. The headings for the show command are V LAN, Name, Status, and Ports.<br><br>Examine the setup further in the Hands-on Lab, Configuring, Verifying, and Troubleshooting V LAN's.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

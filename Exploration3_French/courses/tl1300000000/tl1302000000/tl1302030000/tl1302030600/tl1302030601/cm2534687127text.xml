@@ -1,0 +1,155 @@
+﻿<textcomponents>
+<component id="ID_title1">
+  <text><![CDATA[<b>Configuration de la connectivité IP</b>]]></text> 
+  </component>
+  <component id="ID_title2">
+    <text><![CDATA[<b>Configuration de la connectivité IP</b>]]></text> 
+  </component>
+  <component id="ID_title3">
+    <text><![CDATA[<b>Configuration de la connectivité IP</b>]]></text> 
+  </component>
+  <component id="ID_title4">
+    <text><![CDATA[<b>Configuration de la connectivité IP</b>]]></text> 
+  </component>
+<component id="ID_box01">
+  <text><![CDATA[<b>PC1 :</b><br/><ul><li>Adresse IP : 172.17.99.12 </li><li>Connexion au port de console</li><li>Connexion au port F0/18 sur le commutateur S1</li></ul>]]></text> 
+  </component>
+<component id="ID_box02">
+  <text><![CDATA[<b>S1 :</b><br/><ul><li>VLAN 99</li><ul><li>Réseau local virtuel de gestion</li><li>Adresse IP : 172.17.99.11</li></ul><li>Port F0/18 affecté au VLAN 99</li></ul>]]></text> 
+  </component>
+<component id="ID_box03">
+  <text><![CDATA[<ul><li>Une adresse de couche 3 doit être affectée au commutateur pour la gestion TCP/IP.</li><li>Le réseau local virtuel (VLAN) 1 est l’interface de gestion par défaut pour tous les commutateurs.</li><li>L’utilisation du réseau local virtuel 1 présente des risques.</li><li>Créez un autre réseau local virtuel (par exemple, VLAN 99 ou 150).</li><li>Affectez ce réseau local virtuel à un port approprié (par exemple, F0/18).</li></ul>]]></text> 
+  </component>
+  <component id="bubble_text">
+  <text><![CDATA[<b>Passerelle par défaut</b>]]></text> 
+  </component>
+  
+  <component id="output1_text">
+  <text><![CDATA[<b>VLAN 99 configuré sur le port F0/18</b>]]></text> 
+  </component>
+  <component id="output2_text">
+  <text><![CDATA[<b>État du VLAN 99 et du port F0/18</b>]]></text> 
+  </component>
+  
+  <component id="ID_Manage">
+  <text><![CDATA[<b>Considérations de<br/>gestion d’interface</b>]]></text> 
+  </component>
+  <component id="ID_Config">
+  <text><![CDATA[<b>Configurer l’interface<br/>de gestion</b>]]></text> 
+  </component>
+  <component id="ID_Gateway">
+  <text><![CDATA[<b>Configurer la passerelle<br/>par défaut</b>]]></text> 
+  </component>
+  <component id="ID_Verify">
+  <text><![CDATA[<b>Vérifier la<br/>configuration</b>]]></text> 
+  </component>
+  <component id="ID_web">
+  <text><![CDATA[Serveur<br>WEB/<br>TFTP]]></text> 
+  </component>
+  
+  <component id="tableHTML">
+    <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+ 	
+ 	<tr>
+ 		
+ 				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+ 				<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">&nbsp;</font></td>
+ </tr>			
+	
+  	<tr>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer du mode d’exécution privilégié au mode de configuration globale.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>configure terminal</b></font></td>
+   </tr>
+  	
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration d’interface pour l’interface du VLAN 99.</td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config)#<b>interface vlan 99 </b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer l’adresse IP de l’interface.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>ip address 172.17.99.11 255.255.255.0</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Activer l’interface.</td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>no shutdown </b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Repasser en mode d’exécution privilégié.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>end</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration globale. </td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>configure terminal</b></font></td>
+   </tr>
+  	
+  	
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entrer dans l’interface pour affecter le réseau local virtuel.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config)#<b>interface fastethernet 0/18</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définir le mode d’appartenance du port à un réseau local virtuel.</td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport mode access</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affecter le port à un réseau local virtuel.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport acces vlan 99</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Repasser en mode d’exécution privilégié.</td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>end</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enregistrer la configuration en cours dans la configuration de démarrage du commutateur.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>copy running-config startup-config</b></font></td>		
+   </tr>		
+</table>
+  ]]></text> 
+  </component>
+  
+  <component id="tableHTML1">
+    <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  	
+  	<tr>
+  		
+  				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+  				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+  				
+	</tr>
+  	<tr>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer la passerelle par défaut sur le commutateur.</td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>ip default-gateway 172.17.99.1</b></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Repasser en mode d’exécution privilégié.</td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>end</b></font></td>
+  		
+  				
+  	</tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enregistrer la configuration en cours dans la configuration de démarrage du commutateur.</td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy running-config startup-config</b></font></td>		
+  				
+  	</tr>		
+  	
+  	
+  </table>
+  ]]></text> 
+  </component>
+</textcomponents>

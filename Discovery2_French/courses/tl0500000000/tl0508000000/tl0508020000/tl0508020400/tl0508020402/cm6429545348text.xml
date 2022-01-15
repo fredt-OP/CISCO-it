@@ -1,0 +1,79 @@
+﻿<textcomponents>
+<component id="ID_title1">
+<text><![CDATA[<b>Filtrage MAC</b>]]></text>
+</component>
+
+<component id="ID_title2">
+<text><![CDATA[<b>WEP</b>]]></text>
+</component>
+
+<component id="ID_title3">
+<text><![CDATA[<b>WPA/WPA2</b>]]></text>
+</component>
+
+<component id="ID_title4">
+<text><![CDATA[<b>WPA2</b>]]></text>
+</component>
+
+<component id="ID_bubble_01a">
+<text><![CDATA[<b>Votre adresse MAC figure dans la liste. Vous pouvez vous connecter.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_02">
+<text><![CDATA[<b>Votre adresse MAC ne figure pas dans la liste. Vous ne pouvez pas vous connecter.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_03">
+<text><![CDATA[<b>Votre clé WEP est identifiée. Vous pouvez vous connecter.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_04">
+<text><![CDATA[<b>Votre clé WEP n’est pas identifiée. Vous ne pouvez pas vous connecter.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_05">
+<text><![CDATA[<b>Votre clé WPA est identifiée. Vous pouvez vous connecter.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_06">
+<text><![CDATA[<b>Votre clé WPA n’est pas identifiée. Vous ne pouvez pas vous connecter.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_07">
+<text><![CDATA[<b>Votre clé WPA n’est plus valable. Vous ne pouvez pas vous connecter.</b>]]></text>
+</component>  
+
+
+ 	<component id="tipTitle"><text>Filtrage MAC</text>	</component>
+     <component id="tipBody"><text>La plupart des routeurs et des points d’accès sans fil permettent de filtrer les adresses MAC. Lorsque l’accès à un réseau sans fil est limité à certaines adresses MAC, les ordinateurs non identifiés ne peuvent pas se connecter. À elle seule, la protection au moyen des adresses MAC ne suffit pas, car un pirate informatique a la possibilité de reproduire une adresse autorisée pour se connecter au réseau sans fil.</text>	</component>
+ <component id="TipText"><text><![CDATA[Plus d’info]]></text></component>
+ 
+ 
+ 	<component id="tipTitle2"><text>WEP</text>	</component>
+     <component id="tipBody2"><text>Une clé WEP (Wired Equivalent Privacy) permet de chiffrer les données échangées entre des nœuds sans fil. Ce protocole a recours à une clé prépartagée hexadécimale de 64 ou 128 bits pour chiffrer les données. Toutefois, il existe sur Internet de nombreux outils permettant de déchiffrer les clés WEP. Les clés WEP doivent uniquement être employées si le matériel devant être relié à un réseau sans fil est ancien et incompatible avec des protocoles de sécurité sans fil plus récents.</text>	</component>
+<component id="TipText2"><text><![CDATA[Plus d’info]]></text></component>
+
+	<component id="tipTitle3"><text>WPA</text>	</component>
+    <component id="tipBody3"><text>Le protocole WPA (Wifi Protected Access) est la technologie de chiffrement sans fil la plus récente. Il intègre un algorithme de chiffrement amélioré appelé TKIP (Temporal Key Integrity Protocol). Le protocole TKIP génère une clé unique pour chaque client et fait tourner les clés de sécurité à un intervalle configurable. Le protocole WPA comprend également un champ de contrôle de l’intégrité des messages chiffrés dans le paquet de données pour empêcher les dénis de service et les mystifications. Le protocole WPA intègre une clé prépartagée d’authentification qui est configurée sur chaque périphérique. Cette clé sert uniquement à négocier la session initiale avec le routeur ou le point d’accès sans fil. Le protocole WPA repose sur une authentification mutuelle, puisque le client et le point d’accès sont les seuls à avoir la clé. De la sorte, la clé ne peut pas être divulguée.</text>	</component>
+<component id="TipText3"><text><![CDATA[Plus d’info]]></text></component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur chaque bouton pour connaître les différentes méthodes de protection.</b>]]></text>
+</component>
+
+<component id="R2 LSPs">
+ 	<text><![CDATA[<b>Filtrage MAC</b>]]></text>
+ </component>
+ <component id="R3 LSPs">
+ 	<text><![CDATA[<b>WEP</b>]]></text>
+</component>
+ <component id="R4 LSPs">
+ 	<text><![CDATA[<b>WPA/WPA2</b>]]></text>
+ </component>
+ <component id="R3 LSPs1">
+ 	<text><![CDATA[<b>WPA2</b>]]></text>
+</component>
+
+</textcomponents>
+
+

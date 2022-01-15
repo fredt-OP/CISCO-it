@@ -1,0 +1,76 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Listes de contrôle d’accès réflexives </b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Réseau de source non fiable</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Réseau de source fiable sécurisé</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Initié de l’intérieur</b>]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[<b>Initié de l’extérieur</b>]]></text>
+</component>
+
+<!-- slide 1-->
+<component id="ID_S1_config">
+<text><![CDATA[<b>Config</b>]]></text>
+</component>
+
+<component id="ID_txt01_01">
+<text><![CDATA[<b>Étape 1</b>]]></text>
+</component>
+<component id="ID_txt02_01">
+  <text><![CDATA[<b>Étape 2</b>]]></text> 
+  </component>
+<component id="ID_txt03_01">
+  <text><![CDATA[<b>Étape 3</b>]]></text> 
+  </component>
+<component id="ID_txt04_01">
+  <text><![CDATA[<b>Étape 4</b>]]></text> 
+  </component>
+
+<component id="rollover1">
+  <text><![CDATA[Crée un nom de connexion et un mot de passe pour une authentification.]]></text> 
+  </component>
+<component id="rollover2">
+  <text><![CDATA[Autorise l’utilisateur à établir une connexion Telnet sur le routeur. L’entrée de la liste de contrôle d’accès dynamique est ignorée tant que la fonction de verrou n’a pas été déclenchée. La fenêtre sera ouverte pendant 15 minutes avant de se refermer automatiquement qu’elle soit utilisée ou non.]]></text> 
+  </component>
+<component id="rollover3">
+  <text><![CDATA[Applique la liste de contrôle d’accès 101 à l’interface S0/0/1.]]></text> 
+  </component>
+<component id="rollover4">
+  <text><![CDATA[Après l’authentification de l’utilisateur à l’aide de Telnet, la commande <font face="_typewriter"><b>autocommand</b></font> s’exécute et la session Telnet est arrêtée. L’utilisateur peut dorénavant accéder au réseau 192.168.30.0. Si la fenêtre est inactive pendant 5 minutes, elle est fermée.]]></text> 
+  </component>
+<component id="instruction">
+  <text><![CDATA[Placez votre pointeur sur une étape pour voir une explication.]]></text> 
+  </component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Étape 1</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Étape 2</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Étape 3</b>]]></text> 
+  </component>
+<component id="rollover1">
+  <text><![CDATA[Se solde par un suivi du trafic initié de l’intérieur par le routeur.]]></text> 
+  </component>
+<component id="rollover2">
+  <text><![CDATA[Crée une stratégie entrante qui exige du routeur de vérifier le trafic entrant pour voir s’il a été initié de l’intérieur. Attache la partie OUTBOUNDFILTERS de la liste de contrôle d’accès réflexive, aussi appelée TCPTRAFFIC, à INBOUNDFILTERS.]]></text> 
+  </component>
+<component id="rollover3">
+  <text><![CDATA[Applique une liste de contrôle d’accès pour le trafic entrant et sortant à l’interface.]]></text> 
+  </component>
+<component id="instruction">
+  <text><![CDATA[Placez votre pointeur sur une étape pour voir une explication.]]></text> 
+  </component>
+
+</textcomponents>

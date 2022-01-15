@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13260" dateexported="01/26/2009">
+		<name>Module 9 Questionnaire</name>
+		<form id="20922" lang="fr"><form-item order="fixed">
+			<ai id="67151" type="mc-sa"><question><![CDATA[À quoi sert le module dépendant des protocoles (PDM) dans le protocole EIGRP ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il s'agit du protocole de couche 4 utilisé par le protocole EIGRP pour partager les informations de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il s'agit du mécanisme utilisé par le protocole EIGRP pour garantir la disponibilité des routeurs voisins. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il s'agit du moteur d'algorithme utilisé par le protocole EIGRP pour créer les tables de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il s'agit d'une fonction assurant une compatibilité modulaire avec les protocoles de couche 3.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il s'agit de la distance vers une destination signalée par un routeur voisin. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="67208" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="67208" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Table de voisinage</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Table topologique</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Table de routage</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Route successeur</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Route successeur possible</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Route sommaire</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Contient les routes EIGRP à utiliser pour la transmission de paquets.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Route principale à utiliser sélectionnée par l&apos;algorithme DUAL.</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Source de données EIGRP la plus importante, répertorie les routeurs adjacents.</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Chemin de secours vers un réseau de destination.</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Contient toutes les routes apprises vers tous les réseaux de destination.</mattext></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Associez les termes et concepts EIGRP aux descriptions correctes en faisant glisser les options de gauche vers leur emplacement approprié à droite. Les propositions ne doivent pas être toutes utilisées.</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-111.5" targetYspacing="16" yspacing="55" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="obs1" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>1 Table de routage, Route successeur, Table de voisinage, Possible, Topologie</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="67146" type="mc-sa"><question><![CDATA[Quel type de paquet EIGRP permet de découvrir, de vérifier et de redécouvrir des routeurs voisins ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Un accusé de réception. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un paquet HELLO.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une requête. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une réponse. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67147" type="mc-sa"><question><![CDATA[Si une route EIGRP est hors service et qu'aucune route successeur possible ne figure dans la table topologique, quel état l'algorithme DUAL (Diffused Update Algorithm) attribue-t-il à cette route pour signaler qu'elle est défectueuse ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Recomputed (recalculé). ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Passive (passif). ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Active (actif).  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Down (hors service). ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Unreachable (inaccessible). ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Successor (successeur). ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67149" type="mc-ma"><question><![CDATA[Quelles tables un routeur exécutant le protocole EIGRP gère-t-il ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La table DUAL. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La table de distances possibles. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La table de voisinage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La table OSPF. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La table de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La table topologique.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67150" type="mc-sa"><question><![CDATA[Quelle est la fonction de la table topologique et de la table de voisinage du protocole EIGRP ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Les deux tables sont utilisées par l'algorithme DUAL pour créer la table de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La table de voisinage est envoyée à tous les routeurs voisins qui l'utilisent pour créer des tables topologiques. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La table topologique est envoyée à tous les routeurs figurant dans la table de voisinage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L'algorithme DUAL utilise la table de voisinage pour créer la table topologique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La table de voisinage est diffusée aux routeurs voisins, alors que la table topologique est diffusée à tous les autres routeurs. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133333" type="mc-sa"><question><![CDATA[Examinez la présentation. Que représente la valeur 255/255 dans la sortie ? <br/><img src="i133333n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le nombre de fois qu’une liaison a été opérationnelle lors des 255 interrogations. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le taux d’échec de la liaison pendant 255 secondes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La probabilité selon laquelle la liaison va continuer à être opérationnelle.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une valeur statique qui représente la fiabilité standard d’un type d’interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="133336" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="133336" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Successeur potentiel</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Successeur</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Distance annoncée</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Distance de faisabilité</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Table de routage</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Table topologique</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Chemin de sauvegarde viable vers un réseau  </mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Route utilisée pour le transfert des paquets tout en étant la moins coûteuse</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Mesure calculée la plus basse pour atteindre le réseau de destination</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Table qui contient les successeurs et les successeurs potentiels</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Table qui contient uniquement les successeurs</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites correspondre chaque terme DUAL de la colonne de droite avec la définition appropriée dans la colonne de gauche.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="11" yspacing="50" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="198956" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="198956" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="198956" action="Set">1</setvar><scoringdescription>1 Successeur potentiel 2 Successeur 3 Distance de faisabilité 4 Table topologique 5 Table de routage</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="133335" type="mc-sa"><question><![CDATA[Un administrateur réseau résout un problème de routage EIGRP. Quelle commande permet d’indiquer tous les chemins d’accès possibles vers une destination ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip route</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip eigrp topology active</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip eigrp neighbors detail</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show ip eigrp topology all-links</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip eigrp topology summary</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133334" type="mc-sa"><question><![CDATA[Examinez la présentation. Quelle distance annoncée peut succéder au réseau 192.168.1.0 qui annonce ? <br/><img src="i133334n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[28160 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[3014400 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[2172416  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[41026560 ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

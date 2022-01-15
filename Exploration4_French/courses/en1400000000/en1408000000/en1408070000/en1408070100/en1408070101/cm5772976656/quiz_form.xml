@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="10/20/2007">
+		<name>Module  Quiz</name>
+		<form id="19782" lang=""><form-item>
+			<ai id="119147" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="119147" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>cable type</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>IP address and subnet</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>connection type</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>device ID</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>operating system version</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>device type and model</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>routing protocols</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>connector type</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Physical Diagram</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Logical Diagram</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="7" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="8" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the items on the left to the appropriate diagram type on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="50" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/><display componentIdent="8" xpos="200" ypos="355"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="4" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="264.5" containsTargets="4" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="211"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/><display componentIdent="7" xpos="600" ypos="347"/><display componentIdent="8" xpos="600" ypos="384"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="2"><componentident>5</componentident><componentident>6</componentident><componentident>7</componentident><componentident>8</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="220669" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="220669" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>5</componentident><componentident>6</componentident><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="220669" action="Set">1</setvar><scoringdescription> device type and model - Physical cable type - Physical connector type - Physical operating system version - Physical device IDs - Logical IP address and subnet - Logical connection type - Logical routing protocols - Logical</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119149" type="mc-sa"><question><![CDATA[What is one symptom of a physical layer problem?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[high CPU utilization  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[excessive broadcasts ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[slow STP convergence ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[routing loops ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119152" type="mc-sa"><question><![CDATA[A network administrator has received the output &quot;Serial0 is up, line protocol is down&quot; from the <b>show interface s0</b> command. At what layer is this problem most likely being caused?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[physical layer ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[data link layer  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[network layer ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[transport layer ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119200" type="mc-sa"><question><![CDATA[Which statement is true concerning network models?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[While similar to the OSI model in construction, the TCP/IP model has more layers. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The network access layer in the OSI model incorporates both physical and data link layers in the TCP/IP model. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Both users and application layer processes interact with software applications that contain a communications component in the OSI model.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[TCP/IP communications only relate to the TCP/IP model. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119223" type="mc-ma"><question><![CDATA[Which three protocols could be involved in network layer problems? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[DNS ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[EIGRP  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[IP  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RIP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[TCP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[UDP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="119260" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="119260" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>FTP</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>HTTP</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>POP3</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>SMTP</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>SNMP</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Telnet</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>20 and 21</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>23</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>25</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>80</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>110</mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>161</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Match the application layer protocol on the left with the port number it is commonly associated with on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="11" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/><display componentIdent="5" xpos="600" ypos="223"/><display componentIdent="6" xpos="600" ypos="260"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><scoringzone ident ="6"><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221113" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="221113" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="6"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="221113" action="Set">1</setvar><scoringdescription>1FTP 2 Telnet 3 SMTP 4 HTTP 5 POP 3 6 SNMP</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119270" type="mc-sa"><question><![CDATA[A technician has been asked to troubleshoot a simple network problem that seems to be caused by software. Which troubleshooting approach should be suggested?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[bottom-up ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[top-down  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[divide and conquer ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[middle-out ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119271" type="mc-ma"><question><![CDATA[Which three questions are appropriate to ask when gathering information from a user? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[What does work?  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Who did you call after the problem appeared?  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[When was the problem first noticed?  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[When does the problem occur?  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[What is your password? ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[What did you do after the problem occurred? ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119278" type="mc-sa"><question><![CDATA[Which network troubleshooting tool can be used to test the physical medium for defects, such as near-end crosstalk?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[cable analyzer  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[cable tester ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[digital multimeter ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[baselining tool ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119155" type="mc-ma"><question><![CDATA[Which three documents are needed to efficiently diagnose and correct network problems? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[network management command reference ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[network configuration tables  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[network device installation guide ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[network topology diagrams  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[end-system configuration tables  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[service provider documentation ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119191" type="mc-ma"><question><![CDATA[What are three steps for establishing a network baseline? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[determine the type of network management traffic to be collected and evaluated ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[determine the types of data to be collected and evaluated  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[identify devices and ports to be monitored  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[identify the virtual interfaces, VLANs, and virtual routing tables to be monitored ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[determine the number of baseline tests to establish a typical picture of the network ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[determine the duration for baseline testing to establish a typical picture of the network  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119277" type="mc-sa"><question><![CDATA[What is associated with the first step in correcting application layer problems?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[analyzing exiting symptoms ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[making a backup of configurations  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[making the initial hardware or software changes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[pinging the default gateway to verify Layer 1 – Layer 3 functionality ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

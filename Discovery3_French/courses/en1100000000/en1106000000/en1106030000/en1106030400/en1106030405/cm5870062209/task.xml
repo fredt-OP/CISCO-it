@@ -1,0 +1,715 @@
+<avalontask>
+   <r2data taskid='344534' type='testlet' language='EN' title='This is a testlet.. with 6 questions..'>
+<!-- data required by R2 will go here -->	
+</r2data>
+   <guitext file="guitext.xml">EN version of GUI nodes goes here</guitext>
+   <variables> 
+   <pool name='num_pool' type='number_pool'>
+                           <!-- Creates a pool of numbers from 1 to 10 (inclusive) -->
+                           <hi>1</hi>
+                           <low>0</low>
+                    </pool>
+</variables>
+<!-- Window Titles -->
+   <textcomponents> 
+   
+   	     <component type='text' id='txt_check'>
+   			<text variable='true' translate='true'><![CDATA[Check]]></text>
+   		</component>
+   	     <component type='text' id='txt_close'>
+   			<text variable='true' translate='true'><![CDATA[Close]]></text>
+		</component>
+<component type='text' id='txt_question1'>
+            <text variable='false' translate='true'><![CDATA[Question 1]]></text>
+         </component>
+<component type='text' id='txt_question2'>
+            <text variable='false' translate='true'><![CDATA[Question 2]]></text>
+         </component>
+         <component type='text' id='txt_question3'>
+	             <text variable='false' translate='true'><![CDATA[Question 3]]></text>
+         </component>
+         <component type='text' id='txt_question4'>
+	             <text variable='false' translate='true'><![CDATA[Question 4]]></text>
+         </component>
+         <component type='text' id='txt_question5'>
+	             <text variable='false' translate='true'><![CDATA[Question 5]]></text>
+         </component>
+         <component type='text' id='txt_question6'>
+	             <text variable='false' translate='true'><![CDATA[Question 6]]></text>
+         </component>
+         <component type='text' id='txt_questions'>
+            <text variable='false' translate='true'><![CDATA[Questions]]></text>
+         </component>
+         <component type='text' id='txt_next'>
+            <text variable='false' translate='true'><![CDATA[Next]]></text>
+         </component>
+         <component type='text' id='txt_nav'>
+            <text variable='false' translate='true'><![CDATA[Click Next to advance to the next question]]></text>
+         </component>
+   <component type='text' id='instructiontext123'>
+               <text variable='true' translate='false'>
+                    <![CDATA[This item contains several questions that you must answer. You can view these questions by clicking on the corresponding button to the left. Changing questions can be accomplished by clicking the numbers to the left of each question. In order to complete the questions, you will need to refer to the topology. <br/><br/>To gain access to the topology, click on the topology button at the bottom of the screen. When you have finished viewing the topology, you can return to your questions by clicking on the Questions button to the left.<br/><br/>Each of the windows can be minimized by clicking on the [-]. You can also reposition a window by dragging it by the title bar.]]>
+                </text>
+            </component>
+            <component type='text' id='scenariotext1234'>
+                <text variable='true' translate='false'>
+                    <![CDATA[Examine the network diagram and answer questions about the feasible distance (FD), advertised distance (AD), and the successor route for specified routes.]]>
+                </text>
+            </component>
+            	
+            <component type='text' id='txt_instructions'>
+	                    <text variable='false' translate='true'>
+	                        <![CDATA[Instructions]]>
+	                    </text>
+	          </component>
+	    	<component type='text' id='txt_scenario'>
+	                    <text variable='false' translate='true'>
+	                        <![CDATA[Scenario]]>
+	                    </text>
+	        </component>
+	<component type='text' id='txt_topology'> 
+		<text variable='false' translate='true'><![CDATA[Topology]]></text> 
+	</component> 
+	<component type='text' id='txt_networkA'>
+		            <text variable='false' translate='true'>
+		                 <![CDATA[Network A]]>
+		             </text>
+	 </component>
+	
+	<component type='text' id='txt_networkB'>
+		        <text variable='false' translate='true'>
+		                    <![CDATA[Network B]]>
+		            </text>
+	          </component>
+	<component type='text' id='txt_R1'>
+		<text variable='false' translate='true'>
+			          <![CDATA[<font color = '#FFFFFF'><b>R1</b></font>]]>
+		</text>
+	</component>
+	<component type='text' id='txt_R2'>
+			<text variable='false' translate='true'>
+				 <![CDATA[<font color = '#FFFFFF'><b>R2</b></font>]]>
+			</text>
+	</component>
+	<component type='text' id='txt_R3'>
+			<text variable='false' translate='true'>
+			  <![CDATA[<font color = '#FFFFFF'><b>R3</b></font>]]>
+			</text>
+	</component>
+	<component type='text' id='txt_R4'>
+			<text variable='false' translate='true'>
+				  <![CDATA[<font color = '#FFFFFF'><b>R4</b></font>]]>
+			</text>
+	</component>
+	<component type='text' id='txt_R5'>
+			<text variable='false' translate='true'>
+				       <![CDATA[<font color = '#FFFFFF'><b>R5</b></font>]]>
+			</text>
+	</component>
+	<component type='text' id='txt_one'>
+			<text variable='false' translate='true'>
+				          <![CDATA[(1)]]>
+			</text>
+	</component>
+	<component type='text' id='txt_one1'>
+				<text variable='false' translate='true'>
+					          <![CDATA[(1)]]>
+				</text>
+	</component>
+	<component type='text' id='txt_one2'>
+					<text variable='false' translate='true'>
+						          <![CDATA[(1)]]>
+					</text>
+	</component>
+	<component type='text' id='txt_two'>
+				<text variable='false' translate='true'>
+					          <![CDATA[(2)]]>
+				</text>
+	</component>
+	<component type='text' id='txt_two1'>
+					<text variable='false' translate='true'>
+						          <![CDATA[(2)]]>
+					</text>
+	</component>
+	<component type='text' id='txt_two2'>
+					<text variable='false' translate='true'>
+						          <![CDATA[(2)]]>
+					</text>
+	</component>
+            <!-- question #1 text -->
+            <component type='text' id='txt_q1_stem'>
+                <!-- note use of "do not translate" tag -->
+                <text variable='false' translate='false'>
+                    <![CDATA[What is the feasible distance to network A from R5 via R3?]]>
+                </text>
+            </component>
+            <component type='text' id='q1o1t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[1]]>
+                </text>
+            </component>
+            <component type='text' id='q1o2t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[2]]>
+                </text>
+            </component>
+            <component type='text' id='q1o3t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[5]]>
+                </text>
+            </component>
+            <component type='text' id='q1o4t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[6]]>
+                </text>
+            </component>
+              
+			
+            <!-- question #2 text -->
+            <component type='text' id='txt_q2_stem'>
+                <!-- note use of variable -->
+                <text variable='false' translate='false'>
+                    <![CDATA[What is the advertised distance to network A from R5 via R3? ]]>
+                </text>
+            </component>
+            <component type='text' id='q2o1t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[1]]>
+                </text>
+            </component>
+            <component type='text' id='q2o2t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[2]]>
+                </text>
+            </component>
+            <component type='text' id='q2o3t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[3]]>
+                </text>
+            </component>
+            <component type='text' id='q2o4t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[4]]>
+                </text>
+            </component>
+			
+<!-- question #3 text -->
+            <component type='text' id='txt_q3_stem'>
+                <!-- note use of variable -->
+                <text variable='false' translate='false'>
+                    <![CDATA[What is the feasible distance to network A from R5 via R4?]]>
+                </text>
+            </component>
+            <component type='text' id='q3o1t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[2]]>
+                </text>
+            </component>
+            <component type='text' id='q3o2t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[3 ]]>
+                </text>
+            </component>
+            <component type='text' id='q3o3t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[5]]>
+                </text>
+            </component>
+            <component type='text' id='q3o4t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[6]]>
+                </text>
+            </component>
+            	
+	<!-- question #4 text -->
+            <component type='text' id='txt_q4_stem'>
+                <!-- note use of variable -->
+                <text variable='false' translate='false'>
+                    <![CDATA[What is the advertised distance to network A from R5 via R4? ]]>
+                </text>
+            </component>
+            <component type='text' id='q4o1t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[2]]>
+                </text>
+            </component>
+            <component type='text' id='q4o2t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[3]]>
+                </text>
+            </component>
+            <component type='text' id='q4o3t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[5]]>
+                </text>
+            </component>
+            <component type='text' id='q4o4t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[6]]>
+                </text>
+            </component>
+	    
+	<!-- question #5 text -->
+            <component type='text' id='txt_q5_stem'>
+                <!-- note use of variable -->
+                <text variable='false' translate='false'>
+                    <![CDATA[What is the successor route for R5 to get to network A?]]>
+                </text>
+            </component>
+            <component type='text' id='q5o1t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[via R3 ]]>
+                </text>
+            </component>
+            <component type='text' id='q5o2t'>
+                <text variable='false' translate='false'>
+                    <![CDATA[via R4]]>
+                </text>
+            </component>
+            
+	    <!-- question #6 text -->
+	                <component type='text' id='txt_q6_stem'>
+	                    <!-- note use of variable -->
+	                    <text variable='false' translate='false'>
+	                        <![CDATA[What is the feasible distance to network B from R4 via R5?]]>
+	                    </text>
+	                </component>
+	                <component type='text' id='q6o1t'>
+	                    <text variable='false' translate='false'>
+	                        <![CDATA[1]]>
+	                    </text>
+	                </component>
+	                <component type='text' id='q6o2t'>
+	                    <text variable='false' translate='false'>
+	                        <![CDATA[2]]>
+	                    </text>
+	                </component>
+	                <component type='text' id='q6o3t'>
+	                    <text variable='false' translate='false'>
+	                        <![CDATA[5]]>
+	                    </text>
+	                </component>
+	                <component type='text' id='q6o4t'>
+	                    <text variable='false' translate='false'>
+	                        <![CDATA[6]]>
+	                    </text>
+            </component>
+            
+            <component type='text' id='txt_questions'>
+	                    <text variable='false' translate='false'><![CDATA[Questions]]> </text>
+	     	</component>
+	    	<component type='text' id='txt_questiontitle1'>
+		                <text variable='false' translate='false'><![CDATA[Question #1]]> </text>
+		 	</component>
+			<component type='text' id='txt_questiontitle2'>
+		                <text variable='false' translate='false'><![CDATA[Question #2]]> </text>
+		 	</component>
+			<component type='text' id='txt_questiontitle3'>
+		                <text variable='false' translate='false'><![CDATA[Question #3]]> </text>
+		 	</component>
+			<component type='text' id='txt_questiontitle4'>
+		                <text variable='false' translate='false'><![CDATA[Question #4]]> </text>
+ 			</component>
+			<component type='text' id='txt_questiontitle5'>
+			     <text variable='false' translate='false'><![CDATA[Question #5]]> </text>
+			</component>
+			<component type='text' id='txt_questiontitle6'>
+			     <text variable='false' translate='false'><![CDATA[Question #6]]> </text>
+			</component>
+<!-- Feedback for Question 1 -->		 
+         <component type='text' id='txt_q1_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 1</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q1_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q1_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Inorrect</textformat></font><br>]]></text>
+         </component>
+
+      <!-- Feedback for Question 2 -->		 
+         <component type='text' id='txt_q2_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 2</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q2_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q2_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Inorrect</textformat></font><br>]]></text>
+         </component>
+
+      <!-- Feedback for Question 3 -->		 
+         <component type='text' id='txt_q3_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 3</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q3_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q3_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Inorrect</textformat></font><br>]]></text>
+         </component>
+
+      <!-- Feedback for Question 4 -->		 
+         <component type='text' id='txt_q4_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 4</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q4_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q4_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Inorrect</textformat></font><br>]]></text>
+         </component>
+  <!-- Feedback for Question 5 -->		 
+         <component type='text' id='txt_q5_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 5</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q5_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q5_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Inorrect</textformat></font><br>]]></text>
+         </component>
+     <!-- Feedback for Question 6 -->		 
+            <component type='text' id='txt_q6_desc'>
+               <text variable='true' translate='true'><![CDATA[<b>Question 6</b><br>]]></text>
+            </component>
+            <component type='text' id='txt_q6_correct'>
+               <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+            </component>
+            <component type='text' id='txt_q6_incorrect'>
+               <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Inorrect</textformat></font><br>]]></text>
+         </component>
+	</textcomponents>
+   <graphiccomponents>
+   
+    <component type='graphic' id='gr_cloud' > 
+         <icon x='0' y='0'   id='icon_cloud'> 
+         </icon>
+    </component>
+    <component type='graphic' id='gr_ntwk' > 
+          
+          <label src='txt_networkA' x='-427' y='-160' width='60' height='25' background='false' />
+          <label src='txt_networkB'    x='-590'  y='35'   width='60' height='25' background='false' />
+          <label src='txt_R1' x='-400' y='-60' width='60' height='25' background='false' />
+          <label src='txt_R2' x='-400' y='60' width='60' height='25' background='false' />
+          <label src='txt_R3' x='-400' y='180' width='60' height='25' background='false' />
+          <label src='txt_R4' x='-250' y='65' width='60' height='25' background='false' />
+          <label src='txt_R5' x='-250' y='185' width='60' height='25' background='false' />
+          <label src='txt_one' x='-430' y='20' width='60' height='25' background='false' />
+          <label src='txt_one1' x='-320' y='40' width='60' height='25' background='false' />
+          <label src='txt_one2' x='-220' y='120' width='60' height='25' background='false' />
+          <label src='txt_two' x='-430' y='120' width='60' height='25' background='false' />
+          <label src='txt_two1' x='-320' y='120' width='60' height='25' background='false' />
+          <label src='txt_two2' x='-320' y='190' width='60' height='25' background='false' />
+   </component>
+   
+   
+   </graphiccomponents>
+   <hwcomponents>
+   <!-- **     testlet question components     **
+			we've already defined the text for the questions, so now we need to associate those text objects with
+			the individual questions in a pool and then draw those questions from the pool -->
+            <component type='questionpool' id='qpool'>
+                <!-- note that this pool contains 6 questions and the testlet is going to contain 6 questions		so this essentially randomizes the order of the questions within the testlet.  If two additional questions were		added to the pool then the candidate would only see a selection of 4 of the 6 questions in the pool. -->
+                <question questiontype='mc' randomizeoptions='false' id='q1'>
+                    <stem id='q1stem' textsrc='txt_q1_stem'/>
+                    <option id='q1o1' textsrc='q1o1t'/>
+                    <option id='q1o2' textsrc='q1o2t'/>
+                    <option id='q1o3' textsrc='q1o3t'/>
+                    <option id='q1o4' textsrc='q1o4t'/>
+                  
+                </question>
+                <question questiontype='mc' randomizeoptions='false' id='q2'>
+                    <stem id='q2stem' textsrc='txt_q2_stem'/>
+                    <option id='q2o1' textsrc='q2o1t'/>
+                    <option id='q2o2' textsrc='q2o2t'/>
+                    <option id='q2o3' textsrc='q2o3t'/>
+                    <option id='q2o4' textsrc='q2o4t'/>
+                </question>
+		<question questiontype='mc' randomizeoptions='false' id='q3'>
+                    <stem id='q3stem' textsrc='txt_q3_stem'/>
+                    <option id='q3o1' textsrc='q3o1t'/>
+                    <option id='q3o2' textsrc='q3o2t'/>
+                    <option id='q3o3' textsrc='q3o3t'/>
+                    <option id='q3o4' textsrc='q3o4t'/>
+                
+		 </question>
+          
+         	<question questiontype='mc' randomizeoptions='false' id='q4'>
+	            <stem id='q4stem' textsrc='txt_q4_stem'/>
+	            <option id='q4o1' textsrc='q4o1t'/>
+	            <option id='q4o2' textsrc='q4o2t'/>
+	            <option id='q4o3' textsrc='q4o3t'/>
+	            <option id='q4o4' textsrc='q4o4t'/>
+	           
+	           </question>
+	    	<question questiontype='mc' randomizeoptions='false' id='q5'>
+	             <stem id='q5stem' textsrc='txt_q5_stem'/>
+	             <option id='q5o1' textsrc='q5o1t'/>
+	             <option id='q5o2' textsrc='q5o2t'/>
+	        </question>
+		<question questiontype='mc' randomizeoptions='false' id='q6'>
+	             <stem id='q5stem' textsrc='txt_q6_stem'/>
+	             <option id='q6o1' textsrc='q6o1t'/>
+	             <option id='q6o2' textsrc='q6o2t'/>
+	             <option id='q6o3' textsrc='q6o3t'/>
+	             <option id='q6o4' textsrc='q6o4t'/>
+	        
+	           </question>
+	                    
+	    				
+	                </component>
+
+
+            <!-- the actual question components simply draw from the question pool(s) -->
+            <component type='question' id='question1'>
+                <draw questionpool='qpool'/>
+            </component>
+            <component type='question' id='question2'>
+                <draw questionpool='qpool'/>
+            </component>
+			<component type='question' id='question3'>
+                <draw questionpool='qpool'/>
+            </component>
+			<component type='question' id='question4'>
+                <draw questionpool='qpool'/>
+            </component>
+            <component type='question' id='question5'>
+	                    <draw questionpool='qpool'/>
+            </component>
+	   <component type='question' id='question6'>
+	                    <draw questionpool='qpool'/>
+            </component>
+		
+   </hwcomponents>
+    <presentation delivery='cert'>
+                <mainstage tooltips='true' bgcolor='#FFFFFF' theme='ccna' historylog='all' contextmenu='false'/>
+                <graphicmap> 
+    	    	<map id='icon_cloud'    src='Topo' location='library' />
+    	    </graphicmap> 
+                
+               <window maxwidth='500' titletextid='txt_instructions' minheight='150' maxheight='500' height='300' minwidth='300' visible='true' depth='395' width='500' y='182' x='110' id='win323' resize='all'>
+	       		                <element src='instructiontext123' container='textClip' width='320' html='true' wordwrap='true' id='a1'/>
+	       		</window>
+	       		<window maxwidth='500' titletextid='txt_scenario' minheight='100' maxheight='500' height='90' minwidth='300' visible='true' depth='346' width='500' y='3' x='110' id='win123' resize='all'>
+	       		                <element src='scenariotext1234' container='textClip' width='460' html='true' wordwrap='false' id='s342'/>
+            </window>
+             
+                <window id='win_topo' resize='all' titletextid='txt_topology' minheight='390' visible='false' height='390' minwidth='500' width='780' depth='100' y='3' x='110'> 
+    	        <element id='ele_cloud'  src='gr_cloud'  x='530'  y='169' depth='87' />
+    	        <element id='ele_txt'  src='gr_ntwk'  x='600'  y='169' depth='94' />
+    	    
+    	     </window> 
+   		<!--  window component for the question index -->
+       		<window id='win999' resize='none' minimize='false' maxwidth='250' titletextid='txt_questions' minheight='225' visible='true' maxheight='390' height='368' minwidth='90' width='106' depth='396' y='0' x='0'>
+                        <element id='questionindex' container='questionIndex'  src='questionIndex' gradebtn='false' fback='all'/>
+                </window>
+               
+    	     <window id='none' resize='none' titltetextid='txt_check' width='0' height='0' visible='true' depth='50' x='0' y='0' checkbutton='true' />
+    
+                <!--  window components for the individual questions --> 
+                
+          
+                 
+    			
+    	<window id='win_q1' titletextid='txt_question1' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='1' y='3' x='110' resize='all' navigation='true' navtarget='win_q2' navtext='txt_nav' navbuttonlabel='txt_next'>
+         <element src='question1' container='mc_task' id='ele_q1' />
+      </window>
+      <window id='win_q2' titletextid='txt_question2' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='2' y='3' x='110' resize='all' navigation='true' navtarget='win_q3' navtext='txt_nav' navbuttonlabel='txt_next'>
+         <element src='question2' container='mc_task' id='ele_q2' />
+      </window>
+      <window id='win_q3' titletextid='txt_question3' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='3' y='3' x='110' resize='all' navigation='true' navtarget='win_q4' navtext='txt_nav' navbuttonlabel='txt_next'>
+         <element src='question3' container='mc_task' id='ele_q3' />
+      </window>
+      <window id='win_q4' titletextid='txt_question4' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='4' y='3' x='110' resize='all' navigation='true' navtarget='win_q5' navtext='txt_nav' navbuttonlabel='txt_next'>
+               <element src='question4' container='mc_task' id='ele_q4' />
+      </window>
+      <window id='win_q5' titletextid='txt_question5' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='5' y='3' x='110' resize='all' navigation='true' navtarget='win_q6' navtext='txt_nav' navbuttonlabel='txt_next'>
+               <element src='question5' container='mc_task' id='ele_q5' />
+      </window>
+      <window id='win_q6' titletextid='txt_question6' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='6' y='3' x='110' resize='all' >
+               <element src='question6' container='mc_task' id='ele_q6' />
+      </window>
+    		
+    			
+    			
+               
+        </presentation>
+     <scoring>
+                <testlet>
+                    <subtask ident='999930' tasksrc='q1'>
+                        <!-- scoring for question #1    shows partial scoring  -->
+                           <resprocessing resprocident='rp_58699'>
+                            <outcomes>
+                                <decvar varname='52064' maxvalue='1'>
+                                    <title>response value</title>
+                                </decvar>
+                            </outcomes>
+                            <respcondition>
+                                <conditionvar>
+                                    <!--  they chose option 1 so totally correct so earned 1 point for this question -->
+                                    <varequal respident='58699'>
+                                        <componentident>q1o3</componentident>
+                                    </varequal>
+                                </conditionvar>
+                                <setvar action='Set' varname='52064'>1</setvar>
+                            </respcondition>
+                            <respcondition>
+                                <conditionvar>
+                                    <!--  default "incorrect" for this question 0 points-->
+                                    <varequal respident='58699'>
+                                        <componentident>other</componentident>
+                                    </varequal>
+                                </conditionvar>
+                                <setvar action='Set' varname='52064'>0</setvar>
+                            </respcondition>
+                        </resprocessing>
+                    </subtask>
+                    <subtask ident='999931' tasksrc='q2'>
+                        <!-- scoring for question #2   in this case it's all or nothing.. either they choose 3 and get 1 point or they get 0-->
+                        <resprocessing resprocident='rp_58700'>
+                            <outcomes>
+                                <decvar varname='52065' maxvalue='1'>
+                                    <title>response value</title>
+                                </decvar>
+                            </outcomes>
+                            <respcondition>
+                                <conditionvar>
+                                    <!--  they chose option 3  so totally correct so earned 1 point for this question -->
+                                    <varequal respident='58700'>
+                                        <componentident>q2o3</componentident>
+                                    </varequal>
+                                </conditionvar>
+                                <setvar action='Set' varname='52065'>1</setvar>
+                            </respcondition>
+                            <respcondition>
+                                <conditionvar>
+                                    <!--  default "incorrect" for this question 0 points-->
+                                    <varequal respident='58700'>
+                                        <componentident>other</componentident>
+                                    </varequal>
+                                </conditionvar>
+                                <setvar action='Set' varname='52065'>0</setvar>
+                            </respcondition>
+                        </resprocessing>
+                    </subtask>
+    				<subtask ident='999932' tasksrc='q3'>
+                        <!-- scoring for question #3   in this case it's all or nothing.. either they choose 4 and get 1 point or they get 0-->
+                        <resprocessing resprocident='rp_58701'>
+                            <outcomes>
+                                <decvar varname='52066' maxvalue='1'>
+                                    <title>response value</title>
+                                </decvar>
+                            </outcomes>
+                            <respcondition>
+                                <conditionvar>
+                                    <!--  they chose option 4 so totally correct so earned 1 point for this question -->
+                                    <varequal respident='58701'>
+                                        <componentident>q3o2</componentident>
+                                        
+                                    </varequal>
+                                </conditionvar>
+                                <setvar action='Set' varname='52066'>1</setvar>
+                            </respcondition>
+                            <respcondition>
+                                <conditionvar>
+                                    <!--  default "incorrect" for this question 0 points-->
+                                    <varequal respident='58701'>
+                                        <componentident>other</componentident>
+                                    </varequal>
+                                </conditionvar>
+                                <setvar action='Set' varname='52066'>0</setvar>
+                            </respcondition>
+                        </resprocessing>
+                    </subtask>
+    				<subtask ident='999933' tasksrc='q4'>
+                        <!-- scoring for question #4   they choose 1 and get 1 point or they get 0-->
+                           <resprocessing resprocident='rp_58702'>
+                            <outcomes>
+                                <decvar varname='52067' maxvalue='1'>
+                                    <title>response value</title>
+                                </decvar>
+                            </outcomes>
+                            <respcondition>
+                                <conditionvar>
+                                    <!--  they chose option 1 so totally correct so earned 1 point for this question -->
+                                    <varequal respident='58702'>
+                                        <componentident>q4o1</componentident>
+                                    </varequal>
+                                </conditionvar>
+                                <setvar action='Set' varname='52067'>1</setvar>
+                            </respcondition>
+                            <respcondition>
+                                <conditionvar>
+                                    <!--  default "incorrect" for this question 0 points-->
+                                    <varequal respident='58702'>
+                                        <componentident>other</componentident>
+                                    </varequal>
+                                </conditionvar>
+                                <setvar action='Set' varname='52067'>0</setvar>
+                            </respcondition>
+                        </resprocessing>
+                    </subtask>
+                    <subtask ident='999934' tasksrc='q5'>
+		                            <!-- scoring for question #5   they choose 4 and get 1 point or they get 0-->
+		                               <resprocessing resprocident='rp_58703'>
+		                                <outcomes>
+		                                    <decvar varname='52068' maxvalue='1'>
+		                                        <title>response value</title>
+		                                    </decvar>
+		                                </outcomes>
+		                                <respcondition>
+		                                    <conditionvar>
+		                                        <!--  they chose option 4 so totally correct so earned 1 point for this question -->
+		                                        <varequal respident='58703'>
+		                                            <componentident>q5o2</componentident>
+		                                        </varequal>
+		                                    </conditionvar>
+		                                    <setvar action='Set' varname='52068'>1</setvar>
+		                                </respcondition>
+		                                <respcondition>
+		                                    <conditionvar>
+		                                        <!--  default "incorrect" for this question 0 points-->
+		                                        <varequal respident='58703'>
+		                                            <componentident>other</componentident>
+		                                        </varequal>
+		                                    </conditionvar>
+		                                    <setvar action='Set' varname='52068'>0</setvar>
+		                                </respcondition>
+		                            </resprocessing>
+                    </subtask>
+		  <subtask ident='999935' tasksrc='q6'>
+ 		                            <!-- scoring for question #6   they choose 4 and get 1 point or they get 0-->
+ 		                               <resprocessing resprocident='rp_58704'>
+ 		                                <outcomes>
+ 		                                    <decvar varname='52069' maxvalue='1'>
+ 		                                        <title>response value</title>
+ 		                                    </decvar>
+ 		                                </outcomes>
+ 		                                <respcondition>
+ 		                                    <conditionvar>
+ 		                                        <!--  they chose option 4 so totally correct so earned 1 point for this question -->
+ 		                                        <varequal respident='58704'>
+ 		                                            <componentident>q6o3</componentident>
+ 		                                        </varequal>
+ 		                                    </conditionvar>
+ 		                                    <setvar action='Set' varname='52069'>1</setvar>
+ 		                                </respcondition>
+ 		                                <respcondition>
+ 		                                    <conditionvar>
+ 		                                        <!--  default "incorrect" for this question 0 points-->
+ 		                                        <varequal respident='58704'>
+ 		                                            <componentident>other</componentident>
+ 		                                        </varequal>
+ 		                                    </conditionvar>
+ 		                                    <setvar action='Set' varname='52069'>0</setvar>
+ 		                                </respcondition>
+ 		                            </resprocessing>
+                     </subtask>
+    		
+    			</testlet>
+            </scoring>
+
+    
+    
+</avalontask>

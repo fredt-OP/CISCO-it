@@ -1,0 +1,90 @@
+<textcomponents>
+
+<!-- -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Activity</b></font><br/><br/>Decide if an operation is a cabling best practice or not.<br/><br/><b>Check Yes if the statement describes a best practice or No if it does not.</b>]]></text>
+</component>
+
+<!-- -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b> Yes </b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b> No  </b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>In an effort to prevent people from tripping over cables, Charles ran the cables through the false ceiling over fluorescent lights.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Yasmin labeled all cables and recorded their location as she installed them.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Damon decided to follow T568A termination cabling standard for all straight-through cabling needs in his network.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Samuru needed to connect a device to the network. She located a bunch of old, hand-terminated cables in a drawer. Assuming the cables were good, she selected one and connected her device.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Correct, you have identified cabling best practices. Click Next to continue.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect. Review the cabling best practices, and try again.]]></text>
+</component>
+
+</textcomponents>

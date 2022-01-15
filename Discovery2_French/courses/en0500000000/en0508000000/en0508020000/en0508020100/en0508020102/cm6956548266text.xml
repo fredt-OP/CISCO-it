@@ -1,0 +1,73 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Describe the purpose of Access Control Lists and port filtering</b>]]></text>
+</component>
+
+<!--slide 2-->
+<component id="ID_title2">
+<text><![CDATA[<b>Access Control Lists on a Router </b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Network A</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Network C</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Network B</b>]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[<b>Deny All Traffic Destined for Network B</b>]]></text>
+</component>
+
+<!--slide 1-->
+<component id="ID_title1">
+<text><![CDATA[<b>Port Filtering </b>]]></text>
+</component>
+<component id="ID_txt01a">
+<text><![CDATA[<b>Web Server</b>]]></text>
+</component>
+<component id="ID_txt02a">
+<text><![CDATA[<b>Hacker PC </b>]]></text>
+</component>
+<component id="ID_txt03a">
+<text><![CDATA[<b>Telnet Port 23–Denied</b>]]></text>
+</component>
+<component id="ID_txt04a">
+<text><![CDATA[<b>SSH Port 22–Denied</b>]]></text>
+</component>
+<component id="ID_txtBlueArrow">
+<text><![CDATA[<b>Web Port 80–Allowed</b>]]></text>
+</component>
+
+<!--instructions-->
+<component id="ID_inst">
+<text><![CDATA[<b>Click each security method for more information on port filtering and Access Control Lists.</b>]]></text>
+</component>
+
+<!--Buttons-->
+<component id="Button1">
+<text><![CDATA[<b>Port Filtering</b>]]></text>
+</component>
+<component id="Button2">
+<text><![CDATA[<b>Access Control Lists</b>]]></text>
+</component>
+
+<!--textboxes-->
+<component id="ID_Header1">
+<text><![CDATA[Port Filtering]]></text>
+</component>
+<component id="ID_Textbox1">
+<text><![CDATA[<b>A port filter can be implemented to prevent access to all other ports except web port 80. If a user tries to connect to the server using any other port, such as Telnet on TCP port 23, the user is denied access. This protects the server from being compromised.</b>]]></text>
+</component>
+
+<component id="ID_Header2">
+<text><![CDATA[Access Control Lists]]></text>
+</component>
+<component id="ID_Textbox2">
+<text><![CDATA[<b>Using an access control list, all computers on Network A are denied access from all computers on Network B. Network A is specified as the source network and Network B as the destination network. Traffic is denied if it meets those conditions. This still allows the computers on Network A to talk to the server on Network C.</b>]]></text>
+</component>
+
+</textcomponents>
+
+

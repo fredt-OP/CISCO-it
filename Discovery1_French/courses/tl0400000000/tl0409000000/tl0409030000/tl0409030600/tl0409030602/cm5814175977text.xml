@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<!-- instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Résolvez le problème en fonction du type de réseau auquel il peut être associé, à savoir filaire, sans fil ou les deux.<br/><br/><b>Cochez Filaire, Sans fil ou Les deux pour chaque problème.</b>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[9]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Filaire</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Sans fil</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Les deux</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit--> <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Configuration incorrecte du SSID</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Configuration incorrecte de l’adressage</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Impossibilité d’envoyer une requête ping du STA à l’hôte filaire</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Port Ethernet déconnecté sur le point d’accès</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='13'>Configuration incorrecte du canal</textformat>]]></text>
+</component>
+
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='13'>Type de câble incorrect utilisé pour connecter le point d’accès</textformat>]]></text>
+</component>
+
+<component id="txt_q7">
+	<text><![CDATA[7. <textformat blockindent='13'>Câble défectueux utilisé pour connecter le point d’accès</textformat>]]></text>
+</component>
+
+<component id="txt_q8">
+	<text><![CDATA[8. <textformat blockindent='13'>Configuration incorrecte de l’authentification sans fil</textformat>]]></text>
+</component>
+
+<component id="txt_q9">
+	<text><![CDATA[9. <textformat blockindent='13'>Mode sans fil incorrect</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0--> <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[3]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a5">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a6">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a7">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a8">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a9">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Correct, vous avez réussi à associer chaque problème avec le type de réseau qu’il affecte. Cliquez sur Suivant pour continuer.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect, veuillez réessayer.]]></text>
+</component>
+
+</textcomponents>

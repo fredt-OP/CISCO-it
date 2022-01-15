@@ -1,0 +1,70 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr-fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Contenu</title>
+<base target="_self">
+<link href="../../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="window.focus();">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<!--  Start top title Lesson Bar -->
+	  <tr>
+	    <td width="18" class="toptitle01_white_bold" valign="top">
+	    <img border="0" src="../../images/content_lines.gif" width="16" height="25"> <img border="0" src="../../images/transdot.gif" width="2" height="1"></td>
+	    
+    <td width="18" class="toptitle01_white_bold">5.4</td>
+	    <td class="toptitle01_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+	    
+    <td width="100%" class="toptitle01_white_bold">Installation d&rsquo;un syst&egrave;me d&rsquo;exploitation</td>
+	    <td width="9" class="toptitle01_white_bold_margin">&nbsp;</td>
+	  </tr>
+	  <!--  End top title Lesson Bar --> <!--  Start top title Topic Bar -->
+ 	 <tr>
+	    <td width="18" height="25" class="toptitle02_white_bold">&nbsp;</td>
+	    
+    <td height="25"  class="toptitle02_white_bold">5.4.7</td> 
+	    <td class="toptitle02_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+	    
+    <td width="100%" height="25" class="toptitle02_white_bold"><strong>Identification des fichiers de s&eacute;quence d&rsquo;amor&ccedil;age et de registre</strong></td>
+	    <td height="25" width="9" class="toptitle02_white_bold_margin">&nbsp;</td>
+  </tr>
+	 <!--  End top title Topic Bar -->
+</table>
+	
+	<!-- CONTENT -->
+	
+<table border="0" cellpadding="0" cellspacing="0" width="95%" >
+  <tr> 
+    <td width="20" class="bold"></td>
+    <td class="bold"> 
+      <table border="0" cellpadding="0" cellspacing="0"  width="95%">
+        <tr> 
+          <td width="100%" height="47">
+<p>Vous devez conna&icirc;tre le processus utilis&eacute; par Windows XP lors de l&rsquo;amor&ccedil;age. La compr&eacute;hension de ces &eacute;tapes peut vous aider par la suite &agrave; r&eacute;soudre des probl&egrave;mes d&rsquo;amor&ccedil;age. La Figure 1 pr&eacute;sente la s&eacute;quence d&rsquo;amor&ccedil;age de Windows XP.</p>
+            <p><span class="bold">Processus d&rsquo;amor&ccedil;age de Windows XP</span><br> Pour d&eacute;marrer le processus d&rsquo;amor&ccedil;age, mettre d&rsquo;abord l&rsquo;ordinateur sous tension. Cela s&rsquo;appelle un d&eacute;marrage &agrave; froid. L&rsquo;ordinateur effectue le test automatique de mise sous tension (POST). Comme l&rsquo;adaptateur vid&eacute;o n&rsquo;a pas encore &eacute;t&eacute; initialis&eacute;, toutes les erreurs se produisant &agrave; ce moment dans le processus d&rsquo;amor&ccedil;age se traduisent par une s&eacute;rie de signaux sonores, appel&eacute;s codes de bips.</p>
+            <p>Apr&egrave;s le POST, le BIOS localise et lit les param&egrave;tres de configuration enregistr&eacute;s dans le CMOS. Ce param&egrave;tre de configuration indique l&rsquo;ordre dans lequel les p&eacute;riph&eacute;riques sont test&eacute;s pour d&eacute;tecter si un syst&egrave;me d&rsquo;exploitation s&rsquo;y trouve. Le BIOS amorce l&rsquo;ordinateur &agrave; l&rsquo;aide du premier disque contenant un syst&egrave;me d&rsquo;exploitation.</p>
+            <p>Une fois le disque contenant le syst&egrave;me d&rsquo;exploitation trouv&eacute;, le BIOS localise l&rsquo;enregistrement d&rsquo;amor&ccedil;age ma&icirc;tre (MBR).  Le MBR localise le chargeur d&rsquo;amor&ccedil;age. Sous Windows XP, le chargeur d&rsquo;amor&ccedil;age est appel&eacute; chargeur NT (NTLDR). </p>
+            <p><span class="bold">NTLDR et le menu d&rsquo;amor&ccedil;age Windows</span><br> &Agrave; ce stade, NTLDR contr&ocirc;le plusieurs &eacute;tapes d&rsquo;installation. Par exemple, si le disque contient plusieurs syst&egrave;mes d&rsquo;exploitation, BOOT.INI permet &agrave; l&rsquo;utilisateur de s&eacute;lectionner le syst&egrave;me &agrave; utiliser. En cas d&rsquo;absence de syst&egrave;me d&rsquo;exploitation ou si l&rsquo;utilisateur n&rsquo;en s&eacute;lectionne aucun avant l&rsquo;expiration du compteur, les actions suivantes se produisent&nbsp;:</p>
+            <ul>
+              <li>NTLDR ex&eacute;cute NTDETECT.COM pour obtenir des informations sur le mat&eacute;riel install&eacute;. </li>
+              <li>NTLDR utilise ensuite le chemin indiqu&eacute; dans le fichier BOOT.INI pour trouver la partition d&rsquo;amor&ccedil;age. </li>
+              <li>NTLDR charge deux fichiers formant le noyau de XP&nbsp;: NTOSKRNL.EXE et HAL.DLL. </li>
+              <li>NTLDR lit les fichiers de registre, choisit un profil de mat&eacute;riel et charge les pilotes des p&eacute;riph&eacute;riques.</li>
+            </ul>
+            <p><span class="bold">Registre Windows</span><br> Les fichiers de registre Windows jouent un r&ocirc;le important dans le processus d&rsquo;amor&ccedil;age de Windows XP. Ces fichiers se reconnaissent &agrave; leur nom bien distinct, qui commence par HKEY_, comme indiqu&eacute; dans la Figure 2, suivi du nom de la partie du syst&egrave;me d&rsquo;exploitation qu&rsquo;ils contr&ocirc;lent. Chaque param&egrave;tre de Windows, depuis l&rsquo;arri&egrave;re-plan du bureau et la couleur des boutons &eacute;cran jusqu&rsquo;aux licences octroy&eacute;es pour les applications, est enregistr&eacute; dans le registre. Lorsqu&rsquo;un utilisateur change les param&egrave;tres du Panneau de configuration, les associations de fichiers, les strat&eacute;gies de s&eacute;curit&eacute; syst&egrave;me ou les logiciels install&eacute;s, les modifications sont enregistr&eacute;es dans le registre. </p>
+            <p>Chaque utilisateur a une section unique dans le registre. Le processus d&rsquo;ouverture de session Windows utilise les param&egrave;tres syst&egrave;me se trouvant dans le registre pour reconfigurer le syst&egrave;me dans l&rsquo;&eacute;tat o&ugrave; il &eacute;tait la derni&egrave;re fois que l&rsquo;utilisateur l&rsquo;a mis sous tension.</p>
+            <p><span class="bold">Noyau NT </span><br> &Agrave; ce stade, le noyau NT, qui constitue le c&oelig;ur du syst&egrave;me d&rsquo;exploitation Windows, prend le relais. Ce fichier s&rsquo;appelle NTOSKRNL.EXE. Il d&eacute;marre le fichier d&rsquo;ouverture de session appel&eacute; WINLOGON.EXE et affiche l&rsquo;&eacute;cran d&rsquo;accueil XP.</p>
+            <p><b>REMARQUE&nbsp;:</b> si un disque SCSI amorce l&rsquo;ordinateur, Windows copie le fichier NTBOOTDD.SYS pendant l&rsquo;installation. Si les disques SCSI ne sont pas utilis&eacute;s, ce fichier n&rsquo;est pas copi&eacute;.</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+</body>
+
+</html>

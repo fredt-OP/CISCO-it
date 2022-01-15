@@ -1,0 +1,82 @@
+﻿<textcomponents>
+
+<!-- -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Activity</b></font><br/><br/>Decide if fiber is the best solution to a cabling requirement.<br/><br/><b>After each scenario, check either fiber optic or copper.</b>]]></text>
+</component>
+
+<!-- -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Fiber Optic (FO)</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Copper (UTP)</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>A company must provide network connectivity between three buildings on a single campus. The cables must be run outside and there is a high probability of lightning storms in the area.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>A company must provide network connectivity between two buildings located 1 km apart.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>A company must provide 100 Mbps connectivity to users located in their main office by running cables from the central switch to the individual desktops. The maximum distance from the switch to a workstation is 60 meters.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[<p><b>Scenario 1</b><br/>Answer: Fiber Optic (FO)<br/>Fiber would be the appropriate choice here since copper media would carry the energy from a lightning strike into the buildings, possibly damaging network equipment. Fiber optic cable will not conduct electricity.<br/><br/><b>Scenario 2</b><br/>Answer: Fiber Optic (FO)<br/>For long runs fiber optic cable is more suited. Copper usually has more critical distance limitations requiring the installation of expensive repeaters to regenerate the signal as it becomes attenuated.<br/><br/><b>Scenario 3</b><br/>Answer: Copper (UTP)<br/>Copper is a much less expensive alternative than fiber to the desktop. The distance to individual stations is less than the maximum 100 m for UTP and the bandwidth required is within that available with Cat 5 or Cat 5e cable.<br/></p>]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect, please review the scenarios and then try again.]]></text>
+</component>
+
+</textcomponents>

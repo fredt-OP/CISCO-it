@@ -1,0 +1,300 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) What is the range of addresses for Class A, Class B, and Class C addresses?]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 6.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>0.0.0.0 to 127.255.255.255<br/>128.0.0.0 to 191.255.255.255<br/>192.0.0.0 to 223.255.255.255</b>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[A classless routing protocol includes the subnet mask in the routing update.]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) What distinguishes a classless routing protocol from a classful routing protocol?]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from 6.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) What are the advantages of using a classless routing protocol?]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from 6.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[Allows the use of VLSM and CIDR within the routing domain.]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) How does a classful routing protocol determine the subnet mask of a routing update?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from 6.1)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[If the network address in the routing update is on the same major classful network as the receiving interface, the classful routing protocol will use the same mask as the interface.  Otherwise, it will use the default classful mask.]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Why did the IETF introduce classless IP addressing, CIDR?]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from 6.1)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[The routing tables on Internet routers were experiencing very high growth.  There needed to be a way to summarize the routes in the routing table. Because classful addressing only provided for /8, /16, or /24 masks, the IPv4 address space was becoming depleted.]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q6_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) Besides CIDR, what else helped the problem with IPv4 address depletion and also slowed down the need to go to IPv6?]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(from 6.1)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>NAT (Network Address Translation)</b>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+
+<!-- Question 7 -->
+
+
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[(from 6.2)]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) What term is used to define the process of subnetting a subnet?]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<b>VLSM (Variable Length Subnet Masking)</b>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) The 172.16.0.0/16 network is subnetted using a /24 subnet mask. What could we do if we needed to divide the 172.16.10.0/24 subnet into three equally sized subnets with the maximum number of hosts per subnet?]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(from 6.2)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[172.16.10.0/24 could be subnetted using the /26 subnet mask.]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[This would give us four subnets with the maximum number of hosts. We cannot do three subnets, the next lower number of subnets would be two.]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 9 -->
+
+
+<component id="ID_Q9_txt01b">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9) 172.16.10.0/24 network is using the following /28 subnets for LANs:]]></text>
+</component>
+<component id="ID_Q9_txt03a">
+<text><![CDATA[The network administrator wants to allocate a /28 subnet and subnet it further with a /30 mask for all point-to-point serial links in the network. What /28 subnets are available to be used?]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[(from 6.2)]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>NAT (Network Address Translation)</b>]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q9_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 10 -->
+
+
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q10_txt02">
+<text><![CDATA[(from 6.2)]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10) What is supernetting? What is required to propagate a supernet route?]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[Supernetting refers to the ability to summarize networks less than the classful default mask. Classless routing protocols are required to propagate a supernet route because the subnet mask must be included with the summarized network address.]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 11 -->
+
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q11_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11) Summarize the following networks]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[(from 6.3)]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[(18 left most matching bits)]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q11_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>This concludes this chapter's Problems and Discussion questions.</b>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+
+

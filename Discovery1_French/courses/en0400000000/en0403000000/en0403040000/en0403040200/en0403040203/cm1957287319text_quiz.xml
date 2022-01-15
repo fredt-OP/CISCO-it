@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="12511" dateexported="03/07/2007">
+		<name>Prueba Módulo 1</name>
+		<form id="15048" lang="es">
+<form-item order="fixed">
+     <ai id="66557" type="mc-sa"><question><![CDATA[If Host3 sends a message to Host6, which host devices will receive the message?]]></question><choices>
+	<choice correct="n">
+		<text><![CDATA[Host 6 only.]]></text>
+		<feedback><![CDATA[ A hub does not read a frame, it will simply repeat the message out all ports.]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[All hosts connected to HubA only.]]></text>
+		<feedback><![CDATA[A hub does not read a frame, it will simply repeat the message out all ports. ]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[All hosts connected to HubB only.]]></text>
+		<feedback><![CDATA[A hub does not read a frame, it will simply repeat the message out all ports.]]></feedback>
+	</choice>
+	<choice correct="y">
+		<text><![CDATA[All hosts on the network.]]></text>
+	</choice></choices></ai>
+</form-item>
+
+
+
+<form-item order="fixed">
+<ai id="66558" type="mc-sa">
+	<question><![CDATA[In this network, how many collision domains exist?]]></question><choices>
+	<choice correct="y">
+		<text><![CDATA[There is 1 collision domain.]]></text>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[There are 2 collision domains.]]></text>
+		<feedback><![CDATA[All ports on HubA and HubB are included in the same collision domain.  All hosts on the network must share bandwidth across the hubs and collisions can occur.  Additionally, all hosts will receive the garbled message from a collision.  ]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[There are 8 collision domains.]]></text>
+		<feedback><![CDATA[All ports on HubA and HubB are included in the same collision domain.  All hosts on the network must share bandwidth across the hubs and collisions can occur.  Additionally, all hosts will receive the garbled message from a collision.  ]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[There are no collision domains.]]></text>
+		<feedback><![CDATA[All ports on HubA and HubB are included in the same collision domain.  All hosts on the network must share bandwidth across the hubs and collisions can occur.  Additionally, all hosts will receive the garbled message from a collision.  ]]></feedback>
+	</choice></choices></ai></form-item>
+
+
+
+
+
+<form-item order="fixed">
+<ai id="66563" type="mc-sa"><question><![CDATA[What occurs if Host3 and Host4 send a message across HubA at the same time?]]></question><choices>
+	<choice correct="y">
+		<text><![CDATA[The two frames will collide and the hub will forward a garbled message to all hosts on the network.]]></text>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[The two frames will collide and the hub will forward a garbled message to the source and intended destination hosts only.]]></text>
+		<feedback><![CDATA[The hub does not decide when hosts can communicate, nor does it prevent collisions when two hosts communicate simultaneously. A hub will forward the garbled message from a collision to all connected hosts. It is up to the hosts to retransmit. ]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[The two frames will be forwarded to the correct destination device without a collision occurring.]]></text>
+		<feedback><![CDATA[The hub does not decide when hosts can communicate, nor does it prevent collisions when two hosts communicate simultaneously. A hub will forward the garbled message from a collision to all connected hosts. It is up to the hosts to retransmit.]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Two hosts cannot send information across the hub at the same time because the hosts must wait for a “request for data” frame from the hub.]]></text>
+		<feedback><![CDATA[The hub does not decide when hosts can communicate, nor does it prevent collisions when two hosts communicate simultaneously. A hub will forward the garbled message from a collision to all connected hosts. It is up to the hosts to retransmit.]]></feedback>
+	</choice></choices></ai>
+</form-item>
+
+
+
+
+
+<form-item order="fixed">
+<ai id="66590" type="mc-sa"><question><![CDATA[Who receives the garbled message when a collision occurs on a hub network?]]></question><choices>
+	<choice correct="n">
+		<text><![CDATA[Only the destination PC.]]></text>
+		<feedback><![CDATA[A hub does not determine what should be forwarded, it simply repeats everything.]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[All PCs connected to the hub where the collision occurred.]]></text>
+		<feedback><![CDATA[A hub does not determine what should be forwarded, it simply repeats everything.]]></feedback>
+	</choice>
+	<choice correct="y">
+		<text><![CDATA[All PCs connected to every hub on the network.  ]]></text>
+							
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[A hub will not forward a garbled message from a collision.  ]]></text>
+		<feedback><![CDATA[A hub does not determine what should be forwarded, it simply repeats everything.]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[A collision will never occur on a hub network. ]]></text>
+		<feedback><![CDATA[A hub does not determine what should be forwarded, it simply repeats everything.]]></feedback>
+	</choice>
+	</choices></ai>
+</form-item>
+
+</form></exam> 

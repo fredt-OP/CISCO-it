@@ -1,0 +1,35 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Calcul de la mesure par défaut EIGRP</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Mesure par défaut = [K1*bande passante + K3*délai] * 256</b><br><br>Comme K1 et K3 valent tous deux 1, la formule est simplifiée en : <b>bande passante + délai</b><br><br>bande passante = vitesse de la liaison la plus lente de la route vers la destination<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;délai = somme des délais de chaque liaison de la route vers la destination]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Bande passante la plus faible :]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[(10 000 000/bande passante en Kbits/s) * 256]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Plus la somme des délais :]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[+ (somme des délais/10) * 256]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[= mesure EIGRP]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b><font face="_typewriter">&lt;résultat omis&gt;</font>]]></text> 
+</component>
+
+</textcomponents>

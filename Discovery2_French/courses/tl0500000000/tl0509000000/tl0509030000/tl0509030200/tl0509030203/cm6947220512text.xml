@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<textcomponents>
+
+<component id="ID_prompt">
+<text><![CDATA[Cliquez sur chaque bouton pour voir en quoi les masques de sous-réseau mal configurés affectent la communication réseau.]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[Problème 1]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[Problème 2]]></text>
+</component>
+
+<component id="ID_button03">
+<text><![CDATA[Problème 3]]></text>
+</component>
+
+<component id="ID_button04">
+<text><![CDATA[Problème 4]]></text>
+</component>
+
+<component id="ID_topology01">
+<text><![CDATA[Internet]]></text>
+</component>
+
+<component id="ID_topology02">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.33/27</b>]]></text>
+</component>
+
+<component id="ID_topology03">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_topology04">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+
+<component id="ID_topology05">
+<text><![CDATA[<b>H2</b>]]></text>
+</component>
+
+<component id="ID_topology06">
+<text><![CDATA[<b>SV1</b>]]></text>
+</component>
+
+<component id="ID_s1_title01">
+<text><![CDATA[<font size = "12">Un serveur n’est accessible que par les hôtes du même sous-réseau.</font>]]></text>
+</component>
+
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<font size = "12">Un serveur de l’un des sous-réseaux est manuellement configuré à l’aide du préfixe réseau par défaut /24 et non /27. En raison de cette configuration incorrecte, le serveur a déterminé que tous les hôtes des différents sous-réseaux sont situés sur le même réseau de couche 3 que le serveur. Le serveur n’envoie aucun trafic à la passerelle par défaut pour les hôtes des sous-réseaux /27. Si ce problème survient, vérifiez les configurations du serveur.</font>]]></text>
+</component>
+
+<component id="ID_s1_bubble01">
+<text><![CDATA[<font size = "12">192.168.0.42 est présent sur mon réseau 192.168.0.0/24, mais n’a pas répondu à ma requête ARP. Par conséquent, il m’est impossible de répondre.</font>]]></text>
+</component>
+
+
+<component id="ID_s1_bubble02">
+<text><![CDATA[<font size = "12">J’ai demandé une page Web depuis SV1, mais je ne l’ai pas reçue.</font>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.33/27</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[<b>192.168.0.42/27</b>]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>192.168.0.5/<font color = "#FF0000">24</font></b>]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_s2_title01">
+<text><![CDATA[<font size = "12">Les hôtes obtiennent des réponses des serveurs Internet, mais pas des serveurs des autres sous-réseaux.</font>]]></text>
+</component>
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<font size = "12">Un hôte ou un groupe d’hôtes est configuré avec un masque de sous-réseau /24 qui provoque un chevauchement avec les adresses de sous-réseau du serveur.  Chaque hôte détermine correctement que les adresses Internet ne sont pas situées sur le réseau local de couche 3 et transmet le trafic à la passerelle par défaut. Les hôtes déterminent à tort que les adresses de serveurs internes sont situées sur leur réseau local, et utilisent des requêtes ARP pour tenter d’accéder aux adresses MAC du serveur. Lorsque ce symptôme est évident, vérifiez les configurations DHCP du serveur et les configurations de l’hôte.  Un analyseur de réseau peut être utilisé pour afficher les trames ARP.</font>]]></text>
+</component>
+
+<component id="ID_s2_bubble01">
+<text><![CDATA[<font size = "12">Je souhaite accéder à une page Web provenant de l’adresse IP 200.200.1.1. J’ai transféré ma requête à la passerelle.</font>]]></text>
+</component>
+
+<component id="ID_s2_bubble02">
+<text><![CDATA[<font size = "12">Je souhaite accéder à une page Web depuis SV1. SV1 présent sur mon réseau. Je peux envoyer une requête ARP pour l’adresse MAC.</font>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.33/27</b>]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[<b>192.168.0.43/<font color = "#FF0000">24</font></b>]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[<b>192.168.0.42/<font color = "#FF0000">24</font></b>]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[<b>192.168.0.5/27</b>]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+
+<component id="ID_s3_title01">
+<text><![CDATA[<font size = "12">À l’aide des noms d’hôtes, les hôtes ne peuvent obtenir de réponses des serveurs Internet, ni des serveurs des autres sous-réseaux.</font>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[<font size = "12">Un hôte ou un groupe d’hôtes est configuré avec un masque de sous-réseau /24 qui provoque un chevauchement avec les adresses de sous-réseau du serveur, notamment le serveur DNS. En règle générale, les erreurs de masques de sous-réseaux détectées sur les hôtes n’affectent pas la connectivité Internet. Toutefois, si l’erreur de masque de sous-réseau provoque le chevauchement du sous-réseau contenant le serveur DNS, le ou les hôtes ne pourront pas contacter le serveur DNS.  Sans DNS, aucune adresse IP ne peut être résolue, et tous les services DNS seront inaccessibles. Si vous ne pouvez accéder à Internet, vérifiez les configurations des hôtes et les configurations DNS.</font>]]></text>
+</component>
+
+<component id="ID_s3_bubble01">
+<text><![CDATA[<font size = "12">D’après les données IP, le serveur DNS est situé sur mon réseau local, mais je ne parviens pas à accéder au serveur pour résoudre les noms d’hôtes.</font>]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.33/27</b>]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[<b>192.168.0.42/<font color = "#FF0000">24</font></b>]]></text>
+</component>
+
+<component id="ID_s3_txt06">
+<text><![CDATA[<b>192.168.0.5/27</b>]]></text>
+</component>
+
+<component id="ID_s3_txt07">
+<text><![CDATA[<b>192.168.0.6/27</b>]]></text>
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[<b>DNS</b>]]></text>
+</component>
+
+
+
+<component id="ID_s4_title01">
+<text><![CDATA[<font size = "12">Certains hôtes obtiennent des réponses des serveurs Internet et des serveurs des autres sous-réseaux, alors que certains autres hôtes n’y parviennent pas.</font>]]></text>
+</component>
+
+
+<component id="ID_s4_txt01">
+<text><![CDATA[<font size = "12">L’erreur de configuration de masque de sous-réseau est survenue sur une interface de routeur utilisée comme passerelle par défaut pour l’un des sous-réseaux /27. Si l’interface du routeur est configurée par erreur avec un masque de sous-réseau /28, la route indiquée dans la table de routage n’inclut pas tous les hôtes du sous-réseau /27.  Les hôtes dont les adresses de la partie inférieure de la plage d’adresses sont dans les limites des adresses IP de sous-réseau /28 peuvent envoyer et recevoir des paquets via le routeur. Ceux dont les adresses sont situées dans la partie supérieure de la plage d’adresses peuvent envoyer des paquets aux destinations distantes, mais lorsque les réponses arriveront, le routeur ne disposera pas de la route adéquate vers les adresses IP de destination.  Vérifiez toujours toutes les routes connectées dans la table de routage, en utilisant la commande show IP route.</font>]]></text>
+</component>
+
+<component id="ID_s4_bubble01">
+<text><![CDATA[<font size = "12">J’ai reçu un paquet pour la destination 192.168.0.51, qui ne correspond à aucune route de ma table de routage. Je ne peux transférer ce paquet.</font>]]></text>
+</component>
+
+<component id="ID_s4_txt02">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.33/<font color = "#FF0000">28</font></b>]]></text>
+</component>
+
+<component id="ID_s4_txt03">
+<text><![CDATA[<b>Passerelle :<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_s4_txt04">
+<text><![CDATA[<b>192.168.0.51/27</b>]]></text>
+</component>
+
+<component id="ID_s4_txt05">
+<text><![CDATA[<b>192.168.0.42/27</b>]]></text>
+</component>
+
+<component id="ID_s4_txt06">
+<text><![CDATA[<b>192.168.0.5/27</b>]]></text>
+</component>
+
+<component id="ID_s4_txt07">
+<text><![CDATA[<b>192.168.0.6/27</b>]]></text>
+</component>
+
+</textcomponents>

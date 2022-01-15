@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13391" dateexported="06/23/2008">
+		<name>Module 4 Questionnaire</name>
+		<form id="21435" lang="fr"><form-item>
+			<ai id="140164" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140164" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Faiblesses du système d’exploitation</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Comptes utilisateurs non sécurisés</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Faiblesses de l’équipement réseau</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Paramètres par défaut non sécurisés</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Absence de cohérence et de continuité</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Faiblesses des protocoles TCP/IP et ICMP</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Absence de plan de reprise après sinistre </mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Faiblesse technologique</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Faiblesse de la configuration</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Faiblesse de la stratégie de sécurité</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="7" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque terme de gauche sur la description correspondante de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="8" yspacing="58" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /><display componentIdent="7" xpos="200" ypos="315" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="2" startTarg="4" labelStyle="1" /><display componentIdent="3" xpos="600" ypos="326.5" containsTargets="2" startTarg="6" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="174" /><display componentIdent="4" xpos="600" ypos="236" /><display componentIdent="5" xpos="600" ypos="273" /><display componentIdent="6" xpos="600" ypos="335" /><display componentIdent="7" xpos="600" ypos="372" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident="2"><componentident>4</componentident><componentident>5</componentident></scoringzone><scoringzone ident="3"><componentident>6</componentident><componentident>7</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216791" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="216791" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="216791" action="Set">1</setvar><scoringdescription>Faiblesse technologique Faiblesses des protocoles TCP/IP et ICMP Faiblesses du système d’exploitation Faiblesses de l’équipement réseau Faiblesse de la configuration Comptes utilisateurs non sécurisés Paramètres par défaut non sécurisés Faiblesse de la stratégie de sécurité Absence de cohérence et de continuité Absence de plan de reprise après sinistre </scoringdescription></responcondition><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident><componentident>1</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident><componentident>7</componentident></scoringzonecontains></conditionvar><scoringdescription>Faiblesse technologique Faiblesses des protocoles TCP/IP et ICMP Faiblesses du système d’exploitation Faiblesses de l’équipement réseau Faiblesse de la configuration Comptes utilisateurs non sécurisés Paramètres par défaut non sécurisés Faiblesse de la stratégie de sécurité Absence de cohérence et de continuité Absence de plan de reprise après sinistre </scoringdescription></responcondition><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident><componentident>3</componentident><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>7</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><scoringdescription>Faiblesse technologique Faiblesses des protocoles TCP/IP et ICMP Faiblesses du système d’exploitation Faiblesses de l’équipement réseau Faiblesse de la configuration Comptes utilisateurs non sécurisés Paramètres par défaut non sécurisés Faiblesse de la stratégie de sécurité Absence de cohérence et de continuité Absence de plan de reprise après sinistre </scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140159" type="mc-ma"><question><![CDATA[Quels sont les deux éléments d’information qui peuvent être déterminés en ouvrant la page d’accueil de Cisco SDM d’un routeur ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La table de routage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les voisins CDP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un cliché de la configuration du routeur  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’état de l’interface ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les fonctionnalités prises en charge par le logiciel Cisco IOS  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140170" type="mc-sa"><question><![CDATA[Un technicien doit procéder à un test de verrouillage à une étape de Cisco SDM. Depuis quel emplacement le test doit-il être lancé?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Du mode de diagnostic sur la page Pare-feu ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Du mode de configuration sur la page Audit de sécurité  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Du mode de test sur la page Audit de sécurité ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Du mode de test sur la page Pare-feu ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140165" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140165" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Attaque de reconnaissance</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Attaque de mot de passe</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Redirection de port</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Ver, virus, cheval de Troie</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Attaque DoS</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Piratage de dictionnaire et attaque en force</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Utilisation d’un hôte compromis pour transmettre le trafic au travers d’un pare-feu qui serait autrement abandonné</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Utilisation de balayages ping, d’analyses de ports et d’analyseurs de paquets pour obtenir des informations sur un réseau</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Inondation d’un périphérique réseau par du trafic afin de le rendre inutilisable par le trafic légitime</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Logiciel malveillant conçu pour endommager un système, pour se répliquer ou pour refuser des services ou l’accès à des réseaux, systèmes ou services</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque terme de gauche sur la description correspondante de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /><display componentIdent="5" xpos="200" ypos="395" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /><display componentIdent="5" xpos="600" ypos="343" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216795" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="216795" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="216795" action="Set">1</setvar><scoringdescription>Attaques de reconnaissance Utilisation de balayages ping, d’analyses de ports et d’analyseurs de paquets pour obtenir des informations sur un réseau Attaques de mot de passe Piratage de dictionnaire et attaques en force Redirection de port Utilisation d’un hôte compromis pour transmettre le trafic au travers d’un pare-feu qui serait autrement abandonné Hameçonnage Attaque de type piratage psychologique qui recourt à des courriels pour tenter d’amener des personnes à divulguer des informations confidentielles Attaque DoS Inondation d’un périphérique réseau par du trafic afin de le rendre inutilisable par le trafic légitime Virus, vers et chevaux de Troie Logiciel malveillant conçu pour endommager un système, pour se répliquer ou pour refuser des services ou l’accès à des réseaux, systèmes ou services.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140166" type="mc-sa"><question><![CDATA[Quel principal avantage le protocole HIPS présente-t-il par rapport au protocole HIDS ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le protocole HIPS ne nécessite pas de logiciel client basé sur l’hôte. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole HIPS consomme moins de ressources système. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole HIPS peut empêcher les intrusions.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Avec le protocole HIPS, les fichiers de signature n’ont pas besoin d’être mis à jour aussi souvent. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140167" type="mc-sa"><question><![CDATA[Quel est le composant cœur ou « concentrateur » de la roue Sécurité ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Sécuriser ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Surveiller ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Améliorer ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tester ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Stratégie de sécurité  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140162" type="mc-sa"><question><![CDATA[Dans le cadre d’une stratégie de sécurité réseau, où Cisco recommande-t-il aux administrateurs d’envoyer les événements capturés par syslog ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La mémoire Flash ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La mémoire vive non volatile ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Des hôtes de journalisation désignés  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Des clients TFTP désignés ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Des clients SNMP désignés ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140163" type="mc-sa"><question><![CDATA[Quel est le protocole recommandé lorsque l’administration de routeurs distants nécessite une confidentialité totale et l’intégrité de la session ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[HTTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SNMP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SSH  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Telnet ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[TFTP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140168" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140168" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Stratégie de la demande d’accès au compte</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Stratégie de l’accès à distance</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Stratégie d’évaluation des risques</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Stratégie d’audit</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Stratégie des règles de bon usage</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Définit les normes régissant la connexion au réseau interne depuis l’extérieur de l’organisation.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Spécifie les procédures à suivre pour enquêter sur les incidents, assurer la conformité aux stratégies de sécurité et surveiller l’activité de l’utilisateur et du système.</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Définit les conditions d’utilisation des ressources réseau.</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Formalise le processus de demande d’accès aux systèmes par les utilisateurs.</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque stratégie de gauche sur la description correspondante de droite. Les options ne sont pas toutes utilisées.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /><display componentIdent="5" xpos="200" ypos="395" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216811" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="216811" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="216811" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="140158" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140158" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Utilisation de la commande <b>auto secure</b> pour configurer la sécurité du routeur</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Activation des serveurs HTTP et HTTPS sur le routeur</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Création d’un compte utilisateur avec un niveau de privilèges défini à 15</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Création d’un compte utilisateur avec un niveau de privilèges défini à 0</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Création d’une liste de contrôle d’accès pour autoriser le trafic HTTP dans le routeur et l’appliquer aux lignes de terminal virtuel (vty)</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Configuration de SSH et Telnet pour la session locale et le niveau de privilèges à 15</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Configuration de SSH et Telnet pour la session locale et le niveau de privilèges à 0</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Étapes nécessaires à la configuration de SDM</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>3</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser les trois éléments de gauche requis à la configuration de SDM sur les étapes de droite. Les options ne sont pas toutes utilisées.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-117.5" targetYspacing="19" yspacing="65" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /><display componentIdent="7" xpos="200" ypos="435" /></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="3" startTarg="1" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="152" /><display componentIdent="3" xpos="600" ypos="204" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216582" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="216582" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident><componentident>3</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="216582" action="Set">1</setvar><scoringdescription>*Activation des serveurs HTTP et HTTPS sur le routeur ; *Création d’un compte utilisateur avec un niveau de privilèges défini à 15 ; *Configuration de SSH et Telnet pour la session locale et le niveau de privilèges à 15</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140160" type="mc-ma"><question><![CDATA[Quels sont les trois services qui doivent être désactivés sur un routeur pour éviter les vulnérabilités de sécurité ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Le protocole NTP  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le système de noms de domaine (DNS)  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole SSL (Secure Socket Layer) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole CEF (Cisco Express Forwarding)  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole SNMP (Simple Network Management Protocol)  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Secure Shell (SSH) ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140156" type="mc-sa"><question><![CDATA[Quelle fonctionnalité simple fournit une touche de raccourci de verrouillage de périphérique pour la configuration de la fonctionnalité de sécurité des routeurs ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[SSH ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SDM ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[AutoSecure  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SNMP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140161" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140161" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Protocole de couche application qui fournit une fonctionnalité pour extraire et publier des données à des fins de surveillance et de gestion des périphériques dans un réseau utilisant le port TCP 161.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Protocole conçu pour synchroniser l’heure sur un réseau de machines et fonctionner avec le protocole UDP via le port 123.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Base de données distribuée qui mappe les noms d’hôtes sur des adresses IP à l’aide de services sur un serveur désigné.</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Le protocole NTP </mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Le système de noms de domaine (DNS)</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Le protocole SNMP (Simple Network Management Protocol)</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque description de gauche sur le service de gestion de réseau correspondant de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-117.5" targetYspacing="25" yspacing="85" targetH="57"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="175" /><display componentIdent="3" xpos="200" ypos="275" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="157" /><display componentIdent="3" xpos="600" ypos="239" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="216710" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="216710" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="216710" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140157" type="mc-sa"><question><![CDATA[Quelle fonctionnalité est un outil de gestion de périphériques basé sur le Web pour les routeurs basés sur le logiciel Cisco IOS ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[SSH ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SDM  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[AutoSecure ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SNMP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140169" type="mc-ma"><question><![CDATA[Quels sont les trois assistants SDM disponibles pour configurer un routeur ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Audit de sécurité  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Pare-feu  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[DHCP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Qualité de service (QS)  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Liste d’accès ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

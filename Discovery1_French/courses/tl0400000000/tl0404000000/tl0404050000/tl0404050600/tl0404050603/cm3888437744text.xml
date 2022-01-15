@@ -1,0 +1,88 @@
+﻿<textcomponents>
+
+<!-- -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Déterminez si l’énoncé décrit ou non une meilleure pratique de câblage.<br/><br/><b>Cochez Oui s’il s’agit d’une meilleure pratique, Non dans le cas contraire.</b>]]></text>
+</component>
+
+<!-- -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b> Oui </b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b> Non </b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit--> <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Afin de faire en sorte que personne ne se prenne les pieds dans les câbles, Charles fait courir les câbles sur le faux-plafond, au-dessus des lumières fluorescentes.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Yasmin a étiqueté tous les câbles et a noté leur emplacement à mesure qu’elle les installait.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Damon a décidé de suivre la norme de raccordement de câble T568A pour tous les câbles droits requis sur son réseau.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Samuru a eu besoin de relier un périphérique au réseau. Elle a trouvé dans un tiroir des vieux câbles raccordés à la main. Supposant que les câbles étaient bons, elle en a choisi un et a branché son périphérique.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0--> <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Correct, vous avez identifié les meilleures pratiques de câblage. Cliquez sur Suivant pour continuer.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect. Revoyez les meilleures pratiques de câblage, puis réessayez.]]></text>
+</component>
+
+</textcomponents>

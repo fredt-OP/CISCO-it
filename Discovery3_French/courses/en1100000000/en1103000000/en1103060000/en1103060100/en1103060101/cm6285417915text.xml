@@ -1,0 +1,140 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component> 
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Switches use microsegmentation to create single port collision domains</li><br/><li>Layer 3 switching takes place in special ASIC hardware.</li><br/><li>Switches forward traffic using store and forward or cut-through techniques.</li><br/><li>Basic security features should be applied to switches to ensure that only authorized personnel access the devices.</li></ul>]]></text>
+</component>
+
+    <component id="s1_ID_txt01">
+		<text><![CDATA[Store-and-Forward Switching]]></text>
+	</component>
+    <component id="s1_ID_txt02">
+		<text><![CDATA[Decreasing Number of Errors]]></text>
+	</component>
+    <component id="s1_ID_txt03">
+		<text><![CDATA[Cut-Through Switching]]></text>
+	</component>
+    <component id="s1_ID_txt04">
+		<text><![CDATA[Increasing Number of Errors]]></text>
+	</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[
+<ul><li>Spanning Tree Protocol shuts down redundant links to prevent switching loops.</li><br/><li>A root bridge is at the top of the spanning tree and it is elected based on the lowest bridge ID.</li><br/><li>Spanning tree recalculation can take up to 50 seconds to complete during which time the network has limited functionality.</li><br/><li>Rapid Spanning Tree has evolved to shorten the convergence time.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[Network with loop.]]></text>
+</component>
+
+<component id="s2_ID_txt02">
+<text><![CDATA[One port blocked by STP eliminates loop.]]></text>
+</component>
+
+<component id="s2_ID_but01">
+<text><![CDATA[<b>Without STP</b>]]></text>
+</component>
+
+<component id="s2_ID_but02">
+<text><![CDATA[<b>With STP</b>]]></text>
+</component>
+
+<component id="s2_ID_inst">
+<text><![CDATA[Click Without STP and With STP to view the concept.]]></text>
+</component>
+
+
+
+<component id="ID_txt03">
+<text><![CDATA[
+<ul><li>A VLAN is a collection of hosts that are on the same local area network even though they may be physically separated from each other.</li><br/><li>VLAN 1 is the management VLAN by default.</li><br/><li>Frame tagging applies the VLAN ID to the Ethernet frame so the switch can identify the source VLAN.</li><br/><li>IEEE 802.1Q is the open standard frame tagging protocol that inserts a 4-byte tag into the Ethernet frame.</li></ul>]]></text>
+</component>
+
+
+<component id="s3_ID_txt01">
+<text><![CDATA[Engineering VLAN]]></text>
+</component>
+
+<component id="s3_ID_txt02">
+<text><![CDATA[Marketing VLAN]]></text>
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[Accounting VLAN]]></text>
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[Floor 3]]></text>
+</component>
+
+<component id="s3_ID_txt05">
+<text><![CDATA[Floor 2]]></text>
+</component>
+
+<component id="s3_ID_txt06">
+<text><![CDATA[Floor 1]]></text>
+</component>
+
+<component id="s3_ID_txt07">
+<text><![CDATA[Router]]></text>
+</component>
+
+<component id="s3_ID_txt08">
+<text><![CDATA[Fast Ethernet]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>An access port connects a device to a switch and is a member of one VLAN. </li><br/><li>A trunk port connects two switches or a switch and a router and forwards tagged frames from multiple VLANs.</li><br/><li>Untagged frames are forwarded using the native VLAN.</li><br/><li>A Layer 3 device is required to move traffic between different VLANs.</li><br/><li>A router interface is configured using subinterfaces to support multiple VLANs.</li></ul>]]></text>
+</component>	
+
+<component id="s4_ID_txt01">
+      <text><![CDATA[Router]]></text> 
+  </component>
+
+
+<component id="s4_ID_txt02">
+      <text><![CDATA[fa0/0.1 VLAN 1 Traffic]]></text> 
+ </component>
+  
+<component id="s4_ID_txt03">
+      <text><![CDATA[fa0/0.15 VLAN 15 Traffic]]></text> 
+  </component>
+  
+  
+  <component id="s4_ID_txt04">
+      <text><![CDATA[fa0/0.35 VLAN 35 Traffic]]></text> 
+  </component>
+  
+  <component id="s4_ID_txt05">
+                <text><![CDATA[VLAN 1]]></text> 
+  </component>
+  
+  <component id="s4_ID_txt06">
+                <text><![CDATA[VLAN 15]]></text> 
+  </component>
+  
+  <component id="s4_ID_txt07">
+                <text><![CDATA[VLAN 35]]></text> 
+  </component>
+  
+  <component id="s4_ID_txt08">
+                   <text><![CDATA[fa0/0 Interface]]></text> 
+  </component>
+<component id="s4_ID_txt09">
+      <text><![CDATA[Switch]]></text> 
+  </component> 
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>VLAN Trunking Protocol provides a method for the centralized control, distribution and maintenance of the enterprise VLAN database.</li><br/><li>Switches are either servers, clients or transparent.</li><br/><li>A server issues a VTP update by having a higher revision number than the other switches.</li><br/><li>VLANs are suited for time sensitive traffic such as voice.</li><br/><li>Best practices, such as consistent VTP domain name and revision number control increase network efficiency.</li></ul>]]></text>          
+
+</component>	
+
+
+
+</textcomponents>

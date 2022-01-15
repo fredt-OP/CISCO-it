@@ -1,0 +1,50 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>En-tête de trame liaison de données</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>En-tête de paquet IP</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>En-tête de segment UDP</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Message RIP<br>(504 octets ; jusqu’à 25 routes)</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Trame liaison de données</b><br>Adresse de destination MAC = diffusion : FF-FF-FF-FF-FF-FF<br/>Adresse MAC source = adresse de l’interface émettrice]]></text>
+</component>
+
+
+ 
+<component id="ID_txt06">
+<text><![CDATA[<b>Paquet IP</b><br>Adresse IP source = adresse de l’interface émettrice<br>Adresse IP de destination = diffusion : 255.255.255.255<br>Champ de protocole = 17 pour UDP]]></text>
+</component>
+
+
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Segment UDP</b><br>Port source = 520<br/>Port de destination = 520]]></text>
+</component>
+
+
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Message RIP :</b><br>Commande : demande (1) ; réponse (2)<br>Version = 1<br>ID de famille d’adresses = 2 pour IP<br>Routes :  adresse IP du réseau<br>Métrique : nombre de sauts]]></text>
+</component>
+	    
+
+<component id="ID_title">
+<text><![CDATA[<b>Message RIPv1 encapsulé</b>]]></text>
+</component>
+
+<component id="ID_insta">
+<text><![CDATA[<b>Placez le pointeur sur les champs pour en afficher le contenu.</b>]]></text>
+</component>
+
+
+</textcomponents>

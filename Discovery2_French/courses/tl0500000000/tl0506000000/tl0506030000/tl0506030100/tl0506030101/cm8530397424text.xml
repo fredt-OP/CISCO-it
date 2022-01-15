@@ -1,0 +1,196 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component>
+
+
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Le routage permet de transférer les messages jusqu’à leur destination.</li><br/><li>Le routage peut être dynamique ou statique.   </li><br/><li>Le routage dynamique nécessite l’utilisation de protocoles de routage pour échanger les informations d’acheminement entre routeurs. Le routage dynamique se présente sous plusieurs formes : les protocoles à vecteur de distance et les protocoles à état de liens.</li></ul>]]></text>
+</component>
+
+<component id="s1_ID_txt01">
+      <text><![CDATA[<b>Réseau 10.30.1.0   1</b>]]></text> 
+  </component>
+<component id="s1_ID_txt02">
+      <text><![CDATA[<b>Utiliser le routeur R2 de sortie</b>]]></text> 
+  </component>
+<component id="s1_ID_txt03">
+      <text><![CDATA[<b>Distance (mesure)</b>]]></text> 
+  </component>
+<component id="s1_ID_txt04">
+      <text><![CDATA[<b>Vecteur (direction)</b>]]></text> 
+  </component>
+<component id="s1_ID_txt05">
+      <text><![CDATA[<b>Merci. Maintenant, je sais que le réseau 10.30.1.0 est à un saut de moi, en direction de R2.</b>]]></text> 
+  </component>
+<component id="s1_ID_txt06">
+      <text><![CDATA[<b>Voici une copie de ma table de routage.</b>]]></text> 
+  </component>
+<component id="s1_ID_txt07">
+      <text><![CDATA[<b>Algorithme de vecteur de distance</b>]]></text> 
+  </component>
+<component id="s1_ID_txt08">
+      <text><![CDATA[<b>Réseau 10.30.1.0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt09">
+      <text><![CDATA[<b>10.20.1.0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt10">
+      <text><![CDATA[<b>R1</b>]]></text> 
+  </component>
+<component id="s1_ID_txt11">
+      <text><![CDATA[<b>R2</b>]]></text> 
+  </component>
+<component id="s1_ID_txt12">
+      <text><![CDATA[<b>SO</b>]]></text> 
+  </component>
+<component id="s1_ID_txt13">
+      <text><![CDATA[<b>E0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt14">
+      <text><![CDATA[<b>Réseau</b>]]></text> 
+  </component>
+<component id="s1_ID_txt15">
+      <text><![CDATA[<b>Passerelle</b>]]></text> 
+  </component>
+<component id="s1_ID_txt16">
+      <text><![CDATA[<b>Mesure</b>]]></text> 
+  </component>
+<component id="s1_ID_txt17">
+      <text><![CDATA[<b>10.20.1.0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt18">
+      <text><![CDATA[<b>S0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt19">
+      <text><![CDATA[<b>0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt20">
+      <text><![CDATA[<b>10.30.1.0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt21">
+      <text><![CDATA[<b>E0</b>]]></text> 
+  </component>
+<component id="s1_ID_txt22">
+      <text><![CDATA[<b>0</b>]]></text> 
+  </component>
+
+
+<!--  Slide 2  -->  
+  
+  
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>Les protocoles de routage à vecteur de distance calculent la direction et la distance des transferts vers n’importe quel réseau. Des tables de routage et des mises à jour sont envoyées régulièrement aux routeurs voisins. </li><br/><li>Les protocoles à état de liens mettent à jour les nœuds en y ajoutant des informations sur l’état de la liaison. Ces protocoles de routage réduisent les boucles de routage et le trafic réseau.</li><br/><li>Choisissez le protocole de routage approprié pour une entreprise en fonction de la facilité de gestion et de configuration, et de l’efficacité.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[<b>R1</b>]]></text>
+</component>
+<component id="s2_ID_txt02">
+<text><![CDATA[<b>R2</b>]]></text>
+</component>
+<component id="s2_ID_txt03">
+<text><![CDATA[<b>R3</b>]]></text>
+</component>
+<component id="s2_ID_txt04">
+<text><![CDATA[<b>R4</b>]]></text>
+</component>
+<component id="s2_ID_txt05">
+<text><![CDATA[<b>int/net/org/edu</b>]]></text>
+</component>
+<component id="s2_ID_txt06">
+<text><![CDATA[<b>cisco</b>]]></text>
+</component>
+<component id="s2_ID_txt07">
+<text><![CDATA[<b>nasa</b>]]></text>
+</component>
+<component id="s2_ID_txt08">
+<text><![CDATA[<b>armée</b>]]></text>
+</component>
+<component id="s2_ID_txt09">
+<text><![CDATA[<b>croix rouge</b>]]></text>
+</component>
+
+
+<!--  Slide 3  -->
+
+
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>Internet est divisé en groupes de réseaux appelés systèmes autonomes.</li><br/><li>Dans un système autonome, les protocoles de routage de passerelle interne sont utilisés, tels que les protocoles RIP, EIGRP et OSPF.</li><br/><li>Entre les systèmes autonomes, le routage de passerelle externe est appliqué en fonction des besoins. Les protocoles EGP fonctionnent sur des routeurs ou des passerelles externes, situés aux confins d’un système autonome. Le protocole BGP (Border Gateway Protocol) représente le protocole EGP le plus fréquemment utilisé.</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_title">
+<text><![CDATA[<b>Serveurs DHCP</b>]]></text>
+</component>
+<component id="s3_ID_txt01">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<!--  Slide 4  -->
+
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>Le protocole BGP fonctionne comme un protocole à vecteur de distance. À partir de cette base de données sont calculées la direction et la distance par rapport à un réseau de destination.</li><br/><li>Les protocoles externes autorisent la circulation des données sur Internet vers des destinations distantes.</li><br/><li>Les protocoles externes permettent aux FAI d’établir et de faire respecter des stratégies et des préférences locales pour assurer un trafic optimal. </li></ul>]]></text>
+</component>
+
+  <component id="s4_ID_txt02">
+                  <text><![CDATA[<b>FAI (système autonome 100)</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt03">
+                  <text><![CDATA[<b>SP1</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt04">
+                 <text><![CDATA[<b>S0/0/0:10.10.10.10</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt05">
+                  <text><![CDATA[<b>C1</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt06">
+                  <text><![CDATA[<b>172.19.0.0</b>]]></text> 
+  </component>
+  <component id="s4_ID_txt07">
+                  <text><![CDATA[<b>Entreprise cliente</b>]]></text> 
+  </component>
+
+
+<!--  Slide 5  -->
+
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>Le protocole FTP est utilisé pour les services de transfert de fichiers. Le FAI prend en charge les connexions FTP actives et passives. Les connexions actives impliquent que le serveur démarre la connexion. Les connexions passives impliquent que l’hôte démarre la connexion.</li><br/><li>La messagerie utilise trois protocoles différents, à savoir SMTP, POP3 et IMAP. Le protocole SMTP permet d’envoyer des courriels. Les protocoles POP3 et IMAP permettent de récupérer des courriels. </li></ul>]]></text>
+</component>
+
+  <component id="s5_ID_txt01">
+                  <text><![CDATA[<b>Envoyer vers destinataire@cisco.com</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt02">
+                  <text><![CDATA[<b>Serveur de messagerie du FAI A</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt03">
+                  <text><![CDATA[<b>Serveur de messagerie du FAI B</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt04">
+                  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt05">
+                  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt06">
+                  <text><![CDATA[<b>IMAP ou POP3</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt07">
+                  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt08">
+                  <text><![CDATA[<b>Expéditeur</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt09">
+                  <text><![CDATA[<b>Destinataire</b>]]></text> 
+  </component>
+
+
+</textcomponents>

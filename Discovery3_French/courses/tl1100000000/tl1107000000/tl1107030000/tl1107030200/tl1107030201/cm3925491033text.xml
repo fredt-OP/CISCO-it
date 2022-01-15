@@ -1,0 +1,132 @@
+﻿<textcomponents>
+	
+<component id="ID_txt01">		
+<text><![CDATA[Cliquez sur Lire pour voir comment le protocole de résolution d'adresse inverse mappe un identificateur DLCI de couche 2 à une adresse IP distante.]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Frame Relay]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[S0/0/0 209.165.200.225]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[S0/0/0 209.165.200.226]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[R2]]></text>
+</component>
+	
+<component id="ID_txt07">
+<text><![CDATA[ETTD]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[DCE]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[DLCI 16]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[DLCI 20]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[DLCI 16 est actif. J’envoie une demande ARP inverse pour connaître l’adresse IP du routeur distant.]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[J’ai reçu une demande ARP inverse sur DLCI 20 envoyée par 209.165.200.225.]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[Correspondance Frame Relay<br>DLCI 20 = 209.165.200.225]]></text>
+</component>
+		
+<component id="ID_txt14">
+<text><![CDATA[Réponse ARP inverse de 209.165.200.226.]]></text>
+</component>		
+	
+<component id="ID_txt15">
+<text><![CDATA[Correspondance Frame Relay<br>DLCI 16 = 209.165.200.226]]></text>
+</component>
+<component id="ID_txt17">
+<text><![CDATA[DLCI 16 est actif.]]></text>
+</component>
+
+<component id="play"><text><![CDATA[Lire]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rembobiner]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Avance rapide]]></text>
+
+	</component>
+
+    <component id="mute">
+		<text><![CDATA[Muet]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[Désactiver muet]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Redémarrer]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[Fin]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Texte]]></text>
+	</component>
+	
+	
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>DLCI</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>État</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Adresse IP distante</font></td>
+
+</tr>
+
+<tr>
+<td width= "40%"bgcolor='#E9E9E9'>16</td>
+<td width= "50%"bgcolor='#E9E9E9'>Actif</td>
+<td bgcolor='#E9E9E9'>209.165.200.226</td>
+</tr>
+
+</table>
+
+]]></text>
+</component>
+</textcomponents>

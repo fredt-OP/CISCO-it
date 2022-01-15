@@ -1,0 +1,92 @@
+﻿<textcomponents>
+
+<component id="ID_Button01">
+<text><![CDATA[Terminology]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[Example]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_title01">
+<text><![CDATA[<b>Paying for Frame Relay</b>]]></text>
+</component>
+
+<component id="ID_S1_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>Term</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>Access</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Access Rate or Port Speed</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The capacity of the local loop</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Committed Information Rate (CIR)</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The capacity through the local loop guaranteed by the provider</td>
+	</tr>
+	
+</table>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_title02">
+<text><![CDATA[<b>Frame Relay Charges – Example</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Frame Relay Charges – Example</b>]]></text>
+</component>
+
+<component id="ID_S2_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic' colspan="2"><font color='#ffffff'><b>Three chargeable components</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Local Loop</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>64 kb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Two Ports</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DLCI 102 <br/>DLCI 103</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>CIR</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>48 kb/s</td>
+	</tr>
+</table>]]></text>
+</component>
+CIR for each PVC:
+<component id="ID_S2_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic' colspan="2"><font color='#ffffff'><b>CIR for each PVC</b></font></td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>PVC DLCI</b></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>CIR</b></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DLCI 102</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>32 kb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DLCI 103</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>16 kb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Total CIR</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>48 kb/s</b></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_topology01">
+<text><![CDATA[<b>Frame Relay</b><br/>10.1.1.0/24]]></text>
+</component>
+
+</textcomponents>

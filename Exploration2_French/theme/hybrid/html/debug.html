@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+		function dump() {
+			document.forms[0].dumpblock.value = window.opener.dumpdata;
+		}
+	
+function cleardump() {
+	document.forms[0].dumpblock.value = "";
+	window.opener.cleardump();
+}
+
+	</script>
+	</head>
+	<body>
+		<form id="dumpform">
+		<textarea name="dumpblock" rows="60" cols="130"></textarea><br>
+		<input type="button" name="reset" value="reset" onClick="cleardump();"/>
+		</form>
+		<script>
+			dump();
+		</script>
+	</body>
+</html>

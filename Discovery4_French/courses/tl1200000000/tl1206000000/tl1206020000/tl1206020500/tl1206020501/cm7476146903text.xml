@@ -1,0 +1,1025 @@
+﻿<textcomponents>
+<component id="ID_txt01">      
+<text><![CDATA[Étape 1 : le concepteur crée une feuille de calcul avec des colonnes pour chaque exigence d’adressage réseau. L’utilisation d’une feuille de calcul comme celle-ci peut faciliter la planification de l’attribution d’adresses. La feuille de calcul peut également être utilisée pour enregistrer l’endroit où chaque bloc d’adresses est implémenté dans le réseau.  ]]></text>      
+</component>
+
+<component id="ID_txt02">      
+<text><![CDATA[Étape 2 : divisez l’adresse de classe B en huit réseaux distincts à l’aide d’un masque /19. Ces réseaux sont attribués à chaque bloc de commutateurs de la couche de distribution à affecter aux locaux techniques. Le réseau actuel du stade comporte uniquement quatre blocs de commutateurs de distribution. Ce modèle permet donc une croissance significative. Le dernier bloc, qui comprend le sous-réseau dont l’adresse est uniquement composée de 1, est réservé aux utilisateurs sans fil, afin de permettre l’itinérance.  
+]]></text>      
+</component>
+
+<component id="ID_txt03">      
+<text><![CDATA[Étape 3 : divisez les adresses /19 du bloc de distribution en huit réseaux /22. Selon le potentiel d’extension, un ou deux blocs /22 peuvent être attribués à chaque local.  Pour l’instant, aucun des locaux techniques ou sites de réseau étendu n’a besoin de toutes ces adresses, mais le concepteur veut permettre une extension significative du nombre d’hôtes sans avoir à renuméroter le réseau. L’utilisation de deux blocs /22 au lieu de blocs /21 accroît la flexibilité en matière d’attribution d’adresses.
+]]></text>      
+</component>
+
+<component id="ID_txt04">      
+<text><![CDATA[Étape 4 : divisez les deux blocs /22 en blocs /24 individuels afin de permettre la création de huit réseaux. Même si, pour l’instant, aucun local technique ne nécessite huit réseaux distincts de 254 hôtes, le concepteur fait en sorte qu’une extension et une croissance soient possibles.
+]]></text>      
+</component>
+
+<component id="ID_txt05">      
+<text><![CDATA[Étape 5 : subdivisez le premier bloc de chaque local technique pour permettre une subdivision ultérieure du réseau, afin de prendre en charge des liaisons et caméras point à point par exemple. Étant donné que le sous-réseau zéro peut ne pas être pris en charge sur des périphériques réseau plus anciens, le concepteur choisit de ne pas l’utiliser dans le réseau du stade.
+]]></text>      
+</component>
+
+<component id="ID_inst">      
+<text><![CDATA[Cliquez sur les boutons pour voir le processus d’attribution d’adresses.]]></text>      
+</component>
+
+<component id="ID_4a">
+  <text><![CDATA[<b>Réseau du stade</b>]]></text> 
+  </component>
+<component id="ID_4b">
+  <text><![CDATA[<b>Blocs de distribution</b>]]></text> 
+  </component>
+<component id="ID_4c">
+  <text><![CDATA[<b>Blocs de local technique</b>]]></text> 
+  </component>
+  <component id="ID_4d">
+    <text><![CDATA[<b>Réseaux locaux virtuels individuels</b>]]></text> 
+    </component>
+  <component id="ID_4e">
+    <text><![CDATA[<b>Liaisons point à point</b>]]></text> 
+  </component>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table cellpadding='2'>
+<tr>
+<td bgcolor='#FFFF99'>172.18.0.0/16</td>
+<td bgcolor='#DDDDDD'>             </td>
+<td bgcolor='#DDDDDD'>             </td>
+<td bgcolor='#DDDDDD'>             </td>
+<td bgcolor='#DDDDDD'>             </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'> </td>
+<td bgcolor='#F2F2F2'> </td>
+<td bgcolor='#F2F2F2'> </td>
+<td bgcolor='#F2F2F2'> </td>
+<td bgcolor='#F2F2F2'> </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[
+<table cellpadding='2'>
+<tr>
+<td bgcolor='#FFFF99'>172.18.0.0/16</td>
+<td bgcolor='#FFFF99'>172.18.0.0/19</td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'> </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#FFFF99'>172.18.32.0/19</td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#FFFF99'>172.18.64.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#FFFF99'>172.18.96.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#FFFF99'>172.18.128.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#FFFF99'>172.18.160.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#FFFF99'>172.18.192.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#FF9900'>172.18.224.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_table3">
+<text><![CDATA[
+<table cellpadding='2'>
+<tr>
+<td bgcolor='#FFFF99'>172.18.0.0/16</td>
+<td bgcolor='#FFFF99'>172.18.0.0/19</td>
+<td bgcolor='#FFFF99'>172.18.0.0/22</td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#FFFF99'>172.18.4.0/22</td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.8.0/22</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.12.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.16.0/22</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.20.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.24.0/22</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.28.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.32.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.64.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.96.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.128.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.160.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.192.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.224.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_table4">
+<text><![CDATA[
+<table cellpadding='2'>
+<tr>
+<td bgcolor='#FFFF99'>172.18.0.0/16</td>
+<td bgcolor='#FFFF99'>172.18.0.0/19</td>
+<td bgcolor='#FFFF99'>172.18.0.0/22</td>
+<td bgcolor='#FFFF99'>172.18.0.0/24</td>
+<td bgcolor='#DDDDDD'></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#FFFF99'></td>
+<td bgcolor='#FFFF99'>172.18.1.0/24</td>
+<td bgcolor='#F2F2F2'></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#FFFF99'></td>
+<td bgcolor='#FFFF99'>172.18.2.0/24</td>
+<td bgcolor='#DDDDDD'></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#FFFF99'></td>
+<td bgcolor='#FFFF99'>172.18.3.0/24</td>
+<td bgcolor='#F2F2F2'></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#FFFF99'>              </td>
+<td bgcolor='#FFFF99'>              </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#FFFF99'>172.18.4.0/22</td>
+<td bgcolor='#FFFF99'>172.18.4.0/24</td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#FFFF99'></td>
+<td bgcolor='#FFFF99'>172.18.5.0/24</td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#FFFF99'></td>
+<td bgcolor='#FFFF99'>172.18.6.0/24</td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#FFFF99'>  </td>
+<td bgcolor='#FFFF99'>172.18.7.0/24</td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.8.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.12.0/22</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.16.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.20.0/22 </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.24.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.28.0/22</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>             </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.32.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.64.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.96.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.128.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.160.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.192.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.224.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_table5">
+<text><![CDATA[
+<table cellpadding='2'>
+<tr>
+<td bgcolor='#FFFF99'>172.18.0.0/16</td>
+<td bgcolor='#FFFF99'>172.18.0.0/19</td>
+<td bgcolor='#FFFF99'>172.18.0.0/22</td>
+<td bgcolor='#FFFF99'>172.18.0.0/24</td>
+<td bgcolor='#FF9900'>172.18.0.0/30</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#FFFF99'></td>
+<td bgcolor='#FFFF99'>172.18.0.4/30</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#FFFF99'></td>
+<td bgcolor='#FFFF99'>172.18.0.8/30</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#FFFF99'></td>
+<td bgcolor='#FFFF99'>           jusque     </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>              </td>
+<td bgcolor='#FFFF99'>              </td>
+<td bgcolor='#FFFF99'>172.18.0.252/30</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.1.0/24</td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.2.0/24</td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.3.0/24</td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>             </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.4.0/24</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.5.0/24</td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.6.0/24</td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.7.0/24</td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.4.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.8.0/22</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>             </td>
+<td bgcolor='#F2F2F2'>172.18.12.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.16.0/22</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.20.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>172.18.24.0/22</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'></td>
+<td bgcolor='#F2F2F2'>172.18.28.0/22</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'></td>
+<td bgcolor='#DDDDDD'>               </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.32.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.64.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.96.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.128.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.160.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>172.18.192.0/19</td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+<td bgcolor='#DDDDDD'>  </td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>172.18.224.0/19</td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+<td bgcolor='#F2F2F2'>  </td>
+</tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_but01">
+<text><![CDATA[<b>Étape 1</b>]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[<b>Étape 2</b>]]></text>
+</component>
+
+<component id="ID_but03">
+<text><![CDATA[<b>Étape 3</b>]]></text>
+</component>
+
+<component id="ID_but04">
+<text><![CDATA[<b>Étape 4</b>]]></text>
+</component>
+
+<component id="ID_but05">
+<text><![CDATA[<b>Étape 5</b>]]></text>
+</component>
+
+</textcomponents>

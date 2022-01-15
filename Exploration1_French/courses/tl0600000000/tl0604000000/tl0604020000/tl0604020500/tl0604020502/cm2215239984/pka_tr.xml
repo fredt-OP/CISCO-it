@@ -1,0 +1,99 @@
+﻿<TRANSLATION>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 4.2.5 : &lt;br&gt;établissement et fermeture d'une session TCP&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Le texte entre ces deux groupes de symboles (&lt;!-- et -- &gt;) correspond à des commentaires destinés à l'auteur et ne s'utilise pas. Gardez tous vos commentaires pour des développements ultérieurs et à des fins de contrôle de la qualité. L'utilisateur ne verra pas le contenu HTML à l'intérieur de Packet Tracer.
+
+Pour obtenir des lignes directrices sur le formatage HTML, consultez la section Packet Tracer Standards se rapportant au codage HTML ou le fichier « HTML_Coding_Standards.html » ******************************************************************************** --&gt;
+
+&lt;!-- Les versions futures de PT prendront peut-être en charge le schéma de la topologie ici, dans le fichier .pka --&gt;
+
+&lt;!-- NOTE TO USER standard pour tous les exercices intégrés si l'organisation du cours le prévoit --&gt;
+
+&lt;!-- ================================================== Tableau d'adressage : consultez  « HTML_Coding_Standards.html » pour obtenir des instructions sur la façon de régler ce tableau pour qu'il corresponde à l'exercice que vous créez. ================================================== --&gt;
+
+&lt;!-- ================================================== Liste non ordonnée des objets (puces) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Configuration et exécution de la simulation &lt;li&gt;Étude des résultats &lt;/ul&gt;
+
+&lt;!-- ================================================== Introduction Indiquez le contexte, le scénario ou tout autre matériel d'orientation dans l'introduction Consultez « HTML_Coding_Standards.html » ================================================== --&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;Le protocole TCP est un protocole avec connexion. Avant que des informations, par exemple une page Web, ne puissent être échangées, il faut que des homologues établissent une connexion. Cette connexion est établie par le biais d'une connexion en trois étapes dans laquelle les numéros d'ordre initiaux des deux homologues sont envoyés et font l'objet d'un reçu. Lorsque l'échange est achevé, les homologues échangent des segments TCP pour terminer correctement la session. L'exercice précédent portait sur l'échange même de segments TCP. Cet exercice va s'intéresser à l'établissement d'une connexion avant l'échange et à la fermeture de la session à la fin de l'échange.&lt;br&gt;
+
+&lt;!-- ================================================== Tâches et étapes En ce qui concerne le texte des tâches ou des étapes, consultez « HTML_Coding_Standards.html » pour obtenir des instructions sur la façon de formater les paragraphes, listes, commandes et résultats de commandes. ================================================== --&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche numéro 1 : configuration et exécution de la simulation&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1.  Entrez en mode Simulation &lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Pour vérifier la connexion, cliquez sur le PC dans l'espace de travail logique. Ouvrez le &lt;b&gt;navigateur Web&lt;/b&gt; depuis le &lt;b&gt;bureau&lt;/b&gt;.  Saisissez &lt;b&gt;192.168.1.2&lt;/b&gt; dans le champ de l'URL et cliquez sur le bouton &lt;b&gt;Go&lt;/b&gt;. La page Web devrait s'afficher. Cliquez sur l'onglet &lt;b&gt;Simulation&lt;/b&gt; pour passer en mode Simulation.
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Définissez les filtres de la liste d'événements&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Nous ne voulons capturer que les événements TCP. Dans la section &lt;b&gt;Event List Filters&lt;/b&gt;, cliquez sur le bouton &lt;b&gt;Edit Filters&lt;/b&gt;. Sélectionnez uniquement les événements TCP. Les événements TCP incluent des protocoles d'application basés sur le protocole TCP tels que les protocoles HTTP et Telnet.
+
+&lt;h4&gt; &lt;b&gt;Étape 3.  Demandez une page Web depuis le PC &lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Agrandissez la fenêtre du navigateur à sa taille initiale. Dans le &lt;b&gt;navigateur Web&lt;/b&gt;, cliquez sur le bouton &lt;b&gt;Go&lt;/b&gt; pour demander le renvoi de la page Web. Réduisez la fenêtre du navigateur simulé.
+
+&lt;h4&gt; &lt;b&gt;Étape 4.  Exécution de la simulation&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur le bouton &lt;b&gt;Auto Capture / Play&lt;/b&gt;. L'échange entre le PC et le serveur est représenté par une animation et les événements sont ajoutés sous &lt;b&gt;Event List&lt;/b&gt;. Ces événements représentent l'établissement d'une session TCP, la requête de page Web adressée par le PC, l'envoi de la page Web en deux segments par le serveur, le reçu de la page Web par le PC et la fermeture de la session TCP. Une boîte de dialogue indiquant qu'il n'y a plus d'événement s'affiche. Cliquez sur &lt;b&gt;OK&lt;/b&gt; pour la fermer.&lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Tâche numéro 2 : examen des résultats &lt;/h3&gt; &lt;/b&gt; &lt;h4&gt; &lt;b&gt;Étape 1.  Accédez à des unités de données de protocole spécifiques&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Dans la section &lt;b&gt;Simulation Panel Event List&lt;/b&gt;, la dernière colonne contient une case colorée qui permet d'accéder à des informations détaillées sur un événement. Cliquez sur la case colorée de la dernière colonne pour le premier événement. La fenêtre &lt;b&gt;PDU Information&lt;/b&gt; s'ouvre.
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Examinez le contenu de la fenêtre PDU Information&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Dans cet exercice, nous nous concentrerons uniquement sur les informations d'événements au niveau de la couches 4. Le premier onglet de la fenêtre &lt;b&gt;PDU Information&lt;/b&gt; contient des informations sur les unités de données de protocole entrantes et sortantes car il se rapporte au modèle OSI. Cliquez sur les cases&lt;b&gt;Layer 4:&lt;/b&gt; pour les couches entrantes et sortantes et lisez le contenu de la case ainsi que la description figurant dans une case sous les couches. Faites attention au type du segment TCP. Cliquez sur l'onglet &lt;b&gt;Outbound PDU Details&lt;/b&gt;. Dans le segment TCP, notez le numéro d'ordre initial.&lt;br&gt;&lt;br&gt; Examinez de la même façon les informations sur les unités de données de protocole des quatre premiers événements TCP. Ces événements correspondent à la connexion en trois étapes qui ouvre la session. Remarquez le type du segment TCP et la modification dans le numéro d'ordre.&lt;br&gt;&lt;br&gt; Examinez de même les informations sur les unités de données de protocole des événements TCP qui suivent le principal échange HTTP. Ces événements correspondent à la fermeture de la session. Notez le type du segment TCP et la modification dans le numéro d'ordre.&lt;br&gt;&lt;br&gt;Veuillez noter que si vous utilisez le bouton &lt;b&gt;Reset Simulation&lt;/b&gt; de la fenêtre &lt;b&gt;Event List&lt;/b&gt;, vous devrez revenir dans la fenêtre du navigateur Web et appuyer sur &lt;b&gt;Go&lt;/b&gt; pour effectuer une nouvelle requête.
+
+
+&lt;!-- Tous les exercices se terminent par la note de bas de page suivante --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">PC</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">PC</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

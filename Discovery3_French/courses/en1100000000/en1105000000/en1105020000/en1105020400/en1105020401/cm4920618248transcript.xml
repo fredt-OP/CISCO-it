@@ -1,0 +1,5 @@
+<transcript lastedited="08.11.08 19:08:20">
+<title><content-text><![CDATA[5.2.4 - Problems with RIP ]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts three routers arranged in a triangular topology. At the top of the triangle is router R2 with a switch directly connected, and the network address of 10.1.1.0 /16 assigned. The two serial ports of R2 are in use and are connected by serial link to R1 and R3. The two serial links to R2 show incoming messages from R1 and R3 to R2 as RIP updates. These updates advertise the two directly connected networks that are connected to switches on both R1 and R3. <br><br>The RIP update from R1 says, "172.30.1.0 /24, 1 hop."<br>The RIP update from R3 says, "172.30.100.0 /24, 1 hop." <br>Since this is RIP v2 and automatic summarization is disabled, each router advertises the 24-bit subnet instead of the summarized Class B network 172.30.0.0 /16. <br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

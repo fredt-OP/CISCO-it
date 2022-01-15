@@ -1,0 +1,92 @@
+﻿<TRANSLATION>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 2.6.2 : &lt;br&gt;utilisation de Packet Tracer pour afficher des unités de données de protocole&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+
+
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;h3&gt;Tableau d'adressage&lt;/h3&gt; &lt;p&gt;Ces travaux pratiques ne contiennent pas de tableau d'adressage.&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;capture d'un ping d'une invite de commandes d'un ordinateur ; &lt;li&gt;exécution de la simulation et capture du trafic ; &lt;li&gt;examen du trafic capturé ; &lt;li&gt;capture d'une demande Web à l'aide d'une URL depuis un ordinateur ; &lt;li&gt;exécution de la simulation et capture du trafic ; &lt;li&gt;examen du trafic capturé. &lt;/ul&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;Wireshark permet de capturer et d'afficher l'ensemble du trafic réseau entrant et sortant sur l'ordinateur sur lequel il est installé via une interface réseau. Le mode simulation de Packet Tracer capture l'ensemble du trafic réseau qui traverse la totalité du réseau mais prend en charge un nombre limité de protocoles uniquement. Pour reproduire aussi fidèlement que possible les travaux pratiques 2.6.2, nous allons utiliser un réseau constitué d'un ordinateur directement relié à un serveur Web, capturer un ping envoyé au serveur depuis l'invite de commandes de l'ordinateur et effectuer une demande de page Web à l'aide d'une URL.&lt;/p&gt;
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says 'At the completion of this task, when you check Results, your score should be xxx%' where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT possible in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt; &lt;h4&gt;Au début de cette tâche, votre taux de réalisation devrait être de 100 %.  Les périphériques sont configurés et l'objectif de cet exercice est d'examiner le flux de trafic entre des périphériques. &lt;/h4&gt; Cliquez sur le bouton &lt;b&gt;&gt;&lt;/b&gt; (suivant) pour continuer.&lt;br&gt;&lt;br&gt; 
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt;&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;b&gt;&lt;h3&gt;Tâche 1 : capture d'un ping depuis une invite de commandes d'un ordinateur.&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Exécution de la simulation et capture du trafic.&lt;/b&gt;&lt;/h4&gt; &lt;h4&gt; &lt;span style=&quot;font-weight: 400&quot;&gt;Dans la partie inférieure droite de l'interface de Packet Tracer figure le commutateur mode temps réel/mode simulation. Cliquez sur le mode &lt;b&gt;Simulation&lt;/b&gt;. &lt;br&gt; Cliquez sur l'ordinateur. Choisissez l'onglet&lt;b&gt;Desktop&lt;/b&gt; Ouvrez l'&lt;b&gt;invite de commandes&lt;/b&gt;. Entrez la commande &lt;b&gt;ping 192.168.1.2&lt;/b&gt;, qui est l'adresse IP du serveur. Lorsque vous appuyez sur la touche &lt;b&gt;Entrée&lt;/b&gt;, quatre requêtes d'écho ICMP sont effectuées. Réduisez la fenêtre de configuration de l'ordinateur. Deux paquets apparaissent dans la liste des événements &lt;b&gt;Event List&lt;/b&gt;, la première requête d'écho ICMP et une requête ARP requise pour résoudre l'adresse IP du serveur avec l'adresse MAC de son matériel.&lt;br&gt; Cliquez sur le bouton &lt;b&gt;Auto Capture / Play&lt;/b&gt; pour exécuter la simulation et capturer des événements. Cliquez sur &lt;b&gt;OK&lt;/b&gt; lorsque vous atteignez le message « No More Events ».&lt;/span&gt;&lt;br&gt;
+
+&lt;/h4&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 2. Examen du trafic capturé.&lt;/h4&gt; &lt;/b&gt;Recherchez le premier paquet dans &lt;b&gt;Event List&lt;/b&gt;, puis cliquez sur le carré coloré dans la colonne &lt;b&gt;Info&lt;/b&gt;. Lorsque vous cliquez sur le carré Info d'un paquet dans la liste des événements, la fenêtre &lt;b&gt;PDU Information&lt;/b&gt; s'ouvre. Le modèle OSI organise cette fenêtre.  Dans le cas du premier paquet affiché, notez que la requête d'écho ICMP (à la couche 3) est encapsulée à la couche 2. Si vous cliquez sur chacune de ces couches, l'algorithme utilisé par le périphérique (dans ce cas, l'ordinateur) est affiché. Étudiez ce qui se passe sur chaque couche. &lt;br&gt; Lors de l'ouverture de la fenêtre PDU Information, l'affichage par défaut est &lt;b&gt;OSI Model&lt;/b&gt;.  Cliquez maintenant sur l'onglet &lt;b&gt;Outbound PDU Details&lt;/b&gt;. En faisant défiler l'affichage jusqu'au bas de cette fenêtre, vous constaterez que la requête d'écho ICMP est encapsulée sous forme de données dans un paquet IP. &lt;br&gt; Examinez les informations d'unités de données de protocole concernant les événements restants dans l'échange.&lt;br&gt; Fermez la fenêtre PDU information et réinitialisez la simulation en cliquant sur le bouton &lt;b&gt;Reset Simulation&lt;/b&gt;.
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de réalisation devrait se maintenir à 100 %.&lt;/h4&gt; Cliquez sur le bouton &lt;b&gt;&gt;&lt;/b&gt; (suivant) pour continuer.&lt;br&gt;&lt;br&gt; 
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt;&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PAGE translate="true">&lt;b&gt;&lt;h3&gt;Tâche 2 : capture d'une demande Web à l'aide d'une URL à partir d'un ordinateur.&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Exécution de la simulation et capture du trafic.&lt;/h4&gt; &lt;/b&gt;Cliquez sur l'ordinateur. Fermez la fenêtre d'&lt;b&gt;invite de commandes&lt;/b&gt;. Ouvrez le &lt;b&gt;navigateur Web&lt;/b&gt;. Entrez www.exemple.com dans le navigateur. Lorsque vous cliquez sur &lt;b&gt;Go&lt;/b&gt;, une requête est envoyée au serveur Web. Réduisez la fenêtre de configuration du client Web. Un paquet apparaît dans la &lt;b&gt;liste des événements&lt;/b&gt;, une requête DNS requise pour résoudre l'URL avec l'adresse IP du serveur.&lt;br&gt; Cliquez sur le bouton &lt;b&gt;Auto Capture / Play&lt;/b&gt; pour exécuter la simulation et capturer des événements. Cliquez sur &lt;b&gt;OK&lt;/b&gt; lorsque vous atteignez le message « No More Events ».&lt;br&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 2. Examen du trafic capturé.&lt;/h4&gt; &lt;/b&gt;Examinez les informations d'unités de données de protocole concernant les événements dans cet échange.&lt;br&gt; Comparez Wireshark et Packet Tracer et différenciez-les.
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de réalisation devrait se maintenir à 100 %. 
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt;&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">PC</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

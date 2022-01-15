@@ -1,0 +1,28 @@
+<br/>
+<% var shownext = false; %>
+<% if (getLevel() == "chapter" && main.chapter != main.course.chapters.getLast() ) {  shownext = true; }%>
+<% if (getLevel() == "section" && main.section != main.course.chapters.getLast().sections.getLast() ) {  shownext = true; }%>
+<% if (getLevel() == "topic" && main.topic != main.course.chapters.getLast().sections.getLast().topics.getLast() ) {  shownext = true; }%>
+<% if (getLevel() == "page" && main.page != main.course.chapters.getLast().sections.getLast().topics.getLast().pages.getLast() ) {  shownext = true; }%>
+<% if (shownext == true) { %>
+	<a href="javascript:nextContent()" name="next" id="next"><%= main.theme.getThemeItem('gotonext') %></a>
+	<br/>
+<% } %>
+<% var showprev = false; %>
+<% if (getLevel() == "chapter" && main.chapter != main.course.chapters[0] ) {  showprev = true; }%>
+<% if (getLevel() == "section" && main.section != main.course.chapters[0].sections[0] ) {  showprev = true; }%>
+<% if (getLevel() == "topic" && main.topic != main.course.chapters[0].sections[0].topics[0] ) {  showprev = true; }%>
+<% if (getLevel() == "page" && main.page != main.course.chapters[0].sections[0].topics[0].pages[0] ) {  showprev = true; }%>
+<% if (showprev == true) { %>
+	<a href="javascript:prevContent()" name="previous" id="previous"><%= main.theme.getThemeItem('gotoprev') %></a>
+	<br/>
+<% } %>
+<a href="javascript:scrollToTop();" name="top" id="top"><%= main.theme.getThemeItem('scrolltop') %></a>
+<a href="#" onfocus="$E('a[id=top]').focus();"></a>
+<br>
+<br>
+<hr/>
+<br>
+<small><%= main.theme.getThemeItem("copyright") %> <a href="javascript:openAbout('../<%= main.course.lang %>/abouttext.xml');"><%= main.theme.getThemeItem("about") %></a></small>
+<br>
+

@@ -1,0 +1,107 @@
+﻿<textcomponents>
+
+<component id="tipTitle">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+<component id="tipBody">
+<text><![CDATA[Au lieu de spécifier une plage d’adresses qui coïncident avec le sous-réseau, vous pouvez indiquer l’adresse IP (hôte) de l’interface et utiliser un masque générique 0.0.0.0 dans la commande network. Cela permet de limiter les annonces OSPF à cette interface et à cette adresse spécifiques, car les 32 bits de l’adresse doivent correspondre.
+Exemple : <font face="_typewriter">Router(config-router)#network 10.10.10.1 0.0.0.0 area 0</font>]]></text>
+</component>
+<component id="TipText">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Commande network :</b><br><font face="_typewriter"><b>R2(config-router)#network 172.16.4.0  0.0.0.255 area  0</font></b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Commande network : </b><br><font face="_typewriter"><b>R1(config-router)#network 172.16.1.16 0.0.0.15 area  0</font></b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Commande network :</b> <br><font face="_typewriter"><b>R3(config-router)#network 192.168.10.4  0.0.0.3 area  0</font></b>]]></text>
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table width="400"  cellpadding='2' header='top' headerstyle='black' glow='true' glowcolor='#808080'>
+<tr>
+      <td colspan="2" bgcolor='#F2F2F2'><font color="#ffffff">Exemple 1 :</font></td>
+  </tr>
+    <tr>
+      <td  bgcolor='#F2F2F2'><b>Réseau</b></td>
+      <td  bgcolor='#F2F2F2'><p align="right"></p>172.16.4.0 /24</td>
+    </tr>
+ 
+    <tr>
+      <td bgcolor='#F2F2F2'><b>Masque 255</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>255.255.255.255</td>
+    </tr>
+    <tr>  
+      <td bgcolor='#F2F2F2'><b>Masque de sous-réseau</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>- 255.255.255.0</td>
+     </tr>   
+     <tr>
+      <td bgcolor='#F2F2F2'><b>Masque générique</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>0.0.0.255</td>
+</table>
+
+]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[
+<table width="400"  cellpadding='2' header='top' headerstyle='black' glow='true' glowcolor='#808080'>
+<tr>
+      <td colspan="2" bgcolor='#F2F2F2'><font color="#ffffff">Exemple 2 :</font></td>
+  </tr>
+    <tr>
+      <td  bgcolor='#F2F2F2'><b>Réseau</b></td>
+      <td  bgcolor='#F2F2F2'><p align="right"></p>172.16.1.16 /28</td>
+    </tr>
+       <tr>
+      <td bgcolor='#F2F2F2'><b>Masque 255</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>255.255.255.255</td>
+    </tr>
+    <tr>  
+      <td bgcolor='#F2F2F2'><b>Masque de sous-réseau</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>- 255.255.255.240</td>
+     </tr>   
+     <tr>
+      <td bgcolor='#F2F2F2'><b>Masque générique</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>0.0.0.15</td>
+</table>
+
+]]></text>
+</component>
+
+<component id="ID_table3">
+<text><![CDATA[
+<table width="400"  cellpadding='2' header='top' headerstyle='black' glow='true' glowcolor='#808080'>
+<tr>
+      <td colspan="2" bgcolor='#F2F2F2'><font color="#ffffff">Exemple 3 :</font></td>
+  </tr>
+    <tr>
+      <td  bgcolor='#F2F2F2'><b>Réseau</b></td>
+      <td  bgcolor='#F2F2F2'><p align="right"></p>192.168.10.4  /30</td>
+    </tr>
+       <tr>
+      <td bgcolor='#F2F2F2'><b>Masque 255</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>255.255.255.255</td>
+    </tr>
+    <tr>  
+      <td bgcolor='#F2F2F2'><b>Masque de sous-réseau</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>- 255.255.255.252</td>
+     </tr>   
+     <tr>
+      <td bgcolor='#F2F2F2'><b>Masque générique</b></td>
+      <td bgcolor='#F2F2F2'><p align="right"></p>0.0.0.3</td>
+</table>
+
+]]></text>
+</component>
+
+
+
+
+</textcomponents>
+

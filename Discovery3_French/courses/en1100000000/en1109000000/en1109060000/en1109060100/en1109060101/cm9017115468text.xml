@@ -1,0 +1,222 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component> 
+
+<component id="ID_omitted">
+<text><![CDATA[<b><font face="Courier New Dynamic">(**output omitted**)</font></b>]]></text>
+</component>
+
+<component id="ID_omitted2">
+<text><![CDATA[<b><font face="Courier New Dynamic">(**output omitted**)</font></b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Adherence to the three-layer hierarchical network design model assists in troubleshooting efforts.</li><br/><li>Network monitoring tools include: network utilities, packet sniffing tools and SNMP monitoring tools.</li><br/><li>SNMP enables monitoring the performance of individual devices on the network using agents and a MIB.</li><br/><li>Backups of the configuration files, spare devices, or backup sites enable quick restoration of connectivity.</li><br/><li>The business continuity plan details the security policy and disaster recovery plan.</li><br/><li>When troubleshooting a network, determine the scope of the problem and isolate the issue to a specific failure domain.</li></ul>]]></text>
+</component>
+
+
+<component id="s1_ID_txt01">
+<text><![CDATA[IP Address<br>192.168.1.5]]></text> 
+</component>
+
+
+<component id="s1_ID_txt02">
+<text><![CDATA[HTTP<br>Protocol]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Network<br>172.16.0.0]]></text> 
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Telnet<br>Access]]></text> 
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[OK]]></text> 
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[OK]]></text> 
+</component>
+
+<component id="s1_ID_txt07">
+<text><![CDATA[Internal Network]]></text> 
+</component>
+
+<component id="s1_ID_txt08">
+<text><![CDATA[MAC Address<br>xx:xx:xx:xx:xx:xx]]></text> 
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>The most common problems with switches occur at the Physical Layer.</li><br/><li>Visually checking LEDs and cable connections assist in troubleshooting Physical Layer problems.</li><br/><li>Change the priority value on a switch to force the selection of the root bridge. The route bridge should be centrally located within the network.</li><br/><li>Ensure there are two VTP servers in one domain to provide backup.</li><br/><li>Ensure all devices sharing VLAN information have the same VTP domain name.</li><br/><li>Check the VTP revision information and mode before enabling a switch to join the network.</li></ul>]]></text>
+</component>
+
+
+
+<component id="s2_ID_txt01">
+<text><![CDATA[Destination B]]></text>
+</component>
+
+<component id="s2_ID_txt02">
+<text><![CDATA[Destination B]]></text>
+</component>
+
+<component id="s2_ID_txt03">
+<text><![CDATA[Destination A]]></text>
+</component>
+
+<component id="s2_ID_txt04">
+<text><![CDATA[Destination A]]></text>
+</component>
+
+<component id="s2_ID_txt05">
+<text><![CDATA[Traffic Flowing]]></text>
+</component>
+
+<component id="s2_ID_txt06">
+<text><![CDATA[Traffic Stops Flowing]]></text>
+</component>
+
+<component id="s2_ID_txt07">
+<text><![CDATA[Traffic Still Flowing]]></text>
+</component>
+
+
+
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>Many tools exist for troubleshooting routing issues include IOS show commands, debug commands and TCP/IP utilities.</li><br/><li>Use debug commands to isolate problems, not to monitor normal network operation.</li><br/><li>Problems with RIPv1 include lack of VLSM support and intermixing RIPv1 and RIPv2 devices.</li><br/><li>Common issues with EIGRP include: mismatched AS numbers, incorrect wildcard mask, and auto-summarization issues with discontiguous subnets.</li><br/><li>The majority of OSPF problems relate to the formation of adjacencies and the synchronization of the link-state databases.</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_txt08">
+<text><![CDATA[192.168.1.0 /24]]></text>
+</component>
+
+
+<component id="s3_ID_txt09">
+<text><![CDATA[192.168.2.0 /24]]></text>
+</component>
+
+
+<component id="s3_ID_txt10">
+<text><![CDATA[172.20.1.0 /30]]></text>
+</component>
+
+
+<component id="s3_ID_txt11">
+<text><![CDATA[S0/0/0]]></text>
+</component>
+
+
+<component id="s3_ID_txt12">
+<text><![CDATA[S0/0/0]]></text>
+</component>
+
+
+<component id="s3_ID_txt13">
+<text><![CDATA[Fa0/0]]></text>
+</component>
+
+
+<component id="s3_ID_txt14">
+<text><![CDATA[R1]]></text>
+</component>
+
+
+
+<component id="s3_ID_txt15">
+<text><![CDATA[R2]]></text>
+</component>
+
+<component id="s3_ID_txt16">
+<text><![CDATA[Fa0/0]]></text>
+</component>
+
+ 
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>The most common physical layer WAN problems are not specifying a clock rate on the link or using the wrong type of cable.</li><br/><li>SLARP assigns an IP address to the end point of a serial link if the other end is already configured.</li><br/><li>Ensure that the encapsulation is the same on both sides of the serial link.</li><br/><li>If an IP address is used both ends of the link must be on the same network or subnet.</li><br/><li>When troubleshooting PPP connectivity verify that the LCP has been opened, authentication and NCP completed.</li><br/><li>For enhanced security, use mutual authentication. On both ends of the link, verify that a user account exists for the remote device and that the password is correct.</li><br/><li>By default, the username used during the authentication process is the name of the remote router. Both the username and the password are case sensitive.</li></ul>]]></text>
+</component>
+
+<component id="s4_ID_txt01">              
+<text><![CDATA[R1]]></text>   
+</component>
+
+<component id="s4_ID_txt02">              
+<text><![CDATA[R2]]></text>   
+</component>
+
+<component id="s4_ID_txt03">              
+<text><![CDATA[DCE]]></text>   
+</component>
+
+<component id="s4_ID_txt04">              
+<text><![CDATA[DTE]]></text>   
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>ACLs can create complications in troubleshooting network issues.</li><br/><li>Always verify basic network connectivity before applying an ACL.</li><br/><li>Enable logging to determine the effect that ACLs have on traffic.</li><br/><li>ACL needs to be applied to the correct router and interface and in the correct direction.</li><br/><li>Standard ACLs filter only on one source IP address so they are normally placed as close to the destination as possible.</li><br/><li>An Extended ACL filters on source and destination as well as protocols and port numbers.</li><br/><li>Placing an extended ACL close to a source can deny traffic before it passes though the router and before it traverses the WAN link.</li><br/><li>An ACL placed on the wrong interface or in the wrong direction can block traffic that should not be blocked or permit traffic that should not be permitted.</li></ul>]]></text>          
+</component>
+
+
+<component id="s5_ID_txt01">    
+<text><![CDATA[192.168.1.3]]></text> 
+ </component>
+
+ 
+<component id="s5_ID_txt02">    
+<text><![CDATA[192.168.1.0/24]]></text> 
+ </component>
+
+<component id="s5_ID_txt03">    
+<text><![CDATA[192.168.1.2]]></text> 
+ </component>
+
+<component id="s5_ID_txt04">    
+<text><![CDATA[Fa0/0]]></text> 
+ </component>
+
+<component id="s5_ID_txt05">    
+<text><![CDATA[ACL 123-inbound]]></text> 
+ </component>
+
+<component id="s5_ID_txt06">    
+<text><![CDATA[172.20.0.1/30]]></text> 
+ </component>
+
+<component id="s5_ID_txt07">    
+<text><![CDATA[S0/0/0]]></text> 
+ </component>
+
+<component id="s5_ID_txt08">    
+<text><![CDATA[S0/0/0]]></text> 
+ </component>
+
+<component id="s5_ID_txt09">    
+<text><![CDATA[Fa0/0]]></text> 
+ </component>
+
+<component id="s5_ID_txt10">    
+<text><![CDATA[192.168.2.0/24]]></text> 
+ </component>
+
+<component id="s5_ID_txt11">    
+<text><![CDATA[192.168.2.2]]></text> 
+ </component>
+
+<component id="s5_ID_txt12">    
+<text><![CDATA[R1]]></text> 
+ </component>
+
+<component id="s5_ID_txt13">    
+<text><![CDATA[R2]]></text> 
+ </component>
+
+
+
+</textcomponents>

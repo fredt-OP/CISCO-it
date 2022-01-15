@@ -1,0 +1,12 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Link-State Routing Process </b>]]></text>
+</component>
+<component id="TableTitle">
+<text><![CDATA[<b>Link-State Routing Process</b>]]></text>
+</component> 
+<component id="myTable">
+<text><![CDATA[1.<TEXTFORMAT BLOCKINDENT='15'> Each router learns about each of its own directly connected networks.</textformat><br>2.<TEXTFORMAT BLOCKINDENT='15'> Each router is responsible for "saying hello" to its neighbors on directly connected networks.</textformat><br>3.<TEXTFORMAT BLOCKINDENT='15'> Each router builds a Link State Packet (LSP) containing the state of each directly connected link.</textformat><br>4.<TEXTFORMAT BLOCKINDENT='15'> Each router floods the LSP to all neighbors who then store all LSPs received in a database.</textformat><br>5.<TEXTFORMAT BLOCKINDENT='15'> Each router uses the database to construct a complete map of the topology and computes the best path to each destination network.</textformat>]]></text> 
+</component>
+</textcomponents>
+

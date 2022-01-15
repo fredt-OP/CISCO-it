@@ -1,0 +1,158 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Protocol Identifier]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Version]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Message Type]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Flags]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Root ID]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Root Path Cost]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Bridge ID]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Port ID]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Message Age]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Max Age]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[Hello Time]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[Forward Delay]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[BPDU Structure]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[Roll over the BPDU fields for more information.]]></text>
+</component>
+
+
+<component id="ID_txtTitle1">
+<text><![CDATA[<b>Protocol Identifier</b>]]></text>
+</component>
+
+<component id="ID_txtBody1">
+<text><![CDATA[<li>Always 0</li>]]></text>
+</component>
+
+<component id="ID_txtTitle2">
+<text><![CDATA[<b>Version</b>]]></text>
+</component>
+
+<component id="ID_txtBody2">
+<text><![CDATA[<li>Always 0</li>]]></text>
+</component>
+
+<component id="ID_txtTitle3">
+<text><![CDATA[<b>Message Type</b>]]></text>
+</component>
+
+<component id="ID_txtBody3">
+<text><![CDATA[<li>Specifies the type of BPDU (Configuration or Topology Change Notification) the frame contains</li>]]></text>
+</component>
+
+<component id="ID_txtTitle4">
+<text><![CDATA[<b>Flags</b>]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[<li>Used to handle changes in active topology</li>]]></text>
+</component>
+
+<component id="ID_txtTitle5">
+<text><![CDATA[<b>Root ID</b>]]></text>
+</component>
+
+<component id="ID_txtBody5">
+<text><![CDATA[<li>Contains the Bridge ID of the Root Bridge.</li><li>Contains  the same value after convergence as all BPDUs in the bridged network</li>]]></text>
+</component>
+
+
+<component id="ID_txtTitle6">
+<text><![CDATA[<b>Root Path Cost</b>]]></text>
+</component>
+
+<component id="ID_txtBody6">
+<text><![CDATA[<li>The cumulative cost of all links leading to the Root Bridge</li>]]></text>
+</component>
+
+<component id="ID_txtTitle7">
+<text><![CDATA[<b>Bridge ID</b>]]></text>
+</component>
+
+<component id="ID_txtBody7">
+<text><![CDATA[<li>The BID of the bridge that created the current BPDU</li>]]></text>
+</component>
+
+<component id="ID_txtTitle8">
+<text><![CDATA[<b>Port ID</b>]]></text>
+</component>
+
+<component id="ID_txtBody8">
+<text><![CDATA[<li>Contains a unique value for every port</li><li>Contains the value 0x8001 in Port 1/1, whereas Port 1/2 contains 0x8002, etc.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle9">
+<text><![CDATA[<b>Message Age</b>]]></text>
+</component>
+
+<component id="ID_txtBody9">
+<text><![CDATA[<li>Records the time since the Root Bridge originally generated the information from which  the current BPDU is derived</li>]]></text>
+</component>
+
+<component id="ID_txtTitle10">
+<text><![CDATA[<b>Max Age</b>]]></text>
+</component>
+
+<component id="ID_txtBody10">
+<text><![CDATA[<li>Maximum time that a BPDU is saved</li><li>Influences the bridge table aging timer during the Topology Change Notification process</li>]]></text>
+</component>
+
+<component id="ID_txtTitle11">
+<text><![CDATA[<b>Hello Time</b>]]></text>
+</component>
+
+<component id="ID_txtBody11">
+<text><![CDATA[<li>Time between periodic Configuration BPDUs</li>]]></text>
+</component>
+
+<component id="ID_txtTitle12">
+<text><![CDATA[<b>Forward Delay</b>]]></text>
+</component>
+
+<component id="ID_txtBody12">
+<text><![CDATA[<li>The time spent in the Listening and Learning states</li><li>Influences timers during the Topology Change Notification process</li>]]></text>
+</component>
+
+
+
+</textcomponents>

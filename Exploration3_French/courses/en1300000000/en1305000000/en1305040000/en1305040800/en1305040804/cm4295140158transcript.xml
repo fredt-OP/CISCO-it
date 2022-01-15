@@ -1,0 +1,5 @@
+<transcript lastedited="11.05.08 19:11:12">
+<title><content-text><![CDATA[5.4.8  - Designing an STP for Trouble Avoidance]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the final points of this section. <br><br>Keep STP even if it is unnecessary.<br>Do not disable STP.<br>STP is not very processor-intensive.<br>The few BPDU's sent on each link do not reduce bandwidth.<br>A bridge network without STP can go down in a fraction of a second.<br><br>Keep traffic off the administrative V LAN.<br>A high rate of broadcast or multicast traffic on the administrative V LAN adversely affects the ability of a CPU to process vital BPDU's.<br><br>Do not have a single V LAN span the entire network.<br>V LAN 1 serves as an administrative V LAN, where all switches are accessible in the same IP subnet.<br>A bridging loop on V LAN 1 affects all trunks and can bring down the network.<br>Segment the bridging domains using high-speed Layer 3 switches.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

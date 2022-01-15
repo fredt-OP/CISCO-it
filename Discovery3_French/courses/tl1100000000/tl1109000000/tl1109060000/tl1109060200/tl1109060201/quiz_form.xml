@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13404" dateexported="04/27/2008">
+		<name>Module 9 Questionnaire</name>
+		<form id="21039" lang="fr"><form-item order="fixed">
+			<ai id="134452" type="mc-sa"><question><![CDATA[Quelles sont les annonces de routes que R3 reçoit de R2 ? ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[10.0.0.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.10.4.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[10.0.0.0/8  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.0.0.0/8 et 10.10.4.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.0.0.0/8, 10.0.0.0/24 et 10.10.4.0/24 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134692" type="mc-sa"><question><![CDATA[Si l’hôte 10.10.3.75 envoie une requête <b>ping</b> à l’hôte 10.10.4.63, quel est le résultat ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Les paquets sont abandonnés.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Certains paquets sont abandonnés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les paquets arrivent à destination et les applications réseau communiquent. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les paquets arrivent à destination, mais les applications réseau ne communiquent pas. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134693" type="mc-sa"><question><![CDATA[Que doit faire un administrateur sur R3 pour s’assurer que des paquets de mise à jour sont envoyés avec des informations de masque de sous-réseau ? ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Ajouter la commande suivante :<br />R2(config-router)#  <b>no version 2</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ajouter la commande suivante : <br />R3(config-router)# <b>version 2</b><br /> R3(config-router)# <b>no auto-summary</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Modifier l’instruction de réseau sur R3 :<br />R3(config)# <b>network 10.10.4.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ajouter la commande suivante : <br />R3(config)# <b>ip route 0.0.0.0 0.0.0.0 s0/0</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134694" type="mc-ma"><question><![CDATA[Configuration des routeurs R1 et R3 à l’aide des commandes:<br /><br /><b>version 2</b><br /><b>no auto-summary</b><br /><br />Quelles sont les deux bonnes réponses ?   (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Une commande <b>ping</b> permet d’obtenir des résultats entre l’hôte 10.10.3.75 et l’hôte 10.10.4.63. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur R2 peut envoyer et recevoir des paquets de mise à jour RIPv1 et RIPv2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur R2 peut recevoir des paquets de mise à jour RIPv1 et RIPv2.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Une commande <b>ping</b> ne permet pas d’obtenir des résultats entre l’hôte 10.10.3.75 et l’hôte 10.10.4.63.  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

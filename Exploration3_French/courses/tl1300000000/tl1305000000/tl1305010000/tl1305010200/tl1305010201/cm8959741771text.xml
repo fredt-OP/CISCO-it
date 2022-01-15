@@ -1,0 +1,140 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Boucles de couche 2</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Cliquez sur Lire pour lancer l’animation.</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b><font size="12">Agrégation2</font></b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b><font size="12">Agrégation3</font></b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b><font size="12">Agrégation1</font></b>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[PC1 envoie une diffusion au commutateur S2. Le commutateur S2 met à jour sa table d’adresses MAC en y consignant l’adresse MAC de PC1 sur le port F0/11.]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Le commutateur S2 achemine la diffusion vers le commutateur S3 sur Agrégation2 et vers le commutateur S1 sur Agrégation1. Les commutateurs S3 et S1 mettent à jour leur table d’adresses MAC en consignant l’adresse MAC de PC1 sur leur port agrégé.]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[Le commutateur S3 achemine la diffusion vers le commutateur S1. Le commutateur S1 achemine la diffusion vers le commutateur S3. Les deux commutateurs mettent à jour leur table d’adresses MAC en consignant le nouveau port sur lequel ils ont reçu la diffusion. ]]></text> 
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[Les commutateurs S3 et S1 réacheminent la diffusion vers le commutateur S2. Le commutateur S2 met à jour l’entrée pour PC1 dans sa table d’adresses MAC en consignant le dernier port sur lequel il a reçu la trame de diffusion. ]]></text> 
+  </component>
+  <component id="ID_txt10">
+  <text><![CDATA[Le commutateur S2 achemine la trame de diffusion sur Agrégation1 et Agrégation2 vers les commutateurs S3 et S1. Les commutateurs S3 et S1 mettent à jour leur table d’adresses MAC en consignant la nouvelle entrée pour PC1.]]></text>
+  </component>
+  <component id="ID_txt11a">
+  <text><![CDATA[<u>Table d’adresses MAC de S3</u>]]></text>
+  </component>
+  <component id="ID_txt12a">
+  <text><![CDATA[<u>Table d’adresses MAC de S1</u>]]></text>
+  </component>
+  <component id="ID_txt13a">
+  <text><![CDATA[<u>Table d’adresses MAC de S2</u>]]></text>
+  </component>
+  <component id="ID_txt11">
+  <text><![CDATA[<u>Table d’adresses MAC de S3</u>]]></text>
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[<u>Table d’adresses MAC de S1</u>]]></text>
+  </component>
+  <component id="ID_txt13">
+  <text><![CDATA[<u>Table d’adresses MAC de S2</u><br /><font color="#0000FF">PC1 = F0/11</font>]]></text>
+  </component>
+  <component id="ID_txt14">
+  <text><![CDATA[<u>Table d’adresses MAC de S3</u><br /><font color="#0000FF">PC1 = F0/2</font>]]></text>
+  </component>
+  <component id="ID_txt15">
+  <text><![CDATA[<u>Table d’adresses MAC de S1</u><br /><font color="#0000FF">PC1 = F0/1</font>]]></text>
+  </component>
+  <component id="ID_txt16">
+  <text><![CDATA[<u>Table d’adresses MAC de S2</u><br />PC1 = F0/11]]></text>
+  </component>
+  <component id="ID_txt17">
+  <text><![CDATA[<u>Table d’adresses MAC de S3</u><br /><font color="#0000FF">PC1 = F0/1</font>]]></text>
+  </component>
+  <component id="ID_txt18">
+  <text><![CDATA[<u>Table d’adresses MAC de S1</u><br /><font color="#0000FF">PC1 = F0/2</font>]]></text>
+  </component>
+  <component id="ID_txt19">
+  <text><![CDATA[<u>Table d’adresses MAC de S2</u><br />PC1 = F0/11]]></text>
+  </component>
+  <component id="ID_txt20">
+  <text><![CDATA[<u>Table d’adresses MAC de S3</u><br />PC1 = F0/1]]></text>
+  </component>
+  <component id="ID_txt21">
+  <text><![CDATA[<u>Table d’adresses MAC de S1</u><br />PC1 = F0/2]]></text>
+  </component>
+  <component id="ID_txt22">
+  <text><![CDATA[<u>Table d’adresses MAC de S2</u><br /><font color="#FF6600">PC1 = F0/1</font>]]></text>
+  </component>
+  <component id="ID_txt23">
+  <text><![CDATA[<u>Table d’adresses MAC de S3</u><br /><font color="#FF6600">PC1 = F0/2</font>]]></text>
+  </component>
+  <component id="ID_txt24">
+  <text><![CDATA[<u>Table d’adresses MAC de S1</u><br /><font color="#FF6600">PC1 = F0/1</font>]]></text>
+  </component>
+  <component id="ID_txt25">
+  <text><![CDATA[<u>Table d’adresses MAC de S2</u><br />PC1 = F0/1]]></text>
+  </component>
+  
+  
+  <component id="play"><text><![CDATA[Lire]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rembobiner]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Avance rapide]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Muet]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[Désactiver Muet]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Redémarrer]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[Fin]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Texte]]></text>
+	</component>
+
+	<component id="ID_cont">
+		<text><![CDATA[Cliquez sur Lire pour continuer.]]></text>
+	</component>
+
+
+
+</textcomponents>

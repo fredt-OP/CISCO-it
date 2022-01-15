@@ -1,0 +1,30 @@
+// Timing Functions
+
+StartTime = null; // this variable is set when the start button is pressed
+		  // so that the user is not penalized for the loading time of flash
+
+// timer_timeCompute()
+// IN : none
+// DO : calculates the minutes and seconds elapsed since the user began the simulation
+// OUT: print it out into a text field
+
+function timer_timeCompute()
+{
+	var CurrentTime = (getTimer()-StartTime)/1000; // gets the current time in milliseconds, subtracts the starttime, 
+						       // and converts it into seconds.
+
+	var Minute = Math.floor(CurrentTime/60); // get # of minutes in current time
+	var Second = Math.floor(((CurrentTime/60) - Minute) * 60); // get # of seconds in current time
+
+	if ((Minute.toString()).length == 1) {
+		// adding a zero to # of minutes if it is less than 10 for correct display
+		Minute = "0" + Minute;
+	}
+	
+	if ((Second.toString()).length == 1) {
+		// adding a zero to # of seconds if it is less than 10 for correct display
+		Second = "0" + Second;
+	}
+
+	Menu.Clock.TIME = Minute + ":" + Second; // display time elapsed		
+}

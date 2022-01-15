@@ -1,0 +1,114 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><li>OSPF est un protocole de routage à état de liens interne sans classe utilisé dans les réseaux d’entreprise.</li><br/><li>OSPF offre extensibilité, résumé de routage et détection des problèmes de routage.</li><br/><li>OSPF utilise la bande passante pour générer la mesure de coût.</li><br/><li>Les routeurs OSPF d’une zone annoncent des informations concernant l’état de liens à leurs voisins à l’aide de LSA.</li><br/><li>Les routeurs OSPF se servent de leur ID de routeur pour sélectionner un routeur désigné (DR) et un routeur désigné de sauvegarde (BDR) sur les réseaux à accès multiple.</li><br/><li>La conception d’un système autonome OSPF démarre avec la zone de réseau fédérateur ou zone 0. Les autres zones créées sont toutes contiguës à la zone 0. </li><br/><li>Un routeur périphérique connecte une zone à la zone de réseau fédérateur.</li><br/><li>Un routeur ASBR connecte l’ensemble du système autonome OSPF à un autre système autonome.</ul></font>]]></text>
+</component>
+
+
+<component id="s1_ID_txt01">    
+<text><![CDATA[Protocole EIGRP]]></text> 
+</component>
+
+
+<component id="s1_ID_txt02">     
+<text><![CDATA[Zone 0]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Zone 1]]></text> 
+</component>
+ 
+<component id="s1_ID_txt04">          
+<text><![CDATA[Zone 51]]></text> 
+</component>
+   
+<component id="s1_ID_txt05">             
+<text><![CDATA[Routeur ASBR]]></text>  
+</component>
+
+<component id="s1_ID_txt06">             
+<text><![CDATA[Routeur périphérique]]></text>  
+</component>
+
+<component id="s1_ID_txt07">             
+<text><![CDATA[Routeur périphérique]]></text>  
+</component>
+
+
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><li>La commande <b>network</b> du protocole OSPF utilise une combinaison d’adresse réseau et de masque générique. Elle indique l’adresse ou la plage d’adresses de l’interface activée pour le protocole OSPF.</li><br/><li>Afin de garantir la sécurité des mises à jour OSPF, configurez l’authentification entre routeurs. La méthode d’authentification la plus sécurisée est MD5.</li><br/><li>Un administrateur réseau peut définir quels routeurs deviennent routeur désigné et routeur désigné de sauvegarde en paramétrant la priorité ou l’ID de routeur sur les routeurs. </li><br/><li>Les commandes <b>bandwidth interface</b> et <b>ip ospf cost interface</b> garantissent qu’OSPF utilise un coût réel pour déterminer la meilleure route.</li><br/><li>Plusieurs commandes show vérifient le fonctionnement du protocole OSPF, dont <b>show ip protocols, show ip ospf</b>, ou <b>show ip ospf interface</b>, <b>show ip route</b> et <b>show ip ospf neighbor</b>.</li></ul><br></font>]]></text>
+</component>
+
+
+
+<component id="s2_ID_text01">
+		<text><![CDATA[R1]]></text>
+	</component>
+<component id="s2_ID_text02">
+		<text><![CDATA[R2]]></text>
+	</component>
+<component id="s2_ID_text03">
+		<text><![CDATA[R3]]></text>
+	</component>
+
+<component id="s2_ID_text04">
+		<text><![CDATA[Paquets OSPF<br/>chiffrés]]></text>
+	</component>
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><li>Un administrateur configure une route par défaut sur un routeur ASBR, puis configure ce dernier pour qu’il annonce la route par défaut au reste du réseau OSPF.</li><br/><li>Le résumé de routage inter-zone est configuré sur les routeurs périphériques et s’applique aux routes du système autonome. Les résumés du routage entre systèmes autonomes sont configurés sur le routeur ASBR.</li><br/><li>Le protocole OSPF exige davantage de mémoire routeur et de ressources processeur, ce qui implique des routeurs plus puissants et plus onéreux.</li><br/><li>La redistribution de route permet d’importer des routes d’un protocole de routage ou des routes statiques dans un autre protocole de routage.</li><br/><li>La distance administrative et la correspondance de préfixe la plus longue déterminent la route privilégiée vers un réseau.</li></ul><br></font>]]></text>
+</component>
+
+
+<component id="s3_ID_txt01">    
+<text><![CDATA[FAI]]></text>  
+</component>
+
+<component id="s3_ID_txt03">     
+<text><![CDATA[Je dispose d’une route par défaut vers le FAI. Je vais l’envoyer aux autres routeurs au sein du système autonome.]]></text>
+</component>
+ 
+<component id="s3_ID_txt04">
+<text><![CDATA[Routeur<br>ASBR]]></text> 
+</component> 
+
+<component id="s3_ID_txt05">           
+<text><![CDATA[Système autonome de l’entreprise]]></text>  
+</component>  
+ 
+<component id="s3_ID_txt06">              
+<text><![CDATA[R2]]></text>  
+</component>
+
+<component id="s3_ID_txt07">              
+<text><![CDATA[R5]]></text>  
+</component>
+
+<component id="s3_ID_txt08">              
+<text><![CDATA[R3]]></text>  
+</component>
+
+<component id="s3_ID_txt09">              
+<text><![CDATA[R4]]></text>  
+</component>
+
+<component id="s3_ID_txt10">              
+<text><![CDATA[R6]]></text>  
+</component>
+
+<component id="s3_ID_txt11">              
+<text><![CDATA[R1]]></text>  
+</component>
+
+<component id="s3_ID_txt12">              
+<text><![CDATA[FAI]]></text>  
+</component>
+
+</textcomponents>

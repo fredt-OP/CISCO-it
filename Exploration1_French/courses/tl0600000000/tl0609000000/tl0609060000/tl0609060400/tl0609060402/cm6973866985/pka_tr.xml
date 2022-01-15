@@ -1,0 +1,170 @@
+﻿<TRANSLATION>
+ <NAME translate="true" >Switch</NAME>
+ <NAME translate="true" >Hub</NAME>
+ <NAME translate="true" >A</NAME>
+ <NAME translate="true" >B</NAME>
+ <NAME translate="true" >C</NAME>
+ <NAME translate="true" >D</NAME>
+ <NAME translate="true" >E</NAME>
+ <NAME translate="true" >F</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >Switch</NAME>
+ <NAME translate="true" >Hub</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >A</NAME>
+ <NAME translate="true" >B</NAME>
+ <NAME translate="true" >C</NAME>
+ <NAME translate="true" >D</NAME>
+ <NAME translate="true" >E</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >F</NAME>
+ <NAME translate="true" >Root</NAME>
+ <NAME translate="true" >Switch</NAME>
+ <NAME translate="true" >Hub</NAME>
+ <NAME translate="true" >A</NAME>
+ <NAME translate="true" >B</NAME>
+ <NAME translate="true" >C</NAME>
+ <NAME translate="true" >D</NAME>
+ <NAME translate="true" >E</NAME>
+ <NAME translate="true" >F</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >Switch</NAME>
+ <NAME translate="true" >Hub</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >A</NAME>
+ <NAME translate="true" >B</NAME>
+ <NAME translate="true" >C</NAME>
+ <NAME translate="true" >D</NAME>
+ <NAME translate="true" >E</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >F</NAME>
+ <NAME translate="true" >Root</NAME>
+ <NAME translate="true" >Switch</NAME>
+ <NAME translate="true" >Hub</NAME>
+ <NAME translate="true" >A</NAME>
+ <NAME translate="true" >B</NAME>
+ <NAME translate="true" >C</NAME>
+ <NAME translate="true" >D</NAME>
+ <NAME translate="true" >E</NAME>
+ <NAME translate="true" >F</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >Switch</NAME>
+ <NAME translate="true" >Hub</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >A</NAME>
+ <NAME translate="true" >B</NAME>
+ <NAME translate="true" >C</NAME>
+ <NAME translate="true" >D</NAME>
+ <NAME translate="true" >E</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >F</NAME>
+ <NAME translate="true" >Root</NAME>
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <PAGE translate="true" >
+&lt;h2&gt;Exercice 9.6.4 : &lt;br&gt;fonctionnement du commutateur&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Le texte situé entre ces deux séries de symboles (&lt;!-- et -- &gt;) représente des commentaires pour l'auteur ; ces derniers ne sont pas visibles. Conservez tous les commentaires pour les développements ultérieurs et le contrôle qualité. L'utilisateur ne voit pas le texte HTML dans Packet Tracer.
+
+Pour consulter les instructions de base en matière de formatage HTML, reportez-vous à la section relative aux normes Packet Tracer ou au fichier &quot;HTML_Coding_Standards.html&quot; ******************************************************************************** --&gt;
+
+&lt;!-- Les versions ultérieures de PT sont susceptibles de prendre en charge le graphique Schéma de topologie dans le fichier .pka --&gt;
+
+&lt;!-- REMARQUE STANDARD À L&apos;ATTENTION DE L'UTILISATEUR pour tous les exercices intégrés si le cours prévoit ce qui suit --&gt;
+
+&lt;!-- ================================================== Table d'adressage Reportez-vous au fichier &quot;HTML_Coding_Standards.html&quot; pour savoir comment ajuster cette table afin de l'inclure à l'exercice que vous rédigez. ================================================== --&gt; &lt;!--Il s'agit de la fin du code de la table d'adressage IP&quot; --&gt;
+
+
+&lt;!-- ================================================== Liste non triée d'objectifs (liste à puces) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Observer comment un commutateur traite une diffusion &lt;li&gt;Observer comment un commutateur traite une monodiffusion connue &lt;li&gt;Observer comment un commutateur traite une monodiffusion inconnue &lt;/ul&gt; &lt;!-- ==================================================  Présentation Fournir les données de base, les scénarios ou tout autre document de référence dans l'introduction Reportez-vous au fichier &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+Un commutateur fonctionne au niveau de la couche 2 et enregistre l'adresse physique des périphériques connectés à chaque port. Il stocke ces informations dans une table. Les commutateurs enregistrent les adresses des trames reçues. Si le commutateur reçoit une trame destinée à un périphérique dont l'adresse physique ne figure pas dans sa table, il l'envoie vers le port sur lequel le périphérique est activé. Il s'agit d'une monodiffusion connue. Si le commutateur reçoit une diffusion, il inonde la trame vers tous les ports, à l'exception du port d'entrée. En outre, si le commutateur reçoit une trame destinée à un périphérique dont l'adresse MAC ne figure pas dans sa table (on parle de monodiffusion inconnue), il inonde également la trame vers tous les ports, à l'exception du port d'entrée. Lorsqu'un commutateur inonde la trame vers tous les ports, à l'exception du port d'entrée, son comportement ressemble à celui d'un concentrateur. L'unité de données de protocole traitée par un commutateur est en fait une trame. Cependant, dans le cadre de cet exercice, les paquets ping et ARP sont encapsulés dans les trames et peuvent donc être considérés comme des paquets. &lt;br&gt;&lt;br&gt;
+
+&lt;!-- ================================================== Tâches et étapes Pour tout texte associé à une tâche ou à une étape, reportez-vous au fichier &quot;HTML_Coding_Standards.html&quot; pour savoir comment formater les paragraphes, les listes, les commandes et la sortie de commande. ================================================== --&gt; &lt;br&gt; &lt;h3&gt;Tâche 1 : observer comment un commutateur traite une diffusion et une monodiffusion connue&lt;/h3&gt; 
+
+&lt;h4&gt;&lt;b&gt;Étape 1. Exécuter le protocole Spanning Tree.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Exécutez le protocole Spanning Tree en basculant du mode Realtime au mode Simulation 4 fois. Tous les voyants de liaison doivent être verts. Laissez PT en mode de simulation.
+
+&lt;h4&gt;&lt;b&gt;Étape 2. Ouvrez les tables ARP et MAC.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Lorsque vous utilisez &lt;b&gt;Inspect Tool&lt;/b&gt; (loupe), ouvrez les tableaux ARP pour PC A et PC B, ainsi que la table MAC pour le commutateur. Le tableau ARP du commutateur ne nous intéresse pas pour le moment. Il est associé à l'interface de gestion de commutateurs, sujet traité ultérieurement dans le chapitre 11. Déplacez la flèche de sélection sur le commutateur pour consulter un résumé des ports de commutateur et des adresses MAC d'interface correspondantes. Veuillez noter qu'il ne s'agit pas de la table des adresses enregistrées par le commutateur. Disposez les fenêtres au-dessus de la topologie.
+
+&lt;h4&gt;&lt;b&gt;Étape 3. Ajoutez une seule unité de données de protocole pour envoyer une requête ping au PC B depuis PC A.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Utilisez &lt;b&gt;Add Simple PDU&lt;/b&gt; (enveloppe fermée) pour envoyer une seule requête ping au PC B depuis PC A. Cliquez sur PC A (l'ordinateur source), puis sur PC B (l'ordinateur de destination). Deux événements s'affichent dans &lt;b&gt;Event List&lt;/b&gt; : une requête d'écho ICMP et une requête ARP pour identifier l'adresse MAC de PC B. Cliquez sur les zones en couleurs dans la colonne &lt;b&gt;Info&lt;/b&gt; pour analyser ces événements.
+
+&lt;h4&gt; &lt;b&gt;Étape 4. Procédez par étapes lors de la simulation.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur le bouton &lt;b&gt;Capture / Forward &lt;/b&gt; pour effectuer le suivi de la séquence résultante des paquets. Sachant que le tableau ARP du PC A ne comprend aucune saisie pour PC B, il doit d'abord émettre une requête ARP pour exécuter la requête ping. Le commutateur enregistre l'adresse MAC du PC A et le port auquel il est connecté grâce à la requête ARP. Il enregistre l'adresse MAC du PC B et le port auquel il est connecté grâce à la réponse ARP. Le commutateur inonde les requêtes ARP vers tous les ports, car celles-ci sont toujours des diffusions. Après réception de la réponse ARP par PC A, la requête ping peut être exécutée. La requête ping est une monodiffusion que le commutateur reconnaît. Une fois que vous avez exécuté le suivi des paquets, cliquez sur le bouton &lt;b&gt;Reset Simulation&lt;/b&gt;. &lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Tâche 2 : observer comment un commutateur traite les monodiffusions inconnues &lt;/h3&gt; &lt;/b&gt;&lt;br&gt;
+
+&lt;h4&gt;&lt;b&gt;Étape 1. Effacez la table d'adresses MAC du commutateur.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur le commutateur. Cliquez sur l'onglet &lt;b&gt;CLI&lt;/b&gt;.  À l'invite de commande, appuyez plusieurs fois sur la touche &lt;b&gt;Entrée&lt;/b&gt; pour que l'invite &lt;b&gt;Switch&gt;&lt;/b&gt; s'affiche.  Tapez &lt;b&gt;enable&lt;/b&gt; et appuyez sur la touche &lt;b&gt;Entrée&lt;/b&gt;. L'invite est remplacée par &lt;b&gt;Switch#&lt;/b&gt;.  Saisissez la commande &lt;b&gt;clear mac-address-table dynamic&lt;/b&gt; et appuyez sur la touche &lt;b&gt;Entrée&lt;/b&gt;.  Notez que la table MAC du commutateur affichée précédemment est de nouveau vide. Ceci dit, les tables ARP du PC sont encore remplies. Fermez la fenêtre de configuration du commutateur. 
+
+&lt;h4&gt;&lt;b&gt;Étape 2. Envoyez le paquet une nouvelle fois.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Vous devriez être encore en mode de simulation. L'unité de données de protocole créée par l'utilisateur (requête ping du PC B depuis PC A, telle que vous l'avez créée dans la Tâche 1) figure encore dans &lt;b&gt;Event List&lt;/b&gt;. Cliquez sur le bouton &lt;b&gt;Capture / Forward &lt;/b&gt; pour effectuer le suivi de la séquence résultante des paquets. Dans la mesure où les tables ARP sont remplies, aucune diffusion de requête ARP n'est obligatoire. Une fois que le paquet de la requête d'écho accède au commutateur avec sa table d'adresses MAC vide, on parle de monodiffusion inconnue.  Dans ce cas et comme pour la diffusion, le commutateur inonde le paquet vers tous les ports, à l'exception du port de réception. Lorsque vous avez terminé, supprimez le Scénario 0 en cliquant sur le bouton &lt;b&gt;Delete&lt;/b&gt;. &lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Tâche 3 : observer le comportement du commutateur dans d'autres situations. &lt;/h3&gt; &lt;/b&gt;&lt;br&gt;
+
+&lt;h4&gt;&lt;b&gt;Étape 1. Envoyez une requête ping via un concentrateur.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Essayez d'envoyer une requête ping à PC F depuis PC E en cliquant sur le bouton &lt;b&gt;Add Simple PDU&lt;/b&gt;. Effectuez le suivi des paquets pour comprendre ce qui se passe. Sachez que le commutateur apprend que deux adresses MAC existent par le biais de l'un de ses ports. En effet, le concentrateur transfère tous les paquets au commutateur.
+
+&lt;h4&gt;&lt;b&gt;Étape 2. Procédez à des tests.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Effectuez d'autres tests pour apprendre quel algorithme utilise le commutateur pour traiter les trames.&lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Hub</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,C</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,D</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,E</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,F</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Hub</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,C</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,D</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,E</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,F</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Hub</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,C</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,D</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,E</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,F</PHYSICAL>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true" >Switch</ID>
+ <ID translate="true" >Hub</ID>
+ <ID translate="true" >A</ID>
+ <ID translate="true" >B</ID>
+ <ID translate="true" >C</ID>
+ <ID translate="true" >D</ID>
+ <ID translate="true" >E</ID>
+ <ID translate="true" >F</ID>
+ <ID translate="true" >Switch</ID>
+ <ID translate="true" >Hub</ID>
+ <ID translate="true" >A</ID>
+ <ID translate="true" >B</ID>
+ <ID translate="true" >C</ID>
+ <ID translate="true" >D</ID>
+ <ID translate="true" >E</ID>
+ <ID translate="true" >F</ID>
+ <ID translate="true" >Scenario 0</ID>
+</TRANSLATION>

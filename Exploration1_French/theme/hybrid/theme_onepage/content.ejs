@@ -1,0 +1,126 @@
+<% clearTranscripts() %>
+
+<% var thislevel = "chapter" %>
+<% var indexarray = main.course.chapters %>
+<% var indexitem = main.chapter %>
+<% var sectionloop = main.chapter.sections %>
+<% var topicloop = null %>
+<% var pageloop = null %>
+
+<!-- EMBEDDED TEMPLATE LOGIC START -->
+<%
+var itemArray = new Array();
+
+function addSection(i) {
+	itemArray.push("<h3>"+i.getLI()+" "+i.title+"</h3>");
+}
+	
+function addTopic(i) {
+	itemArray.push("<b><i>"+i.getLI()+" "+i.title+"</i></b>");
+}
+
+function addPage(i) {
+	itemArray.push("<b>"+main.theme.getThemeItem("indexpage")+" "+i.num+":</b><br/>");
+	if (main.chapter.sections[j].topics[k].pages[l].type != "FullScreen") {
+		itemArray.push(i.contenttext);
+	}
+	var mediaref = "../../"+main.chapter.sections[j].topics[k].pages[l].media.file
+	var externalref = "../../"+main.chapter.sections[j].topics[k].pages[l].media.external
+	var mediatyperef = main.chapter.sections[j].topics[k].pages[l].media.majortype
+	var oid = main.chapter.sections[j].topics[k].pages[l].media.oid
+	var mediaplayer = "../../swf/mediaplayer.swf"
+	var mediawidth = 1014
+	var mediaheight = 464
+	if (mediaref.indexOf('.flv') > -1) {
+		mediaplayer = "../../swf/flvplayer.swf"
+		mediawidth = 500
+		mediaheight = 300
+	}
+	if (mediaref.indexOf('.swf') > -1) {
+		texttranscript = mediaref.substring(0, mediaref.indexOf('.swf'))
+		texttranscript = texttranscript+"transcript.xml"
+	} else if (mediaref.substr(mediaref.length-1,mediaref.length) == "/") {
+		texttranscript = mediaref.substring(0, mediaref.length-1)
+		texttranscript = texttranscript+"transcript.xml"
+	} else if (mediaref.indexOf('.flv') > -1) {
+		texttranscript = mediaref.substring(0, mediaref.indexOf('.flv'))
+		texttranscript = texttranscript+"transcript.xml"
+	}
+	itemArray.push({mediaref:mediaref, externalref:externalref, mediatyperef:mediatyperef, oid:oid, mediaplayer:mediaplayer, mediawidth:mediawidth, mediaheight:mediaheight, texttranscript:texttranscript});
+}
+%>
+
+<%
+	
+
+if (thislevel == "chapter") {
+	for (var j=0; j<main.chapter.sections.length; j++) { if (main.chapter.type != "CourseTour") { addSection(main.chapter.sections[j]) } }
+		for (var k=0; k<main.chapter.sections[j].topics.length; k++) { if (main.chapter.type != "CourseTour") { addTopic(main.chapter.sections[j].topics[k]) } }
+			for (var l=0; l<main.chapter.sections[j].topics[k].pages.length; l++) { addPage(main.chapter.sections[j].topics[k].pages[l]) }
+		}
+	}
+}
+
+
+
+%>
+<!-- EMBEDDED TEMPLATE LOGIC END -->
+
+<!-- START TOP LINKS -->
+<a href="javascript:main.toggle();" alt="<%= main.theme.getThemeItem("togglelanguage") %>">Toggle Language To <%= main.theme.getThemeItem("togglelanguage") %></a> | <a href="javascript:search();" alt="<%= main.theme.getThemeItem('searchtitle') %>"><%= main.theme.getThemeItem('searchtitle') %></a> | <a href="javascript:glossary();" alt="<%= main.theme.getThemeItem('glossarytitle') %>"><%= main.theme.getThemeItem('glossarytitle') %></a>
+<hr/>
+<!-- END TOP LINKS -->
+<!-- START COURSE INDEX DROP DOWN -->
+<form name="indexform" id="indexform">
+<b><label for="indexselect"><%= main.theme.getThemeItem("indextitle") %></label>:</b><br/>
+<select name="indexselect" id ="indexselect">
+<% for (var a=0; a<indexarray.length; a++) { %>
+	<% if (indexarray[a] == indexitem) { var iscurrent = "selected" } else { var iscurrent = "" } %>
+	<% if (a == 0) { %>
+		<option name="<%= indexarray[a].title %>" value="<%= indexarray[a].num %>.0.1.1" <%= iscurrent %>><%= indexarray[a].title %></option>
+	<% } else { %>
+		<option name="<%= indexarray[a].title %>" value="<%= indexarray[a].num %>.0.1.1" <%= iscurrent %>><%= indexarray[a].num %>. <%= indexarray[a].title %></option>
+	<% } %>
+<% } %>
+</select>
+<input type="button" name="select" value="Select" onClick="indexNavigation();"/>
+</form>
+<hr>
+<!-- END COURSE INDEX DROP DOWN -->
+<!-- START MAIN CONTENT AREA -->
+
+<!-- DISPLAY TOP LEVEL TITLES -->
+<h1><%= main.course.title %> - <%= main.course.subtitle %></h1>
+<% if (main.chapter.type != "CourseTour") { %>
+	<h2><%= main.chapter.num %> <%= main.chapter.title %></h2>
+	<% if (thislevel == "section" || thislevel == "topic" || thislevel == "page") { %>
+		<h3><%= main.section.getLI() %> <%= main.section.title %></h3>
+	<% } %>
+	<% if (thislevel == "topic" || thislevel == "page") { %>
+		<b><i><%= main.topic.getLI() %> <%= main.topic.title %></i></b><br/><br/>
+	<% } %>
+	<% if (thislevel == "page") { %>
+		<b><%= main.theme.getThemeItem("indexpage") %> <%= main.page.num %>:</b><br/>
+	<% } %>
+<% } %>
+<!-- LOOP THROUGH CONTENT -->
+<% for (var i=0; i<itemArray.length; i++) { %>
+	<%= itemArray[i] %>
+<% } %>
+<hr/>
+<!-- END MAIN CONTENT AREA -->
+<!-- START BOOTM NAV LINKS -->
+<br/>
+<% if (main.chapter != main.course.chapters[main.course.chapters.length-1] ) { %>
+<a href="javascript:nextContent()" name="next" id="next">Go To Next</a>
+<br/>
+<% } %>
+<% if (main.chapter != main.course.chapters[0] ) { %>
+<a href="javascript:prevContent()" name="previous" id="previous">Go To Previous</a>
+<br/>
+<% } %>
+<a href="javascript:scroll(0,0)" name="top" id="top">Scroll To Top</a>
+<br>
+<hr/>
+<!-- END BOOTM NAV LINKS -->
+

@@ -1,0 +1,5 @@
+<transcript lastedited="03.27.09 10:03:47">
+<title><content-text><![CDATA[11.2.2 - Limiting Device Access - Configuring Passwords and Using Banners]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts limiting device access by configuring a telnet password and password encryption. <br><br>Virtual Terminal Password:<br>Router(config)#line v t y 0 4<br>Router(config-line)#password cisco<br>Router(config-line)#login<br><br>Enable Password:<br>Router(config)#enable password san fran<br><br>Enable Secret Password:<br>Router(config)#enable secret cisco<br>Note: The enable secret password is a strongly encrypted password.]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

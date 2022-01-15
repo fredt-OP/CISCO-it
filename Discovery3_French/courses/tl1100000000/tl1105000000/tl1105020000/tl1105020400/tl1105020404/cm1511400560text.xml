@@ -1,0 +1,420 @@
+﻿<textcomponents>
+
+	<component id="Update">
+	<text><![CDATA[Mise à jour]]></text>
+	</component>
+
+	<component id="button1">
+	<text><![CDATA[Découpage d’horizon]]></text>
+	</component>
+
+	<component id="button2">
+	<text><![CDATA[Minuteur de mise hors service]]></text>
+	</component>
+
+	<component id="ID_txt03">
+	<text><![CDATA[192.168.1.0]]></text>
+	</component>
+
+	<component id="ID_txt04">
+	<text><![CDATA[R1]]></text>
+	</component>
+
+	<component id="ID_txt05">
+	<text><![CDATA[S0/0]]></text>
+	</component>
+
+	<component id="ID_txt06">
+	<text><![CDATA[192.168.3.0]]></text>
+	</component>
+
+	<component id="ID_txt07">
+	<text><![CDATA[S0/1]]></text>
+	</component>
+
+	<component id="ID_txt08">
+	<text><![CDATA[R2]]></text>
+	</component>
+
+	<component id="ID_txt09">
+	<text><![CDATA[192.168.2.0]]></text>
+	</component>
+
+	<component id="ID_txt10">
+	<text><![CDATA[20]]></text>
+	</component>
+
+	<component id="ID_txt11">
+	<text><![CDATA[15]]></text>
+	</component>
+
+	<component id="ID_txt12">
+	<text><![CDATA[10]]></text>
+	</component>
+
+	<component id="ID_txt13">
+	<text><![CDATA[25]]></text>
+	</component>
+
+	<component id="ID_txt14">
+	<text><![CDATA[FD = 20 et 30 < 40]]></text>
+	</component>
+	
+	<component id="ID_txt15">
+	<text><![CDATA[R1]]></text>
+	</component>
+	
+	<component id="ID_txt16">
+	<text><![CDATA[R2]]></text>
+	</component>
+
+
+	<component id="ID_txt20">
+	<text><![CDATA[0]]></text>
+	</component>
+	
+	<component id="ID_txt21">
+	<text><![CDATA[135]]></text>
+	</component>
+	
+	<component id="ID_txt22">
+	<text><![CDATA[90]]></text>
+	</component>
+	
+	<component id="ID_txt23">
+	<text><![CDATA[45]]></text>
+	</component>
+
+	
+	<component id="ID_txt27">
+	<text><![CDATA[La mise à jour de R2 n’a pas lieu car le minuteur de mise hors service n’a pas expiré.]]></text>
+	</component>
+
+	
+	<component id="ID_txt31">
+	<text><![CDATA[192.168.2.0 est en panne.]]></text>
+	</component>
+	
+	<component id="ID_txt32">
+	<text><![CDATA[Cliquez sur Boucle de routage ou Comptage à l’infini pour afficher les problèmes de convergence réseau.]]></text>
+	</component>
+
+	
+	<component id="ID_txt34">
+	<text><![CDATA[Mise à jour : 192.168.1.0,<br>et 192.168.3.0]]></text>
+	</component>
+	
+	
+	<component id="ID_txt40">
+	<text><![CDATA[La mise à jour des réseaux<br>192.168.1.0 et<br>192.168.3.0 vient d’être reçue.<br>Envoyer uniquement la mise à jour<br>du réseau 192.168.2.0]]></text>
+	</component>
+	
+
+	<component id="ID_txt42">
+	<text><![CDATA[Mise à jour]]></text>
+	</component>
+	
+		<component id="ID_txt43">
+	<text><![CDATA[Cliquez sur Découpage d’horizon ou Minuteur de mise hors service pour afficher les problèmes de convergence réseau. ]]></text>
+	</component>
+	
+	
+	
+	
+	<component id="ID_table1">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'><b>Réseau</b></td>
+	<td bgcolor='#E9E9E9'><b>Interface</b></td>
+	<td bgcolor='#E9E9E9'><b>Saut</b></td>
+	</tr>
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.1.0</td>
+	<td bgcolor='#E9E9E9'>Fa0/0</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.3.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+
+	</table>
+	]]></text>
+	</component>
+	
+	
+	<component id="ID_table3">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'><b>Réseau</b></td>
+	<td bgcolor='#E9E9E9'><b>Interface</b></td>
+	<td bgcolor='#E9E9E9'><b>Saut</b></td>
+	</tr>
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.2.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.3.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#E9E9E9'>          </td>
+	<td bgcolor='#E9E9E9'>     </td>
+	<td bgcolor='#E9E9E9'>  </td>
+	</tr>
+
+	</table>
+	]]></text>
+	</component>
+
+	<component id="ID_table4">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'><b>Réseau</b></td>
+	<td bgcolor='#E9E9E9'><b>Interface</b></td>
+	<td bgcolor='#E9E9E9'><b>Saut</b></td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.2.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.3.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+		
+	<tr>
+	<td bgcolor='#FF9900'>192.168.1.0</td>
+	<td bgcolor='#FF9900'>S0/1</td>
+	<td bgcolor='#FF9900'>1</td>
+	</tr>
+	
+	</table>
+	]]></text>
+	</component>
+
+	<component id="ID_table5">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'><b>Réseau</b></td>
+	<td bgcolor='#E9E9E9'><b>Interface</b></td>
+	<td bgcolor='#E9E9E9'><b>Saut</b></td>
+	</tr>
+	<tr>
+	<td bgcolor='#FF9900'>192.168.2.0 </td>
+	<td bgcolor='#FF9900'>S0/1</td>
+	<td bgcolor='#FF9900'>0</td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.3.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.1.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>1</td>
+	</tr>
+
+	</table>
+	]]></text>
+	</component>
+
+	<component id="ID_table2">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'><b>Réseau</b></td>
+	<td bgcolor='#E9E9E9'><b>Interface</b></td>
+	<td bgcolor='#E9E9E9'><b>Saut</b></td>
+	</tr>
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.1.0 est en panne.</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.2.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.3.0</td>
+	<td bgcolor='#E9E9E9'>Fa0/0</td>
+	<td bgcolor='#E9E9E9'>1</td>
+	</tr>
+
+	</table>
+	]]></text>
+	</component>
+	
+	<component id="ID_table6">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'><b>Réseau</b></td>
+	<td bgcolor='#E9E9E9'><b>Interface</b></td>
+	<td bgcolor='#E9E9E9'><b>Saut</b></td>
+	</tr>
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.1.0 est en panne.</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.2.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#FF9900'>              </td>
+	<td bgcolor='#FF9900'>       </td>
+	<td bgcolor='#FF9900'> </td>
+	</tr>
+	
+	</table>
+	]]></text>
+	</component>
+	
+	<component id="ID_table7">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'><b>Réseau</b></td>
+	<td bgcolor='#E9E9E9'><b>Interface</b></td>
+	<td bgcolor='#E9E9E9'><b>Saut</b></td>
+	</tr>
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.2.0 <font color="#003399">est en panne.</font></td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>1</td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.3.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.1.0</td>
+	<td bgcolor='#E9E9E9'>Fa0/0</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+	
+	</table>
+	]]></text>
+	</component>
+	
+	<component id="ID_table8">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'><b>Réseau</b></td>
+	<td bgcolor='#E9E9E9'><b>Interface</b></td>
+	<td bgcolor='#E9E9E9'><b>Saut</b></td>
+	</tr>
+	<tr>
+	<td bgcolor='#E9E9E9'>               </td>
+	<td bgcolor='#E9E9E9'>        </td>
+	<td bgcolor='#E9E9E9'>   </td>
+	
+	</tr>
+	
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.3.0</td>
+	<td bgcolor='#E9E9E9'>S0/1</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+	
+	<tr>
+	<td bgcolor='#E9E9E9'>192.168.1.0</td>
+	<td bgcolor='#E9E9E9'>Fa0/0</td>
+	<td bgcolor='#E9E9E9'>0</td>
+	</tr>
+	
+	</table>
+	]]></text>
+	</component>
+	<component id="play">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rembobiner]]></text>
+</component>
+<component id="forward">
+<text><![CDATA[Avance rapide]]></text>
+</component>
+<component id="mute">
+<text><![CDATA[Muet]]></text>
+</component>
+<component id="unmute">
+<text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous">
+<text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Texte]]></text>
+</component>
+
+<component id="play1">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause1">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind1">
+<text><![CDATA[Rembobiner]]></text>
+</component>
+<component id="forward1">
+<text><![CDATA[Avance rapide]]></text>
+</component>
+<component id="mute1">
+<text><![CDATA[Muet]]></text>
+</component>
+<component id="unmute1">
+<text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous1">
+<text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next1">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript1">
+<text><![CDATA[Texte]]></text>
+</component>
+	
+	
+	
+	
+</textcomponents>
+

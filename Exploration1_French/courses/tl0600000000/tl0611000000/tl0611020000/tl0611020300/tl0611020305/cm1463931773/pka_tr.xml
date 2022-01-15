@@ -1,0 +1,106 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 11.2.3 : &lt;br&gt;utilisation de Packet Tracer pour vous entraîner à gérer les configurations IOS &lt;/h2&gt;
+
+&lt;h3&gt;Table d'adressage :&lt;/h3&gt; &lt;!--Ceci est le début du code de la table d'adressage IP&quot; --&gt;
+
+&lt;p&gt;Ces travaux pratiques n'utilisent pas de table d'adressage.&lt;!--Ceci est la fin du code de la table d'adressage IP&quot; --&gt;&lt;!-- ================================================== Liste des objectifs non classés (puces) ================================================== --&gt;&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Sauvegarde et restauration d'une configuration de routeur &lt;li&gt;Sauvegarde de la configuration dans un fichier texte &lt;li&gt;Rétablissement de la configuration par défaut du routeur&lt;li&gt;Restauration de la configuration du routeur à partir d'un fichier texte &lt;/ul&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Dans cet exercice, nous allons sauvegarder la configuration d'un routeur dans un fichier texte, puis effacer la configuration et la restaurer à partir du fichier texte.&lt;/p&gt;
+
+&lt;h3&gt;Tâche 1 :
+
+&lt;b&gt;sauvegarde et restauration de la configuration d'un routeur&lt;/b&gt;&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Sauvegarde de la configuration dans un fichier texte &lt;/h4&gt; &lt;p&gt;Cliquez sur le routeur R2-Central. Ouvrez une session sur le routeur en cliquant sur l'onglet &lt;b&gt;CLI&lt;/b&gt; puis en entrant le mot de passe &lt;b&gt;cisco&lt;/b&gt;. Entrez en mode d'exécution privilégié avec le mot de passe &lt;b&gt;class&lt;/b&gt;. Entrez la commande &lt;b&gt;show running-config&lt;/b&gt; pour afficher la configuration en cours. Faites défiler les informations vers le haut jusqu'au début de la configuration et, à l'aide de la souris, sélectionnez le texte à partir du mot « version » jusqu'à la ligne suivant le mot « end ». Cliquez sur le bouton &lt;b&gt;Copy&lt;/b&gt; (copier) dans la fenêtre de l'environnement ILC pour placer la configuration dans le Presse-papiers. Ouvrez un éditeur de texte tel que le Bloc-notes Windows et collez la configuration dans la fenêtre de cet éditeur. Enregistrez le fichier en lui attribuant un nom évocateur.
+
+&lt;/p&gt;
+
+&lt;h4&gt;Étape 2. Rétablissement de la configuration par défaut du routeur&lt;/h4&gt; &lt;p&gt;Entrez la commande &lt;b&gt;erase startup-config&lt;/b&gt; et confirmez l'effacement. Entrez la commande &lt;b&gt;reload&lt;/b&gt; et confirmez le rechargement. Quand un message vous pose la question, entrez &lt;b&gt;no&lt;/b&gt; pour sauter le dialogue de configuration, puis ouvrez une session sur le routeur et entrez en mode de configuration globale.
+
+&lt;/p&gt; &lt;h4&gt;Étape 3. Restauration de la configuration du routeur à partir d&apos;un fichier texte&lt;/h4&gt; Accédez au fichier texte que vous avez créé à l'étape 1 et copiez son contenu dans le Presse-papiers. Ensuite, passez au mode de configuration globale et cliquez sur le bouton &lt;b&gt;Paste&lt;/b&gt; (coller) dans la fenêtre de l'environnement ILC pour y entrer la configuration comme si vous l'aviez tapée. Vérifiez la configuration en entrant la commande &lt;b&gt;show running-config&lt;/b&gt;. &lt;p&gt; &lt;b&gt;REMARQUE : lorsque vous recollez une configuration dans un routeur, les interfaces du routeur sont désactivées par défaut.&lt;/b&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 100 %. &lt;/h4&gt;
+
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

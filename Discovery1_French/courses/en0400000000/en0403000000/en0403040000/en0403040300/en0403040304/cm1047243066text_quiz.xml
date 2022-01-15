@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="12511" dateexported="03/07/2007">
+		<name></name>
+		<form id="18985" lang="en"><form-item order="N/A" usage="N/A">
+			<ai id="111407"  type="mc-sa">
+			<question><![CDATA[What occurs if Host9 and Host12 send a message across Switch2 at the same time?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[The two frames will collide and the switch will forward a garbled massage to all hosts on the network.]]></text>
+<feedback><![CDATA[A switch will send messages directly to connected hosts based on MAC address. The switch will also allow multiple conversations to occur simultaneously and will maintain seperate paths, therefore a collision will not occur.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[The two frames will collide and the switch will forward a garbled message to the source and intended destination hosts only.]]></text>
+<feedback><![CDATA[A switch will send messages directly to connected hosts based on MAC address. The switch will also allow multiple conversations to occur simultaneously and will maintain seperate paths, therefore a collision will not occur.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[The two frames will be forwarded to the correct destination device without a collision occurring.]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[Two hosts cannot send information across the switch at the same time because the hosts must wait for a &quot;request for data&quot; frame from the switch.]]></text><feedback><![CDATA[A switch will send messages directly to connected hosts based on MAC address. The switch will also allow multiple conversations to occur simultaneously and will maintain seperate paths, therefore a collision will not occur.]]></feedback>
+									</choice></choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111408" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[If Host9 sends a message to Host6, and the destination MAC address is in the MAC table for both switch1 and switch2, which host devices will receive the message?]]></question><choices>
+									<choice correct="y">
+										<text><![CDATA[only Host6]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts connected to Switch1]]></text>
+ <feedback><![CDATA[A switch will decode a frame and read the destination MAC address. It will forward the frame directly to the port associated with the destination MAC address.]]></feedback>
+ 
+									</choice>
+									<choice correct="n">
+		<text><![CDATA[all hosts connected to Hub1 and hosts connected to Switch1]]></text><feedback><![CDATA[A switch will decode a frame and read the destination MAC address. It will forward the frame directly to the port associated with the destination MAC address.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts on the network]]></text> <feedback><![CDATA[A switch will decode a frame and read the destination MAC address. It will forward the frame directly to the port associated with the destination MAC address.]]></feedback>
+									</choice></choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111409" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[In this network, how many collision domains exist?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[There is 1 collision domain.]]></text><feedback><![CDATA[Each port on a switch makes up a seperate collision domain. In this topology, there are ten collision domains total. All hosts connected to the hub are included as part of the collision domain created by the switch port connected to the hub. The connection between Switch1 and Switch2 is a second collision domain. The eight host connections on Switch1 and Switch2 make up the remaining eight collision domains.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[There are 2 collision domains.]]></text><feedback><![CDATA[Each port on a switch makes up a seperate collision domain. In this topology, there are ten collision domains total. All hosts connected to the hub are included as part of the collision domain created by the switch port connected to the hub. The connection between Switch1 and Switch2 is a second collision domain. The eight host connections on Switch1 and Switch2 make up the remaining eight collision domains.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[There are 3 collision domains.]]></text><feedback><![CDATA[Each port on a switch makes up a seperate collision domain. In this topology, there are ten collision domains total. All hosts connected to the hub are included as part of the collision domain created by the switch port connected to the hub. The connection between Switch1 and Switch2 is a second collision domain. The eight host connections on Switch1 and Switch2 make up the remaining eight collision domains.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[There are 10 collision domains.]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[There are 12 collision domains.]]></text><feedback><![CDATA[Each port on a switch makes up a seperate collision domain. In this topology, there are ten collision domains total. All hosts connected to the hub are included as part of the collision domain created by the switch port connected to the hub. The connection between Switch1 and Switch2 is a second collision domain. The eight host connections on Switch1 and Switch2 make up the remaining eight collision domains.]]></feedback>
+									</choice></choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111410" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[If Host8 sends a message to Host1, and the destination MAC address is in the switch MAC table, which host devices will receive the message?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[only Host1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[all hosts connected to Hub1]]></text>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts connected to Hub1 and hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[all hosts on the network]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>
+									</choice></choices></ai></form-item></form></exam> 

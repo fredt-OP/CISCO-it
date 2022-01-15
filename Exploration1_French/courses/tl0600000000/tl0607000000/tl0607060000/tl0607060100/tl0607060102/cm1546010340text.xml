@@ -1,0 +1,159 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Effectuez cet exercice pour vérifier que vous avez compris les principaux points de ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va vous être présentée. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante de la série.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1. <textformat blockindent='14'>De quelle manière la couche liaison de données prépare-t-elle les paquets pour la transmission ?</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[La couche liaison de données prépare un paquet pour le transport à travers les supports locaux en l’encapsulant avec un en-tête et une queue de bande pour créer une trame.]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. <textformat blockindent='14'>Décrivez quatre méthodes générales d’accès aux supports de la couche liaison de données. Suggérez des environnements de communications de données dans lesquels ces méthodes d’accès peuvent être implémentées de manière appropriée.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<p>Méthodes de contrôle d’accès au support pour les supports partagés :</p><ul><li>Contrôlé : chaque noeud dispose d’une période de temps allouée pour utiliser le support, une topologie en anneau</li><li>Par contention : tous les noeuds sont en concurrence pour l’utilisation du support, une topologie en bus</li></ul><br/><p>Contrôle d’accès au support dans des connexions point à point :</p><ul><li>Bidirectionnel non simultané : un noeud peut uniquement transmettre ou recevoir à la fois, liaison de bande passante faible à longue distance</li><li>Bidirectionnel simultané : un noeud peut à la fois transmettre et recevoir en même temps, liaison de bande passante élevée à longue distance</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3. <textformat blockindent='14'>Comparez les topologies à accès multiple logique et point à point logique.</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[<p>Une topologie point à point logique connecte deux noeuds directement entre eux. Dans les réseaux de données comportant des topologies point à point, le protocole de contrôle d’accès au support peut être très simple. Toutes les trames sur le support ne peuvent voyager que vers ou depuis les deux noeuds. Les trames sont placées sur le support par le le noeud à une extrémité, puis retirées du support par le noeud à l’autre extrémité. Dans des réseaux point à point, si le flux de données ne peut s’effectuer que dans une direction à la fois, il fonctionne comme une liaison bidirectionnelle non simultanée. Si les données peuvent circuler correctement à travers la liaison depuis chaque noeud simultanément, il s’agit d’un service bidirectionnel simultané. </p><br/><p>Une topologie à accès multiple logique permet à plusieurs noeuds de communiquer à l’aide du même support partagé. Les données issues d’un seul noeud uniquement peuvent être placées sur le support à tout moment. Chaque noeud aperçoit toutes les trames qui se trouvent sur le support, mais seul le noeud auquel la trame est destinée traite le contenu de cette trame. Lorsque de nombreux noeuds partagent un accès au support, une méthode de contrôle d’accès au support de liaison de données est nécessaire pour contrôler la transmission de données et réduire ainsi les collisions entre différents signaux.</p>]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4. <textformat blockindent='14'>Décrivez les fonctionnalités d’une topologie en anneau logique.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[<p>Dans une topologie en anneau logique, chaque noeud reçoit une trame à son tour. Si la trame n’est pas destinée à un noeud, ce noeud la transmet au noeud suivant. Cela permet à un anneau d’utiliser une technique de contrôle d’accès au support contrôlée, appelée passage de jeton.</p><br/><p>Le support ne transporte généralement qu’une trame à la fois. Si aucune donnée n’est en cours de transmission, un signal (appelé jeton) peut être placé sur le support et un noeud peut uniquement placer une trame de données sur le support lorsque celui-ci possède le jeton.</p>]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5. <textformat blockindent='14'>Nommez cinq protocoles de couche 2.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[<ul><li>Protocole PPP </li><li>Ethernet </li><li>HDLC (High-Level Data Link Control)</li><li>Frame Relay </li><li>Mode ATM</li></ul>]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6. Quelle est la différence entre des adresses de couche liaison de données et des adresses de couche réseau ?]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[<p>Contrairement aux adresses logiques de la couche 3, qui sont hiérarchiques, les adresses physiques n’indiquent pas le réseau sur lequel se trouve le périphérique. Si le périphérique est déplacé vers un autre réseau ou sous-réseau, il continue de fonctionner avec la même adresse physique de la couche 2.</p><br/><p>Puisque la trame est utilisée uniquement pour transporter des données entre des noeuds à travers le support local, l’adresse de la couche liaison de données est uniquement utilisée pour la livraison locale. Au niveau de cette couche, les adresses n’ont une signification que sur le réseau local. Comparez cela avec la couche 3, où des adresses contenues dans l’en-tête de paquet sont transportées depuis l’hôte source jusqu’à l’hôte de destination, quel que soit le nombre de sauts de réseau sur la route.</p>
+]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7. <textformat blockindent='14'>Quels sont les types de champ d’en-tête possibles dans les trames liaison de données ?</textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<p>Les en-têtes de trame typiques incluent :</p><ul><li>Champ Start of frame : indique le début d’une trame</li><li>Champs d’adresse source et de destination : indiquent les noeuds source et de destination sur les supports</li><li>Champ Priorité/Qualité de service : indique un type de service de communication particulier pour le traitement</li><li>Champ Type : indique le service de couche supérieure contenue dans la trame</li><li>Champ Contrôle de connexion logique : utilisé pour établir une connexion logique entre des noeuds</li><li>Champ Contrôle de liaison physique : utilisé pour établir la liaison avec les supports </li><li>Champ Contrôle de flux : utilisé pour démarrer et arrêter le trafic sur les supports</li><li>Champ Contrôle d’encombrement : indique un encombrement dans les supports</li></ul>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8. <textformat blockindent='14'>Quelle est l’utilité du champ FCS dans une queue de bande de trame de liaison de données?</textformat>]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[<p>Le support constitue potentiellement un environnement peu sûr pour les données. Les signaux sur le support peuvent subir une interférence, une distorsion ou une perte qui changerait significativement les valeurs de bits qu’ils représentent. Pour s’assurer que le contenu de la trame reçue à la destination correspond à celui de la trame qui a quitté le noeud source, un noeud de transmission crée un résumé logique du contenu de la trame. Celui-ci est appelé séquence de contrôle de trame et se trouve dans la queue de bande pour représenter le contenu de la trame. Lorsque la trame arrive au noeud de destination, le noeud de réception calcule son propre résumé logique, ou séquence de contrôle de trame, de la trame. Le noeud de réception compare les deux valeurs de séquence de contrôle de trame. Si les deux valeurs sont les mêmes, la trame est considérée comme arrivée telle que transmise. Si les valeurs de séquence de contrôle de trame diffèrent, la trame est rejetée. Il subsiste toujours une infime possibilité qu’une trame avec un résultat de séquence de contrôle de trame correct soit en fait corrompue. Des erreurs de bits peuvent s’annuler les unes les autres lorsque la valeur de séquence de contrôle de trame est calculée. Les protocoles de couche supérieure seraient alors requis pour détecter et corriger cette perte de données.</p>]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Vous avez passé en revue toutes les questions de la partie « Problèmes et discussion » du présent chapitre.</b>]]></text>
+</component>
+</textcomponents>

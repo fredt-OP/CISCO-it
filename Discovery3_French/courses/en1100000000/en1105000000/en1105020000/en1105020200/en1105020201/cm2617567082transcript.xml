@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 08:09:08">
+<title><content-text><![CDATA[5.2.2 - Routing Information Protocol (RIP)]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a small network. Two routers are connected via serial link on network 172.16.4.0 /24. There is a network connected to F A 0 /0 of R1, with the network address 172.16.1.0. <br><br>The following commands are an attempt to configure RIP v1 to advertise subnets:<br><br>R1 (config) # router rip<br>R1 (config-router) # network 172.16.1.0<br>R1 (config-router) # network 172.16.4.0<br><br>Actual configuration showing summarized network to be advertised - <br><br>R1 # show running-config<br>[output omitted]<br>!<br>interface FastEthernet0/0<br>IP address 172.16.1.1 255.255.255.0<br>!<br>[output omitted]<br><br>!<br>interface Serial0/0/0<br>IP address 172.16.4.1 255.255.255.0<br>!<br>[output omitted]<br>!<br>Router rip<br>Network 172.16.0.0   Note: Summarized network Class B advertised, not separate subnets<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

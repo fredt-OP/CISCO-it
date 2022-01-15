@@ -1,0 +1,12 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Observations finales</b>]]></text>
+</component>
+ 
+<component id="ID_txt01">
+<text><![CDATA[<b>Conservez le protocole STP, même s’il n’est pas nécessaire.</b><ul><li>Ne désactivez pas le protocole STP.</li><li>Le protocole STP sollicite faiblement les ressources du processeur.</li><li>Les quelques trames BPDU envoyées sur chaque liaison ne réduisent pas la quantité de bande passante.</li><li>Un réseau comportant des ponts qui n’utilise pas le protocole STP peut toutefois tomber en panne en une fraction de seconde.</li></ul><br/><b>Isolez le trafic du VLAN d’administration.</b><ul><li>Un trafic de diffusion ou de multidiffusion intensif sur le VLAN d’administration peut affecter la capacité du processeur à traiter les trames BPDU essentielles.</li><li>Isolez le trafic utilisateur du VLAN d’administration.</li></ul><br/><b>N’utilisez pas un seul VLAN qui recouvre tout le réseau.</b><ul><li>Le VLAN 1 fait office de VLAN d’administration où tous les commutateurs sont accessibles dans le même sous-réseau IP.</li><li>Une boucle de pontage sur le VLAN 1 affecte toutes les agrégations et peut provoquer l’arrêt du réseau.</li><li>Segmentez les domaines de pontage en utilisant des commutateurs rapides de couche 3.</li></ul>]]></text>
+</component>
+  
+
+</textcomponents>

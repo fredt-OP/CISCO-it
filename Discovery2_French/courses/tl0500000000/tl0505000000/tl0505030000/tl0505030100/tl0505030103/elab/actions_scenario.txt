@@ -1,0 +1,179 @@
+//zmg, 03.01.01
+//this file needs a better description!
+//
+//
+
+// File modified by Ryley Gahagan 3.7.01
+
+
+// File: actions_scenario.txt
+// Description: SCENARIO functions
+
+// scenario_startScenario()
+// IN : None
+// DO : Creates the 5 Routers and its checklist then starts everything running with RouterA
+// OUT: None
+function scenario_startScenario() {
+
+	// pointer that will be assigned to the various routers
+	// used in this function
+	var rptr = null;
+
+	// **** create RouterA ****
+	router_createRouter("RouterA");
+//	commandline_setMode(StepModeArray[0], "RouterA");
+/*
+	// create interfraces for running-config
+	rptr = eval("rRouterA.run");
+	rptr.e0.exist = true;
+	rptr.e1.exist = true;
+	rptr.s0.exist = true;
+
+	// create interfaces for startup-config
+	rptr = eval("rRouterA.startup_file");
+	rptr.e0.exist = true;
+	rptr.e1.exist = true;
+	rptr.s0.exist = true;
+
+	// create the routing table
+	rptr = eval("rRouterA");
+	rptr.routingtable = new routing_table_tableA();
+
+	// setting the mac addresses
+	rptr.run.e0.mac = "0010.7b81.4e2c";
+	rptr.run.e1.mac = "0010.7b81.4e2d";
+*/
+	// **** end RouterA ****
+
+	// **** create RouterB ****
+	router_createRouter("RouterB");
+/*	commandline_setMode("user", "RouterB");
+
+	// create interfraces for running-config
+	rptr = eval("rRouterB.run");
+	rptr.e0.exist = true;
+	rptr.s0.exist = true;
+	rptr.s1.exist = true;
+
+	// create interfaces for startup-config
+	rptr = eval("rRouterB.startup_file");
+	rptr.e0.exist = true;
+	rptr.s0.exist = true;
+	rptr.s1.exist = true;
+
+	// create the routing table
+	rptr = eval("rRouterB");
+	rptr.routingtable = new routing_table_tableB();
+
+	// setting the mac addresses
+	rptr.run.e0.mac = "00d0.58ac.ec1f";
+
+	// **** end RouterB ****
+
+	// ****  create RouterC ****
+	router_createRouter("RouterC");
+	commandline_setMode("user", "RouterC");
+
+	// create interfraces for running-config
+	rptr = eval("rRouterC.run");
+	rptr.e0.exist = true;
+	rptr.s0.exist = true;
+	rptr.s1.exist = true;
+
+	// create interfaces for startup-config
+	rptr = eval("rRouterC.startup_file");
+	rptr.e0.exist = true;
+	rptr.s0.exist = true;
+	rptr.s1.exist = true;
+
+	// create the routing table
+	rptr = eval("rRouterC");
+	rptr.routingtable = new routing_table_tableC();
+
+	// setting the mac addresses
+	rptr.run.e0.mac = "00d0.58ac.ec1c";
+
+	// **** end RouterC ****
+
+	// **** create RouterD ****
+	router_createRouter("RouterD");
+	commandline_setMode("user", "RouterD");
+
+	// create interfraces for running-config
+	rptr = eval("rRouterD.run");
+	rptr.e0.exist = true;
+	rptr.s1.exist = true;
+
+	// create interfaces for startup-config
+	rptr = eval("rRouterD.startup_file");
+	rptr.e0.exist = true;
+	rptr.s1.exist = true;
+
+	// create the routing table
+	rptr = eval("rRouterD");
+	rptr.routingtable = new routing_table_tableD();
+
+	// setting the mac addresses
+	rptr.run.e0.mac = "00d0.58ac.ec25";
+
+	// **** end RouterD ****
+
+	// **** create RouterE ****
+	router_createRouter("RouterE");
+	commandline_setMode("user", "RouterE");
+
+	// create interfraces for running-config
+	rptr = eval("rRouterE.run");
+	rptr.e0.exist = true;
+
+	// create interfaces for startup-config
+	rptr = eval("rRouterE.startup_file");
+	rptr.e0.exist = true;
+
+	// create the routing table
+	rptr = eval("rRouterE");
+	rptr.routingtable = new routing_table_tableE();
+
+	// setting the mac addresses
+	rptr.run.e0.mac = "00d0.58ac.ec28";
+
+	// **** end RouterE ****
+*/
+	// **** Checklist Creation ****
+	router_createRouter("CheckRouterA");
+	router_createRouter("CheckRouterB");
+//	router_createRouter("CheckRouterC");
+//	router_createRouter("CheckRouterD");
+//	router_createRouter("CheckRouterE");
+//	checklist_setChecklist();
+	// **** end Checklist ****
+
+	// **** Create default router ****
+	router_createRouter("default");
+
+	// set RouterA as the starting router
+	Menu.mRouterA._visible = false;
+	HyperTerminal.sRouterA._visible = true;
+	active_router = "RouterA";           // Current ROUTER
+	VISIBLE_ROUTER = "RouterA";
+
+	changeRouterInformation(routerUsedForThisStep[0]); //setting the router information is done here
+
+	output_initCursor();
+
+	router_startup_checkStartUp();
+
+	//copy the below information from data.txt file  29 March 2002
+
+	//Router Name
+	//rRouterA.run.hostname = "Lab_A";
+
+	//Enable Password
+	//rRouterA.run.password = "class";
+
+	//Enable Secret
+	//rRouterA.run.secret =  "";
+
+//	active_router = "RouterA";
+
+}

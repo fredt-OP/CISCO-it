@@ -1,0 +1,200 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Effectuez cet exercice pour vérifier que vous avez compris les principaux points de ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va vous être présentée. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante de la série.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1. <textformat blockindent='14'>Comment la couche réseau traite-t-elle une unité de données de protocole de couche transport pour pouvoir la communiquer d’un hôte à un autre ?</textformat> ]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[<p>Le protocole de couche réseau encapsule, ou empaquette, le datagramme ou segment de la couche transport pour que le réseau puisse le transférer à l’hôte de destination. L’encapsulation IPv4 reste en place du moment où le paquet quitte la couche réseau de l’hôte émetteur jusqu’à son arrivée dans la couche réseau de l’hôte de destination. Le routage effectué par des périphériques intermédiaires tient compte uniquement du contenu de l’en-tête de paquet qui encapsule le segment. Dans tous les cas, la partie données du paquet (à savoir l’unité de données de protocole de couche transport encapsulée) reste inchangée durant les processus de couche réseau.</p>]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. <textformat blockindent='14'>Expliquez le rôle du champ Durée de vie de l’en-tête de paquet IPv4.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<p>Le champ de durée de vie (TTL) est une valeur binaire 8 bits indiquant la durée de « vie » restante du paquet. La valeur TTL est décrémentée de 1 au moins chaque fois que le paquet est traité par un routeur (c’est-à-dire chaque saut). Lorsque la valeur devient nulle, le routeur supprime ou abandonne le paquet et il est retiré du flux de données du réseau. Ce mécanisme évite que les paquets ne pouvant atteindre leur destination ne soient transférés indéfiniment d’un routeur à l’autre dans une boucle de routage. Si les boucles de routage étaient autorisées à continuer, le réseau serait encombré de paquets de données n’atteignant jamais leur destination. Décrémenter la valeur TTL à chaque saut garantit qu’elle finira par devenir nulle et que le paquet avec le champ TTL expiré sera supprimé.
+</p>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3. <textformat blockindent='14'>Donnez trois raisons de diviser un réseau en groupes d’hôtes plus petits.</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[<ul><li>Emplacement géographique</li><li>Objectif</li><li>Propriété</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4. <textformat blockindent='14'>Citez trois caractéristiques de base du protocole IPv4.</textformat> ]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[<p><b>Caractéristiques de base d’IPv4 :</b></p><ul><li>Sans connexion : aucune connexion n’est établie avant l’envoi des paquets de données.</li><li>Au mieux (peu fiable) : aucune surcharge n’est utilisée pour garantir la transmission des paquets.</li><li>Indépendant des médias : fonctionne indépendamment du média transportant les données. </li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5. <textformat blockindent='14'>Décrivez le champ d’en-tête de paquet utilisé par le routeur pour déterminer où transférer un paquet.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[<p>Le champ d’adresse de destination IPv4 contient l’adresse de couche 3 de l’hôte de destination. Le routeur utilise la partie réseau de cette adresse pour déterminer où transférer le paquet.</p>]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6. <textformat blockindent='14'>Pourquoi configurer un hôte avec l’adresse de la passerelle par défaut ?</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[<p>La passerelle, également appelée passerelle par défaut, est requise pour envoyer un paquet en dehors du réseau local. Si la partie réseau de l’adresse de destination du paquet ne correspond pas au réseau de l’hôte émetteur, le paquet doit être acheminé en dehors du réseau d’origine. Pour ce faire, le paquet est envoyé à la passerelle. Cette passerelle est une interface de routeur connectée au réseau local. L’interface de passerelle a une adresse de couche réseau correspondant à l’adresse réseau des hôtes. Les hôtes sont configurés pour reconnaître cette adresse comme étant la passerelle.</p>]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7. <textformat blockindent='14'>Quels sont les deux types de réseaux apparaissant dans la table de routage ?</textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<ul><li>Réseaux connectés directement</li><li>Réseaux distants</li></ul>
+<p>La table de routage stocke des informations sur les réseaux connectés et distants. Les réseaux connectés sont reliés directement à une des interfaces du routeur. Ces interfaces sont les passerelles pour les hôtes situés sur des réseaux locaux différents. Les réseaux distants ne sont pas connectés directement au routeur. Les routes vers ces réseaux peuvent être configurées manuellement sur le routeur par l’administrateur réseau ou découvertes automatiquement à l’aide de protocoles de routage dynamiques.</p>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8. <textformat blockindent='14'>Décrivez les trois caractéristiques d’une route répertoriée dans une table de routage.</textformat>]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[<p>Les routes d’une table de routage possèdent trois caractéristiques principales :</p><ul><li>Réseau de destination</li><li>Tronçon suivant</li><li>Mesure</li></ul>
+<p>Le routeur met en correspondance l’adresse de destination de l’en-tête de paquet avec le réseau de destination d’une route dans la table de routage et transfère le paquet au routeur de tronçon suivant spécifié par cette route. Si plusieurs routes sont possibles pour la même destination, la mesure est utilisée pour décider du tronçon suivant.</p>]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 9 -->
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9. <textformat blockindent='14'>Si le réseau de destination d’un paquet ne figure pas dans la table de routage du routeur, quelles sont les deux conséquences possibles ?</textformat> ]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[<p>Le paquet est abandonné.</p><p>Ou</p><p>Le paquet peut être transféré vers la route par défaut si elle est configurée.</p>]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 10 -->
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10. <textformat blockindent='14'>Répertoriez les trois actions possibles qu’un routeur peut effectuer sur un paquet.</textformat>]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[<p>Le transfert de paquets ou routage s’effectue paquet par paquet et saut par saut. Chaque paquet est traité de manière indépendante dans chaque routeur tout au long de l’acheminement. À chaque saut, le routeur examine l’adresse IP de destination pour chaque paquet, puis vérifie les informations de transfert dans la table de routage.</p>
+<p>Le routeur peut effectuer trois opérations avec le paquet :</p><ul><li>le transférer au routeur de tronçon suivant,</li><li>le transférer à l’hôte de destination,</li><li>l’abandonner.</li></ul>]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Vous avez passé en revue toutes les questions de la partie « Problèmes et discussion » du présent chapitre.</b>]]></text>
+</component>
+
+
+</textcomponents>

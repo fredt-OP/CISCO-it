@@ -1,0 +1,113 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Router_A</NAME>
+ <NAME translate="true">Router_B</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router_A</NAME>
+ <NAME translate="true">Router_B</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router_A</NAME>
+ <NAME translate="true">Router_B</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router_A</NAME>
+ <NAME translate="true">Router_B</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router_A</NAME>
+ <NAME translate="true">Router_B</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router_A</NAME>
+ <NAME translate="true">Router_B</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 7.4.1 : &lt;br&gt;traçage de paquets à travers un interréseau&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;!--This is the end of the IP addressing table code&quot; --&gt;
+
+
+&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul style=&apos;margin-top:0in&apos; type=disc&gt; &lt;li class=MsoNormal style=&apos;mso-list:l0 level1 lfo1;tab-stops:list .5in&apos;&gt;Traçage des paquets HTTP qui traversent un &lt;span class=SpellE&gt;interréseau&lt;/span&gt; suite à une requête de page Web &lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt; &lt;li class=MsoNormal style=&apos;mso-list:l0 level1 lfo1;tab-stops:list .5in&apos;&gt;Examen de la même situation en affichant plus que des paquets HTTP&lt;/li&gt; &lt;/ul&gt;&lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt; &lt;h3&gt;Présentation : &lt;/h3&gt;
+
+Cet exercice court repose sur l'exemple 7.4.1.2 présenté dans le cursus. Dans cet exemple, il est supposé que des processus ARP, DNS et TCP se sont déjà produits. L'exemple porte sur le suivi de paquets HTTP à travers un petit interréseau constitué de deux routeurs. &lt;br&gt;&lt;br&gt;&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : traçage des paquets HTTP&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1.  Initialisation du réseau.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt;En mode temps réel, ouvrez le &lt;b&gt;navigateur Web&lt;/b&gt; à partir du &lt;b&gt;bureau&lt;/b&gt; du client du PC. Tapez &lt;b&gt;192.0.2.7&lt;/b&gt; dans le champ de l'&lt;b&gt;URL&lt;/b&gt;, puis appuyez sur la touche &lt;b&gt;Entrée&lt;/b&gt;. La page Web devrait être extraite. Ce processus permet de remplir les tables, ce qui vous permet de vous concentrer simplement sur les paquets HTTP. 
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Définition des filtres de listes d'événements.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Passez en mode simulation. Nous ne souhaitons capturer que des événements HTTP. Dans la section &lt;b&gt;Event List Filters&lt;/b&gt;, cliquez sur le bouton &lt;b&gt;Edit Filters&lt;/b&gt;. Ne sélectionnez que les événements HTTP. Si vous n'affichez que les événements HTTP, les processus DNS, ARP, TCP et RIP s'exécutent toujours mais ne s'affichent pas. Parfois, si un paquet HTTP est mis en mémoire tampon, alors un événement de paquet distinct de la liste d'événements semble être un événement dupliqué : en fait, il marque simplement une pause avant de transmettre ses données. La raison à cela est que les autres événements de procole se produisent encore, même s'ils sont invisibles.
+
+&lt;h4&gt; &lt;b&gt;Étape 3.  Effectuer la simulation pas à pas.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; À partir du navigateur du client du PC, cliquez sur le bouton &lt;b&gt;Go&lt;/b&gt; pour demander de nouveau la page Web. Cliquez sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; et examinez le paquet. Cliquez ensuite de nouveau sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt;, deux fois de suite, pour ouvrir le paquet et l'examiner à chaque étape du processus. Lorsque vous avez terminé d'analyser les paquets, passez en mode temps réel, puis cliquez sur le bouton &lt;b&gt;Power Cycle Devices&lt;/b&gt; pour redémarrer les périphériques. Lorsque les voyants de liaison passent du rouge au vert, repassez en mode simulation. &lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Étape 2 : Examinez la même situation en affichant plus que des paquets HTTP. &lt;/h3&gt; &lt;/b&gt;&lt;br&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1.  Affichage d'un plus grand nombre de protocoles.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Dans la section &lt;b&gt;Event List Filters&lt;/b&gt;, cliquez sur le bouton &lt;b&gt;Edit Filters&lt;/b&gt;. Sélectionnez HTTP, DNS, TCP, UDP, ARP et RIP. Ceci affiche une vue plus réaliste du réseau. Cette vue est similaire à la vue observée dans la capture Wireshark. 
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Effectuer la simulation pas à pas.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Ouvrez le &lt;b&gt;navigateur Web&lt;/b&gt; du client PC et tapez &lt;b&gt;eagle-server.example.com&lt;/b&gt; dans le champ de l'&lt;b&gt;URL&lt;/b&gt;, puis appuyez sur la touche &lt;b&gt;Entrée&lt;/b&gt;. Cliquez sur le bouton &lt;b&gt;Go&lt;/b&gt;. Cliquez sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; plusieurs fois de suite pour afficher les complexités de cette interaction de protocoles en apparence simple. Après l'échange, les routeurs commencent à échanger des paquets RIPv2. Cet échange se poursuivra indéfiniment. Arrêtez au bout de quelques échanges. À ce stade du cours, vous devriez pouvoir commencer à expliquer cette séquence de paquets. &lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router_A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router_B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router_A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router_B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router_A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router_B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">Router_A</ID>
+ <ID translate="true">Router_B</ID>
+ <ID translate="true">Client</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">Router_A</ID>
+ <ID translate="true">Router_B</ID>
+ <ID translate="true">Client</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

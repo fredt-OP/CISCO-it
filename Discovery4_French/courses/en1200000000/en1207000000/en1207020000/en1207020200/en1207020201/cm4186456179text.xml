@@ -1,0 +1,86 @@
+﻿<textcomponents>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Business Goal:</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Overall Success Criteria</b></font></td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Combine the existing data and video surveillance networks, and support the addition of IP telephony in the stadium.</td>
+<td bgcolor='#F2F2F2'>Demonstrate the end-to-end IP connectivity and transfer simulated data, voice and video surveillance traffic over the network with acceptable quality.</td>
+
+</tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Technical Requirements</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Success Criteria</b></font></td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'><b>Scalability</b></td>
+<td bgcolor='#E1F0FF'></td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Conversion from a flat network to a three-layer hierarchy</td>
+<td bgcolor='#F2F2F2'>Successful pings, Telnet and transfer of data</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Creation of separate VLANs, and IP subnets, to support the different types of traffic</td>
+<td bgcolor='#F2F2F2'>VLANs isolate traffic, shown by unsuccessful pings, IOS show command output</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'><b>Availability</b></td>
+<td bgcolor='#E1F0FF'></td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Use of Layer 3 links, rather than Layer 2 links</td>
+<td bgcolor='#F2F2F2'>Quick recovery when a link failure occurs</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Implementation of redundant topology</td>
+<td bgcolor='#F2F2F2'>Failed link does not bring network down</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'><b>Security</b></td>
+<td bgcolor='#E1F0FF'></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Configuration of filters to ensure that only authorized personnel have access to the surveillance video</td>
+<td bgcolor='#F2F2F2'>Unauthorized stations cannot access video</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Configuration of switch port security functions</td>
+<td bgcolor='#F2F2F2'>Unknown MAC addresses fail to connect</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'><b>Manageability</b></td>
+<td bgcolor='#E1F0FF'></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Creation of management VLAN and configuration of SSH</td>
+<td bgcolor='#F2F2F2'>Successful SSH connectivity to all devices</td>
+
+</tr>
+
+</table>
+]]></text>
+</component>
+
+</textcomponents>

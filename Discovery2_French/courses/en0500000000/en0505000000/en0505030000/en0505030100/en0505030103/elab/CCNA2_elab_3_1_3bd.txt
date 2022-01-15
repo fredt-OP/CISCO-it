@@ -1,0 +1,107 @@
+﻿// eLabComposer version 1.0
+
+//Lab-Drill Information
+Language = "English";
+labDrill = "True";
+
+//Topics Covered
+chapterCovered = "Entering Command Modes";
+
+//Prompt Information
+StepModeArray[0] = "";
+StepModeArray[1] = "user";
+StepModeArray[2] = "enable";
+StepModeArray[3] = "global";
+StepModeArray[4] = "intS";
+StepModeArray[5] = "global";
+StepModeArray[6] = "routerRIP";
+StepModeArray[7] = "enable";
+StepModeArray[8] = "global";
+StepModeArray[9] = "global";
+StepModeArray[10] = "linecon";
+StepModeArray[11] = "linecon";
+
+//Instruction Information
+instructionArray[0] = "In this lab, you will learn to enter some of the most common modes the router supports. These include privileged EXEC, global configuration, interface configuration, line configuration, and router configuration modes. You will learn many other configuration modes as your IOS knowledge increases.";
+instructionArray[1] = "Enter into privileged EXEC mode. Do you remember this from previous labs?";
+instructionArray[2] = "In privileged EXEC mode, you have full access to the router.\nEnter into global configuration mode where configuration of the router occurs.";
+instructionArray[3] = "Once in global configuration mode, there are many other configuration modes that can be accessed. You will practice some of the common ones that are used. First, start by entering into interface configuration mode on port serial 0.";
+instructionArray[4] = "Interface configuration mode is used to configure interface specific information such as IP addressing. Now that you've entered interface configuration mode, exit back into global configuration mode.";
+instructionArray[5] = "Another common mode you will encounter when configuring a router is the router configuration mode. In that mode you configure the process by which the router builds a routing table of network addresses. Enter into router configuration mode using the RIP protocol.";
+instructionArray[6] = "You've learned to exit one mode in step 4, now you will learn to exit into privileged EXEC mode directly without using multiple exit commands.Can you figure out the command on your first try?\n(A keyboard command -- which is not supported in this version of eLabs -- to immediately switch from any configuration mode into priveleged EXEC mode is Ctrl-Z.)";
+instructionArray[7] = "Enter back into global configuration mode.";
+instructionArray[8] = "Because privileged EXEC mode gives the user so much access, set a password so that only the administrator of the router can gain access to this mode. This password is stored as an encrypted one way hash. Use the command <FONT FACE='_typewriter'><B>enable secret class</B></FONT>. This sets the privileged EXEC password to be <FONT FACE='_typewriter'><B>class</B></FONT>. \n    <b>Note</b>: In the field of networking, it is good to practice creating passwords using not only letters but numbers and other characters to improve security. It is equally imortant to remember the passwords and store them in a secure location.";
+instructionArray[9] = "Now that you've set the privileged EXEC password, you can also set a password for anyone who tries to connect to the router through the console port. To do this, you must enter another configuration mode, the line configuration mode.";
+instructionArray[10] = "Setting the password on the console line is more straightforward than the privileged EXEC password. Use the command <FONT FACE='_typewriter'><B>password cisco</B></FONT>. The command is <FONT FACE='_typewriter'><B>password</B></FONT> and <FONT FACE='_typewriter'><B>cisco</B></FONT> is the password.\n    <b>Note</b>: In the field of networking, it is good to practice creating passwords using not only letters but numbers and other characters to improve security. It is equally important to remember the passwords and store them in a secure location.";
+instructionArray[11] = "Now that you've set the password, you also need to let the router know that it should check for a password. Use the command <FONT FACE='_typewriter'><B>login</B></FONT>.";
+
+//Answer Information
+assignValueToAnswer(1,"1",False,"enable");
+assignValueToAnswer(2,"2",False,"configure","terminal");
+assignValueToAnswer(3,"3",False,"interface","serial","0");
+assignValueToAnswer(4,"4",False,"exit");
+assignValueToAnswer(5,"5",False,"router","rip");
+assignValueToAnswer(6,"6",False,"end");
+assignValueToAnswer(7,"7",False,"configure","terminal");
+assignValueToAnswer(8,"8",False,"enable","secret","class");
+assignValueToAnswer(9,"9",False,"line","console","0");
+assignValueToAnswer(10,"10",False,"password","cisco");
+assignValueToAnswer(11,"11",False,"login");
+
+//Error Information
+assignValueToError(1,"1","Use the command 'enable' to enter into privileged EXEC mode.");
+assignValueToError(2,"2","To enter into global configuration mode, use the command 'configure'.","Use the keyword 'terminal' to specify configuration from a terminal.");
+assignValueToError(3,"3","Use the command 'interface' to enter into interface configuration mode.","Use the keyword 'serial' to specify the serial interface.","Use the number '0' as the interface number.");
+assignValueToError(4,"4","Exit into global configuration mode with the command 'exit'.");
+assignValueToError(5,"5","Use the command 'router' to enter into router configuration mode.","Use the keyword 'rip' to specify RIP routing processes.");
+assignValueToError(6,"6","To exit into privileged EXEC mode, use the command 'end'.");
+assignValueToError(7,"7","To enter into global configuration mode, use the command 'configure'.","Use the keyword 'terminal' to specify configuration from a terminal.");
+assignValueToError(8,"8","To change the privileged EXEC password, use the command 'enable'.","Use the keyword secret to change the secret password.","Use the word 'class' as the password. In the field, use a good alphanumeric password string.");
+assignValueToError(9,"9","Use the command 'line' to enter into line configuration mode.","Use the keyword 'console' to specify the console port.","Use the number '0' for the console 0 port.");
+assignValueToError(10,"10","Use the command 'password' to set the password.","Use the word 'cisco' for the password in this lab.");
+assignValueToError(11,"11","Use the command 'login' to enable password checking.");
+
+//Result Information
+assignValueToResult(1,"1","");
+assignValueToResult(2,"2","");
+assignValueToResult(3,"3","");
+assignValueToResult(4,"4","");
+assignValueToResult(5,"5","");
+assignValueToResult(6,"6","");
+assignValueToResult(7,"7","");
+assignValueToResult(8,"8","");
+assignValueToResult(9,"9","");
+assignValueToResult(10,"10","");
+assignValueToResult(11,"11","");
+
+//Graphic Information
+hasDefaultGraphic = true;
+graphicArray[0] = "CCNA2_elab_3_1_3bg";
+graphicArray[1] = "";
+graphicArray[2] = "";
+graphicArray[3] = "";
+graphicArray[4] = "";
+graphicArray[5] = "";
+graphicArray[6] = "";
+graphicArray[7] = "";
+graphicArray[8] = "";
+graphicArray[9] = "";
+graphicArray[10] = "";
+graphicArray[11] = "";
+
+//Router for Step Information
+routerUsedForThisStep[0] = 0;
+routerUsedForThisStep[1] = 0;
+routerUsedForThisStep[2] = 0;
+routerUsedForThisStep[3] = 0;
+routerUsedForThisStep[4] = 0;
+routerUsedForThisStep[5] = 0;
+routerUsedForThisStep[6] = 0;
+routerUsedForThisStep[7] = 0;
+routerUsedForThisStep[8] = 0;
+routerUsedForThisStep[9] = 0;
+routerUsedForThisStep[10] = 0;
+routerUsedForThisStep[11] = 0;
+
+//Router Information
+addToRouterSIMObject(0,"Asuncion","","","R1721");

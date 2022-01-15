@@ -1,0 +1,78 @@
+﻿<textcomponents>
+<component id="ID_Title01">
+<text><![CDATA[<b>Router Password Recovery Procedure</b>]]></text>
+</component>
+<component id="ID_inst">
+  <text><![CDATA[<b>Prepare R1 for password recovery by booting it up in ROMmon mode.</b>]]></text> 
+  </component>
+<component id="ID_inst2">
+  <text><![CDATA[<b>Enable router configuration, but bypass the existing startup configuration.</b>]]></text>
+  </component>
+<component id="ID_inst3">
+  <text><![CDATA[<b>Make the startup configuration available for viewing.</b>]]></text> 
+  </component>
+<component id="ID_inst4">
+  <text><![CDATA[<b>Reset passwords.</b>]]></text>
+  </component>
+<component id="ID1_txt01">
+  <text><![CDATA[Console connection]]></text> 
+  </component>
+<component id="ID1_txt02">
+  <text><![CDATA[System Administrator]]></text> 
+  </component>
+<component id="ID1_txt01_2">
+  <text><![CDATA[Console connection]]></text> 
+  </component>
+<component id="ID1_txt02_2">
+  <text><![CDATA[System Administrator]]></text> 
+  </component>
+<component id="ID1_txt01_3">
+  <text><![CDATA[Console connection]]></text> 
+  </component>
+<component id="ID1_txt02_3">
+  <text><![CDATA[System Administrator]]></text> 
+  </component>
+<component id="ID1_txt01_4">
+  <text><![CDATA[Console connection]]></text> 
+  </component>
+<component id="ID1_txt02_4
+">
+  <text><![CDATA[System Administrator]]></text> 
+  </component>
+<component id="ID_button1">
+  <text><![CDATA[<b>Prepare Device</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Bypass Startup</b>]]></text> 
+</component>
+<component id="ID_button3">
+  <text><![CDATA[<b>Access NVRAM</b>]]></text> 
+</component>
+<component id="ID_button4">
+  <text><![CDATA[<b>Reset Passwords</b>]]></text> 
+</component>
+<component id="ID_routerIcon">
+  <text><![CDATA[<b>Config</b>]]></text> 
+</component>
+<component id="ID_routerIcon1">
+  <text><![CDATA[<b>Config</b>]]></text> 
+</component>
+<component id="ID_routerIcon2">
+  <text><![CDATA[<b>Config</b>]]></text> 
+</component>
+<component id="ID_routerIcon3">
+  <text><![CDATA[<b>Config</b>]]></text> 
+</component>
+<component id="ID_bubble1">
+  <text><![CDATA[1) <textformat blockindent="17">Administrator sets console connection parameters.</textformat><br/>2) <textformat blockindent="17">Records configuration register value.</textformat><br/>3) <textformat blockindent="17">Powers the router off and then on.</textformat><br/>4) <textformat blockindent="17">Presses “Break” on terminal within 60 seconds of power up to put router in ROMmon.</textformat>]]></text>
+</component>
+<component id="ID_bubble2">
+<text><![CDATA[5) <textformat blockindent="17">Change the config register setting.</textformat><br/>6) <textformat blockindent="17">Reboot. Ignore saved configuration.</textformat><br/>7) <textformat blockindent="17">Skip the initial setup procedure.</textformat><br/>8) <textformat blockindent="17">Type <font face='_typewriter'><b>enable </b></font>to get to configuration prompt.</textformat>]]></text>
+</component>
+<component id="ID_bubble3">
+<text><![CDATA[9) <textformat blockindent="17">Copy the startup configuration from NVRAM to the running configuration in RAM.</textformat><br/>10) <textformat blockindent="23">View passwords by running the <font face='_typewriter'><b>show running-config </b></font>command.</textformat>]]></text>
+</component>
+<component id="ID_bubble4">
+<text><![CDATA[11) <textformat blockindent="23">Enable global configuration mode.</textformat><br/>12) <textformat blockindent="23">Set a new secret password.</textformat><br/>13) <textformat blockindent="23">Issue <font face="_typewriter">no shutdown</font> to every operational interface on the router.</textformat><br/>14) <textformat blockindent="237">Set the location of the configuration register.</textformat><br/>15) <textformat blockindent="23">Exit configuration mode.</textformat><br/>16) <textformat blockindent="23">Commit the changes.</textformat>]]></text>
+</component>
+</textcomponents>

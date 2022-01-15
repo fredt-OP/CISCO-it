@@ -1,0 +1,60 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr-fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Contenu</title>
+<base target="_self">
+<link href="../../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="window.focus();">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<!--  Start top title Lesson Bar -->
+	  <tr>
+	    <td width="18" class="toptitle01_white_bold" valign="top">
+	    <img border="0" src="../../images/content_lines.gif" width="16" height="25"> <img border="0" src="../../images/transdot.gif" width="2" height="1"></td>
+	    
+    <td width="18" class="toptitle01_white_bold">8.8</td>
+	    <td class="toptitle01_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+	    <td width="100%" class="toptitle01_white_bold">Explication des mod&egrave;les de donn&eacute;es OSI et TCP/IP</td>
+	    <td width="9" class="toptitle01_white_bold_margin">&nbsp;</td>
+	  </tr>
+	  <!--  End top title Lesson Bar --> <!--  Start top title Topic Bar -->
+ 	 <tr>
+	    <td width="18" height="25" class="toptitle02_white_bold">&nbsp;</td>
+	    
+    <td height="25"  class="toptitle02_white_bold">8.8.2</td> 
+	    <td class="toptitle02_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+	    <td width="100%" height="25" class="toptitle02_white_bold">D&eacute;finition du mod&egrave;le OSI</td>
+	    <td height="25" width="9" class="toptitle02_white_bold_margin">&nbsp;</td>
+	  </tr>
+	 <!--  End top title Topic Bar -->	
+</table>
+	
+	<!-- CONTENT -->
+	<table border="0" cellpadding="0" cellspacing="0" width="95%" >
+		<tr>
+			<td width="20"></td>
+			<td>
+        <table border="0" cellpadding="0" cellspacing="0"  width="95%">
+          <tr>
+            
+          <td width="100%"> 
+            <p>Le mod&egrave;le OSI est un cadre normatif industriel utilis&eacute; pour s&eacute;parer les communications r&eacute;seau en sept couches distinctes. Bien qu&rsquo;il existe d&rsquo;autres mod&egrave;les, la plupart des fournisseurs de solutions r&eacute;seau actuels con&ccedil;oivent leurs produits sur la base de ce cadre.</p>
+            <p>Un syst&egrave;me qui impl&eacute;mente un comportement de protocole consistant en une s&eacute;rie de couches de ce mod&egrave;le est appel&eacute; &laquo;&nbsp;pile de protocoles&nbsp;&raquo;. Les piles de protocoles peuvent &ecirc;tre impl&eacute;ment&eacute;es au niveau logiciel ou mat&eacute;riel, ou les deux. G&eacute;n&eacute;ralement, seules les couches basses du mod&egrave;le sont impl&eacute;ment&eacute;es au niveau mat&eacute;riel, tandis que les couches sup&eacute;rieures sont impl&eacute;ment&eacute;es au niveau logiciel.</p>
+            <p>Chaque couche est responsable d&rsquo;une part du traitement, pour pr&eacute;parer les donn&eacute;es &agrave; leur transmission sur le r&eacute;seau. Le diagramme de la Figure&nbsp;1 indique la fonction de chaque couche du mod&egrave;le OSI.</p>
+            <p>Les donn&eacute;es transf&eacute;r&eacute;es traversent virtuellement chaque couche du mod&egrave;le OSI (de la plus haute &agrave; la plus basse) au niveau de l&rsquo;ordinateur exp&eacute;diteur, puis remontent ces m&ecirc;mes couches en arrivant &agrave; l&rsquo;ordinateur de destination.</p>
+            <p>Lorsqu&rsquo;un utilisateur souhaite envoyer des donn&eacute;es, par exemple un courriel, le processus d&rsquo;encapsulation d&eacute;marre &agrave; la couche Application. Celle-ci est charg&eacute;e de fournir aux applications un acc&egrave;s au r&eacute;seau. Les informations traversent les trois couches sup&eacute;rieures et sont consid&eacute;r&eacute;es comme des donn&eacute;es lorsqu&rsquo;elles arrivent &agrave; la couche Transport.</p>
+            <p>&Agrave; ce moment-l&agrave;, ces donn&eacute;es sont divis&eacute;es en segments g&eacute;rables, appel&eacute;s unit&eacute;s de donn&eacute;es de protocole de la couche Transport, qui seront ensuite transmis dans l&rsquo;ordre sur le r&eacute;seau. Une unit&eacute; de donn&eacute;es de protocole d&eacute;crit les donn&eacute;es lors de leur passage d&rsquo;une couche &agrave; une autre, au sein du mod&egrave;le OSI. Les unit&eacute;s de donn&eacute;es de protocole de la couche Transport contiennent &eacute;galement des informations telles que les num&eacute;ros de port, de s&eacute;quence et d&rsquo;accus&eacute; de r&eacute;ception, n&eacute;cessaires pour un transfert fiable des donn&eacute;es.</p>
+            <p>Au niveau de la couche R&eacute;seau, chaque segment provenant de la couche Transport devient un paquet. Ce paquet contient les informations de contr&ocirc;le de couche 3 et d&rsquo;adressage logique.</p>
+            <p>Dans la couche Liaison de donn&eacute;es, chaque paquet provenant de la couche R&eacute;seau devient une trame. Une trame contient les informations d&rsquo;adressage physique et de correction d&rsquo;erreur.</p>
+            <p>Au niveau de la couche Physique, la trame se transforme en bits. Ces bits sont transmis un par un via le support r&eacute;seau.</p>
+            <p>&Agrave; l&rsquo;ordinateur de destination, un processus de d&eacute;capsulage a lieu&nbsp;; il effectue l&rsquo;inverse du processus d&rsquo;encapsulation. Les bits arrivent &agrave; la couche Physique du mod&egrave;le OSI de l&rsquo;ordinateur de destination. La travers&eacute;e virtuelle du mod&egrave;le OSI, sur l&rsquo;ordinateur de destination, am&egrave;ne les donn&eacute;es jusqu&rsquo;&agrave; la couche Application, puis dans le programme de messagerie &eacute;lectronique, qui affiche le courriel.</p>
+            <p><span class="bold">REMARQUE&nbsp;:</span> il existe des moyens mn&eacute;motechniques pour vous aider &agrave; m&eacute;moriser les sept couches du mod&egrave;le OSI. Par exemple&nbsp;: &laquo;&nbsp;Apr&egrave;s Plusieurs Semaines, Tout Respire La Paix&nbsp;&raquo;.</p>
+            </td>
+          </tr>
+         </table>  
+       </td>
+     </tr>
+	</table>

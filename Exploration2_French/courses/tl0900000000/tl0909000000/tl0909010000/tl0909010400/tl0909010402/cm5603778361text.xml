@@ -1,0 +1,119 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Mise à jour</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Mise à jour</b>]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>ACK (reçu)</b>]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>ACK (reçu)</b>]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>ACK (reçu)</b>]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>ACK (reçu)</b>]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Demande</b>]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Demande</b>]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Réponse</b>]]></text> 
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Réponse</b>]]></text> 
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>R1</b>]]></text> 
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>R2</b>]]></text> 
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>R3</b>]]></text> 
+</component>
+
+<component id="ID_button1">
+<text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[<b>Mise à jour et ACK</b>]]></text> 
+</component>
+
+<component id="ID_button3">
+<text><![CDATA[<b>Demande et réponse</b>]]></text> 
+</component>
+
+<component id="ID_title">
+<text><![CDATA[<b>Types de paquets EIGRP</b>]]></text> 
+</component>
+
+<component id="ID_instruct2">
+<text><![CDATA[<b>Cliquez sur Hello dans la figure.</b>]]></text> 
+</component>
+
+<component id="ID_instruct3">
+<text><![CDATA[<b>Cliquez sur Mise à jour et ACK dans la figure.</b>]]></text> 
+</component>
+
+<component id="ID_instruct1">
+<text><![CDATA[<b>Cliquez sur Demande et réponse dans la figure.</b>]]></text> 
+</component>
+
+<component id="myTable1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b> </b></font></td>
+	</tr><tr>
+	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><b>Paquet Hello</b><br/><li>utilisé pour détecter les routeurs voisins et former des contiguïtés ;</li></ul><ul><li>non fiable donc aucune réponse du destinataire n’est requise.</li></ul></table>]]></text> 
+</component>
+
+<component id="myTable2">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b> </b></font></td>
+	</tr><tr>
+	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><b>Paquet de mise à jour</b><br/><li>utilisé pour propager les informations de routage à la suite d’un paquet ACK (reçu) de changement ;</li></ul><ul><li>renvoyé automatiquement lorsque le protocole RTP de transport fiable est utilisé.</li></ul></table>]]></text> 
+</component>
+
+<component id="myTable3">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b> </b></font></td>
+	</tr><tr>
+	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><b>Paquet de demande</b><br/><li>utilisé par l’algorithme DUAL lors de la recherche de réseaux ou d’autres tâches.</li></ul><ul><b>Paquet de réponse</b><li>transmis automatiquement en réponse à un paquet de demande.</li></ul><ul><b>Paquet ACK (reçu)</b><li>renvoyé automatiquement lorsque le protocole RTP de transport fiable est utilisé.</li></ul></table>]]></text> 
+</component>
+
+</textcomponents>

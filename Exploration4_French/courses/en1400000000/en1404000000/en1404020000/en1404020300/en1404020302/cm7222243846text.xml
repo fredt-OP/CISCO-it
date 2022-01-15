@@ -1,0 +1,98 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Configuring Router Passwords</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click the buttons to see the steps for password configuration.</b>]]></text>
+</component>
+
+<component id="ID_button1">
+<text><![CDATA[Configure Password]]></text>
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[Encrypt Password]]></text>
+</component>
+
+<component id="ID_button3">
+<text><![CDATA[Password Length]]></text>
+</component>
+
+<!-- slide 1-->
+<component id="ID_S1_config">
+<text><![CDATA[<b>Config</b>]]></text>
+</component>
+
+<component id="ID_S1_top01">
+<text><![CDATA[<b>Administration<br />Host</b>]]></text>
+</component>
+
+<component id="ID_S1_top02">
+<text><![CDATA[<b>Management LAN</b>]]></text>
+</component>
+
+<component id="ID_S1_top03">
+<text><![CDATA[Administrator configures a type 5 (MD5 hash) password and disables the type 7 password.]]></text>
+</component>
+
+<component id="ID_S1_top04">
+<text><![CDATA[<font face="_typewriter">R1(config)#<b>enable secret 2-mAny-rOUtEs</b></font>]]></text>
+</component>
+
+<component id="ID_S1_output01">
+<text><![CDATA[<b>Step 1: Configure Router Passwords</b>]]></text>
+</component>
+
+<!-- slide 2-->
+<component id="ID_S2_config">
+<text><![CDATA[<b>Config</b>]]></text>
+</component>
+
+<component id="ID_S2_top01">
+<text><![CDATA[<b>Administration<br />Host</b>]]></text>
+</component>
+
+<component id="ID_S2_top02">
+<text><![CDATA[<b>Management LAN</b>]]></text>
+</component>
+
+<component id="ID_S2_top03">
+<text><![CDATA[Administrator encrypts all passwords in the configuration file.]]></text>
+</component>
+
+<component id="ID_S2_top04">
+<text><![CDATA[<font face="_typewriter">R1(config)#<b>service password-encryption</b></font>]]></text>
+</component>
+
+<component id="ID_S2_output01">
+<text><![CDATA[<b>Step 2: Encrypt Passwords</b>]]></text>
+</component>
+
+<!-- slide 3-->
+<component id="ID_S3_config">
+<text><![CDATA[<b>Config</b>]]></text>
+</component>
+
+<component id="ID_S3_top01">
+<text><![CDATA[<b>Administration<br />Host</b>]]></text>
+</component>
+
+<component id="ID_S3_top02">
+<text><![CDATA[<b>Management LAN</b>]]></text>
+</component>
+
+<component id="ID_S3_top03">
+<text><![CDATA[Administrator sets the router configuration file to require 10 characters in all passwords.]]></text>
+</component>
+
+<component id="ID_S3_top04">
+<text><![CDATA[<font face="_typewriter">R1(config)#<b>security passwords min-length 10</b></font>]]></text>
+</component>
+
+<component id="ID_S3_output01">
+<text><![CDATA[<b>Step 3: Password Minimum Length Enforcement</b>]]></text>
+</component>
+
+</textcomponents>

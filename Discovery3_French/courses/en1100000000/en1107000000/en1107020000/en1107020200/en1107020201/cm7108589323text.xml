@@ -1,0 +1,72 @@
+﻿<textcomponents>
+
+ <component id="ID_txt01">
+           
+ <text><![CDATA[Open Standard HDLC Frame]]></text> 
+  
+</component>
+
+
+
+<component id="ID_txt02">
+              
+<text><![CDATA[Cisco HDLC Frame]]></text> 
+  
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Flag</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Address</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Control</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Information</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>FCS</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Flag</font></td>
+</tr>
+
+<tr>
+<td width= "40%"bgcolor='#E9E9E9'>8 bits</td>
+<td width= "70%"bgcolor='#E9E9E9'>8 bits</td>
+<td width= "70%"bgcolor='#E9E9E9'>8 or 16 bits</td>
+<td >Variable length, 0 or more bits, multiples of 8</td>
+<td width= "80%"bgcolor='#E9E9E9'>16 or 32 bits</td>
+<td width= "40%"bgcolor='#E9E9E9'>8 bits</td>
+</tr>
+
+</table>
+
+]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Flag</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Address</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Control</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Type (Protocol Code)</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Information</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>FCS</font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'>Flag</font></td>
+</tr>
+
+<tr>
+<td width= "40%"bgcolor='#E9E9E9'>8 bits</td>
+<td width= "80%"bgcolor='#E9E9E9'>8 bits</td>
+<td width= "60%"bgcolor='#E9E9E9'>8 bits</td>
+<td width= "90%"bgcolor='#E9E9E9' glow='true' glowcolor='#FF6600'>16 bits</td>
+<td >Variable length, 0 or more bits, multiples of 8</td>
+<td width= "80%"bgcolor='#E9E9E9'>16 bits</td>
+<td width= "40%"bgcolor='#E9E9E9'>8 bits</td>
+</tr>
+
+</table>
+
+]]></text>
+</component>
+
+
+</textcomponents>

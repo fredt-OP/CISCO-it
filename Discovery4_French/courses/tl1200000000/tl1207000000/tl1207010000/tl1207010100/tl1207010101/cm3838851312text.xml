@@ -1,0 +1,38 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Considérations lors du choix d’un test de prototype ou sur pilote]]></text>
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Prototype</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Pilote</b></font></td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>+ Indépendant du réseau opérationnel
++ Test possible des conditions multiples ou peu probables qui pourraient causer une défaillance
++ Modifications pouvant être apportées à tout instant, car les utilisateurs n’ont pas besoin de la fonctionnalité
++ Environnement simulé extrêmement contrôlé
++ Aucun risque</td>
+<td bgcolor='#F2F2F2'>+ Trafic réseau dans la pratique 
++ Pour les cas où l’environnement physique ou les conditions de trafic réelles sont nécessaires pour déterminer le fonctionnement 
++ Test possible de la réponse du réseau dans des situations imprévues et imprévisibles </td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>- Ce n’est pas l’environnement réel
+- Moins de variabilité</td>
+<td bgcolor='#F2F2F2'>- Moins facile à contrôler
+- Coordination requise avec les groupes d’utilisateurs
+- Moins flexible
+- Visibilité et risque élevés</td>
+
+
+</tr>
+</table>
+]]></text>
+</component>
+</textcomponents>

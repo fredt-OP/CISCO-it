@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19846" lang=""><form-item order="fixed">
+			<ai id="93454" type="mc-ma"><question><![CDATA[An administrator has been asked to explain ACLs to a trainee. What are some of the suggested uses for ACLs that the trainee should learn? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[limit network traffic and increase performance  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[notify downstream devices in the event of increased traffic or congestion ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[determine whether interfaces are active or shutdown during peak usage ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[provide traffic flow control  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[provide a basic level of security for network access  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[open additional links when paths become saturated ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121078" type="mc-ma"><question><![CDATA[What statements are true regarding the meaning of the access control list wildcard mask 0.0.0.15? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The first 28 bits of a supplied IP address will be ignored. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The last four bits of a supplied IP address will be ignored.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The first 32 bits of a supplied IP address will be matched. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The first 28 bits of a supplied IP address will be matched.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The last five bits of a supplied IP address will be ignored. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The last four bits of a supplied IP address will be matched. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121079" type="mc-sa"><question><![CDATA[What IP address and wildcard mask pairs will test for <i>only</i> addresses of a subnet containing a host configured with 192.168.12.6 255.255.255.248?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[192.168.12.0 0.0.0.7  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.0 0.0.0.8 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.6 0.0.0.15 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.6 0.0.0.255 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121083" type="mc-ma"><question><![CDATA[Once an ACL has been created, it must be applied in the proper location to have the desired effect. What rules should be observed when applying ACLs? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Standard ACLs should be applied as close to the source as possible. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Outbound filters do not affect traffic that originates within the local router.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The inbound and outbound interface should be referenced as if looking from the outside of a router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Extended ACLs should be applied closest to the source.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All ACL statements are processed for each packet through the interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119885" type="mc-ma"><question><![CDATA[A network administrator is writing a standard ACL that will deny any traffic from the 172.16.0.0/16 network, but permit all other traffic. Which two commands should be used? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 95 deny any </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)# <b>access-list 95 deny 172.16.0.0 0.0.255.255 </b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 95 deny 172.16.0.0 255.255.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)# <b>access-list 95 permit any</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 95 host 172.16.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 95 172.16.0.0 255.255.255.255 </b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121080" type="mc-ma"><question><![CDATA[What can be concluded from the output shown in the exhibit?  (Choose two.) <br/><img src="i121080n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[This is an extended IP access list. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The keyword <b>host</b> is implied in the command line <b>access-list 99 deny 10.213.177.76</b>.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The wildcard mask must be configured for this access list to function properly. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Host 10.213.177.100 will be allowed access to the Serial0/1 interface.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[This access control list will not limit any traffic through this router. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121081" type="mc-sa"><question><![CDATA[Refer to the exhibit. The new security policy for the company allows all IP traffic from the Engineering LAN to the Internet while only web traffic from the Marketing LAN is allowed to the Internet.  Which ACL can be applied in the outbound direction of Serial 0/0/1 on the Marketing router to implement the new security policy? <br/><img src="16895.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 197 permit ip 192.0.2.0 0.0.0.255 any</b><br /><b>access-list 197 permit ip 198.18.112.0 0.0.0.255 any eq www </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 165 permit ip 192.0.2.0 0.0.0.255 any</b><br /><b>access-list 165 permit tcp 198.18.112.0 0.0.0.255 any eq www</b><br /><b>access-list 165 permit ip any any  </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>access-list 137 permit ip 192.0.2.0 0.0.0.255 any</b><br /><b>access-list 137 permit tcp 198.18.112.0 0.0.0.255 any eq www</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 89 permit TCP 192.0.2.0 0.0.0.255 any</b><br /><b>access-list 89 permit ip 198.18.112.0 0.0.0.255 any eq www  </b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119886" type="mc-ma"><question><![CDATA[Refer to the exhibit.  Which two statements are correct based on the set of commands shown in the exhibit? (Choose two.) <br/><img src="16693.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Host 10.128.114.76 will be able to establish a Telnet session with host 172.25.0.26. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Host 10.128.114.76 will not be able to establish an FTP session with available hosts on the 172.25.0.0/16 network.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Host 192.168.85.76 will be able to establish a Telnet session with host 172.25.0.26. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Host 192.168.85.76 will be able to establish an FTP session with available hosts on the 172.25.0.0 network.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Host 172.25.0.26 will not be able to establish a Telnet session with available hosts on the 192.168.85.0/24 network. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="117887" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117887" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>line vty 0 4</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access-class 1 in</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>ip access-group 1 in</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access-list 1 deny any</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access-list 1 deny ip any any</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access-list 1 permit host 10.0.0.1</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>R1(config)#</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>R1(config)#</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>R1(config-line)#</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>A network engineer wants to ensure that only users of the network management host can access the vty lines of R1.  Drag the commands from the left and place them in the order that they would be entered in the router.  Not all options will be used. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-112" targetYspacing="11" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="217894" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="217894" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="217894" action="Set">1</setvar><scoringdescription></scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="121082" type="mc-ma"><question><![CDATA[What are two purposes of IP access control lists? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[ACLs control host access to a network or to another host  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Standard ACLs can restrict access to specific applications and ports. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[ACLs provide a basic level of security for network access.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ACLs can permit or deny traffic based upon the MAC address originating on the router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ACLs can be applied to only one interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="89679" type="mc-sa"><question><![CDATA[Refer to the exhibit. Access list 101 is applied as an inbound ACL on interface Serial 0 of Router RTA and should permit telnet access to the 172.16.28.3 host. However, telnet access fails when host 10.10.10.3 attempts to connect to host 172.16.28.3. What could be the cause? <br/><img src="8596.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[The line <b>access-list 101 permit tcp any any established</b> should be added before the <b>permit</b> statement.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The line <b>access-list 101 permit tcp any any established</b> should be added after the <b>permit</b> statement. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The port number is incorrect for the access list. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The access list should be on the outbound interface of fastethernet 0. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119484" type="mc-sa"><question><![CDATA[A network administrator is interested in tracking all packets that do not match any statement in a standard ACL. What must the network administrator do to allow tracking?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Enter the command <b>debug ACL deny </b>from global configuration mode. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Add <b>permit ip any log</b> to the end of the ACL statements.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Enter the <b>syslog</b> command in global configuration command. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Nothing, logging of denied packets happens automatically. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

@@ -1,0 +1,148 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Switch1</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Host1</NAME>
+ <NAME translate="true">Host2</NAME>
+ <NAME translate="true">Host3</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 10.6.1 : &lt;br&gt;Création d'une petite topologie&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;h3&gt;Tableau d'adressage&lt;/h3&gt; &lt;p&gt;Ces travaux pratiques ne contiennent pas de tableau d'adressage.&lt;!--This is the end of the IP addressing table code&quot; --&gt;&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt;
+
+&lt;ul&gt; &lt;li&gt;concevoir le réseau logique ; &lt;li&gt;configurer la topologie physique ; &lt;li&gt;configurer la topologie logique du réseau local ; &lt;li&gt;vérifier la connectivité du réseau local. &lt;/ul&gt;
+
+&lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;Dans ces travaux pratiques, vous avez utilisé l'adresse réseau 172.20.0.0/24 pour le sous-réseau et pour fournir l'adressage IP pour les réseaux indiqués dans les diagrammes de la topologie. Vous devez déterminer le nombre de réseaux nécessaires, puis concevoir le schéma d'adressage approprié. Placez l'adresse et le masque corrects dans la table d'adressage. &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;html&gt; &lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says &apos;At the completion of this task, when you check Results, your score should be xxx%&apos; where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT doable in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : Connexion du réseau logique&lt;/h3&gt;&lt;/b&gt; &lt;h4&gt;Étape 1. À l'aide des spécifications ci-dessous, câblez correctement la topologie :&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;L'interface Fa0/0 du routeur 1 se connecte au port FastEthernet de l'hôte 1 ;&lt;li&gt;L'interface Fa0/1 du routeur 1 se connecte au port FastEthernet du commutateur 1 ;&lt;li&gt;L'interface Fa0/2 du commutateur 1 se connecte au port FastEthernet de l'hôte 2 ;&lt;li&gt;L'interface Fa0/3 du commutateur 1 se connecte au port FastEthernet de l'hôte 3.&lt;/ul&gt; &lt;h4&gt;À la fin de cette tâche, votre taux de réalisation doit être de 0 %. 
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;b&gt;&lt;h3&gt;Tâche 2 : Conception de la topologie logique&lt;/h3&gt; &lt;/b&gt; &lt;h4&gt;Étape 1.&amp;nbsp; Compte tenu d'une adresse IP et d'un masque 172.20.0.0 / 24 (adresse / masque), concevez un schéma d'adressage IP&lt;br&gt; qui répond aux spécifications suivantes :&lt;/h4&gt; &lt;table border=&quot;1&quot; width=&quot;48%&quot; id=&quot;table1&quot;&gt; &lt;tr&gt; &lt;td bgcolor=&quot;#000000&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Sous-réseau&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td bgcolor=&quot;#000000&quot; width=&quot;216&quot;&gt;&lt;b&gt;&lt;font color=&quot;#FFFFFF&quot;&gt;Nombre d'hôtes&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Sous-réseau A&lt;/td&gt; &lt;td width=&quot;216&quot;&gt;2 au maximum&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Sous-réseau B&lt;/td&gt; &lt;td width=&quot;216&quot;&gt;6 au maximum&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Sous-réseau C&lt;/td&gt; &lt;td width=&quot;216&quot;&gt;47 au maximum&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;Sous-réseau D&lt;/td&gt; &lt;td width=&quot;216&quot;&gt;125 au maximum&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt; &lt;h4&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;&lt;b&gt;Étape 2&lt;/b&gt;&lt;/span&gt;.&lt;span style=&quot;font-weight: 400&quot;&gt;&lt;b&gt; Concevez un bloc d'adresse pour le sous-réseau D.&lt;/b&gt;&lt;/span&gt;&lt;/h4&gt; &lt;p&gt;Commencez la conception du réseau logique en répondant aux besoins du sous-réseau D, qui nécessite le plus grand&lt;br&gt; bloc d'adresses IP. Reportez-vous au tableau des sous-réseaux et sélectionnez le premier bloc d'adresses qui prend en charge le &lt;br&gt; sous-réseau D.&lt;/p&gt; &lt;p&gt;&lt;b&gt;Étape 3. Concevez le bloc d'adresses du sous-réseau C.&lt;br&gt; &lt;br&gt; &lt;/b&gt;Commencez la conception du réseau logique en répondant aux besoins du sous-réseau C. Reportez-vous au tableau des sous-réseaux et sélectionnez le premier bloc d'adresses qui prend en charge le sous-réseau C.&lt;/p&gt; &lt;h4&gt;&lt;b&gt;Étape 4. Concevez le bloc d'adresses du sous-réseau B.&lt;/b&gt;&lt;/h4&gt; &lt;h4&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Commencez la conception du réseau logique en répondant aux besoins du sous-réseau B. Reportez-vous au tableau des sous-réseaux et sélectionnez le premier bloc d'adresses qui prend en charge le sous-réseau B.&lt;/span&gt;&lt;/h4&gt; &lt;h4&gt;&lt;b&gt;Étape 5. Concevez le bloc d'adresses du sous-réseau A.&lt;/b&gt;&lt;/h4&gt; &lt;h4&gt;&lt;span style=&quot;font-weight: 400&quot;&gt;Commencez la conception du réseau logique en répondant aux besoins du sous-réseau A, qui nécessite le plus petit bloc d'adresses IP. Reportez-vous au tableau des sous-réseaux et sélectionnez le premier bloc d'adresses qui prend en charge le sous-réseau A.&lt;/span&gt;&lt;/h4&gt;&lt;h4&gt;À la fin de cette tâche, votre taux de réalisation doit être de 0 %. 
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PAGE translate="true">&lt;h3&gt;&lt;b&gt;Tâche 3 : Configuration de la topologie logique&lt;/h3&gt; &lt;/b&gt;
+
+&lt;h4&gt; Étape 1. Décrivez les paramètres du réseau logique.&lt;/h4&gt; Adresses IP de l'interface :&lt;br&gt; &lt;ul&gt;&lt;li&gt;L'hôte 1 utilise la première adresse d'hôte dans le sous-réseau A ;&lt;li&gt;L'hôte 2 utilise la première adresse d'hôte dans le sous-réseau B ;&lt;li&gt;L'hôte 3 utilise la seconde adresse d'hôte dans le sous-réseau B ;&lt;li&gt;L'adresse d'hôte la plus élevée a été affectée à l'interface Fa0/0 du routeur 1 dans le sous-réseau A ;&lt;li&gt;L'adresse d'hôte la plus élevée a été affectée à l'interface Fa0/1 du routeur 1 dans le sous-réseau B. &lt;/ul&gt;
+
+&lt;p&gt; &lt;b&gt;REMARQUE : utilisez le bouton &lt;u&gt;Configuration IP&lt;/u&gt; du &lt;u&gt;Bureau&lt;/u&gt; pour configurer les ordinateurs&lt;/b&gt;&lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de réalisation devrait être de 100%. 
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 4 : Vérification de la connectivité réseau&lt;/h3&gt;&lt;/b&gt; Utilisez le bouton &lt;b&gt;Invite de commandes&lt;/b&gt; du &lt;b&gt;Bureau&lt;/b&gt; de chaque hôte pour tester tous les autres périphériques du réseau.
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de réalisation devrait être de 100%. 
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Host3</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Switch1</ID>
+ <ID translate="true">Host1</ID>
+ <ID translate="true">Host2</ID>
+ <ID translate="true">Host3</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Switch1</ID>
+ <ID translate="true">Host1</ID>
+ <ID translate="true">Host2</ID>
+ <ID translate="true">Host3</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

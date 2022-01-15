@@ -1,0 +1,96 @@
+html {
+	background-color: #ffffff;
+}
+
+body {
+	color: #000000;
+	font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	padding: 10px;
+	margin: 10px;
+}
+
+.glossarylink {
+	color: #00CC00;
+	text-decoration: underline;
+}
+
+.glossarylink:hover {
+	color: #00CC00;
+	text-decoration: none;
+}
+
+.glossarylink:focus {
+	color: #00CC00;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:focus {
+	text-decoration: none;
+}
+
+.listdiv {
+	height: 350px;
+	background-color: #FFFFFF;
+	overflow: auto;
+	border-style: groove;
+	border-color: #7f7f7f;
+	font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+.definitiondiv {
+	width: 95%;
+	height: 290px;
+	background-color: #FFFFFF;
+	overflow: auto;
+	border-style: groove;
+	border-color: #7f7f7f;
+	padding: 2px;
+	font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+td.term {
+	font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #000000;
+}
+
+td.term_selected {
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #000000;
+}
+
+.defbold {
+	font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	color: #000000;
+}
+
+a.seealso {
+	font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+h1 {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+:focus {
+	border: 3px double #000000;
+}
+
+li {
+	list-style-type: disc;
+}

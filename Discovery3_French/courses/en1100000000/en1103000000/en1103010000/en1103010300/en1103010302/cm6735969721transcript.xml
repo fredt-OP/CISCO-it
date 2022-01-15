@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 11:09:06">
+<title><content-text><![CDATA[3.1.3 - Types of Switching]]></content-text></title>
+<brief><content-text><![CDATA[This animation depicts two types of switching methods of forwarding a frame, Fast-forward and Fragment-free.<br><br>Fast-forward<br>The switch is connected to three hosts and a server. One host sends a frame to another host via the switch. When the switch receives the packet, it thinks, I am receiving a frame. I will forward it immediately based on the destination MAC address.<br><br>Fragment-free<br>The switch is connected to three hosts and a server. One host sends a frame to another host via the switch. When the switch receives the packet, it thinks, I am receiving a frame. I will check the first 64 bytes of the frame to ensure this is a valid Ethernet frame. Once the switch completes the check, it thinks, This is a valid frame. I will forward it based on the destination MAC address.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

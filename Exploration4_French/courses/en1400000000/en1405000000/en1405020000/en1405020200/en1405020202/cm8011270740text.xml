@@ -1,0 +1,75 @@
+<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Click the buttons to see the slides.]]></text>
+</component>
+
+<component id="ID_button1">
+<text><![CDATA[<b>Standard ACL Syntax</b>]]></text>
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[<b>Remove ACL</b>]]></text>
+</component>
+
+<component id="ID_button3">
+<text><![CDATA[<b>Remark</b>]]></text>
+</component>
+
+<!-- slide 1-->
+<component id="ID_title01">
+<text><![CDATA[<b>Standard ACL <font face='_typewriter'>access-list</font> Command Syntax</b>]]></text>
+</component>
+
+<component id="ID_header1">
+<text><![CDATA[<font color='#FFFFFF'><b>Parameter</b></font>]]></text>
+</component>
+
+<component id="ID_header2">
+<text><![CDATA[<font color='#FFFFFF'><b>Description</b></font>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#CCCCCC' borderwidth='1' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='150' bgcolor='#F2F2F2'><font face='_typewriter'>access-list-number</font></td>
+<td bgcolor='#F2F2F2'>Number of an ACL. This is a decimal number from 1 to 99, or 1300 to 1999 (for standard ACL).</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'><font face='_typewriter'><b>deny</b></font></td>
+<td bgcolor='#DDDDDD'>Denies access if the conditions are matched.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'><font face='_typewriter'><b>permit</b></font></td>
+<td bgcolor='#F2F2F2'>Permits access if the conditions are matched.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'><font face='_typewriter'><b>remark</b></font></td>
+<td bgcolor='#DDDDDD'>Add a remark about entries in an IP access list to make the list easier to understand and scan.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'><font face='_typewriter'><i>source</i></font></td>
+<td bgcolor='#F2F2F2'>Number of the network or host from which the packet is being sent. There are two ways to specify the <i>source</i>:<ul><li>Use a 32-bit quantity in four-part, dotted- decimal format.</li><li>Use the keyword <font face='_typewriter'><b>any</b></font> as an abbreviation for a <font face='_typewriter'><i>source</i></font> and <font face='_typewriter'><i>source-wildcard</i></font> of 0.0.0.0 255.255.255.55.</li></ul></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'><font face='_typewriter'><i>source-wildcard</i></font></td>
+<td bgcolor='#DDDDDD'>(Optional) Wildcard bits to be applied to the source. There are two ways to specify the source-wildcard:<ul><li>Use a 32-bit quantity in four-part, dotted-decimal format. Place ones in the bit positions you want to ignore.</li><li>Use the keyword <font face='_typewriter'><b>any</b></font> as an abbreviation for a <font face='_typewriter'><i>source</i></font> and <font face='_typewriter'><i>source-wildcard</i></font> of 0.0.0.0 255.255.255.55.</li></ul></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'><font face='_typewriter'><b>log</b></font></td>
+<td bgcolor='#F2F2F2'><p>(Optional) Causes an informational logging message about the packet that matches the entry to be sent to the console. (The level of messages logged to the console is controlled by the <font face='_typewriter'><b>logging console</b></font> command.)</p><br/><p>The message includes the ACL number, whether the packet was permitted or denied, the source address, and the number of packets. The message is generated for the first packet that matches, and then at five-minute intervals, including the number of packets permitted or denied in the prior five-minute interval.</p></td>
+</tr>
+</table>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_title02">
+<text><![CDATA[<b>Removing an ACL</b>]]></text>
+</component>
+
+<!-- slide 3 -->
+<component id="ID_title03">
+<text><![CDATA[<b>Documenting an ACL</b>]]></text>
+</component>
+
+</textcomponents>

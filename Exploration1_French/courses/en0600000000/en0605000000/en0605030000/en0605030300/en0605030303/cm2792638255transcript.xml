@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 13:01:51">
+<title><content-text><![CDATA[5.3.3 - A Gateway - The Way Out of Our Network]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a simple network with two routers. The contents of the local routing table for one of the routers is expanded.<br><br>Network Topology:<br>The local router R1 interface with IP address 192.168.1.1/24 is connected to the remote router R2 interface with IP address 192.168.1.2/24. Router R2 also has two local networks connected on two of its other interfaces: network 10.1.1.0/24 and network 10.1.2.0/24.<br><br>The R1 local router routing table contains the following:<br>Destination network: 10.1.1.0/24<br>Next hop address: 192.168.1.2<br><br>Destination network: 10.1.2.0/24  <br>Next hop address: 192.168.1.2<br><br>This indicates that for packets to reach either the 10.1.1.0/24 or the 10.1.2.0/24 network on router R2, R1 must send the packet to the next hop, which is R2's 192.168.1.2/24 interface.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

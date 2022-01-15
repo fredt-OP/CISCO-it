@@ -1,0 +1,16 @@
+<textcomponents>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Dans ce chapitre, vous avez appris les éléments suivants :</b></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li>Le protocole STP a pour fonction d’empêcher la formation de boucles dans un réseau hiérarchique qui met en place des liaisons redondantes.</li><li>Le protocole utilise différents états de ports et minuteurs pour éviter la constitution de boucles.</li><li>Un commutateur du réseau est désigné comme pont racine. Le pont racine est déterminé par le biais d’un processus de sélection dans lequel des trames BPDU sont échangées entre les commutateurs voisins dans un domaine de diffusion.</li><li>Tous les autres commutateurs du réseau utilisent l’algorithme STA pour déterminer les rôles de leurs ports. Les ports de commutateurs les plus proches du pont racine deviennent des ports racine. Les ports restants non désignés comme ports racine entrent en concurrence pour les rôles de port désigné ou non désigné.</li><li>Étant donné que le temps de convergence du protocole STP peut atteindre 50 secondes, les protocoles RSTP et rapid PVST+ ont été développés.</li><li>Le protocole RSTP réduit le temps de convergence (de l’ordre de six secondes ou moins).</li><li>Le protocole rapid PVST+ prend en charge une instance STP pour chaque VLAN par rapport au protocole RSTP. Le protocole rapid PVST+ constitue l’implémentation STP privilégiée dans un réseau commuté Cisco.</li></ul></td>
+  </tr>
+</table>]]></text>
+</component>
+
+<component id="ID_title"><text><![CDATA[<b></b>]]></text>
+</component>
+</textcomponents>

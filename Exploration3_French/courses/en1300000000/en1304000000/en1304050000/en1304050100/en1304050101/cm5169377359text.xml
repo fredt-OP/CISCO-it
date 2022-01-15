@@ -1,0 +1,16 @@
+<textcomponents>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>In this chapter you have learned:</b></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li>VTP simplifies VLAN administration across multiple Cisco Catalyst switches by replicating VLAN configurations between switches.</li><li>A VTP domain defines which switches in a network are to be configured similarly  with respect to the VLAN configuration.</li><li>A Cisco Catalyst switch can be configured for one of three VTP operational modes: Server, Client, or Transparent.</li><li>VTP server mode allows for the creation, deletion, and modification of VLANs.</li><li>VTP client mode prevents modification of the VLANs and can only receive VLAN information through VTP advertisements.</li><li>VTP transparent mode allows for the creation, deletion, and modification of local VLANs, including extended range VLANs. VLAN information is not synchronized with other switches.</li><li>VTP Passwords can be used to limit synchronization between switches configured with the same VTP domain.</li><li>VTP pruning can improve the overall bandwidth over trunk links by limiting flood traffic to switches that contain active VLANs specific for the flood traffic.</li><li>Always verify your configuration to limit the possibility of VTP errors.</li></ul></td>
+  </tr>
+</table>]]></text>
+</component>
+
+<component id="ID_title"><text><![CDATA[<b></b>]]></text>
+</component>
+</textcomponents>

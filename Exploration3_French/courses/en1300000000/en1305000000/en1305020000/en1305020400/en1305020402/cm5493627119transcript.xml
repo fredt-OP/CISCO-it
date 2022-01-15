@@ -1,0 +1,5 @@
+<transcript lastedited="01.06.09 10:01:48">
+<title><content-text><![CDATA[5.2.4  - Port Roles]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts spanning-tree port roles.<br><br>Network Topology:<br>Four switches, S1, S2, S3, and S4, are interconnected in a partial mesh.<br>Switch S1 port F0/1 is connected to S4 port F0/2 (Trunk 1).<br>Switch S2 port F0/2 is connected to S3 port F0/2 (Trunk 2).<br>Switch S3 port F0/1 is connected to S1 port F0/2 (Trunk 3).<br>Switch S2 port F0/1 is connected to S4 port F0/1 (Trunk 4).<br><br>STP port roles:<br>Root Bridge: Switch S1<br>Root Ports: Switch S3 port F0/1, switch S2 port F0/1, and switch S4 port F0/2<br>Designated ports: Switch 1 ports F0/1 and F0/2, switch S3 port F0/2, and switch S4 port F0/2.<br>Non-designated ports: Switch S2 port F0/2<br><br>Note: Switch S2 port F0/2 is placed in blocking state by STP to prevent switching loops. This port has a red "X" on it.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

@@ -1,0 +1,29 @@
+<textcomponents>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<b>EIGRP Composite Metric</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Default Composite Formula:<br/>metric = <b>[K1*bandwidth + K3*delay]</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Complete Composite Formula:<br/>metric = <b>[K1*bandwidth + <font color='#FF0000'>(K2*bandwidth)/(256 - load)</font> + K3*delay] <font color='#FF0000'>* [K5/(reliability + K4)]</font></b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Default values:</b><br/>K1 (bandwidth) = 1<br/>K2 (load) = 0<br/>K3 (delay) = 1<br/>K4 (reliability) = 0<br/>K5 (reliability) = 0]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA["K" values can be changed with the <font face="_typewriter"><b>metric weights</b></font> command.]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<font color='#FF0000'>(Not used if "K" values are 0)</font>]]></text>
+</component>
+
+
+</textcomponents>

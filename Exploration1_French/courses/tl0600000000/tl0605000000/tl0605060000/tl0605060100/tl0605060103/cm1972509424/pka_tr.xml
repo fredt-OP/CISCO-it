@@ -1,0 +1,142 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;b&gt;&lt;h2&gt;5.6.1 : Exercice d’intégration de compétences : routage des paquets IP&lt;/b&gt;&lt;/h2&gt; &lt;b&gt;&lt;h3&gt;Diagramme de topologie :  &lt;/b&gt;&lt;/h3&gt; Topologie partielle donnée ; doit être complétée.&lt;br&gt;&lt;br&gt; 
+
+&lt;div align=&quot;center&quot;&gt; &lt;table border=&quot;1&quot;&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Périphérique&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Interface&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Adresse IP&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Masque de sous-réseau&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Passerelle par défaut&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; rowspan=&quot;2&quot;&gt;&lt;b&gt; R1-ISP&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Fa0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.253&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; rowspan=&quot;2&quot;&gt;N/D&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;S0/0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;10.10.10.6&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.252&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; rowspan=&quot;2&quot;&gt;&lt;b&gt; R2-Central&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Fa0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; rowspan=&quot;2&quot;&gt;N/D&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;S0/0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;10.10.10.5&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.252&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;S1-Central&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;VLAN 1&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.254.1&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;PC-PT 1A&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;NIC&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.1.1&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;PC-PT 1B&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;NIC&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.1.2&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;Serveur Eagle&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;NIC&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.254&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.253&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;&lt;/div&gt;
+ 
+
+&lt;b&gt;&lt;h3&gt;Objectifs pédagogiques : &lt;/b&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt; Configurer une interface de routeur à l'aide d'une interface utilisateur graphique &lt;li&gt; Explorer une table de routage &lt;li&gt; Configurer une route statique à l'aide d'une interface utilisateur graphique &lt;li&gt; Explorer le routage des paquets IP &lt;/ul&gt;
+
+&lt;b&gt;&lt;h3&gt;Données de base :&lt;/b&gt;&lt;/h3&gt; L'ensemble du cours utilise une configuration de TP standard créée à partir de PC, serveurs, routeurs et commutateurs réels pour enseigner des concepts d'interconnexion de réseaux. À la fin de chaque chapitre, vous construirez des parties de plus en plus grandes de cette topologie dans Packet Tracer, et analyserez des interactions de protocole de plus en plus complexes. Vous avez déjà étudié divers protocoles d'application, tels que DNS, HTTP, TFTP, DHCP et Telnet, ainsi que deux protocoles de couche transport, TCP et UDP.  Vous avez peut-être remarqué que quels que soient les protocoles d'application et de transport  impliqués, dans la vue &lt;b&gt;Inbound&lt;/b&gt; et &lt;b&gt;Outbound PDU Details&lt;/b&gt;, ils étaient toujours encapsulés en paquets IP. Dans cet exercice, nous allons examiner comment le protocole IP, protocole de couche réseau dominant d'Internet, fonctionne dans le contexte d'un exemple simple de routage IP.&lt;br&gt; &lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : configuration d'une interface de routeur&lt;/b&gt;&lt;/h3&gt;
+
+Il existe des problèmes sur le réseau local : PC-PT 1A ne peut pas communiquer avec le serveur Eagle (vérifiez que ceci se produit en mode temps réel en envoyant une commande ping à l'adresse IP du serveur Eagle : 192.168.254.254). Il apparaît qu'il y a un problème avec le routeur. Placez le curseur sur le routeur R2-Central et notez la condition de l'interface Fa0/0 (à laquelle S1-Central est connecté). Cette interface doit avoir une adresse IP et un masque de sous-réseau, et être sous tension pour agir comme passerelle par défaut pour le LAN.
+
+Cliquez sur le routeur R2-Central et accédez à l'onglet &lt;b&gt;Config&lt;/b&gt;. À la fin du cours, vous apprendrez à utiliser l'interface de ligne de commande (ILC) Cisco Internetwork Operating System (IOS) pour effectuer cette tâche. Pour l'instant, l'onglet &lt;b&gt;Config&lt;/b&gt; est plus simple et vous permet de vous concentrer sur l'idée de base du routage IP. Dans la liste affichée, recherchez &lt;b&gt;INTERFACE, FastEthernet0/0&lt;/b&gt;. Ajoutez l'adresse IP 172.16.255.254 avec le masque de sous-réseau 255.255.0.0, et activez le port. Fermez la fenêtre du routeur. Vérifiez que l'interface de routeur (port) fonctionne désormais en plaçant le curseur au-dessus.  Essayez d'atteindre Serveur Eagle. La requête échoue toujours. Quelles peuvent en être les raisons ? &lt;br&gt;&lt;br&gt; 
+
+&lt;b&gt;&lt;h3&gt;Tâche 2 : examen de routes&lt;/b&gt;&lt;/h3&gt;
+
+Utilisez l'outil &lt;b&gt;Inspect&lt;/b&gt; (loupe) pour examiner la table de routage de R2-Central. Vous voyez alors les réseaux directement connectés du routeur, mais le réseau Serveur Eagle est injoignable. &lt;br&gt;&lt;br&gt; 
+
+&lt;b&gt;&lt;h3&gt;Tâche 3 : configuration d'une route à l'aide d'une interface utilisateur graphique&lt;/b&gt;&lt;/h3&gt;
+
+Cliquez sur le routeur R2-Central et accédez à l'onglet &lt;b&gt;Config&lt;/b&gt;. Dans la liste affichée, recherchez &lt;b&gt;ROUTING, Static&lt;/b&gt;. Configurez une route statique par défaut, à l'aide de l'adresse 0.0.0.0, du masque 0.0.0.0 et du tronçon suivant 10.10.10.6 (interface S0/0/0 sur le routeur R1-ISP) et cliquez sur le bouton &lt;b&gt;Add&lt;/b&gt;. Cette route est configurée pour que quelle que soit la destination des paquets du LAN 172.16.0.0 /16, ils aillent vers le routeur R1-ISP. Sous &lt;b&gt;GLOBAL, Settings&lt;/b&gt;, cliquez sur le bouton &lt;b&gt;Save&lt;/b&gt; pour enregistrer l'interface et la configuration de route que vous venez de définir en NVRAM au cas où le routeur est mis hors tension puis sous tension. Utilisez l'outil &lt;b&gt;Inspect&lt;/b&gt; (loupe) pour examiner à nouveau la table de routage de R2-Central. Vous devez maintenant voir la route que vous avez configurée dans la table de routage. &lt;br&gt;&lt;br&gt;
+
+Vérifiez votre travail à l'aide des informations renvoyées par le bouton &lt;b&gt;Check Results&lt;/b&gt; et l'onglet &lt;b&gt;Assessment Items&lt;/b&gt;. Testez la connectivité, en temps réel, en utilisant ADD SIMPLE PDU pour tester la connectivité entre PC-PT 1A et le serveur Eagle. L'unité de données de protocole, une seule connexion ping, apparaît dans la liste des unités créées par l'utilisateur pour une utilisation future également. La première tentative de requête ping échoue car les tables ARP ne sont pas remplies ; cliquez deux fois sur &lt;b&gt;Fire&lt;/b&gt; pour l'envoyer à nouveau : elle devrait aboutir cette fois. &lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 4 : examen du routage du paquet IP&lt;/b&gt;&lt;/h3&gt; Passez en mode de simulation. En utilisant l'unité de données de protocole créée dans la tâche 3, suivez le trajet du paquet de PC-PT 1A au serveur Eagle et inversement à l'aide du bouton &lt;b&gt;Capture / Forward&lt;/b&gt; et en examinant le contenu du paquet en cliquant sur l'enveloppe ou sur le carré coloré dans la colonne &lt;b&gt;Info&lt;/b&gt; de la liste &lt;b&gt;Event List&lt;/b&gt;. &lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Réflexion :&lt;/b&gt;&lt;/h3&gt;Quelles données un paquet IP peut-il contenir ?  Que signifie l'expression « le paquet IP est routé » ?  Qu'est-ce qu'une route ?  Où des problèmes peuvent-ils apparaître ? &lt;br&gt; &lt;br&gt; &lt;br&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">Eagle_Server</ID>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">Eagle_Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

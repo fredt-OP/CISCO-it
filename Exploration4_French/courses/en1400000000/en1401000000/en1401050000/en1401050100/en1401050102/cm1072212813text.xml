@@ -1,0 +1,109 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Describe the three layers of the hierarchical network model.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 1.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Access layer:</b><ul><li>Grants user access to network devices.</li><li>In a network campus, the access layer generally incorporates switched LAN devices with ports that provide connectivity to workstations and servers.</li><li>In the WAN environment, it may provide teleworkers or remote sites access to the corporate network across WAN technology.</li></ul><b>Distribution layer:</b><ul><li>Aggregates the wiring closets, using switches to segment workgroups and isolate network problems in a campus environment.</li><li>Similarly, the distribution layer aggregates WAN connections at the edge of the campus and provides policy-based connectivity.</li></ul><b>Core layer (also referred to as the backbone):</b><ul><li>A high-speed backbone that is designed to switch packets as fast as possible.</li><li>Because the core is critical for connectivity, it must provide a high level of availability and adapt to changes very quickly. It also provides scalability and fast convergence.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Describe the five modules of the Cisco Enterprise Architecture.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from  1.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Enterprise Campus Architecture:</b><ul><li>An enterprise campus network is a building or group of buildings connected into one network that consists of many LANs.</li><li>It is generally limited to a fixed geographic area, but it can span several neighboring buildings.</li><li>The architecture is modular and scalable and can easily expand to include additional buildings or floors as required.</li></ul><b>Enterprise Branch Architecture:</b><ul><li>This module allows businesses to extend the applications and services found at the enterprise campus to thousands of remote locations and users or to a small group of branches.</li></ul><b>Enterprise Data Center Architecture:</b><ul><li>Data centers are responsible for managing and maintaining the many data systems that are vital to modern business operations.</li><li>This module centrally houses the data and resources to enable users to effectively create, collaborate, and interact.</li></ul><b>Enterprise Teleworker Architecture:</b><ul><li>This module leverages the network resources of the enterprise from home using broadband services such as cable modem or DSL to connect to the corporate network.</li><li>Typically implemented using remote access VPNs.</li></ul><b>Enterprise Edge Architecture</b><ul><li>This module often functions as a liaison between the campus module and the other modules in the Enterprise Architecture.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Compare and contrast the following WAN terms: CPE, CO, local loop, DCE, DTE, and demarcation point.]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from  1.2)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Customer Premises Equipment (CPE):</b><ul><li>The devices and inside wiring located at the premises of the subscriber and connected with a telecommunication channel of a carrier.</li><li>The subscriber either owns the CPE or leases the CPE from the service provider.</li></ul><b>Central Office (CO):</b><ul><li>A local service provider facility or building where local telephone cables link to long-haul, all-digital, fiber-optic communications lines through a system of switches and other equipment.</li></ul><b>Local Loop:</b><ul><li>Often referred to as the “last mile,” it is the copper or fiber telephone cable that connects the CPE at the subscriber site to the CO of the service provider.</li></ul><b>Data Communications Equipment (DCE):</b><ul><li>Also called data circuit-terminating equipment, the DCE consists of devices that put data on the local loop.</li><li>The DCE primarily provides an interface to connect subscribers to a communication link on the WAN cloud. </li></ul><b>Data Terminal Equipment (DTE):</b><ul><li>The customer devices that pass the data from a customer network or host computer for transmission over the WAN.</li><li>The DTE connects to the local loop through the DCE.</li></ul><b>Demarcation Point:</b><ul><li>Physically, the demarcation point is the cabling junction box, located on the customer premises, that connects the CPE wiring to the local loop and officially separates the customer equipment from service provider equipment.</li><li>It is the place where the responsibility for the connection changes from the user to the service provider.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Compare and contrast the following WAN devices: modem, CSU/DSU, access server, WAN switch, and router.]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from  1.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Modem:</b><ul><li>A voiceband modem converts and reconverts the digital signals produced by a computer into voice frequencies that can be transmitted over the analog lines of the public telephone network.</li><li>Faster modems, such as cable modems and DSL modems, transmit using higher broadband frequencies.</li></ul><b>CSU/DSU:</b><ul><li>Digital lines, such as T1 or T3 carrier lines, require a channel service unit (CSU) and a data service unit (DSU).</li><li>The two are often combined into a single piece of equipment, called the CSU/DSU.</li><li>The CSU provides termination for the digital signal and ensures connection integrity through error correction and line monitoring while the DSU converts the T-carrier line frames into frames that the LAN can interpret.</li></ul><b>Access server:</b><ul><li>Concentrates dial-in and dial-out user communications and may have a mixture of analog and digital interfaces and support hundreds of simultaneous users.</li></ul><b>WAN switch:</b><ul><li>A multiport internetworking device used in carrier networks to support Frame Relay, ATM, or X.25.</li></ul><b>Router:</b><ul><li>Provides internetworking and WAN access interface ports that are used to connect to the service provider network.</li><li>These interfaces may be serial connections or other WAN interfaces and may require an external device such as, a DSU/CSU or modem (analog, cable, or DSL), to connect to the service provider.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Compare and contrast X.25, Frame Relay, and ATM.]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from  1.3)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>X.25:</b><ul><li>Older low-capacity WAN technology with a maximum speed of 48 kb/s, typically used in dialup mode with point-of-sale card readers to validate transactions on a central computer.</li><li>For these applications, the low bandwidth and high latency are not a concern, and the low cost makes X.25 affordable.</li><li>Frame Relay has replaced X.25 at many service provider locations.</li></ul><b>Frame Relay:</b><ul><li>Layer 2 WAN protocol that typically offers data rates of 4 Mb/s or higher.</li><li>It provides permanent, shared, medium-bandwidth connectivity using virtual circuits capable of carrying both voice and data traffic.</li><li>VCs are uniquely identified by a DLCI, which ensures bidirectional communication from one DTE device to another.</li></ul><b>ATM:</b><ul><li>Asynchronous Transfer Mode (ATM) technology is based on a cell-based architecture rather than a frame-based architecture, using fixed length cells of 53 bytes.</li><li>These small, fixed-length cells are well suited for carrying delay-sensitive voice and video traffic.</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>This concludes this chapter's Check Your Understanding questions.</b>]]></text>
+</component>
+</textcomponents>

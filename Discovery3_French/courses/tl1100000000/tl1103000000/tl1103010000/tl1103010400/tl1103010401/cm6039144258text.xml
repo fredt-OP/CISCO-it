@@ -1,0 +1,103 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Sécurité physique]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Sécuriser les mots de passe]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Activer SSH]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Surveillance]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Désactiver HTTP]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Désactiver les ports]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Sécurité des ports]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Désactiver le protocole Telnet]]></text>
+</component>
+
+<component id="ID_txtTitle1">
+<text><![CDATA[<b>Sécurité physique</b>]]></text>
+</component>
+
+<component id="ID_txtInst">
+<text><![CDATA[<b>Placez votre pointeur sur les diverses mesures de sécurité pour obtenir plus d’informations.</b>]]></text>
+</component>
+
+<component id="ID_txtBody1">
+<text><![CDATA[Les commutateurs constituent une partie essentielle du réseau. Veillez à les sécuriser physiquement, en les montant sur un châssis, puis en installant celui-ci dans une pièce sécurisée. Limitez l’accès à cette salle au personnel de réseau autorisé uniquement.]]></text>
+</component>
+
+<component id="ID_txtTitle2">
+<text><![CDATA[<b>Sécuriser les mots de passe</b>]]></text>
+</component>
+
+<component id="ID_txtBody2">
+<text><![CDATA[Configurez tous les mots de passe (mode utilisateur, mode privilégié et accès VTY) avec au moins six caractères uniques. Changez régulièrement les mots de passe. N’utilisez jamais des mots du dictionnaire. Utilisez la commande enable secret pour la protection des mots de passe de niveau privilégié, car elle utilise des techniques avancées de chiffrement. Chiffrez tous les mots de passe sur l’écran du fichier de configuration en cours, à l’aide de la commande IOS : <font face='_typewriter'><b>service password-encryption.</b></font>]]></text>
+</component>
+
+<component id="ID_txtTitle3">
+<text><![CDATA[<b>Activer le protocole SSH pour l’accès VTY distant sécurisé</b>]]></text>
+</component>
+
+<component id="ID_txtBody3">
+<text><![CDATA[SSH est un protocole de serveur client utilisé pour se connecter à un périphérique tiers sur un réseau. Il garantit une authentification stricte et des communications sécurisées sur des canaux non sécurisés.  SSH chiffre l’intégralité de la session, notamment la transmission du mot de passe.]]></text>
+</component>
+
+<component id="ID_txtTitle4">
+<text><![CDATA[<b>Surveiller les accès et le trafic</b>]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[Surveillez tout le trafic transitant via un commutateur afin de vous assurer qu’il est conforme aux stratégies de votre entreprise. Par ailleurs, enregistrez l’adresse MAC de tous les périphériques se connectant à un port de commutateur spécifique et toutes les tentatives de connexion sur ce commutateur. Si le commutateur détecte du trafic malveillant ou des accès non autorisés, prenez les mesures énoncées par la stratégie de sécurité de l’organisation. ]]></text>
+</component>
+
+<component id="ID_txtTitle5">
+<text><![CDATA[<b>Désactiver l’accès http</b>]]></text>
+</component>
+
+<component id="ID_txtBody5">
+<text><![CDATA[Désactivez l’accès http afin que personne ne puisse accéder au commutateur et modifier la configuration via le Web. La commande permettant de désactiver l’accès http est : <font face='_typewriter'><b>no ip http server.</b></font>]]></text>
+</component>
+
+
+<component id="ID_txtTitle6">
+<text><![CDATA[<b>Désactivation des ports inutilisés</b>]]></text>
+</component>
+
+<component id="ID_txtBody6">
+<text><![CDATA[Désactivez tous les ports non utilisés sur le commutateur pour empêcher que des PC ou des points d’accès sans fil inconnus ne se connectent à un port disponible sur le commutateur. Pour ce faire, émettez une commande <font face='_typewriter'><b>shutdown</b></font> sur l’interface. ]]></text>
+</component>
+
+<component id="ID_txtTitle7">
+<text><![CDATA[<b>Activer la sécurité des ports</b>]]></text>
+</component>
+
+<component id="ID_txtBody7">
+<text><![CDATA[La sécurité des ports permet de limiter l’accès à un port de commutateur à une liste spécifique d’adresses MAC. Entrez manuellement les adresses MAC ou lancez l’apprentissage dynamique d’adresses par le commutateur. Le port de commutateur sélectionné ne retient que les adresses MAC qui autorisent le trafic en provenance de ces périphériques. Lorsqu’un périphérique doté d’une adresse MAC différente se connecte au port, le commutateur désactive automatiquement ce port.  ]]></text>
+</component>
+
+<component id="ID_txtTitle8">
+<text><![CDATA[<b>Désactiver le protocole Telnet</b>]]></text>
+</component>
+
+<component id="ID_txtBody8">
+<text><![CDATA[Une connexion telnet envoie des données sur le réseau public en texte clair. Il peut s’agir de noms d’utilisateurs, de mots de passe ou autres données. Pour désactiver l’accès telnet pour tous les périphériques réseau, ne configurez aucun mot de passe pour l’ouverture de sessions VTY.]]></text>
+</component>
+
+</textcomponents>

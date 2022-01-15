@@ -1,0 +1,8 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Vulnerable Router Interfaces</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>! ----- IP and network services Section</b><br /><font face="_typewriter">no cdp run<br />no ip source-route<br />no ip classless<br />no service tcp-small-servers<br />no service udp-small-servers<br />no ip finger<br />no service finger<br />no ip bootp server<br />no ip http server<br />no ip name-server</font><br /><b>! ----- Boot control section</b><br /><font face="_typewriter">no boot network<br />no service config</font><br /><b>! ----- SNMP Section (for totally disabling SNMP)<br />! set up totally restrictive access list</b><br /><font face="_typewriter">no access-list 70<br />access-list 70 deny any</font><br /><b>! make SNMP read-only and subject to access list</b><br /><font face="_typewriter">snmp-server community aqiytj1726540942 ro 11</font><br /><b>! disable SNMP trap and system-shutdown features</b><br /><font face="_typewriter">no snmp-server enable traps<br />no snmp-server system-shutdown<br />no snmp-server trap-auth</font><br /><b>! turn off SNMP altogether</b><br /><font face="_typewriter">no snmp-server</font><br /><b>! ----- Per-interface services section</b><br /><font face="_typewriter">interface eth 0/0<br />description Outside interface to 14.1.0.0/16 net<br />no ip proxy-arp<br />no ip directed-broadcast<br />no ip unreachable<br />no ip redirect</font><br />]]></text>
+</component>
+</textcomponents>

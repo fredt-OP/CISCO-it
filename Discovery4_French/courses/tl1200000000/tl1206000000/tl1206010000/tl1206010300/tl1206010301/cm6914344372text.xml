@@ -1,0 +1,124 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Cliquez sur les boutons pour afficher les différentes méthodes de calcul des adresses.]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[Sous-réseaux par classe]]></text>
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[Sous-réseaux sans classe utilisant la technique VLSM]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Tous les sous-réseaux du même réseau classé ont la même taille. Ils utilisent le même masque de sous-réseau et la même longueur de préfixe.]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Les sous-réseaux peuvent avoir une taille et une longueur différentes, tant qu’aucun chevauchement de plages d’adresses ne se produit.]]></text>
+</component>
+
+
+
+<component id="ID_table1">
+<text><![CDATA[
+		
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Réseau parent</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Sous-réseaux</b></font></td>
+    </tr>
+    <tr>
+      <td rowspan="4" bgcolor='#F2F2F2'><b>172.16.0.0/16</b></td>
+      <td bgcolor='#F2F2F2'><b>172.16.0.0/22</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'><b>172.16.4.0/22 </b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><b>172.16.8.0/22</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'><b>172.16.12.0/22 </b></td>
+    </tr>   
+    <tr>
+      <td rowspan="4" bgcolor='#F2F2F2'><b>172.17.0.0/16</b></td>
+      <td bgcolor='#F2F2F2'><b>172.17.0.0/24</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'><b>172.17.1.0/24</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><b>172.17.2.0/24</b></td>
+    </tr>   
+    <tr>
+      <td bgcolor='#DDDDDD'><b>172.17.3.0/24</b></td>
+    </tr>    
+  </table>
+
+]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[
+		
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Réseau parent</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Sous-réseaux</b></font></td>
+    </tr>
+    <tr>
+      <td rowspan="7" bgcolor='#F2F2F2'><b>172.16.0.0/16</b></td>
+      <td bgcolor='#F2F2F2'><b>172.16.0.0/22</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#FF9900'><b>172.16.4.0/24 </b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#FF9900'><b>172.16.5.0/24</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#FF9900'><b>172.16.6.0/24 </b></td>
+    </tr>   
+    <tr>
+      <td bgcolor='#FF9900'><b>172.16.7.0/24</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'><b>172.16.8.0/22 </b></td>
+    </tr>    
+    <tr>
+      <td bgcolor='#F2F2F2'><b>172.16.12.0/22</b></td>
+    </tr>
+    <tr>
+      <td rowspan="8" bgcolor='#DDDDDD'><b>172.17.0.0/16</b></td>
+      <td bgcolor='#DDDDDD'><b>172.17.0.0/24</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><b>172.17.1.0/24</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'><b>172.17.2.0/24</b></td>
+    </tr>   
+    <tr>
+      <td bgcolor='#FF9900'><b>172.17.3.0/27</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#FF9900'><b>172.17.3.32/27</b></td>
+    </tr>    
+    <tr>
+      <td bgcolor='#FF9900'><b>172.17.3.64/27</b></td>
+    </tr>  
+    <tr>
+      <td bgcolor='#FF9900'><b>172.17.3.96/27</b></td>
+    </tr>    
+    <tr>
+      <td bgcolor='#FF9900'><b>172.17.3.128/27</b></td>
+    </tr>     
+  </table>
+
+]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,340 @@
+<avalontask>
+	<r2data taskid="99999" type="simulation" language="JP" title="Sample Linksys Item"/>
+	<guitext/>
+	<variables/>
+
+	<textcomponents>
+		<component type="text" id="txt_scenario"> 
+			<text variable="true" translate="true"><![CDATA[<font face='_sans' size='12'><br>Transición de una red que utiliza el protocolo IPv4 al IPv6.<br>Su tarea es completar la configuración de IPv6 en todos los routers con la información de la siguiente tabla. Específicamente, debe utilizar la conexión de consola de cada host para completar las siguientes tareas en cada router:<br><ul><li>Habilitar el reenvío de tráfico IPv6.</li><li>Configurar y habilitar interfaces especificadas con las direcciones IPv6 que figuran en la siguiente tabla.</li><li>Configurar RIP IPv6 con el nombre de proceso <b>cisco</b>.</li><li>Habilitar el proceso de enrutamiento RIP IPv6 denominado cisco en las interfaces requeridas.</li></ul><br></font><font face='_typewriter' size='12'><b>Hostname    Interface s0/0/0               Interface s0/0/1</b><br>R1          2001:410:1:10::/65 eui-64      not connected<br>R2          2001:410:1:10::/65 eui-64      2001:410:2:10::/65 eui-64<br>R3          not connected                  2001:410:2:10::/65 eui-64</font><br><br></font>]]></text> 
+		</component> 
+
+		<component type="text" id="txt_instructions"> 
+			<text variable="true" translate="true"><![CDATA[<font face='_sans' size='12'><br>Para comenzar esta actividad, haga clic en el botón Topología a continuación. La topología para esta actividad aparecerá en su propio panel.<br><br>Para completar la actividad, debe configurar uno o más dispositivos de acuerdo a las instrucciones. Para descubrir qué dispositivos están accesibles, coloque el mouse sobre la topología. Cuando el cursor se convierta en una mano, haga clic con el mouse para acceder a una línea de comandos para ese dispositivo. Una vez que acceda al dispositivo, aparecerá un nuevo botón en la parte inferior de la ventana de Actividad con el nombre de ese dispositivo. Ingrese los comandos en la línea de comandos como lo haría en cualquier línea de comandos. <br><br>Cuando esté listo para la evaluación, haga clic en el botón Verificar a continuación. Su configuración se evaluará y en caso de que haya elementos faltantes, se enviarán los comentarios que correspondan. No puede cambiar el tamaño del panel de comentarios. Haga clic en el botón Cerrar para ocultar el panel y continuar con el trabajo.<br><br>Sugerencia útil: Maximice la ventana de Actividad y organice los paneles individuales para adaptarlo a sus necesidades. Los paneles se pueden arrastrar dentro de la ventana de Actividad. También se puede modificar el tamaño de los paneles Instrucciones y Topología.</font><br><br>]]></text> 
+		</component> 
+
+		<component type="text" id="txt_obs1desc">
+			<text variable="true" translate="true"><![CDATA[<B>Routers configurados para el reenvío de tráfico IPv6</B><BR>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs1good">
+			<text variable="true" translate="true"><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>¡Felicitaciones! Sabe cómo configurar un router para el reenvío de tráfico IPv6.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs1bad">
+			<text variable="true" translate="true"><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Antes de poder utilizar el reenvío de tráfico ipv6, deberá habilitarlo globalmente en el router. Asegúrese de habilitarlo en los tres routers con el comando correcto.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs2desc">
+			<text variable="true" translate="true"><![CDATA[<B>Interfaces configuradas y habilitadas con direcciones IPv6 especificadas</B><BR>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs2good">
+			<text variable="true" translate="true"><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>¡Buen trabajo! Las direcciones IPv6 son difíciles de configurar en la interfaz de un router, pero lo hizo correctamente en todas las interfaces especificadas.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs2bad">
+			<text variable="true" translate="true"><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Las direcciones IPv6 son más difíciles de configurar en interfaces de un router que las direcciones IPv4. Asegúrese de comprender las partes de una dirección IPv6 y los comandos para configurarla y habilitarla en la interfaz de un router.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs3desc">
+			<text variable="true" translate="true"><![CDATA[<B>Routers configurados para procesos de enrutamiento RIP IPv6 especificados</B><BR>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs3good">
+			<text variable="true" translate="true"><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>¡Felicitaciones! Configuró correctamente todos los routers con el proceso de enrutamiento RIP IPv6 correcto.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs3bad">
+			<text variable="true" translate="true"><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>El enrutamiento RIP IPv6 requiere la configuración global del ID de proceso en un router. Revise los comandos para hacerlo. Asegúrese de utilizar cisco como el ID de proceso de enrutamiento.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs4desc">
+			<text variable="true" translate="true"><![CDATA[<B>El proceso de enrutamiento IPv6 habilitado en interfaces especificadas</B><BR>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs4good">
+			<text variable="true" translate="true"><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>¡Buen trabajo! Habilitó correctamente el proceso de enrutamiento IPv6 especificado en las interfaces correctas.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_obs4bad">
+			<text variable="true" translate="true"><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>El enrutamiento RIP IPv6 debe habilitarse en todas las interfaces del proceso. Revise los comandos para hacerlo. Luego ingrese el comando en modo de configuración de interfaz.</textformat></font><br>]]></text>
+		</component>
+
+		<component type="text" id="txt_check">
+			<text variable="true" translate="true"><![CDATA[Verificar]]></text>
+		</component>
+
+		<component type="text" id="txt_s000">
+			<text variable="true" translate="true"><![CDATA[S0/0/0]]></text>
+		</component>
+		<component type="text" id="txt_s001">
+			<text variable="true" translate="true"><![CDATA[S0/0/1]]></text>
+		</component>
+		<component type="text" id="txt_dce">
+			<text variable="true" translate="true"><![CDATA[DCE]]></text>
+		</component>
+
+
+		<component type="text" id="txt_r1">
+			<text variable="true" translate="true"><![CDATA[R1]]></text>
+		</component>
+		<component type="text" id="txt_r2">
+			<text variable="true" translate="true"><![CDATA[R2]]></text>
+		</component>
+		<component type="text" id="txt_r3">
+			<text variable="true" translate="true"><![CDATA[R3]]></text>
+		</component>
+
+
+		<component type="text" id="txt_close">
+			<text variable="true" translate="true"><![CDATA[Cerrar]]></text>
+		</component>
+	
+		<component type="text" id="txt_title_instructions"> 
+			<text variable="true" translate="true"><![CDATA[Instrucciones]]></text> 
+		</component> 
+
+		<component type="text" id="txt_title_scenario"> 
+			<text variable="true" translate="true"><![CDATA[Situación]]></text> 
+		</component> 
+
+		<component type="text" id="txt_topology"> 
+			<text variable="true" translate="true"><![CDATA[Topología]]></text> 
+		</component> 
+	</textcomponents>
+
+	<graphiccomponents>
+      <component type="graphic" id="gr_r1">
+         <icon x="0" y="0" width="55" height="40" id="icon_router"/> 
+		 <label src="txt_r1" x="-5" y="-40" width="90" height="35" background="false"/>
+		 <label src="txt_s000" x="22" y="-25" width="90" height="35" background="false"/>
+		 <label src="txt_dce" x="22" y="-5" width="90" height="35" background="false"/>
+      </component>
+      <component type="graphic" id="gr_r2">
+         <icon x="0" y="0" width="55" height="40" id="icon_router"/>  
+		 <label src="txt_r2" x="-5" y="-40" width="90" height="35" background="false"/>
+		 <label src="txt_s000" x="-59" y="-18" width="90" height="35" background="false"/>
+		 <label src="txt_s001" x="22" y="-25" width="90" height="35" background="false"/>
+		 <label src="txt_dce" x="22" y="-5" width="90" height="35" background="false"/>
+      </component>
+      <component type="graphic" id="gr_r3">
+         <icon x="0" y="0" width="55" height="40" id="icon_router"/> 
+		 <label src="txt_r3" x="-5" y="-40" width="90" height="35" background="false"/>
+		 <label src="txt_s001" x="-59" y="-18" width="90" height="35" background="false"/>
+      </component>
+	  <component type="graphic" id="gr_host_r1">
+	     <icon x="0" y="0" width="50" height="42" id="icon_host">
+		    <action event="release" target="dev_r1" activity="launchTerminal" window="win_r1"/>
+		 </icon>
+	  </component>
+	  <component type="graphic" id="gr_host_r2">
+	     <icon x="0" y="0" width="50" height="42" id="icon_host">
+		    <action event="release" target="dev_r2" activity="launchTerminal" window="win_r2"/>
+		 </icon>
+	  </component>
+	  <component type="graphic" id="gr_host_r3">
+	     <icon x="0" y="0" width="50" height="42" id="icon_host">
+		    <action event="release" target="dev_r3" activity="launchTerminal" window="win_r3"/>
+		 </icon>
+	  </component>
+	  <component type="graphic" id="gr_serial">
+	     <shape type="serial" id="sh_serial"/>
+	  </component>
+	  <component type="graphic" id="gr_line">
+	     <shape type="autodotline" strokewidth="2" stroke="#000000" id="sh_dotline"/>  
+	  </component>
+	</graphiccomponents>
+
+	<hwcomponents>
+      <component type="router" model="2624" id="dev_r1">
+         <card type="fastethernet" slot="0" fixed="false">
+            <port type="fastethernet" number="0" name="FastEthernet0/0" id="dev_r1_fa00" fixed="false"/>
+         </card>
+         <card type="serial" slot="0" fixed="false">
+		    <card type="serial" slot="0" fixed="false">
+               <port type="serial" number="0" name="Serial0/0/0" id="dev_r1_s000" fixed="false"/>
+               <port type="serial" number="1" name="Serial0/0/1" id="dev_r1_s001" fixed="false"/>
+			</card>
+         </card>
+         <config file="startup-config"> 
+<![CDATA[
+!
+versión 12.2
+!
+hostname R1
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+!
+interface Serial0/0/0
+ ip address 10.1.1.1 255.255.255.252
+ clock rate 64000
+!
+interface Serial0/0/1
+ no ip address
+ shutdown
+!
+!
+router eigrp 100
+ network 10.1.1.0 0.0.0.3
+ auto-summary
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type="router" model="2624" id="dev_r2">
+         <card type="fastethernet" slot="0" fixed="false">
+            <port type="fastethernet" number="0" name="FastEthernet0/0" id="dev_r2_fa00" fixed="false"/>
+         </card>
+         <card type="serial" slot="0" fixed="false">
+		    <card type="serial" slot="0" fixed="false">
+               <port type="serial" number="0" name="Serial0/0/0" id="dev_r2_s000" fixed="false"/>
+               <port type="serial" number="1" name="Serial0/0/1" id="dev_r2_s001" fixed="false"/>
+			</card>
+         </card>
+         <config file="startup-config"> 
+<![CDATA[
+!
+versión 12.2
+!
+hostname R2
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+!
+interface Serial0/0/0
+ ip address 10.1.1.2 255.255.255.252
+!
+interface Serial0/1
+ ip address 10.2.2.1 255.255.255.252
+ clock rate 64000
+!
+!
+router eigrp 100
+ network 10.1.1.0 0.0.0.3
+ network 10.2.2.0 0.0.0.3
+ auto-summary
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type="router" model="2624" id="dev_r3">
+         <card type="fastethernet" slot="0" fixed="false">
+            <port type="fastethernet" number="0" name="FastEthernet0/0" id="dev_r3_fa00" fixed="false"/>
+         </card>
+         <card type="serial" slot="0" fixed="false">
+		    <card type="serial" slot="0" fixed="false">
+               <port type="serial" number="0" name="Serial0/0/0" id="dev_r3_s000" fixed="false"/>
+               <port type="serial" number="1" name="Serial0/0/1" id="dev_r3_s001" fixed="false"/>
+			</card>
+         </card>
+         <config file="startup-config"> 
+<![CDATA[
+!
+versión 12.2
+!
+hostname R3
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+!
+interface Serial0/0/0
+ no ip address
+ shutdown
+!
+interface Serial0/0/1
+ ip address 10.2.2.2 255.255.255.252
+!
+!
+router eigrp 100
+ network 10.2.2.0 0.0.0.3
+ auto-summary
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type="link" id="dev_lnk_r1_r2"> 
+         <endpoint id="dev_r1_s000" dce="true"/> 
+         <endpoint id="dev_r2_s000"/> 
+      </component> 
+      <component type="link" id="dev_lnk_r2_r3"> 
+         <endpoint id="dev_r2_s001" dce="true"/> 
+         <endpoint id="dev_r3_s001"/> 
+      </component> 
+	</hwcomponents>
+
+	<presentation delivery="cert">
+		<mainstage bgcolor="#FFFFFF" theme="ccna" historylog="all" tooltips="true" contextmenu="false"/>
+		<graphicmap> 
+			<map id="icon_router" src="Router" location="library"/>
+			<map id="icon_host" src="Computer" location="library"/>
+		</graphicmap>
+
+		<window id="none" resize="none" titltetextid="txt_check" width="0" height="0" visible="true" depth="50" x="0" y="0" checkbutton="true"/>
+
+		<window id="win_scenario" resize="all" titletextid="txt_title_scenario" width="780" height="380" visible="true" depth="100" x="10" y="10"> 
+			<element id="ele_txt_scenario" src="txt_scenario" container="textClip" width="750" html="true" wordwrap="true"/> 
+		</window> 
+
+		<window id="win_instructions" resize="all" titletextid="txt_title_instructions" width="780" height="380" visible="false" depth="101" x="10" y="10"> 
+			<element id="ele_txt_instructions" src="txt_instructions" container="textClip" width="750" html="true" wordwrap="true"/> 
+		</window> 
+
+		<window id="win_topology" resize="all" titletextid="txt_topology" visible="false" width="790" height="400" depth="101" y="10" x="10">
+			<element src="gr_r1" id="ele_r1" x="175" y="75" depth="101"/>
+			<element src="gr_r2" id="ele_r2" x="375" y="75" depth="102"/>
+			<element src="gr_r3" id="ele_r3" x="575" y="75" depth="103"/>
+			<element src="gr_host_r1" id="ele_host_r1" x="175" y="200" depth="104"/>
+			<element src="gr_host_r2" id="ele_host_r2" x="375" y="200" depth="105"/>
+			<element src="gr_host_r3" id="ele_host_r3" x="575" y="200" depth="106"/>
+			<element src="gr_serial" id="ele_serial1" beginobject="ele_r1.icon_router" endobject="ele_r2.icon_router" depth="1"/>
+			<element src="gr_serial" id="ele_serial2" beginobject="ele_r2.icon_router" endobject="ele_r3.icon_router" depth="2"/>
+			<element src="gr_line" id="ele_line1" beginobject="ele_r1.icon_router" endobject="ele_host_r1.icon_host" depth="3"/>
+			<element src="gr_line" id="ele_line2" beginobject="ele_r2.icon_router" endobject="ele_host_r2.icon_host" depth="4"/>
+			<element src="gr_line" id="ele_line3" beginobject="ele_r3.icon_router" endobject="ele_host_r3.icon_host" depth="5"/>
+		</window>
+
+		<window id="win_r1" resize="none" titletextid="txt_r1" visible="false" height="387" width="580" y="3" x="110" scrolling="none" depth="400" minheight="387" minwidth="580"> 
+			<element id="ele_ht_r1" src="dev_r1" container="IOobject"/> 
+		</window>
+		<window id="win_r2" resize="none" titletextid="txt_r2" visible="false" height="387" width="580" y="13" x="120" scrolling="none" depth="401" minheight="387" minwidth="580"> 
+			<element id="ele_ht_r2" src="dev_r2" container="IOobject"/> 
+		</window>
+		<window id="win_r3" resize="none" titletextid="txt_r3" visible="false" height="387" width="580" y="23" x="130" scrolling="none" depth="402" minheight="387" minwidth="580"> 
+			<element id="ele_ht_r3" src="dev_r3" container="IOobject"/> 
+		</window>
+
+	</presentation>
+
+	<scoring/>
+</avalontask>

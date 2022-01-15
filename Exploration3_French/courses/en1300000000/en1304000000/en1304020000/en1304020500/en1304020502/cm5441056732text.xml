@@ -1,0 +1,91 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>VTP Pruning in Action</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>No VTP Pruning</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>VTP Pruning</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[<b>PC1 sends out flood traffic on VLAN10.</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Switch S2 forwards the flood traffic out all of its static access ports configured on VLAN10, as well as out the trunk link to Switch S1.</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Switch S1 continues to forward the flood traffic over its trunk link to S3, even though there are no static access ports configured on VLAN 10.<br/>Switch S3 discards the flood traffic, but only after it has consumed bandwidth on the trunk link, and processing time on the switch.</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>VTP Enabled Switches</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>PC1 sends out flood traffic on VLAN10.</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Switch S2 forwards the flood traffic out all of its static access ports configured on VLAN10, but does not forward the traffic out the trunk link to Switch S1 because it knows that there are no other switch ports configured for VLAN10 on any of the remote switches!</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b><font size='10'>Flood Traffic</font></b>]]></text>
+</component>
+
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward2">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute2">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute2"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+</textcomponents>

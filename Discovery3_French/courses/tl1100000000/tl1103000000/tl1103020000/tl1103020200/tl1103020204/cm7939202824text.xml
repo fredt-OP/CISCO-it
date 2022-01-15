@@ -1,0 +1,96 @@
+﻿<textcomponents>
+
+<component id="id_title">
+<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Associez chaque processus avec l’état Spanning Tree approprié.<br/><br/><b>Cochez toutes les options qui s’appliquent aux différents états Spanning Tree.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+	<component id="txt_numrows">
+		<text><![CDATA[7]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[4]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[<b>Blocage</b>]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[<b>Écoute</b>]]></text>
+	</component>
+    <component id="txt_col3">
+		<text><![CDATA[<b>Apprentissage</b>]]></text>
+	</component>
+    <component id="txt_col4">
+		<text><![CDATA[<b>Transmission</b>]]></text>
+	</component>
+		
+    <component id="txt_q1">
+		<text><![CDATA[Traite des BPDU]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[Apprend des adresses MAC]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[Rejette les trames]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[Transmet des trames]]></text>
+	</component>
+    <component id="txt_q5">
+		<text><![CDATA[Ne transmet pas les trames]]></text>
+	</component>
+    <component id="txt_q6">
+		<text><![CDATA[Reçoit des BPDU]]></text>
+	</component>	
+    <component id="txt_q7">
+		<text><![CDATA[N’apprend aucune adresse MAC]]></text>
+	</component>	
+	
+    <component id="txt_a1">
+		<text><![CDATA[1,2,3,4]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[3,4]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[4]]></text>
+	</component>
+    <component id="txt_a5">
+		<text><![CDATA[1,2,3]]></text>
+	</component>
+    <component id="txt_a6">
+		<text><![CDATA[1,2,3,4]]></text>
+	</component>
+    <component id="txt_a7">
+		<text><![CDATA[1,2]]></text>
+	</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Vous avez correctement associé les processus Spanning Tree avec les états appropriés. Cliquez sur Suivant pour continuer.</p>]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Veuillez réviser les états Spanning Tree et réessayer.]]></text></component>
+
+
+</textcomponents>

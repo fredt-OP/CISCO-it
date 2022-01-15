@@ -1,0 +1,43 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Transparent]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Serveur]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Client]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Placez votre pointeur sur chaque périphérique pour en savoir plus sur les trois modes VTP.]]></text>
+</component>
+
+<component id="ID_txtTitle1">
+<text><![CDATA[<b>Transparent</b>]]></text>
+</component>
+
+<component id="ID_txtBody1">
+<text><![CDATA[<li>Achemine des annonces VTP</li><li>Ignore les informations contenues dans le message VTP</li><li>Ne modifie pas sa base de données lors de la réception de mises à jour</li><li>N’envoie pas de mise à jour pour signaler un changement dans sa propre base de données de réseau local virtuel</li>]]></text>
+</component>
+
+<component id="ID_txtTitle2">
+<text><![CDATA[<b>Serveur</b>]]></text>
+</component>
+
+<component id="ID_txtBody2">
+<text><![CDATA[<li>Crée, modifie et supprime des réseaux locaux virtuels et des paramètres de configuration de réseau local virtuel pour la totalité du domaine</li><li>Enregistre les informations de configuration de réseau local virtuel dans la mémoire vive non volatile du commutateur</li><li>Envoie des messages VTP à tous les ports agrégés</li>]]></text>
+</component>
+
+<component id="ID_txtTitle3">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+
+<component id="ID_txtBody3">
+<text><![CDATA[<li>Ne crée, modifie ou supprime pas d’informations de réseau local virtuel</li><li>Modifie sa propre base de données en appliquant les changements de réseau local virtuel envoyés par le serveur</li><li>Envoie des messages VTP à tous les ports agrégés</li>]]></text>
+</component>
+
+</textcomponents>

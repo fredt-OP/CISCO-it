@@ -1,0 +1,100 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component>
+
+
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<font size="-1"><ul><li>Les principaux composants d’un routeur à services intégrés Cisco 1841 sont :</li><TEXTFORMAT BLOCKINDENT='20'><li>Les logements HWIC</li><li>Le module Compact Flash</li><li>Le port USB</li><li>Les ports 10/100 Fast Ethernet à double fonction</li><li>Les ports de console et auxiliaires</li><li>Les voyants d’alimentation système</li><li>L’image logicielle Cisco IOS</li></TEXTFORMAT><br/></ul><ul><TEXTFORMAT BLOCKINDENT='0'><li>Le processus d’amorçage du routeur comprend trois étapes :</li></TEXTFORMAT></ul><TEXTFORMAT BLOCKINDENT='37'>1.  Exécution de la routine POST<br/>2.  Localisation et chargement du logiciel Cisco IOS<br/>3.  Localisation et exécution du fichier de configuration du démarrage</TEXTFORMAT><TEXTFORMAT BLOCKINDENT='0'><br/><br/><ul><li>Il existe deux méthodes pour connecter un ordinateur à un périphérique réseau pour des tâches de configuration et de surveillance, à savoir la gestion intrabande et la gestion hors bande.</li></TEXTFORMAT></ul></font>]]></text>
+
+</component>
+
+<component id="s1_ID_txt01">
+      <text><![CDATA[<b>Ports UDP et TCP</b>]]></text> 
+  </component>
+
+
+<!--  Slide 2  -->  
+  
+  
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>Cisco Router and Security Device Manager (SDM) est un outil à interface utilisateur graphique qui permet de configurer, de surveiller et d’assurer la maintenance des périphériques Cisco. Cisco SDM est le meilleur moyen de configurer un nouveau routeur à services intégrés Cisco.</li><br/><li>L’interface de ligne de commande (ILC) Cisco IOS est un programme de type texte qui permet d’entrer et d’exécuter des commandes Cisco IOS pour configurer, surveiller et maintenir les périphériques Cisco. L’ILC Cisco IOS est utilisée pour la configuration avancée des périphériques Cisco et pour la configuration de périphériques plus anciens qui ne prennent pas en charge SDM.</li><br/><li>L’aide aux tâches de la liste de contrôle de configuration est un outil important qui permet de s’assurer que le client reçoit bien la configuration qu’il a demandée.</li></ul>]]></text>
+</component>
+
+
+<!--  Slide 3  -->
+
+
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>SDM Express est un outil intégré dans Cisco Router and Security Device Manager qui facilite la création d’une configuration de routeur de base.</li><br/><li>SDM est une interface graphique utilisateur plus évoluée qui propose davantage d’options de configuration. </li><br/><li>SDM et SDM Express comprennent tous deux des assistants de configuration à interface graphique qui simplifient la tâche de configuration des périphériques Cisco.</li><br/><li>Les fonctionnalités configurables peuvent être notamment : la configuration de base, les configurations IP de réseau local, le protocole DHCP, les configurations IP de réseau étendu et la traduction d’adresses de réseau (NAT).</li></ul>]]></text>
+</component>
+
+
+<!--  Slide 4  -->
+
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>L’interface de ligne de commande n’offre pas d’assistance étape par étape pour la configuration, c’est pourquoi sa mise en œuvre requiert plus de planification et d’expertise.</li><br/><li>Les modes d’exécution privilégié, de configuration globale et d’interface sont tous utilisés lors de la configuration d’un routeur à l’aide de l’interface de ligne de commande Cisco IOS.</li><br/><li>L’aide contextuelle propose des suggestions pour l’entrée des commandes et le choix de paramètres de commande supplémentaires.</li></ul>]]></text>
+</component>
+
+
+<!--  Slide 5  -->
+
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>Les commandes IOS <font face='_typewriter'><b>show</b></font> sont un outil essentiel pour la vérification et le dépannage des configurations des routeurs.</li><br/><li>Le fichier de configuration initiale est stocké sur le périphérique dans la mémoire vive non volatile (NVRAM) ; il est chargé dans la mémoire de travail et initie la mise en route du périphérique.</li><br/><li>La configuration en cours est le jeu de commandes actuellement activé dans la mémoire RAM du périphérique. </li><br/><li>L’interface de ligne de commande IOS permet de configurer des paramètres de base du routeur, notamment le nom du routeur, les mots de passe et les bannières. Elle peut également être utilisée pour configurer les interfaces série et Ethernet, ainsi que les fonctions DHCP et NAT.</li></ul>]]></text>
+</component>
+
+  <component id="s5_ID_txt01">
+                  <text><![CDATA[<b>Switch>enable
+Switch#configure terminal 
+Switch(config)#interface vlan 1
+Switch(config-if)#ip address 192.168.1.2 255.255.255.0
+Switch(config-if)#exit
+Switch(config)#ip default-gateway 192.168.1.1
+Switch(config)#end
+Switch#copy running-config startup-config</b>]]></text>  
+  </component>
+
+<!--  Slide 6  -->
+
+<component id="ID_txt06">
+<text><![CDATA[<ul><li>Les principaux composants d’un commutateur de la gamme Cisco Catalyst 2960 sont :</li><br/><TEXTFORMAT BLOCKINDENT='20'><li>24 ports Ethernet 10/100</li><li>Les voyants d’état des ports</li><li>Le bouton Mode</li><li>Le port de console</li><li>Un port 10/100/1000 ou SFP à double fonction</li><li>L’image logicielle sur le réseau local de Cisco IOS</li></TEXTFORMAT><br/><li>Le commutateur 2960 prend en charge l’autonégociation par le port du mode bidirectionnel simultané et de la vitesse de communication.</li></ul>]]></text>
+</component>
+
+<!--  Slide 7  -->
+
+<component id="ID_txt07">
+<text><![CDATA[<ul><li>En configurant le VLAN1 avec une adresse IP, vous pouvez gérer à distance le commutateur au moyen de SSH ou d’autres applications TCP/IP telles qu’un logiciel de gestion de réseau.</li><br/><li>La configuration de base d’un commutateur inclut le nom du commutateur et des mots de passe chiffrés utilisés pour accéder au commutateur et aux commandes de configuration de l’interface de ligne de commande Cisco.</li><br/><li>La sécurité des ports restreint le nombre d’adresses MAC autorisées sur un port et elle peut être configurée statiquement, dynamiquement ou à l’aide d’adresses MAC sticky dynamiques.</li></ul>]]></text>
+</component>
+
+<!--  Slide 8  -->
+
+<component id="ID_txt08">
+<text><![CDATA[<ul><li>Les périphériques réseau installés chez le client sont appelés des équipements d’abonné.</li><br/><li>Lorsque les équipements du client sont installés dans ses locaux, il est important de documenter l’ensemble du processus de configuration, notamment tous les aspects de la configuration matérielle, des diagrammes de son installation et des listes de contrôle permettant de valider l’installation.</li><br/><li>Lorsque vous vous trouvez sur le site du client, tenez compte de sa culture sur le lieu de travail et des exigences de sécurité sur ce lieu de travail.</li></ul>]]></text>
+</component>
+
+  <component id="s8_ID_txt01">
+                  <text><![CDATA[<b>Échelles</b>]]></text> 
+  </component>
+  <component id="s8_ID_txt02">
+                  <text><![CDATA[<b>Emplacements en hauteur ou dangereux</b>]]></text> 
+  </component>
+  <component id="s8_ID_txt03">
+                  <text><![CDATA[<b>Équipements électriques</b>]]></text> 
+  </component>
+  <component id="s8_ID_txt04">
+                  <text><![CDATA[<b>Équipements lourds</b>]]></text> 
+  </component>
+
+<!--  Slide 9  -->
+
+<component id="ID_txt09">
+<text><![CDATA[<ul><li>Une connexion WAN est un type de connexion réseau qui peut envoyer un signal réseau sur de longues distances.</li><br/><li>Il existe trois types de connexions WAN série : point à point, à commutation de circuits et à commutation de paquets. Le choix de la connexion WAN appropriée nécessite une planification et une réflexion.</li><br/><li>Les périphériques Cisco peuvent être configurés à distance sur une connexion WAN au moyen de Telnet ou de SSH. SSH est la meilleure méthode.</li><br/><li>Certaines connexions WAN prennent en charge les interfaces Ethernet. D’autres prennent en charge les interfaces série.</li></li></ul>]]></text>
+</component>
+
+</textcomponents>

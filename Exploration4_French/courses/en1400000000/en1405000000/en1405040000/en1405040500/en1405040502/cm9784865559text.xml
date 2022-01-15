@@ -1,0 +1,288 @@
+﻿<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<b>Activity 1</b>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<b>Activity 2</b>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<b>Activity 3</b>]]></text> 
+</component>
+
+<component id="ID_button_04">
+  <text><![CDATA[<b>Activity 4</b>]]></text> 
+</component>
+
+<component id="ID_button_05">
+  <text><![CDATA[<b>Activity 5</b>]]></text> 
+</component>
+<component id="activity">
+  <text><![CDATA[<b>Activity</b>]]></text> 
+</component>
+
+
+<component id="ID_step0">
+  <text><![CDATA[<br/><b>Click the appropriate place in the table to Identify criteria that can be used in packet filtering when using extended ACLs.</b>]]></text> 
+</component>
+
+
+<component id="ID_txt01_00">
+  <text><![CDATA[A dynamic ACL is an IOS feature that allows users to open up a temporary hole in any existing ACL.<br/><br/>The user first Telnets to the router and authenticates.<br/><br/>If successful, the Telnet session ends and the hole is created.<br/><br/>Once open, the user has access to services that are otherwise denied.<br/><br/>An idle timeout or absolute timeout can be configured on the router.<br/><br/>In this example, Hannah will open a hole in the firewall on R2. Drag and drop the steps in the correct sequence.]]></text> 
+</component>
+
+<component id="ID_txt02_00">
+  <text><![CDATA[<b>Place these steps into the correct order above.</b>]]></text> 
+</component>
+
+<component id="ID_txt03_00">
+  <text><![CDATA[<b>hannah is a valid user</b>]]></text> 
+</component>
+
+<component id="ID_txt04_00">
+  <text><![CDATA[<b>Firewall Hole is Now Open!!</b>]]></text> 
+</component>
+
+<component id="ID_txt05_00">
+  <text><![CDATA[<b>Permit 192.168.10.10 to any IP until timeout exceeded</b>]]></text> 
+</component>
+
+<component id="ID_txt06_00">
+  <text><![CDATA[<b>Close Telnet session</b>]]></text> 
+</component>
+
+<component id="ID_txt07_00">
+  <text><![CDATA[<b>User is hannah, pass is itsasecret</b>]]></text> 
+</component>
+
+<component id="ID_txt08_00">
+  <text><![CDATA[<b>Open Telent session from 192.168.10.10</b>]]></text> 
+</component>
+
+<component id="ID_txt09_00">
+  <text><![CDATA[<b>Username, Password please</b>]]></text> 
+</component>
+
+<component id="ID_txt10_00">
+  <text><![CDATA[<b>TFTP<br/>Server</b>]]></text> 
+</component>
+
+
+
+<component id="ID_txt01_01">
+  <text><![CDATA[Complete the following steps to allow Hannah access to the TFTP server through a dynamic ACL.<br/><br/><b>Step 1:</b> Configure a password for Hannah to use when telnetting to R2<br/><br/><b>Step 2:</b> Configure a dynamic ACL named LETMEIN to permit access for Hannah’s IP address.<br/><br/><b>Step 3:</b> Apply LETMEIN to interface S0/0/0<br/><br/><b>Step 4:</b> Configure the telnet lines for login and autocommand timeout.]]></text> 
+</component>
+
+<component id="ID_txt02_01">
+  <text><![CDATA[<b>TFTP<br/>Server</b>]]></text> 
+</component>
+
+<component id="ID_txt03_01">
+  <text><![CDATA[<b>Drag and drop these command parts to complete the Dynamic ACL configuration above.</b>]]></text> 
+</component>
+
+<component id="ID_txt04_01">
+  <text><![CDATA[<b>host 192.168.20.254</b>]]></text> 
+</component>
+
+<component id="ID_txt05_01">
+  <text><![CDATA[<b>interface s0/0/0</b>]]></text> 
+</component>
+
+<component id="ID_txt06_01">
+  <text><![CDATA[<b>host 192.168.10.10</b>]]></text> 
+</component>
+
+<component id="ID_txt07_01">
+  <text><![CDATA[<b>access-list 101 permit tcp </b>]]></text> 
+</component>
+
+<component id="ID_txt08_01">
+  <text><![CDATA[<b>line vty 0 5</b>]]></text> 
+</component>
+
+<component id="ID_txt09_01">
+  <text><![CDATA[<b>permit ip</b>]]></text> 
+</component>
+
+<component id="ID_txt10_01">
+  <text><![CDATA[<b>timeout 90</b>]]></text> 
+</component>
+
+<component id="ID_txt11_01">
+  <text><![CDATA[<b>access-list 101 dynamic LETMEIN</b>]]></text> 
+</component>
+
+<component id="ID_txt12_01">
+  <text><![CDATA[<b>ip access-group 101 in</b>]]></text> 
+</component>
+
+<component id="ID_txt13_01">
+  <text><![CDATA[<b>login local</b>]]></text> 
+</component>
+<component id="ID_txt14_01">
+  <text><![CDATA[<b>host 192.168.10.10</b>]]></text> 
+</component>
+
+<component id="ID_txt15_01">
+  <text><![CDATA[<b>autocommand access-enable host timeout 2</b>]]></text> 
+</component>
+
+
+<component id="ID_txt16_01">
+  <text><![CDATA[<b>eq telnet</b>]]></text> 
+</component>
+
+<component id="ID_txt17_01">
+  <text><![CDATA[<b>username hannah password itsasecret</b>]]></text> 
+</component>
+<component id="ID_txt18_01">
+  <text><![CDATA[<b>host 10.1.1.2</b>]]></text> 
+</component>
+
+
+<component id="ID_txt01_02">
+  <text><![CDATA[Reflexive ACLs generate a new, temporary entry that will permit traffic to enter your network if the traffic is part of a session initiated by an internal source.<br/><br/>The reflexive ACL method is much harder to spoof because more filter criteria must be matched before a packet is permitted through.<br/><br/>Reflexive ACLs can filter IP traffic regardless of whether that traffic uses TCP, UDP or any other Internet protocol. Source addresses, destination addresses and port numbers are checked.<br/><br/>Use the extended named ACL options <b>reflect<b></b></b> and <b>evaluate</b> to configure a reflexive ACL.]]></text> 
+</component>
+
+<component id="ID_txt02_02">
+  <text><![CDATA[<b>Reflect</b>]]></text> 
+</component>
+
+<component id="ID_txt03_02">
+  <text><![CDATA[<b>Outside<br/>Host</b>]]></text> 
+</component>
+
+<component id="ID_txt04_02">
+  <text><![CDATA[<b>Evaluate</b>]]></text> 
+</component>
+
+<component id="ID_txt05_02">
+  <text><![CDATA[<b>Drag and drop these command parts to complete the Reflexive ACL configuration above.</b>]]></text> 
+</component>
+
+<component id="ID_txt06_02">
+  <text><![CDATA[<b>ip access-group FILTER_IN</b>]]></text> 
+</component>
+
+
+<component id="ID_txt07_02">
+  <text><![CDATA[<b>permit ip any any</b>]]></text> 
+</component>
+
+<component id="ID_txt08_02">
+  <text><![CDATA[<b>GOODGUYS</b>]]></text> 
+</component>
+
+<component id="ID_txt09_02">
+  <text><![CDATA[<b>evaluate</b>]]></text> 
+</component>
+
+<component id="ID_txt10_02">
+  <text><![CDATA[<b>reflect GOODGUYS</b>]]></text> 
+</component>
+
+<component id="ID_txt11_02">
+  <text><![CDATA[<b>ip access-group FILTER_OUT</b>]]></text> 
+</component>
+
+
+<component id="ID_txt01_03">
+  <text><![CDATA[Time-based ACLs are similar to extended ACLs in function, but they allow for access control based on time.<br/><br/>To implement time-based ACLs, you create a time range that defines specific times of the day and week.<br/><br/>You identify the time range with a name and then refer to it in a named ACL.<br/><br/>Configure R2 to block Web traffic out to the Internet during business hours from 7:00 AM to 6:00 PM (18:00) on weekdays.]]></text> 
+</component>
+
+<component id="ID_txt02_03">
+  <text><![CDATA[<b>Outbound traffic to the internet is denied during business hours.</b>]]></text> 
+</component>
+
+<component id="ID_txt03_03">
+  <text><![CDATA[<b>Internet</b>]]></text> 
+</component>
+
+<component id="ID_txt04_03">
+  <text><![CDATA[<b>Drag and drop these command parts to complete the Time-based ACL configuration above.</b>]]></text> 
+</component>
+
+<component id="ID_txt05_03">
+  <text><![CDATA[<b>periodic weekdays 7:00 to 18:00</b>]]></text> 
+</component>
+
+<component id="ID_txt06_03">
+  <text><![CDATA[<b>permit ip any any</b>]]></text> 
+</component>
+
+<component id="ID_txt07_03">
+  <text><![CDATA[<b>time-range NO_WEB</b>]]></text> 
+</component>
+
+<component id="ID_txt08_03">
+  <text><![CDATA[<b>ip access-group WEB_ACCESS out</b>]]></text> 
+</component>
+
+<component id="ID_txt09_03">
+  <text><![CDATA[<b>deny tcp any any eq 80</b>]]></text> 
+</component>
+
+<component id="ID_txt10_03">
+  <text><![CDATA[<b>ip access-list extended WEB_ACCESS</b>]]></text> 
+</component>
+
+<component id="ID_check1">
+  <text><![CDATA[<b>Check</b>]]></text> 
+</component>
+<component id="ID_check">
+  <text><![CDATA[<b>Check</b>]]></text> 
+</component>
+<component id="ID_check2">
+  <text><![CDATA[<b>Check</b>]]></text> 
+</component>
+<component id="ID_check3">
+  <text><![CDATA[<b>Check</b>]]></text> 
+</component>
+
+
+<component id="ID_resetBtn1">
+  <text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+<component id="ID_resetBtn0">
+  <text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+<component id="ID_resetBtn2">
+  <text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+<component id="ID_resetBtn3">
+  <text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_correctTitle">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+<component id="ID_correct">
+  <text><![CDATA[You have successfully completed this activity.]]></text>
+</component>
+
+<component id="ID_correctTitle1">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+<component id="ID_correct1">
+  <text><![CDATA[You have successfully completed this activity.]]></text>
+</component>
+
+<component id="ID_correctTitle2">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+<component id="ID_correct2">
+  <text><![CDATA[You have successfully completed this activity.]]></text>
+</component>
+
+<component id="ID_correctTitle3">
+  <text><![CDATA[<b>Correct</b>]]></text>
+</component>
+<component id="ID_correct3">
+  <text><![CDATA[You have successfully completed this activity.]]></text>
+</component>
+	
+</textcomponents>
+

@@ -1,0 +1,58 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Initiating CHAP</b>]]></text> 
+</component>
+<component id="ID_title02">
+  <text><![CDATA[<b>Responding CHAP</b>]]></text> 
+</component>
+<component id="ID_title03">
+  <text><![CDATA[<b>Completing CHAP</b>]]></text> 
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[<b>Central-site router</b>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>Remote router</b>]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[<b>CHAP<BR/>3-Way Handshake</b>]]></text> 
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[<b>Challenge</b>]]></text> 
+  </component>
+<component id="ID_txt09">
+  <text><![CDATA[<b>Response</b>]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[<b>Accept/Reject</b>]]></text> 
+  </component>
+<component id="ID_S2_txt01">
+  <text><![CDATA[<b>Username: R1<br />Password: cisco123</b>]]></text> 
+  </component>
+
+
+<component id="caption">
+  <text><![CDATA[Router R3 initiates the 3-way handshake and sends a challenge message to router R1.]]></text> 
+  </component>
+
+<component id="caption2">
+<text><![CDATA[R1 responds to R3s CHAP challenge by sending its CHAP username and password.]]></text> 
+</component>
+
+<component id="caption3">
+<text><![CDATA[Router R3 evaluates R1’s username and password against its local database. If it matches, it accepts the connection. If not, it rejects the connection.]]></text> 
+</component>
+
+<component id="ID_btn1">
+  <text><![CDATA[Initiating CHAP]]></text> 
+  </component>
+<component id="ID_btn2">
+  <text><![CDATA[Responding CHAP]]></text> 
+  </component>
+<component id="ID_btn3">
+  <text><![CDATA[Completing CHAP]]></text> 
+  </component>
+
+</textcomponents>

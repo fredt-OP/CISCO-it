@@ -1,0 +1,136 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;b&gt;&lt;h2&gt;2.7.1 : intégration des compétences : analyse des paquets IP&lt;/b&gt;&lt;/h2&gt; &lt;b&gt;&lt;h3&gt;Diagramme de topologie :  &lt;/b&gt;&lt;/h3&gt; Une topologie de travaux pratiques standard presque complète est fournie comme point de départ.&lt;br&gt;&lt;br&gt; 
+
+&lt;div align=&quot;center&quot;&gt; &lt;table border=&quot;1&quot;&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Périphérique&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Interface&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Adresse IP&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Masque de sous-réseau&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Passerelle par défaut&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; rowspan=&quot;2&quot;&gt;&lt;b&gt; R1-ISP&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Fa0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.253&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; rowspan=&quot;2&quot;&gt;N/A&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;S0/0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;10.10.10.6&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.252&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; rowspan=&quot;2&quot;&gt;&lt;b&gt; R2-Central&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Fa0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; rowspan=&quot;2&quot;&gt;N/A&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;S0/0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;10.10.10.5&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.252&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;S1-Central&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;VLAN 1&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.254.1&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;PC 1A&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;NIC&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.1.1&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;PC 1B&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Carte réseau&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.1.2&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;Serveur Eagle&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Carte réseau&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.254&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.253&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;&lt;/div&gt;
+ 
+
+&lt;b&gt;&lt;h3&gt;Objectifs pédagogiques : &lt;/b&gt;&lt;/h3&gt; &lt;ul&gt; &lt;li&gt; réalisation de la topologie ; 
+
+&lt;li&gt;ajout d'unités de données de protocole simples en mode temps réel ; 
+
+&lt;li&gt;analyse d'unités de données de protocole en mode simulation ;&lt;br&gt;
+
+&lt;li&gt;familiarisation avec le modèle de configuration de travaux pratiques standard.&lt;br&gt;
+
+&lt;/ul&gt;
+
+&lt;b&gt;&lt;h3&gt;Contexte :&lt;/b&gt;&lt;/h3&gt; tout au long de ce cours, vous utiliserez un environnement de travaux pratiques standard créé à partir d'ordinateurs, de serveurs, de routeurs et de commutateurs réels pour vous familiariser avec les concepts liés aux réseaux. Dans cet exercice, vous allez poursuivre votre apprentissage de création et d'analyse de cette topologie de travaux pratiques standard. Si vous ne l'avez pas déjà fait, nous vous encourageons à consulter les fichiers d'aide disponibles dans le menu déroulant Aide, qui figure dans la partie supérieure de l'interface utilisateur graphique de Packet Tracer. Les ressources incluent une rubrique « Mes premiers travaux pratiques PT » qui vous aide à apprendre le fonctionnement de base de Packet Tracer, des didacticiels qui vous guident à travers différentes tâches et des informations sur les points forts et les limites de l'utilisation de Packet Tracer pour modéliser des réseaux.&lt;br&gt; &lt;br&gt;
+
+Cet exercice vous fournit l'occasion d'explorer la configuration de travaux pratiques standard à l'aide du simulateur Packet Tracer.  Packet Tracer peut créer deux formats de fichiers : les fichiers .pkt (fichiers de modèles de simulation réseau) et les fichiers .pka (fichiers d'exercice pour la pratique). Lorsque vous créez vos propres réseaux dans Packet Tracer ou que vous modifiez des fichiers existants de votre formateur ou de vos pairs, vous devez souvent utiliser le format de fichier .pkt. Lorsque vous avez lancé cet exercice à partir du cursus, ces instructions sont apparues. Elles proviennent du format de fichier d'exercice Packet Tracer, .pka. Au bas de ces instructions figurent deux boutons : Vérifier les résultats (qui vous fournit des commentaires sur vos résultats concernant les exercices que vous avez effectués) et Réinitialiser l&apos;exercice (qui redémarre l'exercice, si vous voulez recommencer votre travail ou vous entraîner davantage). 
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : réalisation de la topologie&lt;/b&gt;&lt;/h3&gt; Ajout d'un ordinateur à l'espace de travail. Configurez-le avec les paramètres suivants : adresse IP : 172.16.1.2, masque de sous-réseau : 255.255.0.0, passerelle par défaut : 172.16.255.254, serveur DNS : 192.168.254.254, nom complet « 1B » (n'incluez pas les guillemets). Connectez l'ordinateur 1B au port Fa0/2 du commutateur S1-Central et vérifiez votre travail à l'aide du bouton &lt;b&gt;Vérifier les résultats&lt;/b&gt; pour constater que la topologie est terminée. 
+
+&lt;b&gt;&lt;h3&gt;Tâche 2 : ajout d'unités de données de protocole simples en mode temps réel&lt;/b&gt;&lt;/h3&gt; Patientez jusqu'à ce que les diodes de liaison de commutateur soient vertes. À l'aide d'Add Simple PDU, envoyez un message test entre l'ordinateur 1B et le serveur Eagle. Notez que ce paquet apparaît dans la partie inférieure droite lorsqu'un utilisateur crée une unité de données de protocole pouvant être manipulée à des fins de test.   La première fois que vous exécutez cette commande ping unique, elle affiche le statut &lt;b&gt;Failed&lt;/b&gt;, ce en raison du processus ARP, qui sera décrit par la suite. Cliquez deux fois sur le bouton Fire situé dans la fenêtre PDU List pour exécuter de nouveau ce test ping unique. Cette fois, le test réussit. Veuillez effectuer cette opération avant la prochaine tâche.&lt;br&gt;&lt;br&gt;  
+
+&lt;b&gt;&lt;h3&gt;Tâche 3 : analyse d'unités de données de protocole en mode simulation (traçage de paquet)&lt;/b&gt;&lt;/h3&gt; Passez au mode simulation. Utilisez le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; pour déplacer le paquet à travers le réseau. Cliquez sur l'enveloppe du paquet ou sur le carré coloré dans la colonne Info de la liste des événements pour analyser le paquet à chaque étape de son parcours. &lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 4 : familiarisation avec le modèle de configuration de travaux pratiques standard&lt;/b&gt;&lt;/h3&gt; La configuration de travaux pratiques standard est constituée de deux routeurs, d'un commutateur, d'un serveur et de deux ordinateurs. Chacun de ces périphériques est préconfiguré. Essayez de créer différentes combinaisons de paquets test et d'analyser leur parcours à travers le réseau.
+
+&lt;b&gt;&lt;h3&gt;Remarques générales :&lt;/b&gt;&lt;/h3&gt; si ce n'est pas déjà fait, nous vous invitons à vous procurer Packet Tracer auprès de votre formateur et à effectuer Mes premiers travaux pratiques PT (dans le menu déroulant AIDE, choisissez CONTENU). &lt;br&gt; &lt;br&gt; &lt;br&gt;
+</PAGE>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">Eagle_Server</ID>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">Eagle_Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

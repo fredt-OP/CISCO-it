@@ -1,0 +1,97 @@
+﻿<textcomponents>
+
+<component id="id_title">
+	<text><![CDATA[<b><text size='+2'>Activity</text></b><br/><br/>Determine whether the packet will be permitted or denied based on source IP address.<br/><br/><b>Check Permit or Deny based on the ACL statement.</b>]]></text>
+</component>
+
+
+<component id="ID_Button01">
+<text><![CDATA[Check]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[Reset]]></text>
+</component>
+
+
+
+<component id="id_text_title">
+<text><![CDATA[#  Source IP Address             ACL Statements]]></text>
+</component>
+
+
+	<component id="txt_numrows">
+		<text><![CDATA[6]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[Permit]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[Deny]]></text>
+	</component>
+	
+		
+    <component id="txt_q1">
+		<text><![CDATA[1.	 192.168.1.133              access-list 1 permit host 192.168.1.33            
+                                               access-list 1 permit host 192.168.1.233]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[2.	 192.168.1.228              access-list 2 permit host 192.168.1.215]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[3.	 10.10.10.5                    access-list 3 permit host 10.10.10.5                
+                                               access-list 3 deny host 172.22.4.1]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[4.	 172.22.4.1                    access-list 4 deny host 172.22.4.1                   
+                                               access-list 4 permit host 172.22.4.2]]></text>
+	</component>
+	<component id="txt_q5">
+		<text><![CDATA[5.	 172.22.4.1                    access-list 5 permit host 10.10.10.5                
+                                               access-list 5 permit host 172.22.4.1]]></text>
+	</component>
+	 <component id="txt_q6">
+		<text><![CDATA[6.	 172.22.4.3                    access-list 6 deny host 172.22.4.3]]></text>
+	</component>
+  
+	
+    <component id="txt_a1">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[2]]></text>
+	</component>
+	<component id="txt_a5">
+		<text><![CDATA[1]]></text>
+	</component>
+	<component id="txt_a6">
+		<text><![CDATA[2]]></text>
+	</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully determined which packets have been permitted or denied. Click Next to continue.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review standard access lists and their placement. Try again.]]></text></component>
+
+
+</textcomponents>

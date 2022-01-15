@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13406" dateexported="06/30/2008">
+		<name>Module 2 Questionnaire</name>
+		<form id="21460" lang="fr"><form-item>
+			<ai id="140332" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140332" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Planification</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Conception</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Exploitation</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Préparation</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Optimisation</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Implémentation</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Étape 1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Étape 2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Étape 3</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Étape 4</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Étape 5</mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Étape 6</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque étape Cisco Lifecycle Services à gauche sur la position correspondante à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="16" yspacing="45" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /><display componentIdent="4" xpos="600" ypos="186" /><display componentIdent="5" xpos="600" ypos="223" /><display componentIdent="6" xpos="600" ypos="260" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><scoringzone ident="6"><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="213174" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="213174" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="6"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="213174" action="Set">1</setvar><scoringdescription>De haut en bas : préparation, planification, conception, implémentation, exploitation, optimisation</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140335" type="mc-ma"><question><![CDATA[Quelles tâches sont effectuées lors la phase Préparation du cycle PPDIOO ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Développement d’un plan d’implémentation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sélection de fournisseurs et de partenaires techniques ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Définition des exigences de l’organisation  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Identification d’une justification financière à la mise à niveau  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Comparaison entre les performances du réseau et les objectifs de la conception ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Examen des exigences en termes de réseau ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140333" type="mc-sa"><question><![CDATA[Dans quelle phase de la stratégie Cisco Lifecycle Services s’inscrivent les actions suivantes : construire un réseau adapté à la conception et vérifier qu’il fonctionne conformément aux spécifications ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Préparation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Planification ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Conception ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Implémentation  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Exploitation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Optimisation ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140334" type="mc-sa"><question><![CDATA[Quelle phase de la stratégie Cisco Lifecycle Services permet de contrecarrer l’impact des changements apportés aux objectifs commerciaux ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Préparation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Planification ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Conception ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Implémentation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Exploitation ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Optimisation  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140381" type="mc-sa"><question><![CDATA[À quel stade du cycle PPDIOO une demande de devis est-elle normalement générée ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Lors de la phase de planification ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[À la fin de la phase de préparation  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Avant le début de la phase de conception ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Avant le début du cycle PPDIOO ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140382" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140382" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Grand hôpital situé à Pékin</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Tous les services doivent être approuvés par le responsable informatique</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Installer un réseau privé virtuel entre l’hôpital et des cliniques</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Date de soumission : 10 novembre</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Installer une connectivité sans fil dans les cliniques distantes</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Six bureaux distants affiliés à l’hôpital</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Vue d’ensemble de l’organisation</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Travaux livrables requis</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Hypothèses/accords</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Associez la description à gauche à la section demande de devis à laquelle elle appartient à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="16" yspacing="70" targetH="30"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="2" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="190.5" containsTargets="2" startTarg="3" labelStyle="1" /><display componentIdent="3" xpos="600" ypos="289.5" containsTargets="2" startTarg="5" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="199" /><display componentIdent="4" xpos="600" ypos="236" /><display componentIdent="5" xpos="600" ypos="298" /><display componentIdent="6" xpos="600" ypos="335" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident="2"><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident="3"><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221966" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="221966" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="221966" action="Set">1</setvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident><componentident>4</componentident></scoringzonecontains></conditionvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident><componentident>4</componentident></scoringzonecontains></conditionvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140383" type="mc-sa"><question><![CDATA[Dans quelles phases du cycle PPDIOO l’ingénieur système préventes est-il impliqué ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Planification et exploitation ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Planification et conception  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Conception et implémentation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Implémentation et exploitation ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140384" type="mc-ma"><question><![CDATA[Une entreprise est actuellement à la phase d’implémentation du cycle PPDIOO. Il s’agit de savoir si le nouvel équipement doit être installé dans un local technique. Quelles personnes doivent être contactées pour obtenir de l’assistance ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Directeur des comptes  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ingénieur système préventes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Concepteur de réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ingénieur sur site après-ventes  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140385" type="mc-ma"><question><![CDATA[Quels inconvénients présentent une approche descendante de la conception de réseau ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Cette approche peut donner lieu à une conception de réseau inadéquate. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il est impossible d’implémenter immédiatement une nouvelle conception.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cette approche inclut très peu d’exigences de l’organisation. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Beaucoup de concepteurs de réseau ne maîtrisent pas cette approche.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140360" type="mc-sa"><question><![CDATA[Au terme d’une discussion avec le responsable informatique, il a été conclu que l’organisation présentait deux liaisons de communication critiques avec son fournisseur principal. Ces liaisons doivent être disponibles 24 heures sur 24, 7 jours sur 7. Quelle étape du cycle PPDIOO est concernée en premier lieu par cette information ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Phase d’implémentation ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Phase de conception  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sélection du protocole de routage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Préparation d’un prototype de plan de conception ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

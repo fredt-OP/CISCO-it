@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13403" dateexported="04/25/2008">
+		<name>Module 8 Questionnaire</name>
+		<form id="21034" lang="fr"><form-item order="fixed">
+			<ai id="134609" type="mc-ma"><question><![CDATA[Un administrateur doit expliquer les listes de contrôle d’accès à un stagiaire. Quelles utilisations suggérées des listes de contrôle d’accès le stagiaire doit-il connaître ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Limiter le trafic réseau et accroître les performances  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Informer les équipements en aval si le trafic augmente ou est encombré ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Déterminer si les interfaces sont actives ou désactivées pendant les heures de pointe ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Contrôler le flux de trafic  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Fournir un niveau de sécurité d’accès réseau de base  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ouvrir des liens supplémentaires lorsque les chemins sont saturés ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134680" type="mc-ma"><question><![CDATA[Lesquels des énoncés suivants sont vrais à propos de la signification du masque générique de liste de contrôle d’accès 0.0.0.15 ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les 28 premiers bits d’une adresse IP fournie seront ignorés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les quatre derniers bits d’une adresse IP fournie seront ignorés.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les 32 premiers bits d’une adresse IP fournie seront mis en correspondance. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les 28 premiers bits d’une adresse IP fournie seront mis en correspondance.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les cinq derniers bits d’une adresse IP fournie seront ignorés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les quatre derniers bits d’une adresse IP fournie seront mis en correspondance. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134681" type="mc-sa"><question><![CDATA[Quelles combinaisons d’adresse IP et de masque générique isoleront <i>uniquement</i> les adresses d’un sous-réseau contenant l’hôte 192.168.12.6 255.255.255.248 ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[192.168.12.0 0.0.0.7  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.0 0.0.0.8 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.6 0.0.0.15 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.6 0.0.0.255 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134685" type="mc-ma"><question><![CDATA[Lorsqu’une ACL a été créée, elle doit être appliquée au bon périphérique pour causer l’effet désiré. Quelles sont les règles à suivre pour appliquer des ACL ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les ACL standard doivent être appliquées aussi près de leur source que possible. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les filtres de sortie ne concernent pas le trafic généré depuis le routeur local.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les interfaces entrantes et sortantes doivent être référencées comme étant externes au routeur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les listes d’accès étendues doivent être appliquées le plus près possible de la source.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Toutes les instructions d’une ACL sont traitées pour chaque paquet qui transite par l’interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134664" type="mc-ma"><question><![CDATA[Un administrateur réseau établit une liste de contrôle d’accès standard qui interdira tout trafic venant du réseau 172.16.0.0/16 mais autorisera tous les autres trafics. Quelles sont les deux commandes à utiliser ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 95 deny any </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)# <b>access-list 95 deny 172.16.0.0 0.0.255.255 </b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 95 deny 172.16.0.0 255.255.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)# <b>access-list 95 permit any</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 95 host 172.16.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 95 172.16.0.0 255.255.255.255 </b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134682" type="mc-ma"><question><![CDATA[Quelles conclusions pouvez-vous tirer du résultat illustré dans la présentation ?  (Choisissez deux réponses.) <br/><img src="i134682n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il s’agit d’une liste d’accès IP étendue. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le mot-clé <b>host</b> est implicite dans la ligne de commandes <b>access-list 99 deny 10.213.177.76</b>.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le masque générique doit être configuré pour que cette liste d’accès fonctionne. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’hôte 10.213.177.100 pourra accéder à l’interface Serial0/1.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cette liste de contrôle d’accès ne limitera pas le trafic de ce routeur. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134683" type="mc-sa"><question><![CDATA[Examinez la présentation. La nouvelle stratégie de sécurité pour l’entreprise autorise l’ensemble du trafic IP du réseau LAN Ingénierie vers Internet alors qu’elle autorise seulement le trafic Web du réseau LAN Marketing vers Internet.  Quelle liste de contrôles d’accès peut être appliquée en sortie de l’interface Serial 0/1 sur le routeur Marketing pour implémenter la nouvelle stratégie de sécurité ? <br/><img src="i134683n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 197 permit ip 192.0.2.0 0.0.0.255 any</b><br /><b>access-list 197 permit ip 198.18.112.0 0.0.0.255 any eq www </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 165 permit ip 192.0.2.0 0.0.0.255 any</b><br /><b>access-list 165 permit tcp 198.18.112.0 0.0.0.255 any eq www</b><br /><b>access-list 165 permit ip any any  </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>access-list 137 permit ip 192.0.2.0 0.0.0.255 any</b><br /><b>access-list 137 permit tcp 198.18.112.0 0.0.0.255 any eq www</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 89 permit TCP 192.0.2.0 0.0.0.255 any</b><br /><b>access-list 89 permit ip 198.18.112.0 0.0.0.255 any eq www  </b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134665" type="mc-ma"><question><![CDATA[Examinez la présentation.  Quelles sont les deux affirmations exactes d’après les séries de commandes visibles dans la représentation ? (Choisissez deux réponses.) <br/><img src="i134665n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[L’hôte 10.128.114.76 pourra établir une session Telnet avec l’hôte 172.25.0.26. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’hôte 10.128.114.76 ne pourra pas établir de session FTP avec les hôtes disponibles sur le réseau 172.25.0.0/16.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’hôte 192.168.85.76 pourra établir une session Telnet avec l’hôte 172.25.0.26. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’hôte 192.168.85.76 pourra établir une session FTP avec les hôtes disponibles sur le réseau 172.25.0.0.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’hôte 172.25.0.26 ne pourra pas établir de session Telnet avec les hôtes disponibles sur le réseau 192.168.85.0/24. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="134638" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="134638" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>line vty 0 4</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access-class 1 in</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>ip access-group 25,40 mm</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access-list 1 deny any</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access-list 1 deny ip any any</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>access-list 1 permit host 10.0.0.1</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>R1(config)#</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>R1(config)#</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>R1(config-line)#</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="760"><material><mattext>Un ingénieur réseau veut vérifier que seuls les utilisateurs du système hôte de gestion du réseau peuvent accéder aux lignes vty de R1.  Faites glisser les commandes à gauche et placez-les dans leur ordre d’entrée sur le routeur.  Toutes les commandes ne seront pas forcément utilisées. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-112" targetYspacing="16" yspacing="45" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="217894" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="217894" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="217894" action="Set">1</setvar><scoringdescription /></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="134684" type="mc-ma"><question><![CDATA[Pouvez-vous donner deux finalités des listes de contrôle d’accès IP ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Les ACL contrôlent l’accès des hôtes au réseau ou à d’autres hôtes.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les ACL standard peuvent limiter l’accès à des applications et à des ports déterminés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les ACL procurent un niveau de sécurité d’accès au réseau de base.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les ACL peuvent autoriser ou interdire le trafic sur le routeur sur la base de l’adresse MAC d’origine de ce trafic. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les ACL ne peuvent s’appliquer qu’à une seule interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134608" type="mc-sa"><question><![CDATA[Examinez la présentation. La liste d’accès 101 est appliquée en tant que liste de contrôle d’accès d’entrée à l’interface Serial 0 du routeur RTA et doit permettre l’accès TELNET à l’hôte 172.16.28.3. Cependant, l’accès TELNET échoue lorsque l’hôte 10.10.10.3 tente de se connecter à l’hôte 172.16.28.3. Pourquoi ? <br/><img src="i134608n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[La ligne <b>access-list 101 permit tcp any any established</b> doit être ajoutée avant l’instruction <b>permit</b>.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La ligne <b>access-list 101 permit tcp any any established</b> doit être ajoutée après l’instruction <b>permit</b>. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le numéro de port est incorrect pour la liste d’accès. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La liste d’accès doit se trouver sur l’interface de sortie FastEthernet 0. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134650" type="mc-sa"><question><![CDATA[Un administrateur réseau désire surveiller tous les paquets qui ne satisfont pas une condition quelconque d’une liste de contrôle d’accès. Que doit-il faire pour conduire cette surveillance ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Entrer la commande <b>debug ACL deny</b> depuis le mode de configuration globale. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ajouter <b>permit ip any any log</b> à la fin des instructions de la liste de contrôle d’accès.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Entrer la commande <b>syslog</b> dans le mode configuration globale. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Rien, la journalisation des paquets bloqués est automatique. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

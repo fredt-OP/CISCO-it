@@ -1,0 +1,92 @@
+﻿<textcomponents>
+
+<component id="ID_header1">
+  <text><![CDATA[<b>Commande complète</b>]]></text> 
+  </component>
+<component id="ID_header2">
+  <text><![CDATA[<b>Abréviation</b>]]></text> 
+  </component>
+<component id="ID_header3">
+  <text><![CDATA[<b>Fonction/informations affichées</b>]]></text> 
+  </component>
+
+<component id="ID_tip">
+  <text><![CDATA[<b>La numérotation des interfaces de routeur commence à 0 tandis que celle des interfaces de commutateur commence à 1. Par exemple, une interface Fast Ethernet sur un routeur commencera à fa0/0 tandis que le premier port de commutateur sera intitulé fa0/1.</b>]]></text> 
+  </component>
+  
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='none' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3'>
+  <tr>
+    <td colspan="3" valign="top" bgcolor="#333333"><b><font color="#FFFFFF">Utilisation générale</font></b></td>
+  </tr>
+  <tr>
+    <td width="160" valign="top" bgcolor="DDDDDD"><b><font face="_typewriter">show running-config</font></b></td>
+    <td width="150"valign="top" bgcolor="DDDDDD"><b><font face="_typewriter">sh run</font></b></td>
+    <td valign="top" bgcolor="DDDDDD">Affiche la configuration qui s’exécute actuellement dans la mémoire vive. Inclut le nom d’hôte, les mots de passe, les adresses IP d’interface (le cas échéant), les numéros de port et les caractéristiques (bidirectionnel/vitesse).</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="f2f2f2"><b><font face="_typewriter">show startup-config</font></b></td>
+    <td valign="top" bgcolor="f2f2f2"><b><font face="_typewriter">sh star</font></b></td>
+    <td valign="top" bgcolor="f2f2f2">Affiche la configuration de sauvegarde dans la mémoire vive non volatile. Peut être différente si la configuration actuellement exécutée n’a pas été copiée dans la sauvegarde.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show version</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh ve</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Affiche la version du logiciel IOS, la version de la mémoire morte, le temps de fonctionnement du commutateur, le nom du fichier de l’image système, la méthode d’amorçage, le nombre et le type d’interfaces installées, la quantité de mémoire vive, vive non volatile et flash, et la valeur du registre de configuration.</td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top" bgcolor="#333333"><b><font color="#FFFFFF">Associées à l’interface ou au port</font></b></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show interfaces (type #)</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh int f0/1</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Affiche une ou l’ensemble des interfaces avec des statistiques sur l’état de la ligne (protocole), la bande passante, le délai, la fiabilité, l’encapsulation, le mode bidirectionnel et les E/S.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">show ip interface brief</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">sh ip int br</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2">Affiche toutes les interfaces avec une adresse IP, l’état de l’interface (en fonction/hors fonction/administrativement hors fonction) et l’état du protocole de ligne (en fonction/hors fonction).</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show port-security</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh por</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Affiche les ports sur lesquels la sécurité a été activée, l’adresse maximale autorisée, la mesure actuelle, la mesure de violation de sécurité ainsi que les actions à entreprendre (en règle générale, la désactivation).</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">show mac-address-table</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">sh mac-a</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2">Affiche toutes les adresses MAC que le commutateur a détectées, la façon dont il les a détectées (dynamique/statique), le numéro de port et le réseau local virtuel sur lequel se trouve le port.</td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top" bgcolor="#333333"><b><font color="#FFFFFF">Associées à la connectivité</font></b></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show cdp neighbors (detail)</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh cdp ne</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Affiche des informations sur les périphériques connectés directement notamment l’ID de périphérique (nom d’hôte), l’interface locale où le périphérique est connecté, la capacité (R=routeur, S=commutateur), la plate-forme (par ex.: 2620XM) et l’ID de port du périphérique distant. L’option de détails fournit l’adresse IP de l’autre périphérique ainsi que la version du logiciel IOS.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">show sessions</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">sh ses</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2">Affiche les sessions telnet (VTY) avec des hôtes distants. Affiche le numéro de la session, le nom et l’adresse de l’hôte.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show ssh</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh ssh</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Affiche les connexions de serveur ssh avec des hôtes distants.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">ping (ip / host name)</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">ou</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2">Envoie 5 requêtes d’écho ICMP vers une adresse IP ou un nom d’hôte (si DNS est disponible) et affiche le temps min/max et moyen de réponse.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">traceroute (ip / host name)</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">tr</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Envoie une requête d’écho avec un temps de vie (TTL) variable. Affiche les routeurs (sauts) dans le chemin et le temps de réponse.</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+</textcomponents>

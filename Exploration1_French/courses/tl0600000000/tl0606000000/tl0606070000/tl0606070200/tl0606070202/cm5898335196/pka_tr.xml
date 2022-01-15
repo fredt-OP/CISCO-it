@@ -1,0 +1,97 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Pod PC</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Router</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Pod PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Router</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Pod PC</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Router</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Pod PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Router</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Pod PC</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Router</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Pod PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Router</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 6.7.2 : &lt;br&gt;examen des paquets ICMP&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;h3&gt;Table d'adressage&lt;/h3&gt; &lt;p&gt;Cet exercice ne comprend pas de table d'adressage.&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Comprendre le format des paquets ICMP&lt;li&gt;Utiliser Packet Tracer pour capturer et examiner des messages ICMP&lt;/ul&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Le logiciel Wireshark permet de capturer et d'afficher l'ensemble du trafic réseau entrant et sortant de l'ordinateur sur lequel il est installé via une interface réseau. Le mode Simulation de Packet Tracer capture l'ensemble du trafic qui transite par le réseau, mais ne prend en charge qu'un nombre limité de protocoles. Pour nous rapprocher le plus possible des travaux pratiques 6.7.2, nous utiliserons un réseau composé d'un ordinateur connecté à un serveur via un seul routeur et capturerons le résultat de différentes commandes ping de l&apos;ordinateur. &lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says &apos;At the completion of this task, when you check Results, your score should be xxx%&apos; where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT doable in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 1 : utilisation de Packet Tracer pour capturer et examiner les messages ICMP.&lt;/h3&gt;&lt;/b&gt;&lt;b&gt;
+
+&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1 : capture et évaluation des messages d'écho ICMP sur Eagle Server&lt;/h4&gt; &lt;/b&gt;Passez en mode &lt;b&gt;Simulation&lt;/b&gt;. L'option &lt;b&gt;Event List Filters&lt;/b&gt; est définie de manière à afficher uniquement les événements ICMP. Cliquez sur l'ordinateur Pod. Sur le &lt;b&gt;bureau&lt;/b&gt;, ouvrez l'&lt;b&gt;invite de commandes&lt;/b&gt;. Entrez la commande &lt;b&gt;ping eagle-server.example.com&lt;/b&gt; et appuyez sur la touche &lt;b&gt;Entrée&lt;/b&gt;. Réduisez la fenêtre de configuration de l'ordinateur Pod. Cliquez sur le bouton &lt;b&gt;Auto Capture / Play&lt;/b&gt; pour exécuter les événements de simulation et de capture. Cliquez sur &lt;b&gt;OK&lt;/b&gt; lorsque le message « No More Events » s'affiche.&lt;br&gt;&lt;br&gt; Recherchez le premier paquet dans la liste &lt;b&gt;Event List&lt;/b&gt; (première requête d'écho) et cliquez sur le carré de couleur dans la colonne &lt;b&gt;Info&lt;/b&gt;. La fenêtre &lt;b&gt;PDU Information&lt;/b&gt; s'ouvre lorsque vous cliquez sur le carré Info d'un paquet de la liste des événements. Cliquez sur l'onglet &lt;b&gt;Outbound PDU Details&lt;/b&gt; pour afficher le contenu du message ICMP. Notez que Packet Tracer affiche uniquement les champs &lt;b&gt;TYPE&lt;/b&gt; et &lt;b&gt;CODE&lt;/b&gt;.&lt;br&gt;&lt;br&gt; Pour simuler le fonctionnement de Wireshark, cliquez sur le carré de couleur de la colonne &lt;b&gt;Info&lt;/b&gt; de l'événement suivant où &lt;b&gt;At Device&lt;/b&gt; est l'ordinateur Pod. Il s'agit de la première réponse d'écho. Cliquez sur l'onglet &lt;b&gt;Inbound PDU Details&lt;/b&gt; pour afficher le contenu du message ICMP.&lt;br&gt;Consultez les autres événements où &lt;b&gt;At Device&lt;/b&gt; est l'ordinateur Pod. Lorsque vous avez terminé, cliquez sur le bouton &lt;b&gt;Reset Simulation&lt;/b&gt;. &lt;br&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : capture et évaluation des messages d'écho ICMP vers 192.168.253.1&lt;/h4&gt; &lt;/b&gt;Répétez l'étape 1 en utilisant l'adresse IP &lt;b&gt;192.168.253.1&lt;/b&gt;. Regardez l'animation et relevez les périphériques impliqués dans cet échange. &lt;br&gt; &lt;h4&gt; &lt;b&gt;Étape 3 : capture et évaluation des messages d'écho ICMP qui dépassent la valeur de durée de vie.&lt;/h4&gt; &lt;/b&gt;Packet Tracer ne prend pas en charge l'option &lt;b&gt;ping -i&lt;/b&gt;. Pour définir la durée de vie en mode Simulation, utilisez le bouton &lt;b&gt;Add Complex PDU&lt;/b&gt; (l'enveloppe ouverte).&lt;br&gt;&lt;br&gt; Cliquez sur le bouton &lt;b&gt;Add Complex PDU&lt;/b&gt;, puis sur l'ordinateur Pod (la source).  La boîte de dialogue &lt;b&gt;Create Complex PDU&lt;/b&gt; s'ouvre. Entrez &lt;b&gt;192.168.254.254&lt;/b&gt; dans le champ &lt;b&gt;Destination IP Address:&lt;/b&gt;.  Modifiez la valeur du champ &lt;b&gt;TTL:&lt;/b&gt; sur &lt;b&gt;1&lt;/b&gt;.  Entrez &lt;b&gt;1&lt;/b&gt; dans le champ &lt;b&gt;Sequence Number&lt;/b&gt;.  Sélectionnez l'option &lt;b&gt;Periodic&lt;/b&gt; sous &lt;b&gt;Simulation Settings&lt;/b&gt;.  Dans le champ &lt;b&gt;Interval&lt;/b&gt;, entrez &lt;b&gt;2&lt;/b&gt;.  Cliquez sur le bouton &lt;b&gt;Create PDU&lt;/b&gt;. Ceci revient à émettre la commande &lt;b&gt;ping -t -i 1 192.168.254.254&lt;/b&gt; dans l'invite de commande sur l'ordinateur Pod.&lt;br&gt;&lt;br&gt; Cliquez plusieurs fois sur le bouton &lt;b&gt;Capture / Forward&lt;/b&gt; pour générer plusieurs échanges entre l'ordinateur Pod et le routeur.&lt;br&gt;&lt;br&gt; Recherchez le premier paquet sous &lt;b&gt;Event List&lt;/b&gt;.  Il s'agit de la première requête d'écho.  Cliquez sur le carré de couleur dans la colonne &lt;b&gt;Info&lt;/b&gt;. Lorsque vous cliquez sur le carré Info d'un paquet de la liste des événements, la fenêtre &lt;b&gt;PDU Information&lt;/b&gt; s'ouvre. Cliquez sur l'onglet &lt;b&gt;Outbound PDU Details&lt;/b&gt; pour afficher le contenu du message ICMP.&lt;br&gt;&lt;br&gt; Pour simuler le fonctionnement de Wireshark, cliquez sur le carré de couleur dans la colonne &lt;b&gt;Info&lt;/b&gt; de l'événement suivant où &lt;b&gt;At Device&lt;/b&gt; est l'ordinateur Pod. Il s'agit de la première réponse d'écho. Cliquez sur l'onglet &lt;b&gt;Inbound PDU Details&lt;/b&gt; pour afficher le contenu du message ICMP.&lt;br&gt;Consultez les autres événements où &lt;b&gt;At Device&lt;/b&gt; est l'ordinateur Pod.
+
+&lt;h4&gt;Au terme de cette tâche, votre taux de progression doit être de 100 %. 
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;/h4&gt;&lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Pod PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Pod PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Pod PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">Pod PC</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">Router</ID>
+ <ID translate="true">Pod PC</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">Router</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

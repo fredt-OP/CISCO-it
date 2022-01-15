@@ -1,0 +1,43 @@
+﻿<textcomponents>
+
+<component id="routerIcon">
+<text><![CDATA[<b>Résultat<BR> du routeur</b>]]></text>
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Interprétation du résultat de <font face="_typewriter"> debug ip rip </font></b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>- Interprétation du résultat de <font face="_typewriter"> debug ip rip </font></b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>- R2 reçoit une mise à jour de R1 annonçant le réseau directement connecté de R1.</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>- R2 reçoit une mise à jour de R3 annonçant le réseau directement connecté de R3.</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>- R2 envoie une mise à jour de Fa0/0 vers tous les réseaux de la table de routage à l'exception de celui attaché à<br>  Fa0/0.</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>- R2 envoie une mise à jour de S0/0/1 à R3. Sont inclus dans la mise à jour, le réseau local de R1, le réseau étendu<br>  entre R1 et R2, ainsi que le réseau local de R2.<br>- Notez que le découpage d'horizon est activé. R2 n'annonce pas le réseau local R3 à R3.</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>- R2 envoie une mise à jour de S0/0/0 à R1. Sont inclus dans la mise à jour, le réseau local de R3, le réseau étendu<br>  entre R2 et R3, ainsi que le réseau local de R2.<br>- Notez que le découpage d'horizon est activé. R2 n'annonce pas le réseau local R1 à R1.</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>- Veillez à désactiver le débogage avec la commande <font face='_typewriter'> undebug all </font>une fois l'opération terminée.</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez pour afficher l'explication du résultat de la commande.</b>]]></text>
+</component>
+
+</textcomponents>

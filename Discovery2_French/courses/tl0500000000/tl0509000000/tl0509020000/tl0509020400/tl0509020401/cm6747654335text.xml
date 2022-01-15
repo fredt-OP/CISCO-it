@@ -1,0 +1,97 @@
+﻿<textcomponents>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+  	<td colspan='3'><font color='#FFFFFF'><b>VOYANTS LED DE L’ÉTAT DES PORTS</b></font></td>
+  </tr> 
+  <tr>
+    <td rowspan="6" width='80' bgcolor='#DDDDDD'><b>STAT<br />(état des ports)</b></td>
+    <td width='120' bgcolor='#DDDDDD'>Désactivé </td>
+    <td bgcolor='#DDDDDD'>Absence de liaison, ou port fermé par l’administrateur </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Vert </td>
+    <td bgcolor='#F2F2F2'>Liaison active </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'>Vert clignotant </td>
+    <td bgcolor='#DDDDDD'>En cours de fonctionnement Port en cours de transmission ou de réception de données </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Clignotement alternatif vert-orange </td>
+    <td bgcolor='#F2F2F2'>Liaison défectueuse. Des erreurs de trames peuvent affecter la connectivité. Des erreurs telles qu’un nombre excessif de collisions, les erreurs CRC (code de redondance cyclique), les erreurs d’alignement et de messages trop longs font l’objet d’une surveillance pour la détection d’une éventuelle liaison défectueuse. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'>Orange </td>
+    <td bgcolor='#DDDDDD'>Problème de transmission du port Le port a été désactivé manuellement par un administrateur, ou automatiquement, soit par une violation d’adresse, soit par les fonctions de gestion du commutateur.<br/><br/>Remarque : au démarrage du commutateur ou lors de l’attachement d’un périphérique utilisateur, le LED du port peut rester orange jusqu’à 60 secondes avant de démarrer la transmission. Lorsque l’état de transmission est atteint, le voyant LED devient vert.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Orange clignotant </td>
+    <td bgcolor='#F2F2F2'>Le port est bloqué par STP et ne transmet ni ne reçoit aucun paquet. </td>
+  </tr>
+  <tr>
+    <td rowspan="2" bgcolor='#DDDDDD'><b>DUPLX<br />(mode bidirectionnel) </b></td>
+    <td bgcolor='#DDDDDD'>Désactivé </td>
+    <td bgcolor='#DDDDDD'>Le port fonctionne en mode bidirectionnel non simultané. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Vert </td>
+    <td bgcolor='#F2F2F2'>Le port fonctionne en mode bidirectionnel simultané. </td>
+  </tr>
+    <tr>
+    <td rowspan="10" bgcolor='#DDDDDD'><b>VITESSE </b></td>
+    <td colspan="2" bgcolor='#DDDDDD'>Ports 10/100 et 10/100/1000 </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Désactivé </td>
+    <td bgcolor='#F2F2F2'>Le port fonctionne à 10 Mbits/s. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'>Vert </td>
+    <td bgcolor='#DDDDDD'>Le port fonctionne à 100 Mbits/s. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Vert clignotant </td>
+    <td bgcolor='#F2F2F2'>Le port fonctionne à 1000 Mbits/s. </td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor='#DDDDDD'>Ports SFP </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Désactivé </td>
+    <td bgcolor='#F2F2F2'>Le port fonctionne à 10 Mbits/s. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'>Vert</td>
+    <td bgcolor='#DDDDDD'>Le port fonctionne à 100 Mbits/s. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Vert clignotant </td>
+    <td bgcolor='#F2F2F2'>Le port fonctionne à 1000 Mbits/s.<br /><b>Remarque :</b> les modules 1000BASE-T SFP peuvent  fonctionner à 10, 100 ou 1000 Mbits/s en mode bidirectionnel simultané, ou à 10 ou 100 Mbits/s en mode bidirectionnel non simultané. </td>
+  </tr>
+</table>]]></text> 
+ 
+</component>
+ 
+<component id="ID_item01">
+<text><![CDATA[LED système]]></text>
+</component>
+
+<component id="ID_item02">
+<text><![CDATA[LED des blocs d’alimentation redondants]]></text>
+</component>
+
+<component id="ID_item03">
+<text><![CDATA[Bouton Mode]]></text>
+</component>
+
+<component id="ID_item04">
+<text><![CDATA[LED de mode de port]]></text>
+</component>
+
+<component id="ID_item05">
+<text><![CDATA[LED d’état de port]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,61 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><li>Il est conseillé de tester toute nouvelle conception avant de l’approuver et de l’implémenter. Ce test vérifie la faisabilité de la conception.</li><br/><li>Deux méthodes sont couramment employées pour les tests de faisabilité :  sur un prototype de réseau ou par l’installation d’un pilote sur le réseau existant.</li><br/><li>Le choix entre un prototype et un pilote dépend des facteurs suivants :</li><br/><TEXTFORMAT BLOCKINDENT='25'><li>le type de test requis ;</li><li>la perturbation potentielle, par le pilote, du réseau existant.</li></textformat><br/><li>Avant de commencer un test de faisabilité, un plan de test détaillé doit être créé pour présenter la stratégie de test et les résultats escomptés.</ul></b></font>]]></text>
+</component>
+
+<component id="s1_ID_txt02">     
+<text><![CDATA[Pilote sur réseau existant]]></text> 
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Prototype de réseau isolé]]></text> 
+</component>
+
+<component id="slide02">
+<text><![CDATA[<font size="12"><li>Un test de faisabilité montre la nouvelle fonctionnalité du réseau, ou ses améliorations, tout en vérifiant que la conception fonctionne comme prévu.</li><br/><li>Lorsqu’il n’est pas possible de dupliquer l’environnement du réseau physique pour le test de faisabilité, un logiciel de simulation peut être nécessaire pour tester la conception.</li><br/><li>Des prototypes et simulations peuvent être utilisés pour identifier les risques et les points faibles inhérents à la conception du réseau.</li><br/><li>Les risques et les points faibles ci-dessous sont souvent présents :</li><TEXTFORMAT BLOCKINDENT='25'><li>points d’échec uniques ;</li><li>domaines défaillants étendus ;</li><li>goulets d’étranglement possibles ;</li><li>évolutivité limitée ;</li><li>conceptions trop complexes.</li></textformat><br/><li>Lors de la création d’un plan de test, le concepteur de réseau doit considérer, en premier lieu :</li><TEXTFORMAT BLOCKINDENT='25'><li>les types de test à effectuer ;</li><li>l’étendue du réseau à créer pour effectuer les tests;</li><li>les critères de réussite ou d’échec du test.<br/><br/><br/><br/></li></textformat></font>]]></text>
+</component>
+
+<component id="s2_ID_txt01">  
+<text><![CDATA[Point d’échec unique pour les périphériques connectés]]></text> 
+</component>
+
+<component id="s2_ID_txt02">  
+<text><![CDATA[Isolation du visiteur requise pour protéger les ressources internes]]></text> 
+</component>
+
+<component id="s2_ID_txt03">  
+<text><![CDATA[Goulet d’étranglement possible]]></text> 
+</component>
+
+<component id="s2_ID_txt04">  
+<text><![CDATA[La défaillance d’un seul serveur peut perturber une application commerciale]]></text> 
+</component>
+
+<component id="s2_ID_txt05">  
+<text><![CDATA[Internet]]></text> 
+</component>
+
+<component id="s2_ID_txt06">  
+<text><![CDATA[Relais de trames]]></text> 
+</component>
+
+
+<component id="slide03">
+<text><![CDATA[<font size="12"><li>Le protocole RSTP garantit une connectivité rapide après la panne d’un commutateur, d’un port de commutateur ou d’un réseau local. Il est utilisé pour la configuration de ports de commutateur afin que les ports passent au transfert direct lorsque le commutateur est réinitialisé.</li><li>Le protocole RSTP définit les rôles de ports suivants :</li><TEXTFORMAT BLOCKINDENT='15'><li><b>Racine</b> : port de transmission choisi pour la topologie de spanning tree ;<br/><b>Désigné</b> : port de transmission choisi pour chaque segment de réseau local commuté ;</li><li><b>Alternatif</b> : autre chemin vers le pont racine, différent de celui emprunté par le port racine;</li><li><b>Sauvegarde</b> : chemin de sauvegarde pour une connexion redondante, mais moins souhaitable, vers un segment auquel un autre port de commutateur est déjà connecté (les ports de sauvegarde peuvent exister uniquement lorsque deux ports sont connectés en boucle par une liaison point à point ou par un pont avec au moins deux connexions vers un segment de réseau local partagé);</li><li><b>Désactivé</b> : port ne jouant aucun rôle dans le fonctionnement du spanning tree.</li></textformat></ul></font>]]></text>
+</component>
+
+<component id="s3_ID_txt01">  
+<text><![CDATA[Implémenter RSTP ici.]]></text> 
+</component>
+
+<component id="s3_ID_txt02">  
+<text><![CDATA[Implémenter RSTP ici.]]></text> 
+</component>
+
+
+</textcomponents>

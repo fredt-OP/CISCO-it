@@ -1,0 +1,109 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Décrivez les trois couches du modèle de réseau hiérarchique.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(section 1.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Couche d’accès :</b><ul><li>Permet à des utilisateurs d’accéder à des périphériques réseau.</li><li>Dans un campus de réseau, la couche d’accès intègre généralement des périphériques de réseau local commutés avec des ports fournissant une connectivité à des stations de travail et des serveurs.</li><li>Dans un environnement de réseau étendu, elle peut fournir à des télétravailleurs ou à des sites distants un accès au réseau d’une entreprise grâce à la technologie de réseau étendu.</li></ul><b>Couche de distribution :</b><ul><li>Agrège les locaux techniques, grâce à des commutateurs afin de segmenter des groupes de travail et d’isoler les problèmes de réseau au sein d’un environnement de campus.</li><li>De même, la couche de distribution agrège des connexions de réseau étendu à la périphérie du campus et fournit une connectivité basée sur des stratégies.</li></ul><b>Couche cœur de réseau (également appelée réseau fédérateur) :</b><ul><li>Réseau fédérateur à haut débit conçu pour commuter des paquets le plus rapidement possible.</li><li>Le cœur de réseau étant un élément essentiel pour la connectivité, il doit fournir une disponibilité élevée et s’adapter très rapidement aux changements. Il offre également des capacités d’évolutivité et de convergence rapide.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Décrivez les cinq modules de l’architecture d’entreprise Cisco.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(section 1.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Architecture de campus d’entreprise :</b><ul><li>Un réseau de campus d’entreprise est un bâtiment ou un groupe de bâtiments connecté à un réseau qui comprend de nombreux réseaux locaux.</li><li>Il est généralement limité à une zone géographique spécifique, mais peut s’étendre sur plusieurs bâtiments voisins.</li><li>Cette architecture est modulaire et extensible, et peut facilement être étendue pour inclure des bâtiments ou des étages supplémentaires, si requis.</li></ul><b>Architecture de succursale d’entreprise :</b><ul><li>Ce module permet à des entreprises d’étendre les applications et services présents sur le campus d’entreprise vers des milliers d’emplacements et d’utilisateurs distants ou vers un petit groupe de succursales.</li></ul><b>Architecture de centre de calcul d’entreprise :</b><ul><li>Les centres de calcul assurent la gestion et la mise à jour des nombreux systèmes informatiques essentiels à la réalisation d’opérations commerciales modernes.</li><li>Ce module héberge les données et les ressources dans un emplacement central afin de permettre aux utilisateurs de créer, de collaborer et d’interagir de manière efficace.</li></ul><b>Architecture de télétravailleur d’entreprise :</b><ul><li>Ce module utilise les ressources du réseau de l’entreprise depuis un domicile grâce à des services à large bande tels qu’un modem câble ou DSL pour se connecter au réseau d’entreprise.</li><li>Il est généralement implémenté grâce à des réseaux privés virtuels d’accès à distance.</li></ul><b>Architecture de périphérie d’entreprise</b><ul><li>Ce module fonctionne souvent en tant que liaison entre le module de campus et les autres modules dans l’architecture d’entreprise.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Comparez et différenciez les termes suivants relatifs au réseau étendu : équipement d’abonné, central téléphonique (CO), boucle locale, DCE, ETTD et point de démarcation.]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(section 1.2)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Équipement d’abonné (CPE) :</b><ul><li>Périphériques et câblage interne situés chez l’abonné et connectés via le canal de télécommunications d’un opérateur.</li><li>L’abonné est propriétaire de l’équipement ou le loue auprès d’un fournisseur de services.</li></ul><b>Central téléphonique (CO) :</b><ul><li>Installation ou bâtiment de fournisseur de service local dans lequel des câbles téléphoniques locaux relient des lignes de communications grande distance, entièrement numériques et à fibre optique via un système de commutateurs et d’autres équipements.</li></ul><b>Boucle locale :</b><ul><li>Souvent désigné par le terme « dernier kilomètre », ce câble téléphonique de cuivre ou à fibre optique connecte l’équipement d’abonné sur le site de l’abonné au central téléphonique du fournisseur de services.</li></ul><b>Équipement de communication de données (DCE) :</b><ul><li>Également appelé équipement de terminaison de circuit de données (ETCD), l’équipement de communication de données comprend des périphériques qui placent des données sur la boucle locale.</li><li>L’équipement de communication de données fournit principalement une interface visant à connecter des abonnés à une liaison de communication sur le nuage de réseau étendu. </li></ul><b>Équipement terminal de traitement de données (ETTD) :</b><ul><li>Périphériques de client qui transmettent des données depuis le réseau d’un client ou l’ordinateur hôte pour une transmission sur le réseau étendu.</li><li>L’équipement terminal de traitement de données se connecte à la boucle locale grâce à l’équipement de communication de données.</li></ul><b>Point de démarcation :</b><ul><li>Physiquement, le point de démarcation est le boîtier de raccordement de câblage, situé chez le client, qui connecte les câbles de l’équipement d’abonné à la boucle locale et sépare officiellement l’équipement du client de celui du fournisseur de services.</li><li>C’est à cet endroit que la responsabilité en termes de connexion passe de l’utilisateur au fournisseur de services.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Comparez et différenciez les termes périphériques de réseau étendu suivants : modem, CSU/DSU, serveur d’accès, commutateur de réseau étendu et routeur.]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(section 1.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Modem :</b><ul><li>Un modem à fréquence vocale convertit et reconvertit les signaux numériques produits par un ordinateur en fréquences vocales qui peuvent être transmises via des lignes analogiques du réseau téléphonique public.</li><li>Des modems plus rapides, tels que les modems câble et DSL, effectuent les transmissions grâce à des fréquences de bande passante plus élevée.</li></ul><b>CSU/DSU :</b><ul><li>Les lignes numériques, telles que des lignes porteuses T1 ou T3, requièrent une unité CSU et une unité DSU.</li><li>Les deux sont souvent combinées en un seul appareil appelé l’unité CSU/DSU.</li><li>L’unité CSU fournit la terminaison pour le signal numérique et garantit l’intégrité de la connexion grâce à la correction des erreurs et la surveillance de ligne, tandis que l’unité DSU convertit les trames de ligne porteuse T en trames pouvant être interprétées par le réseau local.</li></ul><b>Serveur d’accès :</b><ul><li>Concentre les communications entrantes et sortantes d’utilisateur et peut associer des interfaces numériques et analogiques, et prendre en charge des centaines d’utilisateurs simultanés.</li></ul><b>Commutateur de réseau étendu :</b><ul><li>Périphérique d’interconnexion multiport utilisé dans des réseaux d’opérateur pour prendre en charge le relais de trames, ATM ou X.25.</li></ul><b>Routeur :</b><ul><li>Fournit des ports d’interconnexion et des ports d’interface d’accès de réseau étendu utilisés pour se connecter au réseau du fournisseur de services.</li><li>Ces interfaces peuvent être des connexions série ou d’autres interfaces de réseau étendu, et peuvent nécessiter un périphérique externe tel qu’une unité DSU/CSU ou un modem (analogique, câble ou DSL) pour se connecter au fournisseur de services.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Comparez et différenciez X.25, Relais de trames et ATM.]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(section 1.3)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>X.25 :</b><ul><li>Technologie ancienne de réseau étendu de faible capacité avec un débit maximal de 48 Kbits/s, généralement utilisée en mode commuté avec des lecteurs de carte sur point de vente afin de valider des transactions sur un ordinateur central.</li><li>Pour ces applications, la bande passante faible et la latence élevée ne sont pas un problème et le prix de cette norme est abordable.</li><li>Le relais de trames a remplacé X.25 chez de nombreux fournisseurs de services.</li></ul><b>Relais de trames :</b><ul><li>Protocole de réseau étendu de couche 2 qui offre généralement un débit de données de 4 Mbits/s voire plus.</li><li>Il fournit une connectivité permanente, partagée et à bande passante moyenne grâce à des circuits virtuels permettant de transmettre du trafic vocal et de données.</li><li>Les circuits virtuels sont identifiés de manière unique par un DLCI, qui garantit une communication bidirectionnelle entre le périphérique ETTD et un autre appareil.</li></ul><b>ATM :</b><ul><li>Le mode de transfert asynchrone ATM est une architecture basée sur des cellules plutôt qu’une architecture basée sur des trames. ATM utilise des cellules fixes de 53 octets.</li><li>Ces petites cellules de longueur fixe sont adaptées au transport de trafic vocal et vidéo sensible au temps.</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Fin des questions portant sur les thèmes de ce chapitre.</b>]]></text>
+</component>
+</textcomponents>

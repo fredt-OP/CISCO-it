@@ -1,0 +1,162 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Numéro de révision incorrect</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Numéro de révision incorrect</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>Réinitialiser le numéro de révision</b>]]></text>
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<b>Vérifier le numéro de révision</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Serveur VTP</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Client VTP</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Client VTP</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Client VTP</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = 17<br/>VLAN : 10, 20</b>]]></text>
+</component>
+
+<component id="ID_txt05-2">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = <font color='#FF0000'>17</font><br/>VLAN : <font color='#FF0000'>10, 20</font></b>]]></text>
+</component>
+
+<component id="ID_txt05-3">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = <font color='#FF0000'>35</font><br/>VLAN : <font color='#FF0000'>30, 40</font></b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = 17<br/>VLAN : 10, 20</b>]]></text>
+</component>
+
+<component id="ID_txt06-2">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = <font color='#FF0000'>17</font><br/>VLAN : <font color='#FF0000'>10, 20</font></b>]]></text>
+</component>
+
+<component id="ID_txt06-3">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = <font color='#FF0000'>35</font><br/>VLAN : <font color='#FF0000'>30, 40</font></b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = 17<br/>VLAN : 10, 20</b>]]></text>
+</component>
+
+<component id="ID_txt07-2">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = <font color='#FF0000'>17</font><br/>VLAN : <font color='#FF0000'>10, 20</font></b>]]></text>
+</component>
+
+<component id="ID_txt07-3">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = <font color='#FF0000'>35</font><br/>VLAN : <font color='#FF0000'>30, 40</font></b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = <font color='#FF0000'>35</font><br/>VLAN : <font color='#FF0000'>30, 40</font></b>]]></text>
+</component>
+
+<component id="ID_txt08-2">
+<text><![CDATA[<b>Domaine VTP = cisco1<br/>Numéro de révision = 35<br/>VLAN : 30, 40</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Avant d’ajouter un commutateur à un réseau compatible VTP, réinitialisez le numéro de révision sur le commutateur à l’aide des commandes suivantes :</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe des commandes Cisco IOS</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration globale</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>#<b>configure terminal</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer le nom de domaine VTP</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>(config)#<b>vtp domain</b> <i>nom_de_domaine</i></font></td>	
+	</tr>
+	</table>
+]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Voici un exemple montrant comment réinitialiser le numéro de révision sur le commutateur S4 :</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<font face = "_typewriter">S4(config)#<b>vtp domain test</b><br />S4(config)#<b>vtp domain cisco1</font></b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>La zone supérieure mise en évidence montre le numéro de révision remis à zéro.<br />La zone inférieure mise en évidence montre que les réseaux locaux virtuels ont été supprimés.</b>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Texte]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward2">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute2">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute2"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Texte]]></text>
+</component>
+
+</textcomponents>

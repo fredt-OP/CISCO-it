@@ -1,0 +1,83 @@
+<textcomponents>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Architecture en couches PPP : couche NCP</b>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Architecture PPP - Couche réseau</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Couche 3]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Protocoles]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Autres]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Protocole de contrôle réseau]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Authentification, autres options<BR/>Protocole de contrôle de liaison]]></text>
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Support physique <BR/>synchrone ou asynchrone]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[Couche réseau]]></text> 
+  </component>
+<component id="ID_txt08">
+  <text><![CDATA[Couche liaison de données]]></text> 
+  </component>
+<component id="ID_txt09">
+<text><![CDATA[Couche physique]]></text>
+</component>
+<component id="table1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'><tr><td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">&nbsp;</font></td></tr><tr><td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Avec ses fonctions de haut niveau, le protocole PPP transporte des paquets de plusieurs protocoles de couche réseau grâce aux protocoles NCP. Il s’agit de champs fonctionnels qui contiennent des codes standard pour indiquer le type de protocole de couche réseau qu’encapsule le protocole PPP.</td></tr></table>]]></text>
+</component>
+<component id="table2">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF"><b>Valeur (hex)</b></font></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF"><b>Nom du protocole</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>8021</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protocole de contrôle de protocole Internet</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>8023</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protocole de contrôle de couche réseau OSI</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>8029</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protocole de contrôle Appletalk</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>802b</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protocole de contrôle IPX de Novell</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>c021</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protocole de contrôle de liaison</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>c023</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protocole d’authentification du mot de passe</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>c223</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protocole d’authentification à échanges confirmés</td>
+</tr>
+</table>]]></text>
+</component>
+<component id="ID_btn1">
+  <text><![CDATA[<b>Couche NCP</b>]]></text> 
+  </component>
+<component id="ID_btn2">
+<text><![CDATA[<b>Couche réseau</b>]]></text>
+</component>
+</textcomponents>

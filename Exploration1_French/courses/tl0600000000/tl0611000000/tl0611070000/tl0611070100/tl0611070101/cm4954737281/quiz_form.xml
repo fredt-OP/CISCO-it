@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13243" dateexported="03/17/2008">
+		<name>Module 11 Questionnaire</name>
+		<form id="20742" lang="fr"><form-item>
+			<ai id="130341" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="130341" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>configure terminal</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>copy tftp run</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>192.168.23.5</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>enable</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>copy run tftp</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>router-config</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Passer en mode privilégié</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Copier la configuration sur le serveur TFTP</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Entrer l’adresse IP du serveur</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Entrer le nom du fichier de destination</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Une copie d’un fichier de configuration peut être sauvegardée sur un serveur TFTP. Établissez la séquence des commandes nécessaires pour accomplir cette tâche. (Les propositions ne sont pas toutes pertinentes.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="16" yspacing="45" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /><display componentIdent="4" xpos="600" ypos="186" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="112031" maxvalue="1"><title>Sans titre</title></decvar><interpretvar varname="112031" view="All">Sans description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="112031" action="Set">1</setvar><scoringdescription>enable,copyruntftp,192.168.23.5,router-config</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="130403" type="mc-sa"><question><![CDATA[Quelle série de commandes permet d’accéder à cinq lignes du terminal virtuel à l’aide du mot de passe « cisco » ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router(config-line)#<b>configure telnet</b><br />Router(config-line)#<b>line vty 0 5</b><br />Router(config-line)#<b>password cisco</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>line vty 0 5</b><br />Router(config)#<b>password cisco</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)#<b>line vty 0 4</b><br />Router(config-line)#<b>login</b><br />Router(config-line)#<b>password cisco</b><br />  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>configure telnet</b><br />Router(config-line)#<b>password cisco</b><br />Router(config-line)#<b>session 0 4</b><br /> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="60490" type="mc-sa"><question><![CDATA[Quelle commande permet de mettre sous tension une interface de routeur ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router(config-if)# <b>enable</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config-if)# <b>no down</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config-if)# <b>s0 active</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config-if)# <b>interface up</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config-if)# <b>no shutdown</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="70885" type="mc-sa"><question><![CDATA[Quelle est la fonction de la commande IOS <b> enable secret</b> ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle permet d'activer la protection par mot de passe dans les sessions Telnet entrantes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle permet d'activer la protection par mot de passe sur la console. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle permet à l'utilisateur d'accéder au mode utilisateur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elle permet à l'utilisateur d'entrer un mot de passe qui sera crypté.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="70944" type="mc-sa"><question><![CDATA[Quelle commande permet d'afficher les statistiques de toutes les interfaces configurées sur un routeur ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>list interfaces</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show interfaces</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show processes</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show statistics</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="70626" type="mc-sa"><question><![CDATA[Quelle commande affiche la liste des commandes disponibles pour consulter l'état du routeur ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router# <b>?show</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router# <b>sh?</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router# <b>show ?</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router# <b>help</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router# <b>status ?</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130345" type="mc-sa"><question><![CDATA[Un administrateur configure un nouveau routeur et lui attribue le nom ROUTEURDEJOSE. Il doit définir un mot de passe obligatoire pour établir une session de console de communication avec le routeur. Quelles commandes l’administrateur doit-il saisir sur la console pour définir « CISCO » comme mot de passe ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[ROUTEURDEJOSE(config)# <b>enable password CISCO</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ROUTEURDEJOSE(config)# <b>line con 0</b><br />ROUTEURDEJOSE(config-line)# <b>login</b><br />ROUTEURDEJOSE(config-line)# <b>enable password CISCO</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ROUTEURDEJOSE(config)# <b>enable console password CISCO</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[ROUTEURDEJOSE(config)# <b>line con 0</b><br />ROUTEURDEJOSE(config-line)# <b>login</b><br />ROUTEURDEJOSE(config-line)# <b>password CISCO</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="86980" type="mc-sa"><question><![CDATA[Un administrateur réseau doit configurer une interface série avec une adresse IP. La configuration doit également identifier le site distant auquel l'interface est connectée. Quelles commandes permettent de remplir ces conditions ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Chicago(config)# <b>description San Jose T1</b><br />Chicago(config)# <b>interface serial0/0</b><br />Chicago(config-if)# <b>ip address 192.168.204.9 255.255.255.252</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Chicago(config)# <b>interface serial0/0</b><br />Chicago(config-if)# <b>ip address 192.168.204.9 255.255.255.252</b><br />Chicago(config-if)# <b>description San Jose T1</b><br />  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Chicago(config)# <b>interface serial0/0</b><br />Chicago(config-if)# <b>ip address 192.168.204.9 netmask 255.255.255.252</b><br />Chicago(config-if)# <b>description San Jose T1</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Chicago(config)# <b>interface serial0/0</b><br />Chicago(config-if)# <b>ip address 192.168.204.9 255.255.255.252</b><br />Chicago(config-if)# <b>remote site San Jose T1</b><br /> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Chicago(config)# <b>interface serial0/0</b><br />Chicago(config-if)# <b>ip address 192.168.204.9 255.255.255.252</b><br />Chicago(config-if)# <b>interface description San Jose T1</b><br /> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="63847" type="mc-sa"><question><![CDATA[Que signifie l'obtention d'un " <b>.</b> " après exécution de la commande <b>ping</b> ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Congestion de trafic ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Destination inaccessible ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Dépassement du délai d'attente pour la réponse d'écho  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Réception réussie d'une réponse d'écho ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="63993" type="mc-sa"><question><![CDATA[Quel utilitaire indique la route empruntée par un paquet pour atteindre sa destination ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[netstat ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ping ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Telnet ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[traceroute  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

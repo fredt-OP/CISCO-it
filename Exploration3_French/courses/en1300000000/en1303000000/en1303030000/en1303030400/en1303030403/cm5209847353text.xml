@@ -1,0 +1,59 @@
+<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<B>Managing a Trunk Configuration</B>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Command Syntax</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Reset Example</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<B>Remove Example</B>]]></text> 
+</component>
+
+<component id="ID_button_04">
+<text><![CDATA[<B>Interfaces Switchport</B>]]></text> 
+</component>
+
+<component id="ID_step0">
+  <text><![CDATA[<B>Click through the steps to see the GUI-based alternatives to the CLI</B>]]></text> 
+</component>
+
+<component id="ID_caption01">
+<text><![CDATA[<b>3.3.4.3 -A: Managing a Trunk Configuration</b>]]></text>
+</component>
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+	  	  	<td width="305" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">&nbsp;</font></td>
+	   	</tr>
+	
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Use this command in the interface configuration mode to reset all of the VLANs configured on the trunk interface.</td>
+		<td width="305" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>no switchport trunk allowed vlan</b></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Use this command in the interface configuration mode to reset the native VLAN back to VLAN 1.</td>
+		<td width="305" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>no switchport trunk native vlan</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Use this command in the interface configuration mode to reset the trunk port interface back to a static access mode port.</td>
+		<td width="305" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport mode access </b></font></td>
+	</tr>	
+</table>
+]]></text> 
+  </component>
+
+
+</textcomponents>

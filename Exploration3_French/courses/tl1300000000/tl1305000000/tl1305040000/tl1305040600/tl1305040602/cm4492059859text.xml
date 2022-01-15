@@ -1,0 +1,72 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Rôles des ports RSTP</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[Port<br/>racine (F)]]></text>  
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[Port<br/>désigné (F)]]></text>  
+  </component>
+  <component id="ID_txt03">
+  <text><![CDATA[Pont racine]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[Port<br/>désigné (F)]]></text>  
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[Port<br/>de secours (DIS)]]></text>  
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[Port<br/>désigné (F)]]></text>  
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Port<br/>alternatif (DIS)]]></text>  
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[Port<br/>racine (F)]]></text>  
+  </component>
+  <component id="ID_txt13">
+  <text><![CDATA[Port<br/>désigné (F)]]></text> 
+  </component>
+ 
+ <component id="ID_box1_title">
+  <text><![CDATA[<b>Ports racines</b>]]></text> 
+  </component>
+  
+  <component id="ID_box1_body">
+  <text><![CDATA[Il s’agit du port de commutateur sur chaque pont non-racine qui constitue le chemin choisi vers le pont racine. Un commutateur ne peut comporter qu’un seul port racine. Le port racine est normalement en état d’acheminement dans une topologie active stable. Dans la figure, le port racine est le port F0/2 sur le commutateur S2 et le port F0/4 sur le commutateur S3.]]></text> 
+  </component>
+  
+  <component id="ID_box2_title">
+  <text><![CDATA[<b>Ports désignés</b>]]></text> 
+  </component>
+  
+  <component id="ID_box2_body">
+  <text><![CDATA[Chaque segment comporte au moins un port de commutateur qui constitue le port désigné pour ce segment. Dans la figure, le port F0/1 sur le commutateur S3 et le port F0/2 sur le commutateur S1 sont les ports désignés. Dans une topologie active stable, le commutateur avec le port désigné reçoit les trames sur le segment qui sont destinées au pont racine. Chaque segment ne peut comporter qu’un seul port désigné. Le port désigné est normalement en état d’acheminement. Par conséquent, le port F0/1 sur le commutateur S3 et les ports F0/2 et F0/4 sur le commutateur S1 sont en état d’acheminement. Tous les commutateurs raccordés à un segment donné écoutent la totalité des trames BPDU et déterminent le commutateur qui constituera le commutateur désigné pour un segment spécifique.]]></text> 
+  </component>
+  
+  <component id="ID_box3_title">
+  <text><![CDATA[<b>Port alternatif</b>]]></text> 
+  </component>
+  
+  <component id="ID_box3_body">
+  <text><![CDATA[Il s’agit du port de commutateur qui propose un autre chemin vers le pont racine. Le port F0/3 sur le commutateur S2 joue le rôle de port alternatif. Le port alternatif est normalement en état de mise à l’écart (discarding) dans une topologie active stable. Un port alternatif est présent sur les commutateurs non désignés et passe à l’état de port désigné en cas de coupure du chemin actuel désigné. ]]></text> 
+  </component>
+  
+  <component id="ID_box4_title">
+  <text><![CDATA[<b>Port de secours</b>]]></text> 
+  </component>
+  
+  <component id="ID_box4_body">
+  <text><![CDATA[Il s’agit d’un port supplémentaire sur le commutateur désigné offrant une liaison redondante pour le segment pour lequel le commutateur est désigné. Un port de secours possède une valeur d’ID de port plus élevée que le port désigné sur le commutateur désigné. Le port de secours est normalement en état de mise à l’écart dans une topologie active stable. Dans la figure, le port F0/6 sur le commutateur S2 fait office de port de sauvegarde (état de mise à l’écart).]]></text> 
+  </component>
+
+<component id="ID_inst">
+  <text><![CDATA[<b>Placez le pointeur sur chacun des rôles de ports dans la figure pour consulter la description correspondante.<b>]]></text> 
+  </component>
+
+
+
+</textcomponents>

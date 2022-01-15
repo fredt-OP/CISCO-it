@@ -1,0 +1,74 @@
+﻿<textcomponents>
+
+<component id="ID_title1">
+<text><![CDATA[<b>* L’adresse de classe A 127.0.0.0 est réservée au test de bouclage.<br>** Les adresses ne contenant que des zéros (0) et que des uns (1) sont des adresses d’hôte incorrectes.</b>]]></text>
+</component>
+
+<component id="ID_header1">
+<text><![CDATA[<b>Classes d’adresses IP</b>]]></text>
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[<table bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='60' bgcolor='#F2F2F2'>Classe de l’adresse</td>
+<td width='62' bgcolor='#F2F2F2'>Plage du premier octet (décimal)</td>
+<td width='90' bgcolor='#F2F2F2'>Bits du premier octet (<font color="#009900">les bits verts ne changent pas</font>)</td>
+<td width='100' bgcolor='#F2F2F2'>Parties réseau (<font color="#0066CC">N</font>) et hôte (<font color="#CC0000">H</font>) de l’adresse</td>
+<td width='110' bgcolor='#F2F2F2'>Masque de sous-réseau par défaut (décimal et binaire)</td>
+<td width='110' bgcolor='#F2F2F2'>Nombre de réseaux et d’hôtes possibles par réseau</td>
+<td bgcolor='#F2F2F2'>Notes et plage d’adresses d’hôte**</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>A</td>
+<td bgcolor='#DDDDDD'>1 - 127*</td>
+<td bgcolor='#DDDDDD'><font color="#009900">0</font>0000000 - <br/><font color="#009900">0</font>1111111</td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">N</font><font color="#CC0000">.H.H.H</font></td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">255</font><font color="#CC0000">.0.0.0</font><br /><font color="#0066CC">11111111</font><font color="#CC0000">.00000000.00000000.00000000</font></td>
+<td bgcolor='#DDDDDD'>128 réseaux<br />(2^7)<br />16 777 214 hôtes par réseau<br />(2^24-2)</td>
+<td bgcolor='#DDDDDD'>Commercial<br />1.0.0.1 - 126.255.255.254</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>B</td>
+<td bgcolor='#DDDDDD'>128 - 191</td>
+<td bgcolor='#DDDDDD'><font color="#009900">10</font>000000 - <br/><font color="#009900">10</font>111111</td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">N.N</font><font color="#CC0000">.H.H</font></td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">255.255</font><font color="#CC0000">.0.0</font><br /><font color="#0066CC">11111111.11111111</font><font color="#CC0000">.00000000.00000000</font></td>
+<td bgcolor='#DDDDDD'>16 384 réseaux<br />(2^14)<br />65 534 hôtes par réseau<br />(2^16-2)</td>
+<td bgcolor='#DDDDDD'>Commercial<br />128.0.0.1 - 191.255.255.254</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>C</td>
+<td bgcolor='#DDDDDD'>192 - 223</td>
+<td bgcolor='#DDDDDD'><font color="#009900">110</font>00000 - <br/><font color="#009900">110</font>11111</td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">N.N.N</font>.<font color="#CC0000">H</font></td>
+<td bgcolor='#DDDDDD'><font color="#0066CC">255.255.255</font><font color="#CC0000">.0</font><br /><font color="#0066CC">11111111.11111111.11111111</font><font color="#CC0000">.00000000</font></td>
+<td bgcolor='#DDDDDD'>2 097 152 réseaux<br />(2^21)<br />254 hôtes par réseau<br />(2^8-2)</td>
+<td bgcolor='#DDDDDD'>Commercial<br />192.0.0.1 - 223.255.255.254</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>D</td>
+<td bgcolor='#DDDDDD'>224- 239</td>
+<td bgcolor='#DDDDDD'><font color="#009900">1110</font>0000 - <br/><font color="#009900">1110</font>1111</td>
+<td bgcolor='#DDDDDD'>Non destiné à une utilisation commerciale comme hôte</td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'>Multidiffusion (réservée)<br />224.0.0.1 - 239.255.255.254</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>E</td>
+<td bgcolor='#DDDDDD'>240 - 255</td>
+<td bgcolor='#DDDDDD'><font color="#009900">1111</font>0000 - <br/><font color="#009900">1111</font>1111</td>
+<td bgcolor='#DDDDDD'>Non destiné à une utilisation commerciale comme hôte</td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'> </td>
+<td bgcolor='#DDDDDD'>Expérimentale (réservée)<br />224.0.0.1 - 255 255 255 255</td>
+</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+

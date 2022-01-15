@@ -1,0 +1,40 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Types of IOS Access Lists]]></text> 
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+
+<tr>
+<td width= "110" bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Type of ACL </b></font></td>
+<td width= "250" bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Sample ACL command/statement</b></font></td>
+<td width= "250" bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Purpose of statement</b></font></td>
+</tr>
+
+<tr>
+<td width= "110" bgcolor='#DDDDDD'><b>Standard</b></td>
+<td width= "250" bgcolor='#DDDDDD'><font face='_typewriter'>Router(config)<b>#access-list 1 permit host 172.16.2.88</b></font></td>
+<td width= "250" bgcolor='#DDDDDD'><li>Permits a specific IP address</li></td>
+</tr>
+
+<tr>
+<td width= "110" bgcolor='#F2F2F2'><b>Extended</b></td>
+<td width= "250" bgcolor='#F2F2F2'><font face='_typewriter'>Router(config)<b>#access-list 100 deny tcp 172.16.2.0 0.0.0.255 any eq telnet</b></font></td>
+<td width= "250" bgcolor='#F2F2F2'><li>Denies access from the 172.16.2.0/24 subnet to any other host if they are attempting to use telnet</li></td>
+</tr>
+
+<tr>
+<td width= "110" bgcolor='#DDDDDD'><b>Named</b></td>
+<td width= "250" bgcolor='#DDDDDD'><font face='_typewriter'>Router(config)<b>#ip access-list standard permit-ip</b>
+Router(config-ext-nacl)<b>#permit host 192.168.5.47</b></font></td>
+<td width= "250" bgcolor='#DDDDDD'><li>Creates a standard access list named permit-ip<li><li>Allows access from IP address 192.168.5.47</li><li>The first command puts the router into NACL subcommand mode</li></td>
+</tr>
+
+</table>
+
+]]></text>
+</component>
+</textcomponents>

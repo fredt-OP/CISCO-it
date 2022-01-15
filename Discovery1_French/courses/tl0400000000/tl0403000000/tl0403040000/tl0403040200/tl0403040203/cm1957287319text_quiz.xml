@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="12511" dateexported="03/07/2007">
+		<name>Questionnaire du module 1</name>
+		<form id="15048" lang="es">
+<form-item order="fixed">
+     <ai id="66557" type="mc-sa"><question><![CDATA[Si l'hôte 3 envoie un message à l'hôte 6, quels périphériques hôtes reçoivent le message ?]]></question><choices>
+	<choice correct="n">
+		<text><![CDATA[L'hôte 6 uniquement.]]></text>
+		<feedback><![CDATA[Un concentrateur ne lit pas une trame, il lui répète simplement le message de tous les ports.]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Tous les hôtes sont connectés au concentrateur A uniquement.]]></text>
+		<feedback><![CDATA[Un concentrateur ne lit pas une trame, il lui répète simplement le message de tous les ports. ]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Tous les hôtes sont connectés au concentrateur B uniquement.]]></text>
+		<feedback><![CDATA[Un concentrateur ne lit pas une trame, il lui répète simplement le message de tous les ports.]]></feedback>
+	</choice>
+	<choice correct="y">
+		<text><![CDATA[Tous les hôtes sur le réseau.]]></text>
+	</choice></choices></ai>
+</form-item>
+
+
+
+<form-item order="fixed">
+<ai id="66558" type="mc-sa">
+	<question><![CDATA[Sur ce réseau, combien existe-t-il de domaines de collision ?]]></question><choices>
+	<choice correct="y">
+		<text><![CDATA[Il y a 1 domaine de collision.]]></text>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Il y a 2 domaines de collision.]]></text>
+		<feedback><![CDATA[Tous les ports du concentrateur A et du concentrateur B se trouvent dans le même domaine de collision. Tous les hôtes sur le réseau doivent partager la bande passante à travers les concentrateurs et des collisions peuvent se produire. En outre, tous les hôtes vont recevoir le message confus d'une collision.  ]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Il y a 8 domaines de collision.]]></text>
+		<feedback><![CDATA[Tous les ports du concentrateur A et du concentrateur B se trouvent dans le même domaine de collision. Tous les hôtes sur le réseau doivent partager la bande passante à travers les concentrateurs et des collisions peuvent se produire. En outre, tous les hôtes vont recevoir le message confus d'une collision.  ]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Il n'y a pas de domaine de collision.]]></text>
+		<feedback><![CDATA[Tous les ports du concentrateur A et du concentrateur B se trouvent dans le même domaine de collision. Tous les hôtes sur le réseau doivent partager la bande passante à travers les concentrateurs et des collisions peuvent se produire. En outre, tous les hôtes vont recevoir le message confus d'une collision.  ]]></feedback>
+	</choice></choices></ai></form-item>
+
+
+
+
+
+<form-item order="fixed">
+<ai id="66563" type="mc-sa"><question><![CDATA[Que se passe-t-il si l'hôte 3 et l'hôte 4 envoient un message à travers le concentrateur A en même temps ?]]></question><choices>
+	<choice correct="y">
+		<text><![CDATA[Les deux trames entrent en collision et le concentrateur transmet un message confus à tous les hôtes du réseau.]]></text>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Les deux trames entrent en collision et le concentrateur transmet un message confus aux hôtes source et de destination prévus uniquement.]]></text>
+		<feedback><![CDATA[Le concentrateur ne décide pas quand les hôtes peuvent communiquer, il n'évite pas non plus les collisions quand deux hôtes communiquent simultanément. Un concentrateur transmet le message brouillé d'une collision à tous les hôtes connectés. C'est aux hôtes de retransmettre. ]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Les deux trames sont transmises au périphérique de destination correct sans qu'une collision ait lieu.]]></text>
+		<feedback><![CDATA[Le concentrateur ne décide pas quand les hôtes peuvent communiquer, il n'évite pas non plus les collisions quand deux hôtes communiquent simultanément. Un concentrateur transmet le message brouillé d'une collision à tous les hôtes connectés. C'est aux hôtes de retransmettre.]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Deux hôtes ne peuvent pas envoyer des informations à travers le concentrateur en même temps parce que les hôtes doivent attendre une trame de requête de données du concentrateur.]]></text>
+		<feedback><![CDATA[Le concentrateur ne décide pas quand les hôtes peuvent communiquer, il n'évite pas non plus les collisions quand deux hôtes communiquent simultanément. Un concentrateur transmet le message brouillé d'une collision à tous les hôtes connectés. C'est aux hôtes de retransmettre.]]></feedback>
+	</choice></choices></ai>
+</form-item>
+
+
+
+
+
+<form-item order="fixed">
+<ai id="66590" type="mc-sa"><question><![CDATA[Qui reçoit le message confus quand une collision se produit sur le réseau du concentrateur ?]]></question><choices>
+	<choice correct="n">
+		<text><![CDATA[Seulement le PC de destination.]]></text>
+		<feedback><![CDATA[Un concentrateur ne détermine pas ce qui doit être transmis, il répète simplement tout.]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Tous les PC connectés au concentrateur où la collision a eu lieu.]]></text>
+		<feedback><![CDATA[Un concentrateur ne détermine pas ce qui doit être transmis, il répète simplement tout.]]></feedback>
+	</choice>
+	<choice correct="y">
+		<text><![CDATA[Tous les PC connectés à tous les concentrateurs du réseau.  ]]></text>
+							
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Un concentrateur ne transmet pas un message confus à partir d'une collision.  ]]></text>
+		<feedback><![CDATA[Un concentrateur ne détermine pas ce qui doit être transmis, il répète simplement tout.]]></feedback>
+	</choice>
+	<choice correct="n">
+		<text><![CDATA[Une collision n'a jamais lieu sur un réseau de concentrateurs. ]]></text>
+		<feedback><![CDATA[Un concentrateur ne détermine pas ce qui doit être transmis, il répète simplement tout.]]></feedback>
+	</choice>
+	</choices></ai>
+</form-item>
+
+</form></exam> 

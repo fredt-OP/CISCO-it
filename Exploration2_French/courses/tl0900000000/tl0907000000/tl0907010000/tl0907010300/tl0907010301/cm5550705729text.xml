@@ -1,0 +1,147 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Format des messages RIPv1</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur Lire pour lancer l’animation.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>En-tête Trame liaison de données</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>En-tête Paquet IP</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>En-tête Segment UDP</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Message RIP <br>(512 octets ; jusqu’à 25 routes)</br></b>]]></text>
+</component>
+
+<component id="ID_txt05a">
+<text><![CDATA[<b>Bit :</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>0</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>7</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>8</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>15</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>16</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>23</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>24</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>31</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>Commande = 1 ou 2</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Version = 1</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>Doit être zéro</b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>Identificateur de la famille d’adresses (2 = IP)</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>Doit être zéro</b>]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[<b>Adresse IP (Adresse réseau)</b>]]></text>
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[<b>Doit être zéro</b>]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[<b>Doit être zéro</b>]]></text>
+</component>
+
+<component id="ID_txt22">
+<text><![CDATA[<b>Métrique (Sauts)</b>]]></text>
+</component>
+
+<component id="ID_txt23">
+<text><![CDATA[<b>Entrées de routes multiples, 25 au maximum</b>]]></text>
+</component>
+
+<component id="ID_txt24">
+<text><![CDATA[<b>Entrée de route</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<b>Commande</b>]]></text>
+</component>
+
+<component id="ID_table01b">
+<text><![CDATA[1 pour une requête ou 2 pour une réponse.]]></text>
+</component>
+
+<component id="ID_table02">
+<text><![CDATA[<b>Version</b>]]></text>
+</component>
+
+<component id="ID_table02b">
+<text><![CDATA[1 pour RIP v 1 ou 2 pour RIP v 2.]]></text>
+</component>
+
+<component id="ID_table03">
+<text><![CDATA[<b>Identificateur de famille d’adresses</b>]]></text>
+</component>
+
+<component id="ID_table03b">
+<text><![CDATA[2 pour IP sauf si une requête concerne la table de routage complète (auquel cas, défini sur 0).]]></text>
+</component>
+
+<component id="ID_table04">
+<text><![CDATA[<b>Adresse IP</b>]]></text>
+</component>
+
+<component id="ID_table04b">
+<text><![CDATA[Adresse de la route de destination, qui peut être une adresse de réseau, de sous-réseau ou d’hôte.]]></text>
+</component>
+
+<component id="ID_table05">
+<text><![CDATA[<b>Métrique</b>]]></text>
+</component>
+
+<component id="ID_table05b">
+<text><![CDATA[Nombre de sauts entre 1 et 16. Le routeur émetteur augmente la métrique avant d’envoyer le message.]]></text>
+</component>  
+
+</textcomponents>

@@ -1,0 +1,9 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[The boot sequence of a Cisco switch:<br/> -<TEXTFORMAT BLOCKINDENT='8'>The switch loads the boot loader software from NVRAM.</textformat><br/> -<TEXTFORMAT BLOCKINDENT='8'>The boot loader:</textformat><br/>   • <TEXTFORMAT BLOCKINDENT='16'>Performs low-level CPU initialization.</textformat><br/>   • <TEXTFORMAT BLOCKINDENT='16'>Performs POST for the CPU subsystem.</textformat><br/>   • <TEXTFORMAT BLOCKINDENT='16'>Initializes the flash file system on the system board. </textformat><br/>   • <TEXTFORMAT BLOCKINDENT='16'>Loads a default operating system software image into memory and boots the switch.</textformat><br/> -<TEXTFORMAT BLOCKINDENT='8'>The operating system runs using the config.text file, stored in the switch flash storage.</textformat><br/><br/>The boot loader can help you recover from an operating system crash:<br/> -<TEXTFORMAT BLOCKINDENT='8'>Provides access into the switch if the operating system has problems serious enough that it cannot be used. </textformat><br/> -<TEXTFORMAT BLOCKINDENT='8'>Provides access to the files stored on flash before the operating system is loaded. </textformat><br/> -<TEXTFORMAT BLOCKINDENT='8'>Use the boot loader command line to perform recovery operations.</textformat>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Describe the Boot Sequence</b>]]></text>
+</component>
+</textcomponents>
+

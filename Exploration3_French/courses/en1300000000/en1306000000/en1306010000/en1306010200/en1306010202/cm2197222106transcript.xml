@@ -1,0 +1,5 @@
+<transcript lastedited="01.07.09 17:01:08">
+<title><content-text><![CDATA[6.1.2  - Interfaces and Subinterfaces]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the configuration of router R1 when using two router interfaces with traditional inter-V LAN routing. The output of the routing table after configuration is also provided.<br><br>Interface Configuration:<br>Some output omitted.<br>R1(config)#interface f0/0<br>R1(config-i f)#i p address 172.17.10.1 255.255.255.0<br>R1(config-i f)#no shutdown<br><br>R1(config-i f)#interface f0/1<br>R1(config-i f)#i p address 172.17.30.1 255.255.255.0<br>R1(config-i f)#no shutdown<br><br>Routing Table Output:<br>Some output omitted.<br>172.17.0.0 /24 is subnetted, 2 subnets.<br>C172.17.30.0 is directly connected, FastEthernet0/1<br>C172.17.10.0 is directly connected, FastEthernet0/0 ]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

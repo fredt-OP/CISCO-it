@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13258" dateexported="06/04/2007">
+		<name>Module 7 Quiz</name>
+		<form id="19223" lang="en"><form-item order="fixed">
+			<ai id="111644" type="mc-ma"><question><![CDATA[What two commands will determine whether auto-summarization is in effect for RIP? (Choose two.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[<b>show running-config</b>]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip route</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip interface</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show interface</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show ip protocols</b>]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111660" type="mc-sa"><question><![CDATA[Which statement regarding RIPv2 is correct?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[RIP version 2 will auto-summarize with the most efficient mask]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RIP version 2 will auto-summarize at the major network boundary]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIP version 2 requires manual configuration for summarizing routes]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[By default RIP version 2 and RIP version 1 do not handle route summarization the same]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111693" type="mc-sa"><question><![CDATA[What is the default behavior of the RIP routing protocol if no version type is specified?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[send and receive version 1 updates only]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[send version 1 updates only, receive version 1 and 2 updates]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[receive version 1 updates only, send version 1 and 2 updates]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[send and receive both version 1 and 2 updates]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111733" type="mc-sa"><question><![CDATA[What condition would RIPv2 allow that RIPv1 would not allow?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[16 hops from one end of the network to the other]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[redistribution of EIGRP]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[a 192.168.0.0/16 network]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[a router with more than 3 interfaces]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="48575" type="mc-sa"><question><![CDATA[How do RIP v1 and RIP v2 differ?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Only RIP v1 provides authentication in its updates]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Only RIP v1 uses split horizon to prevent routing loops]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Only RIP v2 uses 16 hops as the metric value for infinite distance]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Only RIP v2 sends subnet mask information with its routing updates]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111648" type="mc-sa"><question><![CDATA[Refer to the exhibit.  The exhibit shows partial results from the <b>debug ip rip events</b> command on router B. What is the likely cause of the debug messages?<br /><img src="15017.jpg">]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Routers A and E are sending malformed updates]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIP configuration on router B does not include networks connected to the serial interfaces]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router B serial interfaces are not configured correctly]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router B is running a different version of RIP than A and E]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111658" type="mc-sa"><question><![CDATA[Refer to the exhibit.   If all routers are running RIP version 2, why is there no route for the 192.168.1.32/27 network?<br /><img src="14457.jpg">]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Rip version 2 does not send subnet masks in its updates]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router A is not setup with RIP as a routing protocol]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Rip version 2 will auto summarize routes by default]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router B is not setup to advertise the 192.168.1.64/30 network]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111659" type="mc-sa"><question><![CDATA[Refer to the exhibit.   What can be determined from this output?<br /><img src="14459.jpg">]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[A <b>show ip route</b> on a router 2 hops away will see the 192.168.1.32/27 network in its routing table]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The Serial0/0/0 interface is configured with the <b>passive interface</b> command]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The router is passing the subnet mask along with the network in its updates]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All the routers must be Cisco routers since the network is using RIP version 2]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

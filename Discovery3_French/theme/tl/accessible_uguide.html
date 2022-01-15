@@ -1,0 +1,73 @@
+﻿<html>
+	<head>
+		<title>Guide de l’utilisateur - Thème</title>
+	</head>
+
+	<body>
+		<h1>Guide de l’utilisateur - Thème</h1>
+		<h2>Sommaire</h2>
+		<ol>
+			<li><a href="#courselevel">Niveau du cours</a></li>
+			<li><a href="#mediapresentation">Présentation multimédia</a></li>
+			<li><a href="#pagelayout">Mise en page</a></li>
+			<li><a href="#keyboardnav">Navigation au clavier</a></li>
+		</ol>
+
+
+		<br><br> <a href="javascript:window.close();">Fermer la fenêtre</a><br> <a href="javascript:scroll(0,0);">Haut de la page</a> <br><br> <a name="courselevel"></a>
+		<h2>1. Niveau du cours</h2>
+		<p>L’attribut du niveau du cours modifie le niveau auquel le contenu du cours est affiché. Les options sont : Chapitre, Section, Rubrique ou Page.  Le niveau par défaut est Chapitre.</p>
+		<ul>
+			<li>Chapitre : affiche toutes les sections, rubriques et pages du chapitre sélectionné.</li>
+			<li>Section : affiche toutes les rubriques et pages de la section sélectionnée.</li>
+			<li>Rubrique : affiche toutes les pages de la rubrique sélectionnée.</li>
+			<li>Page : affiche uniquement la page sélectionnée.</li>
+		</ul>
+		<br/><br/><img src="accessible_uguide_images/courselevel.png" width="292" height="103" alt="Zone de sélection du niveau du cours" border="1"/> <br><br><br> <a href="javascript:window.close();">Fermer la fenêtre</a><br> <a href="javascript:scroll(0,0);">Haut de la page</a> <br><br> <a name="mediapresentation"></a>
+		<h2>2. Présentation multimédia</h2>
+		<p>L’attribut de présentation multimédia modifie le format auquel la partie multimédia de chaque page est affichée. Les options sont : Toutes les options, Texte court, Texte complet ou Multimédia visuel interactif.  La présentation par défaut est Toutes les options.
+		</p>
+		<ul>
+			<li>Texte du multimédia uniquement : une courte description écrite de chaque élément multimédia est présentée chaque fois qu’un élément multimédia est rencontré dans le cours. Cette option est entièrement accessible via le clavier.</li> 
+			<li>Multimédia visuel interactif uniquement : l’élément multimédia s’affiche dans son format d’origine, qui contient une présentation visuelle du contenu et souvent des éléments interactifs tels qu’une vidéo, un glisser-déplacer, une animation ou un exercice. Les éléments présentés dans ce format ne sont pas entièrement accessibles et requièrent l’utilisation de la souris.</li> 
+			<li>Texte et multimédia visuel : aucun multimédia n’est affiché par défaut.  À chaque fois qu’un élément multimédia s’affiche dans le cours, l’utilisateur peut sélectionner la façon dont le multimédia est affiché.  Cette sélection est effectuée pour chaque élément multimédia, et chacun peut être affiché dans un format différent.</li>
+		</ul>
+		<br/><br/><img src="accessible_uguide_images/mediapresentation.png" width="329" height="82" alt="Zone de sélection de la présentation multimédia" border="1"/> <br><br><br> <a href="javascript:window.close();">Fermer la fenêtre</a><br> <a href="javascript:scroll(0,0);">Haut de la page</a> <br><br> <a name="pagelayout"></a>
+		<h2>3. Mise en page</h2>
+		<p>Toutes les pages sont mises en forme de la même façon, mais le contenu dépend du niveau de cours choisi avant le lancement.</p>
+		<p>Les premiers éléments qui s’affichent sont les liens vers les outils du cours.  Ils permettent d’accéder à une zone située dans la partie supérieure de la page, avec l’outil sélectionné.  Les deux outils disponibles sont « Rechercher » et « Glossaire ». L’extrémité de la zone des outils est indiquée par une règle horizontale.</p>
+		<ul>
+			<li>Rechercher - S’ouvre dans une nouvelle fenêtre. Contient un champ dans lequel vous pouvez entrer n’importe quelle chaîne à rechercher.  Une fois la recherche envoyée, une liste de pages contenant la chaîne recherchée dans le corps du texte est générée. Les pages sont répertoriées dans leur ordre d’apparition dans le cours.<br/><br/><img src="accessible_uguide_images/search.png" width="600" height="131" alt="Outil Rechercher" border="1"/><br/><br/></li>
+			<li>Glossaire - S’ouvre dans une nouvelle fenêtre. Contient une liste indexée des termes du glossaire. Vous pouvez sélectionner ces termes pour en afficher la définition.  Cet outil est également lancé lorsqu’un lien hypertexte vers un terme du glossaire est sélectionné dans le corps du texte d’une page.<br/><br/><img src="accessible_uguide_images/glossary.png" width="896" height="481" alt="Outil Glossaire" border="1"/><br/><br/></li>
+		</ul>
+		<p>L’élément suivant est l’index du cours.  Cette zone de sélection contient la liste complète des éléments du cours répartis en fonction du niveau du cours sélectionné.  Elle permet de naviguer rapidement au sein du cours.  Pour utiliser l’index, sélectionnez l’élément souhaité dans la liste, puis cliquez sur le bouton Sélectionner pour atteindre cet élément. L’extrémité de la zone d’index du cours est indiquée par une règle horizontale.<br><img src="accessible_uguide_images/courseindex.png" width="513" height="45" alt="Index du cours" border="1"/><br/><br/></p>
+		<p>Le nombre de sections, rubriques et pages affichées dépend du niveau de cours sélectionné au lancement. L’extrémité du niveau de contenu est indiquée par une règle horizontale.<br/><br/><img src="accessible_uguide_images/titles.png" width="1119" height="130" alt="Formats de titre" border="1"/><br/><br/></p>
+		<p>Le contenu du cours est affiché à côté au format suivant :</p>
+		<ul>
+			<li>Titre et sous-titre du cours dans la balise &lt;h1&gt;</li>
+			<li>Numéro et titre du chapitre dans la balise &lt;h2&gt;</li>
+			<li>Numéro et titre de la section dans la balise &lt;h3&gt;</li>
+			<li>Numéro et titre de la rubrique en gras et en italique</li>
+			<li>Numéro de page en gras</li>
+		</ul>
+		<p>Les derniers éléments de la page sont les éléments de navigation Suivant, Précédent et Haut de la page.<br/><br/><img src="accessible_uguide_images/nav.png" width="125" height="72" alt="Éléments de navigation" border="1"/><br/><br/></p>
+		<ul>
+			<li>Suivant : passe au chapitre suivant, ou à la section, rubrique ou page suivante, en fonction du niveau du cours sélectionné.</li>
+			<li>Précédent : passe au chapitre précédent, ou à la section, rubrique ou page précédente, en fonction du niveau du cours sélectionné.</li>
+			<li>Haut de la page : retourne en haut de la page sélectionnée.</li>
+		</ul>
+		<br><br> <a href="javascript:window.close();">Fermer la fenêtre</a><br> <a href="javascript:scroll(0,0);">Haut de la page</a> <br><br> <a name="keyboardnav"></a>
+		<h2>4. Navigation au clavier</h2>
+		<p>Les commandes de clavier suivantes peuvent être utilisées pour accéder aux outils et naviguer dans le cours :</p>
+		<ul>
+			<li>Faire basculer l’outil Rechercher : Ctrl+Maj+S - Ouvre l’outil Rechercher dans une nouvelle fenêtre.</li>
+			<li>Faire basculer l’outil Glossaire : Ctrl+Maj+G - Ouvre l’outil Glossaire dans une nouvelle fenêtre.</li>
+			<li>Suivant : Ctrl+Alt+Droite passe au chapitre suivant, ou à la section, rubrique ou page suivante, en fonction du niveau du cours sélectionné.</li>
+			<li>Précédent : Ctrl+Alt+Gauche passe au chapitre précédent, ou à la section, rubrique ou page précédente, en fonction du niveau du cours sélectionné.</li>
+			<li>Mettre en évidence l’élément suivant : Ctrl+Alt+Bas met l’élément suivant de la page en évidence ;  similaire à la touche Tab. </li>
+			<li>Mettre en évidence l’élément précédent : Ctrl+Alt+Haut met l’élément précédent de la page en évidence ;  similaire à la combinaison de touches Alt+Tab. </li>
+		</ul>
+		<p><i>Remarque : certains plugins de navigateur et autres logiciels de superposition, tels que des lecteurs d’écran, sont susceptibles de remplacer ces commandes de clavier.</i></p>
+		<br><br> <a href="javascript:window.close();">Fermer la fenêtre</a><br> <a href="javascript:scroll(0,0);">Haut de la page</a>
+	</body>
+</html>

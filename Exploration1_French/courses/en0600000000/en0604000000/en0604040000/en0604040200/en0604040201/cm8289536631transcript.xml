@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 13:01:57">
+<title><content-text><![CDATA[4.4.2  - UDP Datagram Reassembly]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts how different segments can take different routes through a network and arrive at the destination out of order. When this occurs with UDP, they are not resequenced in the order transmitted at the destination.<br><br>Network Topology:<br>PC1 is connected to one of the routers in a group that has multiple paths between the routers. PC2 is connected to one of the other routers on the opposite side of the network. Data from PC1 is divided into datagrams. Arrows from PC1 through various routers to PC2 indicate that datagrams from the same data stream pass through different routers on their way from one PC to the other. UDP does not compensate for this by resequencing the datagrams, and lost datagrams are not resent.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

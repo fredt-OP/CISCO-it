@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 20:09:07">
+<title><content-text><![CDATA[9.4.1 - Troubleshooting WAN Connectivity]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the output when troubleshooting a WAN topology.<br><br>Network Topology<br>Switch, S1, is connected to switch, S2. S2 is connected to the F A 0 /0 of router, R1. R1 connects to the WAN cloud via its S0/0/1 port. The following is the output the show IP interface brief command.<br><br>R1 # show IP interface brief<br>InterfaceIP-AddressOK?MethodStatusProtocol<br>FastEthernet0/0unassignedYesmanualupup<br>FastEthernet0/0.10010.2 0.100.1Yesmanualupup<br>FastEthernet0/0.10110.20.101.1Yesmanualupup<br>FastEthernet0/0.10210.20.102.1Yesmanualupup<br>FastEthernet0/0.10310.20.103.1Yesmanualupup<br>Serial0/0/0unassignedYESmanualupup<br>FastEthernet0/1unassignedYESunset administrativelydowndown<br>Serial0/0/110.20.30.1YESmanualupup<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

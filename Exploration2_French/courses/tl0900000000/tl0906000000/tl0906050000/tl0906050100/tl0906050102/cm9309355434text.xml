@@ -1,0 +1,303 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour vérifier votre compréhension des points principaux de ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Plusieurs questions vous seront posées. Il ne s’agit pas d’un questionnaire et vos réponses ne seront pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour afficher la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Connaissez-vous la réponse à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si vous avez répondu correctement.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Quelle est la plage d’adresses pour les adresses de classe A, B et C ?]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(voir 6.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>De 0.0.0.0 à 127.255.255.255<br/>De 128.0.0.0 à 191.255.255.255<br/>De 192.0.0.0 à 223.255.255.255</b>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[Un protocole de routage sans classe inclut le masque de sous-réseau dans la mise à jour de routage.]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Qu’est-ce qui différencie un protocole de routage sans classe d’un protocole de routage par classe ?]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(voir 6.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Connaissez-vous la réponse à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si vous avez répondu correctement.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Quels sont les bénéfices de l’utilisation d’un protocole de routage sans classe ?]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(voir 6.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[Permet l’utilisation de VLSM et CIDR dans le domaine de routage.]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Connaissez-vous la réponse à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si vous avez répondu correctement.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Comment un protocole de routage par classe détermine t-il le masque de sous-réseau d’une mise à jour de routage ?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(voir 6.1)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[Si l’adresse réseau dans la mise à jour de routage se trouve sur le même réseau principal par classe que l’interface de destination, le protocole de routage par classe utilisera le même masque que l’interface.  Dans le cas contraire, il utilisera le masque par classe par défaut.]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[Connaissez-vous la réponse à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si vous avez répondu correctement.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Pourquoi le groupe de travail IETF a-t-il introduit l’adressage IP sans classe, CIDR ?]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(voir 6.1)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[Les tables de routage sur les routeurs Internet ont connu une croissance très importante.  Il fallait donc trouver un moyen de résumer les routes de la table de routage. L’adressage par classe ne pouvant fournir que les masques /8, /16 ou /24, l’espace d’adressage IPv4 était devenu plus restreint.]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt02">
+<text><![CDATA[Connaissez-vous la réponse à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si vous avez répondu correctement.]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) Outre CIDR, quelle autre fonction a contribué à limiter les restrictions des adresses IPv4 et le besoin de recourir aux adresses IPv6 ?]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(voir 6.1)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>NAT (Traduction d’adresses de réseau)</b>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+
+<!-- Question 7 -->
+
+
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[(voir 6.2)]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) Quel terme est utilisé pour définir l’opération consistant à découper un sous-réseau en sous-réseaux ?]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<b>VLSM (Masquage de sous-réseau de longueur variable)</b>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Connaissez-vous la réponse à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si vous avez répondu correctement.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) Le réseau 172.16.0.0/16 est découpé en sous-réseaux à l’aide d’un masque de sous-réseau /24. Que faire si nous avons besoin de diviser le réseau 172.16.10.0/24 en trois sous-réseaux de même taille avec le nombre maximal d’hôtes par sous-réseau ?]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(voir 6.2)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[172.16.10.0/24 peut être découpé en sous-réseaux à l’aide du masque de sous-réseau /26.]]></text>
+</component>
+<component id="ID_Q8_txt05a">
+<text><![CDATA[&lt;-Réseau-&gt;            | &lt;-Hôte-&gt;]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[On obtient alors quatre sous-réseaux comprenant le nombre maximal d’hôtes. Il est impossible de créer trois sous-réseaux ; le nombre de sous-réseaux directement inférieur serait égal à deux.]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 9 -->
+
+
+<component id="ID_Q9_txt01b">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[Connaissez-vous la réponse à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si vous avez répondu correctement.]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9) le réseau 172.16.10.0/24 utilise les sous-réseaux /28 suivants pour les réseaux locaux :]]></text>
+</component>
+<component id="ID_Q9_txt03a">
+<text><![CDATA[L’administrateur réseau souhaite allouer un sous-réseau /28 et le découper à l’aide d’un masque /30 pour toutes les liaisons série point à point sur le réseau. Quels sous-réseaux /28 peuvent être utilisés ?]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[(voir 6.2)]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>NAT (Traduction d’adresses de réseau)</b>]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q9_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 10 -->
+
+
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q10_txt02">
+<text><![CDATA[(voir 6.2)]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10) Décrivez la création d’un super-réseau. Quelles sont les conditions nécessaires à la propagation d’une route de super-réseau ?]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[Lors de la création d’un super-réseau, les connexions réseau sont moins résumées que le masque par classe par défaut. Les protocoles de routage sans classe sont nécessaires pour propager une route de super-réseau car le masque de sous-réseau doit être inclus dans l’adresse réseau résumée.]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 11 -->
+
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q11_txt02">
+<text><![CDATA[Connaissez-vous la réponse à cette question ?<br/>Cliquez sur <b>Réponse</b> pour voir si vous avez répondu correctement.]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11) Résumez les connexions réseau suivantes]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[(voir 6.3)]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[(18 bits concordants les plus à gauche)]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q11_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Ce chapitre est terminé.</b>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+
+

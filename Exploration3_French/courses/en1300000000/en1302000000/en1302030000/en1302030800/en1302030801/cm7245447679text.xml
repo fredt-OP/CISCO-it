@@ -1,0 +1,87 @@
+<textcomponents>
+
+
+
+
+<component id='ID_title1'>
+  <text><![CDATA[<b>Backup and Restore Switch Configurations</b>]]></text> 
+  </component>
+
+
+
+<component id='ID_title2'>
+  <text><![CDATA[<b>Backup and Restore Switch Configurations</b>]]></text> 
+  </component>
+
+
+
+<component id='ID_txt1'>
+  <text><![CDATA[<b>Backup Configurations</b>]]></text> 
+</component>
+
+
+  
+<component id='ID_txt2'>
+  <text><![CDATA[<b>Restore Configurations</b>]]></text> 
+</component>
+  
+ 
+
+
+
+
+
+
+
+<component id='tableHTML'><text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='240' type='dynamic'><font  color='#FFFFFF'><b>
+Cisco IOS CLI Command Syntax</b></font></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'></td>
+</tr>
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Formal version of Cisco IOS copy command. <br/>Confirm the destination file name. Press the Enter key to accept and use the Ctrl+C key combination to cancel.</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy system:running-config flash:startup-config</b><br/> Destination filename [startup-config]?</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Informal version of the copy command. The assumptions are that the running-config is running on the system and that the startup-config file that will be stored in flash NVRAM. Press the Enter key to accept and use the Ctrl+C key combination to cancel.</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy running-config startup-config</b><br/> Destination filename [startup-config]?</font></td>
+</tr>
+
+<tr> 			
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Backup the startup-config to a file stored in flash NVRAM. Confirm the destination file name. Press the Enter key to accept and use the Ctrl+C key combination to cancel.</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy startup-config flash:config.bak1</b><br/> Destination filename [config.bak1]?</font></td>
+</tr>
+
+</table>]]></text></component>
+
+
+
+  
+<component id='tableHTML1'><text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color='#FFFFFF'><b>
+Cisco IOS CLI Command Syntax</b></font></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'></td>
+</tr>
+
+	
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Copy the config.bak1 file stored in flash to the startup-configuration assumed to be stored in flash. Press the Enter key to accept and use the Ctrl+C key combination to cancel.</b>
+</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy flash:config.bak1 startup-config</b><br/> Destination filename [startup-config]?</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Have the Cisco IOS perform restart the switch. If you have modified the running configuration file you are asked to save it. Confirm with a 'y' or an 'n'. To confirm the reload press the Enter key to accept and use the Ctrl+C key combination to cancel.</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>reload</b></font><br/><br/><font face='_typewriter'>System configuration has been modified. Save? [yes/no]: n<br/>Proceed with reload? [confirm]?</font></td>
+</table>]]></text></component>
+
+
+
+
+</textcomponents>

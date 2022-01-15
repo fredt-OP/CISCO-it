@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13410" dateexported="06/30/2008">
+		<name>Module 6 Questionnaire</name>
+		<form id="21464" lang="fr"><form-item order="fixed">
+			<ai id="140398" type="mc-ma"><question><![CDATA[Quelles sont les caractéristiques d’un système d’adressage hiérarchique ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Domaine de diffusion étendu ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Modularité du réseau  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Stabilité du routage  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Prise en charge de l’adressage privé ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sécurité accrue ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140361" type="mc-ma"><question><![CDATA[Quelles peuvent être les conséquences d’un système d’adressage IP discontinu ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Boucle de couche 2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Boucle de routage  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Faille au niveau de la sécurité ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Dysfonctionnement du système NAT ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Problèmes de résumé automatique  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Augmentation du temps de convergence Spanning Tree ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140399" type="mc-sa"><question><![CDATA[Que doit faire un administrateur pour s’assurer que le résumé fonctionnera correctement ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Activer le routage CIDR (Classless Interdomain Routing) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Activer l’utilisation du sous-réseau zéro ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Implémenter un protocole de routage de classe ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Attribuer des adresses dans un système hiérarchique  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140362" type="mc-ma"><question><![CDATA[Quelles méthodes permettent à certains réseaux d’utiliser le protocole IPv6 tout en continuant à communiquer sur Internet avec d’autres réseaux IPv4 ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Activation de la transmission tunnel pour permettre l’encapsulation et le transport de paquets IPv6 sur des réseaux IPv4  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Achat de nouvelles cartes réseau qui peuvent lire des paquets IPv6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Mise à niveau du logiciel IOS sur les routeurs de périphérie IPv6 avec une image pouvant traduire des paquets IPv6 en paquets IPv4  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Augmentation de la taille de l’en-tête IPv4 pour inclure l’en-tête IPv6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Utilisation d’une passerelle Microsoft pour convertir des paquets IPv6 en paquets IPv4 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140400" type="mc-sa"><question><![CDATA[Examinez la commande suivante :<br />RouterX(config-if)# <b>ipv6 address 2001:DB8:2222:7272::72/64</b><br /><br />Lequel des énoncés suivants est vrai ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Aucune autre commande n’est requise pour autoriser le passage du trafic IPv6 par le routeur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse MAC de la carte réseau sera utilisée en tant que partie réseau de l’adresse IPv6. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une méthode de transmission tunnel 6 à 4 sera utilisée lorsque des adresses IPv4 circulent dans le routeur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’adresse IPv6 complète est spécifiée manuellement pour l’interface.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133162" type="mc-sa"><question><![CDATA[Examinez la présentation. Le nombre d’adresses d’hôte nécessaires pour chaque sous-réseau d’un réseau est indiqué dans la présentation.  Ce nombre inclut les exigences en matière d’adresses d’hôte pour tous les ports de routeur et les hôtes de ce sous-réseau. Une fois déterminées toutes les attributions d’adresses de port des périphériques et des routeurs, quel est le nombre total d’adresses d’hôte inutilisées disponibles ? <br/><img src="i133162n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[14 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[29  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[34 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[40 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[62 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133167" type="mc-ma"><question><![CDATA[Un administrateur réseau est chargé de répartir un réseau de classe C entre les services Qualité, Ventes et Administration.  Le service Qualité est constitué de 10 personnes, le service Ventes de 28 et le service Administration de 6. Quels sont les masques de sous-réseaux appropriés aux services Qualité et Ventes ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[255.255.255.252 pour le service Qualité ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[255.255.255.224 pour le service Ventes  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[255.255.255.240 pour le service Qualité  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[255.255.255.248 pour le service Qualité ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[255.255.255.0 pour le service Ventes ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133169" type="mc-sa"><question><![CDATA[Examinez la présentation.  Un nouvel ordinateur a été déployé sur le réseau Sales.  Il a reçu l’adresse d’hôte 192.168.10.31 avec la passerelle par défaut 192.168.10.17.  Il ne communique pas correctement avec le réseau.  Quelle en est la cause ? <br/><img src="i133169n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[L’adresse ne se trouve pas dans le sous-réseau approprié. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.10.31 est l’adresse de diffusion pour ce sous-réseau.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La passerelle par défaut est incorrecte. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse d’hôte et la passerelle par défaut ont été interverties. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140413" type="mc-sa"><question><![CDATA[Reportez-vous à la figure. Quelle adresse de réseau et quel masque de sous-réseau uniques peuvent être utilisés pour résumer les réseaux illustrés ? <br/><img src="i140413n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[172.16.0.0/13  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/14 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/20 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/22 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/24 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140415" type="mc-sa"><question><![CDATA[Que peut utiliser un administrateur réseau avec la technique VLSM ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Un masque de sous-réseau via un système autonome ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Plusieurs masques de sous-réseau dans le même espace d’adresses IP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole de routage RIPv1 dans un système entièrement autonome ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Plusieurs protocoles de routage au sein d’un système autonome ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140416" type="mc-sa"><question><![CDATA[Une nouvelle liaison Ethernet entre les routeurs 1 et 2 représentés dans le schéma nécessite l’ajout d’un sous-réseau. Laquelle des adresses de sous-réseau suivantes peut être configurée dans ce réseau pour fournir un maximum de 14 adresses utilisables sur cette liaison tout en gaspillant le minimum d’adresses ? <br/><img src="i140416n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.16/26 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.96/28 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.160/28 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.196/27 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.1.1.224/28  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.240/28 ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

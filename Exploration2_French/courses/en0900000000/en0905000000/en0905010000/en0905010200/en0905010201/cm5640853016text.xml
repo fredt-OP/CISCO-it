@@ -1,0 +1,50 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Data Link Frame Header</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>IP Packet Header</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>UDP Segment Header</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>RIP Message<br>(504 bytes; Up to 25 routes)</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Data Link Frame</b><br>MAC Destination Address = Broadcast: FF-FF-FF-FF-FF-FF<br/>MAC Source Address = Address of sending interface]]></text>
+</component>
+
+
+ 
+<component id="ID_txt06">
+<text><![CDATA[<b>IP Packet</b><br>IP Source Address = Address of sending interface<br>IP Destination Address = Broadcast: 255.255.255.255<br>Protocol field = 17 for UDP]]></text>
+</component>
+
+
+
+<component id="ID_txt07">
+<text><![CDATA[<b>UDP Segment</b><br>Source Port = 520<br/>Destination Port = 520]]></text>
+</component>
+
+
+
+<component id="ID_txt08">
+<text><![CDATA[<b>RIP Message:</b><br>Command: Request (1); Response (2)<br>Version = 1<br>Address Family ID = 2 for IP<br>Routes:  Network IP Address<br>Metric: Hop Count]]></text>
+</component>
+	    
+
+<component id="ID_title">
+<text><![CDATA[<b>Encapsulated RIPv1 Message</b>]]></text>
+</component>
+
+<component id="ID_insta">
+<text><![CDATA[<b>Roll over fields to see field content.</b>]]></text>
+</component>
+
+
+</textcomponents>

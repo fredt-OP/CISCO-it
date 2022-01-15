@@ -1,0 +1,82 @@
+<textcomponents>
+  <component id="ID_txt01"><text><![CDATA[Subnet address: 192.168.77.32  255.255.255.224]]></text> 
+  </component>
+  
+  <component id="ID_txt02"><text><![CDATA[Comparison/Base Address:192.168.77.32  0.0.0.31]]></text> 
+  </component>
+  
+  <component id="ID_txt03"><text><![CDATA[Match Bits]]></text> 
+  </component>
+  
+  <component id="ID_txt04"><text><![CDATA[Non-Match Bits]]></text> 
+  </component>
+  
+  <component id="tipTitle">
+<text><![CDATA[More Information ]]></text>
+</component>
+<component id="tipBody">
+<text><![CDATA[A network that is a full Class A, B or C has a subnet mask and a wildcard mask that divide evenly at an octet boundary. Subnets that do not break on an octet boundary, produce a different wildcard mask value. An octet boundary is a place between the first and second or second and third octet.<br><br>Example: A default Class A subnet falls between bit positions 8 and 9.  This breaks at the end of one octet and the beginning of the next, said to be at the boundary of the next octet.]]></text>
+</component>
+
+<component id="TipText">
+<text><![CDATA[More Information]]></text>
+</component>
+   
+  <component id="ID_table1">
+  		<text><![CDATA[
+
+  <table>
+    <tr>
+      <td width="90" bgcolor='#DDDDDD'><font color='#000000'><b>Bit value</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>128</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>64</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>32</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>16</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>8</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>4</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>2</b></font></td>
+      <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>1</b></font></td>
+      <td width="90" bgcolor='#DDDDDD'><font color='#000000'><b>Decimal value</b></font></td>
+    </tr>
+    <tr>
+            <td width="90" bgcolor='#F2F2F2'><font color='#000000'><b>All 1s</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="90" bgcolor='#F2F2F2'><font color='#000000'><b>255</b></font></td>
+    </tr>
+    <tr>
+      <td width="90" bgcolor='#DDDDDD'><font color='#000000'><b>Subnet Mask</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#DDDDDD'><font color='#000000'><b>0</b></font></td>
+            <td width="90" bgcolor='#DDDDDD'><font color='#000000'><b>224</b></font></td>
+    </tr>
+    <tr>
+      <td width="90" bgcolor='#F2F2F2'><font color='#000000'><b>Wildcard Mask</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>0</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="50" bgcolor='#F2F2F2'><font color='#000000'><b>1</b></font></td>
+            <td width="90" bgcolor='#F2F2F2'><font color='#000000'><b>31</b></font></td>
+    </tr>
+</table>
+  ]]></text>
+	</component>
+  
+  
+</textcomponents>

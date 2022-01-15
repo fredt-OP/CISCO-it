@@ -1,0 +1,33 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Configuring a Cisco Router as a DHCP Server</b>]]></text>
+</component>
+
+<component id="ID_txtMain">
+<text><![CDATA[<b>Configuring an Interface</b>]]></text>
+</component>
+
+
+
+<component id="ID_field1">
+<text><![CDATA[<font face="_typewriter">Router(config)#<b>interface serial 0/0</b><br>Router(config-if)#<b>description connection to Router2</b><br>Router(config-if)#<b>ip address 192.168.1.125 255.255.255.0</b><br>Router(config-if)#<b>clock rate 64000</b><br>Router(config-if)#<b>no shutdown</b></font>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[More Information]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[On serial links that are directly interconnected, as in a lab environment, one side must be considered a DCE and provide a clocking signal. The clock is enabled and speed is specified with the clock rate command. The available clock rates in bits per second are 1200, 2400, 9600, 19200, 38400, 56000, 64000, 72000, 125000, 148000, 500000, 800000, 1000000, 1300000, 2000000, or 4000000. Some bit rates might not be available on certain serial interfaces. This depends on the capacity of each interface. The commands that are used to set a clock rate and enable a serial interface are shown above.]]></text>
+</component>
+
+<component id="tipTitle"><text>More Information</text>	
+</component>
+<component id="tipBody"><text>More information Text</text>	
+</component>
+<component id="TipText"><text><![CDATA[More Information]]></text>
+</component>
+  
+
+</textcomponents>

@@ -1,0 +1,119 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Update</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Update</b>]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>ACK</b>]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>ACK</b>]]></text> 
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>ACK</b>]]></text> 
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>ACK</b>]]></text> 
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Query</b>]]></text> 
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Query</b>]]></text> 
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Reply</b>]]></text> 
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Reply</b>]]></text> 
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>R1</b>]]></text> 
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>R2</b>]]></text> 
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>R3</b>]]></text> 
+</component>
+
+<component id="ID_button1">
+<text><![CDATA[<b>Hello</b>]]></text> 
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[<b>Update and ACK</b>]]></text> 
+</component>
+
+<component id="ID_button3">
+<text><![CDATA[<b>Query and Reply</b>]]></text> 
+</component>
+
+<component id="ID_title">
+<text><![CDATA[<b>EIGRP Packet Types</b>]]></text> 
+</component>
+
+<component id="ID_instruct2">
+<text><![CDATA[<b>Click Hello in the figure.</b>]]></text> 
+</component>
+
+<component id="ID_instruct3">
+<text><![CDATA[<b>Click Update and ACK in the figure.</b>]]></text> 
+</component>
+
+<component id="ID_instruct1">
+<text><![CDATA[<b>Click Query and Reply in the figure.</b>]]></text> 
+</component>
+
+<component id="myTable1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b> </b></font></td>
+	</tr><tr>
+	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><b>Hello packet</b><br/><li>Use to discover neighbors & form adjacencies</li></ul><ul><li>Unreliable so no response required from recipient</li></ul></table>]]></text> 
+</component>
+
+<component id="myTable2">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b> </b></font></td>
+	</tr><tr>
+	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><b>Update packet</b><br/><li>Used to propagate routing information after a change Acknowledgement (ACK) packet</li></ul><ul><li>Automatically sent back when reliable RTP is used</li></ul></table>]]></text> 
+</component>
+
+<component id="myTable3">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b> </b></font></td>
+	</tr><tr>
+	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><b>Query packet</b><br/><li>Used by DUAL when searching for networks or other tasks</li></ul><ul><b>Reply packet</b><li>Automatically sent in response to Query packet</li></ul><ul><b>Acknowledgement (ACK) packet</b><li>Automatically sent back when reliable RTP is used</li></ul></table>]]></text> 
+</component>
+
+</textcomponents>

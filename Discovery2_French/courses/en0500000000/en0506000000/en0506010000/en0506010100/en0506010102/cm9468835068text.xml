@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+
+<component id="slide1">
+<text><![CDATA[<b>Applies Subnet Mask</b>]]></text>
+</component>
+
+<component id="slide2">
+<text><![CDATA[<b>Examines Routing Table</b>]]></text>
+</component>
+
+<component id="slide3">
+<text><![CDATA[<b>Forwards Packet</b>]]></text>
+</component>
+
+
+<component id="ID_router01">
+<text><![CDATA[<font face="_typewriter"><b>Gateway of last resort is 172.16.3.1 to network 0.0.0.0
+S    172.17.0.0/<font color="#FF0000">16</font> [1/0] via 172.16.3.1<br>     172.16.0.0/<font color="#FF0000">16</font> is  variably subnetted, 4 subnets, 2 masks<br>S      172.16.236.0/<font color="#FF0000">24</font> [1/0] via 172.16.3.1<br>S      172.16.0.0/<font color="#FF0000">16</font> [1/0] via 172.16.3.1<br>C      172.16.1.0/<font color="#FF0000">24</font> is directly connected, FastEthernet0/0<br>C      172.16.3.0/<font color="#FF0000">24</font> is directly connected, FastEthernet0/1 [1/0] via 172.16.3.1<br>     172.22.0.0/<font color="#FF0000">24</font> is subnetted, 1 subnets<br>S      172.22.1.0 [1/0] via 172.16.1.1<br>S*   0.0.0.0/0 [1/0] via 172.16.3.1
+</b></font>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Click the buttons to view how a router uses the network address to decide the best route for a packet.</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Destination Host<br>172.16.236.101</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Source Host<br>172.16.1.101</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>R3</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>R2</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>R1</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>R5</b>]]></text>
+</component>
+
+<component id="ID_steptxt_01">
+<text><![CDATA[<b>Router applies each subnet mask to the destination IP address to find the network address with the longest match.<BR><BR>172.16.236.101 ---> longest match: 172.16.236.0 255.255.255.0</b>]]></text>
+</component>
+
+<component id="ID_steptxt_02">
+<text><![CDATA[<b>172.16.236.101 + 255.255.255.0 = 172.16.236.0</b>]]></text>
+</component>
+
+
+<component id="ID_steptxt_03">
+<text><![CDATA[<b>Router compares the resulting network address to the routing table entries.</b>]]></text>
+</component>
+
+<component id="ID_steptxt_04">
+<text><![CDATA[<b>S		172.16.236.0/24 [1/0] via 172.16.3.1</b>]]></text>
+</component>
+
+
+
+<component id="ID_steptxt_05">
+<text><![CDATA[<b>Router sends the packet out the correct interface to reach the next-hop address for the destination network.</b>]]></text>
+</component>
+
+<component id="ID_steptxt_06">
+<text><![CDATA[<b>C 172.16.3.0/24 is directly connected, FastEthernet 0/1</b>]]></text>
+</component>
+
+
+
+
+
+
+
+</textcomponents>

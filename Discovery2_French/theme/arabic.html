@@ -1,0 +1,104 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="theme/hybrid/theme_frontend/css/reset-fonts.css">
+<link rel="stylesheet" type="text/css" href="theme/hybrid/theme_frontend/css/launchpage.css"/>
+<script type="text/javascript" src="theme/hybrid/js/utils/mootools-release-1.11.js"></script>
+<script type="text/javascript" src="theme/js/index.js"></script>
+<script type="text/javascript" src="theme/hybrid/js/utils/launchpage.js"></script>
+<script>
+cid = "0400000000";
+lang1 = "tl";
+lang2 = "en";
+ch = "intro";
+isarabic = true;
+
+is508 = false;
+
+url = new String(window.location);
+if (url.indexOf("index.html?") > -1) {
+	cid = url.substring(url.indexOf("cid=")+4,url.indexOf("&l1"));
+	lang1 = url.substring(url.indexOf("l1=")+3,url.indexOf("&l2"));
+	lang2 = url.substring(url.indexOf("l2=")+3,url.indexOf("&chapter"));
+}
+url = url.substring(0,url.indexOf("index.html"));
+url = url+"index.html?cid="+cid+"&l1="+lang1+"&l2="+lang2+"&chapter="+ch;
+	
+getProperties(); 
+setTitle();
+
+function writeToElement(i,t) {
+	if (document.getElementById) {
+		x = document.getElementById(i);
+		x.innerHTML = t;
+	} else if (document.all) {
+		x = document.all[i];
+		x.innerHTML = t;
+	}
+	return x;
+}
+
+
+function startCourse() {
+	var newHeight = 0;
+	if (navigator.appName == "Netscape") { newHeight = screen.height; } else { newHeight = screen.height-65; }
+	var w = screen.width;
+	var h = newHeight;
+	var newurl = url.replace(/index\.html\?/, "theme/hybrid/theme_frontend/index.html?");
+	var newwin  = window.open(newurl, 'newwin', 'scrollbars=1,resizable=1,width='+w+',height='+h);
+	newwin.moveTo(0,0);
+}
+
+function initLaunchPage() {
+	loadLaunchpage("courses/"+lang1+""+cid+"/launch.text.xml");
+}
+</script>
+<style type="text/css">
+	/* hide from ie on mac \*/
+	html {
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	/* end hide */
+
+	body {
+		height: 100%;
+		padding: 0;
+		margin-left: 0px;
+		margin-top: 0px;
+		margin-right: 0px;
+		margin-bottom: 0px;
+	}
+
+
+</style>
+</head>
+<body bgcolor="#ffffff" onLoad="initLaunchPage();">
+<center><small><a href="accessible.html?direction=rtl" name="accessible" id="accessible">استخدام سمة يسهل الوصول إليها</a></small></center>
+	<br><br><br><br><br><br><br><br>
+	<center>
+		<table align="center" cellspacing="0" cellpadding="0" border="0">
+			<tr><td colspan="2"><img src="theme/hybrid/theme_frontend/launchpage/top.png" width="617" height="55"></td></tr>
+			<tr>
+				<td><img src="theme/hybrid/theme_frontend/launchpage/left.png" width="338" height="222"></td>
+				<td class="titles"><div id="titlediv" class="titlediv"></div><br><div id="subtitlediv" class="subtitlediv"></div></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<table cellspacing="0" cellpadding="0" border="0">
+						<tr>
+							<td><img src="theme/hybrid/theme_frontend/launchpage/bot_left.png" width="17" height="53"></td>
+							<td class="btn"><div id="lcbtn"></div></td>
+							<td><img src="theme/hybrid/theme_frontend/launchpage/bot_right.png" width="452" height="53"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<div id="copyright" class="copyright"></div>
+	</center>
+</body>
+</html>
+

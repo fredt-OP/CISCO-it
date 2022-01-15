@@ -1,0 +1,35 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Configuration des interfaces d’un routeur</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>Toutes les interfaces sont accessibles au moyen d’une commande <font face="_typewriter">interface</font> entrée à l’invite du mode de configuration globale.</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Dans les commandes suivantes, </b><font face="_typewriter"><i>type</i></font><b> représente le type de l’interface, par exemple Serial, Ethernet, FastEthernet, etc. :</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<font face="_typewriter">Router(config)#<b>interface</b> type port<br/>Router(config)#<b>interface</b><i> type logement_extension/port</i><br/>Router(config)#<b>interface</b><i> type logement_extension/sous_logement/port</i></font>]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[<b>La commande suivante permet à l’administrateur de désactiver l’interface :</b>]]></text> 
+  </component>  
+<component id="ID_txt05">
+  <text><![CDATA[<font face="_typewriter">Router(config-if)#<b>shutdown</b></font>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[<b>La commande suivante permet d’activer une interface qui a été désactivée :</b>]]></text> 
+  </component>  
+ <component id="ID_txt07">
+  <text><![CDATA[<font face="_typewriter">Router(config-if)#<b>no shutdown</b></font>]]></text> 
+  </component> 
+<component id="ID_txt08">
+  <text><![CDATA[<b>La commande suivante permet de quitter le mode de configuration d’interface actuel :</b>]]></text> 
+  </component>  
+ <component id="ID_txt09">
+  <text><![CDATA[<font face="_typewriter">Router(config-if)#<b>exit</b></font>]]></text> 
+  </component> 
+ <component id="ID_txt10">
+  <text><![CDATA[<b>Quand la configuration est terminée, l’interface est activée et l’utilisateur a quitté le mode de configuration d’interface.</b>]]></text> 
+  </component>  
+</textcomponents>

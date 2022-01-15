@@ -1,0 +1,92 @@
+﻿<textcomponents>
+
+<component id="ID_but01">
+<text><![CDATA[<b>Numéro de la liste de contrôle d’accès</b>]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[<b>Condition</b>]]></text>
+</component>
+
+<component id="ID_but03">
+<text><![CDATA[<b>Protocole</b>]]></text>
+</component>
+
+<component id="ID_but04">
+<text><![CDATA[<b>Adresse IP source</b>]]></text>
+</component>
+
+<component id="ID_but05">
+<text><![CDATA[<b>Adresse IP de destination</b>]]></text>
+</component>
+
+<component id="ID_but06">
+<text><![CDATA[<b>Paramètre de correspondance</b>]]></text>
+</component>
+
+<component id="ID_but07">
+<text><![CDATA[<b>Application TCP</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Placez votre pointeur sur les champs de la liste de contrôle d’accès pour afficher leur description et leurs options.]]></text> 
+</component>
+
+
+<component id="ID_title01">
+<text><![CDATA[<b>Numéro de la liste de contrôle d’accès</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Identifie une liste de contrôle d’accès avec un numéro distinct. Une liste de contrôle d’accès standard utilise des numéros compris entre 1 et 99, et 1300 et 1999. Les listes de contrôle d’accès étendues utilisent des numéros allant de 100 à 199 et de 2000 à 2699.]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Condition</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Indique si un paquet doit être autorisé ou refusé.]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Protocole</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Identifie les protocoles de couches 3 et 4. Les options standard sont indiquées ci-dessous.<br>  eigrp      Protocole de routage EIGRP de Cisco<br>  esp       Données utiles de sécurité de l’encapsulation<br>  gre        Transmission tunnel GRE de Cisco<br>  icmp      Protocole de message de contrôle sur Internet<br>  igmp      Protocole de message de passerelle sur Internet<br>  ip          Tout protocole Internet<br>  ipinip     Transmission tunnel IP dans IP<br>  ospf      Protocole de routage OSPF<br>  pcp       Protocole de compression des données utiles<br>  tcp       Protocole de contrôle de transmission<br>  udp       Protocole de datagramme utilisateur]]></text>
+</component>
+
+<component id="ID_title04">
+<text><![CDATA[<b>Adresse IP source</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Identifie l’adresse IP de la source du paquet. Cette valeur peut être :<li>une adresse hôte individuelle ;</li><li>une plage d’adresses hôtes ;</li><li>le paramètre host ;</li><li>le paramètre any.</li>]]></text>
+</component>
+
+<component id="ID_title05">
+<text><![CDATA[<b>Adresse IP de destination</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Identifie l’adresse IP de la destination des paquets. Cette valeur peut être :<li>une adresse hôte individuelle ;</li><li>une plage d’adresses hôtes ;</li><li>le paramètre host ;</li><li>le paramètre any.</li>]]></text>
+</component>
+
+<component id="ID_title06">
+<text><![CDATA[<b>Paramètre de correspondance</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Détermine si certains champs doivent être équivalents à l’application, plus grands, plus petits, etc.]]></text>
+</component>
+
+<component id="ID_title07">
+<text><![CDATA[<b>Application TCP</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Identifie l’application par son numéro de port ou son acronyme.]]></text>
+</component>
+
+</textcomponents>

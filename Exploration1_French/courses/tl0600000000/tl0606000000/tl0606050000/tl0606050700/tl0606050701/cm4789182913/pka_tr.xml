@@ -1,0 +1,118 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Cloud0</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Cloud0</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Cloud0</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Cloud0</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Cloud0</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Switch0</NAME>
+ <NAME translate="true">Cloud0</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC0</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 6.5.7 : &lt;br&gt;Affectation d'adresses&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+&lt;h3&gt;Table d'adressage :&lt;/h3&gt;
+
+&lt;p&gt;Ces travaux pratiques ne comprennent pas de table d'adressage.&lt;/p&gt; &lt;h3&gt;Objectifs pédagogiques :&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;affecter des informations IP à un hôte &lt;li&gt;Sélectionner l'adresse IP, le masque et la passerelle corrects &lt;li&gt;Affecter les informations sélectionnées à l'hôte &lt;br&gt; &amp;nbsp;&lt;/li&gt; &lt;/ul&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;D'après le pool d'adresses et les masques donnés, affectez à un hôte une adresse, un masque de sous-réseau et une passerelle afin de lui permettre de communiquer dans le réseau illustré.&lt;/p&gt;
+
+&lt;h3&gt;Tâche 1 : affectation d'informations IP à un hôte&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1 : sélection de l'adresse IP, du masque et de la passerelle appropriés&lt;/h4&gt; &lt;p&gt;Examinez le diagramme de réseau et sélectionnez dans la table ci-dessous une adresse IP, un masque de sous-réseau et une passerelle par défaut pour PC0 afin de lui permettre de communiquer avec les autres périphériques du réseau. &lt;table border=2&gt; &lt;tr&gt;&lt;td&gt;10.0.1.253&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;10.0.1.254&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;[[hostnetwork]]&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;[[randomnetwork]]&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;10.1.0.1&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;[[cloudnetwork]]&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;255.255.255.0&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;[[randomnetwork]]&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;255.0.0.0&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;255.255.0.0&lt;/td&gt;&lt;/tr&gt; &lt;tr&gt;&lt;td&gt;255.255.255.0&lt;/td&gt;&lt;/tr&gt; &lt;/table&gt;&lt;/p&gt;
+
+&lt;h4&gt;Étape 2 : affectation des informations sélectionnées à l'hôte&lt;/h4&gt; &lt;p&gt;Cliquez sur PC0. Cliquez sur l'onglet Config. Dans la fenêtre &lt;b&gt;GLOBAL Settings&lt;/b&gt;, affectez la passerelle sélectionnée à l'étape 1. Sélectionnez &lt;b&gt;INTERFACE FastEthernet&lt;/b&gt; et affectez l'adresse IP et le masque de sous-réseau sélectionnés à l'étape 1. Vérifiez votre réponse en cliquant sur le bouton &lt;b&gt;Check Results&lt;/b&gt;.&lt;/p&gt; 
+
+&lt;h4&gt;Au terme de cette tâche, votre taux de progression doit être de 100 %. &lt;/h4&gt;
+
+
+
+&lt;!-- All activities end with the following footer --&gt;
+
+&lt;i&gt;&lt;font size=&quot;1&quot;&gt;L'intégralité du contenu de ce document est protégé par les droits d&apos;auteur © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cloud0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cloud0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Cloud0</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true">Vlan1 : 10.0.1.253/24</TEXT>
+ <TEXT translate="true">FA0/0 : 10.0.1.254/24</TEXT>
+ <TEXT translate="true">S0/0 : 210.224.2.1/24</TEXT>
+ <TEXT translate="true">FA0/0 : 10.0.1.254/24</TEXT>
+ <TEXT translate="true">S0/0 : 210.224.2.1/24</TEXT>
+ <TEXT translate="true">Vlan1 : 10.0.1.253/24</TEXT>
+ <TEXT translate="true">Vlan1 : 10.0.1.253/24</TEXT>
+ <TEXT translate="true">FA0/0 : 10.0.1.254/24</TEXT>
+ <TEXT translate="true">S0/0 : 210.224.2.1/24</TEXT>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">Switch0</ID>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">Cloud0</ID>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">Switch0</ID>
+ <ID translate="true">PC0</ID>
+ <ID translate="true">Cloud0</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

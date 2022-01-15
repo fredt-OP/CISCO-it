@@ -1,0 +1,59 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<B>Gestion de la configuration d’une agrégation</B>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Syntaxe de commande</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Exemple de réinitialisation</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<B>Exemple de suppression</B>]]></text> 
+</component>
+
+<component id="ID_button_04">
+<text><![CDATA[<B>Commande show interfaces switchport</B>]]></text> 
+</component>
+
+<component id="ID_step0">
+  <text><![CDATA[<B>Cliquez sur les différentes étapes pour afficher les commandes d’interface graphique utilisateur correspondantes.</B>]]></text> 
+</component>
+
+<component id="ID_caption01">
+<text><![CDATA[<b>3.3.4.3 - A : Gestion de la configuration d’une agrégation</b>]]></text>
+</component>
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+	  	  	<td width="305" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">&nbsp;</font></td>
+	   	</tr>
+	
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Utilisez cette commande en mode de configuration d’interface pour réinitialiser tous les VLAN configurés sur l’interface d’agrégation.</td>
+		<td width="305" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>no switchport trunk allowed vlan</b></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Utilisez cette commande en mode de configuration d’interface pour réinitialiser le VLAN natif et le réaffecter au VLAN 1.</td>
+		<td width="305" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>no switchport trunk native vlan</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Utilisez cette commande en mode de configuration d’interface pour réinitialiser l’interface du port d’agrégation en port de mode d’accès statique.</td>
+		<td width="305" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport mode access</b></font></td>
+	</tr>	
+</table>
+]]></text> 
+  </component>
+
+
+</textcomponents>

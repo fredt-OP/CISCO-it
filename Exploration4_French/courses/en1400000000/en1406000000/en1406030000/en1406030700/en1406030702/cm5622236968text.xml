@@ -1,0 +1,299 @@
+﻿<textcomponents>
+<component id="ID_button_01">
+<text><![CDATA[<B>Scenario</B>]]></text>
+</component>
+<component id="ID_button_02">
+<text><![CDATA[<B>Central</B>]]></text>
+</component>
+<component id="ID_button_03">
+<text><![CDATA[<B>Branch</B>]]></text>
+</component>
+<component id="ID_check1">
+<text><![CDATA[<B>Check</B>]]></text>
+</component>
+<component id="ID_reset1">
+<text><![CDATA[<B>Reset</B>]]></text>
+</component>
+<component id="ID_check2">
+<text><![CDATA[<B>Check</B>]]></text>
+</component>
+<component id="ID_reset2">
+<text><![CDATA[<B>Reset</B>]]></text>
+</component>
+<component id="ID_activity">
+<text><![CDATA[<B>Activity</B>]]></text>
+</component>
+<component id="ID_activity1">
+<text><![CDATA[<B>Activity</B>]]></text>
+</component>
+<component id="ID_instruction">
+<text><![CDATA[Drag and drop the appropriate VPN variable to the correct field.]]></text>
+</component>
+<component id="ID_instruction1">
+<text><![CDATA[Drag and drop the appropriate VPN variable to the correct field.]]></text>
+</component>
+<component id="ID_txt1">
+<text><![CDATA[192.168.1.0 /24]]></text>
+</component>
+<component id="ID_txt2">
+<text><![CDATA[<b>Central Site</b>]]></text>
+</component>
+<component id="ID_txt3">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+<component id="ID_txt4">
+<text><![CDATA[<b>Branch Site</b>]]></text>
+</component>
+<component id="ID_txt5">
+<text><![CDATA[192.168.101.0 /24]]></text>
+</component>
+<component id="ID_txt6">
+<text><![CDATA[.1]]></text>
+</component>
+<component id="ID_txt7">
+<text><![CDATA[209.165.200.225]]></text>
+</component>
+<component id="ID_txt8">
+<text><![CDATA[209.165.202.129]]></text>
+</component>
+<component id="ID_txt9">
+<text><![CDATA[.1]]></text>
+</component>
+<component id="ID_txt10">
+<text><![CDATA[In this activity, a simulation is provided of a small company that has setup Internet connectivity using two Linksys WRVS4400N business class routers. One is located at the Central site and the other at the Branch site. They would like to access resources between sites but are concerned that the Internet traffic would not be secure. To address their concern, it has been suggested that they implement a site-to-site VPN between the two sites. A VPN would enable the Branch site office to connect to the Central site office securely by creating a VPN tunnel which would encrypt and decrypt data.<br/><br/>Referencing the topology, you will use the Linksys router’s web configuration utility to configure the settings and enable a VPN called <b>Site-to-Site</b> using MD5 authentication, 3DES encryption, and a pre-shared key of <b>cisco123.</b>]]></text>
+</component>
+<component id="ID_a_1">
+<text><![CDATA[<B>Site-to-Site</B>]]></text>
+</component>
+<component id="ID_b_1">
+<text><![CDATA[<B>192.168.1.0</B>]]></text>
+</component>
+<component id="ID_c_1">
+<text><![CDATA[<B>192.168.101.0</B>]]></text>
+</component>
+<component id="ID_d_1">
+<text><![CDATA[<B>209.165.202.129</B>]]></text>
+</component>
+<component id="ID_e_1">
+<text><![CDATA[<B>3DES</B>]]></text>
+</component>
+<component id="ID_f_1">
+<text><![CDATA[<B>MD5</B>]]></text>
+</component>
+<component id="ID_g_1">
+<text><![CDATA[<B>cisco123</B>]]></text>
+</component>
+<component id="ID_h_1">
+<text><![CDATA[<B>192.168.1.1</B>]]></text>
+</component>
+<component id="ID_i_1">
+<text><![CDATA[<B>192.168.101.1</B>]]></text>
+</component>
+<component id="ID_j_1">
+<text><![CDATA[<B>209.165.200.0</B>]]></text>
+</component>
+<component id="ID_k_1">
+<text><![CDATA[<B>209.165.200.225</B>]]></text>
+</component>
+<component id="ID_l_1">
+<text><![CDATA[<B>209.165.202.0</B>]]></text>
+</component>
+<component id="ID_m_1">
+<text><![CDATA[<B>DES</B>]]></text>
+</component>
+<component id="ID_n_1">
+<text><![CDATA[<B>AES</B>]]></text>
+</component>
+<component id="ID_o_1">
+<text><![CDATA[<B>Cisco1233</B>]]></text>
+</component>
+<component id="ID_p_1">
+<text><![CDATA[<B>SHA</B>]]></text>
+</component>
+<component id="ID_q_1">
+<text><![CDATA[<B>Remote Access</B>]]></text>
+</component>
+
+
+<component id="ID_central_01">
+<text><![CDATA[<B>IPsec VPN</B>]]></text>
+</component>
+
+<component id="ID_central_02">
+<text><![CDATA[<B>Local Security Group:</B>]]></text>
+</component>
+
+<component id="ID_central_03">
+<text><![CDATA[<B>Remote Security Group:</B>]]></text>
+</component>
+
+<component id="ID_central_04">
+<text><![CDATA[<B>Remote Security Gateway:</B>]]></text>
+</component>
+
+<component id="ID_central_05">
+<text><![CDATA[<B>Key Management:</B>]]></text>
+</component>
+
+<component id="ID_central_06">
+<text><![CDATA[<B>Advanced:</B>]]></text>
+</component>
+
+<component id="ID_central_07">
+<text><![CDATA[<B>Select Tunnel Entry:</B>]]></text>
+</component>
+
+<component id="ID_central_08">
+<text><![CDATA[<B>IPsec VPN Tunnel:</B>]]></text>
+</component>
+
+<component id="ID_central_09">
+<text><![CDATA[<B>Tunnel Name:</B>]]></text>
+</component>
+
+<component id="ID_central_10">
+<text><![CDATA[<B>Local Security Group Type:</B>]]></text>
+</component>
+
+<component id="ID_central_11">
+<text><![CDATA[<B>IP Address:</B>]]></text>
+</component>
+
+<component id="ID_central_12">
+<text><![CDATA[<B>Remote Security Group Type:</B>]]></text>
+</component>
+
+<component id="ID_central_13">
+<text><![CDATA[<B>IP Address:</B>]]></text>
+</component>
+
+<component id="ID_central_14">
+<text><![CDATA[<B>Subnet Mask:</B>]]></text>
+</component>
+
+<component id="ID_central_15">
+<text><![CDATA[<B>Remote Security Gateway Type:</B>]]></text>
+</component>
+
+<component id="ID_central_16">
+<text><![CDATA[<B>IP Address:</B>]]></text>
+</component>
+
+<component id="ID_central_17">
+<text><![CDATA[<B>Key Exchange Method:</B>]]></text>
+</component>
+
+<component id="ID_central_18">
+<text><![CDATA[<B>Encryption:</B>]]></text>
+</component>
+
+<component id="ID_central_19">
+<text><![CDATA[<B>Authentication:</B>]]></text>
+</component>
+
+<component id="ID_central_20">
+<text><![CDATA[<B>PFS:</B>]]></text>
+</component>
+
+<component id="ID_central_21">
+<text><![CDATA[<B>Pre-Shared Key:</B>]]></text>
+</component>
+
+<component id="ID_central_22">
+<text><![CDATA[<B>Key Life Time:</B>]]></text>
+</component>
+
+
+
+<component id="ID_branch_01">
+<text><![CDATA[<B>IPsec VPN</B>]]></text>
+</component>
+
+<component id="ID_branch_02">
+<text><![CDATA[<B>Local Security Group:</B>]]></text>
+</component>
+
+<component id="ID_branch_03">
+<text><![CDATA[<B>Remote Security Group:</B>]]></text>
+</component>
+
+<component id="ID_branch_04">
+<text><![CDATA[<B>Remote Security Gateway:</B>]]></text>
+</component>
+
+<component id="ID_branch_05">
+<text><![CDATA[<B>Key Management:</B>]]></text>
+</component>
+
+<component id="ID_branch_06">
+<text><![CDATA[<B>Advanced:</B>]]></text>
+</component>
+
+<component id="ID_branch_07">
+<text><![CDATA[<B>Select Tunnel Entry:</B>]]></text>
+</component>
+
+<component id="ID_branch_08">
+<text><![CDATA[<B>IPsec VPN Tunnel:</B>]]></text>
+</component>
+
+<component id="ID_branch_09">
+<text><![CDATA[<B>Tunnel Name:</B>]]></text>
+</component>
+
+<component id="ID_branch_10">
+<text><![CDATA[<B>Local Security Group Type:</B>]]></text>
+</component>
+
+<component id="ID_branch_11">
+<text><![CDATA[<B>IP Address:</B>]]></text>
+</component>
+
+<component id="ID_branch_12">
+<text><![CDATA[<B>Remote Security Group Type:</B>]]></text>
+</component>
+
+<component id="ID_branch_13">
+<text><![CDATA[<B>IP Address:</B>]]></text>
+</component>
+
+<component id="ID_branch_14">
+<text><![CDATA[<B>Subnet Mask:</B>]]></text>
+</component>
+
+<component id="ID_branch_15">
+<text><![CDATA[<B>Remote Security Gateway Type:</B>]]></text>
+</component>
+
+<component id="ID_branch_16">
+<text><![CDATA[<B>IP Address:</B>]]></text>
+</component>
+
+<component id="ID_branch_17">
+<text><![CDATA[<B>Key Exchange Method:</B>]]></text>
+</component>
+
+<component id="ID_branch_18">
+<text><![CDATA[<B>Encryption:</B>]]></text>
+</component>
+
+<component id="ID_branch_19">
+<text><![CDATA[<B>Authentication:</B>]]></text>
+</component>
+
+<component id="ID_branch_20">
+<text><![CDATA[<B>PFS:</B>]]></text>
+</component>
+
+<component id="ID_branch_21">
+<text><![CDATA[<B>Pre-Shared Key:</B>]]></text>
+</component>
+
+<component id="ID_branch_22">
+<text><![CDATA[<B>Key Life Time:</B>]]></text>
+</component>
+
+
+
+
+</textcomponents>

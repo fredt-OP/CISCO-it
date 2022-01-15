@@ -1,0 +1,278 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<html>
+<head>
+<title>
+ Overview
+</title>
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+<script>
+function asd() {
+	
+		parent.document.title="com-api.js Overview";
+	
+}
+</script>
+</head>
+<body bgcolor="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> 	<font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top">
+<em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<center>
+	
+	   <h2>com-api.js</h2>
+	
+</center>
+
+	
+
+
+<h4>Summary</h4>
+<p>
+	
+		No overview generated for 'com-api.js'<BR/><BR/>
+	
+</p>
+
+<hr>
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+	<a name="method_summary"><!-- --></a>
+	<table border="1" cellpadding="3" cellspacing="0" width="100%">
+		<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+			<td colspan=2>
+				<font size="+2">
+					<b>Method Summary</b>
+				</font>
+			</td>
+		</tr>
+	
+		
+		   <tr bgcolor="white" class="TableRowColor">
+		      <td align="right" valign="top" width="1%">
+			 <font size="-1">
+			    <code>static&nbsp;void</code>
+			 </font>
+		      </td>
+		      <td>
+			 <code>
+			    <b>
+			       <a href="GLOBALS.html#!s!recCommand">recCommand</a></b>(&lt;string&gt; c)
+			 </code>
+			 <br>
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			 Recieves response from the flash item based on the command sent.
+		      </td>
+		   </tr>
+		
+		   <tr bgcolor="white" class="TableRowColor">
+		      <td align="right" valign="top" width="1%">
+			 <font size="-1">
+			    <code>static&nbsp;void</code>
+			 </font>
+		      </td>
+		      <td>
+			 <code>
+			    <b>
+			       <a href="GLOBALS.html#!s!sendCommand">sendCommand</a></b>(&lt;string&gt; c,&lt;string&gt; p)
+			 </code>
+			 <br>
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			 Sends command and properties to the flash item
+		      </td>
+		   </tr>
+		
+	
+	</table>
+    <p>
+
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+        <pre class="sourceview"><span class="comment">/**
+* Sends command and properties to the flash item
+* <span class="attrib">@param</span> {string} c command to send
+* <span class="attrib">@param</span> {string} p properties to send
+*/</span>
+<span class="reserved">function</span> sendCommand(c,p) {
+	var d = <span class="literal">"SEND\n"</span>;
+	d += <span class="literal">"\tjscommand: "</span>+c+<span class="literal">"\n"</span>;
+	<span class="reserved">if</span> (p) { d+= <span class="literal">"\tjsprops: "</span>+p+<span class="literal">"\n"</span>; }
+	dump(d);
+	fo = window.frames[<span class="literal">"mediaframe"</span>].document[<span class="literal">"cheetah"</span>];
+	fo.SetVariable(<span class="literal">"jsprops"</span>, p);
+	fo.SetVariable(<span class="literal">"jscommand"</span>, c);
+}
+<span class="comment">/**
+* Recieves response from the flash item based on the command sent.
+* If the command sent was not valid and error returns.  If the
+* command was valid the data is made available inside the flash
+* as a variable which is retrieved and acted upon based on
+* the command type.
+* <span class="attrib">@param</span> {string} c command recieved
+*/</span>
+<span class="reserved">function</span> recCommand(c) {
+	var d = <span class="literal">"RECEIVE\n"</span>;
+	d += <span class="literal">"\tcommand: "</span>+c+<span class="literal">"\n"</span>;
+	dump(d);
+	fo = window.frames[<span class="literal">"mediaframe"</span>].document[<span class="literal">"cheetah"</span>];
+	jsdata = fo.GetVariable(<span class="literal">"jsdata"</span>);
+	switch(c) {
+		<span class="comment">/*
+		utility commands
+		*/</span>
+		case <span class="literal">'init'</span>:
+			sendCommand(<span class="literal">"checkcom"</span>);
+			break;
+		case <span class="literal">'checkcom'</span>:
+			dump(jsdata+<span class="literal">"\n"</span>);
+			eventobj.eventprop = <span class="literal">"comactive"</span>;
+			break;
+		case <span class="literal">'error'</span>:
+			alert(jsdata);
+			break;
+		<span class="comment">/*
+		data commands
+		*/</span>
+		case <span class="literal">'globaltoolsdata'</span>:
+			main.globaltools.setData(jsdata);
+			break;
+		case <span class="literal">'themedata'</span>:
+			main.theme.setData(jsdata);
+			break;
+		case <span class="literal">'glossarydata'</span>:
+			main.glossary.setData(jsdata);
+			break;
+		case <span class="literal">'coursedata'</span>:
+			main.course.setData(jsdata);
+			break;
+		case <span class="literal">'current'</span>:
+			main.setData(jsdata);
+			break;
+		case <span class="literal">'pagetext'</span>:
+			main.page.setText(jsdata);
+			eventobj.eventprop = <span class="literal">"pageready"</span>;
+			break;
+		<span class="comment">/*
+		event commands
+		*/</span>
+		case <span class="literal">'update'</span>:
+			main.getCurrent();
+			break;
+		case <span class="literal">'toggle'</span>:
+			eventobj.eventprop = <span class="literal">"toggle"</span>;
+			break;
+	}
+}
+</pre>
+	<hr>
+
+
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top"><em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<font size="-1">
+
+</font>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Tue Mar  4 12:01:48 2008</div>
+</body>
+</html>

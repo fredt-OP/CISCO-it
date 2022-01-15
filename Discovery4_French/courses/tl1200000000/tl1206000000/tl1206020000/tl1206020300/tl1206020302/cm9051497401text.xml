@@ -1,0 +1,60 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Le routeur E emprunte la route passant par le routeur C pour accéder au réseau M, car celle-ci présente la métrique rapportée la plus faible, 20 (10 + 10).<BR><BR>Pour déterminer les autres routes pouvant être utilisées pour l’équilibrage de la charge du trafic destiné au réseau M, le processus EIGRP sur le routeur E prend la meilleure métrique, multipliée par la valeur de variance configurée.  Dans ce cas, la valeur de la route passant par le routeur C est la meilleure, avec une métrique rapportée de 20. Les routes ayant une métrique inférieure à 40 (20 x 2) sont intégrées à la table de routage afin d’être utilisées pour l’équilibrage de charge.<BR><BR>Le routeur E peut utiliser la route passant par le routeur B pour équilibrer la charge du trafic destiné au réseau M, car la métrique, 30, est inférieure à 40. Le protocole EIGRP n’installe pas la route utilisant le routeur D, car sa métrique, 45, est supérieure à la valeur acceptable de 40.]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<B>Réseau M</B>]]></text> 
+</component>
+
+
+<component id="ID_txtB">
+<text><![CDATA[<B>B</B>]]></text> 
+</component>
+
+<component id="ID_txtC">
+<text><![CDATA[<B>C</B>]]></text> 
+</component>
+
+<component id="ID_txtD">
+<text><![CDATA[<B>D</B>]]></text> 
+</component>
+
+<component id="ID_txtE">
+<text><![CDATA[<B>E</B>]]></text> 
+</component>
+
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Réseau</b></font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Voisin</b></font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Métrique</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E9E9'>M</td>
+<td bgcolor='#E9E9E9'>B</td>
+<td bgcolor='#E9E9E9'>30</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E9E9'> </td>
+<td bgcolor='#E9E9E9'>C</td>
+<td bgcolor='#E9E9E9'>20</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E9E9'> </td>
+<td bgcolor='#E9E9E9'>D</td>
+<td bgcolor='#E9E9E9'>45</td>
+</tr>
+
+</table>
+]]></text>
+</component>
+
+</textcomponents>

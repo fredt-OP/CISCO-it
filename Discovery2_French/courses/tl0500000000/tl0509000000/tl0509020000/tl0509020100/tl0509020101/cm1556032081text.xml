@@ -1,0 +1,117 @@
+﻿<textcomponents>
+
+
+<component id="ID_prompt">
+<text><![CDATA[<b>Cliquez sur chaque bouton de symptôme pour en savoir plus sur les causes possibles de ce symptôme.</b>]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[<b>Performance inférieure à la ligne de base</b>]]></text> 
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[<b>Perte de connectivité</b>]]></text> 
+</component>
+
+<component id="ID_btn03">
+<text><![CDATA[<b>Nombre élevé de collisions</b>]]></text> 
+</component>
+
+<component id="ID_btn04">
+<text><![CDATA[<b>Goulots d’étranglement sur le réseau ou encombrement</b>]]></text> 
+</component>
+
+<component id="ID_btn05">
+<text><![CDATA[<b>Utilisation élevée de l’unité centrale (UC)</b>]]></text>
+</component>
+
+<component id="ID_btn06">
+<text><![CDATA[<b>Messages d’erreur de la console</b>]]></text>
+</component>
+
+<component id="ID_osi01">
+<text><![CDATA[<b>7 Application</b>]]></text> 
+</component>
+
+<component id="ID_osi02">
+<text><![CDATA[<b>6 Présentation</b>]]></text> 
+</component>
+
+<component id="ID_osi03">
+<text><![CDATA[<b>5 Session</b>]]></text> 
+</component>
+
+<component id="ID_osi04">
+<text><![CDATA[<b>4 Transport</b>]]></text> 
+</component>
+
+<component id="ID_osi05">
+<text><![CDATA[<b>3 Réseau</b>]]></text>
+</component>
+
+<component id="ID_osi06">
+<text><![CDATA[<b>2 Liaison de données</b>]]></text>
+</component>
+
+<component id="ID_osi07">
+<text><![CDATA[<b>1 Physique</b>]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Performance inférieure à la ligne de base</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<li>Un câblage inadéquat ou un raccordement défectueux peut provoquer des erreurs qui augmentent le taux de retransmission.</li><li>Des interférences électriques peuvent diminuer les performances des liaisons cuivrées.</li><li>Un câblage ne respectant pas les normes en matière de limitations de distance peut provoquer des problèmes d’atténuation.</li><li>Dans un réseau sans fil, des interférences ou une augmentation considérable du trafic peut provoquer la dégradation des réponses du réseau.</li>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Perte de connectivité</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[<li>La perte intermittente de connectivité peut être causée par des problèmes d’alimentation électrique, par exemple une alimentation de secours défaillante ou une panne de courant, ce qui peut entraîner un redémarrage imprévu des périphériques, voire une panne temporaire des périphériques ou des liaisons.</li><li>Des connexions dessérées et une tension sur les connecteurs et les câbles peuvent également provoquer une perte intermittente de connectivité.</li><li>Pour les zones de couverture sans fil, une connectivité intermittente peut être provoquée par le chevauchement de canaux sans fil.</li><li>Une perte totale de connectivité peut être causée par une défaillance de câblage, un périphérique ou une interface défectueuse.</li>]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Nombre élevé de collisions</b>]]></text>
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<li>La moyenne du nombre de collisions sur un support partagé doit généralement être inférieure à 1 % du trafic total.</li><li>Avec les problèmes liés aux collisions, il est souvent possible de remonter à une source unique, telle qu’un câble de liaison montante défectueux sur un concentrateur ou un port de commutateur, ou une liaison exposée à une interférence électrique externe.</li><li>Un nombre d’hôtes trop élevé sur un segment partagé peut provoquer des taux de collision élevés.</li><li>Des conflits de correspondance du mode duplex entre périphériques peuvent provoquer l’enregistrement des collisions sur une liaison de commutateur.</li><li>Un port de commutateur en mode bidirectionnel simultané ne présente pas de collisions.</li>]]></text>
+</component>
+
+<component id="ID_title04">
+<text><![CDATA[<b>Goulots d’étranglement sur le réseau ou encombrement</b>]]></text>
+</component>
+
+
+<component id="ID_txt04">
+<text><![CDATA[<li>En cas d’encombrement, les trames peuvent être abandonnées.</li><li>Des taux de trafic inattendus sur les périphériques ou sur les câbles non destinés à gérer la charge peuvent entraîner des encombrements.</li><li>Des logiciels malveillants, tels que les chevaux de Troie et les vers peuvent causer l’encombrement des périphériques de couche 1.</li><li>Un analyseur de protocole peut vous aider à localiser la source des problèmes liés au trafic élevé.</li>]]></text>
+</component>
+
+<component id="ID_title05">
+<text><![CDATA[<b>Utilisation élevée de l’unité centrale (UC)</b>]]></text>
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[<li>Une utilisation excessive de l’UC indique qu’un périphérique atteint ou dépasse ses limites.</li><li>La surcharge de l’UC peut provoquer la désactivation ou le dysfonctionnement d’un périphérique.</li>]]></text>
+</component>
+
+<component id="ID_title06">
+<text><![CDATA[<b>Messages d’erreur de la console</b>]]></text>
+</component>
+
+
+<component id="ID_txt06">
+<text><![CDATA[<li>Les messages d’erreur affichés sur la console d’un périphérique peuvent indiquer un problème de couche physique.</li><li>Des messages mentionnant la défaillance d’un périphérique ou d’un protocole indiquent des problèmes liés au câblage ou à l’interface.</li>]]></text>
+</component>
+
+
+
+</textcomponents>
+

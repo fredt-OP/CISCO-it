@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Cliquez sur les boutons pour voir les diapositives.]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Représentation de l’adresse IPv6</b>]]></text>
+</component>
+
+
+<component id="ID_button1">
+  <text><![CDATA[<b>Formats IPv6</b>]]></text> 
+</component>
+
+<component id="ID_button2">
+  <text><![CDATA[<b>Représentation</b>]]></text> 
+</component>
+
+<component id="ID_button3">
+  <text><![CDATA[<b>Exemples</b>]]></text> 
+</component>
+
+
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Formats IPv6</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Format :</b><br/>- <font face="_typewriter"><b>x:x:x:x:x:x:x:x</b></font>, où x est un champ hexadécimal de 16 bits<br/><ul><li>Majuscules non prises en compte pour hexadécimal A, B, C, D, E et F</li></ul>- Dans un champ, les zéros de tête sont facultatifs<br/>- Des champs successifs de zéros ne peuvent être représentés par <font face="_typewriter"><b>::</b></font> qu’une seule fois par adresse<br/><br/><b>Exemples :</b><br/>- <font face="_typewriter"><b>2031:0000:130F:0000:0000:09C0:876A:130B</b></font><br/><ul><li>peut être représenté par <font face="_typewriter"><b>2031:0:130f::9c0:876a:130b</b></font></li><li>ne peut pas être représenté par <font face="_typewriter"><b>2031::130f::9c0:876a:130b</b></font></li></ul>- <font face="_typewriter"><b>FF01:0:0:0:0:0:0:1       FF01::1</b></font><br/>- <font face="_typewriter"><b>0:0:0:0:0:0:0:1          ::1</b></font><br/>- <font face="_typewriter"><b>0:0:0:0:0:0:0:0          ::</b></font>
+<br/><br/></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Représentation</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>2031:0000:130F:0000:0000:09C0:876A:130B</b></font><ul><li>peut être représenté par <font face="_typewriter"><b>2031:0:130f::9c0:876a:130b</b></font></li><li>mais ne peut pas être représenté par <font face="_typewriter"><b>2031::130f::9c0:876a:130b</b></font></li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_table03">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Exemples</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li><font face="_typewriter"><b>FF01:0:0:0:0:0:0:1</b></font> devient <font face="_typewriter"><b>FF01::1</b></font></li><li><font face="_typewriter"><b>0:0:0:0:0:0:0:1</b></font> devient <font face="_typewriter"><b>::1</b></font></li><li><font face="_typewriter"><b>0:0:0:0:0:0:0:0</b></font> devient <font face="_typewriter"><b>::</b></font></li><li><font face="_typewriter"><b>FF01:0000:0000:0000:0000:0000:0000:1</b></font> devient <font face="_typewriter"><b>FF01:0:0:0:0:0:0:1</b></font> devient <font face="_typewriter"><b>FF01::1</b></font></li><li><font face="_typewriter"><b>E3D7:0000:0000:0000:51F4:00C8:C0A8:6420</b></font> devient <font face="_typewriter"><b>E3D7::51F4:C8:C0A8:6420</b></font></li><li><font face="_typewriter"><b>3FFE:0501:0008:0000:0260:97FF:FE40:EFAB</b></font> devient <font face="_typewriter"><b>3FFE:501:8:0:260:97FF:FE40:EFAB</b></font> devient <font face="_typewriter"><b>3FFE:501:8::260:97FF:FE40:EFAB</b></font></li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

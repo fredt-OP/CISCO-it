@@ -1,0 +1,203 @@
+<textcomponents>
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Device Outputs</b>]]></text>
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Router Subinterfaces and Inter-VLAN Routing</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click the Play button to progress through the animation.</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>Interface Configuration</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Routing Table</b>]]></text>
+</component>
+
+<component id="ID_text01">
+<text><![CDATA[<b>PC1 sends an ARP request for the MAC address of its default gateway, which is the VLAN subinterface on router R1.<br/><br/>The ARP request is sent out for the IP address 172.17.10.1, which corresponds to the subnet PC1 is connected to.<br/><br/>The ARP request is sent to switch S2 on VLAN10, and is tagged and forwarded out the trunk link to switch S1.<br/><br/>Switch S1 maintains the VLAN tag on the broadcast frame as it forwards it out the other trunk link connected to router R1.</b>]]></text>
+</component>
+
+<component id="ID_text02">
+<text><![CDATA[<b>Router R1 examines the VLAN tag on the broadcast and recognizes that it was sent on VLAN10.<br/><br/>Since subinterface F0/0.10 has been configured for VLAN10, and has been configured with the IP address specified in the ARP request, the router responds back to PC1 with the MAC address of the physical interface.</b>]]></text>
+</component>
+
+<component id="ID_text03">
+<text><![CDATA[<b>PC1 uses the MAC address received from router R1 to frame the unicast packet before it is sent out on the network.<br/><br/>Switch S2 tags the frame on VLAN10 as it traverses the trunk link to switch S1.<br/><br/>Switch S1 maintains the VLAN tag as it continues to forward the frame to router R1.</b>]]></text>
+</component>
+
+<component id="ID_text04">
+<text><![CDATA[<b>Router R1 examines the frame and sees the VLAN tag for VLAN10. The router forwards the frame to subinterface F0/0.10.<br/><br/>The router then examines the routing table to see if there is a defined route to use as a basis for forwarding the packet to its destination.<br/><br/>The routing table indicates that the destination network is directly connected to subinterface F0/0.30.</b>]]></text>
+</component>
+
+<component id="ID_text05">
+<text><![CDATA[<b>The router then forwards the packet to subinterface F0/0.30.</b>]]></text>
+</component>
+
+<component id="ID_text06">
+<text><![CDATA[<b>R1 sends a new ARP request for the MAC address of PC3.<br/><br/>The ARP request is sent out the router’s physical interface tagged with VLAN30.<br/><br/>PC3 receives the ARP request.</b>]]></text>
+</component>
+
+<component id="ID_text07">
+<text><![CDATA[<b>PC3 sends back an ARP reply with its MAC address.</b>]]></text>
+</component>
+
+<component id="ID_text08">
+<text><![CDATA[<b>Router R1 receives the ARP reply and finishes framing the packet before it sends it out on to the network.<br/><br/>Switch S1 forwards the frame to switch S2, which then finally delivers the frame to PC3.</b>]]></text>
+</component>
+
+<component id="ID_text09">
+<text><![CDATA[<b>PC3 sends a unicast frame back to PC1.<br/><br/>However, this time, ARP broadcasts are not needed since the MAC addresses of the adjacent devices are already known.</b>]]></text>
+</component>
+
+<component id="ID_text10">
+<text><![CDATA[<b>R1 uses its routing table to determine that the destination network address of the unicast packet from PC3 is directly connected to Fa0/0.10.</b>]]></text>
+</component>
+
+<component id="ID_text11">
+<text><![CDATA[<b>R1 forwards the packet to subinterface Fa0/0.10.</b>]]></text>
+</component>
+
+<component id="ID_text12">
+<text><![CDATA[<b>The unicast packet is delivered to PC1.</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b><u>Subinterfaces</u><br/><br/>F0/0.10: 172.17.10.1<br/>F0/0.30: 172.17.30.1</b>]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_bubble03">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_bubble04">
+<text><![CDATA[<b><font size='12'><u>Routing Table</u><br/>172.17.30.0 is directly connected, FastEthernet0/0.30<br/>172.17.10.0 is directly connected, FastEthernet0/0.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble04b">
+<text><![CDATA[<b><font size='12'><u>Routing Table</u><br/>172.17.30.0 is directly connected, FastEthernet0/0.30<br/>172.17.10.0 is directly connected, FastEthernet0/0.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble05">
+<text><![CDATA[<b>VLAN<br/>Tagged Frame</b>]]></text>
+</component>
+
+<component id="ID_frame01">
+<text><![CDATA[<b>ARP Request</b>]]></text>
+</component>
+
+<component id="ID_frame02">
+<text><![CDATA[<b>ARP Request VLAN10</b>]]></text>
+</component>
+
+<component id="ID_frame03">
+<text><![CDATA[<b>Unicast VLAN30</b>]]></text>
+</component>
+
+<component id="ID_frame04">
+<text><![CDATA[<b>Unicast Frame</b>]]></text>
+</component>
+
+<component id="ID_frame05">
+<text><![CDATA[<b>Unicast Frame VLAN10</b>]]></text>
+</component>
+
+<component id="ID_frame06">
+<text><![CDATA[<b>ARP Request VLAN30</b>]]></text>
+</component>
+
+<component id="ID_frame07">
+<text><![CDATA[<b>ARP Reply</b>]]></text>
+</component>
+
+<component id="ID_frame07b">
+<text><![CDATA[<b>ARP Reply VLAN10</b>]]></text>
+</component>
+
+<component id="ID_frame08">
+<text><![CDATA[<b>ARP Reply VLAN30</b>]]></text>
+</component>
+
+<component id="ID_frame09">
+<text><![CDATA[<b>Unicast Frame VLAN30</b>]]></text>
+</component>
+
+<component id="ID_bubble06">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_bubble07">
+<text><![CDATA[<b><font size='12'><u>Switch S1 Ports</u><br/>F0/1-F0/4 = Trunk<br/>F0/5 = Trunk<br/><br/><u>Switch S2 Ports</u><br/>F0/11 = VLAN10<br/>F0/18 = VLAN20<br/>F0/6 = VLAN30<br/>F0/1-F0/4 = Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_bubble08">
+<text><![CDATA[<b><font size='12'><u>R1 Subinterfaces</u><br/>F0/0.10: 172.17.10.1<br/>F0/0.20: 172.17.20.1<br/>F0/0.30: 172.17.30.1</font></b>]]></text>
+</component>
+
+<component id="ID_bubble09">
+<text><![CDATA[<b><font size='12'>F0/0.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble10">
+<text><![CDATA[<b><font size='12'>F0/0.30</font></b>]]></text>
+</component>
+
+<component id="ID_bubble11">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="ID_s1">
+<text><![CDATA[<b>S1</b>]]></text>
+</component>
+<component id="ID_s2">
+<text><![CDATA[<b>S2</b>]]></text>
+</component>
+<component id="ID_s3">
+<text><![CDATA[<b>S3</b>]]></text>
+</component>
+
+	<component id="ID_cont">
+		<text><![CDATA[Click Play to continue.]]></text>
+	</component>
+
+</textcomponents>

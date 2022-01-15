@@ -1,0 +1,118 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Adresse de résumé]]></text>
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[
+		
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td colspan="2" bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Table de routage pour R1</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#CCCC99'><b>Route</b></td>
+      <td bgcolor='#CCCC99'><b>Source</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.18.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.19.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.17.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>R2</b></td>
+    </tr>   
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.16.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>R2</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>192.168.1.0 /24</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>10.1.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>R2</b></td>
+    </tr>
+  </table>
+
+]]></text>
+</component>
+
+
+<component id="ID_table2">
+<text><![CDATA[
+		
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td colspan="2" bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Table de routage pour R2</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#CCCC99'><b>Route</b></td>
+      <td bgcolor='#CCCC99'><b>Source</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.18.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>R1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.19.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>R1</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.17.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>   
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.16.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>192.168.1.0 /24</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>10.1.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>
+  </table>
+
+]]></text>
+</component>
+
+
+
+<component id="ID_table3">
+<text><![CDATA[
+		
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td colspan="2" bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Table de routage pour R3</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#CCCC99'><b>Route</b></td>
+      <td bgcolor='#CCCC99'><b>Source</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>172.16.0.0 /14</b></td>
+      <td bgcolor='#F5F5DC'><b>R2</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>192.168.1.0 /24</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F5F5DC'><b>10.1.0.0 /16</b></td>
+      <td bgcolor='#F5F5DC'><b>Connectée</b></td>
+    </tr>   
+  </table>
+
+]]></text>
+</component>
+
+</textcomponents>

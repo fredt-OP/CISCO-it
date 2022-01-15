@@ -1,0 +1,210 @@
+<textcomponents>
+<component id="ID_inst">
+<text><![CDATA[<b>Click each command to view the router output.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>R1</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>R2</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>R3</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>172.16.1.0/24</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>172.16.2.0/24</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>192.168.1.0/24</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>192.168.10.4/30</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>172.16.3.0/30</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>192.168.10.8/30</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>.1</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Fa0/0</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>S0/0/0</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>.1</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>S0/0/1</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>.5</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>S0/0/0</b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>.1</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>Fa0/0</b>]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[<b>S0/0/1</b>]]></text>
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[<b>.9</b>]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[<b>.2</b>]]></text>
+</component>
+
+<component id="ID_txt22">
+<text><![CDATA[<b>S0/0/1</b>]]></text>
+</component>
+
+<component id="ID_txt23">
+<text><![CDATA[<b>.10</b>]]></text>
+</component>
+
+<component id="ID_txt24">
+<text><![CDATA[<b>Fa0/0</b>]]></text>
+</component>
+
+<component id="ID_txt25">
+<text><![CDATA[<b>.1</b>]]></text>
+</component>
+
+<component id="ID_txt26">
+<text><![CDATA[<b>S0/0/0</b>]]></text>
+</component>
+
+<component id="ID_txt27">
+<text><![CDATA[<b>.6</b>]]></text>
+</component>
+
+<component id="ID_txt28">
+<text><![CDATA[<b>64 kbps</b>]]></text>
+</component>
+
+<component id="ID_txt29">
+<text><![CDATA[<b>1024 kbps</b>]]></text>
+</component>
+
+<component id="ID_txt30">
+<text><![CDATA[<b>1544 kbps</b>]]></text>
+</component>
+
+
+<component id="ID_title01">
+<text><![CDATA[<b>CDP Neighbors</b>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>CDP Neighbor Detail</b>]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Disabling CDP</b>]]></text>
+</component>
+
+<component id="ID_txtTitle">
+<text><![CDATA[show ip protocols]]></text>
+</component>
+
+<component id="ID_txtBody">
+<text><![CDATA[<li>Verifies that EIGRP is advertising the correct networks</li><li>Displays the autonomous system number and administrative distance.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle2">
+<text><![CDATA[show ip route ]]></text>
+</component>
+
+<component id="ID_txtBody2">
+<text><![CDATA[<li>Verifies that the EIGRP routes are in the routing table. </li><li>Designates EIGRP routes with a <b>D</b> or a <b>D EX</b></li><li>Has a default administrative distance of 90 for internal routes</li>]]></text>
+</component>
+
+<component id="ID_txtTitle3">
+<text><![CDATA[show ip eigrp neighbors details]]></text>
+</component>
+
+<component id="ID_txtBody3">
+<text><![CDATA[<li>Verifies the adjacencies EIGRP forms </li><li>Displays the IP addresses and interfaces of neighbor routers</li>]]></text>
+</component>
+
+<component id="ID_txtTitle4">
+<text><![CDATA[show ip eigrp topology]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[<li>Displays successors and all feasible successors</li><li>Displays feasible distance and reported distance</li>]]></text>
+</component>
+
+<component id="ID_txtTitle5">
+<text><![CDATA[show ip eigrp interfaces details]]></text>
+</component>
+
+<component id="ID_txtBody5">
+<text><![CDATA[<li>Verifies the interfaces using EIGRP</li>]]></text>
+</component>
+  
+  <component id="ID_txtTitle6">
+<text><![CDATA[show ip eigrp traffic]]></text>
+</component>
+
+<component id="ID_txtBody6">
+<text><![CDATA[<li>Displays the number and types of EIGRP packets sent and received</li>]]></text>
+</component>
+
+<component id="button1">
+<text><![CDATA[<b><font face='_typewriter'>show ip protocols</font></b>]]></text>
+</component>
+<component id="button2">
+<text><![CDATA[<b><font face='_typewriter'>show ip route</font></b>]]></text>
+</component>
+<component id="button3">
+<text><![CDATA[<b><font face='_typewriter'>show ip eigrp neighbors detail</font></b>]]></text>
+</component>
+<component id="button4">
+<text><![CDATA[<b><font face='_typewriter'>show ip eigrp topology</font></b>]]></text>
+</component>
+<component id="button5">
+<text><![CDATA[<b><font face='_typewriter'>show ip eigrp interfaces detail</font></b>]]></text>
+</component>
+<component id="button6">
+<text><![CDATA[<b><font face='_typewriter'>show ip eigrp traffic</font></b>]]></text>
+</component>
+
+
+<component id="routerIcon">
+<text><![CDATA[<b>Router<BR>Output</b>]]></text>
+</component>
+</textcomponents>

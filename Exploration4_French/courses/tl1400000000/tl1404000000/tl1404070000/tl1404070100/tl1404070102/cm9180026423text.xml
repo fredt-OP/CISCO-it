@@ -1,0 +1,177 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Énoncez les quatre types d’attaques de reconnaissance et donnez un exemple d’outil qui peut être utilisé pour chaque type d’attaque.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(voir 4.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Demandes d’informations Internet</b><ul><li>nslookup ou whois</li></ul><b>Balayages ping</b><ul><li>fping ou gping</li></ul><b>Balayages des ports</b><ul><li>Nmap ou Superscan</li></ul><b>Analyseurs de paquets</b><ul><li>Wireshark</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Énoncez quatre types d’attaques d’accès.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(voir 4.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<ul><li>Attaque de mot de passe</li><li>Exploitation de la confiance</li><li>Redirection de port</li><li>Attaque de l’homme du milieu</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Énoncez trois types d’attaques par déni de service (DoS) et trois types d’attaques par déni de service distribué (DDoS).]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(voir 4.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Attaques DoS</b><ul><li>Ping fatal</li><li>Inondation SYN</li><li>Fragmentation et assemblage de paquets</li><li>Bombes de courriels</li><li>Saturation du processeur</li><li>Applet hostile</li></ul><b>Attaques DDoS</b><ul><li>SMURF</li><li>Tribe Flood Network (TFN)</li><li>Stacheldraht</li><li>MyDoom</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Énoncez et expliquez les différentes phases de l’attaque d’un ver et les quatre étapes permettant de limiter cette attaque.]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(voir 4.1)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Les différentes phases de l’attaque d’un ver sont les suivantes :</b><ul><li>Activation de la vulnérabilité : un ver s’installe en exploitant les vulnérabilités connues d’un système, comme les utilisateurs naïfs qui exécutent sans vérification un fichier exécutable joint à un courriel.</li><li>Mécanisme de propagation : l’accès à l’hôte étant acquis, le ver s’y reproduit, puis sélectionne d’autres cibles.</li><li>Charge : une fois l’hôte infecté par un ver, l’attaquant prend souvent possession de l’hôte en tant qu’utilisateur privilégié. Les assaillants peuvent utiliser une faille locale pour augmenter leur niveau de privilèges jusqu’à celui d’administrateur.</li></ul><b>Les étapes recommandées pour faire face à une attaque de ver sont les suivantes :</b><ul><li>Étape 1 : confinement. Limitez la diffusion du ver au sein de votre réseau. Compartimentez les parties non infectées de votre réseau.</li><li>Étape 2 : inoculation. Commencez par appliquer les correctifs à tous les systèmes, si possible, en recherchant les systèmes vulnérables.</li><li>Étape 3 : quarantaine. Dépistez toutes les machines infectée au sein du réseau. Déconnectez, retirez ou bloquez les machines infectées du réseau.</li><li>Étape 4 : traitement. Nettoyez chaque machine infectée et appliquez les correctifs nécessaires. Certains vers peuvent nécessiter une réinstallation complète du système pour le nettoyer.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Examinez l’illustration. Pour accroître la sécurité des accès administratifs, vous avez défini la configuration suivante. Toutefois, vous n’arrivez pas à établir une connexion SSH au routeur R1. Supposons que le nom d’hôte, le nom de domaine IP et la clé de chiffrement ont été configurés correctement lors d’une session telnet antérieure.  Quelles sont les modifications qui peuvent résoudre ce problème ?]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(voir 4.2)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Sur le routeur R1</b><ul><li>La commande « transport input » aurait du être « transport input ssh ».</li><li>La commande « login local » manque dans le mode de configuration « line vty 0 4 ».</li><li>Le numéro de port SSH indiqué dans la fenêtre Tera Term devrait être TCP port 22.</li></ul>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) Énoncez les cinq services Cisco IOS vulnérables et indiquez les méthodes recommandées correspondantes. Par exemple, désactiver les interfaces inutilisées.]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(voir 4.3)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<ul><li>Les petits services tels que echo, discard et chargen devraient être désactivés.</li><li>BOOTP devrait être désactivé.</li><li>Finger devrait être désactivé.</li><li>Le protocole HTTP devrait être désactivé et le protocole sécurisé HTTPS devrait être configuré (le cas échéant).</li><li>Les versions v1 et v2 du protocole SNMP devrait être désactivées et le SNMP v3 devrait être configuré.</li><li>Le protocole CDP (Cisco Discovery Protocol) devrait être désactivé s’il n’est pas utilisé.</li><li>La configuration à distance devrait être désactivée.</li><li>Le routage par la source devrait être désactivé.</li><li>Le routage sans classe devrait être désactivé.</li><li>La commande no ip directed-broadcast devrait être utilisée pour arrêter les attaques SMURF.</li><li>La commande no ip proxy-arp devrait être utilisée pour arrêter les attaques de routage adhoc.</li></ul>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) Énoncez les cinq étapes permettant d’activer la fonction de verrouillage de SDM.]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[(voir 4.4)]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[1) Sélectionner <b>Configure</b>.<br />2) Sélectionner <b>Security Audit</b>.<br />3) Cliquer sur <b>One-step lockdown</b>.<br />4) Dans la boîte de dialogue Cisco SDM Warning, sélectionner <b>Yes</b>.<br />5) Transmettre les commandes au routeur.]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q7_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) Énoncez les trois étapes permettant la mise à jour d’un routeur par une nouvelle image Cisco IOS stockée sur un serveur TFTP.]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(voir 4.5)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[1) <block indent="20">Envoyer une requête ping au serveur TFTP pour vérifier qu’il est accessible.</block><br />2) <block indent="20">Utiliser la commande show flash: pour vérifier que la mémoire flash du routeur est suffisante pour stocker le fichier image de Cisco IOS.</block><br />3) <block indent="20">Copier la nouvelle image Cisco IOS du serveur TFTP à l’aide de la commande copy tftp flash: en mode privilégié.</block>]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Fin des questions portant sur les thèmes de ce chapitre.</b>]]></text>
+</component>
+
+</textcomponents>

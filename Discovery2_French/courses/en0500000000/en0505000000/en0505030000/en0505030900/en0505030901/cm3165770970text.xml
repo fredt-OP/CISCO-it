@@ -1,0 +1,34 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Backing up a Cisco Router Configuration to a TFTP Server</b>]]></text>
+</component>
+
+<component id="ID_instruct">
+<text><![CDATA[<b>Click the buttons to view the process of copying the configuration to and from a TFTP server.</b>]]></text>
+</component>
+
+<component id="ID_grab1">
+<text><![CDATA[<b>Router# copy tftp running-config<br>Address or name of remote host [ ]?<br>131. 108. 2. 155.<br>Source filname [ ]? tokyo.2<br>Destination filename [tokyo.r]? y<br>!<br>[OK - 500 bytes]<br>Verifying checksum... OK (0x9C8A)<br>500 bytes copied in 0.0520833 secs(9600 bytes/sec)<br><br>Router#</b>]]></text>
+</component>
+
+<component id="ID_grab2">
+<text><![CDATA[<b>Router# copy startup-config tftp<br>Address or name of remote host [ ]?<br>131. 108. 2. 155.<br>Source filname [ ]? tokyo.2<br>Destination filename [Router-config]? tokyo.2<br>!<br>500 bytes copied in 0.0520833 secs(9600 bytes/sec)<br><br>Router#</b>]]></text>
+</component>
+
+
+
+<component id="1">
+<text><![CDATA[<b>Saving a Configuration</b>]]></text>
+</component>
+
+<component id="2">
+<text><![CDATA[<b>Restoring a Configuration</b>]]></text>
+</component>
+
+
+
+
+
+
+</textcomponents>

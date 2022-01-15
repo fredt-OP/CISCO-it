@@ -1,0 +1,156 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1</NAME>
+ <NAME translate="true">R2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1</NAME>
+ <NAME translate="true">R2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1</NAME>
+ <NAME translate="true">R2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1</NAME>
+ <NAME translate="true">R2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1</NAME>
+ <NAME translate="true">R2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1</NAME>
+ <NAME translate="true">R2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 6.7.5 : &lt;br&gt;configuration d'un sous-réseau et d'un routeur&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+
+
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;h3&gt;Table d'adressage&lt;/h3&gt; &lt;p&gt;Cet exercice ne comprend pas de table d'adressage.&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Mettre en sous-réseau un espace d'adresses selon des conditions données&lt;li&gt;Affecter les adresses appropriées aux interfaces et documents &lt;li&gt;Configurer et activer les interfaces série et FastEthernet &lt;li&gt;Tester et vérifier les configurations &lt;li&gt;Réfléchir sur l'implémentation du réseau et la documenter&lt;/ul&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Dans cet exercice de travaux pratiques, vous allez concevoir et appliquer un schéma d'adressage IP pour la topologie illustrée dans le diagramme de topologie. Vous recevrez un bloc d'adresses à mettre en sous-réseau en vue de fournir un schéma d'adressage logique pour le réseau. Les routeurs seront ensuite prêts pour la configuration des adresses d'interface en fonction de votre schéma d'adressage IP. Une fois la configuration terminée, vérifiez que le réseau fonctionne correctement. &lt;/p&gt;
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says &apos;At the completion of this task, when you check Results, your score should be xxx%&apos; where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT doable in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt;
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 1 : création d'un sous-réseau dans l'espace d'adresses. &lt;/h3&gt; &lt;h4&gt;&lt;b&gt;Étape 1 : examen des conditions requises du réseau. &lt;/b&gt; &lt;/h4&gt; &lt;p&gt;Vous disposez de l'espace d'adresses 192.168.1.0/24 pour concevoir votre réseau. Le réseau comprend les segments suivants : &lt;/p&gt; &lt;ul&gt; &lt;li&gt;Le réseau local connecté au routeur R1 nécessitera des adresses IP pour prendre en charge 15 hôtes. &amp;nbsp;&lt;/li&gt; &lt;li&gt;Le réseau local connecté au routeur R2 nécessitera des adresses IP pour prendre en charge 30 hôtes. &amp;nbsp;&lt;/li&gt; &lt;li&gt;La liaison entre le routeur R1 et le routeur R2 nécessitera des adresses IP à chacune de ses extrémités. &lt;/li&gt; &lt;/ul&gt;N'utilisez pas un sous-réseau de longueur variable pour cet exercice.
+
+&lt;h4&gt;&lt;b&gt;Étape 2 : questions à prendre en compte pour l'élaboration de votre réseau &lt;/b&gt; &lt;/h4&gt; &lt;p&gt;Répondez aux questions suivantes dans votre cahier ou sur une feuille de papier.&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Combien de sous-réseaux faut-il pour ce réseau ?&lt;/li&gt; &lt;li&gt;Quel est le masque de sous-réseau de ce réseau au format décimal ? &lt;/li&gt; &lt;li&gt;Quel est le masque de sous-réseau du réseau au format avec barres obliques ?&lt;/li&gt; &lt;li&gt;Combien d'hôtes utilisables compte chaque sous-réseau ?&lt;/li&gt; &lt;/ol&gt; &lt;h4&gt; &lt;b&gt;Étape 3 : affectation des adresses de sous-réseau au diagramme de topologie &lt;/b&gt;&lt;/h4&gt; &lt;ol&gt; &lt;li&gt;Affectez un deuxième sous-réseau au réseau attaché à R1. &lt;/li&gt; &lt;li&gt;Affectez le troisième sous-réseau à la liaison entre R1 et R2.&lt;/li&gt; &lt;li&gt;Affectez un quatrième sous-réseau au réseau attaché à R2.&lt;/li&gt; &lt;/ol&gt;
+
+&lt;h4&gt;Au terme de cette tâche, votre taux de progression doit être de 0%. 
+
+&lt;/h4&gt; &lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">
+&lt;h3&gt;Tâche 2 : détermination des adresses d'interface. &lt;/h3&gt; &lt;h4&gt;&lt;b&gt;Étape 1 &lt;/b&gt;: affectation des adresses appropriées aux interfaces de périphérique. &lt;/h4&gt; &lt;ol&gt; &lt;li&gt;Affectez la première adresse d'hôte valide du deuxième sous-réseau à l'interface du réseau local sur R1. &lt;/li&gt; &lt;li&gt;Affectez la dernière adresse d'hôte valide du deuxième sous-réseau à PC1.&lt;/li&gt; &lt;li&gt;Affectez la première adresse d'hôte valide du troisième sous-réseau à l'interface du réseau étendu sur R1. &lt;/li&gt; &lt;li&gt;Affectez la dernière adresse d'hôte valide du troisième sous-réseau à l'interface du réseau étendu sur R2. &lt;/li&gt; &lt;li&gt;Affectez la première adresse d'hôte valide du quatrième sous-réseau à l'interface du réseau local de R2. &lt;/li&gt; &lt;li&gt;Affectez la dernière adresse d'hôte valide du quatrième sous-réseau à PC2. &lt;/li&gt; &lt;/ol&gt; &lt;h4&gt;&lt;b&gt;Étape 2 &lt;/b&gt;: documentation des adresses à utiliser dans la table fournie dans le diagramme de la topologie. &lt;h4&gt; &lt;h4&gt;Au terme de cette tâche, votre taux de progression doit être de 0 %. 
+
+&lt;/h4&gt;
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 3 : configuration des adresses série et FastEthernet. &lt;/h3&gt; &lt;h4&gt;&lt;b&gt;Étape 1 : configuration des interfaces des routeurs.&lt;/b&gt;&lt;/h4&gt; &lt;p&gt;Pour cet exercice, vous utiliserez l'onglet Config de Packet Tracer. Lorsque vous avez terminé, enregistrez la configuration en cours dans la mémoire vive non volatile du routeur.&lt;/p&gt; &lt;p&gt;&lt;b&gt;Remarque : n'oubliez pas que l'option Port Status de l'interface doit être activée.&lt;/b&gt;&lt;/p&gt; &lt;p&gt;&lt;b&gt;Remarque : la fréquence d'horloge d'une connexion série DCE est de 64 000.&lt;/b&gt;&lt;/p&gt; &lt;h4&gt;&lt;b&gt;Étape 2 : configuration des interfaces des ordinateurs. &lt;/b&gt; &lt;/h4&gt; &lt;p&gt;configurez les interfaces Ethernet de PC1 et PC2 avec les adresses IP et les passerelles par défaut du réseau que vous avez conçu. &lt;/p&gt; &lt;h4&gt;Au terme de cette tâche, votre taux de progression doit être de 100 %. 
+
+&lt;/h4&gt;
+
+&lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 4 : vérification des configurations. &lt;/h3&gt; &lt;p&gt;Répondez aux questions suivantes pour vérifier que le réseau fonctionne correctement. &lt;/p&gt; &lt;ol&gt; &lt;li&gt;Est-il possible d'exécuter une commande ping sur la passerelle par défaut depuis l'hôte connecté à R1 ? &lt;/li&gt; &lt;li&gt;Est-il possible d'exécuter une commande ping sur la passerelle par défaut depuis l'hôte connecté à R2 ? &lt;/li&gt; &lt;li&gt;Est-il possible d'exécuter une commande ping sur l'interface série 0/0/0 de R2 depuis le routeur R1 ? &lt;/li&gt; &lt;li&gt;Est-il possible d'exécuter une commande ping sur l'interface série 0/0/0 de R1 depuis le routeur R2 ? &lt;/li&gt; &lt;/ol&gt; &lt;p&gt;&lt;b&gt;Remarque : pour exécuter une commande ping sur un routeur, vous devez vous trouver dans l'onglet &lt;u&gt;CLI&lt;/u&gt;.&lt;/b&gt;&lt;/p&gt; &lt;h4&gt;Au terme de cette tâche, votre taux de progression doit être de 100 %. 
+
+&lt;/h4&gt;
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <TEXT translate="true">S0/0/0</TEXT>
+ <TEXT translate="true">DCE</TEXT>
+ <TEXT translate="true">S0/0/0</TEXT>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <TEXT translate="true">DCE</TEXT>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <TEXT translate="true">S0/0/0</TEXT>
+ <TEXT translate="true">S0/0/0</TEXT>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <TEXT translate="true">DCE</TEXT>
+ <TEXT translate="true">S0/0/0</TEXT>
+ <TEXT translate="true">S0/0/0</TEXT>
+ <TEXT translate="true">Fa0/0</TEXT>
+ <ID translate="true">R1</ID>
+ <ID translate="true">R2</ID>
+ <ID translate="true">Switch</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">R1</ID>
+ <ID translate="true">R2</ID>
+ <ID translate="true">Switch</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19844" lang=""><form-item order="fixed">
+			<ai id="120914" type="mc-sa"><question><![CDATA[What attribute is associated with link-state routing protocols?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[split horizon ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[poison reverse ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[low processor overhead  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[shortest-path first calculations  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117625" type="mc-sa"><question><![CDATA[Refer to the exhibit. If OSPF is configured in the network using the costs shown in the table, which path will a packet take from H1 to H2? <br/><img src="16848.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[R1 - R5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1 - R2 - R5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1 - R4 - R5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R1 - R3 - R4 - R5  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117803" type="mc-sa"><question><![CDATA[Refer to the exhibit. The router learned three different routes to the subnet 192.168.1.0. What action will the router take to forward a packet to the destination of 192.168.1.143? <br/><img src="16850.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The packet will be dropped by the router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The packet will be load-balanced across the three routes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The packet will be forwarded to the next hop of 192.168.4.2.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The packet will exit the router through the FastEthernet 0/0 interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117664" type="mc-sa"><question><![CDATA[Refer to the exhibit, which shows partial output from the <b>show running-config</b> command on RouterA. With all interfaces on RouterA active, the network administrator modifies the configuration of the router by issuing the command <b>no router-id 18.20.20.172</b>. The configuration is then saved and the router restarted. What will be the router ID for RouterA when OSPF is reestablished? <br/><img src="16691.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[10.190.102.1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.20.20.18 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.30.1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.70.18  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.90.1 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119242" type="mc-sa"><question><![CDATA[Refer to the exhibit. RouterA, RouterB, and RouterC in the diagram are running OSPF on their Ethernet interfaces. Router D was just added to the network. Routers are configured with the loopback interfaces (Lo 0) that are shown in the exhibit. What happens to the OSPF DR/BDR after RouterD is added to the network? <br/><img src="16441.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[RouterB takes over as DR and RouterD becomes the BDR. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RouterD becomes the BDR and RouterA remains the DR. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RouterD becomes the DR and RouterA becomes the BDR. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RouterC acts as the DR until the election process is complete. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RouterD becomes the DR and RouterB remains the BDR. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[There is no change in the DR or BDR until either current DR or BDR goes down.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120918" type="mc-sa"><question><![CDATA[Refer to the exhibit. What network commands will configure router A to properly advertise the OSPF routes? <br/><img src="i120918n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>network 192.168.10.0 0.0.0.63 area 0</b> <b>network 192.168.10.128 0.0.0.63 area 0</b><br/> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>network 192.168.10.64 0.0.0.63 area 0<br />network 192.168.10.192 0.0.0.3 area 0</b><br/>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>network 192.168.10.0 255.255.255.252 area 0</b> <b>network 192.168.10.128 255.255.255.252 area 0</b><br/> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>network 192.168.10.64 255.255.255.252 area 0 <br />network 192.168.10.192 255.255.255.252 area 0</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119882" type="mc-ma"><question><![CDATA[Which two statements are true regarding the cost calculation for a link in OSPF? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[It can be set with the <b>ip ospf cost</b> command.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It is set to 1544 by default for all OSPF interfaces. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The configured loopback addresses map to link costs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[It may be calculated using the formula <i>reference bandwidth / bandwidth</i>.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It is calculated proportionally to observed throughput capacity of the router. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120921" type="mc-sa"><question><![CDATA[Refer to the exhibit. OSPF routing protocol is configured for the routers, however, router A is not receiving any OSPF routes from the other routers. Based on the information in the exhibit, what is the problem with the router A configuration? <br/><img src="16879.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[None of the interfaces are enabled. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[OSPF has an improper process ID. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[One of the network statements is wrong.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Auto-summarization needs to be disabled. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117605" type="mc-sa"><question><![CDATA[Refer to the exhibit. A network administrator is implementing OSPF between headquarters and multiple branch offices. All branch offices are connected to the Internet through the headquarter's router. What effect will the commands entered on the headquarter's router have? <br/><img src="16888.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The command will only affect the local router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The command must be applied to all routers in order for the default route to be propagated. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The default route will be propagated to all routers participating in the same OSPF area.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The default route will only be learned by the OSPF adjacent neighbors. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121073" type="mc-ma"><question><![CDATA[For what two reasons would a network administrator choose to enable authentication for OSPF exchanges? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[to prevent routing information from being falsified  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to reduce OSPF information exchange overhead ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[to keep routing information being captured   ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to encrypt routing tables to prevent unauthorized viewing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to ensure that OSPF routing information takes priority over RIP or EIGRP updates ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

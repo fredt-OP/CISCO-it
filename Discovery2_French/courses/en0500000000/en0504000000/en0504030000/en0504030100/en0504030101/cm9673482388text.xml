@@ -1,0 +1,345 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Interfaces on network devices connected to the Internet need to have a unique IP address, to send and receive messages over internetworks.</li><br/><li>IP addresses are organized into network classes A, B, C, D, and E, and are conserved by the creation of private IP address space.</li><br/><li>A network can be divided into subnets.</li><br/><li>Classful subnetting uses the extension of the subnet mask. Classless IP addressing, part of a method called classless inter-domain routing (CIDR) uses a flexible method of subnetting with variable length subnet masks (VLSM).</li></ul>]]></text>
+</component>
+
+
+<!--  Slide 2  -->  
+  
+  
+<component id="ID_txt02">
+<text><![CDATA[<ul><li>Subnet masks allow further subdivision of networks by extending the number of bits used.</li><br/><li>A subnet ID is created by splitting the host ID into two parts, a subnet ID and a new host ID.</li><br/><li>The number of bits in the subnet ID determines the number of subnets there can be in a network.</li><br/><li>Communication between subnets requires routing.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_header1">
+<text><![CDATA[<b>IP Address Classes</b>]]></text>
+</component>
+
+<component id="test">
+<text><![CDATA[<b>IP Address Classes</b>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+   	<text><![CDATA[<font color="#003399"><b>192.168.1.</b><b><font color="#000000"><b>0</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt02">
+   	<text><![CDATA[<font color="#000000"><b>11000000 10101000 00000001 </b><b><font color="#990000"><b>hhhhhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt03">
+   	<text><![CDATA[<b>Subnet<br>ID Bits</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt04">
+   	<text><![CDATA[<b>Host<br>ID Bits</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt05">
+   	<text><![CDATA[<b>Number<br>of Subnets</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt06">
+   	<text><![CDATA[<b>Number<br>of Hosts</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt07">
+   	<text><![CDATA[<b>Bit pattern</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt08">
+   	<text><![CDATA[<b>0</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt09">
+   	<text><![CDATA[<b>8</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt10">
+   	<text><![CDATA[<b>1</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt11">
+   	<text><![CDATA[<b>254</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt12">
+   	<text><![CDATA[<font color="#990000"><b>hhhhhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt13">
+   	<text><![CDATA[<b>Subnet ID bits = 0, the network has one subnet.</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt14">
+   	<text><![CDATA[<b>1</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt15">
+   	<text><![CDATA[<b>7</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt16">
+   	<text><![CDATA[<b>2</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt17">
+   	<text><![CDATA[<b>126</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt18">
+   	<text><![CDATA[<b>s</b><font color="#990000"><b>hhhhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt19">
+   	<text><![CDATA[<b>As soon as one of the host bits is designated as a subnet bit, the network will have two subnets. Remember, in binary, a bit can have two states, 1 or 0, so the number of subnets is 2^s.</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt20">
+   	<text><![CDATA[<b>2</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt21">
+   	<text><![CDATA[<b>6</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt22">
+   	<text><![CDATA[<b>4</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt23">
+   	<text><![CDATA[<b>62</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt24">
+   	<text><![CDATA[<b>ss</b><font color="#990000"><b>hhhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt25">
+   	<text><![CDATA[<b>3</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt26">
+   	<text><![CDATA[<b>5</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt27">
+   	<text><![CDATA[<b>8</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt28">
+   	<text><![CDATA[<b>30</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt29">
+   	<text><![CDATA[<b>sss</b><font color="#990000"><b>hhhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt30">
+   	<text><![CDATA[<b>4</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt31">
+   	<text><![CDATA[<b>4</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt32">
+   	<text><![CDATA[<b>16</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt33">
+   	<text><![CDATA[<b>14</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt34">
+   	<text><![CDATA[<b>ssss</b><font color="#990000"><b>hhhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt35">
+   	<text><![CDATA[<b>Notice the inverse relationship between the number of subnets and the number of hosts.</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt36">
+   	<text><![CDATA[<b>5</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt37">
+   	<text><![CDATA[<b>3</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt38">
+   	<text><![CDATA[<b>32</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt39">
+   	<text><![CDATA[<b>6</b>]]></text>
+   	</component>
+   	
+   	
+<component id="s2_ID_txt40">
+   	<text><![CDATA[<b>sssss</b><font color="#990000"><b>hhh</b></font>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt41">
+   	<text><![CDATA[<b>Our example network has fewer than six hosts in it. If we had to really subnet this network, would we choose to break it into two subnets, or would we choose to break it into the number of subnets that support 6 hosts?</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt42">
+   	<text><![CDATA[<b>6</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt43">
+   	<text><![CDATA[<b>2</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt44">
+   	<text><![CDATA[<b>64</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt45">
+   	<text><![CDATA[<b>2</b>]]></text>
+   	</component>
+   	
+<component id="s2_ID_txt46">
+   	<text><![CDATA[<b>ssssss</b><font color="#990000"><b>hh</b></font>]]></text>
+   	</component>
+
+<!--  Slide 3  -->
+
+
+<component id="ID_txt03">
+<text><![CDATA[<ul><li>NAT enables a large group of private users to access the Internet by sharing a small pool of public IP addresses, thereby reducing the consumption of globally unique IP addresses.</li><br/><li>Inside addresses are IP addresses for private network devices. Outside addresses are IP addresses for public network devices. Local addresses are IP addresses in packets that are still in the private network. Global addresses are IP addresses that cross to the outside network.</li><br/><li>A packet that has been translated and is in the outside network will list an inside-global IP address as source and an outside-global IP address as destination.</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_txt01">
+   	<text><![CDATA[<b>Inside<br>Local Network</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt02">
+   	<text><![CDATA[<b>Outside<br>Global Networks</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt03">
+   	<text><![CDATA[<b>NAT Address Pool</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt03_1">
+   	<text><![CDATA[<b>209.165.202.129</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt03_2">
+   	<text><![CDATA[<b>209.165.202.130</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt04">
+    	<text><![CDATA[<b>Remote Server<br>209.165.200.226</b>]]></text>
+   	</component>
+   	
+<component id="s3_ID_txt05">
+    	<text><![CDATA[<b>ISP</b>]]></text>
+   	</component>
+
+  	  <component id="s3_ID_txt56">
+       	<text><![CDATA[<b>192.168.1.106</b>]]></text>
+   	</component>
+
+
+
+<!--  Slide 4  -->
+
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>Static NAT is for permanent one-to-one translations from a specific inside-local IP address to a specific inside-global IP address.</li><br/><li>Dynamic NAT assigns inside-global IP addresses on a first-come, first-served basis from an available pool of IP addresses to a designated network or sub-network. </li><br/><li>PAT, can be used to add a port number to the IP address for specific connections.</li><br/><li>Network devices that use NAT translate addresses on every packet. This can significantly increase processing work load.</li><br/><li>IPv6 incorporates a 128-bit addressing scheme, whereas IPv4 uses 32-bits.</li></ul>]]></text>
+</component>
+
+   
+   <component id="s4_ID_txt01a">
+      <text><![CDATA[<b>Company Web and Mail Server</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt02a">
+      <text><![CDATA[<b>ISR</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt03a">
+      <text><![CDATA[<b>ISP</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt04">
+      <text><![CDATA[<b>Wireless Subnet</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt05">
+      <text><![CDATA[<b>New ISR</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt06">
+      <text><![CDATA[<b>New Switch</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt07">
+      <text><![CDATA[<b>Wired Subnet</b>]]></text>
+   </component>
+   
+   <component id="s4_ID_txt08">
+       <text><![CDATA[<b>Local Network</b>]]></text>
+   </component>
+   <component id="s4_ID_txt09">
+         <text><![CDATA[<b>Public Internet</b>]]></text>
+   </component>
+     <component id="s4_ID_txt10">
+           <text><![CDATA[<b>1 public IP address</b>]]></text>
+   </component>
+     <component id="s4_ID_txt11">
+           <text><![CDATA[<b>40 private users</b>]]></text>
+   </component>
+
+
+<!--  Slide 5  -->
+
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>FTP is used for file transfer services. The ISP can support active and passive FTP connections. Active connections require the server to initiate the connection. Passive connection require the host to initiate the connection</li><br/><li>Email utilizes three different protocols including SMTP, POP3, and IMAP. SMTP is used to send email. POP3 and IMAP are both used to retrieve email. </li></ul>]]></text>
+</component>
+
+  <component id="s5_ID_txt01">
+                  <text><![CDATA[<b>Send to recipient@cisco.com</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt02">
+                  <text><![CDATA[<b>ISP A Mail Server</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt03">
+                  <text><![CDATA[<b>ISP B Mail Server</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt04">
+                  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt05">
+                  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt06">
+                  <text><![CDATA[<b>IMAP or POP3</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt07">
+                  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt08">
+                  <text><![CDATA[<b>Sender</b>]]></text> 
+  </component>
+  <component id="s5_ID_txt09">
+                  <text><![CDATA[<b>Recipient</b>]]></text> 
+  </component>
+
+
+</textcomponents>

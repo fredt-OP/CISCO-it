@@ -1,0 +1,43 @@
+<textcomponents>
+
+<component id="routerIcon">
+<text><![CDATA[<b>Router<BR>Output</b>]]></text>
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Interpreting<font face="_typewriter"> debug ip rip </font>Output</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>- Interpreting<font face="_typewriter"> debug ip rip </font>Output</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>- R2 receives an update from R1 advertising the R1’s directly connected LAN.</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>- R2 receives an update from R3 advertising the R3’s directly connected LAN.</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>- R2 sends an update out Fa0/0 to all networks in the routing table except the network attached to Fa0/0.</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>- R2 sends an update out S0/0/1 to R3. Included in the update are R1’s LAN, the WAN between R1 and R2, and <br>  R2’s LAN.<br>- Note that split horizon is in effect. R2 does not advertise the R3 LAN back to R3.</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>- R2 sends an update out S0/0/0 to R1. Included in the update is R3’s LAN, the WAN between R2 and R3, and <br>  R2’s LAN.<br>- Note that split horizon is in effect. R2 does not advertise the R1 LAN back to R1.</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>- Make sure you disable debugging with the<font face='_typewriter'> undebug all </font>command when done.</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click to see explanation of command output.</b>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,68 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Minuteurs BPDU</b>]]></text>
+</component>
+
+<component id="btn1">
+  <text><![CDATA[Minuteurs BPDU]]></text> 
+</component>
+<component id="btn2">
+  <text><![CDATA[Rôles et minuteurs]]></text> 
+</component>
+
+<component id="btn3">
+  <text><![CDATA[Configurer le diamètre du réseau]]></text> 
+</component>
+
+
+
+<!-- Slide 1 -->
+
+<component id="ID_txt02">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td colspan="2" valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>   </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td width="100" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b> Hello time</b></td>
+        <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Le minuteur « hello time » correspond à l’intervalle entre chaque envoi de trames BPDU sur un port. <br />La valeur par défaut est 2 secondes, mais les valeurs autorisées sont comprises entre 1 et 10 secondes. </td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td width="100" valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Forward delay</b></td>
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Le minuteur « forward delay » correspond au temps passé dans l’état d’écoute et l’état d’apprentissage. <br />La valeur par défaut est 15 secondes pour chaque état, mais les valeurs autorisées sont comprises entre 4 et 30 secondes. </td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td width="100" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Maximum age</b></td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Le minuteur « maximum age » détermine la durée maximale de conservation des informations des BPDU par un port de commutateur. <br />La valeur par défaut est 20 secondes, mais les valeurs autorisées sont comprises entre 6 et 40 secondes. </td>
+  </tr>
+</table>]]></text> 
+  </component>
+  
+  
+<!-- Slide 2 -->
+  
+<component id="ID_txt03">
+  <text><![CDATA[<b>Blocage</b><br/>(perte de BPDU détectée)<br/>(maximum age = 20 secondes)]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b>Écoute</b><br/>(forward delay = 15 secondes)]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b>Apprentissage</b><br/>(forward delay = 15 secondes)]]></text> 
+  </component>
+  <component id="ID_txt06">
+  <text><![CDATA[<b>Acheminement</b>]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[<b>Blocage</b><br/>(passe à l’état d’écoute une fois que le commutateur a déterminé s’il s’agit d’un port racine ou d’un port désigné)]]></text> 
+  </component>
+    <component id="ID_txt08">
+  <text><![CDATA[Activation d’une liaison]]></text> 
+  </component>
+  
+  
+  
+  
+  
+  
+</textcomponents>

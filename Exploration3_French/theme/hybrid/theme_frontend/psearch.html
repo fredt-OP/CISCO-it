@@ -1,0 +1,106 @@
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="./css/reset-fonts.css">
+		<link rel="stylesheet" type="text/css" href="./css/popup_search.css"/>
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script>
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			var content = new EJS({url: 'psearch.ejs'});
+
+			searchstring = "";
+			foundArray = new Array();
+
+			function getContent() {
+				var html = "";
+				data = {main:window.opener.main};
+				html = content.render(data);
+				writeToElement("searchdiv", html);
+			}
+
+			function selectPage(li) {
+				window.opener.main.gotoPage(li);
+				window.close();
+			}
+
+
+
+			function searchContent() {
+				var term = new String(window.document.forms[0].elements['field'].value);
+				searchstring = term;
+				if (term.length > 0) {
+					foundArray = new Array();
+					for (var i=0; i<window.opener.main.course.chapters.length; i++) {
+						var ch = window.opener.main.course.chapters[i];
+						for (var j=0; j<ch.sections.length; j++) {
+							var se = ch.sections[j];
+							for (var k=0; k<se.topics.length; k++) {
+								var to = se.topics[k];
+								for (var l=0; l<to.pages.length; l++) {
+									var pa = to.pages[l];
+									var has = checkForTerm(term,pa.contenttext);
+									if (has) {
+										foundArray[ch.oid] = true;
+										foundArray[se.oid] = true;
+										foundArray[to.oid] = true;
+										foundArray[pa.oid] = true;
+									}
+								}
+							}
+						}
+					}
+				}
+				if (foundArray.length == 0) {
+					foundArray.push("nomatchfound");
+				}
+				getContent();
+			}
+
+			function checkForTerm(t,r) {
+				var t = t.toLowerCase();
+				var r = r.toLowerCase();
+				if (r.indexOf(t) > -1) {
+					return true;
+				} else {
+					return false;
+				}
+			}
+
+
+		</script>
+	</head>
+	<body class="popup"><div id="searchdiv">
+		<form name="seachform" id="searchform">
+		<table cellspacing="0" cellpadding="0" border="0" align="center">
+			<tr>
+				<td><input type="text" size="60" id="field"></td>
+				<td class="btnbg">Search</td>
+			</tr>
+		</table>
+		<hr/>
+		<div id="list" class="listdiv">
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr><td class="chaptertitle">1 Chapter Title</td></tr>
+			<tr><td class="sectiontitle">1.2 Section Title</td></tr>
+			<tr><td class="topictitle">1.2.3 Topic Title</td></tr>
+			<tr><td class="pagetitle"><a href="javascript:selectPage('li');" class="page">1.2.3.4 Page Title</a></td></tr>
+		</table> 
+		</div>
+		<hr/>
+		</form>
+	</div>
+	<script>getContent();</script>
+</body>
+</html>
+
+

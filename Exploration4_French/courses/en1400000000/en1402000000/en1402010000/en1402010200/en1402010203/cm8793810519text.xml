@@ -1,0 +1,370 @@
+<textcomponents>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>ISDN</b>]]></text>
+</component>
+<component id="ID_Button02">
+<text><![CDATA[<b>SONET</b>]]></text>
+</component>
+<component id="ID_Button03">
+<text><![CDATA[<b>DS0</b>]]></text>
+</component>
+<component id="ID_Button04">
+<text><![CDATA[<b>T-Carrier Hierarchy</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click to see the different types.</b>]]></text>
+</component>
+
+<!-- slide1 -->
+<component id="ID_title01">
+<text><![CDATA[<b>TDM Example: ISDN</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>64 kb/s</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>ISDN NT1</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Control</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>TDM</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>64 kb/s</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Bit-interleaved</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>B1</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>B2</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>D</b>]]></text>
+</component>
+
+<!-- slide2 -->
+<component id="ID_title02">
+<text><![CDATA[<b>TDM Example: SONET</b>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<b>Bit rate = 2.5 Gb/s</b>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>Link rate = (2.5 Gb/s x 4 = 10 Gb/s)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[<b>Incoming stream</b>]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[<b>10 Gb/s</b>]]></text>
+</component>
+
+<component id="ID_S2_txt05">
+<text><![CDATA[<b>(T)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt06">
+<text><![CDATA[<b>(T)</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Signal Bit</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Rate</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Voice Slots</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DS0</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>64 kb/s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1 DS0</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DS1</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1.544 Mb/s</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>24 DS0s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DS2</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6.312 Mb/s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>96 DS0s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DS3</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>44.736 Mb/s</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>672 DS0s or 28 DS1s</td>
+	</tr>
+</table>]]></text> 
+</component>
+
+
+<component id="ID_table03">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Signal Bit</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Rate</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Voice Slots</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DS0</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>64 kb/s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1 DS0</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DS1</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1.544 Mb/s</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>24 DS0s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DS2</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6.312 Mb/s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>96 DS0s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DS3</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>44.736 Mb/s</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>672 DS0s or 28 DS1s</td>
+	</tr>
+</table>]]></text> 
+</component>
+
+
+<!-- slide4 -->
+<component id="ID_title04">
+<text><![CDATA[<b>T-Carrier Hierarchy</b>]]></text>
+</component>
+
+<component id="ID_S3_txt01">
+<text><![CDATA[<b>T4</b>]]></text>
+</component>
+
+<component id="ID_S3_txt02">
+<text><![CDATA[<b>T3</b>]]></text>
+</component>
+
+<component id="ID_S3_txt03">
+<text><![CDATA[<b>T2</b>]]></text>
+</component>
+
+<component id="ID_S3_txt04">
+<text><![CDATA[<b>T1C</b>]]></text>
+</component>
+
+<component id="ID_S3_txt05">
+<text><![CDATA[<b>T1</b>]]></text>
+</component>
+
+<component id="ID_table02">
+<text><![CDATA[<table header='left' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='100' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>T4 =</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6 T3s</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>274 Mb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>T3 =</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>7 T2s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>45 Mb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>T2 =</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2 T1Cs</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6.312 Mb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>T1C =</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2 T1s</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>3.152 Mb/s</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'><b>T1 =</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>24 Voice Channels</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1.544 Mb/s</td>
+	</tr>
+</table>]]></text> 
+</component>
+
+<component id="ID_txtSLIDE4txt01">
+<text><![CDATA[<b>T4 = 6 T3s<br/>274 Mb/s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt02">
+<text><![CDATA[<b>T3 = 7 T2s<br/>45 Mb/s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt03">
+<text><![CDATA[<b>T2 = 2 T1Cs<br/>6.312 Mb/s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt04">
+<text><![CDATA[<b>T1C = 2 T1s<br/>3.152 Mb/s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt05">
+<text><![CDATA[<b>T1 = 24Voice<br/>Channels<br/>1.544 Mb/s</b>]]></text>
+</component>
+
+
+
+
+<component id="ID_txtSLIDE4txt07a">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07b">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07c">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07d">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07e">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07f">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07g">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07h">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07i">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07j">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07k">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07l">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07m">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07n">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07o">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07p">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07q">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07r">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07s">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07t">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07u">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07v">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07w">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt07x">
+<text><![CDATA[<b>DS0s</b>]]></text>
+</component>
+
+
+<component id="ID_txtSLIDE4txt08a">
+<text><![CDATA[<b>T1</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt08b">
+<text><![CDATA[<b>T1</b>]]></text>
+</component>
+
+
+<component id="ID_txtSLIDE4txt09a">
+<text><![CDATA[<b>T1Cs</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt09b">
+<text><![CDATA[<b>T1Cs</b>]]></text>
+</component>
+
+
+<component id="ID_txtSLIDE4txt10a">
+<text><![CDATA[<b>T2</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt10b">
+<text><![CDATA[<b>T2</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt10c">
+<text><![CDATA[<b>T2</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt10d">
+<text><![CDATA[<b>T2</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt10e">
+<text><![CDATA[<b>T2</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt10f">
+<text><![CDATA[<b>T2</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt10g">
+<text><![CDATA[<b>T2</b>]]></text>
+</component>
+
+
+<component id="ID_txtSLIDE4txt11a">
+<text><![CDATA[<b>T3</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt11b">
+<text><![CDATA[<b>T3</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt11c">
+<text><![CDATA[<b>T3</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt11d">
+<text><![CDATA[<b>T3</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt11e">
+<text><![CDATA[<b>T3</b>]]></text>
+</component>
+<component id="ID_txtSLIDE4txt11f">
+<text><![CDATA[<b>T3</b>]]></text>
+</component>
+
+<component id="ID_txtSLIDE4txt12">
+<text><![CDATA[<b>T4</b>]]></text>
+</component>
+
+
+<!-- slide3 -->
+<component id="ID_title03">
+<text><![CDATA[<b>DS0 UNITS</b>]]></text>
+</component>
+
+
+
+</textcomponents>

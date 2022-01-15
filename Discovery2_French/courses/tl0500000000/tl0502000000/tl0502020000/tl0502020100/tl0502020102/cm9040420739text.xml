@@ -1,0 +1,60 @@
+﻿<textcomponents>
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#FFFFFF' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='100' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'>Groupe</font></td>
+		<td width='30' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><p align='center'>#</p></font></td>
+		<td width='120' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'>Nom de la couche</font></td>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'>Protocoles et technologies courants</font></td>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'>Composants réseau courants associés à cette couche</font></td>
+	</tr>
+	<tr>
+		<td rowspan='3' bgcolor='#669999' glow='false' valign='top' type='dynamic'>Couches supérieures</td>
+		<td bgcolor='#A8C6C5' glow='false' valign='top' type='dynamic'><p align='center'>7</p></td>
+		<td bgcolor='#A8C6C5' glow='false' valign='top' type='dynamic'>Application</td>
+		<td bgcolor='#A8C6C5' glow='false' valign='top' type='dynamic'>DNS, NFS, DHCP, SNMP, FTP, TFTP, SMTP, POP3, IMAP, HTTP, Telnet</td>
+		<td rowspan='3' bgcolor='#A8C6C5' glow='false' valign='top' type='dynamic'>Applications compatibles réseau, courriel, navigateurs et serveurs Web, transfert de fichiers, résolution de noms</td>
+	</tr>
+	<tr>
+		<td bgcolor='#669999' glow='false' valign='top' type='dynamic'><p align='center'>6</p></td>
+		<td bgcolor='#669999' glow='false' valign='top' type='dynamic'>Présentation</td>
+		<td bgcolor='#669999' glow='false' valign='top' type='dynamic'>SSL, interpréteurs de commandes et redirecteurs, MIME</td>
+	</tr>
+	<tr>
+		<td bgcolor='#A8C6C5' glow='false' valign='top' type='dynamic'><p align='center'>5</p></td>
+		<td bgcolor='#A8C6C5' glow='false' valign='top' type='dynamic'>Session</td>
+		<td bgcolor='#A8C6C5' glow='false' valign='top' type='dynamic'>NetBIOS, interfaces de programmation d’applications, appels de procédures distants</td>
+	</tr>
+	<tr>
+		<td rowspan='4' bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'>Couches inférieures</td>
+		<td bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'><p align='center'>4</p></td>
+		<td bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'>Transport</td>
+		<td bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'>TCP et UDP</td>
+		<td bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'>Mécanismes de lecture vidéo et vocale en continu, listes de filtrage par pare-feu</td>
+	</tr>
+	<tr>
+		<td bgcolor='#D5EAFF' glow='false' valign='top' type='dynamic'><p align='center'>3</p></td>
+		<td bgcolor='#D5EAFF' glow='false' valign='top' type='dynamic'>Réseau</td>
+		<td bgcolor='#D5EAFF' glow='false' valign='top' type='dynamic'>IPv4, IPv6, IP NAT</td>
+		<td bgcolor='#D5EAFF' glow='false' valign='top' type='dynamic'>Adressage IP, routage</td>
+	</tr>
+	<tr>
+		<td bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'><p align='center'>2</p></td>
+		<td bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'>Liaison de données</td>
+		<td bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'>Famille Ethernet, réseau local sans fil, Wi-Fi, ATM, PPP</td>
+		<td bgcolor='#B4DAFE' glow='false' valign='top' type='dynamic'>Cartes réseau et pilotes, commutation réseau, connectivité WAN</td>
+	</tr>
+	<tr>
+		<td bgcolor='#D5EAFF' glow='false' valign='top' type='dynamic'><p align='center'>1</p></td>
+		<td bgcolor='#D5EAFF' glow='false' valign='top' type='dynamic'>Physique</td>
+		<td bgcolor='#D5EAFF' glow='false' valign='top' type='dynamic'>Signalisation électrique, formes des ondes lumineuses, formes des ondes radio</td>
+		<td bgcolor='#D5EAFF' glow='false' valign='top' type='dynamic'>Support physique (paire torsadée cuivre, câble fibre optique, émetteurs sans fil), concentrateurs et répéteurs</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_txt33">
+<text><![CDATA[Network aware applications, Email, Web Browsers and Servers, File Transfer, Name Resolution]]></text>
+</component>
+
+</textcomponents>

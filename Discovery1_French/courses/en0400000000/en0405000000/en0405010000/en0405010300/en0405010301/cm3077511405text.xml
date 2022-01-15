@@ -1,0 +1,31 @@
+﻿<textcomponents>
+<!-- Tip popup -->
+<component id="tipTitle">		
+<text><![CDATA[<b>Multiple Logical networks on one physical network:</b>]]></text>	
+</component>
+
+<component id="tipBody">		
+<text><![CDATA[With IP addressing, multiple logical networks can exist on one physical network, if the network portion of their host addresses is different. Example: Three hosts on a single physical local network have the same network portion to their IP address (192.168.50) and three other hosts have a different network portion (192.168.70). The hosts with the same network number in their IP addresses will be able to communicate with each other but will not be able to communicate with the other hosts without the use of routing. In this case, we have one physical network and two logical IP networks.]]></text>	
+</component>
+
+<component id="TipText"><text><![CDATA[More Information]]></text>
+</component>
+
+<!-- graphic -->
+<component id="ID_txt01">
+<text><![CDATA[<b>Network</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Network</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Network number</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Host number</b>]]></text> 
+</component>
+
+</textcomponents>

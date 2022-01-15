@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19853" lang=""><form-item order="fixed">
+			<ai id="119612" type="mc-ma"><question><![CDATA[Which are two characteristics of a hierarchical addressing scheme?  (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[larger broadcast domain ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[network modularity  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[routing stability  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[private addressing support ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[increased security ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117600" type="mc-ma"><question><![CDATA[What could be two results of having a discontiguous IP addressing scheme? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Layer 2 loop ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[routing loop  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[security hole ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT cannot function properly ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[automatic summarization issues  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[spanning tree covergence time increase ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119613" type="mc-sa"><question><![CDATA[What must an administrator do to ensure that summarization will work effectively?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[enable CIDR ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[enable the use of subnet zero ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[implement a classful routing protocol ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[assign addresses in a hierarchical scheme  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117606" type="mc-ma"><question><![CDATA[What are  two ways that some networks can use IPv6 and still communicate over the Internet with their other IPv4 networks? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Enable tunneling to allow IPv6 packets to be encapsulated and travel over IPv4 networks.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Buy new interface cards that can read IPv6 packets. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Upgrade the IOS on the IPv6 edge routers to an image that can translate IPv6 packets to IPv4 packets.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Increase the IPv4 header size to include the IPv6 header. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Use a Microsoft gateway to convert from IPv6 to IPv4. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119615" type="mc-sa"><question><![CDATA[Refer to the following command:<br/>RouterX(config-if)# <b>ipv6 address 2001:DB8:2222:7272::72/64</b><br /><br />Which statement is true?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[No other commands are necessary to allow IPv6 traffic to pass through the router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The MAC address of the interface card will be used as the network portion of the IPv6 address. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A 6-to-4 tunneling method will be used when IPv4 addresses pass through the router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The complete IPv6 address is manually specified for the interface.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="112766" type="mc-sa"><question><![CDATA[Refer to the exhibit. The number of required host addresses for each subnet in a network is listed in the exhibit.  This number includes the host address requirements for all router ports and hosts on that subnet. After all device and router port address assignments are determined, what will be the total number of unused host addresses available? <br/><img src="15032.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[14 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[29  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[34 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[40 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[62 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="112829" type="mc-ma"><question><![CDATA[A network administrator is tasked with dividing up a class C network among the QA, Sales, and Administration departments.  The QA department is made up of 10 people, the Sales is made up of 28 people, and the Administration has 6.  Which two subnets masks adequately address the QA and Sales departments? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[255.255.255.252 for QA ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[255.255.255.224 for Sales  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[255.255.255.240 for QA  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[255.255.255.248 for QA ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[255.255.255.0 for Sales ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="112831" type="mc-sa"><question><![CDATA[Refer to the exhibit.  A new PC was deployed in the Sales network.  It was given the host address of 192.168.10.31 with a default gateway of 192.168.10.17.  The PC is not communicating with the network properly.  What is the cause? <br/><img src="14922.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The address is in the wrong subnet. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.10.31 is the broadcast address for this subnet.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The default gateway is incorrect. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The host address and default gateway are swapped. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120920" type="mc-sa"><question><![CDATA[Refer to the exhibit.  What single network address and mask can be used to summarize the networks shown? <br/><img src="i120920n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[172.16.0.0/13  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/14 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/20 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/22 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/24 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121069" type="mc-sa"><question><![CDATA[What does VLSM allow a network administrator to do?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[use one subnet mask throughout an autonomous system ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[use multiple subnet masks in the same IP address space  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[use RIPv1 as the routing protocol in an entire autonomous system ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[use multiple routing protocols within an autonomous system ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121070" type="mc-sa"><question><![CDATA[An additional subnet is required for a new Ethernet link between Router1 and Router2 as shown in the diagram. Which of the following subnet addresses can be configured in this network to provide a maximum of 14 useable addresses for this link while wasting the fewest addresses? <br/><img src="i121070n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.16/26 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.96/28 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.160/28 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.196/27 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.1.1.224/28  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.1.1.240/28 ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

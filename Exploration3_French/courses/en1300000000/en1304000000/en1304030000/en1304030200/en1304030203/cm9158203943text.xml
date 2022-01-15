@@ -1,0 +1,144 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Incorrect VTP Domain Name</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Incorrect VTP Domain</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>VTP Domain Solution</b>]]></text>
+</component>
+
+<component id="ID_txt01-1">
+<text><![CDATA[<b>A new VLAN is created on the VTP server</b>]]></text>
+</component>
+
+<component id="ID_txt01-2">
+<text><![CDATA[<b>The VTP server sends a summary advertisement to the adjacent switches</b>]]></text>
+</component>
+
+<component id="ID_txt01-3">
+<text><![CDATA[<b>Switch S2 accepts the summary VTP advertisement and synchronizes its VLAN database with S1</b>]]></text>
+</component>
+
+<component id="ID_txt01-4">
+<text><![CDATA[<b>Switch S3 discards the VTP summary advertisement</b>]]></text>
+</component>
+
+<component id="ID_txt01-5">
+<text><![CDATA[<b>Switch S4 does not add VLAN 10 to its database</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>VTP Server</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>VTP Client</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Domain = cisco1</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Domain = cisco1</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Domain = <font color="#FF0000">NotCisco</font></b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Domain = cisco1</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Change the VTP domain name for a VTP enabled switch using these commands:</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS Command Syntax</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter global configuration mode</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">#<b>configure terminal</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configures the VTP domain name</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">(config)#<b>vtp domain </b><i>domain-name</i></font></td>	
+	</tr>
+	</table>
+]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Here is an example showing how to change the VTP domain name for switch S3:</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<font face="_typewriter">S3(config)#<b>vtp domain cisco1</b></font>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward2">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute2">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute2"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+</textcomponents>

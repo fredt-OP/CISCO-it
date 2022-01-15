@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/14/2007">
+		<name>Module  Quiz</name>
+		<form id="19774" lang=""><form-item>
+			<ai id="119302" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="119302" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>802.11b</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>802.11g</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>802.11a</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>802.11n</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>specifies data rates of 1, 2, 5.5, and 11 Mbps due to differently sized spreading sequences specified in the DSSS modulation technique</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>uses the 5.7 GHz band with less interference, but obstructions can affect performance and limit range</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>uses multiple radios and antennae at endpoints, each broadcasting on the same frequency to establish multiple streams </mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>uses the 802.11 MAC, but with higher data rates in the 2.4 GHz ISM band by using the OFDM modulation technique</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the wireless standard on the left to the appropriate description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/><display componentIdent="4" xpos="600" ypos="276"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221340" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="221340" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="221340" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="119303" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="119303" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>wireless NIC</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>access point</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>wireless router</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>connects multiple wireless clients or stations to the wired LAN</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>connects two separated, isolated wired networks together</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>encodes a data stream onto an RF signal using the configured modulation technique</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the wireless device on the left to the appropriate description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221341" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="221341" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="221341" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="117700" type="mc-sa"><question><![CDATA[At which layer of the OSI model do wireless access points operate?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[physical ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[data link  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[network ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[application ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117704" type="mc-ma"><question><![CDATA[Which two steps are required for a wireless client to associate with an access point? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[IP addressing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[wireless address translation ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[wireless client authentication  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[channel identification ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[wireless client association  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117695" type="mc-ma"><question><![CDATA[Which three WLAN client authentication types require a preprogrammed network key to be set on the client? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[OPEN with data encryption disabled ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SHARED with data encryption algorithm WEP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[WPA with data encryption algorithm TKIP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[WPA-PSK with data encryption algorithm TKIP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[WPA2 with data encryption algorithm AES ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[WPA2-PSK with data encryption algorithm AES  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117615" type="mc-ma"><question><![CDATA[Which two items contribute to the security of a WLAN? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[WPA2  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[use of multiple channels ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[hiding the SSID ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[open authentication ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[AES  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117616" type="mc-sa"><question><![CDATA[Which term is used for products that are tested to be interoperable in both PSK and 802.1X/Extensible Authentication Protocol (EAP) operation for authentication?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[personal mode ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[WPA2 compatible ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RADIUS authenticated ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[enterprise mode  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[pre-shared key authenticated ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117566" type="mc-sa"><question><![CDATA[To help ensure a secure wireless network, most enterprise networks should follow which IEEE standard?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[802.11a ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[802.11b ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[802.11c ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[802.11i  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117775" type="mc-sa"><question><![CDATA[Refer to the exhibit. Which method of network authentication provides the highest level of security? <br/><img src="16198.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Open ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Shared ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[WPA ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[WPA-PSK  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117658" type="mc-ma"><question><![CDATA[Which two combinations of 802.11b RF channels would allow two wireless APs to operate simultaneously in the same room with no channel overlap? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[channels 10 and 6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[channels 9 and 6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[channels 8 and 5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[channels 7 and 2  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[channels 6 and 2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[channels 6 and 11  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117660" type="mc-sa"><question><![CDATA[Why do cordless devices, such as cordless telephones, sometimes interfere with wireless access points?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[These devices operate at similar frequencies.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[These devices operate at the same frequencies and have higher RF power settings. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[These devices flood the entire frequency spectrum with low power noise, which may cause loss of signal for wireless devices trying to connect with an access point. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The signal from the cordless device is non-polarized and combines with the access point polarized signal, thus reducing overall signal strength. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117662" type="mc-sa"><question><![CDATA[Refer to the exhibit. What is the recommended overlap between the two wireless access points to provide proper connectivity for users? <br/><img src="16161.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[5 – 10% ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[10 – 15%  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[15 – 20% ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[20 – 25% ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="117693" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117693" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>OPEN</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>WEP</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>WPA</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>WPA2</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>AES</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Disabled</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>RC4</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>TKIP</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Drag the authentication method from the left column to the correct encryption algorithm or security protocol it would use on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="11" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="217494" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="217494" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="217494" action="Set">1</setvar><scoringdescription>OPEN-DISABLED, WEP-RC4, WPA-TKIP, WPA2-AES,   </scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="117692" type="mc-sa"><question><![CDATA[Which WLAN client settings would be reviewed to resolve encryption problems with the access point?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[wireless mode (802.11a, 802.11b, 802.11g) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[wireless network card drivers ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[channel selection for ad hoc networks ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[TCP/IP properties ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[wireless association properties  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

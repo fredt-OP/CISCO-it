@@ -1,0 +1,290 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<font size = "12"><li><br/><li>Chaque couche du modèle OSI ou TCP/IP présente des fonctions et des protocoles spécifiques. Une connaissance des capacités, fonctions et périphériques de chaque couche, ainsi que des relations de chaque couche avec les couches avoisinantes, permet au technicien réseau de procéder efficacement au dépannage.</li><br/><li>Les couches supérieures (5-7) du modèle OSI traitent de la fonctionnalité de l’application et ne sont généralement implémentées que dans le logiciel. Les couches inférieures (1-4) du modèle OSI gèrent les fonctions de transport de données et les fonctions physiques du réseau.</li><br/><li>Il existe trois principales méthodes de dépannage des réseaux : </li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Descendant</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Ascendant</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Diviser et conquérir</textformat></li>
+</ul></font>]]></text>
+</component>
+
+<component id="ID_OSI_1">
+  <text><![CDATA[<b>Modèle OSI</b>]]></text> 
+  </component>
+<component id="ID_TCPIP_1">
+  <text><![CDATA[<b>Modèle TCP/IP</b>]]></text> 
+  </component>
+<component id="ID_txt01_1">
+  <text><![CDATA[<b>Couche application</b>]]></text> 
+  </component>
+
+<component id="ID_txt02_1">
+  <text><![CDATA[<b>Couche présentation</b>]]></text> 
+  </component>
+<component id="ID_txt03_1">
+  <text><![CDATA[<b>Couche session</b>]]></text> 
+  </component>
+<component id="ID_txt04_1">
+  <text><![CDATA[<b>Couche transport</b>]]></text> 
+  </component>
+<component id="ID_txt05_1">
+  <text><![CDATA[<b>Couche réseau</b>]]></text> 
+  </component>
+<component id="ID_txt06_1">
+  <text><![CDATA[<b>Couche liaison de données</b>]]></text> 
+  </component>
+<component id="ID_txt07_1">
+  <text><![CDATA[<b>Couche physique</b>]]></text> 
+  </component>
+
+<component id="ID_txt11_1">
+    <text><![CDATA[<b>Application</b>]]></text> 
+    </component>
+<component id="ID_txt12_1">
+    <text><![CDATA[<b>Transport</b>]]></text> 
+    </component>
+<component id="ID_txt13_1">
+    <text><![CDATA[<b>Internet</b>]]></text> 
+    </component>
+<component id="ID_txt14_1">
+    <text><![CDATA[<b>Accès réseau</b>]]></text> 
+  </component>
+
+<component id="ID_txt02">
+<text><![CDATA[<font size = "12"><ul><b>Les outils qui peuvent vous aider dans les tâches de dépannage d’un réseau sont les suivants :</b>
+<li><TEXTFORMAT  BLOCKINDENT='25'>Schémas et documentation du réseau</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Documentation du réseau et outils de création d’une ligne de base</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Systèmes d’administration de réseaux (NMS)</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Bases de connaissances</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Analyseurs de protocoles</textformat></li><br/>Certaines défaillances des couches inférieures du modèle OSI ne sont pas facilement identifiées par les outils logiciels. Par conséquent, il est parfois nécessaire d’utiliser des outils matériels de dépannage tels que des testeurs de câble, des multimètres et des analyseurs réseau.
+</ul></font>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<font size = "12"><ul><li>La couche physique et la couche liaison de données englobent les fonctions matérielles et logicielles.</li><br/><li>La couche physique, ou Couche 1, est responsable des spécifications physiques et électriques de la transmission de bits d’un hôte à l’autre sur le support physique, qu’il soit filaire ou non filaire.</li><br/><li>Les problèmes qui peuvent être associés à la couche 1 sont les suivants :</li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Problèmes liés au type ou à la longueur des câbles, ou problèmes de raccordement</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Conflit du mode bidirectionnel</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Interférences et bruits (parasites) perturbant les transmissions</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Erreurs liées aux périphériques matériels et erreurs d’amorçage</textformat></li><br/><li>Les erreurs d’interface du routeur constituent parfois le premier symptôme d’erreurs de câblage ou de connectivité des couches 1 et 2.</li><br/><li>Les LED des périphériques apportent des informations précieuses pour le dépannage et permettent parfois d’identifier les problèmes de connectivité.</li>
+</ul></font>]]></text>
+</component>
+
+<component id="ID_txt01_3">
+<text><![CDATA[ROM]]></text>
+</component>
+
+<component id="ID_txt02_3">
+<text><![CDATA[ROM]]></text>
+</component>
+
+<component id="ID_txt03_3">
+<text><![CDATA[POST]]></text>
+</component>
+
+<component id="ID_txt04_3">
+<text><![CDATA[Bootstrap]]></text>
+</component>
+
+<component id="ID_txt05_3">
+<text><![CDATA[Exécution du test POST]]></text>
+</component>
+
+<component id="ID_txt06_3">
+<text><![CDATA[Chargement du bootstrap]]></text>
+</component>
+
+<component id="ID_txt07_3">
+<text><![CDATA[Flash]]></text>
+</component>
+
+<component id="ID_txt08_3">
+<text><![CDATA[Serveur TFTP]]></text>
+</component>
+
+<component id="ID_txt09_3">
+<text><![CDATA[Cisco IOS]]></text>
+</component>
+
+
+<component id="ID_txt10_3">
+<text><![CDATA[Recherche et chargement du système d’exploitation]]></text>
+</component>
+
+
+<component id="ID_txt11_3">
+<text><![CDATA[NVRAM]]></text>
+</component>
+
+
+<component id="ID_txt12_3">
+<text><![CDATA[Serveur TFTP]]></text>
+</component>
+
+
+<component id="ID_txt13_3">
+<text><![CDATA[Console]]></text>
+</component>
+
+
+<component id="ID_txt14_3">
+<text><![CDATA[Configuration]]></text>
+</component>
+
+
+<component id="ID_txt15_3">
+<text><![CDATA[Recherche et chargement du fichier de configuration ou accès au mode setup]]></text>
+</component>
+
+
+<component id="ID_txt16_3">
+<text><![CDATA[Exécution du test POST]]></text>
+</component>
+
+
+<component id="ID_txt17_3">
+<text><![CDATA[Exécution du chargeur de bootstrap]]></text>
+</component>
+
+
+<component id="ID_txt18_3">
+<text><![CDATA[Localisation du logiciel IOS]]></text>
+</component>
+
+
+<component id="ID_txt19_3">
+<text><![CDATA[Chargement du logiciel IOS]]></text>
+</component>
+
+
+<component id="ID_txt20_3">
+<text><![CDATA[Localisation du fichier de configuration]]></text>
+</component>
+
+
+<component id="ID_txt21_3">
+<text><![CDATA[Exécution du fichier de configuration...]]></text>
+</component>
+
+
+<component id="ID_txt22_3">
+<text><![CDATA[Passage en mode Configuration]]></text>
+</component>
+
+
+
+<component id="ID_txt04">
+<text><![CDATA[<font size = "12"><ul><li>La couche liaison de données, ou couche 2, spécifie le mode de formatage des données transmises sur le réseau. Elle régule également les autorisations d’accès au réseau. La couche 2 fournit le lien entre les fonctions logicielles des couches réseau et les éléments matériels de la couche 1 pour les applications de réseau local et étendu.</li><br/><li>Les problèmes pouvant être liés à la couche 2 sont les suivants :</li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Conflits d’encapsulation</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Messages de test d’activité non générés ou non reçus</textformat></li><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Problèmes de synchronisation sur les connexions de réseau étendu</textformat></li><br/><li>Les commandes<font face= '_typewriter'><b> show version </b></font>,<font face= '_typewriter'><b> show interfaces </b></font>et<font face= '_typewriter'><b> show interface brief </b></font>fournissent des informations de dépannage permettant d’isoler et d’identifier les erreurs et les problèmes des couches 1 et 2.</li></ul></font>]]></text>
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[<font size = "12"><ul><li>Les principales fonctions mises en œuvre sur la couche 3 du modèle OSI concernent l’adressage réseau et le routage.</li><br/><li>Des schémas d’adressage non correctement conçus ou configurés, particulièrement au niveau du chevauchement des adresses de sous-réseau, sont à l’origine d’un grand nombre de problèmes de performances des réseaux.</li><br/><li>Le chevauchement des sous-réseaux peut être causé par une attribution d’adresse incorrecte, ou par une configuration incorrecte des masques de sous-réseaux sur les périphériques.</li><br/><li>Les problèmes d’attribution d’adresses IP depuis un serveur DHCP peuvent entraîner sur les ordinateurs clients la configuration automatique d’une adresse sur le réseau 169.254.0.0.</li><br/><li>Des problèmes liés à la configuration NAT et à son fonctionnement peuvent vous empêcher d’accéder à certains sites Internet depuis le réseau local à adressage privé.</li></ul></font>]]></text>
+</component> 
+
+   <component id="ID_header1_5">
+      <text><![CDATA[<b>Sous-réseau</b>]]></text>
+   </component>
+   
+   <component id="ID_header2_5">
+      <text><![CDATA[<b>Adresse réseau</b>]]></text>
+    </component>
+   
+   <component id="ID_header3_5">
+      <text><![CDATA[<b>Plage d’hôtes</b>]]></text>
+   </component>
+   
+   <component id="ID_header4_5">
+      <text><![CDATA[]]>Adresse de diffusion</text>
+   </component>
+
+      <component id="ID_header0_5">
+      <text><![CDATA[<b>Schéma d’adressage : exemple de 8 réseaux</b>]]></text>
+   </component>
+         <component id="ID_headernew_5">
+      <text><![CDATA[<b>Adresse de diffusion</b>]]></text>
+   </component>
+
+
+<component id="ID_txt06">
+<text><![CDATA[<font size = "12"><ul><li>La plupart des réseaux utilisent une combinaison de routes statiques, dynamiques et par défaut.</li><br/><li>Les problèmes de routage peuvent provenir d’erreurs lors de la saisie manuelle des routes, d’erreurs de configuration et de fonctionnement des protocoles de routage, ou de défaillances des couches inférieures du modèle OSI.</li><br/><li>La commande<font face= '_typewriter'><b> show ip route </b></font> constitue le principal outil de dépannage des problèmes de routage de la couche 3. La table de routage est constituée d’entrées de route provenant des sources suivantes :</li></b><br/><li><TEXTFORMAT  BLOCKINDENT='25'>Réseaux connectés directement</textformat></li><li><TEXTFORMAT  BLOCKINDENT='25'>Routes statiques</textformat></li><li><TEXTFORMAT  BLOCKINDENT='25'>Protocoles de routage dynamiques</textformat></li><br/><li>Les problèmes potentiels liés au routage RIPv2 sont les suivants :</li></b><br/><li><TEXTFORMAT   BLOCKINDENT='25'>Version non spécifiée, provoquant un conflit de version entre les routeurs.</textformat></li><li><TEXTFORMAT  BLOCKINDENT='25'>Instructions réseau incorrectement configurées ou manquantes</textformat></li><li><TEXTFORMAT  BLOCKINDENT='25'>Adresses IP d’interface incorrectement configurées</textformat></li></ul></font>]]></text>
+</component> 
+
+
+<component id="ID_txt01_6">
+  <text><![CDATA[Route connectée directement]]></text> 
+  </component>
+  
+<component id="ID_txt02_6">
+  <text><![CDATA[Route mise à jour de façon dynamique]]></text> 
+  </component>
+  
+<component id="ID_txt03_6">
+  <text><![CDATA[Route statique]]></text> 
+  </component>
+  
+<component id="ID_txt04_6">
+  <text><![CDATA[Route par défaut]]></text> 
+  </component>
+
+
+<component id="ID_txt07">
+<text><![CDATA[<font size = "12"><ul><li>La couche 4 est responsable du transport des paquets de données et de la spécification du numéro de port d’accès aux applications.</li><br/><li>Le pare-feu et les règles de filtrage de port qui régissent l’autorisation ou le refus d’accès aux ports incorrects peut empêcher l’accès aux périphériques requis depuis les ordinateurs clients.</li><br/><li>Les services des couches supérieures incluent la résolution de noms DNS, ainsi que la compression et le chiffrement.  Des erreurs au niveau de ces fonctions peuvent rendre certaines applications utilisateur inutilisables.</li><br/><li>La commande Windows nslookup fournit des informations susceptibles de vous aider à résoudre les pannes de trafic DNS.</li></ul></font>]]></text>
+</component> 
+
+<component id="ID_txt01b_7">
+  <text><![CDATA[<font face= '_typewriter'><b>Computer1[root]$ dir<br/>cache lib lock mail spool www local log<br/>tmp   yp</b></font>]]></text> 
+</component>
+
+<component id="ID_txt04b_7">
+  <text><![CDATA[<b>Terminal virtuel</b>]]></text> 
+</component>
+
+<component id="ID_txt05b_7">
+  <text><![CDATA[<b>Telnet permet d’utiliser un ordinateur, connecté via le réseau, pour accéder à un périphérique réseau comme si le clavier et le moniteur étaient connectés directement au périphérique.</b>]]></text> 
+</component>
+
+<component id="ID_txt06b_7">
+  <text><![CDATA[<b>Client<br/>Telnet</b>]]></text> 
+</component>
+
+<component id="ID_txt07b_7">
+  <text><![CDATA[<b>Serveur<br/>Telnet</b>]]></text> 
+</component>
+
+
+<component id="ID_txt08">
+<text><![CDATA[<font size = "12"><ul><li>La certification CCENT (Cisco Certified Entry Networking Technician) valide les compétences requises pour les emplois de base dans les domaines de prise en charge des réseaux, et constitue le point de départ d’un grand nombre de carrières liées à la gestion des réseaux.</li><br/><li>Pour obtenir la certification CCENT, les candidats doivent réussir l’examen ICND1 (640-822), qui teste leurs capacités à installer, faire fonctionner et dépanner le réseau d’une petite entreprise.</li><br/><li>Les certifications Cisco mesurent et valident les compétences des candidats en matière de gestion de réseaux, sur base de leur interaction avec les équipements réseau de Cisco. Un grand nombre de questions de l’examen requièrent l’interprétation des résultats des commandes Cisco IOS, particulièrement ceux des nombreuses commandes show.</li><br/><li>Tout comme l’installation du réseau chez un client, la préparation à l’examen est plus efficace si elle est fractionnée en petites étapes :</li><br/><TEXTFORMAT  BLOCKINDENT='35'>1. Acquisition des compétences</TEXTFORMAT><br/><br/><TEXTFORMAT  BLOCKINDENT='35'>2. Création d’un plan</TEXTFORMAT><br/><br/><TEXTFORMAT  BLOCKINDENT='35'>3. Positionnement en situation d’évaluation</TEXTFORMAT></ul></font>]]></text>
+</component> 
+
+<component id="ID_box01_8">
+<text><![CDATA[<b>Accès à l’examen ICND1<br/>640-822<br />CCNA Discovery : Réseaux domestiques et pour petites entreprises &<br/>CCNA Discovery : Travailler dans une <br/>PME ou chez un fournisseur de services Internet</b>]]></text>
+</component>
+
+<component id="ID_box02_8">
+  <text><![CDATA[<b>Accès à l’examen ICND2<br/>640-816<br />CCNA Discovery : Présentation du routage et de la commutation au sein d’une entreprise &<br/>CCNA Discovery : Conception et prise en charge des réseaux informatiques</b>]]></text> 
+  </component>
+
+<component id="ID_box03_8">
+  <text><![CDATA[<b>Accès à l’examen CCNA<br/>640-802<br/>CCNA Discovery : Réseaux domestiques et pour petites entreprises &<br/>CCNA Discovery : Travailler dans une <br/>PME ou chez un fournisseur de services Internet &<br/>CCNA Discovery : Présentation du routage et de la commutation au sein d’une entreprise &<br/>CCNA Discovery : Conception et prise en charge des réseaux informatiques</b>]]></text> 
+  </component>
+
+<component id="ID_txt01_8">
+  <text><![CDATA[<b>Réussite</b>]]></text> 
+  </component>
+
+<component id="ID_txt02_8">
+  <text><![CDATA[<b>Certification<br/>CCENT</b>]]></text> 
+  </component>
+
+<component id="ID_txt03_8">
+  <text><![CDATA[<b>Réussite</b>]]></text> 
+  </component>
+
+<component id="ID_txt04_8">
+  <text><![CDATA[<b>Réussite</b>]]></text> 
+  </component>
+  
+<component id="ID_txt05_8">
+  <text><![CDATA[<b>Réussite</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt06_8">
+  <text><![CDATA[<b>Certification<br/>CCNA</b>]]></text> 
+  </component>
+
+
+
+</textcomponents>

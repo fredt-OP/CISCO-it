@@ -1,0 +1,99 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Routing Protocol Authentication Overview</b>]]></text>
+</component>
+<component id="ID_s1_txt01">
+  <text><![CDATA[Tell R1:<BR/>192.168.10.10/32 is reachable through R3]]></text> 
+  </component>
+<component id="ID_s1_txt02">
+  <text><![CDATA[<b>R1 should forward here...</b>]]></text> 
+  </component>
+<component id="ID_s1_txt03">
+  <text><![CDATA[<b>...but attacker manipulated R1's routing information, so R1 forwards to R3</b>]]></text> 
+  </component>
+<component id="ID_s1_txt04">
+  <text><![CDATA[<b>...but R3 knows better and sends packet back to R1 creating a loop</b>]]></text> 
+  </component>
+<component id="ID_s1_txt05">
+  <text><![CDATA[<b>Normal best path</b>]]></text> 
+  </component>
+<component id="ID_s1_txt06">
+  <text><![CDATA[<b>R1 updates its routing table.</b>]]></text> 
+  </component>
+<component id="ID_button1">
+  <text><![CDATA[<b>Attack</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Protect Update</b>]]></text> 
+</component>
+<component id="ID_button3">
+  <text><![CDATA[<b>Operation</b>]]></text> 
+</component>
+<component id="play"><text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+<component id="forward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+<component id="mute"><text><![CDATA[Mute]]></text>
+</component>
+<component id="unmute">
+<text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous">
+<text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+<component id="ID_to">
+<text><![CDATA[to: 192.168.10.10/24]]></text>
+</component>
+<component id="ID_s2_txt01">
+<text><![CDATA[Encryption Algorithm]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[Key (e.g. "cisco")]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[Routing Data]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[Signature]]></text>
+</component>
+<component id="ID_s3_txt01">
+<text><![CDATA[<ul><li>Send update</li><li>Compute signature</li></ul>]]></text>
+</component>
+<component id="ID_s3_txt02">
+<text><![CDATA[<ul><li>Receive update</li><li>Compute signature</li></ul>]]></text>
+</component>
+<component id="ID_s3_txt03">
+<text><![CDATA[Compare signatures]]></text>
+</component>
+<component id="ID_s3_txt04">
+<text><![CDATA[Routing Updates Authenticated]]></text>
+</component>
+<component id="ID_s3_txt05">
+<text><![CDATA[Key]]></text>
+</component>
+<component id="ID_s3_txt06">
+<text><![CDATA[Data]]></text>
+</component>
+<component id="ID_s3_txt07">
+<text><![CDATA[Sign]]></text>
+</component>
+
+<component id="ID_instructions1">
+<text><![CDATA[Click the buttons, and then Play to view the animations.]]></text>
+
+
+
+</textcomponents>

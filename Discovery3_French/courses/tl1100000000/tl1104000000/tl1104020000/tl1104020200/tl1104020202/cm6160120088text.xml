@@ -1,0 +1,41 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[H1]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[H2]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[Adresse réseau :<br>192.168.13.16/28]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[Adresse H1 :<br>195.168.13.21<br>255.255.255.248]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Adresse H2 :<br>195.168.13.25<br>255.255.255.248]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Adresse réseau :<br>192.168.13.24/28]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[Placez votre pointeur sur les hôtes pour déterminer s’ils sont sur le même sous-réseau.]]></text>
+</component>
+
+<component id="ID_txtTitle">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+<component id="ID_txtBody">
+<text><![CDATA[H1 = 192.168.13.21/29<br>Masque de sous-réseau : 255.255.255. 1  1  1  1  1  <font color='#ff9900'>0  0  0</font> (valeur décimale 248)<br>Adresse IP :                      192.168.13.    0  0  0  1  0  <font color='#ff9900'>1  0  1</font> (valeur décimale 21)<br>----------------------------------------------------------------------------------<br>Sous-réseau :                   192.168.13.    0  0  0  1  0  <font color='#ff9900'>0  0  0</font> (valeur décimale 16)<br><br><b>H1 est sur le sous-réseau : 192.168.13.16</b>
+]]></text>
+</component>
+<component id="ID_txtTitle2">
+<text><![CDATA[<b>H2</b>]]></text>
+</component>
+<component id="ID_txtBody2">
+<text><![CDATA[H2 = 192.168.13.25/29<br>Masque de sous-réseau : 255.255.255. 1  1  1  1  1  <font color='#ff9900'>0  0  0</font> (valeur décimale 248)<br>Adresse IP :                      192.168.13.    0  0  0  1  1  <font color='#ff9900'>0  0  1</font> (valeur décimale 25)<br>----------------------------------------------------------------------------------<br>Sous-réseau :                   192.168.13.    0  0  0  1  1  <font color='#ff9900'>0  0  0</font> (valeur décimale 24)<br><br><b>H2 est sur le sous-réseau : 192.168.13.24<b/>]]></text>
+</component>
+
+</textcomponents>

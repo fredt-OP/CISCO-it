@@ -1,0 +1,154 @@
+<textcomponents>
+
+
+<component id="ID_but01">
+	<text><![CDATA[Fixed Length Subnet Mask]]></text>
+</component>
+
+<component id="ID_but02">
+	<text><![CDATA[VLSM]]></text>
+</component>
+  
+   
+    <component id="ID_txt03">
+		<text><![CDATA[<b>1,000 Hosts</b>]]></text>
+	</component>
+    <component id="ID_txt04">
+		<text><![CDATA[<b>8,000 Hosts</b>]]></text>
+	</component>
+    <component id="ID_txt05">
+		<text><![CDATA[<b>100 Hosts</b>]]></text>
+	</component>
+    <component id="ID_txt06">
+		<text><![CDATA[<b>400 Hosts</b>]]></text>
+	</component>
+    
+    
+
+	
+    <component id="ID_txt16">
+		<text><![CDATA[<b>Classful subnetting requires all subnets to have the same subnet mask. If three bits from the host portion of the address are used, it creates eight equal subnets of 8,190 hosts.</b>]]></text>
+	</component>
+    <component id="ID_txt17">
+		<text><![CDATA[<b>Subnet #1 has 8,000 hosts</b>]]></text>
+	</component>
+    <component id="ID_txt18">
+		<text><![CDATA[<b>Network IP Address<br>Subnet Mask<br>Total Possible Hosts<br>Assigned IP Addresses<br>Unassigned IP Addresses</b>]]></text>
+	</component>
+    <component id="ID_txt19">
+		<text><![CDATA[<b>172.16.0.0<br>255.255.224.0<br>8,190<br>8,000<br>190</b>]]></text>
+	</component>
+    
+	
+    <component id="ID_txt16a">
+		<text><![CDATA[<b>Classful subnetting requires all subnets to have the same subnet mask. If three bits from the host portion of the address are used, it creates eight equal subnets of 8,190 hosts.</b>]]></text>
+	</component>
+    <component id="ID_txt17a">
+		<text><![CDATA[<b>Subnet #2 has 1,000 hosts</b>]]></text>
+	</component>
+    <component id="ID_txt18a">
+		<text><![CDATA[<b>Network IP Address<br>Subnet Mask<br>Total Possible Hosts<br>Assigned IP Addresses<br>Unassigned IP Addresses</b>]]></text>
+	</component>
+    <component id="ID_txt19a">
+		<text><![CDATA[<b>172.16.32.0<br>255.255.224.0<br>8,190<br>1,000<br>7,190</b>]]></text>
+	</component>
+    
+	
+
+
+    <component id="ID_txt16b">
+		<text><![CDATA[<b>Classful subnetting requires all subnets to have the same subnet mask. If three bits from the host portion of the address are used, it creates eight equal subnets of 8,190 hosts.</b>]]></text>
+	</component>
+    <component id="ID_txt17b">
+		<text><![CDATA[<b>Subnet #4 has 100 hosts</b>]]></text>
+	</component>
+    <component id="ID_txt18b">
+		<text><![CDATA[<b>Network IP Address<br>Subnet Mask<br>Total Possible Hosts<br>Assigned IP Addresses<br>Unassigned IP Addresses</b>]]></text>
+	</component>
+    <component id="ID_txt19b">
+		<text><![CDATA[<b>172.16.96.0<br>255.255.224.0<br>8,190<br>100<br>8,090</b>]]></text>
+	</component>
+    
+	
+	
+
+   <component id="ID_txt16c">
+		<text><![CDATA[<b>Classful subnetting requires all subnets to have the same subnet mask. If three bits from the host portion of the address are used, it creates eight equal subnets of 8,190 hosts.</b>]]></text>
+	</component>
+    <component id="ID_txt17c">
+		<text><![CDATA[<b>Subnet #3 has 400 hosts</b>]]></text>
+	</component>
+    <component id="ID_txt18c">
+		<text><![CDATA[<b>Network IP Address<br>Subnet Mask<br>Total Possible Hosts<br>Assigned IP Addresses<br>Unassigned IP Addresses</b>]]></text>
+	</component>
+    <component id="ID_txt19c">
+		<text><![CDATA[<b>172.16.64.0<br>255.255.224.0<br>8,190<br>400<br>7,790</b>]]></text>
+	</component>
+    
+	
+   
+   
+   <component id="ID_txt16a1">   
+   		<text><![CDATA[<b>Classless CIDR Addressing allows for the creation of unequal size subnets. Subnets can be created based on the number of host addresses required.  Care must be taken not to overlap the subnet address ranges.</b>]]></text>
+   	</component>
+       <component id="ID_txt17a1">
+   		<text><![CDATA[<b>Subnet #1 has 8,000 hosts<br>Using three bits from the host portion of the network enables the creation of a single subnet with 8,190 host addresses.</b>]]></text>
+   	</component>
+       <component id="ID_txt18a1">
+   		<text><![CDATA[<b>Network IP Address<br>Subnet Mask<br>CIDR Notation<br>Total Possible Hosts<br>Assigned IP Addresses<br>Unassigned IP Addresses</b>]]></text>
+   	</component>
+       <component id="ID_txt19a1">
+   		<text><![CDATA[<b>172.16.0.0<br>255.255.224.0<br>172.16.0.0/19<br>8,190<br>8,000<br>190</b>]]></text>
+   	</component>
+       
+<component id="ID_txt16b1">   
+	   		<text><![CDATA[<b>Classless Addressing allows for the creation of unequal size subnets. Subnets can be created based on the number of host addresses required.  Care must be taken not to overlap the subnet address ranges.</b>]]></text>
+	   	</component>
+	       <component id="ID_txt17b1">
+	   		<text><![CDATA[<b>Subnet #2 has 1,000 hosts<br>Using six bits from the host portion of the network enables the creation of a single subnet with 1,022 host addresses.</b>]]></text>
+	   	</component>
+	       <component id="ID_txt18b1">
+	   		<text><![CDATA[<b>Network IP Address<br>Subnet Mask<br>CIDR Notation<br>Total Possible Hosts<br>Assigned IP Addresses<br>Unassigned IP Addresses</b>]]></text>
+	   	</component>
+	       <component id="ID_txt19b1">
+	   		<text><![CDATA[<b>172.16.32.0<br>255.255.252.0<br>172.16.32.0/22<br>1,022<br>1,000<br>22</b>]]></text>
+	   	</component>
+	      
+	
+	
+	
+	   <component id="ID_txt16c1">   
+	   		<text><![CDATA[<b>Classless Addressing allows for the creation of unequal size subnets. Subnets can be created based on the number of host addresses required.  Care must be taken not to overlap the subnet address ranges.</b>]]></text>
+	   	</component>
+	       <component id="ID_txt17c1">
+	   		<text><![CDATA[<b>Subnet #4 has 100 hosts<br>Using nine bits from the host portion of the network enables the creation of a single subnet with 126 host addresses.</b>]]></text>
+	   	</component>
+	       <component id="ID_txt18c1">
+	   		<text><![CDATA[<b>Network IP Address<br>Subnet Mask<br>CIDR Notation<br>Total Possible Hosts<br>Assigned IP Addresses<br>Unassigned IP Addresses</b>]]></text>
+	   	</component>
+	       <component id="ID_txt19c1">
+	   		<text><![CDATA[<b>172.16.38.0<br>255.255.255.128<br>172.16.38.0/25<br>126<br>100<br>26</b>]]></text>
+	   	</component>
+	       
+   
+  	   <component id="ID_txt16d1">   
+  	   		<text><![CDATA[<b>Classless Addressing allows for the creation of unequal size subnets. Subnets can be created based on the number of host addresses required.  Care must be taken not to overlap the subnet address ranges.</b>]]></text>
+  	   	</component>
+  	       <component id="ID_txt17d1">
+  	   		<text><![CDATA[<b>Subnet #3 has 400 hosts<br>Using seven bits from the host portion of the network enables the creation of a single subnet with 126 host addresses.</b>]]></text>
+  	   	</component>
+  	       <component id="ID_txt18d1">
+  	   		<text><![CDATA[<b>Network IP Address<br>Subnet Mask<br>CIDR Notation<br>Total Possible Hosts<br>Assigned IP Addresses<br>Unassigned IP Addresses</b>]]></text>
+  	   	</component>
+  	       <component id="ID_txt19d1">
+  	   		<text><![CDATA[<b>172.16.36.0<br>255.255.254.0<br>172.16.36.0/23<br>510<br>400<br>110</b>]]></text>
+  	   	</component>
+  	       
+
+
+
+
+    <component id="ID_inst">
+		<text><![CDATA[<b>Select the Fixed Length Subnet Mask or VLSM button and then roll over the four subnet clouds for more information.</b>]]></text>
+	</component>
+</textcomponents>

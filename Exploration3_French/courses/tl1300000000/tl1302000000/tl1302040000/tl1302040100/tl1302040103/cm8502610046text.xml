@@ -1,0 +1,45 @@
+﻿<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Configuration du mot de passe en mode d’exécution</b>]]></text>
+</component>
+ <component id="tableHTML">
+    <text><![CDATA[
+   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+    	
+    	<tr>
+  	  		
+  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+   	</tr>
+  	<tr>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer du mode d’exécution privilégié au mode de configuration globale.</td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+  			
+  	</tr>
+  	<tr>
+	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer la commande <font face='_typewriter'><b>enable password</b></font> pour le passage en mode d’exécution privilégié.</td>
+	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>enable password</b><i> mot_de_passe</i></font></td>
+	  			
+  	</tr>
+  	
+  	<tr>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer le mot de passe <font face='_typewriter'><b>enable secret</b></font> pour le passage en mode d’exécution privilégié.</td>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>enable secret</b><i> mot_de_passe</i></font></td>
+				
+		</tr>
+		
+		<tr>
+				
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Quitter le mode de configuration de ligne et revenir en mode d’exécution privilégié.</td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>end</b></font></td>
+	</tr>
+  			
+  	
+  	
+  </table>
+  ]]></text> 
+  </component>
+</textcomponents>
+
+
+	

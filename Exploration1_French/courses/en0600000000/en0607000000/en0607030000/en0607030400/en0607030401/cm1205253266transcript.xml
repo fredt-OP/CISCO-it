@@ -1,0 +1,5 @@
+<transcript lastedited="01.09.09 12:01:33">
+<title><content-text><![CDATA[7.3.4 - Framing - Role of the Trailer]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a simple frame structure focusing on the frame trailer. The following components are shown from left to right.<br><br>Start Frame<br>Address<br>Type/Length <br>Data <br>Trailer<br>-	FCS field - The Frame Check Sequence is used for error checking. The source calculates a number based on the frame's data and places that number in the FCS field. The destination then recalculates the data to check whether the FCS matches. If they do not match, the destination deletes the frame.<br>-	Stop Frame field - Also called the Frame Trailer. An optional field that is used when the length of the frame is not specified in the Type/Length field. It indicates the end of the frame when transmitted.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

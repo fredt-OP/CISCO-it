@@ -1,0 +1,276 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Frameset//EN""http://www.w3.org/TR/REC-html40/frameset.dtd">
+<html>
+<head>
+<title>
+ Overview
+</title>
+<link rel ="stylesheet" type="text/css" href="stylesheet.css" title="Style">
+<script>
+function asd() {
+	
+		parent.document.title="obj-section.js Overview";
+	
+}
+</script>
+</head>
+<body bgcolor="white" onload="asd();">
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> 	<font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top">
+<em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<center>
+	
+	   <h2>obj-section.js</h2>
+	
+</center>
+
+	
+
+
+<h4>Summary</h4>
+<p>
+	
+		No overview generated for 'obj-section.js'<BR/><BR/>
+	
+</p>
+
+<hr>
+
+
+    <table border="1" cellpadding="3" cellspacing="0" width="100%">
+    <tr bgcolor="#CCCCFF" class="TableHeadingColor">
+    <td colspan=2><font size="+2">
+    
+        <b>Class Summary</b>
+    
+    </font></td>
+    </tr>
+    
+    <tr bgcolor="white" class="TableRowColor">
+    <td width="15%"><b><a href="Section.html">Section</a></b></td>
+    <td>&nbsp;</td>
+    </tr>
+    
+    </table>
+    <hr/> 
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<!-- ========== END METHOD SUMMARY =========== -->
+
+
+        <pre class="sourceview"><span class="comment">/**
+* Contains data for a section
+* <span class="attrib">@constructor</span>
+*
+* <span class="attrib">@author</span> mpollack
+* <span class="attrib">@version</span> 1.0
+* <span class="attrib">@param</span> {Course} p parent object reference
+* <span class="attrib">@param</span> {string} id section ID
+* <span class="attrib">@param</span> {string} ti section title
+* <span class="attrib">@param</span> {string} ty section type
+* <span class="attrib">@param</span> {int} nu section number
+*
+*/</span>
+<span class="reserved">function</span> Section(p,id,ti,ty,nu) {
+<span class="comment">/**
+* Name given to identify object on debug 
+* <span class="attrib">@type</span> string
+*/</span>
+	<span class="reserved">this</span>.objname = <span class="literal">"section"</span>;
+<span class="comment">/**
+* Reference to parent object
+* <span class="attrib">@type</span> Chapter
+*/</span>
+	<span class="reserved">this</span>.par = p;
+<span class="comment">/**
+* Section ID
+* <span class="attrib">@type</span> string
+*/</span>
+	<span class="reserved">this</span>.oid = id;
+<span class="comment">/**
+* Section title
+* <span class="attrib">@type</span> string
+*/</span>
+	<span class="reserved">this</span>.title = ti;
+<span class="comment">/**
+* Section type
+* <span class="attrib">@type</span> string
+*/</span>
+	<span class="reserved">this</span>.type = ty;
+<span class="comment">/**
+* Section number
+* <span class="attrib">@type</span> string
+*/</span>
+	<span class="reserved">this</span>.num = nu;
+<span class="comment">/**
+* Topic objects in a sequential array
+* <span class="attrib">@type</span> array
+*/</span>
+	<span class="reserved">this</span>.topics = new Array();
+<span class="comment">/**
+* Topic objects in an associative array
+* <span class="attrib">@type</span> array
+*/</span>
+	<span class="reserved">this</span>.topicsID = new Array();
+}
+
+<span class="comment">/**
+* Gets the topic from a supplied ID
+* <span class="attrib">@param</span> {string} i topic id
+* <span class="attrib">@return</span> A {<span class="attrib">@link</span> Topic} instance
+* <span class="attrib">@type</span> Topic
+*/</span>
+Section.<span class="reserved">prototype</span>.getTopicByID = <span class="reserved">function</span>(i) {
+	var r = <span class="reserved">this</span>.topicsID[i];
+	<span class="reserved">return</span> r;
+}
+
+<span class="comment">/**
+* Checks the section to see if any pages furth down the tree
+* contain media of a particular type
+* <span class="attrib">@param</span> {string} f media filter type
+* <span class="attrib">@return</span> boolean
+* <span class="attrib">@type</span> Boolean
+*/</span>
+Section.<span class="reserved">prototype</span>.containsMediaByFilter = <span class="reserved">function</span>(f) {
+	var check = false;
+	<span class="reserved">for</span> (var i=0; i&lt;<span class="reserved">this</span>.topics.length; i++) {
+		var ct = <span class="reserved">this</span>.topics[i];
+		<span class="reserved">for</span> (var j=0; j&lt;ct.pages.length; j++) {
+			<span class="reserved">if</span> (ct.pages[j].media.filtertype == f) {
+				check = true;
+				j = ct.pages.length;
+				i = <span class="reserved">this</span>.topics.length;
+			}
+		}
+	}
+	<span class="reserved">return</span> check;
+}
+
+<span class="comment">/**
+* Sends debug information on all properties to the debug window
+*/</span>
+Section.<span class="reserved">prototype</span>.dump = <span class="reserved">function</span>() {
+	var d = <span class="literal">"Section Dump\n"</span>;
+	d += <span class="literal">"\tthis.objname: "</span>+<span class="reserved">this</span>.objname+<span class="literal">"\n"</span>;
+	d += <span class="literal">"\tthis.oid: "</span>+<span class="reserved">this</span>.oid+<span class="literal">"\n"</span>;
+	d += <span class="literal">"\tthis.par: "</span>+<span class="reserved">this</span>.par+<span class="literal">"\n"</span>;
+	d += <span class="literal">"\tthis.title: "</span>+<span class="reserved">this</span>.title+<span class="literal">"\n"</span>;
+	d += <span class="literal">"\tthis.num: "</span>+<span class="reserved">this</span>.num+<span class="literal">"\n"</span>;
+	d += <span class="literal">"\tthis.type: "</span>+<span class="reserved">this</span>.type+<span class="literal">"\n"</span>;
+	d += <span class="literal">"\tthis.topics: "</span>+<span class="reserved">this</span>.topics+<span class="literal">"\n"</span>;
+	dump(d);
+}
+
+
+</pre>
+	<hr>
+
+
+
+<!-- ========== START OF NAVBAR ========== -->
+<a name="navbar_top"><!-- --></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td colspan=2 bgcolor="#EEEEFF" class="NavBarCell1">
+<a name="navbar_top_firstrow"><!-- --></a>
+<table border="0" cellpadding="0" cellspacing="3">
+  <tr align="center" valign="top">
+  
+  
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-summary.html"><font class="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td>
+  <td bgcolor="#FFFFFF" class="NavBarCell1Rev">	&nbsp;<font class="NavBarFont1Rev"><b>File</b></font>&nbsp;</td>
+  
+
+  <td bgcolor="#FFFFFF" class="NavBarCell1"> <font class="NavBarFont1">Class</font>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="overview-tree.html"><font class="NavBarFont1"><b>Tree</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="index-all.html"--><font class="NavBarFont1"><b>Index</b></font></a>&nbsp;</td>
+  <td bgcolor="#EEEEFF" class="NavBarCell1">    <a href="help-doc.html"><font class="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+  </tr>
+</table>
+</td>
+<td bgcolor="#EEEEFF" align="right" valign="top"><em>
+<b></b></em>
+</td>
+</tr>
+
+<tr>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</font></td>
+<td bgcolor="white" class="NavBarCell2"><font size="-2">
+  <a href="index.html" target="_top"><b>FRAMES</b></a>  &nbsp;
+&nbsp;<a href="overview-summary.html" target="_top"><b>NO FRAMES</b></a>
+&nbsp;&nbsp;
+<script>
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="allclasses-noframe.html" TARGET=""><B>All Classes</B></A>');
+  }
+  //-->
+</script>
+<noscript>
+<a href="allclasses-noframe.html" target=""><b>All Classes</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<!-- =========== END OF NAVBAR =========== -->
+
+<hr>
+<font size="-1">
+
+</font>
+<div class="jsdoc_ctime">Documentation generated by <a href="http://jsdoc.sourceforge.net/" target="_parent">JSDoc</a> on Tue Mar  4 12:01:48 2008</div>
+</body>
+</html>

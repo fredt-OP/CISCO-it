@@ -1,0 +1,92 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Duplicate Unicast Frames</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Click Play to see the animation.</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b><font size="12">Trunk2</font></b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b><font size="12">Trunk3</font></b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b><font size="12">Trunk1</font></b>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[PC1 sends a unicast frame to switch S2 destined for PC4.]]></text>
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Switch S2 does not have a record for PC4 in its MAC address table so it floods the unicast frame out all switch ports.]]></text>
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[Switch S1 does have an entry for PC4 in its MAC address table so it forwards the frame to PC4 on port F0/5. Switch S3 also has a record for PC4 in its MAC address table, so it forwards the unicast frame out Trunk3 to switch S1.]]></text>
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[Switch S1 forwards the duplicate unicast frame received from switch S3 to PC4.]]></text>
+  </component>
+
+  <component id="ID_txt11">
+  <text><![CDATA[<u>S3 MAC Table</u><br/>PC4 = F0/1]]></text>
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[<u>S1 MAC Table</u><br/>PC4 = F0/5]]></text>
+  </component>
+  <component id="ID_txt13">
+  <text><![CDATA[<u>S2 MAC Table</u><br/>PC1 = F0/11]]></text>
+  </component>
+
+  
+  
+  <component id="play"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+
+
+
+
+
+</textcomponents>

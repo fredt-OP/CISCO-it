@@ -1,0 +1,144 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>1 adresse IP publique<br/>209.165.202.129</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Externe</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Passerelle</b>]]></text>
+</component>
+<component id="ID_txt05">
+<text><![CDATA[<b>Interne</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>40 utilisateurs réseau privés</b>]]></text>
+</component>
+<component id="ID_txt08">
+<text><![CDATA[<b>FAI</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+	<text><![CDATA[<b>Requête</b>]]></text>
+</component>
+<component id="ID_txt10">
+	<text><![CDATA[<b>Source</b>]]></text>
+</component>
+<component id="ID_txt11">
+	<text><![CDATA[<b>Destination</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+	<text><![CDATA[<b>Locale interne</b>]]></text>
+</component>
+<component id="ID_txt15">
+	<text><![CDATA[<b>Locale externe</b>]]></text>
+</component>
+<component id="ID_txt16">
+<text><![CDATA[<b>Le processus TCP du PC utilisateur associe un numéro de port à son adresse IP source qui sera incluse dans la requête sortante. La destination est un serveur Web et l’adresse de destination est associée au port 80.</b>]]></text>
+</component>
+<component id="ID_txt17">
+<text><![CDATA[<b>Le routeur de passerelle reçoit la requête et traduit l’adresse IP source en une adresse IP publique disponible. Il choisit alors un numéro de port disponible dans la liste des ports disponibles (n’importe quel port supérieur à 1024) et l’associe à l’adresse IP publique avant de transférer le paquet.</b>]]></text>
+</component>
+<component id="ID_txt18">
+	<text><![CDATA[<b>Requête traduite</b>]]></text>
+</component>
+<component id="ID_txt19">
+	<text><![CDATA[<b>Source</b>]]></text>
+</component>
+<component id="ID_txt20">
+	<text><![CDATA[<b>Destination</b>]]></text>
+</component>
+
+<component id="ID_txt23">
+	<text><![CDATA[<b>Globale interne</b>]]></text>
+</component>
+<component id="ID_txt24">
+	<text><![CDATA[<b>Locale externe</b>]]></text>
+</component>
+
+
+
+ <component id="ID_txt25">
+	<text><![CDATA[<b>Réponse</b>]]></text>
+ </component>
+   <component id="ID_txt26">
+	<text><![CDATA[<b>Source</b>]]></text>
+ </component>
+   <component id="ID_txt27">
+	<text><![CDATA[<b>Destination</b>]]></text>
+ </component>
+
+   <component id="ID_txt30">
+	<text><![CDATA[<b>Globale externe</b>]]></text>
+ </component>
+   <component id="ID_txt31">
+	<text><![CDATA[<b>Globale interne</b>]]></text>
+</component>
+     <component id="ID_txt32">
+	<text><![CDATA[<b>Le serveur répond et renvoie les données vers la combinaison port et adresse IP qui est à l’origine de la requête.</b>]]></text>
+</component> 
+
+
+    <component id="ID_txt33">
+	<text><![CDATA[<b>Réponse traduite</b>]]></text>
+    </component>
+      <component id="ID_txt34">
+	<text><![CDATA[<b>Source</b>]]></text>
+    </component>
+      <component id="ID_txt35">
+	<text><![CDATA[<b>Destination</b>]]></text>
+    </component>
+
+      <component id="ID_txt38">
+	<text><![CDATA[<b>Locale externe</b>]]></text>
+    </component>
+      <component id="ID_txt39">
+	<text><![CDATA[<b>Locale interne</b>]]></text>
+</component>
+	<component id="ID_txt40">
+	<text><![CDATA[<b>La passerelle reçoit la réponse et reconnaît le port et l’adresse IP, qu’elle traduit en adresse IP correcte, à savoir 192.168.1.106, à laquelle elle associe le numéro de port d’origine. La boucle de communications peut alors être fermée.</b>]]></text>
+</component> 
+      <component id="ID_title">
+	<text><![CDATA[<b>La fonction PAT en action</b>]]></text>
+</component>
+      <component id="ID_inst">
+	<text><![CDATA[<b>Cliquez sur Lire pour afficher une démonstration de la fonction PAT.</b>]]></text>
+</component>
+      <component id="ID_txtH1">
+	<text><![CDATA[<b>H1</b>]]></text>
+</component>
+      <component id="ID_txtH2">
+	<text><![CDATA[<b>H2</b>]]></text>
+</component>
+<component id="play">
+<text>Lire</text>
+</component>
+<component id="pause">
+<text>Pause</text>
+</component>
+<component id="rewind">
+<text>Rembobiner</text>
+</component>
+<component id="forward">
+<text>Avance rapide</text>
+</component>
+<component id="mute">
+<text>Muet</text>
+</component>
+<component id="unmute">
+<text>Désactiver Muet</text>
+</component>
+<component id="previous">
+<text>Redémarrer</text>
+</component>
+<component id="next">
+<text>Fin</text>
+</component>
+<component id="transcript">
+<text>Texte</text>
+</component>
+</textcomponents>

@@ -1,0 +1,205 @@
+<textcomponents>
+
+
+<component id="ID_capt02">
+  <text><![CDATA[<b>Port Numbers</b>]]></text> 
+</component>
+
+<!-- top buttons -->
+<component id="ID_Main_btn01">
+<text><![CDATA[A TCP Conversation]]></text>
+</component>
+
+<component id="ID_Main_btn02">
+<text><![CDATA[TCP/UDP Port Numbers]]></text>
+</component>
+
+<!-- controller -->
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+<component id="forward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+<component id="mute">
+<text><![CDATA[Mute]]></text>
+</component>
+<component id="unmute">
+<text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous">
+<text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="ID_capt01">
+<text><![CDATA[<b>A TCP Conversation</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click Play to view the steps of the TCP conversation</b>]]></text>
+</component>
+
+<component id="ID_inst2">
+<text><![CDATA[<b>A TCP Conversation</b>]]></text>
+</component>
+
+<!-- slide 1-->
+
+<component id="ID_txt03">
+<text><![CDATA[&quot;Let's talk.&quot;]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[TCP SYN packet]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[&quot;Sure, let's talk.&quot;]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[TCP SYN/ACK packet]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[&quot;Great, we have a connection.&quot;]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[TCP ACK packet]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[&quot;I need you to send me some data.&quot;]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[TCP data segment]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[&quot;Thanks, I received your request.&quot;]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[TCP ACK packet]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[&quot;Here is the data you want.&quot;]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[TCP data segment(s)]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[&quot;Thanks. I received my data.&quot;]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[TCP ACK packet]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[&quot;I am finished and have no more data to send.&quot;]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[TCP FIN/ACK packet]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[&quot;I am finished as well. Thanks.&quot;]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_Ports_inst">
+<text><![CDATA[<b>Click to view the example ports numbers.</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt01">
+<text><![CDATA[<b>Port Number Range</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt02">
+<text><![CDATA[<b>Port Group</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt03">
+<text><![CDATA[<b>0 to 1023</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt04">
+<text><![CDATA[<b>Well Known (Common) Ports</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt05">
+<text><![CDATA[<b>1024 to 49151</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt06">
+<text><![CDATA[<b>Registered Ports</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt07">
+<text><![CDATA[<b>49152 to 65535</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt08">
+<text><![CDATA[<b>Private and/or Dynamic Ports</b>]]></text>
+</component>
+
+<component id="ID_Ports_txt09">
+<text><![CDATA[Registered TCP Ports:<br/>1863 - MSN Messenger<br/>8008 - Alternate HTTP<br/>8080 - Alternate HTTP]]></text>
+</component>
+
+<component id="ID_Ports_txt10">
+<text><![CDATA[Well Known TCP Ports<br/>21 - FTP<br/>23 - Telnet<br/>25 - SMTP<br/>80 - HTTP<br/>110 - POP3 <br/>194 - Internet Relay Chat (IRC)<br/>443 - Secure HTTP (HTTPS)]]></text>
+</component>
+
+<component id="ID_Ports_txt11">
+<text><![CDATA[Registered UDP Ports:<br/>1812 - RADIUS Authentication Protocol <br/>2000 - Cisco SCCP (VoIP) <br/>5004 - RTP (Voice and Video Transport Protocol) <br/>5060 - SIP (VoIP)]]></text>
+</component>
+
+<component id="ID_Ports_txt12">
+<text><![CDATA[Well Known UDP Ports:<br/>69 - TFTP<br/>520 - RIP]]></text>
+</component>
+
+<component id="ID_Ports_txt13">
+<text><![CDATA[Registered TCP/UDP Common Ports:<br/>1433 - MS SQL<br/>2948 - WAP (MMS)]]></text>
+</component>
+
+<component id="ID_Ports_txt14">
+<text><![CDATA[Well Known TCP/UDP Common Ports:<br/>53 - DNS<br/>161 -      SNMP<br/>531 - AOL Instant Messenger, IRC]]></text>
+</component>
+
+<component id="ID_Ports_btn01">
+<text>Reset</text>
+</component>
+
+<component id="ID_Ports_btn02">
+<text>TCP Ports</text>
+</component> 
+
+<component id="ID_Ports_btn03">
+<text>UDP Ports</text>
+</component> 
+
+<component id="ID_Ports_btn04">
+<text>TCP/UDP Common Ports</text>
+</component> 
+
+</textcomponents>

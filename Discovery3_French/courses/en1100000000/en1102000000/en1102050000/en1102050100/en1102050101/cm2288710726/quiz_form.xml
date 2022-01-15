@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19839" lang=""><form-item>
+			<ai id="116887" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116887" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>POP</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>VPN</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>DoS</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>CPE</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>DMZ</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>demarc</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>maliciously prevents access to network resources by legitimate users</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>boundary that designates responsibility for equipment maintenance and troubleshooting</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>physical link to outside networks at the enterprise edge</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>equipment located at the customer facility</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>allows remote workers to access the internal network securely</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag each term on the left to its correct description on the right. (Not all options are used.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214488" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214488" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="214488" action="Set">1</setvar><scoringdescription>POP - physical link to outside networks at the enterprise edge; DoS -  maliciously prevents access to network resources by legitimate users, VPN allows remote workers secure access to internal resources; CPE equipment located at the customer facility, demarc -  boundary that designates responsibility for equipment maintenance and troubleshooting, Unused: DMZ</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="116931" type="mc-sa"><question><![CDATA[What information can be found by using the command <b>show mac-address-table</b> on a Cisco Catalyst switch?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[the MAC addresses of the ports on the Catalyst switch ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[the port the switch will use to forward frames to a host  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the IP addresses of directly connected network devices ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the mapping between MAC address and IP address for network hosts ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116930" type="mc-sa"><question><![CDATA[While troubleshooting a network problem, the network adminstrator issues the <b>show version</b> command on a router.  What information can be found using this command?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[the amount of NVRAM, DRAM, and flash memory installed on the router  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the bandwidth, encapsulation, and I/O statistics on the interfaces ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[differences between the backup configuration and the current running configuration ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the version of the routing protocols running on the router ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117414" type="mc-sa"><question><![CDATA[After gathering a thorough list of network applications, the traffic generated by these applications, and the priority of this traffic, a network engineer wishes to integrate this information into a single document for analysis. How can this be accomplished?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Create a physical topology map of the network and annotate it with the network application data. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Create a logical topology map of the network and annotate it with the network application data.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Create a blueprint of the facility, including network cabling and telecommunications rooms, and annotate it with the network application data. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Take a photograph of the facility, and annotate it with the network application data. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116932" type="mc-sa"><question><![CDATA[One evening a network adminstrator attempted to access a recently deployed website and received a &quot;page not found&quot; error. The next day the adminstrator checked the web server logs and noticed that during the same hour that the site failed to load, there were hundreds of requests for the web site home page. All of the requests originated from the same IP address. Given this information, what might the network administrator conclude?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[It is normal web surfing activity. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[It is likely that someone attempted a DoS attack.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The link to the web site does not have enough capacity and needs to be increased. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The web server was turned off and was not able to service requests. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="118215" type="mc-sa"><question><![CDATA[What type of media typically connects an MDF switch to an IDF switch in another building?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[fiber-optic  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[coaxial cable ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[unshielded twisted pair ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[shielded twisted pair ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="118216" type="mc-ma"><question><![CDATA[Which three devices can receive power over the same twisted pair Ethernet cable that carries data? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[wireless access points  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[monitors ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[web cameras  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[IP phones  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[network switches ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[laptops ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="119470" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="119470" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>define broadcast domains</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>connect IP phones and access points to the network</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>enhance security with ACLs</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>interconnect networks</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>appear more commonly at the access layer </mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>connect hosts to the network</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>routers</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>switches</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the hardware characteristic on the left to the hardware type on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="11" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221689" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="221689" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="221689" action="Set">1</setvar><scoringdescription>Routers: define broadcast domains, enhance security through ACLs, interconnect networks. Switches: connect IP phones and access points to the network, appear more commonly at the access layer, connect hosts to the network</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="116608" type="mc-ma"><question><![CDATA[Which two protocols can be used to access a Cisco router for in-band management? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[ARP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SSH  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[FTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SMTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Telnet  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117300" type="mc-sa"><question><![CDATA[A network analyst is documenting the existing network at ABC Corporation. The analyst decides to start at the core router to identify and document the Cisco network devices attached to the core.  Which command executed on the core router provides the required information?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>show version</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip route</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show tech-support</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show running-config</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show cdp neighbors detail</b>  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

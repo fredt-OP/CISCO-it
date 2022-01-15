@@ -1,0 +1,46 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Commande <font face='_typewriter'>ppp authentication</font></b>]]></text> 
+</component>
+
+<component id="tableHTML">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+ <tr>
+    <td colspan="2" bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Commande <font face="_typewriter"><b>ppp</b></font> authentication</b></font></td>
+  </tr>
+  <tr>
+    <td width='180' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>chap</b></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active CHAP sur une interface série.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>pap</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active PAP sur une interface série.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>chap pap</b></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active CHAP et PAP, et exécute l’authentification CHAP avant PAP.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>pap chap</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Active CHAP et PAP, et exécute l’authentification PAP avant CHAP.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">if-needed</font> (Facultatif)</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Utilisé avec TACACS et XTACACS. N’exécute pas l’authentification CHAP ou PAP si l’utilisateur a déjà fourni une authentification. Cette option est disponible uniquement sur des interfaces asynchrones.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><i>nom-liste</i></font> (Facultatif)</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Utilisé avec AAA/TACACS+. Spécifie le nom d’une liste de méthodes TACACS+. Si un nom de liste authentique est spécifié, le système utilise la valeur par défaut. Les listes sont créées grâce à la commande aaa <font face="_typewriter"><b>authentication ppp</b></font>.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>default</b></font> (Facultatif)</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Utilisé avec AAA/TACACS+. Créé avec la commande <font face="_typewriter"><b>aaa authentication ppp</b></font>.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">callin</font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Spécifie l’authentification sur les appels entrants (reçus) uniquement.</td>
+  </tr>
+</table>]]></text> 
+  </component>
+</textcomponents>

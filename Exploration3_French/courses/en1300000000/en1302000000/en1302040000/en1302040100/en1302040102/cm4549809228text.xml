@@ -1,0 +1,54 @@
+<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Configure Virtual Terminal Access</b>]]></text>
+</component>
+<component id="tableHTML">
+    <text><![CDATA[
+   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+    	
+    	<tr>
+  	  		
+  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from privileged EXEC mode to global configuration mode.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from global configuration mode to line configuration mode for vty lines 0 - 4.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>line vty 0 4</b></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Set <b>cisco</b> as the password  for the vty lines on the switch.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-line)#<b>password cisco</b></font></td>
+			
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Set the vty lines to require the password to be entered before access is granted.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-line)#<b>login</b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Exit from line configuration mode and return to privileged EXEC mode.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config-line)#<b>end</b></font></td>
+	</tr>
+			
+	
+	
+</table>
+]]></text> 
+  </component>
+  
+ 
+</textcomponents>
+
+
+	

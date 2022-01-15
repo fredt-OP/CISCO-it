@@ -1,0 +1,123 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<b>Vérification des réseaux locaux virtuels et des appartenances des ports</b>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<b>Syntaxe de commande</b>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<b>show VLAN</b>]]></text> 
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<b>show interfaces VLAN</b>]]></text> 
+</component>
+
+<component id="ID_button_04">
+<text><![CDATA[<b>show interfaces switchport</b>]]></text> 
+</component>
+
+<component id="ID_step0">
+  <text><![CDATA[Cliquez sur les différentes étapes pour afficher les commandes d’interface graphique utilisateur correspondantes.]]></text> 
+</component>
+
+<component id="ID_caption02">
+<text><![CDATA[Commande show vlan ]]></text>
+</component>
+<component id="ID_caption03">
+<text><![CDATA[Commande show interfaces ]]></text>
+</component>
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	 <tr>
+	  	  		
+	  	 <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='480' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+	  	 <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	 </tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>show vlan [brief | id</b><i> id de vlan</i><b> | name</b><i> nom_vlan</i><b> | summary]</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b></b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Afficher une ligne pour chaque VLAN comportant le nom du VLAN, son état et ses ports. </td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>brief</b></font></td>
+		
+				
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Afficher des informations sur un VLAN unique identifié par un numéro d’ID de VLAN.<br/>La valeur id de vlan peut être comprise entre 1 et 4094.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>id </b><i>id de vlan</i></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Afficher des informations sur un VLAN unique identifié par un nom de VLAN. Le nom de VLAN est une chaîne ASCII de 1 à 32 caractères de long.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>name </b><i>nom_vlan</i></font></td>
+		
+				
+	</tr>
+	
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Afficher un résumé sur les VLAN.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>summary</b></font></td>
+			
+	</tr>		
+	
+	
+</table>
+]]></text> 
+  </component>
+  
+  <component id="tableHTML1">
+  	    <text><![CDATA[
+  	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  	    	
+  	    	<tr>
+  	  	  		
+  	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='480' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+  	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+  	   	</tr>
+  	<tr>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>show interfaces [</b><i>id_interface</i> <b> | vlan </b><i>id de vlan</i><b>] | switchport</b> </font></td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Les interfaces autorisées comprennent les ports physiques (y compris le type, le module et le numéro de port) et les canaux de port. La plage des canaux de port est comprise entre 1 et 6.</td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><i>id_interface </i></font></td>
+  		
+  				
+  	</tr>
+  	<tr>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Identification du VLAN. La plage est comprise entre 1 et 4094.</td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>vlan </b><i>id de vlan</i></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Afficher l’état administratif et opérationnel d’un port de commutation, y compris les paramètres de blocage et de protection du port.</td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>switchport</b></font></td>
+  		
+  				
+  	</tr>
+  	
+  	
+  	
+  </table>
+  ]]></text> 
+  </component>
+
+
+</textcomponents>

@@ -1,0 +1,86 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><li>A WAN uses many different technologies, each offering distinct advantages.</li><br/><li>Depending on the technology in use, converting the data format into an acceptable one requires a modem or a CSU/DSU.</li><br/><li>WAN technologies divide into circuit switching, packet switching and cell switching.</li><br/><li>Circuit switching technologies create a physical circuit between end devices before sending information.</li><br/><li>Packet and cell switching technologies use either a PVC or SVC to send information across the network.</li><br/><li>WAN technologies are either last mile, which connects the ISP to the customer, or long range which interconnects ISPs.</li></ul></font>]]></text>
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[Site B]]></text>
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Site A]]></text>
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Site C]]></text>
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[Site D]]></text>
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[Traffic from two virtual circuits share the same links.]]></text>
+</component>
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><li>HDLC is the default Layer 2 serial line encapsulation on Cisco routers.</li><br/><li>Cisco HDLC incorporates an extra field to allow it to carry multiple Layer 3 protocols.</li><br/><li>The Layer 2 encapsulation changes as frames are moved across the WAN.</li><br/><li>PPP allows the negotiation of many advanced features including authentication, load balancing, call back and compression.</li><br/><li>PPP supports both PAP and CHAP authentication.</li><br/><li>PAP authentication sends the username/password in clear text and is subject to sniffing and replay attacks.</li><br/><li>CHAP issues challenges at configurable intervals and forces the connected device to re-authenticate.</li></ul></font><br/>]]></text>
+</component>
+
+
+
+<component id="s2_ID_text01">
+		<text><![CDATA[R1]]></text>
+	</component>
+<component id="s2_ID_text02">
+		<text><![CDATA[R2]]></text>
+	</component>
+<component id="s2_ID_text03">
+		<text><![CDATA[R3]]></text>
+	</component>
+
+<component id="s2_ID_text04">
+		<text><![CDATA[OSPF packets encrypted]]></text>
+	</component>
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><li>Frame Relay is a packet switched technology.</li><br/><li>Frame Relay uses virtual circuits to connect a specific source to a destination.  Virtual circuits can be switched or permanent.</li><br/><li>Use FECNs and BECNs to inform the receiving and sending devices that the network is congested so that routers can take appropriate actions.</li><br/><li>Frame Relay uses parameters such as CIR to establish the bandwidth used on each VC.</li></ul></font>]]></text>
+</component>
+
+<component id="s3_ID_txt01">           
+<text><![CDATA[Branch<br>Office]]></text>   
+</component>
+
+<component id="s3_ID_txt02">           
+<text><![CDATA[Central Site]]></text>   
+</component>
+
+<component id="s3_ID_txt03">           
+<text><![CDATA[56 kpbs]]></text>   
+</component>
+
+<component id="s3_ID_txt04">           
+<text><![CDATA[Bottleneck]]></text>   
+</component>
+
+<component id="s3_ID_txt05">           
+<text><![CDATA[T1]]></text>   
+</component>
+
+<component id="s3_ID_txt06">           
+<text><![CDATA[Frame Relay Cloud]]></text>   
+</component>
+
+<component id="s3_ID_txt07">           
+<text><![CDATA[I have received a lot of BECNs. The network must be congested. I need to reduce the pace at which I send packets.]]></text>   
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,373 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Rip Update]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[Rip Update]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[Rip Update]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[Rip Update]]></text>
+</component>
+
+<component id="ID_Ritopo2a">
+<text><![CDATA[<b><font color="#0000FF">RIP</font></b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) What is a discontiguous network and why can’t it be supported by classful routing protocols like RIPv1?]]></text>
+</component>
+
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 7.1)]]></text>
+</component>
+
+<component id="ID_Q1_txt05">
+<text><![CDATA[A discontiguous network occurs when a classful major network address, such as 172.30.0.0/16, is separated by one or more other major networks, like 209.165.200.228/30. Boundary routers running classful routing protocols can only propagate the summarized classful address. When multiple boundary routers are propagating the same classful network, other routers cannot determine the path to the specific subnets of this classful network. The consequence is inconsistent routing and not all packets reaching their destination.]]></text>
+</component>
+
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q2_txt02">
+<text><![CDATA[RIPv1 will include any 10.0.0.0 subnets that have the /24 mask in its updates out the 10.10.10.1/24 interface. The mask is not included in the routing update.]]></text>
+</component>
+
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) RouterX is running the classful routing protocol RIPv1. RouterX has VLSM subnets in its routing table that are all part of the 10.0.0.0/8 network. If RouterX is sending updates out an interface with the address 10.10.10.1/24, which 10.0.0.0 subnets will be sent out that interface?]]></text>
+</component>
+
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from 7.2)]]></text>
+</component>
+
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q3_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) RouterX is running the classful routing protocol RIPv1. RouterX has VLSM subnets in its routing table which are all part of the 10.0.0.0/8 network. If RouterX is sending updates out an interface with the address 192.168.1.1/24, which 10.0.0.0 subnets will be sent out that interface?]]></text>
+</component>
+
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from 7.3)]]></text>
+</component>
+
+<component id="ID_Q3_txt05">
+<text><![CDATA[RIPv1 will send out the summarized network address of 10.0.0.0. The mask is not included in the routing update.]]></text>
+</component>
+
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q4_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) How do you disable automatic summarization on RIPv2?]]></text>
+</component>
+
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from 7.4)]]></text>
+</component>
+
+<component id="ID_Q4_txt05">
+<text><![CDATA[With the command <b><font face="_typewriter">no auto-summary</font></b> in the router configuration mode.]]></text>
+</component>
+
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+
+<component id="ID_Q5_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) When would you disable automatic summarization on RIPv2?]]></text>
+</component>
+
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from 7.5)]]></text>
+</component>
+
+<component id="ID_Q5_txt05">
+<text><![CDATA[When you have discontiguous subnets or if for some other reason you want to propagate the individual subnets.]]></text>
+</component>
+
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q6_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) What is the defining characteristic of a classless routing protocol?]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(from 7.6)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[The capability of carrying the subnet masks in the route advertisements.]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[(from 7.7)]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) What is the default behavior of RIPv2 regarding automatic summarization?]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[By default, automatic summarization is enabled with RIPv2.
+]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) Does RIPv2 include the subnet masks in its routing updates if automatic summarization is enabled?]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(from 7.8)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[Yes, even though the subnets are summarized by the boundary routers, the RIPv2 updates still include the subnet mask, which in this case would be the classful mask.]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 9 -->
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9) All routers are running RIPv2. R1 has automatic summarization disabled, but router R3 has automatic summary still enabled. What 172.30.0.0 routes do we expect to see in the routing table for R2?]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[<b>R2 Routing Table</b>]]></text>
+</component>
+<component id="ID_Q9_topology01">
+<text><![CDATA[<b>Summary<br>Static Route<br>to 192.168.0.0/16</b>]]></text>
+</component>
+<component id="ID_Q9_topology02">
+<text><![CDATA[<b>Automatic<br>summarization<br><font color="#0000FF">disabled</font></b>]]></text>
+</component>
+<component id="ID_Q9_topology03">
+<text><![CDATA[<b>Automatic<br>summarization<br><font color="#0000FF">enabled</font></b>]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 10 -->
+
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q10_txt02">
+<text><![CDATA[]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10) If R2 has a packet destined for 172.30.1.10 will the packet be consistently forwarded to the proper router R1?]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[Yes. When R2 receives both routing updates, it will include both the summary router 172.30.0.0/16 forwarding packets to R3 and the specific subnets 172.30.1.0/24 and 172.30.2.0/24 forwarding those packets to R1. The routing table process will always choose the more specific route over the less specific, summary route.]]></text>
+</component>
+<component id="ID_Q10_topology01">
+<text><![CDATA[<b>Summary<br>Static Route<br>to 192.168.0.0/16</b>]]></text>
+</component>
+<component id="ID_Q10_topology02">
+<text><![CDATA[<b>Automatic<br>summarization<br><font color="#0000FF">disabled</font></b>]]></text>
+</component>
+<component id="ID_Q10_topology03">
+<text><![CDATA[<b>Automatic<br>summarization<br><font color="#0000FF">enabled</font></b>]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q10_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 11 -->
+
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q11_txt02">
+<text><![CDATA[]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11) Routers R1 and R2 are exchanging routing updates using RIPv2. R2 has a default static route to R3, and R3 has a default static route to R2. If router R1 has automatic summarization disabled (<font face="_typewriter"><b>no auto-summary</b></font>), will R2 be able to reach the networks on both R1 and R3?]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[Yes. R2 will have the specific routes the 172.30.1.0/24 and 172.30.2.0/24 subnets, so it will forward those packets to R1. All other packets, such as those destined for 172.30.110.0/24 will use the default route and be forwarded to R3.]]></text>
+</component>
+<component id="ID_Q11_topology01">
+<text><![CDATA[<b>Summary<br>Static Route<br>to 192.168.0.0/16</b>]]></text>
+</component>
+<component id="ID_Q11_topology04">
+<text><![CDATA[<b><font color="#0000FF">Default static<br>route</font></b>]]></text>
+</component>
+<component id="ID_Q11_topology05">
+<text><![CDATA[<b><font color="#0000FF">Default static<br>route</font></b>]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text 
+</component>
+
+
+<!-- Question 12 -->
+
+
+<component id="ID_Q12_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q12_txt02">
+<text><![CDATA[]]></text>
+</component>
+<component id="ID_Q12_txt03">
+<text><![CDATA[12) If router R1 has automatic summarization enabled (<font face="_typewriter"><b>default auto-summary</b></font>), will R2 be able to reach the networks on both R1 and R3?]]></text>
+</component>
+<component id="ID_Q12_txt04">
+<text><![CDATA[R2 will be able to reach the 172.30.1.0/24 and 172.30.2.0/24 subnets on R1 because it will have the 172.30.0.0/16 summary route to R1 via RIPv2. However, any packets destined for the 172.30.0.0 subnets on R3, such as 172.30.110.0/24 will also be sent to R1. These packets will not reach their destination.]]></text>
+</component>
+<component id="ID_Q12_topology01">
+<text><![CDATA[<b>Summary<br>Static Route<br>to 192.168.0.0/16</b>]]></text>
+</component>
+<component id="ID_Q12_topology04">
+<text><![CDATA[<b><font color="#0000FF">Default static<br>route</font></b>]]></text>
+</component>
+<component id="ID_Q12_topology05">
+<text><![CDATA[<b><font color="#0000FF">Default static<br>route</font></b>]]></text>
+</component>
+<component id="ID_Q12_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q12_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>This concludes this chapter"s Problems and Discussion questions.</b>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+
+

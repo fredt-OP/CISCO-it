@@ -1,0 +1,134 @@
+<html>
+	<head>
+	<meta http-equiv=content-type content="text/html; charset=UTF-8">
+	<title>CISCO Accessible Theme</title>
+		<link rel="stylesheet" type="text/css" href="./css/reset-fonts.css">
+		<link rel="stylesheet" type="text/css" href="./css/blackonwhite.css">
+		<script>
+		var is508 = true;
+		var url = new String(window.location);
+		var bgcolor = "0xFFFFFF";
+		isarabic = false;
+		if (url.indexOf("direction=rtl") > -1) {
+			isarabic = true;
+			document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/rtl.css\"/>");
+		}
+		</script>
+
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script language="javascript" src="../js/utils/about.js"></script>
+		<script language="javascript" src="../js/utils/mootools-release-1.11.js"></script>
+
+		<script language="javascript" src="../js/themeapi/globals.js"></script>
+		<script language="javascript" src="../js/themeapi/com-api.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-course.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-chapter.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-section.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-topic.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-page.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-media.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-theme.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-globaltools.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossary.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossaryterm.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-glossaryset.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-events.js"></script>
+		<script language="javascript" src="../js/themeapi/obj-main.js"></script>
+		<script>
+			// start API eventobj
+
+			eventobj.addEvent("comactive", "sendCommand('hide','"+bgcolor+"');", "hide");
+			eventobj.addEvent("comactive", "main.theme.getData();", "gettheme");
+			eventobj.addEvent("themeready", "main.globaltools.getData();", "getgt");
+			eventobj.addEvent("globaltoolsready", "main.glossary.getData();", "getglos");
+			eventobj.addEvent("glossaryready", "main.course.getData();", "getcourse");
+			eventobj.addEvent("courseready", "main.getCurrent();", "getcurrent");
+			eventobj.addEvent("pageready", "getCourse();", "getcourse");
+
+			// called on toggle event
+			eventobj.addEvent("toggle", "main.theme.getData();", "gettheme");
+
+			// end API eventobj
+
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			function getElement(i) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+				} else if (document.all) {
+					x = document.all[i];
+				}
+				return x;
+			}
+
+			function getLevel() {
+				var url = new String(window.location);
+				var level = url.substr(url.indexOf("level=")+6, url.length);
+				level = level.substr(0, level.indexOf("&"));
+				return level;
+			}
+			
+			var header = new EJS({url: "header.ejs"});
+			var footer = new EJS({url: "footer.ejs"});
+			var levelstring = getLevel()+"content.ejs";
+			var content = new EJS({url: levelstring});
+
+			function getCourse() {
+				/* header */
+				var html = "";
+				data = {main:main};
+				html = header.render(data);
+				writeToElement("headerdiv", html);
+				/* main */
+				var html = "";
+				data = {main:main};
+				html = content.render(data);
+				writeToElement("maincontent", html);
+				/* footer */
+				var html = "";
+				data = {main:main};
+				html = footer.render(data);
+				writeToElement("footerdiv", html);
+				showAllTranscripts();
+				scrollToTop();
+			}
+			
+			function getMediaPresentation() {
+				var url = new String(window.location);
+				var p = url.substr(url.indexOf("mediapres=")+10,url.length);
+				p = p.substr(0,p.indexOf("&"));
+				return p;
+			}
+
+
+		</script>
+		<script language="javascript" src="../js/utils/shortcut.js"></script>
+		<script language="javascript" src="./js/search.js"></script>
+		<script language="javascript" src="./js/glossary.js"></script>
+		<script language="javascript" src="./js/keyboard.js"></script>
+		<script language="javascript" src="./js/navigation.js"></script>
+		<script language="javascript" src="./js/popups.js"></script>
+		<script language="javascript" src="./js/transcript.js"></script>
+	</head>
+
+	<body>
+		<div id="toolsdiv"></div>
+		<div id="headerdiv"></div>
+		<div id="maincontent">
+			Loading Content
+		</div>
+		<div id="footerdiv"></div>
+		<br><br>
+		<iframe src="../../cheetah.html" width="450" height="200" title="DO NOT SELECT" name="mediaframe" id="mediaframe" frameborder="0"></iframe>
+	</body>
+</html>

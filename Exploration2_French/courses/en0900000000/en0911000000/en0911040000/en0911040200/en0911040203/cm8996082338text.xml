@@ -1,0 +1,183 @@
+<textcomponents>
+
+<component id="ID_title02">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click to see DR/BDR Election results.</b>]]></text>
+</component>
+
+<component id="ID_caption1">
+<text><![CDATA[<b>RouterC fails and RouterB becomes the DR.</b>]]></text>
+</component>
+
+<component id="ID_caption2">
+<text><![CDATA[<b>RouterB remains the DR even when new router is added.</b>]]></text>
+</component>
+
+<component id="ID_caption3">
+<text><![CDATA[<b>RouterB remains the DR even when former DR returns.</font></b>]]></text>
+</component>
+
+<component id="ID_caption4">
+<text><![CDATA[<b>BDR fails, highest router ID among the DROthers becomes new BDR.</b>]]></text>
+</component>
+
+<component id="ID_caption5">
+<text><![CDATA[<b>Both DR and BDR fail, highest router IDs become new DR and BDR.</b>]]></text>
+</component>
+
+<!-- box0 -->
+<component id="ID_title01">
+<text><![CDATA[<b>DR/BDR Election Scenarios</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>RouterA</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>RouterC</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>RouterB</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>OSPF interface priority is equal.</b>]]></text>
+</component>
+
+<!-- box1 -->
+<component id="ID_txt19">
+<text><![CDATA[<font color = "#003399"><b>DR</font></b>]]></text>
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[<font color = "#990000"><b>DR</font></b>]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[<font color = "#003399"><b>BDR</font></b>]]></text>
+</component>
+
+<!-- box2 -->
+<component id="ID_txt19a">
+<text><![CDATA[<font color = "#003399"><b>DR</font></b>]]></text>
+</component>
+
+<component id="ID_txt21a">
+<text><![CDATA[<font color = "#003399"><b>BDR</font></b>]]></text>
+</component>
+
+<component id="ID_txt26">
+<text><![CDATA[<font color = "#003399"><b>DROther</font></b>]]></text>
+</component>
+
+<component id="ID_txt27">
+<text><![CDATA[<b>RouterD</b>]]></text>
+</component>
+
+<!-- box3 -->
+<component id="ID_txt33">
+<text><![CDATA[<font color = "#003399"><b>DROther</font></b>]]></text>
+</component>
+
+<!-- box4 -->
+<component id="ID_txt28">
+<text><![CDATA[<font color = "#003399"><b>DROther</font></b>]]></text>
+</component>
+
+<component id="ID_txt30">
+<text><![CDATA[<font color = "#990000"><b>BDR</font></b>]]></text>
+</component>
+
+<component id="ID_txt32">
+<text><![CDATA[<font color = "#003399"><b>BDR</font></b>]]></text>
+</component>
+
+<!-- box 5 -->
+<component id="ID_txt27a">
+<text><![CDATA[<b>RouterD</b>]]></text>
+</component>
+
+<component id="ID_txt37">
+<text><![CDATA[<font color = "#003399"><b>DR</font></b>]]></text>
+</component>
+
+<component id="ID_txt35">
+<text><![CDATA[<font color = "#003399"><b>DR</font></b>]]></text>
+</component>
+
+<component id="ID_txt38">
+<text><![CDATA[<font color = "#003399"><b>BDR</font></b>]]></text>
+</component>
+
+<!-- BUTTONS -->
+<component id="ID_txt13">
+<text><![CDATA[<b>DR Fails</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>New Router</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Old DR Returns</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>BDR Fails</b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>New DR Fails</b>]]></text>
+</component>
+
+<component id="ID_txt39">
+<text><![CDATA[<b>RESET</b>]]></text>
+</component>
+
+<!-- mc0 -->
+<component id="ID_txt40">
+<text><![CDATA[<b>Lo0 192.168.31.22/32</b>]]></text>
+</component>
+<component id="ID_txt41">
+<text><![CDATA[<b>Fa0/0    192.168.1.2/24</b>]]></text>
+</component>
+<component id="ID_txt42">
+<text><![CDATA[<b>Lo0 192.168.31.11/32</b>]]></text>
+</component>
+<component id="ID_txt43">
+<text><![CDATA[<b>Lo0 192.168.31.33/32</b>]]></text>
+</component>
+<component id="ID_txt44">
+<text><![CDATA[<b>Fa0/0    192.168.1.1/24</b>]]></text>
+</component>
+<component id="ID_txt45">
+<text><![CDATA[<b>Fa0/0    192.168.1.3/24</b>]]></text>
+</component>
+
+<!-- mc2 -->
+<component id="ID_txt46">
+<text><![CDATA[<b>Fa0/0 192.168.1.4/24</b>]]></text>
+</component>
+<component id="ID_txt47">
+<text><![CDATA[<b>Lo0 192.168.31.44/32</b>]]></text>
+</component>
+
+<!-- mc5a -->
+<component id="ID_txt48">
+<text><![CDATA[<b>Fa0/0 192.168.1.4/24</b>]]></text>
+</component>
+<component id="ID_txt49">
+<text><![CDATA[<b>Lo0 192.168.31.44/32</b>]]></text>
+</component>
+
+
+
+
+</textcomponents>
+
+

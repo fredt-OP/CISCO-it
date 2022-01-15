@@ -1,0 +1,88 @@
+﻿<textcomponents>
+
+<component id="ID_Button01">
+<text><![CDATA[Qu’est-ce qu’une liste de contrôle d’accès (ACL) ?]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[Listes de contrôle d’accès sur un routeur]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_S1_title">
+<text><![CDATA[<b>Qu’est-ce qu’une liste de contrôle d’accès ?</b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="ID_S1_txt02">
+<text><![CDATA[<b>Autoriser le courriel<br/>Refuser Telnet</b>]]></text>
+</component>
+
+<component id="ID_S1_txt03">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="ID_S1_txt04">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="ID_S1_txt05">
+<text><![CDATA[<b>Accès RH</b>]]></text>
+</component>
+
+<component id="ID_S1_txt06">
+<text><![CDATA[<b>Sous-réseau RH<br/>172.17.0.0/20</b>]]></text>
+</component>
+
+<component id="ID_S1_txt07">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="ID_S1_txt08">
+<text><![CDATA[<b>Aucune vidéo sur Comm1<br/>Aucun accès à Comm2 pour Comm1</b>]]></text>
+</component>
+
+<component id="ID_S1_txt09">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="ID_S1_txt10">
+<text><![CDATA[<b>Aucune mise à jour<br/>Pas de FTP<br/>Pas de Web</b>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_S2_title">
+<text><![CDATA[<b>Filtrage du trafic avec liste de contrôle d’accès sur un routeur</b>]]></text>
+</component>
+
+<component id="ID_S2_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Règle des trois P pour l’utilisation des listes de contrôle d’accès</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Une seule liste de contrôle d’accès est autorisée par protocole, par interface et par direction :<ul><li>Une liste de contrôle d’accès par protocole (exemple : IP ou IPX)</li><li>Une liste de contrôle d’accès par interface (exemple : FastEthernet0/0)</li><li>Une liste de contrôle d’accès par direction (exemple : IN ou OUT)</li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<b>IP<br/>IPX<br/>AppleTalk</b>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>IP<br/>IPX<br/>AppleTalk</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[Une liste par interface, par direction et par protocole]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[Avec deux interfaces et trois protocoles, ce routeur peut avoir un total de 12 listes de contrôle d’accès appliquées.]]></text>
+</component>
+
+</textcomponents>

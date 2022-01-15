@@ -1,0 +1,106 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Couche application]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Couche présentation]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Couche session]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Couche transport]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Couche réseau]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Couche liaison de données]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Couche physique]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Modèle OSI]]></text>
+</component>
+
+<component id="ID_txtBody1">
+<text><![CDATA[<li>Associée à des services spécifiques tels que FTP et DNS.</li><li>Si les ressources sont inaccessibles ou inutilisables alors que les couches physique, liaison de données, réseau et transport sont opérationnelles, le problème est associé à cette couche.</li>]]></text>
+</component>
+
+<component id="ID_txtBody2">
+<text><![CDATA[<li>Responsable de la représentation des données.</li><li>Comprend la compression et le chiffrement.</li><li>Si les données sont transmises de manière fiable sur le réseau, mais qu’elles sont illisibles à la réception, tournez-vous vers la couche présentation.</li><li>Vérifiez que les clés de chiffrement correspondent et qu’elles sont correctement configurées.</li>]]></text>
+</component>
+
+<component id="ID_txtBody3">
+<text><![CDATA[<li>Responsable de l’ouverture, de la gestion et de la fermeture des sessions de communication de bout en bout entre les applications.</li><li>Liée à la synchronisation et au contrôle de flux.</li><li>Un serveur d’applications qui échoue au cours d’une session de communication peut générer des problèmes au niveau de la couche session.</li>]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[<li>Utilise les numéros de port pour identifier le type de trafic de la conversation.</li><li>Des listes de contrôle d’accès mal configurées sont un problème courant au niveau de cette couche.</li>]]></text>
+</component>
+
+<component id="ID_txtBody5">
+<text><![CDATA[<li>Entre en jeu dans l’adressage logique et la détermination du meilleur chemin.</li><li>Les problèmes d’adressage et de routage de couche 3 sont associés à cette couche.</li><li>Les problèmes les plus courants sont des adresses mal configurées et des informations de routage incorrectes.</li><li>Les listes de contrôle d’accès mal configurées sont un problème au niveau de la couche réseau.</li>]]></text>
+</component>
+
+<component id="ID_txtBody6">
+<text><![CDATA[<li>Chargée principalement de l’encapsulation de données.</li><li>Une encapsulation non concordante est l’un des problèmes les plus courants au niveau de cette couche.</li><li>Comprend la conversion incorrecte de l’encapsulation de la couche 2 au moment où les trames transitent sur le réseau.</li><li>Des ports de commutation mal configurés et des problèmes d’adressage de couche 2 sont également courants.</li><li>Des réseaux locaux virtuels mal configurés peuvent générer des problèmes au niveau de la couche 2.</li>]]></text>
+</component>
+
+<component id="ID_txtBody7">
+<text><![CDATA[<li>Chargée de la connectivité physique. </li><li>Un câblage inadéquat ou endommagé, des ports physiquement endommagés et des problèmes d’alimentation sont des problèmes courants.</li><li>Dans les réseaux sans fil, les antennes sont des équipements de couche physique, comme le support RF.</li><li>Toute perte de puissance du signal ou toute interférence est considérée comme un problème de couche 1.</li>]]></text>
+</component>
+
+
+
+
+<component id="ID_txt16">
+<text><![CDATA[Placez votre pointeur sur chaque couche pour afficher des exemples de problèmes courants.]]></text>
+</component>
+
+<component id="ID_txtTitle1">
+<text><![CDATA[Application]]></text>
+</component>
+
+
+<component id="ID_txtTitle2">
+<text><![CDATA[Présentation]]></text>
+</component>
+
+
+<component id="ID_txtTitle3">
+<text><![CDATA[Session]]></text>
+</component>
+
+
+<component id="ID_txtTitle4">
+<text><![CDATA[Transport]]></text>
+</component>
+
+
+<component id="ID_txtTitle5">
+<text><![CDATA[Réseau]]></text>
+</component>
+
+
+<component id="ID_txtTitle6">
+<text><![CDATA[Liaison de données]]></text>
+</component>
+
+
+<component id="ID_txtTitle7">
+<text><![CDATA[Physique]]></text>
+</component>
+
+
+
+
+</textcomponents>

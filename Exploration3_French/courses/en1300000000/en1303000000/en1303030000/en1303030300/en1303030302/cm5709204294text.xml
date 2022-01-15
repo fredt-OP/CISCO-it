@@ -1,0 +1,74 @@
+<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<B>Manage Port Memberships</B>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Command Syntax</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Remove VLAN</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<B>Reassign VLAN</B>]]></text> 
+</component>
+
+<component id="ID_button_04">
+<text><![CDATA[<B>Interfaces Switchport</B>]]></text> 
+</component>
+
+<component id="ID_step0">
+  <text><![CDATA[<B>Click through the steps to see the GUI-based alternatives to the CLI</B>]]></text> 
+</component>
+
+<component id="ID_caption01">
+<text><![CDATA[<b>3.3.3.2 -A: Manage Port Memberships</b>]]></text>
+</component>
+<component id="tableHTML">
+	    <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+	  	  	<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter global configuration mode.</td>
+		<td width="270" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the interface configuration mode for the interface to be configured.</td>
+		<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config)#<b>interface </b><i>interface id</i></font></td>
+		
+				
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Remove the VLAN assignment on that switch port interface and revert it to the default VLAN membership of VLAN1.</td>
+		<td width="270" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>no switchport access vlan </b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Return to privileged EXEC mode.</td>
+		<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>end</b></font></td>
+		
+				
+	</tr>
+	
+		
+	
+	
+</table>
+]]></text> 
+  </component>
+
+
+</textcomponents>

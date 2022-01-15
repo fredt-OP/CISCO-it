@@ -1,0 +1,129 @@
+<html>
+
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="fr-fr">
+
+
+
+<title>New Page 1</title>
+<script language="JavaScript" src="../../javascript/buttons.js"></script>
+<script language="JavaScript">
+
+
+ 
+
+
+</script>
+<script language="JavaScript">
+<!--
+
+if (document.images) {
+  image1on = new Image();
+  image1on.src = "../../images/index_ov.gif";
+  
+  image2on = new Image();
+  image2on.src = "../../images/glossary_ov.gif";
+
+  image3on = new Image();
+  image3on.src = "../../images/back_ov.gif";
+
+  image4on = new Image();
+  image4on.src = "../../images/next_ov.gif";
+  
+  image5on = new Image();
+  image5on.src = "../../images/quiz_ov.gif";
+  
+  image6on = new Image();
+  image6on.src = "../../images/pedia_ov.gif";
+
+  image1off = new Image();
+  image1off.src = "../../images/index_up.gif";
+  
+  image2off = new Image();
+  image2off.src = "../../images/glossary_up.gif";
+
+  image3off = new Image();
+  image3off.src = "../../images/back_up.gif";
+
+  image4off = new Image();
+  image4off.src = "../../images/next_up.gif";
+  
+  image5off = new Image();
+  image5off.src = "../../images/quiz_up.gif";
+  
+  image5off = new Image();
+  image5off.src = "../../images/quiz_up.gif";
+  
+  image6off = new Image();
+  image6off.src = "../../images/pedia_up.gif";
+
+  image1hint = new Image();
+  image1hint.src = "../../images/menu_index.gif";
+  
+  image2hint = new Image();
+  image2hint.src = "../../images/menu_glossary.gif";
+  
+  image3hint = new Image();
+  image3hint.src = "../../images/menu_back.gif";
+
+  image4hint = new Image();
+  image4hint.src = "../../images/menu_next.gif";
+  
+  image5hint = new Image();
+  image5hint.src = "../../images/menu_quiz.gif";
+  
+  image6hint = new Image();
+  image6hint.src = "../../images/menu_pedia.gif";
+
+  imageHint = new Image();
+  imageHint.src = "../../images/menu_up.gif";
+}
+
+function changeImages() {
+  if (document.images) {
+    for (var i=0; i<changeImages.arguments.length; i+=2) {
+      document[changeImages.arguments[i]].src = eval(changeImages.arguments[i+1] + ".src");
+    }
+  }
+}
+
+// -->
+</script>
+
+
+<base target="_self">
+
+
+</head>
+
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0" bgcolor="#cccccc">
+
+<table border="0" cellpadding="0" cellspacing="0" height="48" width="100%" style="border-collapse: collapse" bordercolor="#111111">
+  <tr valign="middle">
+    <td width="100%" height="48" align="right" bgcolor="#00478E">
+    <img name="hint" border="0" src="../../images/menu_up.gif" align="right" width="126" height="19"></td>  
+    <td height="48" align="left" bgcolor="#00478E">
+    <a onMouseOver="changeImages('image1', 'image1on'); changeImages('hint', 'image1hint');" onMouseOut="changeImages('image1', 'image1off'); changeImages('hint', 'imageHint');" href="javascript:openIndex('ch8');">
+    <img name="image1" border="0" src="../../images/index_up.gif" width="26" height="48"></a></td>
+    <td height="48" align="left" bgcolor="#00478E"></td>
+    <td height="48" align="left" bgcolor="#00478E"><a href="javascript:openQuiz('ch08');" onMouseOver="changeImages('image5', 'image5on'); changeImages('hint', 'image5hint');" onMouseOut="changeImages('image5', 'image5off'); changeImages('hint', 'imageHint');"><img name="image5" border="0" src="../../images/quiz_up.gif" width="29" height="48"></a></td>    
+    <td height="48"  align="left" bgcolor="#00478E"><a href="javascript:openGlossary();" onMouseOver="changeImages('image2', 'image2on'); changeImages('hint', 'image2hint');" onMouseOut="changeImages('image2', 'image2off'); changeImages('hint', 'imageHint');">
+    <img name="image2" border="0" src="../../images/glossary_up.gif" width="26" height="48"></a></td>
+<td height="48" align="left" bgcolor="#00478E">
+<a target="main" onMouseOver="changeImages('image3', 'image3on'); changeImages('hint', 'image3hint');" onMouseOut="changeImages('image3', 'image3off'); changeImages('hint', 'imageHint');" href="../8_4_1/index.html">
+<img name="image3" border="0" src="../../images/back_up.gif" width="26" height="48"></a></td>
+    <td height="48" bgcolor="#00478E">
+    <a target="main" onMouseOver="changeImages('image4', 'image4on'); changeImages('hint', 'image4hint');" onMouseOut="changeImages('image4', 'image4off'); changeImages('hint', 'imageHint');" href="../8_5_0/index.html">
+    <img name="image4" border="0" src="../../images/next_up.gif" width="26" height="48"></a></td>
+    <td height="48">
+    <img src="../../images/menu_bar.gif" width="14" height="48" border="0" align="absbottom">
+</td>
+
+  </tr>
+</table>
+
+</html>

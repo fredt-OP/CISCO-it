@@ -1,0 +1,58 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr-fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Contenu</title>
+<base target="_self">
+<link href="../../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="window.focus();">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<!--  Start top title Lesson Bar -->
+	  <tr>
+	    <td width="18" class="toptitle01_white_bold" valign="top">
+	    <img border="0" src="../../images/content_lines.gif" width="16" height="25"> <img border="0" src="../../images/transdot.gif" width="2" height="1"></td>
+	    
+    <td width="18" class="toptitle01_white_bold">8.3</td>
+	    <td class="toptitle01_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+	    <td width="100%" class="toptitle01_white_bold">Description des principaux concepts et technologies de mise en r&eacute;seau</td>
+	    <td width="9" class="toptitle01_white_bold_margin">&nbsp;</td>
+	  </tr>
+	  <!--  End top title Lesson Bar --> <!--  Start top title Topic Bar -->
+	 <tr>
+	    <td width="18" height="25" class="toptitle02_white_bold">&nbsp;</td>
+	    
+    <td height="25"  class="toptitle02_white_bold">8.3.5</td> 
+	    <td class="toptitle02_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+	    <td width="100%" height="25" class="toptitle02_white_bold">D&eacute;finition du protocole ICMP</td>
+	    <td height="25" width="9" class="toptitle02_white_bold_margin">&nbsp;</td>
+	  </tr>
+	 <!--  End top title Topic Bar -->	
+</table>
+	
+	<!-- CONTENT -->
+	<table border="0" cellpadding="0" cellspacing="0" width="95%" bordercolor="#111111">
+		<tr>
+			<td width="20"></td>
+			<td>
+        <table border="0" cellpadding="0" cellspacing="0" bordercolor="#111111" width="95%">
+          
+        <tr> 
+          <td width="100%"> 
+            <p>Le protocole ICMP (Internet Control Message Protocol) est utilis&eacute; par les p&eacute;riph&eacute;riques d&rsquo;un r&eacute;seau pour envoyer des messages d&rsquo;erreur et de contr&ocirc;le aux ordinateurs et aux serveurs. Ce protocole peut avoir diff&eacute;rentes fonctions, telles que l&rsquo;annonce des erreurs de r&eacute;seau, l&rsquo;annonce des encombrements du r&eacute;seau et la r&eacute;solution des probl&egrave;mes. </p>
+            <p>L&rsquo;outil ping (Packet INternet Groper) est couramment utilis&eacute; pour tester les connexions entre ordinateurs. Il s&rsquo;agit d&rsquo;un utilitaire de ligne de commande simple mais tr&egrave;s utile, qui permet de d&eacute;terminer si une adresse IP sp&eacute;cifique est accessible. Vous pouvez envoyer une requ&ecirc;te ping &agrave; une adresse IP afin de tester sa connectivit&eacute;. L&rsquo;utilitaire ping envoie une requ&ecirc;te d&rsquo;&eacute;cho ICMP &agrave; l&rsquo;ordinateur de destination ou tout autre p&eacute;riph&eacute;rique de r&eacute;seau. Le p&eacute;riph&eacute;rique r&eacute;cepteur renvoie alors un message de r&eacute;ponse d&rsquo;&eacute;cho ICMP, pour confirmer la connectivit&eacute;.</p>
+            <p>L&rsquo;utilitaire ping est un outil de d&eacute;pannage tr&egrave;s utile pour d&eacute;terminer la connectivit&eacute; de base. Les commutateurs de ligne de commande pouvant &ecirc;tre utilis&eacute;s avec la commande ping sont indiqu&eacute;s dans la Figure&nbsp;1. Quatre requ&ecirc;tes d&rsquo;&eacute;cho ICMP (pings) sont envoy&eacute;es &agrave; l&rsquo;ordinateur de destination. S&rsquo;il est joignable, cet ordinateur envoie en retour quatre r&eacute;ponses d&rsquo;&eacute;cho ICMP. Le pourcentage de r&eacute;ponses r&eacute;ussies peut vous aider &agrave; d&eacute;terminer la fiabilit&eacute; et l&rsquo;accessibilit&eacute; de l&rsquo;ordinateur de destination.</p>
+            <p>Vous pouvez &eacute;galement utiliser la fonction ping pour rechercher l&rsquo;adresse IP d&rsquo;un h&ocirc;te si vous connaissez son nom. Si vous envoyez une requ&ecirc;te ping &agrave; un site Web sur la base de son nom, par exemple, www.cisco.com, comme indiqu&eacute; dans la Figure&nbsp;2, l&rsquo;adresse IP du serveur s&rsquo;affiche.</p>
+            <p>D&rsquo;autres messages ICMP sont utilis&eacute;s pour signaler les paquets non livr&eacute;s, fournir des donn&eacute;es sur un r&eacute;seau IP incluant des adresses IP sources et de destination et indiquer si un p&eacute;riph&eacute;rique est trop occup&eacute; pour g&eacute;rer le paquet. Les donn&eacute;es, sous forme de paquet, arrivent &agrave; un routeur. Pour m&eacute;moire, le routeur est un p&eacute;riph&eacute;rique r&eacute;seau charg&eacute; de transf&eacute;rer les paquets de donn&eacute;es &agrave; leur destination, via le r&eacute;seau. Si le routeur ne sait pas o&ugrave; envoyer le paquet, il le supprime. Il envoie ensuite un message ICMP &agrave; l&rsquo;ordinateur exp&eacute;diteur, en lui indiquant que les donn&eacute;es ont &eacute;t&eacute; supprim&eacute;es. Lorsqu&rsquo;un routeur est surcharg&eacute;, il envoie parfois un message ICMP diff&eacute;rent &agrave; l&rsquo;ordinateur exp&eacute;diteur, en indiquant que les transmissions sont ralenties en raison d&rsquo;un encombrement du r&eacute;seau.</p>
+          </td>
+          </tr>
+         </table>  
+       </td>
+     </tr>
+	</table>
+
+</body>
+
+</html>

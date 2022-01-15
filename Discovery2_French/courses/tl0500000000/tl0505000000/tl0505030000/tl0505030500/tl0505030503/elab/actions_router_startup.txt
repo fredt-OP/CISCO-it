@@ -1,0 +1,169 @@
+//zmg, 03.01.01
+//this file needs a better description!
+//
+//
+
+// File: actions_router_startup.txt
+// Description: Functions related to when a router is starting up
+
+// router_startup_checkStartUp()
+// IN : None
+// DO : See if we need the active router needs to be started
+// OUT: None
+function router_startup_checkStartUp() {
+
+	// get active router
+	var rptr = eval("r" + active_router);
+
+	// see if the router has been started
+	if (rptr.router_startup == false && !isComputer())
+	  
+	{
+		// if it hasn't been started, start it
+		rptr.MODE = "startUp";
+		commandline_changeProcess("router_startup_processStartUp");//to change to that process
+
+		// update startup flag
+		rptr.router_startup = true;
+
+		// go to the start up routine
+		router_startup_startUp();
+
+	}
+	else if (isComputer())
+	{
+		rptr.MODE = "startUp";
+		commandline_changeProcess("computer_startup_processStartUp");
+		rptr.router_startup = true;
+		computer_startup_startUp();
+	}
+	else
+	{
+		// else the router has been started and we can continue
+		commandline_changeProcess(rptr.processCurrent);
+			//here the variable is pointer bcos it is the current routers current process
+	}
+
+}
+
+
+
+
+//to start the router
+// ***** router_startup_processStartUp(int) *****
+// IN:	1 int representing the keycode of the key pressed
+// DO:	if ENTER, then go to command line, else do nothing
+// OUT: Possibly a 'User Access Verification' message
+function router_startup_processStartUp(keycode) {
+
+	// get the active router
+	var rptr = eval("r" + active_router);//it is rRouterA here
+        
+	// if ENTER, go to command line
+	if (keycode == 13) {
+
+		rptr.scrollStartLine = rptr.lastLine-22;  // for more function 
+		 
+		// get the MOTD
+		//CheckBannerMOTD();
+		banner_checkBannerMOTD();
+
+		// if the router requires a password and one has been specified
+		if ((rptr.run.line.con_password != "") && (rptr.run.line.con_login == true)) {
+
+			// print the user access message and go to password prompt
+			output_write("User Access Verification\n",
+				  "\n");
+			commandline_changeProcess("password_processPassword");
+			password_passwordLine();
+
+		} else
+ 		{
+
+			// else no password is required, so go to user command line
+
+			commandline_changeProcess("commandline_processCommandLine");
+		}
+		//calling the lab-drill object step 1
+		loadImage(1,stepnum);
+		goToNextStep(1,0);
+
+//code added 3 Lines below on April 11 2002 just in case if we need to go a particulat step right in the begining...
+			commandline_setMode(stepModeArray[1], active_router);
+			output_write("\n");
+			commandline_commandLine();
+
+	}
+}
+
+function computer_startup_processStartUp(keycode)
+{
+	// get the active router
+	var rptr = eval("r" + active_router);
+
+	// if ENTER, go to command line
+	if (keycode == 13)
+	{
+		rptr.scrollStartLine = rptr.lastLine-22;  // for more function
+
+		//calling the lab-drill object step 1
+		loadImage(1,stepnum);
+		goToNextStep(1,0);
+
+		commandline_changeProcess("commandline_processCommandLine");
+		commandline_setMode(stepModeArray[1], active_router);
+		output_write("\n");
+		commandline_commandLine();
+	}
+}
+
+function computer_startup_startUp()
+{
+	var rptr = eval("r" + active_router);
+
+	output_write("\n");
+	rptr.scrollStartLine++; // increment the start line
+
+	output_write("\n",
+	"Starting Computer...","\n","\n","\n","\n");
+}
+
+
+
+
+// ***** router_startup_startUp() *****
+// IN : None
+// DO :	Prints out the start up screen
+// OUT: The start up screen
+function router_startup_startUp() {
+
+	// get the active router
+	var rptr = eval("r" + active_router);
+
+	output_write("\n");
+	rptr.scrollStartLine++; // increment the start line
+
+	// print the start screen
+	output_write("\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		rptr.run.hostname + " con0 is now available\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		"Press RETURN to get started.\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n",
+		"\n");
+}

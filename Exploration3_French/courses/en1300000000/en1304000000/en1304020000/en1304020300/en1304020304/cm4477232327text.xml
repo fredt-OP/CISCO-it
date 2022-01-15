@@ -1,0 +1,259 @@
+<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Summary Details</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Subset Details</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>Request Details</B>]]></text> 
+</component>
+
+<component id="ID_title">
+  <text><![CDATA[<B>Advertisements Details</B>]]></text> 
+</component>
+
+<component id="ID_caption01">
+  <text><![CDATA[<B>Roll over each item for more information.</B>]]></text> 
+</component>
+<component id="ID_caption02">
+  <text><![CDATA[<B>Roll over some items for more information.</B>]]></text> 
+</component>
+
+<component id="ID_txt01__">
+  <text><![CDATA[<B>Summary Advertisement</B>]]></text> 
+</component>
+
+<component id="ID_txt02__">
+  <text><![CDATA[<B>Version</B>]]></text> 
+</component>
+
+<component id="ID_txt03__">
+  <text><![CDATA[<B>Code</B>]]></text> 
+</component>
+
+<component id="ID_txt04__">
+  <text><![CDATA[<B>Followers</B>]]></text> 
+</component>
+
+<component id="ID_txt05__">
+  <text><![CDATA[<B>MgmtD Len</B>]]></text> 
+</component>
+
+<component id="ID_txt06__">
+  <text><![CDATA[<B>Management Domain Name (Zero-Padded to 32 Bytes)</B>]]></text> 
+</component>
+
+<component id="ID_txt07__">
+  <text><![CDATA[<B>Configuration Revision Number</B>]]></text> 
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[<B>Updater Identity</B>]]></text> 
+</component>
+
+<component id="ID_txt09">
+  <text><![CDATA[<B>Update Timestamp (12 Bytes)</B>]]></text> 
+</component>
+
+<component id="ID_txt10">
+  <text><![CDATA[<B>MD5 Digest (16 Bytes)</B>]]></text> 
+</component>
+
+<component id="ID_txt11">
+  <text><![CDATA[<B>Version </B>– This field displays the VTP version used. On Cisco 2960 switches the version is either VTP V1 or VTP V2.]]></text> 
+</component>
+
+<component id="ID_txt12">
+  <text><![CDATA[<B>Code </B>– A code that identifies the type of advertisement.]]></text> 
+</component>
+
+<component id="ID_txt13">
+  <text><![CDATA[<B>Followers </B>- The Followers field indicates that this packet is followed by a Subset Advertisement packet.]]></text> 
+</component>
+
+<component id="ID_txt14">
+  <text><![CDATA[<B>MgmtD Len </B>– Indicated the length of the management domain name.]]></text> 
+</component>
+
+<component id="ID_txt15">
+  <text><![CDATA[<B>Management Domain Name </B>– The name of VTP Domain.]]></text> 
+</component>
+
+<component id="ID_txt16">
+  <text><![CDATA[<B>Configuration Revision Number </B>– The revision number of the VTP server sending the message.]]></text> 
+</component>
+
+<component id="ID_txt17">
+  <text><![CDATA[<B>Updater Indentity </B>- The Updater Identity is the IP address of the switch that is the last to have incremented the configuration revision.]]></text> 
+</component>
+
+<component id="ID_txt18">
+  <text><![CDATA[<B>Update Timestamp </B>- The Update Timestamp is the date and time of the last increment of the configuration revision.]]></text> 
+</component>
+
+<component id="ID_txt19">
+  <text><![CDATA[<B>MD5 Digest </B>-  Message Digest 5 (MD5) carries the VTP password, if MD5 is configured and used to authenticate the validation of a VTP update.]]></text> 
+</component>
+
+<component id="ID_txt20">
+  <text><![CDATA[<B>Version</B>]]></text> 
+</component>
+
+<component id="ID_txt21">
+  <text><![CDATA[<B>Code</B>]]></text> 
+</component>
+
+<component id="ID_txt22">
+  <text><![CDATA[<B>Seq-Number</B>]]></text> 
+</component>
+
+<component id="ID_txt23">
+  <text><![CDATA[<B>MgmtD Len </B>]]></text> 
+</component>
+
+<component id="ID_txt24">
+  <text><![CDATA[<B>Management Domain Name (zero-padded to 32 bytes)</B>]]></text> 
+</component>
+
+<component id="ID_txt25">
+  <text><![CDATA[<B>Configuration Revision Number</B>]]></text> 
+</component>
+
+<component id="ID_txt26">
+  <text><![CDATA[<B>VLAN-info Field 1</B>]]></text> 
+</component>
+
+<component id="ID_txt27">
+  <text><![CDATA[<B>:</B>]]></text> 
+</component>
+
+<component id="ID_txt28">
+  <text><![CDATA[<B>VLAN-info Field N</B>]]></text> 
+</component>
+
+<component id="ID_txt29">
+  <text><![CDATA[<B>Version </B>– This field displays the VTP version used. On Cisco 2960 switches the version is either VTP V1 or VTP V2.]]></text> 
+</component>
+
+<component id="ID_txt30">
+  <text><![CDATA[<B>Code </B>-The format for this is 0x02 for subset advertisement.]]></text> 
+</component>
+
+<component id="ID_txt31">
+  <text><![CDATA[<B>Seq-Number </B>- This is the sequence of the packet in the stream of packets that follow a summary advertisement. The sequence starts with 1.]]></text> 
+</component>
+
+<component id="ID_txt32">
+  <text><![CDATA[<B>MgmtD Len </B>– Indicated the length of the management domain name.]]></text> 
+</component>
+
+<component id="ID_txt33">
+  <text><![CDATA[<B>Management Domain Name </B>– The name of VTP Domain.]]></text> 
+</component>
+
+<component id="ID_txt34">
+  <text><![CDATA[<B>Configuration Revision Number </B>– The revision number of the VTP server sending the message.]]></text> 
+</component>
+
+<component id="ID_txt35">
+  <text><![CDATA[<B>The VLAN-info field contains information for each VLAN and is formatted as follows:</B>]]></text> 
+</component>
+
+<component id="ID_txt36">
+  <text><![CDATA[<B>Info Length</B>]]></text> 
+</component>
+
+<component id="ID_txt37">
+  <text><![CDATA[<B>Status</B>]]></text> 
+</component>
+
+<component id="ID_txt38">
+  <text><![CDATA[<B>VLAN-Type</B>]]></text> 
+</component>
+
+<component id="ID_txt39">
+  <text><![CDATA[<B>VLAN-name Len</B>]]></text> 
+</component>
+
+<component id="ID_txt40">
+  <text><![CDATA[<B>ISL VLAN-id</B>]]></text> 
+</component>
+
+<component id="ID_txt41">
+  <text><![CDATA[<B>MTU Size</B>]]></text> 
+</component>
+
+<component id="ID_txt42">
+  <text><![CDATA[<B>802.10 Index</B>]]></text> 
+</component>
+
+<component id="ID_txt43">
+  <text><![CDATA[<B>VLAN-name (Padded with 0s to Multiples of 4 bytes)</B>]]></text> 
+</component>
+
+<component id="ID_txt44">
+  <text><![CDATA[<B>Advertisement Request</B>]]></text> 
+</component>
+
+<component id="ID_txt45">
+  <text><![CDATA[<B>Version</B>]]></text> 
+</component>
+
+<component id="ID_txt46">
+  <text><![CDATA[<B>Code</B>]]></text> 
+</component>
+
+<component id="ID_txt47">
+  <text><![CDATA[<B>Rsvd</B>]]></text> 
+</component>
+
+<component id="ID_txt48">
+  <text><![CDATA[<B>MgmtD Len</B>]]></text> 
+</component>
+
+<component id="ID_txt49">
+  <text><![CDATA[<B>Management Domain Name (zero-padded to 32 bytes)</B>]]></text> 
+</component>
+
+<component id="ID_txt50">
+  <text><![CDATA[<B>Start Value</B>]]></text> 
+</component>
+
+<component id="ID_txt51">
+  <text><![CDATA[<B>Version </B>– This field displays the VTP version used. On Cisco 2960 switches the version is either VTP V1 or VTP V2.]]></text> 
+</component>
+
+<component id="ID_txt52">
+  <text><![CDATA[<B>Code </B>- The format for this is 0x03 for an advertisement request.]]></text> 
+</component>
+
+<component id="ID_txt53">
+  <text><![CDATA[<B>Rsvd </B>– A reserved field.]]></text> 
+</component>
+
+<component id="ID_txt54">
+  <text><![CDATA[<B>MgmtD Len </B>– Indicated the length of the management domain name.]]></text> 
+</component>
+
+<component id="ID_txt55">
+  <text><![CDATA[<B>Management Domain Name </B>– The name of VTP Domain.]]></text> 
+</component>
+
+<component id="ID_txt56">
+  <text><![CDATA[<B>Start Value </B>– This field is used when there are several subset advertisements. If the first (n) subset advertisement has been received and the subsequent one (n+1) has not been received, the VTP enabled switch only requests advertisements from the (n+1)th one.]]></text> 
+</component>
+
+<component id="ID_txt57">
+  <text><![CDATA[<B>Subset Advertisements</B>]]></text> 
+</component>
+
+<component id="ID_txt58">
+  <text><![CDATA[<B>VLAN-Info</B>]]></text> 
+</component>
+
+
+</textcomponents>

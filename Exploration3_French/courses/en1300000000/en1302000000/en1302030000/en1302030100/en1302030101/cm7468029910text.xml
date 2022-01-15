@@ -1,0 +1,130 @@
+<textcomponents>
+
+<component id="ID_title1">
+<text><![CDATA[<b>The Command Line Interface Modes</b></font>]]></text>
+</component>
+<component id="ID_title2">
+<text><![CDATA[<b>The Command Line Interface Modes</b></font>]]></text>
+</component>
+<component id="ID_txt1">
+<text><![CDATA[<b>user EXEC and privileged EXEC mode </b></font>]]></text>
+</component>
+<component id="ID_txt2">
+<text><![CDATA[<b>Navigating Configuration Modes</b></font>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+		<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font color="#FFFFFF"><b></b></font></td>
+		
+			
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from user EXEC to privileged EXEC mode.</td>
+		
+		<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch><b>enable</b></font></td>
+	
+	</tr>
+	
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>If a password has been set for privileged EXEC mode you will be prompted to enter it now.</td>
+		<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>Password:<b>password</b></font></td>
+			
+</tr>
+	
+	
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The # prompt signifies privileged EXEC mode.</td>
+<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#</font></td>
+</tr>
+<tr>
+			
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from privileged EXEC to user EXEC mode.</td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>disable</b></font></td>
+				
+		</tr>
+		
+		
+		<tr>
+			
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The > prompt signifies user EXEC mode.</td>
+			<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch></font></td>
+				
+	</tr>
+		
+	
+</table>
+]]></text> 
+  </component>
+<component id="tableHTML1">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+			
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from privileged EXEC mode to global configuration mode.</td>
+		
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>switch#<b>configure terminal</b></font></td>
+	
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The (config)# prompt signifies that the switch is in global configuration mode.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>switch(config)# </font></td>
+			
+	</tr>
+	
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from global configuration mode to interface configuration mode for fast ethernet interface 0/1.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>switch(config)#<b>interface fastethernet 0/1</b></font></td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The (config-if)# prompt signifies that the switch is in the interface configuration mode.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>switch(config-if)#</font></td>
+			
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from interface configuration mode to global configuration mode.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>switch(config-if)#<b>exit</b></font></td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The (config)# prompt signifies that the switch is in global configuration mode.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>switch(config)# </font></td>
+			
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from global configuration mode to privileged EXEC mode.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>switch(config)#<b>exit</b></font></td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The # prompt signifies that the switch is in privileged EXEC mode.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>switch#</font></td>
+			
+	</tr>
+		
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

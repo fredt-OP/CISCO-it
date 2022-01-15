@@ -1,0 +1,42 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>En-tête de trame de liaison de données</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>En-tête de paquet IP</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>En-tête de paquet OSPF</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Données spécifiques de type de paquet OSPF</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Trame de liaison de données (champs Ethernet affichés ici)</b><br/>Adresse MAC de destination = multidiffusion : 01-00-5E-00-00-05 ou 01-00-5E-00-00-06<br/>Adresse MAC source = adresse de l’interface d’envoi]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Paquet IP</b><br/>Adresse IP source = adresse de l’interface d’envoi<br/>Adresse IP de destination = multidiffusion : 224.0.0.5 ou 224.0.0.6<br/>Champ de protocole = 89 pour OSPF]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>En-tête de paquet OSPF</b><br/>Code du type de paquet OSPF <br/>ID du routeur et ID de la zone]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Types de paquet OSPF</b><br/>0x01 Hello<br/>0x02 Description de base de données (DD)<br/>0x03 Requête d’état de liens<br/>0x04 Mise à jour d’état de liens<br/>0x05 Accusé de réception d’état de liens]]></text>
+</component>
+
+<component id="ID_title">
+<text><![CDATA[<b>Message OSPF encapsulé</b>]]></text>
+</component>
+
+<component id="ID_insta">
+<text><![CDATA[<b>Placez votre pointeur sur les champs pour afficher leur contenu.</b>]]></text>
+</component>
+
+</textcomponents>

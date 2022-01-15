@@ -1,0 +1,326 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Click through the buttons for summary information.</b>]]></text>
+</component>
+
+<!--  Slide 1  -->
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Without an IP address a host cannot participate on the Internet. This chapter discussed the importance of IP addressing, its hierarchical structure and the methods of obtaining an address for a networking device.</b><br/><br/><ul><li>Each logical IP address is made up of two parts; the network ID and the unique host ID on that network.</li><br/><li>An IP address is a series of 32 binary bits (ones and zeros) that is grouped into four 8-bit bytes called octets.</li><br/><li>The four octets are each converted into a decimal number which is referred to as dotted-decimal notation.</li><br/><li>The IP address and subnet mask work together to determine which portion of the IP address represents the network address and which portion represents the host address.</li></ul>]]></text>
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[<b>Network</b>]]></text> 
+</component>
+
+<component id="s1_ID_txt10">
+<text><![CDATA[<b>Network</b>]]></text> 
+</component>  
+
+<component id="s1_ID_txt11">
+<text><![CDATA[<b>Network number</b>]]></text> 
+</component>  
+
+<component id="s1_ID_txt12">
+<text><![CDATA[<b>Host number</b>]]></text> 
+</component>   
+
+<component id="s1_ID_title">
+<text><![CDATA[<b>The Parts of an IP address</b>]]></text> 
+</component> 
+
+<!--  Slide 2  -->  
+<component id="ID_txt02">
+<text><![CDATA[<b>IP addresses are classified in many different ways.</b><br/><br/><ul><li>IP addresses are grouped into 5 classes. Classes A, B and C are commercial. Class D is for multicasting and Class E is experimental.</li><br/><li>Each class of IP address has its own default subnet mask.</li><br/><li>IP addresses are also classified as public or private.  Public addresses are unique and are used on the Internet.</li><br/><li>Private addresses can be used internally by hosts in any organization. Private addresses must be translated to Internet routable addresses in order for hosts to communicate on the Internet.</li><br/><li>Hosts can use IP addresses to communicate one-to-one (unicast), one-to-many (multicast) or one-to-all (broadcast). </li></ul>]]></text>
+</component>
+
+<component id="s2_ID_header1">
+<text><![CDATA[<b>IP Address Classes</b>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[<b>Address Class</b>]]></text>
+</component>
+
+<component id="s2_ID_txt02">
+<text><![CDATA[<b>A</b>]]></text>
+</component>
+
+<component id="s2_ID_txt03">
+<text><![CDATA[<b>B</b>]]></text>
+</component>
+
+<component id="s2_ID_txt04">
+<text><![CDATA[<b>C</b>]]></text>
+</component>
+
+<component id="s2_ID_txt05">
+<text><![CDATA[<b>D</b>]]></text>
+</component>
+
+<component id="s2_ID_txt06">
+<text><![CDATA[<b>E</b>]]></text>
+</component>
+
+<component id="s2_ID_txt07">
+<text><![CDATA[<b>1st octet range (decimal)</b>]]></text>
+</component>
+
+<component id="s2_ID_txt08">
+<text><![CDATA[<b>1 - 127</b>]]></text>
+</component>
+
+<component id="s2_ID_txt09">
+<text><![CDATA[<b>128 - 191</b>]]></text>
+</component>
+
+<component id="s2_ID_txt10">
+<text><![CDATA[<b>192 - 223</b>]]></text>
+</component>
+
+<component id="s2_ID_txt11">
+<text><![CDATA[<b>224 - 239</b>]]></text>
+</component>
+
+<component id="s2_ID_txt12">
+<text><![CDATA[<b>240 - 255</b>]]></text>
+</component>
+
+<component id="s2_ID_txt13">
+<text><![CDATA[<b>1st octet bits (<font color="#009900">green bits don't change</font>)</b>]]></text>
+</component>
+
+<component id="s2_ID_txt14">
+<text><![CDATA[<b><font color="#009900">0</font>00</font>00000 -<font color="#009900">0</font>1111111</b>]]></text>
+</component>
+
+<component id="s2_ID_txt15">
+<text><![CDATA[<b><font color="#009900">10</font>000000 -<font color="#009900">10</font>111111</b>]]></text>
+</component>
+
+<component id="s2_ID_txt16">
+<text><![CDATA[<b><font color="#009900">110</font>00000 -<font color="#009900">110</font>11111</b>]]></text>
+</component>
+
+<component id="s2_ID_txt17">
+<text><![CDATA[<b><font color="#009900">1110</font>0000 -<font color="#009900">1110</font>1111</b>]]></text>
+</component>
+
+<component id="s2_ID_txt18">
+<text><![CDATA[<b><font color="#009900">1111</font>0000 -<font color="#009900">1111</font>1111</b>]]></text>
+</component>
+
+<component id="s2_ID_txt19">
+<text><![CDATA[<b>Network (<font color="#0066CC">N</font>) and Host (<font color="#CC0000">H</font>) parts of address</b>]]></text>
+</component>
+
+<component id="s2_ID_txt20">
+<text><![CDATA[<b><font color="#CC0000">N</font><font color="#0066CC">.H.H.H</font></b>]]></text>
+</component>
+
+<component id="s2_ID_txt21">
+<text><![CDATA[<b><font color="#CC0000">N.N</font><font color="#0066CC">.H.H</font></b>]]></text>
+</component>
+
+<component id="s2_ID_txt22">
+<text><![CDATA[<b><font color="#CC0000">N.N.N</font>.<font color="#0066CC">H</font></b>]]></text>
+</component>
+
+<component id="s2_ID_txt23">
+<text><![CDATA[<b>Not for commerical use as a host</b>]]></text>
+</component>
+
+<component id="s2_ID_txt24">
+<text><![CDATA[<b>Not for commerical use as a host</b>]]></text>
+</component>
+
+<component id="s2_ID_txt25">
+<text><![CDATA[<b>Default subnet mask (decimal and binary)</b>]]></text>
+</component>
+
+<component id="s2_ID_txt26">
+<text><![CDATA[<b><font color="#CC0000">255</font><font color="#0066CC">.0.0.0</font><br><font color="#CC0000">11111111</font><font color="#0066CC">.00000000.00000000.00000000</font></b>]]></text>
+</component>
+
+<component id="s2_ID_txt27">
+<text><![CDATA[<b><font color="#CC0000">255.255</font><font color="#0066CC">.0.0</font><br><font color="#CC0000">11111111.11111111</font><font color="#0066CC">.00000000.00000000</font></b>]]></text>
+</component>
+
+<component id="s2_ID_txt28">
+<text><![CDATA[<b><font color="#CC0000">255.255.255</font><font color="#0066CC">.0</font><br><font color="#CC0000">11111111.11111111.11111111</font><font color="#0066CC">.00000000</font></b>]]></text>
+</component>
+
+<component id="s2_ID_txt29">
+<text><![CDATA[<b>Numbers of posible networks and hosts per network</b>]]></text>
+</component>
+
+<component id="s2_ID_txt30">
+<text><![CDATA[<b>126 nets (2^7-2)16,777,214 hosts per net (2^24-2)</b>]]></text>
+</component>
+
+<component id="s2_ID_txt31">
+<text><![CDATA[<b>16,382 nets  (2^14-2) 65,534 hosts per net (2^16-2)</b>]]></text>
+</component>
+
+<component id="s2_ID_txt32">
+<text><![CDATA[<b>2,097.150 nets (2^21-2) 254 hosts per net (2^8-2)</b>]]></text>
+</component>
+
+
+<!--  Slide 3  -->
+<component id="ID_txt03">
+<text><![CDATA[<b>IP addresses can be assigned either statically or dynamically.</b><br/><br/><ul><li>If assigning addresses statically, the IP address, subnet mask and the default gateway must all be configured manually. </li><br/><li>Static addresses are typically required for servers that are accessed from the Internet.</li><br/><li>DHCP is the preferred method of assigning IP addresses on large networks since it reduces the burden on network support staff.</li><br/><li>The Integrated Services Router (ISR), as well as other multi-function devices, acts as a DHCP client to receive its unique IP configuration from the ISP and then acts as a DHCP server to assign IP addresses to internal hosts on the local network.</li></ul>]]></text>
+</component>
+
+<component id="s3_ID_txt01">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="s3_ID_txt02">
+<text><![CDATA[<b>ISP 1</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[<b>ISP 2</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[<b>ISP 3</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt05">
+<text><![CDATA[<b>ISP DHCP Server</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt06">
+<text><![CDATA[<b>Router DHCP Server</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt07">
+<text><![CDATA[<b>DHCP Client</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt08">
+<text><![CDATA[<b>DHCP Clients</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt09">
+<text><![CDATA[<b>DHCP Client</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt10">
+<text><![CDATA[<b>ISR DHCP Server</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt11">
+<text><![CDATA[<b>Local DHCP Server</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt12">
+<text><![CDATA[<b>Corporate Network</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt13">
+<text><![CDATA[<b>Home / Small Business Network</b>]]></text> 
+</component>
+
+<component id="s3_ID_txt14">
+<text><![CDATA[<b>Single Home PC</b>]]></text> 
+</component>
+
+
+<!--  Slide 4  -->
+<component id="ID_txt04">
+<text><![CDATA[<b>Private IP addresses from inside an organization must be translated to a unique public IP address before the packet goes onto the Internet.</b><br/><br/><ul><li>Routers provide a boundary that separates local networks from the Internet. </li><br/><li>A host’s default gateway is the router interface connected to the local network that is used to communicate with destinations on other networks.</li><br/><li>Many gateway routers translate private LAN IP addresses to Internet routable IP addresses using a process called Network Address Translation (NAT).</li><br/><li>When more than one private IP address is translated to a single public IP address, the router keeps track of each source IP address and port number being translated, so return traffic is directed to the correct host.</li></ul>]]></text>
+</component>
+
+<component id="s4_ID_isr">
+<text><![CDATA[<b> ISR </b>]]></text>
+</component>
+
+<component id="s4_ID_isp">
+<text><![CDATA[<b> ISP </b>]]></text>
+</component>
+
+<component id="s4_ID_dhcp01">
+<text><![CDATA[<b> DHCP Client </b>]]></text>
+</component>
+
+<component id="s4_ID_dhcp02">
+<text><![CDATA[<b> DHCP Client </b>]]></text>
+</component>
+
+<component id="s4_ID_dhcp03">
+<text><![CDATA[<b> DHCP Client </b>]]></text>
+</component>
+
+<component id="s4_ID_txt01">
+<text><![CDATA[<b>IP Address:  192.168.1.2</b>]]></text>
+</component>
+
+<component id="s4_ID_txt01a">
+<text><![CDATA[<b> DHCP Server </b>]]></text>
+</component>
+
+<component id="s4_ID_txt02">
+<text><![CDATA[<b>Subnet Mask: 255.255.255.0</b>]]></text>
+</component>
+
+<component id="s4_ID_txt03">
+<text><![CDATA[<b>Default Gateway: 192.168.1.1</b>]]></text>
+</component>
+
+<component id="s4_ID_txt04">
+<text><![CDATA[<b>IP Address: 192.168.1.3</b>]]></text>
+</component>
+
+<component id="s4_ID_txt05">
+<text><![CDATA[<b>Subnet Mask: 255.255.255.0</b>]]></text>
+</component>
+
+<component id="s4_ID_txt06">
+<text><![CDATA[<b>Default Gateway: 192.168.1.1</b>]]></text>
+</component>
+
+<component id="s4_ID_txt07">
+<text><![CDATA[<b>IP Address: 192.168.1.4</b>]]></text>
+</component>
+
+<component id="s4_ID_txt08">
+<text><![CDATA[<b>Subnet Mask: 255.255.255.0</b>]]></text>
+</component>
+
+<component id="s4_ID_txt09">
+<text><![CDATA[<b>Default Gateway: 192.168.1.1</b>]]></text>
+</component>
+
+<component id="s4_ID_txt10">
+<text><![CDATA[<b>ISR DHCP Server</b>]]></text>
+</component>
+
+<component id="s4_ID_txt11">
+<text><![CDATA[<b>Internal Private Address</b>]]></text>
+</component>
+
+<component id="s4_ID_txt12">
+<text><![CDATA[<b>192.168.1.1</b>]]></text>
+</component>
+
+<component id="s4_ID_txt13">
+<text><![CDATA[<b>ISR DHCP Client</b>]]></text>
+</component>
+
+<component id="s4_ID_txt14">
+<text><![CDATA[<b>External Public Address</b>]]></text>
+</component>
+
+<component id="s4_ID_txt15">
+<text><![CDATA[<b>192.150.45.3</b>]]></text>
+</component>
+
+<component id="s4_ID_txt16">
+<text><![CDATA[<b>Internal Private Addresses</b>]]></text>
+</component>
+
+</textcomponents>

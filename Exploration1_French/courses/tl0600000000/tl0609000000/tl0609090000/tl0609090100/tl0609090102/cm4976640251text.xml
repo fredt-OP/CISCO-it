@@ -1,0 +1,286 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions vous est proposée. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour accéder à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1. <textformat blockindent='14'>Nommez les deux sous-couches liaison de données et indiquez leur finalité.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[<p><b>Logical Link Control (LLC)</b></p><p>Ce contrôle maintient la communication entre les couches supérieures et inférieures, couche matérielle en particulier. Intégré au logiciel et indépendant de l’équipement physique, ce contrôle agit comme un pilote de la carte réseau d’un ordinateur. Grâce à sa fonction de sous-adressage, il permet d’identifier le protocole réseau qu’utilise le service de couche liaison. Point d’accès DSAP (Destination Service Access Point) et point d’accès SSAP (Source Service Access Point) : ces deux points d’accès permettent d’identifier un protocole ou une série de protocoles dans la couche supérieure suivante du modèle OSI, ou couche réseau.</p><br/><p><b>Contrôle MAC (Media Access Control)</b></p><p>La sous-couche MAC Ethernet se charge des opérations suivantes. Encapsulation de données : système de trames avant la transmission, analyse de trames / détection d’erreurs pendant et après la réception. Contrôle MAC (Media Access Control) : il permet de contrôler les trames sur et en dehors des supports, notamment le lancement de la transmission de trames et la récupération suite à une défaillance de transmission. L’adressage : fournit une adresse physique (adresse MAC) qui permet la livraison de trames aux hôtes de destination. Le matériel implémente le contrôle MAC. En règle générale, il en est ainsi dans la carte réseau hôte ou tout équivalent.</p>]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. <textformat blockindent='14'>Décrivez plusieurs fonctions restrictives des technologies Ethernet traditionnelles.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<ul><li>Faible bande passante</li><li>Bidirectionnel non simultané</li><li>Câble coaxial, en particulier Ethernet épais. Installation difficile, grand rayon de courbure requis</li><li>Bus physique, problèmes de raccordement</li><li>Connecteurs de type Vampire/Baïonnette. Installation difficile et problématique</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3. <textformat blockindent='14'>Répertoriez les champs et leurs objectifs relatifs à une trame Ethernet.</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[<p><b>Préambule et délimiteur de début de trame :</b></p><p>Le préambule et le délimiteur de début de trame servent à des fins de synchronisation. </p><br/><p><b>Adresse MAC de destination :</b></p><p>L’adresse MAC de destination (taille : 6 octets) est l’identificateur du destinataire. </p><br/><p><b>Adresse MAC source :</b></p><p>L’adresse MAC source (6 octets en longueur) identifie l’interface ou la carte réseau provenant de la trame. </p><br/><p><b>Longueur/Type :</b></p><p>Le champ Longueur (2 octets en longueur) définit la longueur précise du champ de données de la trame. Le champ Type décrit le protocole répertorié dans la trame.</p><br/><p><b>Données et bourrage :</b></p><p>Le champ Données et bourrage (46 à 1 500 octets en longueur) contient des données issues d’une couche supérieure, qui est une L3PDU générique ou un paquet IP si vous utilisez TCP/IP.Le bourrage est obligatoire pour remplir la trame au minimum si un très petit paquet est encapsulé.</p><br/><p><b>Séquence de contrôle de trame (FCS) :</b></p><p>Le champ FCS (4 octets en longueur) permet de détecter des erreurs dans une trame. Il utilise un contrôle par redondance cyclique (CRC), qui commence par la station émettrice et comprend les résultats correspondants dans le champ FCS. La station de réception reçoit la trame et exécute le même contrôle par redondance cyclique pour détecter les erreurs. Si les calculs correspondent, il n’y a aucune erreur. Dans le cas contraire, la trame est abandonnée.</p>]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4. <textformat blockindent='14'>Décrivez la structure d’une adresse MAC Ethernet.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[<p>L’adresse MAC Ethernet est une valeur binaire de 48 bits constituée de 12 chiffres hexadécimaux. Les 24 premiers bits (3 octets) représentent l’identifiant d’organisation (OUI). Les 24 bits suivants (3 octets) identifient le périphérique et doivent être uniques pour une valeur OUI donnée.</p>]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5. <textformat blockindent='14'>Pourquoi les adresses MAC de la couche 2 sont-elles nécessaires ?</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[<p>L’adresse MAC Ethernet permet d’assurer le transport de la trame via le support local. Une adresse MAC donnée n’a aucun sens ou ne sert à rien en dehors du segment local. Elle est unique, non hiérarchique et associée à un périphérique donné, quel que soit son emplacement ou le réseau auquel il est connecté. En revanche, les adresses de la couche 3 sont utilisées de bout en bout sur les réseaux.</p>]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6. <textformat blockindent='14'>Décrivez le mode d’implémentation des monodiffusions, des multidiffusions et des diffusions par Ethernet.</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[<p><b>Monodiffusion :</b></p><p>Une adresse MAC de monodiffusion est la seule adresse utilisée lorsque vous envoyez un message d’un périphérique émetteur à un périphérique récepteur. Tous les hôtes analysent la trame. Si celle-ci ne leur est pas adressée, elle n’est pas prise en compte. Seul l’hôte dont l’adresse MAC correspond à l’adresse de destination de la trame peut accepter la trame et traiter le message via les couches supérieures.</p><br/><p><b>Multidiffusion :</b></p><p>Les adresses MAC de multidiffusion sont un groupe d’adresses MAC courantes, dont disposent tous les périphériques pour livrer les trames contenant les paquets de multidiffusion, notamment l’audio ou la vidéo en continu. Les adresses MAC de multidiffusion Ethernet commencent par 0100.5E pour les multidiffusions IP. Les trames dont l’adresse de destination figure dans cette plage sont livrées aux périphériques du réseau local, dont les couches supérieures ont établi une session de multidiffusion.</p><br/><p><b>Diffusion :</b></p><p>L’adresse MAC de diffusion Ethernet est FFFF.FFFF.FFFF. Les trames associées à cette adresse de destination sont livrées et traitées par tous les périphériques sur ce sous-réseau local.</p>]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7. <textformat blockindent='14'>Donnez des exemples pour décrire le processus CSMA/CD.</textformat> ]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<p><b>Écoute de porteuse</b></p><p>Tous les périphériques de réseau avec des messages à envoyer doivent les écouter avant de les transmettre. Si un signal d’un autre périphérique est détecté, celui-ci patiente avant de réessayer. Lorsqu’aucun trafic n’est détecté, le périphérique transmet son message.</p><br/><p><b>Accès multiple</b></p><p>Si la latence des signaux d’un premier périphérique implique qu’ils ne sont pas détectés par un deuxième périphérique, ce dernier peut également lancer sa transmission. Les deux messages se propagent sur les supports jusqu’à ce qu’ils se rencontrent. Les innombrables autres signaux continuent leur propagation sur les supports.</p><br/><p><b>Détection de collisions</b></p><p>Tous les périphériques détectent l’amplitude accrue des signaux. Ceux-ci dépassent le niveau normal que génère une collision. Après la détection d’une collision, chaque périphérique émetteur poursuit sa transmission afin que tous les périphériques du réseau détectent la collision. </p><br/><p><b>Signal de brouillage</b></p><p>Qui plus est, après la détection d’une collision, tous les périphériques envoient un signal de brouillage.</p><br/><p><b>Réémission aléatoire </b></p><p>Ce signal de brouillage appelle l’algorithme de réémission. Ainsi, tous les périphériques interrompent leur transmission pour une durée aléatoire. Ce processus permet une atténuation des signaux de collision sur le support. Après l’expiration du délai, tous les périphériques repassent au mode d’écoute avant le mode de transmission. En réémission temporisée aléatoire, un troisième périphérique peut procéder à une transmission de données avant les deux autres impliqués dans la collision initiale. </p>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8. <textformat blockindent='14'>Décrivez un domaine de collision Ethernet.</textformat>]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[<p>On appelle domaine de collision le groupe de périphériques connectés qui sont susceptibles d’occasionner des collisions entre eux. Les domaines de collision interviennent au niveau de la couche 1 du modèle de référence réseau.</p><br/><p>Les concentrateurs et les répéteurs sont des périphériques intermédiaires au niveau de la couche 1 qui permettent de rallonger la portée des câbles Ethernet. Les concentrateurs (également appelés répéteurs multi-ports) permettent à d’autres périphériques de se connecter aux supports partagés. Les deux types de périphériques augmentent la taille du domaine de collision. Si vous octroyez un accès réseau à d’autres utilisateurs munis de concentrateurs, vous risquez de réduire leurs performances respectives. En effet, vous avez un surcroît de périphériques pour une capacité de support qui reste fixe et doit être partagée entre tous.</p>]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 9 -->
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9. <textformat blockindent='14'>Comparez les spécifications des technologies Ethernet anciennes avec les versions actuelles.</textformat>]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[<p><b>Bande passante :</b> 10 Mbits/s à 100 Mbits/s contre 1 000 Mbits/s à 10 000 Mbits/s</p> <br/><p><b>Distance :</b></p><ul><li>Supports en cuivre : 500 à 200 mètres contre 100 mètres (un coût moindre et une bande passante supérieure l’emportent sur une distance réduite)</li><li>Supports en fibre optique : 400 mètres à 10 kilomètres</li></ul><br/><p><b>Supports : </b></p><ul><li>Du câble coaxial à la fibre optique, en passant par le câble à paires torsadées non blindées </li><li>Hôtes multiples par segment (supports partagés) aux hôtes uniques par segment</li><li>Bidirectionnel non simultané au bidirectionnel simultané</li></ul><br/><p><b>Coût :</b> le coût au Mbit/s par mètre a baissé</p>]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 10 -->
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10. <textformat blockindent='24'>Indiquez les avantages à passer d’un réseau local avec concentrateur à un réseau local avec commutateur.</textformat>]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[<p><b>Évolutivité :</b></p><ul><li>Les concentrateurs partagent une bande passante restreinte entre les utilisateurs.</li><li>Les commutateurs fournissent l’intégralité de la bande passante disponible à chaque hôte.</li></ul><br/><p><b>Latence :</b></p><ul><li>La latence est le temps que met un paquet à atteindre sa destination. </li><li>Plus il y a de noeuds sur un segment, plus la latence est accrue dans la mesure où chaque noeud doit patienter avant de procéder à la transmission.</li><li>Les concentrateurs régénèrent les trames, ce qui accentue également le retard. </li><li>Les commutateurs renvoient également les trames. Ceci dit, si le segment ne compte qu’un seul hôte, il n’y a aucun retard de transmission.</li></ul><br/><p><b>Panne de réseau :</b></p><ul><li>Vitesses incompatibles, par exemple, un périphérique de 100 Mbits/s connecté à un concentrateur de 10 Mbits/s.</li><li>Vous pouvez configurer les commutateurs de manière à prendre en charge plusieurs vitesses de segment. </li></ul><br/><p><b>Collisions :</b></p><ul><li>Les concentrateurs augmentent la taille du domaine de collision. Lorsque vous utilisez des concentrateurs (périphériques de la couche 1) pour multiplier les noeuds par segment, vous augmentez les risques de collisions. </li><li>Les commutateurs divisent les domaines de collision sur la couche de niveau 2, ce qui permet de réduire, voire éliminer les collisions sur chaque segment.</li></ul>]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q10_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 11 -->
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11. <textformat blockindent='24'>Répertoriez et décrivez les étapes de fonctionnement d’un commutateur Ethernet.</textformat>]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[<p><b>Apprentissage</b></p><p>Lorsqu’une trame de données est transmise par un noeud, le commutateur lit l’adresse MAC source et l’enregistre dans la table de recherche en regard de l’interface d’entrée. Le commutateur sait dorénavant vers quelle interface transférer les trames avec cette adresse.</p><br/><p><b>Inondation</b></p><p>Lorsque le commutateur ne dispose pas d’une adresse MAC de destination dans sa table de recherche, il envoie (inonde) la trame vers toutes les interfaces, sauf celle sur laquelle la trame est arrivée.</p><br/><p><b>Réacheminement</b></p><p>Lorsque le commutateur dispose de l’adresse MAC de destination dans sa table de recherche et que l’interface mappée à cette adresse n’est pas celle qui a réceptionné la trame, il envoie (transfère) la trame vers l’interface.</p><br/><p><b>Filtrage</b></p><p>Lorsque le commutateur dispose de l’adresse MAC de destination dans sa table de recherche et que l’interface mappée à cette adresse est celle qui a réceptionné la trame, il abandonne la trame. Les autres interfaces/segments sont épargnés d’un trafic inutile pouvant être de surcroît à l’origine de collisions.</p><br/><p><b>Vieillissement</b></p><p>Chaque entrée d’adresse MAC-IP dans une table de recherche comporte un horodatage réinitialisé à chaque fois que vous y faites référence. Si le minuteur expire, l’entrée est supprimée de la table. C’est ainsi que vous pouvez limiter le nombre d’entrées à consulter et libérer de la mémoire.</p>]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 12 -->
+
+<component id="ID_Q12_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q12_txt03">
+<text><![CDATA[12. <textformat blockindent='24'>Décrivez le réacheminement d’une trame par le biais d’un commutateur.</textformat>]]></text>
+</component>
+<component id="ID_Q12_txt04">
+<text><![CDATA[<p>Les commutateurs Ethernet procèdent à un réacheminement sélectif des trames d’un port de réception au port de connexion du noeud de destination. Un commutateur renvoie une trame d’entrée et la réachemine au port approprié lorsqu’il est inactif.</p><br/><p>On parle de stockage et de retransmission. Grâce au stockage et à la retransmission, le commutateur reçoit toute la trame, vérifie si FSC comporte des erreurs et réachemine la trame vers le port approprié pour le noeud de destination. Sachant que les noeuds n’attendent pas que les supports soient inactifs, ils peuvent procéder à l’envoi et à la réception à une vitesse maximale des supports sans risque de pertes liées aux collisions ou à la surcharge relative à leur gestion.</p>]]></text>
+</component>
+<component id="ID_Q12_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q12_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 13-->
+
+<component id="ID_Q13_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q13_txt03">
+<text><![CDATA[13. <textformat blockindent='24'>À quel moment un hôte réseau doit-il diffuser une requête ARP et pourquoi ?</textformat>]]></text>
+</component>
+<component id="ID_Q13_txt04">
+<text><![CDATA[<p>Lorsqu’un hôte doit envoyer un paquet à une adresse IP connue, mais qu’il ne connaît pas l’adresse MAC de destination, il envoie une diffusion ARP à tous les hôtes du réseau en demandant que l’hôte avec l’adresse IP connue réponde avec son adresse MAC. L’hôte émetteur peut donc stocker et utiliser les adresses IP et MAC.</p>]]></text>
+</component>
+<component id="ID_Q13_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q13_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 14 -->
+
+<component id="ID_Q14_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q14_txt03">
+<text><![CDATA[14. <textformat blockindent='24'>Quel est l’objectif d’un processus Proxy ARP ?</textformat>]]></text>
+</component>
+<component id="ID_Q14_txt04">
+<text><![CDATA[<p>Il s’agit de permettre à l’hôte demandeur de mapper l’adresse IP d’une destination sur un réseau non local à l’adresse MAC de la passerelle (interface du routeur sur le réseau local). Vous pouvez ainsi envoyer la trame au routeur, qui transfère le paquet.
+</p>]]></text>
+</component>
+<component id="ID_Q14_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q14_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 15 -->
+
+<component id="ID_Q15_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q15_txt03">
+<text><![CDATA[15. <textformat blockindent='24'>Expliquez pourquoi les saisies dans le cache ARP d’un hôte réseau sont supprimées si elles ne sont pas utilisées pendant un certain temps.</textformat>]]></text>
+</component>
+<component id="ID_Q15_txt04">
+<text><![CDATA[<p>Un temps d’attente illimité risquerait d’occasionner des erreurs dans le cache ARP lorsque les périphériques quittent le réseau ou modifient l’adresse de la couche 3. En outre, un délai supplémentaire pourrait remplir la mémoire cache disponible.</p>]]></text>
+</component>
+<component id="ID_Q15_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Vous avez passé en revue toutes les questions de la partie « Problèmes et discussion » du présent chapitre.</b>]]></text>
+</component>
+
+</textcomponents>

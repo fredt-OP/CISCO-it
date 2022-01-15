@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13262" dateexported="01/26/2009">
+		<name>Module 11 Questionnaire</name>
+		<form id="20924" lang="fr"><form-item order="fixed">
+			<ai id="67143" type="mc-ma"><question><![CDATA[Lesquels des énoncés suivants sont vrais à propos des protocoles de routage qui utilisent l'algorithme de routage à état de liens ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Ils sont également appelés protocoles SPF.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ils apprennent les routes et les envoient aux voisins directement connectés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ils gèrent une base de données complexe de la topologie réseau.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ils sont basés sur l'algorithme de Dijkstra.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ils constituent un bon choix pour les réseaux de petite taille comportant des routeurs bas de gamme. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="67207" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="67207" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Échange de mises à jour de routage à état de liens (LSA)</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>État d&apos;un lien</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Algorithme SPF</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Base de données topologique</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Paquet HELLO</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Crée et gère des contiguïtés de voisinage</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Se déclenche lors d&apos;une modification topologique</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Description d&apos;une interface et de sa relation avec les autres routeurs</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Calcule le meilleur chemin vers chaque réseau de destination</mattext></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Associez les termes OSPF de gauche aux descriptions de droite en faisant glisser les options vers la cible appropriée. Les propositions ne doivent pas être toutes utilisées.</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-111.5" targetYspacing="11" yspacing="50" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="obs1" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>1 Paquet HELLO, 2 Échange LSA, 3 État de lien, 4 Algorithme SPF</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="67138" type="mc-ma"><question><![CDATA[Pour quelles raisons un administrateur réseau utilise-t-il des interfaces en mode bouclé lors de la configuration du protocole OSPF ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Comme les interfaces en mode bouclé sont des interfaces logiques, elles ne tombent pas en panne.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Seules les adresses des interfaces en mode bouclé peuvent être utilisées pour un ID de routeur OSPF. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les interfaces en mode bouclé permettent de configurer une métrique OSPF. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L'adresse d'une interface en mode bouclé est utilisée en tant qu'ID de routeur et remplace les valeurs des adresses IP locales.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les adresses des interfaces en mode bouclé activent la fonction de contrôle d'erreurs OSPF. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L'adresse d'une interfaces en mode bouclé remplace la valeur de priorité du routeur configurée. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67164" type="mc-ma"><question><![CDATA[Sur quels types de réseau les routeurs désignés OSPF ne seront pas sélectionnés ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Réseaux point-à-point.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Réseaux point-à-multipoint.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Réseaux à accès multiples avec diffusion. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Réseaux à accès multiples sans diffusion. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133351" type="mc-sa"><question><![CDATA[Un administrateur réseau entre la commande <b>router ospf 100</b>. Quelle est la fonction du nombre 100 dans cette commande ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Numéro de système autonome ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mesure ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[ID de processus  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Distance administrative ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133349" type="mc-sa"><question><![CDATA[Sur un routeur qui exécute le protocole OSPF, quel est le but de la commande <b>bandwidth 56</b> dans une interface série ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Elle modifie la valeur du coût.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle est uniquement utilisée comme description. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle définit le débit de l’interface à 56 kbits/s. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle est nécessaire pour l’algorithme DUAL. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133348" type="mc-sa"><question><![CDATA[Quel facteur l’implémentation d’OSPF de Cisco utilise-t-elle pour sélectionner la meilleure route ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Temps de fonctionnement ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fiabilité ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Bande passante  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Charge ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Plus petit nombre de sauts ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133347" type="mc-sa"><question><![CDATA[Quelle commande permet à un routeur d’annoncer des routes statiques par défaut par le biais d’OSPF ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>redistribute static</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>network 0.0.0.0 0.0.0.0 area 0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>default-information originate</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les routes par défaut sont locales uniquement et ne peuvent pas être annoncées à l’aide d’OSPF. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133346" type="mc-sa"><question><![CDATA[Lors d’une sélection OSPF DR/BDR, quel élément sert à déterminer le routeur désigné ou le routeur désigné de sauvegarde si des routeurs OSPF participants ont des priorités d’interface identiques ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[L’ID de processus OSPF le plus élevé ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse IP de l’interface la moins élevée ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le coût de l’interface le plus bas ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’ID de routeur  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133350" type="mc-sa"><question><![CDATA[Quel type de paquet n’est pas valide pour OSPF ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Hello ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[LRU  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LSR ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LSAck ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[DBD ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

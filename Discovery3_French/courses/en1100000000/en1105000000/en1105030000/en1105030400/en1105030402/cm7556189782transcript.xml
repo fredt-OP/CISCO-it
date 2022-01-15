@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 08:09:39">
+<title><content-text><![CDATA[5.3.4 - EIGRP Neighbors and Adjacencies]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts R1, R2, and R3 connected in a triangular topology. R2 sends an update to R1, R1 sends an ack to R2. R3 sends a query to R2 and R2 sends a reply to R3. R3 sends a hello to R1. <br><br>Information on each type of packet is detailed below.<br><br>Update<br>If new neighbor found - unicast<br>To indicate routing change - multicast<br><br>Acknowledgement <br>Unicast hello packets with no data<br>Response to reliable packet transfer, update, request, reply<br><br>Query<br>To request specific info about a neighbor or multicast looking for new successor<br>Can be multicast or unicast<br><br>Reply<br>Response to a query<br>Always a unicast<br><br>Hello<br>Discover and verify neighbors<br>Discover timer values<br>Multicast address: 224.0.0.10<br>Unreliable transfer method<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

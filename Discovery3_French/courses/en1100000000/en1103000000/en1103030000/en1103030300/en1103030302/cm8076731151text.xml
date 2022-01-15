@@ -1,0 +1,133 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[DA ]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[SA]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[TYPE/LEN]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[DATA]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[FCS]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[DA]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[SA]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[TAG]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[TYPE/LEN]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[DATA]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[NEW FCS]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[NUMBER OF BITS]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[16]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[3]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[1]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[12]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[FRAME FIELD  ]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[TPID]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[PRIORITY]]></text>
+</component>
+
+<component id="ID_txt20">
+<text><![CDATA[CFI]]></text>
+</component>
+
+<component id="ID_txt21">
+<text><![CDATA[VID]]></text>
+</component>
+
+
+<component id="ID_txt22">
+<text><![CDATA[DOT1Q TAG]]></text>
+</component>
+
+<component id="ID_txt23">
+<text><![CDATA[Roll over the routers or the WAN links to view the network inefficiencies.]]></text>
+</component>
+
+<component id="ID_txtTitle1">
+<text><![CDATA[<b>TPID</b>]]></text>
+</component>
+
+<component id="ID_txtBody1">
+<text><![CDATA[<li>The Tag Protocol Identifier is a 16-bit field.</li><li>It is set to a value of 0x8100 in order to identify the frame as an IEEE 802.1Q tagged frame.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle2">
+<text><![CDATA[<b>PRIORITY</b>]]></text>
+</component>
+
+<component id="ID_txtBody2">
+<text><![CDATA[<li>It is known as user priority.</li><li>This 3-bit field refers to the IEEE 802.1Q priority.</li><li>The field indicates the frame priority level used for the prioritization of traffic.</li><li>The field can represent 8 levels (0 through 7).</li>]]></text>
+
+</component>
+
+<component id="ID_txtTitle3">
+<text><![CDATA[<b>CFI</b>]]></text>
+</component>
+
+<component id="ID_txtBody3">
+<text><![CDATA[<li>The Canonical Format Indicator is a 1-bit field.</li><li>If the value of this field is 1, the MAC address is in no canonical format.</li><li>If the value is 0, the MAC address is in canonical format.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle4">
+<text><![CDATA[<b>VID</b>]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[<li>The VLAN Identifier is a 12-bit field.</li><li>It uniquely identifies the VLAN to which the frame belongs.</li><li>The field has a value between 0 and 4095.</li>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[Roll over the fields in the 802.1Q tag for more information.]]></text>
+</component>
+
+
+</textcomponents>

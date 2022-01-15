@@ -1,0 +1,316 @@
+//modified by Bargavi to be compatible with Flash MX 
+
+var btnptr = null;
+
+var bHeight = blank._height;
+var additionalVSpace = 1;
+var clickedButton = 0;
+
+var totalSteps = AnswerArray[AnswerArray.length - 1][0].stepnum;
+
+//ShowMe._visible = false;
+
+
+populateTopic();
+menuInitialize();
+
+//making the first step as default
+stepnum = 0;
+showInstruction(stepnum);
+loadImage(stepnum,null); // no previous image
+clickedButton = stepnum;
+
+
+// initialize device select buttons
+//initializeDeviceButtons();
+function initializeDeviceButtons()
+{
+    /* Don't run this function since we don't have any more devices to initialize...
+    Dont't waste CPU cycles
+    device0.deviceName = routerInfoArray[0].hostName;
+    device0.deviceNum = 0;
+    device0.gotoAndStop(2);
+
+    for (var i=1; i<routerInfoArray.length; i++)
+    {
+        device0.duplicateMovieClip("device" + i, 6000 + i);
+        eval("device" + i).deviceName = routerInfoArray[i].hostName;
+        eval("device" + i).deviceNum = i;
+        eval("device" + i)._x = device0._x + device0._width * i;
+    }
+    */
+}
+
+// Modified by Dean Wood 2/4/2003 to accomodate new look
+function menuInitialize()
+{
+    var numOfSteps = AnswerArray.length - 1;
+
+//resize
+resizeChapter();
+
+
+    // if we have more than 18 buttons, we have to allow for scroll, otherwise turn it off
+   if (totalSteps < 17)
+        scrollDisable();
+
+    blank.buttonlist.attachMovie("stepblock","stepblock","8000");
+
+    // miwang
+    AnswerArray[0][0].stepnum = 0;
+    var j = 0;
+    blank.buttonlist.attachMovie("step","step" + j, j);
+    blank.buttonlist["step" + j].text = j;
+    blank.buttonlist["step" + j].num = 0;
+    blank.buttonlist["step" + j]._x = .5;
+    blank.buttonlist["step" + j]._y = 3;
+    j++;
+
+    for (i = 1; i <= numOfSteps; i++)
+    {
+        // miwang
+        // if step number is different from the previous element's, then add new button
+        if (AnswerArray[i][0].stepnum != AnswerArray[i-1][0].stepnum)
+        {
+            blank.buttonlist.attachMovie("step","step" + j, j);
+            blank.buttonlist["step" + j].text = j;
+            blank.buttonlist["step" + j].num = i;
+            blank.buttonlist["step" + j]._x = .5;
+            blank.buttonlist["step" + j]._y = (j * 17) + 3;
+
+            j++;
+        }
+    }
+
+    coverButton(0);
+
+//resizeStepScroll();
+
+	
+}
+
+function scrollDisable()
+{
+    blank.scrollUp._visible = false;
+    blank.scrollDown._visible = false;
+    // Commented out by Dean Wood 2/6/2003 slider removed
+    //blank.scrollbar._visible = false;
+}
+
+// Modified by Dean Wood 2/6/2003
+function stepscrollUp()
+{
+	if (blank.buttonlist._y < 0)
+		blank.buttonlist._y = blank.buttonlist._y + 17;
+}
+
+// Modified by Dean Wood 2/6/2003
+function stepscrollDown()
+{
+	if(blank.buttonlist._y + blank.buttonlist._height > 235)
+		blank.buttonlist._y = blank.buttonlist._y - 17;
+}
+
+// Commented out by Dean Wood 2/6/2003 slider removed
+/*
+function step_setScroll(slider)
+{
+  //trace("Y = " +slider._y);
+
+
+  blank.buttonlist._y = (1-(slider._y/450) * (blank.buttonlist._height-271.4));
+
+}
+
+function step_setSlider(buttonlist)
+{
+  //trace("Y = " +slider._y);
+  //trace("buttonlist Y = " + menu.buttonlist._y);
+
+  blank.scrollbar.slider._y = (425 * ((Math.abs(blank.buttonlist._y))/(blank.buttonlist._height-271.4)));
+  trace("buttonlist._y = " + blank.buttonlist._y);
+  trace("buttonlist._height = " + blank.buttonlist._height);
+  trace("scrollbar slider._y = " + blank.scrollbar.slider._y);
+  trace("scrollbar._height = " + blank.scrollbar._height);
+}
+*/
+
+function stepClick(text)
+{
+    // reset the matrix check array
+    matrix = null;
+    var prevStep = stepnum; // THIS is important for remembering the previous step.
+
+    //check to see if he has clicked on the same step
+    i = Number(text);
+    if (stepnum == i)
+    {
+        matrix = null;
+        showInstruction(stepnum);
+        return;
+    }
+    clickedButton = i;
+    stepnum = i;
+
+    //begin loading the images is done here
+    loadImage(stepnum, prevStep);
+    //end loading the images is done here
+
+    //check to see if the answer button is clicked if so then display the answer
+    if (showAns == true)
+       {
+        showAnswer(i);
+          }
+    else
+    {
+        goToNextStep(stepnum, prevStep);
+
+        //add for step 0
+        showInstruction(stepnum);
+        if (stepnum == 0  )
+        {                
+		trace(menu.toolbar.button_topology._visible);
+		//if (menu.toolbar.button_topology._visible==true)
+		//Bargavi for modifying the topology button for different cases
+		if (graphicArray[0] != "")
+		{
+			if (menu.toolbar.current == "topology") 
+			{
+				Topology._visible = true;
+				menu.toolbar.marker_topology._visible=true;
+				menu.toolbar.marker_type._visible=false;
+				menu.toolbar.marker_help._visible=false;
+				return;
+			}
+		}
+		//End Bargavi		
+	exitRouter();
+
+        }
+        else
+        {
+            var rptr = eval("r" + VISIBLE_ROUTER);
+            rptr.lineIndexCounter = 0;
+
+            commandline_setMode(stepModeArray[stepnum], active_router);
+            output_write("\n");
+            commandline_changeProcess("commandline_processCommandLine");
+            commandline_commandLine();
+        }
+    }
+}
+
+function coverButton(step)
+{
+    blank.buttonlist.stepblock._visible = true;
+    blank.buttonlist.stepblock._x = eval("blank.buttonlist.step" + step)._x;
+    blank.buttonlist.stepblock._y = eval("blank.buttonlist.step" + step)._y;
+    blank.buttonlist.stepblock.text = step;
+}
+
+function stepRollOver()
+{
+/*
+  x = _xmouse;
+  y = _ymouse;
+
+  for (i = 0; i <= totalSteps; i++)
+  {
+    found = eval("blank.buttonlist.step" + i).hitTest (x, y, false);
+    if (found)
+    {
+      eval("blank.buttonlist.step" + i).gotoAndStop(2);
+    }
+  }
+  */
+}
+
+function stepRollOut()
+{
+/*
+  x = _xmouse;
+  y = _ymouse;
+
+  for (i = 0; i <= totalSteps; i++)
+  {
+    found = eval("blank.buttonlist.step" + i).hitTest (x, y, false);
+    if (!found)
+    {
+      if (i != clickedButton)
+        eval("blank.buttonlist.step" + i).gotoAndStop(1);
+    }
+  }
+  */
+}
+
+
+function exitRouter()
+{
+    // normal exit
+    var r = eval("r" + active_router);
+    output_write("\n");
+    r.userHistory = new Array();
+    r.configHistory = new Array();
+    commandline_changeProcess("router_startup_processStartUp");
+   // begin modifying to flash MX compatibility by Bargavi 
+    with (eval("r" + active_router )) 
+      {
+	router_startup = false;
+      } // forcing to be restarted 
+   //end of modification to flash MX by Bargavi 
+    router_startup_checkStartUp();
+    disableAllSteps();//commented by Bargavi
+    
+}
+
+
+function disableAllButtons()
+{
+  blank.buttonlist.stepblock._visible = false;
+}
+
+
+function populateTopic()
+{
+//  Modified by Dean Wood 6/18/2003
+//  Changing the title to accept HTML FONT tags
+//  menu.topicCovered.text = chapterCovered ;
+    menu.topicCovered.htmlText = "<B>" + chapterCovered + "</B>";
+//  Commented out by Dean Wood 2/4/2003
+//  Changing the step image to be viewed as the topology.
+//  if (wantShowTopology == false)
+//      menu.TopologyButton._visible = false;
+
+}
+
+
+function resizeChapter()
+{	 menu.topicCovered._height=math.round( menu.topicCovered._height);
+	menu.topicCovered.autosize = true;
+	var difference = menu.background.chapterBackground._height;
+	menu.background.chapterBackground._height = menu.topicCovered._height;
+	
+
+	difference =  menu.background.chapterBackground._height - difference;
+
+	blank._y = menu.background.chapterBackground._y + menu.background.chapterBackground._height ;
+	menu.ScrollBar._y = menu.background.chapterBackground._y + menu.background.chapterBackground._height;
+
+	menu.ScrollBar._height = menu.ScrollBar._height - difference;
+	menu.instr._y = menu.background.chapterBackground._y + menu.background.chapterBackground._height ;
+	menu.instr._height = menu.instr._height - difference ;
+	blank._height = blank._height - difference ;
+	
+}
+
+function resizeStepScroll()
+{
+	/*var lengthofChapter = String(menu.topicCovered).length;
+	if ( lengthofChapter < 25)
+	{
+		if (totalSteps < 18)
+		    scrollDisable();
+	}
+	*/
+	
+}

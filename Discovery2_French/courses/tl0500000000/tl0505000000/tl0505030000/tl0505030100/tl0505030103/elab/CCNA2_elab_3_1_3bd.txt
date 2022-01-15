@@ -1,0 +1,107 @@
+﻿// eLabComposer version 1.0
+
+//Lab-Drill Information
+Language = "English";
+labDrill = "True";
+
+//Topics Covered
+chapterCovered = "Accès aux modes de commande";
+
+//Prompt Information
+StepModeArray[0] = "";
+StepModeArray[1] = "user";
+StepModeArray[2] = "enable";
+StepModeArray[3] = "global";
+StepModeArray[4] = "intS";
+StepModeArray[5] = "global";
+StepModeArray[6] = "routerRIP";
+StepModeArray[7] = "enable";
+StepModeArray[8] = "global";
+StepModeArray[9] = "global";
+StepModeArray[10] = "linecon";
+StepModeArray[11] = "linecon";
+
+//Instruction Information
+instructionArray[0] = "Dans le cadre de ces travaux pratiques, vous allez apprendre à accéder aux principaux modes pris en charge par le routeur. Il s’agit du mode d’exécution privilégié ainsi que des modes de configuration globale, de configuration d’interface, de configuration de ligne et de configuration du routeur. Vous aurez l’occasion de découvrir d’autres modes de configuration en approfondissant vos connaissances IOS.";
+instructionArray[1] = "Passez en mode d’exécution privilégié. Vous souvenez-vous comment faire ?";
+instructionArray[2] = "En mode d’exécution privilégié, vous bénéficiez d’un accès illimité au routeur.\nPassez en mode de configuration globale pour pouvoir configurer le routeur.";
+instructionArray[3] = "Une fois que vous êtes en mode de configuration globale, vous pouvez accéder à de nombreux autres modes. Vous allez maintenant utiliser les plus courants. Commencez par activer le mode de configuration d’interface sur le port serial 0.";
+instructionArray[4] = "Le mode de configuration d’interface permet de configurer des informations spécifiques aux interfaces telles que l’adressage IP. Une fois que vous vous trouvez en mode de configuration d’interface, repassez en mode de configuration globale.";
+instructionArray[5] = "Au cours de la configuration d’un routeur, vous rencontrerez un autre mode courant, le mode de configuration du routeur. Ce mode vous permet de configurer le processus de création d’une table de routage d’adresses réseau utilisé par le routeur. Accédez au mode de configuration du routeur via le protocole RIP.";
+instructionArray[6] = "Vous avez appris à quitter un mode lors de l’étape 4, vous allez maintenant apprendre à revenir directement au mode privilégié sans utiliser une succession de commandes exit. Pouvez-vous deviner de quelle commande il s’agit ?\n(La commande clavier Ctrl+Z (non prise en charge dans cette version des travaux pratique en ligne) permet de passer directement dun mode de configuration au mode d’exécution privilégié.)";
+instructionArray[7] = "Repassez en mode de configuration globale.";
+instructionArray[8] = "Étant donné le caractère illimité de l’accès en mode d’exécution privilégié, il est préférable de définir un mot de passe pour vous assurer que seul l’administrateur du routeur peut accéder à ce mode. Ce mot de passe est stocké sous la forme d’une empreinte digitale cryptée. Utilisez la commande <FONT FACE='_typewriter'><B>enable secret class</B></FONT>. Le mot de passe du mode d’exécution privilégié est donc <FONT FACE='_typewriter'><B>class</B></FONT>. \n    <b>Remarque</b> : dans le domaine des réseaux, il est recommandé de créer des mots de passe qui ne comportent pas que des lettres, mais aussi des chiffres et d’autres caractères pour améliorer la sécurité. Il est également extrêmement important de ne pas oublier les mots de passe et de les stocker en lieu sûr.";
+instructionArray[9] = "Notez qu’après avoir défini un mot de passe pour le mode d’exécution privilégié, vous pouvez aussi définir un mot de passe pour les utilisateurs qui se connectent au routeur via un port de console. Pour cela, vous devez changer de mode de configuration et passer en mode de configuration de ligne.";
+instructionArray[10] = "Il est plus facile de définir le mot de passe via la ligne console qu’en passant par le mode d’exécution privilégié. Utilisez la commande password <FONT FACE='_typewriter'><B>password cisco</B></FONT>. La commande est <FONT FACE='_typewriter'><B>password</B></FONT> et le mot de passe est <FONT FACE='_typewriter'><B>cisco</B></FONT>.\n    <b>Remarque</b> : dans le domaine des réseaux, il est recommandé de créer des mots de passe qui ne comportent pas que des lettres, mais aussi des chiffres et d’autres caractères pour améliorer la sécurité. Il est également extrêmement important de ne pas oublier les mots de passe et de les stocker en lieu sûr.";
+instructionArray[11] = "Maintenant que vous avez défini le mot de passe, vous devez aussi indiquer au routeur qu’il doit vérifier un mot de passe. Utilisez la commande <FONT FACE='_typewriter'><B>login</B></FONT>.";
+
+//Answer Information
+assignValueToAnswer(1,"1",False,"enable");
+assignValueToAnswer(2,"2",False,"configure","terminal");
+assignValueToAnswer(3,"3",False,"interface","serial","0");
+assignValueToAnswer(4,"4",False,"exit");
+assignValueToAnswer(5,"5",False,"router","rip");
+assignValueToAnswer(6,"6",False,"end");
+assignValueToAnswer(7,"7",False,"configure","terminal");
+assignValueToAnswer(8,"8",False,"enable","secret","class");
+assignValueToAnswer(9,"9",False,"line","console","0");
+assignValueToAnswer(10,"10",False,"password","cisco");
+assignValueToAnswer(11,"11",False,"login");
+
+//Error Information
+assignValueToError(1,"1","Utilisez la commande « enable » pour passer en mode d’exécution privilégié.");
+assignValueToError(2,"2","Utilisez la commande « configure » pour accéder au mode de configuration globale.","Utilisez le mot clé « terminal » pour désigner la configuration à partir d’un terminal.");
+assignValueToError(3,"3","Utilisez la commande « interface » pour passer en mode de configuration d’interface.","Utilisez le mot clé « serial » pour désigner l’interface série.","Utilisez le chiffre « 0 » comme numéro d’interface.");
+assignValueToError(4,"4","Utilisez la commande « exit » pour revenir en mode de configuration globale.");
+assignValueToError(5,"5","Utilisez la commande « router » pour accéder au mode de configuration du routeur.","Utilisez le mot clé « rip » pour désigner les processus de routage RIP.");
+assignValueToError(6,"6","Utilisez la commande « end » pour revenir en mode d’exécution privilégié.");
+assignValueToError(7,"7","Utilisez la commande « configure » pour accéder au mode de configuration globale.","Utilisez le mot clé « terminal » pour désigner la configuration à partir d’un terminal.");
+assignValueToError(8,"8","Utilisez la commande « enable » pour modifier le mot de passe du mode d’exécution privilégié.","Utilisez le mot clé « secret » pour modifier le mot de passe secret.","Utilisez « class » comme mot de passe. Dans le champ, utilisez une bonne chaîne alphanumérique comme mot de passe.");
+assignValueToError(9,"9","Utilisez la commande « line » pour accéder au mode de configuration de ligne.","Utilisez le mot clé « console » pour désigner le port de console.","Utilisez le chiffre « 0 » comme numéro de port.");
+assignValueToError(10,"10","Utilisez la commande « password » pour définir le mot de passe.","Pour ces travaux pratiques, utilisez « cisco » comme mot de passe.");
+assignValueToError(11,"11","Utilisez la commande « login » pour activer la vérification de mot de passe.");
+
+//Result Information
+assignValueToResult(1,"1","");
+assignValueToResult(2,"2","");
+assignValueToResult(3,"3","");
+assignValueToResult(4,"4","");
+assignValueToResult(5,"5","");
+assignValueToResult(6,"6","");
+assignValueToResult(7,"7","");
+assignValueToResult(8,"8","");
+assignValueToResult(9,"9","");
+assignValueToResult(10,"10","");
+assignValueToResult(11,"11","");
+
+//Graphic Information
+hasDefaultGraphic = true;
+graphicArray[0] = "CCNA2_elab_3_1_3bg";
+graphicArray[1] = "";
+graphicArray[2] = "";
+graphicArray[3] = "";
+graphicArray[4] = "";
+graphicArray[5] = "";
+graphicArray[6] = "";
+graphicArray[7] = "";
+graphicArray[8] = "";
+graphicArray[9] = "";
+graphicArray[10] = "";
+graphicArray[11] = "";
+
+//Router for Step Information
+routerUsedForThisStep[0] = 0;
+routerUsedForThisStep[1] = 0;
+routerUsedForThisStep[2] = 0;
+routerUsedForThisStep[3] = 0;
+routerUsedForThisStep[4] = 0;
+routerUsedForThisStep[5] = 0;
+routerUsedForThisStep[6] = 0;
+routerUsedForThisStep[7] = 0;
+routerUsedForThisStep[8] = 0;
+routerUsedForThisStep[9] = 0;
+routerUsedForThisStep[10] = 0;
+routerUsedForThisStep[11] = 0;
+
+//Router Information
+addToRouterSIMObject(0,"Asuncion","","","R1721");

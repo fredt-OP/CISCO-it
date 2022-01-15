@@ -1,0 +1,80 @@
+﻿<textcomponents>
+
+<!-- -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Déterminez si la fibre constitue la meilleure solution pour le câblage requis.<br/><br/><b>Après chaque scénario, choisissez la fibre optique ou en cuivre.</b>]]></text>
+</component>
+
+<!-- -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Fibre optique (FO)</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Cuivre (UTP)</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit--> <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Une société doit fournir une connectivité de réseau entre trois bâtiments sur un seul campus. Les câbles doivent courir à l’extérieur et les orages sont fréquents dans la région.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Une société doit fournir une connectivité de réseau entre deux bâtiments situés à 1 km l’un de l’autre.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Une société doit fournir une connectivité de 100 Mbits/s aux utilisateurs dans leur bureau en faisant courir des câbles du commutateur central aux bureaux individuels. La distance maximale du commutateur à un poste de travail est de 60 mètres.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0--> <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[<p><b>Scénario 1</b><br/>Réponse : Fibre optique (FO)<br/>La fibre optique convient mieux ici, puisqu’un support en cuivre transporterait l’énergie d’un éclair vers les bâtiments, en endommageant probablement le matériel du réseau. Le câble en fibre optique ne conduit pas l’électricité.<br/><br/><b>Scénario 2</b><br/>Réponse : Fibre optique (FO)<br/>La fibre optique est plus adaptée aux câbles longs. Le cuivre a généralement des limitations de distance plus importantes qui exigent l’installation de répétiteurs onéreux pour régénérer le signal à mesure qu’il s’atténue.<br/><br/><b>Scénario 3</b><br/>Réponse : Cuivre (UTP)<br/>Pour le bureau, le cuivre s’avère beaucoup moins coûteux que la fibre. La distance vers les postes individuels n’excède pas la limite de 100 mètres de l’UTP et la bande passante requise se trouve disponible avec le câble de catégorie 5 ou 5e.<br/></p>]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect, relisez les scénarios et réessayez.]]></text>
+</component>
+
+</textcomponents>

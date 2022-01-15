@@ -1,0 +1,153 @@
+<textcomponents>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Serial Communication</b>]]></text>
+</component>
+<component id="ID_Button02">
+<text><![CDATA[<b>RS-232</b>]]></text>
+</component>
+<component id="ID_Button03">
+<text><![CDATA[<b>RJ-45</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click to see serial communication and connector types.</b>]]></text>
+</component>
+
+<!-- slide1 -->
+<component id="ID_title01">
+<text><![CDATA[<b>Serial Communication Process</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>WAN</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>011111100110... ...1110</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>011...</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Frame being<br />sent</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Frame being<br />received</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Data to be encapsulated</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Unencapsulated data</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Physical Medium</b>]]></text>
+</component>
+
+<!-- slide2 -->
+<component id="ID_title02">
+<text><![CDATA[<b>9-Pin RS-232 Connector</b>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<b>Pin 1<br/>Data Carrier<br/>Detect (DCD)<br/>(not used)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>Pin 2<br/>Receive<br/>Data (RD)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[<b>Pin 3<br/>Transmit<br/>Data (TD)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[<b>Pin 4<br/>Data Terminal<br/>Ready (DTR)<br/>(not used)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt05">
+<text><![CDATA[<b>Pin 5<br/>Ground</b>]]></text>
+</component>
+
+<component id="ID_S2_txt06">
+<text><![CDATA[<b>Pin 6<br/>Data Set Ready <br/>(DSR) (not used)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt07">
+<text><![CDATA[<b>Pin 7<br/>Request to<br/>Send (RTS)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt08">
+<text><![CDATA[<b>Pin 8<br/>Clear to Send<br/>(CTS)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt09">
+<text><![CDATA[<b>Pin 9<br/>Ringing Indicator<br/>(RI) (not used)</b>]]></text>
+</component>
+
+<component id="ID_S2_txt10">
+<text><![CDATA[<b>9-pin D-type RS-232 serial connector pin-out</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3'>
+	<tr>
+		<td width='75' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Pin Number</font></td>
+		<td width='75' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Signal</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#ffffff'>Description</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DCD</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Data carrier detect</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>RxD</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Receive data</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>3</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>TxD</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Transmit data</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>4</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DTR</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Data terminal ready</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>5</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>GND</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Signal ground</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>DSR</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Data set ready</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>7</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>RTS</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Ready to send</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>8</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>CTS</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Clear to send</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>9</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>RI</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Ring indicator</td>
+	</tr>
+</table>]]></text> 
+</component>
+</textcomponents>

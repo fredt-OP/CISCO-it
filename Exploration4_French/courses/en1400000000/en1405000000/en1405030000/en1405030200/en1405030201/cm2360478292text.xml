@@ -1,0 +1,83 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Configuring Extended ACLs</b>]]></text> 
+</component>
+
+
+
+<component id="ID_caption">
+  <text><![CDATA[<b>Scroll this window to see all the command syntax.</b>]]></text> 
+  </component>
+<component id="ID_button1">
+  <text><![CDATA[Commands]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[Configuring Extended ACLs ]]></text> 
+</component>
+<component id="ID_header1">
+  <text><![CDATA[<B>Parameter</B>]]></text> 
+</component>
+<component id="ID_header2">
+  <text><![CDATA[<B>Description</B>]]></text> 
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[<B>ACL103 allows requests to ports 80 and 443<BR/>ACL104 allows established HTTP and SHTTP replies</B>]]></text> 
+</component>
+
+<component id="table1">
+	<text><![CDATA[<table bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='205' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>access-list-number</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Identifies the access list using a number in the range 100 to 199 (for an extended IP ACL) and 2000 to 2699 (expanded IP ACLs).</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>deny</B></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Denies access if the conditions are matched.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>permit</B></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Permits access if the conditions are matched.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>remark</B></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Indicates whether this entry allows or blocks the specified address. Could also be used to enter a remark.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>protocol</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Name or number of an Internet protocol. Common keywords include <b>icmp, ip, tcp</b>, or <b>udp.</b> To match any Internet protocol (including ICMP, TCP, and UDP) use the <b>ip</b> keyword.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>source</i></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Number of the network or host from which the packet is being sent.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>source-wildcard</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Wildcard bits to be applied to source.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>destination</i></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Number of the network or host to which the packet is being sent.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>destination-wildcard</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Wildcard bits to be applied to the destination.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>operator</i></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Optional) Compares source or destination ports. Possible operands include <B>lt</B> (less than), <B>gt</B> (greater than), <B>eq</B> (equal), <B>neq</B> (not equal), and <B>range</B> (inclusive range).</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>port</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Optional) The decimal number or name of a TCP or UDP port.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>established</B></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Optional) For the TCP protocol only: Indicates an established connection.</td>
+</tr>
+
+
+</table>]]></text>
+  </component>
+
+</textcomponents>

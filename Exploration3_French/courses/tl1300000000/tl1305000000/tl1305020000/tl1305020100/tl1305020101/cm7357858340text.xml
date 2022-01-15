@@ -1,0 +1,157 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Topologie STP</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Cliquez sur Lire pour lancer l’animation.</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b><font size="12">Agrégation2</font></b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b><font size="12">Agrégation3</font></b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b><font size="12">Agrégation1</font></b>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[PC1 envoie une diffusion au commutateur S2.]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Le commutateur S2 achemine la diffusion par tous ses ports, à l’exception de celui d’où provient la diffusion et du port associé à Agrégation2.]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[Le commutateur S1 achemine la diffusion par tous ses ports, à l’exception de celui d’où provient la diffusion. Le commutateur S3 reçoit la trame, mais ne la réachemine pas vers le commutateur S2 en raison du port bloqué.]]></text> 
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[PC1 envoie une diffusion au commutateur S2.]]></text> 
+  </component>
+  <component id="ID_txt10">
+  <text><![CDATA[Le commutateur S2 achemine la diffusion par tous ses ports, à l’exception de celui d’où provient la diffusion et du port associé à Agrégation2.]]></text> 
+  </component>
+  <component id="ID_txt11">
+  <text><![CDATA[Le commutateur S1 achemine la diffusion par tous ses ports, à l’exception de celui d’où provient la diffusion. Le commutateur S3 reçoit la trame, mais ne la réachemine pas vers le commutateur S2 en raison du port bloqué.]]></text> 
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[PC1 envoie une trame de diffusion au commutateur S2. La liaison agrégée entre le commutateur S2 et le commutateur S1 est en panne.]]></text> 
+  </component>
+  <component id="ID_txt13">
+  <text><![CDATA[Le commutateur S3 débloque le port pour Agrégation2 et le commutateur S2 bloque le port pour Agrégation1. Le commutateur S2 achemine la diffusion par tous ses ports, à l’exception de celui d’où provient la diffusion et de la liaison en panne pour Agrégation1.]]></text> 
+  </component>
+  <component id="ID_txt14">
+  <text><![CDATA[Le commutateur S3 achemine la diffusion par tous ses ports disponibles, à l’exception de celui d’où provient la diffusion.]]></text> 
+  </component>
+  <component id="ID_txt15">
+  <text><![CDATA[Le commutateur S1 achemine la diffusion par tous ses ports disponibles, à l’exception de celui d’où provient la diffusion et du port pour Agrégation1, puisqu’il n’est pas disponible pendant la défaillance de la liaison.]]></text> 
+  </component>
+  <component id="ID_txt16">
+  <text><![CDATA[Fonctionnement normal du protocole STP]]></text> 
+  </component>
+  <component id="ID_txt17">
+  <text><![CDATA[Le protocole STP compense les pannes réseau]]></text> 
+  </component>
+  
+  
+  
+  
+  <component id="play"><text><![CDATA[Lire]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rembobiner]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Avance rapide]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Muet]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[Désactiver Muet]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Redémarrer]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[Fin]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Texte]]></text>
+	</component>
+
+
+
+  <component id="play1"><text><![CDATA[Lire]]></text>
+
+	</component>
+
+    <component id="pause1">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind1">
+
+		<text><![CDATA[Rembobiner]]></text>
+
+	</component>
+	<component id="forward1">
+
+		<text><![CDATA[Avance rapide]]></text>
+
+	</component>
+
+    <component id="mute1">
+
+		<text><![CDATA[Muet]]></text>
+
+	</component>
+
+    <component id="unmute1">
+		<text><![CDATA[Désactiver Muet]]></text>
+
+	</component>
+
+    <component id="previous1">
+
+		<text><![CDATA[Redémarrer]]></text>
+	</component>
+
+    <component id="next1">
+
+		<text><![CDATA[Fin]]></text>
+	</component>
+
+<component id="transcript1">
+		<text><![CDATA[Texte]]></text>
+	</component>
+
+
+
+
+
+
+
+</textcomponents>

@@ -1,0 +1,105 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) <block indent="20">List the three “P” rule associated with access control lists.</block>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 5.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>One ACL per protocol</b><ul><li>To control traffic flow on an interface, an ACL must be defined for each protocol enabled on the interface.</li></ul><b>One ACL per direction</b><ul><li>ACLs control traffic in one direction at a time on an interface. Two separate ACLs must be created to control inbound and outbound traffic.</li></ul><b>One ACL per interface</b><ul><li>ACLs control traffic for an interface, for example, Fast Ethernet 0/0.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) <block indent="20">List the two basic rules associated with the placement of standard and extended ACLs.</block>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from  5.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Standard ACLs</b><ul><li>Because standard ACLs do not specify destination addresses, place them as close to the destination as possible.</li></ul><b>Extended ACLs</b><ul><li>Locate extended ACLs as close as possible to the source of the traffic denied. This way, undesirable traffic is filtered without crossing the network infrastructure.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) <block indent="20">Refer to the exhibit. ACL 10 configured on R1 is designed to block the host at 192.168.10.10 access to the 192.168.11.0 network, but all other hosts on the 192.168.10.0 network should be permitted access. However, the ACL does not accomplish this. Which changes would correct this problem?</block>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from  5.2)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>On router R1</b><ul><li>The host address was incorrectly specified. It should have been specified as <b>192.168.10.10</b>.</li><li>Because of the implicit deny statement, the remainder of the subnet was not permitted through. The remainder of the subnet should have been permitted using the <b><font face="_typewriter">access-list 10 permit any</font></b> command.</li><li>ACL 10 should have been applied to be in an outbound direction on interface Fa0/1.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) <block indent="20">Refer to the exhibit. The SURFING ACL should permit only the hosts on the 192.168.10.0 network to have web and secure web access. The hosts on the 192.168.11.0 should not be permitted any access. The BROWSING ACL should permit return access only to traffic that originated from the 192.168.10.0 network. However, the ACLs do not accomplish this. Which changes would correct this problem?</block>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from  5.3)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>On router R1</b><ul><li>The first permit statement of the SURFING ACL is allowing Telnet access (23). It should permit web access (80).</li><li>The BROWSING ACL requires the <b><font face="_typewriter">established</font></b> keyword at the end.</li><li>The ACLs have been applied to the wrong interface. They should have been applied to the Serial 0/0/0 interface.</li><li>The directions of the SURFING and BROWSING ACLs should have been reversed.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Describe the three types of complex ACLs and their functions.]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from  5.4)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Dynamic (Lock and Key):</b><ul><li>ACLs use an extended ACL to block users from traversing a router until they use Telnet or SSH to connect to the router and are authenticated.</li><li>After being authenticated, specific dynamic ACL entries are activated on the ACL applied to the interface.</li><li>These entries remain active for a specific period and then expire.</li><li>This enables a user to authenticate and access resources that normally would be denied. Dynamic ACLs can be combined with other types of ACLs, such as extended ACLs.</li></ul><b>Reflexive:</b><ul><li>Reflexive ACLs automatically create temporary entries based on upper layer session information.</li><li>The entries are automatically deleted when the session ends.</li></ul><b>Time-based:</b><ul><li>Time-based ACLs are similar to extended ACLs in function, but allow for access control based on time.</li><li>A time range defines specific times of the day and week in which the ACLs are implemented.</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>This concludes this chapter's Check Your Understanding questions.</b>]]></text>
+</component>
+
+</textcomponents>

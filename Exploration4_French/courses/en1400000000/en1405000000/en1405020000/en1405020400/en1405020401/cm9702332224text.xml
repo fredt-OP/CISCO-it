@@ -1,0 +1,58 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<B>Procedure for Configuring Standard ACLs</B>]]></text> 
+</component>
+
+<component id="ID_title02">
+  <text><![CDATA[<B>Standard ACL to Permit My Network Only</B>]]></text> 
+</component>
+
+<component id="ID_title03">
+  <text><![CDATA[<B>Standard ACL to Deny a Specific Host</B>]]></text> 
+</component>
+
+<component id="ID_title04">
+  <text><![CDATA[<B>Standard ACL to Deny a Specific Subnet</B>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Syntax</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Example 1</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>Example 2</B>]]></text> 
+</component>
+
+<component id="ID_button_04">
+  <text><![CDATA[<B>Example 3</B>]]></text> 
+</component>
+
+
+<component id="ID_txt01_00">
+  <text><![CDATA[<B>Step 1</B> Use the <font face ='_typewriter'><b>access-list</b></font> global configuration command to create an entry in a standard IPv4 ACL.]]></text> 
+</component>
+
+<component id="ID_txt02_00">
+  <text><![CDATA[Enter the global <font face ='_typewriter'><b>no access-list <i>access-list-number</i></b></font> command to remove the entire ACL. The example statement matches any address that starts with 192.168.10.x. Use the <font face ='_typewriter'><b>remark</b></font> option to add a description to your ACL.]]></text> 
+</component>
+
+<component id="ID_txt03_00">
+  <text><![CDATA[<B>Step 2</B> Use the interface configuration command to select an interface to which to apply the ACL]]></text> 
+</component>
+
+
+<component id="ID_txt05_00">
+  <text><![CDATA[<B>Step 3</B> Use the <font face ='_typewriter'><b>ip access-group</b></font> interface configuration command to activate the existing ACL on an interface. ]]></text> 
+</component>
+
+<component id="ID_txt06_00">
+  <text><![CDATA[To remove an IP ACL from an interface, enter the <font face ='_typewriter'><b>no ip access-group <i>access-list-number</i></b></font> command on the interface. This example activates the standard IPv4 ACL 1 on the interface as an outbound filter.]]></text> 
+</component>
+
+</textcomponents>
+

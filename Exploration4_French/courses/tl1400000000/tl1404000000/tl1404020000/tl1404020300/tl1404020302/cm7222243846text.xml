@@ -1,0 +1,117 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Configuration des mots de passe d’un routeur</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur les boutons pour voir les étapes de configuration d’un mot de passe.</b>]]></text>
+</component>
+
+<component id="ID_button1">
+<text><![CDATA[Configurer le mot de passe]]></text>
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[Chiffrer le mot de passe ]]></text>
+</component>
+
+<component id="ID_button3">
+<text><![CDATA[Longueur du mot de passe]]></text>
+</component>
+
+<!-- slide 1-->
+<component id="ID_S1_config">
+<text><![CDATA[<b>Config</b>]]></text>
+</component>
+
+<component id="ID_S1_top01">
+<text><![CDATA[<b>Hôte<br />d’administration</b>]]></text>
+</component>
+
+<component id="ID_S1_top02">
+<text><![CDATA[<b>Réseau local de gestion</b>]]></text>
+</component>
+
+<component id="ID_S1_top03">
+<text><![CDATA[L’administrateur configure un mot de passe de type 5 (hachage par l’algorithme MD5) et désactive le mot de passe de type 7.]]></text>
+</component>
+
+<component id="ID_S1_top04">
+<text><![CDATA[<font face="_typewriter">R1(config)#<b>enable secret 2-mAny-rOUtEs</b></font>]]></text>
+</component>
+
+<component id="ID_S1_output01">
+<text><![CDATA[<b>Étape 1 : configuration des mots de passe du routeur</b>]]></text>
+</component>
+
+<!-- slide 2-->
+<component id="ID_S2_config">
+<text><![CDATA[<b>Config</b>]]></text>
+</component>
+
+<component id="ID_S2_top01">
+<text><![CDATA[<b>Hôte<br />d’administration</b>]]></text>
+</component>
+
+<component id="ID_S2_top02">
+<text><![CDATA[<b>Réseau local de gestion</b>]]></text>
+</component>
+
+<component id="ID_S2_top03">
+<text><![CDATA[L’administrateur chiffre tous les mots de passe dans le fichier de configuration.]]></text>
+</component>
+
+<component id="ID_S2_top04">
+<text><![CDATA[<font face="_typewriter">R1(config)#<b>service password-encryption</b></font>]]></text>
+</component>
+
+<component id="ID_S2_output01">
+<text><![CDATA[<b>Étape 2 : chiffrement des mots de passe</b>]]></text>
+</component>
+
+<!-- slide 3-->
+<component id="ID_S3_config">
+<text><![CDATA[<b>Config</b>]]></text>
+</component>
+
+<component id="ID_S3_top01">
+<text><![CDATA[<b>Hôte<br />d’administration</b>]]></text>
+</component>
+
+<component id="ID_S3_top02">
+<text><![CDATA[<b>Réseau local de gestion</b>]]></text>
+</component>
+
+<component id="ID_S3_top03">
+<text><![CDATA[L’administrateur définit le fichier de configuration du routeur de manière à exiger des mots de passe de 10 caractères.]]></text>
+</component>
+
+<component id="ID_S3_top04">
+<text><![CDATA[<font face="_typewriter">R1(config)#<b>security passwords min-length 10</b></font>]]></text>
+</component>
+
+<component id="ID_S3_output01">
+<text><![CDATA[<b>Étape 3 : application d’une longueur de mot de passe minimale</b>]]></text>
+</component>
+
+<component id="ID_s1_1">
+<text><![CDATA[<b>Comm1</b>]]></text>
+</component>
+<component id="ID_s1_2">
+<text><![CDATA[<b>Comm1</b>]]></text>
+</component>
+<component id="ID_s1_3">
+<text><![CDATA[<b>Comm1</b>]]></text>
+</component>
+<component id="ID_isp1">
+<text><![CDATA[<b>FAI</b>]]></text>
+</component>
+<component id="ID_isp2">
+<text><![CDATA[<b>FAI</b>]]></text>
+</component>
+<component id="ID_isp3">
+<text><![CDATA[<b>FAI</b>]]></text>
+</component>
+
+</textcomponents>

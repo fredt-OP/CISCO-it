@@ -1,0 +1,145 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Trunking Operation</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click Play button to progress through the animation.</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Network broadcasts with no VLAN segmentation</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>Network broadcasts with VLAN segmentation</b>]]></text>
+</component>
+
+<component id="ID_txt01_3.2.2.1">
+<text><![CDATA[<b>Faculty<br/>172.17.10.21</b>]]></text>
+</component>
+
+<component id="ID_txt02_3.2.2.1">
+<text><![CDATA[<b>Student<br/>172.17.20.22</b>]]></text>
+</component>
+
+<component id="ID_txt03_3.2.2.1">
+<text><![CDATA[<b>Guest<br/>172.17.30.23</b>]]></text>
+</component>
+
+<component id="ID_txt04_3.2.2.1">
+<text><![CDATA[<b>Faculty<br/>172.17.10.24</b>]]></text>
+</component>
+
+<component id="ID_txt05_3.2.2.1">
+<text><![CDATA[<b>Student<br/>172.17.20.25</b>]]></text>
+</component>
+
+<component id="ID_txt06_3.2.2.1">
+<text><![CDATA[<b>Guest<br/>172.17.30.26</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>PC1 sends out a broadcast on VLAN 10<br/>PC3 sends out a broadcast on VLAN 30</b>]]></text>
+</component>
+
+<component id="ID_txt08_3.2.2.1">
+<text><![CDATA[<b>VLAN Trunks configured to support:<br/>VLAN 10, 20, 30</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Broadcast</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Broadcast</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Tagged Frame</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>VID =10</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Tagged Frame</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>VID =30</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Switch S2 tags each frame with the correct VLAN ID.</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>The S2 and S1 switches send the tagged frames out all ports configured for VLANs 10 and 30.</b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>Untagged Frame</b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>Untagged Frame</b>]]></text>
+</component>
+
+<component id="ID_txt19">
+<text><![CDATA[<b>The S3 receives the tagged frames, strips the tags from the frames and routes the untagged frames out the correct ports: Port F0/11 for VLAN 10 to PC4 and Port F0/6 for VLAN 30 to PC6.</b>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward2">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute2">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute2"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+	<component id="ID_cont">
+		<text><![CDATA[Click Play to continue.]]></text>
+	</component>
+
+</textcomponents>

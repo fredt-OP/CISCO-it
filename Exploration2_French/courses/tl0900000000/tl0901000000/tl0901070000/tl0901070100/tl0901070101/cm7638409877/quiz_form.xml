@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13250" dateexported="01/26/2009">
+		<name>Module 1 Questionnaire</name>
+		<form id="20915" lang="fr"><form-item order="fixed">
+			<ai id="63862" type="mc-sa"><question><![CDATA[Parmi les propositions suivantes, laquelle décrit un composant du routeur et la fonction qui lui correspond ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Mémoire FLASH - Elle contient le programme bootstrap. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mémoire ROM - Elle contient le fichier de configuration de démarrage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mémoire NVRAM - Elle contient l'image du système d'exploitation. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Mémoire RAM - Elle contient les tables de routage et la mémoire cache ARP.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="63970" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="63970" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>La configuration courante est chargée à partir de la mémoire NVRAM.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le chargeur de bootstrap s&apos;exécute à partir de la mémoire ROM.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le fichier de configuration est chargé à partir de la mémoire NVRAM.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le système d&apos;exploitation est chargé.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le routeur effectue un test automatique de mise sous tension (POST).</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le mode setup s&apos;exécute après le chargement du fichier de configuration.</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Étape 1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Étape 2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Étape 3</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Étape 4</mattext></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Établissez la séquence des événements qui interviennent lors du processus de démarrage du routeur. (Les propositions ne doivent pas être toutes utilisées.)</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-111.5" targetYspacing="16" yspacing="55" targetH="37"><options><display componentIdent="1" xpos="200" ypos="87.5" /><display componentIdent="2" xpos="200" ypos="147.5" /><display componentIdent="3" xpos="200" ypos="207.5" /><display componentIdent="4" xpos="200" ypos="267.5" /><display componentIdent="5" xpos="200" ypos="327.5" /><display componentIdent="6" xpos="200" ypos="387.5" /></options><targets><display componentIdent="1" xpos="600" ypos="87.5" /><display componentIdent="2" xpos="600" ypos="139.5" /><display componentIdent="3" xpos="600" ypos="191.5" /><display componentIdent="4" xpos="600" ypos="243.5" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="obs1" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>Test automatique de mise sous tension, chargeur de bootstrap, système d&apos;exploitation, fichier de configuration depuis la mémoire NVRAM</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="133271" type="mc-ma"><question><![CDATA[Parmi les commandes suivantes, quelles sont celles qu’un technicien peut utiliser pour déterminer si des adresses IP sont attribuées aux ports série du routeur ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[<b>show interfaces</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show interfaces ip brief</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show controllers all</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip config</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show ip interface brief</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="63841" type="mc-sa"><question><![CDATA[Parmi les commandes suivantes, laquelle permet de paramétrer le mot de passe du mode privilégié avec la valeur " quiz " ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[LAB_A(config)# <b>enable secret quiz</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LAB_A(config)# <b>password secret quiz</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LAB_A(config)# <b>enable password secret quiz</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LAB_A(config)# <b>enable secret password quiz</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133272" type="mc-sa"><question><![CDATA[Quel principe de routage est correct ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Si la table de routage d’un routeur contient des informations, tous les routeurs adjacents possèdent les mêmes informations. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les informations de routage d’un chemin qui va d’un réseau à un autre contiennent les informations de routage du chemin inverse ou de retour. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Chaque routeur prend ses décisions de routage de manière autonome, en fonction des informations qui figurent dans sa table de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Chaque routeur prend ses décisions de routage en fonction des informations qui figurent dans sa table de routage et dans les tables de routage voisines. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133273" type="mc-ma"><question><![CDATA[Parmi les tâches suivantes, quelles sont celles qui sont effectuées par les protocoles de routage dynamique ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Détection des hôtes ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Mise à jour et maintenance des tables de routage  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Propagation des passerelles par défaut de l’hôte ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Détection du réseau  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Attribution d’adresses IP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="128173" type="mc-sa"><question><![CDATA[Un ingénieur réseau configure un nouveau routeur. Les interfaces ont été configurées avec des adresses IP mais aucun protocole de routage ou route statique n’a encore été configuré. Quelles routes sont présentes dans la table de routage ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Routes par défaut ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routes de diffusion ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Connexions directes  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Aucune route. La table de routage est vide. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133276" type="mc-ma"><question><![CDATA[Quelles sont les affirmations exactes à propos des méthodes de transfert de paquets par un routeur ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Si le paquet est destiné à un réseau distant, le routeur transfère le paquet en dehors de toutes les interfaces qui peuvent constituer un tronçon suivant vers ce réseau.  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Si le paquet est destiné à un réseau connecté directement, le routeur transfère le paquet en dehors de l’interface de sortie indiquée par la table de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Si le paquet est destiné à un réseau distant, le routeur transfère le paquet en fonction des informations dans la table d’hôte du routeur.  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Si le paquet est destiné à un réseau distant, le routeur envoie le paquet à l’adresse IP du tronçon suivant dans la table de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Si le paquet est destiné à un réseau connecté directement, le routeur transfère le paquet en fonction de l’adresse MAC de destination. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Si le paquet est destiné à un réseau connecté directement, le routeur transfère le paquet au commutateur sur le réseau local virtuel du tronçon suivant. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133275" type="mc-sa"><question><![CDATA[Quelle affirmation sur les mesures utilisées par les protocoles de routage est vraie ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Une mesure est la valeur quantitative utilisée par un protocole de routage pour mesurer une route donnée.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une mesure est un méthode propriétaire de Cisco pour convertir les distances en unité standard. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les mesures représentent une valeur composée de la quantité de paquets perdus pour tous les protocoles de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les mesures sont utilisées par le routeur pour déterminer si un paquet contient une erreur et doit être supprimé. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les mesures sont uniquement utilisées par les protocoles de routage dynamique. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133277" type="mc-sa"><question><![CDATA[Examinez la présentation. Quel port est utilisé pour connecter un routeur à un commutateur de réseau local ? <br/><img src="i133277n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[4 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[1 ou 4 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[2 ou 3  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[5 ou 6 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133274" type="mc-sa"><question><![CDATA[L’administrateur réseau a configuré la commande <b>ip route 0.0.0.0 0.0.0.0 serial 0/0</b> sur le routeur. Comment cette commande s’affiche-t-elle dans la table de routage, en supposant que l’interface serial0/0 est active ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[D 0.0.0.0/0 is directly connected, Serial0/0 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[S* 0.0.0.0/0 is directly connected, Serial0/0  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[S* 0.0.0.0/0 [1/0] via 192.168.2.2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[C 0.0.0.0/0 [1/0] via 192.168.2.2 ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

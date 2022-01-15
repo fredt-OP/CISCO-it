@@ -1,0 +1,104 @@
+﻿<textcomponents>
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Détails<br/>de la configuration</b>]]></text>
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Configuration du protocole Rapid PVST+</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>Commandes de configuration</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Exemple de configuration</b>]]></text>
+</component>
+
+<component id="ID_button03">
+<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_button04">
+<text><![CDATA[<font face='_typewriter'><b>show run</b></font>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Pont racine]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Agrégation 802.1Q</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>VLAN 10</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>VLAN 20</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Cette commande force l’élection du commutateur S3 comme pont racine principal pour VLAN 20.]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Cette commande force l’élection du commutateur S3 comme pont racine secondaire pour VLAN 10.]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Cette commande force l’élection du commutateur S1 comme pont racine principal pour VLAN 10.]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Cette commande force l’élection du commutateur S1 comme pont racine secondaire pour VLAN 20.]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Cette commande définit la priorité du commutateur S3 à la valeur la plus faible possible (le commutateur S3 sera donc vraisemblablement le pont racine principal pour VLAN 20).]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[Cette commande définit la priorité du commutateur S1 à la valeur la plus faible possible (le commutateur S1 sera donc vraisemblablement le pont racine principal pour VLAN 10).]]></text>
+</component>
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe des commandes Cisco IOS</b></font></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b> </b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration globale.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>configure terminal</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer le mode d’arbre recouvrant du protocole rapid PVST+.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>spanning-tree mode rapid-pvst</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Accéder au mode de configuration d’interface et spécifier une interface à configurer. Les interfaces autorisées comprennent les ports physiques, les VLAN et les canaux de port. La plage d’ID de VLAN s'étend de 1 à 4094 lorsque l'image logicielle améliorée est installée, et de 1 à 1005 avec l'image logicielle standard. La plage des canaux de port est comprise entre 1 et 6.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>interface id d'interface</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Spécifier que le type de liaison pour ce port est point à point.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>spanning-tree link-type point-to-point</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Repasser en mode d’exécution privilégié.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>end</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Désactiver tous les protocoles STP détectés.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'><b>clear spanning-tree detected-protocols</b></font></td>
+	</tr>
+	
+</table>
+]]></text> 
+  </component>
+
+</textcomponents>

@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13392" dateexported="06/23/2008">
+		<name>Module 5 Questionnaire</name>
+		<form id="21436" lang="fr"><form-item order="fixed">
+			<ai id="140141" type="mc-ma"><question><![CDATA[Quelles sont les deux affirmations qui décrivent correctement les listes de contrôle d’accès Cisco ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les listes de contrôle d'accès étendues sont créées en mode de configuration d’interface. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les listes de contrôle d’accès étendues filtrent le trafic en fonction de l’IP de source et de destination, du numéro de port et du protocole.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les listes de contrôle d’accès IP standard sont numérotées de 1 à 99, et les listes de contrôle d’accès IP étendues 100 à 199.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les listes de contrôle d’accès standard autorisent ou refusent le trafic à des adresses IP spécifiques. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les listes de contrôle d’accès standard n’autorisent pas l’utilisation de masques génériques. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="88898" type="mc-sa"><question><![CDATA[Parmi les énoncés suivants concernant l'application de listes de contrôle d'accès sur une interface, lequel est exact ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les listes de contrôle d'accès sont appliquées en mode de configuration globale. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les listes de contrôle d'accès nommées sont appliquées à l'aide de la commande <b>ip access-name</b>. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les listes de contrôle d'accès standard doivent être appliquées sur l’interface la plus proche possible de la destination.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La commande qui permet d'appliquer la liste de contrôle d'accès 101 en &quot; entrée &quot; est <b>ip access-list 101</b>. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140217" type="mc-sa"><question><![CDATA[Quelle affirmation est une directive à suivre lors de la création de listes de contrôle d’accès ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Étant donné que les tests de liste de contrôle d’accès sont exécutés dans l’ordre, les listes doivent commencer par la condition la plus générale et se terminer par la condition la plus spécifique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Étant donné que les tests de liste de contrôle d’accès sont exécutés dans l’ordre, les listes doivent commencer par la condition la plus spécifique et se terminer par la condition la plus générale.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Étant donné que toutes les instructions d’une liste de contrôle d’accès sont évaluées avant d’être exécutées, une instruction explicite <b>deny any</b> doit être ajoutée afin d’assurer le bon fonctionnement d’une liste de contrôle d’accès. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Étant donné que toutes les instructions d’une liste de contrôle d’accès sont évaluées avant d’être exécutées, une instruction explicite <b>permit any</b> doit être ajoutée afin d’assurer le bon fonctionnement d’une liste de contrôle d’accès. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140144" type="mc-sa"><question><![CDATA[Que se passe-t-il si l’administrateur réseau applique sur une interface une liste de contrôle d’accès IP qui n’a aucune instruction d’autorisation de sortie ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[La totalité du trafic sortant est refusée.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La totalité du trafic sortant est autorisée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Seul le trafic provenant du routeur est autorisé à la sortie. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La liste de contrôle d’accès restreint la totalité du trafic entrant et filtre le trafic sortant. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140142" type="mc-ma"><question><![CDATA[Quelles sont les deux solutions qui peuvent être implémentées avec les listes de contrôle d’accès ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Segmenter le réseau pour augmenter la bande passante disponible ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Créer un « pare-feu » sur un routeur pour filtrer le trafic entrant qui provient d’un réseau externe  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Contrôler le trafic entrant ou sortant de différentes zones d’un réseau local  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Distribuer le trafic DHCP pour faciliter la disponibilité du réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Autoriser ou refuser le trafic dans le réseau en fonction de l’adresse MAC ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="64029" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="64029" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>ANY</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>show running-config</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>show access-list</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>HOST</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>show ip interface</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Remplace le masque 0.0.0.0</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Indique si des listes de contrôle d&apos;accès sont configurées sur une interface</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Affiche le contenu de toutes les listes de contrôle d&apos;accès sur le routeur</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Représente la combinaison d&apos;adresse IP et de masque générique 0.0.0.0 255.255.255.255</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Affiche les listes de contrôle d&apos;accès et les affectations d&apos;interface d&apos;un routeur</mattext></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Choisissez la description appropriée pour chacune de ces commandes utilisées avec les listes de contrôle d&apos;accès.</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-125" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="50614" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="50614" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="50614" action="Set">1</setvar><scoringdescription>De haut en bas : HOST, show ip interface, show access-list, ANY, show running-config</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="88901" type="mc-sa"><question><![CDATA[Parmi les combinaisons suivantes d'adresse IP et de masque générique, laquelle permet de tester des hôtes à partir d'un sous-réseau <i>entier</i> du réseau 192.168.12.0 avec un masque de 29 bits ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.56 0.0.0.15 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.56 0.0.0.8 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.56 0.0.0.31 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.12.84 0.0.0.7  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.84 0.0.0.3 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.84 0.0.0.255 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140136" type="mc-sa"><question><![CDATA[Quel type de liste d’accès est créé à l’aide de la commande <b>ip access-list standard fastaccess</b> ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les listes de contrôle d’accès turbo ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les listes de contrôle d’accès réflexives ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les listes de contrôle d’accès nommées  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les listes de contrôle d’accès dynamiques ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140143" type="mc-sa"><question><![CDATA[Lisez l’exposé. L’exposé illustre une liste de contrôle d’accès qui existe déjà sur le routeur. L’administrateur réseau souhaite insérer la commande <b>access-list 101 deny ip any 192.168.1.0 0.0.0.255 eq ftp</b> sur la troisième ligne de la liste de contrôle d’accès indiquée. L’administrateur réseau entre la commande en mode de configuration globale sur le routeur. Quel en est l’effet ? <br/><img src="i140143n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La liste est insérée à l’emplacement souhaité dans la liste de contrôle d’accès. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La liste est insérée comme première instruction dans la liste de contrôle d’accès. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La liste est insérée comme dernière instruction dans la liste de contrôle d’accès.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La liste entière est supprimée et remplacée par la nouvelle ligne uniquement. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140139" type="mc-sa"><question><![CDATA[Lisez l’exposé. Quelle est l’affirmation qui décrit correctement la manière dont Routeur1 traite les paquets dans le cadre de la configuration indiquée ? <br/><img src="i140139n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le trafic sortant de l’interface s0/0/0 est filtré à la fois par ACL 101 et par ACL 201. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Si un paquet entrant dans l’interface s0/0/0 correspond à une condition dans ACL 101, le routeur continue de comparer le paquet au reste des instructions dans ACL 101 pour s’assurer qu’aucune autre instruction ne s’applique également. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router1 compare d’abord les paquets qui entrent dans l’interface s0/0/0 à toutes les instructions de la liste ACL 101 pour le protocole IP, puis à toutes les instructions de la liste ACL 101 pour le protocole ICMP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un paquet entrant dans l’interface s0/0/0 est comparé à chacune des instructions de la liste ACL 101 jusqu’à ce que l’une d’elles corresponde au paquet. Le routeur abandonne ou transmet ensuite le paquet sans tenir compte des autres instructions qui restent dans la liste ACL 101.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140137" type="mc-sa"><question><![CDATA[Un administrateur souhaite implémenter un accès de type « verrou et clé » sur un hôte du réseau de l’entreprise pour des utilisateurs spécifiques qui se connectent depuis l’extérieur du réseau de l’entreprise. Quelle sorte de liste de contrôle d’accès est la mieux appropriée à la situation ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Dynamique  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Réflexive ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Étendue ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Basée sur le temps ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140138" type="mc-sa"><question><![CDATA[Quelle sorte de liste de contrôle d’accès l’administrateur doit-il implémenter pour limiter le trafic Internet lors des heures de pointes ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Dynamique ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Basée sur les stratégies ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Réflexive ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Basée sur le temps  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140140" type="mc-sa"><question><![CDATA[Quelle est l’affirmation qui décrit correctement une liste d’accès réflexive ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Une liste de contrôle d’accès qui autorise le trafic IP pour les sessions originaires de l’intérieur du réseau, mais qui refuse le trafic pour les sessions qui proviennent de l’extérieur.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une liste de contrôle d’accès qui contrôle le trafic en fonction du temps. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une liste de contrôle d'accès qui utilise une liste étendue pour empêcher les utilisateurs de traverser un routeur tant qu'ils ne sont pas authentifiés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une liste de contrôle d’accès qui identifie uniquement la source du trafic. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="63979" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="63979" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Contrôle seulement l&apos;adresse d&apos;origine</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Numéros ACL compris entre 100 et 199</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Contrôle le protocole et les numéros des ports</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Autorise/refuse seulement des protocoles sur la base de l&apos;adresse réseau</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Numéros ACL compris entre 1 et 99</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Contrôle l&apos;adresse d&apos;origine et l&apos;adresse de destination</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Liste de contrôle d&apos;accès IP standard</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Liste de contrôle d&apos;accès IP étendue</mattext></material></textcomponent></component><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Classez les descriptions suivantes en fonction du type de liste de contrôle d&apos;accès auquel elles correspondent.</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-137.5" targetYspacing="15" yspacing="70" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="3" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="266.5" containsTargets="3" startTarg="4" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="152" /><display componentIdent="3" xpos="600" ypos="204" /><display componentIdent="4" xpos="600" ypos="281" /><display componentIdent="5" xpos="600" ypos="333" /><display componentIdent="6" xpos="600" ypos="385" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="obs1" view="All">Standard : source seulement, protocoles seulement, 1-99 - Étendue : 100-199, protocoles et ports, source et destination</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>5</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>3</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>Standard : source seulement, protocoles seulement, 1-99 - Étendue : 100-199, protocoles et ports, source et destination</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140218" type="mc-ma"><question><![CDATA[<b>access-list 199 deny tcp 178.15.0.0 0.0.255.255 any eq 23<br />access-list 199 permit ip any any</b><br /><br />En supposant que cette liste de contrôle d’accès est correctement appliquée à une interface de routeur, quelles sont les deux affirmations qui décrivent le trafic sur le réseau ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Tout le trafic FTP du réseau 178.15.0.0 est autorisé.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tout le trafic Telnet destiné au réseau 178.15.0.0 est refusé. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les trafics Telnet et FTP sont autorisés depuis tous les hôtes du réseau 178.15.0.0 vers toute destination. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le trafic Telnet n’est pas autorisé depuis les hôtes du réseau 178.15.0.0 vers toute destination.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le trafic Telnet n’est pas autorisé vers les hôtes sur le réseau 178.15.0.0 depuis toute destination. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

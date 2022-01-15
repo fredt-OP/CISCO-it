@@ -1,0 +1,140 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Central City</NAME>
+ <NAME translate="true">Central Office</NAME>
+ <NAME translate="true">Central Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">ISP City</NAME>
+ <NAME translate="true">ISP Office</NAME>
+ <NAME translate="true">ISP Office Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">Eagle_Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;&lt;b&gt;8.5.1 : exercice d’intégration des compétences : connexion des périphériques et exploration de la vue physique&lt;/h2&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Schéma de topologie :&lt;/h3&gt;&lt;/b&gt;partiellement complété.&lt;br&gt;&lt;br&gt; 
+
+&lt;div align=&quot;center&quot;&gt; &lt;table border=&quot;1&quot;&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Périphérique&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Interface&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Adresse IP&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Masque de sous-réseau&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; bgcolor=&quot;#000000&quot;&gt;&lt;b&gt; &lt;font color=&quot;#FFFFFF&quot;&gt;Passerelle par défaut&lt;/font&gt;&lt;/b&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; rowspan=&quot;2&quot;&gt;&lt;b&gt; R1-ISP&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Fa0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.253&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; rowspan=&quot;2&quot;&gt;N/A&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;S0/0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;10.10.10.6&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.252&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot; rowspan=&quot;2&quot;&gt;&lt;b&gt; R2-Central&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Fa0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot; rowspan=&quot;2&quot;&gt;N/A&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;S0/0/0&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;10.10.10.5&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.252&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;S1-Central&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;VLAN 1&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.254.1&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;PC 1A&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;NIC&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.1.1&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;PC 1B&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Carte réseau&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.1.2&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.0.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;172.16.255.254&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; width=&quot;75&quot;&gt;&lt;b&gt;Serveur Eagle&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;50&quot;&gt;&lt;b&gt;Carte réseau&lt;/b&gt;&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.254&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;255.255.255.0&lt;/td&gt; &lt;td align=&quot;center&quot; width=&quot;100&quot;&gt;192.168.254.253&lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;&lt;/div&gt;
+
+
+&lt;b&gt;&lt;h3&gt;Objectifs pédagogiques :&lt;/h3&gt;&lt;/b&gt; 
+
+&lt;ul&gt; &lt;li&gt;connexion des périphériques dans la configuration type de travaux pratiques ; &lt;li&gt;connexion des périphériques ; &lt;li&gt;vérification de la connectivité ; &lt;li&gt;affichage de la configuration type de travaux pratiques dans l'espace de travail physique ; &lt;li&gt;accès à l'espace de travail physique et affichage ; &lt;li&gt;affichage de la configuration type de travaux pratiques aux divers niveaux de l'espace de travail physique. &lt;/ul&gt;
+
+&lt;b&gt;&lt;h3&gt;Présentation : &lt;/h3&gt;&lt;/b&gt; Lorsque vous travaillez dans Packet Tracer, dans un environnement de travaux pratiques ou dans un cadre d'entreprise, il est important de savoir comment sélectionner le câble approprié et comment connecter correctement des périphériques. Cet exercice examine des configurations de périphériques dans Packet Tracer, en sélectionnant le câble approprié en fonction de la configuration et en connectant les périphériques. Il explore également la vue physique du réseau dans Packet Tracer.&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : connexion des périphériques dans la configuration type de travaux pratiques&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1 : &lt;u&gt;connexion des périphériques &lt;/u&gt;&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Connectez le PC 1A au premier port du commutateur S1-Central et le PC 1B au second port du commutateur S1-Central en utilisant le câble approprié.&lt;br&gt;&lt;br&gt; Cliquez sur le routeur R2-Central et examinez la configuration à l'aide de l'onglet &lt;b&gt;Config&lt;/b&gt;. Connectez l'interface appropriée du routeur à l'interface FastEthernet0/24 du commutateur S1-Central en utilisant le câble approprié.&lt;br&gt;&lt;br&gt; Cliquez sur les deux routeurs et examinez la configuration à l'aide de l'onglet &lt;b&gt;Config&lt;/b&gt;. Connectez les routeurs ensemble en utilisant les interfaces appropriées et le câble correct.&lt;br&gt;&lt;br&gt; Cliquez sur le routeur R1-ISP et examinez la configuration à l'aide de l'onglet &lt;b&gt;Config&lt;/b&gt;. Connectez l'interface appropriée du routeur à l'interface correcte sur Eagle Server en utilisant le bon câble.
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : &lt;u&gt;vérification de la connectivité&lt;/h4&gt; &lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; À partir de la fenêtre &lt;b&gt;Command Prompt&lt;/b&gt; de l'onglet &lt;b&gt;Desktop&lt;/b&gt; des deux PC, lancez la commande &lt;b&gt;ping 192.168.254.254&lt;/b&gt;, adresse IP d'Eagle Server. Si les commandes ping échouent, vérifiez les connexions et corrigez les problèmes jusqu'à ce que les commandes ping aboutissent. Vérifiez votre configuration en cliquant sur le bouton &lt;b&gt;Check Results&lt;/b&gt;.&lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Tâche 2 : affichage de la configuration type de travaux pratiques dans l'espace de travail physique&lt;/h3&gt; &lt;/b&gt;&lt;br&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1 : &lt;u&gt;accès à l'espace de travail physique et affichage&lt;/h4&gt; &lt;/U&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; L'essentiel de notre travail dans Packet Tracer a été effectué dans l'espace de travail logique. Dans un interréseau, les routeurs peuvent se trouver sur des sites différents, de l'autre côté de la rue ou au bout du monde. La liaison série entre les routeurs représente une ligne dédiée concédée entre deux emplacements composés d'un équipement terminal de traitement de données (ETTD), tel qu'un routeur, connecté à un équipement de communication de données (DCE), tel qu'un CSU/DSU ou un modem. L'équipement de communication de données se connecte à une boucle locale de fournisseur de services, et les connexions sont répétées à l'autre extrémité de la liaison. L'espace de travail physique nous permet de voir plus clairement ces relations. &lt;br&gt;&lt;br&gt; Accédez à l'espace de travail physique en cliquant sur l'onglet dans l'angle supérieur gauche de l'espace de travail. Il montre la connexion entre Central City et ISP City.
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : &lt;u&gt;affichage de la configuration type de travaux pratiques aux divers niveaux de l'espace de travail physique&lt;/h4&gt; &lt;/u&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur Central City.  Vous voyez alors la ville et l'emplacement du bâtiment Central Office. Cliquez sur le bâtiment Central Office.  Vous voyez alors le plan du bâtiment et l'emplacement du local technique. Cliquez sur Wiring Closet.  Ceci affiche une représentation physique du matériel installé dans le local technique et du câblage reliant ce matériel. Examinez cette vue de la topologie. &lt;br&gt;&lt;br&gt; Cliquez sur &lt;b&gt;Intercity&lt;/b&gt; dans la barre &lt;b&gt;Navigation&lt;/b&gt;. Répétez la procédure pour afficher le matériel installé dans ISP City.  Si la barre de navigation supérieure est encombrée, vous pouvez également cliquer sur Navigation pour afficher une fenêtre contextuelle.&lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt;Remarques générales :&lt;/h3&gt; Connaissez-vous la différence entre une topologie physique et une topologie logique ?  Comment chacune est-elle utilisée ?  Comment afficher chaque topologie dans Packet Tracer ?&lt;br&gt;&lt;br&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Central City,Central Office,Central Office Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,ISP City,ISP Office,ISP Office Closet,Rack,Eagle_Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Central City,Central Office,Central Office Closet</HOMERACK>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">Eagle_Server</ID>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">Eagle_Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

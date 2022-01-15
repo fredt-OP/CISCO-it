@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13241" dateexported="03/17/2008">
+		<name>Module 9 Questionnaire</name>
+		<form id="20740" lang="fr"><form-item>
+			<ai id="130384" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="130384" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Préambule (7 octets) et délimiteur de début de trame (1 octet)</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Séquence de contrôle de trame (4 octets)</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Adresse de destination (6 octets)</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Adresse source (6 octets)</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Longueur/type (2 octets)</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>En-tête 802.2 et données (de 46 à 1 500 octets)</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Contient les données encapsulées provenant d’une couche supérieure</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Identifie le destinataire indiqué</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Une valeur égale ou supérieure à 0x0600 indique le protocole encapsulé</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Utilisé pour synchroniser les périphériques d’envoi et de réception</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Utilisé pour détecter les erreurs dans une trame</mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Identifie la carte réseau ou l’interface à l’origine de la trame</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser les champs de trame Ethernet situés à gauche sur leur fonction correspondante mentionnée à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /><display componentIdent="6" xpos="600" ypos="335" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><scoringzone ident="6"><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="199014" maxvalue="1"><title>Sans titre</title></decvar><interpretvar varname="199014" view="All">Sans description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="6"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="199014" action="Set">1</setvar><scoringdescription>De haut en bas : Données, Adresse de destination, Longueur/type, Préambule, Somme de contrôle de trame, Adresse source</scoringdescription></responcondition></resprocessing><feedback><correct>Correct.</correct><incorrect>Réessayez.</incorrect></feedback></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="130380" type="mc-sa"><question><![CDATA[Quelle est la fonction principale de CSMA/CD dans un réseau Ethernet ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il attribue des adresses MAC aux hôtes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il définit la zone dans laquelle les collisions peuvent se produire. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il identifie le début et la fin de la trame Ethernet. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il fournit une méthode pour déterminer quand et comment les hôtes accèdent au support Ethernet.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il crée l’en-tête dans la trame Ethernet lors de l’encapsulation des données. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il mappe une adresse IP sur une adresse MAC. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130385" type="mc-sa"><question><![CDATA[Pour quelle technologie la norme IEEE 802.3ac a-t-elle été spécialement conçue ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le protocole SNMP (Simple Network Management Protocol) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole ARP (Address Resolution Protocol) ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les réseaux locaux virtuels  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La voix sur IP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole ICMP (Internet Control Message Protocol) ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="63828" type="mc-sa"><question><![CDATA[Quelle est la fonction de la sous-couche MAC (Media Access Control) ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle identifie la station de travail qui a envoyé une trame. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle détermine le protocole de couche 3 appelé à traiter une trame. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle identifie le format de trame Ethernet à utiliser sur le réseau.  ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elle détermine la station de travail autorisée à transmettre des données dans un LAN à média partagé.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67946" type="mc-sa"><question><![CDATA[Comment les collisions sont-elles détectées sur un réseau Ethernet ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les stations identifient le champ de la séquence de contrôle de trame endommagée des paquets en collision ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L'amplitude du signal sur le média réseau est supérieure à la normale  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le trafic sur le réseau ne peut pas être détecté en raison d'un blocage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L'amplitude du signal sur le média réseau est inférieure à la normale ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67993" type="mc-sa"><question><![CDATA[Quelle est la sous-couche de la couche 2 qui fournit des services à la couche réseau du modèle OSI ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[FCS ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[IEEE 802.3 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[LLC  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[MAC ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="86956" type="mc-sa"><question><![CDATA[Quels équipements du schéma doivent disposer d'une adresse MAC ? <br/><img src="2762.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Uniquement le PC ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Uniquement le routeur ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le PC et le routeur ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le PC, le concentrateur et le routeur ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le PC, l'imprimante et le routeur  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130064" type="mc-sa"><question><![CDATA[Dans le schéma, l’envoi d’une trame Ethernet d’1 Ko par l’hôte A vers l’hôte D en est à 50 % de son temps d’exécution au moment où l’hôte B cherche à transmettre une trame à l’hôte C. Que doit faire l’hôte B ? <br/><img src="i130064n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[L’hôte B peut effectuer sa transmission immédiatement puisqu’il est relié par un segment câblé qui lui est dédié. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’hôte B doit attendre la réception d’une transmission CSMA provenant du concentrateur pour faire savoir que c’est son tour d’émettre. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’hôte B doit envoyer un signal de requête à l’hôte A en lui transmettant un écart intertrame. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’hôte B doit s’assurer au préalable que l’hôte A a terminé l’envoi de sa trame.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130340" type="mc-ma"><question><![CDATA[Lesquels des éléments suivants correspondent aux champs d’une trame Ethernet 802.3 ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[L’adresse physique de la source  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse logique de la source ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’identificateur du type de support ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La séquence de contrôle de trame  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’adresse physique de la destination  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse logique de la destination ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="130383" type="mc-sa"><question><![CDATA[Quel type d’adresse sert à un commutateur pour prendre des décisions dans les transferts de données ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[L’adresse IP source ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse IP de destination ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse MAC source ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’adresse MAC de destination  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

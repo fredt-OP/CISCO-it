@@ -1,0 +1,259 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><b>This chapter discussed the process of identifying, locating and correcting problems that occur.</b><br/><br/><ul><li>Gathering information and verifying that the problem exists are important first steps in the troubleshooting process.</li><br/><li>When troubleshooting, there are several structured troubleshooting techniques that can be used including: top-down, bottom-up, divide-and-conquer. </li><br/><li>Less structured techniques include trial and error and substitution.</li><br/><li>Experienced troubleshooters tend to rely on experience and less structured techniques for troubleshooting issues.</li></ul></font>]]></text>
+</component>
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><b>There are several tools available to help in the troubleshooting process.</b><br/><br/><ul><li>Physical problems are concerned mainly with the hardware of devices as well as cabling connections.</li><br/><li>Physical issues are often detected using the senses. </li><br/><li>A number of software utility programs are available that can help identify network problems.</li><br/><li>Some of the most common software utilities used for troubleshooting include: ipconfig, ping, tracert, nslookup, netstat.</li></ul></font>]]></text>
+</component>
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><b>There are several issues to check for when troubleshooting wired and wireless networks.</b><br/><br/><ul><li>LED lights are used to indicate the current state or activity of a piece of equipment or connection. </li><br/><li>For wired devices, check physical connectivity and cabling issues including:  wrong cable type, bad termination, physical damage, and port placement.</li><br/><li>For a wireless client, connectivity problem such as: A/B/G/N compatibility, overlapping channels, signal strength, and interference should be examined. Also, check the SSID, authentication and encryption settings.</li><br/><li>On both wired and wireless clients, check the IP configuration of the client, including IP address, subnet mask, default gateway and DNS information. </li><br/><li>Verify connectivity between the ISR and the ISP by checking the router status page in the ISR to ensure that an IP address is assigned by the ISP and the connection is good.<br/></li></ul></font>]]></text>
+</component>
+
+<component id="slide04">
+<text><![CDATA[<font size="14"><b>There are several sources of help when troubleshooting issues.</b><br/><br/><ul><li>Documentation such as topology maps, network diagrams and addressing schemes, assists the troubleshooting effort.</li><br/><li>Outside resources available to help with troubleshooting include: previously kept documentation, online FAQs, colleagues and other network professionals, Internet forums.</li><br/><li>A helpdesk is a group of individuals with the knowledge and tools required to help diagnose and correct common problems.</li><br/><li>First, second and third-level helpdesk support is often available with escalation procedures in place to help solve issues.</li><br/><li>It is important to document all steps taken in the troubleshooting process, including interaction with the helpdesk.<br/></li></ul></font>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Approaches to Troubleshooting</b>]]></text>
+</component>
+
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Rollover each technique for more information.</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Top-Down Approach</b>]]></text>
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Bottom-Up Approach</b>]]></text>
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>Divide-and-Conquer Approach</b>]]></text>
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[<b>Application<br/>(application, presentation, session)</b>]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>Transport</b>]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[<b>Network</b>]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[<b>Data Link</b>]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[<b>Physical</b>]]></text>
+</component>
+
+
+<component id="myTable3_s1">
+<text><![CDATA[<table header='top' headerstyle='black' borderwidth='1.75' shadow='true' shadowcolor='#999999' cellpadding='4'>
+	<tr>
+		<td><font color='#ffffff'>Troubleshooting Approach</font></td>
+		<td><font color='#ffffff'>How it operates</font></td>
+		<td><font color='#ffffff'>Cases for which it is suitable</font></td>
+		<td><font color='#ffffff'>Advantages/<br/>Disadvantages</font></td>
+	</tr>
+	<tr>
+		<td>Bottom-up</td>
+		<td>Always starts at the physical layer and works its way up until it finds a faulty layer.</td>
+		<td>More suited for complex cases.</td>
+		<td>It is a slow, but solid approach. When the problem is application (or upper layer) related, this approach can take a long time.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="myTable2_s1">
+<text><![CDATA[<table header='top' headerstyle='black' borderwidth='1.75' shadow='true' shadowcolor='#999999' cellpadding='4'>
+	<tr>
+		<td><font color='#ffffff'>Troubleshooting Approach</font></td>
+		<td><font color='#ffffff'>How it operates</font></td>
+		<td><font color='#ffffff'>Cases for which it is suitable</font></td>
+		<td><font color='#ffffff'>Advantages/<br/>Disadvantages</font></td>
+	</tr>
+	<tr>
+		<td>Divide-and-conquer</td>
+		<td>Based on the circumstances (reported issues) and your experience, you might decide to start at any layer and work up or down the OSI stack.</td>
+		<td>Most suitable when you are experienced and the problem has precise symptoms.</td>
+		<td>It approaches the layer of the culprit faster than the other approaches.<br/>You need experience to use this approach effectively.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="myTable1_s1">
+<text><![CDATA[<table header='top' headerstyle='black' borderwidth='1.75' shadow='true' shadowcolor='#999999' cellpadding='4'>
+	<tr>
+		<td><font color='#ffffff'>Troubleshooting Approach</font></td>
+		<td><font color='#ffffff'>How it operates</font></td>
+		<td><font color='#ffffff'>Cases for which it is suitable</font></td>
+		<td><font color='#ffffff'>Advantages/<br/>Disadvantages</font></td></tr>
+	<tr>
+		<td>Top-down</td><td>Always starts at the application layer and works its way down until it finds a faulty layer.</td>
+		<td>More suitable for simpler problems not those that are suspected to be application/user or upper-layer related.</td>
+		<td>If the problem turns out to be related to lower layers, you have wasted a lot of time and effort at the upper or application layers.</td>
+	</tr>
+</table>]]></text>
+</component>      
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Software Utilities for Troubleshooting Connectivity</b>]]></text>
+</component>
+<component id="ID_s2_inst">
+<text><![CDATA[<b>Roll over each command for the type of question that can be answered by using each utility.</b>]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>Ipconfig</b>]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[<b>Ping</b>]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[<b>Netstat</b>]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[<b>Tracert</b>]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[<b>Nslookup</b>]]></text>
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[<b>Do I have the right IP address and subnet mask?</b>]]></text>
+</component>
+
+<component id="ID_s2_txt09">
+<text><![CDATA[<b>Can I send an IP packet to another host?</b>]]></text>
+</component>
+
+<component id="ID_s2_txt10">
+<text><![CDATA[<b>What are my active network connections and which TC/UDP ports are in use?</b>]]></text>
+</component>
+
+<component id="ID_s2_txt11">
+<text><![CDATA[<b>What route will my packets take to another host and how much delay will there be at each hop?</b>]]></text>
+</component>
+
+<component id="ID_s2_txt12">
+<text><![CDATA[<b>What is the IP address of www.xyz.com?</b>]]></text>
+</component>
+
+<component id="securityledTitle">
+<text>Security LED</text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>LED Indicators</b>]]></text>
+</component>
+<component id="ID_s3_inst">
+<text><![CDATA[<b>Roll over each LED type for more information.</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>**exact meaning of colors may vary according to equipment and manufacturer</b>]]></text>
+</component>
+<component id="securityledBody">
+<text><![CDATA[<ul><li>Indicates the current condition of the device and can change color or flash.</li><li>Used during device self-diagnostic testing to indicate stage of completion.When self-diagnostics are completed.</li><li>**solid green indicate device is functioning properly</li><li>**amber can indicate that an error has been encountered that is correctable, such as a missing or damaged operating systems.</li><li>**red can indicate that the device has experienced a major hardware problem which will require service.</li></ul>]]></text>
+</component>
+<component id="wirelessactivityledTitle">
+<text>Wireless Activity LED</text>
+</component>
+<component id="wirelessactivityledBody">
+<text><![CDATA[<ul><li>sometimes referred to as link lights, an activity LED is normally associated with a specific port</li><li>Normal condition is to flash indicating that traffic is flowing through the port On some devices the rate of flash indicates the speed that the port is operating.</li><li>**solid green indicates that a device is plugged into the port but no traffic is flowing.</li><li>**amber indicates the device is making adjustments to the way the port is operating.</li><li>**No light indicates that nothing is plugged into the port, or there is an issue with the port, transmitting device or cable</li><li>On wireless devices: activity light can indicate status of the radio connection; flash rate differs depending on if the clients are associated or searching for an association.</li></ul>]]></text>
+</component>
+<component id="ethernetactivityledTitle">
+<text>Ethernet Activity LED</text>
+</component>
+<component id="ethernetactivityledBody">
+<text><![CDATA[<ul><li>sometimes referred to as link lights, an activity LED is normally associated with a specific port</li><li>Normal condition is to flash indicating that traffic is flowing through the port On some devices the rate of flash indicates the speed that the port is operating.</li><li>**solid green indicates that a device is plugged into the port but no traffic is flowing.</li><li>**amber indicates the device is making adjustments to the way the port is operating.</li><li>**No light indicates that nothing is plugged into the port, or there is an issue with the port, transmitting device or cable</li><li>On wireless devices: activity light can indicate status of the radio connection; flash rate differs depending on if the clients are associated or searching for an association.</li></ul>]]></text>
+</component>
+<component id="internetactivityledTitle">
+<text>Internet Activity LED</text>
+</component>
+<component id="internetactivityledBody">
+<text><![CDATA[<ul><li>sometimes referred to as link lights, an activity LED is normally associated with a specific port</li><li>Normal condition is to flash indicating that traffic is flowing through the port On some devices the rate of flash indicates the speed that the port is operating.</li><li>**solid green indicates that a device is plugged into the port but no traffic is flowing.</li><li>**amber indicates the device is making adjustments to the way the port is operating.</li><li>**No light indicates that nothing is plugged into the port, or there is an issue with the port, transmitting device or cable<li><li>On wireless devices: activity light can indicate status of the radio connection; flash rate differs depending on if the clients are associated or searching for an association.</li></ul>]]></text>
+</component>
+<component id="powerledTitle">
+<text>Power LED</text>
+</component>
+<component id="powerledBody">
+<text><![CDATA[<ul><li>Usually a solid green color.</li><li>Indicates power to the device</li><li>**No light indicates a problem with the power.Check power connections and/or the position and of the power switch, if present.</li></ul>]]></text>
+</component>
+
+<component id="securityledTitle">
+<text>Security LED</text>
+</component>
+<component id="ID_title">
+<text><![CDATA[<b>LED Indicators</b>]]></text>
+</component>
+<component id="ID_inst">
+<text><![CDATA[<b>Roll over each LED type for more information.</b>]]></text>
+</component>
+
+
+<component id="ID_txt08">
+<text><![CDATA[..Do I have the right IP address and subnet mask?]]></text>
+</component>
+<component id="ID_txt09">
+<text><![CDATA[..Can I send an IP packet to another host?]]></text>
+</component>
+<component id="ID_txt10">
+<text><![CDATA[..What are my active network connections and which TCP/UDP ports are in use?]]></text>
+</component>
+<component id="ID_txt11">
+<text><![CDATA[..What route will my packets take to another host and how much delay will there be at each hop?]]></text>
+</component>
+<component id="ID_txt12">
+<text><![CDATA[..What is the IP address of www.xxyz.com?]]></text>
+</component>
+
+
+<component id="securityledBody">
+<text><![CDATA[<ul><li>Indicates the current condition of security settings on the device.</li><li>Solid green indicates security is enabled.</li><li></ul>]]></text>
+</component>
+
+<component id="wirelessactivityledTitle">
+<text>Activity LEDs</text>
+</component>
+
+<component id="wirelessactivityledBody">
+<text><![CDATA[Sometimes referred to as link lights, an activity LED is normally associated with a specific port.  Normal condition is to flash indicating that traffic is flowing through the port. On some devices the rate of flash indicates the speed that the port is operating.<ul><li>**Solid green indicates that a device is plugged into the port but no traffic is flowing.  Flashing green indicates the device is plugged in and receiving traffic.</li><li>**Amber indicates the device is making adjustments to the way the port is operating.</li><li>**No light indicates that nothing is plugged into the port, or there is an issue with the wired or wireless connection.</li></ul>**exact meaning of colors may vary according to equipment and manufacturer]]></text>
+</component>
+
+<component id="powerledTitle">
+<text>Power LED</text>
+</component>
+<component id="powerledBody">
+<text><![CDATA[<ul><li>Usually a solid green color.</li><li>Indicates power to the device.</li><li>No light indicates a problem with the power.  Check power connections.</li></ul>
+]]></text>
+</component>
+
+<component id="Security LED">
+<text>Security LED</text>
+</component>
+
+
+<component id="Wireless Activity LED">
+<text><![CDATA[<font align='left'>Wireless Activity LED<br />Internet Activity LED<br />Ethernet Activity LED</font>]]></text>
+</component>
+
+<component id="Power LED">
+<text>Power LED</text>
+</component>
+
+
+</textcomponents>

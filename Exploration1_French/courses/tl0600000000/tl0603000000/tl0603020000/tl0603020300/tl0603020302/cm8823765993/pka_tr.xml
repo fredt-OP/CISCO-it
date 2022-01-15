@@ -1,0 +1,97 @@
+﻿<TRANSLATION>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 3.2.3 : &lt;br&gt;interaction client-serveur&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;configuration et exécution de la simulation ; &lt;li&gt;examen des résultats. &lt;/ul&gt; &lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;Les clients, tels que les ordinateurs de bureau, demandent des services aux serveurs. L'environnement de travaux pratiques du cours, à l'aide d'ordinateurs et de serveurs réels, prend en charge un éventail complet de services. Dans un environnement simulé, le nombre de services est limité. Packet Tracer permet d'ajouter des serveurs réseau simulés qui prennent en charge les protocoles DHCP, DNS, HTTP et TFTP. Il prend également en charge l'ajout d'ordinateurs simulés pouvant demander ces services. Cet exercice fait appel à un réseau simple qui consiste en un ordinateur directement connecté à un serveur configuré pour fournir des services DNS et héberger une page Web. Lors de cet exercice, un suivi du flux de trafic est effectué lorsqu'une page Web est demandée, que l'adresse IP de la page Web est résolue et que la page Web est affichée.&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : configuration et exécution de la simulation&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1.  Passage en mode simulation &lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Lorsque Packet Tracer démarre, il présente un affichage logique du réseau en mode temps réel.  À l'extrémité de la barre jaune ci-dessous, le lieu de travail logique est l'onglet &lt;b&gt;Realtime&lt;/b&gt;. Dessous et à droite de l'onglet &lt;b&gt;Realtime&lt;/b&gt; se trouve l'onglet &lt;b&gt;Simulation&lt;/b&gt;. Cliquez sur cet onglet pour passer en mode simulation. &lt;br&gt;&lt;br&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Définition des filtres de listes d'événements&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; En mode simulation, l'opération par défaut consiste à capturer tous les événements pris en charge par Packet Tracer. Vous pouvez limiter les événements capturés en définissant des filtres de listes d'événements. Nous ne souhaitons capturer que les événements DNS et HTTP. Dans la section &lt;b&gt;Event List Filters&lt;/b&gt;, cliquez sur le bouton &lt;b&gt;Edit Filters&lt;/b&gt;. Une liste des événements disponibles s'affiche, tous les événements étant sélectionnés. Cochez la case située à gauche de &lt;b&gt;Show All/None&lt;/b&gt;, dans la partie inférieure droite. Toutes les cases sont décochées. Cochez la case située à gauche de &lt;b&gt;DNS&lt;/b&gt; et de &lt;b&gt;HTTP&lt;/b&gt; pour ne sélectionner que les événements DNS et HTTP. Cliquez en dehors de la fenêtre des événements pour la fermer. Les &lt;b&gt;filtres de listes d'événements&lt;/b&gt; affichent les événements DNS et HTTP comme étant les seuls événements visibles.
+
+&lt;h4&gt; &lt;b&gt;Étape 3.  Demande d'une page Web à l'ordinateur&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Packet Tracer fournit des services simulés sur des périphériques. Vous allez ouvrir un navigateur Web simulé sur l'ordinateur et demander une page Web au serveur.&lt;br&gt;&lt;br&gt; Cliquez sur l'ordinateur sur le lieu de travail logique. Cliquez sur l'onglet &lt;b&gt;Desktop&lt;/b&gt;, puis sur le bouton &lt;b&gt;Web Browser&lt;/b&gt;. Une simulation de navigateur Web s'affiche.  Tapez &lt;b&gt;www.exemple.com&lt;/b&gt; dans le champ de l'adresse URL, puis cliquez sur le bouton &lt;b&gt;Go&lt;/b&gt; situé à droite. Minimisez la fenêtre du navigateur simulé.
+
+&lt;h4&gt; &lt;b&gt;Étape 4.  Exécution de la simulation&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Dans la section &lt;b&gt;Play Controls&lt;/b&gt; du &lt;b&gt;panneau Simulation&lt;/b&gt;, cliquez sur le bouton &lt;b&gt;Auto Capture/Play&lt;/b&gt;. L'échange entre l'ordinateur et le serveur s'anime et les événements s'ajoutent à la &lt;b&gt;liste des événements&lt;/b&gt;. Ces événements représentent la requête de l'ordinateur pour résoudre l'adresse URL en une adresse IP, le serveur fournissant l'adresse IP, la requête de l'ordinateur pour obtenir une page Web, le serveur envoyant la page Web en deux segments et l'ordinateur accusant réception de la page Web. Une boîte de dialogue s'affiche indiquant qu'il n'y a plus d'événements et fournissant des informations sur la durée de la simulation. Cliquez sur &lt;b&gt;OK&lt;/b&gt; pour la fermer.&lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Tâche 2 : examen des résultats &lt;/h3&gt; &lt;/b&gt; &lt;h4&gt; &lt;b&gt;Étape 1.  Accès à une unité de données de protocole (PDU) spécifique.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Restaurez la fenêtre du navigateur simulé. Notez qu'une page Web est affichée. Minimisez la fenêtre du navigateur simulé.&lt;br&gt;&lt;br&gt; Dans la section &lt;b&gt;Simulation Panel Event List&lt;/b&gt;, la dernière colonne contient une zone colorée fournissant un accès à des informations détaillées sur un événement. Dans la dernière colonne, cliquez sur la zone colorée correspondant au premier événement. La fenêtre &lt;b&gt;PDU Information&lt;/b&gt; s'affiche.
+
+&lt;h4&gt; &lt;b&gt;Étape 2.  Examen du contenu de la fenêtre PDU Information&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Le premier onglet de la fenêtre &lt;b&gt;PDU Information&lt;/b&gt; contient des informations sur l'unité de données de protocole (PDU) entrante et sortante relative au modèle OSI. Cliquez sur le bouton &lt;b&gt;Next Layer &gt;&gt;&lt;/b&gt; plusieurs fois pour faire défiler les couches entrantes et sortantes et lire la description figurant dans la zone située sous les couches, afin d'obtenir un aperçu d'ensemble du fonctionnement de l'échange.&lt;br&gt;&lt;br&gt; Examinez les informations de PDU des autres événements pour obtenir un aperçu de tout le processus d'échange.&lt;br&gt;&lt;br&gt; Si vous avez d'autres questions sur le processus d'échange, adressez-vous à votre formateur.
+            
+
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">PC</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">PC</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

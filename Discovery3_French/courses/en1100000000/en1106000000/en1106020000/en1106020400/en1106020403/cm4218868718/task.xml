@@ -1,0 +1,517 @@
+<avalontask>
+   <r2data taskid='' type='simulation' language='EN' title=''>
+      <!-- raw data -->
+   </r2data>
+   <guitext />
+   <variables />
+   <textcomponents>
+       <!-- Topology Text -->
+	  <component type='text' id='txt_r1'>
+			<text variable='true' translate='true'><![CDATA[<b>R1</b>]]></text>
+		</component>
+	  <component type='text' id='txt_r2'>
+			<text variable='true' translate='true'><![CDATA[<b>R2</b>]]></text>
+		</component>
+	  <component type='text' id='txt_r3'>
+			<text variable='true' translate='true'><![CDATA[<b>R3</b>]]></text>
+		</component>
+		<component type='text' id='txt_fa0'>
+			<text variable='true' translate='true'><![CDATA[<b>Fa0/0</b>]]></text>		
+		</component><component type='text' id='txt_dce'>
+			<text variable='true' translate='true'><![CDATA[<b>DCE</b>]]></text>				
+		</component>
+		<component type='text' id='txt_10.0'>
+			<text variable='true' translate='true'><![CDATA[<b>10.10.10.0/24</b>]]></text>		
+		</component>
+		<component type='text' id='txt_10.1'>
+			<text variable='true' translate='true'><![CDATA[<b>Lo0 10.1.1.1/32</b>]]></text>		
+		</component>
+		<component type='text' id='txt_10.2'>
+			<text variable='true' translate='true'><![CDATA[<b>Lo0 10.2.2.2/32</b>]]></text>		
+		</component>
+		<component type='text' id='txt_10.3'>
+			<text variable='true' translate='true'><![CDATA[<b>Lo0 10.3.3.3/32</b>]]></text>		
+		</component>
+		<component type='text' id='txt_172.16'>
+			<text variable='true' translate='true'><![CDATA[<b>172.16.1.16/28</b>]]></text>		
+		</component>
+		<component type='text' id='txt_172.32'>
+			<text variable='true' translate='true'><![CDATA[<b>172.16.1.32/29</b>]]></text>		
+		</component>
+		<component type='text' id='txt_192.0'>
+			<text variable='true' translate='true'><![CDATA[<b>192.168.10.0/30</b>]]></text>		
+		</component>
+		<component type='text' id='txt_192.8'>
+			<text variable='true' translate='true'><![CDATA[<b>192.168.10.8/30</b>]]></text>		
+		</component>
+		<component type='text' id='txt_192.4'>
+			<text variable='true' translate='true'><![CDATA[<b>192.168.10.4/30</b>]]></text>		
+		</component>
+		<component type='text' id='txt_S1'>
+			<text variable='true' translate='true'><![CDATA[<b>S0/0/1</b>]]></text>		
+		</component>
+		<component type='text' id='txt_S0'>
+			<text variable='true' translate='true'><![CDATA[<b>S0/0/0</b>]]></text>		
+		</component>
+		<component type='text' id='txt_1'>
+			<text variable='true' translate='true'><![CDATA[<b>.1</b>]]></text>		
+		</component>
+		<component type='text' id='txt_17'>
+			<text variable='true' translate='true'><![CDATA[<b>.17</b>]]></text>		
+		</component>
+		<component type='text' id='txt_33'>
+			<text variable='true' translate='true'><![CDATA[<b>.33</b>]]></text>		
+		</component>
+		<component type='text' id='txt_2'>
+			<text variable='true' translate='true'><![CDATA[<b>.2</b>]]></text>		
+		</component>
+		<component type='text' id='txt_5'>
+			<text variable='true' translate='true'><![CDATA[<b>.5</b>]]></text>		
+		</component>
+		<component type='text' id='txt_9'>
+			<text variable='true' translate='true'><![CDATA[<b>.9</b>]]></text>		
+		</component>
+		<component type='text' id='txt_10'>
+			<text variable='true' translate='true'><![CDATA[<b>.10</b>]]></text>		
+		</component>
+		<component type='text' id='txt_6'>
+			<text variable='true' translate='true'><![CDATA[<b>.6</b>]]></text>		
+		</component>
+		
+      <!-- Window Titles -->
+	     <component type='text' id='txt_check'>
+			<text variable='true' translate='true'><![CDATA[Check]]></text>
+		</component>
+         <component type='text' id='txt_question'>
+            <text variable='false' translate='true'><![CDATA[Question]]></text>
+         </component>
+         <component type='text' id='txt_questions'>
+            <text variable='false' translate='true'><![CDATA[Questions]]></text>
+         </component>
+         <component type='text' id='txt_next'>
+            <text variable='false' translate='true'><![CDATA[Next]]></text>
+         </component>
+         <component type='text' id='txt_nav'>
+            <text variable='false' translate='true'><![CDATA[Click Next to advance to the next question]]></text>
+         </component>
+         <component type='text' id='txt_tscenario'>
+            <text variable='false' translate='true'><![CDATA[Scenario]]></text>
+         </component>
+         <component type='text' id='txt_topology'>
+            <text variable='false' translate='true'><![CDATA[Topology]]></text>
+         </component>
+
+      <!-- Scenario/Instructions -->
+         <component type='text' id='txt_scenario'>
+            <text variable='false' translate='true'><![CDATA[Use the show ip route output from an OSPF router to answer questions.<br><br>Enter the answers to the questions based on the output for router R2.<br>]]></text>
+         </component>
+
+      <!-- Question 1-->
+         <component type='text' id='txt_q1_stem'>
+            <text variable='false' translate='true'><![CDATA[1.	How many networks were learned by OSPF?]]></text>
+         </component>
+         <component type='text' id='txt_q1_op1'>
+            <text variable='false' translate='true'><![CDATA[6]]></text>
+         </component>
+         <component type='text' id='txt_q1_op2'>
+            <text variable='false' translate='true'><![CDATA[5]]></text>
+         </component>
+         <component type='text' id='txt_q1_op3'>
+            <text variable='false' translate='true'><![CDATA[4]]></text>
+         </component>
+         <component type='text' id='txt_q1_op4'>
+            <text variable='false' translate='true'><![CDATA[3]]></text>
+         </component>
+
+      <!-- Question 2-->
+         <component type='text' id='txt_q2_stem'>
+            <text variable='false' translate='true'><![CDATA[2.	What is the administrative distance for OSPF routes?]]></text>
+         </component>
+         <component type='text' id='txt_q2_op1'>
+            <text variable='false' translate='true'><![CDATA[1]]></text>
+         </component>
+         <component type='text' id='txt_q2_op2'>
+            <text variable='false' translate='true'><![CDATA[65]]></text>
+         </component>
+         <component type='text' id='txt_q2_op3'>
+            <text variable='false' translate='true'><![CDATA[110]]></text>
+         </component>
+         <component type='text' id='txt_q2_op4'>
+            <text variable='false' translate='true'><![CDATA[128]]></text>
+         </component>
+
+      <!-- Question 3-->
+         <component type='text' id='txt_q3_stem'>
+            <text variable='false' translate='true'><![CDATA[3.	How many subnets are there for the 172.16.0.0 network?]]></text>
+         </component>
+         <component type='text' id='txt_q3_op1'>
+            <text variable='false' translate='true'><![CDATA[0]]></text>
+         </component>
+         <component type='text' id='txt_q3_op2'>
+            <text variable='false' translate='true'><![CDATA[1]]></text>
+         </component>
+         <component type='text' id='txt_q3_op3'>
+            <text variable='false' translate='true'><![CDATA[2]]></text>
+         </component>
+         <component type='text' id='txt_q3_op4'>
+            <text variable='false' translate='true'><![CDATA[3]]></text>
+         </component>
+
+      <!-- Question 4-->
+         <component type='text' id='txt_q4_stem'>
+            <text variable='false' translate='true'><![CDATA[What is the metric for the path to the 192.168.10.4 network?]]></text>
+         </component>
+         <component type='text' id='txt_q4_op1'>
+            <text variable='false' translate='true'><![CDATA[1]]></text>
+         </component>
+         <component type='text' id='txt_q4_op2'>
+            <text variable='false' translate='true'><![CDATA[30]]></text>
+         </component>
+         <component type='text' id='txt_q4_op3'>
+            <text variable='false' translate='true'><![CDATA[65]]></text>
+         </component>
+         <component type='text' id='txt_q4_op4'>
+            <text variable='false' translate='true'><![CDATA[128]]></text>
+         </component>
+
+      <!-- Question 5-->
+         <component type='text' id='txt_q5_stem'>
+            <text variable='false' translate='true'><![CDATA[What is the router ID for R2?]]></text>
+         </component>
+         <component type='text' id='txt_q5_op1'>
+            <text variable='false' translate='true'><![CDATA[10.10.10.0]]></text>
+         </component>
+         <component type='text' id='txt_q5_op2'>
+            <text variable='false' translate='true'><![CDATA[10.2.2.2]]></text>
+         </component>
+         <component type='text' id='txt_q5_op3'>
+            <text variable='false' translate='true'><![CDATA[192.168.0.2]]></text>
+         </component>
+         <component type='text' id='txt_q5_op4'>
+            <text variable='false' translate='true'><![CDATA[192.168.10.9]]></text>
+         </component>
+
+   </textcomponents>
+   <hwcomponents>
+      <component type='questionpool' id='qpool1'>
+         <question questiontype='mc' randomizeoptions='false' id='q1'>
+            <stem id='qq1_stem' textsrc='txt_q1_stem' />
+            <option id='q1o1' textsrc='txt_q1_op1' />
+            <option id='q1o2' textsrc='txt_q1_op2' />
+            <option id='q1o3' textsrc='txt_q1_op3' />
+            <option id='q1o4' textsrc='txt_q1_op4' />
+         </question>
+      </component>
+
+      <component type='questionpool' id='qpool2'>
+         <question questiontype='mc' randomizeoptions='false' id='q2'>
+            <stem id='qq2_stem' textsrc='txt_q2_stem' />
+            <option id='q2o1' textsrc='txt_q2_op1' />
+            <option id='q2o2' textsrc='txt_q2_op2' />
+            <option id='q2o3' textsrc='txt_q2_op3' />
+            <option id='q2o4' textsrc='txt_q2_op4' />
+         </question>
+      </component>
+
+      <component type='questionpool' id='qpool3'>
+         <question questiontype='mc' randomizeoptions='false' id='q3'>
+            <stem id='qq3_stem' textsrc='txt_q3_stem' />
+            <option id='q3o1' textsrc='txt_q3_op1' />
+            <option id='q3o2' textsrc='txt_q3_op2' />
+            <option id='q3o3' textsrc='txt_q3_op3' />
+            <option id='q3o4' textsrc='txt_q3_op4' />
+         </question>
+      </component>
+
+      <component type='questionpool' id='qpool4'>
+         <question questiontype='mc' randomizeoptions='false' id='q4'>
+            <stem id='qq4_stem' textsrc='txt_q4_stem' />
+            <option id='q4o1' textsrc='txt_q4_op1' />
+            <option id='q4o2' textsrc='txt_q4_op2' />
+            <option id='q4o3' textsrc='txt_q4_op3' />
+            <option id='q4o4' textsrc='txt_q4_op4' />
+         </question>
+      </component>
+
+      <component type='questionpool' id='qpool5'>
+         <question questiontype='mc' randomizeoptions='false' id='q5'>
+            <stem id='qq5_stem' textsrc='txt_q5_stem' />
+            <option id='q5o1' textsrc='txt_q5_op1' />
+            <option id='q5o2' textsrc='txt_q5_op2' />
+            <option id='q5o3' textsrc='txt_q5_op3' />
+            <option id='q5o4' textsrc='txt_q5_op4' />
+         </question>
+      </component>
+	  <!-- Feedback for Question 1 -->		 
+         <component type='text' id='txt_q1_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 1</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q1_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q1_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>OSPF routes are prefaced with an 0.</textformat></font><br>]]></text>
+         </component>
+
+      <!-- Feedback for Question 2 -->		 
+         <component type='text' id='txt_q2_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 2</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q2_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q2_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>The AD of OSPF is 110.</textformat></font><br>]]></text>
+         </component>
+
+      <!-- Feedback for Question 3 -->		 
+         <component type='text' id='txt_q3_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 3</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q3_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q3_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'> The subnets for 172.16.0.0 have prefix lengths greater than 16. </textformat></font><br>]]></text>
+         </component>
+
+      <!-- Feedback for Question 4 -->		 
+         <component type='text' id='txt_q4_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 4</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q4_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q4_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>The metric value is contained in the field beside the administrative distance.</textformat></font><br>]]></text>
+         </component>
+		 
+	<!-- Feedback for Question 5 -->		 
+         <component type='text' id='txt_q5_desc'>
+            <text variable='true' translate='true'><![CDATA[<b>Question 5</b><br>]]></text>
+         </component>
+         <component type='text' id='txt_q5_correct'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct</textformat></font><br>]]></text>
+         </component>
+         <component type='text' id='txt_q5_incorrect'>
+            <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'> The router selects the highest loopback interface IP address if no priority exists.</textformat></font><br>]]></text>
+         </component>
+
+      <component type='question' id='question1'>
+         <draw questionpool='qpool1' />
+      </component>
+      <component type='question' id='question2'>
+         <draw questionpool='qpool2' />
+      </component>
+      <component type='question' id='question3'>
+         <draw questionpool='qpool3' />
+      </component>
+      <component type='question' id='question4'>
+         <draw questionpool='qpool4' />
+      </component>
+      <component type='question' id='question5'>
+         <draw questionpool='qpool5' />
+      </component>
+   </hwcomponents>
+
+   <graphiccomponents>
+      <component type='graphic' id='gr_topology'>
+         <icon x='20' y='20' width='450' height='300' id='icon_topology' />
+		 <label src='txt_r1' x='95' y='240' width='60' height='25' background='false' />
+		 <label src='txt_r3' x='370' y='240' width='60' height='25' background='false' />
+		 <label src='txt_r2' x='220' y='90' width='60' height='25' background='false' />
+		 <label src='txt_fa0' x='25' y='220' width='60' height='85' background='false' />
+		 <label src='txt_fa0' x='420' y='220' width='60' height='85' background='false' />
+		 <label src='txt_fa0' x='240' y='40' width='60' height='85' background='false' />
+		 <label src='txt_1' x='220' y='40' width='80' height='25' background='false' />
+		 <label src='txt_17' x='25' y='250' width='80' height='25' background='false' />
+		 <label src='txt_33' x='420' y='250' width='80' height='25' background='false' />
+		 <label src='txt_10.0' x='200' y='3' width='100' height='25' background='false' />
+		<label src='txt_172.16' x='0' y='270' width='100' height='25' background='false' />
+		<label src='txt_172.32' x='450' y='270' width='100' height='25' background='false' />
+		<label src='txt_10.1' x='85' y='315' width='120' height='25' background='false' />
+		 <label src='txt_10.3' x='360' y='315' width='120' height='25' background='false' />
+		 <label src='txt_10.2' x='100' y='20' width='120' height='25' background='false' />
+		 <label src='txt_192.4' x='200' y='265' width='120' height='25' background='false' />
+		 <label src='txt_192.0' x='65' y='145' width='120' height='25' background='false' />
+		 <label src='txt_192.8' x='315' y='145' width='120' height='25' background='false' />
+		 <label src='txt_S0' x='75' y='185' width='120' height='25' background='false' />
+		 <label src='txt_dce' x='75' y='200' width='120' height='25' background='false' />
+		 <label src='txt_S1' x='140' y='250' width='120' height='25' background='false' />
+		 <label src='txt_S0' x='310' y='260' width='60' height='25' background='false' />
+		 <label src='txt_dce' x='310' y='275' width='60' height='25' background='false' />
+		 <label src='txt_S1' x='360' y='200' width='120' height='25' background='false' />
+		 <label src='txt_S0' x='160' y='80' width='60' height='25' background='false' />
+		 <label src='txt_dce' x='270' y='80' width='60' height='25' background='false' />
+		 <label src='txt_S1' x='270' y='65' width='60' height='25' background='false' />
+		  <label src='txt_2' x='198' y='115' width='120' height='25' background='false' />
+		 <label src='txt_9' x='255' y='115' width='120' height='25' background='false' />
+		 <label src='txt_6' x='310' y='235' width='60' height='25' background='false' />
+		 <label src='txt_10' x='310' y='215' width='60' height='25' background='false' />
+		 <label src='txt_5' x='140' y='220' width='120' height='25' background='false' />
+		 <label src='txt_1' x='140' y='200' width='120' height='25' background='false' />
+      </component>
+   </graphiccomponents>
+
+   <presentation>
+      <mainstage bgcolor='#FFFFFF' theme='ccna' historylog='none' tooltips='true' contextmenu='false' />
+      <graphicmap>
+         <map id='icon_topology' src='Topology' location='library' />		 
+      </graphicmap>
+       <window id='none' resize='none' titltetextid='txt_check' width='0' height='0' visible='true' depth='50' x='0' y='0' checkbutton='true' />
+      <window id='win_scenario' resize='all' titletextid='txt_tscenario' minheight='100' minwidth='100' height='560' width='890' depth='300' x='110' y='3' visible='true'>
+         <element src='txt_scenario' container='textClip' width='860' html='true' wordwrap='true' id='ele_scenario' />
+      </window>
+      <window id='win_topology' resize='all' titletextid='txt_topology' minheight='100' minwidth='100' height='560' width='890' depth='200' x='110' y='3' visible='true'>
+         <element src='gr_topology' id='ele_topology' x='0' y='0' depth='1' />
+      </window>
+      <window id='win_index' resize='none' titletextid='txt_questions' height='336' width='103' depth='100' x='2' y='3' visible='true' minimize='false'>
+         <element src='questionIndex' container='questionIndex' id='ele_questions' forcedsequential='false' gradebtn='false' />
+      </window>
+      <window id='win_q1' titletextid='txt_question' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='1' y='3' x='110' resize='all' navigation='true' navtarget='win_q2' navtext='txt_nav' navbuttonlabel='txt_next'>
+         <element src='question1' container='mc_task' id='ele_q1' />
+      </window>
+      <window id='win_q2' titletextid='txt_question' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='2' y='3' x='110' resize='all' navigation='true' navtarget='win_q3' navtext='txt_nav' navbuttonlabel='txt_next'>
+         <element src='question2' container='mc_task' id='ele_q2' />
+      </window>
+      <window id='win_q3' titletextid='txt_question' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='3' y='3' x='110' resize='all' navigation='true' navtarget='win_q4' navtext='txt_nav' navbuttonlabel='txt_next'>
+         <element src='question3' container='mc_task' id='ele_q3' />
+      </window>
+      <window id='win_q4' titletextid='txt_question' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='4' y='3' x='110' resize='all' navigation='true' navtarget='win_q5' navtext='txt_nav' navbuttonlabel='txt_next'>
+         <element src='question4' container='mc_task' id='ele_q4' />
+      </window>
+      <window id='win_q5' titletextid='txt_question' minimize='false' minheight='100' minwidth='100' height='560' width='890' visible='false' depth='5' y='3' x='110' resize='all' >
+         <element src='question5' container='mc_task' id='ele_q5' />
+      </window>
+   </presentation>
+
+   <scoring>
+      <testlet>
+         <subtask ident='q1' tasksrc='q1'>
+            <resprocessing resprociden='rp_1'>
+               <outcomes>
+                  <decvar varname='v1' maxvalue='1'>
+                     <title>value</title>
+                  </decvar>
+               </outcomes>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_1'>
+                        <componentident>q1o4</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v1'>1</setvar>
+               </respcondition>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_1'>
+                        <componentident>other</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v1'>0</setvar>
+               </respcondition>
+            </resprocessing>
+         </subtask>
+         <subtask ident='q2' tasksrc='q2'>
+            <resprocessing resprociden='rp_2'>
+               <outcomes>
+                  <decvar varname='v2' maxvalue='1'>
+                     <title>value</title>
+                  </decvar>
+               </outcomes>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_2'>
+                        <componentident>q2o3</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v2'>1</setvar>
+               </respcondition>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_2'>
+                        <componentident>other</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v2'>0</setvar>
+               </respcondition>
+            </resprocessing>
+         </subtask>
+         <subtask ident='q3' tasksrc='q3'>
+            <resprocessing resprociden='rp_3'>
+               <outcomes>
+                  <decvar varname='v3' maxvalue='1'>
+                     <title>value</title>
+                  </decvar>
+               </outcomes>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_3'>
+                        <componentident>q303</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v3'>1</setvar>
+               </respcondition>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_3'>
+                        <componentident>other</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v3'>0</setvar>
+               </respcondition>
+            </resprocessing>
+         </subtask>
+         <subtask ident='q4' tasksrc='q4'>
+            <resprocessing resprociden='rp_4'>
+               <outcomes>
+                  <decvar varname='v4' maxvalue='1'>
+                     <title>value</title>
+                  </decvar>
+               </outcomes>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_4'>
+                        <componentident>q4o4</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v4'>1</setvar>
+               </respcondition>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_4'>
+                        <componentident>other</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v4'>0</setvar>
+               </respcondition>
+            </resprocessing>
+         </subtask>
+         <subtask ident='q5' tasksrc='q5'>
+            <resprocessing resprociden='rp_5'>
+               <outcomes>
+                  <decvar varname='v5' maxvalue='1'>
+                     <title>value</title>
+                  </decvar>
+               </outcomes>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_5'>
+                        <componentident>q5o2</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v5'>1</setvar>
+               </respcondition>
+               <respcondition>
+                  <conditionvar>
+                     <varequal respident='ri_5'>
+                        <componentident>other</componentident>
+                     </varequal>
+                  </conditionvar>
+                  <setvar action='Set' varname='v5'>0</setvar>
+               </respcondition>
+            </resprocessing>
+         </subtask>
+      </testlet>
+   </scoring>
+</avalontask>

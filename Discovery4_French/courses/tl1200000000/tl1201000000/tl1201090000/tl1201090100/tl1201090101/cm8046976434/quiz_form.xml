@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13405" dateexported="06/30/2008">
+		<name>Module 1 Questionnaire</name>
+		<form id="21459" lang="fr"><form-item order="fixed">
+			<ai id="140351" type="mc-sa"><question><![CDATA[Après avoir évalué les besoins commerciaux et l’infrastructure actuelle du réseau de l’entreprise ABC, le concepteur de réseau inclut l’élément « installer une seconde alimentation sans coupure pour le serveur Web principal » dans la proposition de mise à niveau du réseau. À quel objectif de conception du réseau répond-il ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Sécurité ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Évolutivité ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Disponibilité  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Performance ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Facilité de gestion ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140344" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140344" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Degré d’accessibilité des ressources</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Restriction du trafic non autorisé</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Capacité d’extension pour accommoder l’ajout d’utilisateurs et d’applications</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Conception permettant au personnel de support d’être toujours capable de résoudre les problèmes</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Évolutivité</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Disponibilité</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Sécurité</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Facilité de gestion</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chacune des définitions à gauche vers la fonctionnalité correspondante à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="21" yspacing="50" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /><display componentIdent="4" xpos="600" ypos="186" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214702" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="214702" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="214702" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing><feedback><correct>Bravo ! :)</correct><incorrect>Désolé. Veuillez réessayer.</incorrect></feedback></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140328" type="mc-ma"><question><![CDATA[Lors de la conception d’une infrastructure réseau, un ingénieur réseau utilisera le modèle de réseau hiérarchique. Quels facteurs devra-t-il prendre en compte lors de la conception de la couche cœur de réseau ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le traitement de paquets afin de hiérarchiser le flux de données de cœur de réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Des liaisons redondantes pour garantir la tolérance aux pannes  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Des protocoles de routage choisis pour la vitesse de convergence du réseau  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Des listes de contrôle d’accès pour réduire le trafic de la couche cœur de réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Des topologies de réseau en étoile pour limiter la latence de la couche cœur de réseau ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140336" type="mc-sa"><question><![CDATA[Une entreprise souhaite remodeler la couche de distribution de son réseau. Sur quelle zone la nouvelle conception doit-elle se concentrer ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les connexions directes aux hôtes dans un réseau Ethernet local ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les interconnexions de couche 3 entre des réseaux locaux plus petits  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les connexions à haut débit entre des périphériques de couche 2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les interconnexions entre des hôtes dans un réseau non hiérarchique ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140331" type="mc-sa"><question><![CDATA[Un ingénieur réseau planifie la connectivité d’un réseau étendu pour un trafic réseau essentiel. Pour quelle raison l’ingénieur planifierait-il une liaison de sauvegarde de réseau étendu ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Pour fournir de la bande passante supplémentaire lors des sauvegardes du système ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pour fournir un environnement de développement pour le test du réseau étendu ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pour fournir de la bande passante supplémentaire pour le trafic voix sur IP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Pour fournir aux données un chemin alternatif en cas d’échec de la liaison principale  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140329" type="mc-ma"><question><![CDATA[Quels sont les avantages d’une topologie en étoile sur la couche d’accès d’un réseau ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Facilité d’installation  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Redondance des voies d’accès de trafic ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configuration minimale requise  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Simplicité de la reprise après échec ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Capacités des périphériques centraux pouvant limiter le réseau ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140338" type="mc-sa"><question><![CDATA[Dans quelle couche du modèle de conception hiérarchique circule généralement le trafic réseau entre un PC et une imprimante situés sur le même réseau local ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Couche cœur de réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Couche d’accès  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Couche de distribution ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Périphérie d’entreprise ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Batterie de serveurs ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140339" type="mc-sa"><question><![CDATA[Lequel des énoncés suivants décrit le mieux l’objectif du déploiement d’une batterie de serveurs ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Une batterie de serveurs est nécessaire pour déployer des applications dans une entreprise. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une batterie de serveurs est nécessaire dans la conception d’une zone démilitarisée (DMZ) au sein d’un réseau d’entreprise. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Une batterie de serveurs permet de gérer efficacement les serveurs critiques de l’entreprise.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une batterie de serveurs est conçue pour fournir des services et des applications réseau sécurisés à des clients, au sein de réseaux internes uniquement. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140378" type="mc-sa"><question><![CDATA[Pourquoi l’ancien modèle de pare-feu DMZ n’est-il pas suffisant pour sécuriser des serveurs et applications critiques ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Seuls les serveurs situés sur le réseau DMZ étaient correctement protégés. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’ancien modèle n’offrait pas aux serveurs une protection suffisante contre les attaques internes.   ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Avec l’ancien modèle, les PC d’utilisateurs finaux n’étaient pas protégés et faisaient donc plus souvent l’objet d’attaques informatiques. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les serveurs situés sur le réseau DMZ n’étaient pas suffisamment protégés contre les attaques externes. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140380" type="mc-sa"><question><![CDATA[Comment une conception de réseau sans fil peut-elle fournir un accès ouvert à des utilisateurs invités et un accès sécurisé aux employés ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Diffusion de l’identifiant SSID afin que tous les utilisateurs puissent accéder au réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Activation du protocole WEP pour authentifier les deux groupes d’utilisateurs ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Création d’un identifiant SSID distinct et d’un réseau local virtuel séparé pour les utilisateurs invités  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Regroupement de tous les points d’accès sur le même réseau local virtuel et obligation pour les employés d’utiliser le protocole WEP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140337" type="mc-sa"><question><![CDATA[Dans quelle zone fonctionnelle du réseau se trouvent les périphériques qui fournissent une interface entre des technologies de réseau local à haut débit (par exemple Ethernet) et des technologies de réseau étendu à plus bas débit ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Couche cœur de réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Batterie de serveurs ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Couche d’accès ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Couche transport ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Périphérie d’entreprise  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Couche de distribution ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140330" type="mc-sa"><question><![CDATA[Une entreprise a décidé d’autoriser ses employés à travailler de chez eux, sans pour autant compromettre la sécurité du réseau. L’administrateur réseau a proposé de connecter les utilisateurs distants au réseau de l’entreprise grâce à des réseaux privés virtuels. Quels avantages les réseaux privés virtuels présentent-ils pour connecter des travailleurs distants ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Permettent des connexions sécurisées via des réseaux publics à large bande  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fournissent des connexions sécurisées via des circuits dédiés de réseau étendu public ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Segmentent le trafic en réseaux logiques pour optimiser l’utilisation de la bande passante ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fournissent un accès à distance simple sans filtrage de paquets spécifiques ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140327" type="mc-sa"><question><![CDATA[Un technicien récupère le mot de passe d’un routeur. Ce technicien a activé le mode ROMMON, attribué la valeur 0x2142 au registre de configuration et réinitialisé le routeur. Il active le mode de configuration sur le routeur, modifie le mot de passe et entre la commande <b>copy running-config startup-config</b>. Après avoir défini le registre de configuration sur la valeur 0x2102, le technicien redémarre le routeur. Une fois le routeur redémarré, le technicien remarque que seul le mot de passe se trouve dans la configuration. Pourquoi ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le technicien a attribué une valeur erronée au registre de configuration. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le technicien n’a pas copié la configuration de démarrage dans la configuration active avant de modifier le mot de passe.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le technicien aurait dû attribuer la valeur 0x2100 au registre de configuration. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur a ignoré la mémoire vive non volatile et n’a pas, lors de son redémarrage, chargé le fichier de configuration de démarrage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le technicien n’a pas copié la configuration active dans la configuration de démarrage avant de modifier le mot de passe. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140419" type="mc-sa"><question><![CDATA[Quelle liste de contrôle d’accès permet à l’hôte 10.220.158.10 d’accéder au serveur Web 192.168.3.244 ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 101 permit tcp host 10.220.158.10 eq 80 host 192.168.3.224</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 101 permit tcp 10.220.158.10 0.0.0.0 host 192.168.3.224 0.0.0.0 eq 80</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 101 permit host 10.220.158.10 0.0.0.0 host 192.168.3.224 0.0.0.0 eq 80</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>access-list 101 permit tcp 10.220.158.10 0.0.0.0 host 192.168.3.224 eq 80</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140418" type="mc-sa"><question><![CDATA[Reportez-vous au schéma. L’hôte C ne peut pas transférer de données, car il ne dispose pas de l’adresse MAC de l’hôte de destination. S’il envoie une requête ARP, par quel autre hôte sera-t-elle détectée ? <br/><img src="i140418n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Hôte A ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Hôte B  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hôtes A et B ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hôtes A et D ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hôtes B et D ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hôtes A, B et D ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

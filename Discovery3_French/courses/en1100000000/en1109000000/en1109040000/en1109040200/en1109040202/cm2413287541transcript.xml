@@ -1,0 +1,5 @@
+<transcript lastedited="08.12.08 09:08:23">
+<title><content-text><![CDATA[9.4.2 - Troubleshooting WAN Authentication]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the output of the debug ppp authentication command when the following conditions occur: proper configuration, no user account, and wrong password. Router, R1, is connected via a serial connection to router, R2. <br><br>Proper Configuration<br>03:03:35: S e0/0/1 PPP: Received LOGIN Response from AAA = PASS<br>03:03:36: %LINEPRONTO-5-UPDOWN: Line protocol on Interface Serial0/0/1, changes state to up<br><br>No User Account<br>03:21:43: S E0/0/1 CHAP: Unable to authenticate for peer<br><br>Wrong Password<br>03:17:47: S E0/0/1 PPP: Received LOGIN Response from AAA = FAIL<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

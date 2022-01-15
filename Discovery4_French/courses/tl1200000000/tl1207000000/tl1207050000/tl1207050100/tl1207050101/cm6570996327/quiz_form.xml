@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13411" dateexported="06/30/2008">
+		<name>Module 7 Questionnaire</name>
+		<form id="21465" lang="fr"><form-item order="fixed">
+			<ai id="140377" type="mc-ma"><question><![CDATA[Quelles descriptions définissent précisément le concept de réseau pilote ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le trafic des utilisateurs n’est pas affecté par les modifications ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’environnement est hautement contrôlé et simulé ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Requiert du trafic réseau réel  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Moins facile à contrôler qu’un prototype de réseau  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Visibilité et risques élevés  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Flexibilité et facilité de gestion ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140376" type="mc-sa"><question><![CDATA[Lors de la construction d’un prototype pour tester une conception réseau, pourquoi est-il important de créer auparavant un plan de test ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Pour s’assurer que les objectifs du test sont clairs et mesurables  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pour enregistrer une ligne de base de l’activité réseau sur le réseau de production ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pour fournir un guide pas à pas pour l’implémentation de la conception du réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pour s’assurer que les ressources du réseau sont suffisantes pour prendre en charge le trafic supplémentaire généré par le test ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			
+			<ai id="140375" type="mc-sa"><question><![CDATA[Quelle méthode est couramment utilisée pour équilibrer la charge de trafic sur des liaisons redondantes ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[EtherChannel  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[STP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Liaisons à coût inégal ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Connexions FAI distinctes ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140374" type="mc-sa"><question><![CDATA[Un administrateur réseau teste les liaisons redondantes entre des commutateurs. Quel état la liaison redondante présente-t-elle une fois que la liaison active a été déconnectée ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Blocage ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Transmission  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Écoute ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Apprentissage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Désactivé ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140369" type="mc-sa"><question><![CDATA[Un concepteur de réseau souhaite ajouter un serveur supplémentaire au réseau actuel. Quel risque essaie-t-il de contourner en implémentant deux serveurs ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Évolutivité limitée ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Domaine défaillant étendu ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Goulots d’étranglement potentiels ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Point d’échec unique  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140366" type="mc-sa"><question><![CDATA[Une nouvelle entreprise possède plusieurs bâtiments et utilise le réseau pour les signaux vocaux, vidéo et de données. Deux propositions ont été avancées : <br /><br />1. Utiliser une conception de réseau commuté non hiérarchique pour connecter tous les bâtiments, et un routeur unique pour l’accès Internet. <br />2. Utiliser une infrastructure hiérarchique avec des commutateurs sur la couche d’accès, et des routeurs pour le transport de données entre les bâtiments et pour l’accès Internet. Lequel des énoncés suivants est vrai concernant ces deux conceptions ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La proposition 1 satisfait tous les objectifs de conception. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La proposition 2 satisfait tous les objectifs de conception.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La proposition 2 est adaptée uniquement pour le trafic de données. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La proposition 1 est adaptée pour le trafic vidéo, mais pas voix sur IP. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140368" type="mc-sa"><question><![CDATA[Quel protocole de commutation Cisco fournit une résistance lorsqu’un réseau présente des problèmes de connectivité, et garantit un temps de fonctionnement de pratiquement 100 % ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[VTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RSTP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[BPDU ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[EIGRP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140370" type="mc-ma"><question><![CDATA[Une entreprise hébergeant du contenu Web s’est vue confier un nouveau contrat d’hébergement d’un service de commandes en ligne pour une grande chaîne de magasins. Elle demande à une entreprise de conseil en réseaux d’examiner l’infrastructure actuelle du réseau afin de le préparer au lancement du service de commandes en ligne. Cette étude révèle que l’entreprise d’hébergement de contenu dispose de deux lignes T1 connectées à deux FAI distincts. La batterie de serveurs fournit à chaque client un serveur Web distinct. Chaque serveur exécute Linux avec le serveur Apache sur un disque dur de 30 giga-octets. <br /><br />Quels risques principaux présente l’infrastructure actuelle du réseau de l’entreprise d’hébergement de contenu ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Point d’échec unique sur le serveur Web  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Domaine défaillant étendu en cas d’échec du serveur Web ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Goulots d’étranglement potentiels sur la connexion Internet  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Point d’échec unique en cas de panne de la connexion du FAI ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Évolutivité limitée des serveurs Web en raison de la capacité du disque dur ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140414" type="mc-sa"><question><![CDATA[Reportez-vous à la figure. Le port Fa0/0 sur le routeur R1 est connecté au port Fa0/1 sur le commutateur Comm1. Une fois que les commandes affichées ont été entrées sur les deux périphériques, l’administrateur réseau constate que les périphériques sur VLAN 2 ne peuvent pas envoyer une requête ping aux périphériques sur VLAN 5. Pourquoi ? <br/><img src="i140414n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Comm1 n’est pas configuré pour l’agrégation.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les réseaux locaux virtuels de R1 n’apparaissent pas dans la base de données de réseau local virtuel. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole Spanning Tree bloque le port Fa0/0 sur R1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les réseaux locaux virtuels ne correspondent pas aux numéros de sous-interface. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

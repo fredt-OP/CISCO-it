@@ -1,0 +1,11 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Detailed Implementation Plan]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[. . .<br>Section 6.2.7.3,"Configure routing protocols in the WAN network module":<br><li>Number of routers involved is 6.</li><li>Use template from section 4.3.1,"EIGRP details."</li><li>Per router configuration:</li>           - Use passive-interface command on all nonbackbone LANs. <br>           (See section 4.2.3, "EIGRP details.")<br>           - Use summarization according to the design.<br>           (See section 4.2.3, "EIGRP details." and section 4.2.2, "Addressing details.")<li>Estimated time is 30 minutes per router.<br>If needed, use roll-back procedure defined in section 6.2.7.4.</li>. . .]]></text>
+</component>
+
+</textcomponents>

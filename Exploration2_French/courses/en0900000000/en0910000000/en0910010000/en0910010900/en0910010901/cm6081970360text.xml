@@ -1,0 +1,142 @@
+<textcomponents>
+<!-- opening page & 1st btn title -->
+<component id="ID_title11">
+<text><![CDATA[<b>R1 Link States</b>]]></text>
+</component>
+
+<!--  page title -->
+<component id="ID_title1">
+<text><![CDATA[<b>Processing the R2 LSPs</b>]]></text>
+</component>
+
+<!--  page title -->
+<component id="ID_title2a">
+<text><![CDATA[<b>Processing the R3 LSPs</b>]]></text>
+</component>
+
+<!--  page title -->
+<component id="ID_title3">
+<text><![CDATA[<b>Processing the R4 LSPs</b>]]></text>
+</component>
+<!--  page title -->
+<component id="ID_title4">
+<text><![CDATA[<b>Processing the R5 LSPs</b>]]></text>
+</component>
+
+<!-- TABLE TEXT -->
+<component id="TableTitle">
+<text><![CDATA[<b>R1 Link State Database</b>]]></text> 
+</component>
+
+<component id="ID_tableTxt01">
+<text><![CDATA[R1 Links-states:<li>Connected to neighbor R2 on network 10.2.0.0/16, cost of 20</li><li>Connected to neighbor R3 on network 10.3.0.0/16, cost of 5</li><li>Connected to neighbor R4 on network 10.4.0.0/16, cost of 20</li><li>Has a network 10.1.0.0/16, cost of 2</li>]]></text> 
+</component>
+
+<component id="myTable1">
+<text><![CDATA[LSPs from R2:<li>Connected to neighbor R1 on network 10.2.0.0/16, cost of 20</li><li>Connected to neighbor R5 on network 10.9.0.0/16, cost of 10</li><li>Has a network 10.5.0.0/16, cost of 2</li>]]></text> 
+</component>
+
+<component id="myTable2">
+<text><![CDATA[LSPs from R3:<li>Connected to neighbor R1 on network 10.3.0.0/16, cost of 5</li><li>Connected to neighbor R4 on network 10.7.0.0/16, cost of 10</li><li>Has a network 10.6.0.0/16, cost of 2</li>]]></text> 
+</component>
+
+<component id="myTable3">
+<text><![CDATA[LSPs from R4:<li>Connected to neighbor R1 on network 10.4.0.0/16, cost of 20</li><li>Connected to neighbor R3 on network 10.7.0.0/16, cost of 10</li><li>Connected to neighbor R5 on network 10.10.0.0/16, cost of 10</li><li>Has a network 10.8.0.0/16, cost of 2]]></text> 
+</component>
+
+<component id="myTable4">
+<text><![CDATA[LSPs from R5:<li>Connected to neighbor R2 on network 10.9.0.0/16, cost of 10</li><li>Connected to neighbor R4 on network 10.10.0.0/16, cost of 10</li><li>Has a network 10.11.0.0/16, cost of 2</li>]]></text> 
+</component>
+
+<!-- instructions -->  
+<component id="ID_inst">
+<text><![CDATA[<b>Click to see the LSP processing by R1.</b>]]></text>
+</component>
+
+<!-- btn labels-->
+<component id="ID_btn01">
+<text><![CDATA[<b>R1 Links</b>]]></text>
+</component>
+<component id="ID_btn02">
+<text><![CDATA[<b>R2 LSPs</b>]]></text>
+</component>
+<component id="ID_btn03">
+<text><![CDATA[<b>R3 LSPs</b>]]></text>
+</component>
+<component id="ID_btn04">
+<text><![CDATA[<b>R4 LSPs</b>]]></text>
+</component>
+<component id="ID_btn05">
+<text><![CDATA[<b>R5 LSPs</b>]]></text>
+</component> 
+
+<!-- topologies -->
+<component id="ID_top01">
+<text><![CDATA[<b>R1</b>]]></text>
+</component>
+
+<component id="ID_top02">
+<text><![CDATA[<b>R2</b>]]></text>
+</component>
+
+<component id="ID_top03">
+<text><![CDATA[<b>R3</b>]]></text>
+</component>
+
+<component id="ID_top04">
+<text><![CDATA[<b>R4</b>]]></text>
+</component>
+
+<component id="ID_top05">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top06">
+<text><![CDATA[<b>20</b>]]></text>
+</component>
+
+<component id="ID_top07">
+<text><![CDATA[<b>5</b>]]></text>
+</component>
+
+<component id="ID_top08">
+<text><![CDATA[<b>20</b>]]></text>
+</component>
+
+<component id="ID_top09">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top10">
+<text><![CDATA[<b>10</b>]]></text>
+</component>
+
+<component id="ID_top11">
+<text><![CDATA[<b>R5</b>]]></text>
+</component>
+
+<component id="ID_top12">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top13">
+<text><![CDATA[<b>10</b>]]></text>
+</component>
+
+<component id="ID_top14">
+<text><![CDATA[<b>10</b>]]></text>
+</component>
+
+<component id="ID_top15">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top15">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top16">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+</textcomponents>

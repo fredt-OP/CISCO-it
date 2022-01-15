@@ -1,0 +1,71 @@
+<textcomponents>
+<component id="ID_dest01">
+	<text><![CDATA[Destination]]></text> 
+</component>
+
+<component id="ID_dest02">
+	<text><![CDATA[Destination]]></text> 
+</component>
+
+<component id="ID_source01">
+	<text><![CDATA[Source]]></text> 
+</component>
+
+<component id="ID_source02">
+	<text><![CDATA[Source]]></text> 
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<access-list 101 permit tcp host<font color="#FF9900"> 192.168.1.5</font> host<font color="#FF9900"> 192.168.3.7 </font><font color="#FF9900">eq80</font>]]></text> 
+</component>
+
+
+<component id="ID_txt02">
+	<text><![CDATA[MAC Header Addresses]]></text> 
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[IP Header Addresses]]></text> 
+</component>
+
+
+<component id="ID_txt04">
+<text><![CDATA[TCP Header Ports]]></text> 
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[Data]]></text> 
+</component>
+
+
+<component id="ID_txt06">
+<text><![CDATA[FCS]]></text> 
+</component>
+
+
+<component id="ID_txt07">
+<text><![CDATA[Ethernet Frame]]></text> 
+</component>
+
+
+<component id="ID_table1">
+	<text><![CDATA[
+	<table>
+	<tr>
+	<td bgcolor='#E9E9E9'>00-07-E9-63-CE-53</td>
+	<td bgcolor='#E9E9E9'>00-07-E9-42-AC-28</td>
+	<td bgcolor='#99CCFF'>192.168.1.5</td>
+	<td bgcolor='#99CCFF'>192.168.3.7</td>
+	<td bgcolor='#8CB3D9'>41099</td>
+	<td glow='true' glowcolor='#FCA92E' bgcolor='#8CB3D9'>80</td>
+	<td bgcolor='#FFFF99'>User Data</td>
+	<td bgcolor='#FFFFFF'>Trailers</td>
+	</tr>
+	
+
+	</table>]]></text>
+	</component>
+	
+</textcomponents>

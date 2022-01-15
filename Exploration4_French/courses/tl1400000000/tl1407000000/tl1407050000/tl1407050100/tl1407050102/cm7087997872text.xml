@@ -1,0 +1,162 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+ <component id="s1a">
+  <text><![CDATA[<b>Comm1</b>]]></text> 
+</component>
+<component id="s1b">
+  <text><![CDATA[<b>Comm2</b>]]></text> 
+</component>
+ <component id="s2a">
+  <text><![CDATA[<b>Comm1</b>]]></text> 
+</component>
+<component id="s2b">
+  <text><![CDATA[<b>Comm2</b>]]></text> 
+</component>
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) <textformat blockindent='17'>Décrivez les quatre messages de détection et d’offre DHCP dans l’ordre d’opération et de fonctionnement.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(Section 7.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Message DHCPDISCOVER :</b><ul><li>Diffusion transmise par l’hôte recherchant un serveur DHCP.</li><li>Les messages sont transmis au serveur DHCP BOOTP via le port UDP 67.</li></ul><b>Message DHCPOFFER :</b><ul><li>Lorsque le message DHCPDISCOVER arrive sur le serveur DHCP, le serveur répond avec un message DHCPOFFER en monodiffusion contenant l’adresse MAC du client, l’adresse IP et le masque proposés, la passerelle par défaut et l’adresse IP du serveur.</li><li>Les messages sont transmis au client DHCP BOOTP via le port UDP 68.</li></ul><b>Message DHCPREQUEST :</b><ul><li>A deux fonctions : il négocie tout d’abord un bail d’adresse IP et il renégocie (ou renouvelle) l’adresse IP à la moitié du bail.</li><li>Le client diffuse le message DHCPREQUEST au serveur DHCP via le port UDP 67.</li></ul><b>Message DHCPACK :</b><ul><li>Presque identique au message DHCPOFFER d’origine, excepté qu’il est envoyé au client pour confirmer qu’il peut désormais utiliser cette adresse via le port UDP 68.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[<font size='12pt'>2) <textformat blockindent='15'>Examinez le schéma. Le routeur R1 a été configuré pour fournir des services DHCP aux hôtes du réseau 192.168.11.0 /24, à l’exclusion des neuf premières adresses IP du pool. Cependant, après avoir libéré et renouvelé son adresse IP, l’hôte PC2 ne peut toujours pas acquérir automatiquement d’adresse IP. Quelles modifications de configuration pourraient résoudre ce problème ?</textformat></font>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(Section 7.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Sur le routeur R1</b><ul><li>Le pool exclut l’intégralité du pool. La commande devrait être ip dhcp excluded-address 192.168.11.1 192.168.11.9.</li><li>Le pool de réseau n’attribue pas le sous-réseau approprié. La commande devrait être network 192.168.10.0 255.255.255.0.</li><li>L’adresse IP du routeur par défaut pointe vers le commutateur. La commande devrait être default-router 192.168.2.1.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[<font size='12pt'>3) <textformat blockindent='15'>Examinez le schéma. Le serveur DHCP dont l’adresse IP est 192.168.11.5 a été configuré pour fournir des adresses IP aux hôtes du réseau 192.168.10.0 /24. Cependant, les hôtes reçoivent un message d’erreur indiquant que le délai d’attente de la demande de leur serveur DHCP est dépassé et que le serveur DHCP est inaccessible. Quelles commandes de configuration résoudraient ce problème ?</textformat></font>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(Section 7.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Sur le routeur R1</b><br />Configurez la fonction de relais DHCP sur l’interface Fast Ethernet 0/0 à l’aide des commandes suivantes :<br /><br /><font face='_typewriter'><b>interface FastEthernet 0/0<br /><textformat blockindent='10'>ip helper-address 192.168.11.5</textformat></b></font>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) <textformat blockindent='17'>Décrivez les différences entre NAT dynamique, NAT statique et surcharge NAT.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(Section 7.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>NAT dynamique :</b><ul><li>La fonction NAT dynamique utilise un pool d’adresses publiques et les attribue selon la méthode du premier arrivé, premier servi. </li><li>Lorsqu’un hôte demande un accès à Internet, la fonction NAT dynamique choisit une adresse IP dans le pool public et la lie temporairement à l’adresse locale interne.</li></ul><b>NAT statique :</b><ul><li>La fonction NAT statique utilise un mappage bi-univoque des adresses locales et globales ; ces mappages restent constants. </li><li>La fonction NAT statique est particulièrement utile pour les serveurs Web ou les hôtes en général qui doivent disposer d’une adresse permanente, accessible depuis Internet.</li></ul><b>Surcharge NAT :</b><ul><li>La surcharge NAT (parfois appelée traduction d’adresses de port ou PAT) associe des adresses IP locales internes à une combinaison composée d’une adresse IP globale et d’un numéro de port unique. </li><li>Lorsqu’une réponse arrive sur le routeur NAT, le routeur analyse le numéro de port source et transmet le paquet à l’adresse locale interne d’origine. </li><li>Il confirme également que les paquets entrants étaient demandés, ce qui ajoute un niveau de sécurité à la session. </li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) <textformat blockindent='17'>Examinez le schéma. Le routeur R2 a été configuré pour fournir des services NAT. En vous basant sur les informations fournies, commentez les traductions NAT du schéma.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(Section 7.2)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Le routeur R2 a été configuré pour fournir une traduction de surcharge NAT aux hôtes des réseaux 192.168.10.0 et 192.168.11.0.</b><ul><li>L’hôte avec l’adresse IP locale interne <b>192.168.10.10</b> a été traduit en adresse IP globale interne surchargée <b>209.165.200.225</b> à l’aide du numéro de port unique <b>16642</b> lors de l’accès au <b>serveur Web</b> ayant pour adresse <b>209.165.200.254</b>.</li><li>L’hôte avec l’adresse IP locale interne <b>192.168.11.10</b> a été traduit en adresse IP globale interne surchargée <b>209.165.200.225</b> à l’aide du numéro de port unique <b>62452</b> lors de l’accès au <b>serveur Web</b> ayant pour adresse <b>209.165.200.254</b>.</li></ul>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) <textformat blockindent='17'>Examinez la figure. Abrégez le plus possible l’adresse IPv6.</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(Section 7.3)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[La forme la plus courte possible est <b>2031:0:130F::9C0:876A:130B</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) <textformat blockindent='17'>Examinez le schéma. Décrivez les deux principales options de transition de IPv4 à IPv6 et complétez la phrase relative à la transition à IPv6 dans le schéma.</textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[(Section 7.3)]]></text>
+</component>
+
+<component id="ID_Q7_exhibit">
+<text><![CDATA[« Utilisez la _____________ quand vous pouvez, le _____________ quand vous devez ! »]]></text>
+</component>
+
+<component id="ID_Q7_txt05">
+<text><![CDATA[« Utilisez la <b><u>double pile</u></b> quand vous pouvez, le <b><u>tunnel</u></b> quand vous devez ! »<br /><br /><b>Mode double pile :</b><ul><li>Méthode d’intégration dans laquelle un nœud a une mise en œuvre et une connectivité à un réseau IPv4 et IPv6.</li><li>Il s’agit de l’option recommandée et nécessite l’exécution simultanée de IPv4 et de IPv6.</li><li>Le routeur et les commutateurs sont configurés pour prendre en charge les deux protocoles, IPv6 étant le protocole préféré.</li></ul><b>Mode de transmission tunnel 6to4 :</b><ul><li>Méthode d’intégration dans laquelle un paquet IPv6 est encapsulé dans le protocole IPv4.</li><li>Cependant, cette méthode nécessite également des routeurs à double pile.</li><li>Le mode de transmission tunnel 6to4 dynamique établit automatiquement la connexion des îlots IPv6 via un réseau IPv4.</li></ul><b>Autres méthodes de transmission tunnel :</b><ul><li>NAT-PT et les tunnels ISATAP et Teredo sont des exemples d’autres protocoles de transmission tunnel.</li><li>Cependant, ces protocoles de transmission tunnel sont complexes et doivent être utilisés en dernier recours.</li></ul>]]></text>
+</component>
+
+<component id="ID_conclusion">
+<text><![CDATA[<b>Fin des questions portant sur les thèmes de ce chapitre.</b>]]></text>
+</component>
+</textcomponents>

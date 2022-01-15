@@ -1,0 +1,91 @@
+<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<font size="+2"><b>Activity</b></font><br/><br/>Determine if the IP address with the CIDR information is a subnet or a route summary.<br/><br/><b>Check either Subnet or Route Summary based on the IP address provided.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+	<component id="txt_numrows">
+		<text><![CDATA[7]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[Subnet]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[Route Summary]]></text>
+	</component>
+
+		
+    <component id="txt_q1">
+		<text><![CDATA[172.24.0.0/14]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[192.168.17.192/26]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[10.24.0.0/16]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[172.17.4.0/24]]></text>
+	</component>
+    <component id="txt_q5">
+		<text><![CDATA[10.0.100.0/24]]></text>
+	</component>	
+    <component id="txt_q6">
+		<text><![CDATA[172.128.0.0/12]]></text>
+	</component>	
+    <component id="txt_q7">
+		<text><![CDATA[192.168.0.0/23]]></text>
+	</component>
+	
+		
+    <component id="txt_a1">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a5">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a6">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a7">
+		<text><![CDATA[2]]></text>
+	</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully identified subnets and route summaries. Click Next to continue. </p>]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please check the CIDR notations and try again.]]></text></component>
+
+
+</textcomponents>

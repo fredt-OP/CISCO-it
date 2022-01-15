@@ -1,0 +1,67 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[<font size='14'><b>Internet<br />192.168.101.5<br /><font color='#FF0000'>Serveur Web</font></b></font>]]></text> 
+ </component>
+
+
+<component id="ID_table1">
+		<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Point faible</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Impact</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Solution possible</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'><b>      </b></td>
+      <td bgcolor='#DDDDDD'><b>      </b></td>
+      <td bgcolor='#DDDDDD'><b>      </b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><b>Conception de réseau linéaire</b></td>
+      <td bgcolor='#F2F2F2'><b>Pas d’extensibilité : le réseau ne peut pas s’étendre sans que cela ait un impact sur les performances.</b></td>
+      <td bgcolor='#F2F2F2'><b>Créez une hiérarchie routée.</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><b>Conception de réseau linéaire</b></td>
+      <td bgcolor='#F2F2F2'><b>Pas de segmentation du réseau : impossible de filtrer ou d’isoler le trafic sans occasionner des trous de sécurité.</b></td>
+      <td bgcolor='#F2F2F2'><b>Créez une segmentation avec des réseaux locaux virtuels. Appliquez des filtres de trafic.</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Aucune redondance</b></td>
+          <td bgcolor='#F2F2F2'><b>Domaines défaillants étendus : les défaillances de liaisons et de périphériques affectent de vastes zones du réseau.</b></td>
+          <td bgcolor='#F2F2F2'><b><UL><LI>Créez des domaines défaillants plus petits.</LI><LI>Dans la mesure du possible, utilisez la redondance.</LI></UL></b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Serveurs distribués</b></td>
+          <td bgcolor='#F2F2F2'><b>Serveurs présentant des risques : pas d’environnement contrôlé, d’alimentation de secours ni de connectivité redondante.</b></td>
+          <td bgcolor='#F2F2F2'><b>Déplacez les serveurs dans la batterie de serveurs du centre de calcul.</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Serveurs distribués</b></td>
+          <td bgcolor='#F2F2F2'><b>Serveurs non disponibles : aucune liaison à haut débit vers les serveurs.</b></td>
+          <td bgcolor='#F2F2F2'><b>Installez de manière centrale des liaisons gigabit vers les serveurs.</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Disponibilité par fibre limitée</b></td>
+          <td bgcolor='#F2F2F2'><b>Limite la redondance possible dans le réseau.</b></td>
+          <td bgcolor='#F2F2F2'><b>Empilez des commutateurs et ajoutez des liaisons montantes à haut débit.</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Aucun pare-feu dynamique</b></td>
+          <td bgcolor='#F2F2F2'><b>Filtrage seulement, n’empêche pas tout le trafic non autorisé ou indésirable.</b></td>
+          <td bgcolor='#F2F2F2'><b>Utilisez les fonctionnalités de pare-feu dynamique de l’IOS.</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#F2F2F2'><b>Pare-feu uniquement à la périphérie du réseau</b></td>
+          <td bgcolor='#F2F2F2'><b>Périphériques internes vulnérables : aucune protection contre les attaques internes.</b></td>
+          <td bgcolor='#F2F2F2'><b><LI>Créez des mécanismes de pare-feu et de filtrage en couches.</LI><LI>Ajoutez le système IDS au niveau du centre de calcul.</LI></b></td>
+    </tr>
+  </table>
+
+]]></text>
+	</component>
+
+</textcomponents>

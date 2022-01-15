@@ -1,0 +1,52 @@
+﻿<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Configuration de l’accès à la console</b>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  	
+  	<tr>
+	  		
+	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+	  	<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+ 	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer du mode d’exécution privilégié au mode de configuration globale.</td>
+		<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer du mode de configuration globale au mode de configuration de ligne pour la console 0.</td>
+		<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config)#<b>line con 0</b></font></td>
+	</tr>
+	
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définir <b>cisco</b> en tant que mot de passe pour la ligne de console 0 sur le commutateur.</td>
+		<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-line)#<b>password cisco</b></font></td>
+			
+	</tr>
+	
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définir la ligne de console pour exiger la saisie du mot de passe avant l’octroi de l’accès.</td>
+		<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-line)#<b>login</b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Quitter le mode de configuration de ligne et revenir en mode d’exécution privilégié.</td>
+		<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-line)#<b>end</b></font></td>
+	</tr>
+			
+	
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

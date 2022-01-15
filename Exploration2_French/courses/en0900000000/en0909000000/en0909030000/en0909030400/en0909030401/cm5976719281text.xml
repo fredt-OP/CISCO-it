@@ -1,0 +1,35 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Calculating the EIGRP Default Metric</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Default metric = [K1*bandwidth + K3*delay] * 256</b><br><br>Since K1 and K3 both equal 1, the formula simplifies to: <b>bandwidth + delay</b><br><br>bandwidth = speed of slowest link in route to the destination<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;delay = sum of the delays of each link in route to the destination]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Slowest bandwidth:]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[(10,000,000/bandwidth kbps) * 256]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Plus the sum of the delays:]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[+ (sum of delay/10) * 256]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[=  EIGRP metric]]></text> 
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[***output omitted***]]></text> 
+</component>
+
+</textcomponents>

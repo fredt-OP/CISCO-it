@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/14/2007">
+		<name>Module  Quiz</name>
+		<form id="19779" lang=""><form-item order="fixed">
+			<ai id="117017" type="mc-ma"><question><![CDATA[Which two statements correctly describe Cisco access control lists? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Extended ACLs are created in interface configuration mode. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Extended ACLs filter traffic based on source and destination IP, port number, and protocol.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Standard IP ACLs are numbered 1-99, and extended IP ACLs are numbered 100-199.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Standard ACLs permit or deny traffic to specific IP addresses. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Standard ACLs do not permit the use of wildcard masks. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="84694" type="mc-sa"><question><![CDATA[Which statement is correct regarding applying an access list to an interface?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Access lists are applied in global configuration mode. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Named access lists are applied using the <b>ip access-name</b> command. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Standard access lists should be applied to an interface as close as possible to the destination.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The command for applying access list 101 inbound is <b>ip access-list 101</b>. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120668" type="mc-sa"><question><![CDATA[Which statement is a guideline to be followed when designing access control lists?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Since ACL tests are executed in order, they should be organized from the most general condition to the most specific. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Since ACL tests are executed in order, they should be organized from the most specific condition to the most general.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Since all statements in an ACL are evaluated before they are executed, an explicit <b>deny any</b> statement must be written in order for an ACL to function properly. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Since all statements in an ACL are evaluated before they are executed, an explicit <b>permit any</b> statement must be written in order for an ACL to function properly. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117139" type="mc-sa"><question><![CDATA[What occurs if the network administrator applies an IP access control list that has no permit statement outbound on an interface?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[All traffic outbound is denied.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All traffic outbound is allowed. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Only traffic originating from the router is allowed outbound. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The ACL restricts all incoming traffic and filters outgoing traffic. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117021" type="mc-ma"><question><![CDATA[Which two solutions can be implemented with ACLs? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Segment the network to increase available bandwidth. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Create a &quot;firewall&quot; on a router to filter inbound traffic from an external network.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Control traffic entering or exiting different areas of a local network.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Distribute DHCP traffic to allow easier network availability. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Allow or deny traffic into the network based on the MAC address. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="58364" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="58364" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>ANY</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>show running-config</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>show access-list</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>HOST</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>show ip interface</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>substitutes for the 0.0.0.0 mask</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>indicates whether any ACLs are set on an interface</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>displays the contents of all ACLs on the router</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>represents an IP address and mask pair of 0.0.0.0 255.255.255.255</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>reveals the ACLs and interface assignments on a router</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Match the following commands used with ACLs to their descriptions:</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="50614" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="50614" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="50614" action="Set">1</setvar><scoringdescription>from top to bottom: HOST, show ip interface, show access-list, ANY, show running-config</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="84693" type="mc-sa"><question><![CDATA[Which IP address and wildcard mask will test for hosts from an <i>entire</i> subnet of network 192.168.12.0 using a 29-bit mask?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.56 0.0.0.15 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.56 0.0.0.8 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.56 0.0.0.31 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.12.84 0.0.0.7  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.84 0.0.0.3 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.12.84 0.0.0.255 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116944" type="mc-sa"><question><![CDATA[What kind of access list is created with the command <b>ip access-list standard fastaccess</b>?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[turbo ACL ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[reflexive ACL ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[named ACL  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[dynamic ACL ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117034" type="mc-sa"><question><![CDATA[Refer to the exhibit. The exhibit shows an ACL that already exists on the router. The network administrator wants to insert the command <b>access-list 101 deny ip any 192.168.1.0 0.0.0.255 eq ftp</b> as the third line in the ACL shown. The network administrator enters the command in global configuration mode on the router. What effect does this have? <br/><img src="16135.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[It inserts the line in the desired position in the ACL. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It inserts the line as the first statement in the ACL. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[It inserts the line as the last statement in the ACL.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It deletes the entire list and replaces it with the new line only. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117002" type="mc-sa"><question><![CDATA[Refer to the exhibit. Which statement correctly describes how Router1 processes packets with the configuration shown? <br/><img src="16829.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Traffic exiting interface s0/0/0 is filtered by both ACL 101 and ACL 201. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[If a packet entering interface s0/0/0 matches a condition in ACL 101, the router continues comparing the packet to the rest of the statements in ACL 101 to make sure that no other statements might also apply. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router1 compares packets entering interface s0/0/0 first to all the ACL 101 statements for the IP protocol and then to all the ACL 101 statements for the ICMP protocol. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[A packet entering interface s0/0/0 is compared to each statement in ACL 101 until one statement matches the packet. Then the router drops or forwards the packet without considering the remaining statements in ACL 101.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116975" type="mc-sa"><question><![CDATA[An administrator wants to implement lock-and-key access to a host within the company network for specific users who are connecting from outside the company network. What type of ACL would best suit the situation?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[dynamic  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[reflexive ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[extended ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[time-based ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116997" type="mc-sa"><question><![CDATA[What type of ACL should the network administrator implement to limit Internet traffic during peak hours of the day?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[dynamic ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[policy-based ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[reflexive ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[time-based  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117005" type="mc-sa"><question><![CDATA[Which statement correctly describes a reflexive access list?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[An ACL that allows IP traffic for sessions originating from inside the network, while denying traffic for sessions originating from the outside.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[An ACL that controls traffic based on the time. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[An ACL that uses an extended list to block users from traversing a router until they are authenticated. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[An ACL that only identifies the source of traffic. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="55694" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="55694" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>only checks source address</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>access list numbers 100-199</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>checks protocol and port numbers</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>only permits/denies entire protocols based on network address</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>access list numbers 1-99</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>checks source and destination address</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Standard IP ACL</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Extended IP ACL</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Categorize the following descriptions with the appropriate ACL type.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="15" yspacing="70" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="266.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="152"/><display componentIdent="3" xpos="600" ypos="204"/><display componentIdent="4" xpos="600" ypos="281"/><display componentIdent="5" xpos="600" ypos="333"/><display componentIdent="6" xpos="600" ypos="385"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="obs1" view="All">Standard - source only, entire protocols, 1-99 Extended - 100-199, protocols and ports, source and destination</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>5</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>3</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>Standard - source only, entire protocols, 1-99 Extended - 100-199, protocols and ports, source and destination</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="120669" type="mc-ma"><question><![CDATA[<b>access-list 199 deny tcp 178.15.0.0 0.0.255.255 any eq 23<br/>access-list 199 permit ip any any</b><br/><br/>Assuming this ACL is correctly applied to a router interface, which two statements describe traffic on the network? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[All FTP traffic from network 178.15.0.0 will be permitted.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All Telnet traffic destined for network 178.15.0.0 will be denied. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Telnet and FTP will be permitted from all hosts on network 178.15.0.0 to any destination. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Telnet will not be permitted from any hosts on network 178.15.0.0 to any destination.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Telnet will not be permitted to any host on network 178.15.0.0 from any destination. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

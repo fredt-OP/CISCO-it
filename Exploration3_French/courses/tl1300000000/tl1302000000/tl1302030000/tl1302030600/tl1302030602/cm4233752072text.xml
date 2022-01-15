@@ -1,0 +1,71 @@
+﻿<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Configuration du mode bidirectionnel et de la vitesse</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[S1 - F0/1 est :<br/>Mode<br>bidirectionnel simultané<br>100 Mbits/s]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[S2 - F0/1 est :<br/>Mode<br>bidirectionnel simultané<br>100 Mbits/s]]></text>
+</component>
+
+<component id="tableHTML">
+  <text><![CDATA[
+ <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+ 	
+ 	<tr>
+ 		
+ 				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+ 				<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+ 	</tr>			
+
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer du mode d’exécution privilégié au mode de configuration globale.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration d’interface.</td>
+		<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config)#<b>Interface fastethernet 0/1</b></font></td>
+		
+				
+	</tr>
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer le mode birectionnel d’interface pour activer la configuration bidirectionnelle automatique.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>duplex auto</b></font></td>
+		
+				
+	</tr>
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer la vitesse bidirectionnelle d’interface et activer la configuration de vitesse automatique.</td>
+		<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>speed auto</b></font></td>
+		
+				
+	</tr>
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Revenir au mode d’exécution privilégié. </td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>end</b></font></td>
+		
+				
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enregistrer la configuration en cours dans la configuration de démarrage du commutateur.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1#<b>copy running-config startup-config</b></font></td>		
+				
+	</tr>		
+	
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

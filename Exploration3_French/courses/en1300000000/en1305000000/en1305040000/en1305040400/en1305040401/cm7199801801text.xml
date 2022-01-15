@@ -1,0 +1,36 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Edge Ports</b>]]></text>
+</component>
+
+
+  <component id="ID_txt10">
+  <text><![CDATA[Root Bridge]]></text> 
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[Database]]></text> 
+  </component>
+ 
+ <component id="ID_box1_title">
+  <text><![CDATA[<b>Edge Port</b>]]></text> 
+  </component>
+  
+  <component id="ID_box1_body">
+  <text><![CDATA[<ul><li>Will never have a switch connected to it</li><li>Immediately transitions to forwarding</li><li>Functions similarly to a port configured with Cisco PortFast</li><li>On a Cisco switch configured using the <font face='_typewriter'>spanning-tree portfast</font> command</li></ul>]]></text> 
+  </component>
+  
+  <component id="ID_box2_title">
+  <text><![CDATA[<b>Non-Edge Port</b>]]></text> 
+  </component>
+  
+  <component id="ID_box2_body">
+  <text><![CDATA[Will always be attached to another switch port.]]></text> 
+  </component>
+
+<component id="ID_inst">
+  <text><![CDATA[<b>Roll over the switch ports to see if they are edge ports.<b>]]></text> 
+  </component>
+
+
+
+</textcomponents>

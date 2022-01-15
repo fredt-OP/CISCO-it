@@ -1,0 +1,110 @@
+﻿<textcomponents>
+
+<component id="id_title">
+  <text><![CDATA[<b><font size='+2'>Exercice</font></b><br/><br/>Identifiez les caractéristiques de RIPv1 et de RIPv2.<br/><br/><b>Cochez la case appropriée pour indiquer s’il s’agit d’une caractéristique de RIPv1, de RIPv2 ou des deux.</b>]]></text> 
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+
+	<component id="txt_numrows">
+		<text><![CDATA[9]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[3]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[RIP v1]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[RIPv2]]></text>
+	</component>
+	<component id="txt_col3">
+		<text><![CDATA[Les deux]]></text>
+	</component>
+
+		
+    <component id="txt_q1">
+		<text><![CDATA[1. <textformat blockindent='14'>Résumé automatique du routage</textformat>]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[2. <textformat blockindent='14'>Pas d’authentification</textformat>]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[3. <textformat blockindent='14'>Mesure du nombre de sauts</textformat>]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[4. <textformat blockindent='14'>Intervalle de mise à jour par défaut de 30 secondes</textformat>]]></text>
+	</component>
+	<component id="txt_q5">
+		<text><![CDATA[5. <textformat blockindent='14'>Distance administrative de 120</textformat>]]></text>
+	</component>
+	<component id="txt_q6">
+		<text><![CDATA[6. <textformat blockindent='14'>Prend en charge VLSM</textformat>]]></text>
+	</component>
+	<component id="txt_q7">
+		<text><![CDATA[7. <textformat blockindent='14'>Envoie le masque de sous-réseau dans les mises à jour de routage</textformat>]]></text>
+	</component>
+	<component id="txt_q8">
+		<text><![CDATA[8. <textformat blockindent='14'>Utilise l’empoisonnement de routage, l’antipoison, le découpage d’horizon et les mises hors service pour éviter les boucles</textformat>]]></text>
+	</component>
+	<component id="txt_q9">
+		<text><![CDATA[9. <textformat blockindent='14'>Mises à jour de diffusion</textformat>]]></text>
+	</component>
+  
+	
+    <component id="txt_a1">
+		<text><![CDATA[3]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[3]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[3]]></text>
+	</component>
+	 <component id="txt_a5">
+		<text><![CDATA[3]]></text>
+	</component>
+	<component id="txt_a6">
+		<text><![CDATA[2]]></text>
+	</component>
+	<component id="txt_a7">
+		<text><![CDATA[2]]></text>
+	</component>
+	<component id="txt_a8">
+		<text><![CDATA[3]]></text>
+	</component>
+	<component id="txt_a9">
+		<text><![CDATA[1]]></text>
+	</component>
+
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Vous avez correctement identifié les caractéristiques de RIPv1 et de RIPv2. Cliquez sur Suivant pour continuer.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Révisez les caractéristiques de RIPv1 et de RIPv2, puis réessayez.]]></text>
+</component>
+
+
+</textcomponents>

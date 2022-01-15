@@ -1,0 +1,40 @@
+<textcomponents>
+
+  <component id="ID_title1">
+  <text><![CDATA[<b>Variantes du protocole STP (Cisco et autres)</b>]]></text> 
+  </component>
+
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td colspan="2" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b> </b></font><font  color="#FFFFFF"><b> </b></font></td>
+  	  	</tr>
+	<tr>
+		<td width="120" rowspan="3" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Protocoles propriétaires Cisco</b>  </td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>PVST<ul><li>Utilise le protocole d’agrégation ISL de Cisco.</li><li>Chaque réseau local virtuel (VLAN) comporte une instance d’arbre recouvrant.</li><li>Possibilité d’équilibrer la charge du trafic au niveau de la couche 2.</li><li>Inclut les extensions BackboneFast, UplinkFast et PortFast.</li></ul></td>
+	</tr>
+	
+	<tr>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>PVST+<ul><li>Gère l’agrégation de la norme IEEE 802.1Q et ISL.</li><li>Prend en charge les extensions STP propriétaires Cisco.</li><li>Ajoute les améliorations BPDU Guard et Root Guard.</li></ul></td>
+	</tr>
+	<tr>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>rapid-PVST+<ul><li>Repose sur la norme IEEE802.1w.</li><li>Convergence plus rapide que celle du protocole STP (norme 802.1D).</li></ul></td>
+	</tr>
+	
+	<tr>
+		<td rowspan="2" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>Norme IEEE</b> </td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>RSTP<ul><li>Protocole apparu en 1982, qui assure un temps de convergence plus court que le protocole STP (802.1D).</li><li>Implémente les versions génériques des extensions STP propriétaires Cisco.</li><li>Le protocole RSTP a été incorporé dans la norme IEEE 802.1D, la spécification étant désormais identifiée sous IEEE 802.1D-2004.</li></ul></td>
+	</tr>
+	<tr>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>MSTP<ul><li>Plusieurs réseaux locaux virtuels (VLAN) peuvent être associés à la même instance d’arbre recouvrant.</li><li>S’inspire du protocole MISTP (Multiple Instances Spanning Tree Protocol) de Cisco.</li><li>La norme IEEE 802.1Q-2003 inclut désormais le protocole MSTP.</li></ul></td>
+	</tr>
+</table>
+]]></text> 
+  </component>
+
+
+</textcomponents>

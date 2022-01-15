@@ -1,0 +1,94 @@
+<textcomponents>
+
+<component id="ID_but01">
+<text><![CDATA[<b>ACL Number</b>]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[<b>Condition</b>]]></text>
+</component>
+
+<component id="ID_but03">
+<text><![CDATA[<b>Protocol</b>]]></text>
+</component>
+
+<component id="ID_but04">
+<text><![CDATA[<b>Source IP Address</b>]]></text>
+</component>
+
+<component id="ID_but05">
+<text><![CDATA[<b>Destination IP Address</b>]]></text>
+</component>
+
+<component id="ID_but06">
+<text><![CDATA[<b>Matching Condition</b>]]></text>
+</component>
+
+<component id="ID_but07">
+<text><![CDATA[<b>TCP Application</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Roll over the ACL fields to view descriptions and options.]]></text> 
+</component>
+
+
+<component id="ID_title01">
+<text><![CDATA[<b>ACL Number</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[Identifies an ACL with a unique number.  A standard ACL uses numbers in the ranges 1 - 99 and 1300 to 1999. Extended ACLs use numbers in the ranges 100 - 199 and 2000 - 2699.]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Condition</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Identifies whether a packet is to be permitted or denied.]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Protocol</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Identifies Layer 3 / 4 protocols. Common options include:<br>  eigrp      Cisco's EIGRP routing protocol<br>  esp       Encapsulation Security Payload<br>  gre        Cisco's GRE tunneling<br>  icmp      Internet Control Message Protocol<br>  igmp      Internet Gateway Message Protocol<br>  ip          Any Internet Protocol<br>  ipinip     IP in IP tunneling<br>  ospf      OSPF routing protocol<br>  pcp       Payload Compression Protocol<br>  tcp       Transmission Control Protocol<br>  udp       User Datagram Protocol]]></text>
+</component>
+
+<component id="ID_title04">
+<text><![CDATA[<b>Source IP Address</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Identifies the IP address of the source of the packet. This value can be:<li>An individual host address</li><li>A range of host addresses</li><li>The host parameter</li><li>The any parameter</li>]]></text>
+</component>
+
+<component id="ID_title05">
+<text><![CDATA[<b>Destination IP Address</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Identifies the IP address of the destination of the packets. This value can be:<li>An Individual host address</li><li>A range of host addresses</li><li>The host parameter</li><li>The any parameter</li>]]></text>
+</component>
+
+<component id="ID_title06">
+<text><![CDATA[<b>Matching Condition</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Determines whether certain fields must match the application equally, greater than, less than and so on.]]></text>
+</component>
+
+<component id="ID_title07">
+<text><![CDATA[<b>TCP Application</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Identifies the application either by port number or acronym.]]></text>
+</component>
+
+
+</component>
+</textcomponents>

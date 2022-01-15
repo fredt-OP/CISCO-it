@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+		<exam id="12511" dateexported="03/07/2007">
+		<name></name>
+		<form id="18985" lang="en"><form-item order="N/A" usage="N/A">
+			<ai id="111410" type="mc-sa">
+			<question><![CDATA[Pourquoi PC1 et le téléphone IP sans fil doivent-ils se trouver sur des sous-réseaux différents s’ils se connectent tous deux sans fil au même point d’accès ?]]></question>
+			<choices>
+									<choice correct="n">
+										<text><![CDATA[pour éviter toute interférence de leurs signaux sans fil]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[pour offrir une meilleure solution pour l’itinérance sans fil]]></text>
+<feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[pour isoler le trafic de données et le trafic vocal sur des réseaux distincts]]></text><feedback><![CDATA[Vous avez répondu correctement aux questions concernant l’adressage IP pour une conception de contrôleurs sans fil.  Cliquez sur Suivant pour continuer.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[pour éliminer la nécessité d’un réseau local virtuel]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[pour éliminer la nécessité de chiffrement]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice></choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111411" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/>
+						<question><![CDATA[Pourquoi PC1 et PC2 doivent-ils se trouver sur le même sous-réseau ?]]></question>
+						<choices>
+									<choice correct="n">
+										<text><![CDATA[pour réduire les risques de collisions]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[parce que les périphériques clients reçoivent leurs adresses IP du contrôleur et non du point d’accès]]></text>
+ <feedback><![CDATA[Vous avez répondu correctement aux questions concernant l’adressage IP pour une conception de contrôleurs sans fil.  Cliquez sur Suivant pour continuer.]]></feedback>
+ 
+									</choice>
+									<choice correct="n">
+		<text><![CDATA[parce que les périphériques clients reçoivent leurs adresses IP de points d’accès qui peuvent être configurés pour attribuer des parties d’une même plage de sous-réseaux aux utilisateurs]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[parce que l’un est un vendeur situé dans le stade et l’autre est un employé du stade]]></text> <feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+		<text><![CDATA[parce qu’un réseau local virtuel s’étend sur deux parties différentes du stade]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									</choices></ai></form-item><form-item order="N/A" usage="N/A">
+						<ai id="111412" li="3.4.3" type="mc-sa">
+						<comment/>
+						<intro/><question><![CDATA[Quelle est l’adresse IP adaptée pour LWAPP-1 ?]]></question><choices>
+									<choice correct="n">
+										<text><![CDATA[192.168.1.17/24 pour qu’il puisse être sur le même réseau local virtuel que LWAPP-2 et recevoir des diffusions de LWAPP-2]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[192.168.4.11/24 pour qu’il puisse recevoir des diffusions de WLC-1 afin de faciliter la gestion centralisée]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[192.168.140.11/24 pour qu’il puisse se connecter à PC1]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									<choice correct="y">
+										<text><![CDATA[192.168.2.11/24 si elle est adaptée en fonction de l’emplacement dans le système d’adressage IP du réseau]]></text><feedback><![CDATA[Vous avez répondu correctement aux questions concernant l’adressage IP pour une conception de contrôleurs sans fil.  Cliquez sur Suivant pour continuer.]]></feedback>
+									</choice>
+									<choice correct="n">
+										<text><![CDATA[192.168.1.17/24 si elle est adaptée en fonction de l’emplacement dans le système d’adressage IP du réseau]]></text><feedback><![CDATA[La réponse sélectionnée est incorrecte. Réessayez.]]></feedback>
+									</choice>
+									</choices></ai></form-item>
+									<!--<form-item order="N/A" usage="N/A"> 						<ai id="111410" li="3.4.3" type="mc-sa"> 						<comment/> 						<intro/><question><![CDATA[If Host8 sends a message to Host1, and the destination MAC address is in the switch MAC table, which host devices will receive the message?]]></question><choices> 									<choice correct="n"> 										<text><![CDATA[only Host1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback>  									</choice> 									<choice correct="y"> 										<text><![CDATA[all hosts connected to Hub1]]></text> 									</choice> 									<choice correct="n"> 										<text><![CDATA[all hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback> 									</choice> 									<choice correct="n"> 										<text><![CDATA[all hosts connected to Hub1 and hosts connected to Switch1]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback> 									</choice> 									<choice correct="n"> 										<text><![CDATA[all hosts on the network]]></text><feedback><![CDATA[When the switch receives a frame, it decodes the frame and reads the source and destination MAC addresses. It will forward the frame only to the port associated with the destiation MAC address. In this case, that port is connected to the hub. When the hub receives the frame, it does not decode it. It will repeat the frame out all ports to all directly connected devices, including the switch.]]></feedback> 									</choice></choices></ai></form-item>-->
+									</form></exam> 

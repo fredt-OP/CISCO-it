@@ -1,0 +1,38 @@
+<html>
+	<head>
+	<meta http-equiv=content-type content="text/html; charset=UTF-8">
+	<title>CISCO Accessible Theme</title>
+		<script>
+		</script>
+
+		<script language="javascript" src="./js/utils/ejs.js"></script>
+		<script language="javascript" src="./js/utils/about.js"></script>
+		<script language="javascript" src="./js/utils/mootools-release-1.11.js"></script>
+
+		<script>
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			function initAbout() {
+				url = new String(window.location);
+				if (url.indexOf("dir=rtl") > -1) {
+					window.document.body.style.direction = "rtl";
+				}
+				var file = url.substring(url.indexOf("file=")+5,url.indexOf("&"));
+				loadAbout(file);
+			}
+		</script>
+	</head>
+
+	<body onLoad="initAbout();">
+		<div id="aboutdiv"></div>
+	</body>
+</html>

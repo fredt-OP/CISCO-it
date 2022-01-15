@@ -1,0 +1,5 @@
+<transcript lastedited="10.08.08 08:10:33">
+<title><content-text><![CDATA[8.3.5 - Configuring Named ACL's]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a person configuring a router. The commands used to configure the router are listed below:<br><br>R1 (config) # IP access-list extended SALES-ONLY<br>R1 (config-ext-n ACL) # permit IP 192.168.1.66 0.0.0.0 any<br>R1 (config-ext-n ACL) # permit IP 192.168.1.77 0.0.0.0 any<br><br>R1 (config) #interface F A 0 /0<br>R1 (config-if) # IP access-group SALES-ONLY in<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

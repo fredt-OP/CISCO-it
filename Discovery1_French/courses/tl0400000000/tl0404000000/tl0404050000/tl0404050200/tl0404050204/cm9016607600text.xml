@@ -1,0 +1,100 @@
+﻿<textcomponents>
+   <component id="ID_txt01">
+      <text><![CDATA[<b>Câblage croisé TIA/EIA 568A</b>]]></text>
+   </component>
+   <component id="ID_txt02">
+      <text><![CDATA[<b>PC</b>]]></text>
+   </component>
+   <component id="ID_txt03">
+      <text><![CDATA[<b>PC</b>]]></text>
+   </component>
+   <component id="ID_txt04">
+      <text><![CDATA[<b>ÉMISSION 1</b>]]></text>
+   </component>
+   <component id="ID_txt05">
+      <text><![CDATA[<b>ÉMISSION 2</b>]]></text>
+   </component>
+   <component id="ID_txt06">
+      <text><![CDATA[<b>RÉCEPTION 3</b>]]></text>
+   </component>
+   <component id="ID_txt07">
+      <text><![CDATA[<b>4</b>]]></text>
+   </component>
+   <component id="ID_txt08">
+      <text><![CDATA[<b>5</b>]]></text>
+   </component>
+   <component id="ID_txt09">
+      <text><![CDATA[<b>RÉCEPTION 6</b>]]></text>
+   </component>
+   <component id="ID_txt10">
+      <text><![CDATA[<b>7</b>]]></text>
+   </component>
+   <component id="ID_txt11">
+      <text><![CDATA[<b>8</b>]]></text>
+   </component>
+   <component id="ID_txt12">
+      <text><![CDATA[<b>1 ÉMISSION</b>]]></text>
+   </component>
+   <component id="ID_txt13">
+      <text><![CDATA[<b>2 ÉMISSION</b>]]></text>
+   </component>
+   <component id="ID_txt14">
+      <text><![CDATA[<b>3 RÉCEPTION</b>]]></text>
+   </component>
+   <component id="ID_txt15">
+      <text><![CDATA[<b>4</b>]]></text>
+   </component>
+   <component id="ID_txt16">
+      <text><![CDATA[<b>5</b>]]></text>
+   </component>
+   <component id="ID_txt17">
+      <text><![CDATA[<b>6 RÉCEPTION</b>]]></text>
+   </component>
+   <component id="ID_txt18">
+      <text><![CDATA[<b>7</b>]]></text>
+   </component>
+   <component id="ID_txt19">
+      <text><![CDATA[<b>8</b>]]></text>
+   </component>
+      <component id="ID_txt20">
+      <text><![CDATA[<b>Cliquez sur Lire pour voir une transmission par câble croisé.</b>]]></text>
+   </component>
+   
+   <component id="tipTitle">
+   <text>Conseil</text>
+   </component>
+    <component id="tipBody">
+    <text>Un câble croisé 10BaseT et 100BaseT croise seulement les câbles d’émission (broches 1 et 2) et de réception (broches 3 et 6). Si vous construisez un câble croisé pour qu’il fonctionne à des vitesses supérieures à 100 Mbits/s, vous devez croiser tous les câbles, et non juste 1, 2, 3 et 6 tel qu’illustré dans le schéma. Si tous les câbles ne sont pas croisés, le câble risque de ne pas fonctionner correctement ou la vitesse de connexion risque d’être réduite à 10 Mbits/s, selon les cartes réseau utilisées.</text>
+    </component>
+<component id="TipText"><text><![CDATA[Conseil]]></text>
+</component>
+
+
+   <component id="play">
+      <text>Lire</text>
+   </component>
+   <component id="pause">
+      <text>Pause</text>
+   </component>
+   <component id="rewind">
+      <text>Rembobiner</text>
+   </component>
+   <component id="forward">
+      <text>Avance rapide</text>
+   </component>
+   <component id="mute">
+      <text>Muet</text>
+   </component>
+   <component id="unmute">
+      <text>Désactiver Muet</text>
+   </component>
+   <component id="previous">
+      <text>Redémarrer</text>
+   </component>
+   <component id="next">
+      <text>Fin</text>
+   </component>
+   <component id="transcript">
+      <text>Texte</text>
+   </component>
+</textcomponents>

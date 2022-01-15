@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13258" dateexported="01/26/2009">
+		<name>Module 7 Questionnaire</name>
+		<form id="20920" lang="fr"><form-item order="fixed">
+			<ai id="133314" type="mc-ma"><question><![CDATA[Quelles commandes déterminent si le récapitulatif automatique est actif pour le protocole RIP ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[<b>show running-config</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip route</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip interface</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show interface</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show ip protocols</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133317" type="mc-sa"><question><![CDATA[Quelle affirmation sur le protocole RIPv2 est correcte ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le protocole RIP version 2 résume automatiquement le masque le plus efficace. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole RIP version 2 résume automatiquement à la limite du réseau principal.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole RIP version 2 implique une configuration manuelle pour résumer les routes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Par défaut, les protocoles RIP version 2 et RIP version 1 ne gèrent pas le résumé des routes de la même manière. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133318" type="mc-sa"><question><![CDATA[Quel est le comportement par défaut du protocole de routage RIP si aucune version n’est spécifiée ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il envoie et reçoit uniquement les mises à jour de la version 1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il envoie uniquement les mises à jour de la version 1 et reçoit les mises à jour des versions 1 et 2.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il reçoit uniquement les mises à jour de la version 1 et envoie les mises à jour des versions 1 et 2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il envoie et reçoit les mises à jour des versions 1 et 2. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133319" type="mc-sa"><question><![CDATA[Quelle condition est autorisée par le protocole RIPv2 mais pas par le protocole RIPv1 ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[16 sauts d’une extrémité du réseau à l’autre ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Redistribution du protocole EIGRP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Réseau 192.168.0.0/16  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routeur avec plus de trois interfaces ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67132" type="mc-sa"><question><![CDATA[Quelle est la différence entre les protocoles RIP v1 et RIP v2 ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les mises à jour du protocole RIP v1 contiennent un mécanisme d'authentification. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole RIP v1 utilise la fonction " split-horizon " pour empêcher la formation de boucles de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole RIP v2 utilise 16 sauts comme valeur métrique de distance infinie. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole RIP v2 envoie les informations de masque de sous-réseau avec ses mises à jour de routage.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133315" type="mc-sa"><question><![CDATA[Examinez la présentation.  Elle affiche les résultats partiels de la commande <b>debug ip rip events</b> sur le routeur B. Quelle est la cause probable des messages de débogage ? <br/><img src="i133315n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les routeurs A et E envoient des mises à jour déformées. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La configuration du protocole RIP sur le routeur B n’inclut pas les réseaux connectés aux interfaces série. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les interfaces série du routeur B ne sont pas configurées correctement. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur B exécute une version du protocole RIP différente de celle des routeurs A et E.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133136" type="mc-sa"><question><![CDATA[Examinez la présentation. Si tous les routeurs exécutent le protocole RIP version 2, pourquoi n’y a-t-il aucune route pour le réseau 192.168.1.32/27 ? <br/><img src="i133136n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le protocole RIPv2 n’envoie pas les masques de sous-réseau dans ses mises à jour. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur A n’est pas configuré avec le protocole RIP comme protocole de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole RIPv2 résume automatiquement les routes par défaut.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur B n’est pas configuré pour annoncer le réseau 192.168.1.64/30. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133316" type="mc-sa"><question><![CDATA[Examinez la présentation. Quelles conclusions pouvez-vous tirer de ces informations ? <br/><img src="i133316n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Une commande <b>show ip route</b> sur un routeur situé à deux sauts détecte le réseau 192.168.1.32/27 dans sa table de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’interface Serial0/0/0 est configurée avec la commande <b>passive interface</b>. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur transmet le masque de sous-réseau avec le réseau dans ses mises à jour.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les routeurs doivent être des routeurs Cisco car le réseau utilise le protocole RIP version 2. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

@@ -1,0 +1,79 @@
+﻿<textcomponents>
+<component id="ID_title1">
+<text><![CDATA[<b>MAC Filtering</b>]]></text>
+</component>
+
+<component id="ID_title2">
+<text><![CDATA[<b>WEP</b>]]></text>
+</component>
+
+<component id="ID_title3">
+<text><![CDATA[<b>WPA/WPA2</b>]]></text>
+</component>
+
+<component id="ID_title4">
+<text><![CDATA[<b>WPA2</b>]]></text>
+</component>
+
+<component id="ID_bubble_01a">
+<text><![CDATA[<b>Your MAC address is in the list. You are allowed to connect.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_02">
+<text><![CDATA[<b>Your MAC address isn't in the list. You are not allowed to connect.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_03">
+<text><![CDATA[<b>Your WEP key does match. You are allowed to connect.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_04">
+<text><![CDATA[<b>Your WEP key does not match. You are not allowed to connect.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_05">
+<text><![CDATA[<b>Your WPA key does match. You are allowed to connect.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_06">
+<text><![CDATA[<b>Your WPA key does not match. You are not allowed to connect.</b>]]></text>
+</component>  
+
+<component id="ID_bubble_07">
+<text><![CDATA[<b>Your WPA key has expired. You are not allowed to connect.</b>]]></text>
+</component>  
+
+
+ 	<component id="tipTitle"><text>MAC Filtering</text>	</component>
+     <component id="tipBody"><text>MAC address filtering is available on most wireless routers and access points. By restricting which MAC addresses can connect to a wireless network, unwanted computers are prevented from connecting. MAC address security should not be used on its own due to the ability for an attacker to clone an allowed MAC address to gain access to the wireless network.</text>	</component>
+ <component id="TipText"><text><![CDATA[More Information]]></text></component>
+ 
+ 
+ 	<component id="tipTitle2"><text>WEP</text>	</component>
+     <component id="tipBody2"><text>Wired Equivalent Privacy (WEP) provides data security by encrypting the data that is sent between wireless nodes. WEP uses either a 64bit or 128bit preshared hexadecimal key to encrypt the data. However, there are many WEP cracking tools available on the Internet. WEP should only be used if the hardware that needs to attach to the wireless network is old and does not support newer wireless security protocols.</text>	</component>
+<component id="TipText2"><text><![CDATA[More Information]]></text></component>
+
+	<component id="tipTitle3"><text>WPA</text>	</component>
+    <component id="tipBody3"><text>Wifi Protected Access (WPA) is a newer wireless encryption protocol that uses an improved encryption algorithm called Temporal Key Integrity Protocol (TKIP). TKIP generates a unique key for each client and rotates the security keys at a configurable interval. WPA also includes an encrypted message integrity check field in the data packet to prevent denial-of-service and spoofing attacks. WPA uses a preshared alphanumeric authentication key that is configured on each device. The key is only used to negotiate the initial session with the wireless router or access point. WPA provides mutual authentication since both the client and the access point have the key, so the key is never transmitted over the air.</text>	</component>
+<component id="TipText3"><text><![CDATA[More Information]]></text></component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click each button to view the different security methods.</b>]]></text>
+</component>
+
+<component id="R2 LSPs">
+ 	<text><![CDATA[<b>MAC Filtering</b>]]></text>
+ </component>
+ <component id="R3 LSPs">
+ 	<text><![CDATA[<b>WEP</b>]]></text>
+</component>
+ <component id="R4 LSPs">
+ 	<text><![CDATA[<b>WPA/WPA2</b>]]></text>
+ </component>
+ <component id="R3 LSPs1">
+ 	<text><![CDATA[<b>WPA2</b>]]></text>
+</component>
+
+</textcomponents>
+
+

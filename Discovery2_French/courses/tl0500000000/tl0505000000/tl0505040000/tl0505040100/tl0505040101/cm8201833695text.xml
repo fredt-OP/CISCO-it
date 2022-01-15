@@ -1,0 +1,147 @@
+﻿<textcomponents>
+<component id="ID_title1">
+<text><![CDATA[<b>Liste de contrôle de la configuration d’un routeur</b>]]></text>
+</component>
+<component id="ID_inst">
+<text><![CDATA[<b>Placez votre pointeur sur chaque élément de la liste pour en savoir plus.</b>]]></text>
+</component>
+
+<component id="ID_t01">
+<text><![CDATA[<b>Date</b>]]></text>
+</component>
+<component id="ID_t02">
+<text><![CDATA[<b>Coordonnées du FAI </b>]]></text>
+</component>
+<component id="ID_t03">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+<component id="ID_t03b">
+<text><![CDATA[<b>Customer3b</b>]]></text>
+</component>
+<component id="ID_t04">
+<text><![CDATA[<b>Coordonnées du client</b>]]></text>
+</component>
+<component id="ID_t05">
+<text><![CDATA[<b>Numéro de série du routeur</b>]]></text>
+</component>
+<component id="ID_t06">
+<text><![CDATA[<b>Paramètres de base configurés</b>]]></text>
+</component>
+<component id="ID_t07">
+<text><![CDATA[<b>Paramètres globaux configurés</b>]]></text>
+</component>
+<component id="ID_t08">
+<text><![CDATA[<b>Interfaces de réseau local Fast Ethernet configurées</b>]]></text>
+</component>
+<component id="ID_t09">
+<text><![CDATA[<b>Interfaces de réseau étendu configurées</b>]]></text>
+</component>
+<component id="ID_t10">
+<text><![CDATA[<b>Accès au routeur par ligne de commande configuré</b>]]></text>
+</component>
+<component id="ID_t11">
+<text><![CDATA[<b>Routes statiques configurées</b>]]></text>
+</component>
+<component id="ID_t12">
+<text><![CDATA[<b>Protocoles de routage dynamique configurés</b>]]></text>
+</component>
+<component id="ID_t13">
+<text><![CDATA[<b>Fonctions de sécurité configurées</b>]]></text>
+</component>
+<component id="ID_t14">
+<text><![CDATA[<b>Numéro de bon de travail</b>]]></text>
+</component>
+<component id="ID_tnew">
+<text><![CDATA[<b>Fabricant et modèle du routeur</b>]]></text>
+</component>
+
+<component id="ID_txtTitlenew">
+<text><![CDATA[Fabricant et modèle du routeur]]></text>
+</component>
+<component id="ID_txtnew">
+<text><![CDATA[<li>Le fabricant du routeur et le numéro du modèle</li>]]></text>
+</component>
+
+
+<component id="ID_txtTitle1">
+<text><![CDATA[Date et bon de travail]]></text>
+</component>
+<component id="ID_txtBody1">
+<text><![CDATA[<li>Pour enregistrer la date d’émission de la liste de contrôle de la configuration<br/>Pour enregistrer un numéro servant au suivi du travail sous contrat</li>]]></text>
+</component>
+<component id="ID_txtTitle2">
+<text><![CDATA[Coordonnées du FAI ]]></text>
+</component>
+<component id="ID_txtBody2">
+<text><![CDATA[<li>Nom et numéro de téléphone du représentant du fournisseur de services Internet en cas de questions ou de problèmes</li>]]></text>
+</component>
+<component id="ID_txtTitle3">
+<text><![CDATA[Client]]></text>
+</component>
+<component id="ID_txtBody3">
+<text><![CDATA[<li>Nom de l’entreprise ou du client</li>]]></text>
+</component>
+<component id="ID_txtTitle3b">
+<text><![CDATA[Coordonnées du client]]></text>
+</component>
+<component id="ID_txtBody3b">
+<text><![CDATA[<li>Nom et numéro de téléphone du responsable du projet sur le site du client</li>]]></text>
+</component>
+<component id="ID_txtTitle4">
+<text><![CDATA[Numéro de série du routeur]]></text>
+</component>
+<component id="ID_txtBody4">
+<text><![CDATA[<li>Numéro de série du routeur</li>]]></text>
+</component>
+<component id="ID_txtTitle5">
+<text><![CDATA[Paramètres de base configurés]]></text>
+</component>
+<component id="ID_txtBody5">
+<text><![CDATA[<li>Cochez ici pour confirmer que les paramètres de base du routeur sont configurés.<br/>Vous pouvez utiliser Cisco SDM pour configurer les paramètres de base, s’il est pris en charge par le périphérique.</li>]]></text>
+</component>
+<component id="ID_txtTitle6">
+<text><![CDATA[Paramètres globaux configurés]]></text>
+</component>
+<component id="ID_txtBody6">
+<text><![CDATA[<li>Cochez ici pour confirmer que les paramètres globaux sont configurés, à savoir : nom d’hôte du routeur, mot de passe en mode privilégié et moyen d’empêcher le routeur de reconnaître les fautes de frappe comme des commandes.</li>]]></text>
+</component>
+<component id="ID_txtTitle7">
+<text><![CDATA[Interfaces de réseau local Fast Ethernet configurées]]></text>
+</component>
+<component id="ID_txtBody7">
+<text><![CDATA[<li>Cochez ici pour confirmer que les interfaces de réseau local Fast Ethernet ont été configurées.</li>]]></text>
+</component>
+<component id="ID_txtTitle8">
+<text><![CDATA[Interfaces de réseau étendu configurées]]></text>
+</component>
+<component id="ID_txtBody8">
+<text><![CDATA[<li>Cochez ici pour confirmer que les interfaces de réseau étendu (WAN) ont été configurées.</li>]]></text>
+</component>
+<component id="ID_txtTitle9">
+<text><![CDATA[Accès au routeur par ligne de commande configuré]]></text>
+</component>
+<component id="ID_txtBody9">
+<text><![CDATA[<li>Cochez ici pour confirmer que les paramètres utilisés pour contrôler l’accès par interface de ligne de commande Cisco IOS au routeur ont été configurés.<br/>Ceci inclut le délai d’attente de l’interpréteur de commandes EXEC jusqu’à la détection d’une entrée utilisateur.</li>]]></text>
+</component>
+<component id="ID_txtTitle10">
+<text><![CDATA[Routes statiques configurées]]></text>
+</component>
+<component id="ID_txtBody10">
+<text><![CDATA[<li>Cochez ici pour confirmer que les routes statiques sont configurées.<br/>Un fournisseur de services Internet peut utiliser une feuille distincte pour détailler chaque route statique configurée.<br/>Les routes statiques se configurent manuellement sur le routeur et doivent être changées manuellement si de nouvelles routes sont nécessaires.</li>]]></text>
+</component>
+<component id="ID_txtTitle11">
+<text><![CDATA[Protocoles de routage dynamique configurés]]></text>
+</component>
+<component id="ID_txtBody11">
+<text><![CDATA[<li>Cochez ici pour confirmer que les protocoles de routage dynamique sont configurés.<br/>Dans un routage dynamique, le protocole réseau ajuste le chemin automatiquement, en fonction du trafic ou de la topologie du réseau. Les modifications des routes dynamiques sont partagées avec les autres routeurs du réseau.</li>]]></text>
+</component>
+<component id="ID_txtTitle12">
+<text><![CDATA[Fonctions de sécurité configurées]]></text>
+</component>
+<component id="ID_txtBody12">
+<text><![CDATA[<li>Cochez ici pour confirmer que les fonctions de sécurité sont configurées sur le routeur.<br/>L’outil de configuration Cisco SDM facilite la configuration des fonctions élémentaires de sécurité.<br/>Pour configurer les fonctions de sécurité dans l’interface de ligne de commande Cisco IOS, une connaissance approfondie des commandes de sécurité de Cisco IOS est nécessaire.</li>]]></text>
+</component>
+
+
+
+</textcomponents>

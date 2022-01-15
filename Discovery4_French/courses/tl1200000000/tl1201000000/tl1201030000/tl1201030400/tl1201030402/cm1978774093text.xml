@@ -1,0 +1,58 @@
+﻿<textcomponents>
+	<component id="ID_activity">
+		<text><![CDATA[Exercice<br><br>Faites glisser la liste de contrôle d’accès jusqu’à la définition correspondante.]]></text>
+	</component>
+	<component id="ID_activityInstructions">
+		<text><![CDATA[]]></text>
+	</component>
+	<component id="ID_instructions">
+		<text><![CDATA[]]></text>
+	</component>
+		
+	<component id="ID_check">
+		<text><![CDATA[<b>Vérifier</b>]]></text>
+	</component>
+	<component id="ID_reset">
+		<text><![CDATA[<b>Réinitialiser</b>]]></text>
+	</component>
+	
+	<component id="ID_caption1">
+		<text><![CDATA[Liste de contrôle d’accès standard qui vous permet d’accepter le trafic en provenance de 172.16.3.XXX]]></text>
+	</component>
+	<component id="ID_caption2">
+		<text><![CDATA[Liste de contrôle d’accès standard qui vous permet de refuser le trafic en provenance de 172.16.5.2]]></text>
+	</component>
+	<component id="ID_caption3">
+		<text><![CDATA[Liste de contrôle d’accès standard qui vous permet d’accepter le trafic en provenance de n’importe quel hôte]]></text>
+	</component>
+	<component id="ID_caption4">
+		<text><![CDATA[Liste de contrôle d’accès standard qui vous permet d’accepter le trafic en provenance de 172.16.5.5]]></text>
+	</component>
+	
+	<component id="ID_circuit">
+		<text><![CDATA[access-list 10 permit 172.16.3.0 0.0.0.255]]></text>
+	</component>
+	<component id="ID_block">
+		<text><![CDATA[access-list 1 deny 172.16.5.2 0.0.0.0 ]]></text>
+	</component>
+	<component id="ID_csu">
+		<text><![CDATA[access-list 10 permit 172.16.5.5 0.0.0.0]]></text>
+	</component>
+	<component id="ID_dmzrouter">
+		<text><![CDATA[access-list 10 permit any]]></text>
+	</component>
+	
+	<component id="ID_incorrectTitle">
+		<text><![CDATA[<b>Incorrect</b>]]></text>
+	</component>
+	<component id="ID_incorrect">
+		<text><![CDATA[Incorrect. Réessayez.]]></text>
+	</component>
+	<component id="ID_correctTitle">
+		<text><![CDATA[<B>Correct</B>]]></text>
+	</component>
+	<component id="ID_correct">
+		<text><![CDATA[Correct. Cliquez sur Suivant pour continuer.]]></text>
+	</component>
+
+</textcomponents>

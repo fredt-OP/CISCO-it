@@ -1,0 +1,324 @@
+<avalontask>
+	<r2data taskid='99999' type='simulation' language='JP' title='Sample Linksys Item' />
+	<guitext />
+	<variables />
+
+	<textcomponents>
+		<component type='text' id='txt_instructions'> 
+			<text variable='true' translate='true'>
+				<![CDATA[<font face='_sans' size='12'><b>Instructions</b><br><br>A network is being transitioned from using IPv4 to the IPv6 protocol.<br>Your task is to complete the IPv6 configuration on all routers using the information in the table below. Specifically, you must use the console connection from each host to complete the following on each router:<br><ul><li>Enable IPv6 traffic forwarding.</li><li>Configure and enable specified interfaces with the IPv6 addresses shown in the table below.</li><li>Configure IPv6 RIP using the process name of <b>cisco</b>.</li><li>Enable the IPv6 RIP routing process named cisco on required interfaces.</li></ul><br></font><font face='_typewriter' size='12'><b>Hostname    Interface s0/0               Interface s0/1</b><br>Post        2001:410:1:10::/65 eui-64    not connected<br>York        2001:410:1:10::/65 eui-64    2001:410:2:10::/65 eui-64<br>Melk        not connected                2001:410:2:10::/65 eui-64</font><br><br>Click on the topology page tab to view the network topology. Click on the host connected to each router to open a console session on that router. Enter the required configuration commands to complete the IPv6 configuration.]]>
+			</text> 
+		</component> 
+
+		<component type='text' id='txt_obs1desc'>
+			<text variable='true' translate='true'><![CDATA[<B>Routers configured for IPv6 traffic forwarding</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs1good'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Congratulations! You know how to configure a router for IPv6 traffic forwarding.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs1bad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Before ipv6 traffic forwarding can be used, it must be enabled globally on a router. Make sure it is enabled on all three routers using the correct command.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs2desc'>
+			<text variable='true' translate='true'><![CDATA[<B>Interfaces configured and enabled with specified IPv6 addresses</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs2good'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Good work! IPv6 addresses are difficult to configure on a router interface but you did it successfully on all specified interfaces.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs2bad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>IPv6 addresses are more difficult to configure on router interfaces than are IPv4 addresses. Make sure to understand the parts of an IPv6 address and the commands to configure it and enable it on a router interface.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs3desc'>
+			<text variable='true' translate='true'><![CDATA[<B>Routers configured for specified IPv6 RIP routing process</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs3good'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Congratulations! You have successfully configured all routers with the correct  IPv6 RIP routing process.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs3bad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>IPv6 RIP routing requires that a process ID be configured globally on a router. Review the commands to do that. Make sure to use cisco as the routing process ID.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs4desc'>
+			<text variable='true' translate='true'><![CDATA[<B>IPv6 routing process enabled on specified interfaces</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs4good'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Nice job! You have successfully enabled the specified  IPv6 routing process on the correct interfaces.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs4bad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>IPv6 RIP routing must be enabled on each interface participating in that process. Review the commands to do that. Then enter that command while in interface configuration mode.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_check'>
+			<text variable='true' translate='true'><![CDATA[Check]]></text>
+		</component>
+
+		<component type='text' id='txt_s00'>
+			<text variable='true' translate='true'><![CDATA[S0/0]]></text>
+		</component>
+		<component type='text' id='txt_s01'>
+			<text variable='true' translate='true'><![CDATA[S0/1]]></text>
+		</component>
+		<component type='text' id='txt_dce'>
+			<text variable='true' translate='true'><![CDATA[DCE]]></text>
+		</component>
+
+
+		<component type='text' id='txt_post'>
+			<text variable='true' translate='true'><![CDATA[Post]]></text>
+		</component>
+		<component type='text' id='txt_york'>
+			<text variable='true' translate='true'><![CDATA[York]]></text>
+		</component>
+		<component type='text' id='txt_melk'>
+			<text variable='true' translate='true'><![CDATA[Melk]]></text>
+		</component>
+
+
+		<component type='text' id='txt_close'>
+			<text variable='true' translate='true'><![CDATA[Close]]></text>
+		</component>
+	
+		<component type='text' id='txt_title_instructions'> 
+			<text variable='true' translate='true'><![CDATA[Instructions]]></text> 
+		</component> 
+
+		<component type='text' id='txt_topology'> 
+			<text variable='true' translate='true'><![CDATA[Topology]]></text> 
+		</component> 
+	</textcomponents>
+
+	<graphiccomponents>
+      <component type='graphic' id='gr_post'>
+         <icon x='0' y='0' width='55' height='40' id='icon_router' /> 
+		 <label src='txt_post' x='-18' y='-40' width='90' height='35' background='false' />
+		 <label src='txt_s00' x='22' y='-25' width='90' height='35' background='false' />
+		 <label src='txt_dce' x='22' y='-5' width='90' height='35' background='false' />
+      </component>
+      <component type='graphic' id='gr_york'>
+         <icon x='0' y='0' width='55' height='40' id='icon_router' />  
+		 <label src='txt_york' x='-18' y='-40' width='90' height='35' background='false' />
+		 <label src='txt_s00' x='-52' y='-18' width='90' height='35' background='false' />
+		 <label src='txt_s01' x='22' y='-25' width='90' height='35' background='false' />
+		 <label src='txt_dce' x='22' y='-5' width='90' height='35' background='false' />
+      </component>
+      <component type='graphic' id='gr_melk'>
+         <icon x='0' y='0' width='55' height='40' id='icon_router' /> 
+		 <label src='txt_melk' x='-18' y='-40' width='90' height='35' background='false' />
+		 <label src='txt_s01' x='-52' y='-18' width='90' height='35' background='false' />
+      </component>
+	  <component type='graphic' id='gr_host_post'>
+	     <icon x='0' y='0' width='50' height='42' id='icon_host'>
+		    <action event='release' target='dev_post' activity='launchTerminal' window='win_post' />
+		 </icon>
+	  </component>
+	  <component type='graphic' id='gr_host_york'>
+	     <icon x='0' y='0' width='50' height='42' id='icon_host'>
+		    <action event='release' target='dev_york' activity='launchTerminal' window='win_york' />
+		 </icon>
+	  </component>
+	  <component type='graphic' id='gr_host_melk'>
+	     <icon x='0' y='0' width='50' height='42' id='icon_host'>
+		    <action event='release' target='dev_melk' activity='launchTerminal' window='win_melk' />
+		 </icon>
+	  </component>
+	  <component type='graphic' id='gr_serial'>
+	     <shape type='serial' id='sh_serial' />
+	  </component>
+	  <component type='graphic' id='gr_line'>
+	     <shape type='autodotline' strokewidth='2' stroke='#000000' id='sh_dotline' />  
+	  </component>
+	</graphiccomponents>
+
+	<hwcomponents>
+      <component type='router' model='2624' id='dev_post'>
+         <card type='fastethernet' slot='0' fixed='false' >
+            <port type='fastethernet' number='0' name='FastEthernet0/0' id='dev_post_fa00' fixed='false' />
+         </card>
+         <card type='serial' slot='0' fixed='false' >
+            <port type='serial' number='0' name='Serial0/0' id='dev_post_s00' fixed='false' />
+            <port type='serial' number='1' name='Serial0/1' id='dev_post_s01' fixed='false' />
+         </card>
+         <config file='startup-config'> 
+<![CDATA[
+!
+version 12.2
+!
+hostname Post
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+!
+interface Serial0/0
+ ip address 192.168.1.1 255.255.255.0
+ clock rate 56000
+!
+interface Serial0/1
+ no ip address
+ shutdown
+!
+!
+router eigrp 100
+ network 192.168.1.0
+ auto-summary
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type='router' model='2624' id='dev_york'>
+         <card type='fastethernet' slot='0' fixed='false' >
+            <port type='fastethernet' number='0' name='FastEthernet0/0' id='dev_york_fa00' fixed='false' />
+         </card>
+         <card type='serial' slot='0' fixed='false' >
+            <port type='serial' number='0' name='Serial0/0' id='dev_york_s00' fixed='false' />
+            <port type='serial' number='1' name='Serial0/1' id='dev_york_s01' fixed='false' />
+         </card>
+         <config file='startup-config'> 
+<![CDATA[
+!
+version 12.2
+!
+hostname York
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+!
+interface Serial0/0
+ ip address 192.168.1.2 255.255.255.0
+!
+interface Serial0/1
+ ip address 192.168.2.1 255.255.255.0
+ clock rate 56000
+!
+!
+router eigrp 100
+ network 192.168.1.0
+ network 192.168.2.0
+ auto-summary
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type='router' model='2624' id='dev_melk'>
+         <card type='fastethernet' slot='0' fixed='false' >
+            <port type='fastethernet' number='0' name='FastEthernet0/0' id='dev_melk_fa00' fixed='false' />
+         </card>
+         <card type='serial' slot='0' fixed='false' >
+            <port type='serial' number='0' name='Serial0/0' id='dev_melk_s00' fixed='false' />
+            <port type='serial' number='1' name='Serial0/1' id='dev_melk_s01' fixed='false' />
+         </card>
+         <config file='startup-config'> 
+<![CDATA[
+!
+version 12.2
+!
+hostname Melk
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+!
+interface Serial0/0
+ no ip address
+ shutdown
+!
+interface Serial0/1
+ ip address 192.168.2.2 255.255.255.0
+!
+!
+router eigrp 100
+ network 192.168.2.0
+ auto-summary
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type='link' id='dev_lnk_post_york'> 
+         <endpoint id='dev_post_s00' dce='true' /> 
+         <endpoint id='dev_york_s00' /> 
+      </component> 
+      <component type='link' id='dev_lnk_york_melk'> 
+         <endpoint id='dev_york_s01' dce='true' /> 
+         <endpoint id='dev_melk_s01' /> 
+      </component> 
+	</hwcomponents>
+
+	<presentation delivery='cert'>
+		<mainstage bgcolor= '#FFFFFF' theme='ccna' historylog='all' tooltips='true' contextmenu='false' />
+		<graphicmap> 
+			<map id='icon_router' src='Router'   location='library' />
+			<map id='icon_host'   src='Computer' location='library' />
+		</graphicmap>
+
+		<window id='none' resize='none' titltetextid='txt_check' width='0' height='0' visible='true' depth='50' x='0' y='0' checkbutton='true' />
+
+		<window id='win_instructions' resize='all' titletextid='txt_title_instructions' width='780' height='380' visible='true' depth='100' x='10' y='10'> 
+			<element id='ele_txt_instructions' src='txt_instructions' container='textClip' width='750' html='true' wordwrap='true' /> 
+		</window> 
+
+		<window id='win_topology' resize='all' titletextid='txt_topology' visible='false' width='790' height='400' depth='101' y='10' x='10'>
+			<element src='gr_post' id='ele_post' x='175' y='75' depth='101' />
+			<element src='gr_york' id='ele_york' x='375' y='75' depth='102' />
+			<element src='gr_melk' id='ele_melk' x='575' y='75' depth='103' />
+			<element src='gr_host_post' id='ele_host_post' x='175' y='200' depth='104' />
+			<element src='gr_host_york' id='ele_host_york' x='375' y='200' depth='105' />
+			<element src='gr_host_melk' id='ele_host_melk' x='575' y='200' depth='106' />
+			<element src='gr_serial' id='ele_serial1' beginobject='ele_post.icon_router' endobject='ele_york.icon_router' depth='1' />
+			<element src='gr_serial' id='ele_serial2' beginobject='ele_york.icon_router' endobject='ele_melk.icon_router' depth='2' />
+			<element src='gr_line'   id='ele_line1'   beginobject='ele_post.icon_router' endobject='ele_host_post.icon_host' depth='3' />
+			<element src='gr_line'   id='ele_line2'   beginobject='ele_york.icon_router' endobject='ele_host_york.icon_host' depth='4' />
+			<element src='gr_line'   id='ele_line3'   beginobject='ele_melk.icon_router' endobject='ele_host_melk.icon_host' depth='5' />
+		</window>
+
+		<window id='win_post' resize='none' titletextid='txt_post' visible='false' height='387' width='580' y='3' x='110' scrolling='none' depth='400' minheight='387' minwidth='580'> 
+			<element id='ele_ht_post' src='dev_post' container='IOobject' /> 
+		</window>
+		<window id='win_york' resize='none' titletextid='txt_york' visible='false' height='387' width='580' y='13' x='120' scrolling='none' depth='401' minheight='387' minwidth='580'> 
+			<element id='ele_ht_york' src='dev_york' container='IOobject' /> 
+		</window>
+		<window id='win_melk' resize='none' titletextid='txt_melk' visible='false' height='387' width='580' y='23' x='130' scrolling='none' depth='402' minheight='387' minwidth='580'> 
+			<element id='ele_ht_melk' src='dev_melk' container='IOobject' /> 
+		</window>
+
+	</presentation>
+
+	<scoring />
+</avalontask>

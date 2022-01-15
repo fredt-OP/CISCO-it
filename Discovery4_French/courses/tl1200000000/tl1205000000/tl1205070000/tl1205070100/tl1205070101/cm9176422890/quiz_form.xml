@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13409" dateexported="06/30/2008">
+		<name>Module 5 Questionnaire</name>
+		<form id="21463" lang="fr"><form-item order="fixed">
+			<ai id="140367" type="mc-ma"><question><![CDATA[Quelles fonctionnalités de commutateur multicouche satisfont l’objectif de disponibilité d’une conception de réseau ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Gestion in band et hors bande ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Équilibrage de charge efficace du trafic routé  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Transmission de paquets basée sur le logiciel ou hiérarchisation du trafic grâce à la qualité de service ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Blocs d’alimentation et ventilateurs redondants  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Résumé de routage réduisant l’impact d’une panne de périphérique de niveau inférieur  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fonctionnalités de sécurité empêchant le trafic réseau non autorisé ou indésirable ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140371" type="mc-ma"><question><![CDATA[Un administrateur réseau souhaite améliorer le temps de traitement des transactions ainsi que la qualité des signaux vocaux et vidéo. Quelles mesures permettraient d’atteindre ces objectifs ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Réduire le trafic et les diffusions de réseau  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Construire des réseaux locaux virtuels pour des types de trafic différents  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Supprimer les serveurs de stockage et de contenu à haut débit ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Implémenter la qualité de service sur le réseau  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Augmenter le filtrage de trafic ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Allonger les points d’extrémité de trafic ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140395" type="mc-sa"><question><![CDATA[Comment les informations collectées au cours de l’évaluation des risques doivent-elles être utilisées pour prendre en charge la conception du réseau ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Aider à identifier le trafic inconnu ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Établir des jeux de règles de pare-feu  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Déterminer les besoins en termes de redondance ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Isoler et identifier une attaque de sécurité ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140379" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140379" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Disponibilité 24 heures sur 24, 7 jours sur 7</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Trafic agrégé</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Créer des réseaux locaux virtuels</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Connectivité à haut débit vers des commutateurs de la couche de distribution</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Classification de qualité de service</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Filtrage du trafic</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Accès</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Cœur de réseau</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Distribution</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque exigence de conception à gauche vers la couche de conception correspondante à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="15" yspacing="65" targetH="30"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="2" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="190.5" containsTargets="2" startTarg="3" labelStyle="1" /><display componentIdent="3" xpos="600" ypos="289.5" containsTargets="2" startTarg="5" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="199" /><display componentIdent="4" xpos="600" ypos="236" /><display componentIdent="5" xpos="600" ypos="298" /><display componentIdent="6" xpos="600" ypos="335" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident="2"><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident="3"><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221658" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="221658" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="221658" action="Set">1</setvar><scoringdescription>Accès : créer des réseaux locaux virtuels et qualité de service ; Cœur de réseau : disponibilité 24 heures sur 24, 7 jours sur 7 et connectivité à haut débit ; Distribution : trafic agrégé et filtrage du trafic</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140372" type="mc-ma"><question><![CDATA[Un administrateur réseau est chargé de fournir un rapport sur les mesures prises pour garantir la disponibilité totale de la couche cœur de réseau d’un réseau d’entreprise. Si le réseau a été configuré correctement, quelles options l’administrateur pourra-t-il inclure dans le rapport ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Liaisons redondantes entre les couches de distribution et cœur de réseau  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Système d’alimentation de sauvegarde et système de climatisation opérationnel  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Protocoles de routage EIGRP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Listes de contrôle d’accès ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sécurité des ports de commutateur ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mécanismes de qualité de service ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140396" type="mc-sa"><question><![CDATA[Quelle implémentation de conception élimine le besoin de créer un réseau local virtuel unique de bout en bout pour l’itinérance (« roaming ») sans fil ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Utilisation d’une solution de point d’accès léger avec des contrôleurs de réseau local sans fil  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configuration de chaque point d’accès autonome avec une adresse de réseau local virtuel différente ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Regroupement de tous les points d’accès autonomes dans le même sous-réseau IP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configuration de tous les points d’accès pour qu’ils utilisent le même canal ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140397" type="mc-sa"><question><![CDATA[Le responsable d’une librairie locale demande à l’un de ses employés qui étudie les réseaux d’implémenter un réseau sans fil afin de permettre aux clients et aux employés de bénéficier d’une connectivité à Internet. Le réseau sans fil doit pouvoir fonctionner même en cas d’échec sur un point d’accès, car des concurrents situés à proximité offrent également ce service. Le propriétaire de la librairie envisage d’occuper davantage d’espace dans le bâtiment actuellement occupé et souhaite pouvoir installer facilement des points d’accès supplémentaires. Le personnel de la librairie a des connaissances techniques limitées et souhaite par conséquent que la configuration des paramètres de sécurité soit automatique sur tous les points d’accès sans fil. L’étudiant en réseaux recommande ce qui suit :<br /><br />1. Installer un commutateur de couche 2 à douze ports et connecter deux points d’accès sans fil au commutateur sur le même réseau local virtuel, mais sur des canaux différents. <br />2. Former le personnel à l’installation des points d’accès en utilisant les paramètres de sécurité par défaut. Lequel des énoncés suivants décrit le mieux dans quelle mesure la recommandation répond aux objectifs de la librairie ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La recommandation répond à tous les objectifs techniques du client. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La recommandation ne répond pas à l’objectif d’évolutivité. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La recommandation ne répond pas à l’objectif de disponibilité. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La recommandation ne répond pas à l’objectif de sécurité.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La recommandation ne répond pas à l’objectif de facilité de gestion. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140364" type="mc-sa"><question><![CDATA[Une grande entreprise souhaite que ses travailleurs externes disposent d’un accès interne aux informations stockées sur le serveur de l’entreprise. Quelle méthode fournit une transmission tunnel sécurisée via Internet ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Réseau privé virtuel  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Point d’accès sans fil public ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Système de détection d’intrusions ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Protocole SSH ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140365" type="mc-sa"><question><![CDATA[Dans quelle circonstance une connexion T1 point à point est-elle préférable à Frame Relay ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les coûts constituent la priorité de premier ordre ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La qualité de service est la priorité de premier ordre  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Seul du trafic de données utilise la connexion ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une connectivité vers des sites multiples sur la même connexion physique est requise ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140406" type="mc-sa"><question><![CDATA[Reportez-vous au schéma. Où l’administrateur réseau doit-il placer une liste de contrôle d’accès standard pour empêcher les utilisateurs du sous-réseau 10.10.10.0/24 d’accéder au serveur dans le sous-réseau 10.10.20.0/24 ? <br/><img src="i140406n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Routeur RTR1, interface F0/0, entrant ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routeur RTR1, interface S0/0, sortant ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routeur RTR2, interface S0/0, entrant ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Routeur RTR2, interface F0/0, sortant  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

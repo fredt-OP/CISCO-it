@@ -1,0 +1,117 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Traditional Inter-VLAN Routing</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Click Play to view the animation.</b>]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_bubble03">
+<text><![CDATA[<b><font size='12'>Trunk</font></b>]]></text>
+</component>
+
+<component id="ID_bubble04">
+<text><![CDATA[<b><u>Switch S1 Ports</u><br/>F0/6 = VLAN10<br/>F0/5 = VLAN30<br/>F0/1-F0/4 = Trunk<br/><br/><u>Switch S2 Ports</u><br/>F0/11 = VLAN10<br/>F0/18 = VLAN 20<br/>F0/6 = VLAN30<br/>F0/1-F0/4 = Trunk</b>]]></text>
+</component>
+
+<component id="ID_bubble05">
+<text><![CDATA[<b>VLAN<br/>Tagged Frame</b>]]></text>
+</component>
+
+<component id="ID_frame01">
+<text><![CDATA[<b>Unicast</b>]]></text>
+</component>
+
+<component id="ID_frame02">
+<text><![CDATA[<b>Unicast VLAN10</b>]]></text>
+</component>
+
+<component id="ID_frame03">
+<text><![CDATA[<b>Unicast VLAN30</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>PC1 sends out a local layer 2 broadcast. The switches forward the broadcast frame out all available ports.</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>PC1 sends out a local layer 2 broadcast. The switches forward the  broadcast frame only out ports configured for VLAN10.</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Faculty<br/> VLAN 10 -<br/>172.17.10.21</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Student<br/>VLAN 20 -<br/>172.17.20.22</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Faculty<br/>VLAN 10 -<br/>172.17.10.24</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Student<br/>VLAN 20 -<br/>172.17.20.25</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>VLAN Trunks configured to support: VLAN 10, 20</b>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward2">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute2">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute2"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+</textcomponents>

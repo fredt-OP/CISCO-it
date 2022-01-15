@@ -1,0 +1,71 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) <textformat blockindent='20'>Décrivez les avantages organisationnels, sociaux et écologiques du télétravail.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(voir 6.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Avantages organisationnels :</b><ul><li>Continuité opérationnelle</li><li>Temps de réponse accéléré</li><li>Accès sécurisé, fiable et gérable aux informations</li><li>Intégration rentable des données, des communications vidéo et vocales et des applications</li><li>Productivité, satisfaction et fidélisation accrues des télétravailleurs</li></ul><b>Avantages sociaux :</b><ul><li>Meilleures opportunités d’emploi pour les groupes marginalisés</li><li>Déplacements réduits et limitation du stress lié aux déplacements professionnels</li></ul><b>Avantages écologiques :</b><ul><li>Réduction des émissions de dioxyde de carbone pour les travailleurs et les entreprises</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) <textformat blockindent='20'>Décrivez les quatre principales méthodes de connexion auxquelles ont recours les particuliers et les petits bureaux.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(voir 6.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Accès par ligne téléphonique : </b><ul><li>Option peu onéreuse nécessitant une ligne de téléphone et un modem. </li><li>Cette connexion est la plus lente. Elle est généralement utilisée dans des zones géographiques où la connexion à plus grande vitesse n’existe pas.</li></ul><b>DSL : </b><ul><li>Option plus chère que la connexion commutée mais plus rapide. </li><li>La ligne DSL utilise également le téléphone. Néanmoins, contrairement à l’accès commuté, elle garantit une connexion continue sur Internet. </li><li>La ligne DSL utilise un modem spécial à haut débit, qui distingue le signal DSL du signal téléphonique et fournit une connexion Ethernet à un ordinateur hôte ou à un réseau local.</li></ul><b>Modem câble : </b><ul><li>Un modem câble est une option de connexion offerte par les fournisseurs de services de télévision câblée. </li><li>Le signal Internet se situe sur le même câble coaxial qui prend en charge la télévision câblée des particuliers et petits bureaux.</li><li>Un modem câble spécial distingue le signal Internet des autres signaux se situant sur le câble et fournit une connexion Ethernet à un ordinateur hôte ou à un réseau local. </li></ul><b>Satellite : </b><ul><li>option offerte par les fournisseurs de services par satellite. </li><li>L’ordinateur de l’utilisateur est connecté par Ethernet à un modem satellite, qui transmet des signaux radio au point de présence le plus proche (POP) sur le réseau satellite.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) <textformat blockindent='20'>Décrivez les deux types de réseau privé virtuel.</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(voir 6.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Réseaux privés virtuels de site à site :</b><ul><li>Il s’agit en fait d’une extension du réseau étendu classique qui peut connecter le réseau d’une agence au réseau d’un siège.</li><li>Les hôtes envoient et reçoivent le trafic TCP/IP via une passerelle de réseau privé virtuel, à savoir un routeur, un dispositif de pare-feu PIX ou un appareil de sécurité adaptatif (ASA). </li><li>La passerelle du réseau privé virtuel est chargée d’encapsuler et de chiffrer le trafic sortant pour tout trafic provenant d’un site donné. Elle est également chargée de l’envoyer via un tunnel du réseau privé virtuel sur Internet à une passerelle homologue sur le site cible.</li><li>À réception, la passerelle du réseau privé virtuel supprime les en-têtes, déchiffre le contenu et transfère le paquet vers l’hôte cible sur son réseau privé.</li></ul><b>Réseaux privés virtuels d’accès distant :</b><ul><li>Les utilisateurs mobiles et les télétravailleurs utilisent largement les réseaux privés virtuels d’accès distant.</li><li>En règle générale, les connexions des réseaux privés virtuels d’accès distant sont sur large bande passante.</li><li>Chaque hôte dispose du logiciel client du réseau privé virtuel pour encapsuler et chiffrer le trafic avant de l’envoyer sur Internet à la passerelle du réseau privé virtuel à la périphérie du réseau cible.</li><li>À réception, la passerelle du réseau privé virtuel gère les données comme elle le ferait depuis un réseau privé virtuel de site à site.</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Fin des questions portant sur les thèmes de ce chapitre.</b>]]></text>
+</component>
+
+</textcomponents>

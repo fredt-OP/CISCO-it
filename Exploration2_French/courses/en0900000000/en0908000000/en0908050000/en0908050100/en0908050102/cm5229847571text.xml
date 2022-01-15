@@ -1,0 +1,287 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+<!-- Question 1 -->
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) What makes a level 1 or level 2 route an ultimate route?]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 8.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[When the route also contains a next-hop IP address or an exit interface.]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[<b>When using VLSM or classless protocols.</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) When is the subnet mask displayed with the child route and not the parent route?]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from 8.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 3 -->
+
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Does the Network Administrator configure the parent route?]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from 8.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[No, it is created when the subnet (level 2 child) route is added to the routing table.]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 4 -->
+
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Can there be a parent route without any child routes?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from 8.1)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[No. A parent route does not contain next-hop address or exit interface. This information is contained in the child routes.]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 5 -->
+
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Before any level 2 child routes are examined for a match, what must first match?]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from 8.2)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[There must be a match with the level 1 parent route.]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 6 -->
+
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q6_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) What determines how many bits must match between the destination IP address of a packet and a route in the routing table ?]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(from 8.2)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[The subnet mask for that entry in the routing table.]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 7 -->
+
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[(from 8.3)]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) What is the default routing behavior on Cisco routers and what command can be used to modify this ?]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[The default routing behavior is classless. The <b><font face='_typewriter'>no ip classless</font></b> command can be used to modify the routing behavior. ]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q7_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 8 -->
+
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) Which of the routes are considered level 2 child routes and what is their level 1 parent route?]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(from 8.1)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[The source encapsulates data in a packet with soure and destination IP addresses. It then encapsulates the packet into a frame with source and destination MAC addresses and sends the frame out as bits on the wire. The frame is received by the source’s gateway—a router—a is decapsulated. If the destination MAC address is the router, then the router will search the routing table for an outgoing interface to the destination, encapsulate the packet in the appropriate frame format for the outgoing interface with new source and destination layer 2 addresses and forward the frame out the interface. This process is repeated at each router along the path until the packet reaches the destination. From source to destination, the layer 2 addresses change at each hop. However, the source and destination addresses do not change.<br/><br/><b>This concludes the Check Your Understanding questions.</b>]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 9 -->
+
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[(from 8.3)]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9) Before the 172.16.1.0, 172.16.2.0 and 172.16.3.0 routes can be examined for a match, what route must match first? How many bits must match this route before the subnets are examined?]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[There must first be a match with the 172.16.0.0 parent route. 16 bits must match the parent route (/16 is the classful mask of the parent).]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 10 -->
+
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q10_txt02">
+<text><![CDATA[(from 8.3)]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10) If the command no ip classless was configured on this router, what would happen to a packet with the destination IP address 172.16.4.5? Would any of the level 1 parent's child routes be examined for a match?]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[The packet would be dropped. The packet would match the level 1 parent 172.16.0.0 but not match any of the child routes. Because of classful routing behavior the routing table lookup process would not continue searching supernet and default routes.]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q10_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 11 -->
+
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q11_txt02">
+<text><![CDATA[(from 8.3)]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11) If the command <font face='_typewriter'><b>ip classless</b></font> was configured on this router, what would happen to a packet with the destination IP address 172.16.4.5? What route would it use if any? Would any of the level 1 parent's child routes be examined for a match?]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[The packet would be forwarded using the default route. The packet would match the level 1 parent 172.16.0.0 but not match any of the child routes. Because of classless routing behavior the routing table lookup process would continue to search supernet and default routes.]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>This concludes this chapter's Problems and Discussion questions.</b>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+

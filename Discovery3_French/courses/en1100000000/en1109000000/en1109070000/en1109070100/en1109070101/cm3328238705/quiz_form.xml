@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19847" lang=""><form-item order="fixed">
+			<ai id="117837" type="mc-ma"><question><![CDATA[Refer to the exhibit. All IP addresses have been correctly configured and all interfaces are up. Based on the information shown, which two statements describe what will occur while testing the network? (Choose two.) <br/><img src="16891.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[RTA and RTB are able to ping each other's serial interfaces.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RTA and RTB do not learn any routes from each other through the RIP process.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RTB has all five of the networks listed in the routing table. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RTA has all five of the networks listed in the routing table. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RTA and RTB will have three entries in the route table found via RIP. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="118191" type="mc-sa"><question><![CDATA[Which utility is able to detect and monitor different types of traffic on a network and trigger an alarm when an excessive amount of a specified packet type is seen?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[ping ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SNMP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[tracert ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[packet sniffer ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="118680" type="mc-sa"><question><![CDATA[Refer to the exhibit. The network administrator configured the ACL to deny the LAN access to a web server with known viruses. However, the users can still reach this server. What could be the cause of the problem? <br/><img src="16897.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The access list should specifically deny TCP port 80. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The access list should be applied inbound on the interface instead of outbound.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The access list should be a standard access list instead of an extended. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The access list has the source address and destination address reversed. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119063" type="mc-sa"><question><![CDATA[Refer to the exhibit. An administrator has been adding new VLANs to Sw-2 and notices that the new information is not recognized by Sw-3.  Given the output of the <b>show vtp status</b> command, what is the reason why information is not shared in this VTP domain? <br/><img src="16894.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The VTP domain is not the same between the switches. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Sw-3 is configured for transparent mode.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VTP version 2 has been disabled. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VTP traps have been disabled. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119137" type="mc-sa"><question><![CDATA[Refer to the exhibit.  Two neighboring routers are not able to establish connectivity.  Based on the output of the <b>debug ppp authentication</b> command, which statement is true? <br/><img src="16598.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[only one side requires authentication ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[an incorrect hash string is received from the remote router  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the remote location is configured with PAP authentication instead of CHAP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the authentication methods are incompatible ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119142" type="mc-sa"><question><![CDATA[Refer to the exhibit.  The ACME Company implements VLANs across its network infrastructure to further control the network traffic.  The network administrator issued the <b>show vlan</b> command on SW2 to verify the VLAN configuration.  Which statement is true? <br/><img src="16901.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[All ports will be participating in VLAN 1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Traffic in each VLAN will not be seen in other VLANs.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The status “active” indicates there are 22 devices currently connected to SW2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Since VLAN 1 is the management VLAN, RTA can connect to any port in VLAN 1 to route between different VLANs. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119181" type="mc-sa"><question><![CDATA[What is one way to limit the size of a failure domain?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[implement a classless routing protocol ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[create redundant paths wherever possible  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[backup configuration files ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ensure devices are hot-swappable ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121071" type="mc-sa"><question><![CDATA[Refer to the exhibit. The server was just added to the network and no hosts are able to connect to it. What could be the problem? <br/><img src="16886.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The IP address of the server should be dynamic instead of static. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The IP address assigned to the server is the network address for this subnetwork. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The IP address assigned to the server is the broadcast address for this subnetwork.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The network is not subnetted correctly. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121072" type="mc-ma"><question><![CDATA[A technician is troubleshooting a loss of connectivity and suspects that an incorrectly configured ACL is the cause. Which two commands can the technician use to verify that the ACL is incorrectly configured? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>show protocols</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show running-config</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip route</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show access-lists</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip interface</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121085" type="mc-sa"><question><![CDATA[Refer to the exhibit.  Why is neighbor 192.168.199.137 not a DROTHER? <br/><img src="16917.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[It is participating in OSPF over a point to point interface.    ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The <b>network</b> command is misconfigured on the local router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The <b>network</b> command is misconfigured on the neighboring router. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[OSPF authentication has been enabled on the local router but not on the neighboring route. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

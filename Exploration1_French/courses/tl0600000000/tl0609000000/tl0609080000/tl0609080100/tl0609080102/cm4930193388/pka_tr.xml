@@ -1,0 +1,145 @@
+﻿<TRANSLATION>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >Root</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >Root</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >Root</NAME>
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <PAGE translate="true">&lt;h2&gt;Exercice 9.8.1 : &lt;br&gt;protocole ARP (Address Resolution Protocol)&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Le texte situé entre ces deux séries de symboles (&lt;!-- et -- &gt;) représente des commentaires pour l'auteur ; ces derniers ne sont pas visibles. Conservez tous les commentaires pour les développements ultérieurs et le contrôle qualité. L'utilisateur ne voit pas le texte HTML dans Packet Tracer.
+
+Pour consulter les instructions de base en matière de formatage HTML, reportez-vous à la section relative aux normes Packet Tracer ou au fichier &quot;HTML_Coding_Standards.html&quot; ******************************************************************************** --&gt;
+
+&lt;!-- REMARQUE STANDARD À L&apos;ATTENTION DE L'UTILISATEUR pour tous les exercices intégrés si le cours prévoit ce qui suit --&gt;
+
+
+
+&lt;!-- ================================================== Table d'adressage Reportez-vous au fichier &quot;HTML_Coding_Standards.html&quot; pour savoir comment ajuster cette table afin de l'inclure à l'exercice que vous rédigez. ================================================== --&gt; &lt;h3&gt;Table d'adressage&lt;/h3&gt; &lt;p&gt;Cet exercice ne comprend pas de table d'adressage.&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Utiliser la commande &lt;b&gt;arp&lt;/b&gt; de Packet Tracer &lt;li&gt;Utiliser Packet Tracer pour analyser les échanges ARP &lt;/ul&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;TCP/IP utilise le protocole ARP pour mapper une adresse IP de la couche 3 sur une adresse MAC de la couche 2. Si vous insérez une trame sur le réseau, assurez-vous qu'elle dispose d'une adresse MAC de destination. Une requête ARP est diffusée sur le réseau local (LAN) pour procéder à une détection dynamique de l'adresse MAC du périphérique de destination. Le périphérique contenant l'adresse IP de destination répond et l'adresse MAC est enregistrée dans le cache ARP. Chaque périphérique conserve son cache ARP sur le réseau local ou, du moins, une petite zone dans la mémoire vive (RAM) contenant les résultats ARP. Un minuteur de cache ARP supprime les saisies ARP qui n'ont pas été utilisées pendant un certain temps. Ces délais varient en fonction des périphériques concernés. Par exemple, certains systèmes d'exploitation Windows stockent les saisies de cache ARP pendant deux minutes. Si vous utilisez ces saisies au cours de ces deux minutes, le minuteur ARP est prolongé de 10 minutes.&lt;P&gt; ARP est un excellent exemple pour illustrer les compromis en termes de performances. Sans cache, le protocole ARP doit constamment demander des traductions d'adresses à chaque fois qu'une trame est insérée sur le réseau. Ce cas de figure implique une latence accrue en termes de communication et un risque de congestion sur le réseau local (LAN). Inversement, le délai d'attente risque d'occasionner de graves erreurs avec les périphériques qui quittent le réseau ou modifient l'adresse de la couche 3.&lt;P&gt; Un ingénieur réseau doit connaître le protocole ARP sans intervenir régulièrement. Le protocole ARP permet aux périphériques réseau de communiquer avec le protocole TCP/IP. Sans protocole ARP, vous ne pouvez pas créer l'adresse de destination de la couche 2 pour le datagramme de manière efficace. Qui plus est, le protocole ARP représente un risque en termes de sécurité. L'usurpation ARP, ou empoisonnement ARP, est une technique qu'utilise une personne malveillante pour injecter la mauvaise association d'adresses MAC sur un réseau. Une personne malveillante contrefait l'adresse MAC d'un périphérique ; les trames sont envoyées à la mauvaise destination. La configuration manuelle d'associations ARP statiques permet d'empêcher l'usurpation ARP. Pour finir, vous pouvez configurer une liste d'adresses MAC autorisées sur les périphériques Cisco pour limiter l'accès au réseau aux périphériques autorisés.&lt;/p&gt;
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant  --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 1 : utiliser la commande arp de Packet Tracer&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Affichez la ligne de commande.&lt;/h4&gt; &lt;/b&gt;Cliquez sur le bouton &lt;b&gt;Command Prompt&lt;/b&gt; dans &lt;b&gt;Desktop&lt;/b&gt; sur PC 1A. La commande &lt;b&gt;arp&lt;/b&gt; affiche uniquement les options disponibles dans Packet Tracer.
+
+&lt;h4&gt; &lt;b&gt;Étape 2. Utilisez la commande ping pour ajouter des saisies dans le cache ARP de manière dynamique.&lt;/b&gt;&lt;/h4&gt; &lt;h4&gt; &lt;span style=&quot;font-weight: 400&quot;&gt;La commande ping sert à tester la connectivité du réseau. Lorsque vous accédez aux autres périphériques, les associations ARP&lt;br&gt; sont ajoutées au cache ARP de manière dynamique. Effectuez le test ping de l'adresse 255.255.255.255 sur PC 1A et lancez la commande arp -a pour consulter les adresses MAC enregistrées. &lt;/span&gt;&lt;/h4 &lt;h4&gt;À la fin de cette tâche, votre taux d'achèvement doit s'élever à 100%. 
+
+
+
+&lt;/h4&gt; &lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">&lt;h3&gt;Tâche 2 : utiliser Packet Tracer pour analyser les échanges ARP&lt;/b&gt; &lt;/h3&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Configurez Packet Tracer pour des saisies de paquets.&lt;/b&gt;&lt;/h4&gt; &lt;h4&gt; &lt;span style=&quot;font-weight : 400&quot;&gt;Passez en mode de simulation. Assurez-vous que &lt;b&gt;Event List Filters&lt;/b&gt; affiche uniquement les événements ARP et ICMP. &lt;/span&gt;&lt;/h4&gt;
+
+&lt;h4&gt; &lt;span style=&quot;font-weight: 400&quot;&gt; &lt;b&gt;Étape 2. Préparez l'ordinateur hôte pod pour des saisies ARP.&lt;/b&gt;&lt;/span&gt;&lt;/h4&gt; &lt;h4&gt; &lt;span style=&quot;font-weight: 400&quot;&gt;Utilisez la commande &lt;b&gt;arp -d&lt;/b&gt; de Packet Tracer
+
+sur PC 1A. Exécutez le test ping de l'adresse 255.255.255.255.&lt;/span&gt;&lt;/h4&gt;&lt;h4&gt; &lt;span style=&quot;font-weight: 400&quot;&gt; &lt;b&gt;Étape 3. Capturez et évaluez la communication ARP.&lt;/b&gt;&lt;/span&gt;&lt;/h4&gt; &lt;h4&gt; &lt;span style=&quot;font-weight: 400&quot;&gt; Pour le&amp;nbsp; test ping, cliquez sur le bouton &lt;b&gt;Auto Capture / Play&lt;/b&gt; pour capturer des paquets après avoir exécuté la commande. Lorsque la fenêtre &lt;b&gt;Buffer Full&lt;/b&gt; s'affiche, cliquez sur le bouton &lt;b&gt;View Previous Events&lt;/b&gt;. &lt;/span&gt;&lt;/h4&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'achèvement doit s'élever à 100%. 
+
+&lt;/h4&gt;
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant  --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true" >R1-ISP</ID>
+ <ID translate="true" >R2-Central</ID>
+ <ID translate="true" >S1-Central</ID>
+ <ID translate="true" >Eagle Server</ID>
+ <ID translate="true" >1A</ID>
+ <ID translate="true" >1B</ID>
+ <ID translate="true" >R1-ISP</ID>
+ <ID translate="true" >R2-Central</ID>
+ <ID translate="true" >S1-Central</ID>
+ <ID translate="true" >Eagle Server</ID>
+ <ID translate="true" >1A</ID>
+ <ID translate="true" >1B</ID>
+ <ID translate="true" >Scenario 0</ID>
+</TRANSLATION>

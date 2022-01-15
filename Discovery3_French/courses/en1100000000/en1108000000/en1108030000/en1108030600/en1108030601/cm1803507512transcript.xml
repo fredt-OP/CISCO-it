@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 19:09:14">
+<title><content-text><![CDATA[8.3.6 - Configure Router VTY Access]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts router vty access configuration.<br><br>Network Topology<br>An Internet cloud is directly connected to a router, labeled 01234, by serial link. Also connected to the Internet cloud is a network administrator who telnets from a local machine with the IP address 209.165.202.130 to the address 209.165.200.225. <br><br>The last connection is from a hacker located outside the Internet cloud.  The IP address of the hacker is 209.165.201.5. The hacker telnets to the address 209.165.200.225 for router 01234. The router has the following commands entered at the console session:<br><br>R1 (config) # access-list 3 permit host 209.165.202.130<br>R1 (config) # line vty 0 4<br>R1 (config-line) # access-class 3 in<br><br>The network administrator is permitted Telnet access to router 01234, while the hacker's request to a Telnet session is denied.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

@@ -1,0 +1,91 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Describe four of the six types of WAN encapsulation protocols.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 2.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<ul><li><b>HDLC</b> – The default encapsulation type on point-to-point connections, dedicated links, and circuit-switched connections when the link uses two Cisco devices.</li><li><b>PPP</b> – Provides router-to-router and host-to-network connections over synchronous and asynchronous circuits. PPP works with several network layer protocols, such as IP and IPX. PPP also has built-in security mechanisms such as PAP and CHAP.</li><li><b>Serial Line Internet Protocol (SLIP)</b> – A standard protocol for point-to-point serial connections using TCP/IP. SLIP has been largely displaced by PPP.</li><li><b>X.25/Link Access Procedure, Balanced (LAPB)</b> – ITU-T standard that defines how connections between a DTE and DCE are maintained for remote terminal access and computer communications in public data networks. X.25 specifies LAPB, a data link layer protocol. X.25 is a predecessor to Frame Relay.</li><li><b>Frame Relay</b> – Industry-standard, switched, data link layer protocol that handles multiple virtual circuits. Frame Relay is a next-generation protocol after X.25. Frame Relay eliminates some of the time-consuming processes (such as error correction and flow control) employed in X.25.</li><li><b>ATM</b> – The international standard for cell relay in which devices send multiple service types (such as voice, video, or data) in fixed-length (53 byte) cells. Fixed-length cells allow processing to occur in hardware, thereby reducing transit delays. ATM takes advantages of high-speed transmission media such as E3, SONET, and T3.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Describe the functions of LCP and NCP.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from  2.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Link Control Protocol (LCP) Layer</b><ul><li>Sits on top of the physical layer and has a role in establishing, configuring, and testing the data-link connection.</li><li>Establishes the point-to-point link.</li><li>Provides automatic configuration of the interfaces at each end, including handling varying limits on packet size, detecting common misconfiguration errors, terminating the link, and determining when a link is functioning properly or when it is failing.</li><li>Is also used to negotiate authentication, compression, error detection, multilink, and PPP callback after the link is established.</li><li>Negotiates and sets up control options on the WAN data link, which are handled by the NCPs.</li><br/><b>Network Control Protocol (NCP) Layer</b><ul><li>Includes functional fields containing standardized codes to indicate the network layer protocol that PPP encapsulates.</li><li>Handles the assignment and management of IP addresses in IPCP.</li><li>Encapsulates and negotiates options for multiple network layer protocols.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Describe the five configurable LCP encapsulation options.]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from  2.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Authentication using PAP or CHAP</b><ul><li>If all you need is password authentication, configure PAP using the ppp authentication pap command.</li><li>If you want a challenge handshake, configure CHAP using the ppp authentication chap command (more secure).</li></ul><br/><b>Compression</b><ul><li>Increases the effective throughput by reducing the amount of data in the PPP frame that must travel across the link.</li><li>To configure Stacker, use compress stac command. To configure Predictor, use the compress predictor command.</li></ul><br/><b>Error Detection</b><ul><li>Identifies fault conditions to help ensure a reliable, loop-free data link.</li><li>Configured using the ppp quality number 1-100 command.</li></ul><br/><b>Multilink</b><ul><li>Provides load balancing over the router interfaces that PPP uses using the command ppp multilink.</li></ul><br/><b>PPP Callback</b><ul><li>Enhances security by making a Cisco router a callback client, which makes the initial call, requests that the other Cisco router configured as a server call it back, and terminates its initial call.</li><li>The command is ppp callback [accept | request].</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Refer to the figure. Router R1 is unable to connect with router R3. On the basis of the information presented, which configuration changes on router R1 would correct the problem?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from  2.4)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>On router R1</b><ul><li>There are two errors in the <b>username</b> command. The router name should be R3, and the password should be <b>cisco</b>. Therefore, the correct command is <b>username R3 password cisco</b>.</li><li>The third error is in the <b>ppp authentication</b> command. It should be <b>ppp authentication chap</b>.</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>This concludes this chapter's Check Your Understanding questions.</b>]]></text>
+</component>
+</textcomponents>

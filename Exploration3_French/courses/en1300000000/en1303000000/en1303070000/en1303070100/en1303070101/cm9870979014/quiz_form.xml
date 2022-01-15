@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/13/2008">
+		<name>Module  Quiz</name>
+		<form id="22146" lang=""><form-item order="fixed">
+			<ai id="116883" type="mc-sa"><question><![CDATA[Switch1 and Switch2 are both configured with ports in the Marketing, Sales, Production, and Admin VLANs. Each VLAN contains 12 users. How many different subnetworks are needed to address VLANs?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[4  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[8 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[12 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[24 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116864" type="mc-sa"><question><![CDATA[What mechanism is used to achieve the separation between different VLANs as they cross a trunk link?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[VLAN tagging using 802.1Q protocol  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VLAN tagging using 802.1p protocol ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VLAN multiplexing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VLAN set as native VLAN ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116917" type="mc-ma"><question><![CDATA[What are two options to consider when configuring a trunk between two switches? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The <b>switchport nonegotiate</b> command must be configured for trunks that use DTP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Port security cannot be configured on the trunk interfaces.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The native VLAN must be the same on both ends of the trunk.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Different encapsulation types can be configured on both ends of the trunk link. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Trunk ports can only be configured on the GigabitEthernet ports. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120660" type="mc-ma"><question><![CDATA[A 12-port switch has been configured to support three VLANs named Sales, Marketing, and Finance. Each VLAN spans four ports on the switch. The network administrator has deleted the Marketing VLAN from the switch. What two statements describe the status of the ports associated with this VLAN? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[The ports are inactive  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The ports are administratively disabled. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The ports will become trunks to carry data from all remaining VLANs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The ports will remain part of the Marketing VLAN until reassigned to another VLAN.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The ports were released from the Marketing VLAN and automatically reassigned to VLAN1. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116867" type="mc-ma"><question><![CDATA[Which three statements are true about hosts configured in the same VLAN? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Hosts in the same VLAN must be on the same IP subnet.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts in different VLANs can communicate with the aid of only the Layer 2 switch. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Hosts in the same VLAN share the same broadcast domain.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts in the same VLAN share the same collision domain. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Hosts in the same VLAN comply with the same security policy.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts in the same VLAN must be on the same physical segment. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120661" type="mc-sa"><question><![CDATA[Refer to the exhibit. Host C is unable to transfer data because it does not have the MAC address of the destination host.  If Host C sends out an ARP request, which of the other hosts will see this message? <br/><img src="i120661n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Host A ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Host B  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts A and B ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts A and D ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts B and D ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts A, B, and D ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="55685" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="55685" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Each port is associated with a specific VLAN.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Manual configuration of port assignments required.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Ports work out their own configuration.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Less administrative overhead when users are moved.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Requires administrator interaction when users move.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Configuration based on database.</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Static VLAN</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Dynamic VLAN</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Match the characteristics of using static and dynamic VLANs by dragging the options on the left to the appropriate targets on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="10" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="VLANs" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="VLANs" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>2</componentident><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident><componentident>4</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="VLANs" action="Set">1</setvar><scoringdescription>static, each port is associated, manual config, requires administrators interaction, dynamic, ports work out, less administration, config based on database</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="133373" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116880" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>1-1005</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>1006-4094</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>not learned by VTP</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>default management VLAN</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>all ports are a member by default</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>contains reserved VLANs for Token Ring and FDDI</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Normal range VLAN</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Extended range VLAN</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>VLAN 1</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the options on the left to the appropriate category on the right. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="60" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="2" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="190.5" containsTargets="2" startTarg="3" labelStyle="1"/><display componentIdent="3" xpos="600" ypos="289.5" containsTargets="2" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="199"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="298"/><display componentIdent="6" xpos="600" ypos="335"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident ="2"><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="3"><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214481" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214481" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="214481" action="Set">1</setvar><scoringdescription>Normal range VLAN 1-1006, contains Token Ring and FDDI   Extended range VLAN 1006-4094 not advertised by VTP  VLAN 1 default management VLAN all ports are a member by default</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="133371" type="mc-sa"><question><![CDATA[Refer to the exhibit. Brand new switches with empty CAM tables are interconnected via a trunk link. All hosts on both switches are configured with the VLAN memberships shown. How is a frame sent from Host A forwarded to Host B? <br/><img src="20354.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Switch SW1 floods the message from Host A to all hosts attached to SW1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch SW1 floods the message from Host A to all hosts attached to both switches. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch SW1 tags the frame with VLAN ID 10 and floods the frame to all hosts on switch SW2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Switch SW1 tags the frame with VLAN ID 10 and floods the frame to all hosts on switch SW2 that are members of VLAN10.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="149411" type="mc-ma"><question><![CDATA[Refer to the exhibit. Host1 is connected to port 0/4 with an IP address of 192.168.1.22/28.  Host2 is connected to port 0/5 with an IP address of 192.168.1.33/28. Host3 is connected to port 0/6 with an IP address of 192.168.1.30/28.  Select the three statements that describe the success of pinging from one host to another.  (Choose three.) <br/><img src="25424.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Host1 can ping Host2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Host1 cannot ping Host2.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Host1 can ping Host3.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Host1 cannot ping Host3. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Host2 can ping Host3. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Host2 cannot ping Host3.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="116890" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116890" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show vlan id</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b> show vlan</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b> show vlan brief</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b> show interface fa0/1 switchport</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b> show interface fa0/1</b> </mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>displays detailed information about all VLANs on the switch</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>displays VLAN information about a specific port</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>displays information about a specific VLAN</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the command on the left to the associated description on the right. (Not all options are used.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214493" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214493" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="214493" action="Set">1</setvar><scoringdescription>show vlan id	displays information about a specific VLAN  show vlan	displays information about all VLANs on the switch  show interface fa0/1 switchport	displays information about a specific port</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="116895" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116895" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport mode trunk</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport mode dynamic desirable</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport nonegotiate</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>switchport mode access</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>configures the port to negotiate a trunk</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>configures the trunk to not send DTP packets</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>configures the port as a permanent 802.1q trunk</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>disables trunk mode</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the command on the left to the associated description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214502" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214502" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="214502" action="Set">1</setvar><scoringdescription>witchport mode trunk		configures the port as a permanent 802.1q trunk switchport mode dynamic desirable	configures the port to negotiate a trunk switchport nonegotiate		configures the trunk to not send DTP packets switchport mode access		disables trunk mode</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="116899" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116899" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>native VLAN mismatch</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>trunk mode mismatch</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>incorrect VLAN list</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>VLAN subnet conflict</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>both switches are configured to dynamic auto and will not negotiate a link</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>not all the VLANs needed are allowed to traverse a trunk</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>two VLANs are sharing the same address space</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>the VLAN configured for untagged frames is not the same on two switches connected by a trunk</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the term on the left to the associated description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/><display componentIdent="4" xpos="600" ypos="276"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214507" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214507" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="214507" action="Set">1</setvar><scoringdescription>Native VLAN mismatch	the management VLANs on two switches connected by a trunk are not the same Trunk mode mismatch	both switches are configured to dynamic auto and will not negotiate a link VLAN filtering		defining the VLANs that are allowed to traverse a trunk VLAN subnet conflict	two devices on the same VLAN have IP addresses in two address spaces or two VLANs share the same address space</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="116871" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116871" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>access port attached to a PC, configured to use one VLAN for voice traffic and another VLAN for data traffic</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>port on a switch that maintains its assigned VLAN configuration until it is changed manually</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>port on a switch using VMPS and associates a port to a VLAN based on the destination MAC address</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>port on a switch that can change the manually assigned VLAN configuration dynamically</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>access port attached to an IP phone, configured to use one VLAN for voice traffic and another VLAN for data traffic</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>port on a switch using VMPS and associates a port to a VLAN based on the source MAC address</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>static VLAN port membership</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>dynamic VLAN port membership</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>voice VLAN port membership</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the VLAN port membership statement listed on the left  to the correct option on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="30" yspacing="70" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214468" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214468" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="214468" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

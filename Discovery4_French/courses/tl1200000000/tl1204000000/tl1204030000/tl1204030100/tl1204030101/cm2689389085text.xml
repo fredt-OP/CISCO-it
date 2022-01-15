@@ -1,0 +1,93 @@
+﻿<textcomponents>  
+<component id="ID_inst">
+  <text><![CDATA[<b>Cliquez sur Lire pour passer d’une étape à l’autre du traitement du trafic à l’aide de la QS.</b>]]></text> 
+</component>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Classification</b>]]></text> 
+</component>
+
+<component id="ID_body01">
+  <text><![CDATA[Données transitant entre des applications diverses et une interface de routeur de sortie.<br/>]]></text> 
+</component>
+
+<component id="ID_title02">
+  <text><![CDATA[<b>Mise en file d’attente préliminaire</b>]]></text> 
+</component>
+
+<component id="ID_body02">
+  <text><![CDATA[Les données sont classées en fonction des applications, notamment le trafic vocal, vidéo, FTP, etc.<br/><br/>Les éléments en rouge représentent le trafic indésirable filtré et exclu du groupe.<br/>]]></text> 
+</component>
+
+<component id="ID_title03">
+  <text><![CDATA[<b>Mise en file d’attente et planification</b>]]></text> 
+</component>
+
+<component id="ID_body03">
+  <text><![CDATA[Le trafic est placé dans des files d’attente basées sur des règles de priorité configurées au préalable. Le trafic situé dans les files d’attente prioritaires (par ex. : P1, P2) est envoyé avant le trafic de moindre priorité (par ex. : P5, P6).<br/><br/>Exemple : le trafic vocal ne tolère aucun délai et est donc placé dans la file d’attente de priorité la plus élevée, puis envoyé en premier.<br/>]]></text> 
+</component>
+
+<component id="ID_P1">
+  <text><![CDATA[<b>P1</b>]]></text> 
+</component>
+
+<component id="ID_P2">
+  <text><![CDATA[<b>P2</b>]]></text> 
+</component>
+
+<component id="ID_P3">
+  <text><![CDATA[<b>P3</b>]]></text> 
+</component>
+
+<component id="ID_P4">
+  <text><![CDATA[<b>P4</b>]]></text> 
+</component>
+
+<component id="ID_P5">
+  <text><![CDATA[<b>P5</b>]]></text> 
+</component>
+
+<component id="ID_P6">
+  <text><![CDATA[<b>P6</b>]]></text> 
+</component>
+
+<component id="ID_bridge01">
+  <text><![CDATA[<b>CLASSIFICATION</b>]]></text> 
+</component>
+
+<component id="ID_bridge02">
+  <text><![CDATA[<b>MISE EN FILE D’ATTENTE PRÉLIMINAIRE</b>]]></text> 
+</component>
+
+<component id="ID_bridge03">
+  <text><![CDATA[<b>MISE EN FILE D’ATTENTE ET PLANIFICATION</b>]]></text> 
+</component>
+
+   <component id="play">
+      <text>Lire</text>
+   </component>
+   <component id="pause">
+      <text>Pause</text>
+   </component>
+   <component id="rewind">
+      <text>Rembobiner</text>
+   </component>
+   <component id="forward">
+      <text>Avance rapide</text>
+   </component>
+   <component id="mute">
+      <text>Muet</text>
+   </component>
+   <component id="unmute">
+      <text>Désactiver Muet</text>
+   </component>
+   <component id="previous">
+      <text>Redémarrer</text>
+   </component>
+   <component id="next">
+      <text>Fin</text>
+   </component>
+   <component id="transcript">
+      <text>Texte</text>
+   </component>
+</textcomponents>

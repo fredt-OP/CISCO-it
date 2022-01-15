@@ -1,0 +1,1593 @@
+//zmg, 03.01.01
+//this file needs a better description!
+//
+//
+
+// these are the command arrays
+// the "C" stands for Command
+userC = new Array();       // user mode commands
+enableC = new Array();     // privileged mode commands
+globalC = new Array();     // global config mode commands
+
+routerRIPC = new Array();   // RIP
+routerIGRPC = new Array();    // IGRP
+routerEIGRPC = new Array();   // EIGRP
+routerOSPFC = new Array();    // OSPF
+routerBGPC = new Array();   // BGP
+routerAFC = new Array();    // BGP address-family
+routerISISC = new Array();    // IS-IS
+
+lineconC = new Array();       // line console
+lineauxC = new Array();       // line aux
+linevtyC = new Array();       // line vty
+linettyC = new Array();     // line tty
+
+intATMC= new Array();       //ATM for dsl
+intDialerC = new Array();     // dialer
+intEC = new Array();        // ethernet
+intFC = new Array();      // fast ethernet
+intGC = new Array();      // gigabit ethernet
+intSC = new Array();        // serial
+intBriC = new Array();      // bri
+intLoopBackC = new Array();   // loopback
+intAsyncC = new Array();    // async
+intVlanC = new Array();     // vlan interface
+
+// sub interfaces
+
+subintDialerC = new Array();
+subintEC = new Array();
+subintFC = new Array();
+subintGC = new Array();
+subintSC = new Array();
+subintBriC = new Array();
+subintLoopBackC = new Array();
+subintAsyncC = new Array();
+subintVlanC = new Array();
+
+vlanDBC = new Array();      // vlan database mode
+controllerT1C = new Array();  // T1 controller
+extNaclC = new Array();     // extended named access-list
+stdNaclC = new Array();     // Standard named access-list
+mapClassC = new Array();    // map-class
+timeRangeC = new Array();   // time-range
+dhcpC = new Array();      // ip dhcp
+routeMapC = new Array();    // route-map
+classMapC = new Array();    // class-map
+policyMapC = new Array();   // policy-map
+policyMapClassC = new Array();  // policy-map class
+ATMPVCC = new Array();   //atm pvc
+
+correctCommand = null;  // This global variable is used to store the function that needs to be run.
+
+completeKeywordneeded = new Array(15); // This global variable is needed for remembering which keyword needs to be checked fully
+fillcompleteKeyword(true);
+
+//begin for the configuration mode of the routers -- suresh
+var configRouterA = String("normal");
+var configRouterB = String("normal");
+var configRouterC = String("normal");
+var configRouterD = String("normal");
+var configRouterE = String("normal");
+
+//end for the configuration mode of the routers -- suresh
+
+// ***** Array.addSC (str, str, bool) *****
+//-----------------------------------------------------------------------------
+//IN: commandName = string, the new subcommand name
+//    descript = string, the description of the new subcommand
+//    noUse = bool, whether or not the subcommand is there to help
+//       people or a real subcommand (zmg: which is T and which is F?) (?)
+//
+// NOTE: Most commands and subcommands are stored as arrays.
+//
+//  For example, all the commands in the user mode are stored in
+//  the array 'userC'.  When the command:
+//
+//     userC.add("enable","Turn on privileged commands");
+//
+//  is called, the following happens:
+//
+//    1) the "enable" subcommand is added to the 'userC'
+//       array (userC[])
+//    2) stores the string "enable" in one of the elements
+//       in userC[]
+//    3) userC.enable is created as a new array
+//    4) the description of the new subcommand is stored
+//       in 'userC.enable.descript'
+//       > if the description is omitted, then the subcommand
+//         can still be used, however, it will not show up in
+//         partial or full help.
+//       > the noUse argument can be omitted (as it is in this
+//         example).  It then has the value 'null'.
+//
+//       zmg: the following is quite possibly the worst comment
+//            I have ever read.  i dont know how to translate
+//            this into usable English, so I'll leave it here
+//            for now.
+//
+//       > The 'noUse' attribute is only for things like WORD.
+//         WORD is something to show the user what to put, but
+//         it is not really a subcommand.  For subcommands like
+//         WORD or LINE, noUse is <true>.
+//DO: add a new subcommand to this command
+//OUT: <none>
+//
+// adds the addSC method for the Array object; assigns commands_addSubCommand function to Array.addSC
+Array.prototype.addSC = commands_addSubCommand;
+//
+function commands_addSubCommand(commandName, descript)
+{
+   this[this.length] = commandName; //this specific command is added to
+                //the current command Array
+
+   this[commandName] = new Array(); //a new subcommand array is created
+   this[commandName].descript = descript; //description is stored
+//   this[commandName].noUse = noUse; //'noUse' attribute is stored
+
+  // if the command name is in the format of <xxx-yyy> where xxx and yyy are integers and xxx <= yyy
+  if (commandName.charAt(0) == "<")
+  {
+    var str = commandName.substring(1, commandName.length-1);   // take out "<" and ">"
+    var num = str.split("-");                   // separate the numbers
+
+    if (num.length == 2)
+    {
+      this[commandName].startNum = Number(num[0]);  // assign the starting number to startNum
+      this[commandName].endNum = Number(num[1]);  // assign the ending number to endNum
+    }
+  }
+}
+
+/*
+globalC.interface.Serial.addMC("<0-1>", "Serial interface number");
+  globalC.interface.Serial["<0-1>"].addSIC("<0-1>", "Serial interface number");
+    globalC.interface.Serial["<0-1>"]["<0-1>"].addSC("<0-4294967295>");
+
+globalC.interface.Serial["<0-1>"]["<0-1>"].enter = true;
+globalC.interface.Serial["<0-1>"]["<0-1>"]["<0-4294967295>"].enter = true;
+*/
+Array.prototype.addMC = commands_addModuleCommand;
+function commands_addModuleCommand(commandName, descript)
+{
+  this.addSC(commandName, descript);
+  this.isSpecial = true;
+  this.hasModule = true;
+  this[commandName].isSpecial = true;
+  this[commandName].isModule = true;
+}
+
+Array.prototype.addSIC = commands_addSubInterfaceCommand;
+function commands_addSubInterfaceCommand(commandName, descript)
+{
+  this.addSC(commandName, descript);
+  this.isSpecial = true;
+  this.hasSI = true;
+  this[commandName].isSpecial = true;
+  this[commandName].isSI = true;
+}
+
+
+// ***** commands_deleteSubCommand (str, str, bool) *****
+//IN: commandArray = string, name of the command array that contains
+//         the subcommand being deleted
+//    commandNameToDel = string, name of subcommand that is being deleted
+//    all = bool, true: delete every subcommand in 'commandArray'
+//      false: delete the subcommand 'commandNameToDel'
+//DO: delete the subcommand 'commandNameToDel' in 'commandArray', or if
+//    all==true, all of the subcommands
+//OUT: <none>
+function commands_deleteSubCommand(commandArray, commandName, all)
+{
+   //get a pointer to the command array
+   var commandArray = eval(commandArray);
+
+   if (all == true)
+   {
+      //delete all the subcommands in this command array (all==true),
+      //and reset the command array's length to 0.
+      for (var i=0; i<commandArray.length; i++)
+        delete commandArray[commandArray[i]];
+      commandArray.length = 0;
+   }
+   else
+   {
+      //all == false, we are going to delete the
+      //specific subcommand 'commandNameToDel'
+
+      //for-loop finds the subcommand in question
+      var i = 0;
+      for (var i=0; i<commandArray.length; i++) {
+
+         //search through all subcommands--if there is a match,
+         //then break the loop.  after the for-loop, i will be
+         //equal to the subcommand to be deleted
+         if (commandArray[i] == commandName)
+           break;
+      }
+
+      //zmg: I added this line...do we need to just return if
+      //the command doesn't exist?
+      //if (commandArray.length == i) return;  //the command to delete DNE in 'captr'
+
+      //remove the ith ('commandNameToDel')
+      //subcommand from the command array
+      commandArray.splice(i,1);
+
+      //delete the subcommand's array from memory
+      delete commandArray[commandName];
+   }
+}
+
+
+
+
+
+
+
+// ***** commands_sortSubCommand(array) *****
+//IN: commandArName = the name of a command array
+//DO: sorts the command array, so when the user presses "?", it will show in
+//    alphabetical order.  the 'noUse' subcommands will be sorted to the front.
+//OUT: the alpha-sorted command array 'commandArName'
+function commands_sortSubCommand(commandName)
+{
+   // use this as a pointer to the command array
+   var commandArray = eval(commandName);
+
+   // sort this array in alpha order
+   commandArray.sort();
+
+   var noUseElements = 0; //number of 'noUse' commands
+   for (var i=0; i<commandArray.length; i++)
+   {
+      //commands_sortSubCommand(commandName + "." + commandArray[i]);
+      if (commandArray[commandArray[i]].noUse == true)
+      {
+         //if this is a 'noUse' command, then put it in the
+         //front of the sorted list
+         //
+         //zmg: does this put the 'noUse' commands in alpha
+         //     order?  does it matter?  (?)
+         commandArray.splice(noUseElements,0,commandArray.splice(i,1).toString());
+
+         //increment the number of 'noUse' commands
+         noUseElements++;
+      }
+   }
+}
+
+
+
+
+
+// ***** commands_copyCommand(str, str, str, bool) *****
+//DO: copies the 'scArrayName' from 'fromArray' to 'toArray'.
+//    ** NOTE: If the 'scArrayName' argument is omitted, then every
+//        subcommand will be copied from 'fromArray' to 'toArray'
+//
+//IN: fromArray = string, name of the command array to copy from
+//    toArray = string, name of the command array to copy to
+//    scArrayName = string, name of the subcommand being copied (if ==null,
+//         then all of the attribs of this subcommand are copied)
+//    noCommand = boolean, whether the command is "no"
+//OUT: <none>
+function commands_copyCommand(fromArray, toArray, commandArray, noCommand)
+{
+   if (commandArray != null)
+   {
+      // if scArrayName is not omitted, then copy all the attributes of this subcommand
+      eval(toArray)[eval(toArray).length] = commandArray;
+      eval(toArray)[commandArray] = new Array();
+      eval(toArray)[commandArray].descript = eval(fromArray)[commandArray].descript;
+      eval(toArray)[commandArray].enter = eval(fromArray)[commandArray].enter;
+      eval(toArray)[commandArray].mustEnter = eval(fromArray)[commandArray].mustEnter;
+      eval(toArray)[commandArray].mustHelp = eval(fromArray)[commandArray].mustHelp;
+      eval(toArray)[commandArray].noUse = eval(fromArray)[commandArray].noUse;
+
+      // copy all subcommands of this command
+      for (var i=0; i<eval(fromArray)[commandArray].length; i++)
+      {
+         commands_copyCommand((fromArray+"."+commandArray), (toArray+"."+commandArray), eval(fromArray)[commandArray][i]);
+      }
+
+   }
+   else
+   {
+      //if 'scArrayName' is omitted, then copy all subcommands from
+      //'fromArray' to 'toArray'
+      for (var j=0; j<eval(fromArray).length; j++)
+      {
+         commandArray = eval(fromArray)[j];
+
+         if (eval(fromArray)[j] != "no")
+         {
+            //the current subcommand name is not "no",
+            //so copy the subcommand
+            eval(toArray)[eval(toArray).length] = commandArray;
+            eval(toArray)[commandArray] = new Array();
+            eval(toArray)[commandArray].descript = eval(fromArray)[commandArray].descript;
+
+            if (noCommand != true)
+            {
+               //if the from command array is not a "no" command,
+               //then copy the enter and mustEnter functions
+               eval(toArray)[commandArray].enter = eval(fromArray)[commandArray].enter;
+               eval(toArray)[commandArray].mustEnter = eval(fromArray)[commandArray].mustEnter;
+            }
+
+            eval(toArray)[commandArray].mustHelp = eval(fromArray)[commandArray].mustHelp;
+            eval(toArray)[commandArray].noUse = eval(fromArray)[commandArray].noUse;
+
+            // copy all subcommands in this commandArray
+            for (var i=0; i<eval(fromArray)[commandArray].length; i++)
+            {
+               commands_copyCommand((fromArray+"."+commandArray), (toArray+"."+commandArray), eval(fromArray)[commandArray][i]);
+            }
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
+spaces = "                                                  ";
+
+// ***** commands_invalidInput(array, int) *****
+//IN: commandArray = the name of a command array
+//    subCIndex = int, index of invalid input element
+//DO: prints out the caret (^) and message indicating error
+//OUT: prints out an error message to the user, with a ^ pointing
+//     to the first invalid character in the command string
+function commands_invalidInput(commandArray, subCNum)
+{
+   // use this as a pointer to the router object
+   var rptr = eval("r" + active_router);
+
+   //if the input command is only one word long..
+   if (COMMAND.length == 1)
+   {
+      if ((rptr.MODE == "user") || (rptr.MODE == "enable"))
+      {
+         //the router is in user or enable mode, so print out
+         //this error message, and exit the
+         //commands_invalidInput() function
+         output_write("Translating \"" + COMMAND[0] + "\"...domain server (255.255.255.255)\n");
+         output_write("% Unknown command or computer name, or unable to find computer address\n");
+         return;
+      }
+   }
+
+   //this for-loop starts with the first character of the invalid input
+   //element, and determines which character is incorrect
+   for (var j=1; j<=COMMAND[subCNum].length; j++)
+   {
+      match = false; //tmp.flag variable
+
+      //loop through all subcommands in this commmand array
+      for (var i=0; i<commandArray.length; i++)
+      {
+         //this if-statement skips 'noUse' commands
+         if (commandArray[commandArray[i]].noUse != true)
+         {
+            //if the first j characters of the input
+            //element match the first j characters of the
+            //subcommand in this command array, then set
+            //match to 'true'
+            if (COMMAND[subCNum].substring(0,j).toLowerCase() == commandArray[i].substring(0,j).toLowerCase())
+            {
+               match = true;
+            }
+         }
+      }
+
+      //if the first j characters of the input element does not
+      //match with any of the subcommands, then exit this loop
+      if (match == false)
+        break;
+   }
+
+   //get the length of the input before the error character
+   previousEleLength = commands_inputEleTo(subCNum).length - COMMAND[subCNum].length;
+   invalidCharAt = rptr.PROMPT.length + previousEleLength + j - 1;
+
+   //print spaces and error message, alerting the user
+   //to the location of the invalid character
+   output_write(spaces.substring(0,invalidCharAt));
+   output_write("^\n",
+                "% Invalid input detected at '^' marker.\n",
+                "\n");
+}
+
+
+
+
+
+
+// ***** commands_inputEleTo(int) *****
+//IN: subCIndex = int, representing which input element it is to
+//DO: returns the string of the input from beginning to this element
+//OUT: returns the string of the input from beginning to this element
+function commands_inputEleTo(subCNum)
+{
+   // use this as a pointer to the router object
+   var rptr = eval("r" + VISIBLE_ROUTER);
+
+   //split the command line input at the spaces, and put
+   //the pieces into the elements of 'inputArray'
+   inputArray = rptr.INPUT.split(" ");
+   inputSC = "";
+
+   //this for-loop returns the first 'subCIndex' words from
+   //the rptr.INPUT (command line input) string
+   for (var k=0, inputEle=0; ((k<inputArray.length) && (inputEle<=subCNum)); k++)
+   {
+      if (inputArray[k] != "")
+        inputEle++;
+      inputSC += inputArray[k] + " ";
+   }
+
+   //return the truncated, newly-built string
+   return(inputSC.substring(0,inputSC.length-1));
+}
+
+
+
+
+
+
+
+// ***** commands_useCommand(array, int) *****
+//IN: commandArray = the command array
+//    subCIndex = int, representing which input element this fct is interpreting
+//DO: searches through 'commandArray' for a subcommand that matches the
+//    subCIndex'th element of the command line input.  If it is found, then
+//    that subcommand's array will be used to search for the next element
+//    of the input.  (this is a recursive function)
+//OUT: <none>
+function commands_useCommand(commandArray, subCNum)
+{
+//trace("commandArray = " + commandArray);
+//trace("COMMAND = " + COMMAND);
+//trace("COMMAND.length = " + COMMAND.length);
+//trace("commandArray.length = " + commandArray.length);
+//trace("subCNum = " + subCNum);
+
+   // use this as a pointer to the active router object
+   var rptr = eval("r" + active_router);
+   var vptr = eval("r" + VISIBLE_ROUTER);
+
+//trace("COMMAND[subCNum] = " + COMMAND[subCNum]);
+//trace("commandArray.length = " + commandArray.length);
+//trace("commandArray.enter = " + commandArray.enter);
+
+  if (commandArray.isSpecial)
+  {
+    // if command has a slot subcommand and this is not the last command part entered
+    if ((commandArray.hasModule) && (subCNum < COMMAND.length))
+    {
+      var parts = COMMAND[subCNum].split("/");
+
+      if (parts.length != 2)
+      {
+        if (!rptr.HELPING)
+        {
+          parsestatus = UNSUCCESSFULregcmd;
+        }
+        else
+        {
+          // show slash
+          if ((subCNum == (COMMAND.length-1)) && (vptr.INPUT.charAt(vptr.INPUT.length-1) != " "))
+          {
+            output_write("/\n", "\n");
+            parsestatus = SUCCESSFULhelpcmd;
+          }
+          else
+          {
+            parsestatus = UNSUCCESSFULhelpcmd;
+            output_write("% Unrecognized command\n");
+          }
+        }
+        return;
+      }
+      else
+      {
+  //      trace("COMMAND[] = " + COMMAND.join());
+        COMMAND[subCNum] = parts[1];
+        COMMAND.splice(subCNum, 0, parts[0]);
+        trace("COMMAND[] = " + COMMAND.join());
+      }
+    }
+    else if (commandArray.isModule)
+    {
+//      trace("is module " + COMMAND[subCNum]);
+
+      if (COMMAND[subCNum] == "")
+      {
+        if (!rptr.HELPING)
+        {
+          parsestatus = UNSUCCESSFULregcmd;
+        }
+        else
+        {
+          // show help
+          if ((subCNum == (COMMAND.length-1)) && (vptr.INPUT.charAt(vptr.INPUT.length-1) != " "))
+          {
+                  commands_helpCommand(commandArray);
+            parsestatus = SUCCESSFULhelpcmd;
+          }
+          else
+          {
+            parsestatus = UNSUCCESSFULhelpcmd;
+            output_write("% Unrecognized command\n");
+          }
+        }
+        return;
+      }
+    }
+
+    if (commandArray.hasSI)
+    {
+//      trace("has SI " + COMMAND[subCNum]);
+
+      var parts = COMMAND[subCNum].split(".");
+      if (parts.length == 2)
+      {
+        COMMAND[subCNum] = parts[1];
+        COMMAND.splice(subCNum, 0, parts[0]);
+        trace("COMMAND[] = " + COMMAND.join());
+      }
+    }
+    else if (commandArray.isSI)
+    {
+//      trace("is SI " + COMMAND[subCNum]);
+
+      if (COMMAND[subCNum] == "")
+      {
+        if (!rptr.HELPING)
+        {
+          parsestatus = UNSUCCESSFULregcmd;
+        }
+        else
+        {
+          // show help
+          if ((subCNum == (COMMAND.length-1)) && (vptr.INPUT.charAt(vptr.INPUT.length-1) != " "))
+          {
+            output_write("  " + commandArray[0] + "  " + commandArray.descript + "\n", "\n");
+//            commands_helpCommand(commandArray);
+            parsestatus = SUCCESSFULhelpcmd;
+          }
+          else
+          {
+            parsestatus = UNSUCCESSFULhelpcmd;
+            output_write("% Unrecognized command\n");
+          }
+        }
+        return;
+      }
+    }
+  }
+
+//trace("vptr = " + (vptr.INPUT.charAt(vptr.INPUT.length-1)) + "a");
+   if (subCNum >= COMMAND.length)
+   {
+trace("alternate step: 1");
+//trace("last command " + COMMAND[subCNum]);
+     // 2nd case: subCNum passes command.length, we exhausted the array.
+        // -Helping ver
+        if (rptr.Helping == true)
+        {
+//trace("help for " + COMMAND[subCNum - 1]);
+            //the "?" has been pressed, show full help
+            parsestatus = SUCCESSFULhelpcmd;
+            commands_helpCommand(commandArray);
+            return;
+        }
+        else
+        {
+        // Non-Helping ver
+          if ((typeof(commandArray.enter) != "function") && (commandArray.enter != true))
+          {
+             // the functions for this command does not exist but it works.
+             //return;
+             parsestatus = SUCCESSFULregcmd;
+             return;
+          }
+          else
+          {
+          // the functions for this command exists.
+             parsestatus = SUCCESSFULregcmd;
+             return;
+          }
+        }
+   }
+   else if (commandArray.length == 0)
+   {
+       trace("alternate step: 2");
+   // 1st case: no further command array left.
+        //Non-Helping ver
+        if (rptr.HELPING == false)
+        {
+          if ((typeof(commandArray.enter) != "function") && (commandArray.enter != true))
+          {
+             // the functions for this command does not exist.
+             parsestatus = SUCCESSFULregcmd; // <-- the command is not supported but has to be successful to parse
+             return;
+          }
+          else
+          {
+             // the functions for this command exists.
+             // Note: is there even this case ?
+//trace("Case 1, help = false, functions exists");
+       correctCommand = commandArray.enter;
+             parsestatus = SUCCESSFULregcmd;
+          }
+        }
+        else
+        {
+        //Helping ver
+      parsestatus = UNSUCCESSFULhelpcmd;
+      output_write("% Unrecognized command\n");
+      return;
+/*
+          if ((typeof(commandArray.enter) != "function") && (commandArray.enter != true))
+          {
+            // the functions for this command does not exist. <-- the command is not supported but help might be.
+//trace("Case 1, help = true, functions not exists");
+            parsestatus = UNSUPPORTEDhelpcmd;
+
+            //commands_helpListCommand(commandArray, COMMAND[0]);
+            return;
+          }
+          else
+          {
+          // the functions for this command exists.
+          // Note: is there even this case ?
+//trace("Case 1, help = true, functions exists");
+            parsestatus = UNSUPPORTEDhelpcmd;
+            return;
+          }
+*/
+        }
+   }
+   else
+   {
+        // All other case: More command array to check.
+        // Try to match the commandArray with the command typed (other function)
+//var startTime=getTimer();
+//trace("Matching command - startTime = " + startTime);
+        var matchRet = matchingCommand(commandArray, subCNum);
+//var endTime=getTimer();
+//trace("Matching command - endTime = " + endTime);
+//trace("Matching command - elapsed time = " + ((endTime-startTime)/1000) + "\n");
+
+trace("Match Return = " + matchRet);
+
+        // if it doesn't match, it is an invalid input, incorrect input
+        if (matchRet == -2)
+        {
+          if (rptr.HELPING == true)
+          {
+             parsestatus = UNSUCCESSFULhelpcmd;
+             output_write("% Unrecognized command\n");
+             //trace("COMMAND = " + COMMAND);
+//trace("matchRet = -2, HELPING");
+          }
+          else
+          {
+            parsestatus = UNSUCCESSFULregcmd;
+          }
+          return;
+        }
+        else if ((subCNum == (COMMAND.length-1)) && (rptr.HELPING == true) && (vptr.INPUT.charAt(vptr.INPUT.length-1) != " "))
+        {
+          // else if the cmd line matches valid command
+          //"?" is pressed, and is calling for partial help,
+          //so list out the commands that start with the typed
+          //characters, then list out those commands
+          //commands_helpListCommand(commandArray,COMMAND[subCNum]);
+          parsestatus = SUCCESSFULhelpcmd; // command was successful
+//trace("Case else, help = true, parsestatus =5");
+//trace("list commands for " + COMMAND[subCNum]);
+          commands_helpListCommand(commandArray, COMMAND[subCNum]);
+          return;
+        }
+        else if (matchRet == -1)
+        {
+          // else if match detects ambiguous cmd
+          output_write("% Ambiguous command:  \"" + commands_inputEleTo(subCNum) + "\"\n");
+          parsestatus = AMBIGUOUSregcmd;
+          return;
+        }
+        else
+        {
+          // other wise, we recurse the function
+//trace("matchRet = " + matchRet);
+//trace("commandArray[matchRet] = " + matchRet);
+//trace("commandArray[commandArray[matchRet]] = " + commandArray[matchRet]);
+
+      if (commandArray.isSpecial)
+      {
+          if (commandArray.isModule)
+          {
+          COMMAND[subCNum-1] = COMMAND[subCNum-1] + "/" + COMMAND[subCNum];
+          COMMAND.splice(subCNum, 1);
+          subCNum--;
+        }
+          else if (commandArray.isSI)
+          {
+          COMMAND[subCNum-1] = COMMAND[subCNum-1] + "." + COMMAND[subCNum];
+          COMMAND.splice(subCNum, 1);
+          subCNum--;
+        }
+      }
+
+
+          commands_useCommand(commandArray[matchRet],subCNum+1);
+        }
+    }
+}
+
+
+/*
+// IN: commandArray = the array we are checking
+       subCNum = the case we are checking now
+// DO: tries to match the command with a valid command Array
+// OUT: -2 Invalid input
+        -1 Ambiguous command
+         0
+        +n
+//      WORD, LINE, <>, A.B.C.D, H.H.H - added by Kalven
+*/
+
+function matchingCommand(commandArray, subCNum)
+{
+  //var match = -2;
+
+  completeKeywordneeded[subCNum] = false; // does the default step
+
+  //Try to improve this function with Binary Search -Kalven
+//trace("Match Command");
+//trace("Specials");
+//trace("subCNum="+subCNum);
+  if( (typeof(commandArray["WORD"]) == "object") && (commandArray[commandArray["WORD"]].noUse != true) )
+  {
+   completeKeywordneeded[subCNum]= true;
+   return "WORD";
+  }
+  else if(  (subCNum > 0) && (typeof(commandArray["LINE"]) == "object") && (commandArray.line.descript.indexOf("line") < 0))
+  {
+
+   completeKeywordneeded[subCNum] = true;
+   return "LINE";
+  }
+  else if( (typeof(commandArray["A.B.C.D"]) == "object") && (commandArray[commandArray["A.B.C.D"]].noUse != true) )
+  {
+   completeKeywordneeded[subCNum] = true;
+   if(commands_checkABCD(COMMAND[subCNum]))
+   {
+     return "A.B.C.D";
+   }
+  }
+  else if( (typeof(commandArray["H.H.H"]) == "object") && (commandArray[commandArray["H.H.H"]].noUse != true) )
+  {
+   if(commands_checkHHH(COMMAND[subCNum]))
+   {
+     completeKeywordneeded[subCNum] = true;
+     return "H.H.H";
+   }
+  }
+//trace("<>");
+  // check the ranges, first check the front of the list, and then check the end of the list
+  var i = 0;
+  while( (commandArray[i].charAt(0) == "<") && (commandArray[i].charAt(commandArray[i].length-1) == ">"))
+  {
+    if(commandArray[commandArray[i]].noUse != true)
+    {
+    if( commandArray[i].indexOf("-") >= 0)
+    {
+      completeKeywordneeded[subCNum] = true;
+      if ((!isNaN(COMMAND[subCNum])) && (Number(COMMAND[subCNum]) >= commandArray[commandArray[i]].startNum) && (Number(COMMAND[subCNum]) <=  commandArray[commandArray[i]].endNum))
+      {
+      return commandArray[i];
+      }
+    }
+    else
+    {
+      completeKeywordneeded[subCNum] = true;
+      return commandArray[i];
+    }
+    }
+    i++;
+  }
+
+  i = commandArray.length-1;
+  while( (commandArray[i].charAt(0) == "<") && (commandArray[i].charAt(commandArray[i].length-1) == ">"))
+  {
+    if(commandArray[commandArray[i]].noUse != true)
+    {
+    if( commandArray[i].indexOf("-") >= 0)
+    {
+      completeKeywordneeded[subCNum] = true;
+      if ((!isNaN(COMMAND[subCNum])) && (Number(COMMAND[subCNum]) >= commandArray[commandArray[i]].startNum) && (Number(COMMAND[subCNum]) <=  commandArray[commandArray[i]].endNum))
+      {
+        return commandArray[i];
+      }
+    }
+    else
+    {
+      completeKeywordneeded[subCNum] = true;
+      return commandArray[i];
+    }
+    }
+    i--;
+  }
+//trace("Binary Search");
+  // now search for ambiguous or correct command
+  var left = 0;  // left side of the array
+  var right = commandArray.length-1; // right side of the array
+  var sw = false; // flag for a match
+  var middle = 0; // middle of the array that we use to check against
+  var word = COMMAND[subCNum].toLowerCase(); //the command we're checking
+  while (sw == false && left <= right)
+  {
+    middle=Math.floor((left+right)/2);
+    trace(commandArray[middle].toLowerCase());
+    if ((word == commandArray[middle].toLowerCase()) && (commandArray[commandArray[middle]].noUse != true) )
+    {
+      // found
+      //msgNotice("FOUND1");
+      trace("found");
+      trace(commandArray[middle].toLowerCase());
+      sw=true;
+      completeKeywordneeded[subCNum] = false;
+      return commandArray[middle];
+    }
+    else if((middle-1 >= 0) && (word == commandArray[middle-1].toLowerCase()) && (commandArray[commandArray[middle-1]].noUse != true))
+    {
+            // found
+        //    msgNotice("FOUND2");
+            trace("found");
+            trace(commandArray[middle-1].toLowerCase());
+            sw=true;
+            completeKeywordneeded[subCNum] = false;
+            return commandArray[middle-1];
+
+    }
+    else if( (middle+1 < commandArray.length) && (word == commandArray[middle+1].toLowerCase()) && (commandArray[commandArray[middle+1]].noUse != true) )
+    {
+        //msgNotice("FOUND3");
+            // found
+            trace("found");
+            trace(commandArray[middle+1].toLowerCase());
+            sw=true;
+            completeKeywordneeded[subCNum] = false;
+            return commandArray[middle+1];
+
+    }
+    else if( (word == commandArray[middle].substring(0,word.length).toLowerCase()) && (commandArray[commandArray[middle]].noUse != true))
+    {
+      // the fist j characters of the input element match the first j chars of subcommand
+      // see if word matches with the previous or the next command.
+      if(
+       ( (middle-1 >= 0) && (word == commandArray[middle-1].substring(0,word.length).toLowerCase()) && (commandArray[commandArray[middle-1]].noUse != true))
+                                       ||
+       ( (middle+1 < commandArray.length) && (word == commandArray[middle+1].substring(0,word.length).toLowerCase()) && (commandArray[commandArray[middle+1]].noUse != true))
+      )
+      {
+        // ambiguous command
+        trace("ambigous command");
+        completeKeywordneeded[subCNum] = false;
+        if ( (commandArray[middle] == "e0") || (commandArray[middle] == "e1") || (commandArray[middle] == "s0") || (commandArray[middle] == "s1") )
+        {
+          trace("ambigous");
+          completeKeywordneeded[subCNum] = true;
+          return -2;
+        }
+        else return -1;
+      }
+      else return commandArray[middle];
+    }
+    else
+    {
+      if (word < commandArray[middle].toLowerCase()) right=middle-1;
+      if (word > commandArray[middle].toLowerCase()) left=middle+1;
+    }
+  }
+  if (sw == false)
+  {
+   // not found
+   trace("not found");
+   completeKeywordneeded[subCNum] = true;
+   return -2;
+  }
+
+/*
+   //this for-loop loops through all subcommands in this 'commandArray'
+   for (var i=0; i<commandArray.length; i++)
+   {
+//trace("commandArray[i] = " + commandArray[i] + ", i = " + i);
+      //this if-statement skips 'noUse' commands
+
+
+      if (commandArray[commandArray[i]].noUse != true)
+      {
+         if ((commandArray[i] == "WORD") || (commandArray[i] == "LINE"))
+         {
+            //  if the subcommand is a word or a line that the user can type in,
+            //    then use the WORD or LINE command array accordingly.
+            match = i;
+            completeKeywordneeded[subCNum] = true;
+            break;
+         }
+         else if ((commandArray[i].charAt(0) == "<") && (commandArray[i].charAt(commandArray[i].length-1) == ">"))
+         {
+            if (commandArray[i].indexOf("-") >= 0)
+            {
+        completeKeywordneeded[subCNum] = true;
+               if ((!isNaN(COMMAND[subCNum])) && (Number(COMMAND[subCNum]) >= commandArray[commandArray[i]].startNum) && (Number(COMMAND[subCNum]) <= commandArray[commandArray[i]].endNum))
+               {
+                  match = i;
+                  break;
+               }
+            }
+            else
+            {
+              match = i;
+              completeKeywordneeded[subCNum] = true;
+              break;
+            }
+          }
+          else if (commandArray[i].indexOf("A.B.C.D") >= 0)
+          {
+      completeKeywordneeded[subCNum] = true;
+
+            if (commands_checkABCD(COMMAND[subCNum]))
+            {
+              match = i;
+              break;
+            }
+          }
+          else if (commandArray[i] == "H.H.H")
+          {
+            if (commands_checkHHH(COMMAND[subCNum]))
+            {
+              match = i;
+              completeKeywordneeded[subCNum] = true;
+              break;
+            }
+          }
+          else if (COMMAND[subCNum].toLowerCase() == commandArray[i].toLowerCase())
+          {
+            //the command line input element matches the
+            //current (ith) subcommand--set it to match,
+            //then exit the loop
+            match = i;
+
+            completeKeywordneeded[subCNum] = false;
+            break;
+          }
+          else if (COMMAND[subCNum].toLowerCase() == commandArray[i].substring(0,COMMAND[subCNum].length).toLowerCase())
+          {
+            //the first j characters of the input element
+            //match the first j characters of the subcommand
+            if (match == -2)
+            {
+              //if there was no match before this
+              //iteration, so set 'match' to this
+              //iteration's number (i)
+              match = i;
+            }
+            else
+            {
+               //there was a match before this
+               //iteration, so set 'match' to -1
+               //(this means this is an ambiguous
+               //command), and exit the loop
+               //begin condition added by suresh
+               //reason is if the user types "int e ?" in config mode
+               // it was printing ambiguous command as we have both ethernet and e0,e1 in globalC array
+
+               completeKeywordneeded[subCNum] = false;
+
+               if  ( (commandArray[i] == "e0") || (commandArray[i] == "e1") || (commandArray[i] == "s0") || (commandArray[i] == "s1") )
+               {
+               }
+               else
+                 match = -1;
+                     //end condition added by suresh
+               break;
+             }
+          }
+       }
+   }
+
+   // if we still have match = -2, we have to have full check for the keyword
+   if (match == -2)
+   {
+     completeKeywordneeded[subCNum] = true;
+   }
+
+   return match;
+   */
+}
+
+function fillcompleteKeyword(k)
+{
+  for (var i=0; i < completeKeywordneeded.length;i++)
+    completeKeywordneeded[i] = k;
+}
+
+// ***** commands_helpListCommand(array, str) *****
+//IN: commandArray = command array
+//    inputCommand = string, the input command
+//DO: lists out all the commands with the same spelling as the given command
+//    fragment.  (ex: when the user types "t?", all commands that start with
+//    "t" will be printed to the console)
+//OUT: list of matching commands printed to the console
+function commands_helpListCommand(commandArray, inputCommand)
+{
+  if (typeof(commandArray["WORD"]) == "object")
+  {
+    output_write("WORD  ");
+  }
+
+  else if ((typeof(commandArray["LINE"]) == "object") && (commandArray.line.descript.indexOf("line") < 0))
+  {
+    output_write("LINE  ");
+  }
+
+  if (typeof(commandArray["A.B.C.D"]) == "object")
+  {
+    output_write("A.B.C.D  ");
+  }
+
+  if (typeof(commandArray["H.H.H"]) == "object")
+  {
+    output_write("H.H.H");
+  }
+
+  if (commandArray.hasSI)
+  {
+    output_write(".  ");
+  }
+
+  if ((commandArray[0].charAt(0) == "<") && (commandArray[0].charAt(commandArray[0].length-1) == ">"))
+  {
+    if ((!isNaN(inputCommand)) && (Number(inputCommand) >= commandArray[commandArray[0]].startNum) && (Number(inputCommand) <=  commandArray[commandArray[0]].endNum))
+    {
+      output_write(commandArray[0] + "  ");
+    }
+  }
+
+   //this for-loop iterates through all of the
+   //subcommands in this 'commandArray'
+   for (var i=0; i<commandArray.length; i++)
+   {
+      //this if-statement will skip 'noUse' commands, and those commands
+      //that do not have descriptions
+      if (commandArray[commandArray[i]].descript != null)
+      {
+         //if the first j characters of the command line input
+         //match the first j characters of the subcommand,
+         //then print that subcommand out in the help listing
+         if (inputCommand.toLowerCase() == commandArray[i].substring(0,inputCommand.length).toLowerCase())
+         {
+            output_write(commandArray[i] + "  ");
+         }
+      }
+   }
+   //newlines...
+   output_write("\n","\n");
+}
+
+
+
+
+// ***** commands_tabCompleteCommand(array, str) *****
+//IN: commandArray = command array
+//    cmdLineInput = string, the current command line input
+//DO: fills the commandline with the rest of the text of the command that the
+//    input matches, or just repeats the current input on the next line if
+//    the current input is invalid or ambiguous
+//OUT: <none>
+function commands_tabCompleteCommand(commandArray, cmdLineInput)
+{
+   var rptr = eval("r" + VISIBLE_ROUTER);
+
+   var matchingCmds = 0;      //# matching commands for current part of commandline input
+   var matchingCmdIndex = -1; //index in currentArray of the matching command
+   var error = 0;       //flag, to determine if there is a good match (error = 0), or
+               //there is no matching command (error = 1)
+
+   var fullCmdName = "";      //string, after the for-loops contains the string of the valid
+               //command that the command line input matches
+
+
+   //split the command line input into an array, with
+   //each element containing one token (word)
+   //
+   var extraSpaces = 0; //number of extra spaces in the command line input
+   var trailingSpace = 0;  //flag, 1 if there is are trailing spaces in the command
+            //line input
+
+   partialInput = new Array();
+   partialInput = cmdLineInput.split(" ");
+   for (var i = 0; i < partialInput.length; i++)
+   {
+      //removes the empty "" elements from
+      //the 'partialInput' array
+      if (partialInput[i] == "")
+      {
+         partialInput.splice(i,1);
+         i--;
+         extraSpaces++;
+
+         if ((i+1) == partialInput.length)
+         {
+            trailingSpace = 1;
+         }
+       }
+    }
+
+
+   //if there is a trailing space in the command line input, then
+   //no command will match.  the first part of this if-statement
+   //takes care of that case.  if there isn't a trailing space,
+   //then we need to try to match the command.
+   //
+   if (trailingSpace == 1)
+   {
+      //if there is a trailing space, no command will match,
+      //so set the error flag right away
+      error = 1;
+
+   }
+   else
+   {
+      //there is no trailing space in the command line input
+
+      //these doubly nested for-loops compare 'partialInput' to the the
+      //command arrays for the current mode, and determine if there is
+      //a uniquely matching command.  if there is, 'error' will be 0, and
+      //'fullCmdName' will hold the name of the matching command.
+      //
+      for (var k = 0; k < partialInput.length; k++)
+      {
+         matchingCmds = 0;
+
+         //this for-loop iterates through all of the
+         //subcommands in this 'commandArray'
+         for (var i = 0; i<commandArray.length; i++)
+         {
+            //this if-statement will skip 'noUse' commands, and those commands
+            //that do not have descriptions
+            if ((commandArray[commandArray[i]].noUse != true) && (commandArray[commandArray[i]].descript != null))
+            {
+               if (partialInput[k].toLowerCase() == commandArray[i].substring(0,partialInput[k].length).toLowerCase())
+               {
+                  //if the first j characters of the command line input
+                  //match the first j characters of the subcommand,
+
+                  // update the necessary 'matchingCmd' counters.
+               	  matchingCmdIndex = i;
+
+                  if (partialInput[k].length == commandArray[i].length)
+                  {
+					  // if the input matches the whole command array element
+					  // then it has an exact match, then break the loop
+
+					  matchingCmds = 1;
+					  break;
+				  }
+				  else
+				  {
+	                  matchingCmds += 1;
+				  }
+               }
+            }
+         }
+
+         if (matchingCmds != 1)
+         {
+            //if there are 0, or >1 matching commands,
+            //end the search process, this commandline
+            //input already is ambiguous or invalid
+            error = 1;
+            break;
+         }
+
+
+         //keep building up the currently matching command
+         if (fullCmdName != "")
+           fullCmdName += " ";
+         fullCmdName += commandArray[matchingCmdIndex];
+
+         //we have matching possibilities at this token level,
+         //so now set currentArray to the next subarray deeper
+         //(matchedCmd.allOfItsSubCmds[]), and the next iteration
+         //will try to find a match there as well
+         commandArray = commandArray[commandArray[matchingCmdIndex]];
+      } //end k for-loop
+   }
+
+   //
+   //at this point, the 'error' flag has been set, and 'fullCmdName'
+   //contains the full name of the matching command, if applicable
+   //
+
+   if (error == 0)
+   {
+      //the command line input entered so far exactly matches
+      //one command, so complete the input..
+
+      //at this point, fullCmdName is equal to the full name
+      //of the command that is matched, for example, "show running-config",
+      //regardless if the command line input is "show ru", "sh    run" or
+      //whatever.  this block of code sets 'finalMatch' equal to the
+      //command line input, except it replaces the last token with the
+      //full command.  For example, "sh ru" becomes "sh running-config".
+      //this is so, the completed command will be displayed right later.
+      //
+
+      //split the full command name into the array 'fcArray'
+      fcArray = new Array();
+      fcArray = fullCmdName.split(" ");
+
+      //declare the destination string variable
+      var finalMatch = "";
+
+      //iterates through all of the pieces of the full command name
+      for (var ix = 0; ix < fcArray.length-1; ix++)
+      {
+         if (fcArray[ix] == partialInput[ix])
+         {
+            //if the full command name, and the command line
+            //input match, (ex. "show" is on the command line),
+            //then add this token to the final matching string
+            finalMatch += fcArray[ix];
+
+         }
+         else
+         {
+            //if the full command name and the command line
+            //input don't match, add the fragment from the
+            //command line to the final matching string
+            finalMatch += partialInput[ix];
+         }
+         //separate each token with a space
+         finalMatch += " ";
+      }
+
+      //add the full string corresponding to the last token
+      finalMatch += fcArray[fcArray.length-1];
+
+      //determine 'restOfCmd', the rest of the command string
+      //that will be "filled in" by pressing the <Tab> key.
+      var restOfCmd = finalMatch.substring(cmdLineInput.length-extraSpaces,finalMatch.length);
+
+
+      //add the rest of the command to the command line buffer
+      //and to the output, and then refresh the Hyperterminal window
+      rptr.line[rptr.lastLine] += restOfCmd;
+      rptr.INPUT += restOfCmd;
+      output_write();
+
+      //update the cursor pointer to point to the
+      //end of the newly added command
+      rptr.lineIndexCounter += restOfCmd.length;
+
+   }
+   else
+   {
+      //the current command line input is ambiguous, or
+      //doesn't match anything at all...print the same
+      //command line input on the next line.
+      //
+
+      //print a newline, the prompt, and the
+      //same command line input, again.
+      output_write("\n");
+      output_write(rptr.PROMPT);
+
+      rptr.INPUT = cmdLineInput;
+      output_write(rptr.INPUT);
+   }
+}
+
+
+
+
+// ***** commands_helpCommand(array) *****
+//IN: commandArray = command array
+//DO: print all of the subcommands of this command,
+//    along with their descriptions
+//OUT: a listing of all available subcommands & their descriptions
+function commands_helpCommand(commandArray)
+{
+   var longest = 0; //tmp.var to hold the length of the
+          //longest command name
+
+
+   //this for-loop iterates through all subcommands in 'commandArray'
+   //to find the longest command name, and stores it in 'longest'
+   for (var i=0; i<commandArray.length; i++)
+   {
+      if (commandArray[i].length > longest)
+      {
+         longest = commandArray[i].length;
+      }
+   }
+
+   //for-loop to iterate through all subcommands in 'commandArray'
+   for (var i=0; i<commandArray.length; i++)
+   {
+      // skip commands with no description
+      if (commandArray[commandArray[i]].descript != null)
+      {
+         //print out the subcommand name and description
+         output_write("  " + commandArray[i] + spaces.substring(0,(longest-commandArray[i].length)));
+         if ((longest + 4 + commandArray[commandArray[i]].descript.length) <= 80)
+         {
+            output_write("  " + commandArray[commandArray[i]].descript + "\n");
+         }
+         else
+         {
+            var cutChar = commandArray[commandArray[i]].descript.substring(0,80-4-longest).lastIndexOf(" ");
+            output_write("  " + commandArray[commandArray[i]].descript.substring(0,cutChar) + "\n");
+            output_write(spaces.substring(0,(longest+4)) + commandArray[commandArray[i]].descript.substring((cutChar+1),commandArray[commandArray[i]].descript.length) + "\n");
+         }
+      }
+   }
+
+   //if the enter function exists for this 'commandArray,'
+   //then print "  <cr>"
+   deebug1  = commandArray + ";" + typeof(commandArray.enter);
+   if ((typeof(commandArray.enter) == "function") || (commandArray.enter == true))
+   {
+      output_write("  <cr>\n");
+   }
+
+   //newline
+   output_write("\n");
+}
+
+
+
+
+
+// ***** commands_run(str) *****
+// IN:   a string of commands to be ran
+// DO:   run this line of command
+// NOTE:
+//    this function is for testing only
+function commands_run(commands) {
+
+   // use this as a pointer to the active router object
+   var r = eval("r" + active_router);
+
+   // reset the scroll line; for more function
+   r.scrollStartLine = r.lastDLine - 23;
+
+   r.INPUT = commands;
+   output_write(commands);
+   commandline_parseCommandLine(1,1);
+}
+
+
+// ***** displayProtocolDetail(interfacename) *****
+// IN:   interface name
+// DO:   to display the protocol details when the user type show protocol command
+// NOTE:
+
+function commands_displayProtocolDetail(interfacename)
+{
+   var rptr = eval("r" + active_router + ".run." + interfaceName );
+   if (rptr.shutdown == true)
+   {
+      output_write(interfacename);
+      output_write(" is administratively down, line protocol is down\n");
+   }
+   else
+   {
+      output_write(interfacename);
+      output_write(" is up, line protocol is up\n");
+   }
+
+   if ( rptr.ip != "")
+   {
+      output_write("    Internet address is ");
+      output_write(rptr.ip);
+      output_write("\n");
+   }
+}
+
+
+// ***** displayInterfaceDetail(interfacename) *****
+// IN:   interface name
+// DO:   to display the interface details when the user type show interface command
+// NOTE:
+
+function commands_displayInterfaceDetail(interfacename)
+{
+   var rptr = eval("r" + active_router + ".run." + interfaceName );
+
+   if (rptr.shutdown == true)
+   {
+      output_write(" is administratively down, line protocol is down\n");
+   }
+   else
+   {
+      output_write(" is up, line protocol is up\n");
+   }
+
+   if (rptr.mac != "")
+      output_write("   Hardware is Lance, address is " + rptr.mac + "(bia " + rptr.mac + ")\n");
+
+   if ( rptr.ip != "")
+   {
+      output_write("   Internet address is ");
+      output_write(rptr.ip);
+   }
+
+   if ( rptr.subnet != "")
+   {
+      output_write("/" + findOneTotal(rptr.subnet));
+      output_write("\n");
+   }
+}
+
+function commands_displayInterfaceE0()
+{
+   output_write("   MTU 1500 bytes, BW 10000 Kbit, DLY 1000 usec,\n");
+   output_write("      reliability 252/255, txload 1/255, rxload 1/255\n");
+   output_write("   Encapsulation ARPA, loopback not set\n");
+   output_write("   Keepalive set (10 sec)\n");
+   output_write("   ARP type: ARPA, ARP Timeout 04:00:00\n");
+   output_write("   Last input never, output 00:00:20, output hang never\n");
+   output_write("   Last clearing of \"show interface\" counters never\n");
+   output_write("   Queueing strategy: fifo\n");
+   output_write("   Output queue 0/40, 0 drops; input queue 0/75, 0 drops\n");
+   output_write("   5 minute input rate 0 bits/sec, 0 packets/sec\n");
+   output_write("   5 minute output rate 0 bits/sec, 0 packets/sec\n");
+   output_write("      0 packets input, 0 bytes, 0 no buffer\n");
+   output_write("      Received 0 broadcasts, 0 runts, 0 giants, 0 throttles\n");
+   output_write("      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored\n");
+   output_write("      0 input packets with dribble condition detected\n");
+   output_write("      6 packets output, 360 bytes, 0 underruns\n");
+   output_write("      6 output errors, 0 collisions, 3 interface resets\n");
+   output_write("      0 babbles, 0 late collision, 0 deferred\n");
+   output_write("      6 lost carrier, 0 no carrier\n");
+   output_write("      0 output buffer failures, 0 output buffers swapped out\n");
+}
+
+function commands_displayInterfaceS0()
+{
+   output_write("   Hardware is HD64570\n");
+   output_write("   MTU 1500 bytes, BW 1544 Kbit, DLY 20000 usec,\n");
+   output_write("      reliability 255/255, txload 1/255, rxload 1/255\n");
+   output_write("   Encapsulation HDLC, loopback not set\n");
+   output_write("   Keepalive set (10 sec)\n");
+   output_write("   Last input never, output never, output hang never\n");
+   output_write("   Last clearing of \"show interface\" counters never\n");
+   output_write("   Input queue: 0/75/0 (size/max/drops); Total output drops: 0\n");
+   output_write("   Queueing strategy: weighted fair\n");
+   output_write("   Output queue: 0/1000/64/0 (size/max total/threshold/drops)\n");
+   output_write("      Conversations  0/0/256 (active/max active/max total)\n");
+   output_write("      Reserved Conversations 0/0 (allocated/max allocated)\n");
+   output_write("   5 minute input rate 0 bits/sec, 0 packets/sec\n");
+   output_write("   5 minute output rate 0 bits/sec, 0 packets/sec\n");
+   output_write("      0 packets input, 0 bytes, 0 no buffer\n");
+   output_write("      Received 0 broadcasts, 0 runts, 0 giants, 0 throttles\n");
+   output_write("      0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort\n");
+   output_write("      0 packets output, 0 bytes, 0 underruns\n");
+   output_write("      0 output errors, 0 collisions, 1 interface resets\n");
+   output_write("      0 output buffer failures, 0 output buffers swapped out\n");
+   output_write("      0 carrier transitions\n");
+   output_write("      DCD=down  DSR=down  DTR=down  RTS=down  CTS=down\n");
+}
+
+
+// ***** findOneTotal(subnetmask) *****
+// IN:   subnetmask
+// DO:   find the number of continuous one's in an subnet mask
+// NOTE:
+
+function findOneTotal(subnetmask)
+{
+   var total = 0;
+   var ipArray = subnetmask.split(".");
+   if (ipArray.length == 4)
+   {
+      for (var i = 0; i < 4; i++)
+      {
+         total = total + checkBits(ipArray[i]);
+         if ( ( (total % 8) != 0) || (total == 0) )
+            break;
+      }
+   }
+   else
+   {
+      total = 0;
+   }
+
+   return total;
+}
+
+
+
+function checkBits(num)
+{
+   var remainder = 0;
+   var binaryArray = new Array();
+   ctr = 0;
+   if (num == 0)
+      return_value = 0;
+   else
+      return_value = 8;
+
+   while (num > 0)
+   {
+      remainder = num % 2;
+      num = int( num / 2 );
+      binaryArray[ctr] = remainder;
+      ctr = ctr + 1;
+   }
+
+   for (var i = 0; i < binaryArray.length; i++)
+   {
+      if ( binaryArray[binaryArray.length - 1 - i] == 0)
+      {
+         return_value =  i;
+         break;
+      }
+   }
+   return return_value;
+}
+
+
+function commands_checkABCD(abcd)
+{
+   var octet = abcd.split(".");
+
+   if (octet.length != 4)
+      return false;
+
+   for (var i=0; i<4; i++)
+   {
+      if (isNaN(octet[i]))
+         return false;
+
+      if ((Number(octet[i]) < 0) || (Number(octet[i]) > 255))
+         return false;
+   }
+
+   return true;
+}
+
+function commands_checkHHH(hhh)
+{
+   var hexPart = hhh.split(".");
+   var hexValue;
+
+   if (hexPart.length != 3)
+      return false;
+
+   for (var i=0; i<3; i++)
+   {
+      hexValue = parseInt(hexPart[i], 16);
+
+      if (isNaN(hexValue))
+         return false;
+
+      if ((hexValue < 0) || (hexValue > 0xffff))
+         return false;
+   }
+
+   return true;
+}
+

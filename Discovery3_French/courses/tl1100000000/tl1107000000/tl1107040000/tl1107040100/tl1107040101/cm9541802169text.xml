@@ -1,0 +1,86 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Cliquez sur les boutons pour afficher les informations récapitulatives.</b>]]>
+</text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><li>Un réseau étendu utilise de nombreuses technologies différentes, présentant chacune des avantages propres.</li><br/><li>En fonction de la technologie utilisée, la conversion du format des données en un format reconnu nécessite un modem ou une unité CSU/DSU.</li><br/><li>Les technologies de réseau étendu se décomposent en commutation de circuits, commutation de paquets et commutation de cellules.</li><br/><li>Les technologies de commutation de circuits créent un circuit physique entre les périphériques d’extrémité avant d’envoyer des informations.</li><br/><li>Les technologies de commutation de paquets et de cellules utilisent un circuit virtuel permanent (PVC) ou commuté (SVC) pour envoyer des informations sur le réseau.</li><br/><li>Les technologies de réseau étendu se nomment boucle locale (ou dernier kilomètre) pour la connexion entre le FAI et le client, ou longue distance pour l’interconnexion entre FAI.</li></ul></font><br/>]]></text>
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[Site B]]></text>
+</component>
+
+<component id="s1_ID_txt03">
+<text><![CDATA[Site A]]></text>
+</component>
+
+<component id="s1_ID_txt04">
+<text><![CDATA[Site C]]></text>
+</component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[Site D]]></text>
+</component>
+
+<component id="s1_ID_txt06">
+<text><![CDATA[Le trafic provenant de deux circuits virtuels emprunte les mêmes liaisons.]]></text>
+</component>
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><li>HDLC est l’encapsulation de ligne série de couche 2 par défaut sur les routeurs Cisco.</li><br/><li>Le protocole HDLC de Cisco intègre un champ supplémentaire pour supporter plusieurs protocoles de couche 3.</li><br/><li>L’encapsulation de couche 2 est modifiée au fur et à mesure que les trames sont acheminées sur le réseau étendu.</li><br/><li>PPP autorise la négociation de nombreuses fonctionnalités avancées, dont l’authentification, l’équilibrage de charge, le rappel et la compression.</li><br/><li>PPP prend en charge l’authentification PAP et CHAP.</li><br/><li>L’authentification PAP envoie le nom d’utilisateur et le mot de passe en texte clair, ce qui la rend vulnérable à l’analyse et aux attaques de lecture répétée.</li><br/><li>CHAP émet des demandes de confirmation à intervalles configurables, obligeant ainsi le périphérique connecté à se réauthentifier.</li></ul></font><br/><br/><br/>]]></text>
+</component>
+
+
+
+<component id="s2_ID_text01">
+		<text><![CDATA[R1]]></text>
+	</component>
+<component id="s2_ID_text02">
+		<text><![CDATA[R2]]></text>
+	</component>
+<component id="s2_ID_text03">
+		<text><![CDATA[R3]]></text>
+	</component>
+
+<component id="s2_ID_text04">
+		<text><![CDATA[Paquets OSPF chiffrés]]></text>
+	</component>
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><li>Le relais de trames est une technologie à commutation de paquets.</li><br/><li>Il utilise des circuits virtuels pour connecter une source spécifique à une destination. Les circuits virtuels peuvent être commutés ou permanents.</li><br/><li>Utilisez les notifications explicites d’encombrement au destinataire (FECN) et à la source (BECN) pour informer les périphériques en réception et en sortie que le réseau est encombré, afin que les routeurs prennent les mesures appropriées.</li><br/><li>Le relais de trames utilise des paramètres tels que le débit de données garanti (CIR) pour définir la bande passante utilisée sur chaque circuit virtuel.</li></ul></font>]]></text>
+</component>
+
+<component id="s3_ID_txt01">           
+<text><![CDATA[Agence<br>]]></text>   
+</component>
+
+<component id="s3_ID_txt02">           
+<text><![CDATA[Site central]]></text>   
+</component>
+
+<component id="s3_ID_txt03">           
+<text><![CDATA[56 Kbits/s]]></text>   
+</component>
+
+<component id="s3_ID_txt04">           
+<text><![CDATA[Goulot d’étranglement]]></text>   
+</component>
+
+<component id="s3_ID_txt05">           
+<text><![CDATA[T1]]></text>   
+</component>
+
+<component id="s3_ID_txt06">           
+<text><![CDATA[Nuage Frame Relay]]></text>   
+</component>
+
+<component id="s3_ID_txt07">           
+<text><![CDATA[J’ai reçu de nombreuses notifications explicites d’encombrement à la source (BECN). Le réseau doit être encombré. Je dois réduire mon rythme d’envoi de paquets.]]></text>   
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,5 @@
+<transcript lastedited="01.06.09 15:01:43">
+<title><content-text><![CDATA[6.2.1  - Configure Inter-V LAN Routing]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the verification of the routing table and the router running-config with traditional inter-V LAN routing using two router interfaces.<br><br>Verify Routing Table:<br>Some output omitted.<br>172.17.0.0 /24 is subnetted, 2 subnets<br>C172.17.10.0 is directly connected, FastEthernet0/0<br>C172.17.30.0 is directly connected, FastEthernet0/1<br><br>Verify Router Configuration:<br>R1#show run<br>Some output omitted.<br><br>hostname R1<br><br>interface FastEthernet0/0<br>i p address 172.17.10.1 255.255.255.0<br><br>interface FastEthernet0/1<br>i p address 172.17.30.1 255.255.255.0<br><br>i p classless<br><br>line con 0<br>line v t y 0 4<br>login<br><br>end]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

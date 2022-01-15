@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<textcomponents>
+
+<component id="ID_prompt">
+<text><![CDATA[<b>Click each issue button to learn how misconfigured subnet masks affect network communication.</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>Issue 1</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Issue 2</b>]]></text>
+</component>
+
+<component id="ID_button03">
+<text><![CDATA[<b>Issue 3</b>]]></text>
+</component>
+
+<component id="ID_button04">
+<text><![CDATA[<b>Issue 4</b>]]></text>
+</component>
+
+<component id="ID_topology01">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="ID_topology02">
+<text><![CDATA[<b>Gateway:<br />192.168.0.33/27</b>]]></text>
+</component>
+
+<component id="ID_topology03">
+<text><![CDATA[<b>Gateway:<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_topology04">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+
+<component id="ID_topology05">
+<text><![CDATA[<b>H2</b>]]></text>
+</component>
+
+<component id="ID_topology06">
+<text><![CDATA[<b>SV1</b>]]></text>
+</component>
+
+<component id="ID_s1_title01">
+<text><![CDATA[<font size = "12"><b>A Server is Only Accessible by Hosts on the Same Subnet</b></font>]]></text>
+</component>
+
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<font size = "11">A server on one of the subnets is manually configured using the default /24 network prefix instead of the /27. This misconfiguration causes the server to determine that all hosts on the various subnets are on the same Layer 3 network that the server is on. The server does not send any traffic to the default gateway for any hosts on the /27 subnets. Check server configurations if this symptom occurs.</font>]]></text>
+</component>
+
+<component id="ID_s1_bubble01">
+<text><![CDATA[<b><font size = "-2">192.168.0.42 is on my 192.168.0.0/24 network, but has not responded to my ARP request; therefore I cannot respond.</b>]]></text>
+</component>
+
+
+<component id="ID_s1_bubble02">
+<text><![CDATA[<b><font size = "-2">I requested a web page from SV1, but have not received it.</font></b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Gateway:<br />192.168.0.33/27</b>]]></text>
+</component>
+
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Gateway:<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_s1_txt04">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_s1_txt05">
+<text><![CDATA[<b>192.168.0.42/27</b>]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>192.168.0.5/<font color = "#FF0000">24</font></b>]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_s2_title01">
+<text><![CDATA[<font size = "12"><b>Hosts Get Responses from Internet Servers, but Not Servers on Another Subnet</b></font>]]></text>
+</component>
+
+
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<font size = "11">A host or group of hosts are configured with a /24 subnet mask that causes an overlap with the server network subnet addresses.  Each host correctly determines that Internet addresses are not on their local Layer 3 network, and sends the traffic to the default gateway. The hosts incorrectly determine that internal server addresses are on their local network, and use ARP to attempt to get the server MAC addresses. Check DHCP server configurations and host configurations when this symptom is evident.  A network sniffer can be used to show the ARP frames.</font>]]></text>
+</component>
+
+<component id="ID_s2_bubble01">
+<text><![CDATA[<b><font size = "-2">I need a web page from IP address 200.200.1.1. I have forwarded my request to the gateway</font></b>]]></text>
+</component>
+
+<component id="ID_s2_bubble02">
+<text><![CDATA[<b><font size = "-2">I need a web page from SV1. SV1 is on my network. I can ARP for the MAC address.</font></b>]]></text>
+</component>
+
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>Gateway:<br />192.168.0.33/27</b>]]></text>
+</component>
+
+<component id="ID_s2_txt03">
+<text><![CDATA[<b>Gateway:<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_s2_txt04">
+<text><![CDATA[<b>192.168.0.43/<font color = "#FF0000">24</font></b>]]></text>
+</component>
+
+<component id="ID_s2_txt05">
+<text><![CDATA[<b>192.168.0.42/<font color = "#FF0000">24</font></b>]]></text>
+</component>
+
+<component id="ID_s2_txt06">
+<text><![CDATA[<b>192.168.0.5/27</b>]]></text>
+</component>
+
+<component id="ID_s2_txt07">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+
+<component id="ID_s3_title01">
+<text><![CDATA[<font size = "12"><b>Hosts are Unable to Get Responses from Internet Servers or Servers on Another Subnet, Using Hostnames</b></font>]]></text>
+</component>
+
+<component id="ID_s3_txt01">
+<text><![CDATA[<font size = "11">A host or group of hosts are configured with a /24 subnet mask that causes an overlap with the server network subnet addresses, including the DNS server. Subnet mask errors on hosts do not usually affect Internet connectivity; however, if the subnet mask error causes the host subnet to overlap the subnet containing the DNS server, the host(s) will not be able to contact the DNS server.  Without DNS, no IP addresses can be resolved and all services that rely on DNS cannot be accessed. Check host and DNS configurations if unable to access the Internet.</font>]]></text>
+</component>
+
+<component id="ID_s3_bubble01">
+<text><![CDATA[<b><font size = "-2">According to the IP information, the DNS server is on my local network, but I am unable to reach the DNS server to resolve hostnames.</font></b>]]></text>
+</component>
+
+<component id="ID_s3_txt02">
+<text><![CDATA[<b>Gateway:<br />192.168.0.33/27</b>]]></text>
+</component>
+
+<component id="ID_s3_txt03">
+<text><![CDATA[<b>Gateway:<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_s3_txt04">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_s3_txt05">
+<text><![CDATA[<b>192.168.0.42/<font color = "#FF0000">24</font></b>]]></text>
+</component>
+
+<component id="ID_s3_txt06">
+<text><![CDATA[<b>192.168.0.5/27</b>]]></text>
+</component>
+
+<component id="ID_s3_txt07">
+<text><![CDATA[<b>192.168.0.6/27</b>]]></text>
+</component>
+
+<component id="ID_s3_txt08">
+<text><![CDATA[<b>DNS</b>]]></text>
+</component>
+
+
+
+<component id="ID_s4_title01">
+<text><![CDATA[<font size = "12"><b>Some Hosts Can Get Responses from Internet Servers and Servers on Other Subnets, but Others Cannot</b></font>]]></text>
+</component>
+
+
+<component id="ID_s4_txt01">
+<text><![CDATA[<font size = "11">The subnet mask configuration error occurs on a router interface that serves as a default gateway for one of the /27 subnets. If the router interface is incorrectly configured with a /28 subnet mask, the route entered in the routing table will not include all hosts on the /27 subnet.  Hosts with addresses on the lower portion of range that are within the /28 subnet IP address boundaries will be able to send and receive through the router. Those with address in the top half of the range can send packets to remote destinations, but when the responses return, the router does not have a route to the destination IP addresses.  Always verify all connected routes in the routing table using the show IP route command.</font>]]></text>
+</component>
+
+<component id="ID_s4_bubble01">
+<text><![CDATA[<b><font size = "-2">I have received a packet for destination 192.168.0.51, but that does not match any route in my routing table. I cannot forward this packet.</font></b>]]></text>
+</component>
+
+<component id="ID_s4_txt02">
+<text><![CDATA[<b>Gateway:<br />192.168.0.33/<font color = "#FF0000">28</font></b>]]></text>
+</component>
+
+<component id="ID_s4_txt03">
+<text><![CDATA[<b>Gateway:<br />192.168.0.1/27</b>]]></text>
+</component>
+
+<component id="ID_s4_txt04">
+<text><![CDATA[<b>192.168.0.51/27</b>]]></text>
+</component>
+
+<component id="ID_s4_txt05">
+<text><![CDATA[<b>192.168.0.42/27</b>]]></text>
+</component>
+
+<component id="ID_s4_txt06">
+<text><![CDATA[<b>192.168.0.5/27</b>]]></text>
+</component>
+
+<component id="ID_s4_txt07">
+<text><![CDATA[<b>192.168.0.6/27</b>]]></text>
+</component>
+
+</textcomponents>

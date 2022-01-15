@@ -1,0 +1,94 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b></b>]]></text>
+</component>
+
+<component id="ID_label01">
+<text><![CDATA[<b>Step 1:</b>]]></text>
+</component>
+
+<component id="ID_label02">
+<text><![CDATA[<b>Step 2:</b>]]></text>
+</component>
+
+<component id="ID_label03">
+<text><![CDATA[<b>Step 3:</b>]]></text>
+</component>
+
+<component id="ID_label04">
+<text><![CDATA[<b>Step 4:</b>]]></text>
+</component>
+
+<component id="ID_label05">
+<text><![CDATA[<b>Step 5:</b>]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[<b>Ping the Default Gateway</b>]]></text>
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[<b>Verify End-to-End Connectivity</b>]]></text> 
+</component>
+
+<component id="ID_btn03">
+<text><![CDATA[<b>Verify Routing Configuration</b>]]></text> 
+</component>
+
+<component id="ID_btn04">
+<text><![CDATA[<b>Verify NAT Operation</b>]]></text> 
+</component>
+
+<component id="ID_btn05">
+<text><![CDATA[<b>Verify Firewall Filtering Rules</b>]]></text> 
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Step 1. Ping the host default gateway</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[If both the host and the server can successfully ping their default gateways, Layer 1 and Layer 2 services are functioning properly and Layer 3 local network connectivity exists. If the ping to the local default gateway address fails, troubleshoot Layers 3, 2, and 1 to locate the source of the  problem.]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Step 2. Verify end-to-end connectivity</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[Ping or telnet from the host to a remote server or networking device.  If successful, Layer 3 routing is operating correctly. When Layers 1, 2, and 3 are functioning properly, the issue must exist at a higher layer.
+If this ping is unsuccessful, it is necessary to troubleshoot the routing, NAT, and firewall configurations to ensure proper packet delivery.]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Step 3. Verify the routing configuration</b>]]></text>
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[Ensure that the routing configuration is correct and that routes are updating as expected. If the routing table does not contain expected routes, troubleshoot and fix the routing configuration and attempt Step 2 again. If still unable to ping, check the NAT configuration.]]></text>
+</component>
+
+<component id="ID_title04">
+<text><![CDATA[<b>Step 4. Ensure that NAT is working correctly</b>]]></text>
+</component>
+
+
+<component id="ID_txt04">
+<text><![CDATA[When there is a problem reaching services on a remote network, such as over the Internet, NAT may not be functioning correctly.  Use the show ip nat translations command to verify that translations are occurring. Clear the NAT translations with the clear ip nat translation * command and try to access the external resource again. If still not successful, check the configuration of the inside and outside interfaces. When the NAT configuration has been verified, attempt Step 2 again. If still unable to ping, check for firewall filter rules.]]></text>
+</component>
+
+<component id="ID_title05">
+<text><![CDATA[<b>Step 5. Check for firewall filter rules</b>]]></text>
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[Even though there is IP connectivity between a source and a destination, problems may still exist for a specific upper layer protocol, such as FTP, HTTP, or Telnet. These protocols ride on top of the basic IP transport but are subject to protocol-specific problems relating to packet filters and firewalls. Verify that the necessary ports are permitted on all firewalls.]]></text>
+</component>
+
+
+</textcomponents>

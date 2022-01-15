@@ -1,0 +1,257 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher des informations récapitulatives.</b>]]></text>
+</component>
+
+<component id="slide01">
+<text><![CDATA[<font size="14"><b>Ce chapitre a traité du processus d’identification, de localisation et de correction des problèmes rencontrés.</b><br/><br/><ul><li>La collecte d’informations et la confirmation du problème représentent les deux premières étapes essentielles du processus de dépannage.</li><br/><li>Lors d’un dépannage, vous pouvez faire appel à diverses techniques structurées, dont les suivantes : descendant, ascendant, diviser et conquérir. </li><br/><li>Parmi les techniques moins structurées se trouvent les essais et erreurs et la substitution</li><br/><li>Les responsables du dépannage expérimentés se fient à leur expérience davantage qu’aux techniques structurées.</li></ul></font>]]></text>
+</component>
+
+<component id="slide02">
+<text><![CDATA[<font size="14"><b>Il existe plusieurs outils d’aide au dépannage.</b><br/><br/><ul><li>Les problèmes physiques n’affectent principalement que l’aspect matériel des périphériques, ainsi que les connexions des câbles.</li><br/><li>Ils peuvent être détectés par les sens. </li><br/><li>Divers utilitaires logiciels permettent d’identifier des problèmes liés au réseau.</li><br/><li>Parmi les utilitaires logiciels courants les plus utilisés à des fins de dépannage, vous trouverez : ipconfig, ping, tracert, nslookup, netstat.</li></ul></font>]]></text>
+</component>
+
+<component id="slide03">
+<text><![CDATA[<font size="14"><b>Plusieurs éléments doivent être vérifiés lors du dépannage des réseaux filaires et sans fil.</b><br/><br/><ul><li>Les LED permettent d’indiquer l’état ou l’activité actuelle d’un équipement ou d’une connexion. </li><br/><li>Dans le cas des périphériques filaires, vérifiez la connectivité physique et tout problème éventuel de câblage :  type de câble inapproprié, connecteur défectueux, dommage physique et emplacement du port.</li><br/><li>Dans le cas d’un client sans fil, examinez les problèmes de connectivité suivants : compatibilité A/B/G/N, canaux se chevauchant, intensité du signal et interférence. Vérifiez également les paramètres SSID, d’authentification et de chiffrement.</li><br/><li>Sur des clients filaires et sans fil, vérifiez la configuration IP du client, y compris l’adresse IP, le masque de sous-réseau, la passerelle par défaut et les informations liées au système DNS. </li><br/><li>Vérifiez la connectivité entre le routeur de service intégré (ISR) et le FAI en consultant la page d’état du routeur pour vous assurer qu’une adresse IP est attribuée par le FAI et que la connexion est bonne.<br/><br/></li></ul></font>]]></text>
+</component>
+
+<component id="slide04">
+<text><![CDATA[<font size="14"><b>Plusieurs sources peuvent vous aider lors du processus de dépannage.</b><br/><br/><ul><li>La documentation, comme des cartes de topologie, des diagrammes de réseaux et des systèmes d’adressage aident au dépannage.</li><br/><li>Parmi les ressources externes utiles lors d’un dépannage, on compte les suivantes : la documentation archivée, les FAQ en ligne, les collègues et autres professionnels de réseaux, les forums Internet.</li><br/><li>Le support technique est un groupe d’individus détenteurs des connaissances et des outils nécessaires pour diagnostiquer et résoudre des problèmes courants.</li><br/><li>Un support technique de premier, deuxième et troisième niveau est souvent disponible et des procédures de signalisation aident à résoudre les problèmes.</li><br/><li>Il est essentiel de documenter toutes les opérations effectuées lors du processus de dépannage, y compris les échanges avec le support technique.<br/></li></ul></font>]]></text>
+</component>
+
+<component id="ID_s1_txt01">
+<text><![CDATA[<b>Méthodes de dépannage</b>]]></text>
+</component>
+
+<component id="ID_s1_inst">
+<text><![CDATA[<b>Placez le pointeur de la souris sur chaque technique pour obtenir davantage d’informations.</b>]]></text>
+</component>
+
+<component id="ID_s1_txt02">
+<text><![CDATA[<b>Approche Descendant</b>]]></text>
+</component>
+<component id="ID_s1_txt03">
+<text><![CDATA[<b>Approche Ascendant</b>]]></text>
+</component>
+<component id="ID_s1_txt04">
+<text><![CDATA[<b>Approche Diviser et conquérir</b>]]></text>
+</component>
+<component id="ID_s1_txt05">
+<text><![CDATA[<b>Application<br/>(application, présentation, session)</b>]]></text>
+</component>
+
+<component id="ID_s1_txt06">
+<text><![CDATA[<b>Transport</b>]]></text>
+</component>
+
+<component id="ID_s1_txt07">
+<text><![CDATA[<b>Réseau</b>]]></text>
+</component>
+
+<component id="ID_s1_txt08">
+<text><![CDATA[<b>Liaison de données</b>]]></text>
+</component>
+
+<component id="ID_s1_txt09">
+<text><![CDATA[<b>Physique</b>]]></text>
+</component>
+
+
+<component id="myTable3_s1">
+<text><![CDATA[<table header='top' headerstyle='black' borderwidth='1.75' shadow='true' shadowcolor='#999999' cellpadding='4'>
+	<tr>
+		<td><font color='#ffffff'>Méthode de dépannage</font></td>
+		<td><font color='#ffffff'>Fonctionnement</font></td>
+		<td><font color='#ffffff'>Cas appropriés</font></td>
+		<td><font color='#ffffff'>Avantages/<br/>Inconvénients</font></td>
+	</tr>
+	<tr>
+		<td>Ascendant</td>
+		<td>Commence toujours par la couche application et redescend jusqu’à la détection d’une couche défectueuse.</td>
+		<td>Particulièrement adaptée aux cas complexes.</td>
+		<td>Cette approche est lente, mais très fiable. Lorsque le problème provient de l’application (couche supérieure), cette approche peut prendre un certain temps.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="myTable2_s1">
+<text><![CDATA[<table header='top' headerstyle='black' borderwidth='1.75' shadow='true' shadowcolor='#999999' cellpadding='4'>
+	<tr>
+		<td><font color='#ffffff'>Méthode de dépannage</font></td>
+		<td><font color='#ffffff'>Fonctionnement</font></td>
+		<td><font color='#ffffff'>Cas appropriés</font></td>
+		<td><font color='#ffffff'>Avantages/<br/>Inconvénients</font></td>
+	</tr>
+	<tr>
+		<td>Diviser et conquérir</td>
+		<td>Selon les circonstances (problèmes signalés) et votre expérience, vous pouvez commencer par une couche quelconque et remonter ou descendre dans la pile OSI.</td>
+		<td>Approche la plus appropriée lorsque vous avez suffisamment d’expérience et que le problème présente des symptômes précis.</td>
+		<td>Cette méthode permet d’atteindre la couche problématique plus rapidement que les autres méthodes.<br/>Elle n’est efficace que si vous êtes expérimenté.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="myTable1_s1">
+<text><![CDATA[<table header='top' headerstyle='black' borderwidth='1.75' shadow='true' shadowcolor='#999999' cellpadding='4'>
+	<tr>
+		<td><font color='#ffffff'>Méthode de dépannage</font></td>
+		<td><font color='#ffffff'>Fonctionnement</font></td>
+		<td><font color='#ffffff'>Cas appropriés</font></td>
+		<td><font color='#ffffff'>Avantages/<br/>Inconvénients</font></td></tr>
+	<tr>
+		<td>Descendant</td><td>Commence toujours par la couche application et redescend jusqu’à la détection d’une couche défectueuse.</td>
+		<td>Cette approche est particulièrement adaptée en présence de problèmes plus simples qui ne sont pas liés à l’application/ l’utilisateur ou à la couche supérieure.</td>
+		<td>Si le problème est lié à des couches inférieures, vous avez perdu beaucoup de temps et d’efforts à explorer les couches application supérieures.</td>
+	</tr>
+</table>]]></text>
+</component>      
+
+<component id="ID_s2_txt01">
+<text><![CDATA[<b>Utilitaires pour dépanner des problèmes de connectivité</b>]]></text>
+</component>
+<component id="ID_s2_inst">
+<text><![CDATA[<b>Pour afficher le type de question à laquelle vous pouvez apporter une réponse en utilisant chaque utilitaire, placez le pointeur de la souris sur chaque commande.</b>]]></text>
+</component>
+<component id="ID_s2_txt02">
+<text><![CDATA[<b>Ipconfig</b>]]></text>
+</component>
+<component id="ID_s2_txt03">
+<text><![CDATA[<b>Ping</b>]]></text>
+</component>
+<component id="ID_s2_txt04">
+<text><![CDATA[<b>Netstat</b>]]></text>
+</component>
+<component id="ID_s2_txt05">
+<text><![CDATA[<b>Tracert</b>]]></text>
+</component>
+<component id="ID_s2_txt06">
+<text><![CDATA[<b>Nslookup</b>]]></text>
+</component>
+<component id="ID_s2_txt07">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="ID_s2_txt08">
+<text><![CDATA[<b>L’adresse IP et le masque de sous-réseau sont-ils corrects ?</b>]]></text>
+</component>
+
+<component id="ID_s2_txt09">
+<text><![CDATA[<b>Puis-je envoyer un paquet IP à un autre hôte ?</b>]]></text>
+</component>
+
+<component id="ID_s2_txt10">
+<text><![CDATA[<b>Quelles sont mes connexions réseau actives et quels ports TCP/UDP sont utilisés ?</b>]]></text>
+</component>
+
+<component id="ID_s2_txt11">
+<text><![CDATA[<b>Quelle route mes paquets vont-ils emprunter pour accéder à un autre hôte et quel sera le retard observé à chaque saut ?</b>]]></text>
+</component>
+
+<component id="ID_s2_txt12">
+<text><![CDATA[<b>Quelle est l’adresse IP du site www.xyz.com ?</b>]]></text>
+</component>
+
+<component id="securityledTitle">
+<text>LED de sécurité</text>
+</component>
+<component id="ID_s3_title">
+<text><![CDATA[<b>Indicateurs LED</b>]]></text>
+</component>
+<component id="ID_s3_inst">
+<text><![CDATA[<b>Pour obtenir davantage d’informations, placez le pointeur de la souris sur chaque type de LED.</b>]]></text>
+</component>
+<component id="ID_s3_txt01">
+<text><![CDATA[<b>**La signification exacte des couleurs peut varier selon l’équipement et le fabricant.</b>]]></text>
+</component>
+<component id="securityledBody">
+<text><![CDATA[<ul><li>Indique la condition actuelle du périphérique et peut changer de couleur ou clignoter.</li><li>Utilisés lors de tests d’autodiagnostic pour indiquer la progression de l’opération. À l’issue des autodiagnostics :</li><li>**la couleur verte fixe indique qu’un périphérique fonctionne correctement.</li><li>**la couleur orange peut indiquer la présence d’une erreur qu’il est possible de corriger, comme un système d’exploitation manquant ou endommagé.</li><li>**la couleur rouge peut indiquer que le périphérique a rencontré un problème matériel majeur qui nécessite un service.</li></ul>]]></text>
+</component>
+<component id="wirelessactivityledTitle">
+<text>LED d’activité du périphérique sans fil</text>
+</component>
+<component id="wirelessactivityledBody">
+<text><![CDATA[<ul><li>Parfois appelé voyant de liaison, une LED d’activité est habituellement associée à un port spécifique.</li><li>Dans des conditions de fonctionnement normal, un clignotement indique que le trafic circule normalement via le port. Sur certains périphériques, le taux de clignotement indique la vitesse de fonctionnement du port.</li><li>**La couleur verte fixe indique qu’un périphérique est connecté au port, mais qu’aucun trafic n’est détecté.</li><li>**La couleur orange indique que le périphérique modifie le fonctionnement du port.</li><li>**L’absence de voyant indique qu’aucun périphérique n’est connecté au port ou qu’un problème affecte le port, le périphérique de transmission ou le câble.</li><li>Sur les périphériques sans fil : un voyant d’activité peut indiquer l’état de la connexion radio. Le taux de clignotement varie selon que les clients sont associés ou à la recherche d’une association.</li></ul>]]></text>
+</component>
+<component id="ethernetactivityledTitle">
+<text>LED d’activité Ethernet</text>
+</component>
+<component id="ethernetactivityledBody">
+<text><![CDATA[<ul><li>Parfois appelé voyant de liaison, une LED d’activité est habituellement associée à un port spécifique.</li><li>Dans des conditions de fonctionnement normal, un clignotement indique que le trafic circule normalement via le port. Sur certains périphériques, le taux de clignotement indique la vitesse de fonctionnement du port.</li><li>**La couleur verte fixe indique qu’un périphérique est connecté au port, mais qu’aucun trafic n’est détecté.</li><li>**La couleur orange indique que le périphérique modifie le fonctionnement du port.</li><li>**L’absence de voyant indique qu’aucun périphérique n’est connecté au port ou qu’un problème affecte le port, le périphérique de transmission ou le câble.</li><li>Sur les périphériques sans fil : un voyant d’activité peut indiquer l’état de la connexion radio. Le taux de clignotement varie selon que les clients sont associés ou à la recherche d’une association.</li></ul>]]></text>
+</component>
+<component id="internetactivityledTitle">
+<text>LED d’activité Internet</text>
+</component>
+<component id="internetactivityledBody">
+<text><![CDATA[<ul><li>Parfois appelé voyant de liaison, une LED d’activité est habituellement associée à un port spécifique.</li><li>Dans des conditions de fonctionnement normal, un clignotement indique que le trafic circule normalement via le port. Sur certains périphériques, le taux de clignotement indique la vitesse de fonctionnement du port.</li><li>**La couleur verte fixe indique qu’un périphérique est connecté au port, mais qu’aucun trafic n’est détecté.</li><li>**La couleur orange indique que le périphérique modifie le fonctionnement du port.</li><li>**L’absence de voyant indique qu’aucun périphérique n’est connecté au port ou qu’un problème affecte le port, le périphérique de transmission ou le câble.</li><li>Sur les périphériques sans fil : un voyant d’activité peut indiquer l’état de la connexion radio. Le taux de clignotement varie selon que les clients sont associés ou à la recherche d’une association.</li></ul>]]></text>
+</component>
+<component id="powerledTitle">
+<text>LED d’alimentation</text>
+</component>
+<component id="powerledBody">
+<text><![CDATA[<ul><li>Habituellement de couleur verte fixe.</li><li>Il indique que le périphérique est alimenté.</li><li>**L’absence de voyant indique un problème d’alimentation. Vérifiez les connexions d’alimentation et/ou la position de l’interrupteur d’alimentation qui doit être sous tension (ON).</li></ul>]]></text>
+</component>
+
+<component id="securityledTitle">
+<text>LED de sécurité</text>
+</component>
+<component id="ID_title">
+<text><![CDATA[<b>Indicateurs LED</b>]]></text>
+</component>
+<component id="ID_inst">
+<text><![CDATA[<b>Pour obtenir davantage d’informations, placez le pointeur de la souris sur chaque type de LED.</b>]]></text>
+</component>
+
+
+<component id="ID_txt08">
+<text><![CDATA[  L’adresse IP et le masque de sous-réseau sont-ils <br/>corrects ?]]></text>
+</component>
+<component id="ID_txt09">
+<text><![CDATA[  Puis-je envoyer un paquet IP à un autre hôte ?]]></text>
+</component>
+<component id="ID_txt10">
+<text><![CDATA[  Quelles sont mes connexions réseau actives et quels ports TCP/UDP sont <br/>utilisés ?]]></text>
+</component>
+<component id="ID_txt11">
+<text><![CDATA[  Quelle route mes paquets vont-ils emprunter pour accéder à un autre hôte et quel sera le retard observé à chaque saut ?]]></text>
+</component>
+<component id="ID_txt12">
+<text><![CDATA[  Quelle est l’adresse IP du site www.xyz.com ?]]></text>
+</component>
+
+
+<component id="securityledBody">
+<text><![CDATA[<ul><li>Indique la condition actuelle et les paramètres de sécurité du périphérique.</li><li>Le vert fixe indique que la sécurité est activée.</li><li></ul>]]></text>
+</component>
+
+<component id="wirelessactivityledTitle">
+<text>LED d’activité</text>
+</component>
+
+<component id="wirelessactivityledBody">
+<text><![CDATA[Parfois appelé voyant de liaison, une LED d’activité est habituellement associée à un port spécifique. Dans des conditions de fonctionnement normal, un clignotement indique que le trafic circule normalement via le port. Sur certains périphériques, la taux de clignotement indique la vitesse de fonctionnement du port.<ul><li>**La couleur verte fixe indique qu’un périphérique est connecté au port, mais qu’aucun trafic n’est détecté. Le vert clignotant indique que le périphérique est branché et qu’il reçoit du trafic.</li><li>**La couleur orange indique que le périphérique modifie le fonctionnement du port.</li><li>**L’absence de voyant indique qu’aucun périphérique n’est connecté au port ou qu’un problème affecte la connexion filaire ou sans fil.</li></ul>**la signification exacte des couleurs peut varier selon l’équipement et le fabricant]]></text>
+</component>
+
+<component id="powerledTitle">
+<text>LED d’alimentation</text>
+</component>
+<component id="powerledBody">
+<text><![CDATA[<ul><li>Habituellement verte fixe.</li><li>Indique que le périphérique est alimenté.</li><li>L’absence de voyant indique un problème d’alimentation. Vérifiez les connexions d’alimentation.</li></ul>
+]]></text>
+</component>
+
+<component id="Security LED">
+<text>LED de sécurité</text>
+</component>
+
+
+<component id="Wireless Activity LED">
+<text><![CDATA[<font align='left'>LED d’activité du périphérique sans fil<br />LED d’activité Internet<br />LED d’activité Ethernet</font>]]></text>
+</component>
+
+<component id="Power LED">
+<text>LED d’alimentation</text>
+</component>
+
+
+</textcomponents>

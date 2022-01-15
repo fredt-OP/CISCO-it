@@ -1,0 +1,151 @@
+<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Méthodes de transmission par commutateur</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Commutation par stockage et retransmission (store and forward)</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>Commutation cut-through</B>]]></text> 
+</component>
+
+<component id="ID_title">
+  <text><![CDATA[<B>Méthodes de transmission de paquets</B>]]></text> 
+</component>
+
+
+<component id="ID_txt_WindowTitle01">
+  <text><![CDATA[<B>Commutateur Store and Forward</B>]]></text> 
+</component>
+
+
+<component id="ID_txt01">
+  <text><![CDATA[<B>Cut-through</B>]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<B>Store and Forward</B>]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[<B>La trame est acheminée via le commutateur avant d’être entièrement reçue.</B>]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[<B>La trame complète est reçue avant d’être transmise.</B>]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[<B>Source</B>]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[<B>Destination</B>]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[<B>Un commutateur Store and Forward reçoit la trame entière, calcule le contrôle par redondance cyclique (CRC) et vérifie la longueur de la trame. Si le CRC et la longueur de la trame sont admis, le commutateur recherche l’adresse de destination qui détermine l’interface de sortie. La trame est ensuite acheminée par le port approprié.</B>]]></text> 
+</component>
+
+<component id="ID_txt09">
+  <text><![CDATA[<B>Source</B>]]></text> 
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[<B>Destination</B>]]></text> 
+</component>
+
+<component id="ID_txt10">
+  <text><![CDATA[<B>Un commutateur cut-through achemine la trame avant qu’elle ne soit entièrement reçue. Au minimum, l’adresse de destination de la trame doit être lue avant que celle-ci ne soit retransmise.</B>]]></text> 
+</component>
+
+<component id="ID_txt11">
+  <text><![CDATA[<B>Commutateur cut-through</B>]]></text> 
+</component>
+
+<component id="ID_txt12">
+  <text><![CDATA[<B>Table de commutation</B>]]></text> 
+</component>
+
+<component id="ID_txt13">
+  <text><![CDATA[<B>Adresse de destination</B>]]></text> 
+</component>
+
+
+<component id="ID_txt14">
+  <text><![CDATA[<B>Adresse source</B>]]></text> 
+</component>
+
+
+<component id="ID_txt15">
+  <text><![CDATA[<B>Données</B>]]></text> 
+</component>
+
+
+<component id="ID_txt16">
+  <text><![CDATA[<B>CRC</B>]]></text> 
+</component>
+
+<component id="ID_txt17">
+  <text><![CDATA[<B>Trame correcte !</B>]]></text> 
+</component>
+
+
+<component id="ID_slide2_txt01">
+  <text><![CDATA[<B>Source</B>]]></text> 
+</component>
+
+<component id="ID_slide2_txt02">
+  <text><![CDATA[<B>Destination</B>]]></text> 
+</component>
+
+<component id="play">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Texte]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward2">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute2">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute2"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Texte]]></text>
+</component>
+
+</textcomponents>

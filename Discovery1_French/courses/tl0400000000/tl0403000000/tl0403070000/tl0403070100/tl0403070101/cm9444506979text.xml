@@ -1,0 +1,240 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour obtenir des informations récapitulatives.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Le présent chapitre a traité des concepts de base et des avantages des réseaux, ainsi que des caractéristiques des réseaux Ethernet locaux.</b>
+<ul></li><br/><li>Les réseaux d'informations peuvent transporter de la voix, de la vidéo et des données.</li><br/><li>Les réseaux d'informations se composent de périphériques, d'hôtes, de périphériques réseau et de supports de communication.</li><br/><li>Des schémas topologiques ont été utilisés pour décrire les conceptions de réseau logique et physique.</li><br/><li>Les hôtes peuvent agir comme un client, un serveur ou les deux.
+</li>
+</ul>
+]]></text>
+</component>
+
+<component id="s1_ID_txt01">
+<text><![CDATA[<b>Réseau téléphonique</b>]]></text>
+</component>
+<component id="s1_ID_txt02">
+<text><![CDATA[<b>Réseau informatique</b>]]></text>
+</component>
+<component id="s1_ID_txt03">
+<text><![CDATA[<b>Réseau vidéo</b>]]></text>
+</component>
+<component id="s1_ID_txt04">
+<text><![CDATA[<b>Réseau d'informations convergent</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[
+<ul></li><br/><li>Toute communication a une source, une destination et un canal.</li><br/><li>Les communications informatiques fonctionnent selon des règles spéciales, appelées protocoles.</li><br/><li>Les protocoles définissent les caractéristiques d'un message, par exemple : codage, formatage, encapsulation, taille, durée et modèles.</li>
+</ul>
+]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[
+<ul></li><br/><li>Pour pouvoir communiquer sur un réseau local, les ordinateurs doivent avoir recours au même protocole.</li><br/><li>La norme industrielle Ethernet constitue le protocole le plus courant utilisé sur les réseaux locaux câblés.</li><br/><li>Une adresse MAC physique, préconfigurée sur la carte réseau d'un hôte, identifie chaque hôte local d'un réseau Ethernet. </li></ul>
+]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Les grands réseaux sont souvent divisés en réseaux plus petits et plus faciles à gérer, à l'aide d'une conception hiérarchique en couche qui comprend les couches suivantes :</b>
+<ul><li>Accès</li><li>Distribution</li><li>Couche coeur de réseau</li></ul>
+Toutes ces couches ont une fonction primaire et des périphériques associés. 
+]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[
+<ul>
+<li>Les adresses IP logiques servent à identifier l'emplacement d'un hôte au sein de cette conception hiérarchique.</li>
+<li>Un hôte individuel a besoin d'une adresse MAC physique et d'une adresse IP logique pour recevoir un paquet.</li>
+<li>Le protocole ARP sert à résoudre une adresse IP sur une adresse MAC pour une livraison locale.</li>
+</ul>
+]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Couche d'accès :</b>
+<ul><li>La couche d'accès est le premier point d'entrée d'un réseau pour tous les hôtes.</li><li>Les hôtes sont souvent directement connectés à l'aide de câbles Ethernet à un périphérique de couche d'accès, tel un concentrateur ou un commutateur.</li><li>Les adresses MAC et IP sont utilisées sur le réseau local au niveau de la couche d'accès.</li>
+</ul><b>Couche de distribution :</b>
+<ul><li>La couche de distribution relie des réseaux locaux indépendants et contrôle le trafic entre eux.</li><li>Les hôtes individuels ne sont généralement pas reliés directement aux périphériques de la couche de distribution.</li><li>Les routeurs représentent les principaux périphériques réseau de la couche de distribution et ils se servent des adresses IP pour déplacer des paquets entre les réseaux.</li>
+</ul>
+]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Un projet de réseau commence par le regroupement des informations relatives à l'utilisation dudit réseau. Ces informations comprennent :</b><br><ul><br><li>le nombre et le type d'hôtes à connecter au réseau ;</li>
+<li>les applications à utiliser ;</li>
+<li>les conditions de partage et de connectivité à Internet ;</li>
+<li>les mesures de sécurité et de confidentialité ;</li>
+<li>les attentes en matière de fiabilité et de temps de fonctionnement ;</li>
+<li>les conditions de connectivité (avec câble ou sans fil).</li>
+</ul>
+]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[
+<ul>
+<li>Les routeurs intégrés de Cisco, ainsi que d'autres périphériques réseau multifonction, relient les réseaux domestiques et les réseaux des petites entreprises afin que plusieurs hôtes partagent des ressources et se connectent à Internet.</li>
+<li>Un périphérique réseau domestique est un périphérique simplifié à faible coût, souvent utilisé sur les petits réseaux. </li>
+<li>Il agit généralement à la fois comme commutateur, comme routeur et comme point d'accès sans fil. </li>
+</ul>
+]]></text>
+</component>
+
+
+<component id="ID_protocols">
+  <text><![CDATA[<b>Protocoles</b>]]></text> 
+  </component>
+<component id="ID_timing">
+  <text><![CDATA[<b>Durée</b>]]></text> 
+  </component>
+<component id="ID_unitSize">
+  <text><![CDATA[<b>Taille du message</b>]]></text> 
+  </component>
+<component id="ID_encapsulation">
+  <text><![CDATA[<b>Encapsulation</b>]]></text> 
+  </component>
+<component id="ID_formatting">
+  <text><![CDATA[<b>Format du message</b>]]></text> 
+  </component>
+<component id="ID_encoding">
+  <text><![CDATA[<b>Codage</b>]]></text> 
+  </component>
+<component id="ID_messagePattern">
+  <text><![CDATA[<b>Modèle du message</b>]]></text> 
+  </component>
+
+<component id="ID_txt01_3321">
+<text><![CDATA[<b>Protocoles déposés par les fournisseurs (années 1970)</b>]]></text>
+</component>
+<component id="ID_txt02_3321">
+  <text><![CDATA[<b>Nombre de normes limité (années 1980 et années 1990)</b>]]></text> 
+  </component>
+<component id="ID_txt03_3321">
+  <text><![CDATA[<b>Et le gagnant est :</b>]]></text> 
+  </component>
+<component id="ID_txt04_3321">
+  <text><![CDATA[<b>IBM</b>]]></text> 
+  </component>
+<component id="ID_txt05_3321">
+  <text><![CDATA[<b>NCR</b>]]></text> 
+  </component>
+<component id="ID_txt06_3321">
+  <text><![CDATA[<b>Xerox</b>]]></text> 
+  </component>
+<component id="ID_txt07_3321">
+  <text><![CDATA[<b>DEC</b>]]></text> 
+  </component>
+<component id="ID_txt08_3321">
+  <text><![CDATA[<b>HP</b>]]></text> 
+  </component>
+<component id="ID_txt09_3321">
+  <text><![CDATA[<b>Ethernet (IEEE 802.3)</b>]]></text> 
+  </component>
+<component id="ID_txt10_3321">
+  <text><![CDATA[<b>ARCnet<br>(IEEE 802.4)</b>]]></text> 
+  </component>
+<component id="ID_txt11_3321">
+  <text><![CDATA[<b>Token Ring (IEEE 802.5)</b>]]></text> 
+  </component>
+<component id="ID_txt12_3321">
+  <text><![CDATA[<b>Ethernet (2000)</b>]]></text> 
+  </component>
+
+<component id="ID_coreLayer">
+  <text><![CDATA[<b>Couche coeur de réseau</b>]]></text> 
+  </component>
+<component id="ID_distributionLayer">
+  <text><![CDATA[<b>Couche de distribution</b>]]></text> 
+  </component>
+<component id="ID_accessLayer">
+  <text><![CDATA[<b>Couche d'accès</b>]]></text> 
+  </component>
+
+<component id="ID_h1">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+<component id="ID_h2">
+<text><![CDATA[<b>H2</b>]]></text>
+</component>
+<component id="ID_h3">
+<text><![CDATA[<b>H3</b>]]></text>
+</component>
+<component id="ID_h4">
+<text><![CDATA[<b>H4</b>]]></text>
+</component>
+<component id="ID_h5">
+<text><![CDATA[<b>H5</b>]]></text>
+</component>
+<component id="ID_h6">
+<text><![CDATA[<b>H6</b>]]></text>
+</component>
+<component id="ID_h7">
+<text><![CDATA[<b>H7</b>]]></text>
+</component>
+<component id="ID_h8">
+<text><![CDATA[<b>H8</b>]]></text>
+</component>
+<component id="ID_ip1">
+<text><![CDATA[<b>10.0.0.1</b>]]></text>
+</component>
+<component id="ID_ip2">
+<text><![CDATA[<b>10.0.0.2</b>]]></text>
+</component>
+<component id="ID_ip3">
+<text><![CDATA[<b>10.0.0.3</b>]]></text>
+</component>
+<component id="ID_ip4">
+<text><![CDATA[<b>10.0.0.4</b>]]></text>
+</component>
+<component id="ID_ip5">
+<text><![CDATA[<b>192.168.1.1</b>]]></text>
+</component>
+<component id="ID_ip6">
+<text><![CDATA[<b>192.168.1.2</b>]]></text>
+</component>
+<component id="ID_ip7">
+<text><![CDATA[<b>192.168.1.3</b>]]></text>
+</component>
+<component id="ID_ip8">
+<text><![CDATA[<b>192.168.1.4</b>]]></text>
+</component>
+<component id="ID_network1">
+<text><![CDATA[<b>Réseau 10.0.0.0</b>]]></text>
+</component>
+<component id="ID_network2">
+<text><![CDATA[<b>Réseau 192.168.1.0</b>]]></text>
+</component>
+
+<component id="ID_txt01_3611">
+<text><![CDATA[<b>Planificateur de réseau</b>]]></text>
+</component>
+<component id="ID_txtTitle1_3611">
+<text><![CDATA[Regroupement des informations]]></text>
+</component>
+<component id="ID_txtBody1_3611">
+<text><![CDATA[<b>Nombre et type d'hôtes</b> - Où se trouvent les utilisateurs finaux ? Quel type de matériel utilisent-ils ? Où se trouvent les serveurs, les imprimantes et les autres périphériques réseau ?
+<b>Applications</b> - Quel est le type des applications du réseau ? 
+<b>Données et périphériques à partager</b> - Qui doit accéder à quels fichiers et à quelles ressources du réseau, telles les imprimantes ?
+<b>Conditions de la bande passante (vitesse)</b> - Quelle est la vitesse acceptable pour les utilisateurs finaux ? Tous les utilisateurs ont-ils besoin du même débit ? Quels seront les effets des applications sur le débit ?
+<b>Sécurité</b> - Les données circulant sur le réseau sont-elles d'une nature personnelle ou sensible ? Un accès non autorisé à ces informations pourrait-il nuire à quelqu'un ?
+<b>Fiabilité</b> - Quelle importance revêt le réseau ? Doit-il être constamment disponible (on parle de temps de fonctionnement) ? Combien de temps d'arrêt peut être toléré ?
+<b>Besoin d'une technologie sans fil</b> - Un ou plusieurs utilisateurs finaux ont-ils besoin d'une connectivité sans fil ?]]></text>
+</component>
+
+<component id="ID_txt01_3631">
+<text><![CDATA[<b>Point d'accès</b>]]></text>
+</component>
+<component id="ID_txt02_3631">
+<text><![CDATA[<b>Routeur</b>]]></text>
+</component>
+<component id="ID_txt03_3631">
+<text><![CDATA[<b>Commutateur</b>]]></text>
+</component>
+
+</textcomponents>

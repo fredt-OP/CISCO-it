@@ -1,0 +1,155 @@
+<textcomponents>
+<component id="ID_title1">
+  <text><![CDATA[<b>Configure IP Connectivity</b>]]></text> 
+  </component>
+  <component id="ID_title2">
+    <text><![CDATA[<b>Configure IP Connectivity</b>]]></text> 
+  </component>
+  <component id="ID_title3">
+    <text><![CDATA[<b>Configure IP Connectivity</b>]]></text> 
+  </component>
+  <component id="ID_title4">
+    <text><![CDATA[<b>Configure IP Connectivity</b>]]></text> 
+  </component>
+   <component id="ID_title5">
+    <text><![CDATA[<b>WEB/TFTP<br/>Server</b>]]></text> 
+  </component>
+<component id="ID_box01">
+  <text><![CDATA[<b>PC1:</b><br/><ul><li>IP address - 172.17.99.12 </li><li>Connected to Console port</li><li>Connected to port F0/18 on S1</li></ul>]]></text> 
+  </component>
+<component id="ID_box02">
+  <text><![CDATA[<b>S1:</b><br/><ul><li>VLAN 99</li><ul><li>the management VLAN</li><li>IP address -172.17.99.11</li></ul><li>Port F0/18 assigned to VLAN 99</li></ul>]]></text> 
+  </component>
+<component id="ID_box03">
+  <text><![CDATA[<ul><li>For TCP/IP management a Layer 3 address must be assigned to the switch.</li><li>VLAN 1 is the default management interface for all switches.</li><li>There are security risks associated with using VLAN 1.</li><li>Create another VLAN, for example VLAN 99 or VLAN 150.</li><li>Assign that VLAN to an appropriate port, for example F0/18</li></ul>]]></text> 
+  </component>
+  <component id="bubble_text">
+  <text><![CDATA[<b>Default Gateway</b>]]></text> 
+  </component>
+  
+  <component id="output1_text">
+  <text><![CDATA[<b>VLAN 99 Configured on Port F0/18</b>]]></text> 
+  </component>
+  <component id="output2_text">
+  <text><![CDATA[<b>VLAN 99 and Port F0/18 Status</b>]]></text> 
+  </component>
+  
+  <component id="ID_Manage">
+  <text><![CDATA[<b>Manage Interface<br/>Considerations</b>]]></text> 
+  </component>
+  <component id="ID_Config">
+  <text><![CDATA[<b>Configure<br/>Management Interface</b>]]></text> 
+  </component>
+  <component id="ID_Gateway">
+  <text><![CDATA[<b>Configure<br/>Default Gateway</b>]]></text> 
+  </component>
+  <component id="ID_Verify">
+  <text><![CDATA[<b>Verify<br/>Configuration</b>]]></text> 
+  </component>
+  
+  <component id="tableHTML">
+    <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+ 	
+ 	<tr>
+ 		
+ 				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+ 				<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">&nbsp;</font></td>
+ </tr>			
+	
+  	<tr>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from privileged EXEC mode to global configuration mode.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>configure terminal</b></font></td>
+   </tr>
+  	
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the interface configuration mode for the VLAN 99 interface.</td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config)#<b>interface vlan 99 </b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configure the interface IP address.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>ip address 172.17.99.11 255.255.255.0</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enable the interface.</td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>no shutdown </b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Return to privileged EXEC mode.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>end</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter global configuration mode. </td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>configure terminal</b></font></td>
+   </tr>
+  	
+  	
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the interface to assign the VLAN.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config)#<b>interface fastethernet 0/18</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Define the VLAN membership mode for the port.</td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport mode access</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Assign the port to a VLAN.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport acces vlan 99</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Return to privileged EXEC mode.</td>
+  		<td width="300" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-if)#<b>end</b></font></td>
+   </tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Save the running configuration to the switch start-up configuration.</td>
+  		<td width="300" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>copy running-config startup-config</b></font></td>		
+   </tr>		
+</table>
+  ]]></text> 
+  </component>
+  
+  <component id="tableHTML1">
+    <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  	
+  	<tr>
+  		
+  				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+  				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+  				
+	</tr>
+  	<tr>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configures the default gateway on the switch.</td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>ip default-gateway 172.17.99.1</b></font></td>
+  			
+  	</tr>
+  	
+  	<tr>
+  			
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Return to privileged EXEC mode.</td>
+  		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1(config)#<b>end</b></font></td>
+  		
+  				
+  	</tr>
+  	<tr>
+  			
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Save the running configuration to the switch start-up configuration.</td>
+  		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy running-config startup-config</b></font></td>		
+  				
+  	</tr>		
+  	
+  	
+  </table>
+  ]]></text> 
+  </component>
+</textcomponents>

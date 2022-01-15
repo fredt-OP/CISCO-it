@@ -1,0 +1,138 @@
+<form action="javascript:jumpContent();" name="footerform">
+			
+			<TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td background="images/footer_filler01_BG.gif" colspan="5" width="125" height="30">&nbsp;</td>
+					<td colspan="2" width="18" height="30">
+						<img src="images/footer_curve01.gif"></td>
+					<td background="images/footer_titleText_BG.gif" colspan="22" width="*" height="30">
+						<TABLE width="100%" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<td width="33%" align="left"><input class="titleB" type="text" name="navigation" Value="" size="4" id="navigation" readonly="true"></td>
+								<td width="33%" align="center"><input class="titleC" type="text" name="sectionTitle" Value="" size="50" id="sectionTitle" readonly="true"></td>
+								<td width="*" align="right"><input class="titleA" type="text" name="buttonsMenu" Value="" size="11" id="buttonsMenu" readonly="true"></td>
+							</tr>
+						</TABLE></td>
+				</tr>
+				<tr>
+					<td background="images/footer_arrowFiller01_BG.gif" rowspan="3" width="21" height="41">&nbsp;</td>
+					<td rowspan="3" width="37" height="41">
+					     <% if (main.chapter == main.course.chapters[main.course.chapters.length-1] && main.section == main.chapter.sections[main.chapter.sections.length-1] && main.topic == main.section.topics[main.section.topics.length-1] && main.page == main.topic.pages[main.topic.pages.length-1]) { %>
+							<img name="buttonBack" src="images/footer_buttonBack.gif" border="0"></td>
+						<% } else { %>
+							<a href="javascript:parent.main.nextPage();" target="mediaframe" onmouseover='buttonBack.src = "images/over_back.gif";' onmouseout='buttonBack.src="images/footer_buttonBack.gif"' onfocus="blur()">
+								<img name="buttonBack" src="images/footer_buttonBack.gif" onMouseOver="setForms('navigation','','<%= main.theme.getThemeItem('next')%>')" onMouseOut="setForms('navigation','','')" border="0"></a></td>
+						<% } %>
+					<td background="images/footer_arrowFiller01_BG.gif" rowspan="3" width="16" height="41" align="center">
+						<img src="images/footer_arrowSeperator.gif"></td>
+					<td rowspan="3" width="37" height="41">
+						<a href="javascript:parent.main.previousPage();" target="mediaframe" onmouseover='buttonForward.src = "images/over_forward.gif";' onmouseout='buttonForward.src="images/footer_arrowForward.gif"' onfocus="blur()">
+							<img name="buttonForward" src="images/footer_arrowForward.gif" onMouseOver="setForms('navigation','','<%= main.theme.getThemeItem('prev')%>')" onMouseOut="setForms('navigation','','')" border="0"></td>
+					<td background="images/footer_arrowFiller01_BG.gif" colspan="2" rowspan="3" width="30" height="41">&nbsp;</td>
+					<td rowspan="3" width="2" height="41"><img src="images/footer_seperator01.gif"></td>
+					<td background="images/footer_filler04_BG.gif" colspan="<% if (top.hasToggle()) { %>12<% } else { %>14<% } %>" height="10"></td>
+					<% if (top.hasToggle()) { %>
+						<td background="images/footer_arrowFiller01_BG.gif" rowspan="3" width="72" height="41" colspan="3">
+							<TABLE cellpadding="0" cellspacing="0" border="0" width="72">
+								<tr>
+									<td><img src="images/footer_seperator01.gif" align="left"></td>
+									<td class="toggle" width="100%" align="center"><a href="javascript:parent.main.toggle();" class="toggleLink" onMouseOver="setForms('buttonsMenu','','<%= main.theme.getThemeItem('language')%>')" onMouseOut="setForms('buttonsMenu','','')" border="0"><%= main.theme.getThemeItem("togglelanguage") %></td>
+									<td><img src="images/footer_seperator01.gif" align="right"></td>
+								</tr>
+							</TABLE></td>
+					<% } else {%>
+						<td background="images/footer_arrowFiller01_BG.gif" rowspan="3" width="2" height="41"><img src="images/footer_seperator01.gif"></td>
+					<% } %>
+					<td rowspan="3" width="59" height="41">
+						<a href="javascript:parent.popup('pglobaltools');" onmouseover='buttonTools.src = "images/over_tools.gif"' onmouseout='buttonTools.src="images/footer_buttonTools.gif"' onfocus="blur()">
+							<img name="buttonTools" src="images/footer_buttonTools.gif" onMouseOver="setForms('buttonsMenu','','<%= main.theme.getThemeItem('globaltitle')%>')" onMouseOut="setForms('buttonsMenu','','')" border="0"></td>
+					<td rowspan="3" width="2" height="41">
+						<img src="images/footer_seperator01.gif"></td>
+					<td rowspan="3" width="59" height="41">
+						<a href="javascript:parent.popup('pglossary');" onmouseover='buttonGlossary.src = "images/over_glossary.gif"' onmouseout='buttonGlossary.src="images/footer_buttonGlossary.gif"' onfocus="blur()">
+							<img name="buttonGlossary" src="images/footer_buttonGlossary.gif" onMouseOver="setForms('buttonsMenu','','<%= main.theme.getThemeItem('glossarytitle')%>')" onMouseOut="setForms('buttonsMenu','','')" border="0"></td>
+					<td rowspan="3" width="2" height="41">
+						<img src="images/footer_seperator01.gif"></td>
+					<td rowspan="3" width="59" height="41">
+						<a href="javascript:parent.popup('psearch');" onmouseover='buttonSearch.src = "images/over_search.gif"' onmouseout='buttonSearch.src="images/footer_buttonSearch.gif"' onfocus="blur()">
+							<img name="buttonSearch" src="images/footer_buttonSearch.gif" onMouseOver="setForms('buttonsMenu','','<%= main.theme.getThemeItem('searchtitle')%>')" onMouseOut="setForms('buttonsMenu','','')" border="0"></td>
+					<td rowspan="3" width="2" height="41">
+						<img src="images/footer_seperator01.gif"></td>
+					<td rowspan="3" width="63" height="41">
+						<a href="javascript:parent.popup('pindex');" onmouseover='buttonIndex.src = "images/over_index.gif"' onmouseout='buttonIndex.src="images/footer_buttonIndex.gif"' onfocus="blur()">
+							<img name="buttonIndex" src="images/footer_buttonIndex.gif" onMouseOver="setForms('buttonsMenu','','<%= main.theme.getThemeItem('indextitle')%>')" onMouseOut="setForms('buttonsMenu','','')" border="0"></td>
+				</tr>
+				<tr>
+					<td background="images/footer_filler02_BG.gif" width="100%" height="21" colspan="<% if (top.hasToggle()) { %>12<% } else { %>14<% } %>" align="center">
+					     <TABLE class="sectionBar" cellpadding="0" cellspacing="0" border="0">
+							<tr>
+								<% var imgLocation="null"; %>
+								<% var lastChapter = main.course.chapters.length-2;  %>
+								<% var endCapRight = "1"; %>
+								<% var endCapLeft = "0"; %>
+								<% var barWidthMath1 = main.chapter.sections.length; %>
+								<% if (top.hasToggle()) { var barWidthMath2 = document.body.offsetWidth-605; } else { var barWidthMath2 = document.body.offsetWidth-520; } %>
+								<% var barWidth = barWidthMath2/barWidthMath1; %>
+								
+								<td width="30">&nbsp;</td>
+								
+								<% for (var j=main.chapter.sections.length-1; j>=0; j--) { %>
+								     <% if ( j == main.section.num && main.chapter.sections[j].type == "ChapterIntroduction") { imgLocation="images/button_barNavActiveIntro"; endCapRight = "2"; endCapLeft = "0"; %>
+								     <% } else if ( j == main.section.num && main.chapter.sections[j].type == "ChapterSummary") { imgLocation="images/button_barNavActiveFiller"; endCapRight = "1"; endCapLeft = "0"; %>
+									<% } else if ( j == main.section.num && main.chapter.sections[j].type == "ChapterQuiz") { imgLocation="images/button_barNavActiveQuiz"; endCapRight = "1"; endCapLeft = "1"; %>
+									<% } else if ( j == main.section.num && main.chapter.sections[j].type == "") {  %>
+									<%		if (main.chapter == main.course.chapters[main.course.chapters.length-1]) { imgLocation="images/button_barNavConclusion"; endCapRight = "0"; endCapLeft = "0"; %>
+									<%        } else { imgLocation="images/button_barNavActiveFiller"; endCapRight = "1"; endCapLeft = "0"; }%>
+									<% } else if (main.chapter.sections[j].type == "ChapterIntroduction") { imgLocation="images/button_barNavIntro"; endCapRight = "2"; endCapLeft = "0"; %>
+									<% } else if (main.chapter.sections[j].type == "ChapterSummary") { imgLocation="images/button_barNavSummary"; endCapRight = "1"; endCapLeft = "0"; %>
+									<% } else if (main.chapter.sections[j].type == "ChapterQuiz") { imgLocation="images/button_barNavQuiz"; endCapRight = "1"; endCapLeft = "1"; %>
+									<% } else { imgLocation="images/button_barNavFiller"; endCapRight = "1";  endCapLeft = "0";} %>
+									
+									<% if (endCapLeft == "1") { %>
+										<td width="10">
+											<a href="javascript:parent.main.gotoPage('<%= main.chapter.num %>.<%= j %>.1.1')" onmouseover='barNav0<%= j %>.src = "<%= imgLocation %>_downF.gif"; barEnd<%= j %>.src = "<%= imgLocation %>_down_end0.gif";' onmouseout='barNav0<%= j %>.src="<%= imgLocation %>_upF.gif"; barEnd<%= j %>.src = "<%= imgLocation %>_up_end0.gif";' onfocus="blur()">
+												<img src="<%= imgLocation %>_up_end0.gif" name="barEnd<%= j %>" onMouseOver="setForms('sectionTitle','','<% if (main.course.lang == "en") { %><%= main.chapter.num %>.<%= j %><% } else { %><%= j %>.<%= main.chapter.num %><% } %> <%= main.chapter.sections[j].title %>')" onMouseOut="setForms('sectionTitle','','')" border="0" height="23" width="10"></a></td>
+									<% } %>
+									
+									<td>
+										<a href="javascript:parent.main.gotoPage('<%= main.chapter.num %>.<%= j %>.1.1')" onmouseover='barNav0<%= j %>.src = "<%= imgLocation %>_downF.gif"; <% if (endCapLeft == "1" || endCapRight == "2") { %>barEnd<%= j %>.src = "<%= imgLocation %>_down_end0.gif";<% } %>' onmouseout='barNav0<%= j %>.src="<%= imgLocation %>_upF.gif"; <% if (endCapLeft == "1" || endCapRight == "2") { %>barEnd<%= j %>.src = "<%= imgLocation %>_up_end0.gif";<% } %>' onfocus="blur()">
+											<img src="<%= imgLocation %>_upF.gif" name="barNav0<%= j %>" onMouseOver="setForms('sectionTitle','','<% if (main.course.lang == "en") { %><%= main.chapter.num %>.<%= j %><% } else { %><%= j %>.<%= main.chapter.num %><% } %> <%= main.chapter.sections[j].title %>')" onMouseOut="setForms('sectionTitle','','')" border="0" width="<%= barWidth %>" height="23"></a></td>
+											
+									<% if (endCapRight == "1") { %><td width="2"><img src="images/button_barNav_end.gif" border="0" width="2" height="23"></td><% } %>
+									<% if (endCapRight == "2") { %>
+										<td width="10">
+											<a href="javascript:parent.main.gotoPage('<%= main.chapter.num %>.<%= j %>.1.1')" onmouseover='barNav0<%= j %>.src = "<%= imgLocation %>_downF.gif"; barEnd<%= j %>.src = "<%= imgLocation %>_down_end0.gif";' onmouseout='barNav0<%= j %>.src="<%= imgLocation %>_upF.gif"; barEnd<%= j %>.src = "<%= imgLocation %>_up_end0.gif";' onfocus="blur()">
+												<img src="<%= imgLocation %>_up_end0.gif" name="barEnd<%= j %>" onMouseOver="setForms('sectionTitle','','<% if (main.course.lang == "en") { %><%= main.chapter.num %>.<%= j %><% } else { %><%= j %>.<%= main.chapter.num %><% } %> <%= main.chapter.sections[j].title %>')" onMouseOut="setForms('sectionTitle','','')" border="0" width="10" height="23"></a></td><% } %>
+								<% } %>
+								<td width="26" height="22" align="right">
+									<input type="image" name="foo" value="bar" src="./images/footer_barNavRestart.gif"></td>
+								<td background="images/footer_sectionForm.gif" width="67" height="22">
+									<% if (main.chapter.type != "CourseTour") { %>
+										<input class="sectionForm" type="text" maxlength="8" name="chapterForm" value="<% if (main.course.lang == "en") { %><%= main.page.getLI('ltr') %><% } else { %><%= main.page.getLI('rtl') %><% } %>" size="7"></td>
+									<% } else { %>
+										<input class="sectionForm" type="text" maxlength="8" name="chapterForm" value="" size="7"></td>
+									<% } %>
+							</tr>
+						</TABLE>
+					</td>
+				</tr>
+				<tr>
+					<td background="images/footer_filler05_BG.gif" colspan="<% if (top.hasToggle()) { %>12<% } else { %>14<% } %>" height="9"></td>
+					<td width="1" height="9">
+				</tr>
+				<tr>
+					<td class="copyright" bgcolor="#666666" colspan="29" align="center" valign="top" width="*">
+						<% if (main.course.lang == "tl") { var dir = "dir=rtl" } else { var dir = "dir=ltr" } %>
+						<%= main.theme.getThemeItem("copyright") %> <a href="javascript:openAbout('../<%= main.course.lang %>/abouttext.xml', '<%= dir %>');" class="copyright"><%= main.theme.getThemeItem("about") %></a></td>
+				</tr>
+				<tr height="1">
+					<td><img src="images/spacer.gif" width="21" height="1"></td>
+					<td><img src="images/spacer.gif" width="33" height="1"></td>
+					<td><img src="images/spacer.gif" width="24" height="1"></td>
+					<td><img src="images/spacer.gif" width="33" height="1"></td>
+					<td><img src="images/spacer.gif" width="14" height="1"></td>
+					<td><img src="images/spacer.gif" width="16" height="1"></td>
+					<td colspan="23"><img src="images/spacer.gif" width="2" height="1"></td>
+				</tr>
+			</TABLE>
+		</form>

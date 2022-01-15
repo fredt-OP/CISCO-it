@@ -1,0 +1,242 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text>
+<![CDATA[<b>Click through the buttons for summary information.</b>]]>
+</text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>This chapter discussed basic concepts and benefits of networking, and the characteristics of local Ethernet networks.</b>
+<ul></li><br/><li>Information networks can carry voice, video, and data.</li><br/><li>Information networks consist of peripherals, hosts, network devices and media.</li><br/><li>Topology diagrams used to depict both logical and physical network design.</li><br/><li>Hosts can play the role of client or server or both.
+</li>
+</ul>
+]]></text>
+</component>
+
+<component id="s1_ID_txt01">
+<text><![CDATA[<b>Voice Network</b>]]></text>
+</component>
+<component id="s1_ID_txt02">
+<text><![CDATA[<b>Computer Network</b>]]></text>
+</component>
+<component id="s1_ID_txt03">
+<text><![CDATA[<b>Video Network</b>]]></text>
+</component>
+<component id="s1_ID_txt04">
+<text><![CDATA[<b>Converged Information Network</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[
+<ul></li><br/><li>All communication has a source, a destination and a channel.</li><br/><li>Computer communications operate under special rules, called protocols.</li><br/><li>Protocols define the characteristics of a message including: encoding, formatting, encapsulation, size, timing and patterns.</li>
+</ul>
+]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[
+<ul></li><br/><li>To communicate on a local network requires the computers share a common protocol.</li><br/><li>The most common protocol used on local wired networks is industry-standard Ethernet.</li><br/><li>Each local host in an Ethernet network is identified by a physical MAC address, which is preconfigured into a host’s NIC. </li></ul>
+]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>It is common to divide larger networks into smaller, more manageable, ones using a layered hierarchical design which can include the following layers:</b>
+<ul><li>Access</li><li>Distribution</li><li>Core</li></ul>
+Each of these layers has a primary function and associated devices. 
+]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[
+<ul>
+<li>Logical IP addresses are used to identify the location of a host within this hierarchical design.</li>
+<li>To deliver a packet to an individual host requires both a physical MAC address and a logical IP address.</li>
+<li>ARP is used to resolve an IP address to a MAC address for local delivery.</li>
+</ul>
+]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Access Layer:</b>
+<ul><li>The Access Layer is the first point of entry into the network for all hosts.</li><li>Hosts are usually directly connected using Ethernet cables to an Access Layer device, such as a hub or switch.</li><li>MAC address and IP addresses are used on the local network at the access layer.</li>
+</ul><b>Distribution Layer:</b>
+<ul><li>The Distribution Layer connects independent local networks and controls traffic between them.</li><li>Individual hosts are not usually connected directly to the distribution layer devices.</li><li>Routers are the main networking device within the Distribution Layer and use IP addresses to move packets between networks.</li>
+</ul>
+]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>A network plan starts with the gathering of information about how the network will be used.  This information includes:</b><br><ul><br><li>The number and type of hosts to be connected to network</li>
+<li>The applications to be used</li>
+<li>Sharing and Internet connectivity requirements</li>
+<li>Security and privacy considerations</li>
+<li>Reliability and uptime expectations</li>
+<li>Connectivity requirements including, wired and wireless</li>
+</ul>
+]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[
+<ul>
+<li>Cisco ISRs, and other multi-function networking devices, connect home and small business networks in order for multiple hosts to share resources and to connect to the Internet.</li>
+<li>A home networking device is a simplified low-cost device commonly used small networks. </li>
+<li>These devices typically provide the functionality of a switch, router and wireless access point in one device. </li>
+</ul>
+]]></text>
+</component>
+
+
+<component id="ID_protocols">
+  <text><![CDATA[<b>Protocols</b>]]></text> 
+  </component>
+<component id="ID_timing">
+  <text><![CDATA[<b>Timing</b>]]></text> 
+  </component>
+<component id="ID_unitSize">
+  <text><![CDATA[<b>Message Size</b>]]></text> 
+  </component>
+<component id="ID_encapsulation">
+  <text><![CDATA[<b>Encapsulation</b>]]></text> 
+  </component>
+<component id="ID_formatting">
+  <text><![CDATA[<b>Message Format</b>]]></text> 
+  </component>
+<component id="ID_encoding">
+  <text><![CDATA[<b>Encoding</b>]]></text> 
+  </component>
+<component id="ID_messagePattern">
+  <text><![CDATA[<b>Message Pattern</b>]]></text> 
+  </component>
+
+<component id="ID_txt01_3321">
+<text><![CDATA[<b>Proprietary Vendor Protocols  (1970s)</b>]]></text>
+</component>
+<component id="ID_txt02_3321">
+  <text><![CDATA[<b>Limited Number of Standards  (1980s and 1990s)</b>]]></text> 
+  </component>
+<component id="ID_txt03_3321">
+  <text><![CDATA[<b>And the winner is:</b>]]></text> 
+  </component>
+<component id="ID_txt04_3321">
+  <text><![CDATA[<b>IBM</b>]]></text> 
+  </component>
+<component id="ID_txt05_3321">
+  <text><![CDATA[<b>NCR</b>]]></text> 
+  </component>
+<component id="ID_txt06_3321">
+  <text><![CDATA[<b>Xerox</b>]]></text> 
+  </component>
+<component id="ID_txt07_3321">
+  <text><![CDATA[<b>DEC</b>]]></text> 
+  </component>
+<component id="ID_txt08_3321">
+  <text><![CDATA[<b>HP</b>]]></text> 
+  </component>
+<component id="ID_txt09_3321">
+  <text><![CDATA[<b>Ethernet (IEEE 802.3)</b>]]></text> 
+  </component>
+<component id="ID_txt10_3321">
+  <text><![CDATA[<b>ARCNet<br>(IEEE 802.4)</b>]]></text> 
+  </component>
+<component id="ID_txt11_3321">
+  <text><![CDATA[<b>Token Ring (IEEE 802.5)</b>]]></text> 
+  </component>
+<component id="ID_txt12_3321">
+  <text><![CDATA[<b>Ethernet (2000)</b>]]></text> 
+  </component>
+
+<component id="ID_coreLayer">
+  <text><![CDATA[<b>Core Layer</b>]]></text> 
+  </component>
+<component id="ID_distributionLayer">
+  <text><![CDATA[<b>Distribution Layer</b>]]></text> 
+  </component>
+<component id="ID_accessLayer">
+  <text><![CDATA[<b>Access Layer</b>]]></text> 
+  </component>
+
+<component id="ID_h1">
+<text><![CDATA[<b>H1</b>]]></text>
+</component>
+<component id="ID_h2">
+<text><![CDATA[<b>H2</b>]]></text>
+</component>
+<component id="ID_h3">
+<text><![CDATA[<b>H3</b>]]></text>
+</component>
+<component id="ID_h4">
+<text><![CDATA[<b>H4</b>]]></text>
+</component>
+<component id="ID_h5">
+<text><![CDATA[<b>H5</b>]]></text>
+</component>
+<component id="ID_h6">
+<text><![CDATA[<b>H6</b>]]></text>
+</component>
+<component id="ID_h7">
+<text><![CDATA[<b>H7</b>]]></text>
+</component>
+<component id="ID_h8">
+<text><![CDATA[<b>H8</b>]]></text>
+</component>
+<component id="ID_ip1">
+<text><![CDATA[<b>10.0.0.1</b>]]></text>
+</component>
+<component id="ID_ip2">
+<text><![CDATA[<b>10.0.0.2</b>]]></text>
+</component>
+<component id="ID_ip3">
+<text><![CDATA[<b>10.0.0.3</b>]]></text>
+</component>
+<component id="ID_ip4">
+<text><![CDATA[<b>10.0.0.4</b>]]></text>
+</component>
+<component id="ID_ip5">
+<text><![CDATA[<b>192.168.1.1</b>]]></text>
+</component>
+<component id="ID_ip6">
+<text><![CDATA[<b>192.168.1.2</b>]]></text>
+</component>
+<component id="ID_ip7">
+<text><![CDATA[<b>192.168.1.3</b>]]></text>
+</component>
+<component id="ID_ip8">
+<text><![CDATA[<b>192.168.1.4</b>]]></text>
+</component>
+<component id="ID_network1">
+<text><![CDATA[<b>Network 10.0.0.0</b>]]></text>
+</component>
+<component id="ID_network2">
+<text><![CDATA[<b>Network 192.168.1.0</b>]]></text>
+</component>
+
+<component id="ID_txt01_3611">
+<text><![CDATA[<b>Network Planner</b>]]></text>
+</component>
+<component id="ID_txtTitle1_3611">
+<text><![CDATA[Information Gathering]]></text>
+</component>
+<component id="ID_txtBody1_3611">
+<text><![CDATA[<b>Number and type of hosts</b> - Where are the end users located? What type of hardware are they using? Where are the servers, printers and other network devices located?
+<b>Applications</b> - What type of applications are running on the network? 
+<b>Data and devices to be shared</b> - Who requires access to which files and network resources such as printers?
+<b>Bandwidth requirements (speed)</b> - What is an acceptable speed for the end users? Do all users require the same throughput? What affect will the applications have on the throughput?
+<b>Security</b> - Is the data being moved on the network of a personal or sensitive nature? Could unauthorized access to this information cause harm to anyone?
+<b>Reliability</b> - How important is the network? Does it need to be available 100% of the time (this is known as uptime)? How much down time can be tolerated?
+<b>Requirement for wireless</b> - Do any or all of the end users require wireless connectivity?]]></text>
+</component>
+
+<component id="ID_txt01_3631">
+<text><![CDATA[<b>Access Point</b>]]></text>
+</component>
+<component id="ID_txt02_3631">
+<text><![CDATA[<b>Router</b>]]></text>
+</component>
+<component id="ID_txt03_3631">
+<text><![CDATA[<b>Switch</b>]]></text>
+</component>
+
+</textcomponents>

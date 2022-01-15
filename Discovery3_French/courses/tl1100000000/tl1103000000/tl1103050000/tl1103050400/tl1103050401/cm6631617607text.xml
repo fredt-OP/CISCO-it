@@ -1,0 +1,77 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Placez votre pointeur sur chaque méthode recommandée pour obtenir plus d’informations.]]></text>
+</component>
+
+<component id="ID_table1">
+		<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+  	<td colspan='3' ><font color='#3C3C3C'>.</font></td>
+  </tr> 
+  <tr>
+    <td bgcolor='#F2F2F2'width="150"><b>Emplacement du serveur</b></td>
+    <td bgcolor='#F2F2F2'width="100"><b>Ports inutilisés</b></td>
+    <td bgcolor='#F2F2F2'><b>Réseau local virtuel de gestion</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>Protocole VTP (VLAN Trunking Protocol)</b></td>
+    <td bgcolor='#DDDDDD'><b>Domaines VTP</b></td>
+    <td bgcolor='#DDDDDD'><b>Numéro de révision VTP</b></td>
+  </tr>
+</table>]]></text>
+	</component>
+	
+	<component id="ID_txtTitle1">
+	<text><![CDATA[Emplacement du serveur :]]></text>
+	</component>
+	
+	<component id="ID_txtBody1">
+	<text><![CDATA[<li>Garantit que tous les serveurs requis par un groupe spécifique sont membres du même réseau local virtuel</li>]]></text>
+	</component>
+	
+	<component id="ID_txtTitle2">
+	<text><![CDATA[Ports inutilisés :]]></text>
+	</component>
+	
+	<component id="ID_txtBody2">
+	<text><![CDATA[<li>Désactive les ports inutilisés</li><li>Place les ports inutilisés dans un réseau local virtuel inutilisé</li><li>Interdit l’accès non autorisé en refusant la connexion ou en plaçant un périphérique dans un réseau local virtuel inutilisé</li>]]></text>
+	</component>
+	
+	<component id="ID_txtTitle3">
+	<text><![CDATA[Réseau local virtuel de gestion :]]></text>
+	</component>
+	
+	<component id="ID_txtBody3">
+	<text><![CDATA[<li>Par défaut, le réseau local virtuel de gestion et le réseau local virtuel natif sont VLAN 1</li><li>N’utilisez pas VLAN 1 pour le trafic de gestion intrabande</li><li>Sélectionnez un autre réseau local virtuel dédié afin de distinguer le trafic de gestion du trafic de données utilisateur et de protocole</li>]]></text>
+</component>
+
+<component id="ID_txtTitle4">
+<text><![CDATA[Protocole VTP (VLAN Trunking Protocol) :]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[<li>Normalise la configuration des réseaux locaux virtuels dans l’entreprise</li><li>Facilite la gestion et la maintenance des réseaux locaux virtuels</li><li>Réduit le temps requis pour l’administration et la maintenance des réseaux locaux virtuels</li>]]></text>
+</component>
+
+<component id="ID_txtTitle5">
+<text><![CDATA[Domaines VTP :]]></text>
+</component>
+
+<component id="ID_txtBody5">
+<text><![CDATA[<li>Réduit les erreurs de configuration</li><li>Transmet et synchronise les informations de réseaux locaux virtuels parmi les commutateurs membres</li><li>Fournit une sécurité supplémentaire lorsqu’associé à un mot de passe VTP</li>]]></text>
+</component>
+
+<component id="ID_txtTitle6">
+<text><![CDATA[Numéro de révision VTP :]]></text>
+</component>
+
+<component id="ID_txtBody6">
+<text><![CDATA[  •  <textformat blockindent="20">Vérifiez que le numéro de révision de tous les nouveaux commutateurs ajoutés au réseau est zéro</textformat><br/>  •  <textformat blockindent="20">Réinitialisez le numéro de révision en effectuant l’une des procédures suivantes :</textformat><br/><textformat blockindent="20">1. Configurez le nouveau commutateur en mode transparent, puis restaurez le mode client ou serveur.</textformat><br /><textformat blockindent="20">2. Modifiez le nom de domaine en un nom différent. Restaurez le nom d’origine.</textformat>]]></text>
+</component>
+
+<component id="ID_txtTitle">
+<text><![CDATA["Host1 Says:"]]></text>
+</component>
+
+</textcomponents>

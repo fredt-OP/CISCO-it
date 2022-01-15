@@ -1,0 +1,76 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">    
+<text><![CDATA[]]></text> 
+</component>
+
+<component id="ID_table1">
+	<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Business Goal</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Overall Success Criteria</b></font></td>
+</tr>
+
+<tr>
+  <td bgcolor='#F2F2F2'><font color='#000000'><b>Provide additional services, such as voice and video, to the remote sites.</b></font></td>
+  <td bgcolor='#F2F2F2'><font color='#000000'><b>Frame Relay links that provide guaranteed bandwidth for delay sensitive traffic, and backup links that operate as expected.</b></font></td>
+  </tr>
+
+<tr>
+<td bgcolor='#999999'><b>Technical Requirements</b></td>
+<td bgcolor='#999999'><b>Success Criteria</b></td>
+</tr>
+<tr>
+<td bgcolor='#CCCCCC'><b>Scalability</b></td>
+<td bgcolor='#CCCCCC'><b>  </b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Use of Frame Relay connections to connect the remote sites.</b></td>
+<td bgcolor='#F2F2F2'><b>Adding additional sites does not require additional local loop connections</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Configuring bandwidth requirements for each virtual circuit</b></td>
+<td bgcolor='#F2F2F2'><b>CIR guarantees bandwidth for configured virtual circuits</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><b>Availability</b></td>
+<td bgcolor='#CCCCCC'><b>  </b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Configuring backup connections using the VPN through the Internet</b></td>
+<td bgcolor='#F2F2F2'><b>Connectivity is not lost for major applications if Frame Relay fails</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><b>Security</b></td>
+<td bgcolor='#CCCCCC'><b>  </b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Applying filters to permit only authorized traffic to and from the WAN sites</b></td>
+<td bgcolor='#F2F2F2'><b>Undesirable traffic is blocked</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><b>Manageability</b></td>
+<td bgcolor='#CCCCCC'><b>  </b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Creating a management network and provision of access to devices through SSH
+
+</b></td>
+<td bgcolor='#F2F2F2'><b>Management station is able to initiate an SSH session to devices at the WAN sites</b></td>
+</tr>
+
+</table>
+]]></text>
+</component>
+
+
+</textcomponents>

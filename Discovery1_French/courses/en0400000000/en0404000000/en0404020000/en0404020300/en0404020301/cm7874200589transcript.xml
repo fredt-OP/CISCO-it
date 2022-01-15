@@ -1,0 +1,5 @@
+<transcript lastedited="12.18.08 09:12:27">
+<title><content-text><![CDATA[4.2.3 Forwarding Packets Across the Internet]]></content-text></title>
+<brief><content-text><![CDATA[Diagram 1, Image<br><br>The diagram depicts several routers within the Internet cloud. The users connect to the York router. York connects to the London router, London to Paris, and Paris to Rome. The diagram identifies how a packet travels over the Internet from York to Rome using traceroute.<br>The IP address and subnet mask of the London, Rome, and Paris routers are as follows:<br>London 209.165.201.1, 255.255.255.224<br>Rome 209.165.200.225, 255.255.255.224<br>Paris 209.165.202.129, 255.255.255.224<br><br>The output of the trace route command starting at York is as follows:<br>York#trace route ROME<br>Type escape to abort.<br>Tracing the route to ROME (209.165.200.225)<br>LONDON (209.165.201.1) 8msec 8msec 4msec<br>PARIS (209.165.202.129) 8msec 8msec 8msec<br>ROME (209.165.200.225) 8msec 8msec 4msec<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

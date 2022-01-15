@@ -1,0 +1,330 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Describe the internal and external router hardware components and the purpose of each.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 1.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Central Processing Unit (CPU)</b>—Executes operating system instructions, such as system initialization, routing functions, and network interface control.<br/><b>Random-Access Memory (RAM)</b>—Stores the routing table and other data structures that the router needs when forwarding packets.<br/><b>Read-Only Memory (ROM)</b>—Holds basic diagnostic software used when the router is powered on.<br/><b>Non-Volatile RAM (NVRAM)</b>—Stores the startup configuration, including IP addresses, routing protocol, and other related information. NVRAM is a portion of the Boot ROM chip.<br/><b>Flash memory</b>—Stores the operating system (Cisco IOS) and other files.<br/><b>LAN interfaces</b> such as Ethernet and FastEthernet are used for connecting to different LANs.<br/><b>WAN interfaces</b> are used for connecting to a variety of serial links including T1, DSL and ISDN.]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[<b>Test router hardware:</b><br/>1. Perform POST.<br/>2. Execute Bootstrap Loader.<br/><b>Locate and load the Cisco IOS software:</b><br/>3. Locate the IOS.<br/>4. Load the IOS.<br/><b>Locate and load the startup configuration file or enter Setup mode:</b><br/>5. Locate the Configuration File.<br/>6. Execute the Configuration File.<br/>7. Enter Setup Mode.]]></text>
+</component>
+
+<component id="ID_Q2_txt02note">
+<text><![CDATA[<b>Note: </b>If a full IOS image can not be located, a scaled-down version of the IOS is copied from ROM into RAM. This version of IOS is used to help diagnose any problems and can be used to load a complete version of the IOS into RAM.<br/>If the startup configuration file does not exist in NVRAM, the router may search for a TFTP server. If the router detects that it has an active link to another configured router, it sends a broadcast searching for a configuration file across the active link.]]></text>
+</component>
+
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Describe the router bootup process from power on to final configuration.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from 1.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) What important features does a router add to the network?]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from 1.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<ul><li>Determining the best path to send packets</li><li>Forwarding packets toward their destination</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Describe the steps necessary to apply a basic configuration to a router. ]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from 1.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<ul><li>Name the router</li><li>Set passwords</li><li>Configure interfaces</li><li>Configure a banner</li><li>Save changes on a router</li><li>Verify basic configuration and router operations</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Describe the importance of the routing table. What purposes does it serve?]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from 1.3)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[A routing table provides the router with the necessary information to carry out its primary function—forwarding packets toward the destination network.]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q6_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) What are the three basic ways a router learns about networks? ]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(from 1.3)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<ul><li>Connected Routes</li><li>Static Routes</li><li>Dynamic Routes</li></ul>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+
+<!-- Question 7 -->
+
+
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[(from 1.4)]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) For your current studies, what are the most important fields in the IP header and why are they important? ]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<b>Version</b>—version of IP currently used is IPv4<br/><b>Time to Live (TTL)</b>—number of routers a packet can traverse before being dropped<br/><b>Source IP address</b>—32-bt source IP address<br/><b>Destination IP address</b>—32-bit destination IP address]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) Describe the encapsulation/decapsulation process as a packet travels from source to destination. ]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(from 1.4)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[The source encapsulates data in a packet with soure and destination IP addresses. It then encapsulates the packet into a frame with source and destination MAC addresses and sends the frame out as bits on the wire. The frame is received by the source’s gateway—a router—a is decapsulated. If the destination MAC address is the router, then the router will search the routing table for an outgoing interface to the destination, encapsulate the packet in the appropriate frame format for the outgoing interface with new source and destination layer 2 addresses and forward the frame out the interface. This process is repeated at each router along the path until the packet reaches the destination. From source to destination, the layer 2 addresses change at each hop. However, the source and destination addresses do not change.]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 9 -->
+
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9) When you think about the difference between the hardware and software of a PC and a router, what do you see as the strengths and weaknesses of each device? Which device do you think is the more powerful and why?]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[(from 1.3)]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[Your answer should revolve around the understanding that a router is a single-purpose device and a computer is a multi-purpose device.]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q9_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 10 -->
+
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q10_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10) As you study, learn, and use the command line interface on a Cisco router, do you see a time when you may not need to use the CLI to configure routers and switches? What does your vision of network configuration tasks look like without the CLI?]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[(from 1.3)]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[Answers will vary. However, CLI is still the dominate way to complete configuration tasks. Like DOS commands, CLI commands will most likely continue to be favored among network administrators as the primary way to complete many configuration or verification tasks even when a more intuitive and easier to use GUI becomes available.]]></text>
+</component>
+<component id="ID_Q10_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q10_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 11 -->
+
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q11_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11) If you could design your own routing protocol algorithm to route packets, what would its main features be? How would your protocol decide on the best route? Remember, a computer is going to implement your idea; therefore, be specific.]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[(from 1.3)]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[Answers will vary. Your description should include a step-by-step process. To see pseudocode for current routing algorithms, seach the web for Bellman-Ford and Dijkstra algorithms.]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q11_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 12 -->
+
+
+<component id="ID_Q12_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q12_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q12_txt03">
+<text><![CDATA[12) Although the Internet Protocol is now consider the only protocol to use for Layer 3 addressing, this was not always the case. Investigate and report on some other Layer 3 protocols that serve the same purpose. What features do they share in common with IP? How are they different?]]></text>
+</component>
+<component id="ID_Q12_txt04">
+<text><![CDATA[(from 1.3)]]></text>
+</component>
+<component id="ID_Q12_txt05">
+<text><![CDATA[A hierachical structure is common to all layer 3 addressing protocols. Each one identifies a network portion and a host portion. How each does this is different. For example, Novell’s Internet Packet Exchange uses an 80-bit address. The first 32 bits are designated network bits and are determined by the administrator. The remaining 48 bits are the same as the MAC address of the host.]]></text>
+</component>
+<component id="ID_Q12_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q12_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>This concludes this chapter's Problems and Discussion questions.</b>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+
+

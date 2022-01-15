@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13256" dateexported="06/07/2008">
+		<name>Module 4 Quiz</name>
+		<form id="19221" lang="en"><form-item order="fixed">
+			<ai id="110847" type="mc-ma"><question><![CDATA[Which four statements are true regarding distance vector routing protocols? (Choose four.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Hop counts can be used for path selection.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[They scale well. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Routing updates are broadcast at intervals.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[EIGRP can do unequal-cost load balancing.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPv1 multicasts its routing updates. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RIP sends its entire routing table to directly connected neighbors.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138047" type="mc-ma"><question><![CDATA[Which conditions cause distant vector routing protocols to send routing table updates? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[when the hold down timer expires ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[when a change occurs in the network topology  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[when the update timer value expires  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[when a triggered update is received from another router  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[when a packet is received that is destined for an unknown network ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[when there have been no routing table changes for 30 minutes ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110829" type="mc-ma"><question><![CDATA[What are two characteristics of EIGRP updates? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[include all EIGRP routes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[include the full routing table ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[independent of architecture ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[only triggered for route topology changes  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[broadcast to affected neighbors ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[bounded to affected next hop routers  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110994" type="mc-sa"><question><![CDATA[What feature was added to RIP to help with synchronization errors?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Holddown timer ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RIP_JITTER  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIP_DELAY ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Jitter Control ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110971" type="mc-ma"><question><![CDATA[Which two of the following are timers used for RIP?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Invalid  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Refresh ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Flush  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Deadlink ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hello ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110954" type="mc-sa"><question><![CDATA[Which statement is true concerning the advantages of a distance vector protocol?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[periodic updates speed up convergence ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[convergence times make routing loops impossible ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[ease of implementation makes configuration simple  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[they work well in complex networks ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[their convergence times are faster than link state routing protocols ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110944" type="mc-sa"><question><![CDATA[Which mechanism can be used to avoid a count to infinity loop?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[split horizon ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[route poisoning ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[holddown timers  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[triggered updates ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[split horizon with poison reverse ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110946" type="mc-sa"><question><![CDATA[Refer to the exhibit. The network shown is running the RIP routing protocol. What mechanism will keep Router4 from sending updates about the 10.0.0.0 network back to Router5? <br/><img src="14202.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[split horizon  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[poison reverse ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[route poisoning ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[holddown timers ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[maximum hop count ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110948" type="mc-sa"><question><![CDATA[What allows distance vector protocols to avoid routing loops by advertising a metric of infinity?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[split horizon ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[route poisoning  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[holddown timers ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[maximum hop count ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[time to live (TTL) field of IP header ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110949" type="mc-sa"><question><![CDATA[Which field in the IP header ensures that packets will not loop endlessly on a network?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[CRC ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[TOS ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[TTL  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Checksome ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="110919" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="110919" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>split horizon</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>route poisoning</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>holddown timers</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>triggered updates</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>routes learned through an interface are not advertised out that same interface</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>routes learned through an interface are advertised back out the same interface as unreachable</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>topology changes are immediately sent to adjacent routers</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>allows time for topology changes to travel through entire network</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the loop preventing mechanisms in the left column to the corresponding function in the right column.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="21" yspacing="70" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/><display componentIdent="4" xpos="600" ypos="276"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="192552" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="192552" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="192552" action="Set">1</setvar><scoringdescription>From top to bottom.  (1) routes learned through an interface are not advertised out that same interface (2) routes learned through an interface are advertised back out the same interface as unreachable (3) topology changes are immediately sent to adjacent routers (4) allows time topology changes to travel through entire network</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

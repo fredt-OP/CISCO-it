@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="04/01/2008">
+		<name>Module  Quiz</name>
+		<form id="20376" lang=""><form-item>
+			<ai id="127954" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="127954" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>cable tester</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>digital multimeter</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>network analyzer</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>network management system</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>protocol analyzer</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>checks power-supply voltage levels and verifies that network devices are receiving power </mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>graphically displays a physical view of network devices and can locate the source of a failed device</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>identifies devices producing the most network traffic, analyzes network traffic by protocol, and views interface details</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>detects broken wires, crossed-over wiring, shorted connections, and improperly paired connections</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>filters traffic that meets certain criteria so that all traffic between two devices can be captured</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the tool on the left to its correct testing description on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="21" yspacing="70" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/><display componentIdent="5" xpos="200" ypos="395"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/><display componentIdent="4" xpos="600" ypos="276"/><display componentIdent="5" xpos="600" ypos="343"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="246122" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="246122" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="246122" action="Set">1</setvar><scoringdescription>digital multimeter, NMS, network analyzer, cable tester, protocol analyzer</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="127946" type="mc-sa"><question><![CDATA[A network administrator is troubleshooting connectivity issues with a router and finds that the S0/0/0 interface IP address has been  improperly configured.  At what layer of the OSI model is this problem occurring?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Layer 1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Layer 3  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Layer 4 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Layer 7 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="127841" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="127841" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>host to switch</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>hub to switch</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>router to switch</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>routers Fa0/0 to host</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>hub to router</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>switch to switch</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Straight-through Cable</b></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Crossover Cable</b></mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the pairs of devices on the left to the UTP cable type that connects them on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="4" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="245690" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="245690" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>4</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="245690" action="Set">1</setvar><scoringdescription>Straight-through=host to switch, router to switch, switch to host Crossover=hub to switch, routers Fa0/0 to host, switch to switch</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="127876" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="127876" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>excessive broadcasts</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>encapsulation error</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>loose cable connection</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>fluctuating power supply</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>serial 0/0/0 is up, protocol is down</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>misconfigured NIC</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>incorrect cable type</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>damaged serial interface connector</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Layer 1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Layer 2</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="7" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="8" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag each network situation on the left to its associated OSI layer on the right. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="50" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/><display componentIdent="8" xpos="200" ypos="355"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="4" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="264.5" containsTargets="4" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="211"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/><display componentIdent="7" xpos="600" ypos="347"/><display componentIdent="8" xpos="600" ypos="384"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="2"><componentident>5</componentident><componentident>6</componentident><componentident>7</componentident><componentident>8</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="245885" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="245885" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident><componentident>4</componentident><componentident>7</componentident><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident><componentident>2</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="245885" action="Set">1</setvar><scoringdescription>Layer 1 - loose cable, fluctuating power, s0/0/0 administratively down, damaged serial interface.   Layer 2 - excessive broadcasts, encapsulation error, s0/0/0 is up/down, misconfigured NIC</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="127853" type="mc-sa"><question><![CDATA[Refer to the exhibit.  A network administrator is troubleshooting the connectivity between the headquarters and the branch office. Which important troubleshooting information can the administrator get from the output of the <b>show interface serial 0/0/0</b> command? <br/><img src="18924.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[encapsulation type  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[CSU/DSU type ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[CSU/DSU timing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[routing protocol type ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="127862" type="mc-sa"><question><![CDATA[Which interface status indicates a high error rate?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Serial 0/0/0 is down, line protocol is down. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Serial 0/0/0 is up, line protocol is down. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Serial 0/0/0 is up, line protocol is down (looped). ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Serial 0/0/0 is up, line protocol is down (disabled).  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Serial 0/0/0 is administratively down, line protocol is down. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="129050" type="mc-sa"><question><![CDATA[Refer to the exhibit. Hosts on the LAN are able to communicate with hosts on the same LAN, but are unable to connect outside the network.  What is the possible problem? <br/><img src="19108.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The <b>pool</b> command is not applied to an interface. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The DNS address is misconfigured. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The DHCP address is missing. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The default gateway address is on a different network.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="129046" type="mc-ma"><question><![CDATA[Refer to the exhibit.  What can be concluded from the output of the <b>debug ip rip</b> command? (Choose two.) <br/><img src="19091.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The 10.0.0.0 network is two hops from R1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A ping to 192.168.168.10 will be successful. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1 sent information about five destinations in the update. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R1 sent a RIP broadcast on Fa0/0 that advertises two networks.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R1 has received updates from one router at source address 10.0.15.2.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="128291" type="mc-sa"><question><![CDATA[Refer to the exhibit.  What is the result of the command that is  issued on R1? <br/><img src="19271.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The 192.168.1.0 network will not receive any DHCP requests. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[DHCP acknowledgments will be issued from the 192.168.1.0 network. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch SW2 is acting as a DHCP relay agent for the 192.168.1.0 network. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[DHCP requests are forwarded to 192.168.2.3.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="129049" type="mc-sa"><question><![CDATA[Refer to the exhibit. Based on the results from the troubleshooting commands, what is one  possible problem? <br/><img src="19106.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[An incorrect IP address was assigned. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The packets may be blocked by a firewall.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The routing protocol was not configured correctly. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[There is a Layer 2 encapsulation error. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

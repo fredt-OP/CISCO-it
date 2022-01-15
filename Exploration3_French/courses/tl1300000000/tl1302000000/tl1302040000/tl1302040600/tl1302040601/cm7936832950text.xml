@@ -1,0 +1,121 @@
+<textcomponents>
+<component id="ID_title1">
+<text><![CDATA[<b>Configuration de la sécurité des ports </b>]]></text>
+</component>
+<component id="ID_title2">
+<text><![CDATA[<b>Configuration de la sécurité des ports </b>]]></text>
+</component>
+<component id="ID_title3">
+<text><![CDATA[<b>Configuration de la sécurité des ports</b>]]></text>
+</component>
+<component id="ID_para1">
+<text><![CDATA[<b>Il y a violation de la sécurité dans les situations suivantes :</b>]]></text>
+</component>
+<component id="ID_para2">
+<text><![CDATA[ <ul><li>Une station dont l’adresse MAC ne figure pas dans la table d’adresses tente d’accéder à l’interface lorsque la table est saturée.</li><li>Une adresse est en cours d’utilisation dans deux interfaces sécurisées sur le même réseau local virtuel.</li></ul><br/>Les modes de violation de sécurité incluent les modes protect, restrict et shutdown. ]]></text>
+</component>
+
+<component id="ID_para4">
+<text><![CDATA[<b></b>]]></text>
+</component>
+<component id="ID_txt1">
+<text><![CDATA[<b>Sécurité des ports</b>]]></text>
+</component>
+<component id="ID_txt2">
+<text><![CDATA[<b>Types d’adresses MAC sécurisées</b>]]></text>
+</component>
+<component id="ID_txt3">
+<text><![CDATA[<b>Modes de violation de sécurité</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Mettez en place la sécurité sur tous les ports de vos commutateurs pour :</b><br/><ul><li>préciser un groupe d’adresses MAC autorisées sur un port ;</li><li>autoriser une seule adresse MAC à accéder au port ;</li><li>préciser que le port s’arrête automatiquement si des adresses MAC non autorisées sont détectées.</li></ul>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Les types d’adresses MAC sécurisées sont les suivants :</b><ul><li>Adresses MAC sécurisées statiques</li><li>Adresses MAC sécurisées dynamiques</li><li>Adresses MAC sécurisées rémanentes</li></ul><br/><b>Les adresses MAC sécurisées rémanentes présentent les caractéristiques suivantes :</b><ul><li>Assimilation dynamique, conversion en adresses MAC sécurisées rémanentes stockées dans la configuration en cours.</li><li>La désactivation de l’apprentissage rémanent supprime les adresses MAC de la table MAC, mais pas de la configuration en cours.</li><li>Les adresses MAC sécurisées rémanentes sont perdues au redémarrage du commutateur.</li><li>L’enregistrement des adresses MAC sécurisées rémanentes dans le fichier de configuration permet de les conserver lors du redémarrage de commutateur.</li><li>La désactivation de l’apprentissage rémanent entraîne la conversion des adresses MAC rémanentes en adresses dynamiques sécurisées et leur suppression de la configuration en cours.</li></ul>]]></text>
+</component>
+
+<component id="ID_caption02">
+<text><![CDATA[Il y a violation de la sécurité dans les situations suivantes :]]></text>
+</component>
+<component id="ID_caption03">
+<text><![CDATA[ - Une station dont l’adresse MAC ne figure pas dans la table d’adresses tente d’accéder à l’interface lorsque la table est saturée.<br/> - Une adresse est en cours d’utilisation dans deux interfaces sécurisées sur le même réseau local virtuel.
+]]></text>
+</component>
+<component id="ID_caption04">
+<text><![CDATA[Les modes de violation de sécurité incluent les modes protect, restrict et shutdown. ]]></text>
+</component>
+
+<component id="ID_SLD2_txt01">
+<text><![CDATA[<b>Les types d’adresses MAC sécurisées sont les suivants :</b>]]></text>
+</component>
+<component id="ID_SLD2_txt02">
+<text><![CDATA[<li>Adresses MAC sécurisées statiques</li><li>Adresses MAC sécurisées dynamiques</li><li>Adresses MAC sécurisées rémanentes</li>]]></text>
+</component>
+<component id="ID_SLD2_txt03">
+<text><![CDATA[<b>Les adresses MAC sécurisées rémanentes présentent les caractéristiques suivantes :</b>]]></text>
+</component>
+<component id="ID_SLD2_txt04">
+<text><![CDATA[<li>Assimilation dynamique, conversion en adresses MAC sécurisées rémanentes stockées dans la configuration en cours.</li><li>La désactivation de l’apprentissage rémanent supprime les adresses MAC de la configuration en cours, mais pas de la table MAC.</li><li>Les adresses MAC sécurisées rémanentes sont perdues au redémarrage du commutateur.<li><li>Enregistrement des adresses MAC sécurisées rémanentes dans le fichier de configuration afin de les conserver lors du redémarrage de commutateur.</li><li>La désactivation de l’apprentissage rémanent entraîne la conversion des adresses MAC rémanentes en adresses dynamiques sécurisées et leur suppression de la configuration en cours.</li>]]></text>
+</component>
+
+<component id="tableHTML">
+  <text><![CDATA[
+ <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>	
+		  
+	
+	
+	
+	<tr>
+		<td width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Mode de violation</b></font></td>
+		<td width= "90" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Acheminement du trafic</b></font></td>
+		<td  bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Envoi d’une interruption SNMP</b></font></td>
+		<td  width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Envoi d’un message syslog</b></font></td>
+		<td width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Affichage d’un message d’erreur</b></font></td>
+		<td width= "90" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Incrémentation du compteur de violation</b></font> </td>
+		<td width= "70" bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Arrêt du port</b></font> </td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Protect</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+			
+	</tr>
+	<tr>
+		
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Restrict</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Oui</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Oui</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Oui</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+			
+	</tr>	
+	<tr>
+		
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Shutdown</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Oui</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Oui</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Oui</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Oui</td>
+			
+	</tr>	
+	
+		
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

@@ -1,0 +1,223 @@
+﻿<textcomponents>
+
+<component id="ID_but01">
+<text><![CDATA[Étape 1]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[Étape 2]]></text>
+</component>
+
+<component id="ID_but03">
+<text><![CDATA[Étape 3]]></text>
+</component>
+
+<component id="ID_but04">
+<text><![CDATA[Étape 4]]></text>
+</component>
+
+<component id="ID_but05">
+<text><![CDATA[Étape 5]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<font face="_typewriter">R1(config)<b>#access-list 1 permit  192.168.1.0  0.0.0.255</b></font>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Convertir l’adresse de comparaison décimale en nombre binaire ]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Convertir le masque générique décimal en nombre binaire ]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Comparer les bits correspondants du masque générique (24 zéros) aux bits de l’adresse de comparaison ]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Comparer les 24 premiers bits de l’adresse IP d’un paquet entrant aux 24 premiers bits de l’adresse de comparaison ]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<font color="#00ca33">Si les bits correspondent, le paquet est autorisé par cette liste de contrôle d’accès.</font><br><br>L’adresse IP du paquet entrant correspond à l’adresse de comparaison et aux bits génériques. ]]></text>
+</component>
+<component id="ID_txt08">
+<text><![CDATA[]]></text>
+</component>
+
+
+
+<component id="ID_table1">
+  		<text><![CDATA[  		
+ 
+  <table>
+    <tr>
+      <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b></b></font></td>
+      <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent décimal</b></font></td>
+      <td width="300" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent binaire</b></font></td>
+      
+    </tr>
+    <tr>
+            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Adresse de comparaison :</b></font></td>
+            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.0</b></font></td>
+            <td width="300" bgcolor='#F2F2F2'><font color='#000000'><b>11000000.10101000.00000001.00000000</b></font></td>
+            
+    </tr>
+    
+            
+   
+</table>
+  ]]></text>
+  
+  
+	</component>
+	<component id="ID_table2">
+	  		<text><![CDATA[  		
+	 
+	  <table>
+	    <tr>
+	      <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b></b></font></td>
+	      <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent décimal</b></font></td>
+	      <td width="300" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent binaire</b></font></td>
+	      
+	    </tr>
+	    <tr>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Adresse de comparaison :</b></font></td>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.0</b></font></td>
+	            <td width="300" bgcolor='#F2F2F2'><font color='#000000'><b>11000000.10101000.00000001.00000000</b></font></td>
+	            
+	    </tr>
+	    <tr>
+	            <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Masque générique :</b></font></td>
+	            <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>0.0.0.255</b></font></td>
+	            <td width="300" bgcolor='#DDDDDD'><font color='#FF0000'><b><font color="#008000">00000000.00000000.00000000.</font>11111111</b></font></td>
+	            
+	            
+	    </tr>
+	    
+	</table>
+	  ]]></text>
+	  
+	  
+	</component>
+	<component id="ID_table3">
+	  		<text><![CDATA[  		
+	 
+	  <table>
+	    <tr>
+	      <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b></b></font></td>
+	      <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent décimal</b></font></td>
+	      <td width="300" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent binaire</b></font></td>
+	      
+	    </tr>
+	    <tr>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Adresse de comparaison :</b></font></td>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.0</b></font></td>
+	            <td width="300" bgcolor='#F2F2F2'><font color='#000000'><b>11000000.10101000.00000001.00000000</b></font></td>
+	            
+	    </tr>
+	    <tr>
+	            <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Masque générique :</b></font></td>
+	            <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>0.0.0.255</b></font></td>
+	            <td width="300" bgcolor='#DDDDDD'><font color='#FF0000'><b><font color="#008000">00000000.00000000.00000000.</font>11111111</b></font></td>
+	            
+	            
+	    </tr>
+	    <tr>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Bits de l’adresse de comparaison devant correspondre :</b></font></td>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.X</b></font></td>
+	            <td width="300" bgcolor='#F2F2F2'><font color='#FF0000'><b><font color="#008000">11000000.10101000.00000001.</font>XXXXXXXX</b></font></td>
+	            
+	    </tr>	    
+	   
+	</table>
+	  ]]></text>
+	  
+	  
+	</component>
+	<component id="ID_table4">
+	  		<text><![CDATA[  		
+	 
+	  <table>
+	    <tr>
+	      <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b></b></font></td>
+	      <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent décimal</b></font></td>
+	      <td width="300" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent binaire</b></font></td>
+	      
+	    </tr>
+	    <tr>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Adresse de comparaison :</b></font></td>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.0</b></font></td>
+	            <td width="300" bgcolor='#F2F2F2'><font color='#000000'><b>11000000.10101000.00000001.00000000</b></font></td>
+	            
+	    </tr>
+	    <tr>
+	            <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Masque générique :</b></font></td>
+	            <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>0.0.0.255</b></font></td>
+	            <td width="300" bgcolor='#DDDDDD'><font color='#FF0000'><b><font color="#008000">00000000.00000000.00000000.</font>11111111</b></font></td>
+	            
+	            
+	    </tr>
+	    <tr>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Bits de l’adresse de comparaison devant correspondre :</b></font></td>
+	            <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.X</b></font></td>
+	            <td width="300" bgcolor='#F2F2F2'><font color='#FF0000'><b><font color="#008000">11000000.10101000.00000001.</font>XXXXXXXX</b></font></td>
+	            
+	    </tr>    
+	     
+	   <tr>     
+	             <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Adresse du paquet<br/>entrant :</b></font></td>
+	             <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.27 </b></font></td>
+	             <td width="300" bgcolor='#F2F2F2'><font color='#FF0000'><b><font color="#008000">11000000.10101000.00000001.</font>00011011</b></font></td>
+	    </tr>
+	</table>
+	  ]]></text>
+	  
+	  
+	</component>
+  <component id="ID_table5">
+    		<text><![CDATA[  		
+   
+    <table>
+      <tr>
+        <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b></b></font></td>
+        <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent décimal</b></font></td>
+        <td width="300" bgcolor='#DDDDDD'><font color='#000000'><b>Équivalent binaire</b></font></td>
+        
+      </tr>
+      <tr>
+              <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Adresse de comparaison :</b></font></td>
+              <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.0</b></font></td>
+              <td width="300" bgcolor='#F2F2F2'><font color='#000000'><b>11000000.10101000.00000001.00000000</b></font></td>
+              
+      </tr>
+      <tr>
+              <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>Masque générique :</b></font></td>
+              <td width="150" bgcolor='#DDDDDD'><font color='#000000'><b>0.0.0.255</b></font></td>
+              <td width="300" bgcolor='#DDDDDD'><font color='#FF0000'><b><font color="#008000">00000000.00000000.00000000.</font>11111111</b></font></td>
+              
+              
+      </tr>
+      <tr>
+              <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Bits de l’adresse de comparaison devant correspondre :</b></font></td>
+              <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.X</b></font></td>
+              <td width="300" bgcolor='#F2F2F2'><font color='#FF0000'><b><font color="#008000">11000000.10101000.00000001.</font>XXXXXXXX</b></font></td>
+             
+      </tr>   
+       
+     <tr>     
+               <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>Adresse du paquet<br/>entrant :</b></font></td>
+               <td width="150" bgcolor='#F2F2F2'><font color='#000000'><b>192.168.1.27 </b></font></td>
+               <td width="300" bgcolor='#F2F2F2'><font color='#FF0000'><b><font color="#008000">11000000.10101000.00000001.</font>00011011</b></font></td>
+               
+      </tr>
+  </table>
+    ]]></text>
+    
+    
+	</component>
+
+
+</textcomponents>

@@ -1,0 +1,58 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<B>Procédure de configuration des listes de contrôle d’accès standard</B>]]></text> 
+</component>
+
+<component id="ID_title02">
+  <text><![CDATA[<B>Liste de contrôle d’accès standard pour autoriser mon réseau uniquement</B>]]></text> 
+</component>
+
+<component id="ID_title03">
+  <text><![CDATA[<B>Liste de contrôle d’accès standard pour refuser un hôte spécifique</B>]]></text> 
+</component>
+
+<component id="ID_title04">
+  <text><![CDATA[<B>Liste de contrôle d’accès standard pour refuser un sous-réseau spécifique</B>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Syntaxe</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Exemple 1</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>Exemple 2</B>]]></text> 
+</component>
+
+<component id="ID_button_04">
+  <text><![CDATA[<B>Exemple 3</B>]]></text> 
+</component>
+
+
+<component id="ID_txt01_00">
+  <text><![CDATA[<B>Étape 1</B> Utilisation de la commande de configuration globale <font face ='_typewriter'><b>access-list</b></font> pour créer une entrée dans une liste de contrôle d’accès IPv4 standard.]]></text> 
+</component>
+
+<component id="ID_txt02_00">
+  <text><![CDATA[Entrez la commande globale <font face ='_typewriter'><b>no access-list <i>numéro-liste-accès</i></b></font> pour supprimer toute la liste de contrôle d’accès. L’exemple d’instruction fait correspondre toutes les adresses commençant par 192.168.10.x. Utilisez l’option<font face ='_typewriter'><b> remark</b></font> pour ajouter une description à la liste de contrôle d’accès.]]></text> 
+</component>
+
+<component id="ID_txt03_00">
+  <text><![CDATA[<B>Étape 2</B> Utilisation de la commande de configuration d’interface pour sélectionner une interface à laquelle appliquer la liste de contrôle d’accès.]]></text> 
+</component>
+
+
+<component id="ID_txt05_00">
+  <text><![CDATA[<B>Étape 3</B> Utilisation de la commande de configuration d’interface <font face ='_typewriter'><b>ip access-group</b></font> pour activer la liste de contrôle d’accès existante sur une interface. ]]></text> 
+</component>
+
+<component id="ID_txt06_00">
+  <text><![CDATA[Pour supprimer une liste de contrôle d’accès IP d’une interface, entrez la commande <font face ='_typewriter'><b>no ip access-group <i>numéro-liste-accès</i></b></font> sur l’interface. Cet exemple active la liste de contrôle d’accès 1 IPv4 standard sur l’interface, tel un filtre de sortie.]]></text> 
+</component>
+
+</textcomponents>
+

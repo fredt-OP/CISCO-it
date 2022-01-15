@@ -1,0 +1,51 @@
+<% if (isarabic && main.course.lang == "tl") { window.document.body.style.direction = "rtl"; var lidir = "rtl"; } else { window.document.body.style.direction = "ltr"; var lidir = ""; } %>
+
+<% if (hasToggle()) { %><a href="javascript:main.toggle();" alt="<%= main.theme.getThemeItem("togglelanguage") %>"><%= main.theme.getThemeItem('togglelangto') %> <%= main.theme.getThemeItem("togglelanguage") %></a> | <% } %><a href="javascript:openPopup('search', true);" alt="<%= main.theme.getThemeItem('searchtitle') %>"><%= main.theme.getThemeItem('searchtitle') %></a> | <a href="javascript:openPopup('glossary',true);" alt="<%= main.theme.getThemeItem('glossarytitle') %>"><%= main.theme.getThemeItem('glossarytitle') %></a>
+<hr/>
+
+<form name="indexform" id="indexform">
+<b><label for="indexselect"><%= main.theme.getThemeItem("indextitle") %></label>:</b><br/>
+<select name="indexselect" id ="indexselect">
+<% for (var a=0; a<main.course.chapters.length; a++) { %>
+	<% if (main.course.chapters[a] == main.chapter) { var iscurrent = "selected" } else { var iscurrent = "" } %>
+	<% if (a == 0) { %>
+		<option name="<%= main.course.chapters[a].title %>" value="<%= main.course.chapters[a].num %>.0.1.1" <%= iscurrent %>><%= main.course.chapters[a].title %></option>
+	<% } else { %>
+		<option name="<%= main.course.chapters[a].title %>" value="<%= main.course.chapters[a].num %>.0.1.1" <%= iscurrent %>><%= main.course.chapters[a].num %> <%= main.course.chapters[a].title %></option>
+	<% } %>
+	<% if (main.course.chapters[a] == main.chapter) { %>
+		<% if (getLevel() == "section" || getLevel() == "topic" || getLevel() == "page") { %>
+			<% for (var b=0; b<main.chapter.sections.length; b++) { %>
+				<% if (main.chapter.sections[b] == main.section) { var selsec = "selected" } else { var selsec = ""  } %>
+				<% if (main.chapter.type != "CourseTour") { %>
+					<option name="<%= main.chapter.sections[b].title %>" value="<%= main.chapter.num %>.<%= main.chapter.sections[b].num %>.1.1" <%= selsec %>><%= main.chapter.sections[b].getLI(lidir) %> <%= main.chapter.sections[b].title %></option>
+				<% } %>
+				<% if (main.chapter.sections[b] == main.section) { %>
+					<% if (getLevel() == "topic" || getLevel() == "page") { %>
+						<% for (var c=0; c<main.section.topics.length; c++) { %>
+							<% if (main.section.topics[c] == main.topic) { var seltop = "selected" } else { var seltop = ""  } %>
+							<% if (main.chapter.type != "CourseTour") { %>
+								<option name="<%= main.section.topics[c].title %>" value="<%= main.chapter.num %>.<%= main.section.num %>.<%= main.section.topics[c].num %>.1" <%= seltop %>><%= main.section.topics[c].getLI(lidir) %> <%= main.section.topics[c].title %></option>
+							<% } %>
+							<% if (main.section.topics[c] == main.topic) { %>
+								<% if (getLevel() == "page") { %>
+									<% for (var d=0; d<main.topic.pages.length; d++) { %>
+										<% if (main.topic.pages[d] == main.page) { var selpag = "selected" } else { var selpag = ""  } %>
+										<% if (main.chapter.type != "CourseTour") { %>
+											<option name="<%= main.topic.pages[d].title %>" value="<%= main.chapter.num %>.<%= main.section.num %>.<%= main.topic.num %>.<%= main.topic.pages[d].num %>" <%= selpag %>><%= main.theme.getThemeItem("indexpage") %> <%= main.topic.pages[d].num %></option>
+										<% } %>
+									<% } %>
+								<% } %>
+							<% } %>
+						<% } %>
+					<% } %>
+				<% } %>
+			<% } %>
+		<% } %>
+	<% } %>
+<% } %>
+</select>
+<input type="button" name="select" value="<%= main.theme.getThemeItem('selectbtn') %>" onClick="indexNavigation();"/>
+</form>
+<hr>
+

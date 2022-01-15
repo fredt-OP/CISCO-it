@@ -1,0 +1,42 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Frame Relay Subinterfaces</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Physical Interface</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Logical Interface</b>]]></text> 
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b>Point-to-Point Subinterface</b>]]></text> 
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b>Multipoint Subinterface</b>]]></text> 
+</component>
+
+<component id="ID_poptitle01">
+<text><![CDATA[Point-to-Point Subinterface]]></text> 
+</component>
+
+<component id="ID_popbody01">
+<text><![CDATA[Point-to-Point Subinterfaces - In hub and spoke topologies:<br/><li>Subinterfaces act as leased lines</li><li>Each point-to-point subinterface requires its own subnet</li>]]></text> 
+</component>
+
+<component id="ID_poptitle02">
+<text><![CDATA[Multipoint Subinterface]]></text> 
+</component>
+
+<component id="ID_popbody02">
+<text><![CDATA[Multipoint Subinterfaces – In partial-mesh and full-mesh topologies:<br/><li>Subinterfaces act as NBMA so they do not resolve the split horizon issue</li><li>Can save address space because it uses a single subnet</li>]]></text> 
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[Rollover the Point-to-Point Subinterface and the Multipoint Subinterface text to see more information.]]></text> 
+</component>
+
+</textcomponents>

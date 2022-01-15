@@ -1,0 +1,145 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) <textformat blockindent='17'>Explain the function and contents of network documentation, including router, switch, and end-user documentation, as well as network topology diagrams.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from  8.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Router Documentation:</b><ul><li>The router documentation should include the router names, model designation, location in the enterprise (building, floor, room, rack, panel), configured interfaces, data link layer addresses, network layer addresses, routing protocols configured, and any additional important information about the device.</li></ul><b>Switch Documentation:</b><ul><li>The switch documentation should include the switch names, model designation, location in the enterprise (building, floor, room, rack, panel), management IP address, port names and status, speed, duplex, STP state, PortFast setting, trunk status, L2 or L3 EtherChannel, VLAN IDs, and any additional important information about the device.</li></ul><b>End-user Documentation:</b><ul><li>The end-user documentation should include the server names and function, OS version, IP address, gateways, DNS server, network application, and any additional important information about the device.</li></ul><b>Logical Network Topology Diagram:</b><ul><li>Graphical representation that uses symbols to identify each network device and how it is interconnected.</li><li>Also details the logical architecture, including interface types and numbers, IP addresses, subnet masks, routing protocols, AS domains, and any additional important information, such as DLCI numbers and Layer 2 protocol.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) <textformat blockindent='17'>Explain the recommended steps for planning the first network baseline.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from  8.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Step 1: Determine what types of data to collect</b><ul><li>Start out simply by selecting a few variables that represent the defined policies and fine-tune along the way.</li><li>Generally, some good starting measures are interface utilization and CPU utilization.</li></ul><b>Step 2: Identify devices and ports of interest</b><ul><li>Devices and ports of interest must be identified, such as network device ports that connect to other network devices, servers, key users, and anything else considered critical to the operation.</li></ul><b>Step 3: Determine the baseline duration</b><ul><li>This period should be at least seven days to capture daily or weekly trends and should last two to four weeks.</li><li>Do not to perform a baseline measurement during times of unique traffic patterns. </li><li>Should be conducted on a regular basis, such as an annual analysis of the entire network or baseline different sections of the network on a rotating basis.</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) <textformat blockindent='17'>Explain the three stages of the general troubleshooting process.</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from  8.2)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Stage 1: Gather symptoms:</b><ul><li>Symptoms may appear in many different forms, including alerts from the network management system, console messages, and user complaints.</li><li>Gather and document symptoms from the network, end systems, and users.</li><li>In addition, determine which network components have been affected and how the functionality of the network has changed compared to the baseline.</li></ul><b>Stage 2: Isolate the problem:</b><ul><li>The problem is not truly isolated until a single problem, or a set of related problems, is identified.</li><li>Examine the characteristics of problems at the logical layers of the network so that the most likely cause can be selected.</li><li>Depending on the problem characteristics identified, gather and document more symptoms.</li></ul><b>Stage 3: Correct the problem:</b><ul><li>Work to correct the problem by implementing, testing, and documenting a solution.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) <textformat blockindent='17'>Explain the three main methods for troubleshooting.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from  8.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Bottom-Up Troubleshooting Method:</b><ul><li>Start with the physical components of the network and then work up through the layers of the OSI model until the cause of the problem is identified.</li><li>It is a good approach to use when the problem is suspected to be physical.</li></ul><b>Top-Down Troubleshooting Method:</b><ul><li>Examine the end-user application first.</li><li>Analysis continues downward from the upper layers of the OSI model until the cause of the problem has been identified.</li></ul><b>Divide-And-Conquer Troubleshooting Method:</b><ul><li>Select a layer and test in both directions from the starting layer.</li><li>If you can verify that a layer is functioning properly, it is typically a safe assumption that the layers below it are functioning.</li><li>If a layer is not functioning properly, gather symptoms of the problem at that layer and work your way down.</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) <textformat blockindent='17'>Explain the six steps for designing or modifying a WAN.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from  8.3)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Step 1 - Locate LANs:</b><ul><li>Establish the source and destination endpoints that will connect via the WAN.</li></ul><b>Step 2 - Analyze Traffic:</b><ul><li>Find out what data traffic must be carried, its origin, its destination, bandwidth requirements, latency, and jitter tolerance.</li></ul><b>Step 3 - Plan the Topology:</b><ul><li>Identify the various endpoints, geographic considerations, and the requirement for availability.</li></ul><b>Step 4 - Estimate the Required Bandwidth:</b><ul><li>In consideration of the endpoints and the links chosen, the necessary bandwidth can be estimated.</li></ul><b>Step 5 - Choose the WAN Technology:</b><ul><li>Once the bandwidth availability is determined, suitable link technologies must be selected.</li></ul><b>Step 6 - Evaluate Costs:</b><ul><li>Determine installation and operational costs for the WAN and compare that with the business need driving the WAN implementation.</li></ul>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) <textformat blockindent='17'>List three things to check when troubleshooting Layer 1 problems.</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(from  8.4)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>Check for bad cables or connections:</b><ul><li>Use a cable tester to verify that the cable from the source interface is properly connected and is in good condition.</li><li>When doubting the integrity of a cable, swap suspect cables with a known working cable.</li></ul><b>Check that the correct cabling standard is adhered to throughout the network:</b><ul><li>Verify that the proper cable is being used for the connection.</li></ul><b>Check that devices are cabled correctly:</b><ul><li>Verify that all cables are connected to their correct ports or interfaces.</li></ul><b>Verify proper interface configurations:</b><ul><li>Check that all switch ports are set in the correct VLAN, and that spanning tree, speed, and duplex settings are correctly configured.</li><li>Confirm that any active ports or interfaces are not shut down.</li></ul><b>Check operations statistics and data error rates:</b><ul><li>Use Cisco show commands to check for statistics such as collisions, input, and output errors.</li><li>The characteristics of these statistics vary depending on the protocols used on the network.</li></ul>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) <textformat blockindent='17'>List three causes of Layer 2 problems.</textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[(from  8.4)]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Causes of Layer 2 Problems:</b><ul><li>Address mapping errors</li><li>Framing errors</li><li>STP failures or loops</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<font size='14'><b>This concludes this chapter's Check Your Understanding questions.</b></font>]]></text>
+</component>
+</textcomponents>

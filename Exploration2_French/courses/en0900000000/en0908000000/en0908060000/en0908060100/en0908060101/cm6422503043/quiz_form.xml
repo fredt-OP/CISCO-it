@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13259" dateexported="06/06/2007">
+		<name>Module 8 Quiz</name>
+		<form id="19224" lang="en"><form-item order="fixed">
+			<ai id="112571" type="mc-ma"><question><![CDATA[Refer to the exhibit. What three types of routes are displayed in this routing table? (Choose three).<br /><img src="14860.jpg">]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[networks local to this router]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the default route for this router]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[static routes on this router]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[mobile routes]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[routes learned from dynamic routing protocols]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[routes learned from non-cisco router]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="112574" type="mc-sa"><question><![CDATA[Which characteristic can be used to determine if a route is an ultimate route?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The route displays a subnet mask.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The route is a parent route.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The route was configured by an administrator.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The route includes an exit interface.]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="112577" type="mc-ma"><question><![CDATA[Refer to the exhibit. Which two routes are considered parent routes? (Choose two.)<br /><img src="14848.jpg">]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[172.16.0.0/24]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.4.0]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.1.0]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[10.0.0.0/16]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.1.0/24]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.100.0/24]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111853" type="mc-sa"><question><![CDATA[Router R1 is configured with R1(config)#<b> ip classless</b> and R1(config)#<b> ip route 0.0.0.0 0.0.0.0 s0/0/0</b>.  What will R1 do with a packet that matches a parent route but does not match any associated child routes?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[forward the packet using the longest parent route match]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[forward the packet via the default route]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[return the packet with an icmp &quot;destination unreachable&quot; message to the source address]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[drop the packet]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="112586" type="mc-sa"><question><![CDATA[What action will enable classful routing behavior on a router?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[configuring RIPv1 or IGRP]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[configuring a link-state routing protocol]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[using only classful netmasks on all networks]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[issuing the <b>no ip classless command</b>]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111855" type="mc-sa"><question><![CDATA[In the route lookup process, what constitutes the preferred route?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[the ultimate route]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[the longest match of left-most bits]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the shortest prefix length]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the first route that resolves to an exit interface]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="112528" type="mc-sa"><question><![CDATA[If a packet matches a level 1 parent route in the routing table, what occurs next in the lookup process?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The router will drop the packet since level 1 requires an exit interface.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The router will look for the level 2 child route with an exit interface.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router will send the packet out all interfaces except the one in which it was recieved.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router will ARP all connected networks to find the interface with destionation on it.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111851" type="mc-sa"><question><![CDATA[What do the <b>ip classless</b> and <b>no ip classless</b> commands do?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[determine the address lookup behavior of the routing process]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[specify whether the router will accept subnet masks in routing updates]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[restrict the use of classful or classless routing protocols]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[allow the router to accept or not accept VLSM for interface addresses]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111852" type="mc-sa"><question><![CDATA[Router R1 is configured with R1(config)#<b> no ip classless</b> and R1(config)#<b> ip route 0.0.0.0 0.0.0.0 s0/0/0</b>.  What will R1 do with a packet that matches a parent route but does not match any associated child routes?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[forward the packet using the longest parent route match]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[forward the packet via the default route]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[return the packet with an icmp &quot;destination unreachable&quot; message to the source address]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[drop the packet]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="112361" type="mc-sa"><question><![CDATA[Refer to the exhibit.  Router C is running version 12.3 of the IOS.  The router receives a packet with a destination of 172.16.1.130.  Which route will router C use to forward the packet?<br /><img src="15047.jpg">]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[172.16.1.0/25]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/16]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[172.16.0.0/24]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[172.16.0.0/13]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the default route]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[none, it will drop the packet]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

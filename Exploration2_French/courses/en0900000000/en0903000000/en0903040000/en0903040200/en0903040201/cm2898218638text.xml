@@ -1,0 +1,99 @@
+<textcomponents>
+
+ <component id="myTable">
+    <text><![CDATA[
+	<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+
+<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Route Source</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Administrative Distance</b></font></td>			
+	    </tr>
+
+	    <tr>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Connected<br /></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>0<br /></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Static</td>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1<br /></td>	
+	    </tr>
+		
+		<tr>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>EIGRP summary route<br /></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>5<br /></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>External BGP</td>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>20<br /></td>	
+	    </tr>
+		
+		<tr>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Internal EIGRP<br /></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>90<br /></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>IGRP</td>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>100<br /></td>	
+	    </tr>
+		
+		<tr>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>OSPF<br /></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>110<br /></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>IS-IS</td>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>115<br /></td>	
+	    </tr>
+		
+		<tr>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>RIP<br /></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>120<br /></td>
+		</tr>
+		
+		<tr>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>External EIGRP</td>
+			<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>170<br /></td>	
+	    </tr>
+		
+		<tr>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Internal BGP<br /></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>200<br /></td>
+		</tr>
+
+	</table>]]></text> 
+  </component>
+  
+<component id="ID_txt13">
+<text><![CDATA[<b>R1 and R3 do not "speak" the same routing protocol.</b>]]></text>
+</component>
+
+<component id="slide1">
+<text><![CDATA[<b><font face='_typewriter'>show ip route</font></b>]]></text>
+</component>
+
+<component id="slide2">
+<text><![CDATA[<b><font face='_typewriter'>show ip protocols</font></b>]]></text>
+</component>
+
+<component id="slide3">
+<text><![CDATA[<b>AD Table</b>]]></text>
+</component>
+
+<component id="ID_inst">
+  <text><![CDATA[<b>Click to see the various router outputs.</b>]]></text> 
+</component>
+
+<component id="ID_Title01">
+  <text><![CDATA[<b>Default Administrative Distances</b>]]></text> 
+</component>
+
+<component id="ID_buttonText">
+  <text><![CDATA[<b>Router<br>Output</b>]]></text> 
+</component>
+
+
+</textcomponents>

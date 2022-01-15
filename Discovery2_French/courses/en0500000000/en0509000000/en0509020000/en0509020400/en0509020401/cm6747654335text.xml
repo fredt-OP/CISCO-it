@@ -1,0 +1,97 @@
+﻿<textcomponents>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+  	<td colspan='3'><font color='#FFFFFF'><b>RELEVANT PORT STATUS LED INDICATORS</b></font></td>
+  </tr> 
+  <tr>
+    <td rowspan="6" width='80' bgcolor='#DDDDDD'><b>STAT<br />(port status) </b></td>
+    <td width='120' bgcolor='#DDDDDD'>Off </td>
+    <td bgcolor='#DDDDDD'>No link, or port was administratively shut down. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Green </td>
+    <td bgcolor='#F2F2F2'>Link present. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'>Blinking green </td>
+    <td bgcolor='#DDDDDD'>Activity. Port is sending or receiving data. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Alternating green-amber </td>
+    <td bgcolor='#F2F2F2'>Link fault. Error frames can affect connectivity. Excessive collision, CRC, and alignment and jabber errors are monitored for a link-fault indication. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'>Amber </td>
+    <td bgcolor='#DDDDDD'>Port is not forwarding. Port was disabled manually by an administrator, or automatically by an address violation or switch management functions.<br/><br/>Note: Upon switch startup or attachment of an end-user device, the port LED can remain amber for up to 60 seconds before it begins forwarding. Once forwarding status is reached the LED will turn green.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Blinking amber </td>
+    <td bgcolor='#F2F2F2'>Port is blocked by STP and is not sending or receiving packets. </td>
+  </tr>
+  <tr>
+    <td rowspan="2" bgcolor='#DDDDDD'><b>DUPLX<br />(duplex) </b></td>
+    <td bgcolor='#DDDDDD'>Off </td>
+    <td bgcolor='#DDDDDD'>Port is operating in half duplex. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Green </td>
+    <td bgcolor='#F2F2F2'>Port is operating in full duplex. </td>
+  </tr>
+    <tr>
+    <td rowspan="10" bgcolor='#DDDDDD'><b>SPEED </b></td>
+    <td colspan="2" bgcolor='#DDDDDD'>10/100 and 10/100/1000 ports </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Off </td>
+    <td bgcolor='#F2F2F2'>Port is operating at 10 Mbps. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'>Green </td>
+    <td bgcolor='#DDDDDD'>Port is operating at 100 Mbps. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Flashing green </td>
+    <td bgcolor='#F2F2F2'>Port is operating at 1000 Mbps. </td>
+  </tr>
+  <tr>
+    <td colspan="2" bgcolor='#DDDDDD'>SFP ports </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Off </td>
+    <td bgcolor='#F2F2F2'>Port is operating at 10 Mbps. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'>Green</td>
+    <td bgcolor='#DDDDDD'>Port is operating at 100 Mbps. </td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'>Blinking green </td>
+    <td bgcolor='#F2F2F2'>Port is operating at 1000 Mbps.<br /><b>Note:</b> The 1000BASE-T SFP modules can operate at 10, 100, or 1000 Mbps in full-duplex mode or at 10 or 100 Mbps in half-duplex mode. </td>
+  </tr>
+</table>]]></text> 
+ 
+</component>
+ 
+<component id="ID_item01">
+<text><![CDATA[System LED]]></text>
+</component>
+
+<component id="ID_item02">
+<text><![CDATA[Redundant Power Supply LED]]></text>
+</component>
+
+<component id="ID_item03">
+<text><![CDATA[Mode Button]]></text>
+</component>
+
+<component id="ID_item04">
+<text><![CDATA[Port Mode LEDs]]></text>
+</component>
+
+<component id="ID_item05">
+<text><![CDATA[Port Status LEDs]]></text>
+</component>
+
+</textcomponents>

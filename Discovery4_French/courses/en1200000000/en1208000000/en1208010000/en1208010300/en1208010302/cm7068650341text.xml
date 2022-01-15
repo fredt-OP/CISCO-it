@@ -1,0 +1,82 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[S0/0/0]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[S0/1/0]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Test_R2]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Test_R1]]></text> 
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[Click the crossover cable connecting the two CSU/DSUs together to view the specifications.]]></text>
+</component>
+<component id="ID_Pop1">
+<text><![CDATA[11]]></text> 
+</component>
+<component id="ID_Pop2">
+<text><![CDATA[intelli-Mux – FF T1/E1 Module]]></text> 
+</component>
+<component id="ID_Pop3">
+<text><![CDATA[A TELCO jack usually has the functions reversed, i.e. RX and TX are swapped, so that a straight-through cable can be used to connect the CSU/DSU/TSU jack to the TELCO jack.<br><br>To discern which connection you have, use a wide-band oscilloscope or DVM to measure across the TX and RX Pairs. The TX pairs should have activity and the RX pairs should not. Note: Many T1 jacks provided by the phone company are terminated with a "smart jack". This jack has an automatic loop-back feature built in, so that if no connector is inserted, the TX pair is connected to the RX pair. The phone company uses this feature to test the line from the CO before turning it over to you. A common mistake during installation is to reverse the TX and RX pairs, so it is best to insert a plug/cable into the jack before you do your testing.<br><br>To connect two T1 jacks that have the same pin-out, you will need a T1 cross-over cable, which has these connections:]]></text> 
+</component>
+<component id="ID_Pop4">
+<text><![CDATA[A T1 loop-back connector will have these connections all on the same jack or plug:]]></text> 
+</component>
+<component id="ID_PopChart1">
+<text><![CDATA[<table border="1" cellpadding="2" cellspacing="0" bgcolor="#FFFFFF">
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">Cable End A RJ45 PIN</p></td>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">Cable End B RJ45 Pin</p></td>
+  </tr>
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">1</p></td>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">4</p></td>
+  </tr>
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">2</p></td>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">5</p></td>
+  </tr>
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">4</p></td>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">1</p></td>
+  </tr>
+  <tr>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">5</p></td>
+    <td width="186" bgcolor="#FFFFFF"><p align="center">2</p></td>
+  </tr>
+</table>]]></text>
+</component>
+<component id="ID_PopChart2">
+<text><![CDATA[<table border="1" cellpadding="2" cellspacing="0"  bgcolor="#FFFFFF">
+  <tr>
+    <td width="132" bgcolor="#FFFFFF"><p align="center">RJ45 Pins</p></td>
+  </tr>
+  <tr>
+    <td width="132" bgcolor="#FFFFFF"><p align="center">1-4</p></td>
+  </tr>
+  <tr>
+    <td width="132" bgcolor="#FFFFFF"><p align="center">2-5</p></td>
+  </tr>
+</table>
+]]></text>
+</component>
+<component id="ID_Poplab1">
+<text><![CDATA[T1 Cross-over Cable]]></text>
+</component>
+<component id="ID_Poplab2">
+<text><![CDATA[T1 Loop-back connector]]></text>
+</component>
+</textcomponents>
+
+
+
+

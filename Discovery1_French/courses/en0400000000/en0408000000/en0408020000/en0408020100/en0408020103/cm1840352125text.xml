@@ -1,0 +1,86 @@
+<textcomponents>
+
+<!-- Instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Activity</b></font><br/><br/>Determine if the user has been infected by a virus, worm, or trojan horse.<br/><br/><b>Select virus, worm, or trojan horse for each scenario.</b>]]></text>
+</component>
+
+<!-- Buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Worms</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Virus</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Trojan Horse</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Eliseo opened an email sent to him by his brother, Lomiel. A few hours later, Eliseo received several phone calls from friends saying that they received emails from him that he did not knowingly send.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Noah downloaded a file from the Internet. Shortly after he opened the file, his hard drive crashed and he lost all information on his computer.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Safa was surfing the Internet when a program appeared claiming that she had won a prize. When she clicked to see what prize she had won, a program was installed on her computer unknowingly to her. The program installed allowed an intruder access to her hard drive and personal information.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Congratulations. You identified all issues correctly. Click Next to continue.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect, review the definitions and try again.]]></text>
+</component>
+
+</textcomponents>

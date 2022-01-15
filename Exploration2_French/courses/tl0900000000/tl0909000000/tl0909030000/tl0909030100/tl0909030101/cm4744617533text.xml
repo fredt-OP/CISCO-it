@@ -1,0 +1,29 @@
+﻿<textcomponents>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Métrique composite EIGRP</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Formule par défaut :<br/>métrique = <b>[K1*bande passante + K3*délai]</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Formule complète :<br/>métrique = <b>[K1*bande passante + <font color='#FF0000'>(K2*bande passante)/(256 - charge)</font> + K3*délai] <font color='#FF0000'>* [K5/(fiabilité+ K4)]</font></b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Valeurs par défaut :</b><br/>K1 (bande passante) = 1<br/>K2 (charge) = 0<br/>K3 (délai) = 1<br/>K4 (fiabilité) = 0<br/>K5 (fiabilité) = 0]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Les valeurs « K » peuvent être modifiées à l'aide de la commande <font face="_typewriter"><b>metric weights</b></font>.]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<font color='#FF0000'>(N’est pas utilisée si les valeurs « K » sont égales à 0)</font>]]></text>
+</component>
+
+
+</textcomponents>

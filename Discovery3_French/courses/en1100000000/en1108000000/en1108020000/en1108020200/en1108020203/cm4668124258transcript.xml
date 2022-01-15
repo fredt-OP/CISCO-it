@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 18:09:21">
+<title><content-text><![CDATA[8.2.2 - Analyzing the Effects of the Wild-card Mask]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the effects of the wild-card mask.<br><br>Network Topology<br>A router has an ACL outbound on S0/0/0. This router is connected to four networks on Fast Ethernet ports. <br><br>Networks 192.168.77.192 /26 and 192.168.77.128 /26 are blocked. <br><br>Networks 192.168.77.64 /26 and 192.168.77.0 /26 are ok.<br><br>OPTION A<br>access-list 55 permit 192.168.77.0 0.0.0.63<br>access-list 55 permit 192.168.77.64 0.0.0.63<br>(implied deny any)<br><br>OPTION B<br>access-list 5 permit 192.168.77.0 0.0.0.127<br>(implied deny any)<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

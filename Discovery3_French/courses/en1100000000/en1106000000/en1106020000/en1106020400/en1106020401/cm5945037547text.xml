@@ -1,0 +1,164 @@
+<textcomponents>
+
+
+<component id="ID_txt01">
+<text><![CDATA[Neighbor ID]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Priority]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[State]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Dead Time]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Address]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Interface]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>R1#show ip ospf neighbor</b>]]></text>
+</component> 
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Neighbor ID</font></td>
+      <td bgcolor='#DDDDDD'><font color='#FFFFFF'>Pri</font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'>State</font></td>
+	  <td bgcolor='#DDDDDD'><font color='#FFFFFF'>Dead Time</font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'>Address</font></td>
+      <td bgcolor='#DDDDDD'><font color='#FFFFFF'>Interface</font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#000000'>10.10.5.5</font></td>
+      <td bgcolor='#DDDDDD'><font color='#000000'>1</font></td>
+      <td bgcolor='#F2F2F2'><font color='#000000'>FULL/DR</font></td>
+	  <td bgcolor='#DDDDDD'><font color='#000000'>00:00:37</font></td>
+      <td bgcolor='#F2F2F2'><font color='#000000'>192.168.1.2</font></td>
+      <td bgcolor='#DDDDDD'><font color='#000000'>FastEthernet0/0</font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#000000'>10.10.1.6</font></td>
+      <td bgcolor='#DDDDDD'><font color='#000000'>1</font></td>
+      <td bgcolor='#F2F2F2'><font color='#000000'>2WAY/DROther</font></td>
+	  <td bgcolor='#DDDDDD'><font color='#000000'>00:00:15</font></td>
+      <td bgcolor='#F2F2F2'><font color='#000000'>192.168.1.2</font></td>
+      <td bgcolor='#DDDDDD'><font color='#000000'>FastEthernet0/0</font></td>
+    </tr>
+	</table>]]></text>
+</component>
+
+<component id="ID_txt16a">
+<text><![CDATA[Neighbor ID<BR>10.10.5.5<BR>10.10.1.6]]></text>
+</component>
+
+<component id="ID_txt16b">
+<text><![CDATA[Pri<BR>1<BR>1]]></text>
+</component>
+
+<component id="ID_txt16c">
+<text><![CDATA[State<BR>FULL/DR<BR>2WAY/DROther]]></text>
+</component>
+
+<component id="ID_txt16d">
+<text><![CDATA[Dead Time<BR>00:00:37<BR>00:00:15]]></text>
+</component>
+
+<component id="ID_txt16e">
+<text><![CDATA[Address<BR>192.168.1.2<BR>192.168.1.2]]></text>
+</component>
+
+<component id="ID_txt16f">
+<text><![CDATA[Interface<BR>FastEthernet0/0<BR>FastEthernet0/0]]></text>
+</component>
+
+
+
+
+<component id="ID_txt08">
+<text><![CDATA[10.10.5.5]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Loopback 0]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[192.168.1.1]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[10.10.3.1]]></text>
+</component>
+
+
+<component id="ID_txt12">
+<text><![CDATA[Loopback 0]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[192.168.1.3]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[10.10.1.6]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[192.168.1.2]]></text>
+</component>
+
+
+<component id="ID_txt21">
+<text><![CDATA[Roll over the various fields of the <font face="_typewriter">show ip ospf neighbor</font> command.]]></text>
+</component>
+
+<component id="ID_HL1">
+<text><![CDATA[<b>Neighbor ID:</b> The router ID of the neighbor ]]></text>
+</component>
+
+<component id="ID_HL2">
+<text><![CDATA[<b>Priority:</b> The priority of the router interface ]]></text>
+</component>
+
+<component id="ID_HL3">
+<text><![CDATA[<b>State:</b> The state of the neighbor relationship]]></text>
+</component>
+
+<component id="ID_HL4">
+<text><![CDATA[<b>Dead Time:</b> The amount of time remaining before the router will declare the neighbor dead without receiving a Hello packet.]]></text>
+</component>
+
+<component id="ID_HL5">
+<text><![CDATA[<b>Address:</b> The IP address of the interface of the neighbor.]]></text>
+</component>
+
+<component id="ID_HL6">
+<text><![CDATA[<b>Interface</b>: The interface of this router that formed the adjacency with the neighbor.]]></text>
+</component>
+
+<component id="ID_txt27">
+<text><![CDATA[R1]]></text>
+</component>
+
+<component id="ID_txt28">
+<text><![CDATA[R2]]></text>
+</component>
+
+<component id="ID_txt29">
+<text><![CDATA[R3]]></text>
+</component>
+
+</textcomponents>
+
+

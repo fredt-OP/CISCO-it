@@ -1,0 +1,42 @@
+﻿<textcomponents>
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+    <tr>
+      <td width='150' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>État</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Définition</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'>Init</td>
+      <td bgcolor='#DDDDDD'>Le routeur a reçu un paquet Hello initial de son voisin. Lorsqu’un routeur reçoit un paquet Hello d’un voisin, il répertorie l’ID du routeur émetteur dans son propre paquet Hello en guise d’accusé de réception.</td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'>2-way</td>
+      <td bgcolor='#F2F2F2'>La communication bidirectionnelle est établie lorsque chaque routeur a vu le paquet Hello de l’autre. Cet état est obtenu lorsque le routeur recevant le paquet Hello voit son propre ID de routeur dans le champ voisin du paquet Hello. À ce stade, un routeur décide s’il devient entièrement contigu avec ce voisin.</td>
+     
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'>Exstart</td>
+      <td bgcolor='#DDDDDD'>Les routeurs établissent une relation maître-esclave et choisissent le numéro de séquence initial pour la formation de la contiguïté. Entre deux routeurs, le routeur dont l’ID est le plus élevé devient le maître et démarre l’échange.</td>
+      
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'>Exchange</td>
+      <td bgcolor='#F2F2F2'>Les routeurs OSPF échangent des paquets de descripteur de base de données (DBD) contenant uniquement des en-têtes LSA (Link-State Advertisement). Le DBD décrit les contenus de l’ensemble de la base de données d’état de liens. Chaque paquet DBD comprend un numéro de séquence qui ne peut être incrémenté que par le maître.</td>
+    
+    </tr>
+    <tr>  
+      <td bgcolor='#DDDDDD'>Loading</td>
+      <td bgcolor='#DDDDDD'>En fonction des informations fournies par les DBD, les routeurs envoient des paquets de demande d’état de liens pour obtenir des informations plus spécifiques. Le voisin fournit les informations d’état de liens demandées dans des paquets de mise à jour d’état de liens.</td>
+      
+     </tr>   
+     <tr>
+      <td bgcolor='#F2F2F2'>Full</td>
+      <td bgcolor='#F2F2F2'>Tous les LSA de routage et de réseau sont échangés, et les bases de données des routeurs sont entièrement synchronisées.</td>
+          
+    </tr>
+</table>
+]]></text>
+</component>
+
+</textcomponents>

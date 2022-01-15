@@ -1,0 +1,43 @@
+﻿<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Contrôle de la latence du réseau</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Suppression des goulots d’étranglement</B>]]></text> 
+</component>
+
+
+
+
+
+<component id="ID_txt01_02">
+<text><![CDATA[<b>Serveur avec carte réseau de 1000 Mbits/s</b>]]></text>
+</component>
+<component id="ID_txt02_02">
+  <text><![CDATA[<b>Serveur avec cinq cartes réseau de 1000 Mbits/s</b>]]></text> 
+  </component>
+<component id="ID_txt03_02">
+  <text><![CDATA[<b>Bande passante de la carte réseau à 167 Mbits/s par ordinateur</b>]]></text> 
+  </component>
+<component id="ID_txt04_02">
+  <text><![CDATA[<b>Bande passante de la carte réseau à 833 Mbits/s par ordinateur </b>]]></text> 
+  </component>
+
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><B>Contrôle de la latence du réseau</B></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>- Tenez compte de la latence que génère chaque périphérique sur le réseau.</B><ul><li>Un commutateur au niveau du coeur du réseau prenant en charge 48 ports offrant chacun une capacité d’exécution de l’ordre de 1000 Mbits/s en mode bidirectionnel simultané a besoin d’un débit interne de 96 Gbits/s s’il doit maintenir une vitesse filaire globale sur tous les ports en même temps.</li></ul><br><B>- Des périphériques de couche OSI supérieure peuvent également accroître la latence sur un réseau.</B><ul><li>Un routeur doit supprimer les champs de couche 2 dans une trame pour pouvoir interpréter les paramètres d’adressage de la couche 3. Le temps de traitement supplémentaire entraîne une latence.</li><li>Limitez le recours à des périphériques de couche supérieure afin de réduire la latence du réseau et d'éviter des conflits liés au trafic de diffusion ou des taux de collision élevés.
+</li></ul></td>
+  </tr>
+</table>]]></text>
+</component>
+
+
+
+
+
+</textcomponents>

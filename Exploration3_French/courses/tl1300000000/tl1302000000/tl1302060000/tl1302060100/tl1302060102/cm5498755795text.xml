@@ -1,0 +1,232 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer.</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1)<TEXTFORMAT BLOCKINDENT='17'> Reportez-vous au <a href='asfunction:_parent._parent.openPopUp'><font color="#0000FF"><u>schéma</u></font>.</a> Dans le cadre de la transmission de trames Ethernet, un commutateur suit un processus à six étapes pour assimiler une adresse MAC. Classez les six étapes suivantes dans l’ordre en insérant le chiffre approprié dans la zone vide prévue à cet effet.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(Voir 2.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' width='70' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+			<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Le périphérique de destination réagit à la diffusion en envoyant une trame de monodiffusion à PC 1.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>Le commutateur enregistre l’adresse MAC source et le port de commutateur ayant reçu la trame dans la table d’adresses.</td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Le commutateur enregistre l’adresse MAC source du PC 2 et le numéro de port du commutateur ayant reçu la trame dans la table d’adresses. L’adresse de destination de la trame et le port qui lui est associé se trouvent dans la table d’adresses MAC.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>Le commutateur peut alors transmettre les trames entre les périphériques source et de destination sans les diffuser, puisqu’il dispose d’entrées dans la table d’adresses qui identifient les ports associés.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>L’adresse de destination étant une diffusion, le commutateur diffuse la trame sur tous les ports, à l’exception du port sur lequel il a reçu la trame.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>Le commutateur reçoit une trame de diffusion du PC 1 sur le port 1.</td>
+  </tr>
+</table>]]></text>
+</component>
+<component id="ID_Q1_txt05b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' width='70' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+			<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___4___</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Le périphérique de destination réagit à la diffusion en envoyant une trame de monodiffusion à PC 1.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>___2___</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>Le commutateur enregistre l’adresse MAC source et le port de commutateur ayant reçu la trame dans la table d’adresses.</td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___5___</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Le commutateur enregistre l’adresse MAC source du PC 2 et le numéro de port du commutateur ayant reçu la trame dans la table d’adresses. L’adresse de destination de la trame et le port qui lui est associé se trouvent dans la table d’adresses MAC.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>___6___</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>Le commutateur peut alors transmettre les trames entre les périphériques source et de destination sans les diffuser, puisqu’il dispose d’entrées dans la table d’adresses qui identifient les ports associés.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___3___</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>L’adresse de destination étant une diffusion, le commutateur diffuse la trame sur tous les ports, à l’exception du port sur lequel il a reçu la trame.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>___1___</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>Le commutateur reçoit une trame de diffusion du PC 1 sur le port 1.</td>
+  </tr>
+</table>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[Un protocole de routage sans classe inclut le masque de sous-réseau dans la mise à jour de routage.]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2)<TEXTFORMAT BLOCKINDENT='17'> Citez les deux principales méthodes de transmission par commutateur et les deux méthodes principales de mise en mémoire tampon dans les commutateurs.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(Voir 2.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+<component id="ID_Q2_txt06b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Commutation Store and Forward (stockage et retransmission) et cut-through (direct)</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Mise en mémoire tampon axée sur les ports et mise en mémoire tampon partagée</td>
+  </tr>
+</table>
+]]></text>
+</component>
+
+
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3)<TEXTFORMAT BLOCKINDENT='17'> Quelle est la raison probable pour que l’interface du réseau local virtuel (VLAN) 99 s’affiche à l’état activé ou désactivé ?</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(Voir 2.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Il n’existe aucune interface physique active associée au VLAN 99.</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4)<TEXTFORMAT BLOCKINDENT='17'> Quelles sont les deux commandes qui ne sont pas nécessaires à une configuration SSH de base offrant une connectivité réseau à distance pour des clients SSH ? (Choisissez deux réponses.)</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(Voir 2.4)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[Les commandes <b><font face='_typewriter'>ip ssh version 2</font></b> et <b><font face='_typewriter'>transport input SSH</font></b> ne sont pas requises pour un accès à distance.]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[Un protocole de routage sans classe inclut le masque de sous-réseau dans la mise à jour de routage.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5)<TEXTFORMAT BLOCKINDENT='17'> Citez et décrivez les trois modes de violation de la sécurité des ports.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(Voir 2.4)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+<component id="ID_Q5_txt06b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>protect :</b> lorsque le nombre d’adresses MAC sécurisées atteint la limite autorisée sur le port, des paquets munis d’adresses source inconnues sont ignorés jusqu’à ce que vous supprimiez un nombre suffisant d’adresses MAC sécurisées ou augmentiez le nombre maximal d’adresses à autoriser. Aucun message de notification ne vous est adressé en cas de violation de la sécurité.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><b>restrict :</b> lorsque le nombre d’adresses MAC sécurisées atteint la limite autorisée sur le port, des paquets munis d’adresses source inconnues sont ignorés jusqu’à ce que vous supprimiez un nombre suffisant d’adresses MAC sécurisées ou augmentiez le nombre maximal d’adresses à autoriser. Ce mode vous permet d’être informé si une violation de la sécurité est constatée. Dans ce cas, une interruption SNMP est transmise, un message syslog est consigné et le compteur de violation est incrémenté.</td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>shutdown :</b> si vous optez pour ce mode, toute violation de sécurité de port entraîne immédiatement la désactivation de l’enregistrement des erreurs dans l’interface et celle de la LED du port. Une interruption SNMP est également transmise, un message syslog est consigné et le compteur de violation est incrémenté. Lorsqu’un port sécurisé opère en mode de désactivation des erreurs, vous pouvez annuler cet état par simple saisie de la commande de configuration globale <b>errdisable recovery cause</b> <i>psecure-violation</i> ou bien manuellement le réactiver en entrant les commandes de configuration d’interface <b>shutdown</b> et <b>no shutdown</b>. Il s’agit du mode par défaut.</td>
+  </tr>
+</table>
+]]></text>
+</component>
+
+
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Fin des questions portant sur les thèmes de ce chapitre.</b>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+

@@ -1,0 +1,101 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[
+&lt;0-7&gt;			Consignation du niveau de gravité
+<br>alertes			Action immédiate requise				(gravité = 1)
+<br>critique		Conditions critiques					(gravité = 2)
+<br>débogage		Messages de débogage                (gravité = 7)
+<br>urgences    Système inutilisable                (gravité = 0)
+<br>erreurs         Conditions d’erreur                  (gravité = 3)
+<br>filtré       Activer la consignation filtrée
+<br>garanti     Garantir les messages de la console
+<br>informatif  Messages informatifs            (gravité = 6)
+<br>notifications  Conditions normales mais significatives (gravité = 5)
+<br>avertissements       Conditions d’avertissement                (gravité = 4)
+<br>xml            Activer la consignation dans XML
+<br>&lt;cr&gt;]]></text> 
+ 
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+  	<td colspan='2'><font color='#FFFFFF'><b>Niveaux de consignation</b></font></td>
+	<td><font color='#FFFFFF'><b>Niveau de gravité &lt;0-7&gt;</b></font></td>
+  </tr> 
+  <tr>
+    <td bgcolor='#DDDDDD'><b>alertes</b></td>
+    <td bgcolor='#DDDDDD'><b>Action immédiate requise</b></td>
+    <td bgcolor='#DDDDDD'><b>(gravité = 1)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>critique</b></td>
+    <td bgcolor='#F2F2F2'><b>Conditions critiques</b></td>
+    <td bgcolor='#F2F2F2'><b>(gravité = 2)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>débogage</b></td>
+    <td bgcolor='#DDDDDD'><b>Messages de débogage</b></td>
+    <td bgcolor='#DDDDDD'><b>(gravité = 7)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>urgences</b></td>
+    <td bgcolor='#F2F2F2'><b>Système inutilisable</b></td>
+    <td bgcolor='#F2F2F2'><b>(gravité = 0)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>erreurs</b></td>
+    <td bgcolor='#DDDDDD'><b>Conditions d’erreur</b></td>
+    <td bgcolor='#DDDDDD'><b>(gravité = 3)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>filtré</b></td>
+    <td bgcolor='#F2F2F2'><b>Activer la consignation filtrée</b></td>
+    <td bgcolor='#F2F2F2'><b></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>garanti</b></td>
+    <td bgcolor='#DDDDDD'><b>Garantir les messages de la console</b></td>
+    <td bgcolor='#DDDDDD'><b></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>informatif</b></td>
+    <td bgcolor='#F2F2F2'><b>Messages informatifs</b></td>
+    <td bgcolor='#F2F2F2'><b>(gravité = 6)</b></td>
+  </tr>
+    <tr>
+    <td bgcolor='#DDDDDD'><b>notifications</b></td>
+    <td bgcolor='#DDDDDD'><b>Conditions normales mais significatives</b></td>
+    <td bgcolor='#DDDDDD'><b>(gravité = 5)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>avertissements</b></td>
+    <td bgcolor='#F2F2F2'><b>Conditions d’avertissement</b></td>
+    <td bgcolor='#F2F2F2'><b>(gravité = 4)</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>xml</b></td>
+    <td bgcolor='#DDDDDD'><b>Activer la consignation dans XML</b></td>
+    <td bgcolor='#DDDDDD'><b></b></td>
+  </tr>
+</table>]]></text> 
+ 
+</component>
+ 
+ <component id="ID_alert">
+<text><![CDATA[ALERTE]]></text>
+</component>
+ 
+<component id="ID_txt02">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Niveaux de consignation]]></text>
+</component>
+
+
+
+</textcomponents>

@@ -1,0 +1,214 @@
+// eLabComposer version 1.0
+
+//Lab-Drill Information
+Language = "English";
+labDrill = "True";
+
+//Topics Covered
+chapterCovered = "Configuring a 2960 Switch";
+
+//Prompt Information
+StepModeArray[0] = "";
+StepModeArray[1] = "user";
+StepModeArray[2] = "enable";
+StepModeArray[3] = "enable";
+StepModeArray[4] = "enable";
+StepModeArray[5] = "global";
+StepModeArray[6] = "global";
+StepModeArray[7] = "enable";
+StepModeArray[8] = "enable";
+StepModeArray[9] = "global";
+StepModeArray[10] = "linecon";
+StepModeArray[11] = "linecon";
+StepModeArray[12] = "linecon";
+StepModeArray[13] = "linevty";
+StepModeArray[14] = "linevty";
+StepModeArray[15] = "linevty";
+StepModeArray[16] = "global";
+StepModeArray[17] = "global";
+StepModeArray[18] = "global";
+StepModeArray[19] = "intVlan";
+StepModeArray[20] = "intVlan";
+StepModeArray[21] = "global";
+StepModeArray[22] = "global";
+StepModeArray[23] = "enable";
+StepModeArray[24] = "enable";
+StepModeArray[25] = "enable";
+
+
+//Instruction Information
+instructionArray[0] = "In this lab you will configure a 2950 switch.";
+instructionArray[1] = "Enter privileged EXEC mode.\nEnter the password as <FONT FACE='_typewriter'><B>class</B></FONT>.";
+instructionArray[2] = "Enter the command string that will display the current configuration.";
+instructionArray[3] = "Enter the command string that will display the startup configuration stored in NVRAM.";
+instructionArray[4] = "Enter the command string that will take you to global configuration mode.";
+instructionArray[5] = "Enter the command string that will make the switch host name ALSwitch.";
+instructionArray[6] = "Exit to privileged EXEC mode.";
+instructionArray[7] = "Enter the command string that will display the current configuration.";
+instructionArray[8] = "Enter the command string that will take you to global configuration mode.";
+instructionArray[9] = "Enter the command string to configure console 0.";
+instructionArray[10] = "Enter the command string that will set the console password to cisco.";
+instructionArray[11] = "Enter the<FONT FACE='_typewriter'><B> login</B></FONT> command to force logins.";
+instructionArray[12] = "Enter the command string that will allow you to configure VTY ports 0-15.";
+instructionArray[13] = "Enter the command string that will set the vty password to <FONT FACE='_typewriter'><B>cisco</B></FONT>.";
+instructionArray[14] = "Enter the <FONT FACE='_typewriter'><B>login </B></FONT>command to force logins.";
+instructionArray[15] = "Exit to global configuration mode.";
+instructionArray[16] = "Enter the command string that will set the enable password to <FONT FACE='_typewriter'><B>cisco</B></FONT>.";
+instructionArray[17] = "Enter the command string that will set the enable secret password to <FONT FACE='_typewriter'><B>class</B></FONT>.";
+instructionArray[18] = "Enter Interface configuration mode for VLAN 1.";
+instructionArray[19] = "Set the interface IP address to 192.168.1.2. Use a subnet mask of 255.255.255.0.";
+instructionArray[20] = "Exit to global configuration mode.";
+instructionArray[21] = "Enter the command string that will set the default gateway to 192.168.1.1.";
+instructionArray[22] = "Exit to privileged EXEC mode.";
+instructionArray[23] = "Enter the command string that will display all VLAN 1 interfaces.";
+instructionArray[24] = "Enter the command string that will save the current configuration to NVRAM.";
+instructionArray[25] = "Enter the command string that will display the current configuration.";
+
+
+//Answer Information
+assignValueToAnswer(1,"1",False,"enable");
+assignValueToAnswer(2,"1",False,"show","running-config");
+assignValueToAnswer(3,"1",False,"show","startup-config");
+assignValueToAnswer(4,"1",False,"configure","terminal");
+assignValueToAnswer(5,"1",False,"hostname","ALSwitch");
+assignValueToAnswer(6,"1",False,"exit");
+assignValueToAnswer(7,"2",False,"show","running-config");
+assignValueToAnswer(8,"3",False,"configure","terminal");
+assignValueToAnswer(9,"3",False,"line","console","0");
+assignValueToAnswer(10,"3",False,"password","cisco");
+assignValueToAnswer(11,"3",False,"login");
+assignValueToAnswer(12,"3",False,"line","vty","0","15");
+assignValueToAnswer(13,"3",False,"password","cisco");
+assignValueToAnswer(14,"3",False,"login");
+assignValueToAnswer(15,"3",False,"exit");
+assignValueToAnswer(16,"4",False,"enable","password","cisco");
+assignValueToAnswer(17,"4",False,"enable","secret","class");
+assignValueToAnswer(18,"5",False,"interface","vlan","1");
+assignValueToAnswer(19,"5",False,"ip","address","192.168.1.2","255.255.255.0");
+assignValueToAnswer(20,"5",False,"exit");
+assignValueToAnswer(21,"6",False,"ip","default-gateway","192.168.1.1");
+assignValueToAnswer(22,"6",False,"exit");
+assignValueToAnswer(23,"7",False,"show","interface","vlan","1");
+assignValueToAnswer(24,"8",False,"copy","running-config","startup-config");
+assignValueToAnswer(25,"9",False,"show","running-config");
+
+
+//Error Information
+assignValueToError(1,"1","Enter 'enable' as the command.");
+assignValueToError(2,"1","Enter 'show' as the first portion of the command string.","Enter 'running-config' as the next portion of the command string.");
+assignValueToError(3,"1","Enter 'show' as the first portion of the command string.","Enter 'startup-config' as the next portion of the command string.");
+assignValueToError(4,"1","Enter 'configure' as the first portion of the command string.","Enter 'terminal' as the next portion of the command string.");
+assignValueToError(5,"1","Enter 'hostname' as the first portion of the command string.","Enter 'ALSwitch' as the next portion of the command string.");
+assignValueToError(6,"1","Enter 'exit' as the command.");
+assignValueToError(7,"2","Enter 'show' as the first portion of the command string.","Enter 'running-config' as the next portion of the command string.");
+assignValueToError(8,"3","Enter 'configure' as the first portion of the command string.","Enter 'terminal' as the next portion of the command string.");
+assignValueToError(9,"3","Enter 'line' as the first portion of the command string.","Enter 'console' as the next portion of the command string.","Enter '0' as the next portion of the command string.");
+assignValueToError(10,"3","Enter 'password' as the first portion of the command string.","Enter 'cisco' as the next portion of the command string.");
+assignValueToError(11,"3","Enter 'login' as the command.");
+assignValueToError(12,"3","Enter 'line' as the first portion of the command string.","Enter 'vty' as the next portion of the command string.","Enter '0' as the next portion of the command string.","Enter '15' as the next portion of the command string.");
+assignValueToError(13,"3","Enter 'password' as the first portion of the command string.","Enter 'cisco' as the next portion of the command string.");
+assignValueToError(14,"3","Enter 'login' as the command.");
+assignValueToError(15,"3","Enter 'exit' as the command.");
+assignValueToError(16,"4","Enter 'enable' as the first portion of the command string.","Enter 'password' as the next portion of the command string.","Enter 'cisco' as the next portion of the command string.");
+assignValueToError(17,"4","Enter 'enable' as the first portion of the command string.","Enter 'secret' as the next portion of the command string.","Enter 'class' as the next portion of the command string.");
+assignValueToError(18,"5","Enter 'interface' as the first portion of the command string.","Enter 'vlan' as the next portion of the command string.","Enter '1' as the next portion of the command string.");
+assignValueToError(19,"5","Enter 'ip' as the first portion of the command string.","Enter 'address' as the next portion of the command string.","Enter '192.168.1.2' as the next portion of the command string.","Enter '255.255.255.0' as the next portion of the command string.");
+assignValueToError(20,"5","Enter 'exit' as the command.");
+assignValueToError(21,"6","Enter 'ip' as the first portion of the command string.","Enter 'default-gateway' as the next portion of the command string.","Enter '192.168.1.1' as the next portion of the command string.");
+assignValueToError(22,"6","Enter 'exit' as the command.");
+assignValueToError(23,"7","Enter 'show' as the first portion of the command string.","Enter 'interface' as the next portion of the command string.","Enter 'vlan' as the next portion of the command string.","Enter '1' as the next portion of the command string.");
+assignValueToError(24,"8","Enter 'copy' as the first portion of the command string.","Enter 'running-config' as the next portion of the command string.","Enter 'startup-config' as the next portion of the command string.");
+assignValueToError(25,"9","Enter 'show' as the first portion of the command string.","Enter 'running-config' as the next portion of the command string.");
+
+
+
+//Result Information
+assignValueToResult(1,"1","");
+assignValueToResult(2,"1","\n","Building configuration...\n","\n","Current configuration:\n","!\n","version 12.0\n","no service pad\n","service timestamps debug uptime\n","service timestamps log uptime\n","no service password-encryption\n","!\n","hostname Switch\n","!\n","!\n","!\n","!\n","!\n","!\n","!\n","ip subnet-zero\n","!\n","!\n","!\n","interface FastEthernet0/1\n","!\n","interface FastEthernet0/2\n","!\n","interface FastEthernet0/3\n","!\n","interface FastEthernet0/4\n","!\n","interface FastEthernet0/5\n","!\n","interface FastEthernet0/6\n","!\n","interface FastEthernet0/7\n","!\n","interface FastEthernet0/8\n","!\n","interface FastEthernet0/9\n","!\n","interface FastEthernet0/10\n","!\n","interface FastEthernet0/11\n","!\n","interface FastEthernet0/12\n","!\n","interface FastEthernet0/13\n","!\n","interface FastEthernet0/14\n","!\n","interface FastEthernet0/15\n","!\n","interface FastEthernet0/16\n","!\n","interface FastEthernet0/17\n","!\n","interface FastEthernet0/18\n","!\n","interface FastEthernet0/19\n","!\n","interface FastEthernet0/20\n","!\n","interface FastEthernet0/21\n","!\n","interface FastEthernet0/22\n","!\n","interface FastEthernet0/23\n","!\n","interface FastEthernet0/24\n","!\n","interface VLAN1\n"," no ip directed-broadcast\n"," no ip route-cache\n","!\n","!\n","line con 0\n"," transport input none\n"," stopbits 1\n","line vty 5 15\n","!\n","end\n","");
+assignValueToResult(3,"1","\n","%% Non-volatile configuration memory is not present\n","");
+assignValueToResult(4,"1","");
+assignValueToResult(5,"1","");
+assignValueToResult(6,"1","");
+assignValueToResult(7,"2","\n","Building configuration...\n","\n","Current configuration:\n","!\n","version 12.0\n","no service pad\n","service timestamps debug uptime\n","service timestamps log uptime\n","no service password-encryption\n","!\n","hostname ALSwitch\n","!\n","!\n","!\n","!\n","!\n","!\n","!\n","ip subnet-zero\n","!\n","!\n","!\n","interface FastEthernet0/1\n","!\n","interface FastEthernet0/2\n","!\n","interface FastEthernet0/3\n","!\n","interface FastEthernet0/4\n","!\n","interface FastEthernet0/5\n","!\n","interface FastEthernet0/6\n","!\n","interface FastEthernet0/7\n","!\n","interface FastEthernet0/8\n","!\n","interface FastEthernet0/9\n","!\n","interface FastEthernet0/10\n","!\n","interface FastEthernet0/11\n","!\n","interface FastEthernet0/12\n","!\n","interface FastEthernet0/13\n","!\n","interface FastEthernet0/14\n","!\n","interface FastEthernet0/15\n","!\n","interface FastEthernet0/16\n","!\n","interface FastEthernet0/17\n","!\n","interface FastEthernet0/18\n","!\n","interface FastEthernet0/19\n","!\n","interface FastEthernet0/20\n","!\n","interface FastEthernet0/21\n","!\n","interface FastEthernet0/22\n","!\n","interface FastEthernet0/23\n","!\n","interface FastEthernet0/24\n","!\n","interface VLAN1\n"," no ip directed-broadcast\n"," no ip route-cache\n","!\n","!\n","line con 0\n"," transport input none\n"," stopbits 1\n","line vty 5 15\n","!\n","end\n","");
+assignValueToResult(8,"3","");
+assignValueToResult(9,"3","");
+assignValueToResult(10,"3","");
+assignValueToResult(11,"3","");
+assignValueToResult(12,"3","");
+assignValueToResult(13,"3","");
+assignValueToResult(14,"3","");
+assignValueToResult(15,"3","");
+assignValueToResult(16,"4","");
+assignValueToResult(17,"4","");
+assignValueToResult(18,"5","");
+assignValueToResult(19,"5","");
+assignValueToResult(20,"5","");
+assignValueToResult(21,"6","");
+assignValueToResult(22,"6","");
+assignValueToResult(23,"7","\n","VLAN1 is up, line protocol is up\n","  Hardware is CPU Interface, address is 0009.43f2.41c0 (bia 0009.43f2.41c0)\n","  Internet address is 192.168.1.2/24\n","  MTU 1500 bytes, BW 10000 Kbit, DLY 1000 usec,\n","     reliability 255/255, txload 1/255, rxload 1/255\n","  Encapsulation ARPA, loopback not set\n","  ARP type: ARPA, ARP Timeout 04:00:00\n","  Last input 00:00:30, output never, output hang never\n","  Last clearing of \"show interface\" counters never\n","  Queueing strategy: fifo\n","  Output queue 0/40, 0 drops; input queue 0/75, 0 drops\n","  5 minute input rate 5000 bits/sec, 11 packets/sec\n","  5 minute output rate 24000 bits/sec, 5 packets/sec\n","     3885 packets input, 307929 bytes, 0 no buffer\n","     Received 85 broadcasts, 0 runts, 0 giants, 0 throttles\n","     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored\n","     0 input packets with dribble condition detected\n","     1777 packets output, 997452 bytes, 0 underruns\n","     0 output errors, 0 collisions, 0 interface resets\n","     0 babbles, 0 late collision, 0 deferred\n","     0 lost carrier, 0 no carrier\n","     0 output buffer failures, 0 output buffers swapped out\n","");
+assignValueToResult(24,"8","\n","Destination filename [startup-config]?\n","Building configuration...\n","[OK]\n","");
+assignValueToResult(25,"9","\n","Building configuration...\n","\n","Current configuration:\n","!\n","version 12.0\n","no service pad\n","service timestamps debug uptime\n","service timestamps log uptime\n","no service password-encryption\n","!\n","hostname ALSwitch\n","!\n","enable secret 5 $1$6NZI$6Prg95pwmolOfh6DaFMkK1\n","enable password cisco\n","!\n","!\n","!\n","!\n","!\n","!\n","ip subnet-zero\n","!\n","!\n","!\n","interface FastEthernet0/1\n","!\n","interface FastEthernet0/2\n","!\n","interface FastEthernet0/3\n","!\n","interface FastEthernet0/4\n","!\n","interface FastEthernet0/5\n","!\n","interface FastEthernet0/6\n","!\n","interface FastEthernet0/7\n","!\n","interface FastEthernet0/8\n","!\n","interface FastEthernet0/9\n","!\n","interface FastEthernet0/10\n","!\n","interface FastEthernet0/11\n","!\n","interface FastEthernet0/12\n","!\n","interface FastEthernet0/13\n","!\n","interface FastEthernet0/14\n","!\n","interface FastEthernet0/15\n","!\n","interface FastEthernet0/16\n","!\n","interface FastEthernet0/17\n","!\n","interface FastEthernet0/18\n","!\n","interface FastEthernet0/19\n","!\n","interface FastEthernet0/20\n","!\n","interface FastEthernet0/21\n","!\n","interface FastEthernet0/22\n","!\n","interface FastEthernet0/23\n","!\n","interface FastEthernet0/24\n","!\n","interface VLAN1\n"," ip address 192.168.1.2 255.255.255.0\n"," no ip directed-broadcast\n"," no ip route-cache\n","!\n","ip default-gateway 192.168.1.1\n","!\n","line con 0\n"," password cisco\n"," login\n"," transport input none\n"," stopbits 1\n","line vty 0 4\n"," password cisco\n"," login\n","line vty 5 15\n"," password cisco\n"," login\n","!\n","end\n","");
+
+
+//Graphic Information
+hasDefaultGraphic = true;
+graphicArray[0] = "CCNA2_elab_6_2_2g";
+graphicArray[1] = "";
+graphicArray[2] = "";
+graphicArray[3] = "";
+graphicArray[4] = "";
+graphicArray[5] = "";
+graphicArray[6] = "";
+graphicArray[7] = "";
+graphicArray[8] = "";
+graphicArray[9] = "";
+graphicArray[10] = "";
+graphicArray[11] = "";
+graphicArray[12] = "";
+graphicArray[13] = "";
+graphicArray[14] = "";
+graphicArray[15] = "";
+graphicArray[16] = "";
+graphicArray[17] = "";
+graphicArray[18] = "";
+graphicArray[19] = "";
+graphicArray[20] = "";
+graphicArray[21] = "";
+graphicArray[22] = "";
+graphicArray[23] = "";
+graphicArray[24] = "";
+graphicArray[25] = "";
+
+
+//Router for Step Information
+routerUsedForThisStep[0] = 1;
+routerUsedForThisStep[1] = 1;
+routerUsedForThisStep[2] = 1;
+routerUsedForThisStep[3] = 1;
+routerUsedForThisStep[4] = 1;
+routerUsedForThisStep[5] = 1;
+routerUsedForThisStep[6] = 0;
+routerUsedForThisStep[7] = 0;
+routerUsedForThisStep[8] = 0;
+routerUsedForThisStep[9] = 0;
+routerUsedForThisStep[10] = 0;
+routerUsedForThisStep[11] = 0;
+routerUsedForThisStep[12] = 0;
+routerUsedForThisStep[13] = 0;
+routerUsedForThisStep[14] = 0;
+routerUsedForThisStep[15] = 0;
+routerUsedForThisStep[16] = 0;
+routerUsedForThisStep[17] = 0;
+routerUsedForThisStep[18] = 0;
+routerUsedForThisStep[19] = 0;
+routerUsedForThisStep[20] = 0;
+routerUsedForThisStep[21] = 0;
+routerUsedForThisStep[22] = 0;
+routerUsedForThisStep[23] = 0;
+routerUsedForThisStep[24] = 0;
+routerUsedForThisStep[25] = 0;
+
+
+//Router Information
+addToRouterSIMObject(0,"ALSwitch","","","S2950");
+addToRouterSIMObject(1,"Switch","cisco","class","R1721");

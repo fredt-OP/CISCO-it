@@ -1,0 +1,123 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Configuration d’un routeur Cisco en tant que serveur DHCP</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur chaque étape de configuration DHCP pour obtenir plus d’informations.</b>]]></text> 
+</component>
+
+<component id="ID_txt01a">
+<text><![CDATA[<b>Étape 1 : création du pool d’adresses DHCP</b><br>Passez en mode d’exécution privilégié, entrez le mot de passe le cas échéant, puis passez en mode de configuration globale. Attribuez un nom au pool d’adresses du serveur DHCP. Il peut exister plusieurs pools d’adresses sur un routeur. L’interface de ligne de commande Cisco IOS passe en mode de configuration du pool DHCP. Utilisez ces commandes :<br><br><font face="_typewriter">  Router> <b>enable</b><br>  Router# <b>configure terminal</b><br>  Router(config)# <b>ip dhcp pool LAN-address</b></font><br><br>Cet exemple a créé un pool d’adresses nommé « LAN-address ».]]></text> 
+</component>
+
+<component id="ID_txt01d">
+<text><![CDATA[<font face="_typewriter">Router(config)# <b>ip dhcp pool LAN-address</b><br/>Router(dhcp-config)#</font>]]></text> 
+</component>
+
+
+<component id="ID_txt02a">
+<text><![CDATA[<b>Étape 2 : spécification du réseau ou du sous-réseau</b><br> Spécifiez le numéro de réseau ou de sous-réseau et le masque de sous-réseau du pool d’adresses DHCP. Utilisez cette commande :<br><br><font face="_typewriter">  Router(dhcp-config)# <b>network 172.16.0.0 255.255.0.0</b></font><br><br>Selon la version du logiciel IOS, le masque de sous-réseau peut également être spécifié à l’aide de la convention de préfixe /16.]]></text> 
+</component>
+
+
+<component id="ID_txt02d">
+<text><![CDATA[<font face="_typewriter">Router(dhcp-config)# <b>network 172.16.0.0 255.255.0.0</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt03a">
+<text><![CDATA[<b>Étape 3 : exclusion des adresses IP</b><br>N’oubliez pas que le serveur DHCP suppose que toutes les autres adresses IP d’un sous-réseau de pool d’adresses DHCP peuvent être affectées à des clients DHCP. Excluez des adresses de ce pool pour éviter que le serveur DHCP n’affecte ces adresses IP. Pour exclure une plage d’adresses, il suffit d’entrer l’adresse de début et l’adresse de fin. Utilisez cette commande :<br><br><font face="_typewriter"> Router(config)# <b>ip dhcp excluded-address 172.16.1.100 172.16.1.103</b></font><br><br>L’exemple illustré ci-dessus exclut les quatre adresses 172.16.1.100, 172.16.1.101, 172.16.1.102 et 172.16.1.103 pour empêcher qu’elles soient affectées à des hôtes par le service DHCP. Ces adresses peuvent être affectées de façon statique par l’administrateur.]]></text> 
+</component> 
+
+<component id="ID_txt03d">
+<text><![CDATA[<font face="_typewriter">Router(config)# <b>ip dhcp excluded-address 172.16.1.100 172.16.1.103</b></font>]]></text>
+</component>
+
+
+<component id="ID_txt04a">
+<text><![CDATA[<b>Étape 4 : spécification du nom de domaine</b><br>Spécifiez maintenant le nom de domaine pour le client. Utilisez cette commande :<br><br><font face="_typewriter"> Router(dhcp-config)# <b>domain-name cisco.com</b></font><br><br>Dans cet exemple, les clients recevront le nom de domaine cisco.com dans le cadre de leur configuration DHCP. Le nom de domaine est un paramètre de configuration DHCP facultatif qui n’est pas indispensable au bon fonctionnement du protocole DHCP. L’administrateur réseau peut vous indiquer si un nom de domaine est nécessaire ou non.]]></text> 
+</component> 
+
+<component id="ID_txt04d">
+<text><![CDATA[<font face="_typewriter">Router(dhcp-config)# <b>domain-name cisco.com</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt05a">
+<text><![CDATA[<b>Étape 5 : adresse IP du serveur DNS</b><br>Spécifiez maintenant l’adresse IP d’un serveur DNS disponible pour un client DHCP. Une adresse IP est nécessaire. Vous pouvez configurer jusqu’à huit adresses IP sur une seule ligne. Si vous utilisez plusieurs serveurs DNS, affichez-les par ordre d’importance. Utilisez cette commande :<br><br><font face="_typewriter">  Router(dhcp-config)# <b>dns-server 172.16.1.103 172.16.2.103</b></font><br><br>Dans cet exemple, les clients peuvent utiliser deux serveurs DNS, un serveur principal et un serveur secondaire. Un serveur DNS au moins doit être configuré pour permettre aux hôtes de résoudre les noms d’hôtes et les URL afin d’accéder aux services disponibles sur le réseau.]]></text> 
+</component>
+
+<component id="ID_txt05d">
+<text><![CDATA[<font face="_typewriter">Router(dhcp-config)# <b>dns-server 172.16.1.103 172.16.2.103</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt06a">
+<text><![CDATA[<b>Étape 6 : définition de la passerelle par défaut</b><br>Spécifiez l’adresse IP du routeur par défaut pour les clients DHCP sur le réseau. Il s’agit, en principe, de l’adresse IP de réseau local du routeur. Cette commande définit la passerelle par défaut des périphériques clients du réseau qui utiliseront le protocole DHCP. Après redémarrage d’un client DHCP, celui-ci commence à envoyer des paquets à son routeur par défaut. L’adresse IP doit appartenir au même sous-réseau que les adresses IP de clients indiquées par le routeur. Une adresse IP est nécessaire. Utilisez cette commande :<br><br><font face="_typewriter">  Router(dhcp-config)# <b>default-router 172.16.1.100</b></font><br><br>Dans cet exemple, les clients utilisent l’interface de routeur 172.16.1.100 comme passerelle par défaut.]]></text> 
+</component> 
+
+<component id="ID_txt06d">
+<text><![CDATA[<font face="_typewriter">Router(dhcp-config)# <b>default-router 172.16.1.100</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt07a">
+<text><![CDATA[<b>Étape 7 : définition de la durée du bail </b><br>DHCP distribue une adresse IP chaque fois qu’un hôte est mis sous tension et se connecte au réseau. Par défaut, la durée de réservation d’une adresse IP cliente pour un hôte spécifique est d’un jour. Si l’hôte ne renouvelle pas son adresse, la réservation prend fin et l’adresse IP est à nouveau disponible et peut être attribuée via DHCP. La durée du bail peut être allongée, si nécessaire. Cette étape est la dernière étape de configuration d’un service DHCP sur un routeur. Utilisez la commande end pour terminer la configuration DHCP et revenir au mode de configuration globale. Utilisez ces commandes :</b><br><br><font face="_typewriter">Router (dhcp-config)# <b>lease {days [hours] [minutes]| infinite}</b><br>Router (dhcp-config)# <b>end</br></b></font>]]></text> 
+</component> 
+
+
+<component id="ID_txt07c">
+<text><![CDATA[L’exemple proposé empêche l’attribution par DHCP des quatre adresses 172.16.1.100, 172.16.1.101, 172.16.1.102 et 172.16.1.103. Ces adresses peuvent être affectées de façon statique par l’administrateur, mais elles ne sont pas affectées par le service DHCP.]]></text> 
+</component>
+
+<component id="ID_txt07d">
+<text><![CDATA[<font face="_typewriter">Router (dhcp-config)# <b>lease {days [hours] [minutes]| infinite}</b><br/>Router (dhcp-config)# <b>end</b></font>]]></text> 
+</component>
+
+
+<component id="ID_txt08a">
+<text><![CDATA[<b>Étape 8 : vérification de la configuration</b><br>Vérifiez la configuration DHCP en affichant la configuration en cours. Pour cela, utilisez la commande :<br><br><font face="_typewriter">Router#<b>  show running-config</b></font><br><br>Exemple de la partie DHCP de la configuration en cours sur un routeur sur lequel le service DHCP est activé :<br><br><font face="_typewriter"><b>  !<br>  ip dhcp pool LAN-addresses</br><br>  domain-name cisco.com</br><br>  network 172.16.0.0 255.255.0.0</br><br>  ip dhcp excluded-address 172.16.1.100 172.16.1.103</br><br>  dns-server 172.16.1.103 172.16.2.103</br><br>  default-router 172.16.1.100<br>  lease infinite<br>  !</br></b></font><br><br>Lorsque la configuration est correcte, copiez la configuration en cours dans la configuration initiale.]]></text> 
+</component> 
+
+<component id="ID_txt08f">
+<text><![CDATA[<font face="_typewriter">Router# <b>show running-config</b></font>]]></text> 
+</component> 
+
+
+
+
+
+<component id="Step_1">
+<text><![CDATA[<b>Étape 1</b>]]></text> 
+</component>
+
+<component id="Step_2">
+<text><![CDATA[<b>Étape 2</b>]]></text> 
+</component>
+
+<component id="Step_3">
+<text><![CDATA[<b>Étape 3</b>]]></text> 
+</component>
+
+<component id="Step_4">
+<text><![CDATA[<b>Étape 4</b>]]></text> 
+</component>  
+
+<component id="Step_5">
+<text><![CDATA[<b>Étape 5</b>]]></text> 
+</component>
+
+<component id="Step_6">
+<text><![CDATA[<b>Étape 6</b>]]></text> 
+</component> 
+
+<component id="Step_7">
+<text><![CDATA[<b>Étape 7</b>]]></text> 
+</component>
+
+<component id="Step_8">
+<text><![CDATA[<b>Étape 8</b>]]></text> 
+</component> 
+
+</textcomponents>

@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13192" dateexported="01/26/2009">
+		<name>Module 5 Questionnaire</name>
+		<form id="20914" lang="fr"><form-item order="fixed">
+			<ai id="133307" type="mc-sa"><question><![CDATA[Quelle affirmation sur la commande <b>debug ip rip</b> est vraie ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle analyse la configuration exécutée et affiche les erreurs possibles dans la configuration du protocole RIP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elle affiche les mises à jour de routage RIP à l’envoi et à la réception.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle identifie automatiquement les boucles de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle affiche l’historique des mises à jour du protocole RIP des 90 dernières secondes. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133308" type="mc-sa"><question><![CDATA[Quel problème la commande <b>passive-interface</b> permet-elle de résoudre ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle empêche la confusion si les protocoles RIPv1 et RIPv2 sont annoncés sur un réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elle empêche de gaspiller la bande passante et d’effectuer un traitement à partir de mises à jour inutiles.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle empêche les boucles de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle empêche d’envoyer les mises à jour sans mot de passe. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133309" type="mc-sa"><question><![CDATA[Pourquoi un routeur devient-il un routeur de périphérie dans le protocole RIP ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il se trouve au bord d’un système autonome. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il possède plusieurs interfaces dans plusieurs principaux réseaux par classe.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il exécute en même temps les protocoles RIP et EIGRP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il est configuré de manière à être un routeur de périphérie par un administrateur. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133310" type="mc-sa"><question><![CDATA[Quelle commande est utilisée avec le protocole RIP pour propager les routes par défaut sur les voisins ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>network 0.0.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>ip summary-address rip<i> address mask</i></b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>ip default-network <i>address</i></b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>default-information originate</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133311" type="mc-sa"><question><![CDATA[Quelle commande crée une route par défaut potentielle sur un routeur RIP ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>default-information originate</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>ip default-network 0.0.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>ip default-gateway 192.168.0.1</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>ip route 0.0.0.0 0.0.0.0 serial0/0/0</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133306" type="mc-sa"><question><![CDATA[Examinez la présentation. Tous les routeurs exécutent le protocole RIPv1. Les interfaces de tous les routeurs sont opérationnelles et stables. Les utilisateurs sur le réseau 10.16.1.0 ne peuvent pas accéder aux services sur le réseau 10.16.1.64. Quelle est la cause de ce problème ? <br/><img src="i133306n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le minuteur de mise hors service du protocole RIP du routeur A n’autorise pas le réseau 10.16.1.64 dans les mises à jour de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le réseau utilise le masquage de sous-réseau de longueur variable alors que le protocole RIPv1 ne le permet pas. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les sous-réseaux 10.16.1.x sont discontinus les uns vis-à-vis des autres.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les interfaces des routeurs A et B doivent être configurées comme interfaces passives. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133312" type="mc-sa"><question><![CDATA[Comment un routeur qui exécute le protocole RIPv1 détermine-t-il le masque de sous-réseau des routes reçues lors des mises à jour de routage ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le masque de sous-réseau est inclus dans la mise à jour de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur envoie une demande de masque de sous-réseau au routeur expéditeur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur utilise le masque de sous-réseau de l’interface locale ou le masque de sous-réseau par défaut pour la classe d’adresse de la mise à jour de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur calcule le masque de sous-réseau en fonction du sous-réseau de longueur variable dans sa propre configuration. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur utilise par défaut 255.255.255.0 pour toutes les mises à jour. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133313" type="mc-sa"><question><![CDATA[Examinez la présentation. Quelle est la distance administrative de la route vers le réseau 192.168.5.0 ? <br/><img src="i133313n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[0 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[12 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[120  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="64037" type="mc-sa"><question><![CDATA[Quel est l'objectif de la commande <b>network</b> lors de la configuration de RIP comme protocole de routage ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle identifie les réseaux connectés au routeur voisin. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle empêche l'utilisation des réseaux pour les routes statiques. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle identifie tous les réseaux de destination que le routeur est autorisé à insérer dans sa table de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elle identifie les réseaux directement connectés qui seront inclus dans les mises à jour de routage RIP.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="128172" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="128172" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>debug ip rip</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show ip protocols</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show running-config</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show ip route</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show interfaces</b></mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Affiche des informations sur la configuration actuelle pour les protocoles de routage et interfaces configurés</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Vérifie que les interfaces sont actives et opérationnelles</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Affiche les réseaux annoncés dans les mises à jour, dès que celles-ci sont envoyées et reçues</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Vérifie que le protocole de routage s’exécute et annonce les réseaux appropriés</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Vérifie que les routes reçues sont installées dans la table de routage</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="760"><material><mattext>Pour garantir un routage approprié sur un réseau, l’administrateur réseau doit toujours vérifier la configuration du routeur pour s’assurer que des routes appropriées sont disponibles. Les commandes situées dans la partie gauche permettront à l’administrateur réseau d’afficher les informations requises pour configurer le routeur. Faites glisser chaque commande sur le résultat correspondant.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-85.5" targetYspacing="16" yspacing="55" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="109938" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="109938" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="109938" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

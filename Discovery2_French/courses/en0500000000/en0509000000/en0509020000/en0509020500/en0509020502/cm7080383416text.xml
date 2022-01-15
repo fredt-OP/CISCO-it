@@ -1,0 +1,134 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Roll over each state for more information.</b>]]></text>
+</component>
+<component id="ID_title">
+<text><![CDATA[<b>Describe issues that relate to purchasing and maintaining network equipment for an upgrade.</b>]]></text>
+</component>	
+
+<component id="ID_header1a">
+<text><![CDATA[<b>Possible Problem:</b>]]></text>
+</component>	
+
+<component id="ID_header2a">
+<text><![CDATA[<b>To Troubleshoot:</b>]]></text>
+</component>	
+
+<component id="ID_header1b">
+<text><![CDATA[<b>Possible Problem:</b>]]></text>
+</component>	
+
+<component id="ID_header2b">
+<text><![CDATA[<b>To Troubleshoot:</b>]]></text>
+</component>	
+
+<component id="ID_header1c">
+<text><![CDATA[<b>Possible Problem:</b>]]></text>
+</component>	
+
+<component id="ID_header2c">
+<text><![CDATA[<b>To Troubleshoot:</b>]]></text>
+</component>	
+
+<component id="ID_header1d">
+<text><![CDATA[<b>Possible Problem:</b>]]></text>
+</component>	
+
+<component id="ID_header2d">
+<text><![CDATA[<b>To Troubleshoot:</b>]]></text>
+</component>	
+
+<component id="ID_header1e">
+<text><![CDATA[<b>Possible Problem:</b>]]></text>
+</component>	
+
+<component id="ID_header2e">
+<text><![CDATA[<b>To Troubleshoot:</b>]]></text>
+</component>	
+
+<component id="ID_header1f">
+<text><![CDATA[<b>Possible Problem:</b>]]></text>
+</component>	
+
+<component id="ID_header2f">
+<text><![CDATA[<b>To Troubleshoot:</b>]]></text>
+</component>	
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Serial x is down, <br>line protocol is down (DTE)</b>]]></text>
+</component>	
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Serial x is up, <br>line protocol is down (DTE)</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Serial x is up, <br>line protocol is down (DCE)</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Serial x is up, <br>line protocol is up (looped)</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Serial x is up, <br>line protocol is down (disabled)</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Serial x is administratively down, <br>line protocol is down</b>]]></text>
+</component>
+
+
+
+<component id="ID_txt01a">
+<text><![CDATA[<li>Indicates that the router is not sensing a carrier detect signal. <li>Telephone company problem—Line is down or not connected to CSU/DSU.</li><li>Faulty or incorrect cabling. </li><li>Hardware failure (CSU/DSU)</li>]]></text>
+</component>
+
+<component id="ID_txt01b">
+<text><![CDATA[<b>Step 1:</b>  <br>Check the LEDs on the CSU/DSU to see whether the light is active. <br><b>Step 2:</b>  <br>Verify that you are using the proper cable and interface. <br><b>Step 3:</b> <br>Contact your leased-line or other carrier service to see whether there is a problem. <br><b>Step 4:</b>  <br>Replace the serial interface module with a known good module. <br><b>Step 5:</b>  <br>Replace the CSU/DSU with a known good device.]]></text>
+</component>
+
+<component id="ID_txt02a">
+<text><![CDATA[<li>Local or remote router is misconfigured.</li><li>Keepalives are not being sent by the remote router.</li><li>Failed remote CSU or DSU. </li><li>Failed local or remote CSU/DSU.</li>]]></text>
+</component>
+
+
+<component id="ID_txt02b">
+<text><![CDATA[<b>Step 1:</b>  <br>Put the modem, CSU, or DSU in local loopback mode, and use the show interface serial command to determine whether the line protocol comes up. If the line protocol comes up, a telephone company problem or a failed remote router is probably the cause. <br><b>Step 2:</b>  <br>If the problem appears to be on the remote end, repeat Step 1 on the remote modem, CSU, or DSU. <br><b>Step 3:</b> <br>Verify all cabling. Make certain that the cable is attached to the correct interface, the correct CSU/DSU, and the correct telephone company network termination point. <br><b>Step 4:</b>  <br>Verify that the encapsulation is correct on both ends of the circuit. <br><b>Step 5:</b>  <br>If the line protocol does not come up in local loopback mode and if there is no encapsulation mismatch, replace failed hardware. ]]></text>
+</component>
+
+<component id="ID_txt03a">
+<text><![CDATA[<li>Missing <font face='_typewriter'><b>clockrate</b></font> interface configuration command.</li><li>Failed local or remote CSU/DSU.</li><li>Failed or incorrect cable.</li><li>Router hardware failure. </li>]]></text>
+</component>
+
+<component id="ID_txt03b">
+<text><![CDATA[<b>Step 1:</b>  <br>Add the <font face='_typewriter'><b>clockrate</b></font> interface configuration command on the serial interface. <br><b>Step 2:</b>  <br>Verify that the correct cable is being used. <br><b>Step 3:</b> <br>If the line protocol is still down, there is a possible hardware failure or cabling problem. <br><b>Step 4:</b>  <br>Replace faulty parts as necessary with known good equipment.]]></text>
+</component>
+
+<component id="ID_txt04a">
+<text><![CDATA[<li>A loop exists in circuit. The sequence number in the keepalive packet changes to a random number when a loop is detected initially. If the same random number is returned over the link, a loop exists.</li>]]></text>
+</component>
+
+<component id="ID_txt04b">
+<text><![CDATA[<b>Step 1:</b>  <br>Use the <font face='_typewriter'><b>show running-config</b></font> privileged EXEC command. This will enable you to look for any <font face='_typewriter'><b> loopback</b></font> interface configuration command entries.<br><b>Step 2:</b>  <br>If you find a <font face='_typewriter'><b>loopback</b></font> interface configuration command entry, use the <font face='_typewriter'><b> no loopback</b></font> interface configuration command to remove the loop. <br><b>Step 3:</b> <br>If you do not find the <font face='_typewriter'><b>loopback</b></font> interface configuration command, examine the CSU/DSU to determine whether it is configured in manual loopback mode. If it is, disable manual loopback.<br><b>Step 4:</b>  <br>Reset the CSU/DSU and inspect the line status. If the line protocol comes up, no other action is needed. <br><b>Step 5:</b>  <br>If the CSU/DSU is not configured in manual loopback mode, contact the leased-line or other carrier service for line troubleshooting assistance. ]]></text>
+</component>
+
+<component id="ID_txt05a">
+<text><![CDATA[<li>High error rate because of telecommunications service problem. </li><li>CSU/DSU hardware problem. </li><li>Bad router hardware. </li>]]></text>
+</component>
+
+<component id="ID_txt05b">
+<text><![CDATA[<b>Step 1:</b>  <br>Contact the telecommunications service provider.<br><b>Step 2:</b>  <br>Loop CSU/DSU (DTE loop). If the problem continues, there is likely a hardware problem. If the problem does not continue, the problem is likely with the telephone company. <br><b>Step 3:</b> <br>Swap out bad hardware as required (CSU/DSU, switch, interface module, or remote router). ]]></text>
+</component>
+
+<component id="ID_txt06a">
+<text><![CDATA[<li>Router configuration includes the <font face='_typewriter'><b>shutdown</b></font> interface configuration command. </li><li>Duplicate IP address.</li>]]></text>
+</component>
+
+<component id="ID_txt06b">
+<text><![CDATA[<b>Step 1:</b>  <br>Check the configuration for the <font face='_typewriter'><b>shutdown</b></font>  command. <br><b>Step 2:</b>  <br>Use the <font face='_typewriter'><b>no shutdown</b></font>  interface configuration command to remove the <font face='_typewriter'><b>shutdown</b></font>  command. <br><b>Step 3:</b> <br>Verify that there are no identical IP addresses using the <font face='_typewriter'><b>show running-config</b></font> privileged EXEC command or the <font face='_typewriter'><b>show interface</b></font>  EXEC command. <br><b>Step 4:</b>  <br>If there are duplicate addresses, resolve the conflict by changing one of the IP addresses.]]></text>
+</component>
+
+
+</textcomponents>

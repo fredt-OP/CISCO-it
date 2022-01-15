@@ -1,0 +1,384 @@
+<avalontask>
+	<r2data taskid='99999' type='simulation' language='JP' title='Sample Linksys Item' />
+	<guitext />
+	<variables>
+		<pool name='octets' type='number_pool'>
+			<low>0</low>
+			<hi>255</hi>
+		</pool>
+		<pool name='dlcis' type='number_pool'>
+			<low>16</low>
+			<hi>1007</hi>
+		</pool>
+
+		<variable name='dlcir1' type='select'>
+			<draw pool='dlcis' replace='false' />
+		</variable>
+		<variable name='dlcir3' type='select'>
+			<draw pool='dlcis' replace='false' />
+		</variable>
+
+		<variable name='octetr1' type='select'>
+			<draw pool='octets' replace='false' />
+		</variable>
+		<variable name='octet10' type='select'>
+			<draw pool='octets' replace='false' />
+		</variable>
+		<variable name='octetr3' type='select'>
+			<draw pool='octets' replace='false' />
+		</variable>
+	</variables>
+
+	<textcomponents>
+		<component type='text' id='txt_scenario'> 
+			<text variable='true' translate='true'>
+				<![CDATA[<font face='_sans' size='12'><br>A Company is transitioning from ISDN BRI links to a Frame Relay solution for the benefits provided by permanent connections.  As the network administrator it is your job to coordinate the Frame Relay portion of this transition.  The network support specialist at each branch location has completed their configuration, and each is awaiting the completion of the central router configuration to test connectivity.  All three locations are using Cisco 1841 series routers.  Your tasks on the central router R2 are to:<br><ul><li>enable Frame Relay on the Serial 0/0/0 interface.</li><li>configure two sub-interfaces with the specified IP address and DLCI under Serial 0/0/0.</li><li>configure static routes to the LANs at each branch site.</li></ul><br>Use the topology for additional reference.<br>Privileged Mode password is: <i>cisco</i><br><br>DLCIs and IP addresses to be assigned on central router R2:<br>To router R1 - DLCI <dnt>{dlcir1}</dnt> and IP address 10.10.<dnt>{octet10}</dnt>.1/30<br>To router R3 - DLCI <dnt>{dlcir3}</dnt> and IP address 10.10.<dnt>{octet10}</dnt>.5/30<br><br>Destination network at R1 is 192.168.<dnt>{octetr1}</dnt>.0/24<br>Destination network at R3 is 192.168.<dnt>{octetr3}</dnt>.0/24<br><br></font>]]>
+			</text> 
+		</component> 
+
+		<component type='text' id='txt_instructions'> 
+			<text variable='true' translate='true'>
+				<![CDATA[<font face='_sans' size='12'><br>To begin this activity, click the Topology button below. The topology for this activity will appear in its own panel.<br><br>To complete the activity, you will be configuring one or more devices according to the Instructions. To discover which devices are accessible, roll the mouse over the topology. When the cursor turns into a hand, click the mouse to access a command line for that device. Once a device is accessed, a new button will appear at the bottom of the Activity window labeled with the name of that device. Enter commands at the command line just as you would in any command line.<br><br>When ready for evaluation, click the Check button below. Your configuration will be evaluated and feedback will be provided on missing items, if any. The feedback panel cannot be resized. Click the Close button to hide the panel and continue working.<br><br>Helpful Hint: Maximize the Activity window and arrange the individual panels to suit your needs. The panels can be dragged within the Activity window. The Instructions and Topology panels can also be resized.<br></font>]]>
+			</text> 
+		</component> 
+
+		<component type='text' id='txt_obs1desc'>
+			<text variable='true' translate='true'><![CDATA[<B>Enable frame relay encapsulation</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs1good'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct. Frame relay encapsulation is enabled on the correct interface.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs1bad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Frame relay encapsulation has not enabled on the correct interface.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs2desc'>
+			<text variable='true' translate='true'><![CDATA[<B>Create point to point interfaces</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs2good'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct. Point to point interfaces were created on the correct interfaces.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs2bad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Point to point interfaces were not correctly created on the appropriate interfaces.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs3desc'>
+			<text variable='true' translate='true'><![CDATA[<B>Apply DLCIs and IP Addresses to sub-interfaces</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs3good'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct. DLCI numbers have been applied to the correct interfaces and IP addressing is correct.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs3bad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>DLCI numbers and IP Addresses have not been assigned to the correct sub-interfaces.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs4desc'>
+			<text variable='true' translate='true'><![CDATA[<B>Static Routes</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs4good'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Correct. Static routes to the desintation networks are in place.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obs4bad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'>Routing statements to destination networks are incorrect or missing.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_check'>
+			<text variable='true' translate='true'><![CDATA[Check]]></text>
+		</component>
+
+		<component type='text' id='txt_s000'>
+			<text variable='true' translate='true'><![CDATA[S0/0/0]]></text>
+		</component>
+		<component type='text' id='txt_s001'>
+			<text variable='true' translate='true'><![CDATA[S0/0/1]]></text>
+		</component>
+		<component type='text' id='txt_s010'>
+			<text variable='true' translate='true'><![CDATA[S0/1/0]]></text>
+		</component>
+		<component type='text' id='txt_s011'>
+			<text variable='true' translate='true'><![CDATA[S0/1/1]]></text>
+		</component>
+		<component type='text' id='txt_s000x'>
+			<text variable='true' translate='true'><![CDATA[S0/0/0.x]]></text>
+		</component>
+		<component type='text' id='txt_s00016'>
+			<text variable='true' translate='true'><![CDATA[S0/0/0.16]]></text>
+		</component>
+		<component type='text' id='txt_r2s001'>
+			<text variable='true' translate='true'><![CDATA[209.165.200.225/27]]></text>
+		</component>
+		<component type='text' id='txt_isps001'>
+			<text variable='true' translate='true'><![CDATA[209.165.200.226/27]]></text>
+		</component>
+		<component type='text' id='txt_dce'>
+			<text variable='true' translate='true'><![CDATA[DCE]]></text>
+		</component>
+
+		<component type='text' id='txt_r1'>
+			<text variable='true' translate='true'><![CDATA[R2]]></text>
+		</component>
+		<component type='text' id='txt_r2'>
+			<text variable='true' translate='true'><![CDATA[R2]]></text>
+		</component>
+		<component type='text' id='txt_r3'>
+			<text variable='true' translate='true'><![CDATA[R3]]></text>
+		</component>
+		<component type='text' id='txt_isp'>
+			<text variable='true' translate='true'><![CDATA[ISP]]></text>
+		</component>
+		<component type='text' id='txt_frame'>
+			<text variable='true' translate='true'><![CDATA[Frame Relay]]></text>
+		</component>
+
+		<component type='text' id='txt_r2r3int'>
+			<text variable='true' translate='true'><![CDATA[10.10.<dnt>{octet10}</dnt>.5/30]]></text>
+		</component>
+		<component type='text' id='txt_r3r2int'>
+			<text variable='true' translate='true'><![CDATA[10.10.<dnt>{octet10}</dnt>.6/30]]></text>
+		</component>
+		<component type='text' id='txt_r2r1int'>
+			<text variable='true' translate='true'><![CDATA[10.10.<dnt>{octet10}</dnt>.1/30]]></text>
+		</component>
+		<component type='text' id='txt_r1r2int'>
+			<text variable='true' translate='true'><![CDATA[10.10.<dnt>{octet10}</dnt>.2/30]]></text>
+		</component>
+		<component type='text' id='txt_r1net'>
+			<text variable='true' translate='true'><![CDATA[192.168.<dnt>{octetr1}</dnt>.0/24]]></text>
+		</component>
+		<component type='text' id='txt_r3net'>
+			<text variable='true' translate='true'><![CDATA[192.168.<dnt>{octetr3}</dnt>.0/24]]></text>
+		</component>
+
+		<component type='text' id='txt_close'>
+			<text variable='true' translate='true'><![CDATA[Close]]></text>
+		</component>
+	
+		<component type='text' id='txt_title_instructions'> 
+			<text variable='true' translate='true'><![CDATA[Instructions]]></text> 
+		</component> 
+
+		<component type='text' id='txt_title_scenario'> 
+			<text variable='true' translate='true'><![CDATA[Scenario]]></text> 
+		</component> 
+
+		<component type='text' id='txt_topology'> 
+			<text variable='true' translate='true'><![CDATA[Topology]]></text> 
+		</component> 
+	</textcomponents>
+
+	<graphiccomponents>
+      <component type='graphic' id='gr_r2'>
+         <icon x='0' y='0' width='55' height='40' id='icon_router'> 
+		    <action event='release' target="dev_r2" activity='launchTerminal' window='win_r2' /> 
+		 </icon>
+		 <label src='txt_r2' x='-10' y='-40' width='90' height='35' background='false' />
+		 <label src='txt_s001' x='22' y='-40' width='90' height='35' background='false' />
+		 <label src='txt_r2s001' x='22' y='-25' width='150' height='35' background='false' />
+		 <label src='txt_s000x' x='5' y='15' width='90' height='35' background='false' />
+		 <label src='txt_r2r3int' x='5' y='27' width='150' height='35' background='false' />
+		 <label src='txt_s000x' x='-50' y='15' width='90' height='35' background='false' />
+		 <label src='txt_r2r1int' x='-82' y='27' width='150' height='35' background='false' />
+      </component>
+      <component type='graphic' id='gr_r1'>
+         <icon x='0' y='0' width='55' height='40' id='icon_router' /> 
+		 <label src='txt_r1' x='-20' y='20' width='90' height='35' background='false' />
+		 <label src='txt_s00016' x='25' y='-20' width='90' height='35' background='false' />
+		 <label src='txt_r1r2int' x='25' y='-8' width='90' height='35' background='false' />
+		 <label src='txt_r1net' x='-55' y='70' width='150' height='35' background='false' />
+      </component>
+      <component type='graphic' id='gr_r3'>
+         <icon x='0' y='0' width='55' height='40' id='icon_router' /> 
+		 <label src='txt_r3' x='-20' y='20' width='90' height='35' background='false' />
+		 <label src='txt_s00016' x='-85' y='-20' width='90' height='35' background='false' />
+		 <label src='txt_r3r2int' x='-113' y='-8' width='90' height='35' background='false' />
+		 <label src='txt_r3net' x='-55' y='70' width='150' height='35' background='false' />
+      </component>
+      <component type='graphic' id='gr_isp'>
+         <icon x='0' y='0' width='55' height='40' id='icon_router' /> 
+		 <label src='txt_isp' x='-10' y='-40' width='90' height='35' background='false' />
+		 <label src='txt_s001' x='-60' y='-40' width='90' height='35' background='false' />
+		 <label src='txt_isps001' x='-135' y='-25' width='150' height='35' background='false' />
+      </component>
+      <component type='graphic' id='gr_cloud'>
+         <icon x='0' y='0' width='200' height='100' id='icon_cloud' /> 
+		 <label src='txt_frame' x='-35' y='-10' width='90' height='35' background='false' />
+      </component>
+	  <component type='graphic' id='gr_serial'>
+	     <shape type='serial' id='sh_serial' />
+	  </component>
+	  <component type='graphic' id='gr_line'>
+	     <shape type='line' strokewidth='2' stroke='#000000' id='sh_line' beginx='0' beginy='0' endx='0' endy='70' />  
+	  </component>
+	</graphiccomponents>
+
+	<hwcomponents>
+      <component type='router' model='2624' id='dev_r2'>
+         <card type='fastethernet' slot='0' fixed='false' >
+            <port type='fastethernet' number='0' name='FastEthernet0/0' id='dev_r2_fa00' fixed='false' />
+			<port type='fastethernet' number='1' name='FastEthernet0/1' id='dev_r2_fa01' fixed='false' />
+         </card>
+         <card type='serial' slot='0' fixed='false' >
+		    <card type='serial' slot='0' fixed='false' >
+               <port type='serial' number='0' name='Serial0/0/0' id='dev_r2_s000' fixed='false' />
+               <port type='serial' number='1' name='Serial0/0/1' id='dev_r2_s001' fixed='false' />
+			</card>
+		    <card type='serial' slot='1' fixed='false' >
+               <port type='serial' number='0' name='Serial0/1/0' id='dev_r2_s010' fixed='false' />
+               <port type='serial' number='1' name='Serial0/1/1' id='dev_r2_s011' fixed='false' />
+			</card>
+         </card>
+         <config file='startup-config'> 
+<![CDATA[
+!
+version 12.2
+!
+hostname R2
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ shutdown
+!
+interface FastEthernet0/1
+ no ip address
+ shutdown
+!
+interface Serial0/0/0
+ no ip address
+ shutdown
+!
+interface Serial0/0/1
+ ip address 209.165.200.225 255.255.255.224
+!
+interface Serial0/1/1
+ no ip address
+ shutdown
+!
+!
+ip route 0.0.0.0 0.0.0.0 209.165.200.226
+!
+!
+line con 0
+line vty 0 4
+ login
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type='router' model='2624' id='dev_isp'>
+         <card type='serial' slot='0' fixed='false' >
+            <port type='serial' number='0' name='Serial0/0' id='dev_isp_s00' fixed='false' />
+         </card>
+         <config file='startup-config'> 
+<![CDATA[
+!
+version 12.2
+!
+hostname ISP
+!
+!
+!
+interface Serial0/0
+ ip address 209.165.200.226 255.255.255.224
+ clock rate 56000
+!
+!
+ip route 0.0.0.0 0.0.0.0 209.165.200.225
+!
+!
+line con 0
+line vty 0 4
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type='router' model='2624' id='dev_frame'>
+         <card type='serial' slot='0' fixed='false' >
+            <port type='serial' number='0' name='Serial0/0' id='dev_frame_s00' fixed='false' />
+         </card>
+         <config file='startup-config'> 
+<![CDATA[
+!
+version 12.2
+!
+hostname FRAME
+!
+!
+!
+interface Serial0/0
+ no ip address
+ clock rate 56000
+ no shutdown
+!
+!
+!
+!
+line con 0
+line vty 0 4
+!
+end
+]]>
+		 </config>
+      </component>
+
+      <component type='link' id='dev_lnk_r2_isp'> 
+         <endpoint id='dev_r2_s001' /> 
+         <endpoint id='dev_isp_s00' dce='true' /> 
+      </component> 
+      <component type='link' id='dev_lnk_r2_frame'> 
+         <endpoint id='dev_frame_s00' dce='true' /> 
+         <endpoint id='dev_r2_s000' /> 
+      </component> 
+	</hwcomponents>
+
+	<presentation delivery='cert'>
+		<mainstage bgcolor= '#FFFFFF' theme='ccna' historylog='all' tooltips='true' contextmenu='false' />
+		<graphicmap> 
+			<map id='icon_router' src='Router'   location='library' />
+			<map id='icon_cloud'  src='Cloud'    location='library' />
+		</graphicmap>
+
+		<window id='none' resize='none' titltetextid='txt_check' width='0' height='0' visible='true' depth='50' x='0' y='0' checkbutton='true' />
+
+		<window id='win_scenario' resize='all' titletextid='txt_title_scenario' width='780' height='380' visible='true' depth='100' x='10' y='10'> 
+			<element id='ele_txt_scenario' src='txt_scenario' container='textClip' width='750' html='true' wordwrap='true' /> 
+		</window> 
+
+		<window id='win_instructions' resize='all' titletextid='txt_title_instructions' width='780' height='380' visible='false' depth='101' x='10' y='10'> 
+			<element id='ele_txt_instructions' src='txt_instructions' container='textClip' width='750' html='true' wordwrap='true' /> 
+		</window> 
+
+		<window id='win_topology' resize='all' titletextid='txt_topology' visible='false' width='780' minheight='400' height='400' depth='102' y='10' x='10'>
+			<element src='gr_r2' id='ele_r2' x='400' y='75' depth='101' />
+			<element src='gr_r1' id='ele_r1' x='175' y='275' depth='102' />
+			<element src='gr_r3' id='ele_r3' x='575' y='275' depth='103' />
+			<element src='gr_isp' id='ele_isp' x='675' y='75' depth='104' />
+			<element src='gr_cloud' id='ele_cloud' x='400' y='175' depth='105' />
+			<element src='gr_serial' id='ele_serial1' beginobject='ele_r2.icon_router' endobject='ele_cloud.icon_cloud' depth='1' />
+			<element src='gr_serial' id='ele_serial2' beginobject='ele_r1.icon_router' endobject='ele_cloud.icon_cloud' depth='2' />
+			<element src='gr_serial' id='ele_serial3' beginobject='ele_r3.icon_router' endobject='ele_cloud.icon_cloud' depth='3' />
+			<element src='gr_serial' id='ele_serial4' beginobject='ele_r2.icon_router' endobject='ele_isp.icon_router'  depth='4' />
+			<element src='gr_line' id='ele_line1' x='175' y='275' depth='5' />
+			<element src='gr_line' id='ele_line2' x='575' y='275' depth='6' />
+		</window>
+
+		<window id='win_r2' resize='none' titletextid='txt_r2' visible='false' height='387' width='580' y='3' x='110' scrolling='none' depth='400' minheight='387' minwidth='580'> 
+			<element id='ele_ht_r2' src='dev_r2' container='IOobject' /> 
+		</window>
+	</presentation>
+
+	<scoring />
+</avalontask>

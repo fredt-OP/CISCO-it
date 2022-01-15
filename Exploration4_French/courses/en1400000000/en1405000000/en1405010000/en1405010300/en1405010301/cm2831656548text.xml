@@ -1,0 +1,88 @@
+﻿<textcomponents>
+
+<component id="ID_Button01">
+<text><![CDATA[What Is an ACL?]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[ACLs on a Router]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_S1_title">
+<text><![CDATA[<b>What Is an ACL?</b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="ID_S1_txt02">
+<text><![CDATA[<b>Allow E-mail<br/>Deny Telnet</b>]]></text>
+</component>
+
+<component id="ID_S1_txt03">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<component id="ID_S1_txt04">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="ID_S1_txt05">
+<text><![CDATA[<b>HR access</b>]]></text>
+</component>
+
+<component id="ID_S1_txt06">
+<text><![CDATA[<b>HR Subnet<br/>172.17.0.0/20</b>]]></text>
+</component>
+
+<component id="ID_S1_txt07">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="ID_S1_txt08">
+<text><![CDATA[<b>No video to S1<br/>No access to S2 for S1</b>]]></text>
+</component>
+
+<component id="ID_S1_txt09">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="ID_S1_txt10">
+<text><![CDATA[<b>No updates<br/>No FTP<br/>No web</b>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_S2_title">
+<text><![CDATA[<b>ACL Traffic Filtering on a Router</b>]]></text>
+</component>
+
+<component id="ID_S2_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>The three Ps for using ACLs</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>You can only have one ACL per protocol, per interface, and per direction:<ul><li>One ACL per protocol (e.g., IP or IPX)</li><li>One ACL per interface (e.g., FastEthernet0/0)</li><li>One ACL per direction (i.e., IN or OUT)</li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<b>IP<br/>IPX<br/>AppleTalk</b>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>IP<br/>IPX<br/>AppleTalk</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[One list per interface, per direction, and per protocol]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[With two interfaces and three protocols running, this router could have a total of 12 separate ACLs applied.]]></text>
+</component>
+
+</textcomponents>

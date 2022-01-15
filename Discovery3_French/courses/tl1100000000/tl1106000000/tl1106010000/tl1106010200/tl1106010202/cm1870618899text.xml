@@ -1,0 +1,171 @@
+﻿<textcomponents>
+	<component id="ID_txt01">
+		<text><![CDATA[Réseau A]]></text>
+	</component>
+	<component id="ID_txt02">
+		<text><![CDATA[Réseau B]]></text>
+	</component>
+	<component id="ID_txt03">
+		<text><![CDATA[Réseau C]]></text>
+	</component>
+	<component id="ID_txt04">
+		<text><![CDATA[20]]></text>
+	</component>
+	<component id="ID_txt05">
+		<text><![CDATA[5]]></text>
+	</component>
+	<component id="ID_txt06">
+		<text><![CDATA[10]]></text>
+	</component>
+	<component id="ID_txt07">
+		<text><![CDATA[Cliquez sur chaque routeur pour afficher l’arborescence et les chemins SPF.]]></text>
+	</component>
+	<component id="ID_txt08">
+		<text><![CDATA[R1]]></text>
+	</component>
+	<component id="ID_txt09">
+		<text><![CDATA[R2]]></text>
+	</component>
+	<component id="ID_txt10">
+		<text><![CDATA[R3]]></text>
+	</component>
+	<component id="ID_txt11">
+		<text><![CDATA[R4]]></text>
+	</component>
+	<component id="ID_table1">
+		<text><![CDATA[<table header='top' bordercolor="#CCCCCC" borderwidth='1' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'><font color='#FFFFFF'>Destination</font></td>
+			<td width="180" bgcolor='#F2F2F2'><font color='#FFFFFF'>Routes</font></td>
+			<td width="200" bgcolor='#F2F2F2'><font color='#FFFFFF'>Coût</font></td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'>A</td>
+			<td width="180" bgcolor='#DDDDDD'>R1 - R2</td>
+			<td width="200" bgcolor='#DDDDDD' glow='true' glowcolor='#FCA92E'>20 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'>B</td>
+			<td width="180" bgcolor='#F2F2F2'>R1 - R3</td>
+			<td width="200" bgcolor='#F2F2F2' glow='true' glowcolor='#FCA92E'>5 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'></td>
+			<td width="180" bgcolor='#DDDDDD'>R1 - R4 - R3</td>
+			<td width="200" bgcolor='#DDDDDD'>30</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'>C</td>
+			<td width="180" bgcolor='#F2F2F2'>R1 - R3 - R4</td>
+			<td width="200" bgcolor='#F2F2F2' glow='true' glowcolor='#FCA92E'>15 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'></td>
+			<td width="180" bgcolor='#DDDDDD'>R1 - R4</td>
+			<td width="200" bgcolor='#DDDDDD'>20</td>
+		  </tr>
+		</table>]]></text>
+	</component>
+	<component id="ID_table2">
+		<text><![CDATA[<table header='top' bordercolor="#CCCCCC" borderwidth='1' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'><font color='#FFFFFF'>Destination</font></td>
+			<td width="180" bgcolor='#F2F2F2'><font color='#FFFFFF'>Chemin le plus court</font></td>
+			<td width="200" bgcolor='#F2F2F2'><font color='#FFFFFF'>Coût</font></td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'>A</td>
+			<td width="180" bgcolor='#DDDDDD'>Connectée</td>
+			<td width="200" bgcolor='#DDDDDD' glow='true' glowcolor='#FCA92E'>0 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'>B</td>
+			<td width="180" bgcolor='#F2F2F2'>R2 - R1 - R3</td>
+			<td width="200" bgcolor='#F2F2F2' glow='true' glowcolor='#FCA92E'>25 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'></td>
+			<td width="180" bgcolor='#DDDDDD'>R2 - R1 - R4 - R3</td>
+			<td width="200" bgcolor='#DDDDDD'>50</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'>C</td>
+			<td width="180" bgcolor='#F2F2F2'>R2 - R1 - R3 - R4</td>
+			<td width="200" bgcolor='#F2F2F2' glow='true' glowcolor='#FCA92E'>35 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'></td>
+			<td width="180" bgcolor='#DDDDDD'>R2 - R1 - R4</td>
+			<td width="200" bgcolor='#DDDDDD'>40</td>
+		  </tr>
+		</table>]]></text>
+	</component>
+	<component id="ID_table3">
+		<text><![CDATA[<table header='top' bordercolor="#CCCCCC" borderwidth='1' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'><font color='#FFFFFF'>Destination</font></td>
+			<td width="180" bgcolor='#F2F2F2'><font color='#FFFFFF'>Chemin le plus court</font></td>
+			<td width="200" bgcolor='#F2F2F2'><font color='#FFFFFF'>Coût</font></td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'>A</td>
+			<td width="180" bgcolor='#DDDDDD'>R3 - R1 - R2</td>
+			<td width="200" bgcolor='#DDDDDD' glow='true' glowcolor='#FCA92E'>25 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'></td>
+			<td width="180" bgcolor='#F2F2F2'>R3 - R4 - R1 - R2</td>
+			<td width="200" bgcolor='#F2F2F2'>50</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'>B</td>
+			<td width="180" bgcolor='#DDDDDD'>Connecté</td>
+			<td width="200" bgcolor='#DDDDDD' glow='true' glowcolor='#FCA92E'>0 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'>C</td>
+			<td width="180" bgcolor='#F2F2F2'>R3 - R4</td>
+			<td width="200" bgcolor='#F2F2F2' glow='true' glowcolor='#FCA92E'>10 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'></td>
+			<td width="180" bgcolor='#DDDDDD'>R3 - R2 - R4</td>
+			<td width="200" bgcolor='#DDDDDD'>25</td>
+		  </tr>
+		</table>]]></text>
+	</component>
+	<component id="ID_table4">
+		<text><![CDATA[<table header='top' bordercolor="#CCCCCC" borderwidth='1' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'><font color='#FFFFFF'>Destination</font></td>
+			<td width="180" bgcolor='#F2F2F2'><font color='#FFFFFF'>Chemin le plus court</font></td>
+			<td width="200" bgcolor='#F2F2F2'><font color='#FFFFFF'>Coût</font></td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'>A</td>
+			<td width="180" bgcolor='#DDDDDD'>R4 - R3 - R1 - R2</td>
+			<td width="200" bgcolor='#DDDDDD' glow='true' glowcolor='#FCA92E'>35 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'></td>
+			<td width="180" bgcolor='#F2F2F2'>R4 - R1 - R2</td>
+			<td width="200" bgcolor='#F2F2F2'>40</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'>B</td>
+			<td width="180" bgcolor='#DDDDDD'>R4 - R3</td>
+			<td width="200" bgcolor='#DDDDDD' glow='true' glowcolor='#FCA92E'>10 - Chemin à moindre coût</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#F2F2F2'></td>
+			<td width="180" bgcolor='#F2F2F2'>R4 - R1 - R3</td>
+			<td width="200" bgcolor='#F2F2F2'>25</td>
+		  </tr>
+		  <tr>
+			<td width="115" bgcolor='#DDDDDD'>C</td>
+			<td width="180" bgcolor='#DDDDDD'>Connecté</td>
+			<td width="200" bgcolor='#DDDDDD' glow='true' glowcolor='#FCA92E'>0 - Chemin à moindre coût</td>
+		  </tr>
+		</table>]]></text>
+	</component>
+</textcomponents>

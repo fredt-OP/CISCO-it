@@ -1,0 +1,103 @@
+<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<b><font size='+2'>Activity</font></b><br/><br/>Determine which EIGRP table would be the most appropriate to find the specified information.<br/><br/><b>Check the appropriate EIGRP table for each requirement.</b>]]></text>
+</component>
+
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<component id="txt_numrows">
+	<text><![CDATA[8]]></text>
+</component>
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+<component id="txt_col1">
+	<text><![CDATA[Neighbor]]></text>
+</component>
+<component id="txt_col2">
+	<text><![CDATA[Topology]]></text>
+</component>
+<component id="txt_col3">
+	<text><![CDATA[Routing]]></text>
+</component>
+
+	
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='14'>Interface connected to neighbor device</textformat>]]></text>
+</component>
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='14'>Next hop address for the feasible successor</textformat>]]></text>
+</component>
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='14'>Amount of time since an adjacency was established</textformat>]]></text>
+</component>
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='14'>State that DUAL has calculated the route</textformat>]]></text>
+</component>
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='14'>IP address of neighbor devices</textformat>]]></text>
+</component>
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='14'>The successors advertised distance</textformat>]]></text>
+</component>
+<component id="txt_q7">
+	<text><![CDATA[7. <textformat blockindent='14'>The route was learned from an external routing process</textformat>]]></text>
+</component>
+<component id="txt_q8">
+	<text><![CDATA[8. <textformat blockindent='14'>The administrative distance associated with the route</textformat>]]></text>
+</component>
+
+
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a4">
+	<text><![CDATA[2]]></text>
+</component>
+ <component id="txt_a5">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a6">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a7">
+	<text><![CDATA[3]]></text>
+</component>
+<component id="txt_a8">
+	<text><![CDATA[3]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You successfully identified features of the EIGRP tables. Click Next to continue.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review the features of each EIGRP table and try again.]]></text>
+</component>
+
+</textcomponents>

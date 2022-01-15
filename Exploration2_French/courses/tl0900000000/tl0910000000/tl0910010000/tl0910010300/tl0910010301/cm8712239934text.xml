@@ -1,0 +1,12 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Processus de routage à état de liens</b>]]></text>
+</component>
+<component id="TableTitle">
+<text><![CDATA[<b>Processus de routage à état de liens</b>]]></text>
+</component> 
+<component id="myTable">
+<text><![CDATA[1.<TEXTFORMAT BLOCKINDENT='15'> Chaque routeur prend connaissance des réseaux qui lui sont connectés directement.</textformat><br>2.<TEXTFORMAT BLOCKINDENT='15'> Chaque routeur est responsable de l'établissement de la communication (par l’envoi de paquets Hello) avec ses voisins situés sur les réseaux qui lui sont connectés directement.</textformat><br>3.<TEXTFORMAT BLOCKINDENT='15'> Chaque routeur crée un paquet LSP (Link State Packet) stipulant l’état de chaque liaison connectée directement.</textformat><br>4.<TEXTFORMAT BLOCKINDENT='15'> Chaque routeur inonde tous ses voisins avec ce paquet LSP, ceux-ci stockent ensuite tous les paquets LSP reçus dans une base de données.</textformat><br>5.<TEXTFORMAT BLOCKINDENT='15'> Chaque routeur utilise cette base de données pour créer une carte topologique complète et calcule le meilleur chemin vers chaque réseau de destination.</textformat>]]></text> 
+</component>
+</textcomponents>
+

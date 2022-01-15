@@ -1,0 +1,49 @@
+﻿<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Exemple de configuration de surcharge NAT</b>]]></text>
+</component>
+<component id="table">
+    <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td width='70' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Étape</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Action</b></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Remarques</b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définissez une liste d’accès standard autorisant les adresses qui doivent être traduites. <br /><font face="_typewriter">Router(config)#<B>access-list</B><I> numéro-liste-contrôle-d’accès</I> <B>permit</B> <I>source [masque-générique-source]</I></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entrez la commande globale <font face="_typewriter"><B>no access-list</B><I> numéro-liste-d’accès </I></font>pour supprimer la liste d’accès.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Établissez une source dynamique de traduction, en spécifiant la liste d’accès définie à l’étape précédente. <br /><font face="_typewriter">Router(config)#<B>ip nat inside source list</B><I> numéro-liste-contrôle-d’accès</I><B> interface</B><I> interface</I> <B> overload</B></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entrez la commande globale <font face="_typewriter"><B>no ip nat inside source</B></font> pour supprimer la source dynamique de traduction. Le mot clé overload active la fonction PAT.</td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>3</td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Spécifiez l’interface interne. <br /><font face="_typewriter">Router(config)#<B>interface</B><I> type numéro</I> Router(config-if)#<B>ip nat inside</B></font></td>
+    <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entrez la commande <font face="_typewriter"><B>interface</B></font>. L’invite d’ILC passe de <font face="_typewriter">(config)# </font>à <font face="_typewriter">(config-if)#.</font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>4</td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Spécifiez l’interface externe. <br /><font face="_typewriter">Router(config-if)#<B>interface</B> <I>type numéro</I> Router(config-if)#<B>ip nat  outside</B></font></td>
+    <td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>&nbsp;</td>
+  </tr>
+</table>]]></text>  
+  </component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Réseau interne</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+<component id="ID_button1">
+  <text><![CDATA[<b>Commandes</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Exemple</b>]]></text> 
+</component>
+<component id="routerOutput">
+  <text><![CDATA[<b>Sortie du routeur</b>]]></text> 
+</component>
+</textcomponents>

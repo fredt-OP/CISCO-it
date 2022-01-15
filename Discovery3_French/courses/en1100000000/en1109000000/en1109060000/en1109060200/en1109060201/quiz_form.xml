@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/18/2007">
+		<name>Module  Quiz</name>
+		<form id="20030" lang=""><form-item order="fixed">
+			<ai id="117902" type="mc-sa"><question><![CDATA[Which route advertisements does R3 receive from R2? ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[10.0.0.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.10.4.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[10.0.0.0/8  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.0.0.0/8 and 10.10.4.0/24 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[10.0.0.0/8, 10.0.0.0/24, and 10.10.4.0/24 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117903" type="mc-sa"><question><![CDATA[If host 10.10.3.75 attempts to <b>ping</b> host 10.10.4.63, what will the results be?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[All packets will be dropped.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Some packets will be dropped. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All packets will reach the destination and network applications will have connectivity. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All packets will reach the destination but network applications will not have connectivity. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117904" type="mc-sa"><question><![CDATA[What must an administrator do on R3 to ensure that update packets are sent with subnet mask information? ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Add the command:<br/>R2(config-router)# <b>no version 2</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Add the command: <br/>R3(config-router)# <b>version 2</b><br/> R3(config-router)# <b>no auto-summary</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Change the network statement on Router 3:<br />R3(config)# <b>network 10.10.4.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Add the command: <br/>R3(config)# <b>ip route 0.0.0.0 0.0.0.0 s0/0</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117905" type="mc-ma"><question><![CDATA[Router R1 and R3 is configured with the commands:<br/><br/> <b>version 2</b><br/> <b>no auto-summary</b><br/><br/> Which two statements are true?  (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[A <b>ping</b> command will be successful between host 10.10.3.75 and host 10.10.4.63. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router R2 is able to send and receive RIPv1 and RIPv2 update packets. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router R2 is able to receive RIPv1 and RIPv2 update packets.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[A <b>ping</b> command will fail between host 10.10.3.75 and host 10.10.4.63.  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

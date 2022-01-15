@@ -1,0 +1,148 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher des informations récapitulatives.</b>]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_txt01">
+<text><![CDATA[<li>Les schémas d’infrastructure de réseau illustrent les périphériques dans un réseau.</li><li>La documentation du réseau inclut le plan de continuité des activités, le plan de sécurité des activités et le plan de maintenance du réseau ainsi que des accords de niveau de service.</li><li>Le centre d’exploitation du réseau d’une entreprise gère et surveille l’ensemble des ressources du réseau.</li><li>Les utilisateurs finaux se connectent au réseau via des commutateurs de couche d’accès et des points d’accès sans fil dans le répartiteur intermédiaire (IDF).</li><li>La technologie PoE (Power over Ethernet) alimente les périphériques via le même câble UTP qui transmet des données.</li>]]></text>
+</component>
+
+<!-- slide 1 graphic text -->
+
+<component id="s1_ID_txt01">
+<text><![CDATA[<b>Bâtiment A</b>]]></text>
+</component> 
+
+<component id="s1_ID_txt02">
+<text><![CDATA[<b>Bâtiment B</b>]]></text>
+</component> 
+
+<component id="s1_ID_txt03">
+<text><![CDATA[<b>Bâtiment C</b>]]></text>
+</component> 
+
+<component id="s1_ID_txt04">
+<text><![CDATA[<b>Câble à fibre optique ou <br/>UTP</b>]]></text>
+</component> 
+
+<component id="s1_ID_txt04b">
+<text><![CDATA[<b>Câble à fibre optique ou <br/>UTP</b>]]></text>
+</component> 
+
+<component id="s1_ID_txt05">
+<text><![CDATA[<b>Câble à fibre optique</b>]]></text>
+</component>
+
+<component id="s1_ID_switchA1">
+<text><![CDATA[<b>Répartiteur intermédiaire (IDF)</b>]]></text>
+</component> 
+
+<component id="s1_ID_switchMDF">
+<text><![CDATA[<b>Répartiteur principal (MDF)</b>]]></text>
+</component> 
+
+<component id="s1_ID_switchA2">
+<text><![CDATA[<b>Répartiteur intermédiaire (IDF)</b>]]></text>
+</component> 
+
+<component id="s1_ID_switchB1">
+<text><![CDATA[<b>Répartiteur intermédiaire (IDF)</b>]]></text>
+</component> 
+
+<component id="s1_ID_switchC1">
+<text><![CDATA[<b>Répartiteur intermédiaire (IDF)</b>]]></text>
+</component>
+
+<!-- text boxes -->
+<component id="s1_ID_boxIDFtitle">
+<text><![CDATA[<b>Répartiteur intermédiaire (IDF)</b>]]></text>
+</component>
+
+<component id="s1_ID_boxIDFtxt">
+<text><![CDATA[<li>Commutateurs Fast Ethernet</li><li>Liaison Gigabit vers le répartiteur principal</li><li>Point d’accès sans fil</li>]]></text>
+</component>
+
+<component id="s1_ID_boxMDFtitle">
+<text><![CDATA[<b>Répartiteur principal (MDF)</b>]]></text>
+</component>
+
+<component id="s1_ID_boxMDFtxt">
+<text><![CDATA[<li>POP</li><li>Routeurs</li><li>Commutateurs Gigabit</li><li>Liaisons Gigabit vers les répartiteurs intermédiaires</li><li>Serveurs</li><li>Stockage sur disque</li>]]></text>
+</component>
+
+
+<!-- slide 2 -->
+<component id="ID_txt02">
+<text><![CDATA[<li>La périphérie d’entreprise fournit un accès et des services Internet aux utilisateurs au sein de l’organisation.</li><li>Le point de présence fournit une liaison directe à un FAI et une connexion à des sites distants.</li><li>Le point de présence comprend une ligne de démarcation de responsabilités, entre le fournisseur de services et le client.</li><li>Les périphériques de périphérie fournissent une protection contre les attaques. </li><li>Les services sont délivrés à l’entreprise au moyen de fils de cuivre et de câbles à fibre optique.</li>]]></text>
+</component>
+
+<!-- slide 2 graphic text -->
+
+<component id="s2_ID_txt01">
+<text><![CDATA[<b>Site A</b>]]></text>
+</component>
+
+<component id="s2_ID_txt02">
+<text><![CDATA[<b>Site B</b>]]></text>
+</component>
+
+<component id="s2_ID_txt03">
+<text><![CDATA[<b>Site C</b>]]></text>
+</component>
+
+<component id="s2_ID_txt04">
+<text><![CDATA[<b>HQ</b>]]></text>
+</component>
+
+<component id="s2_ID_txt05">
+<text><![CDATA[<b>PÉRIPHÉRIE</b>]]></text>
+</component>
+
+<component id="s2_ID_txt06">
+<text><![CDATA[<b>Attaques externes</b>]]></text>
+</component>
+
+<component id="s2_ID_txt07">
+<text><![CDATA[<b>IDS</b>]]></text>
+</component>
+
+<component id="s2_ID_txt08">
+<text><![CDATA[<b>ACL</b>]]></text>
+</component>
+
+<component id="s2_ID_txt09">
+<text><![CDATA[<b>DMZ</b>]]></text>
+</component>
+
+<component id="s2_ID_txt10">
+<text><![CDATA[<b>VPN</b>]]></text>
+</component>
+
+<component id="s2_ID_txt11">
+<text><![CDATA[<b>FW</b>]]></text>
+</component>
+
+<component id="s2_ID_txt12">
+<text><![CDATA[<b>IPS</b>]]></text>
+</component>
+
+
+
+
+<!-- slide 3 -->
+<component id="ID_txt03">
+<text><![CDATA[<li>Les commutateurs de la couche d’accès fournissent la connectivité aux utilisateurs finaux.</li><li>Les routeurs de la couche de distribution déplacent des paquets entre des emplacements variés et Internet.</li><li>Les routeurs et les commutateurs utilisent la gestion intrabande et hors bande.</li><li>Les routeurs peuvent contrôler les diffusions.</li>]]></text>
+</component> 
+
+<!-- slide 3 graphic text -->
+
+<component id="s3_ID_txt01">
+  <text><![CDATA[<b>Ports Ethernet 48 10/100/1000</b>]]></text> 
+  </component>
+<component id="s3_ID_txt02">
+  <text><![CDATA[<b>Deux ports Uplink à fibre optique 10 Go</b>]]></text> 
+  </component>
+
+</textcomponents>

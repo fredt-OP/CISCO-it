@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13249" dateexported="06/06/2007">
+		<name>Module 9 Quiz</name>
+		<form id="18971" lang="en"><form-item order="fixed">
+			<ai id="111631" type="mc-sa"><question><![CDATA[A small office uses a wireless ISR to connect to a cable modem for Internet access.  The network administrator receives a call that one office computer cannot access external websites.  The first troubleshooting step that the network administrator performs is to ping the ISR.  Which troubleshooting technique does this represent?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[top-down]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[bottom-up]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[substitution]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[divide-and-conquer]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111628" type="mc-ma"><question><![CDATA[Select three items that should be documented after troubleshooting an internal Web server crash.  (Choose three.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[when the problem occurred]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the dialogue with the user]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the configuration of all networking devices on the LAN at the time of the crash]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the configuration of all hosts on the LAN at the time of the crash]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[steps that were performed to identify the cause of the problem]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[steps that were performed that failed to identify the cause of the problem]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111503" type="mc-ma"><question><![CDATA[A user calls the help desk to report a workstation problem.  Which three questions would produce the most helpful information for troubleshooting?  (Choose three.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[If you received an error message, what was it?]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Have there been any changes to your workstation recently?]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Do you have the warranty for your workstation?]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[What version of operating system is running on your workstation?]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Have you used a network-monitoring tool on your workstation?]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[When did you last perform a backup?]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111427" type="mc-sa"><question><![CDATA[A user wants to test connectivity between host 3 and host 8 on a network.  Which command can be used to verify a connection?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>ipconfig</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>ping</b>]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>netstat</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>nslookup</b>]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="111526" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="111526" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>ping</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>netstat</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>tracert</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>ipconfig</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext><b>nslookup</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>displays IP settings on host</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>displays network connections</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>tests connections to other IP hosts</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>displays route taken to destination</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>asks name server for info on destination domain</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the utility on the left to the purpose on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="11" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/><display componentIdent="5" xpos="600" ypos="223"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="194791" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="194791" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="194791" action="Set">1</setvar><scoringdescription>Answers in order from top to bottom: ipconfig, netstat, ping, tracert, nslookup</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="111430" type="mc-ma"><question><![CDATA[Which three pieces of information are revealed by the <b>ipconfig</b> command? (Choose three.)]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[physical address]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[IP address]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[DHCP server]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[DNS server]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[subnet mask]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[default gateway]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111711" type="mc-sa"><question><![CDATA[How does an activity LED indicate that traffic is moving through a port?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[by flashing]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[by staying turned off]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[by staying a solid green color]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[by staying a solid amber color]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111712" type="mc-sa"><question><![CDATA[What is one of the most common reasons why hosts could be unable to connect?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[operator error]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[cabling problems]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[equipment failure]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[addressing problems]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111826" type="mc-ma"><question><![CDATA[Which three factors can affect the ability of hosts to connect to an AP using radio frequency signals? (Choose three.)]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The RF signal strength increases with distance.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The 802.11A is not compatible with the 802.11 B/G standards.]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The available bandwith between devices is shared with APs.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A wireless conversation must occur on multiple, overlapping channels.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Multiple devices running on the same frequency causes interference.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Equipment that conforms to one standard will work with all other standards.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111729" type="mc-sa"><question><![CDATA[What step should be taken once a problem is resolved?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Consult an FAQ.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Escalate the problem.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Update the documentation.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Run remote access software.]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

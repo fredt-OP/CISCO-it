@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr-fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Contenu</title>
+<base target="_self">
+<link href="../../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="window.focus();">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<!--  Start top title Lesson Bar -->
+	  <tr>
+	    <td width="18" class="toptitle01_white_bold" valign="top">
+	    <img border="0" src="../../images/content_lines.gif" width="16" height="25"> <img border="0" src="../../images/transdot.gif" width="2" height="1"></td>
+
+    	<td width="18" class="toptitle01_white_bold">12.2</td>
+	    <td class="toptitle01_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+
+    	<td width="100%" class="toptitle01_white_bold">Installation, configuration et optimisation d&rsquo;un syst&egrave;me d&rsquo;exploitation</td>
+	    <td width="9" class="toptitle01_white_bold_margin">&nbsp;</td>
+	  </tr>
+	  <!--  End top title Lesson Bar --> <!--  Start top title Topic Bar -->
+ 	 <tr>
+	    <td width="18" height="25" class="toptitle02_white_bold">&nbsp;</td>
+
+    	<td height="25"  class="toptitle02_white_bold">12.2.3</td>
+	    <td class="toptitle02_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+
+    	<td width="100%" height="25" class="toptitle02_white_bold">Cr&eacute;ation, visualisation et gestion des disques, des r&eacute;pertoires et des fichiers</td>
+	    <td height="25" width="9" class="toptitle02_white_bold_margin">&nbsp;</td>
+  </tr>
+	 <!--  End top title Topic Bar -->
+</table>
+
+	<!-- CONTENT -->
+	<table border="0" cellpadding="0" cellspacing="0" width="95%" >
+		<tr>
+			<td width="20"></td>
+			<td>
+        <table border="0" cellpadding="0" cellspacing="0"  width="95%">
+
+        <tr>
+          <td width="100%">
+
+            <p>Au sein d&rsquo;un syst&egrave;me d&rsquo;exploitation, les disques et les r&eacute;pertoires sont des emplacements o&ugrave; les donn&eacute;es sont stock&eacute;es et organis&eacute;es. Le syst&egrave;me de fichiers utilis&eacute; par le syst&egrave;me d&rsquo;exploitation d&eacute;termine des facteurs suppl&eacute;mentaires qui affectent le stockage, tels que la taille des partitions et des clusters, ainsi que des fonctions de s&eacute;curit&eacute;.</p>
+
+            <p><span class="bold">Structure du disque</span><br> L&rsquo;utilitaire Gestion des disques affiche des informations et propose des services tels que la partition et le formatage de disques sous Windows. La Figure 1 pr&eacute;sente l&rsquo;utilitaire Gestion des disques utilis&eacute; sous Windows XP Professionnel.</p>
+            <p>Plusieurs types de partitions sont possibles sur un disque dur&nbsp;:</p>
+
+				<ul>
+				  <li>partitions principales&nbsp;;</li>
+				  <li>partitions &eacute;tendues&nbsp;;</li>
+				  <li>lecteurs logiques.</li>
+				</ul>
+
+            <p><span class="note_caps">REMARQUE&nbsp;:</span> &agrave; un instant donn&eacute;, vous ne pouvez d&eacute;signer qu&rsquo;une seule partition comme la partition active. Le syst&egrave;me d&rsquo;exploitation utilise la partition active pour amorcer le syst&egrave;me. La partition active doit &ecirc;tre une partition principale.</p>
+
+            <p>Dans la plupart des cas, le disque C: est la partition active qui contient l&rsquo;amorce et les fichiers syst&egrave;me. Certains utilisateurs cr&eacute;ent des partitions suppl&eacute;mentaires pour organiser les fichiers ou pour un double amor&ccedil;age de l&rsquo;ordinateur.</p>
+
+            <p>Vous pouvez acc&eacute;der &agrave; l&rsquo;utilitaire Gestion des disques des fa&ccedil;ons suivantes&nbsp;:</p>
+
+				
+            <ul>
+              <li>Dans le menu <strong>D&eacute;marrer</strong>, cliquez avec le bouton droit de la souris sur <strong>Poste de travail</strong>, puis choisissez <strong>G&eacute;rer &gt; Gestion des disques</strong>.</li>
+              <li>Dans le menu <strong>D&eacute;marrer</strong>, choisissez <strong>Param&egrave;tres &gt; Panneau de configuration &gt; Outils d&rsquo;administration &gt; Gestion de l&rsquo;ordinateur</strong>. Double-cliquez sur <strong>Stockage</strong>, puis sur <strong>Gestion des disques</strong>.</li>
+            </ul>
+
+            <p><span class="bold">Syst&egrave;me de fichiers</span><br>Les partitions sont format&eacute;es avec un syst&egrave;me de fichiers. Les deux syst&egrave;mes de fichiers disponibles sous Windows XP sont FAT32 et NTFS. NTFS offre une plus grande stabilit&eacute; et des fonctions de s&eacute;curit&eacute;. </p>
+
+
+            <p>Par exemple, Windows n&rsquo;affiche pas l&rsquo;extension des fichiers, mais cela peut causer des probl&egrave;mes de s&eacute;curit&eacute;. Les codeurs de virus peuvent distribuer des fichiers ex&eacute;cutables d&eacute;guis&eacute;s sous la forme d&rsquo;un fichier non ex&eacute;cutable. Pour &eacute;viter de telles intrusions, vous devez toujours afficher les extensions de fichier comme suit&nbsp;:</p>
+            <p>Dans le menu <strong>D&eacute;marrer</strong>, choisissez <strong>Panneau de configuration &gt; Options des dossiers &gt; Affichage</strong>, puis d&eacute;s&eacute;lectionnez la case &laquo;&nbsp;Masquer les extensions des fichiers dont le type est connu&nbsp;&raquo;, comme illustr&eacute; &agrave; la Figure 2.</p>
+            <p><span class="bold">REMARQUE&nbsp;:</span> enregistrer des fichiers dans le r&eacute;pertoire racine du disque C: peut causer des probl&egrave;mes d&rsquo;organisation des donn&eacute;es. Il est recommand&eacute; de stocker les donn&eacute;es dans des dossiers cr&eacute;es sur le disque C:.</p>
+
+
+		    <!-- Start Activity box   -->
+		<p></p>
+		<table  width="95%" border="0" cellspacing="0" cellpadding="0" id="activity">
+		  <tr>
+			<td valign="top">
+			  <table  width="100%" cellspacing="0" cellpadding="0" border="0" >
+				<tr>
+				  <td width="5" class="activity_topbar"> <img border="0" src="../../images/lab_toplft.gif" width="116" height="23"></td>
+				  <td class="activity_topbar"><img alt="" height="1" width="3" src="../../images/s.gif"></td>
+				  <td align="right" valign="top" class="activity_topbar">
+					<img alt="" src="../../images/corner_ur_7.gif" width="7" height="7"></td>
+				</tr>
+			  </table>
+			  <table width="100%" cellspacing="0" cellpadding="0" border="0" id="table3">
+				<tr>
+				  <td>
+					<table width="100%" cellpadding="2" cellspacing="0" border="0"  id="table4">
+					  <tr>
+						<td width="15" class="activity_text">&nbsp;</td>
+						    <td class="activity_text"><img border="0" src="../../images/lab_icon.gif" width="36" height="30"> <a target="_blank" href="../lab12_2_3/12.2.3_Lab_Create_and_Convert_Partition.pdf">Travaux pratiques</a>
+<p> <span class="activity_bold">Partitions suppl&eacute;mentaires</span><br> Cr&eacute;ation d&rsquo;une partition suppl&eacute;mentaire sous Windows XP Professionnel<br> <br>
+						  </p>
+						</td>
+					  </tr>
+					</table>
+				  </td>
+				</tr>
+			  </table>
+			</td>
+		  </tr>
+		</table>
+		<!-- END Activity box   -->
+            <p></p>
+          </td>
+          </tr>
+         </table>
+       </td>
+     </tr>
+	</table>
+
+</body>
+
+</html>

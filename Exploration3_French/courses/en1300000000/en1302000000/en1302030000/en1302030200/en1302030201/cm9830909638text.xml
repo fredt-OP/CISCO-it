@@ -1,0 +1,52 @@
+<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Context Sensitive Help</b></font>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco Switch Command Syntax</b></font>
+</td>
+<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font>
+</td>
+</tr>
+	
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Example of command prompting. In this example, the help function provides a list of commands available in the current mode that start <br/>with cl.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#cl?</b><br/><br/>clear  clock</font></td>
+</tr>
+	
+	
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Example of incomplete command.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#clock</b> 
+% Incomplete command.</font></td>
+</tr>
+	
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Example of symbolic translation.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#colck</b><br/><br/>% Unknown command or computer name, or unable to find computer address</font></td>
+</tr>
+	
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Example of command prompting. Notice the space? In this example, the help function provides a list of subcommands associated with the <b>clock</b> command.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#clock ?</b><br/><br/>set  Set the time and date</font></td>
+</tr>	
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>In this example, the help function provides a list of command arguments required with the <b>clock set</b> command.</b></td>
+<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch<b>#clock set ?</b><br/><br/> hh:mm:ss  Current Time</font></td>
+</tr>
+
+	
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

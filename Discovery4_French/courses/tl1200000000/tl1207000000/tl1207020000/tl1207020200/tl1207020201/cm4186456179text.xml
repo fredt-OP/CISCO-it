@@ -1,0 +1,86 @@
+﻿<textcomponents>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Objectif commercial :</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Critère global de réussite</b></font></td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Combiner les réseaux existants de données et de surveillance vidéo et prendre en charge l’ajout de la téléphonie IP dans le stade.</td>
+<td bgcolor='#F2F2F2'>Prouver la connectivité IP de bout en bout et transférer sur le réseau du trafic simulé vocal, de données et de surveillance vidéo, avec une qualité acceptable.</td>
+
+</tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Spécifications techniques</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Critères de succès</b></font></td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'><b>Extensibilité</b></td>
+<td bgcolor='#E1F0FF'></td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Conversion d’un réseau non hiérarchique en une hiérarchie à trois couches</td>
+<td bgcolor='#F2F2F2'>Commandes ping, Telnet et transfert de données réussis</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Création de réseaux locaux virtuels séparés et de sous-réseaux IP pour prendre en charge les différents types de trafic</td>
+<td bgcolor='#F2F2F2'>Les réseaux locaux virtuels isolent le trafic, comme l'indiquent les résultats négatifs des commandes IOS ping et show </td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'><b>Disponibilité</b></td>
+<td bgcolor='#E1F0FF'></td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Utilisation de liaisons de couche 3 plutôt que de couche 2</td>
+<td bgcolor='#F2F2F2'>Reprise rapide en cas de défaillance d’une liaison réseau</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Implémentation d’une topologie redondante</td>
+<td bgcolor='#F2F2F2'>La défaillance d’une liaison n’entraîne pas l’arrêt du réseau</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'><b>Sécurité</b></td>
+<td bgcolor='#E1F0FF'></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Configuration de filtres pour que seul le personnel autorisé puisse accéder à la vidéosurveillance</td>
+<td bgcolor='#F2F2F2'>Les stations non autorisées ne peuvent pas accéder à la vidéo</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Configuration de fonctions de sécurité de port de commutateur</td>
+<td bgcolor='#F2F2F2'>Les adresses MAC inconnues ne peuvent pas se connecter</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'><b>Facilité de gestion</b></td>
+<td bgcolor='#E1F0FF'></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Création d’un réseau local virtuel de gestion et configuration de SSH</td>
+<td bgcolor='#F2F2F2'>Connectivité SSH réussie pour tous les périphériques</td>
+
+</tr>
+
+</table>
+]]></text>
+</component>
+
+</textcomponents>

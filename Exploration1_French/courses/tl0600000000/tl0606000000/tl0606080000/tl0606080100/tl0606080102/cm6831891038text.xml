@@ -1,0 +1,282 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un test et vos réponses ne seront pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour afficher la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici <br/>pour commencer.</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1. <textformat blockindent='14'>Qu’est-ce qui définit un réseau dans une adresse IPv4 ?</textformat> ]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[<p>Pour chaque adresse IPv4, une partie des bits d’ordre haut représente l’adresse réseau. Au niveau de la couche 3, un réseau se définit comme un groupe d’hôtes ayant des schémas de bits identiques dans la partie adresse réseau de leur adresse. </p>]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2. <textformat blockindent='14'>Nommez et expliquez le but des trois types d’adresse IPv4.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[<ul><li>Adresse réseau : adresse qui fait référence au réseau</li><li>Adresse de diffusion : adresse spéciale qui sert à envoyer des données à tous les hôtes du réseau</li><li>Adresses d’hôte : adresses affectées aux périphériques finaux du réseau</li></ul>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q2_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3. <textformat blockindent='14'>Qu’est-ce qui distingue chacun des trois types d’adresse IPv4 ?</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[<p>Dans la plage d’adresses IPv4 d’un réseau, l’adresse la plus basse est réservée à l’adresse réseau. La partie adresse de cette adresse comprend uniquement des 0. 
+Adresse d’hôte : les bits d’hôtes sont un mélange unique de 1 et de 0 dans un réseau. L’adresse de diffusion utilise l’adresse la plus haute de la plage réseau. Il s’agit de l’adresse dans laquelle les bits de la partie hôte sont tous des 1. Pour le réseau 10.0.0.0 avec 24 bits réseau, l’adresse de diffusion serait 10.0.0.255. Cette adresse fait également référence à la diffusion dirigée. </p>]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4. <textformat blockindent='14'>Citez les trois formes de communication IPv4.</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[<ul><li>Monodiffusion : processus d’envoi d’un paquet d’un hôte vers un autre</li><li>Diffusion : processus d’envoi d’un paquet d’un hôte vers tous les hôtes du réseau</li><li>Multidiffusion : processus d’envoi d’un paquet d’un hôte vers un groupe d’hôtes sélectionné</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5. <textformat blockindent='14'>Expliquez à quoi sert d’avoir des plages spécifiées d’adresses IPv4 à des fins publiques et privées.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[<p>Les adresses privées spécifiées permettent aux administrateurs réseau d’affecter des adresses aux hôtes qui ne doivent jamais accéder au réseau Internet public.</p>]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6. <textformat blockindent='14'>Dans quels cas les adresses IPv4 réservées et spéciales sont-elles utilisées ?</textformat>]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[Adresses de multidiffusion : la plage d’adresses de multidiffusion IPv4 224.0.0.0 à 239.255.255.255 est réservée à des fins spécifiques.
+Adresses privées Les blocs d’adresses privées sont les suivants :
+10.0.0.0 à 10.255.255.255 (10.0.0.0 /8)
+172.16.0.0 à 172.31.255.255 (172.16.0.0 /12)
+192.168.0.0 à 192.168.255.255 (192.168.0.0 /16)
+Les blocs d’adresses d’espace privé, comme illustrés, sont réservés aux réseaux privés. L’utilisation de ces adresses n’est pas forcément unique dans les réseaux extérieurs. Les hôtes qui ne nécessitent pas d’accès à Internet peuvent utiliser des adresses privées. Plusieurs hôtes de réseaux différents peuvent utiliser les mêmes adresses d’espace privé. Les paquets qui utilisent ces adresses comme source ou destination ne doivent pas apparaître sur le réseau Internet public. Le routeur ou pare-feu du périmètre de ces réseaux privés doit bloquer ou convertir ces adresses.
+Route par défaut :
+route IPv4 par défaut sous la forme 0.0.0.0. L’utilisation de cette adresse réserve également toutes les adresses du bloc d’adresses 0.0.0.0 – 0.255.255.255 (0.0.0.0 /8).
+Bouclage :
+l’adresse de bouclage IPv4 127.0.0.1 est une adresse réservée. Les adresses 127.0.0.0 à 127.255.255.255 sont réservées au bouclage dans lequel les hôtes dirigent le trafic vers eux-mêmes.
+Adresses locales-liens :
+les adresses IPv4 du bloc d’adresses 169.254.0.0 à 169.254.255.255 (169.254.0.0 /16) sont conçues pour être des adresses locales-liens. Ces adresses peuvent être affectées automatiquement à l’hôte local par le système d’exploitation dans les environnements où aucune configuration IP n’est disponible. Elles peuvent être utilisées dans un réseau Peer to peer restreint ou pour un hôte qui ne parviendrait pas à obtenir automatiquement une adresse auprès d’un serveur DHCP.
+Adresses TEST-NET
+Le bloc d’adresses 192.0.2.0 à 192.0.2.255 (192.0.2.0 /24) est réservé à des fins pédagogiques. Ces adresses peuvent être utilisées dans de la documentation et des exemples de réseaux. Contrairement aux adresses expérimentales, les périphériques réseau acceptent ces adresses dans leur configuration.
+]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 7 -->
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7. <textformat blockindent='14'>Citez trois raisons pour la planification et la documentation des adresses IPv4.</textformat>]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<p>L’allocation des adresses dans les réseaux doit être planifiée et documentée aux fins suivantes :</p><ul><li>Éviter la duplication des adresses</li><li>Fournir et contrôler l’accès</li><li>Surveiller la sécurité et les performances</li></ul>]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q7_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8. <textformat blockindent='14'>Citez des exemples dans lesquels des administrateurs réseau ont affecté des adresses IPv4 statiquement ou dynamiquement.</textformat>]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[<p>Adresses affectées statiquement : serveurs, imprimantes, adresses de passerelles de réseau local sur des routeurs, adresses de gestion sur des périphériques réseau comme des commutateurs et des points d’accès sans fil.</p><br/><p>Adresses affectées dynamiquement : grand nombre d’ordinateurs et périphériques finaux d’utilisation courante comme des téléphones IP.</p>]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q8_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 9 -->
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9. <textformat blockindent='14'>Citez les caractéristiques qui distinguent l’IPv6 de l’IPv4.</textformat>]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[<p>IPv6 propose les fonctions suivantes que ne propose pas IPv4 :</p><ul><li>Gestion des paquets améliorée</li><li>Évolutivité et longévité accrues</li><li>Mécanismes de qualité de service</li><li>Sécurité intégrée</li></ul><br/><p>Pour proposer cela, IPv6 offre :</p><ul><li>Adressage hiérarchique 128 bits : pour développer les capacités d’adressage</li><li>Simplification du format d’en-tête : pour améliorer la gestion des paquets</li><li>Support amélioré des extensions et des options : pour une évolutivité/longévité accrues et une gestion améliorée des paquets</li><li>Fonction d’étiquetage des flux : comme mécanismes de qualité de service</li><li>Fonctions d’authentification et de propriété privée : pour une sécurité intégrée</li></ul>]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 10 -->
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10. <textformat blockindent='24'>Expliquez à quoi sert le masque de sous-réseau dans l’adressage IPv4.</textformat>]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[<p>Les périphériques réseau utilisent le masque de sous-réseau pour déterminer l’adresse réseau ou de sous-réseau d’une adresse IP traitée.</p>]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q10_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 11 -->
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q11_txt03">
+<text><![CDATA[11. <textformat blockindent='24'>Citez les facteurs à prendre en compte lors de la planification d’un schéma d’adressage IPv4.</textformat> ]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[<p>Les sous-réseaux sont créés en vue de répondre aux problèmes d’emplacement, de taille et de contrôle. Lors de l’adressage, tenez compte des facteurs suivants pour regrouper les hôtes :</p><ul><li>Regroupement basé sur un emplacement géographique commun</li><li>Regroupement des hôtes utilisés à des fins spécifiques</li><li>Regroupement basé sur la propriété</li></ul>]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 12 -->
+
+<component id="ID_Q12_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q12_txt03">
+<text><![CDATA[12. <textformat blockindent='24'>Citez trois niveaux auxquels il est possible d’utiliser l’utilitaire ping pour tester et vérifier la connexion réseau d’un hôte.</textformat>]]></text>
+</component>
+<component id="ID_Q12_txt04">
+<text><![CDATA[<ul><li>Test de bouclage ping 127.0.0.1</li><li>Exécution de la commande ping sur l’adresse de passerelle de l’hôte ou sur un autre hôte du même réseau</li><li>Exécution de la commande ping sur l’hôte d’un réseau distant</li></ul>]]></text>
+</component>
+<component id="ID_Q12_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q12_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 13-->
+
+<component id="ID_Q13_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q13_txt03">
+<text><![CDATA[13. <textformat blockindent='24'>Dans quel cas l’utilisation de l’utilitaire traceroute est-elle plus intéressante que la commande ping ?</textformat>]]></text>
+</component>
+<component id="ID_Q13_txt04">
+<text><![CDATA[<p>Lorsqu’une adresse distante est inaccessible et que la commande ping échoue. La commande traceroute affiche le nombre de sauts vers la destination réalisés par la source. Ceci permet ensuite de déterminer l’emplacement de l’échec du réseau ou l’emplacement des restrictions de sécurité.</p>]]></text>
+</component>
+<component id="ID_Q13_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q13_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 14 -->
+
+<component id="ID_Q14_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q14_txt03">
+<text><![CDATA[14. <textformat blockindent='24'>Citez les raisons pour lesquelles le protocole ICMPv4 est un protocole important pour l’IPv4.</textformat>]]></text>
+</component>
+<component id="ID_Q14_txt04">
+<text><![CDATA[<p>IPv4 est un protocole d’acheminement « au mieux » non fiable. Grâce au protocole ICMPv4, les problèmes réseau comme les paquets abandonnés ou l’encombrement sont signalés à l’hôte ou au réseau source. Messages possibles :</p><ul><li>Confirmation de l’hôte</li><li>Destination ou service inaccessible</li><li>Dépassement du délai</li><li>Redirection de la route</li><li>Épuisement de la source</li></ul><br/><p>Remarque : le protocole ICMP ne rend pas le protocole IP fiable.</p>]]></text>
+</component>
+<component id="ID_Q14_txt05">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Vous avez passé en revue toutes les questions de la partie « Problèmes et discussion » du présent chapitre.</b>]]></text>
+</component>
+
+</textcomponents>

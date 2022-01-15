@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13448" dateexported="10/16/2008">
+		<name>Module 9 Questionnaire</name>
+		<form id="22074" lang="fr"><form-item>
+			<ai id="148293" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="148293" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Testeur de câble</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Multimètre numérique</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Analyseur réseau</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Network management system (système d’administration de réseaux)</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Analyseur de protocole</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Vérifier la tension d’alimentation et l’alimentation des périphériques réseau </mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Afficher une vue physique des périphériques réseau en mode graphique et localiser la source d’un périphérique défectueux</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Identifier les périphériques à l’origine du trafic le plus important, analyser le trafic réseau par protocole et afficher les détails de l’interface</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Détecter les câbles détériorés ou croisés et les connexions court-circuitées ou désappariées</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Filtrer le trafic selon certains critères, de manière à capturer le trafic utile entre deux périphériques</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser l’outil situé à gauche vers la droite, dans la description de test appropriée dans la partie droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="21" yspacing="70" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /><display componentIdent="5" xpos="200" ypos="395" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /><display componentIdent="5" xpos="600" ypos="343" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="246122" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="246122" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="246122" action="Set">1</setvar><scoringdescription>Multimètre numérique, système de gestion de réseau (NMS), analyseur réseau, testeur de câbles, analyseur de protocole</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="148292" type="mc-sa"><question><![CDATA[Un administrateur réseau procède au dépannage de la connexion à un routeur et constate que l’adresse IP de l’interface S0/0/0 n’a pas été correctement configurée.  Sur quelle couche du modèle OSI le problème trouve-t-il son origine ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Couche 1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Couche 3  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Couche 4 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Couche 7 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="148288" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="148288" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Hôte / périphérique</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Concentrateur / commutateur</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Routeur / commutateur</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Routeurs Fa0/0 / hôte</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Concentrateur / routeur</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Commutateur / commutateur</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Câble droit</b></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Câble croisé</b></mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser les paires de périphériques affichées à gauche sur le type de câble UTP auquel elles sont connectées sur la partie droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-117" targetYspacing="10" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1" /><display componentIdent="4" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="174" /><display componentIdent="4" xpos="600" ypos="236" /><display componentIdent="5" xpos="600" ypos="273" /><display componentIdent="6" xpos="600" ypos="310" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="245690" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="245690" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>4</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="245690" action="Set">1</setvar><scoringdescription>Droit = hôte / périphérique, routeur / commutateur, commutateur / hôte Croisé = concentrateur / commutateur, routeurs Fa0/0 / hôte, commutateur / commutateur</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="148291" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="148291" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Nombre excessif de diffusions</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Erreur d’encapsulation</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Connexion câblée lâche</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Alimentation sans coupure</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Serial 0/0/0 activé, protocole désactivé</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Carte réseau mal configurée</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Type de câble incorrect</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Connecteur de l’interface série endommagé</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Couche 1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Couche 2</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="7" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="8" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Sur la partie gauche, faites glisser chaque situation de réseau vers la couche OSI correspondante dans la partie droite. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="16" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /><display componentIdent="7" xpos="200" ypos="315" /><display componentIdent="8" xpos="200" ypos="355" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="4" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="264.5" containsTargets="4" startTarg="5" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="174" /><display componentIdent="4" xpos="600" ypos="211" /><display componentIdent="5" xpos="600" ypos="273" /><display componentIdent="6" xpos="600" ypos="310" /><display componentIdent="7" xpos="600" ypos="347" /><display componentIdent="8" xpos="600" ypos="384" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident="2"><componentident>5</componentident><componentident>6</componentident><componentident>7</componentident><componentident>8</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="245885" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="245885" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident><componentident>4</componentident><componentident>7</componentident><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident><componentident>2</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="245885" action="Set">1</setvar><scoringdescription>Couche 1 - câble lâche, alimentation sans coupure, s0/0/0 désactivé par l’administrateur, interface série endommagée   Couche 2 - diffusions excessives, erreur d’encapsulation, s0/0/0 activé/désactivé, carte réseau mal configurée</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="148289" type="mc-sa"><question><![CDATA[Reportez-vous à l’illustration.  Un administrateur réseau procède au dépannage de la connexion entre le siège social et l’agence. Quelle information de dépannage importante l’administrateur doit-il obtenir du résultat de la commande <b>show interface serial 0/0/0</b> ? <br/><img src="i148289n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Type d’encapsulation  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Type de CSU/DSU ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Durée du CSU/DSU ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Type de protocole de routage ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="148290" type="mc-sa"><question><![CDATA[Quel état de l’interface indique un taux d’erreur élevé ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Serial 0/0/0 désactivé, protocole de ligne désactivé ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Serial 0/0/0 activé, protocole de ligne désactivé ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Serial 0/0/0 activé, protocole de ligne désactivé (création de boucle) ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Serial 0/0/0 activé, protocole de ligne désactivé  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Serial 0/0/0 désactivé par l’administrateur, protocole de ligne désactivé ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="148297" type="mc-sa"><question><![CDATA[Reportez-vous à l’illustration. Les hôtes du réseau local peuvent communiquer avec les hôtes sur ce même réseau, mais ne peuvent se connecter en dehors du réseau.  Quelle est la cause probable du problème ? <br/><img src="i148297n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La commande <b>pool</b> n’est pas appliquée à une interface. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse DNS est incorrecte. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse DHCP est manquante. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’adresse de la passerelle par défaut est située sur un autre réseau.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="148295" type="mc-ma"><question><![CDATA[Reportez-vous à l’illustration.  Quelles conclusions pouvez-vous tirer du résultat de la commande <b>debug ip rip</b> ? (Choisissez deux réponses.) <br/><img src="i148295n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le réseau 10.0.0.0 est à deux sauts de distance du routeur R1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une requête ping vers 192.168.168.10 aboutira. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur a envoyé des informations concernant cinq destinations dans la mise à jour. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R1 a envoyé une diffusion RIP sur Fa0/0, qui annonce deux réseaux.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R1 a reçu des mises à jour d’un routeur à l’adresse source 10.0.15.2.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="148294" type="mc-sa"><question><![CDATA[Reportez-vous à l’illustration.  Quel est le résultat de la commande exécutée sur R1 ? <br/><img src="i148294n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le réseau 192.168.1.0 ne recevra pas de paquets DHCP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les accusés de réception DHCP seront émis depuis le réseau 192.168.1.0. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur COMM2 agit en tant qu’agent de relais DHCP pour le réseau 192.168.1.0. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les requêtes DHCP sont transmises à 192.168.2.3.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="148296" type="mc-sa"><question><![CDATA[Reportez-vous à l’illustration. D’après les résultats des commandes de dépannage, quelle est la cause probable du problème ? <br/><img src="i148296n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Une adresse IP incorrecte a été affectée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il se peut que les paquets soient bloqués par un pare-feu.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole de routage n’est pas correctement configuré. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il existe une erreur d’encapsulation de couche 2. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

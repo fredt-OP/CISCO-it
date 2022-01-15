@@ -1,0 +1,67 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Choosing a WAN Link Connection</b>]]></text> 
+</component>
+
+<component id="ID_header1">
+  <text><![CDATA[<b>Option</b>]]></text> 
+</component>
+
+<component id="ID_header2">
+  <text><![CDATA[<b>Description</b>]]></text> 
+</component>
+
+<component id="ID_header3">
+  <text><![CDATA[<b>Advantages</b>]]></text> 
+</component>
+
+<component id="ID_header4">
+  <text><![CDATA[<b>Disadvantages</b>]]></text> 
+</component>
+
+<component id="ID_header6">
+  <text><![CDATA[<b>Sample protocols used</b>]]></text> 
+</component>
+
+
+<component id="ID_table1">
+<text><![CDATA[<table bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'>Leased line</td>
+<td bgcolor='#F2F2F2'>Point-to-Point connection between two computers or Local Area Networks (LANs).</td>
+<td bgcolor='#F2F2F2'>Most secure</td>
+<td bgcolor='#F2F2F2'>Expensive</td>
+<td bgcolor='#F2F2F2'>PPP, HDLC, SDLC, HNAS</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>Circuit switching</td>
+<td bgcolor='#DDDDDD'>A dedicated circuit path is created between endpoints. Best example is dialup connections.</td>
+<td bgcolor='#DDDDDD'>Less expensive</td>
+<td bgcolor='#DDDDDD'>Call setup</td>
+<td bgcolor='#DDDDDD'>PPP, ISDN</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Packet switching</td>
+<td bgcolor='#F2F2F2'>Devices transport packets via a shared single point-to-point or point-to-multipoint link across a carrier interwork. Variable length packets are transmitted over permanent virtual circuits (PVCs) or switched virtual circuits.(SVCs)</td>
+<td bgcolor='#F2F2F2'> </td>
+<td bgcolor='#F2F2F2'>Shared media across link</td>
+<td bgcolor='#F2F2F2'>X.25, Frame Relay</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>Cell relay</td>
+<td bgcolor='#DDDDDD'>Similar to packet switching, but uses fixed length cells instead of variable length packets. Data is divided into fixed-length cells and then transported across virtual ciruits</td>
+<td bgcolor='#DDDDDD'>best for simulated use of voice and data</td>
+<td bgcolor='#DDDDDD'>Overhead can be considerable.</td>
+<td bgcolor='#DDDDDD'>ATM</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Internet</td>
+<td bgcolor='#F2F2F2'>Connectionless packet switching using the Internet as the WAN infrastructure, uses network addressing to deliver packets. Because of security issues, VPN technology must be used.</td>
+<td bgcolor='#F2F2F2'>Least expensive Globally available</td>
+<td bgcolor='#F2F2F2'>Least secure</td>
+<td bgcolor='#F2F2F2'>VPN, DSL, Cable-Modem, Wireless</td>
+</tr>
+</table>]]></text>
+</component>
+</textcomponents>

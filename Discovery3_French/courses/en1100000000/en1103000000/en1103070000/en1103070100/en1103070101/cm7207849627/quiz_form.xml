@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19840" lang=""><form-item order="fixed">
+			<ai id="52042" type="mc-ma"><question><![CDATA[Which devices can be connected to a VLAN trunk? (Choose three.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[a switch  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[a hub ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[a router  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[a server with a special NIC  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[a CSU/DSU ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[a repeater ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="52514" type="mc-ma"><question><![CDATA[What happens when there is a topology change on a network that utilizes STP ? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[User traffic is disrupted until recalculation is complete.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The switch recomputes the Spanning Tree topology after the network converges. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[All ports are placed in learning state until convergence has occurred. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[A delay of up to 50 seconds is incurred for convergence of the new Spanning Tree topology.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[User data is forwarded while BPDUs are exchanged to recompute the topology. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119795" type="mc-sa"><question><![CDATA[Refer to the exhibit. Which set of commands should be used to configure the router to provide communication between the two hosts connected to the switch? <br/><img src="16676.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[R_1(config)# <b>interface vlan 30</b><br/>R_1(config-if)# <b>switchport mode trunk dot1q</b><br/>R_1(config-if)# <b>interface vlan 40</b><br/>R_1(config-if)# <b>switchport mode trunk dot1q </b><br/> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R_1(config)# <b>interface fastethernet 0/0</b><br/>R_1(config-if)# <b>mode trunk dot1q 30 40</b><br/>R_1(config-if)# <b>ip address 192.168.1.1 255.255.255.0</b><br/> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R_1(config)# <b>interface vlan 30</b><br/> R_1(config-if)# <b>ip address 192.168.30.1 255.255.255.0</b><br/> R_1(config-if)# <b>no shutdown</b><br/> R_1(config-if)# <b>interface vlan 40</b><br/> R_1(config-if)# <b>ip address 192.168.40.1 255.255.255.0</b><br/> R_1(config-if)# <b>no shutdown </b><br/> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R_1(config)# <b>interface fastethernet 0/0</b><br/> R_1(config-if)# <b>no shutdown</b><br/> R_1(config-if)# <b>interface fastethernet 0/0.3</b><br/> R_1(config-if)# <b>encapsulation dot1q 30</b><br/> R_1(config-if)# <b>ip address 192.168.30.1 255.255.255.0</b><br/> R_1(config-if)# <b>interface fastethernet 0/0.4</b><br/> R_1(config-if)# <b>encapsulation dot1q 40</b><br/> R_1(config-if)# <b>ip address 192.168.40.1 255.255.255.0 </b><br/>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="118171" type="mc-sa"><question><![CDATA[How do a Layer 3 switches differ from traditional routers?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Layer 3 switches are used in LANs, while routers are used in WANs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Layer 3 switches use ASICS for routing, while routers are software based.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Layer 3 switches never perform routing lookups, while routers must always perform them. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Layer 3 switches forward packets based on MAC address only, while routers use IP addresses for forwarding. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="118209" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="118209" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>store and forward </mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>fragment-free   </mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>multilayer</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>cut-through</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>adaptive cut-through</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>fast-forward  </mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>recalculates the CRC value</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>subdivides into two other methods</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>lowest latency but may forward collision fragments</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>reads the first 64 bytes of the frame before forwarding</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>compares the number of errors found to a threshold value</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the switching method on the left to its description on the right. (Not all options are used.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="218531" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="218531" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="218531" action="Set">1</setvar><scoringdescription>from top: store and forward, cut-through, fast-forward, fragment-free, adaptive cut-through UNUSED - multilayer</scoringdescription></responcondition></resprocessing><feedback><correct>great work ! :)</correct><incorrect>sorry. please read on ;)</incorrect></feedback></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119553" type="mc-ma"><question><![CDATA[Which two problems are caused by redundant links in a switched network? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[routing table corruption ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[switching loops  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[broadcast storms  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[routing loops ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[corrupt forwarding information base ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119554" type="mc-ma"><question><![CDATA[Refer to the exhibit. The switches in the diagram are interconnected by trunked links and are configured with the VTP modes shown. A new VLAN is added to Switch1. Which three actions will occur? (Choose three.) <br/><img src="16570.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Switch1 will not add the VLAN to its VLAN database and will pass the update to Switch2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Switch3 will pass the VTP update to Switch4.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch3 will add the VLAN to its VLAN database. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Switch4 will add the VLAN to its VLAN database.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch4 will not receive the update. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Switch2 will add the VLAN to its VLAN database and pass the update to Switch3.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119556" type="mc-ma"><question><![CDATA[What two criteria does STP use to elect the root bridge in a redundantly switched network? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[amount of switch RAM ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[bridge priority  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[switching speed ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[number of switch ports ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[switch MAC address  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[switch location ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119557" type="mc-sa"><question><![CDATA[Following a link failure, when does RSTP allow ports to move to the forwarding state?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[in less than a second  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[in two seconds ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[in 30 seconds ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[in 50 seconds ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[in 90 seconds ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119558" type="mc-ma"><question><![CDATA[In what two ways does the use of VLANs benefit an organization? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[by centralizing departmental staff and network resources together in a single physical area ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[by allowing organizational flexibility by grouping users together by function instead of physical location  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[by allowing logical separation of voice and other critical traffic from the rest of the data traffic  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[by reducing the number of broadcast domains in an enterprise network ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[by reducing network management costs by replacing many Layer 2 devices with a few Layer 3 devices ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[by eliminating the need for routing traffic in large networks ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119559" type="mc-sa"><question><![CDATA[Refer to the exhibit. Access1 is a new switch that is to be connected as a VTP client to the network once it has been configured. Given the output generated by the VTP server switch Dist-2, which series of configuration commands would successfully introduce the client switch into the VTP domain? <br/><img src="16890.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Access1(config)# <b>vtp mode client</b><br/> Access1(config)# <b>vtp domain mycorp</b><br/> Access1(config)# <b>vtp password ITrustYou</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Access1(config)# <b>vtp mode client</b><br/> Access1(config)# <b>vtp domain MYCORP</b><br/> Access1(config)# <b>vtp version 2</b><br/>Access1(config)# <b>vtp password ITrustYou</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Access1(config)# <b>vtp mode client</b><br/> Access1(config)# <b>vtp domain mycorp</b><br/> Access1(config)# <b>vtp password ITrustYou</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Access1(config)# <b>vtp mode client</b><br/> Access1(config)# <b>vtp domain Mycorp</b><br/> Access1(config)# <b>vtp version 2</b><br/>Access1(config)# <b>vtp password ITrustYou</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120915" type="mc-ma"><question><![CDATA[What elements will exist in a converged switched network running spanning tree? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[one root bridge per network  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[all non-designated ports forwarding ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[one root port per non-root bridge  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[multiple designated ports per segment ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[one designated port per network ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120916" type="mc-sa"><question><![CDATA[How often are spanning-tree BPDUs sent by default?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[every second ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[every two seconds  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[every three seconds ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[every four seconds ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120917" type="mc-sa"><question><![CDATA[Refer to the exhibit. A router is configured to connect to a trunked uplink as shown.  A packet is received on the FastEthernet 0/1 physical interface from VLAN 1. The packet destination address is 192.168.1.85.  What will the router do with this packet? <br/><img src="16889.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The router will ignore the packet because the source and destination are on the same broadcast domain. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router will forward the packet out interface FastEthernet 0/1.1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The router will forward the packet out interface FastEthernet 0/1.2.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router will forward the packet out interface FastEthernet 0/1.3. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router will drop the packet because no network that includes the destination address is attached to the router. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

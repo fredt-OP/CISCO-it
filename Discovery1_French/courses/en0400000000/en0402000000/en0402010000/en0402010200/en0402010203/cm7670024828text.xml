@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<!-- instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Activity</b></font><br/><br/>In this activity determine the appropriate type of software licensing for a given scenario.<br/><br/><b>Based on the scenario, check whether a commercial or GPL type of licensing is more appropriate.</b>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Commercial</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>GPL</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Jackie runs a small interior design company. She has three interior designers working for her and none of them have a great deal of knowledge about computers or operating systems. They require an operating system that is easy to use and offers highly structured support.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Amy is a very skilled programmer who requires a computer operating system that will provide her with the ability to make modifications to optimize the functionality of her programs. She does not rely on structured support and is quite happy dealing with large amounts of programming code.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Petros was just given an old computer by a friend and must load an operating system to make it usable. He does not wish to spend any money on this machine since he only intends to use it to access the Internet to view web pages.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Garret has just purchased a laptop computer to allow him to take some of his work home during the evenings and weekends. He also wants to be able to use the laptop to connect to the Internet and pick up his web-based email. Garret's place of employment uses Microsoft Windows XP on all of their systems. And all of their applications only run on this operating system.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Correct, you have identified the type of software licensing required for each scenario. Jackie required commercial software due to her need for structured support and ease of use. Amy required GPL because she is a highly skilled programmer that wants to make modifications. Petros also requires a GPL because of his desire to spend very little money and his minimum usage requirements. Whereas Garret required commercial software that can support all current applications. Click Next to continue.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect, review the various offerings provided by a GPL versus commercial OS and try again.]]></text>
+</component>
+
+</textcomponents>

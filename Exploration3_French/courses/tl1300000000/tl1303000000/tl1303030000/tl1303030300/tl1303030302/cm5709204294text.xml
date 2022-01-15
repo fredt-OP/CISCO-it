@@ -1,0 +1,74 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+  <text><![CDATA[<B>Gestion des appartenances des ports</B>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Syntaxe de commande</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Suppression d’un réseau local virtuel</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<B>Réaffectation du VLAN</B>]]></text> 
+</component>
+
+<component id="ID_button_04">
+<text><![CDATA[<B>Commande show interfaces switchport</B>]]></text> 
+</component>
+
+<component id="ID_step0">
+  <text><![CDATA[<B>Cliquez sur les différentes étapes pour afficher les commandes d’interface graphique utilisateur correspondantes.</B>]]></text> 
+</component>
+
+<component id="ID_caption01">
+<text><![CDATA[<b>3.3.3.2 - A : Gestion des appartenances des ports</b>]]></text>
+</component>
+<component id="tableHTML">
+	    <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+	  	  	<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration globale.</td>
+		<td width="270" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration d’interface pour configurer l’interface.</td>
+		<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config)#<b>interface </b><i>id_interface</i></font></td>
+		
+				
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Supprimer l’affectation de VLAN sur cette interface de port de commutateur et revenir à l’appartenance par défaut au VLAN 1.</td>
+		<td width="270" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>no switchport access vlan </b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Repasser en mode d’exécution privilégié.</td>
+		<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>end</b></font></td>
+		
+				
+	</tr>
+	
+		
+	
+	
+</table>
+]]></text> 
+  </component>
+
+
+</textcomponents>

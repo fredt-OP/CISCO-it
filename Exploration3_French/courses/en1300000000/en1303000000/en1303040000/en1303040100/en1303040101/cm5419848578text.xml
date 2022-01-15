@@ -1,0 +1,57 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>•<TEXTFORMAT BLOCKINDENT='13'>  Native VLAN mismatches</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> For example one port has defined as VLAN 99, the other defined as VLAN 100</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Pose a security risks and create unintended results</textformat></textformat><br/>•<TEXTFORMAT BLOCKINDENT='13'>  Trunk mode mismatches</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> For example on port configured as trunk mode "off" and the other as trunk mode "on".</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Causes loss of network connectivity</textformat></textformat><br/>•<TEXTFORMAT BLOCKINDENT='13'>  VLANs and IP Subnets</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> For example user computers may have been configured with the incorrect IP addresses</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Causes loss of network connectivity</textformat></textformat><br/>•<TEXTFORMAT BLOCKINDENT='13'>  Allowed VLANs on Trunks</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> The list of allowed VLANs does not support current VLAN trunking requirements.</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Causes unexpected traffic or no traffic is being sent over the trunk</textformat></textformat></b>]]></text>
+</component>
+
+<component id="ID_tableHTML">
+	    <text><![CDATA[
+		<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Problem</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Result</b></font></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Example</b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Native VLAN mismatches</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Poses a security risk and creates unintended results.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>For example, one port is defined as VLAN 99, the other is defined as VLAN 100.</td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Trunk mode mismatches</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Causes loss of network connectivity.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>For example on port configured as trunk mode &quot;off&quot; and the other as trunk mode &quot;on&quot;.</td>
+		
+				
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>VLANs and IP Subnets</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Causes loss of network connectivity.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>For example user computers may have been configured with the incorrect IP addresses.</td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Allowed VLANs on Trunks</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Causes unexpected traffic or no traffic is being sent over the trunk.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The list of allowed VLANs does not support current VLAN trunking requirements.</td>
+		
+				
+	</tr>
+	
+		
+	
+	
+</table>]]></text> 
+  </component>
+
+
+
+<component id="ID_title"><text><![CDATA[<b>Common Problems with VLANs and Trunks</b>]]></text>
+</component>
+</textcomponents>

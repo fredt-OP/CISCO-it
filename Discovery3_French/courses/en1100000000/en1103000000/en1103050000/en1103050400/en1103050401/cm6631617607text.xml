@@ -1,0 +1,77 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Roll over each best practice for more information.]]></text>
+</component>
+
+<component id="ID_table1">
+		<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+  	<td colspan='3' ><font color='#3C3C3C'>.</font></td>
+  </tr> 
+  <tr>
+    <td bgcolor='#F2F2F2'width="150"><b>Server Placement</b></td>
+    <td bgcolor='#F2F2F2'width="100"><b>Unused Ports</b></td>
+    <td bgcolor='#F2F2F2'><b>Management VLAN</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>VLAN Trunking Protocol</b></td>
+    <td bgcolor='#DDDDDD'><b>VTP Domains</b></td>
+    <td bgcolor='#DDDDDD'><b>VTP Revision Number</b></td>
+  </tr>
+</table>]]></text>
+	</component>
+	
+	<component id="ID_txtTitle1">
+	<text><![CDATA[Server Placement:]]></text>
+	</component>
+	
+	<component id="ID_txtBody1">
+	<text><![CDATA[<li>Ensure all servers required by a particular group are members of the same VLAN</li>]]></text>
+	</component>
+	
+	<component id="ID_txtTitle2">
+	<text><![CDATA[Unused Ports:]]></text>
+	</component>
+	
+	<component id="ID_txtBody2">
+	<text><![CDATA[<li>Disable unused ports </li><li>Put unused ports in an unused VLAN</li><li>Stop unauthorized access by not granting connectivity or by placing a device into an unused VLAN</li>]]></text>
+	</component>
+	
+	<component id="ID_txtTitle3">
+	<text><![CDATA[Management VLAN:]]></text>
+	</component>
+	
+	<component id="ID_txtBody3">
+	<text><![CDATA[<li>By default, the management VLAN and the native VLAN are VLAN 1</li><li>Do not use VLAN 1 for in-band management traffic</li><li>Select a different, dedicated VLAN to keep management traffic separate from user data and protocol traffic</li>]]></text>
+</component>
+
+<component id="ID_txtTitle4">
+<text><![CDATA[VLAN Trunking Protocol:]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[<li>Standardize the VLAN configuration across the enterprise</li><li>Provide for easy VLAN management and maintenance</li><li>Reduce the time required for VLAN administration and maintenance</li>]]></text>
+</component>
+
+<component id="ID_txtTitle5">
+<text><![CDATA[VTP Domains:]]></text>
+</component>
+
+<component id="ID_txtBody5">
+<text><![CDATA[<li>Minimizes misconfiguration</li><li>Propogates and synchronizes VLAN information across member switches</li><li>Provides extra security when combined with a VTP password</li>]]></text>
+</component>
+
+<component id="ID_txtTitle6">
+<text><![CDATA[VTP Revision Number:]]></text>
+</component>
+
+<component id="ID_txtBody6">
+<text><![CDATA[  •  <textformat blockindent="20">Ensure that any new switch added to the network has a revision number of zero</textformat><br/>  •  <textformat blockindent="20">Reset the revision number by either of the following:</textformat><br/><textformat blockindent="20">1. Set the new switch to transparent mode then switch it back to client or server.</textformat><br /><textformat blockindent="20">2. Change the domain name to something else. Change it back.</textformat>]]></text>
+</component>
+
+<component id="ID_txtTitle">
+<text><![CDATA["Host1 Says:"]]></text>
+</component>
+
+</textcomponents>

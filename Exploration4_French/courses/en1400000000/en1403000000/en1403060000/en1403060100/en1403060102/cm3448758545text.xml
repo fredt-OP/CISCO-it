@@ -1,0 +1,94 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you are correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Compare and contrast the following terms: DLCI, LMI, and Inverse ARP.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 3.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>DLCI - Data Link Connection Identifier</b><ul><li>VCs are identified by DLCIs, and the DLCI values are assigned by the Frame Relay service provider.</li><li>Frame Relay DLCIs have local significance and no significance beyond the single link.</li><li>A DLCI identifies a VC to the equipment at an endpoint.</li></ul><b>LMI - Local Management Interface</b><ul><li>LMI is a keepalive mechanism that provides status information about Frame Relay connections between the router (DTE) and the Frame Relay switch (DCE).</li><li>Three types of LMIs are supported by Cisco routers: Cisco, ANSI, and q933a</li></ul><b>Inverse ARP</b><ul><li>Inverse Address Resolution Protocol (ARP) obtains Layer 3 addresses of other stations from Layer 2 addresses, such as the DLCI in Frame Relay networks (which is the reverse of what ARP does).</li><li>It is primarily used in Frame Relay and ATM networks, where Layer 2 addresses of VCs are sometimes obtained from Layer 2 signaling, and the corresponding Layer 3 addresses must be available before these VCs can be used.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Refer to the exhibit. The configuration is for router R1. Which command on R1 is required to statically configure a Frame Relay connection to R2? Traffic between sites must also support OSPF.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from  3.2)]]></text>
+</component>
+<component id="ID_topology01">
+<text><![CDATA[<b>FR Switch</b>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<font face="_sans">frame-relay map ip 10.1.1.2 102 broadcast</font>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Compare and contrast the following terms: access rate, CIR, CBIR, and BE.]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from  3.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Access rate (or port speed)</b><ul><li>The capacity of the local loop.</li><li>This line is charged based on the port speed between the DTE to the DCE (customer to service provider).</li></ul><b>CIR - Committed Information Rate</b><ul><li>The capacity through the local loop guaranteed by the provider.</li><li>Customers normally choose a CIR lower than the access rate to allow them to take advantage of bursts.</li></ul><b>CBIR - Committed Burst Information Rate</b><ul><li>Negotiated maximum which a frame is allowed to burst above the CIR.</li><li>Frames are marked as discard eligible (DE).</li><li>It cannot exceed the access rate of the link.</li></ul><b>BE - Excess Burst</b><ul><li>Amount of data above the CBIR up to the access rate which frames may use to burst with no guarantee.</li><li>Frames are also marked as discard eligible (DE) and cannot exceed the access rate of the link.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Refer to the exhibit. Router R1 is unable to establish point-to-point Frame Relay connections with routers R2 and R3. On the basis of the information presented, which configuration changes on router R1 would correct the problem?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from  3.4)]]></text>
+</component>
+<component id="ID_topologyQ4">
+<text><![CDATA[<b>Frame Relay</b>]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>On router R1</b><ul><li>The main serial interface and subinterfaces should be Serial 0/0/0, Serial 0/0/0.102, and Serial 0/0/0.103, respectively.</li><li>The wrong subnet mask is applied to the subinterfaces. The subnet mask should be 255.255.255.252.</li><li>The DLCIs in the frame-relay interface-dlci command should be 102 and 103, respectively.</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>This concludes this chapter's Check Your Understanding questions.</b>]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,138 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher des informations récapitulatives.</b>]]></text>
+</component> 
+
+<component id="ID_txt01">
+<text><![CDATA[<ul><li>Les commutateurs utilisent la microsegmentation pour créer des domaines de collision réduits à chacun des ports.</li><br/><li>La commutation de la couche 3 s’effectue sur un matériel CIAS spécifique.</li><br/><li>Les commutateurs transfèrent le trafic grâce aux techniques Store and Forward et Cut-through.</li><br/><li>Des fonctionnalités de sécurité de base doivent être mises en place pour s’assurer que seul le personnel autorisé accède aux périphériques.</li></ul>]]></text>
+</component>
+
+    <component id="s1_ID_txt01">
+		<text><![CDATA[Commutation Store and Forward]]></text>
+	</component>
+    <component id="s1_ID_txt02">
+		<text><![CDATA[Nombre décroissant d’erreurs]]></text>
+	</component>
+    <component id="s1_ID_txt03">
+		<text><![CDATA[Commutation Cut-through]]></text>
+	</component>
+    <component id="s1_ID_txt04">
+		<text><![CDATA[Nombre croissant d’erreurs]]></text>
+	</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[
+<ul><li>Le protocole Spanning Tree ferme les liaisons redondantes pour empêcher les boucles de commutation.</li><br/><li>Un pont racine se trouve à la tête du Spanning Tree et est sélectionné en fonction de l’ID de pont le plus petit.</li><br/><li>Le recalcul du Spanning Tree peut prendre jusqu’à 50 secondes au cours desquelles le réseau présente des fonctionnalités limitées.</li><br/><li>Le protocole Rapid Spanning Tree permet de réduire le temps de convergence.</li></ul>]]></text>
+</component>
+
+<component id="s2_ID_txt01">
+<text><![CDATA[Réseau avec boucle.]]></text>
+</component>
+
+<component id="s2_ID_txt02">
+<text><![CDATA[Un port bloqué par STP élimine la boucle.]]></text>
+</component>
+
+<component id="s2_ID_but01">
+<text><![CDATA[<b>Sans STP</b>]]></text>
+</component>
+
+<component id="s2_ID_but02">
+<text><![CDATA[<b>Avec STP</b>]]></text>
+</component>
+
+<component id="s2_ID_inst">
+<text><![CDATA[Cliquez sur Sans STP et Avec STP pour visualiser le concept.]]></text>
+</component>
+
+
+
+<component id="ID_txt03">
+<text><![CDATA[
+<ul><li>Un réseau local virtuel est un ensemble d’hôtes situés sur le même réseau local, même s’ils sont physiquement séparés.</li><br/><li>VLAN 1 est par défaut le réseau local virtuel de gestion.</li><br/><li>L’étiquetage des trames applique l’ID du réseau local virtuel à la trame Ethernet afin que le commutateur puisse identifier le réseau local virtuel source.</li><br/><li>IEEE 802.1Q est le protocole ouvert standard d’étiquetage des trames qui insère une étiquette à 4 octets dans la trame Ethernet.</li></ul>]]></text>
+</component>
+
+
+<component id="s3_ID_txt01">
+<text><![CDATA[VLAN Ingénierie]]></text>
+</component>
+
+<component id="s3_ID_txt02">
+<text><![CDATA[VLAN Marketing]]></text>
+</component>
+
+<component id="s3_ID_txt03">
+<text><![CDATA[VLAN Comptabilité]]></text>
+</component>
+
+<component id="s3_ID_txt04">
+<text><![CDATA[3e étage]]></text>
+</component>
+
+<component id="s3_ID_txt05">
+<text><![CDATA[2e étage]]></text>
+</component>
+
+<component id="s3_ID_txt06">
+<text><![CDATA[1e étage]]></text>
+</component>
+
+<component id="s3_ID_txt07">
+<text><![CDATA[Routeur]]></text>
+</component>
+
+<component id="s3_ID_txt08">
+<text><![CDATA[Fast Ethernet]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<ul><li>Un port d’accès connecte un périphérique à un commutateur, et est membre d’un réseau local virtuel. </li><br/><li>Un port agrégé connecte deux commutateurs ou un commutateur et un routeur, et transfère des trames étiquetées à partir de plusieurs réseaux locaux virtuels.</li><br/><li>Les trames non étiquetées sont transférées à l’aide du réseau local virtuel natif.</li><br/><li>Un périphérique de la couche 3 est requis pour acheminer le trafic entre différents réseaux locaux virtuels.</li><br/><li>Une interface de routeur est configurée à l’aide de sous-interfaces afin de prendre en charge plusieurs réseaux locaux virtuels.</li></ul>]]></text>
+</component>	
+
+<component id="s4_ID_txt01">
+      <text><![CDATA[Routeur]]></text> 
+  </component>
+
+
+<component id="s4_ID_txt02">
+      <text><![CDATA[Trafic fa0/0.1 VLAN 1]]></text> 
+ </component>
+  
+<component id="s4_ID_txt03">
+      <text><![CDATA[Trafic fa0/0.15 VLAN 15]]></text> 
+  </component>
+  
+  
+  <component id="s4_ID_txt04">
+      <text><![CDATA[Trafic fa0/0.35 VLAN 35]]></text> 
+  </component>
+  
+  <component id="s4_ID_txt05">
+                <text><![CDATA[VLAN 1]]></text> 
+  </component>
+  
+  <component id="s4_ID_txt06">
+                <text><![CDATA[VLAN 15]]></text> 
+  </component>
+  
+  <component id="s4_ID_txt07">
+                <text><![CDATA[VLAN 35]]></text> 
+  </component>
+  
+  <component id="s4_ID_txt08">
+                   <text><![CDATA[Interface fa0/0]]></text> 
+  </component>
+<component id="s4_ID_txt09">
+      <text><![CDATA[  Comm.]]></text> 
+  </component> 
+
+<component id="ID_txt05">
+<text><![CDATA[<ul><li>Le protocole VTP (VLAN Trunking Protocol) fournit une méthode de contrôle, de distribution et de maintenance centralisés de la base de données des réseaux locaux virtuels d’une entreprise.</li><br/><li>Les commutateurs sont de type serveur, client ou transparent.</li><br/><li>Un serveur émet une mise à jour VTP s’il possède un numéro de révision supérieur à celui d’autres commutateurs.</li><br/><li>Les réseaux locaux virtuels sont adaptés au trafic sensible au temps, par exemple les signaux vocaux.</li><br/><li>Le respect de méthodes recommandées, notamment un nom de domaine VTP cohérent et un contrôle du numéro de révision, permet d’optimiser le réseau.</li></ul>]]></text>          
+
+</component>	
+
+
+
+</textcomponents>

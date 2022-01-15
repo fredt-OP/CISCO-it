@@ -1,0 +1,97 @@
+﻿<textcomponents>
+<!--Question text - blockindent code moves the text away from the left edge a bit--> <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+<text><![CDATA[1. <textformat blockindent='13'>La société XYZ conçoit et fabrique des circuits imprimés complexes utilisés dans les avions. Quel type d’ordinateur est le mieux adapté au travail de conception ?</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+<text><![CDATA[2. <textformat blockindent='13'>Mario achète un ordinateur pour sa famille. Il a besoin d’applications de traitement de texte, de feuille de calcul, et il veut pouvoir lire des DVD. Quel type d’ordinateur est le mieux adapté à ses besoins ?</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+<text><![CDATA[3. <textformat blockindent='13'>La société Animatics développe des logiciels de réalité virtuelle pour le secteur des jeux. Quel type d’ordinateur serait le mieux pour développer de tels logiciels ?</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+<text><![CDATA[4. <textformat blockindent='13'>ABC S.A. vient d’engager 10 nouveaux employés pour son centre d’assistance afin d’assurer l’assistance des utilisateurs finaux du réseau. Le personnel d’assistance aura besoin d’exécuter des applications bureautiques de base ainsi que les applications de relevé d’erreurs d’assistance. Quel type d’ordinateur convient le mieux à ce type de travail ?</textformat>]]></text>
+</component>
+
+<component id="txt_q5">
+<text><![CDATA[5. <textformat blockindent='13'>La société de vente par correspondance de Mana s’est développée de façon significative, et elle a besoin d’un nouvel ordinateur pour héberger son site Web. Elle prévoit qu’un nombre élevé de clients Web vont accéder quotidiennement à son ordinateur. Elle veut également l’utiliser pour le stockage centralisé de fichiers et pour la messagerie électronique des employés. Quel type d’ordinateur est le mieux adapté à ses besoins ?</textformat>]]></text>
+</component>
+
+<!-- Instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Identifiez l’ordinateur qui se comporte en serveur, en station de travail ou en ordinateur de bureau pour chaque scénario.<br/><br/><b>Cliquez sur le rôle de serveur, de station de travail ou d’ordinateur de bureau approprié.</b>]]></text>
+</component>
+
+<!-- -->
+<component id="id_descr">
+	<text><![CDATA[<font size="14"> </font>]]></text>
+</component>
+
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[5]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Serveur</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Station de travail</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>Ordinateur de bureau</b>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0--> <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a2">
+<text><![CDATA[3]]></text>
+</component>
+<component id="txt_a3">
+<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a4">
+<text><![CDATA[3]]></text>
+</component>
+<component id="txt_a5">
+<text><![CDATA[1]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Correct. Vous avez identifié le type d’ordinateur correct pour chaque scénario. Cliquez sur Suivant pour continuer.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Incorrect. Revoyez les applications respectives du serveur, de la station de travail et de l’ordinateur de bureau, puis réessayez.]]></text></component>
+
+</textcomponents>

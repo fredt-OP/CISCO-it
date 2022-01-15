@@ -1,0 +1,117 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur chaque étape du processus de résolution DNS pour plus d’informations.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Demande de recherche directe</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Nom du serveur</b>]]></text>
+</component>
+
+<component id="ID_txt02a">
+<text><![CDATA[<b>Nom du serveur</b>]]></text>
+</component>
+
+<component id="ID_txt02b">
+<text><![CDATA[<b>Nom du serveur</b>]]></text>
+</component>
+
+<component id="ID_txt02c">
+<text><![CDATA[<b>Nom du serveur</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Stanford</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>racine</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>com</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>cisco</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Serveur Web</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+
+
+<component id="Button1">
+<text><![CDATA[<b>Étape 1</b>]]></text>
+</component>
+
+<component id="Button2">
+<text><![CDATA[<b>Étape 2</b>]]></text> 
+</component>
+
+<component id="Button3">
+<text><![CDATA[<b>Étape 3</b>]]></text> 
+</component>
+
+<component id="Button4">
+<text><![CDATA[<b>Étape 4</b>]]></text> 
+</component>
+
+<component id="Button5">
+<text><![CDATA[<b>Étape 5</b>]]></text> 
+</component>
+
+<component id="myTable1">
+<text><![CDATA[Le résolveur transmet une demande DNS récurrente au serveur DNS local pour obtenir l’adresse IP du serveur Web. Cisco.com est le nom de domaine complet de l’hôte distant. Le serveur DNS local lance une recherche dans sa base de données DNS et dans le cache DNS pour savoir si le mappage de ce nom est enregistré. Il ne le trouve pas.]]></text> 
+</component>
+
+<component id="myTable1a">
+<text><![CDATA[Étape 1 : demande récurrente locale]]></text> 
+</component>
+
+<component id="myTable2">
+<text><![CDATA[Le serveur DNS local envoie ensuite une demande DNS itérative à l’un des serveurs racines préconfigurés pour connaître les serveurs DNS qui gèrent le domaine de niveau supérieur (.com). Le serveur DNS racine transmet la liste des serveurs DNS qui gèrent le domaine de niveau supérieur .com. Le serveur DNS local enregistre ensuite l’emplacement des serveurs DNS .com dans sa mémoire cache. ]]></text> 
+</component>
+
+<component id="myTable2a">
+<text><![CDATA[Étape 2 : demande itérative sur le domaine racine]]></text> 
+</component>
+
+<component id="myTable3">
+<text><![CDATA[Le serveur DNS local envoie ensuite une demande DNS itérative à l’un des serveurs .com pour connaître les serveurs DNS qui gèrent les domaines de niveau secondaire (cisco.com). Le serveur .com transmet la liste des serveurs DNS qui gèrent le domaine cisco.com. Le serveur DNS local enregistre ensuite l’emplacement des serveurs DNS cisco.com dans sa mémoire cache.]]></text> 
+</component>
+
+<component id="myTable3a">
+<text><![CDATA[Étape 3 : demande itérative sur un domaine de niveau supérieur]]></text> 
+</component>
+
+<component id="myTable4">
+<text><![CDATA[Le serveur DNS local envoie ensuite une demande DNS itérative à l’un des serveurs cisco.com pour demander l’adresse IP de webserver.cisco.com. Le serveur DNS cisco.com transmet le mappage de l’adresse IP pour webserver.cisco.com. Le serveur DNS local stocke ensuite l’enregistrement des ressources dans sa mémoire cache.]]></text> 
+</component>
+
+<component id="myTable4a">
+<text><![CDATA[Étape 4 : demande itérative sur un domaine de second niveau]]></text> 
+</component>
+
+<component id="myTable5">
+<text><![CDATA[Le serveur DNS local envoie une réponse au client en fournissant l’adresse IP de webserver.cisco.com. Le client reprend cette adresse pour se connecter au serveur Web distant et demander la page Web.]]></text> 
+</component>
+
+<component id="myTable5a">
+<text><![CDATA[Étape 5 : réponse locale]]></text> 
+</component>
+
+
+
+
+</textcomponents>
+
+

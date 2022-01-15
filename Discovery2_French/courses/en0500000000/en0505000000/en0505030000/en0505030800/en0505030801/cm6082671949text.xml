@@ -1,0 +1,116 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Configuring Static NAT using Cisco IOS CLI</b>]]></text>
+</component>
+
+<component id="ID_inst">
+  <text><![CDATA[<b>Click each step to learn how to configure static NAT.</b>]]></text> 
+  </component>
+  
+<component id="ID_txt01a">
+  <text><![CDATA[<b>Step 1. Specify the inside interface</b><br/><br/>To begin configuring NAT services on a Cisco router navigate to the privileged EXEC mode, enter the password if prompted to and then enter the global configuration mode. Specify which interface is connected to the inside local network. Doing this enters the interface configuration mode. Use these commands:<br/><br/><font face="_typewriter">Router> <b>enable </b><br/>Router# <b>configure terminal</b><br/><br/>Router(config)# <b>interface fastethernet 0/0 </b></font>]]></text> 
+  </component>
+
+  <component id="ID_txt01_cmd">
+  <text><![CDATA[<font face="_typewriter">Router(config)# <b>interface fastethernet 0/0</b></font>]]></text> 
+  </component>
+  
+  
+  
+  <component id="ID_txt02a">
+    <text><![CDATA[<b>Step 2. Set the primary IP address of the inside interface</b><br/><br/>Use this command to set the primary IP address for the inside interface:<br/><br/><font face="_typewriter">Router(config-if)# <b>ip address 172.31.232.182 255.255.255.0</b></font>]]></text> 
+  </component>
+    
+    <component id="ID_txt02_cmd">
+      <text><![CDATA[<font face="_typewriter">Router(config-if)# <b>ip address 172.31.232.182 255.255.255.0</b></font>]]></text> 
+  </component>
+  
+  
+  <component id="ID_txt03a">
+    <text><![CDATA[<b>Step 3. Identify the inside interface using the <font face="_typewriter">ip nat inside</font> command</b><br/><br/>Now identify this interface as the interface connected to the inside of the network and then exit the configuration of the inside interface and return to configuration mode. Use these commands:<br/><br/><font face="_typewriter">Router(config-if)# <b>ip nat inside</b><br/>Router(config-if)# <b>no shutdown</b><br/>Router(config-if)# <b>exit</b></font>]]></text> 
+  </component> 
+        
+        <component id="ID_txt03_cmd">
+          <text><![CDATA[<font face="_typewriter">Router(config-if)# <b>ip nat inside</b><br/>Router(config-if)# <b>no shutdown</b><br/>Router(config-if)# <b>exit</b></font>]]></text> 
+    </component>
+    
+    
+    <component id="ID_txt04a">
+      <text><![CDATA[<b>Step 4. Specify the outside interface</b><br/><br/>Configure the outside interface. Specify the interface connecting to the Internet Service Provider and return to the interface configuration mode. Use this command:<br/><br/><font face="_typewriter">Router(config)# <b>interface serial 0/0</b></font>]]></text> 
+    </component> 
+      
+    <component id="ID_txt04_cmd">
+      <text><![CDATA[<font face="_typewriter">Router(config)# <b>interface serial 0/0</b></font>]]></text> 
+    </component>
+    
+    
+    <component id="ID_txt05a">
+      <text><![CDATA[<b>Step 5. Set the primary IP address of the outside interface</b><br/><br/>Now identify this interface as the interface connected to the outside of the network and then exit the configuration of the outside interface and return to configuration mode. Use these commands:<br/><br/><font face="_typewriter">Router(config-if)# <b>ip address 209.165.201.1 255.255.255.252</b></font>]]></text> 
+    </component>
+    
+    <component id="ID_txt05_cmd">
+      <text><![CDATA[<font face="_typewriter">Router(config-if)# <b>ip address 209.165.201.1 255.255.255.252</b></font>]]></text> 
+  </component>
+  
+  
+	  <component id="ID_txt06a">
+		<text><![CDATA[<b>Step 6. Identify the outside interface using the <font face="_typewriter">ip nat outside</font> command </b><br/><br/>Now identify this interface as the interface connected to the outside of the network and then exit the configuration of the outside interface and return to configuration mode. Use these commands:<br/><br/><font face="_typewriter">Router(config-if)# <b>ip nat outside</b><br/>Router(config-if)# <b>no shutdown</b><br/>Router(config-if)# <b>exit</b></font>]]></text> 
+	  </component> 
+        
+     <component id="ID_txt06_cmd">
+          <text><![CDATA[<font face="_typewriter">Router(config-if)# <b>ip nat outside</b><br/>Router(config-if)# <b>no shutdown</b><br/>Router(config-if)# <b>exit</b></font>]]></text> 
+    </component>
+    
+    
+    <component id="ID_txt07a">
+      <text><![CDATA[<b>Step 7. Define the static address translation</b><br/><br/>Use this command to create the translation:<br/><br/><font face="_typewriter">Router(config)# <b>ip nat inside source static 172.31.232.14 209.165.202.130</b></font><br/><br/>In this example, a server with the inside address 172.31.232.14 is always translated to the external address 209.165.202.130. Use this command to create the translation. When finished, exit the global configuration mode.<br/><br/>]]></text> 
+    </component> 
+        
+    <component id="ID_txt07_cmd">
+          <text><![CDATA[<font face="_typewriter">Router(config)# <b>ip nat inside source static 172.31.232.14 209.165.202.130</b><br/>Router(config)# <b>exit</b></font>]]></text> 
+    </component>
+    
+    
+    <component id="ID_txt08a">
+      <text><![CDATA[<b>Step 8. Verify the configuration</b><br/><br/>Verify the static NAT configuration. Use this command:<br/><br/><font face="_typewriter"><b>show running-config</b></font><br/><br/>Here is an example:<br/><br/><font face="_typewriter"><b>!<br/>interface fastethernet 0/0<br/>ip address 172.31.232.182 255.255.255.0<br/>ip nat inside<br/>!<br/>interface serial 0/0<br/>ip address 209.165.201.1 255.255.255.252<br/>ip nat outside</b><br/><b>ip nat inside source static 172.31.232.14 209.165.202.130</b></font><br/><br/>Be sure to save the running-configuration to the startup-configuration.]]></text> 
+    </component> 
+    
+    <component id="ID_txt08_cmd">
+      <text><![CDATA[<b><font face="_typewriter"><b>show running-config</b></font>]]></text> 
+    </component> 
+    
+    <component id="Step_1">
+    <text><![CDATA[<b>Step 1</b>]]></text> 
+    </component>
+    
+    <component id="Step_2">
+    <text><![CDATA[<b>Step 2</b>]]></text> 
+    </component>
+    
+    <component id="Step_3">
+    <text><![CDATA[<b>Step 3</b>]]></text> 
+    </component>
+    
+    <component id="Step_4">
+    <text><![CDATA[<b>Step 4</b>]]></text> 
+    </component>  
+    
+    <component id="Step_5">
+    <text><![CDATA[<b>Step 5</b>]]></text> 
+    </component>
+    
+    <component id="Step_6">
+    <text><![CDATA[<b>Step 6</b>]]></text> 
+    </component> 
+    
+    <component id="Step_7">
+    <text><![CDATA[<b>Step 7</b>]]></text> 
+    </component>
+    
+    <component id="Step_8">
+    <text><![CDATA[<b>Step 8</b>]]></text> 
+    </component>  
+  
+  
+</textcomponents>

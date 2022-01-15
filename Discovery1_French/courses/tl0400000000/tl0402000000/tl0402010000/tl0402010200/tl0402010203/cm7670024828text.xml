@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<!-- instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Pendant cet exercice, vous devez déterminer le type de licence logicielle approprié pour un scénario donné.<br/><br/><b>En fonction du scénario, sélectionnez le type de licence (commerciale ou GPL) qui convient le mieux.</b>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[4]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>Licence commerciale</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>Licence GPL</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit--> <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Jackie gère une petite société d’architecture d’intérieur. Trois décorateurs travaillent pour elle, et aucun d’entre eux ne connaît vraiment l’informatique ou les systèmes d’exploitation. Ils ont besoin d’un système simple d’utilisation et dont l’assistance est très structurée.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Amy est une programmatrice très expérimentée qui a besoin d’un système d’exploitation qui lui permettra d’optimiser les fonctionnalités de ses programmes. Elle ne dépend pas d’une assistance structurée et ne voit aucun inconvénient à traiter de gros volumes de codes de programmation.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Petros vient de se faire donner un vieil ordinateur par un ami et doit télécharger un système d’exploitation pour le rendre utilisable. Il ne veut pas investir d’argent dans une machine qui ne lui servira qu’à accéder à Internet pour visualiser des pages Web.</textformat>]]></text>
+</component>
+
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='13'>Garret vient d’acheter un ordinateur portable pour pouvoir emporter du travail chez lui le soir et les fins de semaine. Il souhaite utiliser son portable pour se connecter à Internet et accéder à sa messagerie électronique sur le Web. Sur le lieu de travail de Garret, Microsoft Windows XP est installé sur tous les ordinateurs, et toutes les applications exécutent uniquement ce système d’exploitation.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0--> <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Vous avez correctement identifié le type de licence requis pour chaque scénario. Jackie a besoin d’une licence commerciale pour l’assistance structurée et la simplicité d’utilisation qu’elle procure. Amy, quant à elle, doit opter pour une licence GPL parce qu’elle est un programmeur hors pair et qu’elle veut apporter des modifications au code système. Petros a lui aussi besoin d’une licence GPL parce qu’il ne veut rien dépenser et que l’utilisation qu’il veut faire de son ordinateur est limitée. Garret a besoin d’une licence commerciale capable de prendre en charge toutes les applications courantes. Cliquez sur Suivant pour continuer.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Comparez les possibilités offertes par une licence GPL et un système d’exploitation commercial, puis réessayez.]]></text>
+</component>
+
+</textcomponents>

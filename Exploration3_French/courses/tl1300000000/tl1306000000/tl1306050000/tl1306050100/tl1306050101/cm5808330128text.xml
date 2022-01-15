@@ -1,0 +1,16 @@
+<textcomponents>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Dans ce chapitre, vous avez appris les éléments suivants :</b></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li>Le routage entre VLAN est accompli à l’aide d’un routeur dédié ou d’un commutateur multicouche. Le routage entre VLAN facilite la communication entre des périphériques isolés par des limites de VLAN.</li><br/><li>Le routage traditionnel entre VLAN exige qu’un routeur soit configuré avec plusieurs interfaces physiques, chacune connectée physiquement à des VLAN distincts sur un commutateur.</li><br/><li>Le modèle « router-on-a-stick » offre une fonctionnalité similaire au routage traditionnel entre VLAN à un coût réduit, mais avec des performances plus faibles sur des réseaux chargés.</li><br/><li>Le routage traditionnel entre VLAN utilise les interfaces physiques du routeur, tandis que le modèle « router-on-a-stick » utilise des sous-interfaces logiques de l’interface physique.</li><br/><li>Configurez des ports de commutateur connectés au routeur pour les VLAN appropriés. Configurez chaque interface de routeur avec le sous-réseau associé à chaque VLAN.</li><br/><li>Configurez chaque sous-interface sur un router-on-a-stick avec un ID de VLAN unique et l’adresse IP correspondante pour le sous-réseau associé au VLAN.</li><br/><li>Pour réduire le risque de problèmes de configuration de commutateur, de routeur ou d’adresse IP, vérifiez la configuration de chaque périphérique.</li><br/></ul></td>
+  </tr>
+</table>]]></text>
+</component>
+
+<component id="ID_title"><text><![CDATA[<b></b>]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,45 @@
+
+
+																DEVICE (inFile/onPaper)
+File				Mode					Router		Switch		Switch		Switch		Switch		Switch
+											2600		1900		2950		3550		4006 Sup 2	4006 Sup 3
+											(IOS)		(MENU/IOS)	(IOS)		(IOS)		(CLI)		(IOS)
+user.fla			(>)						(1/1)		(1/1)		(1/1)		(1/1)		( /1)		(1/1)
+enable.fla			(#)						(1/1)		(1/1)		(1/1)		(1/1)		( /1)		(1/1)
+global.fla			(config)				(1/1)		(1/1)		(1/1)		( /1)		( /1)		(1/1)
+
+intAsync.fla		(async)					(1/1)		( / )		( /1)		( /1)		( / )		( /1)
+intBri.fla			(bri)					(1/1)		( / )		( / )		( / )		( / )		( / )
+intDialer.fla		(dialer)				(1/1)		( / )		( /1)		( /1)		( / )		( /1)
+intE.fla			(eth)					(1/ )		(1/1)		(1/ )		( / )		( / )		(1/?)
+intF.fla			(fast eth)				(1/1)		(1/1)		(1/1)		( /1)		( / )		( /1)
+intGig.fla			(gig eth)				( / )		( / )		(1/1)		(1/1)		( / )		(1/1)
+intLoopBack.fla		(loopback)				(1/1)		( / )		(1/1)		(1/1)		( / )		(1/1)
+intS.fla			(serial)				(1/ )		( / )		(1/ )		( / )		( / )		(1/ )
+intATM.fla              (ATM)                                   (/)
+
+intVlan.fla			(vlan)					( / )		( / )		(1/1)		(1/1)		( / )		(1/1)
+vlanDB.fla			(vlan DB)				( / )		( / )		(1/1)		(1/1)		( / )		(1/1)
+vlan.fla            (vlan)					( / )		( / )		(1/1)		( /1)		( / )		( /1)
+
+linecon.fla			(con)					(1/1)		( /1)		(1/1)		(1/1)		( / )		(1/1)
+linevty.fla			(vty)					(1/1)		( / )		(1/1)		(1/1)		( / )		(1/1)
+lineaux.fla			(aux)					(1/1)		( / )		( / )		( / )		( / )		(1/ )
+					(tty)					( /1)		( / )		( / )		( / )		( / )		( / )
+
+routerBGP.fla		(bgp) (router)			(1/1)		( / )		( / )		( /1)		( / )		(1/1)
+routerEIGRP.fla		(eigrp) (router)		(1/1)		( / )		( / )		(1/1)		( / )		(1/1)
+routerIGRP.fla		(igrp) (router)			(1/1)		( / )		(1/ )		(1/1)		( / )		(1/1)
+routerRIP.fla		(rip) (router)			(1/1)		( / )		(1/ )		(1/1)		( / )		(1/1)
+routerOSPF.fla      (ospf) (router)			(1/1)		( / )		( / )		(1/1)		( / )		(1/1)
+
+controllerT1.fla	(config-controller)		(1/1)		( / )		( / )		( / )		( / )		( / )
+ExtNacl.fla			(config-ext-nacl)		(1/1)		( / )		(1/1)		(1/1)		( / )		(1/1)
+mapClass.fla		(config-map-class)		(1/1)		( / )		(1/1)		(1/1)		( / )		(1/1)
+routerAF.fla		(config-router-af)		(1/1)		( / )		( / )		( / )		( / )		(1/1)
+subifF.fla			(config-subif)			(1/1)		( / )		( /1)		( /1)		( / )		( / )
+subifS.fla			(config-subif)			(1/1)		( / )		(1/1)		( /1)		( / )		( / )
+subifG.fla			(config-subif)			( / )		( / )		( / )		( / )		( / )		( / )
+timeRange.fla		(config-time-range)		(1/1)		( / )		(1/1)		(1/1)		( / )		(1/1)
+dhcp.fla			(dhcp-config)			(1/1)		( / )		( / )		( / )		( / )		(1/1)
+routeMap.fla		(config-route-map)		(1/1)		( / )		( / )		(1/1)		( / )		(1/1)

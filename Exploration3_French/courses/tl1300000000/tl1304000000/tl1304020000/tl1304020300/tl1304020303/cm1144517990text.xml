@@ -1,0 +1,164 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Annonces VTP</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur Lire pour lancer chaque animation.</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Résumé</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>Sous-ensemble</b>]]></text>
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<b>Requête</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Serveur</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Résumé</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Les annonces de type résumé :</b><ul><li>sont envoyées toutes les 5 minutes par un serveur VTP ;</li><li>informent les commutateurs compatibles VTP du numéro de révision de configuration VTP courant ;</li><li>sont envoyées immédiatement après une modification de configuration.</li></ul>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Les modifications qui déclenchent une annonce de type sous-ensemble comprennent :<ul><li>Création ou suppression d’un réseau local virtuel</li><li>Arrêt ou activation d’un réseau local virtuel</li><li>Modification du nom d’un réseau local virtuel</li><li>Modification de la MTU d’un réseau local virtuel</li></ul></b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Serveur</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Résumé</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Sous-ensemble</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Quand une annonce de type requête est envoyée à un serveur VTP :</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Serveur</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Client</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Résumé</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>Sous-ensemble</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Requête</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>Quand une annonce de type requête est envoyée à un serveur VTP :<ul><li>le serveur VTP envoie une annonce de type résumé.</li></ul></b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>Quand une annonce de type requête est envoyée à un serveur VTP :<ul><li>le serveur VTP envoie une annonce de type résumé,</li><li>puis il envoie une annonce de type sous-ensemble.</li></ul></b>]]></text>
+</component>
+
+<component id="ID_txt18">
+<text><![CDATA[<b>Des annonces de type requête sont envoyées si :<ul><li>le nom de domaine VTP a été changé ;</li><li>une annonce de type résumé arrive avec un numéro de révision de configuration supérieur ;</li><li>il manque un message d’annonce de type sous-ensemble ;</li><li>le commutateur a été réinitialisé.</li></ul></b>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Texte]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward2">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute2">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute2"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Texte]]></text>
+</component>
+
+<component id="play3">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause3">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind3">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward3">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute3">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute3"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous3"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next3">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript3">
+<text><![CDATA[Texte]]></text>
+</component>
+
+</textcomponents>

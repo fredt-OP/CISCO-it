@@ -1,0 +1,75 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Cliquez sur les boutons pour voir les diapositives.]]></text>
+</component>
+
+<component id="ID_button1">
+<text><![CDATA[<b>Syntaxe d’une ACL standard</b>]]></text>
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[<b>Supprimer l’ACL</b>]]></text>
+</component>
+
+<component id="ID_button3">
+<text><![CDATA[<b>Remarque</b>]]></text>
+</component>
+
+<!-- slide 1-->
+<component id="ID_title01">
+<text><![CDATA[<b>Syntaxe de la commande <font face='_sans'>access-list</font> de la liste de contrôle d’accès standard</b>]]></text>
+</component>
+
+<component id="ID_header1">
+<text><![CDATA[<font color='#FFFFFF'><b>Paramètre</b></font>]]></text>
+</component>
+
+<component id="ID_header2">
+<text><![CDATA[<font color='#FFFFFF'><b>Description</b></font>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' bordercolor='#CCCCCC' borderwidth='1' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='150' bgcolor='#F2F2F2'><font face='_sans'>numéro-liste-accès</font></td>
+<td bgcolor='#F2F2F2'>Numéro d’une liste de contrôle d’accès. C’est un nombre décimal entre 1 et 99, ou entre 1300 et 1999 (pour une liste de contrôle d’accès standard).</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'><font face='_sans'><b>deny</b></font></td>
+<td bgcolor='#DDDDDD'>Refuse l’accès si les conditions sont respectées.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'><font face='_sans'><b>permit</b></font></td>
+<td bgcolor='#F2F2F2'>Autorise l’accès si les conditions sont respectées.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'><font face='_sans'><b>remark</b></font></td>
+<td bgcolor='#DDDDDD'>Ajoutez une remarque sur les entrées dans une liste de contrôle d’accès IP pour en faciliter la compréhension et la recherche.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'><font face='_sans'><i>source</i></font></td>
+<td bgcolor='#F2F2F2'>Numéro du réseau ou de l’hôte d’où provient le paquet. Il existe deux moyens de spécifier la <i>source</i> :<ul><li>Utilisez une séquence de 32 bits en notation décimale à quatre parties.</li><li>Utilisez le mot clé <font face='_sans'><b>any</b></font> comme abréviation d’une <font face='_sans'><i>source</i></font> et le <font face='_sans'><i>masque-générique-source</i></font> 0.0.0.0 255.255.255.55.</li></ul></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'><font face='_sans'><i>masque-générique-source</i></font></td>
+<td bgcolor='#DDDDDD'>(Facultatif) Bits de masque générique à appliquer à la source. Il existe deux moyens de spécifier le masque-générique-source :<ul><li>Utilisez une séquence de 32 bits en notation décimale à quatre parties. Placez les uns dans les positions de bits à ignorer.</li><li>Utilisez le mot clé <font face='_sans'><b>any</b></font> comme abréviation d’une <font face='_sans'><i>source</i></font> et le <font face='_sans'><i>masque-générique-source</i></font> 0.0.0.0 255.255.255.55.</li></ul></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'><font face='_sans'><b>log</b></font></td>
+<td bgcolor='#F2F2F2'><p>(Facultatif) Provoque un message de journalisation informatif au sujet du paquet correspondant à l’entrée à envoyer à la console. La commande <font face='_sans'><b>logging console</b></font> contrôle le niveau des messages enregistrés sur la console.</p><br/><p>Le message comprend le numéro de la liste de contrôle d’accès (que le paquet ait été autorisé ou refusé), l’adresse source et le nombre de paquets. Le message est généré pour le premier paquet pour lequel il y a correspondance, puis par intervalles de cinq minutes, et comprend le nombre de paquets autorisés ou refusés dans l’intervalle de cinq minutes précédent.</p></td>
+</tr>
+</table>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_title02">
+<text><![CDATA[<b>Suppression d’une liste de contrôle d’accès</b>]]></text>
+</component>
+
+<!-- slide 3 -->
+<component id="ID_title03">
+<text><![CDATA[<b>Documentation d’une liste de contrôle d’accès</b>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 12:01:31">
+<title><content-text><![CDATA[4.2.4 - TCP Three-Way Handshake]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a Wireshark screenshot of an Ethernet frame showing the initial client request (SYN) in a TCP three-way handshake. In the screenshot, various information lines are highlighted.<br><br>Frame 14: Source IP 10.1.1.1, Destination IP 192.168.254.254.<br>Frame 14 detail:<br>Transmission Control Protocol, Source Port: 1069 (1069), Destination Port: http (80), Seq: 0, Len: 0.<br>Flags: 0x02 (SYN)<br>00000010=Syn: Set<br><br>The initial client request in frame 14 shows the following TCP segment information:<br>-	SYN flag set to validate an initial sequence number.<br>-	Randomized sequence number valid (relative value is 0).<br>-	Random source port 1069.<br>-	Well-known destination port 80 (HTTP port) indicating web server (httpd).<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

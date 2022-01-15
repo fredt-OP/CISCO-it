@@ -1,0 +1,184 @@
+<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Ethernet Communication</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Ethernet Frame</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>MAC Address</B>]]></text> 
+</component>
+
+<component id="ID_caption">
+  <text><![CDATA[<B>Click the buttons to view different communication types.</B>]]></text> 
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[<B>Unicast:<br/></B>One sender and one receiver]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<B>Broadcast:<br/></B>One sender to all other addresses ]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[<B>Multicast:<br/></B>One sender to a group of addresses ]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[<B>Client Group</B>]]></text> 
+</component>
+
+
+<component id="ID_txt01_02">
+<text><![CDATA[<b>IEEE 802.3</b>]]></text>
+</component>
+<component id="ID_txt02_02">
+  <text><![CDATA[<b>7</b>]]></text> 
+  </component>
+<component id="ID_txt03_02">
+  <text><![CDATA[<b>1</b>]]></text> 
+  </component>
+<component id="ID_txt04_02">
+  <text><![CDATA[<b>6</b>]]></text> 
+  </component>
+<component id="ID_txt05_02">
+  <text><![CDATA[<b>6</b>]]></text> 
+  </component>
+<component id="ID_txt06_02">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+<component id="ID_txt07_02">
+  <text><![CDATA[<b>46 to 1500</b>]]></text> 
+  </component>
+<component id="ID_txt08_02">
+  <text><![CDATA[<b>4</b>]]></text> 
+  </component>
+<component id="ID_txt09_02">
+  <text><![CDATA[<b>Preamble</b>]]></text> 
+  </component>
+<component id="ID_txt10_02">
+  <text><![CDATA[<b>Start of Frame Delimiter</b>]]></text> 
+  </component>
+<component id="ID_txt11_02">
+<text><![CDATA[<b>Destination Address</b>]]></text>
+</component>
+<component id="ID_txt12_02">
+  <text><![CDATA[<b>Source Address</b>]]></text> 
+  </component>
+<component id="ID_txt13_02">
+  <text><![CDATA[<b>Length/ Type</b>]]></text> 
+  </component>
+<component id="ID_txt14_02">
+  <text><![CDATA[<b>802.2 Header and Data</b>]]></text> 
+  </component>
+<component id="ID_txt15_02">
+  <text><![CDATA[<b>Frame Check Sequence</b>]]></text> 
+  </component>
+<component id="ID_txtTitle">
+<text><![CDATA[Preamble]]></text>
+</component>
+<component id="ID_txtBody">
+<text><![CDATA[7 byte Frame Preamble]]></text>
+</component>
+<component id="ID_txtTitle2">
+<text><![CDATA[Start of Frame Delimiter]]></text>
+</component>
+<component id="ID_txtBody2">
+<text><![CDATA[1 byte Start of Frame Delimiter]]></text>
+</component>
+<component id="ID_txtTitle3">
+<text><![CDATA[Destination Address]]></text>
+</component>
+<component id="ID_txtBody3">
+<text><![CDATA[6 byte Destination MAC Address]]></text>
+</component>
+<component id="ID_txtTitle4">
+<text><![CDATA[Source Address]]></text>
+</component>
+<component id="ID_txtBody4">
+<text><![CDATA[6 byte Source MAC Address]]></text>
+</component>
+<component id="ID_txtTitle5">
+<text><![CDATA[Length/ Type]]></text>
+</component>
+<component id="ID_txtBody5">
+<text><![CDATA[2 byte Frame Length or Encapsulated Protocol Type]]></text>
+</component>
+<component id="ID_txtTitle6">
+<text><![CDATA[802.2 Header and Data]]></text>
+</component>
+<component id="ID_txtBody6">
+<text><![CDATA[46 to 1500 byte Data (Encapsulated Packet) plus Padding if required]]></text>
+</component>
+<component id="ID_txtTitle7">
+<text><![CDATA[Frame Check Sequence]]></text>
+</component>
+<component id="ID_txtBody7">
+<text><![CDATA[4 byte Frame Check Sequence (CRC Checksum)]]></text>
+</component>
+<component id="ID_inst">
+  <text><![CDATA[<b>Roll over each field name to see description.</b>]]></text> 
+  </component>
+
+
+<component id="ID_txt01_03">
+<text><![CDATA[<b>MAC Address</b>]]></text>
+</component>
+<component id="ID_txt02_03">
+  <text><![CDATA[<b>Broadcast</b>]]></text> 
+  </component>
+<component id="ID_txt03_03">
+  <text><![CDATA[<b>Local</b>]]></text> 
+  </component>
+<component id="ID_txt04_03">
+  <text><![CDATA[<b>OUI Number</b>]]></text> 
+  </component>
+<component id="ID_txt05_03">
+  <text><![CDATA[<b>"OUI"</b>]]></text> 
+  </component>
+<component id="ID_txt06_03">
+  <text><![CDATA[<b>"Vendor Number"</b>]]></text> 
+  </component>
+<component id="ID_txt07_03">
+  <text><![CDATA[<b>Vendor Assignment</b>]]></text> 
+  </component>
+<component id="ID_txtTitle_02">
+<text><![CDATA[Broadcast]]></text>
+</component>
+<component id="ID_txtBody_02">
+<text><![CDATA[The broadcast bit indicates to the receiving interface that the frame is destined for all or a group of end stations on the LAN segment.]]></text>
+</component>
+<component id="ID_txtTitle2_02">
+<text><![CDATA[Local]]></text>
+</component>
+<component id="ID_txtBody2_02">
+<text><![CDATA[The Local bit indicates if the 24-bit vendor number can be modified locally.]]></text>
+</component>
+<component id="ID_txtTitle3_02">
+<text><![CDATA[OUI Number]]></text>
+</component>
+<component id="ID_txtBody3_02">
+<text><![CDATA[The OUI number is 22 bits long. It is assigned by IEEE and it identifies the manufacturer of the NIC card.]]></text>
+</component>
+<component id="ID_txtTitle4_02">
+<text><![CDATA[OUI]]></text>
+</component>
+<component id="ID_txtBody4_02">
+<text><![CDATA[The OUI is 24 bits long and is made up the broadcast, local and OUI number fields.]]></text>
+</component>
+<component id="ID_txtTitle5_02">
+<text><![CDATA[Vendor Number / Assignment]]></text>
+</component>
+<component id="ID_txtBody5_02">
+<text><![CDATA[The vendor assignment part of the MAC address is a 24 bit long number (vendor number) that uniquely identifies the Ethernet hardware.]]></text>
+</component>
+<component id="ID_inst03">
+  <text><![CDATA[<b>Roll over each field name to see description.</b>]]></text> 
+  </component>
+
+
+</textcomponents>

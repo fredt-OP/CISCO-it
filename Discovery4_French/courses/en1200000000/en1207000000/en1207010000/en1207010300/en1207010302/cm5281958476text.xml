@@ -1,0 +1,45 @@
+﻿<textcomponents>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Network Function</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Method To Test</b></font></td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'>Isolate traffic using VLANs to support IP cameras.</td>
+<td bgcolor='#E1F0FF'>Create VLAN, install camera (or PC emulating camera). Verify VLAN configuration on switch. Use Wireshark to examine packets.</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Trunk VLAN to Distribution Layer.</td>
+<td bgcolor='#F2F2F2'>Create trunk links to Distribution Layer device. Verify trunk operation.</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'>Address and access the camera devices using IP addresses.</td>
+<td bgcolor='#E1F0FF'>Assign IP addresses to all devices, per the network design. Verify configuration by using ping.</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Route traffic appropriately using EIGRP.</td>
+<td bgcolor='#F2F2F2'>Configure EIGRP routing to route VLANs. Verify routing using show commands, ping, and trace route.</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'>Place access lists to permit authorized viewing stations.</td>
+<td bgcolor='#E1F0FF'>Configure and place access lists to permit only selected viewing stations to have access to the cameras. Test using ping and access-list logging.</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Test end-to-end application performance.</td>
+<td bgcolor='#F2F2F2'>Display video on PC located across the network. Collect information on bandwidth usage, quality of video stream. Add traffic on the network using a traffic simulation program and observe quality of video.</td>
+
+
+</table>
+]]></text>
+</component>
+
+</textcomponents>

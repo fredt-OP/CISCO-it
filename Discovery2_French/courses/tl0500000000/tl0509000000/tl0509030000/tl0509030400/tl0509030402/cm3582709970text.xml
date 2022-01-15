@@ -1,0 +1,63 @@
+﻿<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Cliquez sur les boutons pour afficher le fonctionnement du relais DHCP.</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>Problème de DHCP</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Problème d’hôte</b>]]></text>
+</component>
+
+<component id="ID_button03">
+<text><![CDATA[<b>Config. relais</b>]]></text>
+</component>
+
+<component id="ID_button04">
+<text><![CDATA[<b>Renouv. hôte</b>]]></text>
+</component>
+
+<!-- topology -->
+<component id="ID_top_txt01">
+<text><![CDATA[<b>Serveur<br />DHCP</b>]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_S1_title">
+<text><![CDATA[<b>Problèmes de DHCP</b>]]></text>
+</component>
+
+<component id="ID_S1_bubble1">
+<text><![CDATA[Désolé, je ne peux pas transférer de diffusions en dehors de votre sous-réseau...]]></text>
+</component>
+
+<component id="ID_S1_bubble2">
+<text><![CDATA[Recherche d’un serveur DHCP...]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_S2_title">
+<text><![CDATA[<b>Relais DHCP</b>]]></text>
+</component>
+
+<component id="ID_S2_code">
+<text><![CDATA[<font face='_typewriter' color='#ffffff'><b>C:\Documents and Settings\Administrateur&gt;ipconfig /release<br /><br />Configuration IP de Windows<br /><br />Carte Ethernet Connexion au réseau local :<br /><br />        Suffixe DNS propre à la connexion. :<br />        Adresse IP . . . . . . . . . . . . : 0.0.0.0<br />        Masque de sous-réseau. . . . . . . : 0.0.0.0<br />        Passerelle par défaut. . . . . . . :<br /><br />C:\Documents and Settings\Administrateur&gt;ipconfig /renew<br /><br />Configuration IP de Windows<br /><br />Une erreur s'est produite lors du renouvellement de l'interface Connexion au réseau local : impossible de contacter votre serveur DHCP. Le délai d'attente de la demande est dépassé.<br /><br /><br />C:\Documents and Settings\Administrateur&gt;<br />&nbsp; </b></font>]]></text> 
+</component>
+
+<!-- slide 3 -->
+<component id="ID_S3_title">
+<text><![CDATA[<b>Relais DHCP</b>]]></text>
+</component>
+
+<!-- slide 4 -->
+<component id="ID_S4_title">
+<text><![CDATA[<b>Relais DHCP</b>]]></text>
+</component>
+
+<component id="ID_S4_code">
+<text><![CDATA[<font face='_typewriter' color='#ffffff'><b>C:\Documents and Settings\Administrateur>ipconfig /release<br /><br />Configuration IP de Windows<br /><br />Carte Ethernet Connexion au réseau local :<br /><br />        Suffixe DNS propre à la connexion. :<br />        Adresse IP . . . . . . . . . . . . : 0.0.0.0<br />        Masque de sous-réseau. . . . . . . : 0.0.0.0<br />        Passerelle par défaut. . . . . . . :<br /><br />C:\Documents and Settings\Administrateur>ipconfig /renew<br /><br />Configuration IP de Windows<br /><br />Carte Ethernet Connexion au réseau local :<br /><br />        Suffixe DNS propre à la connexion. :<br />        Adresse IP . . . . . . . . . . . . : 192.168.10.11<br />        Masque de sous-réseau. . . . . . . : 255.255.255.0<br />        Passerelle par défaut. . . . . . . : 192.168.10.1<br /><br />C:\Documents and Settings\Administrateur></b><br />&nbsp;</font> ]]></text> 
+</component>
+</textcomponents>

@@ -1,0 +1,113 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Déplacez le pointeur sur chaque état pour obtenir plus d’informations.</b>]]></text>
+</component>
+<component id="ID_title">
+<text><![CDATA[<b>Décrivez les problèmes liés à l’achat et à l’entretien des périphériques réseau pour une mise à niveau.</b>]]></text>
+</component>	
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Serial x is down, line protocol is down (DTE mode)</b>]]></text>
+</component>	
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Serial x is up, line protocol is down (DTE mode)</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Serial x is up, line protocol is down (DCE mode)</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Serial x is up, line protocol is up (looped)</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Serial x is up, line protocol is down (disabled)</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Serial x is administratively down, line protocol is down.</b>]]></text>
+</component>
+
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td width='150' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Problème possible :</b></font></td>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Solution de dépannage :</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><li>Indique que le routeur détecte un signal de détection de la porteuse.</li><li>Problème provenant de la compagnie de téléphone : la ligne est désactivée ou n’est pas connectée à une unité CSU/DSU.</li><li>Câblage défectueux ou incorrect. </li><li>Défaillance matérielle (CSU/DSU)</li></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Étape 1 :</b> <textformat blockindent='52'>Vérification des LED de l’unité CSU/DSU pour vérifier si les voyants lumineux sont allumés </textformat><br/><b>Étape 2 :</b> <textformat blockindent='52'>Vérification de l’utilisation du câblage et de l’interface appropriés </textformat><br/><b>Étape 3 :</b> <textformat blockindent='52'>Vérification de la présence éventuelle d’un problème au niveau de la ligne louée ou d’un autre service de l’opérateur </textformat><br/><b>Étape 4 :</b>  <textformat blockindent='52'>Remplacement du module de l’interface série par un autre module approprié correct </textformat><br/><b>Étape 5 :</b>  <textformat blockindent='52'>Remplacement de l’unité CSU/DSU par un autre périphérique approprié correct</textformat><br/> </td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td width='150' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Problème possible :</b></font></td>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Solution de dépannage :</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><li>Le routeur local ou distant n’est pas correctement configuré.</li><li>Aucun message de test d’activité n’a été envoyé par le routeur distant.</li><li>Une unité CSU ou DSU distante est en panne. </li><li>Unité CSU/DSU locale ou distante défaillante</li> </td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Étape 1 :</b> <textformat blockindent='52'>Placement du modem ou de l’unité CSU/DSU en mode de boucle locale et utilisation de la commande show interfaces serial pour déterminer si le protocole de ligne s’active Si le protocole de ligne s’active, le problème provient probablement de la compagnie de téléphone ou d’un routeur distant. </textformat><br/><b>Étape 2 :</b> <textformat blockindent='52'>Si le problème provient de l’extrémité distante, répétition de l’étape 1 du modem distant ou de l’unité CSU ou DSU </textformat><br/><b>Étape 3 :</b> <textformat blockindent='52'>Vérification de l’ensemble du câblage Assurez-vous que le câble est connecté à l’interface appropriée, à l’unité CSU/DSU appropriée et au point de terminaison approprié sur le réseau de la compagnie de téléphone. </textformat><br/><b>Étape 4 :</b> <textformat blockindent='52'>Vérification de l’encapsulation au niveau des deux extrémités du circuit </textformat><br/><b>Étape 5 :</b> <textformat blockindent='52'>Si le protocole de ligne ne s’active pas en mode de boucle locale et si l’encapsulation ne présente aucun conflit, remplacement du matériel défectueux </textformat><br/> </td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table3">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td width='150' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Problème possible :</b></font></td>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Solution de dépannage :</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><li>Commande de configuration de l’interface <font face='_typewriter'><b>clockrate</b></font> manquante.</li><li>Unité CSU/DSU locale ou distante en panne</li><li>Câblage défectueux ou incorrect</li><li>Défaillance matérielle du routeur </li></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Étape 1 :</b> <textformat blockindent='52'>Ajout de la commande de configuration d’interface <font face='_typewriter'><b>clockrate</b></font> à l’interface série </textformat><br /><b>Étape 2 :</b> <textformat blockindent='52'>Vérification de l’utilisation du câblage approprié </textformat><br /><b>Étape 3 :</b> <textformat blockindent='52'>Si le protocole de ligne est toujours désactivé, le problème provient probablement d’une défaillance au niveau du matériel ou du câblage. </textformat><br /><b>Étape 4 :</b> <textformat blockindent='52'>Remplacement des éléments défectueux par l’équipement approprié</textformat><br/> </td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table4">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td width='150' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Problème possible :</b></font></td>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Solution de dépannage :</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Présence d’une boucle dans le circuit Le numéro de séquence du paquet de test d’activité adopte un numéro aléatoire à la détection initiale d’une boucle. Si le même numéro aléatoire est renvoyé sur la liaison, une boucle est présente.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Étape 1 :</b> <textformat blockindent='52'>Utilisation de la commande <font face='_typewriter'><b>show running-config</b></font> en mode d’exécution privilégié Ceci permet de consulter les commandes <font face='_typewriter'><b>loopback</b></font> dans la configuration de l’interface.</textformat><br /><b>Étape 2 :</b> <textformat blockindent='52'>En cas de détection d’une commande de configuration d’interface <font face='_typewriter'><b>loopback</b></font>, utilisation de la commande de configuration d’interface <font face='_typewriter'><b>no loopback</b></font> pour supprimer la boucle </textformat><br /><b>Étape 3 :</b> <textformat blockindent='52'>Si vous ne détectez aucune commande de configuration d’interface <font face='_typewriter'><b>loopback</b></font>, examen de l’unité CSU/DSU pour déterminer si elle est configurée en mode de bouclage manuel. Si c’est le cas, désactivation du bouclage manuel</textformat><br /><b>Étape 4 :</b> <textformat blockindent='52'>Réinitialisation de l’unité CSU/DSU et vérification de l’état de la ligne Si le protocole de ligne se réactive, aucune autre action n’est nécessaire. </textformat><br /><b>Étape 5 :</b> <textformat blockindent='52'>Si l’unité CSU/DSU n’est pas configurée en mode de bouclage manuel, prise de contact avec le fournisseur de la ligne louée ou l’opérateur pour obtenir de l’assistance </textformat></td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table5">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td width='150' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Problème possible :</b></font></td>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Solution de dépannage :</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><li>Taux d’erreurs élevé provenant du service de télécommunications </li><li>Problème matériel provenant de l’unité CSU/DSU </li><li>Matériel de routage défaillant </li></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Étape 1 :</b> <textformat blockindent='52'>Prise de contact avec le fournisseur de services de télécommunications</textformat><br /><b>Étape 2 :</b> <textformat blockindent='52'>Bouclage de l’unité CSU/DSU (boucle DTE). Si le problème persiste, un problème matériel est vraisemblablement en cause. Si le problème est résolu, il provenait vraisemblablement de la compagnie de téléphone. </textformat><br /><b>Étape 3 :</b> <textformat blockindent='52'>Remplacement du matériel défaillant (unité CSU/DSU, commutateur, module d’interface ou routeur distant) </textformat><br/> </td>
+	</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table6">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td width='150' glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Problème possible :</b></font></td>
+		<td glow='false' valign='top' type='dynamic'><font color='#FFFFFF'><b>Solution de dépannage :</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><li>La configuration du routeur inclut la commande de configuration d’interface <font face='_typewriter'><b>shutdown</b></font>. </li><li>Adresse IP dupliquée</li></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Étape 1 :</b> <textformat blockindent='52'>Recherche de la commande <font face='_typewriter'><b>shutdown</b></font> dans la configuration </textformat><br /><b>Étape 2 :</b> <textformat blockindent='52'>Utilisation de la commande de configuration d’interface <font face='_typewriter'><b>no shutdown</b></font> pour supprimer la commande <font face='_typewriter'><b>shutdown</b></font> </textformat><br /><b>Étape 3 :</b> <textformat blockindent='52'>Vérification de l’absence d’adresses IP identiques, via la commande <font face='_typewriter'><b>show running-config</b></font> en mode d’exécution privilégié, ou via la commande <font face='_typewriter'><b>show interface</b></font> </textformat><br /><b>Étape 4 :</b> <textformat blockindent='52'>En présence d’adresses dupliquées, résolution du conflit par le remplacement d’une adresse IP</textformat><br/> </td>
+	</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

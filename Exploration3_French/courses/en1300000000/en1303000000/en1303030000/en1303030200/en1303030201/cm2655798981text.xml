@@ -1,0 +1,77 @@
+<textcomponents>
+
+  <component id="ID_title1">
+  <text><![CDATA[<b>Add a VLAN</b>]]></text> 
+  </component>
+
+  <component id="ID_txt01">
+  <text><![CDATA[<b>F0/1</b>]]></text> 
+  </component>
+
+  <component id="ID_txt02">
+  <text><![CDATA[<b>F0/18</b>]]></text> 
+  </component>
+
+  <component id="ID_txt03">
+  <text><![CDATA[<b>F0/1</b>]]></text> 
+  </component>
+  
+<component id="ID_caption01">
+<text><![CDATA[<b>3.3.2.1 -A: Add a VLAN</b>]]></text>
+</component>
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+	  	  	<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">&nbsp;</font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from privileged EXEC mode to global configuration mode.</td>
+		<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>configure terminal</b></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Create a VLAN. Vlan id is the VLAN number that is to be created. Switches to VLAN configuration mode for VLAN vlan id.</td>
+		<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config)#<b>vlan </b><I>vlan id</I></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Optional) Specify a unique VLAN name to identify the VLAN.<br/>If no name is entered the VLAN number, padded zeros, is appended the word 'VLAN', for example, VLAN0020.</td>
+		<td width="250" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-vlan)#<b>name </b><I>vlan name</I></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Return to privileged EXEC mode. You must end your configuration session for the configuration to be saved in the vlan.dat file and for configuration to take effect.</td>
+		<td width="250" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config-vlan)#<b>end</b></font></td>
+	</tr>
+</table>
+]]></text> 
+  </component>
+
+  <component id="ID_box_3.3.2.1">
+  <text><![CDATA[<b>Switch S1:<br>VLAN 20 <br>"student"</b>]]></text> 
+  </component>
+
+  <component id="ID_box2_3.3.2.1">
+  <text><![CDATA[<font face="_typewriter">S1#<b>configure terminal</b><br>S1(config)#<b>vlan 20</b><br>S1(config-vlan)#<b>name student</b><br>S1(config-vlan)#<b>end</b></font>]]></text> 
+  </component>
+
+  <component id="ID_box3">
+  <text><![CDATA[<b>Student PC<br>172.17.20.22</b>]]></text> 
+  </component>
+
+  <component id="ID_CS">
+  <text><![CDATA[<b>Command Syntax</b>]]></text> 
+  </component>
+  <component id="ID_example">
+  <text><![CDATA[<b>Example</b>]]></text> 
+  </component>
+  <component id="ID_Gateway">
+  <text><![CDATA[<b>Verification</b>]]></text> 
+  </component>
+
+</textcomponents>

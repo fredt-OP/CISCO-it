@@ -1,0 +1,62 @@
+<textcomponents>
+
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Router<br/>Output]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[Static Maps]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[Parameters]]></text>
+</component>
+
+<component id="ID_Button03">
+<text><![CDATA[Verify]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Configuring a Static Frame Relay Map</b>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Command Parameters</b>]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Verifying a Static Frame Relay Map</b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[<b>Configuration for R1</b>]]></text>
+</component>
+
+<component id="ID_topology01">
+<text><![CDATA[<b>FR Switch</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width="150" bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Command Parameters</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">Description</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">protocol </font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Defines the supported protocol, bridging, or logical link control: appletalk, decnet, dlsw, ip, ipx, llc2, rsrb, vines, and xns.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">protocol-address </font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Defines the Network layer address of the destination router interface.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">dlci </font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Defines the local DLCI used to connnect to the remote protocol address.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">broadcast </font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Optional) Allows broadcasts and multicasts over the VC. This permits the use of dynamic routing protocols over the VC.</td></tr></table>]]></text>
+</component>
+
+</textcomponents>

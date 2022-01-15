@@ -1,0 +1,87 @@
+﻿<textcomponents>
+
+
+
+
+<component id="ID_title1">
+  <text><![CDATA[<b>Sauvegarde et restauration des configurations des commutateurs</b>]]></text> 
+  </component>
+
+
+
+<component id="ID_title2">
+  <text><![CDATA[<b>Sauvegarde et restauration des configurations des commutateurs</b>]]></text> 
+  </component>
+
+
+
+<component id="ID_txt1">
+  <text><![CDATA[<b>Sauvegarder les configurations</b>]]></text> 
+</component>
+
+
+  
+<component id="ID_txt2">
+  <text><![CDATA[<b>Restaurer les configurations</b>]]></text> 
+</component>
+  
+ 
+
+
+
+
+
+
+
+<component id="tableHTML"><text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='240' type='dynamic'><font  color='#FFFFFF'><b>
+Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'></td>
+</tr>
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Version officielle de la commande de copie de Cisco IOS. <br/>Confirmez le nom du fichier de destination. Appuyez sur la touche Entrée pour valider et sur les touches Crtl+C pour annuler.</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy system:running-config flash:startup-config</b><br/> Destination filename [startup-config]?</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Version non officielle de la commande de copie. Il est supposé alors que la configuration en cours est exécutée sur le système et que le fichier de configuration de démarrage sera stocké dans la mémoire vive non volatile flash. Appuyez sur la touche Entrée pour valider et sur les touches Crtl+C pour annuler.</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy running-config startup-config</b><br/> Destination filename [startup-config]?</font></td>
+</tr>
+
+<tr> 			
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Sauvegardez la configuration de démarrage dans un fichier stocké dans la mémoire vive non volatile flash. Confirmez le nom du fichier de destination. Appuyez sur la touche Entrée pour valider et sur les touches Crtl+C pour annuler.</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy startup-config flash:config.bak1</b><br/> Destination filename [config.bak1]?</font></td>
+</tr>
+
+</table>]]></text></component>
+
+
+
+  
+<component id="tableHTML1"><text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color='#FFFFFF'><b>
+Syntaxe de commande de l’interface de ligne de commande Cisco IOS</b></font></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'></td>
+</tr>
+
+	
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Copiez le fichier config.bak1 stocké dans la mémoire flash dans la configuration de démarrage qui doit être stockée dans la mémoire flash. Appuyez sur la touche Entrée pour valider et sur les touches Crtl+C pour annuler.</b>
+</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>copy flash:config.bak1 startup-config</b><br/> Destination filename [startup-config]?</font></td>
+</tr>
+
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Demandez à Cisco IOS de redémarrer le commutateur. Si vous avez modifié le fichier de configuration en cours, le système vous demande de l’enregistrer. Confirmez par un 'y' (oui) ou un 'n' (non). Pour confirmer le rechargement, appuyez sur la touche Entrée pour valider ou sur les touches Crtl+C pour annuler.</b></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>S1#<b>reload</b></font><br/><br/><font face='_typewriter'>System configuration has been modified. Save? [yes/no]: n<br/>Proceed with reload? [confirm]?</font></td>
+</table>]]></text></component>
+
+
+
+
+</textcomponents>

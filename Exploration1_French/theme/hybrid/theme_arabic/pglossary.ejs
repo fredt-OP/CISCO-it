@@ -1,0 +1,63 @@
+<table cellspacing="0" cellpadding="2" border="0" width="100%" align="center">
+<tr>
+	<% for (var i=0; i<main.glossary.sets.length; i++) { %>
+		<% if (main.glossary.sets[i] == selset) { %>
+			<td class="set_selected"><%= main.glossary.sets[i].setlabel %></td>
+		<% } else { %>
+			<% if (main.glossary.sets[i].terms.length > 0) { %>
+				<td class="set"><a href="javascript:selectSet('<%= main.glossary.sets[i].setkey %>')" class="set"><%= main.glossary.sets[i].setlabel %></a></td>
+			<% } else { %>
+				<td class="set_disabled"><%= main.glossary.sets[i].setlabel %></td>
+			<% } %>
+		<% } %>
+		<% if (i == 30 || i == 60) { %>
+			</tr><tr>
+		<% } %>
+	<% } %>
+</tr>
+</table>
+<hr/>
+<table cellspacing="0" cellpadding="0" border="0" width="100%">
+	<tr>
+		<td class="def">
+			<% if (selterm) { %>
+				<b><%= selterm.term %></b><br>
+			<% } else { %>
+				<b>&nbsp;</b><br/>
+			<% } %>
+			<div id="definition" class="definitiondiv">
+				<% if (selterm) { %>
+					<b><%= selterm.definition %></b><br>
+				<% } %>
+			</div>
+			<br/>
+			<% if (selterm && selterm.seealso) { %>
+				<b><%= main.theme.getThemeItem('glossaryseealso') %></b> 
+				<% for (var t=0; t<selterm.seealso.length; t++) { %>
+					<a href="javascript:selectTerm('<%= selterm.seealso[t] %>')" class="seealso"><%= main.glossary.termsID[selterm.seealso[t]].term %></a>
+				<% } %>
+			<% } else { %>
+				<p></p>
+			<% } %>
+		</td>
+		<td>&nbsp;</td>
+		<td width="48%" valign="top">
+			<div id="list" class="listdiv">
+				<table cellspacing="0" cellpadding="4" border="0" width="100%">
+					<% if (selset) { %>
+						<% for (var i=0; i<selset.terms.length; i++) { %>
+							<% if (selset.terms[i] == selterm) { %>
+								<tr><td class="term_selected"><%= selset.terms[i].term %></a></td></tr>
+							<% } else { %>
+								<tr><td class="term"><a href="javascript:selectTerm('<%= selset.terms[i].id %>')" class="term"><%= selset.terms[i].term %></a></td></tr>
+							<% } %>
+						<% } %>
+					<% } %>
+				</table>
+			</div>
+		</td>
+	</tr>
+</table>
+<br/>
+<hr/>
+<br/>

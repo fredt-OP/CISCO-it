@@ -1,0 +1,39 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<B>Numbering and Naming ACLs</B>]]></text> 
+</component>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Numbered ACL</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Named ACL</B>]]></text> 
+</component>
+
+<component id="ID_txt01_00">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Numbered ACL:</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>You assign a number based on which protocol you want filtered:</b><ul><li>(1 to 99) and (1300 to 1999): Standard IP ACL</li><li>(100 to 199) and (2000 to 2699): Extended IP ACL</li></ul></b></td>
+	</tr>
+</table>]]></text> 
+</component>
+
+
+<component id="ID_txt03_00">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Named ACL:</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>You assign a name by providing the name of the ACL:</b><ul><li>Names can contain alphanumeric characters.</li><li>It is suggested that the name be written in CAPITAL LETTERS.</li><li>Names cannot contain spaces or punctuation and must begin with a letter.</li><li>You can add or delete entries within the ACL.</li></ul></b></td>
+	</tr>
+</table>]]></text> 
+</component>
+
+</textcomponents>
+

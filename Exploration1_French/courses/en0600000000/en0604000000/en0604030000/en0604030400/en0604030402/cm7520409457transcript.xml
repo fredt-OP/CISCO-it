@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 13:01:52">
+<title><content-text><![CDATA[4.3.4  - TCP Congestion Control - Minimizing Segment Loss]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts how TCP segment acknowledgement and the window size provide flow control between a TCP client and server. A window size of 3000 bytes is set up between the sender and receiver.<br><br>-	Send sequence number 1, 1500 bytes, receive 1 through 1500<br>-	Send sequence number 1501, 1500 bytes, receive 1501 through  3000<br>-	Receive acknowledgement, acknowledgement number 3001<br>-	Send sequence number 3001, 1500 bytes, segment 3 is lost because of congestion at the receiver.<br>-	Send sequence number 4501, 1500 bytes, receive 4501 through  6000<br>-	Receive acknowledgement, acknowledgement number 3001, window size = 1500<br><br>If segments are lost because of congestion, the receiver acknowledges the last received sequential segment and replies with a reduced window size.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

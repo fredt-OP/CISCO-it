@@ -1,0 +1,54 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[<font size='14'><b>Internet<br />192.168.101.5<br /><font color='#FF0000'>Serveur Web</font></b></font>]]></text> 
+ </component>
+
+
+<component id="ID_table1">
+		<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b></b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Routage statique</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Routage dynamique</b></font></td>
+    </tr>
+   
+    <tr>
+      <td bgcolor='#99CCFF'><b>Complexité de la configuration</b></td>
+      <td bgcolor='#DDDDDD'><b>Augmente avec la taille du réseau</b></td>
+      <td bgcolor='#DDDDDD'><b>Généralement indépendant de la taille du réseau</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Modifications topologiques </b></td>
+          <td bgcolor='#F2F2F2'><b>Intervention de l’administrateur requise </b></td>
+          <td bgcolor='#F2F2F2'><b>S’adapte automatiquement aux modifications de la topologie</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Évolutivité </b></td>
+          <td bgcolor='#DDDDDD'><b>Idéal pour les topologies simples </b></td>
+          <td bgcolor='#DDDDDD'><b>Idéal pour les topologies simples et complexes</b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Sécurité </b></td>
+          <td bgcolor='#F2F2F2'><b>Plus sécurisé </b></td>
+          <td bgcolor='#F2F2F2'><b>Moins sécurisé </b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Utilisation des ressources </b></td>
+          <td bgcolor='#DDDDDD'><b>Aucune ressource supplémentaire n’est requise </b></td>
+          <td bgcolor='#DDDDDD'><b>Utilise l’UC, la mémoire, la bande passante de la liaison </b></td>
+    </tr>
+        <tr>
+          <td bgcolor='#99CCFF'><b>Prévisibilité</b></td>
+          <td bgcolor='#F2F2F2'><b>La route menant à la destination est toujours la même</b></td>
+          <td bgcolor='#F2F2F2'><b>La route dépend de la topologie en cours</b></td>
+    </tr>
+   
+</table>
+
+]]></text>
+	</component>
+
+</textcomponents>

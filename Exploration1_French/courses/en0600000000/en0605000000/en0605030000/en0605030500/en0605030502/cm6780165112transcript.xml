@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 13:01:38">
+<title><content-text><![CDATA[5.3.5 - The Destination Network]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts a routing table entry for a default route using the Cisco I O S show i p route command.<br><br>Gateway of last resort is 192.168.2.2 to network 0.0.0.0<br>	10.0.0.0/24 is subnetted, 2 subnets<br>R	10.1.1.0 [120/1] via 192.168.2.2, 00:00:08, FastEthernet0/0<br>R	10.1.2.0 [120/1] via 192.168.2.2, 00:00:08, FastEthernet0/0<br>C	192.168.2.0/24 is directly connected, FastEthernet0/0<br>S*	0.0.0.0/0 [1/0] via 192.168.2.2<br><br>In the routing table output, the statement: Gateway of last resort is 192.168.2.2 to network 0.0.0.0 and the entry for the default destination network 0.0.0.0 via 192.168.2.2 are highlighted.<br><br>Packets with destination host addresses not in one of the network ranges are forwarded to the gateway of last resort, which is 192.168.2.2.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

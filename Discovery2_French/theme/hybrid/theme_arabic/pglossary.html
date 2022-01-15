@@ -1,0 +1,85 @@
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="./css/reset-fonts.css">
+		<link rel="stylesheet" type="text/css" href="./css/popup_glossary.css"/>
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script>
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			var content = new EJS({url: 'pglossary.ejs'});
+
+			function getContent() {
+				var html = "";
+				data = {main:window.opener.main};
+				html = content.render(data);
+				writeToElement("contentdiv", html);
+			}
+
+			// pull current term from url
+			var url = new String(window.location);
+			var termid = url.substring(url.indexOf("term=")+5,url.length);
+			if (termid == "null") {
+				selterm = null;
+				selset = null;
+			} else {
+				selterm = window.opener.main.glossary.termsID[termid];
+				selset = window.opener.main.glossary.setsID[selterm.setID];
+			}
+
+
+			function selectTerm(id) {
+				selterm = window.opener.main.glossary.termsID[id];
+				selset = window.opener.main.glossary.setsID[selterm.setID];
+				selterm.dump();
+				getContent();
+			}
+
+			function selectSet(k) {
+				selterm = null;
+				selset = window.opener.main.glossary.setsID[k];
+				getContent();
+			}
+
+
+		</script>
+	</head>
+	<body class="popup"><div id="contentdiv">
+		<table cellspacing="0" cellpadding="2" border="0" width="100%" align="center">
+		<tr>
+		</tr>
+		</table>
+		<hr/>
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td class="def">
+					<div id="definition" class="definitiondiv">
+					</div>
+					<br/>
+				</td>
+				<td>&nbsp;</td>
+				<td width="48%" valign="top">
+					<div id="list" class="listdiv">
+						<table cellspacing="0" cellpadding="2" border="0" width="100%">
+						</table>
+					</div>
+				</td>
+			</tr>
+			</table>
+			<br/>
+		<hr/>
+	</div>
+	<script>getContent();</script>
+</body>
+</html>
+
+

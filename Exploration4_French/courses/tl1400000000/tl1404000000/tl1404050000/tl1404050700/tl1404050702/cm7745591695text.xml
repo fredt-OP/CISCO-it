@@ -1,0 +1,77 @@
+﻿<textcomponents>
+<component id="ID_Title01">
+<text><![CDATA[<b>Procédure de récupération des mots de passe d’un routeur</b>]]></text>
+</component>
+<component id="ID_inst">
+  <text><![CDATA[<b><br>Préparez R1 pour la récupération des mots de passe en le démarrant en mode ROMmon.</b>]]></text> 
+  </component>
+<component id="ID_inst2">
+  <text><![CDATA[<b>Activez la configuration du routeur en ignorant la configuration de démarrage existante.</b>]]></text>
+  </component>
+<component id="ID_inst3">
+  <text><![CDATA[<b>Permettez l’affichage de la configuration de démarrage.</b>]]></text> 
+  </component>
+<component id="ID_inst4">
+  <text><![CDATA[<b>Réinitialisez les mots de passe.</b>]]></text>
+  </component>
+<component id="ID1_txt01">
+  <text><![CDATA[Connexion console]]></text> 
+  </component>
+<component id="ID1_txt02">
+  <text><![CDATA[Administrateur système ]]></text> 
+  </component>
+<component id="ID1_txt01_2">
+  <text><![CDATA[Connexion console]]></text> 
+  </component>
+<component id="ID1_txt02_2">
+  <text><![CDATA[Administrateur système ]]></text> 
+  </component>
+<component id="ID1_txt01_3">
+  <text><![CDATA[Connexion console]]></text> 
+  </component>
+<component id="ID1_txt02_3">
+  <text><![CDATA[Administrateur système ]]></text> 
+  </component>
+<component id="ID1_txt01_4">
+  <text><![CDATA[Connexion console]]></text> 
+  </component>
+<component id="ID1_txt02_4 ">
+  <text><![CDATA[Administrateur système ]]></text> 
+  </component>
+<component id="ID_button1">
+  <text><![CDATA[<b>Préparer le routeur</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Ignorer le démarrage</b>]]></text> 
+</component>
+<component id="ID_button3">
+  <text><![CDATA[<b>Accéder à la NVRAM</b>]]></text> 
+</component>
+<component id="ID_button4">
+  <text><![CDATA[<b>Réinitialiser les mots de passe</b>]]></text> 
+</component>
+<component id="ID_routerIcon">
+  <text><![CDATA[<b>Config</b>]]></text> 
+</component>
+<component id="ID_routerIcon1">
+  <text><![CDATA[<b>Config</b>]]></text> 
+</component>
+<component id="ID_routerIcon2">
+  <text><![CDATA[<b>Config</b>]]></text> 
+</component>
+<component id="ID_routerIcon3">
+  <text><![CDATA[<b>Config</b>]]></text> 
+</component>
+<component id="ID_bubble1">
+  <text><![CDATA[1) <textformat blockindent="17">L’administrateur définit les paramètres de connexion à la console.</textformat><br/>2) <textformat blockindent="17">Il enregistre la valeur du registre de configuration.</textformat><br/>3) <textformat blockindent="17">Il met le routeur hors tension puis sous tension.</textformat><br/>4) <textformat blockindent="17">Il appuie sur la touche « Pause » de la console dans un délai de 60 secondes à partir de la mise sous tension pour activer le mode ROMmon du routeur.</textformat>]]></text>
+</component>
+<component id="ID_bubble2">
+<text><![CDATA[5) <textformat blockindent="17">Modifiez les paramètres du registre de configuration.</textformat><br/>6) <textformat blockindent="17">Redémarrez le routeur en ignorant la configuration enregistrée. </textformat><br/>7) <textformat blockindent="17">Sautez la procédure de configuration initiale.</textformat><br/>8) <textformat blockindent="17">Tapez <font face='_typewriter'><b>enable </b></font>pour obtenir l’invite de configuration.</textformat>]]></text>
+</component>
+<component id="ID_bubble3">
+<text><![CDATA[9) <textformat blockindent="17">Copiez la configuration de démarrage de la mémoire vive non volatile dans la mémoire vive.</textformat><br/>10) <textformat blockindent="23">Affichez les mots de passe à l’aide de la commande <font face='_typewriter'><b>show running-config </b></font>.</textformat>]]></text>
+</component>
+<component id="ID_bubble4">
+<text><![CDATA[11) <textformat blockindent="23">Activez le mode de configuration globale.</textformat><br/>12) <textformat blockindent="23">Définissez un nouveau mot de passe secret.</textformat><br/>13) <textformat blockindent="23">Lancez la commande <font face="_typewriter">no shutdown</font> sur chaque interface opérationnelle du routeur.</textformat><br/>14) <textformat blockindent="23">Définissez l’emplacement du registre de configuration.</textformat><br/>15) <textformat blockindent="23">Quittez le mode de configuration.</textformat><br/>16) <textformat blockindent="23">Confirmez vos modifications.</textformat>]]></text>
+</component>
+</textcomponents>

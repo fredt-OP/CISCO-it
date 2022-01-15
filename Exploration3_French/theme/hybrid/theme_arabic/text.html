@@ -1,0 +1,32 @@
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="./css/reset-fonts.css">
+		<link rel="stylesheet" type="text/css" href="./css/textstyle.css"/>
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script>
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			var content = new EJS({url: 'text.ejs'});
+
+			function getContent(main) {
+				var html = "";
+				data = {main:main};
+				html = content.render(data);
+				writeToElement("content", html);
+			}
+		</script>
+	</head>
+	<body class="text"><div id="content">
+	</div></body>
+</html>
+

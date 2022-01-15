@@ -1,0 +1,67 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Sélection d’une connexion de liaison de réseau étendu</b>]]></text> 
+</component>
+
+<component id="ID_header1">
+  <text><![CDATA[<b>Option</b>]]></text> 
+</component>
+
+<component id="ID_header2">
+  <text><![CDATA[<b>Description</b>]]></text> 
+</component>
+
+<component id="ID_header3">
+  <text><![CDATA[<b>Avantages</b>]]></text> 
+</component>
+
+<component id="ID_header4">
+  <text><![CDATA[<b>Inconvénients</b>]]></text> 
+</component>
+
+<component id="ID_header6">
+  <text><![CDATA[<b>Exemples de protocoles utilisés</b>]]></text> 
+</component>
+
+
+<component id="ID_table1">
+<text><![CDATA[<table bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'>Ligne louée</td>
+<td bgcolor='#F2F2F2'>Connexion point à point entre deux ordinateurs ou réseaux locaux.</td>
+<td bgcolor='#F2F2F2'>Sécurité optimale</td>
+<td bgcolor='#F2F2F2'>Coûteuse</td>
+<td bgcolor='#F2F2F2'>PPP, HDLC, SDLC, HNAS</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>Commutation de circuits</td>
+<td bgcolor='#DDDDDD'>Un chemin de circuit dédié est créé entre des points d’extrémité. Les connexions commutées sont un exemple efficace de commutation de circuits.</td>
+<td bgcolor='#DDDDDD'>Moins coûteuse</td>
+<td bgcolor='#DDDDDD'>Établissement de la communication</td>
+<td bgcolor='#DDDDDD'>PPP, RNIS</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Commutation de paquets</td>
+<td bgcolor='#F2F2F2'>Les périphériques transmettent des paquets via une liaison partagée unique point à point ou point-à-multipoint sur un interréseau d’opérateur. Des paquets de longueur variable sont transmis sur des circuits virtuels permanents (PVC) ou des circuits virtuels commutés (SVC).</td>
+<td bgcolor='#F2F2F2'> </td>
+<td bgcolor='#F2F2F2'>Support partagé sur une liaison</td>
+<td bgcolor='#F2F2F2'>X.25, Relais de trames</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>Relais de cellules</td>
+<td bgcolor='#DDDDDD'>Similaire à la commutation de paquets, mais utilise des cellules de longueur fixe au lieu de paquets de longueur variable. Les données sont réparties entre des cellules de longueur fixe, puis transportées via des circuits virtuels.</td>
+<td bgcolor='#DDDDDD'>Idéale pour l’utilisation simulée de voix et de données</td>
+<td bgcolor='#DDDDDD'>Les surcharges peuvent être importantes.</td>
+<td bgcolor='#DDDDDD'>ATM</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Internet</td>
+<td bgcolor='#F2F2F2'>Commutation de paquets sans connexion via Internet utilisé en tant qu’infrastructure de réseau étendu ; utilise l’adressage de réseau pour transmettre des paquets. Pour des raisons de sécurité, la technologie de réseau privé virtuel doit être utilisée.</td>
+<td bgcolor='#F2F2F2'>Connexion la moins coûteuse, disponible globalement</td>
+<td bgcolor='#F2F2F2'>Sécurité minimale</td>
+<td bgcolor='#F2F2F2'>Réseau privé virtuel, DSL, modem câble, sans fil</td>
+</tr>
+</table>]]></text>
+</component>
+</textcomponents>

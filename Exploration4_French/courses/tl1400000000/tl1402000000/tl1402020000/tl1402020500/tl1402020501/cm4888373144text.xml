@@ -1,0 +1,157 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Processus de négociation de liaison LCP</b>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Établissement de la liaison</b>]]></text>
+</component>
+
+<!-- slide 1--> <!-- row 1 -->
+<component id="ID_txt01">
+<text><![CDATA[Initiation de la configuration LCP]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[Fin de la configuration]]></text> 
+</component>
+<component id="ID_txt03">
+<text><![CDATA[(Configuration NCP)]]></text> 
+</component>
+<component id="ID_txt04">
+<text><![CDATA[Réponse au test d’écho]]></text> 
+</component>
+<component id="ID_txt05">
+<text><![CDATA[Envoi et réception de données]]></text> 
+</component>
+<component id="ID_txt06">
+<text><![CDATA[Réception de requête de fermeture IP Notification vers les autres périphériques]]></text> 
+</component>
+<component id="ID_txt07">
+<text><![CDATA[Fin de la liaison]]></text> 
+</component>
+
+<!-- row 2 -->
+<component id="ID_txt08">
+<text><![CDATA[Configure-Request LCP]]></text> 
+</component>
+<component id="ID_txt09">
+<text><![CDATA[Configure-Ack LCP]]></text>
+</component>
+<component id="ID_txt10">
+<text><![CDATA[Configuration NCP]]></text>
+</component>
+<component id="ID_txt11">
+<text><![CDATA[Echo-Request]]></text>
+</component>
+<component id="ID_txt12">
+<text><![CDATA[Echo-Reply]]></text>
+</component>
+<component id="ID_txt13">
+<text><![CDATA[Données]]></text>
+</component>
+<component id="ID_txt14">
+<text><![CDATA[Code-Reject]]></text>
+</component>
+<component id="ID_txt15">
+<text><![CDATA[Données]]></text>
+</component>
+<component id="ID_txt16">
+<text><![CDATA[Terminate-Request LCP]]></text>
+</component>
+<component id="ID_txt17">
+<text><![CDATA[Terminate-Ack LCP]]></text>
+</component>
+
+<!-- row 3 -->
+<component id="ID_txt18">
+<text><![CDATA[Traitement de la requête de configuration]]></text>
+</component>
+<component id="ID_txt19">
+<text><![CDATA[(Configuration NCP)]]></text>
+</component>
+<component id="ID_txt20">
+<text><![CDATA[Initiation du test de bouclage]]></text>
+</component>
+<component id="ID_txt21">
+<text><![CDATA[Confirmation de l’opération de liaison]]></text>
+</component>
+<component id="ID_txt22">
+<text><![CDATA[Envoi et réception de données]]></text>
+</component>
+<component id="ID_txt23">
+<text><![CDATA[Fin de la liaison]]></text>
+</component>
+
+<!-- legend -->
+<component id="ID_txt24">
+<text><![CDATA[<b>Échange de messages LCP</b>]]></text>
+</component>
+
+<component id="ID_txt25">
+<text><![CDATA[<b>Échange de messages NCP</b>]]></text>
+</component>
+
+
+<!-- slide 2 -->
+<component id="ID2_txt01">
+<text><![CDATA[Le demandeur envoie le message <b><i>Configure-request</i></b>]]></text>
+</component>
+<component id="ID2_txt02">
+<text><![CDATA[Le destinataire traite le message <b><i>Configure-request</i></b>]]></text>
+</component>
+<component id="ID2_txt03">
+<text><![CDATA[Les options sont-elles acceptables ?]]></text>
+</component>
+<component id="ID2_txt04">
+<text><![CDATA[Le destinataire envoie le message <b><i>Configure-Ack</i></b>]]></text>
+</component>
+<component id="ID2_txt05">
+<text><![CDATA[Le demandeur reçoit le message <b><i>Configure-Ack</i></b>]]></text>
+</component>
+<component id="ID2_txt06">
+<text><![CDATA[Le destinataire envoie le message <b><i>Configure-Nak</i></b>]]></text>
+</component>
+<component id="ID2_txt07">
+<text><![CDATA[Toutes les options sont-elles reconnues ?]]></text>
+</component>
+<component id="ID2_txt08">
+<text><![CDATA[Les périphériques passent à la phase d’<i>authentification</i> (facultatif)]]></text>
+</component>
+<component id="ID2_txt09">
+<text><![CDATA[L’option d’authentification est-elle utilisée ?]]></text>
+</component>
+<component id="ID2_txt10">
+<text><![CDATA[Le demandeur traite la réponse, détermine les nouveaux paramètres de négociation]]></text>
+</component>
+<component id="ID2_txt11">
+<text><![CDATA[Le destinataire envoie le message <b><i>Configure-Reject</i></b>]]></text>
+</component>
+<component id="ID2_txt12">
+<text><![CDATA[La liaison est établie. Le programme de contrôle de réseau établit des paramètres de couche 3]]></text>
+</component>
+<component id="ID_yes1">
+<text><![CDATA[Oui]]></text>
+</component>
+<component id="ID_no1">
+<text><![CDATA[Non]]></text>
+</component>
+<component id="ID_yes2">
+<text><![CDATA[Oui]]></text>
+</component>
+<component id="ID_no2">
+<text><![CDATA[Non]]></text>
+</component>
+<component id="ID_yes3">
+<text><![CDATA[Oui]]></text>
+</component>
+<component id="ID_no3">
+<text><![CDATA[Non]]></text>
+</component>
+<component id="ID_btn1">
+  <text><![CDATA[Établissement d’une liaison]]></text> 
+  </component>
+<component id="ID_btn2">
+<text><![CDATA[Négociation de la liaison]]></text>
+</component>
+</textcomponents>

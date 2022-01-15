@@ -1,0 +1,79 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[FR1]]></text> 
+ 
+ </component>
+ 
+ <component id="ID_txt01a">
+    
+<text><![CDATA[Périphérie2]]></text> 
+ 
+ </component>
+ 
+ <component id="ID_txt02">
+     
+ <text><![CDATA[S0/1/1]]></text> 
+  
+ </component>
+ 
+ <component id="ID_txt03">
+     
+ <text><![CDATA[S0/1/0]]></text> 
+  
+ </component>
+ 
+ <component id="ID_txt04">
+     
+ <text><![CDATA[DLCI=110]]></text> 
+  
+ </component>
+ 
+ <component id="ID_txt05">
+     
+ <text><![CDATA[DLCI=100]]></text> 
+  
+ </component>
+ 
+ <component id="ID_txt06">
+     
+ <text><![CDATA[S0/1/1 172.18.0.9/30]]></text> 
+  
+ </component>
+ 
+ <component id="ID_txt07">
+     
+ <text><![CDATA[S0/1/0 172.18.0.10/30]]></text> 
+  
+ </component>
+ 
+ <component id="ID_txt08">
+      
+  <text><![CDATA[BR3]]></text> 
+   
+ </component>
+ 
+ <component id="ID_txt09">
+      
+  <text><![CDATA[Périphérie2]]></text> 
+   
+ </component>
+ 
+ <component id="ID_txt10">
+       
+   <text><![CDATA[Conseil]]></text> 
+    
+ </component>
+ 
+ <component id="ID_txt11">
+        
+ <text><![CDATA[L’utilisation d’un routeur comme commutateur de relais de trames n’est pas une pratique très répandue dans un réseau de production.<br><BR>La configuration de relais de trames pour FR1 dans cet exemple est :<br><BR><font face='_typewriter'>frame-relay switching<br>interface serial 0/1/0<br>   frame-relay route 100 interface Serial0/1/1 110<br>interface serial 0/1/1<br>   frame-relay route 110 interface Serial0/1/0 100 </font>]]></text>     
+  </component>
+  
+  <component id="ID_txt12">          
+  <text><![CDATA[Conseil]]></text>       
+  </component>
+
+</textcomponents>
+

@@ -1,0 +1,60 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Router E uses the route through Router C to get to the Network M, because it has the lowest reported metric of 20 (10 + 10).<BR><BR>To determine which other routes can be used for load balancing traffic to Network M, the EIGRP process on Router E takes the best metric multiplied by the configured variance value.  In this case, the best metric is the route through Router C, which has a reported metric of 20.  Any route with a metric less than 40 (20 x 2) is installed in the routing table to be used for load balancing.<BR><BR>Router E can use the route through Router B to load balance traffic to Network M, because the metric of 30 is less than 40.  EIGRP does not install the route that uses Router D because its metric of 45 is greater than the acceptable value of 40.]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<B>Network M</B>]]></text> 
+</component>
+
+
+<component id="ID_txtB">
+<text><![CDATA[<B>B</B>]]></text> 
+</component>
+
+<component id="ID_txtC">
+<text><![CDATA[<B>C</B>]]></text> 
+</component>
+
+<component id="ID_txtD">
+<text><![CDATA[<B>D</B>]]></text> 
+</component>
+
+<component id="ID_txtE">
+<text><![CDATA[<B>E</B>]]></text> 
+</component>
+
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Network</b></font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Neighbor</b></font></td>
+<td bgcolor='#E9E9E9'><font color='#FFFFFF'><b>Metric</b></font></td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E9E9'>M</td>
+<td bgcolor='#E9E9E9'>B</td>
+<td bgcolor='#E9E9E9'>30</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E9E9'> </td>
+<td bgcolor='#E9E9E9'>C</td>
+<td bgcolor='#E9E9E9'>20</td>
+</tr>
+
+<tr>
+<td bgcolor='#E9E9E9'> </td>
+<td bgcolor='#E9E9E9'>D</td>
+<td bgcolor='#E9E9E9'>45</td>
+</tr>
+
+</table>
+]]></text>
+</component>
+
+</textcomponents>

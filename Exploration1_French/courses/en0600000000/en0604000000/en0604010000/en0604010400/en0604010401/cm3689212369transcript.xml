@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 12:01:14">
+<title><content-text><![CDATA[4.1.4 - TCP and UDP]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the structure of a TCP segment and a UDP datagram. Each component is listed with its length in bits.<br><br>TCP segment (Header length 20 bytes): <br>-	Source Port (16 bits)<br>-	Destination Port (16 bits)<br>-	Sequence Number (32 bits)<br>-	Acknowledgment Number (32 bits)<br>-	Header Length (4 bits) Reserved (6 bits) Code Bits (6 bits), Window (16 bits)<br>-	Checksum (16 bits), Urgent (16 bits)<br>-	Options (0 or 32 bits, if any)<br>-	Application Layer Data (size varies)<br><br>UDP Datagram (Header length 8 bytes): <br>-	Source Port (16 bits)<br>-	Destination Port (16 bits)<br>-	Length (16 bits)<br>-	Checksum (16 bits)<br>-	Application Layer Data (size varies)]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

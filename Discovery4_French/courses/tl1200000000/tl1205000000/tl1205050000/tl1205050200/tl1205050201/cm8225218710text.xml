@@ -1,0 +1,19 @@
+<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Serveur Web<br>200.1.2.11 ]]></text>   
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Internet]]></text>   
+</component>
+ 
+<component id="ID_txt03">
+<text><![CDATA[<b>Règle du pare-feu :</b><br>Refuser tout trafic entrant d’Internet vers un serveur Web, sauf sur les ports autorisés.<br><br><b>Instructions de la liste de contrôle d’accès :<font face='_typewriter'><br>access-list 112 permit tcp any host 200.1.2.11 eq www <br>access-list 112 permit tcp any host 200.1.2.11 eq ftp<br>access-list 112 permit tcp any host 200.1.2.11 eq 7000<br>access-list 112 permit tcp any host 200.1.2.11 eq 1755<br>access-list 112 permit tcp any host 200.1.2.11 eq 1720<br>access-list 112 deny ip any host 200.1.2.11 log</b></font>]]></text>   
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Pare-feu]]></text>   
+</component>
+
+</textcomponents>

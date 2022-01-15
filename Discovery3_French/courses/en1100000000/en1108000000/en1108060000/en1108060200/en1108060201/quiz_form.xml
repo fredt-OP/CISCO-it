@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/16/2007">
+		<name>Module  Quiz</name>
+		<form id="20029" lang=""><form-item order="fixed">
+			<ai id="120059" type="mc-sa"><question><![CDATA[What should be the first line of the access list? ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 10 permit 10.10.1.1 0.0.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 10 deny 10.10.1.0 0.0.0.255</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)#<b>access-list 101 permit ip 10.10.1.1 0.0.0.0 10.10.30.1 0.0.0.0  </b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 permit ip 10.10.1.1 0.0.0.0 10.10.30.0 0.0.0.255 </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 deny ip 10.10.1.0 0.0.0.255 10.10.30.0 0.0.0.255  </b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120060" type="mc-sa"><question><![CDATA[What should the second line of the access list be?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 10 permit 10.10.1.1 0.0.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 10 deny 10.10.1.0 0.0.0.255</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 permit ip 10.10.1.1 0.0.0.0 10.10.30.1 0.0.0.0  </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 permit ip 10.10.1.1 0.0.0.0 10.10.30.0 0.0.0.255 </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)#<b>access-list 101 deny ip 10.10.1.0 0.0.0.255 10.10.30.0 0.0.0.255  </b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 deny ip 10.10.1.0 0.0.0.255 any </b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120061" type="mc-sa"><question><![CDATA[What should the third line of the access list be?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 10 permit 10.10.1.1 0.0.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 10 deny 10.10.20.0 0.0.0.255</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 permit ip 10.10.1.1 0.0.0.0 10.10.30.1 0.0.0.0  eq ftp</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 permit ip 10.10.1.1 0.0.0.0 10.10.30.0 0.0.0.255 eq any</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)#<b>access-list 101 deny ip 10.10.20.0 0.0.0.255 10.10.30.0 0.0.0.255 eq any </b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 deny ip 10.20.1.0 0.0.0.255 any </b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120062" type="mc-sa"><question><![CDATA[What should the fourth line of the access list be?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Router(config)# <b>access-list 10 permit 10.10.1.1 0.0.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 10 permit 10.0.0.0 0.0.0.255</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 permit ip 10.0.0.0 0.0.0.0 10.10.30.0 0.0.0.255  </b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Router(config)#<b>access-list 101 permit ip 10.0.0.0 0.255.255.255 any </b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Router(config)#<b>access-list 101 deny ip 10.10.1.0 0.0.0.255 10.10.30.0 0.0.0.255 eq any </b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120063" type="mc-sa"><question><![CDATA[Where should the access list be placed to ensure it is effective?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[S0/2/0 on RTB as an outbound ACL ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[S0/2/0 on RTB as an inbound ACL ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fa0/0/1 on RTB as an inbound ACL ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[S0/1/0 in RTB as an outbound list ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[S0/0/1 on RTA as an outbound list  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[S0/2/0 on RTA as an inbound list ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

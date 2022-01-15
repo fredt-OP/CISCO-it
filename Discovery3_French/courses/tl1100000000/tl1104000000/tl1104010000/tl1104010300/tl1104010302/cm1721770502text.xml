@@ -1,0 +1,83 @@
+﻿<textcomponents>
+
+<component id="id_title">
+	<text><![CDATA[<font size="+2"><b>Exercice</b></font><br><br>Indiquez si un système d’adressage hiérarchique avec sous-réseaux doit être utilisé pour structurer le réseau.<br><br><b>Cochez la case Oui ou Non selon que des sous-réseaux doivent être utilisés ou pas.
+</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+
+<component id="txt_numrows">
+	<text><![CDATA[5]]></text>
+</component>
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_col1">
+	<text><![CDATA[<b>Oui</b>]]></text>
+</component>
+<component id="txt_col2">
+	<text><![CDATA[<b>Non</b>]]></text>
+</component>
+
+	
+<component id="txt_q1">
+	<text><![CDATA[1.<textformat blockindent='13'> Une petite entreprise de 10 employés utilise un commutateur à 12 ports pour se connecter à un routeur afin d’accéder au FAI.</textformat>]]></text>
+</component>
+<component id="txt_q2">
+	<text><![CDATA[2.<textformat blockindent='13'> Une grande organisation souhaite segmenter certains de ses réseaux locaux de grande envergure pour limiter les diffusions et améliorer les performances du réseau. Elle ne souhaite pas acheter d’adresses IP supplémentaires auprès de son FAI.</textformat>]]></text>
+</component>
+<component id="txt_q3">
+	<text><![CDATA[3.<textformat blockindent='13'> Une organisation possède cinq sites dans différents États. Tous les sites doivent être connectés. Ils ont reçu 5 adresses IP de leur FAI, mais souhaitent pouvoir séparer les utilisateurs de chaque site en fonction du type d’applications qu’ils utilisent.</textformat>]]></text>
+</component>
+<component id="txt_q4">
+	<text><![CDATA[4.<textformat blockindent='13'> Une organisation souhaite segmenter l’adresse IP unique qui lui a été attribuée en blocs plus petits utilisables chacun par des services différents.</textformat>]]></text>
+</component>
+<component id="txt_q5">
+	<text><![CDATA[5.<textformat blockindent='13'> Un particulier achète un Linksys WRT300N avec routeur intégré, commutateur à 4 ports et point d’accès sans fil. Un ordinateur va être connecté au commutateur et d’autres utilisateurs auront accès au Linksys via une liaison sans fil.</textformat>]]></text>
+</component>
+
+
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a4">
+	<text><![CDATA[1]]></text>
+</component>
+ <component id="txt_a5">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Vous avez identifié les scénarios dans lesquels un système d’adressage hiérarchique utilisant des sous-réseaux permet de résoudre les problèmes posés. Cliquez sur Suivant pour continuer.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Révisez le concept de système d’adressage hiérarchique utilisant des sous-réseaux, puis réessayez.]]></text>
+</component>
+
+
+</textcomponents>

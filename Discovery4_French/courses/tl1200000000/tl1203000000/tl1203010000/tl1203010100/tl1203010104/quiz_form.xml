@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="10/19/2007">
+		<name>Questionnaire du module</name>
+		<form id="19850" lang=""><form-item order="fixed">
+			<ai id="zzzz" type="mc-sa"><question><![CDATA[Comment le commutateur TeamSwitch est-il connecté au routeur EdgeRouter 1841 ?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/1 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/0 ]]></text>
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Fast Ethernet 0/0/1  ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/2 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/3 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Gigabit Ethernet 0/1 ]]></text>
+						</choice>
+
+
+</choices></ai></form-item>
+
+<form-item order="fixed">
+			<ai id="zzzz" type="mc-sa"><question><![CDATA[Comment le commutateur VendorSwitch est-il connecté au routeur EdgeRouter 1841 ?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/1 ]]></text>
+
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Fast Ethernet 0/0/0 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/1  ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/2 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Fast Ethernet 0/0/3 ]]></text>
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Gigabit Ethernet 0/1 ]]></text>
+						</choice>						
+
+</choices></ai></form-item>
+
+<form-item order="fixed">
+	<ai id="zzz" type="mc-sa">
+		<question><![CDATA[Quel est le type de modèle du commutateur VendorSwitch ?]]></question>
+		<choices>
+			<choice correct="y">
+				<text><![CDATA[Commutateur 2950 avec 24 ports ]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Commutateur 2960 avec 16 ports ]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Commutateur 2960 avec 24 ports ]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Commutateur 3550 avec 24 ports ]]></text>
+			</choice>			
+</choices></ai></form-item>
+<form-item order="fixed">
+	<ai id="zzzz" type="mc-sa">
+		<question><![CDATA[Quelle version du logiciel IOS le commutateur TeamSwitch exécute-t-il ?]]></question>
+		<choices>
+			<choice correct="n">
+				<text><![CDATA[Version 2 ]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Version 12.1 ]]></text>
+			</choice>	
+			<choice correct="y">
+				<text><![CDATA[Version 12.2]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Version 25 ]]></text>
+			</choice>	
+<choice correct="n">
+				<text><![CDATA[Version C2960-LANBASE-M]]></text>
+			</choice>	
+<choice correct="n">
+				<text><![CDATA[Version WS-C2960-24TT-L]]></text>
+			</choice>			
+</choices></ai></form-item>
+<form-item order="fixed">
+	<ai id="zzzz" type="mc-sa">
+		<question><![CDATA[Quel est le mode de communication bidirectionnel exécuté entre le routeur EdgeRouter et le commutateur TeamSwitch ?]]></question>
+		<choices>
+			<choice correct="y">
+				<text><![CDATA[Simultané]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Non simultané]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Automatique]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Désactivé par un administrateur]]></text>
+			</choice>		
+</choices></ai></form-item>
+<form-item order="fixed">
+	<ai id="zzzz" type="mc-sa">
+		<question><![CDATA[En fonction de la commande show cdp neighbors detail, que peut-on dire sur les périphériques connectés directement ?]]></question>
+		<choices>
+			<choice correct="n">
+				<text><![CDATA[Trois périphériques sont connectés directement au périphérique EdgeRouter.]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Telnet ne peut pas être utilisé pour modifier le périphérique VendorSwitch.]]></text>
+			</choice>	
+			<choice correct="y">
+				<text><![CDATA[Le périphérique VendorSwitch est connecté au port FastEthernet 0/0/3 du périphérique EdgeRouter.]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[Les périphériques TeamSwitch et VIPSwitch ne se trouvent pas sur le même réseau VLAN de gestion.]]></text>
+			</choice>		
+</choices></ai></form-item>
+<form-item order="fixed">
+	<ai id="zzzz" type="mc-sa">
+		<question><![CDATA[Combien de périphériques exécutant le protocole CDP sont connectés directement au routeur EdgeRouter ?]]></question>
+		<choices>
+			<choice correct="n">
+				<text><![CDATA[3]]></text>
+			</choice>	
+			<choice correct="y">
+				<text><![CDATA[4]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[5]]></text>
+			</choice>	
+			<choice correct="n">
+				<text><![CDATA[6]]></text>
+			</choice>	
+<choice correct="n">
+				<text><![CDATA[7]]></text>
+			</choice>	
+<choice correct="n">
+				<text><![CDATA[8]]></text>
+			</choice>		
+</choices></ai></form-item>
+</form></exam> 

@@ -1,0 +1,42 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Data Link Frame Header</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>IP Packet Header</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>OSPF Packet Header</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>OSPF Packet Type-Specific Data</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Data Link Frame (Ethernet Fields shown here)</b><br/>MAC Destination Address = Multicast: 01-00-5E-00-00-05 or 01-00-5E-00-00-06<br/>MAC Source Address = Address of sending interface]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>IP Packet</b><br/>IP Source Address = Address of sending interface<br/>IP Destination Address = Multicast: 224.0.0.5 or 224.0.0.6<br/>Protocol field = 89 for OSPF]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>OSPF Packet Header</b><br/>Type Code for OSPF Packet Type <br/>Router ID and Area ID]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>OSPF Packet Types</b><br/>0x01 Hello<br/>0x02 Database Description (DD)<br/>0x03 Link State Request<br/>0x04 Link State Update<br/>0x05 Link State Acknowledgment]]></text>
+</component>
+
+<component id="ID_title">
+<text><![CDATA[<b>Encapsulated OSPF Message</b>]]></text>
+</component>
+
+<component id="ID_insta">
+<text><![CDATA[<b>Roll over fields to see field content.</b>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,21 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+    
+<text><![CDATA[<ul><li>Lorsque des paquets sont rejetés, une liste d’accès IP envoie un message ICMP d’hôte inaccessible à l’émetteur et élimine le paquet.</li><li>Les filtres de sortie ne concernent pas le trafic généré par le routeur local.</li><li>Toutes les listes d’accès se terminent par une instruction <b>deny any</b> implicite (n’apparaît pas dans la liste).</li><li>Vous pourrez plus facilement modifier vos listes de contrôle d’accès si vous les créez dans un éditeur de texte. Vous pouvez copier et coller les instructions de liste de contrôle d’accès sur le routeur.<li></ul>]]></text> 
+ 
+ </component>
+ 
+<component id="ID_txt02">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Plus d’info]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<font size="14"><p align='center'><b>Directives sur la création et le traitement des listes de contrôle d’accès</b></p></font><br/><ul><li>Configurez uniquement une liste de contrôle d’accès par protocole et par direction.</li><li>Appliquez les listes d’accès standard les plus proches de la destination.</li><li>Appliquez les listes d’accès étendues les plus proches de la source.</li><li>Utilisez la plage de numéros appropriée pour le type de liste.</li><li>Identifiez la direction en entrée et en sortie d’après le port depuis le routeur.</li><li>Traitez les instructions dans l’ordre en commençant par le début de la liste.</li><li>Refusez les paquets lorsqu’aucune correspondance n’est trouvée.</li><li>Indiquez les entrées dans la liste de la plus spécifique à la plus générale.</li><li>Configurez une liste de contrôle d’accès avec une instruction <b>permit</b> (autoriser) pour ne pas bloquer la totalité du trafic.</li></ul>]]></text>
+</component>
+
+</textcomponents>

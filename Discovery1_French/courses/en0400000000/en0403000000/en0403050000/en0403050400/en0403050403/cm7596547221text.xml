@@ -1,0 +1,137 @@
+<textcomponents>
+<component id="ID_activity">
+<text><![CDATA[<B>Activity</B>]]></text> 
+ </component>
+<component id="button1">
+<text><![CDATA[<B>Check</B>]]></text> 
+ </component>
+<component id="button2">
+<text><![CDATA[<B>New Practice Problem</B>]]></text> 
+ </component>
+<component id="helpBtn_txt">
+<text><![CDATA[<B>Help</B>]]></text> 
+ </component>
+
+<component id="ID_instructions">
+<text><![CDATA[Determine how the router forwards a packet based on the source and destination address and information in the route table.<br/><B>Answer the questions based on the information in the graphic.</B>]]></text> 
+ </component>
+<component id="question1_txt">
+<text><![CDATA[<B>What is the default gateway address used to forward this packet to the router?</B>]]></text> 
+ </component>
+<component id="question2_txt">
+<text><![CDATA[<B>When the router receives this packet, to which interface will the router forward the packet?</B>]]></text> 
+ </component>
+<component id="topology_hub1_txt">
+<text><![CDATA[<B>Hub</B>]]></text> 
+ </component>
+<component id="topology_hub2_txt">
+<text><![CDATA[<B>Hub</B>]]></text> 
+ </component>
+<component id="topology_hub3_txt">
+<text><![CDATA[<B>Hub</B>]]></text> 
+ </component>
+<component id="q1option1_txt">
+<text><![CDATA[<B>192.168.3.1</B>]]></text> 
+ </component>
+<component id="q1option2_txt">
+<text><![CDATA[<B>172.16.1.1</B>]]></text> 
+ </component>
+<component id="q1option3_txt">
+<text><![CDATA[<B>10.5.5.1</B>]]></text> 
+ </component>
+<component id="q2option1_txt">
+<text><![CDATA[<B>Ethernet1/1</B>]]></text> 
+ </component>
+<component id="q2option2_txt">
+<text><![CDATA[<B>Ethernet1/2</B>]]></text> 
+ </component>
+<component id="q2option3_txt">
+<text><![CDATA[<B>Ethernet1/3</B>]]></text> 
+ </component>
+<component id="helpTitle">
+<text><![CDATA[<B>Help</B>]]></text> 
+ </component>
+<component id="helpBody">
+<text><![CDATA[This activity quizzes you on your knowledge of how a packet is forwarded by a router.<br><br>Click the "Check" button to check your answer.<br>Click the "New Practice Problem" button to start a new computer generated practice activity.<br><br>You are given the physical topology and the routing table of the router. You are also given a packet that displays the source and destination IP address.<br><br>These computer generated activities will have a source and destination pair using one of the addresses shown on the topology. Custom activities can use any desired addresses in the packet.<br><br>1. Your goal is to determine how the router will handle this packet given the routing table shown.<br><br>2. For the first question, check the default gateway address to indicate where the router will receive this packet.<br><br>3. For the second question, check the corresponding interface to indicate to which interface the router will send the packet.<br><br>4. Click the "Check" button to see if your answer is correct.<br><br>Additional Help:<br>In order to send packets out of the local network, a host sends them to the router via the default gateway.<br><br>The default gateway is the router interface that participates as a host on that local network.<br><br>A router builds a table of directly connected networks as well as destination networks that it learns from other routers. This routing table contains a list of the destination network and the interface that packets should be sent out to reach that network. Packets may have to be sent to another router to be moved towards the final destination.<br><br>A router is only concerned with a destination network. Its job is to send packets out the interface nearest to the destination network in an attempt to move them to their final destination.<br>]]></text> 
+ </component>
+<component id="routeTable_txt">
+<text><![CDATA[<B>Route Table</B>]]></text> 
+ </component>
+<component id="type_txt">
+<text><![CDATA[<B>Type</B>]]></text> 
+ </component>
+<component id="network_txt">
+<text><![CDATA[<B>Network</B>]]></text> 
+ </component>
+<component id="port_txt">
+<text><![CDATA[<B>Port</B>]]></text> 
+ </component>
+<component id="nextHopIP_txt">
+<text><![CDATA[<B>Next Hop IP</B>]]></text> 
+ </component>
+<component id="metric_txt">
+<text><![CDATA[<B>Metric</B>]]></text> 
+ </component>
+<component id="r1Port">
+<text><![CDATA[<B>Ethernet1/1</B>]]></text> 
+ </component>
+<component id="r2Port">
+<text><![CDATA[<B>Ethernet1/2</B>]]></text> 
+ </component>
+<component id="r3Port">
+<text><![CDATA[<B>Ethernet1/3</B>]]></text> 
+ </component>
+<component id="r1Type_txt">
+<text><![CDATA[<B>C</B>]]></text> 
+ </component>
+<component id="r2Type_txt">
+<text><![CDATA[<B>C</B>]]></text> 
+ </component>
+<component id="r3Type_txt">
+<text><![CDATA[<B>C</B>]]></text> 
+ </component>
+<component id="frame_txt">
+<text><![CDATA[<B>Frame</B>]]></text> 
+ </component>
+<component id="startTag_txt">
+<text><![CDATA[<B>Start Tag</B>]]></text> 
+ </component>
+<component id="dstIp_txt">
+<text><![CDATA[<B>Destination IP</B>]]></text> 
+ </component>
+
+<component id="sourceIp_txt">
+<text><![CDATA[<B>Source IP</B>]]></text> 
+ </component>
+
+<component id="encapsulatedData_txt">
+<text><![CDATA[<B>Encapsulated Data</B>]]></text> 
+ </component>
+
+<component id="invalidNetwork">
+<text><![CDATA[<b>Please choose from one of the three networks included in the route table.</b>]]></text> 
+ </component>
+<component id="invalidHost">
+<text><![CDATA[<b>Please enter host range from 2 to 254.</b>]]></text> 
+ </component>
+<component id="sameAddress">
+<text><![CDATA[<b>The destination address is in the same network as the source address. Please choose a different network.</b>]]></text> 
+ </component>
+<component id="missingAddress">
+<text><![CDATA[<b>Please enter both a source and destination address for this packet.</b>]]></text> 
+ </component>
+
+<component id="incorrect1">
+<text><![CDATA[<b>Incorrect. In question 1, your answer for the default gateway address that was used, based on source address, is not true. Try again.</b>]]></text> 
+ </component>
+
+<component id="incorrect2">
+<text><![CDATA[<b>Incorrect. In question 2, your answer for where the router will forward the packet, based on destination address, is not true. Try again.</b>]]></text> 
+ </component>
+
+<component id="correct">
+<text><![CDATA[<b>Correct.</b>]]></text> 
+ </component>
+
+
+</textcomponents>

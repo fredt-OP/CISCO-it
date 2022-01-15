@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/17/2007">
+		<name>Questionnaire du module</name>
+		<form id="20038" lang=""><form-item order="fixed">
+			<ai id="120124" type="mc-sa"><question><![CDATA[RIPv1 a été correctement configuré entre les routeurs RTR1, RTR2 et RTR3. Que se passe-t-il si le routage est modifié sur le réseau 192.168.10.0/24 ? ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[RTR3 ne reçoit pas les mises à jour de routage.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RTR1 et RTR3 ne reçoivent pas les mises à jour de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RTR2 conserve les mises à jour dans le réseau local interne. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RTR1 transmet les informations de mise à jour de routage à RTR3. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120125" type="mc-sa"><question><![CDATA[L’administrateur a décidé d’utiliser les sous-interfaces sur le routeur RTR1 tout en utilisant le protocole RIPv1. Quelles opérations l’administrateur doit-il effectuer sur le routeur RTR1 ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Obtenir un autre DLCI du FAI et utiliser les commandes ci-dessous sur RTR1<br/> RTR1(config-if)# <b>interface serial 0/0.1 point-to-point</b><br/> RTR1(config-subif)#<b> ip address 10.10.10.1 255.255.255.252</b><br/> RTR1(config-subif)# <b>frame-relay interface-dlci 101</b><br/> RTR1(config-subif)# <b>interface serial 0/0.2 point-to-point</b><br/> RTR1(config-subif)#<b> ip address 10.10.10.5 255.255.255.252</b><br/> RTR1(config-subif)# <b>frame-relay interface-dlci [<i>nouveau_DLCI</i>]</b><br/>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Utiliser les commandes ci-dessous sur RTR1<br/> RTR1(config-if)# <b>interface serial 0/0.1 point-to-point</b><br/> RTR1(config-subif)#<b> ip address 10.10.10.1 255.255.255.252</b><br/> RTR1(config-subif)# <b>frame-relay interface-dlci 201</b><br/> RTR1(config-subif)# <b>interface serial 0/0.2 point-to-point</b><br/> RTR1(config-subif)#<b> ip address 10.10.10.5 255.255.255.252</b><br/> RTR1(config-subif)# <b>frame-relay interface-dlci 431</b><br/> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Utiliser les commandes ci-dessous sur RTR1<br/>RTR1(config-if)# <b>interface serial 0/0.1 multipoint</b><br/> RTR1(config-subif)#<b> ip address 10.10.10.1 255.255.255.240</b><br/> RTR1(config-subif)# <b>frame-relay interface-dlci 201</b><br/> RTR1(config-subif)# <b>frame-relay interface-dlci 431</b><br/> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Obtenir un autre DLCI à partir du FAI et utiliser les commandes ci-dessous sur RTR1<br/> RTR1(config-if)# <b>interface serial 0/0.1 multipoint</b><br/> RTR1(config-subif)#<b> ip address 10.10.10.1 255.255.255.240</b><br/> RTR1(config-subif)# <b>frame-relay interface-dlci 101</b><br/> RTR1(config-subif)# <b>frame-relay interface-dlci [<i>nouveau_DLCI</i>]</b><br/> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120126" type="mc-sa"><question><![CDATA[Si l’administrateur décide d’implémenter des sous-interfaces multipoints sur RTR1, que se passe-t-il s’il continue à utiliser le protocole de routage RIPv1 ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le protocole ARP inverse doit être défini avec des mappages statiques. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les mises à jour de routage de 192.168.10.0/24 ne sont pas transmises au réseau 192.168.20.0/24.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les DLCI doivent être modifiés pour s’assurer que chaque site dispose du même DLCI. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les encapsulations Frame Relay doivent s’appeler « cisco » sur tous les routeurs. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="120127" type="mc-sa"><question><![CDATA[Le protocole de routage utilisé entre les trois routeurs est RIPv1. L’administrateur souhaite s’assurer que le serveur FTP est disponible pour le réseau 192.168.50.0/24, même si la connexion Frame Relay échoue. De quelle façon l’administrateur doit-il concevoir une liaison de sauvegarde sur le serveur FTP ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Configurer une route statique avec la commande :<br/> <b>ip route 192.168.10.0 255.255.255.0 interface serial0/0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configurer une route statique avec la commande :<br/><b>ip route 192.168.10.0 255.255.255.0 interface serial0/1 150</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Installer un deuxième circuit sur un autre fournisseur de services Frame Relay et utiliser un débit de données garanti (CIR) de zéro. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Remplacer le protocole de routage par un protocole sans classes, par exemple OSPF. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

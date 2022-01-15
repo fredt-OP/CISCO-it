@@ -1,0 +1,95 @@
+<textcomponents>
+
+<component id="ID_header1">
+  <text><![CDATA[<b>Full Command</b>]]></text> 
+  </component>
+<component id="ID_header2">
+  <text><![CDATA[<b>Abbreviation</b>]]></text> 
+  </component>
+<component id="ID_header3">
+  <text><![CDATA[<b>Purpose / Information Displayed</b>]]></text> 
+  </component>
+
+<component id="ID_table">
+  <text><![CDATA[<table glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td  bgcolor='#333333' colspan="3" valign="top"><b><font color="#FFFFFF">General Use</font></b></td>
+  </tr>
+  <tr>
+    <td  bgcolor='#DDDDDD' width="150" valign="top"><b><font face="_typewriter">show running-config</font></b></td>
+    <td  bgcolor='#DDDDDD' width="100"valign="top"><b><font face="_typewriter">sh run</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top">Displays current config running in RAM. Includes host name, passwords, interface IP addresses, routing protocol activated, DHCP and NAT configuration. Must be issued in EXEC mode.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">show startup-config</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">sh star</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top">Displays backup config in NVRAM. May be different if running config has not been copied to backup. Must be issued in EXEC mode</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">show version</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">sh ve</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top">Displays IOS version, ROM version, router uptime system image file name, boot method, number and type of interfaces installed, amount of RAM, NVRAM and flash, and configuration register value.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#333333' colspan="3" valign="top"><b><font color="#FFFFFF">Routing Related</font></b></td>
+  </tr>
+  <tr>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">show ip protocols</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">sh ip pro</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top">Displays information for routing protocols configured including timer settings, version numbers, update intervals, active interfaces and networks advertised.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">show ip route</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">sh ip ro</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top">Displays routing table information including: routing code, networks known, admin distance and metric, how they were learned, last update next hop, interface learned via, and any static routes (including default) routes configured.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#333333' colspan="3" valign="top"><b><font color="#FFFFFF">Interface Related</font></b></td>
+  </tr>
+  <tr>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">show interfaces (type #)</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">sh int f0/0</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top">Displays one or all interfaces with line (protocol) status, bandwidth, delay, reliability, encapsulation, duplex and I/O statistics.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">show ip interface brief</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">sh ip int br</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top">Displays all interfaces with IP address with interface status (up/down/admin down) and line protocol status (up/down).</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">show protocols</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">sh prot</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top">Displays all interfaces with IP address and subnet mask (slash notation) with interface status (up/down/admin down) and line protocol status (up/down).</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#333333' colspan="3" valign="top"><b><font color="#FFFFFF">Connectivity Related</font></b></td>
+  </tr>
+  <tr>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">show cdp neighbors (detail)</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">sh cdp ne</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top">Displays information on directly connected devices including Device ID (host name), Local interface where device is connected, capability (R=router, S=switch), platform (e.g. 2620XM) and Port ID of remote device.&nbsp; The details option provides the IP address of the other device as well as the IOS version.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">show sessions</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">sh ses</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top">Displays telnet sessions (VTY) with remote hosts. Displays session number, host name and address.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">show ssh</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">sh ssh</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top">Displays ssh server connections with remote hosts.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">Ping  (ip / host name)</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top"><b><font face="_typewriter">P</font></b></td>
+    <td  bgcolor='#F2F2F2' valign="top">Sends 5 ICMP echo requests to an IP address or host name (if DNS is available) and displays the min/max and avg time to respond.</td>
+  </tr>
+  <tr>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">Traceroute (ip / host name)</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top"><b><font face="_typewriter">Tr</font></b></td>
+    <td  bgcolor='#DDDDDD' valign="top">Sends echo request with varying TTL. Lists routers (hops) in path and time to respond.</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+</textcomponents>

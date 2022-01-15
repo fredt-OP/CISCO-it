@@ -1,0 +1,103 @@
+﻿<TRANSLATION>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">R1-ISP</NAME>
+ <NAME translate="true">R2-Central</NAME>
+ <NAME translate="true">S1-Central</NAME>
+ <NAME translate="true">Eagle Server</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">1A</NAME>
+ <NAME translate="true">1B</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 11.1.6 : &lt;br&gt;examen de commandes IOS show communes &lt;/h2&gt;
+
+&lt;h3&gt;Table d'adressage :&lt;/h3&gt; &lt;!--Ceci est le début du code de la table d'adressage IP&quot; --&gt;
+
+&lt;p&gt;Ces travaux pratiques n'utilisent pas de table d'adressage.&lt;!--Ceci est la fin du code de la table d'adressage IP&quot; --&gt;&lt;!-- ================================================== Liste des objectifs non classés (puces) ================================================== --&gt;&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques :&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Examen de commandes show sur un routeur &lt;li&gt;Examen de commandes show en mode d'exécution utilisateur &lt;li&gt;Examen de commandes show en mode d'exécution privilégié &lt;li&gt;Examen de commandes show sur un commutateur &lt;li&gt;Examen de commandes show communes au routeur et au commutateur &lt;li&gt;Examen de commandes show spécifiques au commutateur &lt;/ul&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Cet exercice examine des commandes show communes entrées dans l'environnement ILC d'un routeur et d'un commutateur déjà configurés dans le cadre de la topologie standard des travaux pratiques.
+
+
+&lt;/p&gt;
+
+&lt;h3&gt;Tâche 1 :
+
+&lt;b&gt;examen de commandes show sur un routeur&lt;/b&gt;&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Examen de commandes show en mode d'exécution utilisateur.&lt;/h4&gt; &lt;p&gt;Cliquez sur le routeur R2-Central. La fenêtre de configuration du routeur s'ouvre. Cliquez sur l'onglet &lt;b&gt;CLI&lt;/b&gt; et appuyez sur &lt;b&gt;Entrée&lt;/b&gt;. L'invite du mode d'exécution utilisateur apparaît. Entrez la commande &lt;b&gt;show ?&lt;/b&gt; pour afficher les commandes show disponibles. &lt;/p&gt; &lt;p&gt;Donnez la commande &lt;b&gt;show interfaces&lt;/b&gt; et observez les résultats. Donnez la commande &lt;b&gt;show interfaces serial 0/0/0&lt;/b&gt; et observez les résultats. &lt;/p&gt; &lt;p&gt;Donnez la commande &lt;b&gt;show version&lt;/b&gt; et observez les résultats. &lt;/p&gt; &lt;p&gt;Donnez la commande &lt;b&gt;show ip interfaces&lt;/b&gt; et observez les résultats. Donnez la commande &lt;b&gt;show ip interface serial0/0/0&lt;/b&gt; et observez les résultats. Donnez la commande &lt;b&gt;show ip interface brief&lt;/b&gt; et observez les résultats. &lt;/p&gt; &lt;p&gt;Donnez la commande &lt;b&gt;show arp&lt;/b&gt;. Le mot clé arp n'est pas reconnu parce que cette commande show n'est pas disponible en mode d'exécution utilisateur. &lt;/p&gt; &lt;h4&gt;Étape 2. Examen de commandes show en mode d'exécution privilégié.&lt;/h4&gt; &lt;p&gt;Entrez la commande &lt;b&gt;enable&lt;/b&gt; pour passer au mode d'exécution privilégié. L'invite du mode d'exécution privilégié apparaît. Entrez la commande &lt;b&gt;show ?&lt;/b&gt; pour afficher les commandes show disponibles.&lt;/p&gt; &lt;p&gt;Donnez la commande &lt;b&gt;show arp&lt;/b&gt; et observez les résultats. Cliquez sur PC 1A. La fenêtre de configuration du PC s'ouvre. Cliquez sur l'onglet &lt;b&gt;Desktop&lt;/b&gt;. Cliquez sur le bouton &lt;b&gt; Command Prompt&lt;/b&gt;. Une fenêtre d'invite de commandes s'ouvre. Tapez &lt;b&gt;ping 192.168.254.254&lt;/b&gt; (l'adresse IP du serveur Eagle Server) et appuyez sur Entrée. Répétez la commande ping sur PC 1B. Redonnez la commande &lt;b&gt;show arp&lt;/b&gt; et observez les résultats.&lt;/p&gt; &lt;p&gt;Donnez la commande &lt;b&gt;show startup-config&lt;/b&gt; et observez les résultats.&lt;/p&gt; &lt;h3&gt;Tâche 2 : connexion des périphériques&lt;/h3&gt; &lt;h4&gt;Étape 1. Raccordement des périphériques à l'aide des supports convenables.&lt;/h4&gt; &lt;p&gt;Cette topologie de travaux pratiques ayant déjà été configurée à votre intention, passez à l'étape 2. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Étape 2. Examen de commandes show spécifiques au commutateur.&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Donnez la commande &lt;b&gt;show mac-address-table&lt;/b&gt; et observez les résultats. &lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux d'avancement doit atteindre 100 %. &lt;/h4&gt;
+
+
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est fourni à titre d'information par Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">R1-ISP</ID>
+ <ID translate="true">R2-Central</ID>
+ <ID translate="true">S1-Central</ID>
+ <ID translate="true">Eagle Server</ID>
+ <ID translate="true">1A</ID>
+ <ID translate="true">1B</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

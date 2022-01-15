@@ -1,0 +1,31 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>172.16.0.0/16 Level 1 Parent Route</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Destination of<br>IP Packet</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Level 1<br>Parent Route</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>We see dotted-decimal addresses.</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>The router sees bits and checks the bits for a match starting from the left.</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Only one bit matches.</b>]]></text> 
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Second bit does not match. Mask is /16. First 16 bits must match. Router skips this route and moves to the next route entry.</b>]]></text> 
+</component>
+
+</textcomponents>

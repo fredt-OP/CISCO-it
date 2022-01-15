@@ -1,0 +1,134 @@
+﻿<textcomponents>
+
+<component id="ID_txt01_6221">
+<text><![CDATA[Cliquez sur les boutons pour afficher le schéma de réseau et le tableau des exigences de réseau IP.]]></text>
+</component>
+
+<component id="ID_but01">
+<text><![CDATA[<b>Schéma de réseau</b>]]></text>
+</component>
+
+<component id="ID_but02">
+<text><![CDATA[<b>Tableau des exigences de réseau IP</b>]]></text>
+</component>
+
+<component id="ID_txt02_6221">
+<text><![CDATA[Local technique WC150<br/>Bureau de l’équipe A]]></text>
+</component>
+
+<component id="ID_txt03_6221">
+<text><![CDATA[40 ordinateurs, 60 téléphones IP,<br/>3 commutateurs, 1 point d’accès, 1 caméra]]></text>
+</component>
+
+<component id="ID_txt04_6221">
+<text><![CDATA[Tableau des exigences de réseau IP]]></text>
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td width='110%' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Emplacement de la couche d’accès</b></font></td>
+      <td width='150%'bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Description de la zone</b></font></td>
+      <td width='190%'bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Réseau local virtuel ou type de réseau</b></font></td>
+      <td width='75%' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Nombre de réseaux</b></font></td>
+      <td width='60%' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Nombre d’hôtes</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Croissance</b></font></td>
+    </tr>
+    
+    <tr>
+    <td colspan='6' bgcolor='#E9E9E9'>Couche d’accès</td>  
+    </tr>  
+    
+    <tr>
+    <td bgcolor='#99CCFF'>W150</td>
+    <td bgcolor='#F2F2F2'>Bureau de l’équipe A</td>
+    <td bgcolor='#F2F2F2'>Réseau local virtuel - Données</td>
+    <td bgcolor='#F2F2F2'>1</td>
+    <td bgcolor='#F2F2F2'>40</td>
+    <td bgcolor='#F2F2F2'>50%</td>
+    </tr>
+    
+     <tr>
+        <td bgcolor='#99CCFF'>W150</td>
+        <td bgcolor='#F2F2F2'>Bureau de l’équipe A</td>
+        <td bgcolor='#F2F2F2'>Réseau local virtuel - Voix</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>60</td>
+        <td bgcolor='#F2F2F2'>20%</td>
+    </tr>
+    
+     <tr>
+        <td bgcolor='#99CCFF'>W150</td>
+        <td bgcolor='#F2F2F2'>Bureau de l’équipe A</td>
+        <td bgcolor='#F2F2F2'>Réseau local virtuel de gestion</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>4</td>
+        <td bgcolor='#F2F2F2'>25%</td>
+    </tr>
+    
+    <tr>
+        <td bgcolor='#99CCFF'>W150</td>
+        <td bgcolor='#F2F2F2'>Bureau de l’équipe A</td>
+        <td bgcolor='#F2F2F2'>Surveillance vidéo</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>Aucune</td>
+    </tr>
+   <tr>
+        <td bgcolor='#F2F2F2'>W172</td>
+        <td bgcolor='#F2F2F2'>Bureau de l’équipe B</td>
+        <td bgcolor='#F2F2F2'>Réseau local virtuel - Données</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>22</td>
+        <td bgcolor='#F2F2F2'>50%</td>
+    </tr>
+    <tr>
+        <td bgcolor='#F2F2F2'>W172</td>
+        <td bgcolor='#F2F2F2'>Bureau de l’équipe B</td>
+        <td bgcolor='#F2F2F2'>Réseau local virtuel - Voix</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>38</td>
+        <td bgcolor='#F2F2F2'>20%</td>
+    </tr>  
+       <tr>
+        <td bgcolor='#F2F2F2'>W172</td>
+        <td bgcolor='#F2F2F2'>Bureau de l’équipe B</td>
+        <td bgcolor='#F2F2F2'>Réseau local virtuel de gestion</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>4</td>
+        <td bgcolor='#F2F2F2'>25%</td>
+    </tr>  
+    <tr>
+        <td bgcolor='#F2F2F2'>W172</td>
+        <td bgcolor='#F2F2F2'>Bureau de l’équipe B</td>
+        <td bgcolor='#F2F2F2'>Surveillance vidéo</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>1</td>
+        <td bgcolor='#F2F2F2'>Aucune</td>
+    </tr>   
+    
+     <tr>
+    <td colspan='6' bgcolor='#E9E9E9'>Couche de distribution</td>  
+    </tr> 
+  
+    <tr>
+        <td bgcolor='#F2F2F2'>DC220</td>
+        <td bgcolor='#F2F2F2'>Distribution bureaux des équipes et restaurant</td>
+        <td bgcolor='#F2F2F2'>Liaison montante de la couche 3 vers le cœur</td>
+        <td bgcolor='#F2F2F2'>5</td>
+        <td bgcolor='#F2F2F2'>2</td>
+        <td bgcolor='#F2F2F2'>Aucune</td>
+    </tr>  
+    <tr>
+        <td bgcolor='#F2F2F2'>DC220</td>
+        <td bgcolor='#F2F2F2'>Distribution bureaux de la direction et restaurant</td>
+        <td bgcolor='#F2F2F2'>Liaison montante de la couche 3 vers le cœur</td>
+        <td bgcolor='#F2F2F2'>5</td>
+        <td bgcolor='#F2F2F2'>2</td>
+        <td bgcolor='#F2F2F2'>Aucune</td>
+    </tr>  
+    
+        
+</table>]]></text>
+</component>
+</textcomponents>

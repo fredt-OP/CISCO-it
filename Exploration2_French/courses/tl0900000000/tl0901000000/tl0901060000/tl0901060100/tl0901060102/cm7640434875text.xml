@@ -1,0 +1,330 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne seront pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Décrivez les composants matériels internes et externes d’un routeur, ainsi que leur rôle respectif.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(voir 1.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>Unité centrale (CPU)</b>- Exécute les instructions du système d’exploitation concernant, notamment, l’initialisation du système, les fonctions de routage ou le contrôle des interfaces réseau.<br/><b>Mémoire vive (RAM)</b> - Stocke la table de routage et les autres structures de données requises par le routeur pour la transmission des paquets.<br/><b>Mémoire morte (ROM)</b> - Stocke un logiciel de diagnostic élémentaire utilisé lorsque le routeur est mis sous tension.<br/><b>Mémoire vive rémanente (NVRAM)</b> - Stocke la configuration initiale, qui comprend les adresses IP, le protocole de routage et d’autres informations associées. La mémoire vive rémanente (NVRAM) est stockée dans la puce de mémoire morte (ROM) amorçable.<br/><b>Mémoire flash</b>- Stocke le système d’exploitation (Cisco IOS) ainsi que d’autres fichiers.<br/>Les <b>interfaces LAN</b> Ethernet et FastEthernet permettent de connecter les périphériques à différents réseaux locaux (LAN).<br/>Les <b>interfaces WAN</b> permettent, quant à elles, de connecter plusieurs liaisons série de type T1, DSL ou ISDN, par exemple.]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[<b>Testez les composants matériels du routeur :</b><br/>1. Effectuez un test automatique de mise sous tension (POST).<br/>2. Exécutez le chargeur de bootstrap.<br/><b>Localisez et chargez le logiciel Cisco IOS :</b><br/>3. Localisez le logiciel IOS.<br/>4. Chargez le logiciel IOS.<br/><b>Localisez et chargez le fichier de configuration de démarrage ou passez en mode Configuration :</b><br/>5. Localisez le fichier de configuration.<br/>6. Exécutez le fichier de configuration.<br/>7. Passez en mode Configuration.]]></text>
+</component>
+
+<component id="ID_Q2_txt02note">
+<text><![CDATA[<b>Remarque : </b>s’il est impossible de trouver une image complète d’IOS, une version simplifiée d’IOS est copiée de la mémoire morte (ROM) vers la mémoire vive (RAM). Cette version du logiciel IOS facilite le diagnostic des problèmes et permet de charger une version complète du logiciel IOS en mémoire vive.<br/>Si le fichier de configuration de démarrage ne se trouve pas en mémoire vive non volatile, le routeur peut rechercher un serveur TFTP. Si le routeur détecte un lien actif vers un autre routeur configuré, il diffuse une requête de recherche afin de trouver un fichier de configuration en accédant au lien actif.]]></text>
+</component>
+
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Décrivez le processus de démarrage du routeur, de la mise sous tension à la configuration finale.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(voir 1.1)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Quelles sont les fonctions principales ajoutées au réseau grâce à un routeur ?]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(voir 1.1)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<ul><li>Identification du meilleur chemin pour l’envoi des paquets</li><li>Transmission des paquets vers leur destination</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Décrivez les étapes requises pour appliquer une configuration de base à un routeur. ]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(voir 1.2)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<ul><li>Attribuer un nom au routeur</li><li>Définir les mots de passe</li><li>Configurer les interfaces</li><li>Configurer une bannière</li><li>Enregistrer les modifications sur un routeur</li><li>Vérifier les paramètres de configuration de base et le fonctionnement du routeur</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5) Expliquez pourquoi le rôle de la table de routage est essentiel. Quel est son rôle ?]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(voir 1.3)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[Une table de routage contient les informations nécessaires pour que le routeur puisse jouer son rôle principal : transférer les paquets jusqu’à leur destination finale.]]></text>
+</component>
+<component id="ID_Q5_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q5_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 6 -->
+
+<component id="ID_Q6_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q6_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q6_txt03">
+<text><![CDATA[6) Quelles sont les trois méthodes principales qui permettent aux routeurs d’obtenir des informations sur les réseaux ? ]]></text>
+</component>
+<component id="ID_Q6_txt04">
+<text><![CDATA[(voir 1.3)]]></text>
+</component>
+<component id="ID_Q6_txt05">
+<text><![CDATA[<ul><li>Routes connectées</li><li>Routes statiques</li><li>Routes dynamiques</li></ul>]]></text>
+</component>
+<component id="ID_Q6_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q6_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+
+<!-- Question 7 -->
+
+
+
+<component id="ID_Q7_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q7_txt02">
+<text><![CDATA[(voir 1.4)]]></text>
+</component>
+<component id="ID_Q7_txt03">
+<text><![CDATA[7) Dans le cadre de votre formation, quels sont les champs les plus importants de l’en-tête IP et pourquoi ? ]]></text>
+</component>
+<component id="ID_Q7_txt04">
+<text><![CDATA[<b>Version</b> - La version du protocole IP actuellement utilisée est IPv4.<br/><b>Durée de vie</b> - Nombre de routeurs qu’un paquet traverse avant d’être abandonné<br/><b>Adresse IP source</b> - Adresse IP source 32 bits<br/><b>Adresse IP de destination</b> - Adresse IP de destination 32 bits]]></text>
+</component>
+<component id="ID_Q7_txt05">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+
+<!-- Question 8 -->
+
+<component id="ID_Q8_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q8_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q8_txt03">
+<text><![CDATA[8) Décrivez le processus d’encapsulation et de décapsulage mis en oeuvre lors de l'acheminement d’un paquet de sa source à sa destination. ]]></text>
+</component>
+<component id="ID_Q8_txt04">
+<text><![CDATA[(voir 1.4)]]></text>
+</component>
+<component id="ID_Q8_txt05">
+<text><![CDATA[La source encapsule les données dans un paquet avec les adresses IP source et de destination. Le paquet est ensuite encapsulé dans une trame contenant les adresses MAC source et de destination, qui est transmise sous forme d’octets par le biais du câble. La trame est reçue par la passerelle de la source (un routeur), puis décapsulée. Si l’adresse MAC de destination correspond au routeur, celui-ci recherche une interface de sortie vers la destination dans la table de routage, encapsule le paquet en utilisant le format de trame adapté à l’interface de sortie et les nouvelles adresses couche 2 de la source et de la destination, puis transfère la trame vers l’extérieur de l’interface. Ce processus intervient sur chaque routeur tout au long de l'acheminement, jusqu’à ce que le paquet parvienne à sa destination. Entre la source et la destination, les adresses de couche 2 sont modifiées lors de chaque saut. En revanche, les adresses source et de destination ne sont pas modifiées.]]></text>
+</component>
+<component id="ID_Q8_txt07">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q8_txt08">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 9 -->
+
+
+<component id="ID_Q9_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q9_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q9_txt03">
+<text><![CDATA[9) Si vous réfléchissez aux différences existant entre les composants matériels et logiciels d’un PC et d’un routeur, quels sont, selon vous, les atouts et les faiblesses de chaque périphérique ? Quel est le périphérique que vous estimez le plus puissant, et pourquoi ?]]></text>
+</component>
+<component id="ID_Q9_txt04">
+<text><![CDATA[(voir 1.3)]]></text>
+</component>
+<component id="ID_Q9_txt05">
+<text><![CDATA[Votre réponse doit prendre en compte le fait qu’un routeur est un périphérique dédié à un rôle précis, alors qu’un ordinateur offre une multitude de fonctions.]]></text>
+</component>
+<component id="ID_Q9_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q9_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 10 -->
+
+
+<component id="ID_Q10_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q10_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q10_txt03">
+<text><![CDATA[10) Vous avez étudié et utilisé l’interface de ligne de commande d’un routeur Cisco. Selon vous, est-il envisageable de se passer de l’interface de ligne de commande pour configurer les routeurs et les commutateurs ? Comment envisagez-vous les tâches de configuration de réseau sans interface de ligne de commande ?]]></text>
+</component>
+<component id="ID_Q10_txt04">
+<text><![CDATA[(voir 1.3)]]></text>
+</component>
+<component id="ID_Q10_txt05">
+<text><![CDATA[Les réponses peuvent varier. Cependant, l’interface de ligne de commande reste le moyen le plus utilisé pour les tâches de configuration. À l’instar des commandes DOS, l’interface de ligne de commande risque de rester, pour longtemps encore, la méthode de configuration et de vérification privilégiée par les administrateurs réseau, même si des interfaces graphiques plus intuitives et plus conviviales sont désormais disponibles sur le marché.]]></text>
+</component>
+<component id="ID_Q10_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q10_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 11 -->
+
+
+<component id="ID_Q11_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q11_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q11_txt03"> 
+<text><![CDATA[11) Si vous pouviez concevoir votre propre algorithme de protocole de routage pour router les paquets, quelles seraient ses principales caractéristiques ? Comment votre protocole déterminerait-il la meilleure route ? N’oubliez pas que votre conception devra être mise en oeuvre par un ordinateur. Soyez donc très précis.]]></text>
+</component>
+<component id="ID_Q11_txt04">
+<text><![CDATA[(voir 1.3)]]></text>
+</component>
+<component id="ID_Q11_txt05">
+<text><![CDATA[<br>Les réponses peuvent varier. Votre description doit inclure une procédure pas à pas. Pour découvrir le pseudocode des algorithmes de routage utilisés actuellement, recherchez des informations sur les algorithmes Bellman-Ford et Dijkstra sur Internet.]]></text>
+</component>
+<component id="ID_Q11_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q11_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+
+<!-- Question 12 -->
+
+
+<component id="ID_Q12_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q12_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q12_txt03">
+<text><![CDATA[12) Même si le protocole IP (Internet Protocol) est désormais considéré comme le seul protocole à utiliser pour l’adressage de couche 3, cela n’a pas toujours été le cas. Recherchez d’autres protocoles de couche 3 offrant les mêmes fonctions et prenez quelques notes les concernant. Quelles caractéristiques ont-ils en commun avec le protocole IP ? En quoi diffèrent-ils ?]]></text>
+</component>
+<component id="ID_Q12_txt04">
+<text><![CDATA[(voir 1.3)]]></text>
+</component>
+<component id="ID_Q12_txt05">
+<text><![CDATA[Tous les protocoles d’adressage de couche 3 partagent une même structure hiérarchique. Ils distinguent tous une partie réseau et une partie hôte. Toutefois, la distinction entre ces deux parties diffère d’un protocole à l’autre. Ainsi, le protocole Internet Packet Exchange de Novell utilise une adresse 80 bits. Les 32 premiers bits sont les bits réseau désignés, définis par l’administrateur. Les 48 bits restants sont identiques à l’adresse MAC de l’hôte.]]></text>
+</component>
+<component id="ID_Q12_txt06">
+<text><![CDATA[<b>Question<br/>précédente</b>]]></text>
+</component>
+<component id="ID_Q12_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>Ce chapitre est terminé.</b>]]></text>
+</component>
+
+
+</textcomponents>
+
+
+
+

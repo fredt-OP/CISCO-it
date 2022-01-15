@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13255" dateexported="01/26/2009">
+		<name>Module 3 Questionnaire</name>
+		<form id="20917" lang="fr"><form-item order="fixed">
+			<ai id="133288" type="mc-ma"><question><![CDATA[Quels sont les avantages du routage statique par rapport au routage dynamique ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La configuration est moins susceptible de contenir des erreurs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il est plus sûr car les routeurs n’annoncent pas les routes.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’expansion du réseau ne présente généralement pas de problème. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il n’y a pas de surcharge informatique.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’administrateur a moins de travail pour la maintenance de la configuration. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="63968" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="63968" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>RIP</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>IGRP</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>OSPF</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>EIGRP</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>BGP</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Protocole de routage extérieur à vecteur de distance</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Protocole de routage intérieur avancé de Cisco</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Protocole de routage intérieur à état de liens</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Protocole de routage intérieur à vecteur de distance</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Protocole de routage intérieur à vecteur de distance de Cisco</mattext></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Choisissez le protocole de routage approprié pour chaque description.</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-137.5" targetYspacing="11" yspacing="50" targetH="37"><options><display componentIdent="1" xpos="200" ypos="87.5" /><display componentIdent="2" xpos="200" ypos="147.5" /><display componentIdent="3" xpos="200" ypos="207.5" /><display componentIdent="4" xpos="200" ypos="267.5" /><display componentIdent="5" xpos="200" ypos="327.5" /></options><targets><display componentIdent="1" xpos="600" ypos="87.5" /><display componentIdent="2" xpos="600" ypos="139.5" /><display componentIdent="3" xpos="600" ypos="191.5" /><display componentIdent="4" xpos="600" ypos="243.5" /><display componentIdent="5" xpos="600" ypos="295.5" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="obs1" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>RIP - protocole de routage intérieur à vecteur de distance, IGRP - protocole de routage à vecteur de distance de Cisco, OSPF - état de liens, EIGRP - protocole de routage intérieur avancé de Cisco, BGP - protocole de routage extérieur à vecteur de distance</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="133294" type="mc-sa"><question><![CDATA[Quelle affirmation décrit le mieux la convergence sur un réseau ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Temps nécessaire pour que les routeurs partagent les changements de configuration d’administration, tels que les changements de mot de passe, d’une extrémité du réseau à l’autre extrémité. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Temps nécessaire pour que les routeurs sur le réseau mettent à jour leurs tables de routage après un changement de topologie.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Temps nécessaire pour que les routeurs d’un système autonome apprennent les routes vers les destinations d’un autre système autonome. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Temps nécessaire pour que les routeurs qui exécutent des protocoles de routage distincts mettent à jour leurs tables de routage. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133295" type="mc-ma"><question><![CDATA[Parmi les paramètres suivants, quels sont ceux utilisés pour calculer les mesures ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Nombre de sauts  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Temps de fonctionnement ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Bande passante  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Temps de convergence ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Distance administrative ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133290" type="mc-sa"><question><![CDATA[Quel protocole de routage possède la distance administrative par défaut la plus fiable ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[EIGRP (interne)  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ISIS ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[OSPF ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPv1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPv2 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133286" type="mc-sa"><question><![CDATA[Combien de chemins à coût égal un protocole de routage dynamique peut-il utiliser pour l’équilibrage de la charge par défaut ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[3 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[4  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[6 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133287" type="mc-sa"><question><![CDATA[Quelle commande affiche la distance administrative des routes ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[R1# <b>show interfaces</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[R1# <b>show ip route</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1# <b>show ip interfaces</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[R1# <b>debug ip routing</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133289" type="mc-sa"><question><![CDATA[Quand les réseaux connectés directement apparaissent-ils dans la table de routage ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Lorsqu’ils sont inclus dans une route statique. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Lorsqu’ils sont utilisés comme interface de sortie. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Dès qu’ils sont adressés et opérationnels au niveau de la couche 2. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Dès qu’ils sont adressés et opérationnels au niveau de la couche 3.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Toujours lorsqu’une commande no shutdown est exécutée. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133292" type="mc-sa"><question><![CDATA[Le routeur 1 utilise le protocole de routage RIPv2 et possède plusieurs chemins inégaux pour atteindre un réseau de destination. Par quel moyen le routeur 1 détermine-t-il le chemin le plus approprié vers le réseau de destination ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[La mesure la moins importante.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La mesure la plus élevée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La distance administrative la plus faible. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La distance administrative la plus importante. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il équilibre la charge entre quatre chemins au maximum. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="133291" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="133291" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>5</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>20</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>90</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>100</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>110</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>115</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>120</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>170</mattext></material></textcomponent></component><component ident="9" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>200</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>eBGP</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>EIGRP (interne)</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>EIGRP (externe)</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>ISIS</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>OSPF</mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>RIP</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser chaque distance administrative de la colonne de gauche vers le protocole de routage correspondant dans la colonne de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-127" targetYspacing="16" yspacing="45" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /><display componentIdent="7" xpos="200" ypos="315" /><display componentIdent="8" xpos="200" ypos="355" /><display componentIdent="9" xpos="200" ypos="395" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /><display componentIdent="4" xpos="600" ypos="186" /><display componentIdent="5" xpos="600" ypos="223" /><display componentIdent="6" xpos="600" ypos="260" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><scoringzone ident="6"><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="191999" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="191999" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="6"><componentident>7</componentident></scoringzonecontains></conditionvar><setvar varname="191999" action="Set">1</setvar><scoringdescription>De haut en bas : 20, 90, 170, 115, 110, 120. Les valeurs inutilisées sont : 5, 100, 200.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="133293" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="133293" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Ne prend pas en charge les réseaux discontinus.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Pris en charge par les protocoles EIGRP, OSPF et BGP.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Envoie le masque de sous-réseau dans ses mises à jour de routage.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Prend en charge les réseaux discontinus.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Pris en charge par le protocole RIP version 1 et le protocole IGRP.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>N’envoie pas le masque de sous-réseau dans ses mises à jour de routage.</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Exclusif à Cisco</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Norme ouverte </mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Routage par classe</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Routage sans classe</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser les caractéristiques situées à gauche vers les catégories appropriées situées à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137" targetYspacing="18" yspacing="50" targetH="29"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /><display componentIdent="7" xpos="200" ypos="315" /><display componentIdent="8" xpos="200" ypos="355" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1" /><display componentIdent="4" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="174" /><display componentIdent="4" xpos="600" ypos="236" /><display componentIdent="5" xpos="600" ypos="273" /><display componentIdent="6" xpos="600" ypos="310" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="Classful" maxvalue="1"><title>Par classe</title></decvar><interpretvar varname="Classful" view="All">Les caractéristiques Par classe se trouvent-elles toutes dans la colonne appropriée ?</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="Classful" action="Set">1</setvar><scoringdescription>Par classe Ne prend pas en charge les réseaux discontinus. N’envoie pas le masque de sous-réseau dans ses mises à jour de routage. Pris en charge par le protocole RIP version 1 et le protocole IGRP.  Sans classe Prend en charge les réseaux discontinus. Envoie le masque de sous-réseau dans ses mises à jour de routage. Pris en charge par les protocoles EIGRP, OSPF et BGP.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item></form></exam> 

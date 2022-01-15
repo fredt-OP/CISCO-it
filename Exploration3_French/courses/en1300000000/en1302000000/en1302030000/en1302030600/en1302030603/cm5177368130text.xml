@@ -1,0 +1,58 @@
+<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Configure a Web interface </b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Pc1</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>F0/18</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>S1</b>]]></text>
+</component>
+<component id="bubble_text">
+<text><![CDATA[<b>Management PC</b>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+ <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+ 	
+ 	<tr>
+ 		
+ 				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+ 				<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">&nbsp;</font></td>
+ 	</tr>			
+
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from privileged EXEC mode to global configuration mode.</td>
+		<td width="270" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>configure terminal</b></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configure the HTTP server interface for the enable type of authentication. The other options are. <br/>enable - Enable password, which is the default method of HTTP server user authentication, is used. <br/>local - Local user database, as defined on the Cisco router or access server, is used. <br/>tacacs - TACACS server is used. </td>
+		<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config)#<b>ip http authentication enable</b></font></td>
+	</tr>
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enabled the HTTP server.</td>
+		<td width="270" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config)#<b>ip http server</b></font></td>
+	</tr>
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Return to privileged EXEC mode. </td>
+		<td width="270" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1(config)#<b>end</b></font></td>
+	</tr>
+
+	<tr>	
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Save the running configuration to the switch start-up configuration.</td>
+		<td width="270" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face="_typewriter">S1#<b>copy running-config startup-config</b></font></td>
+	</tr>		
+</table>]]></text> 
+  </component>
+</textcomponents>
+
+
+	

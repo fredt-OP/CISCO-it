@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 18:09:27">
+<title><content-text><![CDATA[7.2.1 - Ethernet and WAN Encapsulation]]></content-text></title>
+<brief><content-text><![CDATA[The animation depicts the Layer 2 encapsulation process.<br><br>A computer, H1, is connected to a switch, S1, which is connected to a router, R1. There is a serial link connecting R1 and a router, R2. R2 is connected to a switch, S2, which is connected to a computer, H2.<br><br>H1 sends a message out. The header is marked as an Ethernet header. Once the message reaches R1, the protocol changes, requiring the header to change to a PPP header using the IP protocol. This will enable the message to travel through the network. As the message reaches the LAN side of R2, the header is changed back to an Ethernet header, so the message can traverse the Ethernet network and finally reach H2.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

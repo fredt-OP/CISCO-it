@@ -1,0 +1,65 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<B>Troubleshooting a Serial Interface</B>]]></text> 
+</component>
+
+<component id="ID_btn1">
+  <text><![CDATA[<B>Possible States</B>]]></text> 
+  </component>
+<component id="ID_btn2">
+  <text><![CDATA[<B>Status</B>]]></text> 
+  </component>
+<component id="ID_btn3">
+  <text><![CDATA[<B>Controllers</B>]]></text> 
+  </component>
+<component id="ID_header1">
+  <text><![CDATA[<b>Status Line</b>]]></text> 
+  </component>
+<component id="ID_header2">
+  <text><![CDATA[<b>Possible Condition</b>]]></text> 
+  </component>
+<component id="ID_header3">
+  <text><![CDATA[<b>Problem / Solution</b>]]></text> 
+  </component>
+
+<component id="ID_table">
+	<text><![CDATA[<table bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='120' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Serial x is up, line protocol is up</td>
+<td width='190' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>This is the proper status line condition.</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>No action is required.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Serial x is down, line protocol is down (DTE mode)</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The router is not sensing a CD signal, which means the CD is not active.<BR/>A WAN carrier service provider problem has occurred, which means the line is down or is not connected to CSU/DSU.<BR/>Cabling is faulty or incorrect.<BR/>Hardware failure has occurred (CSU/DSU).</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1. Check the LEDs on the CSU/DSU to see whether the CD is active, or insert a breakout box on the line to check for the CD signal.<BR/>2. Verify that the proper cable and interface are being used by looking at the hardware installation documentation.<BR/>3. Insert a breakout box and check all control leads.<BR/>4. Contact the leased-line or other carrier service to see whether there is a problem.<BR/>5. Swap faulty parts.<BR/>6. If faulty router hardware is suspected, change the serial line to another port. If the connection comes up, the previously connected interface has a problem.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Serial x is up, line protocol is down (DTE mode)</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>A local or remote router is misconfigured.<BR/>Keepalives are not being sent by the remote router.<BR/>A leased-line or other carrier service problem has occurred, which means a noisy line or misconfigured or failed switch.<BR/>A timing problem has occurred on the cable, which means serial clock transmit external (SCTE) is not set on CSU/DSU. SCTE is designed to compensate for clock phase shift on long cables. When the DCE device uses SCTE instead of its internal clock to sample data from the DTE, it is better able to sample the data without error even if there is a phase shift in the cable.<BR/>A local or remote CSU/DSU has failed.<BR/>Router hardware, which could be either local or remote, has failed.</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1. Put the modem, CSU, or DSU in local loopback mode and use the <FONT FACE='_typewriter'><B>show interfaces serial</B></FONT> command to determine whether the line protocol comes up. If the line protocol comes up, a WAN carrier service provider problem or a failed remote router is the likely problem.<BR/>2. If the problem appears to be on the remote end, repeat Step 1 on the remote modem, CSU, or DSU.<BR/>3. Verify all cabling. Make certain that the cable is attached to the correct interface, the correct CSU/DSU, and the correct WAN carrier service provider network termination point. Use the <FONT FACE='_typewriter'><B>show controllers </B></FONT>exec command to determine which cable is attached to which interface.<BR/>4. Enable the debug <b><font face= '_typewriter' >serial interface </font></b>exec command.<BR/>5. If the line protocol does not come up in local loopback mode, and if the output of the <font face='_typewriter'><b>debug serial interface </b></font>exec command shows that the keepalive counter is not incrementing, a router hardware problem is likely. Swap the router interface hardware.<BR/>6. If the line protocol comes up and the keepalive counter increments, the problem is not in the local router.<BR/>7. If faulty router hardware is suspected, change the serial line to an unused port. If the connection comes up, the previously connected interface has a problem.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Serial x is up, line protocol is down (DCE mode)</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The clockrate interface configuration command is missing.<BR/>The DTE device does not support or is not set up for SCTE mode (terminal timing).<BR/>The remote CSU or DSU has failed.</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1. Add the <FONT FACE='_typewriter'><B>clockrate </B></FONT>interface configuration command on the serial interface.<BR/>Syntax: <FONT FACE='_typewriter'><B>clockrate</B></FONT> <FONT FACE='_typewriter'><I>bps</I></FONT><BR/>Syntax Description:bps - Desired clock rate in bits per second:<BR/>1200, 2400, 4800, 9600, 19200, 38400, 56000, 64000, 72000, 125000, 148000, 250000, 500000, 800000, 1000000, 1300000, 2000000, 4000000, or 8000000<BR/>2. If the problem appears to be on the remote end, repeat Step 1 on the remote modem, CSU, or DSU.<BR/>3. Verify that the correct cable is being used.<BR/>4. If the line protocol is still down, there is a possible hardware failure or cabling problem. Insert a breakout box and observe leads.<BR/>5. Replace faulty parts as necessary.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Serial x is up, line protocol is up (looped)</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>A loop exists in the circuit. The sequence number in the keepalive packet changes to a random number when a loop is initially detected. If the same random number is returned over the link, a loop exists.</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1. Use the <b><font face= '_typewriter'>show running-config</font></b> privileged exec command to look for any <b><font face= '_typewriter'>loopback</font></b> interface configuration command entries.<BR/>2. If there is a <b><font face= '_typewriter' >loopback</font></b> interface configuration command entry, use the <b><font face= '_typewriter' >no loopback</font></b> interface configuration command to remove the loop.<BR/>3. If there is no <b><font face= '_typewriter' >loopback</font></b> interface configuration command, examine the CSU/DSU to determine whether they are configured in manual loopback mode. If they are, disable manual loopback.<BR/>4. After disabling loopback mode on the CSU/DSU, reset the CSU/DSU, and inspect the line status. If the line protocol comes up, no other action is needed.<BR/>5. If upon inspection, that the CSU or DSU cannot be manually set, then contact the leased-line or other carrier service for line troubleshooting assistance.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Serial x is up, line protocol is down (disabled)</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>A high error rate has occurred due to a WAN service provider problem.<BR/>A CSU or DSU hardware problem has occurred.<BR/>Router hardware (interface) is bad.</td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1. Troubleshoot the line with a serial analyzer and breakout box. Look for toggling CTS and DSR signals.<BR/>2. Loop CSU/DSU (DTE loop). If the problem continues, it is likely that there is a hardware problem. If the problem does not continue, it is likely that there is a WAN service provider problem.<BR/>3. Swap out bad hardware as required (CSU, DSU, switch, local or remote router).</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Serial x is administratively down, line protocol is down</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>The router configuration includes the <FONT FACE='_typewriter'><B>shutdown </B></FONT>interface configuration command.<BR/>A duplicate IP address exists.</td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1. Check the router configuration for the <b><font face='_typewriter'>shutdown</font></b> command.<BR/>2. Use the <b><font face= '_typewriter'>no shutdown </font></b>interface configuration command to remove the <b><font face= '_typewriter'>shutdown</font></b> command.<BR/>3. Verify that there are no identical IP addresses using the <B><font face='_typewriter'>show running-config</font></B> privileged exec command or the <B><font face='_typewriter'>show interfaces </font></B>exec command.<BR/>4. If there are duplicate addresses, resolve the conflict by changing one of the IP addresses.</td>
+</tr>
+</table>]]></text>
+</component>
+</textcomponents>

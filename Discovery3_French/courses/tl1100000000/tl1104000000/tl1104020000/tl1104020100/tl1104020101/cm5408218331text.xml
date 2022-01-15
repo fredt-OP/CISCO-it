@@ -1,0 +1,204 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Masque de sous-réseau décimal à point]]></text>&gt; 
+</component>
+<component id="ID_txt02">
+<text><![CDATA[Masque de sous-réseau binaire]]></text> 
+</component>
+<component id="ID_txt03">
+<text><![CDATA[Notation de<br>barre oblique]]></text>&gt;  
+</component>
+<component id="ID_txt04">
+<text><![CDATA[Nombre de<br>bits d’hôtes]]></text>&gt; 
+</component>
+<component id="ID_txt05">
+<text><![CDATA[Hôtes possibles<br>(soustraire 2)]]></text>&gt; 
+</component>
+<component id="ID_txt06">
+<text><![CDATA[Notation de masque de sous-réseau et nombre d’hôtes possibles]]></text>&gt; 
+</component>
+<component id="ID_txt07">
+<text><![CDATA[REMARQUE : le nombre d’hôtes se calcule en élevant le chiffre 2 à la puissance du nombre de bits d’hôtes disponibles, puis en soustrayant 2.]]></text>
+</component>
+
+<component id="ID_tHeader">
+<text><![CDATA[
+<table header='top' headerstyle='black' cellpadding='2'>
+<tr>
+<td width='110'><font size='10' color='#FFFFFF'><b>Masque de sous- réseau décimal à point</b></font></td>
+<td width='250'><font size='10' color='#FFFFFF'><b>Masque de sous-réseau binaire</b></font></td>
+<td width='95'><font size='10' color='#FFFFFF'><b>Notation de barre oblique</b></font></td>
+<td width='95'><font size='10' color='#FFFFFF'><b>Nombre de bits d’hôtes</b></font></td>
+<td><font size='10' color='#FFFFFF'><b>Hôtes possibles<br>2^n-2</b></font></td>
+</tr>
+</table>]]></text> 
+   </component>
+
+ 
+<component id="ID_table">
+<text><![CDATA[
+<table cellpadding='2'>
+<tr>
+<td width='110' bgcolor='#F2F2F2'><b>255.0.0.0</b></td>
+<td width='250' bgcolor='#F2F2F2'><b>11111111.00000000.00000000.00000000</b></td>
+<td bgcolor='#F2F2F2'><strong>/8</strong></td>
+<td bgcolor='#F2F2F2'><strong>24</strong></td>
+<td bgcolor='#F2F2F2'><strong>16777214</strong></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.128.0.0</td>
+<td bgcolor='#DDDDDD'>11111111.10000000.00000000.00000000</td>
+<td bgcolor='#DDDDDD'>/9</td>
+<td bgcolor='#DDDDDD'>23</td>
+<td bgcolor='#DDDDDD'>8388606</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.192.0.0</td>
+<td bgcolor='#F2F2F2'>11111111.11000000.00000000.00000000</td>
+<td bgcolor='#F2F2F2'>/10</td>
+<td bgcolor='#F2F2F2'>22</td>
+<td bgcolor='#F2F2F2'>4194302</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.224.0.0</td>
+<td bgcolor='#DDDDDD'>11111111.11100000.00000000.00000000</td>
+<td bgcolor='#DDDDDD'>/11</td>
+<td bgcolor='#DDDDDD'>21</td>
+<td bgcolor='#DDDDDD'>2097150</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.240.0.0</td>
+<td bgcolor='#F2F2F2'>11111111.11110000.00000000.00000000</td>
+<td bgcolor='#F2F2F2'>/12</td>
+<td bgcolor='#F2F2F2'>20</td>
+<td bgcolor='#F2F2F2'>1048574</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.248.0.0</td>
+<td bgcolor='#DDDDDD'>11111111.11111000.00000000.00000000</td>
+<td bgcolor='#DDDDDD'>/13</td>
+<td bgcolor='#DDDDDD'>19</td>
+<td bgcolor='#DDDDDD'>524286</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.252.0.0</td>
+<td bgcolor='#F2F2F2'>11111111.11111100.00000000.00000000</td>
+<td bgcolor='#F2F2F2'>/14</td>
+<td bgcolor='#F2F2F2'>18</td>
+<td bgcolor='#F2F2F2'>262142</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.254.0.0</td>
+<td bgcolor='#DDDDDD'>11111111.11111110.00000000.00000000</td>
+<td bgcolor='#DDDDDD'>/15</td>
+<td bgcolor='#DDDDDD'>17</td>
+<td bgcolor='#DDDDDD'>131070</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'><strong>255.255.0.0</strong></td>
+<td bgcolor='#F2F2F2'><strong>11111111.11111111.00000000.00000000</strong></td>
+<td bgcolor='#F2F2F2'><strong>/16</strong></td>
+<td bgcolor='#F2F2F2'><strong>16</strong></td>
+<td bgcolor='#F2F2F2'><strong>65534</strong></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.255.128.0</td>
+<td bgcolor='#DDDDDD'>11111111.11111111.10000000.00000000</td>
+<td bgcolor='#DDDDDD'>/17</td>
+<td bgcolor='#DDDDDD'>15</td>
+<td bgcolor='#DDDDDD'>32766</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.255.192.0</td>
+<td bgcolor='#F2F2F2'>11111111.11111111.11000000.00000000</td>
+<td bgcolor='#F2F2F2'>/18</td>
+<td bgcolor='#F2F2F2'>14</td>
+<td bgcolor='#F2F2F2'>16382</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.255.224.0</td>
+<td bgcolor='#DDDDDD'>11111111.11111111.11100000.00000000</td>
+<td bgcolor='#DDDDDD'>/19</td>
+<td bgcolor='#DDDDDD'>13</td>
+<td bgcolor='#DDDDDD'>8190</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.255.240.0</td>
+<td bgcolor='#F2F2F2'>11111111.11111111.11110000.00000000</td>
+<td bgcolor='#F2F2F2'>/20</td>
+<td bgcolor='#F2F2F2'>12</td>
+<td bgcolor='#F2F2F2'>4094</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.255.248.0</td>
+<td bgcolor='#DDDDDD'>11111111.11111111.11111000.00000000</td>
+<td bgcolor='#DDDDDD'>/21</td>
+<td bgcolor='#DDDDDD'>11</td>
+<td bgcolor='#DDDDDD'>2046</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.255.252.0</td>
+<td bgcolor='#F2F2F2'>11111111.11111111.11111100.00000000</td>
+<td bgcolor='#F2F2F2'>/22</td>
+<td bgcolor='#F2F2F2'>10</td>
+<td bgcolor='#F2F2F2'>1022</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.255.254.0</td>
+<td bgcolor='#DDDDDD'>11111111.11111111.11111110.00000000</td>
+<td bgcolor='#DDDDDD'>/23</td>
+<td bgcolor='#DDDDDD'>9</td>
+<td bgcolor='#DDDDDD'>510</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'><strong>255.255.255.0</strong></td>
+<td bgcolor='#F2F2F2'><strong>11111111.11111111.11111111.00000000</strong></td>
+<td bgcolor='#F2F2F2'><strong>/24</strong></td>
+<td bgcolor='#F2F2F2'><strong>8</strong></td>
+<td bgcolor='#F2F2F2'><strong>254</strong></td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.255.255.128</td>
+<td bgcolor='#DDDDDD'>11111111.11111111.11111111.10000000</td>
+<td bgcolor='#DDDDDD'>/25</td>
+<td bgcolor='#DDDDDD'>7</td>
+<td bgcolor='#DDDDDD'>126</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.255.255.192</td>
+<td bgcolor='#F2F2F2'>11111111.11111111.11111111.11000000</td>
+<td bgcolor='#F2F2F2'>/26</td>
+<td bgcolor='#F2F2F2'>6</td>
+<td bgcolor='#F2F2F2'>62</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.255.255.224</td>
+<td bgcolor='#DDDDDD'>11111111.11111111.11111111.11100000</td>
+<td bgcolor='#DDDDDD'>/27</td>
+<td bgcolor='#DDDDDD'>5</td>
+<td bgcolor='#DDDDDD'>30</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.255.255.240</td>
+<td bgcolor='#F2F2F2'>11111111.11111111.11111111.11110000</td>
+<td bgcolor='#F2F2F2'>/28</td>
+<td bgcolor='#F2F2F2'>4</td>
+<td bgcolor='#F2F2F2'>14</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>255.255.255.248</td>
+<td bgcolor='#DDDDDD'>11111111.11111111.11111111.11111000</td>
+<td bgcolor='#DDDDDD'>/29</td>
+<td bgcolor='#DDDDDD'>3</td>
+<td bgcolor='#DDDDDD'>6</td>	
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>255.255.255.252</td>
+<td bgcolor='#F2F2F2'>11111111.11111111.11111111.11111100</td>
+<td bgcolor='#F2F2F2'>/30</td>
+<td bgcolor='#F2F2F2'>2</td>
+<td bgcolor='#F2F2F2'>2</td>
+</tr>
+</table>]]></text>
+</component>
+</textcomponents>

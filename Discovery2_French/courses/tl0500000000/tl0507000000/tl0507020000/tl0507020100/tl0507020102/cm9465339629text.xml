@@ -1,0 +1,329 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Couche application</b>]]></text> 
+</component>
+
+<component id="ID_txt01a">
+<text><![CDATA[<b>Système de noms</b>]]></text> 
+</component>
+
+<component id="ID_txt01b">
+<text><![CDATA[<b>Config hôte</b>]]></text> 
+</component>
+
+<component id="ID_txt01c">
+<text><![CDATA[<b>Courriel</b>]]></text> 
+</component>
+
+<component id="ID_txt01d">
+<text><![CDATA[<b>Transfert de fichiers</b>]]></text> 
+</component>
+
+<component id="ID_txt01e">
+<text><![CDATA[<b>Web</b>]]></text> 
+</component>
+
+<component id="ID_txt01f">
+<text><![CDATA[<b>DNS</b>]]></text> 
+</component>
+
+<component id="ID_txt01g">
+<text><![CDATA[<b>BOOTP</b>]]></text> 
+</component>
+
+<component id="ID_txt01h">
+<text><![CDATA[<b>SMTP</b>]]></text> 
+</component>
+
+<component id="ID_txt01i">
+<text><![CDATA[<b>FTP</b>]]></text> 
+</component>
+
+<component id="ID_txt01j">
+<text><![CDATA[<b>HTTP</b>]]></text> 
+</component>
+
+<component id="ID_txt01k">
+<text><![CDATA[<b>DHCP</b>]]></text> 
+</component>
+
+<component id="ID_txt01l">
+<text><![CDATA[<b>POP</b>]]></text> 
+</component>
+
+<component id="ID_txt01m">
+<text><![CDATA[<b>TFTP</b>]]></text> 
+</component>
+
+<component id="ID_txt01n">
+<text><![CDATA[<b>IMAP</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Couche transport</b>]]></text> 
+</component>
+
+<component id="ID_txt02a">
+<text><![CDATA[<b>UDP</b>]]></text> 
+</component>
+
+
+<component id="ID_txt02b">
+<text><![CDATA[<b>TCP</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Couche Internet</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03a">
+<text><![CDATA[<b>IP</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03b">
+<text><![CDATA[<b>Prise en charge IP</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03c">
+<text><![CDATA[<b>Protocoles de routage</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03d">
+<text><![CDATA[<b>NAT</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03e">
+<text><![CDATA[<b>ICMP</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03f">
+<text><![CDATA[<b>RIP</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03g">
+<text><![CDATA[<b>OSPF</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03h">
+<text><![CDATA[<b>EIGRP</b>]]></text> 
+</component>
+
+
+<component id="ID_txt03i">
+<text><![CDATA[<b>BGP</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Couche d’accès au réseau</b>]]></text> 
+</component>
+
+<component id="ID_txt04a">
+<text><![CDATA[<b>PPP</b>]]></text> 
+</component>
+
+<component id="ID_txt04b">
+<text><![CDATA[<b>Ethernet</b>]]></text> 
+</component>
+
+<component id="ID_txt04c">
+<text><![CDATA[<b>Pilotes d’interface</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>ARP</b>]]></text> 
+</component>
+
+
+<component id="ID_inst">
+<text><![CDATA[<b>Déplacez le pointeur sur les protocoles pour obtenir plus d’informations.</b>]]></text> 
+</component>
+
+
+
+<component id="DNSTitle">
+<text><![CDATA[DNS (Domain Name System) ou service]]></text>
+</component> 
+<component id="dnsBody">
+<text><![CDATA[<li>Traduit des noms de domaines (par exemple, cisco.com) en adresses IP</li>]]></text>
+</component>  
+
+<component id="BOOTPTitle">
+<text><![CDATA[Protocole Bootstrap ]]></text>
+</component> 
+<component id="bootpBody">
+<text><![CDATA[<li>Permet à une station de travail sans disque d’identifier sa propre adresse IP, l’adresse IP d’un serveur BOOTP sur le réseau et le fichier à importer dans la mémoire pour démarrer la machine.</li><li>Le protocole DHCP remplace le protocole BOOTP.</li>]]></text>
+</component> 
+
+
+<component id="SMTPTitle">
+<text><![CDATA[Protocole SMTP (Simple Mail Transfer Protocol)]]></text>
+</component> 
+<component id="smtpBody">
+<text><![CDATA[<li>Permet aux clients d’envoyer des courriels à un serveur de messagerie. <li/><li>Permet aux serveurs d’envoyer des courriels à d’autres serveurs.<li/>]]></text>
+</component> 
+
+
+<component id="FTPTitle">
+<text><![CDATA[Protocole FTP]]></text>
+</component> 
+<component id="ftpBody">
+<text><![CDATA[<li>Définit des règles permettant à un utilisateur sur un hôte d’accéder à des fichiers et de les importer vers un autre hôte au sein d’un réseau ou de les exporter à partir de cet hôte.<li/><li>Il s’agit d’un protocole de transmission de fichiers avec connexion reconnu et fiable. 
+</li>]]></text>
+</component> 
+
+
+<component id="HTTPTitle">
+<text><![CDATA[Protocole HTTP (Hypertext Transfer Protocol) ]]></text>
+</component> 
+<component id="httpBody">
+<text><![CDATA[<li>Ensemble de règles permettant d’échanger du texte, des graphiques, des sons, des vidéos et autres fichiers multimédia sur le Web.</li>]]></text>
+</component> 
+
+
+<component id="DHCPTitle">
+<text><![CDATA[Protocole DHCP (Dynamic Host Configuration Protocol) ]]></text>
+</component> 
+<component id="dhcpBody">
+<text><![CDATA[<li>Attribue instantanément des adresses IP à des stations clientes au démarrage.<li/><li>Permet de réutiliser les adresses obsolètes.
+</li>]]></text>
+</component> 
+
+
+<component id="POPTitle">
+<text><![CDATA[POP3 (Post Office Protocol version 3)]]></text>
+</component> 
+<component id="popBody">
+<text><![CDATA[<li>Permet aux clients de récupérer des courriels sur un serveur de messagerie.<li/><li>Permet de télécharger sur le Bureau des courriels à partir du serveur de messagerie.
+</li>]]></text>
+</component> 
+
+
+<component id="TFTPTitle">
+<text><![CDATA[Protocole TFTP (Trivial File Transfer Protocol)]]></text>
+</component> 
+<component id="tftpBody">
+<text><![CDATA[<li>Protocole de transfert de fichiers simple et sans connexion.<li><li>Protocole de transfert de fichiers reconnu.<li/><li>Il utilise moins de ressources que le protocole FTP.</li>]]></text>
+</component> 
+
+
+<component id="IMAPTitle">
+<text><![CDATA[<font size="-2">Protocole IMAP (Internet Message Access Protocol)</font>]]></text>
+</component> 
+<component id="imapBody">
+<text><![CDATA[<font size="-2"><li>Permet à des clients d’accéder aux courriels stockés sur un serveur de messagerie.<li/><li>Les courriels restent sur le serveur.</li></font>]]></text>
+</component> 
+
+
+<component id="UDPTitle">
+<text><![CDATA[Protocole UDP]]></text>
+</component> 
+<component id="udpBody">
+<text><![CDATA[<li>Active un processus sur un hôte pour envoyer des paquets à un processus hébergé sur un autre hôte.<li/><li>Les transmissions de datagrammes réussies ne sont pas confirmées.</li>]]></text>
+</component> 
+
+
+<component id="TCPTitle">
+<text><![CDATA[Protocole TCP (Transfer Control Protocol)]]></text>
+</component> 
+<component id="tcpBody">
+<text><![CDATA[<li>Permet d’obtenir une communication fiable entre des processus sur des hôtes distincts.<li/><li>Transmissions fiables et éprouvées.</li>]]></text>
+</component> 
+
+
+<component id="NATTitle">
+<text><![CDATA[Traduction d’adresses de réseau (NAT)]]></text>
+</component> 
+<component id="natBody">
+<text><![CDATA[<li>Permet de convertir les adresses IP d’un réseau privé en adresses IP globales et publiques.</li>]]></text>
+</component> 
+
+
+<component id="ICMPTitle">
+<text><![CDATA[Protocole ICMP ]]></text>
+</component> 
+<component id="icmpBody">
+<text><![CDATA[<li>Permet à un hôte de destination de signaler à l’hôte source des erreurs liées aux transmissions de paquets.</li>]]></text>
+</component> 
+
+
+<component id="RIPTitle">
+<text><![CDATA[RIP]]></text>
+</component> 
+<component id="RIPBody">
+<text><![CDATA[<li>Protocole de routage à vecteur de distance<li/><li>Mesure basée sur le nombre de sauts</li><li>La version 2 est compatible avec les protocoles VLSM et CIDR.</li>]]></text></component> 
+
+<component id="OSPFTitle">
+<text><![CDATA[OSPF]]></text>
+</component> 
+<component id="OSPFBody">
+<text><![CDATA[<li>Protocole de routage à état de liens.</li><li>Structure hiérarchique reposant sur des zones.</li><li>Protocole ouvert de routage interne.</li>]]></text>
+</component> 
+
+<component id="EIGRPTitle">
+<text><![CDATA[EIGRP]]></text>
+</component> 
+<component id="EIGRPBody">
+<text><![CDATA[<li>Protocole de routage propriétaire de Cisco.</li><li>Calcul combiné faisant intervenir la bande passante, les retards, la charge, la fiabilité et l’unité de transmission maximale (MTU).]]></text>
+</component> 
+
+<component id="BGPTitle">
+<text><![CDATA[BGP]]></text>
+</component> 
+<component id="BGPBody">
+<text><![CDATA[<li>BGP4 dernière version.<li/><li>Protocole de routage externe employé entre chaque FAI.</li><li>Routage entre des systèmes autonomes.</li>]]></text>
+</component> 
+
+
+<component id="Internet ProtocolTitle">
+<text><![CDATA[Protocole IP]]></text>
+</component> 
+<component id="Internet ProtocolBody">
+<text><![CDATA[<li>Reçoit des fragments de messages transmis par la couche transport.<li/><li>Recompose les messages en paquets.<li/><li>Transmet des paquets pour une livraison de bout en bout sur un interréseau.</li>]]></text>
+</component> 
+
+
+
+
+<component id="ARPTitle">
+<text><![CDATA[Protocole ARP (Address Resolution Protocol)]]></text>
+</component> 
+<component id="arpBody">
+<text><![CDATA[<li>Fournit un mappage dynamique entre une adresse IP et une adresse physique.</li>]]></text>
+</component> 
+
+
+<component id="PPPTitle">
+<text><![CDATA[Protocole point-à-point ]]></text>
+</component> 
+<component id="pppBody">
+<text><![CDATA[<li>Permet d’encapsuler des paquets pour les transmettre via une connexion série.</li>]]></text>
+</component> 
+
+
+<component id="EthernetTitle">
+<text><![CDATA[Ethernet]]></text>
+</component> 
+
+<component id="ethernetBody">
+<text><![CDATA[<li>Permet de définir les règles de câblage et de signalisation sur une couche d’accès réseau.</li>]]></text>
+</component> 
+
+<component id="Interface Driver title">
+<text><![CDATA[Pilote d’interface]]></text>
+</component> 
+
+<component id="Interface Driver">
+<text><![CDATA[<li>Fournit des instructions à un ordinateur permettant de contrôler une interface déterminée sur un périphérique réseau.</li>]]></text>
+</component>
+
+</textcomponents>

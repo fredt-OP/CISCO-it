@@ -1,0 +1,73 @@
+<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Click the buttons to see the slides.]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>NAT Overload</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>NAT Translations</b>]]></text>
+</component>
+
+<component id="ID_button03">
+<text><![CDATA[<b>NAT Statistics</b>]]></text>
+</component>
+
+<component id="ID_button04">
+<text><![CDATA[<b>Cleared NAT</b>]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_S1_title">
+<text><![CDATA[<b>NAT Overload Configuration Example</b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[<b>Inside<br/>Network</b>]]></text>
+</component>
+
+<component id="ID_S1_txt02">
+<text><![CDATA[<b>Internet</b>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_S2_title">
+<text><![CDATA[<b>NAT Translations Example</b>]]></text>
+</component>
+
+<!-- slide 3 -->
+<component id="ID_S3_title">
+<text><![CDATA[<b>NAT Translations Example</b>]]></text>
+</component>
+
+<!-- slide 4 -->
+<component id="ID_S4_title">
+<text><![CDATA[<b>Clearing NAT Translations</b>]]></text>
+</component>
+
+<component id="ID_S4_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF"><b>Command</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF"><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>clear ip nat translation *</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Clears all dynamic address translation entries from the NAT translation table</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>clear ip nat translation inside</b> <i>global-ip local-ip</i> [<b>outside</b> <i>local-ip global-ip</i>]</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Clears a simple dynamic translation entry containing an inside translation or both inside and outside translation</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>clear ip nat translation</b> <i>protocol</i> <b>inside</b> <i>global-ip global-port local-ip local-port</i> [<b>outside</b> <i>local-ip local-port global-ip global-port</i>]</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Clears an extended dynamic translation entry</td>
+	</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>
+

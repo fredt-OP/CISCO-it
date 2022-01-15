@@ -1,0 +1,54 @@
+﻿<textcomponents>
+
+
+<component id="ID_table1">
+		<text><![CDATA[
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+    <tr>
+      <td width="70" bgcolor='#F2F2F2'><font color='#FFFFFF'>Options</font></td>
+      <td width="250" bgcolor='#F2F2F2'><font color='#FFFFFF'>Description</font></td>
+      <td width="80" bgcolor='#F2F2F2'><font color='#FFFFFF'>Advantages</font></td>
+      <td width="100" bgcolor='#F2F2F2'><font color='#FFFFFF'>Disadvantages</font></td>
+      <td width="70" bgcolor='#F2F2F2'><font color='#FFFFFF'>Bandwidth range</font></td>
+      <td width="80" bgcolor='#F2F2F2'><font color='#FFFFFF'>Sample protocols used</font></td>
+    </tr>
+    <tr>
+      <td width="70" bgcolor='#DDDDDD'><font color='#003399'>Circuit switching</font></td>
+      <td width="250" bgcolor='#DDDDDD'>A dedicated circuit path is created between end points. Best example is dialup connections.</td>
+      <td width="80" bgcolor='#DDDDDD'>Less expensive</td>
+      <td width="100" bgcolor='#DDDDDD'>Call Setup</td>
+      <td width="70" bgcolor='#DDDDDD'>28 Kbps to 144 Kbps</td>
+      <td width="80" bgcolor='#DDDDDD'><font color='#003399'>PPP, ISDN</font></td>
+	</tr>
+    <tr>
+      <td width="70" bgcolor='#F2F2F2'><font color='#003399'>Packet switching</font></td>
+      <td width="250" bgcolor='#F2F2F2'>Devices transport packets via a shared single point-to-point or point-to-multipoint link across a carrier internetwork. Variable length packets are transmitted over Permanent Virtual Circuits (PVC) or Switched Virtual Circuits (SVC).</td>
+      <td width="80" bgcolor='#F2F2F2'>Flexible bandwidth, less expensive</td>
+      <td width="100" bgcolor='#F2F2F2'>Shared media across link</td>
+      <td width="70" bgcolor='#F2F2F2'>56 Kbps to 45 Mbps</td>
+      <td width="80" bgcolor='#F2F2F2'><font color='#003399'>Frame Relay</font></td>
+    </tr>
+      <tr>
+      <td width="70" bgcolor='#F2F2F2'><font color='#003399'>Leased line</font></td>
+      <td width="250" bgcolor='#F2F2F2'>Point-to-Point connection between two computers or Local Area Networks(LANs).</td>
+      <td width="80" bgcolor='#F2F2F2'>Most Secure</td>
+      <td width="100" bgcolor='#F2F2F2'>Expensive</td>
+      <td width="70" bgcolor='#F2F2F2'>56 Kbps to 45 Mbps</td>
+      <td width="80" bgcolor='#F2F2F2'><font color='#003399'>PPP, HDLC, SDLC</font></td>
+    </tr>
+    <tr>
+      <td width="70" bgcolor='#DDDDDD'><font color='#003399'>Cell relay</font></td>
+      <td width="250" bgcolor='#DDDDDD'>Similar to packet switching, but uses fixed length cells instead of variable length packets. Data is divided into fixed-length cells and then transported across virtual circuits.</td>
+      <td width="80" bgcolor='#DDDDDD'>Best for simultaneous use of voice and data</td>
+      <td width="100" bgcolor='#DDDDDD'>Overhead can be considerable</td>
+      <td width="70" bgcolor='#DDDDDD'>1.54 Mbps to 622 Mbps</td>
+      <td width="80" bgcolor='#DDDDDD'><font color='#003399'>ATM</font></td>
+    </tr>
+  
+  </table>
+
+
+]]></text>
+	</component>
+
+</textcomponents>

@@ -1,0 +1,349 @@
+﻿<textcomponents>
+		
+
+	
+<component id="ID_title">
+<text><![CDATA[<b>Fonctionnement du commutateur</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez ici pour voir les étapes.</b>]]></text>
+</component>
+
+
+
+
+<component id="But_01">
+<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+<component id="But_02">
+<text><![CDATA[<b>1</b>]]></text>
+</component>
+<component id="But_03">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+<component id="But_04">
+<text><![CDATA[<b>3</b>]]></text>
+</component>
+<component id="But_05">
+<text><![CDATA[<b>4</b>]]></text>
+</component>
+<component id="But_06">
+<text><![CDATA[<b>5</b>]]></text>
+</component>
+<component id="But_07">
+<text><![CDATA[<b>6</b>]]></text>
+</component>
+<component id="But_08">
+<text><![CDATA[<b>7</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Fa1</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Fa3</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Fa6</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Fa8</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>0A</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>0C</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>0B</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>0D</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Hôte1</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Hôte2</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Hôte3</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Hôte4</b>]]></text>
+</component>
+
+
+
+<component id="ID_title_reset">
+<text><![CDATA[<b>Apprentissage des commutateurs<br><br>&#8226; Apprentissage : enregistrement de l'adresse MAC et du numéro de port<br>&#8226; Inondation : envoi d'une trame vers tous les ports, à l'exception du port d'entrée<br>&#8226; Réacheminement sélectif : envoi d'une trame uniquement au port de destination</b>]]></text>
+</component>
+
+
+
+<component id="Butt_01_text1">
+<text><![CDATA[<b>À l'initialisation du commutateur, la table d'adresses MAC est vide.</b>]]></text>
+</component>
+
+<component id="Butt_01_text2">
+<text><![CDATA[<b>TABLE MAC</b>]]></text>
+</component>
+<component id="Butt_01_text3">
+<text><![CDATA[<b>Port</b>]]></text>
+</component>
+<component id="Butt_01_text4">
+<text><![CDATA[<b>Adresse MAC</b>]]></text>
+</component>
+<component id="Butt_01_text5">
+<text><![CDATA[<b>Durée</b>]]></text>
+</component>
+
+
+
+<component id="Butt_02_text1">
+<text><![CDATA[<b>Hôte1 envoie des données à Hôte2. La trame envoyée comprend une adresse MAC source et une adresse de destination.</b>]]></text>
+</component>
+
+<component id="Butt_02_text2">
+<text><![CDATA[<b>TABLE MAC</b>]]></text>
+</component>
+<component id="Butt_02_text3">
+<text><![CDATA[<b>Port</b>]]></text>
+</component>
+<component id="Butt_02_text4">
+<text><![CDATA[<b>Adresse MAC</b>]]></text>
+</component>
+<component id="Butt_02_text5">
+<text><![CDATA[<b>Durée</b>]]></text>
+</component>
+<component id="Butt_02_text6">
+<text><![CDATA[<b>Adresse source de la trame : <font color="#0000ff">0A</font></b>]]></text>
+</component>
+<component id="Butt_02_text7">
+<text><![CDATA[<b>Adresse de destination de la trame : <font color="#0000ff">0C</font></b>]]></text>
+</component>
+
+
+
+<component id="Butt_03_text1">
+<text><![CDATA[<b>Le commutateur lit l'adresse MAC source (0A) dans la trame reçue sur le port Fa1 ; il l'enregistre dans la table des adresses MAC pour l'utiliser lors du transfert des trames à l'Hôte1.</b>]]></text>
+</component>
+
+<component id="Butt_03_text1a">
+<text><![CDATA[<b>Apprentissage</b>]]></text>
+</component>
+
+<component id="Butt_03_text2">
+<text><![CDATA[<b>TABLE MAC</b>]]></text>
+</component>
+<component id="Butt_03_text3">
+<text><![CDATA[<b>Port</b>]]></text>
+</component>
+<component id="Butt_03_text4">
+<text><![CDATA[<b>Adresse MAC</b>]]></text>
+</component>
+<component id="Butt_03_text5">
+<text><![CDATA[<b>Durée</b>]]></text>
+</component>
+<component id="Butt_03_text6">
+<text><![CDATA[<b>Adresse source de la trame : <font color="#0000ff">0A</font></b>]]></text>
+</component>
+<component id="Butt_03_text7">
+<text><![CDATA[<b>Adresse de destination de la trame : 0C</b>]]></text>
+</component>
+
+<component id="Butt_03_text8">
+<text><![CDATA[<b>Fa1</b>]]></text>
+</component>
+<component id="Butt_03_text9">
+<text><![CDATA[<b><font color="#0000ff">0A</font></b>]]></text>
+</component>
+<component id="Butt_03_text10">
+<text><![CDATA[<b>11:25:11</b>]]></text>
+</component>
+
+
+<component id="Butt_04_text1">
+<text><![CDATA[<b>L'adresse MAC de destination (0C) ne figure pas dans la table MAC. Le commutateur transmet la trame par tous les ports à l'exception du port Fa1, le port pour l'expéditeur. Hôte3 et Hôte4 reçoivent la trame, mais son adresse ne correspond pas à leur adresse MAC. La trame est abandonnée. Dans la trame, l'adresse MAC de destination correspond à l'Hôte2 ; la trame est acceptée.</b>]]></text>
+</component>
+<component id="Butt_04_text1a">
+<text><![CDATA[<b>Inondation</b>]]></text>
+</component>
+
+<component id="Butt_04_text2">
+<text><![CDATA[<b>TABLE MAC</b>]]></text>
+</component>
+<component id="Butt_04_text3">
+<text><![CDATA[<b>Port</b>]]></text>
+</component>
+<component id="Butt_04_text4">
+<text><![CDATA[<b>Adresse MAC</b>]]></text>
+</component>
+<component id="Butt_04_text5">
+<text><![CDATA[<b>Durée</b>]]></text>
+</component>
+<component id="Butt_04_text6">
+<text><![CDATA[<b>Adresse source de la trame : 0A</b>]]></text>
+</component>
+<component id="Butt_04_text7">
+<text><![CDATA[<b>Adresse de destination de la trame : <font color="#0000ff">0C</font></b>]]></text>
+</component>
+
+<component id="Butt_04_text8">
+<text><![CDATA[<b>Fa1</b>]]></text>
+</component>
+<component id="Butt_04_text9">
+<text><![CDATA[<b>0A</b>]]></text>
+</component>
+<component id="Butt_04_text10">
+<text><![CDATA[<b>11:25:11</b>]]></text>
+</component>
+<component id="Butt_04_text11">
+<text><![CDATA[<b><font color="#0000ff">?</font></b>]]></text>
+</component>
+
+
+<component id="Butt_05_text1">
+<text><![CDATA[<b>L'Hôte2 envoie une trame à l'Hôte1 avec une réponse. L'adresse source dans la trame est l'adresse MAC de l'Hôte2. L'adresse de destination dans la trame est l'adresse MAC de l'Hôte1. </b>]]></text>
+</component>
+
+<component id="Butt_05_text2">
+<text><![CDATA[<b>TABLE MAC</b>]]></text>
+</component>
+<component id="Butt_05_text3">
+<text><![CDATA[<b>Port</b>]]></text>
+</component>
+<component id="Butt_05_text4">
+<text><![CDATA[<b>Adresse MAC</b>]]></text>
+</component>
+<component id="Butt_05_text5">
+<text><![CDATA[<b>Durée</b>]]></text>
+</component>
+<component id="Butt_05_text6">
+<text><![CDATA[<b>Adresse source de la trame : <font color="#0000ff">0C</font></b>]]></text>
+</component>
+<component id="Butt_05_text7">
+<text><![CDATA[<b>Adresse de destination de la trame : 0A</b>]]></text>
+</component>
+
+<component id="Butt_05_text8">
+<text><![CDATA[<b>Fa1</b>]]></text>
+</component>
+<component id="Butt_05_text9">
+<text><![CDATA[<b>0A</b>]]></text>
+</component>
+<component id="Butt_05_text10">
+<text><![CDATA[<b>11:25:11</b>]]></text>
+</component>
+<component id="Butt_05_text11">
+<text><![CDATA[<b><font color="#0000ff">?</font></b>]]></text>
+</component>
+
+<component id="Butt_06_text1">
+<text><![CDATA[<b>Le commutateur lit l'adresse MAC source (0C) dans la trame reçue sur le port Fa6 ; il l'enregistre dans la table des adresses MAC pour l'utiliser lors du transfert des trames à l'Hôte2.</b>]]></text>
+</component>
+<component id="Butt_06_text1a">
+<text><![CDATA[<b>Apprentissage</b>]]></text>
+</component>
+
+<component id="Butt_06_text2">
+<text><![CDATA[<b>TABLE MAC</b>]]></text>
+</component>
+<component id="Butt_06_text3">
+<text><![CDATA[<b>Port</b>]]></text>
+</component>
+<component id="Butt_06_text4">
+<text><![CDATA[<b>Adresse MAC</b>]]></text>
+</component>
+<component id="Butt_06_text5">
+<text><![CDATA[<b>Durée</b>]]></text>
+</component>
+<component id="Butt_06_text6">
+<text><![CDATA[<b>Adresse source de la trame : <font color="#0000ff">0C</font></b>]]></text>
+</component>
+<component id="Butt_06_text7">
+<text><![CDATA[<b>Adresse de destination de la trame : 0A</b>]]></text>
+</component>
+
+<component id="Butt_06_text8">
+<text><![CDATA[<b>Fa1</b>]]></text>
+</component>
+<component id="Butt_06_text9">
+<text><![CDATA[<b>0A</b>]]></text>
+</component>
+<component id="Butt_06_text10">
+<text><![CDATA[<b>11:25:11</b>]]></text>
+</component>
+<component id="Butt_06_text11">
+<text><![CDATA[<b>Fa6</b>]]></text>
+</component>
+
+<component id="Butt_06_text12">
+<text><![CDATA[<b><font color="#0000ff">0C</font></b>]]></text>
+</component>
+<component id="Butt_06_text13">
+<text><![CDATA[<b>11:26:32</b>]]></text>
+</component>
+
+<component id="Butt_07_text1">
+<text><![CDATA[<b>L'adresse MAC de destination (0A) figure dans la table d'adresses MAC. Le commutateur transfère de manière sélective la trame uniquement au port Fa1. L'adresse de destination MAC dans la trame est l'adresse MAC de l'Hôte1. L'Hôte1 accepte la trame. </b>]]></text>
+</component>
+<component id="Butt_07_text1a">
+<text><![CDATA[<b>Réacheminement sélectif</b>]]></text>
+</component>
+
+<component id="Butt_07_text2">
+<text><![CDATA[<b>TABLE MAC</b>]]></text>
+</component>
+<component id="Butt_07_text3">
+<text><![CDATA[<b>Port</b>]]></text>
+</component>
+<component id="Butt_07_text4">
+<text><![CDATA[<b>Adresse MAC</b>]]></text>
+</component>
+<component id="Butt_07_text5">
+<text><![CDATA[<b>Durée</b>]]></text>
+</component>
+<component id="Butt_07_text6">
+<text><![CDATA[<b>Adresse source de la trame : 0C</b>]]></text>
+</component>
+<component id="Butt_07_text7">
+<text><![CDATA[<b>Adresse de destination de la trame : <font color="#0000ff">0A</font></b>]]></text>
+</component>
+
+<component id="Butt_07_text8">
+<text><![CDATA[<b>Fa1</b>]]></text>
+</component>
+<component id="Butt_07_text9">
+<text><![CDATA[<b><font color="#0000ff">0A</font></b>]]></text>
+</component>
+<component id="Butt_07_text10">
+<text><![CDATA[<b>11:25:11</b>]]></text>
+</component>
+<component id="Butt_07_text11">
+<text><![CDATA[<b>Fa6</b>]]></text>
+</component>
+
+<component id="Butt_07_text12">
+<text><![CDATA[<b>0C</b>]]></text>
+</component>
+<component id="Butt_07_text13">
+<text><![CDATA[<b>11:26:32</b>]]></text>
+</component>
+
+
+</textcomponents>

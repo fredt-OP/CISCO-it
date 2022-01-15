@@ -1,0 +1,116 @@
+<textcomponents>
+
+<component id="ID_activity">
+  <text><![CDATA[<font size="+2"><b>Activity</b></font><br/><br/>Determine the correct router, interface, and direction for placement of the ACL.<br/><br/><b>Drag the appropriate router name, interface location, and direction for each access control list.</b>]]></text> 
+</component>
+
+
+<component id="ID_check">
+  <text><![CDATA[<b>Check</b>]]></text> 
+</component>
+<component id="ID_reset">
+  <text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<component id="ID_isp">
+<text><![CDATA[<b>ISP</b>]]></text> 
+</component>
+
+<component id="ID_reqtext">
+<text><![CDATA[<font size="+2"><b>Requirement 1:</b></font><br/>You have an extended ACL that prevents traffic from the 172.16.1.0 network from reaching the 172.16.3.0 network but allows it to reach 172.16.2.0 network and the ISP. You need to minimize traffic on the WAN links and can only place the ACL on one interface.]]></text> 
+</component>
+
+<component id="ID_reqtext2">
+<text><![CDATA[<font size="+2"><b>Requirement 2:</b></font><br/>You have a standard ACL that permits all traffic from any 172.16.0.0 network to reach the ISP network but blocks all other traffic.]]></text> 
+</component>
+
+
+<component id="ID_rou1">
+  <text><![CDATA[<b>R1</b>]]></text> 
+</component>
+
+<component id="ID_rou2">
+  <text><![CDATA[<b>R2</b>]]></text> 
+</component>
+
+<component id="ID_int1">
+  <text><![CDATA[<b>Fa0/0</b>]]></text> 
+</component>
+
+<component id="ID_int2">
+  <text><![CDATA[<b>S0/1/0</b>]]></text> 
+</component>
+
+<component id="ID_dir1">
+  <text><![CDATA[<b>IN</b>]]></text> 
+</component>
+
+<component id="ID_dir2">
+  <text><![CDATA[<b>OUT</b>]]></text> 
+</component>
+
+<component id="ID_extra01">
+  <text><![CDATA[<b>s0/0/0</b>]]></text> 
+</component>
+
+<component id="ID_extra02">
+  <text><![CDATA[<b>s0/0/1</b>]]></text> 
+</component>
+
+<component id="ID_extra03">
+  <text><![CDATA[<b>R3</b>]]></text> 
+</component>
+
+
+<component id="ID_router">
+<text><![CDATA[<b>Router</b>]]></text> 
+</component>
+
+<component id="ID_inter">
+<text><![CDATA[<b>Interface</b>]]></text> 
+</component>
+
+<component id="ID_direct">
+<text><![CDATA[<b>Direction</b>]]></text> 
+</component>
+
+
+<component id="ID_router1">
+<text><![CDATA[<b>Router</b>]]></text> 
+</component>
+
+<component id="ID_inter1">
+<text><![CDATA[<b>Interface</b>]]></text> 
+</component>
+
+<component id="ID_direct1">
+<text><![CDATA[<b>Direction</b>]]></text> 
+</component>
+
+
+
+<component id="ID_checkBtn">
+  <text><![CDATA[<b>Check</b>]]></text> 
+</component>
+<component id="ID_resetBtn">
+  <text><![CDATA[<b>Reset</b>]]></text> 
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully identified the router name, interface location, and direction for each ACL. Click Next to continue.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review ACL placement and try again.]]></text></component>
+
+</textcomponents>
+

@@ -1,0 +1,5 @@
+<transcript lastedited="11.03.08 13:11:57">
+<title><content-text><![CDATA[3.2.1  - V LAN Trunks]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts an Ethernet frame and the use of V LAN tagging. An Ethernet frame is shown listing the following fields as they are processed. The V LAN tag control information is expanded and highlighted.<br><br>Destination MAC address (6 bytes).<br>Source MAC address (6 bytes).<br>EtherType (2 bytes, set to the hexadecimal value of 0x8100).<br>Tag control information containing:<br>- 3 bits of user priority.<br>- 1 bit of Canonical Format Identifier (CFI).<br>- 12 bits of V LAN ID (V ID).<br>User priority (2 bytes).<br>Data (Variable).<br>PAD (4 bytes).<br>FCS (recalculated after the V LAN tag information is added).<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

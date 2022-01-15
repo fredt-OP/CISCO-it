@@ -1,0 +1,88 @@
+<textcomponents>
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Table</b>]]></text>
+</component>
+
+<component id="ID_topIcon">
+<text><![CDATA[<b>Solution</b>]]></text>
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Version and Password Issues</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>VTP Version Solution</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>VTP Password Solution</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b> </b></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Incompatible VTP Versions.<ul><li>VTP versions 1 and 2 are incompatible with each other.</li><li>Make sure all switches are running the same VTP version.</li></ul></td>
+  </tr>
+  <tr><td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>VTP Password Issues.<ul><li>Ensure passwords are all the same on all VTP enabled switches in the VTP domain.</li><li>By default a Cisco switch does not use a VTP password.</li><li>When a VTP advertisement is received Cisco switches do not automatically set the VTP password parameter.</li></ul></td>
+</table>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Reset the VTP version to the lowest VTP version supported by all switches. Use these commands:</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td width='350' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS Command Syntax</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter global configuration mode</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>#<b>configure terminal</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configures the VTP version</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>(config)#<b>vtp version</b> <i>number</i></font></td>	
+	</tr>
+	</table>
+]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Here is an example showing how to reset the VTP version for switch S3:</b>]]></text>
+</component>
+
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Configure a VTP password on each VTP enabled switch using these commands:</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td width='350' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS Command Syntax</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter global configuration mode</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>#<b>configure terminal</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configures the VTP password</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>(config)#<b>vtp password</b> <i>password</i></font></td>	
+	</tr>
+	</table>
+]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Here is an example showing how to configure the VTP password for switch S3:</b>]]></text>
+</component>
+
+</textcomponents>

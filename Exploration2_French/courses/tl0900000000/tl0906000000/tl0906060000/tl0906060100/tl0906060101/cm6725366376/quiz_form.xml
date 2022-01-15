@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13257" dateexported="01/26/2009">
+		<name>Module 6 Questionnaire</name>
+		<form id="20919" lang="fr"><form-item>
+			<ai id="67218" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="67218" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>RIP v1</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>EIGRP</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>IGRP</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>IS-IS</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>OSPF</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>RIP v2</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>    Protocoles prenant en charge les masques de           sous-réseau de longueur variable (VLSM).</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Protocoles ne prenant pas en charge les masques de sous-réseau de longueur variable (VLSM).</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Afin d&apos;indiquer si les masques de sous-réseau de longueur variable sont pris en charge, classez les éléments de gauche en les faisant glisser vers l&apos;emplacement approprié à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="10" yspacing="55" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="4" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="264.5" containsTargets="2" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="211"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="2"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="VLSM" maxvalue ="1"><title>Pas de titre</title></decvar><interpretvar varname="VLSM" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident><componentident>4</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="VLSM" action="Set">1</setvar><scoringdescription>Prise en charge eigrp is-is ospf rip v2, Pas de prise en charge rip v1 igrp</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="133352" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="133352" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Capacité à diviser une adresse IP en différents sous-réseaux</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Combinaison de plusieurs adresses réseau IP en une adresse IP</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Capacité à spécifier un autre masque de sous-réseau pour le même numéro de réseau et différents sous-réseaux</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Également appelée super-réseau</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Conserve l’espace de l’adresse</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Permet de réduire le nombre d’entrées dans une table de routage</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Masquage de sous-réseau de longueur variable (VLSM)</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Résumé des routes</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser chaque description de gauche vers le terme approprié à droite. (Les propositions ne doivent pas être toutes utilisées.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-117.5" targetYspacing="21" yspacing="65" targetH="38"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="2" startTarg="1" labelStyle="1" /><display componentIdent="3" xpos="600" ypos="214.5" containsTargets="3" startTarg="3" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="152" /><display componentIdent="3" xpos="600" ypos="229" /><display componentIdent="4" xpos="600" ypos="281" /><display componentIdent="5" xpos="600" ypos="333" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident="2"><componentident>3</componentident><componentident>4</componentident><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="206296" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="206296" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>6</componentident><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="206296" action="Set">1</setvar><scoringdescription>VLSM : spécification d’un autre masque et conservation de l’espace et du résumé des routes : combinaison des adresses IP/super-réseau/réduction de la table de routage</scoringdescription></responcondition><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>6</componentident><componentident>2</componentident></scoringzonecontains></conditionvar><scoringdescription>VLSM : spécification d’un autre masque et conservation de l’espace et du résumé des routes : combinaison des adresses IP/super-réseau/réduction de la table de routage</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="133332" type="mc-ma"><question><![CDATA[Quelles méthodes permettent d’utiliser l’adressage IPv4 en continu une fois qu’il n’y a plus d’hôtes disponibles ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Sous-réseau de longueur variable  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Extension de la plage d’adresses IPv4 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Utilisation d’adresses privées avec la traduction d’adresses  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Implémentation du routage par classe ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Abandon d’IPv4 au profit d’IPv6 pour tous les hôtes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Implémentation du super-réseau ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67161" type="mc-ma"><question><![CDATA[Les masques de sous-réseau suivants ont été choisis pour être utilisés avec le réseau 192.168.16.0 :<br /><br />255.255.255.252<br />255.255.255.240<br />255.255.255.192<br /><br />Lesquelles des propositions suivantes identifient l'utilisation optimale de chacun de ces masques ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[L'utilisation du masque /30 pour les liaisons point-à-point telles que les connexions WAN.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L'utilisation du masque /30 pour les sous-réseaux comportant quatre hôtes ou plus. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L'utilisation du masque /28 pour les sous-réseaux de petite taille comportant jusqu'à 14 hôtes.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L'utilisation du masque /26 pour les sous-réseaux de grande taille comportant jusqu'à 62 hôtes.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L'utilisation du masque /25 pour les sous-réseaux comportant jusqu'à 30 hôtes. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L'utilisation du masque /24 pour les liaisons point-à-point telles que les connexions WAN. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133331" type="mc-sa"><question><![CDATA[Lorsque vous utilisez un schéma d’adresse IP de classe A (par classe), combien d’octets sont utilisés pour désigner la partie réseau de l’adresse ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[1  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[3 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[4 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="67205" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="67205" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!--  *********** OPTIONS ***********  --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>172.16.64.0/18</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>172.16.16.64/30</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>172.16.128.0/19</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>172.16.144.0/25</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>172.16.18.0/24</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>172.16.5.128/26</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>172.16.10.128/28</mattext></material></textcomponent></component><!--  ***********  LABELS  ***********  --><!--  ***********  TARGETS  ***********  --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>2 hôtes</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>60 hôtes</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>250 hôtes</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>8000 hôtes</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>16 000 hôtes</mattext></material></textcomponent></component><!--  ***********  STEM  ***********  --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="760"><material><mattext>Sélectionnez les sous-réseaux VLSM du réseau 172.16.0.0 qui fourniront simultanément le nombre total d&apos;hôtes nécessaires sur chaque sous-réseau. Associez le sous-réseau au nombre d&apos;hôtes nécessaires en faisant glisser les options de gauche vers l&apos;emplacement approprié à droite. Les propositions ne doivent pas être toutes utilisées.</mattext></material></textcomponent></component></components><!--  ***********  PRESENTATION  ***********  --><presentation><layout category="A" initY="-98" targetYspacing="16" yspacing="45" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /><display componentIdent="7" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /><display componentIdent="4" xpos="600" ypos="186" /><display componentIdent="5" xpos="600" ypos="223" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!--  ***********  SCORING  ***********  --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue="1"><title>Pas de titre</title></decvar><interpretvar varname="obs1" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>2 hôtes /30 60 hôtes .161.0/26 250 hôtes 160.0/26 8000 hôtes /19 1600000 hôtes /18</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="133161" type="mc-sa"><question><![CDATA[Examinez la présentation. Un ingénieur réseau résume les deux groupes de routes sur le routeur R1 affiché dans la présentation. Quel résumé fonctionne pour tous les sous-réseaux ? <br/><img src="i133161n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[192.168.0.0/23 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.0.0/22 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.0.0/21  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[192.168.0.0/20 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="133330" type="mc-sa"><question><![CDATA[Combien de bits sont utilisés dans l’espace d’adresse IPv4 ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[8 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[12 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[16 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[30 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[32  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[64 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="67965" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="67965" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>192.14.0.0</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>191.254.45.0</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>123.90.78.45</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>128.44.0.23</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>129.68.11.45</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>126.0.0.0</mattext></material></textcomponent></component><component ident="7" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>198.162.11.0</mattext></material></textcomponent></component><component ident="8" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>125.33.23.56</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Adresses de classe A</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Adresses de classe B</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Classez chacune des adresses en les plaçant dans le groupe approprié. Les propositions ne doivent pas toutes être utilisées.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137" targetYspacing="16" yspacing="48" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/><display componentIdent="7" xpos="200" ypos="315"/><display componentIdent="8" xpos="200" ypos="355"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="50877" maxvalue ="1"><title>Pas de titre</title></decvar><interpretvar varname="50877" view="All">Pas de description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident><componentident>6</componentident><componentident>8</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>5</componentident><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="50877" action="Set">1</setvar><scoringdescription>A=123...,126...,125,...B=191...,128...,129...</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="133170" type="mc-sa"><question><![CDATA[Examinez la présentation. L’administrateur réseau souhaite réduire le nombre d’entrées dans la table de routage du routeur 1. Que doit-il implémenter sur le réseau ? <br/><img src="i133170n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Masquage de sous-réseau de longueur variable (VLSM) ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Routage interdomaine sans classe (CIDR)  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Adresses IP privées ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routage par classe ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

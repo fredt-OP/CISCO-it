@@ -1,0 +1,76 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Reflexive ACLs</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Untrusted Network</b>]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[<b>Secure Trusted Network</b>]]></text>
+</component>
+<component id="ID_txt03">
+<text><![CDATA[<b>Initiated inside</b>]]></text>
+</component>
+<component id="ID_txt04">
+<text><![CDATA[<b>Initiated outside</b>]]></text>
+</component>
+
+<!-- slide 1-->
+<component id="ID_S1_config">
+<text><![CDATA[<b>Config</b>]]></text>
+</component>
+
+<component id="ID_txt01_01">
+<text><![CDATA[<b>Step 1</b>]]></text>
+</component>
+<component id="ID_txt02_01">
+  <text><![CDATA[<b>Step 2</b>]]></text> 
+  </component>
+<component id="ID_txt03_01">
+  <text><![CDATA[<b>Step 3</b>]]></text> 
+  </component>
+<component id="ID_txt04_01">
+  <text><![CDATA[<b>Step 4</b>]]></text> 
+  </component>
+
+<component id="rollover1">
+  <text><![CDATA[Creates a login name and password for authentication.]]></text> 
+  </component>
+<component id="rollover2">
+  <text><![CDATA[Allows the user to open a Telnet connection to the router. The dynamic ACL entry is ignored until lock-and-key is triggered. The window will be opened for 15 minutes and then automatically close whether it is being used or not.]]></text> 
+  </component>
+<component id="rollover3">
+  <text><![CDATA[Applies ACL 101 to interface S0/0/1.]]></text> 
+  </component>
+<component id="rollover4">
+  <text><![CDATA[Once the user is authenticated using Telnet, the <font face="_typewriter"><b>autocommand</b></font> command executes and the Telnet session terminates. The user can now access network 192.168.30.0. If there is up to 5 minutes of inactivity, the window will close.]]></text> 
+  </component>
+<component id="instruction">
+  <text><![CDATA[Rollover a step to see an explanation.]]></text> 
+  </component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Step 1</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Step 2</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Step 3</b>]]></text> 
+  </component>
+<component id="rollover1">
+  <text><![CDATA[Causes the router to keep track of traffic that was initiated from inside.]]></text> 
+  </component>
+<component id="rollover2">
+  <text><![CDATA[Creates an inbound policy that requires the router to check incoming traffic to see if it was initiated from inside and ties the reflexive ACL part of the OUTBOUNDFILTERS ACL, called TCPTRAFFIC, to the INBOUNDFILTERS ACL.]]></text> 
+  </component>
+<component id="rollover3">
+  <text><![CDATA[Applies both an inbound and an outbound ACL to the interface.]]></text> 
+  </component>
+<component id="instruction">
+  <text><![CDATA[Rollover a step to see an explanation.]]></text> 
+  </component>
+
+</textcomponents>

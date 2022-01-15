@@ -1,0 +1,72 @@
+<textcomponents>
+
+<component id="ID_check4">
+  <text><![CDATA[<B>Check</B>]]></text> 
+</component>
+<component id="ID_reset4">
+  <text><![CDATA[<B>Reset</B>]]></text> 
+</component>
+
+
+<component id="ID_activity">
+<text><![CDATA[<B>Activity</B>]]></text>
+</component>
+
+
+<component id="ID_step1">
+  <text><![CDATA[<b>Step 1: </b>Set Router Parameters]]></text> 
+</component>
+<component id="ID_step2">
+  <text><![CDATA[<b>Step 2: </b>Generate Asymmetric Keys]]></text> 
+</component>
+<component id="ID_step3">
+  <text><![CDATA[<b>Step 3: </b> Configure SSH Timeouts and Username]]></text> 
+</component>
+<component id="ID_step4">
+  <text><![CDATA[<b>Step 4: </b>Configure Local Authentication and vty ]]></text> 
+</component>
+<component id="ID_instruction">
+  <text><![CDATA[Complete the following steps to configure SSH security on R1. ]]></text> 
+</component>
+<component id="ID_bottomText">
+  <text><![CDATA[Drag and drop these command parts to complete the SSH security configuration above.]]></text> 
+</component>
+
+
+<component id="ID_a_1">
+  <text><![CDATA[<B>hostname R1</B>]]></text> 
+</component>
+
+<component id="ID_b_1">
+  <text><![CDATA[<B>ip domain-name cisco.com</B>]]></text> 
+</component>
+
+<component id="ID_c_1">
+  <text><![CDATA[<B>crypto key generate isa</B>]]></text> 
+</component>
+
+<component id="ID_d_1">
+  <text><![CDATA[<B>ip shh time-out 15</B>]]></text> 
+</component>
+
+<component id="ID_e_1">
+  <text><![CDATA[<B>ip ssh authentication-retries 2</B>]]></text> 
+</component>
+
+<component id="ID_f_1">
+  <text><![CDATA[<B>username student password cisco</B>]]></text> 
+</component>
+
+<component id="ID_g_1">
+  <text><![CDATA[<B>transport input ssh</B>]]></text> 
+</component>
+
+<component id="ID_h_1">
+  <text><![CDATA[<B>login local</B>]]></text> 
+</component>
+
+
+
+
+</textcomponents>
+

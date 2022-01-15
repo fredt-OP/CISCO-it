@@ -1,0 +1,5 @@
+<transcript lastedited="01.21.09 18:01:50">
+<title><content-text><![CDATA[9.7.2 - The ARP Process - Destinations Outside the Local Network]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts how proxy ARP allows a router to respond for a remote host. Two hosts, A and B, are located on Subnet A. Router R1 interface E0 is on Subnet A (172.16.10.0/24). Two other hosts, C and D, are located on Subnet B. Router R1 interface E1 is on Subnet B (172.16.20.0/24).<br><br>Host A has been improperly configured with a /16 subnet mask. This host believes that it is directly connected to all of the 172.16.0.0/16 network, instead of to the 172.16.10.0/24 subnet. The router can act as a proxy ARP and respond to requests for the IPv4 address of hosts on the LAN B network.]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

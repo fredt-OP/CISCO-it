@@ -1,0 +1,79 @@
+﻿<textcomponents>
+
+<component id="ID_txt01">
+<text><![CDATA[Réseau virtuel]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Transmission tunnel]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Réseau privé]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Chiffrement]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Chiffrer]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Message chiffré]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Déchiffrer]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Réseau privé virtuel = transmission tunnel + chiffrement]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Cliquez sur les zones mises en évidence pour en savoir plus sur les options de transmission tunnel.]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[ ]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[ ]]></text>
+</component>
+
+<component id="TextBox1">
+<text><![CDATA[<b>Les tunnels d’encapsulation générique de routage (GRE)</b> fournissent un chemin d’accès spécifique sur le réseau étendu partagé. Ils encapsulent le trafic avec de nouveaux en-têtes de paquets pour garantir la livraison aux destinations spécifiques. Le réseau est privé. Cela s’explique par le fait que le trafic peut entrer dans un tunnel uniquement au niveau d’un point d’extrémité et ne peut en sortir qu’à l’autre point d’extrémité. Les tunnels n’offrent pas de véritable confidentialité (comme le chiffrement), mais peuvent acheminer du trafic chiffré.
+La <b>sécurité IP (IPSec)</b> agit au niveau de la couche réseau, protégeant et authentifiant les paquets IP entre les périphériques IPSec participants (homologues). IPSec n’est liée à aucune technologie spécifique en matière de chiffrement, d’authentification, d’algorithmes de sécurité ou de saisie. IPSec est une infrastructure de normes ouvertes.
+Le <b>protocole L2F (Layer 2 Forwarding)</b>, développé par Cisco, prend en charge la création de réseaux commutés privés virtuels sur Internet en transmettant les trames de couche 2 par des tunnels. 
+Le <b>protocole PPTP</b> a été développé par Microsoft. Il est décrit dans le document RFC 2637. Le protocole PPTP est largement déployé sur les logiciels clients Windows pour créer des réseaux privés virtuels sur des réseaux TCP/IP. 
+Le <b>protocole L2TP (Layer 2 Tunneling Protocol)</b> est une norme de l’IETF qui incorpore les meilleurs attributs des protocoles PPTP et L2F.  L2TP est utilisé pour la transmission tunnel du protocole PPP via un réseau public, tel qu’Internet, à l’aide d’IP. Le tunnel se produisant sur la couche 2, les protocoles de couche supérieure n’ont pas connaissance du tunnel. Comme GRE, le protocole L2TP peut également encapsuler tout protocole de couche 3.]]></text>
+</component>
+
+<component id="TextBox2">
+<text><![CDATA[<b>Algorithmes de chiffrement</b>
+<b>Algorithme de norme de chiffrement des données (DES, Data Encryption Standard)</b> : la norme DES a été développée par IBM. DES utilise une clé 56 bits, ce qui garantit un chiffrement haute performance. 3DES est un système de chiffrement à clé symétrique. 
+<b>Algorithme triple DES (3DES)</b> : 3DES est une variante de DES 56 bits. 3DES fonctionne de la même façon que DES, c'est-à-dire que les données sont réparties en blocs de 64 bits. 3DES traite ensuite chaque bloc trois fois, chaque fois avec une clé de 56 bits différente. 3DES fournit une puissance de chiffrement considérable par rapport à DES 56 bits. DES est un système de chiffrement à clé symétrique.
+<b>Advanced Encryption Standard (AES) :</b> le NIST (National Institute of Standards and Technology) a récemment adopté la norme AES pour remplacer le chiffrement DES existant dans les périphériques cryptographiques. AES offre une meilleure sécurité par rapport à DES. Du point de vue du traitement, elle est plus efficace que 3DES. AES offre trois longueurs de clé différentes : clés de 128, 192 et 256 bits.
+<b>Rivest, Shamir et Adleman (RSA) :</b> RSA est un système de chiffrement à clé asymétrique. Ce système utilise une longueur de clé de 512, 768, 1 024 bits ou plus. IPSec n’utilise pas RSA pour le chiffrement des données. IKE utilise uniquement le chiffrement RSA au cours de la phase d’authentification des homologues.
+]]></text>
+</component>
+
+<component id="ID_txtBody">
+<text><![CDATA[IP Address. . : 192.168.1.1<br>Subnet Mask . . : 255.255.255.0<br>Default Gateway . . : 192.168.1.254 ]]></text>
+</component>
+<component id="ID_txtTitle2">
+<text><![CDATA["Host2 Says:"]]></text>
+</component>
+<component id="ID_txtBody2">
+<text><![CDATA[IP Address. . : 192.168.1.2<br>Subnet Mask . . : 255.255.255.0<br>Default Gateway . . : 192.168.1.254 ]]></text>
+</component>
+<component id="ID_txtTitle3">
+<text><![CDATA["Host3 Says:"]]></text>
+</component>
+<component id="ID_txtBody3">
+<text><![CDATA[IP Address. . : 192.168.1.3<br>Subnet Mask . . : 255.255.255.0<br>Default Gateway . . : 192.168.1.254 ]]></text>
+</component>
+</textcomponents>

@@ -1,0 +1,155 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">PC_A</NAME>
+ <NAME translate="true">PC_B</NAME>
+ <NAME translate="true">PC_C</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Scenario 1</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC_A</NAME>
+ <NAME translate="true">PC_B</NAME>
+ <NAME translate="true">PC_C</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">PC_A</NAME>
+ <NAME translate="true">PC_B</NAME>
+ <NAME translate="true">PC_C</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Scenario 1</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC_A</NAME>
+ <NAME translate="true">PC_B</NAME>
+ <NAME translate="true">PC_C</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">PC_A</NAME>
+ <NAME translate="true">PC_B</NAME>
+ <NAME translate="true">PC_C</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Scenario 1</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router0</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC_A</NAME>
+ <NAME translate="true">PC_B</NAME>
+ <NAME translate="true">PC_C</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 5.3.7 : &lt;br&gt;transfert de paquet de routeur&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;!--This is the end of the IP addressing table code&quot; --&gt;
+
+
+&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Examiner la manière dont les routeurs transfèrent des paquets quand il existe une route vers la destination dans la table de routage. &lt;li&gt;Examiner la manière dont les routeurs transfèrent des paquets lorsqu'aucune route spécifique n'existe, mais qu'une route par défaut a été configurée. &lt;li&gt;Examiner la manière dont les routeurs transfèrent des paquets quand il n'existe ni route spécifique, ni route par défaut. &lt;/ul&gt;
+
+&lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+&lt;p&gt;Les paquets IP sont acheminés entre les réseaux par des routeurs qui recherchent dans leurs tables de routage IP le tronçon suivant vers le réseau de destination.  Si la table de routage contient une entrée pour le réseau de destination, le routeur transfère le paquet hors de l'interface indiquée dans la table de routage.  Si la table de routage ne contient aucune entrée pour le réseau de destination, mais qu'une route par défaut est définie, le routeur transfère le paquet hors de l'interface indiquée dans la table de routage pour la route par défaut. Si la table de routage ne contient aucune entrée pour le réseau de destination, ni route par défaut, le routeur abandonne le paquet.&lt;br&gt;&lt;br&gt; Cet exercice utilise une configuration contenant trois routeurs, reliant trois réseaux locaux. Le premier LAN est 10.1.1.0/24 et contient PC_A. Le second LAN est 10.1.2.0/24 et contient PC_B. Le dernier LAN 10.1.3.0/24 contient PC_C. Routeur0 a une route vers 10.1.2.0/24 et Routeur2 a une route vers 10.1.1.0/24. Ainsi, une commande ping à partir de PC_A atteint PC_B, et la réponse atteint PC_A. Routeur0 n'a aucune route vers 10.1.3.0/24 mais a une route par défaut hors de l'interface S0/0/1 (vers Routeur1). Routeur1 n'a aucune route vers 10.1.1.0/24, ni route par défaut. Aussi, une commande ping à partir de PC_A atteint PC_C, mais la réponse est abandonnée par Routeur1. &lt;br&gt;&lt;br&gt;
+
+
+&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 1 : exécution de la simulation à l'aide du scénario 0, de PC_A vers PC_B&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Passez en mode de simulation et envoyez le paquet.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Le fichier se charge avec le scénario 0, qui répertorie un paquet prédéfini allant de PC_A à PC_B dans la fenêtre User Created PDU, en bas à droite. Cliquez deux fois sur le bouton &lt;b&gt;Fire&lt;/b&gt; en mode temps réel pour remplir les tables ARP et faciliter l'interprétation du comportement de routage. Cliquez sur l'onglet &lt;b&gt;Simulation&lt;/b&gt; pour passer en mode de simulation. Le paquet test apparaît à la fois dans &lt;b&gt;Event List&lt;/b&gt; et dans la topologie logique. Utilisez l'outil &lt;b&gt;Inspect&lt;/b&gt; (loupe à l'extrémité droite) pour ouvrir les tables de routage pour Routeur0, Routeur1 et Routeur2. Les fenêtres de table de routage pouvant se chevaucher, déplacez-les pour comparer les trois tables simultanément. Inspectez le paquet en cliquant sur le carré coloré dans la colonne &lt;b&gt;Info&lt;/b&gt; de la fenêtre &lt;b&gt;Event List&lt;/b&gt;. 
+
+&lt;h4&gt; &lt;b&gt;Étape 2. Suivez le paquet.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Utilisez le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; pour déplacer le paquet dans le réseau. Inspectez le paquet à chaque étape, en particulier au niveau des routeurs. Comparez les explications de l'onglet &lt;b&gt;OSI Model&lt;/b&gt; du traitement du paquet à la table de routage affichée. Notez que la demande d'écho ICMP de PC_A vers PC_B et la réponse d'écho ICMP de PC_B à PC_A peuvent toutes deux terminer leur trajet, étant donné les entrées spécifiques dans la table de routage. &lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Tâche 2 : exécution de la simulation à l'aide du scénario 1, de PC_A vers PC_C&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Passez au scénario 1.&lt;/h4&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;Une fois le scénario 0 terminé, passez au scénario 1. Vous êtes toujours en mode de simulation, aussi basculez en mode temps réel assez longtemps pour permettre à la commande ping de PC_A vers PC_C d'afficher un message d'échec dans la colonne &lt;b&gt;Last Status&lt;/b&gt;. Ceci complète les tables ARP et simplifie l'interprétation du comportement de routage. Revenez en mode de simulation. Inspectez le paquet en cliquant sur le carré coloré dans la colonne &lt;b&gt;Info&lt;/b&gt; de la fenêtre &lt;b&gt;Event List&lt;/b&gt;. 
+
+&lt;h4&gt; &lt;b&gt;Étape 2. Suivez le paquet.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Utilisez le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; pour déplacer le paquet dans le réseau JUSQU'À ce qu'il atteigne PC_C. Cliquez sur le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; pour interrompre le paquet. Inspectez le paquet à chaque étape jusqu'à PC_C, en particulier au niveau de Routeur0 et Routeur1. Comparez les explications de l'onglet &lt;b&gt;OSI Model&lt;/b&gt; du traitement du paquet aux tables de routage affichées. Notez que la demande d'écho ICMP de PC_A vers PC_C peut terminer son trajet car il existe une route statique par défaut sur Routeur0 et le réseau de destination est directement connecté à Routeur1. Cependant, ces routes ne pointent pas dans les deux directions. &lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Tâche 3 : poursuite de l'exécution de la simulation à l'aide du scénario 1, de PC_C vers PC_A&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Suivez le paquet.&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Utilisez le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; pour déplacer le paquet dans le réseau. Inspectez le paquet à chaque étape, en particulier au niveau de Routeur1. Comparez les explications de l'onglet OSI Model du traitement du paquet à la table de routage de Routeur1, et notez ce qu'il advient du paquet de réponse d'écho ICMP de PC_C vers PC_A. 
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document est une information publique Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_C</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_C</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router0</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_A</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_B</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC_C</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Router2</ID>
+ <ID translate="true">PC_A</ID>
+ <ID translate="true">PC_B</ID>
+ <ID translate="true">PC_C</ID>
+ <ID translate="true">Router0</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Router2</ID>
+ <ID translate="true">PC_A</ID>
+ <ID translate="true">PC_B</ID>
+ <ID translate="true">PC_C</ID>
+ <ID translate="true">Scenario 0</ID>
+ <ID translate="true">Scenario 1</ID>
+</TRANSLATION>

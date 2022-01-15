@@ -1,0 +1,29 @@
+<textcomponents>
+
+<component id="ID_title01">
+		<text><![CDATA[<b>Types of Complex ACLs</b>]]></text>
+</component>
+
+
+
+	<component id="ID_table1">
+		<text><![CDATA[<table header='top' bordercolor='#CCCCCC' borderwidth='1' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='250' bgcolor='#DDDDDD'><font color='#FFFFFF'><b>Complex ACL</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Description</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Dynamic ACLs (lock-and-key)</td>
+<td bgcolor='#F2F2F2'>Users that want to traverse the router are blocked until they use Telnet to connect to the router and are authenticated</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>Reflexive ACLs</td>
+<td bgcolor='#DDDDDD'>Allows outbound traffic and limits inbound traffic in response to sessions that originate inside the router</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Time-based ACLs</td>
+<td bgcolor='#F2F2F2'>Allows for access control based on the time of day and week</td>
+</tr>
+</table>]]></text>
+	</component>
+</textcomponents>

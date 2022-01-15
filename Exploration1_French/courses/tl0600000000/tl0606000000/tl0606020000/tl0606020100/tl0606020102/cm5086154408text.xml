@@ -1,0 +1,317 @@
+﻿<textcomponents>
+<component id="ID_title1">
+	<text><![CDATA[<b>Utilisation de différents préfixes pour le réseau 172.16.4.0</b>]]></text>
+</component>
+
+<component id="ID_inst2">
+<text><![CDATA[<b>Placez le pointeur sur les lignes pour afficher les nombres binaires des adresses et le nombre d’hôtes.</b>]]></text>
+</component>
+
+<!-- mc0 -->
+<component id="ID_s0_header1da">
+<text><![CDATA[<b>TOUS LES PRÉFIXES DE LA MÊME ADRESSE RÉSEAU</b>]]></text>
+</component>
+
+<component id="ID_s0_header2da">
+<text><![CDATA[<b>CHAQUE PRÉFIXE DE DIFFÉRENTES ADRESSES DE DIFFUSION</b>]]></text>
+</component>
+
+<!-- mc1 -->
+
+<component id="ID_s1_header1da">
+<text><![CDATA[<b>TOUS LES PRÉFIXES DE LA MÊME ADRESSE RÉSEAU</b>]]></text>
+</component>
+
+<component id="ID_s1_header2da">
+<text><![CDATA[<b>CHAQUE PRÉFIXE DE DIFFÉRENTES ADRESSES DE DIFFUSION</b>]]></text>
+</component>
+
+<component id="ID_hostNum1">
+	<text><![CDATA[<b>CHAQUE PRÉFIXE D’UN NOMBRE D’HÔTES DIFFÉRENT<br /><font size='+4' color="#0000FF">254 hôtes</font></b>]]></text>
+</component>
+
+<!-- mc2 -->
+
+<component id="ID_s2_header1da">
+<text><![CDATA[<b>TOUS LES PRÉFIXES DE LA MÊME ADRESSE RÉSEAU</b>]]></text>
+</component>
+
+<component id="ID_s2_header2da">
+<text><![CDATA[<b>CHAQUE PRÉFIXE DE DIFFÉRENTES ADRESSES DE DIFFUSION</b>]]></text>
+</component>
+
+<component id="ID_hostNum2">
+	<text><![CDATA[<b>CHAQUE PRÉFIXE D’UN NOMBRE D’HÔTES DIFFÉRENT<br /><font size='+4' color="#0000FF">126 hôtes</font></b>]]></text>
+</component>
+
+<!-- mc3 -->
+
+<component id="ID_s3_header1da">
+<text><![CDATA[<b>TOUS LES PRÉFIXES DE LA MÊME ADRESSE RÉSEAU</b>]]></text>
+</component>
+
+<component id="ID_s3_header2da">
+<text><![CDATA[<b>CHAQUE PRÉFIXE DE DIFFÉRENTES ADRESSES DE DIFFUSION</b>]]></text>
+</component>
+
+<component id="ID_hostNum3">
+	<text><![CDATA[<b>CHAQUE PRÉFIXE D’UN NOMBRE D’HÔTES DIFFÉRENT<br /><font size='+4' color="#0000FF">62 hôtes</font></b>]]></text>
+</component>
+
+<!-- mc4 -->
+
+<component id="ID_s4_header1da">
+<text><![CDATA[<b>TOUS LES PRÉFIXES DE LA MÊME ADRESSE RÉSEAU</b>]]></text>
+</component>
+
+<component id="ID_s4_header2da">
+<text><![CDATA[<b>CHAQUE PRÉFIXE DE DIFFÉRENTES ADRESSES DE DIFFUSION</b>]]></text>
+</component>
+
+<component id="ID_hostNum4">
+	<text><![CDATA[<b>CHAQUE PRÉFIXE D’UN NOMBRE D’HÔTES DIFFÉRENT<br /><font size='+4' color="#0000FF">30 hôtes</font></b>]]></text>
+</component>
+
+
+
+
+<component id="ID_table0">
+	<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+      <td bgcolor='#000000' width='130'><font color='#FFFFFF'><b>Réseau<br /><br /><br /><br /></b></font></td>
+      <td bgcolor='#000000' width='150'><font color='#FFFFFF'><b>Adresse réseau<br /><br /><br /><br /></b></font></td>
+      <td bgcolor='#000000' width='235'><font color='#FFFFFF'><b>Plage d'hôtes<br /><br /><br /><br /></b></font></td>
+      <td bgcolor='#000000'><font color='#FFFFFF'><b>Adresse de diffusion<br /><br /><br /><br /></b></font></td>
+    </tr>
+   
+    <tr>
+      <td bgcolor='#F2F2F2'><b>172.16.4.0 /24</b></td>
+      <td bgcolor='#F2F2F2'><b>172.16.4.0</b></td>
+      <td bgcolor='#F2F2F2'><b>172.16.4.1 - 172.16.4.254</b></td>
+      <td bgcolor='#F2F2F2'><b>172.16.4.255</b></td>
+    </tr>
+    
+    <tr>
+      <td bgcolor='#DDDDDD'><b>172.16.4.0 /25 </b></td>
+      <td bgcolor='#DDDDDD'><b>172.16.4.0</b></td>
+      <td bgcolor='#DDDDDD'><b>172.16.4.1 - 172.16.4.126</b></td>
+      <td bgcolor='#DDDDDD'><b>172.16.4.127 </b></td>
+    </tr>
+    
+    <tr>
+      <td bgcolor='#F2F2F2'><b>172.16.4.0 /26</b></td>
+      <td bgcolor='#F2F2F2'><b>172.16.4.0 </b></td>
+      <td bgcolor='#F2F2F2'><b>172.16.4.1 - 172.16.4.62</b></td>
+      <td bgcolor='#F2F2F2'><b>172.16.4.63</b></td>
+    </tr>
+    
+    <tr>
+	  <td bgcolor='#DDDDDD'><b>172.16.4.0 /27</b></td>
+	  <td bgcolor='#DDDDDD'><b>172.16.4.0</b></td>
+	  <td bgcolor='#DDDDDD'><b>172.16.4.1 - 172.16.4.30</b></td>
+	  <td bgcolor='#DDDDDD'><b>172.16.4.31</b></td>
+    </tr>
+</table>]]></text>
+</component>
+
+
+
+
+<component id="ID_table1">
+	<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td bgcolor='#000000' width='130'><font color='#FFFFFF'><b>Réseau</b></font></td>
+    <td bgcolor='#000000' width='150'><font color='#FFFFFF'><b>Adresse réseau<br /><font color='#FF9900'>Bits de tous les hôtes (Rouge) = 0</font></b></font></td>
+    <td bgcolor='#000000' width='235'><font color='#FFFFFF'><b>Plage d'hôtes<br /><font color='#FF9900'>Représente toutes les combinaisons de bits d’hôtes à l’exception de celles composées uniquement de 0 ou de 1</font></b></font></td>
+    <td bgcolor='#000000'><font color='#FFFFFF'><b>Adresse de diffusion<br /><font color='#FF9900'>Bits de tous les hôtes (Rouge) = 1</font></b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#FF9900'><b>172.16.4.0 /24</b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">172.16.4.0</font></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">172.16.4.1 - 172.16.4.254</font></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">172.16.4.255</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>Représentation binaire<br/>24 bits réseau</b></td> 
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">10101100.00010000.<br />00000100.</font><font color="#990000">00000000</font></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">10101100.00010000.00000100.</font><font color="#990000">00000001</font><br /><font color="#0000FF">10101100.00010000.00000100.</font><font color="#990000">00000010</font><br /><font color="#0000FF">10101100.00010000.00000100.</font><font color="#990000">00000011</font></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">10101100.00010000.<br />00000100.</font><font color="#990000">11111111</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b></b></td>
+    <td bgcolor='#F2F2F2'><b></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">10101100.00010000.00000100.</font><font color="#990000">11111110</font></b></td>
+    <td bgcolor='#F2F2F2'><b></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0 /25 </b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.1 - 172.16.4.126</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.127 </b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 /26</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 </b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.1 - 172.16.4.62</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.63</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0 /27</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.1 - 172.16.4.30</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.31</b></td>
+  </tr>
+</table>]]></text>
+</component>
+
+
+
+
+<component id="ID_table2">
+	<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td bgcolor='#000000' width='130'><font color='#FFFFFF'><b>Réseau</b></font></td>
+    <td bgcolor='#000000' width='150'><font color='#FFFFFF'><b>Adresse réseau<br /><font color='#FF9900'>Bits de tous les hôtes (Rouge) = 0</font></b></font></td>
+    <td bgcolor='#000000' width='235'><font color='#FFFFFF'><b>Plage d'hôtes<br /><font color='#FF9900'>Représente toutes les combinaisons de bits d’hôtes à l’exception de celles composées uniquement de 0 ou de 1</font></b></font></td>
+    <td bgcolor='#000000'><font color='#FFFFFF'><b>Adresse de diffusion<br /><font color='#FF9900'>Bits de tous les hôtes (Rouge) = 1</font></b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 /24</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.1 - 172.16.4.254</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.255</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#FF9900'><b>172.16.4.0 /25</b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">172.16.4.0</font></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">172.16.4.1 - 172.16.4.126</font></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">172.16.4.127</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>Représentation binaire<br/>25 bits réseau</b></td> 
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">10101100.00010000.<br />00000100.0</font><font color="#990000">0000000</font></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">10101100.00010000.00000100.0</font><font color="#990000">0000001</font><br /><font color="#0000FF">10101100.00010000.00000100.0</font><font color="#990000">0000010</font><br /><font color="#0000FF">10101100.00010000.00000100.0</font><font color="#990000">0000011</font></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">10101100.00010000.<br />00000100.0</font><font color="#990000">1111111</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b></b></td>
+    <td bgcolor='#DDDDDD'><b></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">10101100.00010000.00000100.0</font><font color="#990000">1111110</font></b></td>
+    <td bgcolor='#DDDDDD'><b></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 /26</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 </b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.1 - 172.16.4.62</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.63</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0 /27</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.1 - 172.16.4.30</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.31</b></td>
+  </tr>
+</table>]]></text>
+</component>
+
+
+
+
+<component id="ID_table3">
+	<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td bgcolor='#000000' width='130'><font color='#FFFFFF'><b>Réseau</b></font></td>
+    <td bgcolor='#000000' width='150'><font color='#FFFFFF'><b>Adresse réseau<br /><font color='#FF9900'>Bits de tous les hôtes (Rouge) = 0</font></b></font></td>
+    <td bgcolor='#000000' width='235'><font color='#FFFFFF'><b>Plage d'hôtes<br /><font color='#FF9900'>Représente toutes les combinaisons de bits d’hôtes à l’exception de celles composées uniquement de 0 ou de 1</font></b></font></td>
+    <td bgcolor='#000000'><font color='#FFFFFF'><b>Adresse de diffusion<br /><font color='#FF9900'>Bits de tous les hôtes (Rouge) = 1</font></b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 /24</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.1 - 172.16.4.254</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.255</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0 /25</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.1 - 172.16.4.126</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.127</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#FF9900'><b>172.16.4.0 /26</b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">172.16.4.0</font></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">172.16.4.1 - 172.16.4.62</font></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">172.16.4.63</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>Représentation binaire<br/>26 bits réseau</b></td> 
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">10101100.00010000.<br />00000100.00</font><font color="#990000">000000</font></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">10101100.00010000.00000100.00</font><font color="#990000">000001</font><br /><font color="#0000FF">10101100.00010000.00000100.00</font><font color="#990000">000010</font><br /><font color="#0000FF">10101100.00010000.00000100.00</font><font color="#990000">000011</font></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">10101100.00010000.<br />00000100.00</font><font color="#990000">111111</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b></b></td>
+    <td bgcolor='#F2F2F2'><b></b></td>
+    <td bgcolor='#F2F2F2'><b><font color="#0000FF">10101100.00010000.00000100.00</font><font color="#990000">111110</font></b></td>
+    <td bgcolor='#F2F2F2'><b></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0 /27</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.1 - 172.16.4.30</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.31</b></td>
+  </tr>
+</table>]]></text>
+</component>
+
+
+
+
+<component id="ID_table4">
+	<text><![CDATA[<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+  <tr>
+    <td bgcolor='#000000' width='130'><font color='#FFFFFF'><b>Réseau</b></font></td>
+    <td bgcolor='#000000' width='150'><font color='#FFFFFF'><b>Adresse réseau<br /><font color='#FF9900'>Bits de tous les hôtes (Rouge) = 0</font></b></font></td>
+    <td bgcolor='#000000' width='235'><font color='#FFFFFF'><b>Plage d'hôtes<br /><font color='#FF9900'>Représente toutes les combinaisons de bits d’hôtes à l’exception de celles composées uniquement de 0 ou de 1</font></b></font></td>
+    <td bgcolor='#000000'><font color='#FFFFFF'><b>Adresse de diffusion<br /><font color='#FF9900'>Bits de tous les hôtes (Rouge) = 1</font></b></font></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 /24</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.1 - 172.16.4.254</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.255</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0 /25 </b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.0</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.1 - 172.16.4.126</b></td>
+    <td bgcolor='#DDDDDD'><b>172.16.4.127 </b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 /26</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.0 </b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.1 - 172.16.4.62</b></td>
+    <td bgcolor='#F2F2F2'><b>172.16.4.63</b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#FF9900'><b>172.16.4.0 /27</b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">172.16.4.0</font></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">172.16.4.1 - 172.16.4.30</font></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">172.16.4.31</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b>Représentation binaire<br/>27 bits réseau</b></td> 
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">10101100.00010000.<br />00000100.000</font><font color="#990000">00000</font></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">10101100.00010000.00000100.000</font><font color="#990000">00001</font><br /><font color="#0000FF">10101100.00010000.00000100.000</font><font color="#990000">00010</font><br /><font color="#0000FF">10101100.00010000.00000100.000</font><font color="#990000">00011</font></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">10101100.00010000.<br />00000100.000</font><font color="#990000">11111</font></b></td>
+  </tr>
+  <tr>
+    <td bgcolor='#DDDDDD'><b></b></td>
+    <td bgcolor='#DDDDDD'><b></b></td>
+    <td bgcolor='#DDDDDD'><b><font color="#0000FF">10101100.00010000.00000100.000</font><font color="#990000">11110</font></b></td>
+    <td bgcolor='#DDDDDD'><b></b></td>
+  </tr>
+</table>]]></text>
+</component>
+
+</textcomponents>

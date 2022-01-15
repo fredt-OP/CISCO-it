@@ -1,0 +1,92 @@
+<textcomponents>
+
+<component id="ID_header1">
+  <text><![CDATA[<b>Full Command</b>]]></text> 
+  </component>
+<component id="ID_header2">
+  <text><![CDATA[<b>Abbreviation</b>]]></text> 
+  </component>
+<component id="ID_header3">
+  <text><![CDATA[<b>Purpose / Information Displayed</b>]]></text> 
+  </component>
+
+<component id="ID_tip">
+  <text><![CDATA[<b>Router interfaces start numbering at 0 while switch interfaces start at 1. For example a fast ethernet interface on a router would start at fa0/0 whereas the first port on switch would be referenced as fa0/1.</b>]]></text> 
+  </component>
+  
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='none' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='3'>
+  <tr>
+    <td colspan="3" valign="top" bgcolor="#333333"><b><font color="#FFFFFF">General Use</font></b></td>
+  </tr>
+  <tr>
+    <td width="160" valign="top" bgcolor="DDDDDD"><b><font face="_typewriter">show running-config</font></b></td>
+    <td width="150"valign="top" bgcolor="DDDDDD"><b><font face="_typewriter">sh run</font></b></td>
+    <td valign="top" bgcolor="DDDDDD">Displays current config running in RAM. Includes host name, passwords, interface IP addresses (if present), port numbers and characteristics (duplex/speed).</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="f2f2f2"><b><font face="_typewriter">show startup-config</font></b></td>
+    <td valign="top" bgcolor="f2f2f2"><b><font face="_typewriter">sh star</font></b></td>
+    <td valign="top" bgcolor="f2f2f2">Displays backup config in NVRAM. May be different if running config has not been copied to backup.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show version</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh ve</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Displays IOS version, ROM version, switch uptime, system image file name, boot method, number and type of interfaces installed, amount of RAM, NVRAM and flash, and configuration register value.</td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top" bgcolor="#333333"><b><font color="#FFFFFF">Interface / Port Related</font></b></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show interfaces (type #)</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh int f0/1</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Displays one or all interfaces with line (protocol) status, bandwidth, delay, reliability, encapsulation, duplex and I/O statistics.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">show ip interface brief</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">sh ip int br</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2">Displays all interfaces with IP address, interface status (up/down/admin down), and line protocol status (up/down).</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show port-security</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh por</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Displays any ports where security has been activated along with max address allowed, current count, security violation count and action to take (normally shutdown).</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">show mac-address-table</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">sh mac-a</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2">Displays all MAC addresses the switch has learned, how learned  (dynamic/static) the port number and VLAN the port is in.</td>
+  </tr>
+  <tr>
+    <td colspan="3" valign="top" bgcolor="#333333"><b><font color="#FFFFFF">Connectivity Related</font></b></td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show cdp neighbors (detail)</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh cdp ne</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Displays information on directly connected devices including Device ID (host name), Local interface where device is connected, capability (R=router, S=switch), platform (e.g. WS-2950-2) and Port ID of remote device. The details option provide the IP address of the other device as well as the IOS version.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">show sessions</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">sh ses</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2">Displays telnet sessions (VTY) with remote hosts. Displays session number, host name and address.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">show ssh</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">sh ssh</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Displays ssh server connections with remote hosts.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">ping (ip / host name)</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2"><b><font face="_typewriter">p</font></b></td>
+    <td valign="top" bgcolor="#F2F2F2">Sends 5 ICMP echo requests to an IP address or host name (if DNS is available) and displays the min/max and avg time to respond.</td>
+  </tr>
+  <tr>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">traceroute (ip / host name)</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD"><b><font face="_typewriter">tr</font></b></td>
+    <td valign="top" bgcolor="#DDDDDD">Sends echo request with varying TTL. Lists routers (hops) in path and time to respond.</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+</textcomponents>

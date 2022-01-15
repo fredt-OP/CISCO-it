@@ -1,0 +1,11 @@
+<textcomponents>
+
+<component id="ID_txt01">    
+<text><![CDATA[IPv6 Address Representation]]></text>   
+</component>
+
+<component id="ID_txt02">    
+<text><![CDATA[Format:<br><li>X:X:X:X:X:X:X:X,Where X is a 16-bit hexadecimal field</li>            - Case-insensitive for hexadecimal A, B, C, D, E and F <li>Leading zeros in a field are optional</li><li>Successive fields of zeros can be represented as :: only once per address</li> Examples: <li>2031:0000:130F:0000:0000:09C0:876A:130B</li>            - Can be represented as 2031:0:130f::9c0:876a:130b<br>            - Cannot be represented as 2031::130f::9c0:876a:130b<li>FF01:0:0:0:0:0:0:1            FF01::1</li><li>0:0:0:0:0:0:0:1              ::1</li><li>0:0:0:0:0:0:0:0              ::</li>]]></text>   
+</component>
+
+</textcomponents>

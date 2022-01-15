@@ -1,0 +1,44 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[EIGRP 100]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[192.168.2.0/24]]></text> 
+</component>
+<component id="ID_txt03">
+<text><![CDATA[192.168.3.0/24]]></text> 
+</component>
+<component id="ID_txt04">
+<text><![CDATA[.1]]></text> 
+</component>
+<component id="ID_txt05">
+<text><![CDATA[S0/0/0]]></text> 
+</component>
+<component id="ID_txt06">
+<text><![CDATA[192.168.1.0/24]]></text> 
+</component>
+<component id="ID_txt07">
+<text><![CDATA[fa0/0]]></text> 
+</component>
+<component id="ID_txt08">
+<text><![CDATA[.2]]></text> 
+</component>
+<component id="ID_txt09">
+<text><![CDATA[R1]]></text> 
+</component>
+<component id="ID_txt10">
+<text><![CDATA[R2]]></text> 
+</component>
+<component id="ID_inst">
+<text><![CDATA[Roll over R1 and R2 to view the MD5 authentication configuration.]]></text> 
+</component>
+<component id="tipTitle">
+<text><![CDATA[More Information]]></text>
+</component>
+<component id="tipBody">
+<text><![CDATA[Optional parameters can be configured as part of the keychain. Optional parameters include the date when the key is required and the lifetime of the key or end date of the key. To configure the optional parameters, you must be in the key configuration mode.<br><br><font face="_typewriter"><b>accept-lifetime</b> <i>start-time {infinite | end-time | duration seconds}</i></font><li>Specifies when the key is accepted for received packets</li><li>Start time is generally shown in <b>hh:mm:ss month date year</b></li><br><font face="_typewriter"><b>send-lifetime</b> <i>start-time {infinite | end-time | duration seconds}</i></font><li>Specifies when the key can be used for sending packets</li>]]></text>
+</component>
+<component id="TipText">
+<text><![CDATA[More Information]]></text>
+</component>
+</textcomponents>

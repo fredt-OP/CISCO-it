@@ -1,0 +1,772 @@
+<avalontask>
+   <r2data taskid='9324' type='simulation' language='EN' title='Sample Linksys Item'>
+<!-- data required by R2 will go here -->	
+</r2data>
+   <guitext file="guitext.xml">EN version of GUI nodes goes here</guitext>
+   
+   <textcomponents>
+   
+       <component type='text' id='txt_q1_desc'>
+          <text variable='true' translate='true'><![CDATA[<b>Proper IP Address Configuration</b><br>]]></text>
+       </component>
+       <component type='text' id='txt_q1_correct'>
+          <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'><br/><b>IP Address</b> <br/><br/>You have correctly configured the IP address.</textformat></font><br>]]></text>
+       </component>
+       <component type='text' id='txt_q1_incorrect'>
+          <text variable='true' translate='true'><![CDATA[<font face='_typewriter' size='12'><textformat blockindent='15'><br/><b>IP Address</b> <br/><br/>Missing/Incorrect - The ip address and or subnet mask is incorrect.  The IP address of the host and router interface should be in the same subnet.</textformat></font><br>]]></text>
+       </component>
+   	<component type="text" id="txt_check">
+		 <text variable="true" translate="true"> <![CDATA[Feeback]]>  
+		 </text>
+	</component>
+	<component type="text" id="txt_close"> 
+		<text variable="true" translate="true"> <![CDATA[ Close]]> 
+	  	</text>
+	  </component>
+
+
+
+
+   	<component type='text' id='instructiontext123'> 
+               <text variable='true' translate='true'> 
+                 <![CDATA[<b>Troubleshoot an IP addressing Issue</b><br/>
+In this activity, troubleshoot a connectivity issue between the host and server.
+Topology button: Access the network topology and IP address information.
+Instruction button: Return to the instruction window.
+Scenario button: Return to the scenario
+RTA Console button (when available): Access the host terminal window for RTA
+RTB Console button (when available): Access the host terminal window for RTB
+Host button (when available): Access the host command prompt
+
+Step 1: From the host command prompt, ping the server.
+-  From the topology window, click the host to open the command prompt.
+-  Ping the IP address of the server.
+-  Ping the fa0/0 interface of RTA.
+
+Step 2: From the RTA and RTB Consoles, ping the host and server.
+-  From the topology window, click the console connected to RTA to access the terminal window. The exec password is <b>class</b>.
+-  Ping the IP address of the server.
+-  Ping the IP address of the host.
+
+Step 3: Troubleshoot the connectivity issue.
+-  View the running configuration of RTA and RTB and verify configuration.
+-  Make any necessary configuration changes.
+-  Verify that a ping is successful from host to server.
+
+Step 4: Click the check button to check your work.
+
+
+
+ <br/><br/>]]> 
+               </text> 
+            </component> 
+            <component type='text' id='scenariotext1234'> 
+               <text variable='true' translate='true'> 
+                 <![CDATA[The network shown the in the topology has experienced connectivity issues recently. The host PC is unable to connect to the server.  Use the appropriate query commands to determine the problems.  After determining the problems, issue the correct commands to fix them.]]> 
+               </text> 
+            </component> 
+            
+            <component type='text' id='txt_instructions'><text variable='true' translate='true'><![CDATA[Instructions]]></text></component>
+   	 <component type='text' id='txt_scenario'><text variable='true' translate='true'><![CDATA[Scenario]]></text></component>
+   
+   
+   	<component type='text' id='txt_topology'> 
+   		<text variable='true' translate='true'><![CDATA[Topology]]></text> 
+   	</component> 
+   	
+   	<component type='text' id='txt_Fa00'> 
+   			<text variable='true' translate='true'><![CDATA[Fa0/0]]></text> 
+   		</component> 
+   	<component type='text' id='txt_Fa00IP'> 
+   			<text variable='true' translate='true'><![CDATA[10.10.30.67/27 <br/>   Fa0/0 - IP]]></text> 
+   		</component> 
+   		
+   	<component type='text' id='txt_topoText'> 
+   			<text variable='true' translate='true'><![CDATA[<dnt><b>RTA -     </b><b>Fa0/0</b>  10.10.30.67/27          <b>S0/0/0</b>  172.16.10.1/30<br/><br/><b>RTB -     </b><b>Fa0/0</b>  10.10.10.5/27            <b>S0/0/0</b>  172.16.10.2/30<br/><br/><b>Server -   </b>10.10.10.1/27<br/><br/><b>Host -     </b>10.10.30.66/27</dnt><br/><br/>Exec priviledge password for RTA and RTB is <b>class</b>.<br/>]]></text> 
+   		</component> 
+   		
+   
+   	<component type='text' id='txt_rtr1'> 
+   			<text variable='true' translate='true'><![CDATA[<dnt>RTA</dnt>]]></text> 
+   		</component> 
+   
+   	<component type='text' id='txt_rtr2'> 
+   		<text variable='true' translate='true'><![CDATA[<dnt>RTB</dnt>]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_Console'> 
+   		<text variable='true' translate='true'><![CDATA[Console]]></text> 
+   	</component> 
+   	<component type='text' id='txt_ConsoleRTA'> 
+	   		<text variable='true' translate='true'><![CDATA[RTA Console]]></text> 
+   	</component> 
+   	<component type='text' id='txt_ConsoleRTB'> 
+		   		<text variable='true' translate='true'><![CDATA[RTB Console]]></text> 
+   	</component> 
+   	
+   
+   	<component type='text' id='txt_newport'> 
+   		<text variable='true' translate='true'><![CDATA[Newport]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_switch1'> 
+   		<text variable='true' translate='true'><![CDATA[Sw1]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_switch2'> 
+   		<text variable='true' translate='true'><![CDATA[<dnt>Sw2</dnt>]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_switch3'> 
+   		<text variable='true' translate='true'><![CDATA[Switch3]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_pc1'> 
+   		<text variable='true' translate='true'><![CDATA[Console]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_pc2'> 
+   		<text variable='true' translate='true'><![CDATA[Console]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_pc3'> 
+   		<text variable='true' translate='true'><![CDATA[Host]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_pc4'> 
+   		<text variable='true' translate='true'><![CDATA[Server]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_pc5'> 
+   		<text variable='true' translate='true'><![CDATA[PC5]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_pc6'> 
+   		<text variable='true' translate='true'><![CDATA[PC6]]></text> 
+   	</component> 
+   
+   	<component type='text' id='txt_s00'>
+   	    <text variable='false' translate='false'><![CDATA[S0/0/0]]></text>
+       </component>
+   
+   	<component type='text' id='txt_s01'>
+   	    <text variable='false' translate='false'><![CDATA[S0/0/0]]></text>
+       </component>
+       
+       	<component type='text' id='txt_SerNet'> 
+       		<text variable='true' translate='true'><![CDATA[<dnt>{s0Network}</dnt> /28 <br/>       Network]]></text> 
+       	</component> 
+   
+   	<component type='text' id='txt_FaNet'> 
+   		<text variable='true' translate='true'><![CDATA[<dnt>{e0Network}</dnt> /27 <br/>        Network]]></text> 
+   	</component> 
+   
+   
+   
+   	<component type='text' id='txt_fa00'>
+   	    <text variable='false' translate='false'><![CDATA[Fa0/0]]></text>
+       </component>
+   
+   	<component type='text' id='txt_e1'>
+   	    <text variable='false' translate='false'><![CDATA[E1]]></text>
+       </component>
+   
+   	<component type='text' id='txt_e2'>
+   	    <text variable='false' translate='false'><![CDATA[E2]]></text>
+       </component>
+   
+   	<component type='text' id='txt_e3'>
+   	    <text variable='false' translate='false'><![CDATA[E3]]></text>
+       </component>
+   
+   </textcomponents>
+
+   <graphiccomponents>
+      <component type='graphic' id='gr_rtr1' > 
+         <icon x='0' y='0' width='62' height='46' id='icon_router'> 
+         </icon>
+         <label src='txt_rtr1' x='-15' y='-40' width='100' height='25' background='false' />
+         <label src='txt_s00'    x='25'  y='-25'   width='60' height='25' background='false' />
+         <label src='txt_Fa00'    x='-60'  y='-18'   width='60' height='25' background='false' />
+      </component>
+   
+      <component type='graphic' id='gr_rtr2' > 
+         <icon x='0' y='0' width='62' height='46' id='icon_router'> 
+         </icon>
+         <label src='txt_rtr2' x='-15' y='-40' width='100' height='25' background='false' />
+         <label src='txt_s01'    x='-65'  y='-15'   width='60' height='25' background='false' />
+         <label src='txt_fa00'   x='30'   y='-20'   width='60' height='25' background='false' />
+      </component>
+   
+      <component type='graphic' id='gr_switch1' > 
+         <icon x='0' y='0' width='68' height='34' id='icon_switch'>
+   	  </icon>
+   	  <label src='txt_switch1' x='-7' y='-30' width='100' height='40' background='false' />
+   	  <label src='txt_topoText' x='-7' y='-200' width='500' height='100' background='false' />
+   	  
+      </component>
+   
+      <component type='graphic' id='gr_switch2' > 
+         <icon x='0' y='0' width='68' height='34' id='icon_switch'>
+   	  </icon>
+         <label src='txt_switch2' x='-7' y='-30' width='100' height='40' background='false' />
+      </component>
+      
+      <component type='graphic' id='gr_pc1' > 
+            <icon x='0' y='0' width='48' height='40' id='icon_pc'>
+              <action event='release' target='hw_rtr1' activity='launchBrowser' window='win_rtr1' /> 
+      	  </icon>
+            <label src='txt_pc1' x='-28' y='17' width='100' height='25' background='false' />
+         </component>
+   	<component type='graphic' id='gr_pc2' > 
+               <icon x='0' y='0' width='48' height='40' id='icon_pc'>
+                 <action event='release' target='hw_rtr2' activity='launchBrowser' window='win_rtr2' /> 
+         	  </icon>
+               <label src='txt_pc1' x='-28' y='17' width='100' height='25' background='false' />
+         </component>
+	<component type='graphic' id='gr_pc3' > 
+               <icon x='0' y='0' width='48' height='40' id='icon_pc'>
+                  <action event='release' target='hw_pc3' activity='launchBrowser' window='win_pc3' /> 
+         	</icon>
+               <label src='txt_pc3' x='-18' y='17' width='100' height='25' background='false' />
+         </component>
+   
+   <component type='graphic' id='gr_server' > 
+                  <icon x='0' y='0' width='48' height='70' id='icon_server'>
+            	  </icon>
+                  <label src='txt_pc4' x='-22' y='36' width='100' height='25' background='false' />
+         </component>
+         
+   <component type='graphic' id='gr_liney100'>
+   	<shape type='line' beginx='0' beginy='0' endx='200' endy='0' strokewidth='2' stroke='#000000' />
+     </component>
+
+	<component type='graphic' id='gr_linex100'>
+   	<shape type='line' beginx='0' beginy='0' endx='0' endy='200' strokewidth='2' stroke='#000000' />
+     </component>
+
+   
+      <component type='graphic' id='gr_dotted_line'> 
+         <shape type='autodotline' strokewidth='2' />  
+      </component>
+   
+      <component type='graphic' id='gr_rt_line'> 
+         <shape type='line' beginx='0' beginy='0' endx='50' endy='140' strokewidth='2' stroke='#000000' />  
+      </component>
+      <component type='graphic' id='gr_lt_line'> 
+               <shape type='line' beginx='0' beginy='0' endx='-50' endy='30' strokewidth='2' stroke='#000000' />  
+      </component>
+   
+      <component type='graphic' id='gr_serial' > 
+         <shape type='serial' id='sh_serial' strokewidth='2'  /> 
+      </component>
+   
+      <component type='graphic' id='gr_line2'> 
+         <shape type='line' beginx='0' beginy='0' endx='60' endy='150' strokewidth='2' stroke='#000000' />  
+      </component>
+   
+   	<component type='graphic' id='gr_line'> 
+            <shape type='line' beginx='0' beginy='0' endx='0' endy='100' strokewidth='2' stroke='#000000' />  
+      </component>
+      
+   </graphiccomponents>
+
+   <hwcomponents>
+   
+     <component type='router' model='2624' id='hw_rtr1'> 
+      
+      
+         <card type='fastethernet' slot='0' fixed='false' >
+           <port type='fastethernet' number='0' name='FastEthernet0/0' id='hw_rtr1_fa00' fixed='false' />
+   	   <port type='fastethernet' number='1' name='FastEthernet0/1' id='hw_rtr1_fa01' fixed='false' />
+         </card>
+           	
+     <card type="serial" slot='0' fixed='false'>
+        <card type="serial" slot='0' fixed='false'>
+           <port type='serial' number='0' name='Serial0/0/0' id='hw_rtr1_s000' fixed='false' />
+           <port type='serial' number='1' name='Serial0/0/1' id='hw_rtr1_s001' fixed='false' />
+        </card>
+     </card>
+         
+         <config file='startup-config'> 
+           <![CDATA[
+   !
+   version 12.2
+   !
+   hostname RTA
+   !
+   enable secret class
+   !
+   !
+   no aaa new-model
+   !
+   resource policy
+   !
+   ip subnet-zero
+   !
+   !
+   ip cef
+   !
+   !
+   !
+   !
+   !
+   interface FastEthernet0/0
+     description RTA LAN
+     ip address 10.10.30.50 255.255.255.224
+     no shutdown
+   !
+   interface FastEthernet0/1
+    no ip address
+    shutdown
+    duplex auto
+    speed auto
+   !
+   interface Serial0/0/0
+    description Connection to RTB
+    ip address 172.16.10.1 255.255.255.252
+    no shutdown
+    clock rate 56000
+
+   !
+   interface Serial0/0/1
+    no ip address
+    shutdown
+   !
+   router rip
+    version 2
+    network 10.0.0.0
+    network 172.16.0.0
+
+   !
+   ip classless
+   !
+   ip http server
+   !
+   !
+   control-plane
+   !
+   !
+   line con 0
+   line aux 0
+   line vty 0 4
+    login
+   !
+   end
+   		]]> 
+         </config> 
+      </component> 
+   
+   
+   
+      <component type='router' model='2624' id='hw_rtr2'> 
+      
+      
+         <card type='fastethernet' slot='0' fixed='false' >
+           <port type='fastethernet' number='0' name='FastEthernet0/0' id='hw_rtr2_fa00' fixed='false' />
+   	<port type='fastethernet' number='1' name='FastEthernet0/1' id='hw_rtr2_fa01' fixed='false' />
+         </card>
+     <card type="serial" slot='0' fixed='false'>
+        <card type="serial" slot='0' fixed='false'>
+           <port type='serial' number='0' name='Serial0/0/0' id='hw_rtr2_s000' fixed='false' />
+           <port type='serial' number='1' name='Serial0/0/1' id='hw_rtr2_s001' fixed='false' />
+        </card>
+     </card>
+         
+         <config file='startup-config'> 
+           <![CDATA[
+   !
+   version 12.2
+   !
+   hostname RTB
+   !
+   enable secret class
+   !
+   !
+   no aaa new-model
+   !
+   resource policy
+   !
+   ip subnet-zero
+   !
+   !
+   ip cef
+   !
+   !
+   !
+   !
+   !
+   interface FastEthernet0/0
+    description RTB LAN
+    ip address 10.10.10.5 255.255.255.224
+    no shutdown
+  !
+   interface FastEthernet0/1
+    no ip address
+    shutdown
+    duplex auto
+    speed auto
+   !
+   interface Serial0/0/0
+    description Connection to RTA
+     ip address 172.16.10.2 255.255.255.252
+     no shutdown
+   !
+   interface Serial0/0/1
+    no ip address
+    shutdown
+    clock rate 125000
+   !
+   router rip
+    version 2
+    network 10.0.0.0
+    network 172.16.0.0
+   !
+   control-plane
+   !
+   !
+   line con 0
+   line aux 0
+   line vty 0 4
+    login
+   !
+   end
+   		]]> 
+         </config> 
+      </component> 
+   
+             <component type='switch' model='1924' id='switch1'> 
+               <port type='ethernet' name='Ethernet1' number='1' id='hw_sw1_e1' fixed='true' /> 
+               <port type='ethernet' name='Ethernet2' number='2' id='hw_sw1_e2' fixed='true' /> 
+               <port type='ethernet' name='Ethernet3' number='3' id='hw_sw1_e3' fixed='true' /> 
+               <port type='ethernet' name='Ethernet4' number='4' id='hw_sw1_e4' fixed='true' /> 
+               <port type='ethernet' name='Ethernet5' number='5' id='hw_sw1_e5' fixed='true' /> 
+               <port type='ethernet' name='Ethernet6' number='6' id='hw_sw1_e6' fixed='true' /> 
+               <port type='ethernet' name='Ethernet7' number='7' id='hw_sw1_e7' fixed='true' /> 
+               <port type='ethernet' name='Ethernet8' number='8' id='hw_sw1_e8' fixed='true' /> 
+               <port type='ethernet' name='Ethernet9' number='8' id='hw_sw1_e9' fixed='true' /> 
+               <port type='ethernet' name='Ethernet10' number='10' id='hw_sw1_e10' fixed='true' /> 
+               <port type='ethernet' name='Ethernet11' number='11' id='hw_sw1_e11' fixed='true' /> 
+               <port type='ethernet' name='Ethernet12' number='12' id='hw_sw1_e12' fixed='true' /> 
+               <port type='ethernet' name='Ethernet13' number='13' id='hw_sw1_e13' fixed='true' /> 
+               <port type='ethernet' name='Ethernet14' number='14' id='hw_sw1_e14' fixed='true' /> 
+               <port type='ethernet' name='Ethernet15' number='15' id='hw_sw1_e15' fixed='true' /> 
+               <port type='ethernet' name='Ethernet16' number='16' id='hw_sw1_e16' fixed='true' /> 
+               <port type='ethernet' name='Ethernet17' number='17' id='hw_sw1_e17' fixed='true' /> 
+               <port type='ethernet' name='Ethernet18' number='18' id='hw_sw1_e18' fixed='true' /> 
+               <port type='ethernet' name='Ethernet19' number='19' id='hw_sw1_e19' fixed='true' /> 
+               <port type='ethernet' name='Ethernet20' number='20' id='hw_sw1_e20' fixed='true' /> 
+               <port type='ethernet' name='Ethernet21' number='21' id='hw_sw1_e21' fixed='true' /> 
+               <port type='ethernet' name='Ethernet22' number='22' id='hw_sw1_e22' fixed='true' /> 
+               <port type='ethernet' name='Ethernet23' number='23' id='hw_sw1_e23' fixed='true' /> 
+               <port type='ethernet' name='Ethernet24' number='24' id='hw_sw1_e24' fixed='true' /> 
+               <config file='startup-config'> 
+                 <![CDATA[ 
+   !
+   hostname Sw1
+   !
+   interface Ethernet1
+    no shutdown
+   !
+   interface Ethernet2
+    no shutdown
+   !
+   interface Ethernet3
+    no shutdown
+   !
+   interface Ethernet4
+    no shutdown
+   !
+   interface Ethernet5
+    no shutdown
+   !
+   interface Ethernet6
+    no shutdown
+   !
+   interface Ethernet7
+    no shutdown
+   !
+   interface Ethernet8
+    no shutdown
+   !
+   interface Ethernet9
+    no shutdown
+   !
+   interface Ethernet10
+    no shutdown
+   !
+   interface Ethernet11
+    no shutdown
+   !
+   interface Ethernet12
+    no shutdown
+   !
+   interface Ethernet13
+    no shutdown
+   !
+   interface Ethernet14
+    no shutdown
+   !
+   interface Ethernet15
+    no shutdown
+   !
+   interface Ethernet16
+    no shutdown
+   !
+   interface Ethernet17
+    no shutdown
+   !
+   interface Ethernet18
+    no shutdown
+   !
+   interface Ethernet19
+    no shutdown
+   !
+   interface Ethernet20
+    no shutdown
+   !
+   interface Ethernet21
+    no shutdown
+   !
+   interface Ethernet22
+    no shutdown
+   !
+   interface Ethernet23
+    no shutdown
+   !
+   interface Ethernet24
+    no shutdown
+   !
+   interface Vlan1
+    no shutdown
+   !
+   end
+                 ]]> 
+               </config> 
+             </component> 
+             
+             <component type='switch' model='1924' id='hw_switch2'> 
+   	        <port type='ethernet' name='Ethernet1'  number='1'  id='hw_sw2_e1'  fixed='true' />
+   	        <port type='ethernet' name='Ethernet2'  number='2'  id='hw_sw2_e2'  fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet3'  number='3'  id='hw_sw2_e3'  fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet4'  number='4'  id='hw_sw2_e4'  fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet5'  number='5'  id='hw_sw2_e5'  fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet6'  number='6'  id='hw_sw2_e6'  fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet7'  number='7'  id='hw_sw2_e7'  fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet8'  number='8'  id='hw_sw2_e8'  fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet9'  number='9'  id='hw_sw2_e9'  fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet10' number='10' id='hw_sw2_e10' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet11' number='11' id='hw_sw2_e11' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet12' number='12' id='hw_sw2_e12' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet13' number='13' id='hw_sw2_e13' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet14' number='14' id='hw_sw2_e14' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet15' number='15' id='hw_sw2_e15' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet16' number='16' id='hw_sw2_e16' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet17' number='17' id='hw_sw2_e17' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet18' number='18' id='hw_sw2_e18' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet19' number='19' id='hw_sw2_e19' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet20' number='20' id='hw_sw2_e20' fixed='true' />
+   	  	  <port type='ethernet' name='Ethernet21' number='21' id='hw_sw2_e21' fixed='true' />
+   	        <port type='ethernet' name='Ethernet22' number='22' id='hw_sw2_e22' fixed='true' />
+   	        <port type='ethernet' name='Ethernet23' number='23' id='hw_sw2_e23' fixed='true' />
+   	        <port type='ethernet' name='Ethernet24' number='24' id='hw_sw2_e24' fixed='true' />
+   	        <config file='startup-config'> 
+   	           <![CDATA[ 
+   	  !
+   	  hostname Sw2
+   	  !
+   	  interface Ethernet1
+   	   no shutdown
+   	  !
+   	  interface Ethernet2
+   	   no shutdown
+   	  !
+   	  interface Ethernet3
+   	   no shutdown
+   	  !
+   	  interface Ethernet4
+   	   no shutdown
+   	  !
+   	  interface Ethernet5
+   	   no shutdown
+   	  !
+   	  interface Ethernet6
+   	   no shutdown
+   	  !
+   	  interface Ethernet7
+   	   no shutdown
+   	  !
+   	  interface Ethernet8
+   	   no shutdown
+   	  !
+   	  interface Ethernet9
+   	   no shutdown
+   	  !
+   	  interface Ethernet10
+   	   no shutdown
+   	  !
+   	  interface Ethernet11
+   	   no shutdown
+   	  !
+   	  interface Ethernet12
+   	   no shutdown
+   	  !
+   	  interface Ethernet13
+   	   no shutdown
+   	  !
+   	  interface Ethernet14
+   	   no shutdown
+   	  !
+   	  interface Ethernet15
+   	   no shutdown
+   	  !
+   	  interface Ethernet16
+   	   no shutdown
+   	  !
+   	  interface Ethernet17
+   	   no shutdown
+   	  !
+   	  interface Ethernet18
+   	   no shutdown
+   	  !
+   	  interface Ethernet19
+   	   no shutdown
+   	  !
+   	  interface Ethernet20
+   	   no shutdown
+   	  !
+   	  interface Ethernet21
+   	   no shutdown
+   	  !
+   	  interface Ethernet22
+   	   no shutdown
+   	  !
+   	  interface Ethernet23
+   	   no shutdown
+   	  !
+   	  interface Ethernet24
+   	   no shutdown
+   	  !
+   	  interface Vlan1
+   	   no shutdown
+   	  !
+   	  end
+   	           ]]> 
+   	        </config> 
+   	     </component> 
+   
+   <component type='host' model='none' id='hw_pc3'> 
+         <port type='ethernet' number='0' name='eth0' id='hw_h3_e0' fixed='true' />
+         <config file='startup-config'> 
+           <![CDATA[
+   ! PC3 Configuration
+   ifconfig eth0 ip 10.10.30.66 255.255.255.224
+   ifconfig route 0.0.0.0 0.0.0.0 10.10.30.67
+   ifconfig eth0 up
+   ifconfig hostname Host
+   end
+           ]]> 
+         </config> 
+      </component> 
+
+<component type='host' model='none' id='hw_pc4'> 
+         <port type='ethernet' number='0' name='eth0' id='hw_h4_e0' fixed='true' />
+         <config file='startup-config'> 
+           <![CDATA[
+   ! PC4 Configuration
+   ifconfig eth0 ip 10.10.10.1 255.255.255.224
+   ifconfig route 0.0.0.0 0.0.0.0 10.10.10.5
+   ifconfig eth0 up
+   ifconfig hostname Server
+   end
+           ]]> 
+         </config> 
+      </component> 
+   
+   <component type='link' id='hw_lnk_sw1_pc3'> 
+                  <endpoint id='hw_sw1_e1' /> 
+                  <endpoint id='hw_h3_e0'/> 
+            </component> 
+            
+      <component type='link' id='hw_lnk_rtr1_sw1'> 
+               <endpoint id='hw_rtr1_fa00' /> 
+               <endpoint id='hw_sw1_e2'/> 
+            </component> 
+   
+      <component type='link' id='hw_lnk_rtr1_rtr2'> 
+         <endpoint id='hw_rtr1_s000' dce='true' /> 
+         <endpoint id='hw_rtr2_s000'/> 
+      </component> 
+      <component type='link' id='hw_lnk_rtr2_sw2'> 
+            <endpoint id='hw_rtr2_fa00' /> 
+            <endpoint id='hw_sw2_e1'/> 
+      </component> 
+	<component type='link' id='hw_lnk_rtr2_pc4'> 
+            <endpoint id='hw_sw2_e2' /> 
+            <endpoint id='hw_h4_e0'/> 
+      </component> 
+      
+</hwcomponents>
+   <presentation>
+   	<mainstage bgcolor= '#FFFFFF' theme='ccna' historylog='all' tooltips='true' contextmenu='false' />
+   	<graphicmap> 
+   		<map id='icon_router' src='Router'   location='library' />
+   		<map id='icon_switch' src='Switch'   location='library' />
+   		<map id='icon_pc'     src='Computer' location='library' />
+   		<map id='icon_server'     src='Server' location='library' />
+   	</graphicmap> 
+   
+   	<window id='win323' resize='all' maxwidth='600' titletextid='txt_instructions' minheight='100' visible='true'  height='300' minwidth='100' width='600' depth='345' y='5' x= '5'> 
+               <element id='a1' src='instructiontext123' container='textClip' width='500' html='true' wordwrap='true' /> 
+             </window>
+             <window id='win123' resize='all' maxwidth='600'  titletextid='txt_scenario' minheight='100' visible='true' maxheight='400' height='200' minwidth='100' width='600' depth='346' y='320' x='5'> 
+               <element id='s342' src='scenariotext1234' container='textClip' width='500' html='true' wordwrap='false' /> 
+             </window>
+   
+   
+   	<window id='win_topo' maximize='true' resize='all' titletextid='txt_topology' minheight='390' visible='false' height='700' minwidth='780' width='780' depth='100' y='20' x='5'> 
+   		
+
+
+   		<element id='ele_topoText'  src='txt_topoText'  x='0' y='10'  depth='120' /> 
+   		<element id='ele_rtr1'  src='gr_rtr1'  x='300' y='199'  depth='121' /> 
+   		<element id='ele_pc1'     src='gr_pc1'     x='300'  y='300' depth='122' /> 
+   		<element id='ele_rtr2' src='gr_rtr2' x='500' y='199'  depth='123' /> 
+   		<element id='ele_pc2'     src='gr_pc2'     x='500'  y='300' depth='124' /> 
+   		<element id='ele_switch1' src='gr_switch1' x='100' y='199' depth='125' /> 
+   		<element id='ele_pc3'     src='gr_pc3'     x='100'  y='300' depth='126' /> 
+   		<element id='ele_switch2' src='gr_switch2' x='700' y='199' depth='127' /> 
+   		<element id='ele_server'     src='gr_server'     x='700'  y='300' depth='128' />
+
+   		<element id='ele_line1'  src='gr_liney100' x='100' y='199' depth='101'/>
+   		<element id='ele_line2'  src='gr_liney100' x='500' y='199' depth='102'/>
+   	        <element id='ele_line3'  src='gr_serial'  beginobject='ele_rtr1.icon_router' endobject='ele_rtr2.icon_router' depth='110' />
+   	        <element id='ele_line4'  src='gr_dotted_line' beginobject='ele_rtr1.icon_router' endobject='ele_pc1.icon_pc' depth='105' />
+   	        <element id='ele_line5'  src='gr_dotted_line' beginobject='ele_rtr2.icon_router' endobject='ele_pc2.icon_pc' depth='103' />
+   	        
+   	        <element id='ele_line7'  src='gr_line' x='100' y='199' depth='115'/>
+   	        <element id='ele_line8'  src='gr_line' x='700' y='199' depth='116'/>
+
+   		
+           
+           </window> 
+   
+   	<window id='win_rtr1' resize='none' titletextid='txt_ConsoleRTA' visible='false' height='387' width='580' y='5' x='5' scrolling='none' depth='300' minheight='387' minwidth='580'> 
+             <element id='ele_io_ver' src='hw_rtr1' container='IOobject' /> 
+       </window>   
+       
+       <window id='win_rtr2' resize='none' titletextid='txt_ConsoleRTB' visible='false' height='387' width='580' y='5' x='5' scrolling='none' depth='300' minheight='387' minwidth='580'> 
+          <element id='ele_io_ver' src='hw_rtr2' container='IOobject' /> 
+       </window>   
+   
+       
+       <window id='win_pc3' resize='none' titletextid='txt_pc3' visible='false' height='387' width='580' y='10' x='100' scrolling='none' depth='800' minheight='387' minwidth='580'> 
+          <element id='ele_io_pc3' src='hw_pc3' container='IOobject' /> 
+       </window>   
+       
+      
+   
+       
+</presentation>
+   <scoring />
+</avalontask>

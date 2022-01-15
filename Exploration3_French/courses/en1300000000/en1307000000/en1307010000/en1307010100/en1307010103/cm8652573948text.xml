@@ -1,0 +1,73 @@
+<textcomponents>
+
+  <component id="ID_title1">
+  <text><![CDATA[<b>Comparing a WLAN to a LAN</b>]]></text> 
+  </component>
+
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Characteristic                         </b></font></td>
+	  	  	<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>802.11 Wireless LAN                     </b></font></td>
+			<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>802.3 Ethernet LANs                  </b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Physical Layer              </td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Radio Frequency (RF)          </td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Cable                            </td>
+	              </tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Media Access                     </td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Collision Avoidance                     </td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Collision Detection                    </td>
+	                                  </tr>
+	
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Availability                       </td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Anyone with a radio NIC in range of an access point                                                                                 </td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Cable connection required                 </td>
+	                                                            </tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Signal Interference                    </td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Yes                </td>
+		<td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Inconsequential                       </td>
+	                                                   </tr>
+	
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Regulation                      </td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>Additional regulation by local authorities                                                          </td>
+		<td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>IEEE standard dictates                       </td>
+	                                                                       </tr>
+</table>
+]]></text> 
+  </component>
+
+  <component id="ID_box">
+  <text><![CDATA[<b>Switch S1:<br>VLAN 20 <br>"student"</b>]]></text> 
+  </component>
+
+  <component id="ID_box2">
+  <text><![CDATA[<font face="_typewriter">S1#<b>configure terminal</b><br>S1(config)#<b>vlan 20</b><br>S1(config-vlan)#<b>name student</b><br>S1(config-vlan)#<b>end</b></font>]]></text> 
+  </component>
+
+  <component id="ID_box3">
+  <text><![CDATA[<b>Student PC<br>172.17.20.22</b>]]></text> 
+  </component>
+
+  <component id="ID_CS">
+  <text><![CDATA[<b>Command Syntax</b>]]></text> 
+  </component>
+  <component id="ID_example">
+  <text><![CDATA[<b>Example</b>]]></text> 
+  </component>
+  <component id="ID_Gateway">
+  <text><![CDATA[<b>Verification</b>]]></text> 
+  </component>
+
+</textcomponents>

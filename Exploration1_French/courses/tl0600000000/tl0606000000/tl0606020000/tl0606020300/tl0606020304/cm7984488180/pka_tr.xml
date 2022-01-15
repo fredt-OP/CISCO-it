@@ -1,0 +1,153 @@
+﻿<TRANSLATION>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router3</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router3</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router3</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router3</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router3</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">PC3</NAME>
+ <NAME translate="true">PC2</NAME>
+ <NAME translate="true">PC1</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Router1</NAME>
+ <NAME translate="true">Router3</NAME>
+ <NAME translate="true">Router2</NAME>
+ <NAME translate="true">Switch</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">
+&lt;h2&gt;Exercice 6.2.3 : &lt;br&gt;Affichage du trafic de diffusion, monodiffusion et multidiffusion&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Future Versions of PT may support the Topology Diagram graphic here in the .pka file --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Embedded Activities if course design has specified this --&gt;
+
+&lt;!-- ================================================== Addressing Table Refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to adjust this table to fit the activity you are authoring. ================================================== --&gt; &lt;!--This is the end of the IP addressing table code&quot; --&gt;
+
+
+&lt;!-- ================================================== Objectives unordered list (bullets) ================================================== --&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;Vérification de la connectivité &lt;li&gt;Configuration de la simulation &lt;li&gt;Exécution de la simulation &lt;/ul&gt; &lt;!-- ================================================== Introduction Provide Background, Scenario, or any other orientation material in the Introduction Refer to &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Introduction : &lt;/h3&gt;
+
+Le trafic réseau est en majorité un trafic de monodiffusion. Si un ordinateur envoie une requête d'écho ICMP à un routeur distant, l'adresse source dans l'en-tête du paquet IP est l'adresse IP de l'ordinateur et l'adresse de destination, l'adresse IP de l'interface du routeur. Le paquet est uniquement envoyé à la destination requise. &lt;br&gt;&lt;br&gt; La commande ping ou la fonction Add Complex PDU de Packet Tracer vous permet d'envoyer directement une requête ping aux adresses de diffusion. Les routeurs utilisent le protocole RIP pour échanger régulièrement des informations de routage entre les routeurs. La version 1 du protocole RIP diffuse des mises à jour périodiques de chaque interface configurée pour ce protocole. Bien que ces diffusions soient destinées à d'autres routeurs, tous les périphériques doivent traiter ces informations. La version 2 du protocole RIP procède à la monodiffusion des mises à jour périodiques de chaque interface configurée pour ce protocole. Ces paquets sont envoyés à l'adresse de multidiffusion 224.0.0.9, qui représente le groupe de routeurs RIP version 2. Bien que ces paquets soient reçus par d'autres périphériques, ils sont ignorés par tous les périphériques de la couche 3 excepté les routeurs RIP version 2, sans traitement ultérieur. Cet exercice vous permettra d'observer le comportement de la diffusion, de la monodiffusion et de la multidiffusion.&lt;br&gt; &lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. ================================================== --&gt; &lt;br&gt; &lt;b&gt;&lt;h3&gt;Tâche 1 : vérification de la connectivité&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1 : accès à PC1 &lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur PC1. Sur le &lt;b&gt;bureau&lt;/b&gt;, ouvrez l'&lt;b&gt;invite de commande&lt;/b&gt;. 
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : exécution d'une commande ping sur Router3&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Entrez la commande &lt;b&gt;ping 10.0.3.2&lt;/b&gt;. Celle-ci doit réussir. Réduisez la fenêtre &lt;b&gt;Invite de commande&lt;/b&gt;.&lt;br&gt;&lt;br&gt;
+
+&lt;b&gt;&lt;h3&gt;Tâche 2 : configuration de la simulation&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1 : activation du mode Simulation&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur l'onglet &lt;b&gt;Simulation&lt;/b&gt; pour passer en mode Simulation. Rétablissez la fenêtre PC1. Entrez la commande &lt;b&gt;ping 10.0.3.2&lt;/b&gt;. Réduisez la fenêtre &lt;b&gt;Invite de commande&lt;/b&gt;.
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : définition de filtres sous Event List Filters&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Nous souhaitons capturer uniquement les événements ICMP et RIP. Dans la section &lt;b&gt;Event List Filters&lt;/b&gt;, cliquez sur &lt;b&gt;Edit Filters&lt;/b&gt;. Sélectionnez uniquement les événements ICMP et RIP.&lt;br&gt;&lt;br&gt;
+
+&lt;h3&gt; &lt;b&gt;Tâche 3 : exécution de la simulation&lt;/h3&gt; &lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1 : observation du trafic de monodiffusion&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; L'unité de données de protocole sur PC1 est une requête d'écho ICMP adressée à l'interface série sur Router3. Cliquez sur le bouton &lt;b&gt;Capture / Forward&lt;/b&gt; à plusieurs reprises et observez quand la requête d'écho est envoyée à Router3 et quand la réponse d'écho est renvoyée à PC1. Arrêtez quand la réponse du premier écho atteint PC1.&lt;br&gt;&lt;br&gt; Dans la section &lt;b&gt;Simulation Panel Event List&lt;/b&gt;, la dernière colonne contient un carré de couleur qui donne accès à des informations détaillées sur un événement. Cliquez sur le carré de couleur dans la dernière colonne du premier événement. La fenêtre &lt;b&gt;PDU Information&lt;/b&gt; s'ouvre.&lt;br&gt;&lt;br&gt; Examinez les informations de couche 3 de tous les événements. Notez que les adresses IP source et de destination sont des adresses de monodiffusion qui font référence à PC1 et à l'interface série sur Router3. Cliquez sur le bouton &lt;b&gt;Reset Simulation&lt;/b&gt;.
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : observation du trafic de diffusion&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez sur le bouton &lt;b&gt;Add Complex PDU&lt;/b&gt; (l'enveloppe ouverte à l'extrême droite). Cliquez sur PC 1 qui servira de source pour ce message test.  Pour l'adresse de destination, entrez l'adresse de diffusion 255.255.255.255. Pour le numéro de séquence, entrez 1 ; pour le temps, entrez 0. Cliquez sur le bouton &lt;b&gt;Create PDU&lt;/b&gt; ; ce paquet de diffusion test apparaît maintenant dans la liste &lt;b&gt;Event List&lt;/b&gt; (sous la forme d'un « événement mesuré ») et dans la liste User Created PDU List (sous la forme d'un paquet créé que vous pouvez modifier). Cliquez deux fois sur le bouton &lt;b&gt;Capture / Forward&lt;/b&gt;. Ce paquet sera envoyé au commutateur et transféré vers PC 2, PC 3 et le routeur. Examinez les informations Layer 3 de tous les événements. Notez que l'adresse IP de destination (255.255.255.255) est l'adresse de diffusion IP. Après avoir examiné le comportement de diffusion, supprimez le paquet test. (Vous pouvez supprimer entièrement Scenario 0 et réinitialiser la simulation à l'aide du bouton &lt;b&gt;Delete&lt;/b&gt; situé à droite du bouton &lt;b&gt;New&lt;/b&gt;.) 
+
+&lt;h4&gt; &lt;b&gt;Étape 3 : observation du trafic de multidiffusion&lt;/h4&gt; &lt;/b&gt;&lt;br&gt;&lt;br&gt; Cliquez à nouveau sur le bouton &lt;b&gt;Capture / Forward&lt;/b&gt;. Trois paquets RIP version 2 sont au niveau de Router1 en attente d'être multidiffusés vers chaque interface.&lt;br&gt;&lt;br&gt; Examinez le contenu de ces paquets en ouvrant la fenêtre PDU Information et cliquez à nouveau sur le bouton &lt;b&gt;Capture / Forward&lt;/b&gt;. Les paquets sont envoyés vers les deux autres routeurs et le commutateur. Les routeurs acceptent et traitent les paquets, car ils font partie du groupe de multidiffusion. Cliquez à nouveau sur le bouton &lt;b&gt;Capture / Forward&lt;/b&gt;. Les paquets sont envoyés vers les trois hôtes. Les hôtes rejettent et abandonnent les paquets.&lt;br&gt;&lt;br&gt; Examinez les informations Layer 3, Layer 4 et Layer 7 de tous les événements RIPv2. Notez que l'adresse IP de destination 224.0.0.9 est l'adresse IP de multidiffusion des routeurs RIPv2. Notez que les mises à jour qui atteignent les ordinateurs sont ignorées au niveau de la couche 3 et qu'aucun traitement n'a lieu. &lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;L'intégralité du contenu de ce document est protégé par les droits d'auteur © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques de Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,PC1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router1</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router3</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Router2</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Switch</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">PC3</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Router3</ID>
+ <ID translate="true">Router2</ID>
+ <ID translate="true">Switch</ID>
+ <ID translate="true">PC3</ID>
+ <ID translate="true">PC2</ID>
+ <ID translate="true">PC1</ID>
+ <ID translate="true">Router1</ID>
+ <ID translate="true">Router3</ID>
+ <ID translate="true">Router2</ID>
+ <ID translate="true">Switch</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

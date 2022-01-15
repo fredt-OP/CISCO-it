@@ -1,0 +1,75 @@
+﻿<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Déterminez quels problèmes peuvent être résolus par l’implémentation de réseaux locaux virtuels.<br/><br/><b>Sélectionnez les scénarios dans lesquels des réseaux locaux virtuels permettent de résoudre le problème décrit.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+	<component id="txt_numrows">
+		<text><![CDATA[4]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[Oui]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[Non]]></text>
+	</component>
+
+		
+    <component id="txt_q1">
+		<text><![CDATA[1. <textformat blockindent='14'>Des utilisateurs du service Magasin accèdent aux enregistrements du service Paie. La direction vous a demandé d’isoler le service Paie du reste du réseau.</textformat>]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[2.<textformat blockindent='14'> Les équipes du service Ventes accèdent constamment au réseau, puis le quittent. Cela entraîne un trafic de diffusion important, car les machines tentent de se détecter mutuellement. Ces diffusions ralentissent les performances réseau dans le service Graphique.</textformat>]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[3. <textformat blockindent='14'>Lors de l’exécution d’un projet de grande envergure, les membres des services Marketing, Ventes et Relations publiques collaborent sur différents aspects du projet. L’administrateur réseau s’inquiète du temps de réponse sur le serveur de collaboration.</textformat>]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[4. <textformat blockindent='14'>L’entreprise envisage d’installer un système voix sur IP (VoIP), mais pense que le trafic vocal sera inutilisable en raison des quantités importantes de données sur le réseau.</textformat>]]></text>
+	</component>
+  
+	
+    <component id="txt_a1">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[1]]></text>
+	</component>
+
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Vous avez correctement identifié les scénarios dans lesquels des réseaux locaux virtuels pourront résoudre le problème décrit. Cliquez sur Suivant pour continuer.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Veuillez réviser le concept de réseau local virtuel et réessayer. ]]></text></component>
+
+
+</textcomponents>

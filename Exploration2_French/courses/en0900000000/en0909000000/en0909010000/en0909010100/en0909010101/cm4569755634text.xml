@@ -1,0 +1,27 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>IGRP to EIGRP</b>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Summary of Operations</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>IGRP<br>1985<br>Starting 2005, no longer supported in IOS 12.2(13)T and 12.2(R1s4)S </b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>EIGRP<br>1992<br>Released in IOS 9.2.1</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Traditional Distance Vector Routing Protocols</b><br><br><li>Use the Bellman-Ford or Ford-Fulkerson algorithm.</li><li>Age out routing entries and uses periodic updates.</li><li>Keep track of only the best routes; the best path to a destination network.</li><li>When a route becomes unavailable, the router must wait for a new routing update.</li><li>Slower convergence due to holddown timers.</li>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Enhanced Distance Vector Routing Protocol: EIGRP</b><br><br><li>Uses the Diffusing Update Algorithm (DUAL).</li><li>Does not age out routing entries nor uses periodic updates.</li><li>Maintains a topology table separate from the routing table, which includes the best path and any loop-free backup paths.</li><li>When a route becomes unavailable, DUAL will use a backup path if one exists in the topology table.</li><li>Faster convergence due to the absence of holddown timers and a system of coordinated route calculations.</li>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,151 @@
+<textcomponents>
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>Switch Forwarding Methods</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>Store-and-Forward Switching</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>Cut-Through Switching</B>]]></text> 
+</component>
+
+<component id="ID_title">
+  <text><![CDATA[<B>Switch Packet Forwarding Methods</B>]]></text> 
+</component>
+
+
+<component id="ID_txt_WindowTitle01">
+  <text><![CDATA[<B>Store-and-Forward Switch</B>]]></text> 
+</component>
+
+
+<component id="ID_txt01">
+  <text><![CDATA[<B>Cut-through</B>]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<B>Store-and-forward</B>]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[<B>The frame is forwarded through the switch before the entire frame is received.</B>]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[<B>Complete frame is received before forwarding.</B>]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[<B>Source</B>]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[<B>Destination</B>]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[<B>A store-and-forward switch receives the entire frame, computes the CRC, and checks the frame length. If the CRC and frame length are valid, the switch looks up the destination address, which determines the outgoing interface. The frame is then forwarded out the correct port.</B>]]></text> 
+</component>
+
+<component id="ID_txt09">
+  <text><![CDATA[<B>Source</B>]]></text> 
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[<B>Destination</B>]]></text> 
+</component>
+
+<component id="ID_txt10">
+  <text><![CDATA[<B>A cut-through switch forwards the frame before it is entirely received. At a minimum, the destination address of the frame must be read before the frame can be forwarded.</B>]]></text> 
+</component>
+
+<component id="ID_txt11">
+  <text><![CDATA[<B>A Cut-Through Switch</B>]]></text> 
+</component>
+
+<component id="ID_txt12">
+  <text><![CDATA[<B>Switching Table</B>]]></text> 
+</component>
+
+<component id="ID_txt13">
+  <text><![CDATA[<B>Destination Address</B>]]></text> 
+</component>
+
+
+<component id="ID_txt14">
+  <text><![CDATA[<B>Source Address</B>]]></text> 
+</component>
+
+
+<component id="ID_txt15">
+  <text><![CDATA[<B>Data</B>]]></text> 
+</component>
+
+
+<component id="ID_txt16">
+  <text><![CDATA[<B>CRC</B>]]></text> 
+</component>
+
+<component id="ID_txt17">
+  <text><![CDATA[<B>Frame is Good!</B>]]></text> 
+</component>
+
+
+<component id="ID_slide2_txt01">
+  <text><![CDATA[<B>Source</B>]]></text> 
+</component>
+
+<component id="ID_slide2_txt02">
+  <text><![CDATA[<B>Destination</B>]]></text> 
+</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rewind]]></text>
+</component><component id="forward2">
+<text><![CDATA[Fast Forward]]></text></component>
+<component id="mute2">
+<text><![CDATA[Mute]]></text></component>
+<component id="unmute2"><text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Restart]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+</textcomponents>

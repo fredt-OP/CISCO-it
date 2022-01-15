@@ -1,0 +1,113 @@
+<textcomponents>
+
+
+<component id="ID_txt01">
+<text><![CDATA[Classe A]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[Classe B]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[Classe C]]></text> 
+  </component>
+<component id="ID_txt04">
+  <text><![CDATA[Réseau]]></text> 
+  </component>
+<component id="ID_txt05">
+  <text><![CDATA[Réseau]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[Réseau]]></text> 
+  </component>
+<component id="ID_txt07">
+  <text><![CDATA[Hôte]]></text> 
+  </component>
+<component id="ID_txt08">
+    <text><![CDATA[Réseau]]></text> 
+  </component>
+<component id="ID_txt09">
+    <text><![CDATA[Réseau]]></text> 
+  </component>
+<component id="ID_txt10">
+  <text><![CDATA[Hôte]]></text> 
+  </component>
+<component id="ID_txt11">
+  <text><![CDATA[Hôte]]></text> 
+  </component>
+<component id="ID_txt12">
+  <text><![CDATA[Réseau]]></text> 
+  </component>  
+<component id="ID_txt13">
+  <text><![CDATA[Hôte]]></text> 
+  </component>  
+<component id="ID_txt14">
+  <text><![CDATA[Hôte]]></text> 
+  </component>
+<component id="ID_txt15">
+  <text><![CDATA[Hôte]]></text> 
+  </component>  
+<component id="ID_txt16">
+  <text><![CDATA[255.0.0.0 ou /8]]></text> 
+  </component>
+<component id="ID_txt17">
+  <text><![CDATA[255.255.0.0 ou /16]]></text> 
+  </component>
+<component id="ID_txt18">
+  <text><![CDATA[255.255.255.0 ou /24]]></text> 
+  </component>
+<component id="ID_txt19">
+  <text><![CDATA[Premier octet]]></text> 
+  </component>
+<component id="ID_txt20">
+  <text><![CDATA[Deuxième octet]]></text> 
+  </component>  
+<component id="ID_txt21">
+  <text><![CDATA[Troisième octet]]></text> 
+  </component>  
+<component id="ID_txt22">
+  <text><![CDATA[Quatrième octet]]></text> 
+  </component>  
+<component id="ID_txt23">
+  <text><![CDATA[Masque de sous-réseau]]></text> 
+  </component>  
+  
+<component id="ID_txt24">
+  <text><![CDATA[Nombre de réseaux et d’hôtes par réseau pour chaque classe]]></text> 
+</component>  
+
+
+
+<component id="ID_table">
+<text><![CDATA[
+
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td colspan='1' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Classe de l’adresse</b></font></td>
+<td colspan='1' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Première plage d’octets</b></font></td>
+<td colspan='1' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Nombre de réseaux possibles</b></font></td>
+<td colspan='1' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Nombre d’hôtes par réseau</b></font></td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Classe A</td>
+<td bgcolor='#F2F2F2'>De 0 à 127</td>
+<td bgcolor='#F2F2F2'>128 (2 sont réservés)</td>
+<td bgcolor='#F2F2F2'>16 777 214</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD'>Classe B</td>
+<td bgcolor='#DDDDDD'>De 128 à 191</td>
+<td bgcolor='#DDDDDD'>16 348</td>
+<td bgcolor='#DDDDDD'>65 534</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Classe C </td>
+<td bgcolor='#F2F2F2'>De 192 à 223</td>
+<td bgcolor='#F2F2F2'>2 097 152</td>
+<td bgcolor='#F2F2F2'>254</td>
+</tr>
+
+</table>
+
+]]></text>
+  </component>  
+</textcomponents>

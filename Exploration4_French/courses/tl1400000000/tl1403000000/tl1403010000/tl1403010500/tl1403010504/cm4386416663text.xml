@@ -1,0 +1,232 @@
+<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur les boutons, puis sur Lire pour lancer les animations.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>LMI 1</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>LMI 2</b>]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_title01">
+<text><![CDATA[<b>Étapes du fonctionnement de l’ARP inverse et de LMI </b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[L’ETTD envoie un message d’interrogation d’état (75) au DCE]]></text>
+</component>
+
+<component id="ID_S1_txt02">
+<text><![CDATA[<font color="#ff0000">Le DCE répond par un message d’état (7D) qui comprend des identificateurs DLCI configurés</font>]]></text>
+</component>
+
+<component id="ID_S1_txt03">
+<text><![CDATA[Le DCE répond par un message d’état (7D) qui comprend des identificateurs DLCI configurés]]></text>
+</component>
+
+<component id="ID_S1_txt04">
+<text><![CDATA[<font color="#ff0000">L’ETTD est informé des circuits virtuels dont il dispose</font>]]></text>
+</component>
+
+<component id="ID_S1_txt05">
+<text><![CDATA[<b>DCLI 101</b>]]></text>
+</component>
+
+<component id="ID_S1_txt06">
+<text><![CDATA[<b>DCLI 102</b>]]></text>
+</component>
+
+<component id="ID_S1_txt07">
+<text><![CDATA[<b>DCLI 103</b>]]></text>
+</component>
+
+<component id="ID_S1_txt08">
+<text><![CDATA[<b>DCLI 104</b>]]></text>
+</component>
+
+<component id="ID_S1_txt09">
+<text><![CDATA[<font color="#ffffff"><b>R1</b></font>]]></text>
+</component>
+
+<component id="ID_S1_txt10">
+<text><![CDATA[<b>7D</b>]]></text>
+</component>
+
+<component id="ID_S1_txt11">
+<text><![CDATA[<b>75</b>]]></text>
+</component>
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">DLCI</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">État</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>101</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Actif</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>102</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Actif</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>103</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Actif</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>104</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Actif</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+
+<!-- slide 2 -->
+<component id="ID_title02">
+<text><![CDATA[<b>Utilisation de LMI et de l’ARP inverse pour le mappage des adresses</b>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<font color="#ffffff"><b>R1</b></font>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>DCLI 101</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[<b>DCLI 102</b>]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[<b>DCLI 103</b>]]></text>
+</component>
+
+<component id="ID_S2_txt05">
+<text><![CDATA[<b>DCLI 104</b>]]></text>
+</component>
+
+<component id="ID_S2_txt06">
+<text><![CDATA[L’ETTD envoie une résolution d’adresse inverse à un circuit virtuel pour le mapper à une adresse réseau]]></text>
+</component>
+
+<component id="ID_S2_txt07">
+<text><![CDATA[L’ETTD envoie une résolution d’adresse inverse à un circuit virtuel pour le mapper à une adresse réseau<br/><font color="#FF0000">L’ETTD distant répond en transmettant l’adresse de couche 3</font>]]></text>
+</component>
+
+<component id="ID_S2_txt08">
+<text><![CDATA[L’ETTD envoie une résolution d’adresse inverse à un circuit virtuel pour le mapper à une adresse réseau<br/>L’ETTD distant répond en transmettant l’adresse de couche 3]]></text>
+</component>
+
+<component id="ID_S2_txt09">
+<text><![CDATA[<font color="#FF0000">L’ETTD effectue le mappage de couche 2 à couche 3</font>]]></text>
+</component>
+
+<component id="ID_S2_txt10">
+<text><![CDATA[L’ETTD effectue le mappage de couche 2 à couche 3</font>]]></text>
+</component>
+
+<component id="ID_S2_txt10a">
+<text><![CDATA[<font color="#FF0000">Le processus est répété pour chaque circuit virtuel et chaque protocole de couche 3</font>]]></text>
+</component>
+
+<component id="ID_S2_txt11">
+<text><![CDATA[ARP inv.]]></text>
+</component>
+
+<component id="ID_S2_txt12">
+<text><![CDATA[172.16.0.1]]></text>
+</component>
+
+<!-- table 2 is the same as table 1 -->
+<component id="ID_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">DLCI</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#FFFFFF">État</font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>101</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Actif</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>102</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Actif</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>103</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Actif</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>104</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Actif</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<!-- controller 1--> <!-- text is identical to controller 2-->
+<component id="play">
+<text>Lire</text>
+</component>
+<component id="pause">
+<text>Pause</text>
+</component>
+<component id="rewind">
+<text>Rembobiner</text>
+</component>
+<component id="forward">
+<text>Avance rapide</text>
+</component>
+<component id="mute">
+<text>Muet</text>
+</component>
+<component id="unmute">
+<text>Désactiver Muet</text>
+</component>
+<component id="previous">
+<text>Redémarrer</text>
+</component>
+<component id="next">
+<text>Fin</text>
+</component>
+<component id="transcript">
+<text>Texte</text>
+</component>
+
+<!-- controller 2--> <!-- text is identical to controller 1-->
+<component id="play2">
+<text>Lire</text>
+</component>
+<component id="pause2">
+<text>Pause</text>
+</component>
+<component id="rewind2">
+<text>Rembobiner</text>
+</component>
+<component id="forward2">
+<text>Avance rapide</text>
+</component>
+<component id="mute2">
+<text>Muet</text>
+</component>
+<component id="unmute2">
+<text>Désactiver Muet</text>
+</component>
+<component id="previous2">
+<text>Redémarrer</text>
+</component>
+<component id="next2">
+<text>Fin</text>
+</component>
+<component id="transcript2">
+<text>Texte</text>
+</component>
+</textcomponents>

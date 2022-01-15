@@ -1,0 +1,5 @@
+<transcript lastedited="01.05.09 13:01:52">
+<title><content-text><![CDATA[4.4.4  - UDP Client Processes]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts two clients, Client 1 and Client 2, sending UDP requests to a server. The clients send requests to the server using well-known port numbers as the destination ports. The server responds to both clients using well-known port numbers as the source ports.<br><br>Client 1 DNS request<br>Source Port: 49152<br>Destination Port: 53<br><br>Server DNS response to Client 1 request<br>Source Port: 53<br>Destination Port: 49152<br><br>Client 2 RADIUS request<br>Source Port: 51152<br>Destination Port: 1812<br><br>Server RADIUS response to Client 2 request<br>Source Port: 1812<br>Destination Port: 51152]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

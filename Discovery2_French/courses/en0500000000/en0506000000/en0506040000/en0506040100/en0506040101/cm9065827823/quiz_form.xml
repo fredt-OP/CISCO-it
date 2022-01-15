@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13297" dateexported="05/28/2007">
+		<name>Module 6 Quiz</name>
+		<form id="19292" lang="en"><form-item order="fixed">
+			<ai id="111823" type="mc-ma"><question><![CDATA[Which two are characteristics of interior routers? (Choose two.)]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[use BGP routing protocols]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[use IGP routing protocols]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[known as border gateways]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[exchange local routes]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[route between autonomous systems]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="114041" type="mc-ma"><question><![CDATA[What two methods are used to allow remote networks to be added to a routing table? (Choose two.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[entered by an administrator]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[learned through a routing protocol]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[exported from the MAC address table]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[imported from Flash memory on the router]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[learned through address translation]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[learned by NICs broadcasting their network number]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="114042" type="mc-sa"><question><![CDATA[Where does the router get information about the best path to send a packet destined for a host located on a remote network?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[from the IOS stored in Flash memory]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[from the routing table stored in RAM]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[from the configuration file stored in RAM]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[from the IP packet being transmitted]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="114045" type="mc-ma"><question><![CDATA[What two statements are true about transit traffic? (Choose two.)]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[All ISPs must allow transit traffic.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Transit traffic can overload an Internet router.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Transit traffic is destined for a network contained within the same AS.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ISPs cannot allow transit traffic from one AS to another.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Transit traffic travels through an AS to reach a remote AS.]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="114047" type="mc-sa"><question><![CDATA[A customer router is configured to use BGP to exchange routes with a directly connected neighbor router. What is identified by the remote AS number in the command <b>neighbor 209.165.201.1 remote-as 200</b>?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[the local router AS number]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[the directly connected router AS number]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the number of hops to the remote AS]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[the transit AS to use to get to the neighbor]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="114050" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="114050" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>AS</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>ASN</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>ISP</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>IGP</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>EGP</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>an example is BGP</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>a provider of Internet access</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>examples include RIP, EIGRP, and OSPF</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>a group of networks administered by a single entity</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>a registered number that identifies a particular set of networks</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Click and drag the term on the left to its definition on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="14" yspacing="53" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="203206" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="203206" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="203206" action="Set">1</setvar><scoringdescription>AS-group of networks administered by 1 entity; ASN-registered number; ISP-provider of Internet access; IGP-RIP, EIGRP, and OSPF; EGP-BGP</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="48564" type="mc-ma"><question><![CDATA[A new network is to be configured on a router. Which of the following tasks must be completed to configure this interface and implement dynamic IP routing for the new network? (Choose three.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Select the routing protocol to be configured.]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Assign an IP address and subnet mask to the interface.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Update the <b>ip host</b> configuration information with the device name and new interface IP address.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configure the routing protocol with the new network IP address.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configure the routing protocol with the new interface IP address and subnet mask.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configure the routing protocol in use on all other enterprise routers with the new network information.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="48804" type="mc-sa"><question><![CDATA[What is the purpose of the <b>network</b> command used in the configuration of the RIP routing protocol?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[It specifies RIP v2 as the routing protocol.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It enables the use of VLSM.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It specifies the fastest path to the destination route.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[It specifies which interfaces will exchange RIP routing updates.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[It activates RIP for all routes that exist within the enterprise network.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="84677" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="84677" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>debug ip rip</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show ip protocols</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show running-config</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show ip route</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext><b>show interfaces</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>displays current configuration information for configured routing protocols and interfaces </mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>checks to see that the interfaces are up and operational</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>displays the networks advertised in the updates as the updates are sent and received</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>verifies the routing protocol process running and that the correct networks are advertised</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>verifies that routes received are installed in the routing table</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>To ensure proper routing in a network, the network administrator should always check the router configuration to verify that appropriate routes are available.  The commands on the left will allow the network administrator to view the router configuration for the information needed.  Drag each command to its result.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-115.5" targetYspacing="14" yspacing="53" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="127"/><display componentIdent="3" xpos="600" ypos="179"/><display componentIdent="4" xpos="600" ypos="231"/><display componentIdent="5" xpos="600" ypos="283"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><scoringzone ident ="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="109938" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="109938" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="109938" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="110031" type="mc-sa"><question><![CDATA[A network engineer is configuring a new router.  The interfaces have been configured with IP addresses but no routing protocols or static routes have been configured yet.  What routes are present in the routing table?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[default routes]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[broadcast routes]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[direct connections]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[No routes. The routing table is empty.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="47215" type="mc-ma"><question><![CDATA[Which of the following tasks are completed by routing protocols?  (Choose three.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[learning the available routes to all destinations]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[providing an addressing scheme for identifying networks]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[informing LAN hosts of new default gateway addresses]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[placing the best route in the routing table]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[removing routes from the routing table when they are no longer valid]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[carrying user data to the destination network]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111509" type="mc-sa"><question><![CDATA[Which network devices are used in the Internet to route traffic between autonomous systems?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[border gateway routers]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[interior routers]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Internet hosts]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[service provider switches]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="111517" type="mc-sa"><question><![CDATA[Which is an example of a routing protocol used to exchange information between autonomous systems?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[OSPF]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[BGP]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[EIGRP]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIP]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

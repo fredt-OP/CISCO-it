@@ -1,0 +1,145 @@
+﻿<textcomponents>
+<component id="ID_caption01">
+  <text><![CDATA[<br><b>Faites glisser la souris sur chaque champ de la trame pour afficher une brève description.</b>]]></text> 
+  </component>
+<component id="ID_txt01">
+  <text><![CDATA[<b>*Les champs Préambule et SFD ne sont pas compris dans le nombre d’octets minimal/maximal de la trame Ethernet.</b>]]></text> 
+  </component>
+<component id="ID_tableTitle">
+  <text><![CDATA[<b>Champs de la trame Ethernet IEEE 802.3</b>]]></text> 
+  </component>
+<component id="ID_barTitle">
+  <text><![CDATA[<b>Structure de la trame Ethernet</b>]]></text> 
+  </component>
+<component id="ID_preamble">
+  <text><![CDATA[<b>Préambule</b>]]></text> 
+  </component>
+<component id="ID_sfd">
+  <text><![CDATA[<b>Délimiteur de début de trame (SFD)</b>]]></text> 
+  </component>
+<component id="ID_destinationMAC">
+  <text><![CDATA[<b>Adresse MAC de destination</b>]]></text> 
+  </component>
+<component id="ID_sourceMAC">
+  <text><![CDATA[<b>Adresse MAC source</b>]]></text> 
+  </component>
+<component id="ID_lengthType">
+  <text><![CDATA[<b>Longueur/Type</b>]]></text> 
+  </component>
+<component id="ID_data">
+  <text><![CDATA[<b>Données encapsulées</b>]]></text> 
+  </component>
+<component id="ID_fcs">
+  <text><![CDATA[<b>Séquence de contrôle de trame (FCS)</b>]]></text> 
+  </component>
+<component id="ID_7">
+  <text><![CDATA[7]]></text>  
+  </component>
+<component id="ID_1">
+  <text><![CDATA[1]]></text> 
+  </component>
+<component id="ID_6">
+  <text><![CDATA[6]]></text> 
+  </component>
+<component id="ID_6_2">
+  <text><![CDATA[6]]></text> 
+  </component>
+<component id="ID_2">
+  <text><![CDATA[2]]></text> 
+  </component>
+<component id="ID_4">
+  <text><![CDATA[4]]></text> 
+  </component>
+<component id="ID_46_to_1500">
+  <text><![CDATA[De 46 à 1500]]></text> 
+  </component>
+
+<component id="server_title1">
+  <text><![CDATA[Préambule]]></text> 
+  </component>
+<component id="server_text1">
+  <text><![CDATA[Utilisation d’un modèle défini d’alternance de bits 1 et 0 pour synchroniser la durée.]]></text> 
+  </component>
+
+<component id="server_title2">
+  <text><![CDATA[Délimiteur de début de trame (SFD)]]></text> 
+  </component>
+<component id="server_text2">
+  <text><![CDATA[Marque la fin des informations de durée et le démarrage de la trame.]]></text> 
+  </component>
+
+<component id="server_title3">
+  <text><![CDATA[Adresse MAC de destination]]></text> 
+  </component>
+<component id="server_text3">
+  <text><![CDATA[Le champ de l’adresse MAC de destination contient l’adresse MAC de destination (récepteur). L’adresse MAC de destination peut être en monodiffusion (un hôte spécifique), en multidiffusion (un groupe d’hôtes) ou en diffusion (tous les hôtes sur le réseau local).]]></text> 
+  </component>
+
+<component id="server_title4">
+  <text><![CDATA[Adresse MAC source]]></text> 
+  </component>
+<component id="server_text4">
+  <text><![CDATA[Le champ de l’adresse MAC source contient l’adresse MAC source (expéditeur). Il s’agit de l’adresse de monodiffusion du noeud Ethernet qui a transmis cette trame.]]></text> 
+  </component>
+
+<component id="server_title5">
+  <text><![CDATA[Longueur/Type]]></text> 
+  </component>
+<component id="server_text5">
+  <text><![CDATA[Le champ Longueur/Type prend en charge deux utilisations différentes. Le type indique le protocole qui reçoit les données. La longueur indique le nombre d’octets de données qui suivent ce champ.]]></text> 
+  </component>
+
+<component id="server_title6">
+  <text><![CDATA[Données encapsulées]]></text> 
+  </component>
+<component id="server_text6">
+  <text><![CDATA[Le champ Données contient le paquet d’informations à envoyer. Ethernet a besoin que chaque trame comprenne entre 64 et 1518 octets.]]></text> 
+  </component>
+
+<component id="server_title7">
+  <text><![CDATA[Séquence de contrôle de trame (FCS)]]></text> 
+  </component>
+<component id="server_text7">
+  <text><![CDATA[La séquence de contrôle de trame contient une valeur de 4 octets créée par le périphérique qui envoie les données et recalculée par le périphérique de destination pour vérifier si les trames sont endommagées.]]></text> 
+  </component>
+
+
+<component id="ID_tableHTML">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='150' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Octets</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Nom du champ</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>7</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Préambule</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>1</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Délimiteur de début de trame (SFD)</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Adresse MAC de destination</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>6</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Adresse MAC source</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>2</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Champ Longeur/Type</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>46 à 1500</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Données encapsulées</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>4</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Séquence de contrôle de trame (somme de contrôle CRC)</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

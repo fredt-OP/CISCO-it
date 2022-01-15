@@ -1,0 +1,5 @@
+<transcript lastedited="03.27.09 10:03:00">
+<title><content-text><![CDATA[11.1.5 - Using C L I Help]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts command syntax check help. Cisco I O S returns a help message indicating that required keywords or arguments were left off of the end of the command.<br><br>Switch#clock set<br>% Incomplete command.<br>Switch#clock set 19:50:00<br>% Incomplete command.<br><br>Cisco I O S returns a help message to indicate that there were not enough characters entered for the command interpreter to recognize the command.<br><br>Switch#c<br>% Ambiguous command: 'c'<br><br>Cisco I O S returns a caret to indicate where the command interpreter cannot decipher the command.<br><br>Switch#clock set 19:50:00 25 6<br>Note: A caret is positioned under the number 6 from the previous command.<br>% Invalid input detected at ^ marker.]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

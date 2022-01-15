@@ -1,0 +1,64 @@
+﻿<textcomponents>
+
+ <component id="ID_txt01">
+           
+ <text><![CDATA[Trame HDLC standard ouverte]]></text> 
+  
+</component>
+
+
+
+<component id="ID_txt02">
+              
+<text><![CDATA[Trame HDLC Cisco]]></text> 
+  
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Indicateur</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Adresse</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Contrôle</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Information</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>FCS</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Indicateur</font></td>
+</tr>
+
+<tr>
+<td width= "70"bgcolor='#F2F2F2'>8 bits</td>
+<td width= "70"bgcolor='#F2F2F2'>8 bits</td>
+<td width= "80"bgcolor='#F2F2F2'>8 ou 16 bits</td>
+<td bgcolor='#DDDDDD'>Longueur variable, 0 bit ou plus, multiples de 8</td>
+<td width= "90"bgcolor='#F2F2F2'>16 ou 32 bits</td>
+<td width= "70"bgcolor='#F2F2F2'>8 bits</td>
+</tr>
+</table>]]></text>
+</component>
+
+<component id="ID_table2">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Indicateur</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Adresse</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Contrôle</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Type<br/>(Code de protocole)</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Information</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>FCS</font></td>
+<td bgcolor='#DDDDDD'><font color='#FFFFFF'>Indicateur</font></td>
+</tr>
+
+<tr>
+<td width= "70" bgcolor='#F2F2F2'>8 bits</td>
+<td width= "70" bgcolor='#F2F2F2'>8 bits</td>
+<td width= "60" bgcolor='#F2F2F2'>8 bits</td>
+<td width= "100" bgcolor='#F2F2F2' glow='true' glowcolor='#FF6600'>16 bits</td>
+<td bgcolor='#DDDDDD'>Longueur variable, 0 bit ou plus, multiples de 8</td>
+<td width= "80" bgcolor='#F2F2F2'>16 bits</td>
+<td width= "70" bgcolor='#F2F2F2'>8 bits</td>
+</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

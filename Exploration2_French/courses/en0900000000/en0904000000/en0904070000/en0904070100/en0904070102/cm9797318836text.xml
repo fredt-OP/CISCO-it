@@ -1,0 +1,118 @@
+﻿<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Briefly explain the basic operation of RIP and IGRP.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 4.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[RIP and IGRP are distance vector routing protocols characterized by periodic updates that are broadcast to directly connected neighbors. The entire routing table is sent in the update.]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[Convergence is when all routers in the network have consistent and correct information about how to reach destination networks. A network is not completely operable until it has converged, so routing protocols require short convergence times.]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Explain convergence and why it's important.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from 4.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) What are the four main timers in RIP? What is the purpose and duration of each?]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from 4.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Update timer</b>--(30 seconds) used to time when to send the next update.<br/><br/><b>Invalid timer</b>--(180 seconds) used to mark a route as invalid by setting the metric to 16 if an update has not been received to refresh an existing route after 180 seconds.<br/><br/><b>Holddown timer</b>--(180 seconds) the amount of time an unreachable route is in "holddown".<br/><br/><b>Flush timer</b>--(240 seconds) time until a route is removed from the routing table.]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) What five techniques do distance vector routing protocols use to prevent routing loops?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from 4.4)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<ul><li>Defining maximum metric to prevent count to infinity</li><li>Holddown timers</li><li>Split horizon</li><li>Route poisoning or poison reverse</li><li>Triggered updates</li></ul>]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>This concludes this chapter's Problems and Discussion questions.</b>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+

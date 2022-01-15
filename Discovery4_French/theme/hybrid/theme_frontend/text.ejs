@@ -1,0 +1,9 @@
+<% var textHeight = 0; %>
+<% if (navigator.appName == "Netscape") { textHeight = screen.height-280; } else { textHeight = screen.height-255; } %>
+<div class="tableScroll" style="height: <%= textHeight %>px;">
+	<TABLE cellpadding="5" cellspacing="0" border="0">
+     	<tr>
+          	<td><%= main.page.contenttext %></td>
+	     </tr>
+	</TABLE>
+</div>

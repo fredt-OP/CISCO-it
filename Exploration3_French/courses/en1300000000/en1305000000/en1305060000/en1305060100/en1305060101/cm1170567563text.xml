@@ -1,0 +1,16 @@
+<textcomponents>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>In this chapter you have learned:</b></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li>The STP prevents loops from being formed in a hierarchical network that implements redundant links.</li><li>The STP uses different port states and timers to prevent loops from occurring.</li><li>One switch in the network is designated as the root bridge. The root bridge is determined through an election process where BPDU frames are exchanged between neighboring switches in a broadcast domain.</li><li>All other switches in the network use the spanning-tree algorithm to determine their switch port roles. Switch ports closest to the root bridge become root ports. The remaining non-root ports compete for designated or non-designated roles.</li><li>Because the spanning-tree protocol convergence can take up to 50 seconds to complete RSTP, and the rapid PVST+ were developed.</li><li>RSTP reduces the convergence time to a little over 6 seconds.</li><li>Rapid PVST+ adds VLAN support to RSTP. The rapid PVST+ is the preferred spanning-tree protocol implementation used on a Cisco switch network.</li></ul></td>
+  </tr>
+</table>]]></text>
+</component>
+
+<component id="ID_title"><text><![CDATA[<b></b>]]></text>
+</component>
+</textcomponents>

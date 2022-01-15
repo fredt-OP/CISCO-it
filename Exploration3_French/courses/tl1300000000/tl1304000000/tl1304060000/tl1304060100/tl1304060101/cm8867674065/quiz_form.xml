@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13384" dateexported="06/10/2008">
+		<name>Module 4 Questionnaire</name>
+		<form id="21322" lang="fr"><form-item order="fixed">
+			<ai id="138807" type="mc-sa"><question><![CDATA[Comment le protocole VTP affecte-t-il l’administration des VLAN ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les affectations de ports aux VLAN d’un domaine VTP entier peuvent s’effectuer sur un seul commutateur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les VLAN ne sont visibles que sur les commutateurs auxquels sont affectés des ports. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole VTP propage les numéros (mais pas les noms) des VLAN vers tous les commutateurs d’un domaine VTP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole VTP est nécessaire pour définir une convention d’appellation des VLAN sur les commutateurs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole VTP propage les noms de VLAN vers tous les commutateurs d’un domaine VTP.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138781" type="mc-sa"><question><![CDATA[Dans quel mode VTP doit se trouver un commutateur Catalyst pour supprimer ou ajouter des VLAN dans un domaine de gestion ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Client ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Serveur  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Domaine ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Transparent ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Désigné ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138808" type="mc-sa"><question><![CDATA[Quel est le rôle du mode VTP transparent ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Autorise la création d’un VLAN sur un seul commutateur « transparent » et sa propagation vers tous les autres commutateurs VTP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Autorise la propagation de VLAN de plage étendue. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Rend le trafic VTP « transparent » aux autre périphériques en autorisant les autres VLAN autres que le VLAN 1 à agir comme VLAN de gestion. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Active les annonces VTP pour traverser un commutateur non participatif.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138782" type="mc-sa"><question><![CDATA[Lisez l’exposé. Les commutateurs A et B se connectent via une agrégation et exécutent le protocole VTP. Cependant, le commutateur B ne parvient pas à obtenir les informations de mise à jour VLAN. Pourquoi ? <br/><img src="9800.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[L’interface FastEthernet ne peut pas être utilisée pour l’agrégation. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les commutateurs ne sont pas définis sur le même mode VTP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le nom de domaine VTP n’est pas le même sur les deux commutateurs.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le numéro de révision de la configuration ne correspond pas sur les deux commutateurs. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61359" type="mc-sa"><question><![CDATA[Un commutateur d'un domaine VTP envoie une requête d'annonce. Quelle sera la réponse ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Une réponse d'état de la configuration sera émise à partir du commutateur client le plus proche. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un échange en trois étapes établira une session de configuration avec le serveur VTP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le serveur VTP enverra des annonces de synthèse et de sous-ensemble.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le numéro zéro sera attribué à la version de la configuration et tous les commutateurs du domaine émettront des annonces relatives à l'état de leurs LAN virtuels. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138809" type="mc-sa"><question><![CDATA[Quelle fonction, activée sur un réseau commuté, empêche le trafic de diffusion, de multidiffusion et de monodiffusion inconnue vers un VLAN d’être diffusé vers les commutateurs auxquels n’est attribué aucun VLAN particulier ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Agrégation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Domaine VTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Élagage VTP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mode VTP transparent ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="138806" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="138806" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="232"><material><mattext>Tous les commutateurs VTP doivent utiliser la même version de VTP.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Les commutateurs Token Ring doivent exécuter VTP version 3 ou supérieure.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Les paramètres d’élagage VTP doivent être identiques.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Les mots de passe de domaine VTP doivent être uniques.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Les noms de domaine VTP doivent être identiques.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>La connexion au domaine VTP doit être un lien agrégé.</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="232"><material><mattext>Nécessaire pour ajouter un <br/>commutateur dans un domaine VTP existant.</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser les exigences relatives à l’ajout d’un commutateur à un domaine VTP existant de la colonne de gauche vers la colonne de droite. (Les propositions ne doivent pas être toutes utilisées.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-111.5" targetYspacing="16" yspacing="50" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="3" startTarg="1" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="152" /><display componentIdent="3" xpos="600" ypos="204" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>7</componentident><componentident>3</componentident><componentident>2</componentident><componentident>1</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214637" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="214637" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="214637" action="Set">1</setvar><scoringdescription>Indiquez ici la réponse.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="138861" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="138861" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>mode client vtp</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>mode serveur vtp</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>vtp version 2</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>élagage vtp</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>vtp domain LABS</b></mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Indique que le commutateur ne peut ni créer, ni supprimer les VLAN partagés dans les annonces VTP.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Configure le nom utilisé pour déterminer les commutateurs qui appartiennent au même groupe de gestion.</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Restreint le trafic de diffusion aux liens agrégés que le trafic doit utiliser pour atteindre les périphériques de destination.</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser chaque commande de gauche vers la description appropriée de droite. (Les propositions ne doivent pas être toutes utilisées.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-117.5" targetYspacing="21" yspacing="70" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /><display componentIdent="5" xpos="200" ypos="395" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221336" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="221336" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="221336" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="138865" type="mc-sa"><question><![CDATA[Quelle est la fonction du protocole VTP (VLAN Trunking Protocol)?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Il préserve la cohérence de la configuration des VLAN sur l’ensemble du réseau.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il route les trames d’un VLAN à l’autre. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il route les trames via le meilleur chemin entre les commutateurs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il étiquette les trames de données utilisateur avec les informations d’appartenance aux VLAN. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il distribue des unités BPDU afin que les chemins commutés soient exempts de boucles. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138811" type="mc-sa"><question><![CDATA[Lisez l’exposé. Les commutateurs 1 et 2 sont configurés dans le même domaine VTP mais ont échoué lors de l’échange d’informations VLAN. Que faire pour résoudre le problème ? <br/><img src="15980.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Configurer les mêmes VLAN sur le client et le serveur VTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configurer le même mode VTP sur le client et le serveur VTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configurer le même mot de passe sur le client et le serveur VTP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configurer différents noms de domaine VTP sur le client et le serveur VTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configurer le client VTP en mode VTP transparent ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configurer le lien agrégé comme liaison d’accès ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138803" type="mc-sa"><question><![CDATA[Un ingénieur réseau met en oeuvre une nouvelle conception de VLAN sur une structure existante. L’objectif est de renommer le domaine VTP et de mettre en oeuvre 25 VLAN. L’ingénieur prend un commutateur de production existant dans les travaux pratiques, entre les VLAN proposés et modifie le nom de domaine VTP. La présence de tous les nouveaux VLAN est vérifiée à l’aide de la commande <b>show vlan</b>. L’administrateur réseau décide ensuite de conserver le nom de domaine d’origine. Le nom d’origine est donc rétabli et le commutateur est reconnecté au réseau de production. La commande <b>show vlan</b> montre qu’aucun nouveau VLAN ne se synchronise sur les autres commutateurs réseau. Les commutateurs peuvent mutuellement s’envoyer des requêtes ping et l’agrégation est correcte. Quel peut-être le problème ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Aucun port n’est encore affecté aux nouveaux VLAN. Par conséquent, le mode d’élagage VTP les désactive. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le commutateur s’est relié au réseau avec un numéro de révision égal à zéro.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’ingénieur n’a pas réussi à enregistrer la nouvelle configuration de VLAN dans la mémoire NVRAM. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les autres commutateurs sont tous en mode serveur par défaut et n’acceptent pas les mises à jour de protocole VTP. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="138810" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="138810" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Crée, modifie et supprime des VLAN, puis spécifie d’autres paramètres de configuration, tels que la version et l’élagage VTP du domaine VTP entier.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Annonce les paramètres de configuration VTP, tels que la version et l’élagage VTP du domaine VTP entier, mais ne peut ni créer, ni modifier, ni supprimer les VLAN.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Annonce et synchronise la configuration VLAN dans les autres commutateurs du même domaine VTP, mais ne peut ni créer, ni modifier, ni supprimer les VLAN.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Transfère les annonces VTP reçues en dehors des ports agrégés, mais ne peut ni annoncer, ni synchroniser la configuration de VLAN basée sur les annonces reçues.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Ne peut ni transférer les annonces VTP, ni annoncer/synchroniser la configuration de VLAN basée sur les annonces reçues.</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Mode VTP transparent</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Mode VTP client</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Mode VTP serveur</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser la description de gauche vers le mode VTP correct de droite. (Les propositions ne doivent pas être toutes utilisées.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="21" yspacing="70" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /><display componentIdent="5" xpos="200" ypos="395" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214963" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="214963" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="214963" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="138866" type="mc-ma"><question><![CDATA[Lisez l’exposé. Les commutateurs du schéma sont interconnectés par des agrégations et configurés pour le protocole VTP. Un nouveau VLAN est ajouté au commutateur1. Quelles sont les trois actions qui vont survenir ? (Choisissez trois réponses.) <br/><img src="16487.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Le commutateur1 envoie une mise à jour VTP au commutateur2.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le commutateur2 ajoute le VLAN dans sa base de données et transmet la mise à jour au commutateur3.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le commutateur3 transmet la mise à jour VTP au commutateur4.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur3 ajoute le VLAN dans sa base de données. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur4 n’ajoute pas le VLAN dans sa base de données. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le commutateur4 ne reçoit pas la mise à jour. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

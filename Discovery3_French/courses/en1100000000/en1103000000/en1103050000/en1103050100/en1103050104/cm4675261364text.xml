@@ -1,0 +1,188 @@
+<textcomponents>
+	
+<component id="ID_txt03">
+<text><![CDATA[Server]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[transparent]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[Client]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<u>VTP Domain</u><br>Name: cisco<br>Mode: Server<br>Revision #: 1<br>VLANS: 1]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<u>VTP Domain</u><br>Name: null<br>Mode: transparent<br>Revision #: null<br>VLANS: null]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<u>VTP Domain</u><br>Name: cisco<br>Mode: client<br>Revision #: 1 <br>VLANS: 1]]></text>
+</component>
+
+<component id="ID_txt08b">
+<text><![CDATA[<u>VTP Domain</u><br>Name: cisco<br>Mode: client<br>Revision #: 2 <br>VLANS: 1, 2, 3]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Two new VLANs have been added. I must change my revision number and send a summary advertisement.]]></text>
+</component>
+
+<component id="ID_txt06b">
+<text><![CDATA[<u>VTP Domain</u><br>Name: cisco<br>Mode: Server<br>Revision #: 2<br>VLANS: 1, 2, 3]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<u>Summary Advertisment</u><br>VTP Domain Name = <font color="#ff9900">Cisco</font><br>Configuration Revision Name = <font color="#ff9900">2</font>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[My revision number is lower than the summary advertisement. I must request more information.]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<u>Advertisement Request</u>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[I received an advertisement request, I will send more information.]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<u>Subset Advertisement</u><br>VLAN's = 1, 2, 3]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[I have updated my VLAN information and configuration revision number.]]></text>
+</component>
+
+<component id="play"><text>
+<![CDATA[Play]]></text>
+</component>
+
+    <component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+	<component id="forward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+    <component id="mute">
+<text><![CDATA[Mute]]></text>
+</component>
+
+<component id="unmute">
+<text><![CDATA[UnMute]]></text>
+</component>
+
+    <component id="previous">
+<text><![CDATA[Restart]]></text>
+</component>
+
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+	
+	<component id="play1">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause1">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind1">
+<text><![CDATA[Rewind]]></text>
+</component>
+<component id="forward1">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+<component id="mute1">
+<text><![CDATA[Mute]]></text>
+</component>
+<component id="unmute1">
+<text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous1">
+<text><![CDATA[Restart]]></text>
+</component>
+<component id="next1">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript1">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Play]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2"><text><![CDATA[Rewind]]></text>
+</component>
+<component id="forward2">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+<component id="mute2">
+<text><![CDATA[Mute]]></text>
+</component>
+<component id="unmute2">
+<text><![CDATA[UnMute]]></text>
+</component>
+<component id="previous2">
+<text><![CDATA[Restart]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[End]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="ID_inst1">
+<text><![CDATA[]]></text> 
+</component>
+
+<component id="ID_inst2">
+<text><![CDATA[Click Play to view the exchange of VTP information.]]></text> 
+</component>
+<component id="ID_Butt01">
+<text><![CDATA[<b>Summary Advertisement</b>]]></text> 
+</component>
+<component id="ID_Butt02">
+<text><![CDATA[<b>Sub-set Advertisement</b>]]></text> 
+</component>
+<component id="ID_Butt03">
+<text><![CDATA[<b>Advertisement Request</b>]]></text> 
+</component>
+
+<component id="ID_txtDes01">
+<text><![CDATA[Summary Advertisements<li>Sent every five minutes</li><li>Informs neighboring switches of the current VTP configuration revision number for the management domain</li><li>Also sent immediately after a configuration change has been made</li>]]></text> 
+</component>
+
+<component id="ID_txtDes02">
+<text><![CDATA[Subset Advertisement<li>Sent if any change in the VLAN configuration has been made</li><li>Or in response to an advertisement request</li>]]></text> 
+</component>
+<component id="ID_txtDes03">
+<text><![CDATA[Advertisement Request<li>Solicits both a summary advertisement and a subset advertisement from the server in the management domain.</li>]]></text> 
+</component>
+<component id="ID_txtDes03b">
+<text><![CDATA[Advertisement Request<li>Solicits both a summary advertisement and a subset advertisement from the server in the management domain.</li>Sent when:<li>a switch receives an Advertisement Summary with a higher configuration revision than its own.</li><li>a Subset Advertisement message is missed.</li><li>the switch has been reset.]]></text> 
+</component>
+
+
+
+
+</textcomponents>

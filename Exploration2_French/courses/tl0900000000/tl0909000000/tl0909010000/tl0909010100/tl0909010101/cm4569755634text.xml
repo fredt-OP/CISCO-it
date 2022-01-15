@@ -1,0 +1,27 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>IGRP à EIGRP</b>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Résumé du fonctionnement</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>IGRP<br>1985<br>Depuis 2005, n’est plus pris en charge dans IOS 12.2(13)T et 12.2(R1s4)S </b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>EIGRP<br>1992<br>Approuvé dans IOS 9.2.1</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>Protocoles traditionnels de routage à vecteur de distance</b><br><br><li>Utilisent l’algorithme de Bellman-Ford ou Ford-Fulkerson ;</li><li>Classent les entrées de routage par ancienneté et utilisent des mises à jour périodiques ;</li><li>N’assurent le suivi que des meilleurs routes ; le meilleur chemin vers un réseau de destination ;</li><li>Lorsqu’une route n'est plus disponible, le routeur doit attendre une nouvelle mise à jour du routage ;</li><li>Convergence plus lente en raison des minuteurs de mise hors service.</li>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Protocole à vecteur de distance amélioré : EIGRP</b><br><br><li>Utilise l’algorithme DUAL ;</li><li>Ne classe pas les entrées de routage par ancienneté et n’utilise pas de mise à jour régulière ;</li><li>Gère une table topologique séparée de la table de routage, qui comprend le meilleur chemin et les chemins de secours sans boucle ;</li><li>Lorsqu’une route n'est plus disponible, l'algorithme DUAL utilise un chemin de secours de la table topologique ;</li><li>Convergence plus rapide grâce à l’absence de minuteurs de mise hors service et à des calculs de routes coordonnés.</li>]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,57 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>•<TEXTFORMAT BLOCKINDENT='13'>  Non-concordance du VLAN natif</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Par exemple, un port est défini comme VLAN 99, l’autre comme VLAN 100.</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Présente un risque pour la sécurité et génère des résultats indésirables.</textformat></textformat><br/>•<TEXTFORMAT BLOCKINDENT='13'>  Non-concordance du mode d’agrégation</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Par exemple, un port est en mode d’agrégation « désactivé » et l’autre, en mode d’agrégation « actif ».</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Entraîne la perte de la connectivité réseau.</textformat></textformat><br/>•<TEXTFORMAT BLOCKINDENT='13'>  VLAN et sous-réseaux IP</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Par exemple, les ordinateurs des utilisateurs ont pu être configurés avec des adresses IP incorrectes.</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Entraîne la perte de la connectivité réseau.</textformat></textformat><br/>•<TEXTFORMAT BLOCKINDENT='13'>  VLAN autorisés sur les agrégations</textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> La liste des VLAN autorisés ne prend pas en compte les critères d’agrégation de VLAN actuels.</textformat></textformat><br/><TEXTFORMAT BLOCKINDENT='13'>-<TEXTFORMAT BLOCKINDENT='22'> Génère un trafic imprévu ou nul sur l’agrégation.</textformat></textformat></b>]]></text>
+</component>
+
+<component id="ID_tableHTML">
+	    <text><![CDATA[
+		<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Problème</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Résultat</b></font></td>
+			<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Exemple</b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non-concordance du VLAN natif</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Présente un risque pour la sécurité et génère des résultats indésirables.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Par exemple, un port est défini comme VLAN 99, l’autre comme VLAN 100.</td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Non-concordance du mode d’agrégation</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entraîne la perte de la connectivité réseau.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Par exemple, un port est en mode d’agrégation « désactivé » et l’autre en mode d’agrégation « actif ».</td>
+		
+				
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>VLAN et sous-réseaux IP</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Entraîne la perte de la connectivité réseau.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Par exemple, les ordinateurs des utilisateurs ont pu être configurés avec des adresses IP incorrectes.</td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>VLAN autorisés sur les agrégations</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Génère un trafic imprévu ou nul sur l’agrégation.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>La liste des VLAN autorisés ne prend pas en compte les critères d’agrégation de VLAN actuels.</td>
+		
+				
+	</tr>
+	
+		
+	
+	
+</table>]]></text> 
+  </component>
+
+
+
+<component id="ID_title"><text><![CDATA[<b>Problèmes courants avec les VLAN et les agrégations</b>]]></text>
+</component>
+</textcomponents>

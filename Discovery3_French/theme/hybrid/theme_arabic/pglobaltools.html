@@ -1,0 +1,47 @@
+<html>
+<head>
+		<link rel="stylesheet" type="text/css" href="./css/reset-fonts.css">
+		<link rel="stylesheet" type="text/css" href="./css/popup_globaltools.css"/>
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script>
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			var content = new EJS({url: 'pglobaltools.ejs'});
+
+			searchstring = "";
+			foundArray = new Array();
+
+			function getContent() {
+				var html = "";
+				data = {main:window.opener.main};
+				html = content.render(data);
+				writeToElement("globaltoolsdiv", html);
+			}
+
+
+		</script>
+	</head>
+	<body class="popup"><div id="globaltoolsdiv">
+		<div id="list" class="listdiv">
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr><td class="tool">Packet Tracer</td></tr>
+		</table> 
+		</div>
+		<hr/>
+		</form>
+	</div>
+	<script>getContent();</script>
+</body>
+</html>
+
+

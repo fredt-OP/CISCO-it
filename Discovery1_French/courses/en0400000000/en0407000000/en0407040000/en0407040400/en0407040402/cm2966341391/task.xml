@@ -1,0 +1,128 @@
+﻿<avalontask>
+	<r2data taskid='99999' type='simulation' language='EN' title='Sample Linksys Item' />
+	<guitext />
+	<variables />
+
+	<textcomponents>
+		<component type='text' id='txt_instructions'> 
+			<text variable='true' translate='true'>
+				<![CDATA[<font face='_sans' size='12'><b>Upgrade the Linksys Firmware</b><br><br>In this activity, you will upgrade the Linksys firmware.<br>Topology button: Access the network topology.<br>Instructions button: Return to the Instructions window.<br>Browser button (when available): Access the Browser window.<br><br>Step 1: Using the Browser window access the Linksys GUI<br><ul><li>From the Topology window, click the host to open the Browser window</li><li>Type in the URL http://192.168.1.1</li><li>Use the default password <font face='_typewriter'>admin</font> and leave the username blank</li><li>Explore the current configuration of the linksys GUI</li></ul><br>Step 2: Upgrade the firmware<br><ul><li>Click the Administration tab to navigate to the Management page</li><li>Select the Firmware Upgrade tab</li><li>Specify the file name and location by clicking the Browse... button</li><li>Select the WRT300N_1.03.6.bin file from the list and click Open</li><li>Click Start to Upgrade</li><li>Click Continue within the complete window after the upgrade finishes</li></ul><br></font>]]>
+			</text> 
+		</component> 
+
+		<component type='text' id='txt_obsdesc'>
+			<text variable='true' translate='true'><![CDATA[<B>Upgrade the Linksys Firmware</B><BR>]]></text>
+		</component>
+
+		<component type='text' id='txt_obsgood'>
+			<text variable='true' translate='true'><![CDATA[<font face='_sans' size='12'><textformat blockindent='15'>You successfully updated the linksys firmware. Click Next to continue.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_obsbad'>
+			<text variable='true' translate='true'><![CDATA[<font face='_sans' size='12'><textformat blockindent='15'>Incorrect.</textformat></font><br>]]></text>
+		</component>
+
+		<component type='text' id='txt_404error'>
+			<text variable='true' translate='true'><![CDATA[Error 404: The page you requested was not found on the server. Please check the URL you are trying to access and try again.]]></text>
+		</component>
+
+		<component type='text' id='txt_networkerror'>
+			<text variable='true' translate='true'><![CDATA[There was an error connecting to the host you specified. Please check your network connection and try again.]]></text>
+		</component>
+
+		<component type='text' id='txt_close'>
+			<text variable='true' translate='true'><![CDATA[Close]]></text>
+		</component>
+
+		<component type='text' id='txt_host'> 
+			<text variable='true' translate='true'><![CDATA[<p align='center'>Host</p>]]></text> 
+		</component> 
+
+		<component type='text' id='txt_wrt300n'> 
+			<text variable='true' translate='true'><![CDATA[WRT300N]]></text> 
+		</component> 
+	
+		<component type='text' id='txt_title_instructions'> 
+			<text variable='true' translate='true'><![CDATA[Instructions]]></text> 
+		</component> 
+
+		<component type='text' id='txt_topology'> 
+			<text variable='true' translate='true'><![CDATA[Topology]]></text> 
+		</component> 
+
+		<component type='text' id='txt_browser'> 
+			<text variable='true' translate='true'><![CDATA[Browser]]></text> 
+		</component> 
+	</textcomponents>
+
+	<graphiccomponents>
+		<component type='graphic' id='gr_browser'> 
+			<icon x='0' y='0' width='50' height='42' id='icon_browser'> 
+				<action event='release' target='hw_host' activity='launchBrowser' window='win_browser' /> 
+			</icon>
+			<label src='txt_host' x='-45' y='25' width='90' height='35' background='false' />
+		</component>
+
+		<component type='graphic' id='gr_linksys'> 
+			<icon x='0' y='50' width='30' height='78' id='icon_linksys' /> 
+			<label src='txt_wrt300n' x='-30' y='80' width='65' height='20' background='false' />
+		</component>
+
+		<component type='graphic' id='gr_line'> 
+			<shape type='autoline' strokewidth='3' stroke='#FF0000' id='sh_dotline' />  
+		</component>
+	</graphiccomponents>
+
+	<hwcomponents>
+		<component type='WRT300N' model='none' id='hw_linksys'> 
+			<port type='ethernet' number='0' name='WAN0' id='hw_linksys_wan0' fixed='true' />
+			<port type='dumbether' number='1' name='LAN1' id='hw_linksys_lan1' fixed='true' />
+			<port type='dumbether' number='2' name='LAN2' id='hw_linksys_lan2' fixed='true' />
+			<port type='dumbether' number='3' name='LAN3' id='hw_linksys_lan3' fixed='true' />
+			<port type='dumbether' number='4' name='LAN4' id='hw_linksys_lan4' fixed='true' />
+			<config file='startup-config'> 
+				<![CDATA[192.168.1.1,255.255.255.0]]> 
+			</config> 
+		</component> 
+		<component type='host' model='none' id='hw_host'> 
+			<port type='ethernet' number='0' name='eth0' id='hw_host_eth0' fixed='true' />
+			<config file='startup-config'> 
+				<![CDATA[
+! Host1 Configuration
+ifconfig eth0 ip 192.168.1.100 255.255.255.0
+ifconfig eth0 up
+ifconfig hostname Management
+end
+				]]> 
+			</config> 
+		</component> 
+
+		<component type='link' id='hw_link_host'> 
+			<endpoint id='hw_linksys_lan1' /> 
+			<endpoint id='hw_host_eth0' /> 
+		</component>
+	</hwcomponents>
+
+	<presentation delivery='cert'>
+		<mainstage bgcolor= '#FFFFFF' theme='ccna' historylog='all' tooltips='true' contextmenu='false' />
+		<graphicmap> 
+			<map id='icon_browser' src='Computer' location='library' />
+			<map id='icon_linksys' src='Linksys' location='library' />
+		</graphicmap>
+
+		<window id='win_instructions' resize='all' titletextid='txt_title_instructions' width='780' height='380' visible='true' depth='100' x='10' y='10'> 
+			<element id='ele_txt_instructions' src='txt_instructions' container='textClip' width='750' html='true' wordwrap='true' /> 
+		</window> 
+
+		<window id='win_topology' resize='all' titletextid='txt_topology' visible='false' width='790' height='400' depth='101' y='10' x='10'>
+			<element id='ele_host'    src='gr_browser' x='275' y='150' depth='100' /> 
+			<element id='ele_linksys' src='gr_linksys' x='475' y='100'  depth='101' /> 
+			<element id='ele_line'    src='gr_line'    beginobject='ele_host.icon_browser' endobject='ele_linksys.icon_linksys' depth='10' />
+		</window>
+		<window id='win_browser' resize='all' titletextid='txt_browser' visible='false' width='800' height='400' depth='202' y='10' x='0' scrolling='none'> 
+			<element id='ele_obj_browser' src='unused' container='WebBrowser' /> 
+		</window>   
+	</presentation>
+
+	<scoring />
+</avalontask>

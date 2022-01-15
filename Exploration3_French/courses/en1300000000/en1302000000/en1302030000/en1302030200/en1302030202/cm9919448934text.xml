@@ -1,0 +1,47 @@
+<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Console Error Messages</b>]]></text>
+</component>
+<component id="tableHTML">
+  <text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	
+	<tr>
+		<td width="170" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>Example Error Message</b></font></td>
+		<td width="200" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>Meaning</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>How to Get Help</b></font></td>
+					
+	</tr>
+	<tr>
+		
+		<td width="170" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>cl</b><br/>% Ambiguous command:  "cl"</font></td>
+		<td width="200" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>You did not enter enough characters for your device to recognize the command.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Re-enter the command followed by a question mark (?), without a space between the command and the question mark.<br/>The possible keywords that you can enter with the command are displayed.</td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td width="170" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>clock</b><br/>% Incomplete command.</font></td>
+		<td width="200" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>You did not enter all the keywords or values required by this command.</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Re-enter the command followed by a question mark (?), with a space between the command and the question mark.</td>
+				
+	</tr>
+	
+	<tr>
+		
+		<td width="170" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>switch#<b>clock set aa:12:23</b><br/>^<br/>% Invalid input detected at '^' marker.</font></td>
+		<td width="200" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>You entered the command incorrectly. The caret (^) marks the point of the error.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter a question mark (?) to display all of the commands or parameters that are available.</td>
+			
+	</tr>
+	
+	
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

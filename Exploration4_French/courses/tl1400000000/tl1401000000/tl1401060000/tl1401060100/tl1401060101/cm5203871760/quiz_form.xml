@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13388" dateexported="06/23/2008">
+		<name>Module 1 Questionnaire</name>
+		<form id="21432" lang="fr"><form-item order="fixed">
+			<ai id="140149" type="mc-ma"><question><![CDATA[Quels sont les trois éléments considérés comme étant des périphériques de réseaux étendus ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Ponts ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Modems  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Routeurs  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Commutateurs de couche 2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Serveurs de communications  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Répéteurs ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61274" type="mc-sa"><question><![CDATA[Quelle couche du modèle de conception de réseau hiérarchique est souvent appelée " backbone " ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La couche d'accès au réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La couche distribution. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La couche réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La couche principale.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le groupe de travail. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le réseau WAN. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140145" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140145" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Une technologie de commutation selon laquelle chaque commutateur doit évaluer l’adresse du paquet afin de déterminer où l’envoyer. </mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Une technologie de commutation selon laquelle un circuit virtuel n’existe que lorsqu’un paquet le traverse.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Une technologie de commutation qui établit des routes via les commutateurs pour des connexions de bout en bout particulières.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Une technologie de commutation qui utilise un circuit dédié pré-établi (ou canal) entre les nœuds et terminaux.</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Commutation de circuits</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Commutation de paquets</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Commutation de paquets avec connexion</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Commutation de paquets sans connexion</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque description de gauche sur le terme correspondant de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-127.5" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="215436" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="215436" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="215436" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="140147" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140147" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Fournit un réseau de couche 2 à bande passante élevée capable de gérer à la fois données, voix et vidéo sur une même infrastructure.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Fondé sur une architecture à cellules dans laquelle les cellules ont une longueur fixe de 53 octets</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Fonctionne au niveau de la couche liaison de données et le circuit virtuel permanent est identifié par un identificateur de contrôle de liaison de données (DLCI, Data Link Control Identifier).</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="4" textwidth="332"><material><mattext>Fonctionne au niveau de la couche réseau et le circuit virtuel commuté est identifié par un numéro de canal.</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>X.25</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Frame Relay </mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>ATM</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="4" textwidth="300"><material><mattext>Metro Ethernet</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser la description de gauche de la technologie à commutation de paquets sur le terme correspondant de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-127.5" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="215678" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="215678" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="215678" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140219" type="mc-sa"><question><![CDATA[Quel périphérique sert souvent d’équipement terminal de traitement de données (ETTD) ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[RNIS ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Modem ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Routeur  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[CSU/DSU ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140152" type="mc-sa"><question><![CDATA[Quel type de connexion de réseau étendu doit être choisi lorsqu’un chemin de communications de réseau étendu point à point dédié est requis pour relier les locaux d’un client à une destination distante via le réseau du fournisseur ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[RNIS (Réseau Numérique à Intégration de Services) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ligne commutée analogique ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mode ATM ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Relais de trames (FR, Frame Relay) ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Ligne louée  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140153" type="mc-sa"><question><![CDATA[Qu’est-ce qui permet d’identifier les circuits virtuels de relais de trames ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le débit de données garanti (CIR) ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’identificateur DLCI  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’identificateur VPI ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[MAC ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’identificateur SPID ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140154" type="mc-sa"><question><![CDATA[Quelle est la technologie de réseaux étendus conçue pour livrer simultanément des données, de la voix et de la vidéo dans une infrastructure de multiplexage temporel ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[ATM  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Câble ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Frame Relay ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RNIS ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140146" type="mc-sa"><question><![CDATA[Quelle architecture permet aux entreprises d’offrir des services réseau importants, comme la sécurité, de nouveaux services de communication et des performances d’application améliorées à chaque bureau, quelle que soit la taille de celui-ci ou sa proximité au siège social ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Cisco Enterprise Campus Architecture ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cisco Enterprise Data Center Architecture ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Cisco Enterprise Branch Architecture  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Cisco Enterprise Teleworker Architecture ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61275" type="mc-sa"><question><![CDATA[À quel niveau de la couche du modèle de conception hiérarchique les utilisateurs se connectent au réseau ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Au niveau de la couche application. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Au niveau de la couche d'accès au réseau.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Au niveau de la couche distribution. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Au niveau de la couche réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Au niveau de la couche principale. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140155" type="mc-sa"><question><![CDATA[En Amérique du Nord, combien de canaux B composent une ligne RNIS PRI ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[16 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[23  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[30 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[64 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138388" type="mc-sa"><question><![CDATA[Quelle technologie de réseau étendu permet de se connecter de manière sécurisée à un réseau privé à partir d’un réseau public ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[DSL ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Frame Relay ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RNIS ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RTPC ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Réseau privé virtuel  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61276" type="mc-sa"><question><![CDATA[Quelle couche du modèle de conception hiérarchique est responsable des problèmes de réseau liés aux groupes de travail dans lesquels ils surviennent ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La couche application. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La couche d'accès au réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La couche distribution.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La couche réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La couche principale. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="70978" type="mc-sa"><question><![CDATA[Quel terme désigne le câble qui relie le site du client au central d'échange le plus proche du réseau du fournisseur d'accès WAN ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Équipement placé chez le client pour l'opérateur (CPE) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Central téléphonique ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Boucle locale  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ETCD ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ETTD ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140148" type="mc-sa"><question><![CDATA[Quel objectif peut être atteint à l’aide de l’implémentation de Cisco Enterprise Teleworker Architecture ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Elle permet à l’entreprise d’ajouter des sites de grandes succursales qui couvrent de vastes zones géographiques. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Elle permet à l’entreprise de livrer aux travailleurs des services sûrs de voix et de données, quels que soient l’endroit et l’heure où ils travaillent.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Afin de réduire les menaces de sécurité à distance, elle contraint les utilisateurs sur les sites principaux à se connecter aux ressources.  ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Elle répond aux besoins en téléphonie des utilisateurs dans les sites des moyennes et grandes entreprises. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

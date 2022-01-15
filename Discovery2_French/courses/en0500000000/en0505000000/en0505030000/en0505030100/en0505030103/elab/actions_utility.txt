@@ -1,0 +1,178 @@
+//zmg, 03.01.01
+//this file needs a better description!
+//
+//
+
+
+
+
+
+// Utility functions
+
+
+
+
+// FIle: actions_misc.txt
+// Description: Miscellenous functions
+
+
+// utility_hideAll()
+// IN : None
+// DO : Hide all unutilized movie clips
+// OUT: None
+function utility_hideAll() {
+	Instructions._visible = false;
+	Topology._visible = false;
+	Done._visible = false;
+}
+
+
+
+
+// utility_updateText()
+// IN : None
+// DO : Updates text for Menu buttons (i.e. hide/show instructions, toplogy, done)
+// OUT: None
+function utility_updateText() {
+
+
+	tellTarget("Menu") {
+
+		instructiontext = "Show Instructions";
+		topologytext = "Show Topology";
+		donetext = "Show Done";
+	}
+}
+
+
+
+
+// utility_setVisible(b)
+// IN : The router object that is to be set
+// DO : Sets visibility of buttons for Routers and the screen
+// OUT: None
+function utility_setVisible(b) {
+
+	// set the visibility of the router's menu button to true
+	with(eval("Menu.m" + b)) {
+		_visible = true;
+	}
+
+	// set the visibility of the router's hyperterminal to false
+	with(eval("HyperTerminal.s" + b)) {
+		_visible = false;
+	}
+}
+
+
+
+
+// ***** utility_randomMAC() *****
+// IN : None
+// DO : Calculates a random 12-digit MAC address in the following hex format:
+//		0060.5cf4.c677
+// OUT:	Returns the random address generated
+function utility_randomMAC() {
+
+
+	// an array of possible hex numerals
+	var hex = new Array("0","1","2","3","4","5","6","7","8","9","a","b","c","d","e","f");
+
+	var mac = ""; // container for the random address
+
+	// pull 12 random elements out of the hex array
+	// put a '.' seperator between each group of four
+	for (var i=0; i<12; i++)
+	{
+		mac += hex[Math.round(Math.random()*15)];
+
+		// adding the '.' seperator after the 4th and 8th numerals
+		if(i == 3 || i == 7)
+			mac += ".";
+	}
+
+	return mac;
+}
+
+
+
+function utility_switchToNewRouter() {
+
+	//the visible router isnt telnetted anywhere,
+	//switch over to this new router like normal
+
+	// turning on the correct router
+	if (BUTTONROUTER == "RouterA") {
+
+		// turn visibility to nil
+		Menu.mRouterA._visible = false;
+		HyperTerminal.sRouterA._visible = true;
+		utility_setVisible(VISIBLE_ROUTER);
+
+ 		active_router = "RouterA";
+		VISIBLE_ROUTER = "RouterA";
+		utility_hideAll();
+		utility_updateText();
+
+		router_startup_checkStartUp();
+		output_setCursor();
+
+	} else if (BUTTONROUTER == "RouterB") {
+		// turn visibility to nil
+		Menu.mRouterB._visible = false;
+		HyperTerminal.sRouterB._visible = true;
+		utility_setVisible(VISIBLE_ROUTER);
+
+		active_router = "RouterB";
+		VISIBLE_ROUTER = "RouterB";
+		utility_hideAll();
+		utility_updateText();
+
+		router_startup_checkStartUp();
+		output_setCursor();
+
+	} else if (BUTTONROUTER == "RouterC") {
+		// turn visibility to nil
+		Menu.mRouterC._visible = false;
+		HyperTerminal.sRouterC._visible = true;
+		utility_setVisible(VISIBLE_ROUTER);
+
+		active_router = "RouterC";
+		VISIBLE_ROUTER = "RouterC";
+		utility_hideAll();
+		utility_updateText();
+
+		router_startup_checkStartUp();
+		output_setCursor();
+
+	} else if (BUTTONROUTER == "RouterD") {
+		// turn visibility to nil
+		Menu.mRouterD._visible = false;
+		HyperTerminal.sRouterD._visible = true;
+		utility_setVisible(VISIBLE_ROUTER);
+
+		active_router = "RouterD";
+		VISIBLE_ROUTER = "RouterD";
+		utility_hideAll();
+		utility_updateText();
+
+		router_startup_checkStartUp();
+		output_setCursor();
+
+	} else if (BUTTONROUTER == "RouterE") {
+		// turn visibility to nil
+		Menu.mRouterE._visible = false;
+		HyperTerminal.sRouterE._visible = true;
+		utility_setVisible(VISIBLE_ROUTER);
+
+		active_router = "RouterE";
+		VISIBLE_ROUTER = "RouterE";
+		utility_hideAll();
+		utility_updateText();
+
+		router_startup_checkStartUp();
+		output_setCursor();
+	}
+
+}
+

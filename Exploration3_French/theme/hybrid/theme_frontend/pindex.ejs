@@ -1,0 +1,67 @@
+		<table cellspacing="0" cellpadding="0" border="0" align="left">
+			<tr>
+				<% if (filter == "lab") { %>
+					<td class="btnbg_selected"><%= main.theme.getThemeItem('indexlab') %></td>
+				<% } else { %>
+					<td class="btnbg"><a href="javascript:setFilter('lab');" class="buttonlink"><%= main.theme.getThemeItem('indexlab') %></a></td>
+				<% } %>
+				<td>&nbsp;&nbsp;&nbsp;</td>
+				<% if (filter == "activity") { %>
+					<td class="btnbg_selected"><%= main.theme.getThemeItem('indexactivity') %></td>
+				<% } else { %>
+					<td class="btnbg"><a href="javascript:setFilter('activity');" class="buttonlink"><%= main.theme.getThemeItem('indexactivity') %></a></td>
+				<% } %>
+				<td>&nbsp;&nbsp;&nbsp;</td>
+				<% if (filter == "outline") { %>
+					<td class="btnbg_selected"><%= main.theme.getThemeItem('indexoutline') %></td>
+				<% } else { %>
+					<td class="btnbg"><a href="javascript:setFilter('outline');" class="buttonlink"><%= main.theme.getThemeItem('indexoutline') %></a></td>
+				<% } %>
+			</tr>
+		</table>
+		<table cellspacing="0" cellpadding="2" border="0" width="40%" align="right">
+			<tr><td class="chaptertitle"><a href="javascript:courseMenu();" class="chapter"><%= main.theme.getThemeItem('indexmainmenu') %></a></td></tr>
+			<tr><td class="chaptertitle"><a href="javascript:selectPage('-1.0.1.1');" class="chapter"><%= main.course.chapters[0].title %></a></td></tr>     <!-- changes page to intro in main window on click -->
+		</table>
+		<br><br>
+		<hr/>
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td width="55%">
+					<div id="list" class="listdiv">
+					<table cellspacing="0" cellpadding="2" border="0" width="100%">
+						<% if (selchapter.type != "CourseTour") { %>
+						<% for (var j=0; j<selchapter.sections.length; j++) { %>
+							<% if (selchapter.sections[j].containsMediaByFilter(filter) || filter == "outline") { %>
+								<tr><td class="sectiontitle"><% if (main.course.lang == "en") { %><%= selchapter.num %>.<%= selchapter.sections[j].num %> <% } else { %> <%= selchapter.sections[j].num %>.<%= selchapter.num %> <% } %> <%= selchapter.sections[j].title %></td></tr>
+								<% for (var k=0; k<selchapter.sections[j].topics.length; k++) { %>
+									<% if (selchapter.sections[j].topics[k].containsMediaByFilter(filter) || filter == "outline") { %>
+										<tr><td class="topictitle"><% if (main.course.lang == "en") { %><%= selchapter.num %>.<%= selchapter.sections[j].topics[k].num %>.<%= selchapter.sections[j].num %> <% } else { %><%= selchapter.sections[j].topics[k].num %>.<%= selchapter.sections[j].num %>.<%= selchapter.num %> <% } %> <%= selchapter.sections[j].topics[k].title %></td></tr>
+										<% for (var l=0; l<selchapter.sections[j].topics[k].pages.length; l++) { %>
+											<% if (selchapter.sections[j].topics[k].pages[l].media.filtertype == filter || filter == "outline") { %>
+												<tr><td class="pagetitle"><a href="javascript:selectPage('<%= selchapter.num %>.<%= selchapter.sections[j].num %>.<%= selchapter.sections[j].topics[k].num %>.<%= selchapter.sections[j].topics[k].pages[l].num %>');" class="page"><%= main.theme.getThemeItem('indexpage') %> <%= selchapter.sections[j].topics[k].pages[l].num %></a></td></tr>
+											<% } %>
+										<% } %>
+									<% } %>
+								<% } %>
+							<% } %>
+						<% } %>
+						<% } %>
+					</table> 
+					</div>
+				</td>
+				<td valign="top">
+					<table cellspacing="0" cellpadding="2" border="0" width="100%" align="right">
+						<% for (var i=1; i<main.course.chapters.length; i++) { %>
+							<% if (main.course.chapters[i] == selchapter) { %>
+								<tr><td class="chaptertitle_selected"><%= main.course.chapters[i].title %></td><td class="chaptertitle_selected"><%= main.course.chapters[i].num %> </td></tr>
+							<% } else { %>
+								<tr><td class="chaptertitle"><a href="javascript:selectChapter('<%= main.course.chapters[i].oid %>');" class="chapter"><%= main.course.chapters[i].title %></a></td><td class="chaptertitle"><%= main.course.chapters[i].num %> </td></tr>
+							<% } %>
+						<% } %>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<hr/>
+

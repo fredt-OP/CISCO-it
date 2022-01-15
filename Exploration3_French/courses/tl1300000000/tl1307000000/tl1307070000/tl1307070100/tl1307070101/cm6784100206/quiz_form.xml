@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13387" dateexported="06/10/2008">
+		<name>Module 7 Questionnaire</name>
+		<form id="21325" lang="fr"><form-item>
+			<ai id="138862" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="138862" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>802.11b</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>802.11g</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>802.11a</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>802.11n</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Spécifie les débits de données de 1, 2, 5,5 et 11 Mbits/s en raison des séquences de diffusion de tailles variables spécifiées dans la technique de modulation DSSS.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Utilise la bande de 5,7 GHz générant moins d’interférences. Cependant, les obstacles peuvent en affecter les performances et en limiter la portée.</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Utilise plusieurs radios et antennes aux points d’extrémité. La diffusion s’effectue sur la même fréquence afin de générer des flux multiples.</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Utilise 802.11 MAC, avec des débits de données plus importants sur la bande ISM de 2,4 GHz grâce à la technique de modulation OFDM.</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser la norme sans fil de gauche vers la description appropriée de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221340" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="221340" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="221340" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="138863" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="138863" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Carte réseau sans fil</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Point d’accès</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>Routeur sans fil</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Connecte plusieurs clients ou stations sans fil au réseau local filaire.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Connecte deux réseaux filaires séparés et isolés.</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Code un flux de données sur le signal RF à l’aide de la technique de modulation configurée.</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser le périphérique sans fil de gauche vers la description appropriée de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221341" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="221341" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="221341" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="138843" type="mc-sa"><question><![CDATA[À quelle couche du modèle OSI les points d’accès sans fil sont-ils exécutés ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Physique ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Liaison de données  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Réseau ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Application ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138844" type="mc-ma"><question><![CDATA[Quelles sont les deux étapes nécessaires pour associer un client sans fil à un point d’accès ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Adressage IP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Traduction d’adresse sans fil ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Authentification du client sans fil  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Identification du canal ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Association de client sans fil  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138842" type="mc-ma"><question><![CDATA[Quels sont les trois types d’authentification de client de réseau étendu qui nécessitent la configuration d’une clé de réseau pré-programmée sur le client ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[OPEN avec chiffrement des données désactivé ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SHARED avec algorithme de chiffrement de données WEP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[WPA avec algorithme de chiffrement de données TKIP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[WPA-PSK avec algorithme de chiffrement de données TKIP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[WPA2 avec algorithme de chiffrement de données AES ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[WPA2-PSK avec algorithme de chiffrement de données AES  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138835" type="mc-ma"><question><![CDATA[Quels sont les deux éléments qui contribuent à la sécurité d’un réseau étendu ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[WPA2  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Utilisation de plusieurs canaux ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Masquage du SSID ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ouverture de l’authentification ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[AES  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138836" type="mc-sa"><question><![CDATA[Quel terme est employé pour les produits compatibles avec PSK et le protocole 802.1X/EAP dans le cadre de l’authentification ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Mode personnel ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Compatible WPA2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RADIUS authentifié ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Mode entreprise  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Clé pré-partagée authentifiée ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138832" type="mc-sa"><question><![CDATA[Quelle norme IEEE les entreprises réseau doivent-elles suivre pour garantir un réseau sans fil sécurisé ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[802.11a ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[802.11b ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[802.11c ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[802.11i  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138847" type="mc-sa"><question><![CDATA[Lisez l’exposé. Quelle méthode d’authentification du réseau fournit le plus haut niveau de sécurité ? <br/><img src="16198.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Open ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Shared ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[WPA ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[WPA-PSK  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138837" type="mc-ma"><question><![CDATA[Quelles sont les deux combinaisons de canaux RF 802.11b qui permettraient à deux points d’accès sans fil de fonctionner simultanément dans la même pièce sans chevauchement de canaux ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Canaux 10 et 6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Canaux 9 et 6 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Canaux 8 et 5 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Canaux 7 et 2  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Canaux 6 et 2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Canaux 6 et 11  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138838" type="mc-sa"><question><![CDATA[Pourquoi les périphériques sans fil, tels que les téléphones sans fil, génèrent-ils parfois des interférences avec les points d’accès sans fil ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Ces périphériques fonctionnent à des fréquences identiques.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ces périphériques fonctionnent à des fréquences identiques et présentent des réglages de puissance RF supérieurs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Ces périphériques affectent l’intégralité du spectre de fréquences avec un bruit faible, susceptible de générer des pertes de signal au niveau des périphériques sans fil qui tentent de se connecter à un point d’accès. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le signal du périphérique sans fil n’est pas polarisé et se combine au signal polarisé du point d’accès. La puissance globale du signal en est réduite. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="138839" type="mc-sa"><question><![CDATA[Lisez l’exposé. Quel est le chevauchement recommandé entre les deux points d’accès sans fil pour garantir une connectivité correcte aux utilisateurs ? <br/><img src="16161.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[5 – 10% ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[10 – 15%  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[15 – 20% ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[20 – 25% ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="138841" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="138841" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>OPEN</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>WEP</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>WPA</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>WPA2</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>AES</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>Désactivation</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>RC4</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>TKIP</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Faites glisser la méthode d’authentification de la colonne de gauche vers l’algorithme de chiffrement ou le protocole de sécurité qu’elle utilise dans la colonne de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="15" yspacing="44" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="112" /><display componentIdent="3" xpos="600" ypos="149" /><display componentIdent="4" xpos="600" ypos="186" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="217494" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="217494" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="217494" action="Set">1</setvar><scoringdescription>OPEN-DISABLED, WEP-RC4, WPA-TKIP, WPA2-AES,   </scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="138840" type="mc-sa"><question><![CDATA[Quels paramètres de client de réseau étendu doivent être modifiés pour résoudre les problèmes de chiffrement au niveau du point d’accès ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Mode sans fil (802.11a, 802.11b, 802.11g) ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Pilotes de carte réseau sans fil ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sélection des canaux pour réseaux ad-hoc ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Propriétés TCP/IP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Propriétés d’association sans fil  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

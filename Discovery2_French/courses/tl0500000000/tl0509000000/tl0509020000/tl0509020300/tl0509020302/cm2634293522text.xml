@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+<component id="head01">
+<text><![CDATA[<b>Problème de support</b>]]></text>
+</component>
+
+<component id="ID_s1_table">
+<text><![CDATA[
+<table header='top' headerstyle='black' bordercolor='#000000' borderwidth='2' shadow='true' shadowcolor='#CCCCCC' glow='false' glowcolor='#FFBA51' cellpadding='5'>
+  <tr>
+    <td colspan="2"><font color="#FFFFFF"><b>Solution liée au bruit excessif (parasites)</b></font></td>
+  </tr>
+  <tr>
+    <td width="70">Étape 1</td>
+    <td>Utilisation de la commande show interface pour déterminer l’état des interfaces Ethernet La présence d’un nombre élevé d’erreurs CRC et d’un nombre peu élevé de collisions est une indication de bruit excessif (parasites). </td>
+  </tr>
+  <tr>
+    <td width="70">Étape 2</td>
+    <td>Inspection des câbles pour localiser les défectuosités ou sources d’interférences</td>
+  </tr>
+  <tr>
+    <td width="70">Étape 3</td>
+    <td>Vérification du câblage et des normes de raccordement par rapport à la vitesse de l’interface</td>
+  </tr>
+  <tr>
+    <td width="70">Étape 4</td>
+    <td>Vérification qu'un câblage de catégorie 5e ou supérieure est utilisé si 1000BASE-TX est utilisé</td>
+  </tr>
+</table>
+]]></text>
+</component>
+
+<component id="ID_s2_table">
+  <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#000000' borderwidth='2' shadow='true' shadowcolor='#CCCCCC' glow='false' glowcolor='#FFBA51' cellpadding='5'>
+  <tr>
+    <td colspan="2"><font color="#FFFFFF"><b>Solution liée aux collisions excessives</b></font></td>
+  </tr>
+  <tr>
+    <td width="70">Étape 1</td>
+    <td><p>Utilisation de la commande show interface pour déterminer le taux de collisions Le nombre total de collisions, par rapport au nombre total de paquets de sortie, doit être de 1 % ou moins.</p></td>
+  </tr>
+  <tr>
+    <td width="70">Étape 2</td>
+    <td>Utilisation d’un TDR pour localiser les câbles endommagés</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+  
+  
+<component id="ID_s3_table">
+  <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#000000' borderwidth='2' shadow='true' shadowcolor='#CCCCCC' glow='false' glowcolor='#FFBA51' cellpadding='5'>
+  <tr>
+    <td colspan="2"><font color="#FFFFFF"><b>Trames tronquées excessives</b></font></td>
+  </tr>
+  <tr>
+    <td width="70">Étape 1</td>
+    <td><p>Dans un environnement Ethernet partagé, les trames tronquées sont presque toujours provoquées par des collisions. Si le taux de collisions est élevé, reportez-vous à la section relative au problème &quot;Collisions excessives&quot;.</p></td>
+  </tr>
+  <tr>
+    <td width="70">Étape 2</td>
+    <td>Si les trames tronquées surviennent lorsque le taux de collisions n’est pas élevé, ou dans un environnement Ethernet commuté, elles proviennent probablement d’un logiciel défectueux sur une carte réseau. </td>
+  </tr>
+  <tr>
+    <td width="70">Étape 3</td>
+    <td>Utilisation d’un analyseur de protocole pour tenter de déterminer l’adresse source des trames tronquées</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+  
+<component id="ID_s4_table">
+  <text><![CDATA[
+  <table header='top' headerstyle='black' bordercolor='#000000' borderwidth='2' shadow='true' shadowcolor='#CCCCCC' glow='false' glowcolor='#FFBA51' cellpadding='5'>
+  <tr>
+    <td colspan="2"><font color="#FFFFFF"><b>Collisions tardives</b></font></td>
+  </tr>
+  <tr>
+    <td width="70">Étape 1</td>
+    <td><p>Utilisation d’un analyseur de protocole pour rechercher la cause des collisions tardives Les collisions tardives ne doivent pas survenir dans un réseau Ethernet correctement configuré. Elles surviennent généralement lorsque les câbles Ethernet sont trop longs ou en cas de conflit du mode bidirectionnel.</p></td>
+  </tr>
+  <tr>
+    <td width="70">Étape 2</td>
+    <td>Vérification du diamètre du réseau par rapport aux spécifications</td>
+  </tr>
+</table>
+]]></text> 
+  </component>
+  
+<component id="ID_button1">
+  <text><![CDATA[<b>Bruit excessif (parasites)</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Collisions excessives</b>]]></text> 
+</component>
+<component id="ID_button3">
+  <text><![CDATA[<b>Trames tronquées excessives</b>]]></text> 
+</component>
+<component id="ID_button4">
+  <text><![CDATA[<b>Collisions tardives</b>]]></text> 
+</component>
+</textcomponents>

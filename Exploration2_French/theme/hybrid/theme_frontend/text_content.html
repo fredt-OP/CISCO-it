@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<HTML>
+	<HEAD>
+		<link rel="stylesheet" type="text/css" href="./css/textstyle.css"/>
+          <link rel="alternate stylesheet" type="text/css" id="arabicstyle" title="arabicstyle" href="./css/arabic.css"/>
+		<link rel="alternate stylesheet" type="text/css" id="englishstyle" title="englishstyle" href="./css/english.css"/>
+          
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script language="javascript" src="../js/utils/cssSwitch.js"></script>
+		<script language="javascript" src="./js/popups.js"></script>
+          
+		<script>		
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			var content = new EJS({url: 'text.ejs'});
+
+			function getContent(main) {
+				if (main.course.lang == "en") {
+					changeStyle('englishstyle');
+					document.body.style.direction = "ltr";
+				} else {
+					changeStyle('arabicstyle');
+					document.body.style.direction = "rtl";
+				}
+				var html = "";
+				data = {main:main};
+				html = content.render(data);
+				writeToElement("content", html);
+			}
+		</script>
+	</HEAD>
+     
+	<body class="text"><div id="content">&nbsp;</div></body>
+</HTML>

@@ -1,0 +1,96 @@
+﻿<textcomponents>
+
+<component id="ID_caption01">
+<text><![CDATA[<b>Cliquez ici pour afficher le processus de routage à état de liens et les informations d’adressage de R1.</b>]]></text>
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Processus de routage à état de liens</b>]]></text>
+</component>
+
+<component id="slide1">
+<text><![CDATA[<b>Processus de routage à état de liens</b>]]></text>
+</component>
+
+<component id="slide2">
+<text><![CDATA[<b>R1</b>]]></text>
+</component>
+
+<component id="ID_header1">
+<text><![CDATA[<b>Processus de routage à état de liens</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[1.<textformat blockindent='15'> Chaque routeur prend connaissance des réseaux qui lui sont connectés directement.</textformat><br>2.<textformat blockindent='15'> Chaque routeur est responsable de l'établissement de la communication (par l’envoi de paquets Hello) avec ses voisins situés sur les réseaux connectés directement.</textformat><br><i><b>3.</b></i><textformat blockindent='15'><i><b> Chaque routeur crée un paquet LSP (Link-State Packet) stipulant l’état de chaque liaison directe.</b></i></textformat><br>4.<textformat blockindent='15'> Chaque routeur inonde continuellement tous ses voisins de ce paquet LSP, et ces voisins stockent ensuite tous les paquets LSP reçus dans une base de données.</textformat><br>5.<textformat blockindent='15'> Chaque routeur utilise cette base de données pour créer une carte topologique complète et calcule le meilleur chemin vers chaque réseau de destination.</textformat>]]></text>
+</component>
+
+<!-- topologies --> <!-- topologies -->
+<component id="ID_top01">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top02">
+<text><![CDATA[<b>R2</b>]]></text>
+</component>
+
+<component id="ID_top03">
+<text><![CDATA[<b>20</b>]]></text>
+</component>
+
+<component id="ID_top04">
+<text><![CDATA[<b>10</b>]]></text>
+</component>
+
+<component id="ID_top05">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top06">
+<text><![CDATA[<b>5</b>]]></text>
+</component>
+
+<component id="ID_top07">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top08">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top09">
+<text><![CDATA[<b>R1</b>]]></text>
+</component>
+
+<component id="ID_top10">
+<text><![CDATA[<b>R3</b>]]></text>
+</component>
+
+<component id="ID_top11">
+<text><![CDATA[<b>R5</b>]]></text>
+</component>
+
+<component id="ID_top12">
+<text><![CDATA[<b>20</b>]]></text>
+</component>
+
+<component id="ID_top13">
+<text><![CDATA[<b>10</b>]]></text>
+</component>
+
+<component id="ID_top14">
+<text><![CDATA[<b>10</b>]]></text>
+</component>
+
+<component id="ID_top15">
+<text><![CDATA[<b>R4</b>]]></text>
+</component>
+
+<component id="ID_top16">
+<text><![CDATA[<b>2</b>]]></text>
+</component>
+
+<component id="ID_top17">
+<text><![CDATA[<b>R1<br>LSP</b>]]></text>
+</component>
+
+</textcomponents>

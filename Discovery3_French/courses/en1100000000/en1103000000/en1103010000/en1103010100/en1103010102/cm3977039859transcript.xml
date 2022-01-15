@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 11:09:22">
+<title><content-text><![CDATA[3.1.1 - Switching and Network Segmentation]]></content-text></title>
+<brief><content-text><![CDATA[This animation depicts a MAC address table and the aging process on one port. The switch, S1, is connected to H1 on F A 0 /1, H2 on F A 0/ 2, and H3 on F A 0 /3.<br><br>H1 sends a packet to H2. As it passes through the switch, the aging timer resets and the switch says, I already have this MAC entry for port F A 0 /1. I will reset the aging timer on the port.<br><br>The F A 0 /1 port aging timer expired and the switch says, I have not heard from the host of F A 0 /1 and the aging timer has expired. I will remove the MAC address from my table.<br><br>H1 sends another packet. As it passes through the switch, the switch says, I do not have a MAC address in the table for this port. I will add the MAC address and start the aging timer.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13394" dateexported="06/23/2008">
+		<name>Module 7 Questionnaire</name>
+		<form id="21438" lang="fr"><form-item order="fixed">
+			<ai id="140183" type="mc-ma"><question><![CDATA[Quels sont les deux affirmations vraies relatives aux fonctions du serveur DHCP ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Quand un client demande une adresse IP, le serveur DHCP recherche dans la table de liaisons l’entrée qui correspond à l’adresse MAC du client. S’il existe une entrée, l’adresse IP qui lui correspond est renvoyée au client. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Une adresse IP peut être attribuée aux clients à partir d’un pool DHCP prédéfini pour une période d’utilisation définie.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les services DHCP doivent être installés sur un serveur de réseau dédié pour définir le pool des adresses IP disponibles pour les clients. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le serveur DHCP peut répondre aux demandes et attribuer des adresses IP à un sous-réseau particulier uniquement. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Chaque sous-réseau dans le réseau nécessite un serveur DCHP dédié pour attribuer des adresses IP à l’hôte sur le sous-réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le DHCP fournit aux clients une adresse IP, un masque de sous-réseau, une passerelle par défaut et un nom de domaine.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140182" type="mc-sa"><question><![CDATA[Lisez l’exposé. Que spécifie la chaîne 10.10.10.0 utilisée à la suite de la commande <b>ip dhcp pool</b> ? <br/><img src="i140182n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Le nom du pool DHCP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le pool d’adresses IP disponibles à la location ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une plage d’adresses IP exclues ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le sous-réseau IP où réside le serveur DHCP ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140213" type="mc-ma"><question><![CDATA[Quelles sont les trois affirmations vraies relatives au protocole DHCP ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Le protocole DHCP utilise le protocole UDP.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le message DHCPOFFER est envoyé par le serveur DHCP après réception d’un message DHCDISCOVER en provenance d’un client.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole DHCP utilise les ports 67 et 68.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le message DHCPREQUEST est envoyé par un client DHCP pour localiser un serveur DHCP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le message DHCPACK est envoyé par le serveur DHCP pour fournir au client DHCP l’adresse MAC du serveur DHCP afin de poursuivre la communication. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Toutes les communications DHCP sont des diffusions. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140184" type="mc-sa"><question><![CDATA[Lisez l’exposé. Le routeur R2 est configuré en tant que serveur DHCP. Que se passe-t-il si l’hôte A envoie une requête DHPC au serveur DHCP ? <br/><img src="i140184n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La requête est ignorée par le routeur R1. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La requête est transmise au serveur DHCP.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La requête est transmise au serveur DHCP, mai celui-ci ne répond pas par une adresse IP. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur R1 répond par une adresse IP. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140190" type="mc-sa"><question><![CDATA[Lisez l’exposé. Selon les informations affichées, quelle est l’affirmation vraie relative à cet échange DHCP ? <br/><img src="i140190n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le client a été configuré avec succès avec l’adresse 10.1.0.3. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le serveur DHCP a offert l’adresse 10.1.0.3 au client. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le client a demandé l’adresse 10.1.0.3 au serveur.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le serveur DHCP n’est pas parvenu à effectuer un test ping sur 10.1.0.3. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140211" type="mc-sa"><question><![CDATA[Lisez l’exposé. Selon les informations affichées dans l’exposé, quelle est l’affirmation correcte concernant la configuration NAT ? <br/><img src="i140211n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La fonction NAT statique est configurée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La fonction NAT dynamique est configurée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La fonction PAT est configurée.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La fonction NAT n’est pas correctement configurée. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140188" type="mc-sa"><question><![CDATA[Si un administrateur choisit d’éviter d’utiliser la fonction NAT avec surcharge, quelle est la valeur de délai d’attente par défaut pour les traductions NAT ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[1 heure ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[1 jour  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[1 semaine ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Indéfinie ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140220" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140220" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Fournit des mappages fixes de type un-à-un des adresses locales et globales.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Attribue les adresses traduites d’hôtes IP à partir d’un pool d’adresses publiques.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Peut mapper plusieurs adresses en une adresse unique de l’interface externe.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Attribue des numéros de ports source uniques d’une adresse globale interne, session par session.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Autorise les hôtes externes à établir des sessions avec un hôte interne.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Définit les traductions sur une base d’hôte à hôte.</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>NAT dynamique</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>NAT avec surcharge</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>NAT statique</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites correspondre chaque caractéristique de gauche à la technique NAT correspondante de droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="15" yspacing="75" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="2" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="214.5" containsTargets="2" startTarg="3" labelStyle="1" /><display componentIdent="3" xpos="600" ypos="343.5" containsTargets="2" startTarg="5" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="152" /><display componentIdent="3" xpos="600" ypos="229" /><display componentIdent="4" xpos="600" ypos="281" /><display componentIdent="5" xpos="600" ypos="358" /><display componentIdent="6" xpos="600" ypos="410" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident="2"><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident="3"><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="111913" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="111913" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>6</componentident><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="111913" action="Set">1</setvar><scoringdescription>1 – statique 2 – dynamique 3 – surcharge 4 – surcharge 5 – statique 6 – dynamique </scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140185" type="mc-sa"><question><![CDATA[Lisez l’exposé. Quel est ou quels sont les hôtes dont les adresses vont être traduites par la fonction NAT ? <br/><img src="i140185n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[10.1.1.2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.0.100  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[209.165.200.2 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les hôtes sur le réseau 10.1.1.0 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Tous les hôtes sur le réseau 192.168.0.0 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140186" type="mc-sa"><question><![CDATA[Lisez l’exposé. Quelles sont les adresses qui vont être traduites par la fonction NAT ? <br/><img src="i140186n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[10.1.1.2 - 10.1.1.255 ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[192.168.0.0 - 192.168.0.255  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[209.165.200.240 - 209.165.200.255 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’hôte 10.1.1.2 seulement ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’hôte 209.165.200.255 seulement ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140210" type="mc-sa"><question><![CDATA[Lisez l’exposé. L’adresse IP unique 192.168.14.5/24 est attribuée au serveur Web 1. Pour que les hôtes d’Internet accèdent au serveur Web 1, quel est le type de configuration NAT qui est requis sur le Routeur 1 ? <br/><img src="i140210n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[NAT statique  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT dynamique ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT avec surcharge ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Transmission de ports ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140187" type="mc-sa"><question><![CDATA[Quelle est la solution NAT qui permet aux utilisateurs externes d’accéder à un serveur FTP interne sur un réseau privé ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[NAT dynamique ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT avec surcharge ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Transmission de ports  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NAT statique ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140212" type="mc-sa"><question><![CDATA[Lisez l’exposé. Selon la sortie de débogage d’un routeur Cisco, quel type d’adresse est l’adresse 24.74.237.203 ? <br/><img src="i140212n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Locale interne ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Globale interne  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Locale externe ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Globale externe ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140189" type="mc-ma"><question><![CDATA[Quelles sont les deux affirmations qui décrivent précisément le protocole de routage RIPng ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[RIPng a une limite de 15 tronçons.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPng est un protocole de routage à état de liaisons. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPng utilise le port UDP 238 pour les mises à jour. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RIPng utilise l’empoisonnement inverse.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[RIPng transmet les diffusions IPv6. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140192" type="mc-ma"><question><![CDATA[Quelles sont les deux méthodes d’attribution d’une adresse IPv6 à une interface qui sont automatiques et peuvent être utilisées conjointement ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[DHCPv6  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L’auto-configuration sans état  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[EUI-64 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’attribution statique ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[DNS ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140193" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140193" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>ipv6 unicast-routing</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>ipv6 address</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>ip name-server</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>ipv6 host name</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>ipv6 router rip</b><i>name</i></mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Spécifie le serveur DNS utilisé par le routeur.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Définit un mappage nom d’hôte-adresse statique. </mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Configure une adresse IPv6 globale.</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Active le trafic IPv6 qui circule entre les interfaces sur le routeur.</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Active le routage RIPng sur le routeur et identifie le processus RIP.</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque commande IPv6 de gauche sur la description correspondante de droite. </mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="155" /><display componentIdent="3" xpos="200" ypos="235" /><display componentIdent="4" xpos="200" ypos="315" /><display componentIdent="5" xpos="200" ypos="395" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="142" /><display componentIdent="3" xpos="600" ypos="209" /><display componentIdent="4" xpos="600" ypos="276" /><display componentIdent="5" xpos="600" ypos="343" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="219710" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="219710" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="219710" action="Set">1</setvar><scoringdescription>ipv6 host name ipv6-address définit un mappage nom d’hôte-adresse statique.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140191" type="mc-ma"><question><![CDATA[Lisez l’exposé. Quels sont les trois éléments qui sont des représentations équivalentes à l’adresse IPv6 complète ? (Choisissez trois réponses.) <br/><img src="i140191n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[2031:300::C0:8:130B ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[2031:0:300::C0:8000:130B  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[2031:0:3::C0:8000:130B ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[2031:0:0300:0:0:C0:8000:130B  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[2031::300:0:0:0C0:8000:130B  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[2031::0300::C0:8::130B ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

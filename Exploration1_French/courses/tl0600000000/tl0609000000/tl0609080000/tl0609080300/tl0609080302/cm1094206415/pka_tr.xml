@@ -1,0 +1,191 @@
+﻿<TRANSLATION>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >11A</NAME>
+ <NAME translate="true" >11B</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >11A</NAME>
+ <NAME translate="true" >11B</NAME>
+ <NAME translate="true" >Root</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >11A</NAME>
+ <NAME translate="true" >11B</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >11A</NAME>
+ <NAME translate="true" >11B</NAME>
+ <NAME translate="true" >Root</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >11A</NAME>
+ <NAME translate="true" >11B</NAME>
+ <NAME translate="true" >Scenario 0</NAME>
+ <NAME translate="true" >Intercity</NAME>
+ <NAME translate="true" >Home City</NAME>
+ <NAME translate="true" >Corporate Office</NAME>
+ <NAME translate="true" >Main Wiring Closet</NAME>
+ <NAME translate="true" >Rack</NAME>
+ <NAME translate="true" >R1-ISP</NAME>
+ <NAME translate="true" >R2-Central</NAME>
+ <NAME translate="true" >S1-Central</NAME>
+ <NAME translate="true" >Eagle Server</NAME>
+ <NAME translate="true" >Table</NAME>
+ <NAME translate="true" >1A</NAME>
+ <NAME translate="true" >1B</NAME>
+ <NAME translate="true" >11A</NAME>
+ <NAME translate="true" >11B</NAME>
+ <NAME translate="true" >Root</NAME>
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <DESCRIPTION translate="true" />
+ <PAGE translate="true">&lt;h2&gt;Exercice 9.8.3 : &lt;br&gt;périphérique intermédiaire en tant que périphérique final &lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Le texte situé entre ces deux séries de symboles (&lt;!-- et -- &gt;) représente des commentaires pour l'auteur ; ces derniers ne sont pas visibles. Conservez tous les commentaires pour les développements ultérieurs et le contrôle qualité. L'utilisateur ne voit pas le texte HTML dans Packet Tracer.
+
+Pour consulter les instructions de base en matière de formatage HTML, reportez-vous à la section relative aux normes Packet Tracer ou au fichier &quot;HTML_Coding_Standards.html&quot; ******************************************************************************** --&gt;
+
+&lt;!-- REMARQUE STANDARD À L&apos;ATTENTION DE L'UTILISATEUR pour tous les exercices intégrés si le cours prévoit ce qui suit --&gt;
+
+
+
+&lt;!-- ================================================== Table d'adressage Reportez-vous au fichier &quot;HTML_Coding_Standards.html&quot; pour savoir comment ajuster cette table afin de l'inclure à l'exercice que vous rédigez. ================================================== --&gt; &lt;h3&gt;Table d'adressage&lt;/h3&gt; &lt;p&gt;Cet exercice ne comprend pas de table d'adressage.&lt;!--Il s'agit de la fin du code de la table d'adressage IP&quot; --&gt;&lt;!-- ================================================== Liste non triée d'objectifs (liste à puces)================================================== --&gt;&lt;/p&gt;
+
+&lt;h3&gt;Objectifs pédagogiques&lt;/h3&gt;
+
+&lt;ul&gt; &lt;li&gt;Capture d'une session Telnet &lt;li&gt;Analyser l'échange des paquets Telnet sur un ordinateur &lt;/ul&gt;
+
+&lt;!-- ================================================== Présentation Fournir les données de base, les scénarios ou tout autre document de référence dans l'introduction Reportez-vous au fichier &quot;HTML_Coding_Standards.html&quot; ================================================== --&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;Cet exercice est le même que celui de Packet Tracer dans les travaux pratiques 9.8.3 : périphérique intermédiaire en tant que périphérique final. Compte tenu des restrictions dans Packet Tracer et de la quantité de données échangées, cet exercice portera uniquement sur la capture de la connexion Telnet sur un commutateur depuis un ordinateur.&lt;br&gt;&lt;/p&gt;
+
+&lt;!-- ================================================== Tâches et étapes Pour tout texte associé à une tâche ou à une étape, reportez-vous au fichier &quot;HTML_Coding_Standards.html&quot; pour savoir comment formater les paragraphes, les listes, les commandes et la sortie de commande. Ajoutez une nouvelle page d'instructions grâce à la fonction &quot;+&quot; de la page d'ajout PT pour la première tâche ou le premier groupe de tâches, ainsi que pour toutes les tâches consécutives. Lorsque vous créez l'analogie des travaux pratiques dans Packet Tracer à partir des travaux pratiques, veillez à respecter les numérotations de tâches. Néanmoins, vous pouvez supprimer des travaux pratiques les espaces et les informations sur les commandes.  En règle générale, il existe quatre possibilités :  1) Si la tâche ou l'étape peut être suivie à la lettre dans les travaux pratiques de PT, mais sans évaluation des résultats (indiquez en bas de page ce qui suit : À la fin de cette tâche, lorsque vous vérifiez les résultats, votre score doit être xxx%&apos;, sachant que xxx n'est pas modifié par les instructions de la page précédente.  2) Si la tâche ou l'étape est suivie dans les travaux pratiques de PT avec évaluation des résultats, précisez le pourcentage cible escompté pour le participant.  3) Si la tâche ou l'étape NE peut PAS être suivie dans PT, précisez que &quot;cette tâche (ou étape) n'est pas prise en charge par PT&quot;, et passez à autre chose. 4) Si la tâche ou l'étape est suivie dans les travaux pratiques de PT, mais différemment, précisez la procédure à appliquer. Les instructions de la dernière page doivent être suivies du message suivant : &quot;À la fin de cette tâche, lorsque vous vérifiez les résultats, votre score doit être 100%.&quot; ================================================== &lt;!-- Tous les exercices se terminent par le pied de page suivant  --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PAGE translate="true">
+&lt;b&gt;&lt;h3&gt;Tâche 1 : initialiser toutes les tables du réseau&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt;Étape 1.&lt;span style=&quot;font-weight: 400&quot;&gt;&lt;b&gt; Exécuter le protocole Spanning Tree.&lt;/b&gt; &lt;/span&gt;&lt;/h4&gt; &lt;p&gt;Exécutez le protocole Spanning Tree en basculant du mode Realtime au mode Simulation 4 fois. Tous les voyants de liaison doivent être verts. Laissez PT en mode Realtime. &lt;/p&gt;
+
+&lt;p&gt; &lt;b&gt; Étape 2. Effectuez le test ping du commutateur.&lt;/b&gt;&lt;br&gt;&lt;br&gt; Accédez au PC 1A et saisissez la commande &lt;b&gt;ping 172.16.254.1&lt;/b&gt; depuis &lt;b&gt;Command Prompt&lt;/b&gt; sur &lt;b&gt;Desktop&lt;/b&gt;. C'est ainsi que sont mises à jour les informations ARP pour l'ordinateur et le commutateur. &lt;br&gt; &lt;br&gt; &lt;!-- Tous les exercices se terminent par le pied de page suivant  --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;
+</PAGE>
+ <PAGE translate="true">&lt;b&gt;&lt;/p&gt;&lt;h3&gt;Tâche 2 : capture d'une session Telnet&lt;/h3&gt;
+
+&lt;/b&gt;
+
+&lt;h4&gt; Étape 1. Passez en mode de simulation. &lt;/h4&gt; &lt;p&gt; Basculez en mode de simulation. 
+
+&lt;/p&gt; 
+
+&lt;h4&gt; &lt;b&gt;Étape 2 : définissez les filtres de la liste d'événements.&lt;/b&gt;&lt;/h4&gt; &lt;p&gt; Nous souhaitons uniquement capturer les événements Telnet. Dans la section &lt;b&gt;Event List Filters&lt;/b&gt;, assurez-vous que seuls les événements Telnet s'affichent. 
+
+&lt;/p&gt; 
+
+&lt;h4&gt; &lt;b&gt;Étape 3. Établissez une connexion Telnet avec le commutateur à partir du PC 1A.&lt;/b&gt;&lt;/h4&gt; &lt;p&gt; Saisissez la commande &lt;b&gt;telnet 172.16.254.1&lt;/b&gt; depuis &lt;b&gt;Command Prompt&lt;/b&gt; sur le PC 1A. Lorsque Trying Telnet s'affiche, passez à l'étape suivante. &lt;/p&gt; &lt;h4&gt; &lt;b&gt;Étape 4. Exécutez la simulation.&lt;/b&gt;&lt;/h4&gt; &lt;p&gt; Cliquez sur le bouton &lt;b&gt;Auto Capture / Play&lt;/b&gt;. Restaurez la fenêtre PC 1A. Lorsque le système vous y invite, saisissez &lt;b&gt;cisco&lt;/b&gt; comme mot de passe et appuyez sur la touche &lt;b&gt;Entrée&lt;/b&gt;. Réduisez la fenêtre PC 1A. Lorsque la fenêtre &lt;b&gt;Buffer Full&lt;/b&gt; s'affiche, cliquez sur le bouton &lt;b&gt;View Previous Events&lt;/b&gt;.&lt;br&gt;&lt;br&gt;Lorsque le système vous y invite, saisissez le nom d&apos;utilisateur &lt;b&gt;ccna1&lt;/b&gt; et le mot de passe &lt;b&gt;cisco&lt;/b&gt;. &lt;h4&gt;À la fin de cette tâche, votre taux d'achèvement doit s'élever à 100%. 
+
+
+
+
+&lt;/h4&gt;
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant  --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PAGE translate="true">
+&lt;b&gt;&lt;/p&gt;&lt;h3&gt;Tâche 3 : analyser l'échange des paquets Telnet sur PC 1A&lt;/h3&gt;&lt;/b&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Examinez les données Telnet encapsulées.&lt;/b&gt;&lt;/h4&gt; &lt;p&gt; Examinez les paquets &lt;b&gt;sur le périphérique&lt;/b&gt; 1A pour simuler le fonctionnement de Wireshark. Vérifiez les données Telnet encapsulées dans &lt;b&gt;Inbound&lt;/b&gt; et &lt;b&gt;Outbound PDU Details&lt;/b&gt;.
+
+&lt;/p&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 2.&lt;/b&gt; &lt;b&gt;Tenez compte du fonctionnement de Telnet.&lt;/b&gt;&lt;/h4&gt; &lt;p&gt; Restaurez la fenêtre PC 1A. Comparez les informations affichées avec les données Telnet encapsulées. Le mot de passe est-il compris dans les données Telnet encapsulées ?&lt;/p&gt; &lt;h4&gt;À la fin de cette tâche, votre taux d'achèvement doit s'élever à 100%. 
+
+
+&lt;/h4&gt;
+
+&lt;!-- Tous les exercices se terminent par le pied de page suivant  --&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R1-ISP</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,R2-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,S1-Central</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Eagle Server</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,1B</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11A</PHYSICAL>
+ <PHYSICAL translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet,Table,11B</PHYSICAL>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true" >Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <TEXT translate="true" >. . .</TEXT>
+ <TEXT translate="true" >. . .</TEXT>
+ <TEXT translate="true" >. . .</TEXT>
+ <ID translate="true" >R1-ISP</ID>
+ <ID translate="true" >R2-Central</ID>
+ <ID translate="true" >S1-Central</ID>
+ <ID translate="true" >Eagle Server</ID>
+ <ID translate="true" >1A</ID>
+ <ID translate="true" >1B</ID>
+ <ID translate="true" >11A</ID>
+ <ID translate="true" >11B</ID>
+ <ID translate="true" >R1-ISP</ID>
+ <ID translate="true" >R2-Central</ID>
+ <ID translate="true" >S1-Central</ID>
+ <ID translate="true" >Eagle Server</ID>
+ <ID translate="true" >1A</ID>
+ <ID translate="true" >1B</ID>
+ <ID translate="true" >11A</ID>
+ <ID translate="true" >11B</ID>
+ <ID translate="true" >Scenario 0</ID>
+</TRANSLATION>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13397" dateexported="04/25/2008">
+		<name>Module 2 Questionnaire</name>
+		<form id="21028" lang="fr"><form-item>
+			<ai id="134621" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="134621" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>POP</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>VPN</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>DoS</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>CPE</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>DMZ</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>démarcation</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>empêche l‘accès aux ressources réseau par les utilisateurs autorisés de manière malveillante</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>frontière désignant la responsabilité de la maintenance et du dépannage des équipements</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>liaison physique vers les réseaux externes au niveau de Enterprise Edge</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>équipement situé sur le site du client</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>permet aux employés à distance d’accéder au réseau interne de manière sécurisée</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chaque terme à gauche vers la description correcte à droite. (Les propositions ne doivent pas être toutes utilisées.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /><display componentIdent="5" xpos="200" ypos="315" /><display componentIdent="6" xpos="200" ypos="375" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /><display componentIdent="5" xpos="600" ypos="283" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214488" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="214488" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>2</componentident></scoringzonecontains></conditionvar><setvar varname="214488" action="Set">1</setvar><scoringdescription>POP - liaison physique vers les réseaux externes au niveau de Enterprise Edge ; DoS - empêche l‘accès aux ressources réseau par les utilisateurs autorisés de manière malveillante, VPN permet aux employés à distance d’accéder aux ressources internes de manière sécurisée ; CPE - équipement situé sur le site du client, démarcation - frontière désignant la responsabilité de la maintenance et du dépannage des équipements, Non utilisé : DMZ</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="134623" type="mc-sa"><question><![CDATA[Quelles sont les informations que procure la commande <b>show mac-address-table</b> sur un commutateur Cisco Catalyst ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Adresses MAC des ports sur le commutateur Catalyst ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Port utilisé par le commutateur pour acheminer des trames à un hôte  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Adresses IP des périphériques réseau directement connectés ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Mappage entre l’adresse MAC et l’adresse IP pour les hôtes du réseau ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134622" type="mc-sa"><question><![CDATA[Lors du dépannage d’un problème réseau, l’administrateur réseau exécute la commande <b>show version</b> sur un routeur.  Quelles sont les informations que procure cette commande ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Capacité des mémoires NVRAM, DRAM et flash installées sur le routeur  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Bande passante, encapsulation et statistiques d’E/S des interfaces ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Différences entre la configuration de sauvegarde et la configuration courante ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Version des protocoles de routage exécutés sur le routeur ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134629" type="mc-sa"><question><![CDATA[Après avoir identifié toutes les applications réseau, le trafic généré par ces applications et les priorités de ce trafic, un ingénieur réseau veut réunir ces informations dans un document unique pour analyse. Comment peut-il y parvenir ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Créer un relevé topologique physique du réseau et y ajouter les données des applications réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Créer un relevé topologique logique du réseau et y ajouter les données des applications réseau.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Créer un plan du site en indiquant l’emplacement des câbles et des salles de télécommunication, et y ajouter les données des applications réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Prendre une photographie du site et y ajouter les données des applications réseau. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134624" type="mc-sa"><question><![CDATA[Un soir, alors qu’un administrateur réseau tente d’accéder à un site Web récemment déployé, il reçoit l’erreur « page introuvable ». Le lendemain, en vérifiant les journaux du serveur Web, l’administrateur remarque que, durant l’heure pendant laquelle le chargement du site avait échoué, la page d’accueil du site Web avait été demandée plusieurs centaines de fois. Toutes les requêtes provenaient de la même adresse IP. Sur la base de ces informations, que peut en conclure l’administrateur réseau ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il s’agit d’une activité de navigation sur Internet normale. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il peut s’agir d’une attaque DoS.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La capacité de la liaison vers le site Web est insuffisante et doit être augmentée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le serveur web a été désactivé et n’a pas pu traiter les demandes. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134642" type="mc-sa"><question><![CDATA[Quel type de matériel relie habituellement un commutateur MDF à un commutateur IDF situé dans un autre bâtiment ?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Une fibre optique  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un câble coaxial ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un câble à paires torsadées non blindées ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un câblage à paires torsadées blindées ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134643" type="mc-ma"><question><![CDATA[Quels sont les trois périphériques qui peuvent être alimentés via le câble Ethernet à paires torsadées qui achemine les données ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Un point d’accès sans fil  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un écran ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Une webcam  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un téléphone IP  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un commutateur de réseaux ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un ordinateur portable ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="134649" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="134649" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>définissent les domaines de broadcast</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>connectent les points d’accès et les téléphones IP au réseau</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>renforcent la sécurité avec des listes de contrôle d’accès</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>interconnectent les réseaux</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>apparaissent plus communément au niveau de la couche d’accès</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>connectent les systèmes hôtes au réseau</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Routeurs</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="340"><material><mattext>Commutateurs</mattext></material></textcomponent></component><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext /></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser la caractéristique de matériel à gauche sur le type de matériel correspondant à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="16" yspacing="65" targetH="32"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="115" /><display componentIdent="3" xpos="200" ypos="155" /><display componentIdent="4" xpos="200" ypos="195" /><display componentIdent="5" xpos="200" ypos="235" /><display componentIdent="6" xpos="200" ypos="275" /></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1" /><display componentIdent="2" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1" /></labels><targets><display componentIdent="1" xpos="600" ypos="100" /><display componentIdent="2" xpos="600" ypos="137" /><display componentIdent="3" xpos="600" ypos="174" /><display componentIdent="4" xpos="600" ypos="236" /><display componentIdent="5" xpos="600" ypos="273" /><display componentIdent="6" xpos="600" ypos="310" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221689" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="221689" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>3</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="221689" action="Set">1</setvar><scoringdescription>Routeurs : définissent les domaines de broadcast, renforcent la sécurité avec des ACL, interconnectent les réseaux. Commutateurs : connectent les points d’accès et les téléphones IP au réseau, apparaissent plus communément au niveau de la couche d’accès, connectent les systèmes hôtes au réseau.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="134616" type="mc-ma"><question><![CDATA[Quel protocole peut être utilisé pour accéder à un routeur Cisco pour l’administration in band ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[ARP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[SSH  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[FTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SMTP ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Telnet  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134628" type="mc-sa"><question><![CDATA[Un ingénieur réseau analyse le réseau de la société ABC Corporation. Il décide de commencer par le routeur principal afin d’identifier et de répertorier les périphériques réseau Cisco connectés à ce routeur.  Quelle commande doit-il exécuter sur le routeur principal pour obtenir ces informations ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>show version</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip route</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show tech-support</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show running-config</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show cdp neighbors detail</b>  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

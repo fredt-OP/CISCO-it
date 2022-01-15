@@ -1,0 +1,113 @@
+<textcomponents>
+
+<component id="id_title">
+	<text><![CDATA[<font size="+2"><b>Activity</b></font><br/><br/>Indicate whether the characteristic describes RIP or OSPF.<br/><br/><b>Select RIP or OSPF for each characteristic.</b>]]></text>
+</component>
+
+<component id="id_descr">
+<text><![CDATA[]]></text>
+</component>
+
+<component id="id_inst">
+<text><![CDATA[]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+<component id="txt_numrows">
+	<text><![CDATA[9]]></text>
+</component>
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_col1">
+	<text><![CDATA[<b>RIP</b>]]></text>
+</component>
+<component id="txt_col2">
+	<text><![CDATA[<b>OSPF</b>]]></text>
+</component>
+
+	
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='14'>Periodically sends the entire routing table to all directly connected neighbors</textformat>]]></text>
+</component>
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='14'>Works well for larger hierarchical networks</textformat>]]></text>
+</component>
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='14'>Appropriate for smaller simple networks</textformat>]]></text>
+</component>
+<component id="txt_q4">
+	<text><![CDATA[4. <textformat blockindent='14'>Provides fast convergence</textformat>]]></text>
+</component>
+<component id="txt_q5">
+	<text><![CDATA[5. <textformat blockindent='14'>Generates a map of the network from the viewpoint of the router</textformat>]]></text>
+</component>
+<component id="txt_q6">
+	<text><![CDATA[6. <textformat blockindent='14'>Hop count metric is used to determine best path</textformat>]]></text>
+</component>
+<component id="txt_q7">
+	<text><![CDATA[7. <textformat blockindent='14'>Fairly simple to configure</textformat>]]></text>
+</component>
+<component id="txt_q8">
+	<text><![CDATA[8. <textformat blockindent='14'>Requires more router system resources</textformat>]]></text>
+</component>
+<component id="txt_q9">
+	<text><![CDATA[9. <textformat blockindent='14'>Link cost metric used to determine best path</textformat>]]></text>
+</component>
+
+
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a3">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a4">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a5">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a6">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a7">
+	<text><![CDATA[1]]></text>
+</component>
+<component id="txt_a8">
+	<text><![CDATA[2]]></text>
+</component>
+<component id="txt_a9">
+	<text><![CDATA[2]]></text>
+</component>
+
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully identified the characteristics of RIP and OSPF. Click Next to continue.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review the different characteristics of RIP and OSPF and try again.]]></text></component>
+
+
+</textcomponents>

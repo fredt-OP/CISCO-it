@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 11:09:44">
+<title><content-text><![CDATA[3.2.1 - Redundancy in a Switched Network]]></content-text></title>
+<brief><content-text><![CDATA[The animation depicts the development of a broadcast storm.<br><br>The diagram depicts a server and two PC's, labeled H1 and H3, that are connected to a switch. The switch, S1, is connected by dual links to the switch, S2. S2 is connected to a router labeled R1 and two PC's labeled H2 and H4. The router has a serial link in use. The server that is connected to S1 sends a broadcast message out to S1. S1 sends the message out to all ports except the originating port that sent the message. S2 receives the message and sends it to all connected clients, including S1 on both links. S1 receives the message and sends it back to the hosts that are directly connected to it, including S2. This is commonly known as a broadcast storm.<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

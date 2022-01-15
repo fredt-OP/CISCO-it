@@ -1,0 +1,72 @@
+<textcomponents>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Client and Access Point Association</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>Beacon</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Probe</b>]]></text>
+</component>
+
+<component id="ID_button03">
+<text><![CDATA[<b>Authenticate</b>]]></text>
+</component>
+
+<component id="ID_button04">
+<text><![CDATA[<b>Associate</b>]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b>802.11b client forces faster clients who are contending for the channel to wait longer.</b>]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b>Access Point</b>]]></text>
+</component>
+
+<component id="ID_lazyText01">
+<text><![CDATA[<b>Access Point emits periodic beacon:<br/><ul><li>SSID</li><li>Supported Rates</li><li>Security Implementation (e.g. WPA2)</li><br/>Clients with radio NICs “hear” the beacon</b>]]></text>
+</component>
+
+<component id="ID_lazyText02">
+<text><![CDATA[<b><font size='14'>Step 1 – 802.11 Probing</font></b>]]></text>
+</component>
+
+<component id="ID_lazyText03">
+<text><![CDATA[<b>Client sends probe:<ul><li>SSID</li><li>Supported Rates</li></ul></b>]]></text>
+</component>
+
+<component id="ID_lazyText04">
+<text><![CDATA[<b>Access Point sends probe response:<ul><li>SSID</li><li>Supported Rates</li><li>Security Implementation</li></ul></b>]]></text>
+</component>
+
+<component id="ID_lazyText05">
+<text><![CDATA[<b><font size='14'>Step 2 – 802.11 Authentication</font></b>]]></text>
+</component>
+
+<component id="ID_lazyText06">
+<text><![CDATA[<b>Open authentication request<ul><li>Type (Open, shared key)</li><li>Key (if type is shared key)</li></ul></b>]]></text>
+</component>
+
+<component id="ID_lazyText07">
+<text><![CDATA[<b>Authentication response:<ul><li>Type</li><li>Key</li><li>"Successful" or "Unsuccessful"</li></ul></b>]]></text>
+</component>
+
+<component id="ID_lazyText08">
+<text><![CDATA[<b><font size='14'>Step 3 – 802.11 Association</font></b>]]></text>
+</component>
+
+<component id="ID_lazyText09">
+<text><![CDATA[<b>Association request<ul><li>Client MAC address</li><li>Access point MAC address (BSSID)</li><li>ESS identifier (ESSID)</li></ul></b>]]></text>
+</component>
+
+<component id="ID_lazyText10">
+<text><![CDATA[<b>Association response:<ul><li>"Successful" or "Unsuccessful"</li><li>Association Identifier (AID) if association is successful</li></ul></b>]]></text>
+</component>
+
+
+</textcomponents>

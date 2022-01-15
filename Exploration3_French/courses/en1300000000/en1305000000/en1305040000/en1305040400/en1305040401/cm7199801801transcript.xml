@@ -1,0 +1,5 @@
+<transcript lastedited="11.05.08 19:11:25">
+<title><content-text><![CDATA[5.4.4  - Edge Ports]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the concepts of edge and non-edge ports and terminology used with RSTP.<br><br>Network Topology:<br>Four switches, S1, S2, S3, and S4, are interconnected. Switches S1, S2, and S3 are connected in a full mesh. Switch S4 connects to S1. Three PC's are connected to switch S2. A database is connected to S4.<br><br>The switch ports to which the PC's and the database are connected are all edge ports. All ports interconnecting the switches are non-edge ports. <br><br>Edge Ports:<br>Never have a switch connected to them.<br>Immediately transition to forwarding.<br>Function similarly to a port configured with Cisco PortFast.<br>On a Cisco switch, configure using the spanning-tree portfast command.<br><br>Non-Edge Ports:<br>Always attached to another switch port.]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

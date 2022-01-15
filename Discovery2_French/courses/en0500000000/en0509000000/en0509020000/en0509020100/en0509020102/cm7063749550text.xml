@@ -1,0 +1,117 @@
+<textcomponents>
+
+
+<component id="ID_prompt">
+<text><![CDATA[<b>Click each symptom button to learn about some possible causes of that symptom.</b>]]></text>
+</component>
+
+<component id="ID_btn01">
+<text><![CDATA[<b>No functionality or connectivity at the Network Layer or above</b>]]></text> 
+</component>
+
+<component id="ID_btn02">
+<text><![CDATA[<b>Network operating below baseline performance levels</b>]]></text> 
+</component>
+
+<component id="ID_btn03">
+<text><![CDATA[<b>Excessive broadcasts</b>]]></text> 
+</component>
+
+<component id="ID_btn04">
+<text><![CDATA[<b>Console error messages</b>]]></text> 
+</component>
+
+<component id="ID_btn05">
+<text><![CDATA[<b>High CPU utilization rates</b>]]></text>
+</component>
+
+<component id="ID_btn06">
+<text><![CDATA[<b>Console error messages</b>]]></text>
+</component>
+
+<component id="ID_osi01">
+<text><![CDATA[<b>7 Application</b>]]></text> 
+</component>
+
+<component id="ID_osi02">
+<text><![CDATA[<b>6 Presentation</b>]]></text> 
+</component>
+
+<component id="ID_osi03">
+<text><![CDATA[<b>5 Session</b>]]></text> 
+</component>
+
+<component id="ID_osi04">
+<text><![CDATA[<b>4 Transport</b>]]></text> 
+</component>
+
+<component id="ID_osi05">
+<text><![CDATA[<b>3 Network</b>]]></text>
+</component>
+
+<component id="ID_osi06">
+<text><![CDATA[<b>2 Data Link</b>]]></text>
+</component>
+
+<component id="ID_osi07">
+<text><![CDATA[<b>1 Physical</b>]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>No functionality or connectivity at the Network Layer or above</b>]]></text>
+</component>
+
+
+<component id="ID_txt01">
+<text><![CDATA[<li>Misconfigured network cards or faulty NIC drivers can stop the exchange of frames across a link.</li><li>Encapsulation errors on serial or WAN links can also cause connectivity to fail over operational circuits.</li>]]></text>
+</component>
+
+<component id="ID_title02">
+<text><![CDATA[<b>Network operating below baseline performance levels</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[<li>Interfaces dropping frames that exceed the capacity of the interface or have CRC or framing errors can cause poor network performance. These problems can be identified through error counter statistics and console error messages on the switch or router. </li><li>Faulty NICs, interface errors, and electric noise are common Layer 1 hardware issues that can create Layer 2 framing errors in the network.</li>]]></text>
+</component>
+
+<component id="ID_title03">
+<text><![CDATA[<b>Excessive broadcasts</b>]]></text>
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<li>Large Layer 2 network segments can contribute to excessive broadcasts.</li><li>Viruses and worms can add excessive broadcast traffic to the network.</li>]]></text>
+</component>
+
+<component id="ID_title04">
+<text><![CDATA[<b>Console error messages</b>]]></text>
+</component>
+
+
+<component id="ID_txt04">
+<text><![CDATA[<li>Console messages typically occur when the device detects a problem with interpreting incoming frames because of encapsulation or framing problems.</li><li>Messages also occur when keepalives are expected but do not arrive. </li><li>The most common console message that indicates a Layer 2 problem is a line protocol down message.</li>]]></text>
+</component>
+
+<component id="ID_title05">
+<text><![CDATA[<b>High CPU utilization rates</b>]]></text>
+</component>
+
+
+<component id="ID_txt05">
+<text><![CDATA[<li>High CPU utilization indicates that a device is operating at or exceeding its design limits.</li><li>CPU overloading can cause a device to shut down or fail.</li>]]></text>
+</component>
+
+<component id="ID_title06">
+<text><![CDATA[<b>Console error messages</b>]]></text>
+</component>
+
+
+<component id="ID_txt06">
+<text><![CDATA[<li>Error messages reported on the device console can indicate a Physical Layer problem.</li><li>Messages indicating that a device or protocol is down indicate interface or cabling problems.</li>]]></text>
+</component>
+
+
+
+</textcomponents>
+

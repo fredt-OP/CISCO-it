@@ -1,0 +1,99 @@
+<textcomponents>
+
+<!-- instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="+2"><b>Exercice</b></font><br/><br/>Faites correspondre les besoins d’un utilisateur final avec l’offre des divers fournisseurs de services Internet.<br/><br/><b>Après avoir lu le scénario, cochez la case correspondant au fournisseur le plus approprié pour chaque utilisateur.</b>]]></text>
+</component>
+
+<component id="ID_Header1">
+<text><![CDATA[<font color='#FFFFFF'><b>FAI A</b></font>]]></text>
+</component>
+<component id="ID_Header2">
+<text><![CDATA[<font color='#FFFFFF'><b>FAI B</b></font>]]></text>
+</component>
+
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>40 dollars par mois (pas de contrat mensuel)<br />10 comptes de messagerie<br />Accès mensuel illimité<br />Support technique 24 h/24, 7 jours/7<br />Services VoIP, 30 dollars par mois<br />Accès DSL<br />Hébergement Web 1 Go et services FTP</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>80 dollars par mois (contrat de 2 ans)<br />30 comptes de messagerie (comptes supplémentaires facturés)<br />Accès DSL et câble<br />Support technique gratuit 24h/24, 7 jours/7<br />Services VoIP, 30 dollars par mois<br />Hébergement Web 2 Go et services FTP<br />Hébergement de l’équipement du client sur site<br />Hébergement d’une base de données en ligne et de services de sécurité</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>FAI A</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>FAI B</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit-->
+<!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[ 1. <textformat blockindent='17'>Une petite société a besoin qu’un fournisseur de services Internet héberge son site Web d’informations. Les clients appellent la société pour passer commande. En outre, la société a besoin de services VoIP pour réduire ses frais d’appel longue distance et de services FTP pour le partage et le stockage des fichiers. Le coût et la flexibilité sont des facteurs importants étant donné le fort taux de croissance de la société qui peut engendrer des besoins en services supplémentaires qui ne sont pas encore nécessaires aujourd’hui.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[ 2. <textformat blockindent='17'>Une société de 50 employés aimerait faire profiter ses employés de la formation sur site et de la vidéoconférence. Les employés doivent pouvoir accéder à un site Web interne pour consulter le contenu et les informations de formation. L’ensemble des 50 employés doivent disposer de comptes de messagerie.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[ 3. <textformat blockindent='17'>Une petite société veut créer un site Web de commerce électronique pour permettre à ses clients de commander en ligne ses produits et services. Le site Web de commerce électronique doit être maintenu chez le fournisseur de services Internet.  Une base de données est nécessaire pour tenir à jour les dossiers clients.  Le support technique et la sécurité sont des aspects essentiels.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0-->
+<!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[2]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Vous avez bien fait correspondre les besoins de la société avec le fournisseur de services Internet le plus approprié.<br /><br />Dans le scénario 1, la société sélectionnerait le fournisseur A en raison de la flexibilité que procure l’absence de contrat et du faible coût.  Dans le scénario 2, la société sélectionnerait le fournisseur B parce qu’il propose la vidéoconférence. Dans le scénario 3, la société sélectionnerait le fournisseur B en raison de ses besoins en matière d’hébergement d’équipements et en services de bases de données sécurisés.<br/><br/>Cliquez sur Suivant pour continuer.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Relisez les informations sur les fournisseurs de services Internet et les scénarios, puis réessayez.]]></text>
+</component>
+
+</textcomponents>

@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="10/16/2007">
+		<name>Module  Quiz</name>
+		<form id="19771" lang=""><form-item order="fixed">
+			<ai id="116954" type="mc-sa"><question><![CDATA[How does VTP affect VLAN administration?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Port to VLAN assignments for an entire VTP domain can all be done on a single switch. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VLANs are only visible on switches that have ports assigned to them. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VTP propagates VLAN numbers, but not names, to all switches in a VTP domain. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VTP is required to allow VLAN naming across switches. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[VTP propagates VLAN names to all switches in a VTP domain.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="53778" type="mc-sa"><question><![CDATA[A Catalyst switch must be in which VTP mode in order to delete or add VLANs to a management domain?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[client ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[server  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[domain ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[transparent ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[designated ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116963" type="mc-sa"><question><![CDATA[What is the purpose of VTP transparent mode?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[permits VLAN creation on a single &quot;transparent&quot; switch and subsequent propagation to all other VTP switches ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[allows propagation of extended range VLANs ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[makes VTP traffic &quot;transparent&quot; to other devices by allowing VLANs other than VLAN 1 to act as the management VLAN ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[enables VTP advertisements to pass through a non-participating switch  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="95758" type="mc-sa"><question><![CDATA[Refer to the exhibit. Switches A and B connect via a trunk and are running VTP. However, switch B is not getting VLAN update information. What could cause this problem? <br/><img src="9800.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[FastEthernet cannot be used for trunking. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The switches are not set to the same VTP mode. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The VTP domain name is not the same on both switches.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The configuration revision number does not match on both switches. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="52403" type="mc-sa"><question><![CDATA[A switch in a VTP domain sends an advertisement request.  What will be the response?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[A configuration status reply will be issued from the closest client switch. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A three-way handshake will establish a configuration session with the VTP server. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Summary and subset advertisements will be sent by the VTP server.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The configuration version number will be set to zero and all switches in the domain will issue advertisements regarding the state of their VLANs. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117008" type="mc-sa"><question><![CDATA[Which function, when enabled on a switched network,  prevents broadcast, multicast, and unknown unicast traffic to a VLAN from being flooded to switches that do not have that particular VLAN assigned to them?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[trunking ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VTP domain ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[VTP pruning  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[VTP transparent mode ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="116939" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116939" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>All VTP switches must use the same version of VTP.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Token ring switches must run VTP version 3 or higher.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>The VTP pruning settings must be identical.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>The VTP domain passwords must be unique.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>The VTP domain names must be identical.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>The connection to the VTP domain must be a trunked link.</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Required to add a new switch to an existing VTP domain</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Drag the requirements to add a new switch to an existing VTP domain from the left-hand column to the right-hand column. (Not all options are used.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-111.5" targetYspacing="15" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="3" startTarg="1" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="152"/><display componentIdent="3" xpos="600" ypos="204"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>7</componentident><componentident>3</componentident><componentident>2</componentident><componentident>1</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214637" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214637" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains></conditionvar><setvar varname="214637" action="Set">1</setvar><scoringdescription>please enter the answer for QA here</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="119298" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="119298" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>vtp mode client</b></mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>vtp mode server</b></mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>vtp version 2</b></mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>vtp pruning</b></mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext><b>vtp domain LABS</b></mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>specifies that the switch cannot create or delete VLANs shared in VTP advertisements</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>configures the name used to determine which switches belong to the same management group</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>restricts flooded traffic to trunk links that the traffic must use to reach destination devices</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the command on the left to the associated description on the right. (Not all options are used.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="30" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/><display componentIdent="5" xpos="200" ypos="395"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="221336" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="221336" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="221336" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119405" type="mc-sa"><question><![CDATA[What is the purpose of the VLAN Trunking Protocol?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[maintaining consistency in VLAN configuration across the network  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[routing frames from one VLAN to another ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[routing the frames along the best path between switches ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[tagging user data frames with VLAN membership information ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[distributing BPDUs to maintain loop-free switched paths ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="117118" type="mc-sa"><question><![CDATA[Refer to the exhibit. Switch SW1 and switch SW2 are configured in the same VTP domain but failed to exchange VLAN information. What could be done to fix the problem? <br/><img src="15980.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Configure the same VLANs on the VTP client and VTP server. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configure the same VTP mode on the VTP client and VTP server. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configure the same password on the VTP client and VTP server.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configure different VTP domain names on the VTP client and VTP server. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configure the VTP client in VTP transparent  mode. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Configure the trunk link as an access link. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116898" type="mc-sa"><question><![CDATA[A network engineer is implementing a new VLAN design on an existing structure. The plan is to rename the VTP domain and implement 25 VLANs. The engineer takes an existing production switch to the lab, enters the proposed VLANs, and changes the VTP domain name. All new VLANs are verified present with the <b>show vlan</b> command. The network administrator subsequently decides to retain the original domain name, so the name is changed back and the switch reconnected to the production network. The <b>show vlan</b> command shows that none of the new VLANs are synchronizing on the other network switches. All switches can ping each other and trunking is correct. What is the likely problem?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[No ports are assigned to the new VLANs yet, so VTP pruning is disabling them. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The switch rejoined the network with the revision number set to zero.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The engineer failed to save the new VLAN configuration to NVRAM. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The other switches are all in server mode by default and do not accept VTP updates. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="117103" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="117103" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>create, modify, and delete VLANs and specify other configuration parameters, such as VTP version and VTP pruning for the entire VTP domain</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>advertise VTP configuration parameters, such as VTP version and VTP pruning for the entire VTP domain, but cannot create, modify, and delete VLANs</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>advertise and synchronize VLAN configuration to other switches in the same VTP domain,  but cannot create, change, or delete VLANs </mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>forward VTP advertisements that are received out the trunk ports, but cannot advertise and synchronize the VLAN configuration based on received advertisements</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>cannot forward VTP advertisements nor advertise and synchronize the VLAN configuration based on received advertisements</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>VTP Transparent Mode </mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>VTP Client Mode</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>VTP Server Mode</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the description on the left to the correct VTP mode on the right. (Not all options are used.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="30" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="155"/><display componentIdent="3" xpos="200" ypos="235"/><display componentIdent="4" xpos="200" ypos="315"/><display componentIdent="5" xpos="200" ypos="395"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="142"/><display componentIdent="3" xpos="600" ypos="209"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214963" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214963" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="214963" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="119406" type="mc-ma"><question><![CDATA[Refer to the exhibit. The switches in the exhibit are interconnected by trunked links and are configured for VTP as shown. A new VLAN is added to Switch1. Which three actions will occur? (Choose three.) <br/><img src="16487.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[Switch1 will send a VTP update to Switch2.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Switch2 will add the VLAN to its database and pass the update to Switch3.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Switch3 will pass the VTP update to Switch4.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch3 will add the VLAN to its database. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch4 will not add the VLAN to its database. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Switch4 will not receive the update. ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

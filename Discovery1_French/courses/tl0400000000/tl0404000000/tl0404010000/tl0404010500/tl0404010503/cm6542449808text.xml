@@ -1,0 +1,105 @@
+﻿<textcomponents>
+
+<!-- instructions -->
+<component id="id_instruct">
+	<text><![CDATA[<font size="14"><b>Exercice</b></font><br/><br/>Affichez les informations données pour les trois fournisseurs de services Internet afin de revoir les services et les vitesses de connexion offerts. Comparez les besoins d’un utilisateur final aux différents fournisseurs de services Internet.<br/><br/><b>Cochez la case du fournisseur de services Internet convenant le mieux à chaque utilisateur.</b>]]></text>
+</component>
+
+<component id="ID_Header1">
+<text><![CDATA[<font color='#FFFFFF'><b>FAI A</b></font>]]></text>
+</component>
+<component id="ID_Header2">
+<text><![CDATA[<font color='#FFFFFF'><b>FAI B</b></font>]]></text>
+</component>
+<component id="ID_Header3">
+<text><![CDATA[<font color='#FFFFFF'><b>FAI C</b></font>]]></text>
+</component>
+
+
+<component id="ID_table">
+<text><![CDATA[<table header='none' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>Bas prix sans frais d’installation (29,95  dollars par mois)<br />5  comptes de messagerie<br/>Accès mensuel illimité<br />Support technique gratuit 24h/24, 7 jours/7<br />Société établie (5  ans)<br />Accès par câble<br />Pas de DSL ni de VoIP<br />Prend uniquement en charge la plateforme Windows<br/>Sécurité pour enfants gratuite</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>79,98  dollars par mois (contrat de 2  ans)<br/>30  comptes de messagerie ; des frais s’appliquent pour un compte supplémentaire<br/>Accès DSL et câble<br/>Support client gratuit<br/>Support technique 24h/24, 7 jours/7<br/>Accès messagerie Web/POP3<br/>Prise en charge Windows/MAC/Palm Pilot/Pocket PC<br/>Service VoIP, 30  dollars par mois<br/>Espace Web 2  Go<br/>Bloqueurs de fenêtres contextuelles gratuits<br/>Disponible aux États-Unis et au Canada</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>FAI gratuit<br/>10  heures d’accès par mois, heures supplémentaires à 2  dollars par heure<br/>Support par ligne commutée<br/>Bannières publicitaires<br/>Aucuns frais d’installation<br/>Support de messagerie Web/POP<br/>Prise en charge des plateformes Windows/MAC<br/>Prise en charge DSL dans les grandes villes américaines uniquement<br/>Prise en charge de la messagerie gratuite<br/>Support téléphonique technique à 10  dollars par appel</td>
+	</tr>
+</table>]]></text>
+</component>
+
+<!-- buttons -->
+<component id="ID_Button01">
+	<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+	<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+<!--Number of rows in the table-->
+<component id="txt_numrows">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Number of columns for the answers in the table. Do not count the question column-->
+<component id="txt_numcols">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!--Answer column headers-->
+<component id="txt_col1">
+	<text><![CDATA[<b>FAI A</b>]]></text>
+</component>
+
+<component id="txt_col2">
+	<text><![CDATA[<b>FAI B</b>]]></text>
+</component>
+
+<component id="txt_col3">
+	<text><![CDATA[<b>FAI C</b>]]></text>
+</component>
+
+<!--Question text - blockindent code moves the text away from the left edge a bit--> <!--Question text - If questions are numbered, use blockindent for hanging indents-->
+<component id="txt_q1">
+	<text><![CDATA[1. <textformat blockindent='13'>Adelle est administrateur réseau pour une entreprise de taille moyenne au Canada. Son entreprise se développe et prévoit d’ouvrir une nouvelle succursale aux États-Unis. De nombreux employés de la société travaillent de chez eux et ont accès au siège social à l’aide de modems câble ou DSL. Ils ne prévoient pas d’utiliser la VoIP et n’ont pas besoin de support de messagerie, mais la plupart des employés n’ont aucune connaissance technique et auront besoin d’aide pour la configuration.</textformat>]]></text>
+</component>
+
+<component id="txt_q2">
+	<text><![CDATA[2. <textformat blockindent='13'>Maximilian est un joueur qui est actuellement à l’université. Il passe une grande partie de son temps libre à jouer avec ses amis ou à télécharger de la musique et des vidéos. La messagerie instantanée constitue son principal outil de communication.</textformat>]]></text>
+</component>
+
+<component id="txt_q3">
+	<text><![CDATA[3. <textformat blockindent='13'>Frank est écrivain et voyage en Amérique du Nord pour faire des recherches pour ses romans. Il séjourne principalement dans des hôtels, mais reste parfois plus longtemps chez des amis. Il préfère un accès DSL s’il est avec des amis, mais il doit être préparé à utiliser une connexion par ligne commutée dans quelques villes plus petites. Son budget est très limité jusqu’à la publication de son premier roman.</textformat>]]></text>
+</component>
+
+<!--Answers - Give the column number(s), column numbering start with 1 not 0--> <!--Answers - For MCMA separate the correct answers with commas [2, 4, 5] -->
+<component id="txt_a1">
+	<text><![CDATA[2]]></text>
+</component>
+
+<component id="txt_a2">
+	<text><![CDATA[1]]></text>
+</component>
+
+<component id="txt_a3">
+	<text><![CDATA[3]]></text>
+</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+	<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+	<text><![CDATA[Correct. Adelle sélectionnerait le fournisseur de services Internet B à cause du nombre de comptes de messagerie, de la prise en charge DSL et du support technique. Maximilian ferait appel au fournisseur de services Internet A pour avoir un accès illimité. Frank a un budget limité et est souvent en déplacement. Il sélectionnerait le fournisseur de services Internet C, puisqu’il est gratuit et offre un service de ligne commutée et un service DSL dans les grandes villes. Cliquez sur Suivant pour continuer.]]></text>
+</component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+	<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+	<text><![CDATA[Incorrect, relisez les informations sur les fournisseurs de services Internet et les scénarios. Réessayez ensuite.]]></text>
+</component>
+
+</textcomponents>

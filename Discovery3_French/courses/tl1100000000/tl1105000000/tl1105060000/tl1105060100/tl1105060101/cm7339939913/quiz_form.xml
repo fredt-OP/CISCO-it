@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13400" dateexported="04/25/2008">
+		<name>Module 5 Questionnaire</name>
+		<form id="21031" lang="fr"><form-item order="fixed">
+			<ai id="67132" type="mc-sa"><question><![CDATA[Quelle est la différence entre les protocoles RIP v1 et RIP v2 ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les mises à jour du protocole RIP v1 contiennent un mécanisme d'authentification. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole RIP v1 utilise la fonction " split-horizon " pour empêcher la formation de boucles de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le protocole RIP v2 utilise 16 sauts comme valeur métrique de distance infinie. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le protocole RIP v2 envoie les informations de masque de sous-réseau avec ses mises à jour de routage.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67136" type="mc-sa"><question><![CDATA[Les routeurs A et B s'échangent des mises à jour du protocole RIP v2. Le routeur B n'a pas reçu une mise à jour du routeur A dans le délai imparti. Si le compteur utilise les valeurs par défaut, au bout de combien de secondes le routeur B identifie-t-il les routes gérées par le routeur A comme étant incorrectes ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[90 secondes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[120 secondes ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[150 secondes ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[180 secondes  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[240 secondes ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134661" type="mc-ma"><question><![CDATA[Pouvez-vous donner trois raisons d’utiliser EIGRP au lieu de RIPv1 ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[EIGRP prend en charge VLSM et CIDR.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[EIGRP consomme moins de mémoire et de temps de CPU. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[EIGRP autorise un nombre de sauts plus élevé.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[EIGRP n’impose pas de limite de sauts car il repose sur le coût des chemins. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[EIGRP est un protocole de routage à état de liens dont la convergence est plus rapide que celle des protocoles à vecteur de distance. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[EIGRP utilise RTP, un protocole de couche de transport indépendant des autres protocoles, afin de garantir l’acheminement des informations de routage.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="60554" type="mc-ma"><question><![CDATA[Selon les résultats du routeur obtenus à partir de la commande <b> show ip route </b> ci-dessus, lesquels des énoncés suivants sont vrais ? (Choisissez deux réponses.) <br/><img src="681.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La métrique est égale à 24 jusqu'au réseau 192.168.8.0. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le nombre de sauts jusqu'à une unité du réseau 192.168.8.0 est égal à 2.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le coût total de la route jusqu'au réseau 192.168.4.0 est égal à 16 par défaut. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[L'adresse logique du prochain routeur sur le réseau 192.168.1.0 est 192.168.3.1.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les unités du réseau 192.168.5.0 sont inaccessibles, comme l'indique l'étiquette C. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61205" type="mc-sa"><question><![CDATA[Si le routage EIGRP est employé et si la route successeur vers une destination devient inaccessible ou n'est pas fiable, quelle route utiliseriez-vous pour la remplacer ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La route signalée comme active dans la table de topologie. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La route successeur possible indiquée dans la table de topologie.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La passerelle par défaut indiquée dans la table de voisinage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La route désignée primaire dans la table de topologie. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routeur désigné de secours dans la table de routage. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="67147" type="mc-sa"><question><![CDATA[Si une route EIGRP est hors service et qu'aucune route successeur possible ne figure dans la table topologique, quel état l'algorithme DUAL (Diffused Update Algorithm) attribue-t-il à cette route pour signaler qu'elle est défectueuse ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Recomputed (recalculé). ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Passive (passif). ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Active (actif).  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Down (hors service). ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Unreachable (inaccessible). ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Successor (successeur). ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61220" type="mc-sa"><question><![CDATA[Quelles tables l'algorithme DUAL utilise-t-il pour calculer les routes de moindre coût vers chaque destination ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les tables de routage et de topologie. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les tables de voisinage et de routage. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les tables de voisinage et de topologie.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les tables de voisinage et de contiguïtés. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="61225" type="mc-ma"><question><![CDATA[Quels sont les avantages des routeurs formant des contiguïtés lors de l'utilisation du protocole EIGRP ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Les routeurs voisins prennent rapidement le relais d'un routeur en mode passif. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les nouveaux routeurs et leurs routes sont découverts rapidement par les routeurs voisins.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Un routeur peut partager les charges de routage avec les routeurs voisins. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Un routeur peut découvrir rapidement l'indisponibilité d'un routeur voisin.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Les changements de topologie d'un réseau sont partagés rapidement par les routeurs voisins.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les routeurs voisins réduisent la charge en partageant leurs bases de données DUAL.  ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134606" type="mc-sa"><question><![CDATA[Vous avez configuré le récapitulatif de routage EIGRP sur une interface série pour résumer les routes retenues à partir d’une interface Ethernet. Quelle est la route figurant dans la table de routage ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Une route résumée pointant vers une interface Serial0. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une route résumée pointant vers l’interface Loopback0. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Une route résumée pointant vers une interface Ethernet. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Une route résumée pointant vers l’interface Null0.  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134658" type="mc-ma"><question><![CDATA[Pouvez-vous donner deux caractéristiques du protocole EIGRP ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Il utilise les mises à jour de routage à état de liens. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il s’agit d’un protocole de routage à vecteur de distance.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Il prend en charge le protocole CIDR.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il s’agit d’un protocole de routage à état de liens. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Il s’agit d’un protocole de routage toutes classes. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134689" type="mc-ma"><question><![CDATA[Quels sont les avantages du routage statique par rapport au routage dynamique ? (Choisissez deux réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[La configuration de route statique entraîne moins d’erreurs. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routage statique est plus sûr car les routeurs n’annoncent pas les routes.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Le routage statique préserve l’évolutivité du réseau. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[La consommation de CPU est plus faible avec les routes statiques.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[La configuration est plus facile. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="134690" type="mc-sa"><question><![CDATA[Examinez la configuration de routeur suivante :<b><br /><br />interface Serial0/0<br />ip address 10.10.1.2 255.255.255.0<br />interface Serial0/1<br />ip address 10.11.1.2 255.255.255.0<br />router eigrp 75<br />network 10.0.0.0<br />no auto-summary<br /><br /></b>Quelle série de commandes résume le réseau 10.10.0.0 /16 quand il envoie des données à l’interface S0/1 ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>router eigrp 75<br />ip summary-address S0/1 10.10.0.0 255.255.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>router eigrp 75<br />ip summary-address 10.10.0.0 255.255.0.0 S0/1</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>interface S0/1<br />ip summary-address eigrp 10.10.0.0 255.255.0.0</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>interface S0/1<br />ip summary-address eigrp 75 10.10.0.0 255.255.0.0</b>  ]]></text>
+							
+						</choice></choices></ai></form-item></form></exam> 

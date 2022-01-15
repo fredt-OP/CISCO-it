@@ -1,0 +1,91 @@
+﻿<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<font size="+2"><b>Exercice</b></font><br/><br/>Déterminez si l’adresse IP possédant les informations CIDR est un sous-réseau ou un résumé du routage.<br/><br/><b>Cochez Sous-réseau ou Résumé du routage selon l’adresse IP fournie.</b>]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Vérifier</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Réinitialiser</b>]]></text>
+</component>
+
+	<component id="txt_numrows">
+		<text><![CDATA[7]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[Sous-réseau]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[Résumé du routage]]></text>
+	</component>
+
+		
+    <component id="txt_q1">
+		<text><![CDATA[172.24.0.0/14]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[192.168.17.192/26]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[10.24.0.0/16]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[172.17.4.0/24]]></text>
+	</component>
+    <component id="txt_q5">
+		<text><![CDATA[10.0.100.0/24]]></text>
+	</component>	
+    <component id="txt_q6">
+		<text><![CDATA[172.128.0.0/12]]></text>
+	</component>	
+    <component id="txt_q7">
+		<text><![CDATA[192.168.0.0/23]]></text>
+	</component>
+	
+		
+    <component id="txt_a1">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a5">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a6">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a7">
+		<text><![CDATA[2]]></text>
+	</component>
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[<b>Correct</b>]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[Vous avez correctement identifié les sous-réseaux et les résumés du routage. Cliquez sur Suivant pour continuer. </p>]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[<b>Incorrect</b>]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Vérifiez les informations CIDR et réessayez.]]></text></component>
+
+
+</textcomponents>

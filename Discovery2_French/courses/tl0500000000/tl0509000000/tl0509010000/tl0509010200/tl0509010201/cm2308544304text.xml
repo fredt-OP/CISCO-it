@@ -1,0 +1,124 @@
+﻿<textcomponents>	
+	<component id="ID_instructions">
+		<text><![CDATA[<b>Déplacez le pointeur de la souris sur chacune des couches du modèle OSI pour en savoir plus sur les différentes méthodes de dépannage.</b>]]></text>
+	</component>
+
+    <component id="ID_txt05">
+		<text><![CDATA[<b>Application, Présentation, Session</b>]]></text>
+	</component>
+	
+    <component id="ID_txt06">
+		<text><![CDATA[<b>Transport</b>]]></text>
+	</component>
+  
+	<component id="ID_txt07">
+		<text><![CDATA[<b>Réseau</b>]]></text>
+	</component>
+	
+	<component id="ID_txt08">
+		<text><![CDATA[<b>Liaison de données</b>]]></text>
+	</component>
+	
+	<component id="ID_txt09">
+		<text><![CDATA[<b>Physique</b>]]></text>
+	</component>
+
+	<component id="ID_header1">
+		<text><![CDATA[<b>Approche de dépannage</b>]]></text>
+	</component>    
+	
+	<component id="ID_header2">
+		<text><![CDATA[<b>Principe de fonctionnement</b>]]></text>
+	</component>  
+	
+	<component id="ID_header3">
+		<text><![CDATA[<b>Cas applicables</b>]]></text>
+	</component> 
+	
+	<component id="ID_header4">
+		<text><![CDATA[<b>Avantages / Inconvénients</b>]]></text>
+	</component> 
+	
+	<component id="ID_txt01c">
+		<text><![CDATA[Ascendante]]></text>
+	</component>
+	
+	<component id="ID_txt02c">
+		<text><![CDATA[Commence toujours par la couche physique et remonte jusqu’à la détection d’une couche défectueuse.]]></text>
+	</component>
+	
+    <component id="ID_txt03c">
+		<text><![CDATA[Particulièrement adaptée aux cas complexes.]]></text>
+	</component>
+	
+    <component id="ID_txt04c">
+		<text><![CDATA[Cette approche est lente, mais très fiable. Lorsque le problème provient de l’application (couche supérieure), cette approche peut prendre un certain temps.]]></text>
+	</component>
+	
+      
+	<component id="ID_header1b">
+		<text><![CDATA[<b>Approche de dépannage</b>]]></text>
+	</component>    
+	
+	<component id="ID_header2b">
+		<text><![CDATA[<b>Principe de fonctionnement</b>]]></text>
+	</component>  
+	
+	<component id="ID_header3b">
+		<text><![CDATA[<b>Cas applicables</b>]]></text>
+	</component> 
+	
+	<component id="ID_header4b">
+		<text><![CDATA[<b>Avantages / Inconvénients</b>]]></text>
+	</component> 
+	
+	<component id="ID_txt01b">
+		<text><![CDATA[Diviser et conquérir]]></text>
+	</component>
+	
+	<component id="ID_txt02b">
+		<text><![CDATA[Selon les circonstances (problèmes signalés) et votre expérience, vous pouvez commencer par une couche quelconque et remonter ou descendre la pile OSI.]]></text>
+	</component>
+	
+    <component id="ID_txt03b">
+		<text><![CDATA[Action la plus appropriée lorsque vous avez suffisamment d’expérience et que le problème présente des symptômes précis.]]></text>
+	</component>
+	
+    <component id="ID_txt04b">
+		<text><![CDATA[Cette approche permet d’atteindre la couche problématique plus rapidement que les autres approches.<br/>Cette approche n’est efficace que si vous êtes expérimenté.]]></text>
+	</component>
+	
+
+	<component id="ID_header1a">
+		<text><![CDATA[<b>Approche de dépannage</b>]]></text>
+	</component>    
+	
+	<component id="ID_header2a">
+		<text><![CDATA[<b>Principe de fonctionnement</b>]]></text>
+	</component>  
+	
+	<component id="ID_header3a">
+		<text><![CDATA[<b>Cas applicables</b>]]></text>
+	</component> 
+	
+	<component id="ID_header4a">
+		<text><![CDATA[<b>Avantages / Inconvénients</b>]]></text>
+	</component> 
+	
+	<component id="ID_txt01a">
+		<text><![CDATA[Descendante]]></text>
+	</component>
+	
+	<component id="ID_txt02a">
+		<text><![CDATA[Commence toujours par la couche application et redescend jusqu’à la détection d’une couche défectueuse.]]></text>
+	</component>
+	
+    <component id="ID_txt03a">
+	<text><![CDATA[Cette approche est particulièrement adaptée en présence de problèmes plus simples qui sont probablement liés à l’application/ l’utilisateur ou à la couche supérieure.]]></text>
+	</component>
+	
+    <component id="ID_txt04a">
+		<text><![CDATA[Si le problème est lié à des couches inférieures, vous avez perdu beaucoup de temps et d’efforts à explorer les couches application supérieures.]]></text>
+	</component>
+
+</textcomponents>

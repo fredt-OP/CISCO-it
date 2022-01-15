@@ -1,0 +1,37 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Viewing the Routing Table</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+  <text><![CDATA[<b>Directly Connected Route</b>]]></text> 
+  </component>
+  
+<component id="ID_txt02">
+  <text><![CDATA[<b>Dynamically Updated Route</b>]]></text> 
+  </component>
+  
+<component id="ID_txt03">
+  <text><![CDATA[<b>Static Route</b>]]></text> 
+  </component>
+  
+<component id="ID_txt04">
+  <text><![CDATA[<b>Default Route</b>]]></text> 
+  </component>
+  
+<component id="tipTitle">		
+  	<text><![CDATA[More Information]]></text>	
+	</component>
+    
+<component id="tipBody">		
+    <text><![CDATA[Routing tables do not contain end-to-end information about the entire path from a source network to a destination network. They only contain information about the next hop along that path. The next hop is typically a directly-connected gateway on the same subnet.  In the case of a static route, the next hop could be any IP address, as long as it is resolvable in the routing table or reachable by that router.   Eventually the message gets passed to a router that is directly connected to the destination host and the message is delivered. Routing information between all the intermediate routers on a path is in the form of network addresses not specific hosts. It is only in the final router that the destination address in the routing table points specifically to a host computer rather than a network.]]></text>	
+    </component>
+	
+<component id="TipText">
+		<text><![CDATA[More Information]]></text>
+</component>
+
+</textcomponents>
+  
+
+  

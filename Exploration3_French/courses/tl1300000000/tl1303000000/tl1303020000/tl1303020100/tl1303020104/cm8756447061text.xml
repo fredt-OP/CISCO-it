@@ -1,0 +1,143 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>VLAN natifs et agrégation 802.1Q</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur Lire pour lancer l’animation.</b>]]></text>
+</component>
+
+<component id="ID_button_01">
+<text><![CDATA[<b>Trames étiquetées et non étiquetées</b>]]></text>
+</component>
+
+<component id="ID_button_02">
+<text><![CDATA[<b>Agrégation de trames non étiquetées</b>]]></text>
+</component>
+
+<component id="ID_button_03">
+<text><![CDATA[<b>Exemple de configuration de VLAN natif</b>]]></text>
+</component>
+
+<component id="ID_button_04">
+<text><![CDATA[<b>Vérification du VLAN natif</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Trames étiquetées sur le VLAN natif</b><br/>      - sont abandonnées par le commutateur ;<br/>      - les périphériques ne doivent pas étiqueter le trafic de contrôle destiné au VLAN natif.<br/><b>Trames non étiquetées sur le VLAN natif</b><br/>      - voient leur PVID remplacé par la valeur du VLAN natif configuré ;<br/>      - restent non étiquetées ;<br/>      - sont transférées sur le VLAN natif configuré.]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b><font size='12'>PVID = 99<br/>VLAN = 99</font></b>]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b><font size='12'>Gestion PC0<br/>VLAN 99<br/>172.17.99.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble03">
+<text><![CDATA[<b><font size='12'>PVID = 100<br/>VLAN = 100</font></b>]]></text>
+</component>
+
+<component id="ID_bubble04">
+<text><![CDATA[<b><font size='12'>PVID = 99<br/>VLAN = 99</font></b>]]></text>
+</component>
+
+<component id="ID_bubble05">
+<text><![CDATA[<b><font size='12'>Gestion PC8<br/>VLAN pris en charge<br/>VLAN 100<br/>172.17.100.10</font></b>]]></text>
+</component>
+
+<component id="ID_bubble06">
+<text><![CDATA[<b><font size='12'>Agrégations 802.1Q</font></b>]]></text>
+</component>
+
+<component id="ID_bubble07">
+<text><![CDATA[<b><font size='12'>Gestion PC7<br/>VLAN 99<br/>172.17.99.11</font></b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Trame Ethernet encapsulée 802.1q</b>]]></text>
+</component>
+
+<component id="ID_text01">
+<text><![CDATA[<b>Les ports F0/1 et F0/3 du commutateur S1, le port F0/1 du commutateur S2 et le port F0/3 du commutateur S3 sont des ports d’agrégation.<br/><br/>Le VLAN natif du port F0/1 et du port F0/3 du commutateur S1 est le VLAN 99. Le VLAN natif du port F0/3 du commutateur S3 est le VLAN 99.<br/><br/>Le VLAN natif du port F0/1 du commutateur S2 est le VLAN 100.</b>]]></text>
+</component>
+
+<component id="ID_text02">
+<text><![CDATA[<b>Trame non étiquetée</b>]]></text>
+</component>
+
+<component id="ID_text03">
+<text><![CDATA[<b>Trame non étiquetée</b>]]></text>
+</component>
+
+<component id="ID_text04">
+<text><![CDATA[<b>Les deux ellipses (...) figurant dans les données affichées signalent que du contenu a été supprimé par souci de clarté.</b>]]></text>
+</component>
+
+
+
+
+<component id="tableHTML">
+	    <text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	
+	    	<tr>
+	  	  		
+	  	  	<td colspan="2" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe de commande ILC de Cisco IOS</b></font><font face="_typewriter">&nbsp;</font></td>
+  	  	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration globale sur le commutateur S1. </td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' width='300' type='dynamic'><font face="_typewriter">S1#<b>configure terminal</b></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration d’interface. </td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='300' type='dynamic'><font face="_typewriter">S1(config)#<b>interface F0/1</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Définir l’interface F0/1 comme agrégation IEEE 802.1Q.</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' width='300' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport mode trunk</b></font></td>
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer le VLAN 99 en tant que VLAN natif. </td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' width='300' type='dynamic'><font face="_typewriter">S1(config-if)#<b>switchport trunk native vlan 99</b></font></td>
+	</tr>
+	<tr>
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Revenir au mode d’exécution privilégié. </td>
+	  <td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter">S1(config-if)#<b>end</b></font></td>
+   </tr>
+</table>
+]]></text> 
+  </component>
+
+
+
+<component id="play">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Texte]]></text>
+</component>
+
+</textcomponents>

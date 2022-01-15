@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13250" dateexported="06/05/2007">
+		<name>Module 1 Quiz</name>
+		<form id="19218" lang="en"><form-item order="fixed">
+			<ai id="36175" type="mc-sa"><question><![CDATA[Which of the following matches a router component with its function?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[FLASH - stores the bootstrap program]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ROM - stores the startup configuration file]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[NVRAM - stores the operating system image]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[RAM - stores the routing tables and ARP cache]]></text>
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="55620" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="55620" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>running-configuration is loaded from NVRAM</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>bootstrap loader executes from ROM</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>configuration file is loaded from NVRAM</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>operating system is found and loaded</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>power-on self test is conducted</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>setup mode executes after configuration file is loaded</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>step 1</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>step 2</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>step 3</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>step 4</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Construct the sequence of events that occurs during the router startup process. (Not all options apply.)</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="obs1" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="obs1" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="obs1" action="Set">1</setvar><scoringdescription>Power-on self test, bootstrap loader, operating system, configuration file from NVRAM</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="109871" type="mc-ma"><question><![CDATA[Which two commands can a technician use to determine if router serial ports have IP addresses that are assigned to them? (Choose two.)]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[<b>show interfaces</b>]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show interfaces ip brief</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show controllers all</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>show ip config</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>show ip interface brief</b>]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="30378" type="mc-sa"><question><![CDATA[Which of the following commands will set the privileged mode password to "quiz"?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[LAB_A(config)# <b>enable secret quiz</b>]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LAB_A(config)# <b>password secret quiz</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LAB_A(config)# <b>enable password secret quiz</b>]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[LAB_A(config)# <b>enable secret password quiz</b>]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110015" type="mc-sa"><question><![CDATA[Which routing principle is correct?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[If one router has certain information in its routing table, all adjacent routers have the same information.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Routing information about a path from one network to another implies routing information about the reverse, or return path.]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Every router makes its routing decisions alone, based on the information it has in its own routing table.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Every router makes its routing decisions based on the information it has in its own routing table and its neighbor routing tables.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110042" type="mc-ma"><question><![CDATA[What two tasks do dynamic routing protocols perform? (Choose two.)]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[discover hosts]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[update and maintain routing tables]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[propagate host default gateways]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[network discovery]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[assign IP addressing]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110031" type="mc-sa"><question><![CDATA[A network engineer is configuring a new router.  The interfaces have been configured with IP addresses but no routing protocols or static routes have been configured yet.  What routes are present in the routing table?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[default routes]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[broadcast routes]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[direct connections]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[No routes. The routing table is empty.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110086" type="mc-ma"><question><![CDATA[What two statements are correct regarding how a router forwards packets? (Choose two.)]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[If the packet is destined for a remote network, the router forwards the packet out all interfaces that might be a next hop to that network. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[If the packet is destined for a directly connected network, the router forwards the packet out the exit interface indicated by the routing table.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[If the packet is destined for a remote network, the router forwards the packet based on the information in the router host table. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[If the packet is destined for a remote network, the router sends the packet to the next hop IP in the routing table.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[If the packet is destined for a directly connected network, the router forwards the packet based on the destination MAC address.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[If the packet is destined for a directly connected network, the router forwards the packet to the switch on the next hop VLAN.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110079" type="mc-sa"><question><![CDATA[Which statement is true regarding metrics used by routing protocols?]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[A metric is the quantitative value a routing protocol uses to measure a given route.]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A metric is a Cisco proprietary means to convert distances to a standard unit.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Metrics represent a composite value of the amount of packet loss occurring for all routing protocols.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Metrics are used by the router to determine if a packet has an error and should be dropped.]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Metrics are only used by dynamic routing protocols.]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110165" type="mc-sa"><question><![CDATA[Refer to the exhibit. Which port is used to connect a router to a LAN switch?<br /><img src="14898.jpg">]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[4]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[5]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[6]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[1 or 4]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[2 or 3]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[5 or 6]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="110072" type="mc-sa"><question><![CDATA[The network administrator configured the <b>ip route 0.0.0.0 0.0.0.0 serial 0/0</b> command on the router. How will this command appear in the routing table assuming the serial0/0 interface is up?]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[D 0.0.0.0/0 is directly connected, Serial0/0]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[S* 0.0.0.0/0 is directly connected, Serial0/0]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[S* 0.0.0.0/0 [1/0] via 192.168.2.2]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[C 0.0.0.0/0 [1/0] via 192.168.2.2]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

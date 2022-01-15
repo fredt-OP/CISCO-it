@@ -1,0 +1,117 @@
+﻿<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr-fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Contenu</title>
+<base target="_self">
+<link href="../../css/content.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="window.focus();">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<!--  Start top title Lesson Bar -->
+	  <tr>
+	    <td width="18" class="toptitle01_white_bold" valign="top">
+	    <img border="0" src="../../images/content_lines.gif" width="16" height="25"> <img border="0" src="../../images/transdot.gif" width="2" height="1"></td>
+
+    	<td width="18" class="toptitle01_white_bold">15.6</td>
+	    <td class="toptitle01_white_bold"><img border="0" src="../../images/transdot.gif" width="10" height="1"></td>
+
+    	<td width="100%" class="toptitle01_white_bold">Description de l&rsquo;installation, de la configuration et de la gestion d&rsquo;un serveur de messagerie simple</td>
+	    <td width="9" class="toptitle01_white_bold_margin">&nbsp;</td>
+	  </tr>
+	  <!--  End top title Lesson Bar --> <!--  Start top title Topic Bar -->
+
+	 <!--  End top title Topic Bar -->
+</table>
+
+	<!-- CONTENT -->
+	<table border="0" cellpadding="0" cellspacing="0" width="95%" >
+		<tr>
+			<td width="20"></td>
+			<td>
+        <table border="0" cellpadding="0" cellspacing="0"  width="95%">
+
+        <tr>
+          <td width="100%">
+
+            <p>Un syst&egrave;me de messagerie &eacute;lectronique utilise un logiciel client sur les p&eacute;riph&eacute;riques des utilisateurs et un logiciel serveur sur un ou plusieurs serveurs de messagerie. Les clients lisent les courriels provenant du serveur de messagerie &agrave; l&rsquo;aide de l&rsquo;un des protocoles suivants&nbsp;:</p>
+
+            	<ul>
+            			<li>protocole POP (Post Office Protocol)&nbsp;;</li>
+            			<li>protocole IMAP (Internet Message Access Protocol).</li>
+            	</ul>
+
+			<p>Les clients envoient leurs courriels &agrave; un serveur de messagerie et les serveurs de messagerie se transf&egrave;rent les courriels entre eux, &agrave; l&rsquo;aide du protocole SMTP (Simple Mail Transfer Protocol).</p>
+
+			<p>Vous devez savoir comment configurer un ordinateur client pour qu&rsquo;il accepte le format de courriel entrant appropri&eacute;. Vous devez &eacute;galement comprendre le processus de configuration du serveur de messagerie. La configuration du logiciel de messagerie client peut &ecirc;tre effectu&eacute;e &agrave; l&rsquo;aide d&rsquo;assistants de connexion, comme indiqu&eacute; dans la Figure&nbsp;1. Les avantages et les inconv&eacute;nients de chaque protocole de messagerie sont pr&eacute;sent&eacute;s dans la Figure&nbsp;2.</p>
+
+            <p><span class="bold">SMTP</span><br> Le protocole SMTP (Simple Mail Transfer Protocol) envoie un courriel du client au serveur de messagerie, ou d&rsquo;un serveur de messagerie &agrave; un autre. Le protocole SMTP poss&egrave;de les caract&eacute;ristiques suivantes&nbsp;:</p>
+            <ul>
+					  <li>il s&rsquo;agit d&rsquo;un protocole textuel simple&nbsp;;</li>
+					  <li>il est envoy&eacute; par TCP via le port&nbsp;25&nbsp;;</li>
+					  <li>il est obligatoire pour tout envoi de courriel&nbsp;;</li>
+					  <li>le message est envoy&eacute; uniquement lorsque les destinataires sont identifi&eacute;s et v&eacute;rifi&eacute;s.</li>
+		    </ul>
+
+			<p><span class="bold">POP</span><br>Le protocole POP (Post Office Protocol) est utilis&eacute; par le client de messagerie pour t&eacute;l&eacute;charger les courriels sur le serveur. La version la plus r&eacute;cente du protocole POP est POP3. Le protocole POP3 utilise g&eacute;n&eacute;ralement le port 110.</p>
+
+			<p>Il prend en charge les utilisateurs finaux disposant d&rsquo;une connexion intermittente, par exemple une ligne commut&eacute;e. Un utilisateur POP3 peut se connecter, t&eacute;l&eacute;charger un courriel sur le serveur, supprimer ce courriel, puis se d&eacute;connecter.</p>
+
+			<p><span class="bold">IMAP</span><br> Le protocole IMAP (Internet Message Access Protocol) est similaire au protocole POP3, mais offre des fonctionnalit&eacute;s suppl&eacute;mentaires. Tout comme le protocole POP3, il vous permet de t&eacute;l&eacute;charger un courriel sur le serveur &agrave; l&rsquo;aide du client de messagerie. La diff&eacute;rence est que le protocole IMAP permet &agrave; l&rsquo;utilisateur d&rsquo;organiser ses courriels sur le serveur de messagerie du r&eacute;seau. Il est plus rapide que le protocole POP3 et exige moins d&rsquo;espace disque sur le serveur&nbsp;; toutefois, il utilise plus de ressources en termes d&rsquo;UC. La version la plus r&eacute;cente du protocole IMAP est IMAP4. IMAP4 est souvent utilis&eacute; dans les r&eacute;seaux de grande taille, par exemple sur les campus universitaires. Le protocole IMAP utilise g&eacute;n&eacute;ralement le port 143.</p>
+
+			<p><span class="bold">Serveur de messagerie &eacute;lectronique</span><br>Un serveur de messagerie est un ordinateur qui peut envoyer et recevoir des courriels de la part des clients de messagerie. Voici quelques serveurs de messagerie courants&nbsp;:</p>
+
+				<ul>
+				   <li>Microsoft Exchange&nbsp;;</li>
+				   <li>Sendmail&nbsp;;</li>
+				   <li>Eudora Internet Mail Server (EIMS).</li>
+
+				</ul>
+
+			<p> Comme indiqu&eacute; dans la Figure&nbsp;3, des assistants et d&rsquo;autres outils sont souvent mis &agrave; votre disposition pour vous guider dans la configuration du serveur de messagerie. Pour installer et configurer un serveur de messagerie, tel que Microsoft Exchange, vous devez tout d&rsquo;abord vous assurer que le r&eacute;seau dispose des qualifications requises et a &eacute;t&eacute; correctement configur&eacute;. Les serveurs Active Directory, les serveurs de catalogue global et les serveurs de nom de domaine (DNS) doivent &ecirc;tre install&eacute;s et en fonctionnement pour que Exchange puisse &eacute;galement &ecirc;tre install&eacute; et fonctionner correctement. Un serveur Active Directory est un ordinateur qui h&eacute;berge une base de donn&eacute;es permettant une administration centralis&eacute;e sur l&rsquo;ensemble du r&eacute;seau d&rsquo;entreprise. Un serveur de catalogue global est un r&eacute;f&eacute;rentiel centralis&eacute; qui contient des informations sur chaque domaine du r&eacute;seau d&rsquo;entreprise.</p>
+
+			<p> Exchange doit &ecirc;tre install&eacute; dans un domaine o&ugrave; chaque ordinateur fonctionne sous Windows&nbsp;2000, ou une version ult&eacute;rieure de Windows. C&rsquo;est ce que l&rsquo;on appelle le mode natif. Les contr&ocirc;leurs de domaine Windows&nbsp;NT ne peuvent pas fonctionner dans un environnement natif.</p>
+
+			<p> La base de donn&eacute;es Active Directory est organis&eacute;e selon un sch&eacute;ma. Un serveur fonctionnant sous Windows&nbsp;2003 est d&eacute;sign&eacute; comme contr&ocirc;leur de sch&eacute;ma. Seul ce serveur pourra modifier l&rsquo;organisation de la base de donn&eacute;es utilisateur Active Directory. Lorsque l&rsquo;administrateur r&eacute;seau a besoin de modifier la structure Active Directory, cette modification est effectu&eacute;e sur le contr&ocirc;leur de sch&eacute;ma. Active Directory copie ensuite automatiquement la mise &agrave; jour sur les autres serveurs d&rsquo;authentification.</p>
+
+			<p><span class="bold">Installation du serveur de messagerie</span><br>Il est pr&eacute;f&eacute;rable de tester l&rsquo;environnement avant d&rsquo;installer Exchange. Pour &eacute;viter que l&rsquo;installation n&rsquo;affecte le fonctionnement quotidien de votre r&eacute;seau, configurez les services requis et installez Exchange sur un groupe d&eacute;di&eacute; de serveurs, s&eacute;par&eacute;s du r&eacute;seau principal. S&eacute;parez l&rsquo;installation d&rsquo;Exchange de votre r&eacute;seau de production tant que vous n&rsquo;&ecirc;tes pas s&ucirc;r qu&rsquo;elle fonctionne correctement.</p>
+
+			<p>Avant d&rsquo;installer Exchange, pr&eacute;parez les &eacute;l&eacute;ments suivants&nbsp;:</p>
+
+				<ul>
+				   <li>un d&eacute;ploiement DNS fiable et enti&egrave;rement fonctionnel&nbsp;;</li>
+				   <li>un domaine Active Directory&nbsp;;</li>
+				   <li>un catalogue global au minimum&nbsp;;</li>
+				   <li>une fonctionnalit&eacute; de domaine native Windows&nbsp;2000 ou version sup&eacute;rieure&nbsp;;</li>
+				   <li>un logiciel serveur Exchange&nbsp;;</li>
+				   <li>des outils de support serveur Windows&nbsp;;</li>
+				   <li>un serveur contr&ocirc;leur de sch&eacute;ma&nbsp;;</li>
+				   <li>une connexion Internet haut d&eacute;bit.</li>
+
+				</ul>
+
+			<p>Vous &ecirc;tes pr&ecirc;t &agrave; installer le serveur de messagerie lorsque toutes les qualifications de votre r&eacute;seau sont en place. Vous devrez cependant ajouter IIS (Internet Information Services) &agrave; l&rsquo;aide de l&rsquo;assistant Ajout/Suppression de composants Windows, avant de commencer l&rsquo;installation du serveur Exchange. IIS est un serveur dot&eacute; de programmes servant &agrave; cr&eacute;er et &agrave; g&eacute;rer des services de site Web. Vous pouvez lancer l&rsquo;installation d&rsquo;Exchange une fois IIS install&eacute;. Ins&eacute;rez le CD d&rsquo;installation et lancez l&rsquo;assistant Nouvelle installation Exchange.</p>
+
+			<p>L&rsquo;assistant vous guide tout au long d&rsquo;une proc&eacute;dure vous permettant de d&eacute;terminer si Exchange est pr&ecirc;t &agrave; &ecirc;tre install&eacute;. Il v&eacute;rifie qu&rsquo;IIS est install&eacute;, que les serveurs de domaine fonctionnent correctement et que les outils de support Windows sont install&eacute;s. Le programme d&rsquo;installation vous avertit en cas de probl&egrave;me au niveau de l&rsquo;environnement d&rsquo;installation. Dans ce cas, vous devez r&eacute;soudre le probl&egrave;me, puis relancer le programme d&rsquo;installation.</p>
+
+			<p>Une fois Exchange install&eacute;, le plug-in Microsoft Management Console pour Exchange, pr&eacute;sent&eacute; dans la Figure&nbsp;4, vous permet d&rsquo;acc&eacute;der aux diff&eacute;rents param&egrave;tres de configuration &agrave; partir d&rsquo;un emplacement pratique. Pensez &agrave; bien installer toutes les mises &agrave; jour pour que le serveur fonctionne correctement. Vous pouvez utiliser Exchange System Manager, une console qui contr&ocirc;le le d&eacute;ploiement d&rsquo;Exchange, pour g&eacute;rer les options du serveur.</p>
+
+            <p>Servez-vous de la console ADUC (Active Directory Users and Computer) pour configurer la bo&icirc;te aux lettres d&rsquo;un utilisateur. Cette op&eacute;ration est &eacute;galement appel&eacute;e &laquo;&nbsp;activation de la bo&icirc;te aux lettres&nbsp;&raquo;. </p>
+            <p>Ouvrez la console ADUC pour cr&eacute;er un nouvel utilisateur. Compl&eacute;tez les champs de nom d&rsquo;utilisateur et de mot de passe conform&eacute;ment &agrave; la strat&eacute;gie de s&eacute;curit&eacute; de domaine d&eacute;finie, comme indiqu&eacute; dans la Figure&nbsp;5. La bo&icirc;te aux lettres de l&rsquo;utilisateur est cr&eacute;&eacute;e par le serveur Exchange lorsque l&rsquo;utilisateur re&ccedil;oit son premier courriel.</p>
+
+			<p>La configuration d&rsquo;Exchange exige une planification minutieuse, impliquant notamment de v&eacute;rifier que les serveurs, les services et les technologies r&eacute;seau sont en place et fonctionnent correctement. Dans certains cas, une panne peut se produire durant l&rsquo;installation&nbsp;; il est alors parfois n&eacute;cessaire de r&eacute;installer le syst&egrave;me d&rsquo;exploitation et de recommencer la proc&eacute;dure d&rsquo;installation d&rsquo;Exchange. </p>
+
+			<p><span class="bold">REMARQUE&nbsp;</span>: avant de planifier l&rsquo;installation d&rsquo;un serveur de messagerie, consultez des professionnels de la mise en r&eacute;seau, des experts en r&eacute;seau Windows ou des techniciens exp&eacute;riment&eacute;s sp&eacute;cialis&eacute;s dans la messagerie.</p>
+
+          </td>
+          </tr>
+         </table>
+       </td>
+     </tr>
+	</table>
+
+</body>
+
+</html>

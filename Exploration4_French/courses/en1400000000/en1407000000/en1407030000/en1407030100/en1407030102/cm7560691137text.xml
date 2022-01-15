@@ -1,0 +1,79 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+<text><![CDATA[<b>IPv4 and IPv6 Addresses</b>]]></text>
+</component>
+
+
+<component id="ID_button1">
+  <text><![CDATA[<b>Address Structure</b>]]></text> 
+</component>
+
+<component id="ID_button2">
+  <text><![CDATA[<b>Perspective</b>]]></text> 
+</component>
+
+
+
+<component id="ID_table01a">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>IPv4: 4 octets</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>11000000.10101000.11001001.01110000</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>192.168.10.101</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>4,294,467,295 (2³²) IP addresses</b></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_table01b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>IPv6: 16 octets</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>11010001.11011100.11001001.01110001.11011100. 11001100.01110001.11010001.11011100.11001001. 11010001.11011100.11001001.01110001</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>A524:72D3:2C80:DD02:0029:EC7A:002B:EA73</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>3.4 x 10³ IP addresses</b></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+
+<component id="ID_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>340,282,366,920,938,463,463,374,607,431,768,211,456</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li>There are so many IPv6 addresses available that many trillions of addresses could be assigned to every human being on the planet.</li><li>There are approximately 665,570,793,348,866,943,898,599 addresses per square meter of the surface of the planet Earth!</li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_table03">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Examples</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><ul><li><font face="_typewriter"><b>FF01:0:0:0:0:0:0:1</b></font> becomes  <font face="_typewriter"><b>FF01::1</b></font></li><li><font face="_typewriter"><b>0:0:0:0:0:0:0:1</b></font> becomes  <font face="_typewriter"><b>::1</b></font></li><li><font face="_typewriter"><b>0:0:0:0:0:0:0:0</b></font> becomes <font face="_typewriter"><b>::</b></font></li><li><font face="_typewriter"><b>FF01:0000:0000:0000:0000:0000:0000:1</b></font> becomes <font face="_typewriter"><b>FF01:0:0:0:0:0:0:1</b></font> becomes <font face="_typewriter"><b>FF01::1</b></font></li><li><font face="_typewriter"><b>E3D7:0000:0000:0000:51F4:00C8:C0A8:6420</b></font> becomes <font face="_typewriter"><b>E3D7::51F4:C8:C0A8:6420</b></font></li><li><font face="_typewriter"><b>3FFE:0501:0008:0000:0260:97FF:FE40:EFAB</b></font> becomes <font face="_typewriter"><b>3FFE:501:8:0:260:97FF:FE40:EFAB</b></font> becomes <font face="_typewriter"><b>3FFE:501:8::260:97FF:FE40:EFAB</b></font></li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+</textcomponents>

@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="./css/blackonwhite.css"/>
+		<script>
+		var url = new String(window.location);
+		if (url.indexOf("direction=rtl") > -1) {
+			document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"./css/rtl.css\"/>");
+		}
+		</script>
+
+
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script language="javascript" src="../js/utils/mootools-release-1.11.js"></script>
+		<script language="javascript" src="./js/search.js"></script>
+		<script language="javascript" src="./js/glossary.js"></script>
+		<script language="javascript" src="./js/navigation.js"></script>
+		<script language="javascript" src="./js/popups.js"></script>
+		<script>
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+			
+			function init() {
+				var url = new String(window.location);
+				if (url.indexOf("glossary") > -1) {
+					glossary();
+				} else if (url.indexOf("search") > -1 ) {
+					search();
+				} else {
+					alert('error: no window type specified');
+				}
+			}
+
+		</script>
+	</head>
+
+	<body OnLoad="init()">
+		<div id="toolsdiv"></div>
+	</body>
+</html>

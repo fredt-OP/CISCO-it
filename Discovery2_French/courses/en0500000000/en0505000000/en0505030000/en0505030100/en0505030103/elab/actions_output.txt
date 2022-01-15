@@ -1,0 +1,551 @@
+//zmg, 03.01.01
+//this file needs a better description!
+
+
+//Modified by Bargavi 
+//to be compatible with Flash MX
+
+// Modified by Dean Wood 05.10.01
+//  Changed hard-coded 7s to cursorXOffset
+//  Changed hard-coded 15s to cursorYOffset
+//  Added call to manual_scrolling_setSlider() in output_writeOut()
+//  Added call to manual_scrolling_setSlider() in output_writeOneMore()
+
+// output_setCursor()
+// IN : None
+// DO : Sets the cursor placement of the cursor object in the HyperTerminal movieclip
+// OUT: None
+function output_setCursor() {
+
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+		HyperTerminal.cursor._x = (cx + (cursorX * cursorXOffset));
+	}
+}
+
+
+// output_initCursor()
+// IN : None
+// DO : Sets the cursor to invisible and moves it to the correct line
+// OUT: None
+function output_initCursor() {
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+		// set the y position of cursor -> should always be this value
+		HyperTerminal.cursor._y = cy + cursorYOffset * cursorY;
+
+		// set the starting visibility of cursor to false
+		HyperTerminal.cursor._visible = false;
+	}
+}
+
+
+// ***** output_processMore(int) *****
+// IN :	An integer representing the key pressed
+// DO :	Interpret the key and decide how to continue with the --More--
+// OUT: None
+function output_processMore(keycode) {
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+		// resets the scroll to print more lines
+		scrollStartLine = lastDLine - 23;
+	}
+
+
+	if (commandline_matchKey(keycode," ")) {
+
+		// SPACE is pressed
+		// write one more page
+		output_writeMore();
+
+	} else if (keycode == 13) {
+
+		// ENTER is pressed
+		// write one more line
+		output_writeOneMore();
+
+	} else {
+
+		// all other keys
+		// exit the more state
+		output_exitMore();
+	}
+}
+
+
+
+
+
+// ***** output_writeMore () *****
+// IN : None
+// DO :	Write one more page when SPACE is pressed
+// OUT: None
+function output_writeMore() {
+
+
+	// pointer to active router object
+	var r = eval("r" + VISIBLE_ROUTER);
+
+	// remove the last display line, which is " --More-- "
+	r.line.splice(r.lastDLine,1);
+
+	// let the counter know that a line has been removed
+	r.lastLine--;
+
+
+	if ((r.lastDLine+23) < r.lastLine) {
+
+		// if there is one more page after this page
+		output_write();
+
+	} else {
+
+		//else change the process back to
+		//commandline_processCommandLine and print out
+		//the command prompt
+		commandline_changeProcess("commandline_processCommandLine");
+		commandline_commandLine();
+	}
+}
+
+
+
+
+// ***** output_exitMore () *****
+// IN : None
+// DO :	Exits the more state and changes back to the command line
+// OUT: None
+function output_exitMore() {
+
+
+	// change process back to commandline_processCommandLine
+	commandline_changeProcess("commandline_processCommandLine");
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+
+		// turn the more flag off
+		MORE = false;
+
+		// remove the last display line, which is " --More-- "
+		line.splice(lastDLine,1);
+
+		// move the display line back to make up for the removal of " --More-- "
+		lastDLine--;
+
+		// set the current line to the last display line + 1
+		line.length = lastDLine+1;
+		lastLine = lastDLine+1;
+	}
+
+	// put a line of space between the printed info and the command line
+	output_write("\n");
+
+	// print out the command line
+	commandline_commandLine();
+}
+
+
+
+
+
+// ***** output_writeOneMore () *****
+// IN : None
+// DO :	Set up the correct printing operations
+// OUT: Write out one line of text and then the " --More-- " cursor
+function output_writeOneMore() {
+
+
+	// pointer to active router object
+	var r = eval("r" + VISIBLE_ROUTER);
+
+	// remove the last display line, which is " --More-- "
+	r.line.splice(r.lastDLine,1);
+
+	// let the counter know that a line has been removed
+	r.lastLine--;
+
+	// turn the 'one at a time printing method' flag on
+	r.oneMoreLine = true;
+
+	if ((r.lastDLine+1) < r.lastLine) {
+
+		// if there is another line to print, print it
+		output_write();
+
+	} else {
+
+		//else change the process back to
+		//commandline_processCommandLine and print out
+		//the command prompt
+		commandline_changeProcess("commandline_processCommandLine");
+		commandline_commandLine();
+	}
+
+	manual_scrolling_setSlider();
+}
+
+
+
+
+
+// ***** output_write(strings) *****
+// IN :	Any number of strings; provided that every argument can only contain
+//      ONE "\n" character that must be at the end of the argument.
+// DO :	Store the arguments to <line>
+// OUT: None
+function output_write() {
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+
+
+		// if the screen is not already writing
+		if (WRITING == false) {
+
+			// go back to the last screen if user has scrolled to another
+			indexLine = lastDLine - 23;
+
+			// update the new start line for scrolling
+			scrollStartLine = indexLine;
+		}
+
+
+
+		// store each line of text to the line buffer
+		var i=0;
+		var o_f = output_feed;
+		var len = arguments.length
+		for (i=0; i<len; i++) {
+			o_f(arguments[i]);
+		}
+
+
+		// if no more than one page of text
+		if (MORE == false) {
+
+			// set the last display line to the last line in the buffer
+			lastDLine = lastLine;
+
+			// linesToMore is the number of lines to trigger the more function
+			var linesToMore = 46;
+			if (oneMoreLine == true) {
+				linesToMore = 24;
+			}
+
+			// if the number of lines is enough to trigger the More function
+			if ((lastLine-scrollStartLine) > linesToMore) {
+
+				// set the last display line to the starting line of this page plus linesToMore
+				lastDLine = scrollStartLine + linesToMore;
+
+				// add the " --More-- " line to the last display line
+				line.splice(lastDLine,0," --More-- \n");
+
+				// let the counter know you've added a line
+				lastLine++;
+
+				// turn the More function on
+				MORE = true;
+
+				// change process to intepret keys for the more function
+				commandline_changeProcess("output_processMore");
+			}
+		}
+		// if the screen is not already writing..
+		if (WRITING == false) {
+
+			// turn writing on, then call the writeOut function
+			WRITING = true;
+			output_writeOut();
+		}
+	}
+}
+
+
+
+// ***** output_writeOut() *****
+// IN : None
+// DO : Write one line at a time from the line buffer to the screen
+//      then scroll down. Plays <delay> movie, and the movie calls
+//	this function to print the next line
+// OUT: Writes the line buffer to the HyperTerminal screen
+function output_writeOut() {
+//var startTime = getTimer();
+//trace("startTime = "+ startTime);
+
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+
+
+		// set stop line to different situations
+		if (MORE == true) {
+
+
+			if (oneMoreLine == true) {
+
+				// if we're scrolling one at a time only go forward 2
+				stopLine = scrollStartLine + 2;
+
+			} else {
+
+				// else we're scrolling a page at a time
+				stopLine = scrollStartLine + 24;
+			}
+
+
+		} else {
+
+			// else leave some space from the bottom when we're done
+			stopLine = lastDLine - 22;
+		}
+
+		// if this is before the last line to be printed
+		if (indexLine < stopLine) {
+			//Modified by Bargavi
+			// first, clear the screen
+			with(eval("HyperTerminal.s" + VISIBLE_ROUTER)) {output.text = String("");} 
+			 // clear screen  Bargavi
+
+			// print out 24 lines starting from <indexLine>
+			var i=0;
+			var target_time =0;
+			var i_L = indexLine;
+			for (i=i_L; i<(i_L+24); i++) {
+
+				//looking for PAUSE flag
+				if (line[i] == "PAUSE\n") {
+
+					// replace PAUSE flag with empty line to maintain line cohesion
+					line.splice(i,1,"\n");
+
+					target_time = (getTimer()/1000) + 5; // the time at which to continue
+
+					// waiting for the right time
+					for(;target_time>(getTimer()/1000);){
+						// trying to update clock during wait
+						timer_timeCompute();
+					}
+				}
+
+
+				//Bargavi			
+                             with(eval("HyperTerminal.s" + active_router ))
+				 {
+				   output.text =output.text + line[i];
+				  } //Bargavi             
+			  }
+
+
+	  		// if this is the last line, then display the cursor
+			if (indexLine == (stopLine-1)) {
+
+				if (MORE == true) {
+					// if we are printing the More cursor, offset it
+					cursorX = 10;
+				} else {
+					//else the cursor is at the normal position
+					cursorX = line[stopLine+22].length;
+				}
+
+				HyperTerminal.cursor._x = cx + cursorXOffset * cursorX;
+
+				// show the cursor
+				HyperTerminal.cursor._visible = true;
+
+			} else {
+
+				// else we hide the cursor
+				HyperTerminal.cursor._visible = false;
+			}
+
+			// check for the possible positions of the index line and correct it
+			if (indexLine == (stopLine-1)) {
+				indexLine++;
+			} else if ((indexLine+3) >= stopLine) {
+				indexLine = stopLine-1;
+			} else {
+				indexLine+=3;
+			}
+
+			// call the delay movie, and the movie will call back this function
+			// to print out the rest of the data
+			tellTarget (delay) {
+				gotoAndPlay(2);
+			}
+
+			
+		} else {
+
+			// else everything has been printed and we can stop this loop
+			MORE = false;
+			oneMoreLine = false;
+			WRITING = false;
+
+			manual_scrolling_setSlider();
+		}
+}
+	
+//var endTime = getTimer();
+//trace("endTime = "+ endTime);
+//trace("elapsed time = " + (endTime-startTime)/1000 + "\n");
+}
+
+
+
+
+
+
+// ***** output_erase(int) *****
+// IN :	One integer that is the number of characters to be erased
+// DO :	Erase that number of characters
+// OUT: The modified line
+function output_erase(leng) {
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+
+		// take out the specified # of characters from the last element in line
+		line[lastLine] = line[lastLine].substring(0,line[lastLine].length-leng);
+
+		// write out the buffer
+		output_write();
+	}
+}
+
+
+
+
+// ***** output_feed(string) *****
+// IN : 1 line of text from output_write()
+// DO : Store the text to <line>
+// OUT: None
+function output_feed(content) {
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+
+
+		//if the line has over 80 characters, it will split
+		//it up into multiple lines.
+		
+		while((line[lastLine].length+content.length) > 80) {
+
+			// get the number of characters available on the last line
+			feedLength = 80 - line[lastLine].length;
+
+			// add as much as you can of the input text to the line
+			line[lastLine] += content.substring(0,feedLength) + "\n";
+
+			// subtract the amount given to line from the input
+			content = content.substring(feedLength,content.length);
+
+			// tell the line array that it had another line of text added
+			lastLine++;
+		}
+
+		// add the remaining text to the line buffer
+		line[lastLine] += content;
+
+		// if the last character is "\n", then go to next line
+		if (content.charAt(content.length-1) == "\n") {
+			lastLine++;
+		}
+
+
+  		// if buffer is full, then take out first line in buffer
+		while (lastDLine > bufferLength) {
+
+			line.shift();
+			lastLine--;
+			indexLine--;
+			scrollStartLine--;
+			lastDLine--;
+		}
+	}
+}
+
+
+
+
+// NEW BY ZMG
+// ***** output_write2(array[]) *****
+// IN :	Any number of strings; provided that every argument can only contain
+//      ONE "\n" character that must be at the end of the argument.
+// DO :	Store the arguments to <line>
+// OUT: None
+function output_write2(hostname,address,arrayOfStrings) {
+
+	with(eval("r" + VISIBLE_ROUTER)) {
+                var o_f = output_feed;
+		// if the screen is not already writing
+		if (WRITING == false) {
+
+			// go back to the last screen if user has scrolled to another
+			indexLine = lastDLine - 23;
+
+			// update the new start line for scrolling
+			scrollStartLine = indexLine;
+		}
+
+		o_f("\n");
+		if (hostname == "") {
+			o_f("Tracing route to ["+address+"]\n");
+		} else {
+			output_feed("Tracing route to "+hostname+" ["+address+"]\n");
+		}
+		o_f("over a maximum of 30 hops:\n");
+		o_f("\n");
+
+		// store each line of text to the line buffer
+		var i =0;
+		var aos = arrayOfStrings.length
+		for (i=0; i < aos; i++) {
+
+			o_f(arrayOfStrings[i]);
+		}
+
+		o_f("\n");
+		o_f("Trace complete.\n");
+		o_f("\n");
+
+
+		// if no more than one page of text
+		if (MORE == false) {
+
+			// set the last display line to the last line in the buffer
+			lastDLine = lastLine;
+
+			// linesToMore is the number of lines to trigger the more function
+			var linesToMore = 46; //this is an initial value
+			if (oneMoreLine == true) {
+				linesToMore = 24;
+			}
+
+			// if the number of lines is enough to trigger the More function
+			if ((lastLine-scrollStartLine) > linesToMore) {
+
+				// set the last display line to the starting line of this page plus linesToMore
+				lastDLine = scrollStartLine + linesToMore;
+
+				// add the " --More-- " line to the last display line
+				line.splice(lastDLine,0," --More-- \n");
+
+				// let the counter know you've added a line
+				lastLine++;
+
+				// turn the More function on
+				MORE = true;
+
+				// change process to intepret keys for the more function
+				commandline_changeProcess("output_processMore");
+
+			}
+		}
+
+		// if the screen is not already writing..
+		if (WRITING == false) {
+
+			// turn writing on, then call the writeOut function
+			WRITING = true;
+			output_writeOut();
+			//output_setCursor();
+		}
+	}
+}

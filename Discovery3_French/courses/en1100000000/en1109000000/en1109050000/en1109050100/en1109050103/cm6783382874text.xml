@@ -1,0 +1,244 @@
+<textcomponents>
+
+<component id="ID_omitted">
+<text><![CDATA[<font face="Courier New Dynamic">(**output omitted**)</font>]]></text>
+</component>
+
+
+<component id="ID_check1">
+  <text><![CDATA[<B>Check</B>]]></text> 
+</component>
+<component id="ID_reset1">
+  <text><![CDATA[<B>Reset</B>]]></text> 
+</component>
+
+<component id="ID_check2">
+  <text><![CDATA[<B>Check</B>]]></text> 
+</component>
+<component id="ID_reset2">
+  <text><![CDATA[<B>Reset</B>]]></text> 
+</component>
+
+<component id="ID_check3">
+  <text><![CDATA[<B>Check</B>]]></text> 
+</component>
+<component id="ID_reset3">
+  <text><![CDATA[<B>Reset</B>]]></text> 
+</component>
+
+
+
+
+<component id="ID_button_01">
+  <text><![CDATA[<B>1</B>]]></text> 
+</component>
+
+<component id="ID_button_02">
+  <text><![CDATA[<B>2</B>]]></text> 
+</component>
+
+<component id="ID_button_03">
+  <text><![CDATA[<B>3</B>]]></text> 
+</component>
+
+
+
+
+<component id="ID_activity">
+<text><![CDATA[<B><font size='+2'>Activity</font></B><br><br>Analyze the network topology and router command output. Indicate whether the statements regarding ACLs and their effects are true or false.<br><br><B>For each scenario, select True or False for the series of statements.</B>]]></text>
+</component>
+
+<component id="ID_graphic01">
+  <text><![CDATA[<B>192.168.1.3</B>]]></text> 
+</component>
+
+<component id="ID_graphic02">
+  <text><![CDATA[<B>192.168.1.0/24</B>]]></text> 
+</component>
+
+<component id="ID_graphic03">
+  <text><![CDATA[<B>192.168.1.2</B>]]></text> 
+</component>
+
+<component id="ID_graphic04">
+  <text><![CDATA[<B>172.20.1.0/30</B>]]></text> 
+</component>
+
+<component id="ID_graphic05">
+  <text><![CDATA[<B>192.168.2.0/24</B>]]></text> 
+</component>
+
+<component id="ID_graphic06">
+  <text><![CDATA[<B>ACL 123 - Inbound</B>]]></text> 
+</component>
+
+<component id="ID_graphic07">
+  <text><![CDATA[<B>192.168.2.2</B>]]></text> 
+</component>
+
+<component id="ID_graphic08">
+  <text><![CDATA[<B>Fa0/0</B>]]></text> 
+</component>
+<component id="ID_graphic09">
+  <text><![CDATA[<B>Fa0/0</B>]]></text> 
+</component>
+
+<component id="ID_graphic10">
+  <text><![CDATA[<B>S0/0/0</B>]]></text> 
+</component>
+
+<component id="ID_graphic11">
+  <text><![CDATA[<B>S0/0/0</B>]]></text> 
+</component>
+
+<!-- Slide 1 -->
+  
+    <component id="slide1_txt_numrows">
+		<text><![CDATA[5]]></text> 
+	</component>
+	<component id="slide1_txt_numcols">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide1_txt_col1">
+		<text><![CDATA[True]]></text> 
+	</component>
+	<component id="slide1_txt_col2">
+		<text><![CDATA[False]]></text> 
+	</component>
+	<component id="slide1_txt_q1">
+		<text><![CDATA[<B>1. <TEXTFORMAT BLOCKINDENT='13'>This router is configured with a standard ACL.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide1_txt_q2">
+		<text><![CDATA[<B>2. <TEXTFORMAT BLOCKINDENT='13'>If a telnet packet from 192.168.1.5 enters Fa0/0 it will be permitted.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide1_txt_q3">
+		<text><![CDATA[<B>3. <TEXTFORMAT BLOCKINDENT='13'>Host 192.168.1.2 is permitted to transfer files to and from any FTP server.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide1_txt_q4">
+		<text><![CDATA[<B>4. <TEXTFORMAT BLOCKINDENT='13'>This ACL is applied to Fa0/0 inbound.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide1_txt_q5">
+		<text><![CDATA[<B>5. <TEXTFORMAT BLOCKINDENT='13'>If an HTTP packet from a host on network 192.168.1.0 is received on Fa0/0 inbound it will be permitted.</TEXTFORMAT></B>]]></text> 
+	</component>
+	
+        
+		
+	<component id="slide1_txt_a1">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide1_txt_a2">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide1_txt_a3">
+		<text><![CDATA[1]]></text> 
+	</component>
+	<component id="slide1_txt_a4">
+		<text><![CDATA[1]]></text> 
+	</component>
+	<component id="slide1_txt_a5">
+		<text><![CDATA[1]]></text> 
+	</component>
+
+   
+     <!-- Slide 2 -->
+  
+    <component id="slide2_txt_numrows">
+		<text><![CDATA[5]]></text> 
+	</component>
+	<component id="slide2_txt_numcols">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide2_txt_col1">
+		<text><![CDATA[True]]></text> 
+	</component>
+	<component id="slide2_txt_col2">
+		<text><![CDATA[False]]></text> 
+	</component>
+	<component id="slide2_txt_q1">
+		<text><![CDATA[<B>1. <TEXTFORMAT BLOCKINDENT='13'>This router ACL allows an administrator PC (192.168.1.2) to Telnet and FTP to any location.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide2_txt_q2">
+		<text><![CDATA[<B>2. <TEXTFORMAT BLOCKINDENT='13'>The administrator has been using FTP extensively.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide2_txt_q3">
+		<text><![CDATA[<B>3. <TEXTFORMAT BLOCKINDENT='13'>PCs other than 192.168.1.2 on the 192.168.1.0 network have attempted to telnet to other networks.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide2_txt_q4">
+		<text><![CDATA[<B>4. <TEXTFORMAT BLOCKINDENT='13'>This ACL prevents transferring a file using FTP from PC 192.168.1.3 to PC  192.168.1.5.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide2_txt_q5">
+		<text><![CDATA[<B>5. <TEXTFORMAT BLOCKINDENT='13'>Most hosts have used ip protocols other than FTP and Telnet (e.g. HTTP) to connect to other networks.</TEXTFORMAT></B>]]></text> 
+	</component>
+	
+        
+		
+	<component id="slide2_txt_a1">
+		<text><![CDATA[1]]></text> 
+	</component>
+	<component id="slide2_txt_a2">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide2_txt_a3">
+		<text><![CDATA[1]]></text> 
+	</component>
+	<component id="slide2_txt_a4">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide2_txt_a5">
+		<text><![CDATA[1]]></text> 
+	</component>
+
+       <!-- Slide 3 -->
+  
+    <component id="slide3_txt_numrows">
+		<text><![CDATA[5]]></text> 
+	</component>
+	<component id="slide3_txt_numcols">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide3_txt_col1">
+		<text><![CDATA[True]]></text> 
+	</component>
+	<component id="slide3_txt_col2">
+		<text><![CDATA[False]]></text> 
+	</component>
+	<component id="slide3_txt_q1">
+		<text><![CDATA[<B>1. <TEXTFORMAT BLOCKINDENT='13'>All packets from host 192.168.1.5 have been permitted by this router and ACL.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide3_txt_q2">
+		<text><![CDATA[<B>2. <TEXTFORMAT BLOCKINDENT='13'>This router is running only the EIGRP routing protocol.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide3_txt_q3">
+		<text><![CDATA[<B>3. <TEXTFORMAT BLOCKINDENT='13'>Packets from host 192.168.1.3 may be permitted by this router and ACL depending on the protocol they are using.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide3_txt_q4">
+		<text><![CDATA[<B>4. <TEXTFORMAT BLOCKINDENT='13'>Routing updates to multicast address 224.0.0.9 are being blocked by the ACL on this router.</TEXTFORMAT></B>]]></text> 
+	</component>
+	<component id="slide3_txt_q5">
+		<text><![CDATA[<B>5. <TEXTFORMAT BLOCKINDENT='13'>The IP address of the s0/0/0 interface on this router is 172.20.1.2.</TEXTFORMAT></B>]]></text> 
+	</component>
+	
+        
+		
+	<component id="slide3_txt_a1">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide3_txt_a2">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide3_txt_a3">
+		<text><![CDATA[1]]></text> 
+	</component>
+	<component id="slide3_txt_a4">
+		<text><![CDATA[2]]></text> 
+	</component>
+	<component id="slide3_txt_a5">
+		<text><![CDATA[2]]></text> 
+	</component>
+
+
+
+
+	
+</textcomponents>
+

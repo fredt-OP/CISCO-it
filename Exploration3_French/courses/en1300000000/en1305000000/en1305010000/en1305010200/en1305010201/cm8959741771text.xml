@@ -1,0 +1,140 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>Layer 2 Loops</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Click Play to see the animation.</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b><font size="12">Trunk2</font></b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b><font size="12">Trunk3</font></b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b><font size="12">Trunk1</font></b>]]></text> 
+  </component>
+<component id="ID_txt06">
+  <text><![CDATA[PC1 sends a broadcast to switch S2. Switch S2 updates its MAC address table with PC1’s MAC address on port F0/11.]]></text> 
+  </component>
+  <component id="ID_txt07">
+  <text><![CDATA[Switch S2 forwards the broadcast to switch S3 over Trunk2 and switch S1 over Trunk1. Switches S3 and S1 update their MAC address tables with the MAC address of PC1 on their Trunk ports.]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[Switch S3 forwards the broadcast to switch S1. Switch S1 forwards the broadcast to switch S3. Both switches update their MAC address with the new port on which it received the broadcast. ]]></text> 
+  </component>
+  <component id="ID_txt09">
+  <text><![CDATA[Switches S3 and S1 forward the broadcast back to switch S2. Switch S2 updates its MAC address table entry for PC1 with the last port on which it received the broadcast frame. ]]></text> 
+  </component>
+  <component id="ID_txt10">
+  <text><![CDATA[Switch S2 forwards the broadcast frame out Trunks 1 and 2 to switches S3 and S1. Switches S3 and S1 update their MAC address table with the new entry for PC1.]]></text>
+  </component>
+  <component id="ID_txt11a">
+  <text><![CDATA[<u>S3 MAC Table</u>]]></text>
+  </component>
+  <component id="ID_txt12a">
+  <text><![CDATA[<u>S1 MAC Table</u>]]></text>
+  </component>
+  <component id="ID_txt13a">
+  <text><![CDATA[<u>S2 MAC Table</u>]]></text>
+  </component>
+  <component id="ID_txt11">
+  <text><![CDATA[<u>S3 MAC Table</u>]]></text>
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[<u>S1 MAC Table</u>]]></text>
+  </component>
+  <component id="ID_txt13">
+  <text><![CDATA[<u>S2 MAC Table</u><br /><font color="#0000FF">PC1 = F0/11</font>]]></text>
+  </component>
+  <component id="ID_txt14">
+  <text><![CDATA[<u>S3 MAC Table</u><br /><font color="#0000FF">PC1 = F0/2</font>]]></text>
+  </component>
+  <component id="ID_txt15">
+  <text><![CDATA[<u>S1 MAC Table</u><br /><font color="#0000FF">PC1 = F0/1</font>]]></text>
+  </component>
+  <component id="ID_txt16">
+  <text><![CDATA[<u>S2 MAC Table</u><br />PC1 = F0/11]]></text>
+  </component>
+  <component id="ID_txt17">
+  <text><![CDATA[<u>S3 MAC Table</u><br /><font color="#0000FF">PC1 = F0/1</font>]]></text>
+  </component>
+  <component id="ID_txt18">
+  <text><![CDATA[<u>S1 MAC Table</u><br /><font color="#0000FF">PC1 = F0/2</font>]]></text>
+  </component>
+  <component id="ID_txt19">
+  <text><![CDATA[<u>S2 MAC Table</u><br />PC1 = F0/11]]></text>
+  </component>
+  <component id="ID_txt20">
+  <text><![CDATA[<u>S3 MAC Table</u><br />PC1 = F0/1]]></text>
+  </component>
+  <component id="ID_txt21">
+  <text><![CDATA[<u>S1 MAC Table</u><br />PC1 = F0/2]]></text>
+  </component>
+  <component id="ID_txt22">
+  <text><![CDATA[<u>S2 MAC Table</u><br /><font color="#FF6600">PC1 = F0/1</font>]]></text>
+  </component>
+  <component id="ID_txt23">
+  <text><![CDATA[<u>S3 MAC Table</u><br /><font color="#FF6600">PC1 = F0/2</font>]]></text>
+  </component>
+  <component id="ID_txt24">
+  <text><![CDATA[<u>S1 MAC Table</u><br /><font color="#FF6600">PC1 = F0/1</font>]]></text>
+  </component>
+  <component id="ID_txt25">
+  <text><![CDATA[<u>S2 MAC Table</u><br />PC1 = F0/1]]></text>
+  </component>
+  
+  
+  <component id="play"><text><![CDATA[Play]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rewind]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Fast Forward]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Mute]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[UnMute]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Restart]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[End]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Transcript]]></text>
+	</component>
+
+	<component id="ID_cont">
+		<text><![CDATA[Click Play to continue.]]></text>
+	</component>
+
+
+
+</textcomponents>

@@ -1,0 +1,99 @@
+﻿<textcomponents>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Vulnérabilités</b>]]></text>
+</component>
+
+
+<component id="ID_button1">
+  <text><![CDATA[<b>Technologie</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Configuration</b>]]></text> 
+</component>
+<component id="ID_button3">
+  <text><![CDATA[<b>Stratégie</b>]]></text> 
+</component>
+
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Faiblesses de sécurité des réseaux :</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Vulnérabilité du protocole TCP/IP</b><ul><li>Les protocoles HTTP (Hypertext Transfer Protocol), FTP (File Transfer Protocol) et ICMP (Internet Control Message Protocol) sont intrinsèquement non sécurisés.</li><li>Les protocoles SNMP (Simple Network Management Protocol), SMTP (Simple Mail Transfer Protocol) et les inondations SYN sont liés à la structure intrinsèquement non sécurisée qui est à la base de la conception du TCP.</li></ul><b>Vulnérabilité des systèmes d’exploitation</b><ul><li>Tous les systèmes d’exploitation présentent des problèmes de sécurité qui doivent être résolus.<br/>UNIX, Linux, Mac OS, Mac OS X, Windows NT, 9x, 2K, XP et Vista.<br/>Ces problèmes sont documentés dans les archives du CERT (Computer Emergency Response Team) disponibles sur le site http://www.cert.org.</li></ul><b>Vulnérabilité des équipements réseau</b><ul><li>Différents types d’équipements réseau, tels que les routeurs, les pare-feu et les commutateurs, ont des faiblesses de sécurité qui doivent faire l’objet d’une détection et d’une protection. Ces faiblesses concernent la protection des mots de passe, le manque d’authentification, les protocoles de routage et les ouvertures dans les pare-feu.</li></ul></td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+
+<component id="ID_table02">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='200' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Faiblesse</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Comment cette faiblesse est exploitée</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Comptes utilisateurs non sécurisés</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Les données des comptes utilisateurs peuvent être transmises de manière non sécurisée dans le réseau, ce qui expose les noms d’utilisateur et les mots de passe aux logiciels espions.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Comptes système avec mots de passe faciles à deviner</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Ce problème fréquent résulte de mots de passe utilisateur choisis de manière maladroite et qui sont dès lors faciles à deviner.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Services Internet mal configurés</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Problème courant : le recours à JavaScript dans les navigateurs Web, qui permet des attaques par des scripts malveillants lors de l’accès à des sites non fiables. Les protocoles IIS, FTP et les services de terminal posent également problème.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Paramètres par défaut non sécurisés dans les produits logiciels</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Un grand nombre de produits logiciels ont des paramètres de configuration par défaut qui génèrent des failles de sécurité.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Équipement réseau mal configuré</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Une mauvaise configuration de l’équipement lui-même peut engendrer de sérieux problèmes de sécurité. Par exemple, des listes d’accès, des protocoles de routage ou des chaînes de communauté SNMP mal configurées peuvent ouvrir de larges failles dans la sécurité.</td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+<component id="ID_table03">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='200' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Faiblesse </b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Comment cette faiblesse est exploitée</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Absence de stratégie de sécurité écrite</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Une stratégie de sécurité non écrite ne peut pas être appliquée ni respectée de manière cohérente.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Politique</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Les batailles politiques et les conflits entre départements peuvent rendre difficile la mise en œuvre d’une stratégie de sécurité cohérente.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Manque de continuité</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Des mots de passe mal choisis, faciles à casser ou des mots de passe par défaut peuvent conduire à des accès non autorisés au réseau.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Contrôle des accès logiques non appliqué</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Une supervision et des audits inadéquats permettent le gaspillage sans fin des ressources de l’entreprise par les attaques et l’utilisation non autorisée du réseau. Cela peut donner lieu à des actions en justice ou ruptures de contrat à l’encontre du technicien, de la direction du service informatique ou même de l’entreprise qui ne fait pas cesser de telles conditions d’insécurité.</td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Installation de logiciels et de matériels et modifications non conformes à la stratégie de sécurité</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Des modifications non autorisées de la topologie du réseau ou l’installation d’applications logicielles non approuvées engendrent des vulnérabilités.</td>
+	</tr>
+
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Absence d’un plan de reprise après sinistre</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>L’absence d’un plan de reprise après sinistre entraîne le chaos, la panique et la confusion lorsqu’un pirate s’attaque à l’entreprise. </td>
+	</tr>
+</table>]]></text>
+</component>
+
+
+
+</textcomponents>

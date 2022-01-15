@@ -1,0 +1,5 @@
+﻿<textcomponents>
+<component id="routerOutput">
+  <text><![CDATA[<font face='_typewriter'><b>access-list 1 permit 192.168.0.0 0.0.255.255</b></font><BR/><i>! - Définit les adresses qui peuvent être traduites.</i><BR/><font face='_typewriter'><b>ip nat pool NAT-POOL2 209.165.200.226 209.165.200.240</b></font><BR/><i>! - Définit un pool d’adresses nommé NAT-POOL2 à utiliser dans la traduction NAT.</i><BR/><font face='_typewriter'><b>ip nat inside source list 1 pool NAT-POOL2 overload</b></font><BR/><i>! - Associe le pool de traduction d’adresses de réseau à la liste de contrôle d’accès 1.</i><BR/><font face='_typewriter'><b>interface serial 0/0/0<BR/>ip nat inside</b></font><BR/><i>! - Identifie l’interface Serial 0/0/0 en tant qu’interface NAT interne.</i><BR/><font face='_typewriter'><b>interface serial 0/1/0<BR/>ip nat outside</b></font><BR/><i>! - Identifie l’interface Serial 0/1/0 en tant qu’interface NAT externe.</i>]]></text> 
+</component>
+</textcomponents>

@@ -1,0 +1,94 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Utilisez cet exercice pour tester vos connaissances sur les principaux sujets abordés dans ce chapitre.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>Une série de questions va s’afficher. Il ne s’agit pas d’un questionnaire et vos réponses ne sont pas enregistrées.</li><li>Cliquez sur <b>Réponse</b> pour voir la réponse.</li><li>Cliquez sur <b>Question suivante</b> pour passer à la question suivante.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Cliquez ici<br/>pour commencer</b>]]></text>
+</component>
+
+<!-- Question 1 -->
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Pouvez-vous répondre à cette question ?<br/>Cliquez sur <b>Réponse</b> pour vérifier votre réponse.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1) Comparez et différenciez les termes suivants : DLCI, LMI et ARP inverse.]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(voir 3.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<b>DLCI : identificateur de connexion de liaison de données</b><ul><li>Les circuits virtuels sont identifiés par des DLCI et ces identificateurs sont attribués par le fournisseur de services Frame Relay.</li><li>Les DLCI Frame Relay ont une signification locale et n’ont pas de signification en dehors de la liaison.</li><li>Un DLCI identifie un circuit virtuel sur l’équipement en bout de ligne.</li></ul><b>LMI : interface de supervision locale</b><ul><li>L’interface LMI est un mécanisme de test d’activité qui fournit des informations sur les connexions Frame Relay entre le routeur (ETTD) et le commutateur Frame Relay (DCE).</li><li>Trois types d’interfaces LMI sont pris en charge par les routeurs Cisco : Cisco, ANSI, et q933a</li></ul><b>ARP inverse</b><ul><li>Le protocole de résolution d’adresse inverse obtient les adresses de couche 3 des autres stations à partir des adresses de couche 2, comme le DCLI dans les réseaux Frame Relay (ce qui est l’inverse de l’ARP).</li><li>Ce protocole est principalement utilisé dans les réseaux Frame Relay et ATM, où les adresses de couche 2 des circuits virtuels sont parfois obtenues par la signalisation de couche 2. Les adresses correspondantes de couche 3 doivent être disponibles pour pouvoir utiliser ces circuits virtuels.</li></ul>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2) Examinez l’illustration. La configuration s’applique au routeur R1. Quelle commande devez-vous exécuter sur R1 pour configurer une connexion Frame Relay à R2 de manière statique ? Le trafic entre les deux sites doit également prendre en charge le protocole OSPF.]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(voir 3.2)]]></text>
+</component>
+<component id="ID_topology01">
+<text><![CDATA[<b>Commutateur FR</b>]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<font face="_sans">frame-relay map ip 10.1.1.2 102 broadcast</font>]]></text>
+</component>
+<component id="ID_Q2_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3) Comparez et différenciez les termes suivants : débit d’accès, débit de données garanti (CIR), débit garanti en rafale (CBIR) et débit garanti en excès (BE).]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(voir 3.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>Débit d’accès (ou vitesse du port)</b><ul><li>Capacité de la boucle locale.</li><li>Les frais de cette ligne sont facturés en fonction de la vitesse du port entre l’ETTD et le DCE (de client à fournisseur de services).</li></ul><b>CIR</b><ul><li>Débit de la boucle locale garanti par le fournisseur de services.</li><li>Les clients choisissent en général un débit CIR inférieur au débit d’accès pour pouvoir bénéficier des rafales.</li></ul><b>CBIR</b><ul><li>Débit maximal négocié auquel des trames peuvent être transmises en rafale au-dessus du CIR.</li><li>Ces trames sont marquées comme éligibles à la suppression (bit DE).</li><li>Ce débit ne peut pas dépasser le débit d’accès de la liaison.</li></ul><b>BE</b><ul><li>Débit de données supérieur au CBIR et ne dépassant pas le débit d’accès qui peut être utilisé en rafale sans garantie.</li><li>Les trames sont également marquées comme éligibles à la suppression (DE) et ne peuvent dépasser le débit d’accès de la liaison.</li></ul>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Question<br/>suivante</b>]]></text>
+</component>
+
+<!-- LAST QUESTION -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Réponse</b>]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4) Examinez l’illustration. Le routeur R1 est incapable d’établir des connexions Frame Relay de point à point avec les routeurs R2 et R3. D’après les informations fournies ici, quel changement apporté à la configuration du routeur R1 permettrait de résoudre le problème ?]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(voir 3.4)]]></text>
+</component>
+<component id="ID_topologyQ4">
+<text><![CDATA[<b>Frame Relay</b>]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[<b>Sur le routeur R1</b><ul><li>L’interface série principale et les sous-interfaces devraient être respectivement Serial 0/0/0, Serial 0/0/0.102, et Serial 0/0/0.103.</li><li>Un masque de sous-réseau erroné est appliqué aux sous-interfaces. Le masque de sous-réseau devrait être 255.255.255.252.</li><li>Les DLCI de la commande frame-relay interface-dlci devraient être 102 et 103 respectivement.</li></ul>]]></text>
+</component>
+<component id="ID_conclusion">
+<text><![CDATA[<b>Fin des questions portant sur les thèmes de ce chapitre.</b>]]></text>
+</component>
+</textcomponents>

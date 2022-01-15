@@ -1,0 +1,123 @@
+﻿<textcomponents>
+<!-- popups -->
+<component id="popup1title">
+	<text><![CDATA[Port auxiliaire]]></text>
+</component>
+<component id="popup1">
+	<text><![CDATA[Le port auxiliaire est un port de gestion qui permet de configurer le périphérique à distance.  Il permet notamment de connecter un modem pour assurer la gestion du périphérique en cas de dysfonctionnement du chemin réseau.  Les routeurs ne sont pas tous équipés d’un port auxiliaire.]]></text>
+</component>
+<component id="popup2title">
+	<text><![CDATA[Console]]></text>
+</component>
+<component id="popup2">
+	<text><![CDATA[Le port de console permet de configurer localement le périphérique. Il s’agit d’un port de gestion, non conçu comme une mise en réseau.]]></text>
+</component>
+<component id="popup3title">
+	<text><![CDATA[UART (émetteur-récepteur asynchrone universel) à double interface utilisateur]]></text>
+</component>
+
+<component id="popup3">
+	<text><![CDATA[UART (Universal Asynchronous Receiver/Transmitter, Émetteur-récepteur asynchrone universel) double dit « À double interface », car il est accessible par deux moyens (le port auxiliaire et le port de console).]]></text>
+</component>
+<component id="popup4title">
+	<text><![CDATA[Mémoires CompactFlash et flash]]></text>
+</component>
+<component id="popup4">
+	<text><![CDATA[Stocke l’image du logiciel Cisco IOS dans le module SIMM (Single In-line Memory Module, module de mémoire à connexion simple) flash ou dans la carte PCMCIA.]]></text>
+</component>
+<component id="popup5title">
+	<text><![CDATA[Mémoire ROM amorçable]]></text>
+</component>
+
+<component id="popup5">
+	<text><![CDATA[Stocke l'amorce, le moniteur ROM et éventuellement une version simplifiée du logiciel IOS. Partage la mémoire flash avec la mémoire vive (RAM) rémanente .]]></text>
+</component>
+<component id="popup6title">
+	<text><![CDATA[Mémoire vive rémanente (NVRAM)]]></text>
+</component>
+<component id="popup6">
+	<text><![CDATA[Stocke la configuration initiale et partage la mémoire flash avec la mémoire ROM amorçable.]]></text>
+</component>
+<component id="popup7title">
+	<text><![CDATA[Processeur]]></text>
+</component>
+<component id="popup7">
+	<text><![CDATA[Le processeur est le cerveau de l’ordinateur. C’est le processeur qui gère la plupart des opérations réalisées : il interprète les instructions des programmes informatiques et traite les données.]]></text>
+</component>
+<component id="popup8title">
+	<text><![CDATA[ASIC de contrôle système]]></text>
+</component>
+<component id="popup8">
+	<text><![CDATA[Il contrôle les flux de données entre la mémoire, les interfaces et le processeur.]]></text>
+</component>
+<component id="popup9title">
+	<text><![CDATA[DIMM SDRAM]]></text>
+</component>
+<component id="popup9">
+	<text><![CDATA[Il stocke la configuration en cours, la table de routage et les autres structures dynamiques.]]></text>
+</component>
+<component id="popup10title">
+	<text><![CDATA[Interfaces]]></text>
+</component>
+<component id="popup10">
+	<text><![CDATA[Il comporte deux emplacements modulaires et deux ports Fast Ethernet intégrés.]]></text>
+</component>
+<!-- text -->
+    <component id="ID_txt01">
+		<text><![CDATA[<b>Auxiliaire</b>]]></text>
+	</component>
+    <component id="ID_txt02">
+		<text><![CDATA[<b>Console</b>]]></text>
+	</component>
+    <component id="ID_txt03">
+		<text><![CDATA[<b>UART à double<br/>interface utilisateur</b>]]></text>
+	</component>
+    <component id="ID_txt04">
+		<text><![CDATA[<b>Carte mémoire<br/>CompactFlash</b>]]></text>
+	</component>
+    <component id="ID_txt05">
+		<text><![CDATA[<b>Flash<br/>32, 64 ou 128 Mo<br/>(32 Mo par défaut)</b>]]></text>
+	</component>
+    <component id="ID_txt06">
+		<text><![CDATA[<b>Mémoire morte (ROM) amorçable</b>]]></text>
+	</component>
+<component id="ID_txt06a">
+	<text><![CDATA[<b>Mémoire vive (RAM) rémanente</b>]]></text>
+</component>
+<component id="ID_txt06b">
+	<text><![CDATA[<b>Mémoire flash<br/>2 ou 4 Mo</b>]]></text>
+</component>
+    <component id="ID_txt07">
+		<text><![CDATA[<b>UC<br/>M860<br/>Processeur</b>]]></text>
+	</component>
+    <component id="ID_txt08">
+		<text><![CDATA[<b>ASIC<br/>de contrôle<br/>système</b>]]></text>
+	</component>
+    <component id="ID_txt09">
+		<text><![CDATA[<b>DIMM<br/>SDRAM<br/>128 Mo<br/>(extensibles à<br/>348 Mo)</b>]]></text>
+	</component>
+    <component id="ID_txt10">
+		<text><![CDATA[<b>Emplacement 0<br/>HWIC/WIC/VWIC</b>]]></text>
+	</component>
+    <component id="ID_txt11">
+		<text><![CDATA[<b>Emplacement 1<br/>HWIC/WIC/VWIC</b>]]></text>
+	</component>
+    <component id="ID_txt12">
+		<text><![CDATA[<b>FastEthernet 0/0</b>]]></text>
+	</component>
+    <component id="ID_txt13">
+		<text><![CDATA[<b>FastEthernet 0/1</b>]]></text>
+	</component>
+	    <component id="ID_txt14">
+			<text><![CDATA[<b>Bus UC</b>]]></text>
+	</component>
+	    <component id="ID_txt15">
+			<text><![CDATA[<b>Bus<br/>système</b>]]></text>
+	</component>
+	   <component id="ID_inst">
+<text><![CDATA[<b>Schéma logique des composants internes d’un routeur Cisco 1841.<br/> Survolez chaque composant à l’aide du pointeur de la souris pour afficher la description correspondante.</b>]]></text>
+	</component>
+	    <component id="ID_title">
+			<text><![CDATA[<b>Composants matériels d’un routeur</b>]]></text>
+	</component>
+</textcomponents>

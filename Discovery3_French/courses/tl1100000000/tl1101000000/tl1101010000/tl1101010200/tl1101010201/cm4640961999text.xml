@@ -1,0 +1,53 @@
+﻿<textcomponents>
+
+<component id="instructions">
+  <text><![CDATA[<b>Cliquez sur chaque couche pour afficher sa fonctionnalité.</b>]]></text> 
+  </component>
+
+<component id="ID_txtEmail">
+  <text><![CDATA[<b>Serveur de messagerie</b>]]></text> 
+  </component>
+<component id="ID_txtEmail2">
+  <text><![CDATA[<b>Serveur de messagerie</b>]]></text> 
+  </component>
+<component id="ID_txtDNS">
+  <text><![CDATA[<b>Serveur DNS</b>]]></text> 
+  </component>
+<component id="ID_txtWeb">
+  <text><![CDATA[<b>Serveur Web</b>]]></text> 
+  </component>
+<component id="ID_txtV">
+  <text><![CDATA[<font color="ffffff"><b>V</b></font>]]></text> 
+  </component>
+
+<component id="txt1">
+  <text><![CDATA[<ul><li>Fournit un point de connexion entre les périphériques utilisateur et le réseau</li><li>Permet à plusieurs hôtes de se connecter à d’autres hôtes via un périphérique réseau tel qu’un commutateur</li><li>Se situe sur le même réseau logique</li><li>Achemine le trafic vers d’autres hôtes sur le même réseau logique</li><li>Transfère le trafic vers la couche de distribution si le message est destiné à un hôte situé sur un autre réseau</li></ul>]]></text> 
+  </component>
+<component id="titletxt1">
+  <text><![CDATA[<b>Couche d’accès</b>]]></text> 
+  </component>
+
+<component id="txt2">
+  <text><![CDATA[<ul><li>Fournit un point de connexion pour des réseaux locaux distincts</li><li>Contrôle le flux d’informations circulant entre des réseaux locaux</li><li>Garantit que le trafic entre des hôtes situés sur le même réseau local reste local</li><li>Transfère le trafic destiné à d’autres réseaux</li><li>Filtre le trafic entrant et sortant à des fins de sécurité et de gestion du trafic</li><li>Contient des commutateurs et des routeurs plus puissants que la couche d’accès</li><li>Transmet des données à la couche coeur de réseau afin qu’elles soient envoyées à un réseau distant si le réseau local n’est pas directement connecté</li></ul>]]></text> 
+  </component>
+<component id="titletxt2">
+  <text><![CDATA[<b>Couche distribution </b>]]></text> 
+  </component>
+
+<component id="txt3">
+  <text><![CDATA[<ul><li>Fournit une couche fédératrice à haut débit avec des connexions redondantes (de sauvegarde)</li><li>Achemine de grandes quantités de données entre plusieurs réseaux finaux</li><li>Inclut des commutateurs et des routeurs à haut débit, très puissants</li></ul>]]></text> 
+  </component>
+<component id="titletxt3">
+  <text><![CDATA[<b>Couche coeur de réseau</b>]]></text> 
+  </component>
+
+<component id="ID_coreLayer">
+  <text><![CDATA[<b>Couche coeur de réseau</b>]]></text> 
+  </component>
+<component id="ID_distributionLayer">
+  <text><![CDATA[<b>Couche <br>distribution</b>]]></text> 
+  </component>
+<component id="ID_accessLayer">
+  <text><![CDATA[<b>Couche d’accès</b>]]></text> 
+  </component>
+</textcomponents>

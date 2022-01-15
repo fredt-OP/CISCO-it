@@ -1,0 +1,158 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Identificateur de protocole]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Version]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[Type de message]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[Indicateurs]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[ID racine]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[Coût du chemin racine]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[ID de pont]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[ID du port]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[Âge du message]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[Âge maximal]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[Délai Hello]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[Délai de transmission]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[Structure BPDU]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[Placez le pointeur sur les champs BPDU pour obtenir plus d’informations.]]></text>
+</component>
+
+
+<component id="ID_txtTitle1">
+<text><![CDATA[<b>Identificateur de protocole</b>]]></text>
+</component>
+
+<component id="ID_txtBody1">
+<text><![CDATA[<li>Toujours 0</li>]]></text>
+</component>
+
+<component id="ID_txtTitle2">
+<text><![CDATA[<b>Version</b>]]></text>
+</component>
+
+<component id="ID_txtBody2">
+<text><![CDATA[<li>Toujours 0</li>]]></text>
+</component>
+
+<component id="ID_txtTitle3">
+<text><![CDATA[<b>Type de message</b>]]></text>
+</component>
+
+<component id="ID_txtBody3">
+<text><![CDATA[<li>Indique le type de BPDU (Configuration ou Notification de changement de topologie) contenu dans la trame.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle4">
+<text><![CDATA[<b>Indicateurs</b>]]></text>
+</component>
+
+<component id="ID_txtBody4">
+<text><![CDATA[<li>Utilisés pour gérer les changements dans la topologie active.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle5">
+<text><![CDATA[<b>ID racine</b>]]></text>
+</component>
+
+<component id="ID_txtBody5">
+<text><![CDATA[<li>Inclut l’ID de pont (BID) du pont racine.</li><li>Présente la même valeur après la convergence que tous les BPDU dans le réseau relié par un pont.</li>]]></text>
+</component>
+
+
+<component id="ID_txtTitle6">
+<text><![CDATA[<b>Coût du chemin racine</b>]]></text>
+</component>
+
+<component id="ID_txtBody6">
+<text><![CDATA[<li>Coût cumulé de toutes les liaisons vers le pont racine.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle7">
+<text><![CDATA[<b>ID de pont</b>]]></text>
+</component>
+
+<component id="ID_txtBody7">
+<text><![CDATA[<li>BID du pont qui a créé le BPDU actuel.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle8">
+<text><![CDATA[<b>ID du port</b>]]></text>
+</component>
+
+<component id="ID_txtBody8">
+<text><![CDATA[<li>Présente une valeur unique pour chaque pont.</li><li>Contient la valeur 0x8001 pour le Port 1/1, la valeur 0x8002 pour le Port 1/2, etc.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle9">
+<text><![CDATA[<b>Âge du message</b>]]></text>
+</component>
+
+<component id="ID_txtBody9">
+<text><![CDATA[<li>Enregistre le temps écoulé depuis que le pont racine a généré les informations à partir desquelles le BPDU actuel est dérivé.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle10">
+<text><![CDATA[<b>Âge maximal</b>]]></text>
+</component>
+
+<component id="ID_txtBody10">
+<text><![CDATA[<li>Durée maximale d’enregistrement d’un BPDU.</li><li>Influence le compteur d’obsolescence de la table de pontage lors du processus de notification de changement de topologie.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle11">
+<text><![CDATA[<b>Délai Hello</b>]]></text>
+</component>
+
+<component id="ID_txtBody11">
+<text><![CDATA[<li>Durée entre chaque BPDU de configuration périodique.</li>]]></text>
+</component>
+
+<component id="ID_txtTitle12">
+<text><![CDATA[<b>Délai de transmission</b>]]></text>
+</component>
+
+<component id="ID_txtBody12">
+<text><![CDATA[<li>Temps écoulé entre les états d’écoute et d’apprentissage.</li><li>Influence les compteurs lors du processus de notification de changement de topologie.</li>]]></text>
+</component>
+
+
+
+</textcomponents>

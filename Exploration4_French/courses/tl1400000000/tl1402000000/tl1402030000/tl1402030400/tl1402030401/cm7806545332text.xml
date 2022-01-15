@@ -1,0 +1,39 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Paramètres de la commande <font face='_typewriter'>debug ppp</font></b>]]></text> 
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='150' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Paramètre</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color='#FFFFFF'><b>Utilisation</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>packet</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche les paquets PPP envoyés et reçus. Cette commande affiche les transferts de paquets à bas niveau.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>negotiation</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche les paquets PPP transmis lors du démarrage de PPP, au moment où les options PPP sont négociées.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>error</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche les erreurs de protocole et les statistiques d’erreur associées à la négociation et à l’utilisation de la connexion PPP.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>authentification</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche les messages du protocole d’authentification, notamment les échanges de paquets CHAP (Challenge Handshake Authentication Protocol) et les échanges PAP (Password Authentication Protocol).</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>compression</font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche les informations spécifiques de l’échange de connexions PPP via MPPC. Cette commande est utile pour obtenir des informations de numéro de séquence du paquet incorrect au moment où la compression MPPC est activée.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>cbcp</font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche les erreurs de protocole et les statistiques d’erreur associées aux négociations de connexion PPP via MSCB.</td>
+	</tr>
+</table>]]></text>
+</component>
+</textcomponents>

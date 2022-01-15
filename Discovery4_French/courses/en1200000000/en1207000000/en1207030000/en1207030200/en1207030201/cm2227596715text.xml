@@ -1,0 +1,89 @@
+<textcomponents>
+
+<component id="ID_txt01">    
+<text><![CDATA[]]></text> 
+</component>
+
+<component id="ID_table1">
+	<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Business Goal</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Overall Success Criteria</b></font></td>
+</tr>
+
+<tr>
+  <td bgcolor='#F2F2F2'><font color='#000000'><b>Provide better customer service by improving the access to the web site for viewing of schedules, purchasing and printing of tickets, and purchasing of merchandise</b></font></td>
+  <td bgcolor='#F2F2F2'><font color='#000000'><b>Demonstrate that web services are available, from both on and off-site locations, with little or no disruption in services caused by equipment or link failure</b></font></td>
+  </tr>
+
+<tr>
+<td bgcolor='#999999'><b>Technical Requirements</b></td>
+<td bgcolor='#999999'><b>Success Criteria</b></td>
+</tr>
+<tr>
+<td bgcolor='#CCCCCC'><b>Scalability</b></td>
+<td bgcolor='#CCCCCC'><b>  </b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Configuration of a flexible IP addressing structure</b></td>
+<td bgcolor='#F2F2F2'><b>Adding additional subnets and server addresses does not cause routing or addressing reconfiguration</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Creating a modular server farm design that can accommodate more servers without impacting the design</b></td>
+<td bgcolor='#F2F2F2'><b>Adding an additional server does not require reconfiguration</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><b>Availability</b></td>
+<td bgcolor='#CCCCCC'><b>  </b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Using redundant links from servers to the Access Layer switches</b></td>
+<td bgcolor='#F2F2F2'><b>The failure of a single Access Layer switch does not affect server connectivity</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Creating redundant Layer 2 switch connections at the Access Layer and using RSTP to shorten the time for redundant switched links to become active after a failure</b></td>
+<td bgcolor='#F2F2F2'><b>RSTP converges quickly when a link or device fails</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Configuration of a fast converging routing protocol (EIGRP) at the Distribution Layer and Core Layer.</b></td>
+<td bgcolor='#F2F2F2'><b>EIGRP converges quickly, with little or no loss of connectivity in the event of link failure</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><b>Security</b></td>
+<td bgcolor='#CCCCCC'><b>  </b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Apply filters to permit traffic to only the required ports on the servers</b></td>
+<td bgcolor='#F2F2F2'><b>Undesirable traffic is blocked before reaching the servers</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Install firewalls and IDS capabilities at the Distribution Layer</b></td>
+<td bgcolor='#F2F2F2'><b>Attack signatures and known threats are stopped from reaching the servers</b></td>
+</tr>
+
+<tr>
+<td bgcolor='#CCCCCC'><b>Manageability</b></td>
+<td bgcolor='#CCCCCC'><b>  </b></td>
+</tr>
+
+<tr>
+<td bgcolor='#F2F2F2'><b>Create management VLAN and provide access to the data center devices through SSH</b></td>
+<td bgcolor='#F2F2F2'><b>Management station is able to initiate an SSH session to devices inside the data center.</b></td>
+</tr>
+
+</table>
+]]></text>
+</component>
+
+
+</textcomponents>

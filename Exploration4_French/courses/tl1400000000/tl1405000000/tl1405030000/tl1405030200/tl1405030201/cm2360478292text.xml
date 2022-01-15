@@ -1,0 +1,86 @@
+<textcomponents>
+
+<component id="ID_title01">
+  <text><![CDATA[<b>Configuration de listes de contrôle d’accès étendues</b>]]></text> 
+</component>
+
+
+
+<component id="ID_caption">
+  <text><![CDATA[<b>Faites défiler cette fenêtre pour voir toute la syntaxe des commandes.</b>]]></text> 
+  </component>
+<component id="ID_button1">
+  <text><![CDATA[Commandes]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[Configuration de listes de contrôle d’accès étendues ]]></text> 
+</component>
+<component id="ID_header1">
+  <text><![CDATA[<B>Paramètre</B>]]></text> 
+</component>
+<component id="ID_header2">
+  <text><![CDATA[<B>Description</B>]]></text> 
+</component>
+<component id="ID_txt01">
+  <text><![CDATA[<B>La liste de contrôle d’accès 103 autorise des requêtes vers les ports 80 et 443.<BR/>La liste de contrôle d’accès 104 autorise des réponses établies HTTP et HTTPS.</B>]]></text> 
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>access-list</b> <i>numéro-liste-accès </i><b>{deny | permit | remark}</b><i> protocole source </i><b>[</b><i>masque-générique-source </i><b>]</b><br><b>[operator</b> <i>opérateur </i><b>] [port</b> <i> numéro-port ou nom </i><b>]</b><i> destination</i> <b>[</b><i>masque-générique-destination </i><b>][operator</b><br></i>opérateur</i><b>] [port</b><i> numéro-port ou nom </i><b>][established]<b>]]></text> 
+</component>
+
+<component id="table1">
+	<text><![CDATA[<table bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+<tr>
+<td width='205' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>numéro-liste-accès</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Identifie la liste de contrôle d’accès à l’aide d’un numéro entre 100 et 199 (liste de contrôle d’accès IP étendue) ou entre 2000 et 2699 (liste de contrôle d’accès IP étendue).</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>deny</B></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Refuse l’accès si les conditions sont respectées.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>permit</B></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Autorise l’accès si les conditions sont respectées.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>remark</B></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Indique si cette entrée autorise ou bloque l’adresse spécifiée. Peut également être utilisée pour entrer une remarque.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>protocole</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Nom ou numéro d’un protocole Internet. Les mots clés communs comprennent <b>icmp, ip, tcp</b> ou <b>udp</b>. Pour faire correspondre un protocole Internet quelconque (y compris les protocoles ICMP, TCP et UDP), utilisez le mot clé <b>ip</b>.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>source</i></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Numéro du réseau ou de l’hôte d’où provient le paquet.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>masque-générique-source</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Bits de masque générique à appliquer à la source.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>destination</i></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Numéro du réseau ou de l’hôte auquel le paquet est envoyé.</td>
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>masque-générique-destination</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Bits de masque générique à appliquer à la destination.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>opérateur</i></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Facultatif) Compare le port source et le port de destination. Les opérateurs éventuels sont les suivants : <B>lt</B> (inférieur à), <B>gt</B> (supérieur à), <B>eq</B> (égal), <B>neq</B> (non égal) et <B>range</B> (plage inclusive)</td>.
+</tr>
+<tr>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><i>port</i></td>
+<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Facultatif) Numéro décimal ou nom d’un port TCP ou UDP.</td>
+</tr>
+<tr>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><B>established</B></td>
+<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>(Facultatif) Pour le protocole TCP uniquement : indique une connexion établie.</td>
+</tr>
+
+
+</table>]]></text>
+  </component>
+
+</textcomponents>

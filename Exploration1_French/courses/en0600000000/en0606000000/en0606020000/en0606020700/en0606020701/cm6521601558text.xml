@@ -1,0 +1,68 @@
+<textcomponents>
+
+<component id="ID_title">
+	<text><![CDATA[<b>IP Address Classes</b>]]></text>
+</component>
+
+<component id="ID_title1">
+	<text><![CDATA[** All zeros (0) and all ones (1) are invalid hosts addresses.]]></text>
+</component>
+
+<!--table-->
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='65' valign='top' type='dynamic'><font color='#FFFFFF'><b>Address Class</b></font></td>
+		<td width='75' valign='top' type='dynamic'><font color='#FFFFFF'><b>1st octet range (decimal)</b></font></td>
+		<td width='130' valign='top' type='dynamic'><font color='#FFFFFF'><b>1st octet bits (<font color="#8AFE89">green bits do not change</font>)</b></font></td>
+		<td width='100' valign='top' type='dynamic'><font color='#FFFFFF'><b>Network(<font color="#70A9FE">N</font>) and Host(<font color="#FF6600">H</font>) parts of address</b></font></td>
+		<td width='100' valign='top' type='dynamic'><font color='#FFFFFF'><b>Default subnet mask (decimal and binary)</b></font></td>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Number of possible networks and hosts per network</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>A</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>1-127**</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font color="#009900">0</font>0000000-<font color="#009900">0</font>1111111</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font color="#3E8AFD">N</font><font color="#FF6600">.H.H.H</font></td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font color="#3E8AFD">255</font><font color="#FF6600">.0.0.0</font></td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>128 nets (2^7)<br/>16,777,214 hosts per net (2^24-2)</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>B</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>128-191</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'><font color="#009900">10</font>000000-<font color="#009900">10</font>111111</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'><font color="#3E8AFD">N.N</font><font color="#FF6600">.H.H</font></td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'><font color="#3E8AFD">255.255</font><font color="#FF6600">.0.0</font></td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>16,384 nets (2^14)<br/>65,534 hosts per net (2^16-2)</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>C</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>192-223</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font color="#009900">110</font>00000-<font color="#009900">110</font>11111</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font color="#3E8AFD">N.N.N</font><font color="#FF6600">.H</font></td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font color="#3E8AFD">255.255.255</font><font color="#FF6600">.0</font></td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>2,097,150 nets (2^21)<br/>254 hosts per net (2^8-2)</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>D</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>224-239</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'><font color="#009900">1110</font>0000-<font color="#009900">1110</font>1111</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'>NA (multicast)</td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'> </td>
+		<td bgcolor='#F2F2F2' valign='top' type='dynamic'> </td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>E</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>240-255</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'><font color="#009900">1111</font>0000-<font color="#009900">1111</font>1111</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'>NA (experimental)</td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'> </td>
+		<td bgcolor='#DDDDDD' valign='top' type='dynamic'> </td>
+	</tr>
+</table>]]></text>
+</component>
+
+</textcomponents>
+
+
+

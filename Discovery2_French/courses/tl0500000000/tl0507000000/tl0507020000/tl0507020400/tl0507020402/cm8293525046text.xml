@@ -1,0 +1,198 @@
+﻿<textcomponents>
+
+<component id="ID_txt26a">
+      <text><![CDATA[<b>Ports UDP et TCP</b>]]></text> 
+  </component>
+  
+<component id="ID_txt27a">
+  <text><![CDATA[<b>Cliquez sur la couche transport pour afficher le tableau des ports réservés.</b>]]></text> 
+  </component>
+
+<component id="ID_txt01">
+  <text><![CDATA[<b>Application</b>]]></text> 
+  </component>
+  
+<component id="ID_txt02">
+  <text><![CDATA[<b>Transport</b>]]></text> 
+  </component>
+  
+<component id="ID_txt03">
+  <text><![CDATA[<b>Internet</b>]]></text> 
+  </component>
+  
+<component id="ID_txt04">
+  <text><![CDATA[<b>Accès réseau</b>]]></text> 
+  </component>
+  
+<component id="ID_txt05">
+  <text><![CDATA[<b>HTTP</b>]]></text> 
+  </component>
+  
+<component id="ID_txt06">
+  <text><![CDATA[<b>SMTP</b>]]></text> 
+  </component>
+  
+<component id="ID_txt07">
+  <text><![CDATA[<b>DNS</b>]]></text> 
+  </component>
+  
+<component id="ID_txt08">
+    <text><![CDATA[<b>HTTP</b>]]></text> 
+    </component>
+    
+<component id="ID_txt09">
+    <text><![CDATA[<b>SMTP</b>]]></text> 
+    </component>
+    
+<component id="ID_txt10">
+    <text><![CDATA[<b>DNS</b>]]></text> 
+    </component>
+    
+<component id="ID_txt11">
+    <text><![CDATA[<b>TCP</b>]]></text> 
+    </component>
+    
+<component id="ID_txt12">
+    <text><![CDATA[<b>UDP</b>]]></text> 
+    </component>
+<component id="ID_txt13">
+    <text><![CDATA[<b>TCP</b>]]></text> 
+    </component>
+    
+<component id="ID_txt14">
+    <text><![CDATA[<b>UDP</b>]]></text> 
+  </component>
+  
+<component id="ID_txt15">
+      <text><![CDATA[<b>IP</b>]]></text> 
+  </component>
+  
+<component id="ID_txt16">
+      <text><![CDATA[<b>IP</b>]]></text> 
+  </component>
+  
+<component id="ID_txt17">
+      <text><![CDATA[<b>Réseau</b>]]></text> 
+  </component>
+  
+<component id="ID_txt18">
+      <text><![CDATA[<b>Client</b>]]></text> 
+  </component>
+  
+<component id="ID_txt19">
+      <text><![CDATA[<b>Serveur</b>]]></text> 
+  </component>
+  
+<component id="ID_txt20">
+      <text><![CDATA[<b>80</b>]]></text> 
+  </component>
+  
+  <component id="ID_txt20port">
+      <text><![CDATA[<b>Port :</b>]]></text> 
+  </component>
+  
+<component id="ID_txt21">
+      <text><![CDATA[<b>25</b>]]></text> 
+  </component>
+  
+<component id="ID_txt22">
+      <text><![CDATA[<b>53</b>]]></text> 
+  </component>
+  
+<component id="ID_txt23">
+      <text><![CDATA[<b>80</b>]]></text> 
+  </component>
+  
+<component id="ID_txt24">
+      <text><![CDATA[<b>25</b>]]></text> 
+  </component>
+  
+<component id="ID_txt25">
+      <text><![CDATA[<b>53</b>]]></text> 
+  </component>
+
+
+<component id="ID_myTable">
+  <text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+<tr>
+<td width='130'><font size='14' color='#ffffff'>Numéro du port de destination</font></td>
+<td width='130'><font size='14' color='#ffffff'>Abréviation</font></td>
+<td><font size='14' color='#ffffff'>Définition</font></td>
+</tr>
+
+<tr>
+<td bgcolor="#F0F2F4">20</td>
+<td bgcolor="#F0F2F4">Données FTP</td>
+<td bgcolor="#F0F2F4">Protocole FTP (File Transfer Protocol) (pour le transfert de données)</td>
+</tr>
+
+<tr>
+<td bgcolor="#DDE2E7">21</td>
+<td bgcolor="#DDE2E7">Contrôle FTP</td>
+<td bgcolor="#DDE2E7">Protocole FTP (File Transfer Protocol) (pour établir la connexion)</td>
+</tr>
+<tr>
+<td bgcolor="#F0F2F4">23</td>
+<td bgcolor="#F0F2F4">Telnet</td>
+<td bgcolor="#F0F2F4">Teletype Network</td>
+</tr>
+<tr>
+<td bgcolor="#DDE2E7">25</td>
+<td bgcolor="#DDE2E7">SMTP</td>
+<td bgcolor="#DDE2E7">Simple Mail Transfer Protocol</td>
+</tr>
+<tr>
+<td bgcolor="#F0F2F4">53</td>
+<td bgcolor="#F0F2F4">DNS</td>
+<td bgcolor="#F0F2F4">Service de noms de domaine</td>
+</tr>
+<tr>
+<td bgcolor="#DDE2E7">69</td>
+<td bgcolor="#DDE2E7">TFTP</td>
+<td bgcolor="#DDE2E7">Trivial File Transfer Protocol</td>
+</tr>
+<tr>
+<td bgcolor="#F0F2F4">80</td>
+<td bgcolor="#F0F2F4">HTTP</td>
+<td bgcolor="#F0F2F4">Hypertext Transfer Protocol</td>
+</tr>
+<tr>
+<td bgcolor="#DDE2E7">110</td>
+<td bgcolor="#DDE2E7">POP3</td>
+<td bgcolor="#DDE2E7">Post Office Protocol (version 3)</td>
+</tr>
+<tr>
+<td bgcolor="#F0F2F4">137</td>
+<td bgcolor="#F0F2F4">NBNS</td>
+<td bgcolor="#F0F2F4">Microsoft NetBIOS Name Service (service de noms NetBIOS de Microsoft)</td>
+</tr>
+<tr>
+<td bgcolor="#DDE2E7">143</td>
+<td bgcolor="#DDE2E7">IMAP4</td>
+<td bgcolor="#DDE2E7">Protocole IMAP4 (Internet Message Access Protocol version 4)</td>
+</tr>
+<tr>
+<td bgcolor="#F0F2F4">161</td>
+<td bgcolor="#F0F2F4">SNMP</td>
+<td bgcolor="#F0F2F4">Simple Network Management Protocol</td>
+</tr>
+<tr>
+<td bgcolor="#DDE2E7">443</td>
+<td bgcolor="#DDE2E7">HTTPS</td>
+<td bgcolor="#DDE2E7">Protocole HTTPS (Hypertext Transfer Protocol Secure)</td>
+</tr>
+<tr>
+<td bgcolor="#F0F2F4">546</td>
+<td bgcolor="#F0F2F4">Client DHCP</td>
+<td bgcolor="#F0F2F4">Protocole DHCP (Dynamic Host Configuration Protocol) (client)</td>
+</tr>
+<tr>
+<td bgcolor="#DDE2E7">547</td>
+<td bgcolor="#DDE2E7">Serveur DHCP</td>
+<td bgcolor="#DDE2E7">Protocole DHCP (Dynamic Host Configuration Protocol) (serveur)</td>
+</tr>
+</table>]]></text> 
+  </component>
+
+</textcomponents>
+  

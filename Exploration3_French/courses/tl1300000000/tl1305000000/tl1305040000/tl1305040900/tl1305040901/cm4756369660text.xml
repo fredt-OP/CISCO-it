@@ -1,0 +1,119 @@
+<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Scénario d’échec de configuration STP</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur Lire pour lancer l’animation.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Ce réseau est totalement convergent.<br/><br/>Le commutateur S3 possède une meilleure trame BPDU que le commutateur S2, et tant que le port F0/3 du commutateur S2 recevra les BPDU du commutateur S3, le port F0/3 du commutateur S2 restera en état de blocage et rejettera toutes les diffusions reçues du commutateur S3.</b>]]></text>
+</component>
+<component id="ID_txt02">
+  <text><![CDATA[<b>Pont racine</b>]]></text> 
+  </component>
+<component id="ID_txt03">
+  <text><![CDATA[<b>Port désigné = PD<br/>Port non désigné = PND<br/>Port racine = PR<br/>Acheminement = A<br/>Blocage = B</b>]]></text> 
+  </component>
+  <component id="ID_txt04">
+  <text><![CDATA[<b>Pour une raison inconnue, le port F0/3 du commutateur S2 ne reçoit plus de BPDU pendant le délai de 20 secondes par défaut défini par le paramètre max_age.<br/><br/>La plupart des problèmes de l’algorithme STA surviennent en raison de pertes excessives de trames BPDU, ce qui provoque le passage des ports bloqués à l’état d’acheminement.</b>]]></text> 
+  </component>
+  <component id="ID_txt05">
+  <text><![CDATA[<b>Pont racine</b>]]></text> 
+  </component>
+  <component id="ID_txt06">
+<text><![CDATA[<b>Port désigné = PD<br/>Port non désigné = PND<br/>Port racine = PR<br/>Acheminement = A<br/>Blocage = B</b>]]></text>
+</component>
+<component id="ID_txt07">
+  <text><![CDATA[<b>Le port F0/3 du commutateur S2 passe à l’état d’acheminement.</b>]]></text> 
+  </component>
+  <component id="ID_txt08">
+  <text><![CDATA[<b>Pont racine</b>]]></text> 
+  </component>
+  <component id="ID_txt09">
+<text><![CDATA[<b>Port désigné = PD<br/>Port non désigné = PND<br/>Port racine = PR<br/>Acheminement = A<br/>Blocage = B</b>]]></text>
+</component>
+<component id="ID_txt10">
+  <text><![CDATA[<b>Acheminement</b>]]></text> 
+  </component>
+  <component id="ID_txt11">
+  <text><![CDATA[<b>Échec de l’arbre recouvrant<br/><br/>Le port F0/3 du commutateur S2 est passé de l’état de blocage à l’état d’acheminement.<br/><br/>Une tempête de diffusion se produit.</b>]]></text> 
+  </component>
+  <component id="ID_txt12">
+  <text><![CDATA[<b>Pont racine</b>]]></text> 
+  </component>
+  <component id="ID_txt13">
+<text><![CDATA[<b>Port désigné = PD<br/>Port non désigné = PND<br/>Port racine = PR<br/>Acheminement = A<br/>Blocage = B</b>]]></text>
+</component>
+
+<component id="ID_bridge">
+<text><![CDATA[<b>ID de pont</b>]]></text>
+</component>
+
+<component id="ID_root">
+<text><![CDATA[<b>ID de racine</b>]]></text>
+</component>
+
+<component id="ID_BPDU">
+<text><![CDATA[<b>BPDU</b>]]></text>
+</component>
+
+<component id="ID_bframe">
+<text><![CDATA[<b>Adresse de diffusion</b>]]></text>
+</component>
+
+  
+  
+  <component id="play"><text><![CDATA[Lire]]></text>
+
+	</component>
+
+    <component id="pause">
+
+		<text><![CDATA[Pause]]></text>
+
+	</component>
+
+    <component id="rewind">
+
+		<text><![CDATA[Rembobiner]]></text>
+
+	</component>
+	<component id="forward">
+
+		<text><![CDATA[Avance rapide]]></text>
+
+	</component>
+
+    <component id="mute">
+
+		<text><![CDATA[Muet]]></text>
+
+	</component>
+
+    <component id="unmute">
+		<text><![CDATA[Désactiver Muet]]></text>
+
+	</component>
+
+    <component id="previous">
+
+		<text><![CDATA[Redémarrer]]></text>
+	</component>
+
+    <component id="next">
+
+		<text><![CDATA[Fin]]></text>
+	</component>
+
+<component id="transcript">
+		<text><![CDATA[Texte]]></text>
+	</component>
+
+
+
+
+
+</textcomponents>

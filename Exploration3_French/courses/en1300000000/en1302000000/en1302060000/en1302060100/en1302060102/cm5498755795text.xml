@@ -1,0 +1,232 @@
+<textcomponents>
+
+<component id="ID_setup">
+<text><![CDATA[<b>Use this activity to check your understanding of the main points in this chapter.</b>]]></text>
+</component>
+
+<component id="ID_setup2">
+<text><![CDATA[<ul><li>A series of questions will be presented. This is not a quiz and your answers are not recorded.</li><li>Click <b>Answer</b> to see the answer.</li><li>Click <b>Next Question</b> to go to the next question in the series.</li></ul>]]></text>
+</component>
+
+<component id="clickHere">
+<text><![CDATA[<b>Click Here<br/>to Begin</b>]]></text>
+</component>
+
+
+
+<!-- Question 1 -->
+
+
+
+<component id="ID_Q1_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q1_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you're correct.]]></text>
+</component>
+<component id="ID_Q1_txt03">
+<text><![CDATA[1)<TEXTFORMAT BLOCKINDENT='17'> Refer to the <a href='asfunction:_parent._parent.openPopUp'><font color="#0000FF"><u>exhibit</u></font>.</a> There are six steps in the process of a switch learning a MAC address for the purposes of forwarding Ethernet frames. Put the following six steps in order by placing the appropriate number in the blank.</textformat>]]></text>
+</component>
+<component id="ID_Q1_txt04">
+<text><![CDATA[(from 2.1)]]></text>
+</component>
+<component id="ID_Q1_txt05">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' width='70' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+			<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>The destination device replies to the broadcast with a unicast frame addressed to PC 1.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'>The switch enters the source MAC address and the switch port that received the frame into the address table.</td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>The switch enters the source MAC address of PC 2 and the port number of the switch port that received the frame into the address table. The destination address of the frame and its associated port is found in the MAC address table.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>The switch can now forward frames between source and destination devices without flooding, because it has entries in the address table that identify the associated ports.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor="#F2F2F2" glow='false' glowcolor='#FCA92E' type='dynamic'>Because the destination address is a broadcast, the switch floods the frame to all ports, except the port on which it received the frame.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>_______</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>The switch receives a broadcast frame from PC 1 on Port 1.</td>
+  </tr>
+</table>]]></text>
+</component>
+<component id="ID_Q1_txt05b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' width='70' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+			<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___4___</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>The destination device replies to the broadcast with a unicast frame addressed to PC 1.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>___2___</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>The switch enters the source MAC address and the switch port that received the frame into the address table.</td>
+  </tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___5___</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>The switch enters the source MAC address of PC 2 and the port number of the switch port that received the frame into the address table. The destination address of the frame and its associated port is found in the MAC address table.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>___6___</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>The switch can now forward frames between source and destination devices without flooding, because it has entries in the address table that identify the associated ports.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>___3___</td>
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>Because the destination address is a broadcast, the switch floods the frame to all ports, except the port on which it received the frame.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>___1___</td>
+	  <td valign='top' bgcolor="#DDDDDD" glow='false' glowcolor='#FCA92E' type='dynamic'>The switch receives a broadcast frame from PC 1 on Port 1.</td>
+  </tr>
+</table>]]></text>
+</component>
+<component id="ID_Q1_txt06">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+<!-- Question 2 -->
+
+<component id="ID_Q2_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q2_txt02">
+<text><![CDATA[A classless routing protocol includes the subnet mask in the routing update.]]></text>
+</component>
+<component id="ID_Q2_txt03">
+<text><![CDATA[2)<TEXTFORMAT BLOCKINDENT='17'> List the two principal switch forwarding methods and the two primary methods of memory buffering in switches.</textformat>]]></text>
+</component>
+<component id="ID_Q2_txt04">
+<text><![CDATA[(from 2.2)]]></text>
+</component>
+<component id="ID_Q2_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q2_txt06b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'>store-and-forward switching and cut-through switching</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'>port-based memory buffering and shared memory buffering</td>
+  </tr>
+</table>
+]]></text>
+</component>
+
+
+
+
+
+<!-- Question 3 -->
+
+<component id="ID_Q3_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q3_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q3_txt03">
+<text><![CDATA[3)<TEXTFORMAT BLOCKINDENT='17'> What is the likely reason for interface VLAN 99 displaying "up/down" as its status?</textformat>]]></text>
+</component>
+<component id="ID_Q3_txt04">
+<text><![CDATA[(from 2.3)]]></text>
+</component>
+<component id="ID_Q3_txt05">
+<text><![CDATA[<b>There are no active physical interfaces associated with VLAN 99.</b>]]></text>
+</component>
+<component id="ID_Q3_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q3_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+
+
+<!-- Question 4 -->
+
+<component id="ID_Q4_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q4_txt02">
+<text><![CDATA[Can you mentally answer this question?<br/>Click <b>Answer</b> to see if you’re correct.]]></text>
+</component>
+<component id="ID_Q4_txt03">
+<text><![CDATA[4)<TEXTFORMAT BLOCKINDENT='17'> Which two commands are unnecessary for a basic SSH configuration providing remote network connectivity for SSH clients? (Choose two.)</textformat>]]></text>
+</component>
+<component id="ID_Q4_txt04">
+<text><![CDATA[(from 2.4)]]></text>
+</component>
+<component id="ID_Q4_txt05">
+<text><![CDATA[The <b><font face='_typewriter'>ip ssh version 2</font></b> and <b><font face='_typewriter'>transport input SSH</font></b> commands are not required to provide remote access.]]></text>
+</component>
+<component id="ID_Q4_txt06">
+<text><![CDATA[<b>Previous<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q4_txt07">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+
+<!-- Question 5 -->
+
+<component id="ID_Q5_txt01">
+<text><![CDATA[<b>Answer</b>]]></text>
+</component>
+<component id="ID_Q5_txt02">
+<text><![CDATA[A classless routing protocol includes the subnet mask in the routing update.]]></text>
+</component>
+<component id="ID_Q5_txt03">
+<text><![CDATA[5)<TEXTFORMAT BLOCKINDENT='17'> List and describe the three port security violation modes.</textformat>]]></text>
+</component>
+<component id="ID_Q5_txt04">
+<text><![CDATA[(from 2.4)]]></text>
+</component>
+<component id="ID_Q5_txt05">
+<text><![CDATA[<b>Next<br/>Question</b>]]></text>
+</component>
+<component id="ID_Q5_txt06b">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr bgcolor="#F2F2F2">
+	  	  	<td valign='top' glow='false' glowcolor='#FCA92E' type='dynamic'> </td>
+	  	  	</tr>
+	<tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>protect:</b> When the number of secure MAC addresses reaches the limit allowed on the port, packets with unknown source addresses are dropped until you remove a sufficient number of secure MAC addresses or increase the number of maximum allowable addresses. You are not notified that a security violation has occurred.</td>
+  </tr>
+	<tr bgcolor="#DDDDDD">
+	  <td valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><b>restrict:</b> When the number of secure MAC addresses reaches the limit allowed on the port, packets with unknown source addresses are dropped until you remove a sufficient number of secure MAC addresses or increase the number of maximum allowable addresses. In this mode, you are notified that a security violation has occurred. Specifically, an SNMP trap is sent, a syslog message is logged, and the violation counter increments.</td>
+  </tr>
+  <tr bgcolor="#F2F2F2">
+	  <td valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><b>shutdown:</b> In this mode, a port security violation causes the interface to immediately become error-disabled and turns off the port LED. It also sends an SNMP trap, logs a syslog message, and increments the violation counter. When a secure port is in the error-disabled state, you can bring it out of this state by entering the <b>errdisable recovery cause</b> <i>psecure-violation</i> global configuration command, or you can manually re-enable it by entering the <b>shutdown</b> and <b>no shutdown</b> interface configuration commands. This is the default mode.</td>
+  </tr>
+</table>
+]]></text>
+</component>
+
+
+<component id="ID_conclusionTxt_01">
+<text><![CDATA[<b>This concludes this chapter's Problems and Discussion questions.</b>]]></text>
+</component>
+
+</textcomponents>
+
+
+
+

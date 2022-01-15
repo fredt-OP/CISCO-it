@@ -1,0 +1,8 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Interfaces de routeur vulnérables</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[<b>! ----- Section des services IP et réseau</b><br /><font face="_typewriter">no cdp run<br />no ip source-route<br />no ip classless<br />no service tcp-small-servers<br />no service udp-small-servers<br />no ip finger<br />no service finger<br />no ip bootp server<br />no ip http server<br />no ip name-server</font><br /><b>! ----- Section du contrôle de l’amorçage</b><br /><font face="_typewriter">no boot network<br />no service config</font><br /><b>! ----- Section SNMP (pour désactiver totalement SNMP)<br />! définissez une liste d’accès totalement restrictive</b><br /><font face="_typewriter">no access-list 70<br />access-list 70 deny any</font><br /><b>! définissez SNMP en lecture seule et soumis à la liste d’accès</b><br /><font face="_typewriter">snmp-server community aqiytj1726540942 ro 11</font><br /><b>! désactivez le piège SNMP et les fonctions d’arrêt du système</b><br /><font face="_typewriter">no snmp-server enable traps<br />no snmp-server system-shutdown<br />no snmp-server trap-auth</font><br /><b>! arrêtez complètement SNMP</b><br /><font face="_typewriter">no snmp-server</font><br /><b>! ----- Section des services par interface</b><br /><font face="_typewriter">interface eth 0/0<br />description de l’interface extérieure vers le réseau 14.1.0.0/16<br />no ip proxy-arp<br />no ip directed-broadcast<br />no ip unreachable<br />no ip redirect</font><br />]]></text>
+</component>
+</textcomponents>

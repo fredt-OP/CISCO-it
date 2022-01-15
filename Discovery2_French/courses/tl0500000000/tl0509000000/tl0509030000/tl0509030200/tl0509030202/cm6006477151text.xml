@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur les boutons pour visualiser le résultat du chevauchement des adresses IP affectées aux interfaces.</b>]]></text>
+</component>
+
+<component id="ID_button01">
+  <text><![CDATA[<b>Messages d’erreur de configuration</b>]]></text> 
+  </component>
+
+<component id="ID_button02">
+  <text><![CDATA[<b>Résultat</b>]]></text> 
+</component>
+<component id="output">
+  <text><![CDATA[<font face="courier new dynamic">R1<B>#show ip interface brief</B></font>
+&lt;résultat omis&gt;
+<font face="courier new dynamic"><B>FastEthernet0/1 192.168.1.2 YES manual administratively down down</B>
+</font>]]></text> 
+</component>
+</textcomponents>

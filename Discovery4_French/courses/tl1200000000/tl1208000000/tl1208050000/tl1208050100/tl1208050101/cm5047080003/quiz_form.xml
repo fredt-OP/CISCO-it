@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="13412" dateexported="06/30/2008">
+		<name>Module 8 Questionnaire</name>
+		<form id="21466" lang="fr"><form-item>
+			<ai id="140386" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140386" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Un logiciel de test est moins cher qu’un réseau de test.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>La modification de types de périphériques et de topologies est une procédure simple.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>Le trafic peut être observé et les paquets examinés.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>L’utilisation d’un logiciel accélère la construction de réseaux étendus.</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Contrôle</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Flexibilité</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Évolutivité</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext>Faible coût global</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser la description de logiciel de simulation de réseau à gauche sur l’avantage que celui-ci représente à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="21" yspacing="60" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75" /><display componentIdent="2" xpos="200" ypos="135" /><display componentIdent="3" xpos="200" ypos="195" /><display componentIdent="4" xpos="200" ypos="255" /></options><targets><display componentIdent="1" xpos="600" ypos="75" /><display componentIdent="2" xpos="600" ypos="127" /><display componentIdent="3" xpos="600" ypos="179" /><display componentIdent="4" xpos="600" ypos="231" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="222129" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="222129" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="222129" action="Set">1</setvar><scoringdescription>Réponses, de haut en bas : faible coût, flexibilité, contrôle, évolutivité.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140387" type="mc-ma"><question><![CDATA[Quelles actions peuvent permettre de simuler une connexion DSL ou une connexion de réseau étendu par câble dans un environnement de travaux pratiques ? (Choisissez trois réponses.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Utiliser des liaisons série à 100 Mbits/s entre les routeurs ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Utiliser des connexions Ethernet à 10 Mbits/s entre les routeurs via un câble de croisement  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Utiliser des liaisons Ethernet à 100 Mbits/s pour connecter les routeurs via un câble direct ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Utiliser des connexions Ethernet à 10 Mbits/s entre les routeurs via un câble direct ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Modifier la route statique préférée en augmentant la <b>distance administrative</b> attribuée à la route  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Utiliser la commande <b>bandwidth</b> sur les liaisons Ethernet pour ajuster la métrique de routage  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="70760" type="mc-sa"><question><![CDATA[Une requête ping est envoyée à l'adresse 192.168.50.10 à partir du routeur Peanut.  Quel est le numéro d'identificateur DLCI utilisé pour envoyer la requête ping ? <br/><img src="i70760n1v1.jpg" /> ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[110  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[115 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[220 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[225 ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140393" type="mc-sa"><question><![CDATA[Reportez-vous au schéma. Dans la topologie illustrée ici, un administrateur réseau configure une connexion Frame Relay pour permettre aux routeurs de communiquer entre eux. À l’issue de cette tâche, l’administrateur modifie le routage sur R2 mais cette mise à jour n’est reflétée que sur R1. Que doit faire l’administrateur réseau pour résoudre ce problème ? <br/><img src="i140393n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Reconfigurer le protocole de routage de chaque routeur. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Configurer des sous-interfaces sur R1 plutôt que d’utiliser une interface unique.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Les protocoles de routage ne peuvent pas être mis à jour sur une connexion Frame Relay. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Éteindre puis redémarrer l’interface S0/0 sur R1 pour déclencher la mise à jour du routage. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140394" type="mc-sa"><question><![CDATA[Un administrateur réseau a configuré une connexion Frame Relay entre le réseau d’entreprise et un fournisseur de services Internet (FAI) local pour alimenter les serveurs de base de données de réseau à l’aide d’un circuit dédié. Lors d’un contrôle de routine, l’administrateur réseau remarque qu’au cours des périodes de trafic intense, les serveurs doivent retransmettre plusieurs fois les mêmes données pour transférer des fichiers dans leur totalité. Une capture de paquets des en-têtes de données indique que le bit d’éligibilité à la suppression (DE) est défini sur un. Que doit faire l’administrateur pour résoudre ce problème ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Demander au FAI d’augmenter le débit d’accès local ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Remplacer les câbles raccordant le serveur à l’unité CSU/DSU   ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Recourir à un autre FAI qui fournira une meilleure qualité de service ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Contacter le FAI pour qu’il augmente le débit de données garanti (CIR)  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140392" type="mc-sa"><question><![CDATA[Quel est l’objectif du chiffrement de trafic sur un réseau privé virtuel sécurisé ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Garantir que le trafic est routé le long du réseau privé virtuel ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Garantir que les données envoyées sur le réseau privé virtuel entre les deux points d’extrémité authentifiés n’apparaissent pas en texte clair  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Garantir que le trafic provenant de personnel non autorisé n’entre pas en conflit avec le trafic du personnel autorisé ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Garantir que tout le trafic provenant d’Internet n’apparaît pas en texte clair ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="140388" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="140388" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>GRE</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>IPSec</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>L2F</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>PPTP</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="3" textwidth="332"><material><mattext>L2TP</mattext></material></textcomponent></component><!-- ***********  LABELS  *********** --><!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Système de normes ouvertes et de fonctions sur la couche réseau.</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Protocole développé par Microsoft pour créer des réseaux privés virtuels sur des réseaux TCP/IP.</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Protocole standard IETF utilisé pour effectuer une transmission tunnel de paquets PPP de couche 2 via un réseau public à l’aide du protocole IP.</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Permet d’encapsuler une grande variété de types de paquets de protocoles au sein de tunnels IP.</mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="3" textwidth="300"><material><mattext>Protocole prenant en charge la création de réseaux commutés privés virtuels sécurisés sur Internet grâce à la transmission tunnel de trames de couche 2.</mattext></material></textcomponent></component><!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Faites glisser chacun des protocoles d’encapsulation à gauche vers la description correspondante à droite.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-125" targetYspacing="31" yspacing="80" targetH="47"><options><display componentIdent="1" xpos="200" ypos="87.5" /><display componentIdent="2" xpos="200" ypos="167.5" /><display componentIdent="3" xpos="200" ypos="247.5" /><display componentIdent="4" xpos="200" ypos="327.5" /><display componentIdent="5" xpos="200" ypos="407.5" /></options><targets><display componentIdent="1" xpos="600" ypos="87.5" /><display componentIdent="2" xpos="600" ypos="154.5" /><display componentIdent="3" xpos="600" ypos="221.5" /><display componentIdent="4" xpos="600" ypos="288.5" /><display componentIdent="5" xpos="600" ypos="355.5" /></targets><stem><display componentIdent="40" xpos="420" ypos="28" /></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident="1"><componentident>1</componentident></scoringzone><scoringzone ident="2"><componentident>2</componentident></scoringzone><scoringzone ident="3"><componentident>3</componentident></scoringzone><scoringzone ident="4"><componentident>4</componentident></scoringzone><scoringzone ident="5"><componentident>5</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="222137" maxvalue="1"><title>Aucun titre</title></decvar><interpretvar varname="222137" view="All">Aucune description</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="5"><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="222137" action="Set">1</setvar><scoringdescription>GRE=permet d’encapsuler une grande variété de types de paquets de protocoles au sein de tunnels IP ; IPSec=système de normes ouvertes... ; L2F=prend en charge les réseaux commutés privés virtuels sécurisés sur Internet ; L2TP=utilisé pour transporter dans un tunnel des paquets PPP via un réseau public à l’aide du protocole IP.</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="140391" type="mc-sa"><question><![CDATA[Où le serveur de réseau privé virtuel doit-il se trouver sur le réseau pour traiter les données chiffrées ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Après le point d’arrivée du trafic sur le réseau interne ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Avant le point d’arrivée du flux de trafic sur le réseau interne  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sur le point d’extrémité d’utilisateur ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Sur la périphérie du fournisseur de services lorsque le trafic arrive depuis le point d’extrémité d’utilisateur ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140417" type="mc-ma"><question><![CDATA[Lors du dépannage d’une connexion Frame Relay, l’administrateur a entré la commande <b>show interface s0/0</b> et a reçu les informations indiquées dans le schéma. Quelles sont les raisons possibles de ce message ? (Choisissez deux réponses.) <br/><img src="i140417n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Le câble raccordant l’unité CSU/DSU au routeur est déconnecté. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’interface série 0/0 est désactivée. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le routeur n’est pas configuré pour le même circuit virtuel permanent Frame Relay que le commutateur.  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Le type d’interface LMI sur le commutateur Frame Relay est « NOT ANSI ».  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[L’adresse du commutateur Frame Relay ne figure pas dans la table de routage. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="140401" type="mc-sa"><question><![CDATA[Quelle méthode garantit la confidentialité des données sur un réseau privé virtuel ?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Hachage ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Transmission tunnel ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Chiffrement  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[En-têtes de données ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Encapsulation ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[SHA ou MD5 ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

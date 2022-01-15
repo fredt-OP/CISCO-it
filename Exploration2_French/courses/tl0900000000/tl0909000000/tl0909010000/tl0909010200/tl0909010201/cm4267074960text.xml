@@ -1,0 +1,42 @@
+﻿<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[<b>En-tête de trame liaison de données</b>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>En-tête de paquet IP</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[<b>En-tête de paquet EIGRP</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Type/Longueur/Types de valeurs</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Trame liaison de données</b><br>Adresse MAC de destination = multidiffusion : 01-00-5E-00-00-0A<br>Adresse MAC source = adresse de l’interface émettrice]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Paquet IP</b><br/>Adresse IP source = adresse de l’interface émettrice<br>Adresse IP de destination = multidiffusion : 224.0.0.10<br>Champ de protocole = 88 pour EIGRP]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>En-tête de paquet EIGRP</b><br/>Code opération du type de paquet EIGRP<br>Numéro de système autonome]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Types TLV</b><br/><b>Certains types sont notamment :</b><br>paramètres EIGRP 0x0001 ;<br>routes IP internes 0x0102 ;<br>routes externes IP 0x0103.]]></text>
+</component>
+
+<component id="ID_title">
+<text><![CDATA[<b>Message EIGRP encapsulé</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Placez le pointeur sur les champs pour en afficher le contenu.</b>]]></text>
+</component>
+
+</textcomponents>

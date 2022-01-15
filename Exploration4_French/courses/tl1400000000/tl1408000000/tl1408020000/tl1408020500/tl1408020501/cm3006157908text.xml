@@ -1,0 +1,123 @@
+﻿<textcomponents>
+
+<component id="ID_inst">
+<text><![CDATA[Cliquez pour voir les étapes et les commandes du recueil des symptômes.]]></text>
+</component>
+
+<component id="ID_title01">
+<text><![CDATA[<b>Recueil des symptômes</b>]]></text>
+</component>
+
+
+<component id="ID_button1">
+  <text><![CDATA[<b>Étapes du recueil des symptômes</b>]]></text> 
+</component>
+<component id="ID_button2">
+  <text><![CDATA[<b>Commandes</b>]]></text> 
+</component>
+
+
+<component id="ID_txt01">
+  <text><![CDATA[<b>Analyser<br/>les symptômes<br/>existants</b>]]></text> 
+</component>
+
+<component id="ID_txt02">
+  <text><![CDATA[<b>Contacter<br/>l’administrateur<br/>externe</b>]]></text> 
+</component>
+
+<component id="ID_txt03">
+  <text><![CDATA[<b>Déterminer<br/>la propriété</b>]]></text> 
+</component>
+
+<component id="ID_txt04">
+  <text><![CDATA[<b>Non</b>]]></text> 
+</component>
+
+<component id="ID_txt05">
+  <text><![CDATA[<b>Le problème se trouve-t-il dans le système autonome ?</b>]]></text> 
+</component>
+
+<component id="ID_txt06">
+  <text><![CDATA[<b>Oui</b>]]></text> 
+</component>
+
+<component id="ID_txt07">
+  <text><![CDATA[<b>Réduire<br/>l’étendue</b>]]></text> 
+</component>
+
+<component id="ID_txt08">
+  <text><![CDATA[<b>Déterminer les symptômes</b>]]></text> 
+</component>
+
+<component id="ID_txt09">
+  <text><![CDATA[<b>Documenter les symptômes</b>]]></text> 
+</component>
+
+<component id="ID_txt10">
+  <text><![CDATA[<b>Le problème peut-il être résolu à l’aide des symptômes documentés ?</b>]]></text> 
+</component>
+
+<component id="ID_txt11">
+  <text><![CDATA[<b>Non</b>]]></text> 
+</component>
+
+<component id="ID_txt12">
+  <text><![CDATA[<b>Commencer<br/>l’isolation</b>]]></text> 
+</component>
+
+<component id="ID_txt13">
+  <text><![CDATA[<b>Oui</b>]]></text> 
+</component>
+
+<component id="ID_txt14">
+  <text><![CDATA[<b>Résoudre le problème et documenter la solution</b>]]></text> 
+</component>
+
+
+
+
+<component id="ID_table01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td width='200' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Commande</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font color="#ffffff"><b>Description</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>ping</b> <i>{hôte | adresse-ip}</i></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Envoie un paquet de requête d’écho à une adresse, puis attend une réponse. La variable <font face="_typewriter"><i>hôte | adresse-ip</i></font> correspond à l’alias IP ou à l’adresse IP du système cible.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>traceroute</b> <i>{destination}</i></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Identifie le chemin suivi par un paquet dans les réseaux. La variable destination correspond au nom de l’hôte ou à l’adresse IP du système cible.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>telnet</b> <i>{hôte | adresse-ip}</i></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Permet la connexion à une adresse IP à l’aide de l’application Telnet.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>show ip interface brief</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche un résumé de l’état de toutes les interfaces sur un périphérique.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>show ip route</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche l’état actuel de la table de routage IP.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>show running-config interface</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche le contenu du fichier de configuration en cours pour une interface donnée.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>[no] debug ?</b></font></td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche la liste des options permettant d’activer ou de désactiver les événements de débogage sur un périphérique.</td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face="_typewriter"><b>show protocols</b></font></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Affiche les protocoles configurés et l’état général et propre aux interfaces des protocoles de couche 3 configurés.</td>
+	</tr>
+
+</table>]]></text>
+</component>
+
+
+
+</textcomponents>

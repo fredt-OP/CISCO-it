@@ -1,0 +1,63 @@
+<textcomponents>
+<component id="ID_title">
+<text><![CDATA[<b>Devices IP Address Ranges</b>]]></text>
+</component>
+
+<component id="ID_table">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#ffffff' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='4'>
+	<tr>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Use</b></font></td>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>First Address</b></font></td>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Last Address</b></font></td>
+		<td valign='top' type='dynamic'><font color='#FFFFFF'><b>Summary Address</b></font></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Network Address</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.0</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>.....</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic' rowspan='2' valign='middle'><b>172.16.x.0 /25</b></td>
+	</tr>
+	<tr>
+		<td bgcolor='#A2FDCE' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>User hosts (DHCP pool)</b></td>
+		<td bgcolor='#A2FDCE' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.1</b></td>
+		<td bgcolor='#A2FDCE' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.127</b></td>
+	</tr>
+	<tr>
+		<td bgcolor='#FDA76F' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Servers</b></td>
+		<td bgcolor='#FDA76F' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.128</b></td>
+		<td bgcolor='#FDA76F' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.191</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.128 /26</b></td>
+	</tr>
+	<tr>
+		<td bgcolor='#81A7FE' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Peripherals</b></td>
+		<td bgcolor='#81A7FE' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.192</b></td>
+		<td bgcolor='#81A7FE' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.223</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.128 /26</b></td>
+	</tr>
+	<tr>
+		<td bgcolor='#519595' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Networking devices</b></td>
+		<td bgcolor='#519595' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.224</b></td>
+		<td bgcolor='#519595' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.253</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic' rowspan='3' valign='middle'><b>172.16.x.224 /27</b></td>
+	</tr>
+	<tr>
+		<td bgcolor='#E1C4FF' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Router (gateway)</b></td>
+		<td bgcolor='#E1C4FF' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.254</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>.....</b></td>
+	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>Broadcast</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>172.16.x.255</b></td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><b>.....</b></td>
+	</tr>
+</table>]]></text>
+</component>
+  
+<component id="ID_txt26">
+	<text><![CDATA[<b>172.16.1.0 /24</b>]]></text> 
+</component>
+
+<component id="ID_txt27">
+	<text><![CDATA[<b>172.16.2.0 /24</b>]]></text> 
+</component>
+</textcomponents>

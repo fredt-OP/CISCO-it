@@ -1,0 +1,71 @@
+<textcomponents>
+<component id="ID_caption01">
+<text><![CDATA[<b>Configure Duplex and Speed</b>]]></text>
+</component>
+<component id="ID_txt01">
+<text><![CDATA[S1 - F0/1 is:<br/>Full-Duplex Mode<br/>100 Mb/s]]></text>
+</component>
+<component id="ID_txt02">
+<text><![CDATA[S2 - F0/1 is:<br/>Full-Duplex Mode<br/>100 Mb/s]]></text>
+</component>
+
+<component id="tableHTML">
+  <text><![CDATA[
+ <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+ 	
+ 	<tr>
+ 		
+ 				<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Cisco IOS CLI Command Syntax</b></font></td>
+ 				<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+ 	</tr>			
+
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Switch from privileged EXEC mode to global configuration mode.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1#<b>configure terminal</b></font></td>
+			
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Enter the interface configuration mode.</td>
+		<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config)#<b>Interface fastethernet 0/1</b></font></td>
+		
+				
+	</tr>
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configure the interface duplex mode to enable AUTO duplex configuration.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>duplex auto</b></font></td>
+		
+				
+	</tr>
+	<tr>
+			
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configure the interface duplex speed and enable AUTO speed configuration.</td>
+		<td width="260" valign='top' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>speed auto</b></font></td>
+		
+				
+	</tr>
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Return to privileged EXEC mode. </td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1(config-if)#<b>end</b></font></td>
+		
+				
+	</tr>
+	
+	<tr>
+			
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Save the running configuration to the switch start-up configuration.</td>
+		<td width="260" valign='top' bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' type='dynamic'><font face='_typewriter'>S1#<b>copy running-config startup-config</b></font></td>		
+				
+	</tr>		
+	
+	
+</table>
+]]></text> 
+  </component>
+</textcomponents>
+
+
+	

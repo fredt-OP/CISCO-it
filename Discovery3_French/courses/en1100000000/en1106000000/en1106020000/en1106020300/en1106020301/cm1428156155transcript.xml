@@ -1,0 +1,5 @@
+<transcript lastedited="09.25.08 15:09:20">
+<title><content-text><![CDATA[6.2.3 - Turning OSPF Parameters]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts three routers, R1, R2, and R3, all connected to a switch S1.<br>R1 IP: 192.168.1.1<br>R2 IP: 192.168.1.2<br>R3 IP: 192.168.1.3<br><br>There are three sets of OSPF configuration commands listed, which are as follows:<br><br>Priority<br>R1 (config) #interface fastethernet 0 /0<br>R1 (config-if) # IP OSPF priority 50<br><br>Router ID<br>R1 (config) # router OSPF 1<br>R1 (config-router) # router-id 10.1.1.1<br><br>Loopback interface<br>R1 (config) #interface loopback 1<br>R1 (config-if) # IP address 10.1.1.1 255.255.255.255<br>]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

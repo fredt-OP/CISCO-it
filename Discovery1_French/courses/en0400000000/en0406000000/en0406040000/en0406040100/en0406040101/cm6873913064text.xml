@@ -1,0 +1,416 @@
+<textcomponents>
+
+<component id="ID_instructions">
+<text><![CDATA[<b>Click through the buttons for summary information.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<p><b>This chapter discussed the client/server relationship for common network services such as HTTP, FTP, DNS, DHCP and e-mail.</b></p><ul><li>Servers are hosts that run software to enable them to provide services to other hosts over the network.</li><br/><li>Application protocols determine how servers and clients interact and exchange information with each other.</li><br/><li>Transport protocols, such as Transport Control Protocol (TCP) and User Datagram Protocol (UDP), define port numbers to manage the individual conversations between servers and clients.  </li><br/><li>Internet Protocol (IP) specifies how data is encapsulated into packets and the logical addressing.</li><br/><li>Network access protocols, such as Ethernet, describe two primary functions: data link management and physical network transmissions.</li></ul>]]></text>
+</component>
+
+
+<!-- slide 1 graphic text -->
+<component id="s1_ID_txt01">
+<text><![CDATA[<b>SECURITY</b>]]></text>
+</component>
+
+<component id="s1_ID_txt02">
+<text><![CDATA[<b>SUPPORT</b>]]></text> 
+  </component>
+
+<component id="s1_ID_txt03"><text><![CDATA[<b>POLITICS</b>]]></text> 
+  </component>
+
+<component id="s1_ID_txt04"><text><![CDATA[<b>COST</b>]]></text> 
+  </component>
+
+<component id="s1_ID_txt05">
+<text><![CDATA[<b>AVAILABILITY</b>]]></text> 
+  </component>
+  
+<component id="s1_ID_txt06">
+<text><![CDATA[<b>RESOURCES</b>]]></text> 
+  </component>
+
+<component id="s1_ID_txt07"><text><![CDATA[<b>PLATFORM</b>]]></text> 
+  </component>
+  
+<component id="s1_ID_txt08">
+<text><![CDATA[<b>USE</b>]]></text> 
+  </component>
+  
+<component id="s1_ID_txt09">
+<text><![CDATA[<b>Operating System Selection</b>]]></text>
+</component>
+
+
+<component id="ID_txt02">
+<text><![CDATA[<p><b>Domain Name Server (DNS)</b></li><li>Service that provides the IP address of a web site URL or domain name so a host can connect to it.</li><br/><li>DNS names are registered and organized on the Internet within specific high level groups, or domains.</li><br/><li>Some of the most common high level domains on the Internet are .com, .edu, and .net. </li></ul><br/><p><b>Dynamic Host Configuration Protocol (DHCP) Server</b><ul><li>Service that assigns IP address, subnet mask, default gateway and other information to clients.</li></ul><br/><p><b>File Transfer Protocol (FTP) Server</b><ul><li>Service that allows for download and upload of files between a client and server.</li></ul>]]></text>
+</component>
+
+	<component id="s2_ID_txt01">
+		<text><![CDATA[<b>Server Farm</b>]]></text>
+	</component>
+    <component id="s2_ID_txt02">
+		<text><![CDATA[<b>DNS Server</b>]]></text>
+	</component>
+    <component id="s2_ID_txt03">
+		<text><![CDATA[<b>Telnet Server</b>]]></text>
+	</component>
+    <component id="s2_ID_txt04">
+		<text><![CDATA[<b>Email Server</b>]]></text>
+	</component>
+    <component id="s2_ID_txt05">
+		<text><![CDATA[<b>DHCP Server</b>]]></text>
+	</component>
+    <component id="s2_ID_txt06">
+		<text><![CDATA[<b>Web Server</b>]]></text>
+	</component>
+    <component id="s2_ID_txt07">
+		<text><![CDATA[<b>FTP Server</b>]]></text>
+	</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<p><b>Email Server</b></li><br/><li>Service that sends, receives and stores mail in user mailboxes located on the server. </li><br/><li>Uses Simple Mail Transfer Protocol (SMTP) to send mail, and clients use Post Office Protocol (POP3) or Internet Mail Access Protocol (IMAP4) to retrieve mail.</li><br/><li>Recipients are specified using the user@xyz.com format.</li><br/><b>Web Server</b></li><br/><li>Service that is used to transfer information between Web clients and Web servers.</li><br/><li>Most web pages are accessed using Hypertext Transfer Protocol (HTTP), from servers using port 80. </li><br/><li>HTTP is not a secure service. Requests for secure HTTP are sent to port 443. These requests require the use of https://</li><br/><b>TELNET</b></li><br/><li>Service that allows administrators to login to a host from a remote location and control the host as though they were logged in locally.</li><br/><b>Instant Messaging</b></li><br/><li>IM client software is loaded on the host computers.  Once IM clients authenticate with the server, they can send messages to other clients in real-time or transfer video, music and speech files.</li><br/><b>IP Telephony</b></li><br/><li>An Internet telephony client uses peer-to-peer technology similar to that used by instant messaging. </li><br/><li>IP telephony makes use of Voice over IP (VoIP) technology which uses IP packets to carry digitized voice as data.</li></ul>]]></text>
+</component>
+
+
+<component id="s3_ID_title01">
+<text><![CDATA[<b>Port numbers</b>]]></text>
+</component>
+<component id="s3_ID_txt01">
+  <text><![CDATA[20]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt01a">
+  <text><![CDATA[FTP Data]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt01b">
+  <text><![CDATA[File Transfer Protocol (for data transfer)]]></text> 
+  </component>
+  
+<component id="s3_ID_txt02">
+  <text><![CDATA[21]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt02a">
+  <text><![CDATA[FTP Control]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt02b">
+  <text><![CDATA[File Transfer Protocol (to establish connection)]]></text> 
+  </component>
+
+  <component id="s3_ID_txt03">
+  <text><![CDATA[23]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt03a">
+  <text><![CDATA[TELNET]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt03b">
+  <text><![CDATA[TELetype NETwork]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt04">
+  <text><![CDATA[25]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt04a">
+  <text><![CDATA[SMTP]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt04b">
+  <text><![CDATA[Simple Mail Transfer Protocol]]></text> 
+  </component>
+  
+ <component id="s3_ID_txt05">
+  <text><![CDATA[53]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt05a">
+  <text><![CDATA[DNS]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt05b">
+  <text><![CDATA[Domain Name Service]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt06">
+  <text><![CDATA[67]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt06a">
+  <text><![CDATA[DHCP v4 Client]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt06b">
+  <text><![CDATA[Dynamic Host Configuration Protocol (Client)]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt07">
+  <text><![CDATA[68]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt07a">
+  <text><![CDATA[DHCP v4 Server]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt07b">
+  <text><![CDATA[Dynamic Host Configuration Protocol (Server)]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt08">
+  <text><![CDATA[69]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt08a">
+  <text><![CDATA[TFTP]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt08b">
+  <text><![CDATA[Trivial File Transfer Protocol]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt09">
+  <text><![CDATA[80]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt09a">
+  <text><![CDATA[HTTP]]></text> 
+  </component>
+  
+    <component id="s3_ID_txt09b">
+  <text><![CDATA[Hypertext Transfer Protocol]]></text> 
+  </component>
+  
+<component id="s3_ID_txt10">
+  <text><![CDATA[110]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt10a">
+  <text><![CDATA[POP3]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt10b">
+  <text><![CDATA[Post Office Protocol (version 3)]]></text> 
+  </component>
+  
+ <component id="s3_ID_txt11">
+  <text><![CDATA[137]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt11a">
+  <text><![CDATA[NBNS]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt11b">
+  <text><![CDATA[Microsoft NetBIOS Name Service]]></text> 
+  </component>
+  
+ <component id="s3_ID_txt12">
+  <text><![CDATA[143]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt12a">
+  <text><![CDATA[IMAP4]]></text> 
+  </component>
+  
+   <component id="s3_ID_txt12b">
+  <text><![CDATA[Internet Message Access Protocol (version 4)]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt13">
+  <text><![CDATA[161]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt13a">
+  <text><![CDATA[SNMP]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt13b">
+  <text><![CDATA[Simple Network Management Protocol]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt14">
+  <text><![CDATA[443]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt14a">
+  <text><![CDATA[HTTPS]]></text> 
+  </component>
+  
+  <component id="s3_ID_txt14b">
+  <text><![CDATA[Hypertext Transfer Protocol Secure]]></text> 
+  </component>
+ 
+  <component id="s3_ID_header1">
+  <text><![CDATA[<b>Destination port number</b>]]></text> 
+  </component>
+  
+  <component id="s3_ID_header2">
+  <text><![CDATA[<b>Abbreviation</b>]]></text> 
+  </component>
+  
+  <component id="s3_ID_header3">
+  <text><![CDATA[<b>Definition</b>]]></text> 
+  </component>
+
+
+
+
+<component id="ID_txt04">
+<text><![CDATA[<p><li>A protocol stack organizes the protocols as a layered hierarchy, with each higher level protocol depending on the services of the protocols shown in the lower levels.</li><br/><li>The benefits to using a layered approach include:</li><br/><li><TEXTFORMAT BLOCKINDENT='25'>Assists and simplifies protocol design</textformat></li><br/><li><TEXTFORMAT BLOCKINDENT='25'>Allows products from different vendors to work together.</textformat></li><br/><li><TEXTFORMAT BLOCKINDENT='25'>Prevents technology or capability changes in one layer from affecting other layers above and below.</textformat></li><br/><li>When sending messages, the protocol stack on a host operates from top to bottom. Each layer encapsulates information and passes it to the layer below.  The process is reversed on the receiving host.</li><br/><li>Two hierarchical network models are the OSI model (7 layers) and the TCP/IP model (4 layers).</li><br/><li>The OSI model includes all functions, or tasks, associated with Internetwork communications, not just those related to the TCP/IP protocols.</li><br/><li>The OSI model is considered the primary reference model for intercomputer communications.<br/><br/></li></ul>]]></text>
+</component>
+
+<!-- slide 4 graphic text -->
+
+<component id="S4a_ID_txt01">
+  <text><![CDATA[<b>Protocol Interaction</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt02">
+  <text><![CDATA[<b>Protocol Stack</b>]]></text> 
+  </component>
+
+<component id="S4a_ID_txt03">
+  <text><![CDATA[<b>Web Server</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt04">
+  <text><![CDATA[<b>Hypertext Tranfer Protocol (HTTP)</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt05">
+  <text><![CDATA[<b>Transmission Control Protocol (TCP)</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt06">
+  <text><![CDATA[<b>Internet Protocol (IP)</b>]]></text> 
+  </component>
+<component id="S4a_ID_txt07">
+  <text><![CDATA[<b>Ethernet Protocol</b>]]></text> 
+  </component>
+
+<component id="s4_ID_pc1">
+<text><![CDATA[<b> PC</b>]]></text>
+</component>
+<component id="s4_ID_pc2">
+  <text><![CDATA[<b>PC</b>]]></text> 
+  </component>
+<component id="s4_ID_txt01">
+  <text><![CDATA[<b>Application Layer</b>]]></text> 
+  </component>
+<component id="s4_ID_txt02">
+  <text><![CDATA[<b>Presentation Layer</b>]]></text> 
+  </component>
+<component id="s4_ID_txt03">
+  <text><![CDATA[<b>Session Layer</b>]]></text> 
+  </component>
+<component id="s4_ID_txt04">
+  <text><![CDATA[<b>Transport Layer</b>]]></text> 
+  </component>
+<component id="s4_ID_txt05">
+  <text><![CDATA[<b>Network Layer</b>]]></text> 
+  </component>
+<component id="s4_ID_txt06">
+  <text><![CDATA[<b>Data Link Layer</b>]]></text> 
+  </component>
+<component id="s4_ID_txt07">
+  <text><![CDATA[<b>Physical Layer</b>]]></text> 
+  </component>
+<component id="s4_ID_txt08">
+    <text><![CDATA[<b>Application Layer</b>]]></text> 
+    </component>
+<component id="s4_ID_txt09">
+    <text><![CDATA[<b>Presentation Layer</b>]]></text> 
+    </component>
+<component id="s4_ID_txt10">
+    <text><![CDATA[<b>Session Layer</b>]]></text> 
+    </component>
+<component id="s4_ID_txt11">
+    <text><![CDATA[<b>Transport Layer</b>]]></text> 
+    </component>
+<component id="s4_ID_txt12">
+    <text><![CDATA[<b>Network Layer</b>]]></text> 
+    </component>
+<component id="s4_ID_txt13">
+    <text><![CDATA[<b>Data Link Layer</b>]]></text> 
+    </component>
+<component id="s4_ID_txt14">
+    <text><![CDATA[<b>Physical Layer</b>]]></text> 
+  </component>
+<component id="s6_ID_txt01">
+  <text><![CDATA[<b>Protocol Interaction</b>]]></text> 
+  </component>
+<component id="s6_ID_txt02">
+  <text><![CDATA[<b>Hypertext Transfer Protocol (HTTP)</b>]]></text> 
+  </component>
+<component id="s6_ID_txt03">
+  <text><![CDATA[<b>Transmission Control Protocol (TCP)</b>]]></text> 
+  </component>
+<component id="s6_ID_txt04">
+  <text><![CDATA[<b>Internet Protocol (IP)</b>]]></text> 
+  </component>
+<component id="s6_ID_txt05">
+  <text><![CDATA[<b>Ethernet Protocol</b>]]></text> 
+  </component>
+<component id="s6_ID_txt06">
+  <text><![CDATA[<b>Web Server</b>]]></text> 
+  </component>
+
+<component id="s6b_ID_pc1">
+<text><![CDATA[<b>PC</b>]]></text>
+</component>
+<component id="s6b_ID_pc2">
+  <text><![CDATA[<b>PC</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt01">
+  <text><![CDATA[<b>Application Layer</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt02">
+  <text><![CDATA[<b>Presentation Layer</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt03">
+  <text><![CDATA[<b>Session Layer</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt04">
+  <text><![CDATA[<b>Transport Layer</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt05">
+  <text><![CDATA[<b>Network Layer</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt06">
+  <text><![CDATA[<b>Data Link Layer</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt07">
+  <text><![CDATA[<b>Physical Layer</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt08">
+    <text><![CDATA[<b>Application Layer</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt09">
+    <text><![CDATA[<b>Presentation Layer</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt10">
+    <text><![CDATA[<b>Session Layer</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt11">
+    <text><![CDATA[<b>Transport Layer</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt12">
+    <text><![CDATA[<b>Network Layer</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt13">
+    <text><![CDATA[<b>Data Link Layer</b>]]></text> 
+    </component>
+<component id="s6b_ID_txt14">
+    <text><![CDATA[<b>Physical Layer</b>]]></text> 
+  </component>
+<component id="s6b_ID_txt15">
+      <text><![CDATA[<b>Open Systems Interconnect Model</b>]]></text> 
+  </component>
+<component id="s6b_ID_webcam">
+  <text><![CDATA[<b>Webcam</b>]]></text> 
+  </component>
+
+</textcomponents>

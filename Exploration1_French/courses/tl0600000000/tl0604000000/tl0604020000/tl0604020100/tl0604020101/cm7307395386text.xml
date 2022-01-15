@@ -1,0 +1,177 @@
+﻿<textcomponents>
+
+
+<component id="ID_title">
+<text><![CDATA[<b>Champs d’en-tête du segment TCP</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Faites passer votre curseur sur chaque champ pour afficher sa fonction.</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<b>Bit 0</b>]]></text>
+</component>
+
+
+<component id="ID_txt03">
+<text><![CDATA[<b>15</b>]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Numéro du port source</b>]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[<b>Numéro du port de destination</b>]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Numéro d’ordre</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>Longueur d’en-tête</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Réservé</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Indicateurs</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Taille de la fenêtre</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Somme de contrôle TCP</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Pointeur d’urgence</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Options (le cas échéant)</b>]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[<b>Données...</b>]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[<b>Les champs de l’en-tête TCP permettent au TCP de fournir des communications de données fiables avec connexion.</b>]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[<b>31</b>]]></text>
+</component>
+
+<component id="ID_txt17">
+<text><![CDATA[<b>Numéro d’accusé de réception</b>]]></text>
+</component>
+
+
+
+
+
+<component id="Title_pop01">
+<text><![CDATA[Numéro du port source]]></text>
+</component>
+
+<component id="Text_pop01">
+<text><![CDATA[Session TCP sur le périphérique ayant ouvert une connexion (en général, une valeur aléatoire supérieure à 1023).]]></text>
+</component>
+
+<component id="Title_pop02">
+<text><![CDATA[Numéro du port de destination ]]></text>
+</component>
+
+<component id="Text_pop02">
+<text><![CDATA[Identifie le protocole ou l’application de la couche supérieure sur le site distant.]]></text>
+</component>
+
+<component id="Title_pop03">
+<text><![CDATA[Numéro d’ordre ]]></text>
+</component>
+
+<component id="Text_pop03">
+<text><![CDATA[Indique le numéro du dernier octet d’un segment.]]></text>
+</component>
+
+<component id="Title_pop04">
+<text><![CDATA[Numéro d’accusé de réception ]]></text>
+</component>
+
+<component id="Text_pop04">
+<text><![CDATA[Précise le prochain octet attendu par le destinataire.]]></text>
+</component>
+
+<component id="Title_pop05">
+<text><![CDATA[Longueur d’en-tête]]></text>
+</component>
+
+<component id="Text_pop05">
+<text><![CDATA[Indique la longueur de l’en-tête du segment en octets]]></text>
+</component>
+
+<component id="Title_pop06">
+<text><![CDATA[Indicateurs]]></text>
+</component>
+
+<component id="Text_pop06">
+<text><![CDATA[Utilisés dans la gestion de la session et le traitement des segments. ]]></text>
+</component>
+
+<component id="Title_pop07">
+<text><![CDATA[Taille de fenêtre ]]></text>
+</component>
+
+<component id="Text_pop07">
+<text><![CDATA[Il s’agit de la valeur de la fenêtre dynamique (combien d’octets peuvent être envoyés avant d’attendre l’accusé de réception).]]></text>
+</component>
+
+<component id="Title_pop08">
+<text><![CDATA[Somme de contrôle TCP ]]></text>
+</component>
+
+<component id="Text_pop08">
+<text><![CDATA[Utilisée pour contrôler les erreurs d’en-tête et de données.]]></text>
+</component>
+
+<component id="Title_pop09">
+<text><![CDATA[Pointeur d’urgence ]]></text>
+</component>
+
+<component id="Text_pop09">
+<text><![CDATA[Uniquement utilisé avec un indicateur URG (Urgence).]]></text>
+</component>
+
+<component id="Title_pop10">
+<text><![CDATA[Options]]></text>
+</component>
+
+<component id="Text_pop10">
+<text><![CDATA[Informations facultatives]]></text>
+</component>
+
+<component id="Title_pop11">
+<text><![CDATA[Données]]></text>
+</component>
+
+<component id="Text_pop11">
+<text><![CDATA[Données d’application]]></text>
+</component>
+
+<component id="Title_pop12">
+<text><![CDATA[Réservé]]></text>
+</component>
+<component id="Text_pop12">
+<text><![CDATA[Réservé - Mis à zéro]]></text>
+</component>
+
+
+</textcomponents>

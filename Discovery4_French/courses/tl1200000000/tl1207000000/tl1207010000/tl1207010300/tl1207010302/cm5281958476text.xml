@@ -1,0 +1,45 @@
+﻿<textcomponents>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+<tr>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Fonction du réseau</b></font></td>
+<td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Méthode de test</b></font></td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'>Isolation du trafic en utilisant des réseaux locaux virtuels pour prendre en charge les caméras IP</td>
+<td bgcolor='#E1F0FF'>Créer un réseau local virtuel, installer une caméra (ou un PC émulant une caméra). Vérifier la configuration du réseau local virtuel sur le commutateur. Utiliser Wireshark pour examiner les paquets.</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Agrégation du réseau local virtuel à la couche de distribution</td>
+<td bgcolor='#F2F2F2'>Créer des liaisons d’agrégation au périphérique de couche de distribution. Vérifier le fonctionnement de l’agrégation.</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'>Adressage et accès aux caméras au moyen d’adresses IP</td>
+<td bgcolor='#E1F0FF'>Attribuer des adresses IP à tous les périphériques, conformément à la conception du réseau. Vérifier la configuration au moyen de la commande ping.</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Routage approprié du trafic au moyen du protocole EIGRP</td>
+<td bgcolor='#F2F2F2'>Configurer le routage EIGRP pour router les réseaux locaux virtuels. Vérifier le routage en utilisant les commandes show, ping et trace route.</td>
+
+</tr>
+<tr>
+<td bgcolor='#E1F0FF'>Autorisation des stations de visualisation au moyen de listes d’accès</td>
+<td bgcolor='#E1F0FF'>Configurer et placer des listes d’accès pour autoriser uniquement les stations de visualisation sélectionnées à accéder aux caméras. Tester à l’aide de la commande ping et de la journalisation des listes d’accès.</td>
+
+</tr>
+<tr>
+<td bgcolor='#F2F2F2'>Test des performances des applications de bout en bout</td>
+<td bgcolor='#F2F2F2'>Afficher la vidéo sur un PC situé sur le réseau. Collecter des informations sur l’utilisation de la bande passante et la qualité du flux vidéo. Ajouter du trafic sur le réseau en utilisant un programme de simulation de trafic et observer la qualité de la vidéo.</td>
+
+
+</table>
+]]></text>
+</component>
+
+</textcomponents>

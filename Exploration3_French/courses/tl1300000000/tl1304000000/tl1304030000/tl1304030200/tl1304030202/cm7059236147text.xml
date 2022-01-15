@@ -1,0 +1,88 @@
+<textcomponents>
+<component id="ID_routerIcon">
+<text><![CDATA[<b>Tableau</b>]]></text>
+</component>
+
+<component id="ID_topIcon">
+<text><![CDATA[<b>Solution</b>]]></text>
+</component>
+
+<component id="ID_Title01">
+<text><![CDATA[<b>Problèmes de mot de passe et de version</b>]]></text>
+</component>
+
+<component id="ID_button01">
+<text><![CDATA[<b>Solution aux problèmes de versions VTP</b>]]></text>
+</component>
+
+<component id="ID_button02">
+<text><![CDATA[<b>Solution aux problèmes de mots de passe VTP</b>]]></text>
+</component>
+
+<component id="ID_txt01">
+<text><![CDATA[<table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b> </b></font></td></tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Versions VTP incompatibles<ul><li>Les versions 1 et 2 de VTP sont incompatibles.</li><li>Vérifiez que tous les commutateurs exécutent la même version de VTP.</li></ul></td>
+  </tr>
+  <tr><td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Problèmes de mot de passe VTP<ul><li>Assurez-vous que les mots de passe sont identiques sur tous les commutateurs compatibles VTP du domaine VTP.</li><li>Par défaut, un commutateur Cisco n’utilise pas de mot de passe VTP.</li><li>Lors de la réception d’une annonce VTP, les commutateurs Cisco ne définissent pas automatiquement le paramètre de mot de passe VTP.</li></ul></td>
+</table>]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[<b>Réinitialisez la version de VTP à la valeur la plus faible prise en charge par tous les commutateurs. Utilisez ces commandes :</b>]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td width='350' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe des commandes Cisco IOS</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration globale</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>#<b>configure terminal</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer la version VTP</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>(config)#<b>vtp version</b> <i>numéro</i></font></td>	
+	</tr>
+	</table>
+]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[<b>Voici un exemple montrant comment réinitialiser la version de VTP pour le commutateur S3 :</b>]]></text>
+</component>
+
+
+<component id="ID_txt06">
+<text><![CDATA[<b>Configurez un mot de passe VTP sur chaque commutateur compatible VTP à l’aide des commandes suivantes :</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[
+	   <table header='top' headerstyle='black' bordercolor='#CCCCCC' borderwidth='1' shadow='false' shadowcolor='#000000' glow='true' glowcolor='#808080' cellpadding='2'>
+	    	<tr>
+	  	  	<td width='350' bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b>Syntaxe des commandes Cisco IOS</b></font></td>
+	  	  	<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font  color="#FFFFFF"><b></b></font></td>
+	   	</tr>
+	<tr>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Passer en mode de configuration globale</td>
+		<td bgcolor='#DDDDDD' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>#<b>configure terminal</b></font></td>	
+	</tr>
+	<tr>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'>Configurer le mot de passe VTP</td>
+		<td bgcolor='#F2F2F2' glow='false' glowcolor='#FCA92E' valign='top' type='dynamic'><font face='_typewriter'>(config)#<b>vtp password</b> <i>mot_de_passe</i></font></td>		
+	</tr>
+	</table>
+]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>Voici un exemple montrant comment configurer le mot de passe VTP pour le commutateur S3 :</b>]]></text>
+</component>
+
+</textcomponents>

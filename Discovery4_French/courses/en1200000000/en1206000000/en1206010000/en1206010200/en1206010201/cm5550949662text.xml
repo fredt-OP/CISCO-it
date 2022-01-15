@@ -1,0 +1,133 @@
+<textcomponents>
+<component id="ID_txt01">
+<text><![CDATA[Network 172.16.1.0/24]]></text>
+</component>
+
+<component id="ID_txt02">
+<text><![CDATA[Network 172.16.2.0/24]]></text>
+</component>
+
+<component id="ID_txt03">
+<text><![CDATA[192.168.7.0/30]]></text>
+</component>
+
+<component id="ID_txt04">
+<text><![CDATA[192.168.7.4/30]]></text>
+</component>
+
+<component id="ID_txt05">
+<text><![CDATA[I know about Network 172.16.0.0]]></text>
+</component>
+
+<component id="ID_txt06">
+<text><![CDATA[I know about Network 172.16.0.0]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[Routing Protocol Update]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[Routing Protocol Update]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[I now have two equal cost paths to get to 172.16.0.0.]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[I have a packet to send to 172.16.1.5.]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[I have a packet to send to 172.16.2.5.]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[I have a packet to send to 172.16.1.5.]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[Click Play to view how route summarization with a classful routing protocol causes reachability issues.]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[A]]></text>
+</component>
+
+<component id="ID_txt14">
+<text><![CDATA[B]]></text>
+</component>
+
+<component id="ID_txt15">
+<text><![CDATA[C]]></text>
+</component>
+
+<component id="ID_txt16">
+<text><![CDATA[Routers in this network are running auto-summarization. As a result, Router A and Router C both advertise the summary route 172.16.0.0/16. Router B receives both updates and installs both equal cost routes into the routing table. This causes reachability issues for both the 172.16.1.0 and 172.16.2.0 networks.]]></text>
+</component>
+
+<component id="ID_Table1">
+<text><![CDATA[
+		
+  <table header='top' headerstyle='black' glow='true' glowcolor='#808080' cellpadding='2'>
+    <tr>
+      <td colspan='2' bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Routing Table on B</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'><b>Destination</b></td>
+      <td bgcolor='#F2F2F2'><b>Next Hop</b></td>
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'><b>172.16.0.0 172.16.0.0</b></td>
+      <td bgcolor='#DDDDDD'><b>A<br>C</b></td>
+    </tr>
+  </table>
+
+]]></text>
+	</component>
+
+<component id="play">
+<text><![CDATA[Play]]></text>
+</component>
+
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+
+<component id="rewind">
+<text><![CDATA[Rewind]]></text>
+</component>
+
+<component id="forward">
+<text><![CDATA[Fast Forward]]></text>
+</component>
+
+<component id="mute">
+<text><![CDATA[Mute]]></text>
+</component>
+
+<component id="unmute">
+<text><![CDATA[UnMute]]></text>
+</component>
+
+<component id="previous">
+<text><![CDATA[Restart]]></text>
+</component>
+
+<component id="next">
+<text><![CDATA[End]]></text>
+</component>
+
+<component id="transcript">
+<text><![CDATA[Transcript]]></text>
+</component>
+
+<component id="start_animation">
+<text><![CDATA[This is the start of an animation]]></text>
+</component>
+
+<component id="bubble_example">
+<text><![CDATA[An example of a Bubble that expands downward]]></text>
+</component>
+</textcomponents>

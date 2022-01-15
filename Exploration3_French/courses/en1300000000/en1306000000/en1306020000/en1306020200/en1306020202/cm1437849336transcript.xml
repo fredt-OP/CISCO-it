@@ -1,0 +1,5 @@
+<transcript lastedited="01.06.09 14:01:51">
+<title><content-text><![CDATA[6.2.2 - Configure Router-on-a-Stick Inter-V LAN Routing]]></content-text></title>
+<brief><content-text><![CDATA[The diagram depicts the verification of the routing table and the router running-config with router-on-a-stick inter-V LAN routing using a single router interface.<br><br>Routing Table:<br>Some output omitted.<br>R1#show i p route<br>172.17.0.0 /24 is subnetted, 2 subnets<br>C		172.17.10.0 is directly connected, FastEthernet0/0 dot 10<br>C		172.17.30.0 is directly connected, FastEthernet0/0 dot 30<br><br><br>Verify Router Configuration:<br>R1#show running-config<br>Some output omitted.<br><br>hostname R1<br><br>interface FastEthernet0/0<br>no i p address<br><br>interface FastEthernet0/0 dot 10<br>encapsulation dot 1 Q 10<br>i p address 172.17.10.1 255.255.255.0<br><br>interface FastEthernet0/0 dot 30<br>encapsulation dot 1 Q 30<br>i p address 172.17.30.1 255.255.255.0<br><br>Some output omitted.]]></content-text></brief>
+<full><content-text><![CDATA[FULL - NOT FOR PRODUCTION]]></content-text></full>
+</transcript>

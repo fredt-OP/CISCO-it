@@ -1,0 +1,48 @@
+<textcomponents>
+
+<component id="ID_txt06">
+<text><![CDATA[<font size='14'><b>Subnet Mask Notation and Number of Possible Hosts </b></font>]]></text> 
+</component>
+
+<component id="ID_table1">
+<text><![CDATA[
+<table header='top' headerstyle='black' glow='true' glowcolor='#808080'  cellpadding='2'>
+
+    <tr>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>State</b></font></td>
+      <td bgcolor='#F2F2F2'><font color='#FFFFFF'><b>Definition</b></font></td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'>Init</td>
+      <td bgcolor='#F2F2F2'>The router received an initial hello packet from its neighbor. When a router receives a hello packet from a neighbor, it lists the sending router ID in its own hello packet as an acknowledgment.</td>
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'>2-way</td>
+      <td bgcolor='#F2F2F2'>Bi-directional communication is established in that each router has seen the  hello packet from each other. This state is attained when the router receiving the hello packet sees its own Router ID within the neighbor field of the hello packet. At this state, a router decides whether to become fully adjacent with this neighbor.</td>
+     
+    </tr>
+    <tr>
+      <td bgcolor='#DDDDDD'>Exstart</td>
+      <td bgcolor='#DDDDDD'>The routers establish a master-slave relationship and choose the initial sequence number for adjacency formation. Between two routers, the router with the higher router ID becomes the master and starts the exchange.</td>
+      
+    </tr>
+    <tr>
+      <td bgcolor='#F2F2F2'>Exchange</td>
+      <td bgcolor='#F2F2F2'>OSPF routers exchange database descriptor (DBD) packets that contain link-state advertisement (LSA) headers only.  The DBD describes the contents of the entire link-state database. Each DBD packet has a sequence number which can be incremented only by the master.</td>
+    
+    </tr>
+    <tr>  
+      <td bgcolor='#DDDDDD'>Loading</td>
+      <td bgcolor='#DDDDDD'>Based on the information provided by the DBDs, routers send link-state request packets for more specific information. The neighbor provides the requested link-state information in link-state update packets.</td>
+      
+     </tr>   
+     <tr>
+      <td bgcolor='#F2F2F2'>Full</td>
+      <td bgcolor='#F2F2F2'>All the router and network LSAs are exchanged and the router databases are fully synchronized.</td>
+          
+    </tr>
+</table>
+]]></text>
+</component>
+
+</textcomponents>

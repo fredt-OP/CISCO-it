@@ -1,0 +1,125 @@
+﻿<textcomponents>
+
+<component id="ID_title">
+<text><![CDATA[<b>Routage traditionnel entre réseaux locaux virtuels</b>]]></text>
+</component>
+
+<component id="ID_inst">
+<text><![CDATA[<b>Cliquez sur Lire pour lancer l’animation.</b>]]></text>
+</component>
+
+<component id="ID_bubble01">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_bubble02">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_bubble03">
+<text><![CDATA[<b><font size='12'>Agrégation</font></b>]]></text>
+</component>
+
+<component id="ID_bubble04">
+<text><![CDATA[<b><u>Ports du commutateur S1</u><br/>F0/6 = VLAN 10<br/>F0/5 = VLAN 30<br/>F0/1-F0/4 = Agrégation<br/><br/><u>Ports du commutateur S2</u><br/>F0/11 = VLAN 10<br/>F0/18 = VLAN 20<br/>F0/6 = VLAN 30<br/>F0/1-F0/4 = Agrégation</b>]]></text>
+</component>
+
+<component id="ID_bubble05">
+<text><![CDATA[<b>Trame<br/>étiquetée VLAN</b>]]></text>
+</component>
+
+<component id="ID_frame01">
+<text><![CDATA[<b>Monodiffusion</b>]]></text>
+</component>
+
+<component id="ID_frame02">
+<text><![CDATA[<b>Monodiffusion VLAN 10</b>]]></text>
+</component>
+
+<component id="ID_frame03">
+<text><![CDATA[<b>Monodiffusion VLAN 30</b>]]></text>
+</component>
+
+<component id="ID_txt07">
+<text><![CDATA[<b>PC1 envoie une diffusion de couche 2 locale. Les commutateurs transmettent la trame de diffusion par tous les ports disponibles.</b>]]></text>
+</component>
+
+<component id="ID_txt08">
+<text><![CDATA[<b>PC1 envoie une diffusion de couche 2 locale. Les commutateurs transmettent la trame de diffusion uniquement par les ports configurés pour le VLAN 10.</b>]]></text>
+</component>
+
+<component id="ID_txt09">
+<text><![CDATA[<b>Personnel enseignant<br/> VLAN 10 -<br/>172.17.10.21</b>]]></text>
+</component>
+
+<component id="ID_txt10">
+<text><![CDATA[<b>Étudiant<br/>VLAN 20 -<br/>172.17.20.22</b>]]></text>
+</component>
+
+<component id="ID_txt11">
+<text><![CDATA[<b>Personnel enseignant<br/>VLAN 10 -<br/>172.17.10.24</b>]]></text>
+</component>
+
+<component id="ID_txt12">
+<text><![CDATA[<b>Étudiant<br/>VLAN 20 -<br/>172.17.20.25</b>]]></text>
+</component>
+
+<component id="ID_txt13">
+<text><![CDATA[<b>Agrégations VLAN configurées pour prendre en charge : VLAN 10, 20</b>]]></text>
+</component>
+
+<component id="play">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript">
+<text><![CDATA[Texte]]></text>
+</component>
+
+<component id="play2">
+<text><![CDATA[Lire]]></text>
+</component>
+<component id="pause2">
+<text><![CDATA[Pause]]></text>
+</component>
+<component id="rewind2">
+<text><![CDATA[Rembobiner]]></text>
+</component><component id="forward2">
+<text><![CDATA[Avance rapide]]></text></component>
+<component id="mute2">
+<text><![CDATA[Muet]]></text></component>
+<component id="unmute2"><text><![CDATA[Désactiver Muet]]></text>
+</component>
+<component id="previous2"><text><![CDATA[Redémarrer]]></text>
+</component>
+<component id="next2">
+<text><![CDATA[Fin]]></text>
+</component>
+<component id="transcript2">
+<text><![CDATA[Texte]]></text>
+</component>
+<component id="ID_s1">
+<text><![CDATA[S1]]></text>
+</component>
+<component id="ID_s2">
+<text><![CDATA[S2]]></text>
+</component>
+<component id="ID_s3">
+<text><![CDATA[S3]]></text>
+</component>
+</textcomponents>

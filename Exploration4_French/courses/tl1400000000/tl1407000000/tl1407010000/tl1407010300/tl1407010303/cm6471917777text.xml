@@ -1,0 +1,64 @@
+<textcomponents>
+
+<component id="ID_button1">
+<text><![CDATA[<b>Détection DHCP</b>]]></text>
+</component>
+
+<component id="ID_button2">
+<text><![CDATA[<b>Offre DHCP</b>]]></text>
+</component>
+
+<!-- slide 1 -->
+<component id="ID_S1_title">
+<text><![CDATA[<b>Détection et offre DHCP</b>]]></text>
+</component>
+
+<component id="ID_S1_txt01">
+<text><![CDATA[<b>Client A<br />IP : ??</b>]]></text>
+</component>
+
+<component id="ID_S1_txt02">
+<text><![CDATA[<b>Serveur<br />192.168.1.254/24</b>]]></text>
+</component>
+
+<component id="ID_S1_txt03">
+<text><![CDATA[Trame Ethernet]]></text>
+</component>
+
+<component id="ID_S1_txt05">
+<text><![CDATA[MAC : Adresse de contrôle d’accès au support<br />CIADDR : Adresse IP du client<br />GIADDR : Adresse IP de la passerelle<br />CHADDR : Adresse matérielle du client]]></text>
+</component>
+
+<component id="ID_S1_txt06">
+<text><![CDATA[<font size='12'>Le client DHCP envoie une diffusion IP dirigée, avec un paquet de détection DHCP. Dans le cas le plus simple, il existe un serveur DHCP sur le même segment pour recueillir la requête. Le serveur note que le champ GIADDR est vide, ce qui signifie que le client est sur le même segment. Le serveur note également l’adresse matérielle du client dans le paquet de requête.</font>]]></text>
+</component>
+
+<!-- slide 2 -->
+<component id="ID_S2_title">
+<text><![CDATA[<b>Comment fonctionne le protocole DHCP ?</b>]]></text>
+</component>
+
+<component id="ID_S2_txt01">
+<text><![CDATA[<b>Client A<br />IP : ??</b>]]></text>
+</component>
+
+<component id="ID_S2_txt02">
+<text><![CDATA[<b>Serveur<br />192.168.1.254/24</b>]]></text>
+</component>
+
+<component id="ID_S2_txt03">
+<text><![CDATA[Trame Ethernet]]></text>
+</component>
+
+<component id="ID_S2_txt04">
+<text><![CDATA[Réponse DHCP]]></text>
+</component>
+
+<component id="ID_S2_txt05">
+<text><![CDATA[MAC : Adresse de contrôle d’accès au support<br />CIADDR : Adresse IP du client<br />GIADDR : Adresse IP de la passerelle<br />CHADDR : Adresse matérielle du client]]></text>
+</component>
+
+<component id="ID_S2_txt06">
+<text><![CDATA[<font size='12'>Le serveur DHCP choisit une adresse IP dans le pool disponible de ce segment, ainsi que l’autre segment et les paramètres globaux. Il les place dans les champs appropriés du paquet DHCP. Il utilise ensuite l’adresse matérielle de A (dans CHADDR) pour construire une trame appropriée à renvoyer au client.</font>]]></text>
+</component>
+</textcomponents>

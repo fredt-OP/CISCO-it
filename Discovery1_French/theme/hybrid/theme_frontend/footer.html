@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<HTML>
+	<HEAD>
+          <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+          
+          <link rel="stylesheet" type="text/css" href="./css/footerstyle.css"/>
+          <link rel="alternate stylesheet" type="text/css" id="arabicstyle" title="arabicstyle" href="./css/arabic.css"/>
+		<link rel="alternate stylesheet" type="text/css" id="englishstyle" title="englishstyle" href="./css/english.css"/>
+          
+		<script language="javascript" src="../js/utils/ejs.js"></script>
+		<script language="javascript" src="../js/utils/about.js"></script>
+          <script language="javascript" src="../js/utils/cssSwitch.js"></script>
+          
+		<script type="text/javascript">		
+			// util
+			function writeToElement(i,t) {
+				if (document.getElementById) {
+					x = document.getElementById(i);
+					x.innerHTML = t;
+				} else if (document.all) {
+					x = document.all[i];
+					x.innerHTML = t;
+				}
+				return x;
+			}
+
+			var content = new EJS({url: 'footer.ejs'});
+
+			function getContent(main) {
+				if (main.course.lang == "en") {
+					changeStyle('englishstyle');
+				} else {
+					changeStyle('arabicstyle');
+				}
+				var html = "";
+				data = {main:main};
+				html = content.render(data);
+				writeToElement("content", html);
+			}
+			
+			function jumpContent() {
+				var term = new String(window.document.forms[0].elements['chapterForm'].value);
+				searchstring = term;
+				if (term.length > 0) {
+					parent.main.gotoPage(searchstring);
+				}
+			}
+
+		     //swap text in input fields through onMouseovers
+			function setForms(objId,x,newText,altId,altText) 
+			{
+				with (document)
+				{ 
+					if (getElementById)
+					{
+						var obj = getElementById(objId);
+						var obj2 = getElementById(altId);
+					} 
+					if (obj)
+					{
+						obj.value = newText;
+
+					}
+					if (obj2)
+					{
+						obj2.value = altText;
+					}
+				}
+			}
+		//-->
+          </script>
+	</HEAD>
+     
+	<BODY class="footer">
+     	<div id="content">
+               <TABLE width="100%" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                    	<td background="images/footer_filler01_BG.gif" colspan="5" width="125" height="30">&nbsp;</td>
+                    	<td colspan="2" width="18" height="30"><img src="images/footer_curve01.gif"></td>
+                    	<td background="images/footer_titleText_BG.gif" colspan="22" width="*" height="30">
+                    		<TABLE width="100%" cellpadding="0" cellspacing="0" border="0">
+                    			<tr class="title_SubSection">
+                    				<td width="33%" align="center"><input class="title_SubSection" type="text" style="height: 20px; background-color: transparent; border-width: 0px;" name="sectionTitle" Value="" size="20" id="sectionTitle" readonly="true"></td>
+                    			</tr>
+                    		</TABLE></td>
+                    	<td width="1" height="30"><img src="images/spacer.gif"></td>
+                    </tr>
+                    <tr>
+                    	<td background="images/footer_arrowFiller01_BG.gif" rowspan="3" width="21" height="41">&nbsp;</td>
+                    	<td rowspan="3" width="33" height="41">
+                    		<img src="images/footer_buttonBack.gif"></td>
+                    	<td background="images/footer_arrowFiller01_BG.gif" rowspan="3" width="24" height="41" align="center">
+                    		<img src="images/footer_arrowSeperator.gif"></td>
+                    	<td rowspan="3" width="33" height="41">
+                         	<img src="images/footer_arrowForward.gif"></td>
+                         <td background="images/footer_arrowFiller01_BG.gif" colspan="2" rowspan="3" width="30" height="41">&nbsp;</td>
+                         <td rowspan="3" width="2" height="41">
+                         	<img src="images/footer_seperator01.gif"></td>
+                         <td background="images/footer_arrowFiller01_BG.gif" rowspan="3" width="25%" height="41"></td>
+                         <td background="images/footer_filler04_BG.gif" colspan="12" width="586" height="10"></td>
+                         <td background="images/footer_arrowFiller01_BG.gif" rowspan="3" width="20%" height="41"></td>
+                         <td rowspan="3" width="2" height="41">
+                         	<img src="images/footer_seperator01.gif"></td>
+                         <td rowspan="3" width="59" height="41">
+                         	<img src="images/footer_buttonTools.gif"></td>
+                         <td rowspan="3" width="2" height="41">
+                         	<img src="images/footer_seperator01.gif"></td>
+                         <td rowspan="3" width="59" height="41">
+                         	<img src="images/footer_buttonGlossary.gif"></td>
+                         <td rowspan="3" width="2" height="41">
+                         	<img src="images/footer_seperator01.gif"></td>
+                         <td rowspan="3" width="59" height="41">
+                         	<img src="images/footer_buttonSearch.gif"></td>
+                         <td rowspan="3" width="2" height="41">
+                         	<img src="images/footer_seperator01.gif"></td>
+                         <td rowspan="3" width="63" height="41">
+                         	<img src="images/footer_buttonIndex.gif"></td>
+                         <td width="1" height="10"><img src="images/spacer.gif"></td>
+                    </tr>
+                    <tr>
+                         <td background="images/footer_sectionBar_filler.gif" width="78" height="22">&nbsp;</td>
+                         <td background="images/footer_sectionBar_filler.gif" width="82" height="22">&nbsp;</td>
+                         <td background="images/footer_sectionBar_filler.gif" colspan="2" width="83" height="22">&nbsp;</td>
+                         <td background="images/footer_sectionBar_filler.gif" width="81" height="22">&nbsp;</td>
+                         <td background="images/footer_sectionBar_filler.gif" colspan="2" width="82" height="22">&nbsp;</td>
+                         <td background="images/footer_sectionBar_filler.gif" colspan="3" width="87" height="22">&nbsp;</td>
+                         <td background="images/footer_sectionBar_filler.gif" width="26" height="22">&nbsp;</td>
+                         <td background="images/footer_sectionBar_filler.gif" width="67" height="22">&nbsp;</td>
+                         <td width="1" height="22"><img src="images/spacer.gif"></td>
+                    </tr>
+                    <tr>
+                    	<td background="images/footer_filler05_BG.gif" colspan="12" width="586" height="9"></td>
+                    	<td width="1" height="9"><img src="images/spacer.gif"></td>
+                    </tr>
+                    <tr>
+                    	<td class="copyright" bgcolor="#666666" colspan="29" align="center" valign="top" width="*">
+                   			All contents copyright &copy; 2007 Cisco Systems, Inc.</td>
+                    	<td width="1" height="12"><img src="images/spacer.gif"></td>
+                    </tr>
+                    <tr height="1">
+                         <td><img src="images/spacer.gif" width="21" height="1"></td>
+                         <td><img src="images/spacer.gif" width="33" height="1"></td>
+                         <td><img src="images/spacer.gif" width="24" height="1"></td>
+                         <td><img src="images/spacer.gif" width="33" height="1"></td>
+                         <td><img src="images/spacer.gif" width="14" height="1"></td>
+                         <td><img src="images/spacer.gif" width="16" height="1"></td>
+                         <td><img src="images/spacer.gif" width="2" height="1"></td>
+                         <td><img src="images/spacer.gif" width="15" height="1"></td>
+                         <td><img src="images/spacer.gif" width="78" height="1"></td>
+                         <td><img src="images/spacer.gif" width="82" height="1"></td>
+                         <td><img src="images/spacer.gif" width="81" height="1"></td>
+                         <td><img src="images/spacer.gif" width="2" height="1"></td>
+                         <td><img src="images/spacer.gif" width="81" height="1"></td>
+                         <td><img src="images/spacer.gif" width="63" height="1"></td>
+                         <td><img src="images/spacer.gif" width="19" height="1"></td>
+                         <td><img src="images/spacer.gif" width="1" height="1"></td>
+                         <td><img src="images/spacer.gif" width="45" height="1"></td>
+                         <td><img src="images/spacer.gif" width="41" height="1"></td>
+                         <td><img src="images/spacer.gif" width="26" height="1"></td>
+                         <td><img src="images/spacer.gif" width="67" height="1"></td>
+                         <td><img src="images/spacer.gif" width="7" height="1"></td>
+                         <td><img src="images/spacer.gif" width="2" height="1"></td>
+                         <td><img src="images/spacer.gif" width="59" height="1"></td>
+                         <td><img src="images/spacer.gif" width="2" height="1"></td> 
+                         <td><img src="images/spacer.gif" width="59" height="1"></td>
+                         <td><img src="images/spacer.gif" width="2" height="1"></td>
+                         <td><img src="images/spacer.gif" width="59" height="1"></td>
+                         <td><img src="images/spacer.gif" width="2" height="1"></td>
+                         <td><img src="images/spacer.gif" width="63" height="1"></td>
+                         <td></td>
+                    </tr>
+               </TABLE>
+          </div>
+     </BODY>
+</HTML>

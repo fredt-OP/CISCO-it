@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/11/2008">
+		<name>Module  Quiz</name>
+		<form id="22144" lang=""><form-item order="fixed">
+			<ai id="109014" type="mc-ma"><question><![CDATA[Refer to the graphic. What two types of devices are the printer and the IP phone? (Choose two.) <br/><img src="14796.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The IP phone is a peripheral. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The IP phone is a host.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The IP phone is a network device. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The printer is a peripheral.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The printer is a host. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The printer is a network device. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="109023" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="109023" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>provides minimal security</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>no centralized administration </mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>inexpensive</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>potential impact on performance</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>easy to set-up</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>no special hardware </mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Advantages</b></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Disadvantages</b></mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Determine if the characteristics are an advantage or disadvantage of a peer-to-peer network.  Drag each characteristic from the left to the appropriate category on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="10" yspacing="53" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="4" xpos="600" ypos="227.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="174"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="273"/><display componentIdent="6" xpos="600" ypos="310"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="187448" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="187448" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident><componentident>5</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>4</componentident><componentident>2</componentident><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="187448" action="Set">1</setvar><scoringdescription>Advantages=easy setup, inexpensive, no special hardware Disadvantages=no centralized admin, performance impact, minimal security</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="109018" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="109018" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>shows wiring installations</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>shows location of networking devices </mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>shows host names and host addresses</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>shows group information and applications used</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>shows location of each host and how they connect to the network</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>shows location of broadcast and collision domains</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Logical Topology Map</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Physical Topology Map</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag the displayed information on the left to the topological map that displays it on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="15" yspacing="68" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="3" startTarg="1" labelStyle="1"/><display componentIdent="4" xpos="600" ypos="266.5" containsTargets="3" startTarg="4" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="152"/><display componentIdent="3" xpos="600" ypos="204"/><display componentIdent="4" xpos="600" ypos="281"/><display componentIdent="5" xpos="600" ypos="333"/><display componentIdent="6" xpos="600" ypos="385"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident><componentident>3</componentident></scoringzone><scoringzone ident ="2"><componentident>4</componentident><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="187443" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="187443" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident><componentident>4</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident><componentident>2</componentident><componentident>5</componentident></scoringzonecontains></conditionvar><setvar varname="187443" action="Set">1</setvar><scoringdescription>Logical=location of broadcast and collision domains, host names and address, group information and application; Physical=location of each host, wiring installations, network device location</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item>
+			<ai id="109127" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="109127" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>A host device sends a hello message to all computers on the network.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>A host device sends an e-mail to another host device.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>A host device joins a group to receive video conferencing. </mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>A host device requests a web page and displays the results.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>A host device sends out an ARP request looking for the MAC address for a specific IP address.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="332"><material><mattext>A router forwards its routing table to a specific group of routers on the network. </mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Unicast</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Multicast</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext>Broadcast</mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="2" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Match the situation on the left with the correct type of message that would be used on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-137.5" targetYspacing="15" yspacing="78" targetH="37"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="135"/><display componentIdent="3" xpos="200" ypos="195"/><display componentIdent="4" xpos="200" ypos="255"/><display componentIdent="5" xpos="200" ypos="315"/><display componentIdent="6" xpos="200" ypos="375"/></options><labels><display componentIdent="1" xpos="600" ypos="85.5" containsTargets="2" startTarg="1" labelStyle="1"/><display componentIdent="2" xpos="600" ypos="214.5" containsTargets="2" startTarg="3" labelStyle="1"/><display componentIdent="3" xpos="600" ypos="343.5" containsTargets="2" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="152"/><display componentIdent="3" xpos="600" ypos="229"/><display componentIdent="4" xpos="600" ypos="281"/><display componentIdent="5" xpos="600" ypos="358"/><display componentIdent="6" xpos="600" ypos="410"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident ="2"><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="3"><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="187650" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="187650" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>2</componentident><componentident>4</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>6</componentident><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>5</componentident><componentident>1</componentident></scoringzonecontains></conditionvar><setvar varname="187650" action="Set">1</setvar><scoringdescription>Unicast-e-mail and web page; multicast-video conference; routing table; broadcast-hello message and ARP request</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="109513" type="mc-ma"><question><![CDATA[Which two statements accurately describe a router ARP table and routing table? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[The ARP table contains information about individual devices, not networks.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The ARP table contains information about networks, not individual devices. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The ARP table contains information about networks and individual devices. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The routing table contains information about individual devices, not networks. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The routing table contains information about networks, not individual devices.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The routing table contains information about networks and individual devices. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="109589" type="mc-sa"><question><![CDATA[What process can a user perform on the host so that a folder on a remote server is treated as if it were a local resource?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[mapping a drive  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[sharing a drive ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[enabling a remote user ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[setting share permissions ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="109017" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="109017" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Share files with another device.</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Download a music file from a website.</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Play a video game with a friend across a network.</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Participate in a videoconference with another computer.</mattext></material></textcomponent></component><component ident="5" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Connect to an e-learning site to learn networking.</mattext></material></textcomponent></component><component ident="6" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>Store e-mail to deliver it upon request.</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --><component ident="1" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Client</b></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Server</b></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="340"><material><mattext><b>Both a Client and Server</b></mattext></material></textcomponent></component> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="5" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component><component ident="6" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext></mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="2" textwidth="760"><material><mattext>Determine if the tasks performed would be considered the role of a client, server, or both.  Drag the task from the left to the appropriate category on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-124" targetYspacing="10" yspacing="62" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/><display componentIdent="5" xpos="200" ypos="235"/><display componentIdent="6" xpos="200" ypos="275"/></options><labels><display componentIdent="1" xpos="600" ypos="91.5" containsTargets="2" startTarg="1" labelStyle="1"/><display componentIdent="3" xpos="600" ypos="190.5" containsTargets="2" startTarg="3" labelStyle="1"/><display componentIdent="5" xpos="600" ypos="289.5" containsTargets="2" startTarg="5" labelStyle="1"/></labels><targets><display componentIdent="1" xpos="600" ypos="100"/><display componentIdent="2" xpos="600" ypos="137"/><display componentIdent="3" xpos="600" ypos="199"/><display componentIdent="4" xpos="600" ypos="236"/><display componentIdent="5" xpos="600" ypos="298"/><display componentIdent="6" xpos="600" ypos="335"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident><componentident>2</componentident></scoringzone><scoringzone ident ="2"><componentident>3</componentident><componentident>4</componentident></scoringzone><scoringzone ident ="3"><componentident>5</componentident><componentident>6</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="187441" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="187441" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>5</componentident><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident><componentident>6</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>4</componentident><componentident>3</componentident></scoringzonecontains></conditionvar><setvar varname="187441" action="Set">1</setvar><scoringdescription>Client=download music, connect e-learning; Server=device sharing files, stores email; Both=video game, instant messenger</scoringdescription></responcondition></resprocessing></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="109515" type="mc-sa"><question><![CDATA[Refer to the graphic. If H1 on SwitchA needs to forward a frame to H3 on SwitchB, which MAC address is used as the destination MAC within the frame? <br/><img src="15265.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[MAC address of H1 ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[MAC address of Switch A ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[MAC address of Switch B ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[MAC address of H3  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="141937" type="mc-sa"><question><![CDATA[Refer to the graphic. Two network segments, LAN-A and LAN-B, directly connect to Router1.  When Router1 receives a message with a source address of PC1 on LAN-A and a destination address of PC10 on LAN-B, what will be the action of Router1? <br/><img src="23278.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The router checks its ARP table to determine where to forward the packet to reach PC10. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router checks its ARP table to determine the appropriate IP address of PC10. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The router checks its routing table to determine where to forward the packet to reach PC10.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router checks its routing table to determine the appropriate MAC address of PC10. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="109585" type="mc-ma"><question><![CDATA[Which three pieces of information are included in a network physical map? (Choose three.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[IP addressing scheme ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[computer naming scheme ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[location and length of cable runs  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[physical location of all networking devices  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[location and size of broadcast and collision domains ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[hardware configuration of end devices such as hosts and servers  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="109588" type="mc-sa"><question><![CDATA[When using Windows XP, which command shows information about the computer, including IP address, subnet mask, default gateway, and additional details about DHCP and DNS?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>ipconfig</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>winipcfg</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>ipconfig /all</b>  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>winipcfg /all</b> ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="109809" type="mc-sa"><question><![CDATA[In what area of a network can traffic from other hosts cause a sending host to stop transmitting, then wait a random amount of time before resending a message?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[access layer   ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[broadcast domain ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[collision domain  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[distribution layer ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[peer-to-peer network   ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 

@@ -1,0 +1,100 @@
+﻿<TRANSLATION>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Scenario 0</NAME>
+ <NAME translate="true">Intercity</NAME>
+ <NAME translate="true">Home City</NAME>
+ <NAME translate="true">Corporate Office</NAME>
+ <NAME translate="true">Main Wiring Closet</NAME>
+ <NAME translate="true">Table</NAME>
+ <NAME translate="true">Client</NAME>
+ <NAME translate="true">Rack</NAME>
+ <NAME translate="true">Server</NAME>
+ <NAME translate="true">Root</NAME>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <DESCRIPTION translate="true"/>
+ <PAGE translate="true">&lt;h2&gt;Exercice 3.3.2 : &lt;br&gt;représentations du réseau&lt;/h2&gt;
+
+&lt;!-- ******************************************************************************** Text between these two sets of symbols (&lt;!-- and -- &gt;) are comments for the author and do not render. Keep all comments for future development and QA purposes. The user will not see the HTML inside Packet Tracer.
+
+For basic HTML formatting guidelines see the Packet Tracer Standards section on HTML coding or the &quot;HTML_Coding_Standards.html&quot; file ******************************************************************************** --&gt;
+
+&lt;!-- Standard NOTE TO USER for all Lab Analogs if course design has specified this --&gt;
+
+&lt;h3&gt;Tableau d'adressage :&lt;/h3&gt;
+
+&lt;p&gt;Ces travaux pratiques ne contiennent pas de tableau d'adressage.&lt;/p&gt; &lt;h3&gt;Objectifs pédagogiques :&lt;/h3&gt; &lt;ul&gt; &lt;li&gt;configuration des services et de la prise en charge ;&lt;/li&gt; &lt;li&gt;configuration de DNS sur le serveur ;&lt;/li&gt; &lt;li&gt;confirmation de HTTP sur le serveur ;&lt;/li&gt; &lt;li&gt;configuration de la prise en charge DNS sur l'ordinateur ;&lt;/li&gt; &lt;li&gt;vérification de la connectivité en mode temps réel ;&lt;/li&gt; &lt;li&gt;envoi d'une commande ping au serveur à l'aide de l'adresse URL &lt;b&gt;www.exemple.com&lt;/b&gt; ;&lt;/li&gt; &lt;li&gt;ouverture d'une page Web sur le serveur Eagle à l'aide de l'adresse URL ;&lt;/li&gt; &lt;li&gt;voir comment DNS et HTTP fonctionnent conjointement via le mode simulation&lt;br&gt;. &amp;nbsp;&lt;/li&gt; &lt;/ul&gt;
+
+&lt;h3&gt;Présentation : &lt;/h3&gt;
+
+&lt;p&gt;Lors de cet exercice, vous allez configurer un serveur pour fournir des services DNS et héberger une page Web, configurer un ordinateur pour utiliser des services DNS et voir comment DNS et HTTP fonctionnent conjointement.&lt;!-- ================================================== Tasks and Steps For text that comes under a Task or a Step, refer to &quot;HTML_Coding_Standards.html&quot; for instructions on how to format paragraphs, lists, commands, and command output. For the first task or group of tasks, and every task thereafter where there is a change in the % correct, add a new instructions page using the PT add page &quot;+&quot; feature. When creating the PT lab analog from a hands-on lab, be sure to maintain all Task numbering. However, command output and blank spaces may be omitted from the extensive lab handout.  In general, 4 possibilities exists:  1) the Task or Step in the hands-on lab can be done exactly in PT but are not graded (then provide a message at the bottom of that page that says &apos;At the completion of this task, when you check Results, your score should be xxx%&apos; where xxx is not changed from the prior page instructions.  2)If the Task or Step in the hands-on lab is doable in PT and is graded, then specify the percentage the learner should have at the end.  3) If the Task/Step is NOT doable in PT, then specify that &quot;this Task (or Step) is not supported by PT, skip it. 4) If the Task or Step in the Hands-on lab can be done in PT, but must be done differently, then specify what must be done. The last page instructions must be followed by &quot;At the completion of this task, when you click Check Results, your score should be 100%.&quot; ================================================== --&gt;&lt;/p&gt;
+
+&lt;h3&gt;Tâche 1 : configuration des services et de la prise en charge&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Configuration de DNS sur le serveur.&lt;/h4&gt; &lt;p&gt;Cliquez sur le serveur. La fenêtre de configuration du serveur s'affiche. Cliquez sur l'onglet &lt;b&gt;Config&lt;/b&gt;. La fenêtre &lt;b&gt;Global Settings&lt;/b&gt; s'affiche. Cliquez sur le bouton situé à gauche correspondant à &lt;b&gt;DNS&lt;/b&gt;. Vérifiez que le service est activé (&lt;b&gt;On&lt;/b&gt;). Définissez le &lt;b&gt;nom de domaine&lt;/b&gt; sur www.exemple.com et l'&lt;b&gt;adresse IP&lt;/b&gt; sur 192.168.1.254. Cliquez sur le bouton &lt;b&gt;Add&lt;/b&gt;. Vous pouvez ajouter d'autres noms de domaine en procédant ainsi. &lt;/p&gt;
+
+&lt;h4&gt;Étape 2. Configuration de HTTP sur le serveur.&lt;/h4&gt; &lt;p&gt;Cliquez sur le bouton situé à gauche correspondant à &lt;b&gt;HTTP&lt;/b&gt;. Activez le service (&lt;b&gt;On&lt;/b&gt;). La fenêtre &lt;b&gt;Default Page Content&lt;/b&gt; contient la page qui s'affiche lorsqu'une page Web est demandée à l'aide de l'adresse IP du serveur. Cette page est au format HTML. Vous pouvez la modifier si vous souhaitez la personnaliser. Fermez la fenêtre de configuration du serveur. &lt;/p&gt; &lt;p&gt;&lt;b&gt;Étape 3. Configuration de la prise en charge DNS sur l'ordinateur client&lt;/b&gt;&lt;/p&gt; &lt;p&gt;Cliquez sur PC Client. La fenêtre de configuration de l'ordinateur s'affiche. Cliquez sur l'onglet &lt;b&gt;Config&lt;/b&gt;. La fenêtre &lt;b&gt;Global Settings&lt;/b&gt; s'affiche. Définissez le &lt;b&gt;serveur DNS&lt;/b&gt; sur &lt;b&gt;192.168.1.254&lt;/b&gt;, l'adresse IP du serveur. Fermez la fenêtre de configuration de l'ordinateur. &lt;/p&gt;
+
+&lt;h4&gt;À la fin de cette tâche, votre taux de réalisation devrait être de 100%. &lt;/h4&gt;
+
+
+&lt;h3&gt;Tâche 2 : vérification de la connectivité en mode temps réel&lt;/h3&gt;
+
+&lt;h4&gt;Étape 1. Envoi d'une commande ping au serveur à l'aide de l'adresse URL&lt;/h4&gt; &lt;p&gt;Cliquez sur l'onglet &lt;b&gt;Desktop&lt;/b&gt;. Cliquez sur le bouton &lt;b&gt;Command Prompt&lt;/b&gt;. Une fenêtre d'invite de commandes apparaît. Tapez &lt;b&gt;ping www.exemple.com&lt;/b&gt; (l'adresse URL du serveur), puis appuyez sur la touche Entrée. Une fois la commande ping exécutée, fermez la fenêtre d'invite de commandes. &lt;/p&gt;
+
+&lt;h4&gt;Étape 2. Ouverture d&apos;une page Web sur l'ordinateur.&lt;/h4&gt; &lt;p&gt;Sur le Bureau de l'ordinateur, cliquez sur le bouton &lt;b&gt;Web Browser&lt;/b&gt;. Une simulation de navigateur Web s'affiche. Tapez www.exemple.com (l'adresse URL du serveur) dans le champ &lt;b&gt;URL&lt;/b&gt;, puis cliquez sur le bouton &lt;b&gt;Go&lt;/b&gt;. Une page Web devrait apparaître. Fermez la fenêtre de configuration de l'ordinateur. &lt;/p&gt;
+
+&lt;h3&gt;&lt;b&gt;Tâche 3 : méthode de fonctionnement conjoint de DNS et HTTP via le mode simulation&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;/h3&gt;
+
+&lt;h4&gt; &lt;b&gt;Étape 1. Envoi d'une commande ping au serveur à l'aide de l'adresse URL&lt;/b&gt;&lt;br&gt; &lt;span style=&quot;font-weight: 400&quot;&gt;&lt;br&gt; Passez en mode simulation. Cliquez sur PC Client. La fenêtre de configuration de l'ordinateur s'affiche. Cliquez sur l'onglet &lt;/span&gt;Desktop&lt;span style=&quot;font-weight: 400&quot;&gt;. Cliquez sur le bouton &lt;/span&gt;Command Prompt&lt;span style=&quot;font-weight: 400&quot;&gt;. Une fenêtre d'invite de commandes apparaît. Tapez ping www.exemple.com (l'adresse URL du serveur), puis appuyez sur la touche Entrée. Minimisez la fenêtre d'invite de commandes simulée. Utilisez le bouton Capture/Forward pour afficher les paquets DNS et ICMP sur le réseau. Chaque fois que vous cliquez sur le bouton Capture/Forward, le processus de transfert de paquet traite un ou deux autres paquets. À tout moment au cours de ce processus, vous pouvez cliquer sur le carré coloré situé dans la colonne Info pour accéder aux informations d'unités de données de protocole (PDU) et afficher les détails d'encapsulation et de traitement de périphérique. Fermez la fenêtre d'invite de commandes ; cliquez sur le bouton &lt;/span&gt;Reset Simulation&lt;span style=&quot;font-weight: 400&quot;&gt;. &lt;/span&gt;&lt;/h4&gt; 
+
+&lt;h4&gt; &lt;b&gt;Étape 2. Ouverture d'une page Web sur le serveur à l'aide de l'adresse URL&lt;/h4&gt;&lt;p&gt; &lt;/b&gt;Cliquez sur le bouton &lt;b&gt;Web Browser&lt;/b&gt;. Une simulation de navigateur Web s'affiche. Tapez www.exemple.com (l'adresse URL du serveur) dans le champ &lt;b&gt;URL&lt;/b&gt;, puis cliquez sur le bouton &lt;b&gt;Go&lt;/b&gt;.  Minimisez la fenêtre du navigateur simulé.  Utilisez le bouton &lt;b&gt;Capture/Forward&lt;/b&gt; pour examiner les paquets DNS et HTTP. Pour chaque paquet de la liste des événements, cliquez sur le carré coloré situé dans la colonne &lt;b&gt;Info&lt;/b&gt; afin d'accéder aux informations d'unités de données de protocole (PDU) et d'afficher les détails d'encapsulation et de traitement de périphérique. 
+
+
+
+&lt;!-- All activities end with the following footer --&gt; &lt;br&gt; &lt;br&gt; &lt;i&gt;&lt;font size=&quot;1&quot;&gt;Copyright sur l'intégralité du contenu © 1992–2007 Cisco Systems, Inc. Tous droits réservés. Ce document contient des informations publiques Cisco.&lt;/font&gt;&lt;/i&gt;</PAGE>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Table,Client</PHYSICAL>
+ <PHYSICAL translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet,Rack,Server</PHYSICAL>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <HOMERACK translate="true">Intercity,Home City,Corporate Office,Main Wiring Closet</HOMERACK>
+ <ID translate="true">Client</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">Client</ID>
+ <ID translate="true">Server</ID>
+ <ID translate="true">Scenario 0</ID>
+</TRANSLATION>

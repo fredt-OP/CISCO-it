@@ -1,0 +1,170 @@
+﻿<textcomponents>
+
+ <component id="id_title">
+<text><![CDATA[<b><font size='+2'>Activity</font></b><br><br>Determine if the packet will be allowed or blocked based on source and destination address, packet type and the ACLs.<br><br><b>Check permit or deny for each packet based on the ACL statements.</b>]]></text>
+</component>
+
+<component id="id_descr">
+<text><![CDATA[]]></text>
+</component>
+
+<component id="id_text_title">
+<text><![CDATA[Source IP                            Destination IP                     Packet type]]></text>
+</component>
+
+<component id="ID_Button01">
+<text><![CDATA[<b>Check</b>]]></text>
+</component>
+
+<component id="ID_Button02">
+<text><![CDATA[<b>Reset</b>]]></text>
+</component>
+
+
+
+
+	<component id="txt_numrows">
+		<text><![CDATA[6]]></text>
+	</component>
+    <component id="txt_numcols">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_col1">
+		<text><![CDATA[Permit]]></text>
+	</component>
+    <component id="txt_col2">
+		<text><![CDATA[Deny]]></text>
+	</component>
+	
+	<component id="ID_text2">
+		<text><![CDATA[Network<br>192.168.2.0]]></text>
+	</component>
+	<component id="ID_text3">
+		<text><![CDATA[Network<br>192.168.3.0]]></text>
+	</component>
+	<component id="ID_text4">
+		<text><![CDATA[S0/0/0]]></text>
+	</component>
+	<component id="ID_text5">
+		<text><![CDATA[R1]]></text>
+	</component>
+	<component id="ID_text6">
+		<text><![CDATA[OUT]]></text>
+	</component>
+	<component id="ID_text7">
+		<text><![CDATA[OUT]]></text>
+	</component>
+	<component id="ID_text8">
+		<text><![CDATA[Fa0/0]]></text>
+	</component>
+	<component id="ID_text9">
+		<text><![CDATA[Network<br>192.168.1.0]]></text>
+	</component>
+	<component id="ID_text10">
+		<text><![CDATA[R1(config)#access-list 101 permit tcp any any established<br>R1(config)#access-list 101 permit icmp any any echo-reply<br>R1(config)#access-list 101 deny any any<br><br>R1(config)# interface fa0/0<br>R1(config-if)# ip access-group 101 out]]></text>
+	</component>
+	<component id="ID_text11">
+		<text><![CDATA[R1(config)#access-list 102 deny tcp any 192.168.2.0  0.0.0.255<br>R1(config)#access-list 102 permit tcp any 192.168.3.0  0.0.0.255<br><br>R1(config)# interface S0/0/0<br>R1(config-if)# ip access-group 102 out]]></text>
+	</component>
+		
+    <component id="txt_q1">
+		<text><![CDATA[192.168.1.77                       192.168.3.75                       echo-reply]]></text>
+	</component>
+    <component id="txt_q2">
+		<text><![CDATA[192.168.1.77                       192.168.2.75                       echo-request]]></text>
+	</component>
+    <component id="txt_q3">
+		<text><![CDATA[192.168.1.15                       192.168.2.44                       FTP response]]></text>
+	</component>
+    <component id="txt_q4">
+		<text><![CDATA[192.168.1.25                       192.168.3.44                       Web response]]></text>
+	</component>
+	<component id="txt_q5">
+		<text><![CDATA[192.168.1.66                       192.168.3.12                       Web request]]></text>
+	</component>
+	<component id="txt_q6">
+		<text><![CDATA[192.168.1.66                       192.168.2.12                       echo-reply]]></text>
+	</component>
+
+  
+	
+    <component id="txt_a1">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a2">
+		<text><![CDATA[2]]></text>
+	</component>
+    <component id="txt_a3">
+		<text><![CDATA[1]]></text>
+	</component>
+    <component id="txt_a4">
+		<text><![CDATA[1]]></text>
+	</component>
+	<component id="txt_a5">
+		<text><![CDATA[2]]></text>
+	</component>
+	<component id="txt_a6">
+		<text><![CDATA[2]]></text>
+	</component>
+
+	
+	
+		<component id="texta_01">
+		<text><![CDATA[Network<br>192.168.2.0]]></text>
+	</component>
+	
+		<component id="texta_02">
+		<text><![CDATA[Network<br>192.168.1.0]]></text>
+	</component>
+	
+			<component id="texta_03">
+		<text><![CDATA[Network<br>192.168.3.0]]></text>
+	</component>
+	
+	<component id="texta_04">
+		<text><![CDATA[R1]]></text>
+	</component>
+	
+	<component id="texta_04b">
+		<text><![CDATA[Out]]></text>
+	</component>
+	
+					<component id="texta_05">
+		<text><![CDATA[Out]]></text>
+	</component>
+	
+						<component id="texta_06">
+		<text><![CDATA[S0/0/0]]></text>
+	</component>
+	
+						<component id="texta_07">
+		<text><![CDATA[Fa0/0]]></text>
+	</component>
+	
+							<component id="texta_08">
+		<text><![CDATA[R1]]></text>
+	</component>
+	
+	
+	
+	
+	
+
+<!-- Correct Feedback -->
+<component id="ID_titleCorrect">
+<text><![CDATA[Correct]]></text>
+</component>
+
+<component id="ID_correctText">
+<text><![CDATA[You have successfully determined which packets will be permitted and which ones will be denied. Click Next to continue.]]></text></component>
+
+<!-- Incorrect Feedback -->
+<component id="ID_titleIncorrect">
+<text><![CDATA[Incorrect]]></text>
+</component>
+
+<component id="ID_IncorrectText">
+<text><![CDATA[Please review extended ACLs and try again.]]></text></component>
+
+
+</textcomponents>

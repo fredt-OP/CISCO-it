@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<exam id="" dateexported="11/19/2007">
+		<name>Module  Quiz</name>
+		<form id="19848" lang=""><form-item order="fixed">
+			<ai id="117227" type="mc-sa"><question><![CDATA[After an evaluation of the business needs and current network infrastructure of ABC Company, the network designer includes the item “install a second UPS for the core web server” in the network upgrading proposal. Which network design goal is being met?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[security ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[scalability ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[availability  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[performance ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[manageability ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item>
+			<ai id="116973" type="dnd" src="ravennaDandDclip">
+			<![CDATA[ <questtestinjterop><item ident="116973" title="not used in brown trout" type="interactiveType1" usage="Default"><components><!-- *********** OPTIONS *********** --><component ident="1" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>degree of resource accessibility</mattext></material></textcomponent></component><component ident="2" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>restriction of unauthorized traffic</mattext></material></textcomponent></component><component ident="3" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>ability to grow as users and applications are added</mattext></material></textcomponent></component><component ident="4" movable="yes" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="332"><material><mattext>designed so support personnel can always fix it</mattext></material></textcomponent></component> <!-- ***********  LABELS  *********** --> <!-- ***********  TARGETS  *********** --><component ident="1" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>scalability</mattext></material></textcomponent></component><component ident="2" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>availability</mattext></material></textcomponent></component><component ident="3" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>security</mattext></material></textcomponent></component><component ident="4" movable="no" snappable="yes" displaytype="text"><textcomponent textrows="1" textwidth="300"><material><mattext>manageability</mattext></material></textcomponent></component> <!-- ***********  STEM  *********** --><component ident="40" movable="no" snappable="no" displaytype="text"><textcomponent textrows="1" textwidth="760"><material><mattext>Drag each definition on the left to the correct functionality on the right.</mattext></material></textcomponent></component></components><!-- ***********  PRESENTATION  *********** --><presentation><layout category="A" initY="-150" targetYspacing="10" yspacing="40" targetH="27"><options><display componentIdent="1" xpos="200" ypos="75"/><display componentIdent="2" xpos="200" ypos="115"/><display componentIdent="3" xpos="200" ypos="155"/><display componentIdent="4" xpos="200" ypos="195"/></options><targets><display componentIdent="1" xpos="600" ypos="75"/><display componentIdent="2" xpos="600" ypos="112"/><display componentIdent="3" xpos="600" ypos="149"/><display componentIdent="4" xpos="600" ypos="186"/></targets><stem><display componentIdent="40" xpos="420" ypos="28"/></stem></layout></presentation><!-- ***********  SCORING  *********** --><scoring><scoringzone ident ="1"><componentident>1</componentident></scoringzone><scoringzone ident ="2"><componentident>2</componentident></scoringzone><scoringzone ident ="3"><componentident>3</componentident></scoringzone><scoringzone ident ="4"><componentident>4</componentident></scoringzone><resprocessing resprocident="hardcoded resprocident#23423"><outcomes><decvar varname="214702" maxvalue ="1"><title>no title</title></decvar><interpretvar varname="214702" view="All">no description given</interpretvar></outcomes><responcondition><conditionvar><scoringzonecontains szident="1"><componentident>3</componentident></scoringzonecontains><scoringzonecontains szident="2"><componentident>1</componentident></scoringzonecontains><scoringzonecontains szident="3"><componentident>2</componentident></scoringzonecontains><scoringzonecontains szident="4"><componentident>4</componentident></scoringzonecontains></conditionvar><setvar varname="214702" action="Set">1</setvar><scoringdescription>1</scoringdescription></responcondition></resprocessing><feedback><correct>Superb! :)</correct><incorrect>Oops. Please try again :(</incorrect></feedback></scoring></item></questtestinjterop>]]> </ai></form-item><form-item order="fixed">
+			<ai id="116523" type="mc-ma"><question><![CDATA[When designing a network infrastructure, a network engineer will use the hierarchical network model. What two factors must be taken into account when designing the core layer? (Choose two.)  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[packet manipulation to prioritize the flow of core data ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[redundant links to ensure fault tolerance  ]]></text>
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[routing protocols chosen for the speed of network convergence  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[access control lists to curtail core layer traffic ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[star network topologies to reduce core layer latency ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116656" type="mc-sa"><question><![CDATA[A company needs to redesign the Distribution Layer of their enterprise network.  What area should be the focus of the new design?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[direct connections to hosts in a local Ethernet network ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Layer 3 interconnections between smaller local networks  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[high-speed connections between Layer 2 devices ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[interconnections between hosts in a flat network ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116558" type="mc-sa"><question><![CDATA[A network engineer is planning the WAN connectivity for critical network traffic. Why would the engineer plan a backup WAN link?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[to provide extra bandwidth during system backups ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to provide a development environment for WAN testing ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[to provide extra bandwidth for Voice over IP   ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[to provide an alternate path for data in case the primary link fails  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116554" type="mc-ma"><question><![CDATA[Which two are advantages of using a star topology at the Access Layer of a network? (Choose two.)  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[ease of installation  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[redundant traffic pathways ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[minimal configuration needed]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[ease of recovery after failure ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[capabilities of central devices can limit network ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116672" type="mc-sa"><question><![CDATA[Network traffic between a PC and a printer on the same local network is usually contained within which layer of the hierarchical design model?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Core Layer ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Access Layer  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Distribution Layer ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Enterprise Edge ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Server Farms ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116787" type="mc-sa"><question><![CDATA[Which statement best describes the purpose of deploying a server farm?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[A server farm is necessary in deploying enterprise-level applications. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A server farm is required in the DMZ design of an enterprise network. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[A server farm provides efficient management of the mission-critical servers for the enterprise.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[A server farm is designed to provide secure network services and applications to clients on internal networks only. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119426" type="mc-sa"><question><![CDATA[Why is the older DMZ firewall model not sufficient to secure mission critical servers and applications?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Only servers located on the DMZ network were adequately protected. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The older model did not offer servers enough protection from internally initiated attacks.   ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[End-user PCs were not protected in the older model, so they were more frequently hacked. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Servers on the DMZ were not adequately protected from external attacks. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="119520" type="mc-sa"><question><![CDATA[How can a wireless network design provide open access for guest users and secure access for employees?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Broadcast the SSID so that all users are able to access the network. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Enable WEP to authenticate both sets of users. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Create a separate SSID and separate VLAN for guest users.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Put all access points on the same VLAN and require employees to use WEP. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116665" type="mc-sa"><question><![CDATA[Which functional area of the network contains the devices that provide an interface between high speed LAN technologies, such as Ethernet, and slower speed wide area technologies?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Core Layer ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Server farm ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Access Layer ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Transport Layer ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Enterprise Edge    ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Distribution layer ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="116557" type="mc-sa"><question><![CDATA[A company has decided to allow workers to work from home but does not want to compromise network security. The network administrator has proposed connecting remote users to the company network using virtual private networks. Why are VPNs good choices for connecting remote workers?  ]]></question><choices>
+						<choice correct="y">
+							<text><![CDATA[allow secure connections over public broadband networks  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[provide secure connections over dedicated public WAN circuits ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[segment traffic into logical networks for better bandwidth utilization ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[provide simple remote access without having to filter special packets ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="91705" type="mc-sa"><question><![CDATA[A technician is recovering the password on a router.  The technician has entered ROMMON mode, changed the configuration register to 0x2142, and reset the router.  The technician enters configuration mode on the router, changes the password,  and enters the <b>copy running-config startup-config</b> command.  After changing the configuration register to 0x2102, the technician reloads the router.  When the router reloads, the technician finds that only the password is in the configuration.  What could be the problem?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[The technician changed the configuration register to the wrong value. ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[The technician did not copy the startup configuration to the running configuration before changing the password.  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The technician should have changed the configuration register to 0x2100. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The router ignored NVRAM and did not load the startup configuration file when it rebooted. ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[The technician did not copy the running configuration to the startup configuration before changing the password. ]]></text>
+							
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121172" type="mc-sa"><question><![CDATA[Which ACL permits host 10.220.158.10 access to the web server 192.168.3.244?  ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 101 permit tcp host 10.220.158.10 eq 80 host 192.168.3.224</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 101 permit tcp 10.220.158.10 0.0.0.0 host 192.168.3.224 0.0.0.0 eq 80</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[<b>access-list 101 permit host 10.220.158.10 0.0.0.0 host 192.168.3.224 0.0.0.0 eq 80</b> ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[<b>access-list 101 permit tcp 10.220.158.10 0.0.0.0 host 192.168.3.224 eq 80</b>  ]]></text>
+							
+						</choice></choices></ai></form-item><form-item order="fixed">
+			<ai id="121167" type="mc-sa"><question><![CDATA[Refer to the exhibit. Host C is unable to transfer data because it does not have the MAC address of the destination host.  If Host C sends out an ARP request, which of the other hosts will see this message? <br/><img src="i121167n1v1.jpg" /> ]]></question><choices>
+						<choice correct="n">
+							<text><![CDATA[Host A ]]></text>
+							
+							
+						</choice>
+						<choice correct="y">
+							<text><![CDATA[Host B  ]]></text>
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts A and B ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts A and D ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts B and D ]]></text>
+							
+							
+						</choice>
+						<choice correct="n">
+							<text><![CDATA[Hosts A, B, and D ]]></text>
+							
+							
+						</choice></choices></ai></form-item></form></exam> 
